@@ -1,0 +1,1395 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.015258816 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: javax.microedition.midlet.MIDlet is a phantom class!
+Warning: javax.microedition.lcdui.Displayable is a phantom class!
+Warning: javax.microedition.lcdui.Canvas is a phantom class!
+Warning: javax.microedition.lcdui.CommandListener is a phantom class!
+Warning: javax.microedition.lcdui.Command is a phantom class!
+Warning: javax.microedition.lcdui.Graphics is a phantom class!
+Warning: com.netmite.andme.MIDletThread is a phantom class!
+Warning: javax.microedition.lcdui.Display is a phantom class!
+Warning: javax.microedition.media.Player is a phantom class!
+Warning: javax.microedition.lcdui.Image is a phantom class!
+Warning: javax.microedition.rms.RecordStore is a phantom class!
+Warning: javax.microedition.lcdui.Font is a phantom class!
+Warning: javax.microedition.media.Manager is a phantom class!
+Warning: javax.microedition.rms.InvalidRecordIDException is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.LUFsE.baHLOeFpUsdKp $r1;
+        com.LUFsE.LDLKcAoDpab $r2;
+        com.LUFsE.MyAppService $r3;
+        android.os.IBinder $r4;
+        boolean $z0;
+        com.LUFsE.MyAppInfo $r5;
+        com.LUFsE.aLGpMhJSBD $r6;
+        com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3 $r7;
+        com.LUFsE.JstjejhCtcUBN $r8;
+        com.LUFsE.ttPFEsAk $r9;
+        com.LUFsE.MyAppAlertDialog $r10;
+        com.LUFsE.BootReceiverService $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.LUFsE.baHLOeFpUsdKp;
+
+        specialinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onResume()>();
+
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label06;
+
+        $r2 = new com.LUFsE.LDLKcAoDpab;
+
+        specialinvoke $r2.<com.LUFsE.LDLKcAoDpab: void <init>()>();
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r2.<com.LUFsE.LDLKcAoDpab: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        if $i0 == 11 goto label06;
+
+        if $i0 == 12 goto label05;
+
+     label06:
+        if $i0 == 14 goto label11;
+
+        $r3 = new com.LUFsE.MyAppService;
+
+        specialinvoke $r3.<com.LUFsE.MyAppService: void <init>()>();
+
+        virtualinvoke $r3.<com.LUFsE.MyAppService: void onCreate()>();
+
+        virtualinvoke $r3.<com.LUFsE.MyAppService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label07:
+        if $i0 == 15 goto label08;
+
+        $i1 = virtualinvoke $r3.<com.LUFsE.MyAppService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 16 goto label07;
+
+     label08:
+        $r4 = virtualinvoke $r3.<com.LUFsE.MyAppService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        $z0 = virtualinvoke $r3.<com.LUFsE.MyAppService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 18 goto label10;
+
+        if $i0 == 19 goto label09;
+
+     label10:
+        virtualinvoke $r3.<com.LUFsE.MyAppService: void onDestroy()>();
+
+     label11:
+        if $i0 == 20 goto label14;
+
+        $r5 = new com.LUFsE.MyAppInfo;
+
+        specialinvoke $r5.<com.LUFsE.MyAppInfo: void <init>()>();
+
+        if $i0 == 21 goto label14;
+
+        virtualinvoke $r5.<com.LUFsE.MyAppInfo: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        virtualinvoke $r5.<com.LUFsE.MyAppInfo: void onResume()>();
+
+        if $i0 == 23 goto label12;
+
+        if $i0 == 24 goto label13;
+
+        virtualinvoke $r5.<com.LUFsE.MyAppInfo: void onRestart()>();
+
+        if $i0 == 25 goto label12;
+
+     label13:
+        virtualinvoke $r5.<com.LUFsE.MyAppInfo: void onDestroy()>();
+
+     label14:
+        if $i0 == 27 goto label17;
+
+        $r6 = new com.LUFsE.aLGpMhJSBD;
+
+        specialinvoke $r6.<com.LUFsE.aLGpMhJSBD: void <init>()>();
+
+        if $i0 == 28 goto label17;
+
+        virtualinvoke $r6.<com.LUFsE.aLGpMhJSBD: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 31 goto label16;
+
+        if $i0 == 32 goto label15;
+
+     label16:
+        virtualinvoke $r6.<com.LUFsE.aLGpMhJSBD: void onDestroy()>();
+
+     label17:
+        if $i0 == 34 goto label21;
+
+        $r7 = new com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3;
+
+        specialinvoke $r7.<com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3: void <init>()>();
+
+        if $i0 == 35 goto label21;
+
+        virtualinvoke $r7.<com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        virtualinvoke $r7.<com.netmite.andme.launcher.Launcher2: void onStart()>();
+
+        if $i0 == 36 goto label19;
+
+        virtualinvoke $r7.<com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label19:
+        virtualinvoke $r7.<com.netmite.andme.launcher.Launcher2: void onResume()>();
+
+        virtualinvoke $r7.<com.netmite.andme.launcher.Launcher2: void onPause()>();
+
+        virtualinvoke $r7.<com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 37 goto label19;
+
+        virtualinvoke $r7.<com.netmite.andme.launcher.Launcher2: void onStop()>();
+
+        if $i0 == 38 goto label20;
+
+        virtualinvoke $r7.<com.netmite.andme.launcher.Launcher2: void onRestart()>();
+
+        if $i0 == 39 goto label18;
+
+     label20:
+        virtualinvoke $r7.<com.netmite.andme.launcher.Launcher2: void onDestroy()>();
+
+     label21:
+        if $i0 == 41 goto label23;
+
+        $r8 = new com.LUFsE.JstjejhCtcUBN;
+
+        specialinvoke $r8.<com.LUFsE.JstjejhCtcUBN: void <init>()>();
+
+        if $i0 == 42 goto label23;
+
+        virtualinvoke $r8.<com.LUFsE.JstjejhCtcUBN: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 45 goto label23;
+
+        if $i0 == 46 goto label22;
+
+     label23:
+        if $i0 == 48 goto label25;
+
+        $r9 = new com.LUFsE.ttPFEsAk;
+
+        specialinvoke $r9.<com.LUFsE.ttPFEsAk: void <init>()>();
+
+        if $i0 == 49 goto label25;
+
+        virtualinvoke $r9.<com.LUFsE.ttPFEsAk: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 52 goto label25;
+
+        if $i0 == 53 goto label24;
+
+     label25:
+        if $i0 == 55 goto label27;
+
+        $r10 = new com.LUFsE.MyAppAlertDialog;
+
+        specialinvoke $r10.<com.LUFsE.MyAppAlertDialog: void <init>()>();
+
+        if $i0 == 56 goto label27;
+
+        virtualinvoke $r10.<com.LUFsE.MyAppAlertDialog: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 59 goto label27;
+
+        if $i0 == 60 goto label26;
+
+     label27:
+        if $i0 == 62 goto label29;
+
+        $r11 = new com.LUFsE.BootReceiverService;
+
+        specialinvoke $r11.<com.LUFsE.BootReceiverService: void <init>()>();
+
+        if $i0 == 63 goto label29;
+
+     label28:
+        virtualinvoke $r11.<com.LUFsE.BootReceiverService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 65 goto label28;
+
+     label29:
+        if $i0 == 66 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Callback analysis done.
+Skipping file res/layout/ in layout folder...
+Warning: LinearLayout is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/pdukbo.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: ProgressBar is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 2 layout controls in file res/layout/eikoik.xml
+Found 3 layout controls in file res/layout/qutecspvk.xml
+Warning: GridView is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GridView is a phantom class!
+Warning: android.view.GridView is a phantom class!
+Found 4 layout controls in file res/layout/uojpwfg.xml
+Warning: WebView is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 5 layout controls in file res/layout/teifwc.xml
+Warning: RatingBar is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.RatingBar is a phantom class!
+Warning: android.view.RatingBar is a phantom class!
+Found 6 layout controls in file res/layout/ggcfmkej.xml
+Found 7 layout controls in file res/layout/kwsmnjwo.xml
+Warning: ListView is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 8 layout controls in file res/layout/smpbuk.xml
+Found 9 layout controls in file res/layout/acdwesk.xml
+Warning: ImageButton is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Found 10 layout controls in file res/layout/fvbik.xml
+Warning: View is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.View is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: com.crdscnw.irawf.thctgndh.etoi_dvducf_b.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Found 11 layout controls in file res/layout/phovcohj.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: javax.microedition.midlet.MIDlet is a phantom class!
+Warning: javax.microedition.lcdui.Displayable is a phantom class!
+Warning: javax.microedition.lcdui.Canvas is a phantom class!
+Warning: javax.microedition.lcdui.CommandListener is a phantom class!
+Warning: javax.microedition.lcdui.Command is a phantom class!
+Warning: javax.microedition.lcdui.Graphics is a phantom class!
+Warning: com.netmite.andme.MIDletThread is a phantom class!
+Warning: javax.microedition.lcdui.Display is a phantom class!
+Warning: javax.microedition.media.Player is a phantom class!
+Warning: javax.microedition.lcdui.Image is a phantom class!
+Warning: javax.microedition.rms.RecordStore is a phantom class!
+Warning: javax.microedition.lcdui.Font is a phantom class!
+Warning: javax.microedition.media.Manager is a phantom class!
+Warning: javax.microedition.rms.InvalidRecordIDException is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.LUFsE.baHLOeFpUsdKp $r1;
+        com.LUFsE.bk $r2;
+        com.LUFsE.bl $r3;
+        boolean $z0, $z1, $z2, $z3;
+        com.LUFsE.bn $r4;
+        com.LUFsE.MyAppService $r5, $r8, $r17;
+        com.LUFsE.ah $r6;
+        com.LUFsE.LDLKcAoDpab $r7;
+        android.os.IBinder $r9;
+        com.LUFsE.MyAppInfo $r10;
+        com.LUFsE.aa $r11;
+        com.LUFsE.ac $r12;
+        com.LUFsE.ab $r13;
+        com.LUFsE.ad $r14;
+        com.LUFsE.ae $r15;
+        com.LUFsE.aLGpMhJSBD $r16;
+        com.LUFsE.ak $r18;
+        com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3 $r19;
+        com.netmite.andme.launcher.Launcher$2 $r20;
+        com.netmite.andme.launcher.Launcher$1 $r21;
+        com.netmite.andme.launcher.Launcher$3 $r22;
+        com.LUFsE.JstjejhCtcUBN $r23;
+        com.LUFsE.ttPFEsAk $r24;
+        com.LUFsE.MyAppAlertDialog $r25;
+        com.LUFsE.BootReceiverService $r26;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.LUFsE.baHLOeFpUsdKp;
+
+        specialinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label04:
+        $r2 = new com.LUFsE.bk;
+
+        specialinvoke $r2.<com.LUFsE.bk: void <init>(com.LUFsE.baHLOeFpUsdKp)>($r1);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<com.LUFsE.bk: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        $r3 = new com.LUFsE.bl;
+
+        specialinvoke $r3.<com.LUFsE.bl: void <init>(com.LUFsE.baHLOeFpUsdKp)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        $z0 = virtualinvoke $r3.<com.LUFsE.bl: boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent)>(null, 0, null);
+
+     label06:
+        $r4 = new com.LUFsE.bn;
+
+        specialinvoke $r4.<com.LUFsE.bn: void <init>(android.content.Context)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r4.<com.LUFsE.bn: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label12;
+
+        $r5 = new com.LUFsE.MyAppService;
+
+        specialinvoke $r5.<com.LUFsE.MyAppService: void <init>()>();
+
+        $r6 = new com.LUFsE.ah;
+
+        specialinvoke $r6.<com.LUFsE.ah: void <init>(com.LUFsE.MyAppService)>($r5);
+
+        if $i0 == 14 goto label12;
+
+     label11:
+        virtualinvoke $r6.<com.LUFsE.ah: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label11;
+
+     label12:
+        if $i0 == 17 goto label17;
+
+        $r7 = new com.LUFsE.LDLKcAoDpab;
+
+        specialinvoke $r7.<com.LUFsE.LDLKcAoDpab: void <init>()>();
+
+        if $i0 == 18 goto label17;
+
+        virtualinvoke $r7.<com.LUFsE.LDLKcAoDpab: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 20 goto label16;
+
+     label14:
+        if $i0 == 21 goto label15;
+
+        staticinvoke <com.LUFsE.LDLKcAoDpab: void <clinit>()>();
+
+     label15:
+        if $i0 == 22 goto label14;
+
+     label16:
+        if $i0 == 23 goto label13;
+
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label13;
+
+     label17:
+        if $i0 == 27 goto label22;
+
+        $r8 = new com.LUFsE.MyAppService;
+
+        specialinvoke $r8.<com.LUFsE.MyAppService: void <init>()>();
+
+        virtualinvoke $r8.<com.LUFsE.MyAppService: void onCreate()>();
+
+        virtualinvoke $r8.<com.LUFsE.MyAppService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        $i1 = virtualinvoke $r8.<com.LUFsE.MyAppService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 29 goto label18;
+
+     label19:
+        $r9 = virtualinvoke $r8.<com.LUFsE.MyAppService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label20:
+        $z1 = virtualinvoke $r8.<com.LUFsE.MyAppService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 31 goto label21;
+
+        if $i0 == 32 goto label20;
+
+     label21:
+        virtualinvoke $r8.<com.LUFsE.MyAppService: void onDestroy()>();
+
+     label22:
+        if $i0 == 33 goto label34;
+
+        $r10 = new com.LUFsE.MyAppInfo;
+
+        specialinvoke $r10.<com.LUFsE.MyAppInfo: void <init>()>();
+
+        if $i0 == 34 goto label34;
+
+        virtualinvoke $r10.<com.LUFsE.MyAppInfo: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r10.<com.LUFsE.MyAppInfo: void onResume()>();
+
+        if $i0 == 36 goto label32;
+
+     label24:
+        $r11 = new com.LUFsE.aa;
+
+        specialinvoke $r11.<com.LUFsE.aa: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 37 goto label25;
+
+        virtualinvoke $r11.<com.LUFsE.aa: void onClick(android.view.View)>(null);
+
+     label25:
+        $r12 = new com.LUFsE.ac;
+
+        specialinvoke $r12.<com.LUFsE.ac: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 38 goto label26;
+
+        virtualinvoke $r12.<com.LUFsE.ac: void onClick(android.view.View)>(null);
+
+     label26:
+        $r13 = new com.LUFsE.ab;
+
+        specialinvoke $r13.<com.LUFsE.ab: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 39 goto label27;
+
+        virtualinvoke $r13.<com.LUFsE.ab: void onClick(android.view.View)>(null);
+
+     label27:
+        $r14 = new com.LUFsE.ad;
+
+        specialinvoke $r14.<com.LUFsE.ad: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 40 goto label28;
+
+        virtualinvoke $r14.<com.LUFsE.ad: void onClick(android.view.View)>(null);
+
+     label28:
+        $r15 = new com.LUFsE.ae;
+
+        specialinvoke $r15.<com.LUFsE.ae: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 41 goto label29;
+
+        virtualinvoke $r15.<com.LUFsE.ae: void onClick(android.view.View)>(null);
+
+     label29:
+        if $i0 == 42 goto label30;
+
+        $z2 = virtualinvoke $r10.<com.LUFsE.MyAppInfo: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label30:
+        if $i0 == 43 goto label31;
+
+        staticinvoke <com.LUFsE.MyAppInfo: void <clinit>()>();
+
+     label31:
+        if $i0 == 44 goto label24;
+
+     label32:
+        if $i0 == 45 goto label23;
+
+        if $i0 == 46 goto label33;
+
+        virtualinvoke $r10.<com.LUFsE.MyAppInfo: void onRestart()>();
+
+        if $i0 == 47 goto label23;
+
+     label33:
+        virtualinvoke $r10.<com.LUFsE.MyAppInfo: void onDestroy()>();
+
+     label34:
+        if $i0 == 49 goto label40;
+
+        $r16 = new com.LUFsE.aLGpMhJSBD;
+
+        specialinvoke $r16.<com.LUFsE.aLGpMhJSBD: void <init>()>();
+
+        if $i0 == 50 goto label40;
+
+        virtualinvoke $r16.<com.LUFsE.aLGpMhJSBD: void onCreate(android.os.Bundle)>(null);
+
+     label35:
+        if $i0 == 52 goto label38;
+
+     label36:
+        if $i0 == 53 goto label37;
+
+        virtualinvoke $r16.<com.LUFsE.aLGpMhJSBD: void onClick(android.view.View)>(null);
+
+     label37:
+        if $i0 == 54 goto label36;
+
+     label38:
+        if $i0 == 55 goto label35;
+
+        if $i0 == 56 goto label39;
+
+        if $i0 == 57 goto label35;
+
+     label39:
+        virtualinvoke $r16.<com.LUFsE.aLGpMhJSBD: void onDestroy()>();
+
+     label40:
+        if $i0 == 59 goto label42;
+
+        $r17 = new com.LUFsE.MyAppService;
+
+        specialinvoke $r17.<com.LUFsE.MyAppService: void <init>()>();
+
+        $r18 = new com.LUFsE.ak;
+
+        specialinvoke $r18.<com.LUFsE.ak: void <init>(com.LUFsE.MyAppService)>($r17);
+
+        if $i0 == 60 goto label42;
+
+     label41:
+        virtualinvoke $r18.<com.LUFsE.ak: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 62 goto label41;
+
+     label42:
+        if $i0 == 63 goto label51;
+
+        $r19 = new com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3;
+
+        specialinvoke $r19.<com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3: void <init>()>();
+
+        if $i0 == 64 goto label51;
+
+        virtualinvoke $r19.<com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3: void onCreate(android.os.Bundle)>(null);
+
+     label43:
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onStart()>();
+
+        if $i0 == 65 goto label44;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label44:
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onResume()>();
+
+        if $i0 == 66 goto label49;
+
+     label45:
+        $r20 = new com.netmite.andme.launcher.Launcher$2;
+
+        specialinvoke $r20.<com.netmite.andme.launcher.Launcher$2: void <init>(com.netmite.andme.launcher.Launcher)>($r19);
+
+        if $i0 == 67 goto label46;
+
+        virtualinvoke $r20.<com.netmite.andme.launcher.Launcher$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label46:
+        $r21 = new com.netmite.andme.launcher.Launcher$1;
+
+        specialinvoke $r21.<com.netmite.andme.launcher.Launcher$1: void <init>(com.netmite.andme.launcher.Launcher)>($r19);
+
+        if $i0 == 68 goto label47;
+
+        virtualinvoke $r21.<com.netmite.andme.launcher.Launcher$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label47:
+        $r22 = new com.netmite.andme.launcher.Launcher$3;
+
+        specialinvoke $r22.<com.netmite.andme.launcher.Launcher$3: void <init>(com.netmite.andme.launcher.Launcher)>($r19);
+
+        if $i0 == 69 goto label48;
+
+        virtualinvoke $r22.<com.netmite.andme.launcher.Launcher$3: void onCancel(android.content.DialogInterface)>(null);
+
+     label48:
+        if $i0 == 70 goto label45;
+
+     label49:
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onPause()>();
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 71 goto label44;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onStop()>();
+
+        if $i0 == 72 goto label50;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onRestart()>();
+
+        if $i0 == 73 goto label43;
+
+     label50:
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onDestroy()>();
+
+     label51:
+        if $i0 == 75 goto label56;
+
+        $r23 = new com.LUFsE.JstjejhCtcUBN;
+
+        specialinvoke $r23.<com.LUFsE.JstjejhCtcUBN: void <init>()>();
+
+        if $i0 == 76 goto label56;
+
+        virtualinvoke $r23.<com.LUFsE.JstjejhCtcUBN: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 78 goto label55;
+
+     label53:
+        if $i0 == 79 goto label54;
+
+        $z3 = virtualinvoke $r23.<com.LUFsE.JstjejhCtcUBN: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label54:
+        if $i0 == 80 goto label53;
+
+     label55:
+        if $i0 == 81 goto label52;
+
+        if $i0 == 82 goto label56;
+
+        if $i0 == 83 goto label52;
+
+     label56:
+        if $i0 == 85 goto label61;
+
+        $r24 = new com.LUFsE.ttPFEsAk;
+
+        specialinvoke $r24.<com.LUFsE.ttPFEsAk: void <init>()>();
+
+        if $i0 == 86 goto label61;
+
+        virtualinvoke $r24.<com.LUFsE.ttPFEsAk: void onCreate(android.os.Bundle)>(null);
+
+     label57:
+        if $i0 == 88 goto label60;
+
+     label58:
+        if $i0 == 89 goto label59;
+
+        virtualinvoke $r24.<com.LUFsE.ttPFEsAk: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label59:
+        if $i0 == 90 goto label58;
+
+     label60:
+        if $i0 == 91 goto label57;
+
+        if $i0 == 92 goto label61;
+
+        if $i0 == 93 goto label57;
+
+     label61:
+        if $i0 == 95 goto label66;
+
+        $r25 = new com.LUFsE.MyAppAlertDialog;
+
+        specialinvoke $r25.<com.LUFsE.MyAppAlertDialog: void <init>()>();
+
+        if $i0 == 96 goto label66;
+
+        virtualinvoke $r25.<com.LUFsE.MyAppAlertDialog: void onCreate(android.os.Bundle)>(null);
+
+     label62:
+        if $i0 == 98 goto label65;
+
+     label63:
+        if $i0 == 99 goto label64;
+
+        virtualinvoke $r25.<com.LUFsE.MyAppAlertDialog: void onClick(android.view.View)>(null);
+
+     label64:
+        if $i0 == 100 goto label63;
+
+     label65:
+        if $i0 == 101 goto label62;
+
+        if $i0 == 102 goto label66;
+
+        if $i0 == 103 goto label62;
+
+     label66:
+        if $i0 == 105 goto label68;
+
+        $r26 = new com.LUFsE.BootReceiverService;
+
+        specialinvoke $r26.<com.LUFsE.BootReceiverService: void <init>()>();
+
+        if $i0 == 106 goto label68;
+
+     label67:
+        virtualinvoke $r26.<com.LUFsE.BootReceiverService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 108 goto label67;
+
+     label68:
+        if $i0 == 109 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 10 components...
+Incremental callback analysis done.
+Found 41 callback methods for 10 components
+Found {res/layout/eikoik.xml=[2131034141 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131034142 - android.widget.ProgressBar, 2131034140 - android.widget.TextView, 2131034139 - android.widget.TextView, 2131034136 - android.widget.TextView, 2131034137 - android.widget.ProgressBar, 2131034138 - android.widget.LinearLayout, 2131034134 - android.widget.ImageView, 2131034135 - android.widget.LinearLayout, 2131034133 - android.widget.LinearLayout], res/layout/acdwesk.xml=[2131034152 - android.widget.TextView, 2131034153 - android.widget.TextView, 2131034154 - android.widget.ProgressBar, -1 - android.widget.LinearLayout, 2131034113 - android.widget.LinearLayout], res/layout/phovcohj.xml=[2131034149 - android.widget.Button, -1 - android.widget.RelativeLayout, -1 - android.view.View, -1 - android.widget.LinearLayout, 2131034147 - android.widget.ImageView, 2131034150 - android.widget.TextView, 2131034151 - android.widget.Button, 2131034148 - android.widget.TextView, -1 - android.widget.ScrollView], res/layout/ggcfmkej.xml=[2131034124 - android.widget.RatingBar, 2131034127 - android.widget.TextView, 2131034128 - android.widget.TextView, 2131034129 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131034125 - android.widget.TextView, 2131034123 - android.widget.ImageView, 2131034126 - android.widget.TextView], res/layout/pdukbo.xml=[2131034115 - android.widget.Button, 2131034114 - android.widget.Button, -1 - android.widget.LinearLayout, 2131034112 - android.widget.TextView, 2131034113 - android.widget.LinearLayout], res/layout/teifwc.xml=[2131034155 - android.webkit.WebView, -1 - android.widget.LinearLayout], res/layout/qutecspvk.xml=[-1 - android.widget.LinearLayout, 2131034132 - android.widget.ImageView], res/layout/kwsmnjwo.xml=[-1 - android.widget.LinearLayout, 2131034145 - android.widget.ImageView, 2131034146 - android.widget.TextView], res/layout/uojpwfg.xml=[2131034144 - android.widget.GridView, -1 - android.widget.LinearLayout, 2131034143 - android.widget.TextView], res/layout/fvbik.xml=[2131034130 - android.widget.ImageButton, 2131034131 - android.widget.Button, -1 - android.widget.LinearLayout, 2131034113 - android.widget.LinearLayout], res/layout/smpbuk.xml=[2131034116 - android.widget.ImageView, 2131034120 - android.widget.TextView, 2131034118 - android.widget.ImageView, 2131034121 - android.widget.ListView, -1 - android.widget.LinearLayout, 2131034122 - android.widget.Button, 2131034113 - android.widget.LinearLayout, 2131034119 - android.widget.GridView, 2131034117 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 41 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/1cf97a1d744ad13c3b7392642581bf404b917840bf00e536f0d33fc870f5b775.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: javax.microedition.midlet.MIDlet is a phantom class!
+Warning: javax.microedition.lcdui.Displayable is a phantom class!
+Warning: javax.microedition.lcdui.Canvas is a phantom class!
+Warning: javax.microedition.lcdui.CommandListener is a phantom class!
+Warning: javax.microedition.lcdui.Command is a phantom class!
+Warning: javax.microedition.lcdui.Graphics is a phantom class!
+Warning: com.netmite.andme.MIDletThread is a phantom class!
+Warning: javax.microedition.lcdui.Display is a phantom class!
+Warning: javax.microedition.media.Player is a phantom class!
+Warning: javax.microedition.lcdui.Image is a phantom class!
+Warning: javax.microedition.rms.RecordStore is a phantom class!
+Warning: javax.microedition.lcdui.Font is a phantom class!
+Warning: javax.microedition.media.Manager is a phantom class!
+Warning: javax.microedition.rms.InvalidRecordIDException is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.LUFsE.baHLOeFpUsdKp $r1;
+        com.LUFsE.bl $r2;
+        boolean $z0, $z1, $z2, $z3;
+        com.LUFsE.bn $r3;
+        com.LUFsE.bk $r4;
+        com.LUFsE.MyAppService $r5, $r8, $r17;
+        com.LUFsE.ah $r6;
+        com.LUFsE.LDLKcAoDpab $r7;
+        android.os.IBinder $r9;
+        com.LUFsE.MyAppInfo $r10;
+        com.LUFsE.aa $r11;
+        com.LUFsE.ab $r12;
+        com.LUFsE.ad $r13;
+        com.LUFsE.ae $r14;
+        com.LUFsE.ac $r15;
+        com.LUFsE.aLGpMhJSBD $r16;
+        com.LUFsE.ak $r18;
+        com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3 $r19;
+        com.netmite.andme.launcher.Launcher$1 $r20;
+        com.netmite.andme.launcher.Launcher$3 $r21;
+        com.netmite.andme.launcher.Launcher$2 $r22;
+        com.LUFsE.JstjejhCtcUBN $r23;
+        com.LUFsE.ttPFEsAk $r24;
+        com.LUFsE.MyAppAlertDialog $r25;
+        com.LUFsE.BootReceiverService $r26;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.LUFsE.baHLOeFpUsdKp;
+
+        specialinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.LUFsE.bl;
+
+        specialinvoke $r2.<com.LUFsE.bl: void <init>(com.LUFsE.baHLOeFpUsdKp)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r2.<com.LUFsE.bl: boolean onKey(android.content.DialogInterface,int,android.view.KeyEvent)>(null, 0, null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        $r3 = new com.LUFsE.bn;
+
+        specialinvoke $r3.<com.LUFsE.bn: void <init>(android.content.Context)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r3.<com.LUFsE.bn: void onClick(android.view.View)>(null);
+
+     label06:
+        $r4 = new com.LUFsE.bk;
+
+        specialinvoke $r4.<com.LUFsE.bk: void <init>(com.LUFsE.baHLOeFpUsdKp)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r4.<com.LUFsE.bk: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.LUFsE.baHLOeFpUsdKp: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label12;
+
+        $r5 = new com.LUFsE.MyAppService;
+
+        specialinvoke $r5.<com.LUFsE.MyAppService: void <init>()>();
+
+        $r6 = new com.LUFsE.ah;
+
+        specialinvoke $r6.<com.LUFsE.ah: void <init>(com.LUFsE.MyAppService)>($r5);
+
+        if $i0 == 14 goto label12;
+
+     label11:
+        virtualinvoke $r6.<com.LUFsE.ah: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label11;
+
+     label12:
+        if $i0 == 17 goto label17;
+
+        $r7 = new com.LUFsE.LDLKcAoDpab;
+
+        specialinvoke $r7.<com.LUFsE.LDLKcAoDpab: void <init>()>();
+
+        if $i0 == 18 goto label17;
+
+        virtualinvoke $r7.<com.LUFsE.LDLKcAoDpab: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 20 goto label16;
+
+     label14:
+        if $i0 == 21 goto label15;
+
+        staticinvoke <com.LUFsE.LDLKcAoDpab: void <clinit>()>();
+
+     label15:
+        if $i0 == 22 goto label14;
+
+     label16:
+        if $i0 == 23 goto label13;
+
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label13;
+
+     label17:
+        if $i0 == 27 goto label22;
+
+        $r8 = new com.LUFsE.MyAppService;
+
+        specialinvoke $r8.<com.LUFsE.MyAppService: void <init>()>();
+
+        virtualinvoke $r8.<com.LUFsE.MyAppService: void onCreate()>();
+
+        virtualinvoke $r8.<com.LUFsE.MyAppService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        $i1 = virtualinvoke $r8.<com.LUFsE.MyAppService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 29 goto label18;
+
+     label19:
+        $r9 = virtualinvoke $r8.<com.LUFsE.MyAppService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label20:
+        $z1 = virtualinvoke $r8.<com.LUFsE.MyAppService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 31 goto label21;
+
+        if $i0 == 32 goto label20;
+
+     label21:
+        virtualinvoke $r8.<com.LUFsE.MyAppService: void onDestroy()>();
+
+     label22:
+        if $i0 == 33 goto label34;
+
+        $r10 = new com.LUFsE.MyAppInfo;
+
+        specialinvoke $r10.<com.LUFsE.MyAppInfo: void <init>()>();
+
+        if $i0 == 34 goto label34;
+
+        virtualinvoke $r10.<com.LUFsE.MyAppInfo: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r10.<com.LUFsE.MyAppInfo: void onResume()>();
+
+        if $i0 == 36 goto label32;
+
+     label24:
+        $r11 = new com.LUFsE.aa;
+
+        specialinvoke $r11.<com.LUFsE.aa: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 37 goto label25;
+
+        virtualinvoke $r11.<com.LUFsE.aa: void onClick(android.view.View)>(null);
+
+     label25:
+        $r12 = new com.LUFsE.ab;
+
+        specialinvoke $r12.<com.LUFsE.ab: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 38 goto label26;
+
+        virtualinvoke $r12.<com.LUFsE.ab: void onClick(android.view.View)>(null);
+
+     label26:
+        $r13 = new com.LUFsE.ad;
+
+        specialinvoke $r13.<com.LUFsE.ad: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 39 goto label27;
+
+        virtualinvoke $r13.<com.LUFsE.ad: void onClick(android.view.View)>(null);
+
+     label27:
+        $r14 = new com.LUFsE.ae;
+
+        specialinvoke $r14.<com.LUFsE.ae: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 40 goto label28;
+
+        virtualinvoke $r14.<com.LUFsE.ae: void onClick(android.view.View)>(null);
+
+     label28:
+        if $i0 == 41 goto label29;
+
+        $z2 = virtualinvoke $r10.<com.LUFsE.MyAppInfo: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label29:
+        if $i0 == 42 goto label30;
+
+        staticinvoke <com.LUFsE.MyAppInfo: void <clinit>()>();
+
+     label30:
+        $r15 = new com.LUFsE.ac;
+
+        specialinvoke $r15.<com.LUFsE.ac: void <init>(com.LUFsE.MyAppInfo)>($r10);
+
+        if $i0 == 43 goto label31;
+
+        virtualinvoke $r15.<com.LUFsE.ac: void onClick(android.view.View)>(null);
+
+     label31:
+        if $i0 == 44 goto label24;
+
+     label32:
+        if $i0 == 45 goto label23;
+
+        if $i0 == 46 goto label33;
+
+        virtualinvoke $r10.<com.LUFsE.MyAppInfo: void onRestart()>();
+
+        if $i0 == 47 goto label23;
+
+     label33:
+        virtualinvoke $r10.<com.LUFsE.MyAppInfo: void onDestroy()>();
+
+     label34:
+        if $i0 == 49 goto label40;
+
+        $r16 = new com.LUFsE.aLGpMhJSBD;
+
+        specialinvoke $r16.<com.LUFsE.aLGpMhJSBD: void <init>()>();
+
+        if $i0 == 50 goto label40;
+
+        virtualinvoke $r16.<com.LUFsE.aLGpMhJSBD: void onCreate(android.os.Bundle)>(null);
+
+     label35:
+        if $i0 == 52 goto label38;
+
+     label36:
+        if $i0 == 53 goto label37;
+
+        virtualinvoke $r16.<com.LUFsE.aLGpMhJSBD: void onClick(android.view.View)>(null);
+
+     label37:
+        if $i0 == 54 goto label36;
+
+     label38:
+        if $i0 == 55 goto label35;
+
+        if $i0 == 56 goto label39;
+
+        if $i0 == 57 goto label35;
+
+     label39:
+        virtualinvoke $r16.<com.LUFsE.aLGpMhJSBD: void onDestroy()>();
+
+     label40:
+        if $i0 == 59 goto label42;
+
+        $r17 = new com.LUFsE.MyAppService;
+
+        specialinvoke $r17.<com.LUFsE.MyAppService: void <init>()>();
+
+        $r18 = new com.LUFsE.ak;
+
+        specialinvoke $r18.<com.LUFsE.ak: void <init>(com.LUFsE.MyAppService)>($r17);
+
+        if $i0 == 60 goto label42;
+
+     label41:
+        virtualinvoke $r18.<com.LUFsE.ak: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 62 goto label41;
+
+     label42:
+        if $i0 == 63 goto label51;
+
+        $r19 = new com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3;
+
+        specialinvoke $r19.<com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3: void <init>()>();
+
+        if $i0 == 64 goto label51;
+
+        virtualinvoke $r19.<com.crdscnw.irawf.thctgndh.etoi_dvducf_b.GameMIDletDEER3: void onCreate(android.os.Bundle)>(null);
+
+     label43:
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onStart()>();
+
+        if $i0 == 65 goto label44;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label44:
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onResume()>();
+
+        if $i0 == 66 goto label49;
+
+     label45:
+        $r20 = new com.netmite.andme.launcher.Launcher$1;
+
+        specialinvoke $r20.<com.netmite.andme.launcher.Launcher$1: void <init>(com.netmite.andme.launcher.Launcher)>($r19);
+
+        if $i0 == 67 goto label46;
+
+        virtualinvoke $r20.<com.netmite.andme.launcher.Launcher$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label46:
+        $r21 = new com.netmite.andme.launcher.Launcher$3;
+
+        specialinvoke $r21.<com.netmite.andme.launcher.Launcher$3: void <init>(com.netmite.andme.launcher.Launcher)>($r19);
+
+        if $i0 == 68 goto label47;
+
+        virtualinvoke $r21.<com.netmite.andme.launcher.Launcher$3: void onCancel(android.content.DialogInterface)>(null);
+
+     label47:
+        $r22 = new com.netmite.andme.launcher.Launcher$2;
+
+        specialinvoke $r22.<com.netmite.andme.launcher.Launcher$2: void <init>(com.netmite.andme.launcher.Launcher)>($r19);
+
+        if $i0 == 69 goto label48;
+
+        virtualinvoke $r22.<com.netmite.andme.launcher.Launcher$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label48:
+        if $i0 == 70 goto label45;
+
+     label49:
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onPause()>();
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 71 goto label44;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onStop()>();
+
+        if $i0 == 72 goto label50;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onRestart()>();
+
+        if $i0 == 73 goto label43;
+
+     label50:
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onDestroy()>();
+
+     label51:
+        if $i0 == 75 goto label56;
+
+        $r23 = new com.LUFsE.JstjejhCtcUBN;
+
+        specialinvoke $r23.<com.LUFsE.JstjejhCtcUBN: void <init>()>();
+
+        if $i0 == 76 goto label56;
+
+        virtualinvoke $r23.<com.LUFsE.JstjejhCtcUBN: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 78 goto label55;
+
+     label53:
+        if $i0 == 79 goto label54;
+
+        $z3 = virtualinvoke $r23.<com.LUFsE.JstjejhCtcUBN: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label54:
+        if $i0 == 80 goto label53;
+
+     label55:
+        if $i0 == 81 goto label52;
+
+        if $i0 == 82 goto label56;
+
+        if $i0 == 83 goto label52;
+
+     label56:
+        if $i0 == 85 goto label61;
+
+        $r24 = new com.LUFsE.ttPFEsAk;
+
+        specialinvoke $r24.<com.LUFsE.ttPFEsAk: void <init>()>();
+
+        if $i0 == 86 goto label61;
+
+        virtualinvoke $r24.<com.LUFsE.ttPFEsAk: void onCreate(android.os.Bundle)>(null);
+
+     label57:
+        if $i0 == 88 goto label60;
+
+     label58:
+        if $i0 == 89 goto label59;
+
+        virtualinvoke $r24.<com.LUFsE.ttPFEsAk: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label59:
+        if $i0 == 90 goto label58;
+
+     label60:
+        if $i0 == 91 goto label57;
+
+        if $i0 == 92 goto label61;
+
+        if $i0 == 93 goto label57;
+
+     label61:
+        if $i0 == 95 goto label66;
+
+        $r25 = new com.LUFsE.MyAppAlertDialog;
+
+        specialinvoke $r25.<com.LUFsE.MyAppAlertDialog: void <init>()>();
+
+        if $i0 == 96 goto label66;
+
+        virtualinvoke $r25.<com.LUFsE.MyAppAlertDialog: void onCreate(android.os.Bundle)>(null);
+
+     label62:
+        if $i0 == 98 goto label65;
+
+     label63:
+        if $i0 == 99 goto label64;
+
+        virtualinvoke $r25.<com.LUFsE.MyAppAlertDialog: void onClick(android.view.View)>(null);
+
+     label64:
+        if $i0 == 100 goto label63;
+
+     label65:
+        if $i0 == 101 goto label62;
+
+        if $i0 == 102 goto label66;
+
+        if $i0 == 103 goto label62;
+
+     label66:
+        if $i0 == 105 goto label68;
+
+        $r26 = new com.LUFsE.BootReceiverService;
+
+        specialinvoke $r26.<com.LUFsE.BootReceiverService: void <init>()>();
+
+        if $i0 == 106 goto label68;
+
+     label67:
+        virtualinvoke $r26.<com.LUFsE.BootReceiverService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 108 goto label67;
+
+     label68:
+        if $i0 == 109 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.125301533 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.118567099 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3782 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 130 sources and 132 sinks.

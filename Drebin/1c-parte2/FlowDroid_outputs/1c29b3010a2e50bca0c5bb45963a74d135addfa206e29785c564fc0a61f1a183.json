@@ -1,0 +1,634 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.014135117 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        org.expressme.love.ui.InstallService $r1;
+        android.os.IBinder $r2;
+        org.expressme.love.ui.PackageReceiver $r3;
+        org.expressme.love.ui.LoveActivity $r4;
+        org.expressme.love.ui.MainMenu $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new org.expressme.love.ui.InstallService;
+
+        specialinvoke $r1.<org.expressme.love.ui.InstallService: void <init>()>();
+
+        virtualinvoke $r1.<org.expressme.love.ui.InstallService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<org.expressme.love.ui.InstallService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<org.expressme.love.ui.InstallService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new org.expressme.love.ui.PackageReceiver;
+
+        specialinvoke $r3.<org.expressme.love.ui.PackageReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<org.expressme.love.ui.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label10;
+
+        $r4 = new org.expressme.love.ui.LoveActivity;
+
+        specialinvoke $r4.<org.expressme.love.ui.LoveActivity: void <init>()>();
+
+        if $i0 == 11 goto label10;
+
+        virtualinvoke $r4.<org.expressme.love.ui.LoveActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        if $i0 == 17 goto label12;
+
+        $r5 = new org.expressme.love.ui.MainMenu;
+
+        specialinvoke $r5.<org.expressme.love.ui.MainMenu: void <init>()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r5.<org.expressme.love.ui.MainMenu: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 21 goto label12;
+
+        if $i0 == 22 goto label11;
+
+     label12:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.9 seconds.
+[Spark] Solution found in 0.9 seconds.
+Callback analysis done.
+Warning: TableLayout is a phantom class!
+Warning: org.expressme.love.ui.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Found unrecognized XML attribute:  stretchColumns
+Warning: TableRow is a phantom class!
+Warning: org.expressme.love.ui.TableRow is a phantom class!
+Warning: android.view.TableRow is a phantom class!
+Warning: TextView is a phantom class!
+Warning: org.expressme.love.ui.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: org.expressme.love.ui.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: View is a phantom class!
+Warning: org.expressme.love.ui.View is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: org.expressme.love.ui.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 1 layout controls in file res/layout/love_activity.xml
+Warning: EditText is a phantom class!
+Warning: org.expressme.love.ui.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: Button is a phantom class!
+Warning: org.expressme.love.ui.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/love_dialog_text_entry.xml
+Found 3 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        org.expressme.love.ui.InstallService $r1;
+        android.os.IBinder $r2;
+        org.expressme.love.ui.PackageReceiver $r3;
+        org.expressme.love.ui.LoveActivity $r4;
+        android.app.Dialog $r5;
+        org.expressme.love.ui.LoveActivity$2 $r6;
+        org.expressme.love.ui.LoveActivity$3 $r7;
+        org.expressme.love.ui.MainMenu $r8;
+        org.expressme.love.ui.MainMenu$4 $r9;
+        org.expressme.love.ui.MainMenu$3 $r10;
+        org.expressme.love.ui.MainMenu$5 $r11;
+        org.expressme.love.ui.MainMenu$2 $r12;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new org.expressme.love.ui.InstallService;
+
+        specialinvoke $r1.<org.expressme.love.ui.InstallService: void <init>()>();
+
+        virtualinvoke $r1.<org.expressme.love.ui.InstallService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<org.expressme.love.ui.InstallService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<org.expressme.love.ui.InstallService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new org.expressme.love.ui.PackageReceiver;
+
+        specialinvoke $r3.<org.expressme.love.ui.PackageReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<org.expressme.love.ui.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r4 = new org.expressme.love.ui.LoveActivity;
+
+        specialinvoke $r4.<org.expressme.love.ui.LoveActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r4.<org.expressme.love.ui.LoveActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 13 goto label14;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        $r5 = virtualinvoke $r4.<org.expressme.love.ui.LoveActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label11:
+        $r6 = new org.expressme.love.ui.LoveActivity$2;
+
+        specialinvoke $r6.<org.expressme.love.ui.LoveActivity$2: void <init>(org.expressme.love.ui.LoveActivity)>($r4);
+
+        if $i0 == 15 goto label12;
+
+        virtualinvoke $r6.<org.expressme.love.ui.LoveActivity$2: void onClick(android.view.View)>(null);
+
+     label12:
+        $r7 = new org.expressme.love.ui.LoveActivity$3;
+
+        specialinvoke $r7.<org.expressme.love.ui.LoveActivity$3: void <init>(org.expressme.love.ui.LoveActivity)>($r4);
+
+        if $i0 == 16 goto label13;
+
+        virtualinvoke $r7.<org.expressme.love.ui.LoveActivity$3: void onClick(android.view.View)>(null);
+
+     label13:
+        if $i0 == 17 goto label10;
+
+     label14:
+        if $i0 == 18 goto label09;
+
+        if $i0 == 19 goto label15;
+
+        if $i0 == 20 goto label09;
+
+     label15:
+        if $i0 == 22 goto label24;
+
+        $r8 = new org.expressme.love.ui.MainMenu;
+
+        specialinvoke $r8.<org.expressme.love.ui.MainMenu: void <init>()>();
+
+        if $i0 == 23 goto label24;
+
+        virtualinvoke $r8.<org.expressme.love.ui.MainMenu: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 25 goto label23;
+
+     label17:
+        $r9 = new org.expressme.love.ui.MainMenu$4;
+
+        specialinvoke $r9.<org.expressme.love.ui.MainMenu$4: void <init>(org.expressme.love.ui.MainMenu)>($r8);
+
+        if $i0 == 26 goto label18;
+
+        virtualinvoke $r9.<org.expressme.love.ui.MainMenu$4: void onClick(android.view.View)>(null);
+
+     label18:
+        $r10 = new org.expressme.love.ui.MainMenu$3;
+
+        specialinvoke $r10.<org.expressme.love.ui.MainMenu$3: void <init>(org.expressme.love.ui.MainMenu)>($r8);
+
+        if $i0 == 27 goto label19;
+
+        virtualinvoke $r10.<org.expressme.love.ui.MainMenu$3: void onClick(android.view.View)>(null);
+
+     label19:
+        $r11 = new org.expressme.love.ui.MainMenu$5;
+
+        specialinvoke $r11.<org.expressme.love.ui.MainMenu$5: void <init>(org.expressme.love.ui.MainMenu)>($r8);
+
+        if $i0 == 28 goto label20;
+
+        virtualinvoke $r11.<org.expressme.love.ui.MainMenu$5: void onClick(android.view.View)>(null);
+
+     label20:
+        $r12 = new org.expressme.love.ui.MainMenu$2;
+
+        specialinvoke $r12.<org.expressme.love.ui.MainMenu$2: void <init>(org.expressme.love.ui.MainMenu)>($r8);
+
+        if $i0 == 29 goto label21;
+
+        virtualinvoke $r12.<org.expressme.love.ui.MainMenu$2: void onClick(android.view.View)>(null);
+
+     label21:
+        if $i0 == 30 goto label22;
+
+        staticinvoke <org.expressme.love.ui.MainMenu: void <clinit>()>();
+
+     label22:
+        if $i0 == 31 goto label17;
+
+     label23:
+        if $i0 == 32 goto label16;
+
+        if $i0 == 33 goto label24;
+
+        if $i0 == 34 goto label16;
+
+     label24:
+        if $i0 == 36 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Found 14 callback methods for 4 components
+Found {res/layout/love_activity.xml=[-1 - android.widget.LinearLayout, 2131230722 - android.widget.TextView, -1 - android.widget.TextView, -1 - android.widget.TableLayout, 2131230725 - android.widget.TextView, 2131230720 - android.widget.ImageView, -1 - android.view.View, 2131230724 - android.widget.TextView, 2131230721 - android.widget.ImageView, -1 - android.widget.TableRow, 2131230723 - android.widget.ImageView], res/layout/love_dialog_text_entry.xml=[-1 - android.widget.LinearLayout, 2131230729 - android.widget.Button, 2131230728 - android.widget.Button, 2131230726 - android.widget.TextView, 2131230727 - android.widget.EditText], res/layout/main.xml=[2131230736 - android.widget.Button, 2131230734 - android.widget.Button, 2131230735 - android.widget.Button, 2131230731 - android.widget.ImageView, 2131230733 - android.widget.Button, 2131230730 - android.widget.LinearLayout, 2131230732 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 14 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/1c29b3010a2e50bca0c5bb45963a74d135addfa206e29785c564fc0a61f1a183.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        org.expressme.love.ui.InstallService $r1;
+        android.os.IBinder $r2;
+        org.expressme.love.ui.PackageReceiver $r3;
+        org.expressme.love.ui.LoveActivity $r4;
+        org.expressme.love.ui.LoveActivity$2 $r5;
+        android.app.Dialog $r6;
+        org.expressme.love.ui.LoveActivity$3 $r7;
+        org.expressme.love.ui.MainMenu $r8;
+        org.expressme.love.ui.MainMenu$2 $r9;
+        org.expressme.love.ui.MainMenu$4 $r10;
+        org.expressme.love.ui.MainMenu$3 $r11;
+        org.expressme.love.ui.MainMenu$5 $r12;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new org.expressme.love.ui.InstallService;
+
+        specialinvoke $r1.<org.expressme.love.ui.InstallService: void <init>()>();
+
+        virtualinvoke $r1.<org.expressme.love.ui.InstallService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<org.expressme.love.ui.InstallService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<org.expressme.love.ui.InstallService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new org.expressme.love.ui.PackageReceiver;
+
+        specialinvoke $r3.<org.expressme.love.ui.PackageReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<org.expressme.love.ui.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r4 = new org.expressme.love.ui.LoveActivity;
+
+        specialinvoke $r4.<org.expressme.love.ui.LoveActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r4.<org.expressme.love.ui.LoveActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 13 goto label14;
+
+     label10:
+        $r5 = new org.expressme.love.ui.LoveActivity$2;
+
+        specialinvoke $r5.<org.expressme.love.ui.LoveActivity$2: void <init>(org.expressme.love.ui.LoveActivity)>($r4);
+
+        if $i0 == 14 goto label11;
+
+        virtualinvoke $r5.<org.expressme.love.ui.LoveActivity$2: void onClick(android.view.View)>(null);
+
+     label11:
+        if $i0 == 15 goto label12;
+
+        $r6 = virtualinvoke $r4.<org.expressme.love.ui.LoveActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label12:
+        $r7 = new org.expressme.love.ui.LoveActivity$3;
+
+        specialinvoke $r7.<org.expressme.love.ui.LoveActivity$3: void <init>(org.expressme.love.ui.LoveActivity)>($r4);
+
+        if $i0 == 16 goto label13;
+
+        virtualinvoke $r7.<org.expressme.love.ui.LoveActivity$3: void onClick(android.view.View)>(null);
+
+     label13:
+        if $i0 == 17 goto label10;
+
+     label14:
+        if $i0 == 18 goto label09;
+
+        if $i0 == 19 goto label15;
+
+        if $i0 == 20 goto label09;
+
+     label15:
+        if $i0 == 22 goto label24;
+
+        $r8 = new org.expressme.love.ui.MainMenu;
+
+        specialinvoke $r8.<org.expressme.love.ui.MainMenu: void <init>()>();
+
+        if $i0 == 23 goto label24;
+
+        virtualinvoke $r8.<org.expressme.love.ui.MainMenu: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 25 goto label23;
+
+     label17:
+        $r9 = new org.expressme.love.ui.MainMenu$2;
+
+        specialinvoke $r9.<org.expressme.love.ui.MainMenu$2: void <init>(org.expressme.love.ui.MainMenu)>($r8);
+
+        if $i0 == 26 goto label18;
+
+        virtualinvoke $r9.<org.expressme.love.ui.MainMenu$2: void onClick(android.view.View)>(null);
+
+     label18:
+        $r10 = new org.expressme.love.ui.MainMenu$4;
+
+        specialinvoke $r10.<org.expressme.love.ui.MainMenu$4: void <init>(org.expressme.love.ui.MainMenu)>($r8);
+
+        if $i0 == 27 goto label19;
+
+        virtualinvoke $r10.<org.expressme.love.ui.MainMenu$4: void onClick(android.view.View)>(null);
+
+     label19:
+        $r11 = new org.expressme.love.ui.MainMenu$3;
+
+        specialinvoke $r11.<org.expressme.love.ui.MainMenu$3: void <init>(org.expressme.love.ui.MainMenu)>($r8);
+
+        if $i0 == 28 goto label20;
+
+        virtualinvoke $r11.<org.expressme.love.ui.MainMenu$3: void onClick(android.view.View)>(null);
+
+     label20:
+        $r12 = new org.expressme.love.ui.MainMenu$5;
+
+        specialinvoke $r12.<org.expressme.love.ui.MainMenu$5: void <init>(org.expressme.love.ui.MainMenu)>($r8);
+
+        if $i0 == 29 goto label21;
+
+        virtualinvoke $r12.<org.expressme.love.ui.MainMenu$5: void onClick(android.view.View)>(null);
+
+     label21:
+        if $i0 == 30 goto label22;
+
+        staticinvoke <org.expressme.love.ui.MainMenu: void <clinit>()>();
+
+     label22:
+        if $i0 == 31 goto label17;
+
+     label23:
+        if $i0 == 32 goto label16;
+
+        if $i0 == 33 goto label24;
+
+        if $i0 == 34 goto label16;
+
+     label24:
+        if $i0 == 36 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.551828861 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.066940496 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1049 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 33 sources and 134 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 292
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 647
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 4766 forward and 403 backward edges solved, processing 15 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 15 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.007625536 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("IContentWrapper", $r2) in method <org.expressme.love.logic.LogichandlerImpl: void <init>(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r1, null, null, null) in method <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsTotalCount(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MessagerWrapperImpl", $r3) in method <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsTotalCount(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r1, null, null, null) in method <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsTotalCount(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4) in method <org.expressme.love.ui.PackageReceiver: void StartMainservice(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <org.expressme.love.ui.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ApnControl", $r6) in method <org.expressme.love.ui.ApnControl: boolean getDefaultAPN()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <org.expressme.love.ui.ApnControl: boolean getDefaultAPN()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MessagerWrapperImpl", $r4) in method <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsCount(java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(1) in method <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsCount(java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("CalllogWrapperImpl", $r3) in method <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getCallLogCount_adress(long,long,int,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, null, $r3, null, "date DESC") in method <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getCallLogCount_adress(long,long,int,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r10) in method <org.expressme.love.ui.MyInformation: java.lang.String getCid()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r17.<android.telephony.gsm.GsmCellLocation: int getCid()>() in method <org.expressme.love.ui.MyInformation: java.lang.String getCid()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("IContentWrapper", $r2) in method <org.expressme.love.logic.LogichandlerImpl: void <init>(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, null, "date DESC") in method <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getTotalCallLogCount()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, $r2, null, "date DESC") in method <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getCallLogCount_adress(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("CalllogWrapperImpl", $r6) in method <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getTotalCallLogCount()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, null, "date DESC") in method <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getTotalCallLogCount()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("CalllogWrapperImpl", $r2) in method <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getCallLogCount_adress(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, $r2, null, "date DESC") in method <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getCallLogCount_adress(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PackageReceiver", $r3) in method <org.expressme.love.ui.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <org.expressme.love.ui.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MessagerWrapperImpl", $r3) in method <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsTotalCount(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>(1) in method <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsTotalCount(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r2) in method <org.expressme.love.ui.MyInformation: java.lang.String getIMSI()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <org.expressme.love.ui.MyInformation: java.lang.String getIMSI()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r2) in method <org.expressme.love.ui.MyInformation: java.lang.String getIMEI()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <org.expressme.love.ui.MyInformation: java.lang.String getIMEI()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r10) in method <org.expressme.love.ui.MyInformation: java.lang.String getLac()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r17.<android.telephony.gsm.GsmCellLocation: int getLac()>() in method <org.expressme.love.ui.MyInformation: java.lang.String getLac()>
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("IContentWrapper", $r2), from the following sources:
+	- $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r1, null, null, null) (in <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsTotalCount(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MessagerWrapperImpl", $r3), from the following sources:
+	- $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r1, null, null, null) (in <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsTotalCount(int)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <org.expressme.love.ui.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ApnControl", $r6), from the following sources:
+	- $r9 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <org.expressme.love.ui.ApnControl: boolean getDefaultAPN()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MessagerWrapperImpl", $r4), from the following sources:
+	- $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(1) (in <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsCount(java.lang.String,int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("CalllogWrapperImpl", $r3), from the following sources:
+	- $r7 = virtualinvoke $r5.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, null, $r3, null, "date DESC") (in <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getCallLogCount_adress(long,long,int,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r10), from the following sources:
+	- $i0 = virtualinvoke $r17.<android.telephony.gsm.GsmCellLocation: int getCid()>() (in <org.expressme.love.ui.MyInformation: java.lang.String getCid()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("IContentWrapper", $r2), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, null, "date DESC") (in <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getTotalCallLogCount()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, $r2, null, "date DESC") (in <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getCallLogCount_adress(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("CalllogWrapperImpl", $r6), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, null, "date DESC") (in <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getTotalCallLogCount()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("CalllogWrapperImpl", $r2), from the following sources:
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, $r2, null, "date DESC") (in <org.expressme.love.contentwrapper.calllog.CalllogWrapperImpl: int getCallLogCount_adress(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PackageReceiver", $r3), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <org.expressme.love.ui.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MessagerWrapperImpl", $r3), from the following sources:
+	- $r3 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>(1) (in <org.expressme.love.contentwrapper.messager.MessagerWrapperImpl: int getSmsTotalCount(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <org.expressme.love.ui.MyInformation: java.lang.String getIMSI()>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <org.expressme.love.ui.MyInformation: java.lang.String getIMEI()>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r10), from the following sources:
+	- $i0 = virtualinvoke $r17.<android.telephony.gsm.GsmCellLocation: int getLac()>() (in <org.expressme.love.ui.MyInformation: java.lang.String getLac()>)
+Maximum memory consumption: 96.737176 MB
+Analysis has run for 4.570008055 seconds

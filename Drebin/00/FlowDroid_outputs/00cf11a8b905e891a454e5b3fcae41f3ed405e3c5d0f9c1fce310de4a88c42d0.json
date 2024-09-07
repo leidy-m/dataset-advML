@@ -1,0 +1,799 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.018951475 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.admob.android.ads.AdView is a phantom class!
+Warning: com.atools.battery.UpdateCheck is a phantom class!
+Warning: com.qwapi.adclient.android.data.Ad is a phantom class!
+Warning: com.qwapi.adclient.android.data.Status is a phantom class!
+Warning: com.qwapi.adclient.android.requestparams.AdRequestParams is a phantom class!
+Warning: com.qwapi.adclient.android.view.AdEventsListener is a phantom class!
+Warning: com.qwapi.adclient.android.view.QWAdView is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        ru.atools.sytrant.Sytrant $r1;
+        ru.atools.sytrant.SyncService $r2;
+        android.os.IBinder $r3, $r6;
+        ru.atools.sytrant.About $r4;
+        ru.atools.sytrant.UpdateCheck $r5;
+        ru.atools.sytrant.Settings $r7;
+        ru.atools.sytrant.BootUpReceiver $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new ru.atools.sytrant.Sytrant;
+
+        specialinvoke $r1.<ru.atools.sytrant.Sytrant: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onResume()>();
+
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label09;
+
+        $r2 = new ru.atools.sytrant.SyncService;
+
+        specialinvoke $r2.<ru.atools.sytrant.SyncService: void <init>()>();
+
+        virtualinvoke $r2.<ru.atools.sytrant.SyncService: void onCreate()>();
+
+     label05:
+        if $i0 == 8 goto label06;
+
+        if $i0 == 9 goto label05;
+
+     label06:
+        $r3 = virtualinvoke $r2.<ru.atools.sytrant.SyncService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label07:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        virtualinvoke $r2.<ru.atools.sytrant.SyncService: void onDestroy()>();
+
+     label09:
+        if $i0 == 13 goto label11;
+
+        $r4 = new ru.atools.sytrant.About;
+
+        specialinvoke $r4.<ru.atools.sytrant.About: void <init>()>();
+
+        if $i0 == 14 goto label11;
+
+        virtualinvoke $r4.<ru.atools.sytrant.About: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 17 goto label11;
+
+        if $i0 == 18 goto label10;
+
+     label11:
+        if $i0 == 20 goto label16;
+
+        $r5 = new ru.atools.sytrant.UpdateCheck;
+
+        specialinvoke $r5.<ru.atools.sytrant.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: void onCreate()>();
+
+     label12:
+        if $i0 == 21 goto label13;
+
+        if $i0 == 22 goto label12;
+
+     label13:
+        $r6 = virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 24 goto label15;
+
+        if $i0 == 25 goto label14;
+
+     label15:
+        virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: void onDestroy()>();
+
+     label16:
+        if $i0 == 26 goto label18;
+
+        $r7 = new ru.atools.sytrant.Settings;
+
+        specialinvoke $r7.<ru.atools.sytrant.Settings: void <init>()>();
+
+        if $i0 == 27 goto label18;
+
+        virtualinvoke $r7.<ru.atools.sytrant.Settings: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 30 goto label18;
+
+        if $i0 == 31 goto label17;
+
+     label18:
+        if $i0 == 33 goto label20;
+
+        $r8 = new ru.atools.sytrant.BootUpReceiver;
+
+        specialinvoke $r8.<ru.atools.sytrant.BootUpReceiver: void <init>()>();
+
+        if $i0 == 34 goto label20;
+
+     label19:
+        virtualinvoke $r8.<ru.atools.sytrant.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 36 goto label19;
+
+     label20:
+        if $i0 == 37 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Callback analysis done.
+Warning: ScrollView is a phantom class!
+Warning: ru.atools.sytrant.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: ru.atools.sytrant.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: ru.atools.sytrant.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/about.xml
+Warning: FrameLayout is a phantom class!
+Warning: ru.atools.sytrant.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: ru.atools.sytrant.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Warning: EditText is a phantom class!
+Warning: ru.atools.sytrant.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found unrecognized XML attribute:  hint
+Found unrecognized XML attribute:  hint
+Warning: CheckBox is a phantom class!
+Warning: ru.atools.sytrant.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Warning: TimePicker is a phantom class!
+Warning: ru.atools.sytrant.TimePicker is a phantom class!
+Warning: android.view.TimePicker is a phantom class!
+Found 3 layout controls in file res/layout/settings.xml
+Found 4 layout controls in file res/layout-small/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.admob.android.ads.AdView is a phantom class!
+Warning: com.atools.battery.UpdateCheck is a phantom class!
+Warning: com.qwapi.adclient.android.data.Ad is a phantom class!
+Warning: com.qwapi.adclient.android.data.Status is a phantom class!
+Warning: com.qwapi.adclient.android.requestparams.AdRequestParams is a phantom class!
+Warning: com.qwapi.adclient.android.view.AdEventsListener is a phantom class!
+Warning: com.qwapi.adclient.android.view.QWAdView is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CheckBox
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.TimePicker
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        ru.atools.sytrant.Sytrant $r1;
+        boolean $z0, $z1, $z2, $z3;
+        ru.atools.sytrant.SyncService $r2;
+        android.os.IBinder $r3, $r6;
+        ru.atools.sytrant.About $r4;
+        ru.atools.sytrant.UpdateCheck $r5;
+        ru.atools.sytrant.Settings $r7;
+        ru.atools.sytrant.Settings$1 $r8;
+        ru.atools.sytrant.Settings$3 $r9;
+        ru.atools.sytrant.Settings$2 $r10;
+        ru.atools.sytrant.BootUpReceiver $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label11;
+
+        $r1 = new ru.atools.sytrant.Sytrant;
+
+        specialinvoke $r1.<ru.atools.sytrant.Sytrant: void <init>()>();
+
+        if $i0 == 1 goto label11;
+
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onResume()>();
+
+        if $i0 == 3 goto label09;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r1.<ru.atools.sytrant.Sytrant: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z1 = virtualinvoke $r1.<ru.atools.sytrant.Sytrant: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label06:
+        if $i0 == 7 goto label07;
+
+        $z2 = virtualinvoke $r1.<ru.atools.sytrant.Sytrant: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label07:
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onClick(android.view.View)>(null);
+
+     label08:
+        if $i0 == 9 goto label03;
+
+     label09:
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onPause()>();
+
+        if $i0 == 10 goto label02;
+
+        if $i0 == 11 goto label10;
+
+        if $i0 == 12 goto label02;
+
+     label10:
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onDestroy()>();
+
+     label11:
+        if $i0 == 14 goto label16;
+
+        $r2 = new ru.atools.sytrant.SyncService;
+
+        specialinvoke $r2.<ru.atools.sytrant.SyncService: void <init>()>();
+
+        virtualinvoke $r2.<ru.atools.sytrant.SyncService: void onCreate()>();
+
+     label12:
+        if $i0 == 15 goto label13;
+
+        if $i0 == 16 goto label12;
+
+     label13:
+        $r3 = virtualinvoke $r2.<ru.atools.sytrant.SyncService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 18 goto label15;
+
+        if $i0 == 19 goto label14;
+
+     label15:
+        virtualinvoke $r2.<ru.atools.sytrant.SyncService: void onDestroy()>();
+
+     label16:
+        if $i0 == 20 goto label18;
+
+        $r4 = new ru.atools.sytrant.About;
+
+        specialinvoke $r4.<ru.atools.sytrant.About: void <init>()>();
+
+        if $i0 == 21 goto label18;
+
+        virtualinvoke $r4.<ru.atools.sytrant.About: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label18;
+
+        if $i0 == 26 goto label17;
+
+     label18:
+        if $i0 == 28 goto label23;
+
+        $r5 = new ru.atools.sytrant.UpdateCheck;
+
+        specialinvoke $r5.<ru.atools.sytrant.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: void onCreate()>();
+
+     label19:
+        if $i0 == 29 goto label20;
+
+        if $i0 == 30 goto label19;
+
+     label20:
+        $r6 = virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 32 goto label22;
+
+        if $i0 == 33 goto label21;
+
+     label22:
+        virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: void onDestroy()>();
+
+     label23:
+        if $i0 == 34 goto label32;
+
+        $r7 = new ru.atools.sytrant.Settings;
+
+        specialinvoke $r7.<ru.atools.sytrant.Settings: void <init>()>();
+
+        if $i0 == 35 goto label32;
+
+        virtualinvoke $r7.<ru.atools.sytrant.Settings: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 37 goto label31;
+
+     label25:
+        $r8 = new ru.atools.sytrant.Settings$1;
+
+        specialinvoke $r8.<ru.atools.sytrant.Settings$1: void <init>(ru.atools.sytrant.Settings,android.widget.CheckBox,android.widget.TimePicker)>($r7, null, null);
+
+        if $i0 == 38 goto label26;
+
+        virtualinvoke $r8.<ru.atools.sytrant.Settings$1: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label26:
+        $r9 = new ru.atools.sytrant.Settings$3;
+
+        specialinvoke $r9.<ru.atools.sytrant.Settings$3: void <init>(ru.atools.sytrant.Settings)>($r7);
+
+        if $i0 == 39 goto label27;
+
+        virtualinvoke $r9.<ru.atools.sytrant.Settings$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r10 = new ru.atools.sytrant.Settings$2;
+
+        specialinvoke $r10.<ru.atools.sytrant.Settings$2: void <init>(ru.atools.sytrant.Settings)>($r7);
+
+        if $i0 == 40 goto label28;
+
+        virtualinvoke $r10.<ru.atools.sytrant.Settings$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        if $i0 == 41 goto label29;
+
+        virtualinvoke $r7.<ru.atools.sytrant.Settings: void onClick(android.view.View)>(null);
+
+     label29:
+        if $i0 == 42 goto label30;
+
+        $z3 = virtualinvoke $r7.<ru.atools.sytrant.Settings: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label30:
+        if $i0 == 43 goto label25;
+
+     label31:
+        if $i0 == 44 goto label24;
+
+        if $i0 == 45 goto label32;
+
+        if $i0 == 46 goto label24;
+
+     label32:
+        if $i0 == 48 goto label34;
+
+        $r11 = new ru.atools.sytrant.BootUpReceiver;
+
+        specialinvoke $r11.<ru.atools.sytrant.BootUpReceiver: void <init>()>();
+
+        if $i0 == 49 goto label34;
+
+     label33:
+        virtualinvoke $r11.<ru.atools.sytrant.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 51 goto label33;
+
+     label34:
+        if $i0 == 52 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 23 callback methods for 6 components
+Found {res/layout/about.xml=[2131099648 - android.widget.ScrollView, 2131099649 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/main.xml=[2131099654 - android.widget.Button, 2131099650 - android.widget.TextView, -1 - android.widget.TextView, 2131099652 - android.widget.ScrollView, 2131099653 - android.widget.TextView, -1 - android.widget.FrameLayout, 2131099651 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/settings.xml=[2131099657 - android.widget.ScrollView, 2131099658 - android.widget.EditText, 2131099664 - android.widget.TimePicker, 2131099649 - android.widget.TextView, 2131099660 - android.widget.EditText, 2131099669 - android.widget.TimePicker, 2131099663 - android.widget.CheckBox, 2131099662 - android.widget.CheckBox, -1 - android.widget.LinearLayout, 2131099666 - android.widget.LinearLayout, 2131099659 - android.widget.TextView, 2131099668 - android.widget.CheckBox, 2131099661 - android.widget.TextView, 2131099667 - android.widget.CheckBox, 2131099665 - android.widget.TextView, 2131099670 - android.widget.Button], res/layout-small/main.xml=[2131099654 - android.widget.Button, 2131099650 - android.widget.TextView, -1 - android.widget.TextView, 2131099652 - android.widget.ScrollView, 2131099653 - android.widget.TextView, -1 - android.widget.FrameLayout, 2131099651 - android.widget.TextView, -1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 23 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/00cf11a8b905e891a454e5b3fcae41f3ed405e3c5d0f9c1fce310de4a88c42d0.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: com.admob.android.ads.AdView is a phantom class!
+Warning: com.atools.battery.UpdateCheck is a phantom class!
+Warning: com.qwapi.adclient.android.data.Ad is a phantom class!
+Warning: com.qwapi.adclient.android.data.Status is a phantom class!
+Warning: com.qwapi.adclient.android.requestparams.AdRequestParams is a phantom class!
+Warning: com.qwapi.adclient.android.view.AdEventsListener is a phantom class!
+Warning: com.qwapi.adclient.android.view.QWAdView is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CheckBox
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.TimePicker
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        ru.atools.sytrant.Sytrant $r1;
+        boolean $z0, $z1, $z2, $z3;
+        ru.atools.sytrant.SyncService $r2;
+        android.os.IBinder $r3, $r6;
+        ru.atools.sytrant.About $r4;
+        ru.atools.sytrant.UpdateCheck $r5;
+        ru.atools.sytrant.Settings $r7;
+        ru.atools.sytrant.Settings$3 $r8;
+        ru.atools.sytrant.Settings$1 $r9;
+        ru.atools.sytrant.Settings$2 $r10;
+        ru.atools.sytrant.BootUpReceiver $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label11;
+
+        $r1 = new ru.atools.sytrant.Sytrant;
+
+        specialinvoke $r1.<ru.atools.sytrant.Sytrant: void <init>()>();
+
+        if $i0 == 1 goto label11;
+
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onResume()>();
+
+        if $i0 == 3 goto label09;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onClick(android.view.View)>(null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z0 = virtualinvoke $r1.<ru.atools.sytrant.Sytrant: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label06:
+        if $i0 == 7 goto label07;
+
+        $z1 = virtualinvoke $r1.<ru.atools.sytrant.Sytrant: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label07:
+        if $i0 == 8 goto label08;
+
+        $z2 = virtualinvoke $r1.<ru.atools.sytrant.Sytrant: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label08:
+        if $i0 == 9 goto label03;
+
+     label09:
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onPause()>();
+
+        if $i0 == 10 goto label02;
+
+        if $i0 == 11 goto label10;
+
+        if $i0 == 12 goto label02;
+
+     label10:
+        virtualinvoke $r1.<ru.atools.sytrant.Sytrant: void onDestroy()>();
+
+     label11:
+        if $i0 == 14 goto label16;
+
+        $r2 = new ru.atools.sytrant.SyncService;
+
+        specialinvoke $r2.<ru.atools.sytrant.SyncService: void <init>()>();
+
+        virtualinvoke $r2.<ru.atools.sytrant.SyncService: void onCreate()>();
+
+     label12:
+        if $i0 == 15 goto label13;
+
+        if $i0 == 16 goto label12;
+
+     label13:
+        $r3 = virtualinvoke $r2.<ru.atools.sytrant.SyncService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 18 goto label15;
+
+        if $i0 == 19 goto label14;
+
+     label15:
+        virtualinvoke $r2.<ru.atools.sytrant.SyncService: void onDestroy()>();
+
+     label16:
+        if $i0 == 20 goto label18;
+
+        $r4 = new ru.atools.sytrant.About;
+
+        specialinvoke $r4.<ru.atools.sytrant.About: void <init>()>();
+
+        if $i0 == 21 goto label18;
+
+        virtualinvoke $r4.<ru.atools.sytrant.About: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label18;
+
+        if $i0 == 26 goto label17;
+
+     label18:
+        if $i0 == 28 goto label23;
+
+        $r5 = new ru.atools.sytrant.UpdateCheck;
+
+        specialinvoke $r5.<ru.atools.sytrant.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: void onCreate()>();
+
+     label19:
+        if $i0 == 29 goto label20;
+
+        if $i0 == 30 goto label19;
+
+     label20:
+        $r6 = virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 32 goto label22;
+
+        if $i0 == 33 goto label21;
+
+     label22:
+        virtualinvoke $r5.<ru.atools.sytrant.UpdateCheck: void onDestroy()>();
+
+     label23:
+        if $i0 == 34 goto label32;
+
+        $r7 = new ru.atools.sytrant.Settings;
+
+        specialinvoke $r7.<ru.atools.sytrant.Settings: void <init>()>();
+
+        if $i0 == 35 goto label32;
+
+        virtualinvoke $r7.<ru.atools.sytrant.Settings: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 37 goto label31;
+
+     label25:
+        if $i0 == 38 goto label26;
+
+        $z3 = virtualinvoke $r7.<ru.atools.sytrant.Settings: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label26:
+        if $i0 == 39 goto label27;
+
+        virtualinvoke $r7.<ru.atools.sytrant.Settings: void onClick(android.view.View)>(null);
+
+     label27:
+        $r8 = new ru.atools.sytrant.Settings$3;
+
+        specialinvoke $r8.<ru.atools.sytrant.Settings$3: void <init>(ru.atools.sytrant.Settings)>($r7);
+
+        if $i0 == 40 goto label28;
+
+        virtualinvoke $r8.<ru.atools.sytrant.Settings$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r9 = new ru.atools.sytrant.Settings$1;
+
+        specialinvoke $r9.<ru.atools.sytrant.Settings$1: void <init>(ru.atools.sytrant.Settings,android.widget.CheckBox,android.widget.TimePicker)>($r7, null, null);
+
+        if $i0 == 41 goto label29;
+
+        virtualinvoke $r9.<ru.atools.sytrant.Settings$1: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label29:
+        $r10 = new ru.atools.sytrant.Settings$2;
+
+        specialinvoke $r10.<ru.atools.sytrant.Settings$2: void <init>(ru.atools.sytrant.Settings)>($r7);
+
+        if $i0 == 42 goto label30;
+
+        virtualinvoke $r10.<ru.atools.sytrant.Settings$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label30:
+        if $i0 == 43 goto label25;
+
+     label31:
+        if $i0 == 44 goto label24;
+
+        if $i0 == 45 goto label32;
+
+        if $i0 == 46 goto label24;
+
+     label32:
+        if $i0 == 48 goto label34;
+
+        $r11 = new ru.atools.sytrant.BootUpReceiver;
+
+        specialinvoke $r11.<ru.atools.sytrant.BootUpReceiver: void <init>()>();
+
+        if $i0 == 49 goto label34;
+
+     label33:
+        virtualinvoke $r11.<ru.atools.sytrant.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 51 goto label33;
+
+     label34:
+        if $i0 == 52 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.474275603 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.049180348 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1452 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 57 sources and 65 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 10410
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 23886
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 81613 forward and 20956 backward edges solved, processing 13 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 13 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.008675093 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("idv", $r6) in method <com.atools.battery.n: boolean b()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.atools.battery.j: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.atools.battery.j: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.atools.battery.j: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[identifier]", $r6) in method <com.atools.battery.n: boolean b()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.atools.battery.j: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <ru.atools.sytrant.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <ru.atools.sytrant.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[name]", $r6) in method <com.atools.battery.n: boolean b()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.atools.battery.j: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r10 = interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4) in method <com.atools.battery.n: boolean b()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.atools.battery.j: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.atools.battery.j: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.atools.battery.j: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.atools.battery.j: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r12 = interfaceinvoke $r1.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3) in method <com.atools.battery.n: void j()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.atools.battery.j: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r4) in method <com.atools.battery.n: void j()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.atools.battery.j: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r6) in method <com.atools.battery.n: boolean b()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.atools.battery.j: java.lang.String d()>
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("idv", $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.atools.battery.j: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.atools.battery.j: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.atools.battery.j: void h()>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[identifier]", $r6), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.atools.battery.j: java.lang.String d()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <ru.atools.sytrant.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[name]", $r6), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.atools.battery.j: java.lang.String d()>)
+Found a flow to sink $r10 = interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.atools.battery.j: void h()>)
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.atools.battery.j: java.lang.String d()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.atools.battery.j: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.atools.battery.j: void h()>)
+Found a flow to sink $r12 = interfaceinvoke $r1.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.atools.battery.j: java.lang.String d()>)
+Found a flow to sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r4), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.atools.battery.j: java.lang.String d()>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r6), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.atools.battery.j: java.lang.String d()>)
+Maximum memory consumption: 233.300696 MB
+Analysis has run for 5.272176852 seconds

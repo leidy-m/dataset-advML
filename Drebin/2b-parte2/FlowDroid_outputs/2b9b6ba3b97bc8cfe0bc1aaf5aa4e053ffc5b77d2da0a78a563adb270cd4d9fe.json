@@ -1,0 +1,586 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.010528429 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        yhj.hffd.HtmlActivity $r1;
+        yhj.hffd.BetaReceiver $r2;
+        egb45.g4gYY.Y6Cg03N $r3;
+        yhj.hffd.BetaService $r4;
+        android.os.IBinder $r5;
+        egb45.g4gYY.BootReceiver $r6;
+        yhj.hffd.BetaWebA $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new yhj.hffd.HtmlActivity;
+
+        specialinvoke $r1.<yhj.hffd.HtmlActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<yhj.hffd.HtmlActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label05;
+
+        $r2 = new yhj.hffd.BetaReceiver;
+
+        specialinvoke $r2.<yhj.hffd.BetaReceiver: void <init>()>();
+
+        if $i0 == 8 goto label05;
+
+     label04:
+        virtualinvoke $r2.<yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 10 goto label04;
+
+     label05:
+        if $i0 == 11 goto label07;
+
+        $r3 = new egb45.g4gYY.Y6Cg03N;
+
+        specialinvoke $r3.<egb45.g4gYY.Y6Cg03N: void <init>()>();
+
+        if $i0 == 12 goto label07;
+
+        virtualinvoke $r3.<egb45.g4gYY.Y6Cg03N: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        if $i0 == 15 goto label07;
+
+        if $i0 == 16 goto label06;
+
+     label07:
+        if $i0 == 18 goto label12;
+
+        $r4 = new yhj.hffd.BetaService;
+
+        specialinvoke $r4.<yhj.hffd.BetaService: void <init>()>();
+
+        virtualinvoke $r4.<yhj.hffd.BetaService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label08:
+        if $i0 == 19 goto label09;
+
+        if $i0 == 20 goto label08;
+
+     label09:
+        $r5 = virtualinvoke $r4.<yhj.hffd.BetaService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label10:
+        if $i0 == 22 goto label11;
+
+        if $i0 == 23 goto label10;
+
+     label11:
+        virtualinvoke $r4.<yhj.hffd.BetaService: void onDestroy()>();
+
+     label12:
+        if $i0 == 24 goto label14;
+
+        $r6 = new egb45.g4gYY.BootReceiver;
+
+        specialinvoke $r6.<egb45.g4gYY.BootReceiver: void <init>()>();
+
+        if $i0 == 25 goto label14;
+
+     label13:
+        virtualinvoke $r6.<egb45.g4gYY.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 27 goto label13;
+
+     label14:
+        if $i0 == 28 goto label16;
+
+        $r7 = new yhj.hffd.BetaWebA;
+
+        specialinvoke $r7.<yhj.hffd.BetaWebA: void <init>()>();
+
+        if $i0 == 29 goto label16;
+
+        virtualinvoke $r7.<yhj.hffd.BetaWebA: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 32 goto label16;
+
+        if $i0 == 33 goto label15;
+
+     label16:
+        if $i0 == 35 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.3 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: egb45.g4gYY.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: egb45.g4gYY.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: egb45.g4gYY.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: egb45.g4gYY.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/end.xml
+Found 2 layout controls in file res/layout/license.xml
+Warning: ImageView is a phantom class!
+Warning: egb45.g4gYY.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: ProgressBar is a phantom class!
+Warning: egb45.g4gYY.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 3 layout controls in file res/layout/load.xml
+Found 4 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        yhj.hffd.HtmlActivity $r1;
+        yhj.hffd.BetaReceiver $r2;
+        egb45.g4gYY.Y6Cg03N $r3;
+        yhj.hffd.BetaService $r4;
+        android.os.IBinder $r5;
+        egb45.g4gYY.BootReceiver $r6;
+        yhj.hffd.BetaWebA $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new yhj.hffd.HtmlActivity;
+
+        specialinvoke $r1.<yhj.hffd.HtmlActivity: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<yhj.hffd.HtmlActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <yhj.hffd.HtmlActivity: void <clinit>()>();
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label08;
+
+        $r2 = new yhj.hffd.BetaReceiver;
+
+        specialinvoke $r2.<yhj.hffd.BetaReceiver: void <init>()>();
+
+        if $i0 == 11 goto label08;
+
+     label07:
+        virtualinvoke $r2.<yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label07;
+
+     label08:
+        if $i0 == 14 goto label13;
+
+        $r3 = new egb45.g4gYY.Y6Cg03N;
+
+        specialinvoke $r3.<egb45.g4gYY.Y6Cg03N: void <init>()>();
+
+        if $i0 == 15 goto label13;
+
+        virtualinvoke $r3.<egb45.g4gYY.Y6Cg03N: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 17 goto label12;
+
+     label10:
+        if $i0 == 18 goto label11;
+
+        staticinvoke <egb45.g4gYY.Y6Cg03N: void <clinit>()>();
+
+     label11:
+        if $i0 == 19 goto label10;
+
+     label12:
+        if $i0 == 20 goto label09;
+
+        if $i0 == 21 goto label13;
+
+        if $i0 == 22 goto label09;
+
+     label13:
+        if $i0 == 24 goto label18;
+
+        $r4 = new yhj.hffd.BetaService;
+
+        specialinvoke $r4.<yhj.hffd.BetaService: void <init>()>();
+
+        virtualinvoke $r4.<yhj.hffd.BetaService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label14:
+        if $i0 == 25 goto label15;
+
+        if $i0 == 26 goto label14;
+
+     label15:
+        $r5 = virtualinvoke $r4.<yhj.hffd.BetaService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label16:
+        if $i0 == 28 goto label17;
+
+        if $i0 == 29 goto label16;
+
+     label17:
+        virtualinvoke $r4.<yhj.hffd.BetaService: void onDestroy()>();
+
+     label18:
+        if $i0 == 30 goto label20;
+
+        $r6 = new egb45.g4gYY.BootReceiver;
+
+        specialinvoke $r6.<egb45.g4gYY.BootReceiver: void <init>()>();
+
+        if $i0 == 31 goto label20;
+
+     label19:
+        virtualinvoke $r6.<egb45.g4gYY.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 33 goto label19;
+
+     label20:
+        if $i0 == 34 goto label25;
+
+        $r7 = new yhj.hffd.BetaWebA;
+
+        specialinvoke $r7.<yhj.hffd.BetaWebA: void <init>()>();
+
+        if $i0 == 35 goto label25;
+
+        virtualinvoke $r7.<yhj.hffd.BetaWebA: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 37 goto label24;
+
+     label22:
+        if $i0 == 38 goto label23;
+
+        staticinvoke <yhj.hffd.BetaWebA: void <clinit>()>();
+
+     label23:
+        if $i0 == 39 goto label22;
+
+     label24:
+        if $i0 == 40 goto label21;
+
+        if $i0 == 41 goto label25;
+
+        if $i0 == 42 goto label21;
+
+     label25:
+        if $i0 == 44 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Found 15 callback methods for 5 components
+Found {res/layout/end.xml=[2131099651 - android.widget.Button, 2131099650 - android.widget.Button, 2131099649 - android.widget.TextView, 2131099648 - android.widget.ScrollView, -1 - android.widget.LinearLayout], res/layout/load.xml=[2131099656 - android.widget.ProgressBar, 2131099653 - android.widget.ImageView, 2131099654 - android.widget.LinearLayout, -1 - android.widget.LinearLayout, 2131099655 - android.widget.TextView], res/layout/license.xml=[-1 - android.widget.ScrollView, 2131099652 - android.widget.Button, 2131099651 - android.widget.Button, 2131099650 - android.widget.Button, 2131099649 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/main.xml=[2131099651 - android.widget.Button, 2131099653 - android.widget.ImageView, 2131099650 - android.widget.Button, 2131099657 - android.widget.LinearLayout, 2131099649 - android.widget.TextView, 2131099648 - android.widget.ScrollView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 15 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2b9b6ba3b97bc8cfe0bc1aaf5aa4e053ffc5b77d2da0a78a563adb270cd4d9fe.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        yhj.hffd.HtmlActivity $r1;
+        yhj.hffd.BetaReceiver $r2;
+        egb45.g4gYY.Y6Cg03N $r3;
+        yhj.hffd.BetaService $r4;
+        android.os.IBinder $r5;
+        egb45.g4gYY.BootReceiver $r6;
+        yhj.hffd.BetaWebA $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new yhj.hffd.HtmlActivity;
+
+        specialinvoke $r1.<yhj.hffd.HtmlActivity: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<yhj.hffd.HtmlActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <yhj.hffd.HtmlActivity: void <clinit>()>();
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label08;
+
+        $r2 = new yhj.hffd.BetaReceiver;
+
+        specialinvoke $r2.<yhj.hffd.BetaReceiver: void <init>()>();
+
+        if $i0 == 11 goto label08;
+
+     label07:
+        virtualinvoke $r2.<yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label07;
+
+     label08:
+        if $i0 == 14 goto label18;
+
+        $r3 = new egb45.g4gYY.Y6Cg03N;
+
+        specialinvoke $r3.<egb45.g4gYY.Y6Cg03N: void <init>()>();
+
+        if $i0 == 15 goto label18;
+
+        virtualinvoke $r3.<egb45.g4gYY.Y6Cg03N: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 17 goto label17;
+
+     label10:
+        if $i0 == 18 goto label11;
+
+        virtualinvoke $r3.<egb45.g4gYY.Y6Cg03N: void licButtonClick1(android.view.View)>(null);
+
+     label11:
+        if $i0 == 19 goto label12;
+
+        virtualinvoke $r3.<egb45.g4gYY.Y6Cg03N: void licButtonClick2(android.view.View)>(null);
+
+     label12:
+        if $i0 == 20 goto label13;
+
+        staticinvoke <egb45.g4gYY.Y6Cg03N: void <clinit>()>();
+
+     label13:
+        if $i0 == 21 goto label14;
+
+        virtualinvoke $r3.<egb45.g4gYY.Y6Cg03N: void mainButtonClick1(android.view.View)>(null);
+
+     label14:
+        if $i0 == 22 goto label15;
+
+        virtualinvoke $r3.<egb45.g4gYY.Y6Cg03N: void mainButtonClick2(android.view.View)>(null);
+
+     label15:
+        if $i0 == 23 goto label16;
+
+        virtualinvoke $r3.<egb45.g4gYY.Y6Cg03N: void licButtonClick3(android.view.View)>(null);
+
+     label16:
+        if $i0 == 24 goto label10;
+
+     label17:
+        if $i0 == 25 goto label09;
+
+        if $i0 == 26 goto label18;
+
+        if $i0 == 27 goto label09;
+
+     label18:
+        if $i0 == 29 goto label23;
+
+        $r4 = new yhj.hffd.BetaService;
+
+        specialinvoke $r4.<yhj.hffd.BetaService: void <init>()>();
+
+        virtualinvoke $r4.<yhj.hffd.BetaService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label19:
+        if $i0 == 30 goto label20;
+
+        if $i0 == 31 goto label19;
+
+     label20:
+        $r5 = virtualinvoke $r4.<yhj.hffd.BetaService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 33 goto label22;
+
+        if $i0 == 34 goto label21;
+
+     label22:
+        virtualinvoke $r4.<yhj.hffd.BetaService: void onDestroy()>();
+
+     label23:
+        if $i0 == 35 goto label25;
+
+        $r6 = new egb45.g4gYY.BootReceiver;
+
+        specialinvoke $r6.<egb45.g4gYY.BootReceiver: void <init>()>();
+
+        if $i0 == 36 goto label25;
+
+     label24:
+        virtualinvoke $r6.<egb45.g4gYY.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 38 goto label24;
+
+     label25:
+        if $i0 == 39 goto label30;
+
+        $r7 = new yhj.hffd.BetaWebA;
+
+        specialinvoke $r7.<yhj.hffd.BetaWebA: void <init>()>();
+
+        if $i0 == 40 goto label30;
+
+        virtualinvoke $r7.<yhj.hffd.BetaWebA: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 42 goto label29;
+
+     label27:
+        if $i0 == 43 goto label28;
+
+        staticinvoke <yhj.hffd.BetaWebA: void <clinit>()>();
+
+     label28:
+        if $i0 == 44 goto label27;
+
+     label29:
+        if $i0 == 45 goto label26;
+
+        if $i0 == 46 goto label30;
+
+        if $i0 == 47 goto label26;
+
+     label30:
+        if $i0 == 49 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.53669991 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.058778313 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2039 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 22 sources and 18 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1155
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1898
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 7491 forward and 744 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.004523776 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r11) in method <yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r11), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 := @parameter1: android.content.Intent (in <yhj.hffd.BetaReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 115.13892 MB
+Analysis has run for 4.726811986 seconds

@@ -1,0 +1,902 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.01200521 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        JawbreakerSuper.Game.BootReceiver $r1;
+        JawbreakerSuper.Game.Jawbreaker $r2;
+        JawbreakerSuper.Game.NoticeVideo $r3;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r1 = new JawbreakerSuper.Game.BootReceiver;
+
+        specialinvoke $r1.<JawbreakerSuper.Game.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+     label2:
+        virtualinvoke $r1.<JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label2;
+
+     label3:
+        if $i0 == 4 goto label5;
+
+        $r2 = new JawbreakerSuper.Game.Jawbreaker;
+
+        specialinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void <init>()>();
+
+        if $i0 == 5 goto label5;
+
+        virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void onCreate(android.os.Bundle)>(null);
+
+     label4:
+        virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void onPause()>();
+
+        if $i0 == 7 goto label4;
+
+        if $i0 == 8 goto label5;
+
+        if $i0 == 9 goto label4;
+
+     label5:
+        if $i0 == 11 goto label7;
+
+        $r3 = new JawbreakerSuper.Game.NoticeVideo;
+
+        specialinvoke $r3.<JawbreakerSuper.Game.NoticeVideo: void <init>()>();
+
+        if $i0 == 12 goto label7;
+
+     label6:
+        virtualinvoke $r3.<JawbreakerSuper.Game.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 14 goto label6;
+
+     label7:
+        if $i0 == 15 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.4 seconds.
+[Spark] Solution found in 1.4 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: JawbreakerSuper.Game.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: JawbreakerSuper.Game.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: JawbreakerSuper.Game.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/breakgame.xml
+Found 2 layout controls in file res/layout/gameover.xml
+Found 3 layout controls in file res/layout/help.xml
+Warning: EditText is a phantom class!
+Warning: JawbreakerSuper.Game.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 4 layout controls in file res/layout/input.xml
+Found 5 layout controls in file res/layout/login.xml
+Warning: CheckBox is a phantom class!
+Warning: JawbreakerSuper.Game.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 6 layout controls in file res/layout/main.xml
+Warning: FrameLayout is a phantom class!
+Warning: JawbreakerSuper.Game.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: Demo.clent.MostView is a phantom class!
+Warning: JawbreakerSuper.Game.Demo.clent.MostView is a phantom class!
+Warning: android.view.Demo.clent.MostView is a phantom class!
+Warning: android.widget.Demo.clent.MostView is a phantom class!
+Warning: android.webkit.Demo.clent.MostView is a phantom class!
+Could not find layout class Demo.clent.MostView
+Found 7 layout controls in file res/layout/most.xml
+Warning: ListView is a phantom class!
+Warning: JawbreakerSuper.Game.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 8 layout controls in file res/layout/rank.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        JawbreakerSuper.Game.BootReceiver $r1;
+        JawbreakerSuper.Game.Jawbreaker $r2;
+        com.android.Base.ViewBase $r3;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        JawbreakerSuper.Game.NoticeVideo $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new JawbreakerSuper.Game.BootReceiver;
+
+        specialinvoke $r1.<JawbreakerSuper.Game.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label15;
+
+        $r2 = new JawbreakerSuper.Game.Jawbreaker;
+
+        specialinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void <init>()>();
+
+        if $i0 == 5 goto label15;
+
+        virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label14;
+
+     label05:
+        $r3 = new com.android.Base.ViewBase;
+
+        specialinvoke $r3.<com.android.Base.ViewBase: void <init>(android.content.Context)>($r2);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<com.android.Base.ViewBase: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label06:
+        if $i0 == 9 goto label07;
+
+        virtualinvoke $r3.<com.android.Base.ViewBase: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label07:
+        if $i0 == 10 goto label08;
+
+        staticinvoke <JawbreakerSuper.Game.Jawbreaker: void <clinit>()>();
+
+     label08:
+        if $i0 == 11 goto label09;
+
+        $z0 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label09:
+        if $i0 == 12 goto label10;
+
+        $z1 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label10:
+        if $i0 == 13 goto label11;
+
+        $z2 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        $z3 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label12:
+        if $i0 == 15 goto label13;
+
+        $z4 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label13:
+        if $i0 == 16 goto label05;
+
+     label14:
+        virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void onPause()>();
+
+        if $i0 == 17 goto label04;
+
+        if $i0 == 18 goto label15;
+
+        if $i0 == 19 goto label04;
+
+     label15:
+        if $i0 == 21 goto label17;
+
+        $r4 = new JawbreakerSuper.Game.NoticeVideo;
+
+        specialinvoke $r4.<JawbreakerSuper.Game.NoticeVideo: void <init>()>();
+
+        if $i0 == 22 goto label17;
+
+     label16:
+        virtualinvoke $r4.<JawbreakerSuper.Game.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label16;
+
+     label17:
+        if $i0 == 25 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 12 callback methods for 3 components
+Found {res/layout/input.xml=[-1 - android.widget.LinearLayout, 2131165186 - android.widget.LinearLayout, 2131165191 - android.widget.EditText, 2131165192 - android.widget.Button, 2131165193 - android.widget.Button], res/layout/breakgame.xml=[-1 - android.widget.LinearLayout, 2131165187 - android.widget.Button, 2131165188 - android.widget.Button, 2131165186 - android.widget.LinearLayout, 2131165184 - android.widget.LinearLayout, 2131165185 - android.widget.TextView], res/layout/main.xml=[2131165200 - android.widget.LinearLayout, 2131165205 - android.widget.Button, 2131165204 - android.widget.Button, 2131165203 - android.widget.LinearLayout, 2131165201 - android.widget.CheckBox, 2131165202 - android.widget.CheckBox, 2131165185 - android.widget.TextView, 2131165189 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165186 - android.widget.LinearLayout, 2131165184 - android.widget.LinearLayout, 2131165206 - android.widget.TextView, 2131165199 - android.widget.EditText, 2131165198 - android.widget.EditText], res/layout/login.xml=[2131165197 - android.widget.Button, -1 - android.widget.LinearLayout, 2131165186 - android.widget.LinearLayout, 2131165194 - android.widget.Button, 2131165195 - android.widget.Button, 2131165196 - android.widget.Button], res/layout/most.xml=[2131165207 - android.widget.FrameLayout, 2131165209 - android.widget.Button], res/layout/rank.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131165210 - android.widget.ListView], res/layout/help.xml=[-1 - android.widget.LinearLayout, 2131165190 - android.widget.TextView, 2131165185 - android.widget.TextView], res/layout/gameover.xml=[2131165189 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165187 - android.widget.Button, 2131165188 - android.widget.Button, 2131165186 - android.widget.LinearLayout, 2131165184 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 12 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2af06632173f57899b223305ed42d324ca220eb1bd452ace95b9250e38ecfa11.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        JawbreakerSuper.Game.BootReceiver $r1;
+        JawbreakerSuper.Game.Jawbreaker $r2;
+        com.android.Base.ViewBase $r3;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        JawbreakerSuper.Game.NoticeVideo $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new JawbreakerSuper.Game.BootReceiver;
+
+        specialinvoke $r1.<JawbreakerSuper.Game.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label15;
+
+        $r2 = new JawbreakerSuper.Game.Jawbreaker;
+
+        specialinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void <init>()>();
+
+        if $i0 == 5 goto label15;
+
+        virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label14;
+
+     label05:
+        $r3 = new com.android.Base.ViewBase;
+
+        specialinvoke $r3.<com.android.Base.ViewBase: void <init>(android.content.Context)>($r2);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<com.android.Base.ViewBase: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label06:
+        if $i0 == 9 goto label07;
+
+        virtualinvoke $r3.<com.android.Base.ViewBase: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label07:
+        if $i0 == 10 goto label08;
+
+        $z0 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label08:
+        if $i0 == 11 goto label09;
+
+        $z1 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label09:
+        if $i0 == 12 goto label10;
+
+        $z2 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label10:
+        if $i0 == 13 goto label11;
+
+        $z3 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        staticinvoke <JawbreakerSuper.Game.Jawbreaker: void <clinit>()>();
+
+     label12:
+        if $i0 == 15 goto label13;
+
+        $z4 = virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label13:
+        if $i0 == 16 goto label05;
+
+     label14:
+        virtualinvoke $r2.<JawbreakerSuper.Game.Jawbreaker: void onPause()>();
+
+        if $i0 == 17 goto label04;
+
+        if $i0 == 18 goto label15;
+
+        if $i0 == 19 goto label04;
+
+     label15:
+        if $i0 == 21 goto label17;
+
+        $r4 = new JawbreakerSuper.Game.NoticeVideo;
+
+        specialinvoke $r4.<JawbreakerSuper.Game.NoticeVideo: void <init>()>();
+
+        if $i0 == 22 goto label17;
+
+     label16:
+        virtualinvoke $r4.<JawbreakerSuper.Game.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label16;
+
+     label17:
+        if $i0 == 25 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.887962911 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.10550205 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2884 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 56 sources and 55 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 42008
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 138654
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 350723 forward and 301046 backward edges solved, processing 57 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 57 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 39 with task id 38
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 40 with task id 39
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 41 with task id 40
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 42 with task id 41
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 43 with task id 42
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 44 with task id 43
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 45 with task id 44
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 46 with task id 45
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 47 with task id 46
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 48 with task id 47
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 49 with task id 48
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 50 with task id 49
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 51 with task id 50
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 52 with task id 51
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 53 with task id 52
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 54 with task id 53
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 55 with task id 54
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 56 with task id 55
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 57 with task id 56
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.024626743 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("FileService", $r0) in method <Daemon.DownLoad.FileService: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i3 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_version") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i2 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_num") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i4 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_type") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("file_name") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.DownLoad.DownloadTask: java.net.HttpURLConnection checkUrl(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r10.<java.net.URL: void <init>(java.lang.String)>($r5) in method <Daemon.DownLoad.DownloadTask: void start()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r2) in method <Daemon.Service.ServerConnecter: void setMobileConnection(java.net.URLConnection,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <Daemon.Protocol.RegHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <JawbreakerSuper.Game.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Notice", $r0) in method <Daemon.Service.Notice: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null) in method <Daemon.Service.Mms.Mms: int GetMmsThreadId(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DownloadThread", $r0) in method <Daemon.DownLoad.DownloadThread: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.DownLoad.DownloadTask: java.net.HttpURLConnection checkUrl(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ReadKey", $r0) in method <Daemon.Service.ReadKey: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <Daemon.DownLoad.DownloadTask: java.net.HttpURLConnection checkUrl(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Action", $r0) in method <Daemon.Action.Action: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i2 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_num") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i5 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_time") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("VERSION_CODE") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("User-Agent", $r2) in method <Daemon.Service.ServerConnecter: void setMobileConnection(java.net.URLConnection,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("FileUtils", $r0) in method <Daemon.DownLoad.FileUtils: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2) in method <Daemon.Action.Action: int Generate_events(int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r14.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r6) in method <Daemon.Service.Mms.Mms21: boolean send(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r9.<java.io.OutputStream: void write(byte[])>($r10) in method <Daemon.Service.Mms.Mms: void addAnnexInfo(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_info") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("HeartHttp", $r0) in method <Daemon.Protocol.HeartHttp: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r13 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r11, null, $r2, null, "_id desc") in method <Daemon.Service.Mms.Mms: void insertAnnex(android.content.ContentValues,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Mms", $r1) in method <Daemon.Service.Mms.Mms: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Content-Type", "application/x-www-form-urlencoded") in method <Daemon.Service.ServerConnecter: void setMobileConnection(java.net.URLConnection,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r1) in method <Daemon.Service.ServerConnecter: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <Daemon.Protocol.RegHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1) in method <JawbreakerSuper.Game.BootReceiver: void init()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r9 = virtualinvoke $r7.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r8, $r3, "url = ? and title = ? and bookmark = 1", $r4, "date DESC") in method <Daemon.Service.IEMark: void AddMark(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<java.net.URL: void <init>(java.lang.String)>($r6) in method <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <Daemon.Protocol.RegHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r2) in method <Daemon.Service.ServerConnecter: void setMobileConnection(java.net.URLConnection,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <Daemon.Protocol.RegHttp: java.lang.String getHttpUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r8, $r5) in method <Daemon.Service.IEMark: void AddMark(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("BootReceiver", $r0) in method <JawbreakerSuper.Game.BootReceiver: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1) in method <Daemon.DownLoad.DownloadTask: boolean setupDownloadFile(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r10.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r5) in method <Daemon.Service.Mms.Mms: void insertAnnex(android.content.ContentValues,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_info") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SMSObserver", $r1) in method <Daemon.Service.SMSObserver: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r6) in method <Daemon.Base.Rms: void save(android.content.Context,int,java.lang.String[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Protocol.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r10.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r4) in method <Daemon.Service.Mms.Mms: void insertMmsInbox(android.content.ContentValues,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null) in method <Daemon.Service.Mms.Mms: int GetMmsThreadId(android.content.Context,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("simulation_tel") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DownloadTask", $r0) in method <Daemon.DownLoad.DownloadTask: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("file_name") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.DownLoad.DownloadTask: java.net.HttpURLConnection checkUrl(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r8 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, null, $r2, null, "_id desc") in method <Daemon.Service.Mms.Mms: void addAnnexInfo(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r8, $r4) in method <Daemon.Service.SMSObserver: void simulation_Sms(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_info") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("simulation_tel") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r4) in method <Daemon.Service.Mms.Mms: void insertMmsInbox(android.content.ContentValues,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null) in method <Daemon.Service.Mms.Mms: int GetMmsThreadId(android.content.Context,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r12) in method <Daemon.Service.Mms.Mms: void insertAnnex(android.content.ContentValues,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r3) in method <Daemon.Action.Service: void open_Media(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r10.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r5) in method <Daemon.Service.Mms.Mms: void insertAnnex(android.content.ContentValues,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Accept", "*/*") in method <Daemon.Service.ServerConnecter: void setMobileConnection(java.net.URLConnection,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <Daemon.Service.IEMark: void openIE(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("FileService", $r0), from the following sources:
+	- $i3 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_version") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $i2 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_num") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $i4 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_type") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("file_name") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r5 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.DownLoad.DownloadTask: java.net.HttpURLConnection checkUrl(java.lang.String)>)
+Found a flow to sink specialinvoke r10.<java.net.URL: void <init>(java.lang.String)>($r5), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r2), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>)
+	- $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>)
+	- $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <Daemon.Protocol.RegHttp: java.lang.String getHttpUrl()>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Notice", $r0), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DownloadThread", $r0), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.DownLoad.DownloadTask: java.net.HttpURLConnection checkUrl(java.lang.String)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ReadKey", $r0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("Action", $r0), from the following sources:
+	- $i2 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_num") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $i5 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("even_time") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $i0 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("VERSION_CODE") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("User-Agent", $r2), from the following sources:
+	- $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("FileUtils", $r0), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r5.<android.content.Context: void sendBroadcast(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r14.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r6), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r9.<java.io.OutputStream: void write(byte[])>($r10), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_info") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("HeartHttp", $r0), from the following sources:
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r13 = virtualinvoke $r10.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r11, null, $r2, null, "_id desc"), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Mms", $r1), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Content-Type", "application/x-www-form-urlencoded"), from the following sources:
+	- $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r1), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>)
+	- $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <Daemon.Protocol.RegHttp: java.lang.String getHttpUrl()>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r2.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r9 = virtualinvoke $r7.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r8, $r3, "url = ? and title = ? and bookmark = 1", $r4, "date DESC"), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r5.<java.net.URL: void <init>(java.lang.String)>($r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>)
+	- $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <Daemon.Protocol.RegHttp: java.lang.String getHttpUrl()>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r2), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>)
+	- $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>)
+	- $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <Daemon.Protocol.SpHttp: java.lang.String getHttpUrl()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <Daemon.Protocol.RegHttp: java.lang.String getHttpUrl()>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r7.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r8, $r5), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("BootReceiver", $r0), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r10.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r5), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_info") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SMSObserver", $r1), from the following sources:
+	- $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r6), from the following sources:
+	- $i6 = virtualinvoke $r5.<android.os.Bundle: int getInt(java.lang.String)>("chanel") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Protocol.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r10.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r4), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null) (in <Daemon.Service.Mms.Mms: int GetMmsThreadId(android.content.Context,java.lang.String)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("simulation_tel") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DownloadTask", $r0), from the following sources:
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("file_name") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.DownLoad.DownloadTask: java.net.HttpURLConnection checkUrl(java.lang.String)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r8 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, null, $r2, null, "_id desc"), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r7.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r8, $r4), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_info") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("host") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("simulation_tel") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r11 = virtualinvoke $r10.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r4), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r2, null, null, null, null) (in <Daemon.Service.Mms.Mms: int GetMmsThreadId(android.content.Context,java.lang.String)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r7 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("notice_title") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r14.<java.io.OutputStream: void write(byte[])>($r12), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r3), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r10.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r11, $r5), from the following sources:
+	- $r10 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r8 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r9 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r3 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.DBOpenHelper$ADInfoQuerier: void doWork(android.database.sqlite.SQLiteDatabase)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("downpath") (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Accept", "*/*"), from the following sources:
+	- $r11 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.ServerConnecter: Daemon.Service.ServerConnecter$httpState Httpconnect(java.lang.String,android.content.Context)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <JawbreakerSuper.Game.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 377.851656 MB
+Analysis has run for 10.645330263 seconds

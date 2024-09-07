@@ -1,0 +1,633 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.011094065 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.admob.android.ads.AdMobActivity $r1;
+        com.mj.utils.MJReceiver $r2;
+        com.mj.iMatch.IMatch $r3;
+        com.admob.android.ads.analytics.InstallReceiver $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.admob.android.ads.AdMobActivity;
+
+        specialinvoke $r1.<com.admob.android.ads.AdMobActivity: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label06;
+
+        $r2 = new com.mj.utils.MJReceiver;
+
+        specialinvoke $r2.<com.mj.utils.MJReceiver: void <init>()>();
+
+        if $i0 == 8 goto label06;
+
+     label05:
+        virtualinvoke $r2.<com.mj.utils.MJReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 10 goto label05;
+
+     label06:
+        if $i0 == 11 goto label08;
+
+        $r3 = new com.mj.iMatch.IMatch;
+
+        specialinvoke $r3.<com.mj.iMatch.IMatch: void <init>()>();
+
+        if $i0 == 12 goto label08;
+
+        virtualinvoke $r3.<com.mj.iMatch.IMatch: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.mj.iMatch.IMatch: void onResume()>();
+
+        virtualinvoke $r3.<com.mj.iMatch.IMatch: void onPause()>();
+
+        if $i0 == 14 goto label07;
+
+        if $i0 == 15 goto label08;
+
+        if $i0 == 16 goto label07;
+
+     label08:
+        if $i0 == 18 goto label10;
+
+        $r4 = new com.admob.android.ads.analytics.InstallReceiver;
+
+        specialinvoke $r4.<com.admob.android.ads.analytics.InstallReceiver: void <init>()>();
+
+        if $i0 == 19 goto label10;
+
+     label09:
+        virtualinvoke $r4.<com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 21 goto label09;
+
+     label10:
+        if $i0 == 22 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.mj.iMatch.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.mj.iMatch.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.lang.ref.WeakReference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.admob.android.ads.AdMobActivity $r1;
+        com.admob.android.ads.view.AdMobWebView $r2;
+        com.admob.android.ads.q $r3;
+        com.admob.android.ads.y $r4;
+        boolean $z0;
+        com.mj.utils.MJReceiver $r5;
+        com.mj.iMatch.IMatch $r6;
+        com.admob.android.ads.analytics.InstallReceiver $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.admob.android.ads.AdMobActivity;
+
+        specialinvoke $r1.<com.admob.android.ads.AdMobActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.admob.android.ads.view.AdMobWebView;
+
+        specialinvoke $r2.<com.admob.android.ads.view.AdMobWebView: void <init>(android.content.Context,boolean,java.lang.ref.WeakReference)>($r1, false, null);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<com.admob.android.ads.view.AdMobWebView: void onClick(android.view.View)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void finish()>();
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label06:
+        $r3 = new com.admob.android.ads.q;
+
+        specialinvoke $r3.<com.admob.android.ads.q: void <init>()>();
+
+        $r4 = new com.admob.android.ads.y;
+
+        specialinvoke $r4.<com.admob.android.ads.y: void <init>(android.app.Activity,java.lang.String,com.admob.android.ads.q)>($r1, "", $r3);
+
+        if $i0 == 7 goto label07;
+
+        $z0 = virtualinvoke $r4.<com.admob.android.ads.y: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        if $i0 == 9 goto label02;
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label12;
+
+        $r5 = new com.mj.utils.MJReceiver;
+
+        specialinvoke $r5.<com.mj.utils.MJReceiver: void <init>()>();
+
+        if $i0 == 14 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.mj.utils.MJReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label11;
+
+     label12:
+        if $i0 == 17 goto label14;
+
+        $r6 = new com.mj.iMatch.IMatch;
+
+        specialinvoke $r6.<com.mj.iMatch.IMatch: void <init>()>();
+
+        if $i0 == 18 goto label14;
+
+        virtualinvoke $r6.<com.mj.iMatch.IMatch: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r6.<com.mj.iMatch.IMatch: void onResume()>();
+
+        virtualinvoke $r6.<com.mj.iMatch.IMatch: void onPause()>();
+
+        if $i0 == 21 goto label13;
+
+        if $i0 == 22 goto label14;
+
+        if $i0 == 23 goto label13;
+
+     label14:
+        if $i0 == 25 goto label16;
+
+        $r7 = new com.admob.android.ads.analytics.InstallReceiver;
+
+        specialinvoke $r7.<com.admob.android.ads.analytics.InstallReceiver: void <init>()>();
+
+        if $i0 == 26 goto label16;
+
+     label15:
+        virtualinvoke $r7.<com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 28 goto label15;
+
+     label16:
+        if $i0 == 29 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Found 20 callback methods for 4 components
+Found {res/layout/main.xml=[2131034114 - com.admob.android.ads.AdView, 2131034113 - android.widget.TextView, 2131034112 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 20 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/00f4fa52f37037efb710c18b7d7ae7708a27ab1bea333e99cdcbd680eb32408b.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.lang.ref.WeakReference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.admob.android.ads.AdMobActivity $r1;
+        com.admob.android.ads.view.AdMobWebView $r2;
+        com.admob.android.ads.q $r3;
+        com.admob.android.ads.y $r4;
+        boolean $z0;
+        com.mj.utils.MJReceiver $r5;
+        com.mj.iMatch.IMatch $r6;
+        com.admob.android.ads.AdView $r7;
+        com.admob.android.ads.analytics.InstallReceiver $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.admob.android.ads.AdMobActivity;
+
+        specialinvoke $r1.<com.admob.android.ads.AdMobActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.admob.android.ads.view.AdMobWebView;
+
+        specialinvoke $r2.<com.admob.android.ads.view.AdMobWebView: void <init>(android.content.Context,boolean,java.lang.ref.WeakReference)>($r1, false, null);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<com.admob.android.ads.view.AdMobWebView: void onClick(android.view.View)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void finish()>();
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label06:
+        $r3 = new com.admob.android.ads.q;
+
+        specialinvoke $r3.<com.admob.android.ads.q: void <init>()>();
+
+        $r4 = new com.admob.android.ads.y;
+
+        specialinvoke $r4.<com.admob.android.ads.y: void <init>(android.app.Activity,java.lang.String,com.admob.android.ads.q)>($r1, "", $r3);
+
+        if $i0 == 7 goto label07;
+
+        $z0 = virtualinvoke $r4.<com.admob.android.ads.y: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        if $i0 == 9 goto label02;
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.admob.android.ads.AdMobActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label12;
+
+        $r5 = new com.mj.utils.MJReceiver;
+
+        specialinvoke $r5.<com.mj.utils.MJReceiver: void <init>()>();
+
+        if $i0 == 14 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.mj.utils.MJReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label11;
+
+     label12:
+        if $i0 == 17 goto label25;
+
+        $r6 = new com.mj.iMatch.IMatch;
+
+        specialinvoke $r6.<com.mj.iMatch.IMatch: void <init>()>();
+
+        if $i0 == 18 goto label25;
+
+        virtualinvoke $r6.<com.mj.iMatch.IMatch: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r6.<com.mj.iMatch.IMatch: void onResume()>();
+
+        if $i0 == 20 goto label24;
+
+     label14:
+        $r7 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r7.<com.admob.android.ads.AdView: void <init>(android.app.Activity)>($r6);
+
+        if $i0 == 21 goto label15;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdView: void setEnabled(boolean)>(false);
+
+     label15:
+        if $i0 == 22 goto label16;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdView: void onAttachedToWindow()>();
+
+     label16:
+        if $i0 == 23 goto label17;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdView: void onWindowFocusChanged(boolean)>(false);
+
+     label17:
+        if $i0 == 24 goto label18;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdView: void onDetachedFromWindow()>();
+
+     label18:
+        if $i0 == 25 goto label19;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdView: void onMeasure(int,int)>(0, 0);
+
+     label19:
+        if $i0 == 26 goto label20;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdView: void setVisibility(int)>(0);
+
+     label20:
+        if $i0 == 27 goto label21;
+
+        staticinvoke <com.admob.android.ads.AdView: void <clinit>()>();
+
+     label21:
+        if $i0 == 28 goto label22;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdView: void setBackgroundColor(int)>(0);
+
+     label22:
+        if $i0 == 29 goto label23;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdView: void onWindowVisibilityChanged(int)>(0);
+
+     label23:
+        if $i0 == 30 goto label14;
+
+     label24:
+        virtualinvoke $r6.<com.mj.iMatch.IMatch: void onPause()>();
+
+        if $i0 == 31 goto label13;
+
+        if $i0 == 32 goto label25;
+
+        if $i0 == 33 goto label13;
+
+     label25:
+        if $i0 == 35 goto label27;
+
+        $r8 = new com.admob.android.ads.analytics.InstallReceiver;
+
+        specialinvoke $r8.<com.admob.android.ads.analytics.InstallReceiver: void <init>()>();
+
+        if $i0 == 36 goto label27;
+
+     label26:
+        virtualinvoke $r8.<com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 38 goto label26;
+
+     label27:
+        if $i0 == 39 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.077186713 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.102287548 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2188 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 65 sources and 153 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 4665
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 18084
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 68000 forward and 13896 backward edges solved, processing 22 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 22 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.01327939 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4) in method <com.admob.android.ads.q$1: void a(com.admob.android.ads.e)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.admob.android.ads.i: void <init>(java.lang.String,java.lang.String,java.lang.String,com.admob.android.ads.h,int,java.util.Map,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r7) in method <com.admob.android.ads.i: boolean d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.u: void a(com.admob.android.ads.e,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r2) in method <com.admob.android.ads.AdManager: void a(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.admob.android.ads.AdView: void setBackgroundColor(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMobSDK", $r2) in method <com.admob.android.ads.AdManager: void setInterstitialPublisherId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r26.<java.net.URL: void <init>(java.lang.String)>($r5) in method <com.admob.android.ads.i: boolean d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.i: boolean d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AdMobSDK", $r5, $r2) in method <com.admob.android.ads.q$1: void a(com.admob.android.ads.e,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AdMobSDK", $r5, $r2) in method <com.admob.android.ads.u: void a(com.admob.android.ads.e,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r9) in method <com.admob.android.ads.analytics.InstallReceiver: void a(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r9) in method <com.admob.android.ads.analytics.InstallReceiver: void a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r1) in method <com.admob.android.ads.b: void a(java.lang.StringBuilder,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.admob.android.ads.AdView: void setBackgroundColor(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMobSDK", $r0) in method <com.admob.android.ads.AdManager: void clientError(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMobSDK", $r2) in method <com.admob.android.ads.AdManager: void setPublisherId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.AdManager: void a(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.admob.android.ads.AdView: void setBackgroundColor(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4) in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.AdView$d: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.admob.android.ads.AdView: void setBackgroundColor(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r0) in method <com.admob.android.ads.f: java.lang.String h()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() in method <com.admob.android.ads.f: java.lang.String h()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.i: boolean d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+Found a flow to sink specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r7), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $i0 := @parameter0: int (in <com.admob.android.ads.AdView: void setBackgroundColor(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMobSDK", $r2), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+Found a flow to sink specialinvoke r26.<java.net.URL: void <init>(java.lang.String)>($r5), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AdMobSDK", $r5, $r2), from the following sources:
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AdMobSDK", $r5, $r2), from the following sources:
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r9), from the following sources:
+	- $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r9) (in <com.admob.android.ads.analytics.InstallReceiver: void a(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r1), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>)
+	- $r1 := @parameter0: android.content.Context (in <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $i0 := @parameter0: int (in <com.admob.android.ads.AdView: void setBackgroundColor(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMobSDK", $r0), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMobSDK", $r2), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $i0 := @parameter0: int (in <com.admob.android.ads.AdView: void setBackgroundColor(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4), from the following sources:
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $i0 := @parameter0: int (in <com.admob.android.ads.AdView: void setBackgroundColor(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r0), from the following sources:
+	- $r0 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() (in <com.admob.android.ads.f: java.lang.String h()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Maximum memory consumption: 241.525944 MB
+Analysis has run for 5.790513726 seconds

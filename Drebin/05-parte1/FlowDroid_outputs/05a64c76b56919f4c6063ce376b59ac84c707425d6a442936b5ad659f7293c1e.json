@@ -1,0 +1,2093 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.027429214 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0;
+        com.GoldDream.zj.zjReceiver $r3;
+        com.google.android.apps.analytics.AnalyticsReceiver $r4;
+        com.droid.game.forestman.GameStopActivity $r5;
+        com.droid.game.forestman.GameActivity $r6;
+        com.droid.game.forestman.GameStartActivity $r7;
+        com.droid.game.forestman.StageSelectActivity $r8;
+        com.droid.recommend.RecommendActivity $r9;
+        com.droid.game.forestman.HighScoreActivity $r10;
+        com.droid.activity.MoreActivity $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label10;
+
+        $r4 = new com.google.android.apps.analytics.AnalyticsReceiver;
+
+        specialinvoke $r4.<com.google.android.apps.analytics.AnalyticsReceiver: void <init>()>();
+
+        if $i0 == 11 goto label10;
+
+     label09:
+        virtualinvoke $r4.<com.google.android.apps.analytics.AnalyticsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label09;
+
+     label10:
+        if $i0 == 14 goto label12;
+
+        $r5 = new com.droid.game.forestman.GameStopActivity;
+
+        specialinvoke $r5.<com.droid.game.forestman.GameStopActivity: void <init>()>();
+
+        if $i0 == 15 goto label12;
+
+        virtualinvoke $r5.<com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 18 goto label12;
+
+        if $i0 == 19 goto label11;
+
+     label12:
+        if $i0 == 21 goto label14;
+
+        $r6 = new com.droid.game.forestman.GameActivity;
+
+        specialinvoke $r6.<com.droid.game.forestman.GameActivity: void <init>()>();
+
+        if $i0 == 22 goto label14;
+
+        virtualinvoke $r6.<com.droid.game.forestman.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r6.<com.droid.game.forestman.GameActivity: void onResume()>();
+
+        virtualinvoke $r6.<com.droid.game.forestman.GameActivity: void onPause()>();
+
+        if $i0 == 24 goto label13;
+
+        if $i0 == 25 goto label14;
+
+        if $i0 == 26 goto label13;
+
+     label14:
+        if $i0 == 28 goto label17;
+
+        $r7 = new com.droid.game.forestman.GameStartActivity;
+
+        specialinvoke $r7.<com.droid.game.forestman.GameStartActivity: void <init>()>();
+
+        if $i0 == 29 goto label17;
+
+        virtualinvoke $r7.<com.droid.game.forestman.GameStartActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        virtualinvoke $r7.<com.droid.game.forestman.GameStartActivity: void onResume()>();
+
+        virtualinvoke $r7.<com.droid.game.forestman.GameStartActivity: void onPause()>();
+
+        if $i0 == 31 goto label15;
+
+        if $i0 == 32 goto label16;
+
+        if $i0 == 33 goto label15;
+
+     label16:
+        virtualinvoke $r7.<com.droid.game.forestman.GameStartActivity: void onDestroy()>();
+
+     label17:
+        if $i0 == 35 goto label20;
+
+        $r8 = new com.droid.game.forestman.StageSelectActivity;
+
+        specialinvoke $r8.<com.droid.game.forestman.StageSelectActivity: void <init>()>();
+
+        if $i0 == 36 goto label20;
+
+        virtualinvoke $r8.<com.droid.game.forestman.StageSelectActivity: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        virtualinvoke $r8.<com.droid.game.forestman.StageSelectActivity: void onResume()>();
+
+        if $i0 == 38 goto label18;
+
+        if $i0 == 39 goto label19;
+
+        if $i0 == 40 goto label18;
+
+     label19:
+        virtualinvoke $r8.<com.droid.game.forestman.StageSelectActivity: void onDestroy()>();
+
+     label20:
+        if $i0 == 42 goto label22;
+
+        $r9 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r9.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        if $i0 == 43 goto label22;
+
+        virtualinvoke $r9.<com.droid.recommend.RecommendActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 46 goto label22;
+
+        if $i0 == 47 goto label21;
+
+     label22:
+        if $i0 == 49 goto label24;
+
+        $r10 = new com.droid.game.forestman.HighScoreActivity;
+
+        specialinvoke $r10.<com.droid.game.forestman.HighScoreActivity: void <init>()>();
+
+        if $i0 == 50 goto label24;
+
+        virtualinvoke $r10.<com.droid.game.forestman.HighScoreActivity: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        if $i0 == 53 goto label24;
+
+        if $i0 == 54 goto label23;
+
+     label24:
+        if $i0 == 56 goto label26;
+
+        $r11 = new com.droid.activity.MoreActivity;
+
+        specialinvoke $r11.<com.droid.activity.MoreActivity: void <init>()>();
+
+        if $i0 == 57 goto label26;
+
+        virtualinvoke $r11.<com.droid.activity.MoreActivity: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 60 goto label26;
+
+        if $i0 == 61 goto label25;
+
+     label26:
+        if $i0 == 63 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.5 seconds.
+[Spark] Solution found in 1.5 seconds.
+Callback analysis done.
+Warning: RelativeLayout is a phantom class!
+Warning: com.droid.game.forestman.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageButton is a phantom class!
+Warning: com.droid.game.forestman.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Found 1 layout controls in file res/layout/game.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.droid.game.forestman.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.droid.game.forestman.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.droid.game.forestman.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/game_start.xml
+Warning: ImageView is a phantom class!
+Warning: com.droid.game.forestman.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 3 layout controls in file res/layout/r_dlg.xml
+Warning: TableLayout is a phantom class!
+Warning: com.droid.game.forestman.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: TableRow is a phantom class!
+Warning: com.droid.game.forestman.TableRow is a phantom class!
+Warning: android.view.TableRow is a phantom class!
+Found 4 layout controls in file res/layout/level.xml
+Warning: ProgressBar is a phantom class!
+Warning: com.droid.game.forestman.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.droid.game.forestman.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 5 layout controls in file res/layout/score.xml
+Found 6 layout controls in file res/layout/high_score.xml
+Found 7 layout controls in file res/layout-large/level.xml
+Found 8 layout controls in file res/layout/game_stop.xml
+Found 9 layout controls in file res/layout-large/game_start.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0, $z1, $z2;
+        com.GoldDream.zj.zjReceiver $r3;
+        com.google.android.apps.analytics.AnalyticsReceiver $r4;
+        com.droid.game.forestman.GameStopActivity $r5;
+        com.droid.game.forestman.StageSelectActivity $r6, $r29, $r47;
+        com.droid.game.forestman.StageSelectActivity$1 $r7, $r30, $r48;
+        com.droid.game.forestman.GameStopActivity$1 $r8, $r31, $r49;
+        com.droid.recommend.RecommendActivity $r9, $r14, $r32, $r37, $r50, $r55, $r65;
+        com.droid.recommend.RecommendData $r10, $r33, $r51, $r66;
+        com.droid.recommend.RecommendActivity$1 $r11, $r34, $r52, $r67;
+        com.droid.score.OnlineScoreActivity $r12, $r16, $r18, $r20, $r35, $r39, $r41, $r43, $r53, $r57, $r59, $r61;
+        com.droid.score.OnlineScoreActivity$3 $r13, $r36, $r54;
+        com.droid.recommend.RecommendActivity$2 $r15, $r38, $r56, $r68;
+        com.droid.score.OnlineScoreActivity$5 $r17, $r40, $r58;
+        com.droid.score.OnlineScoreActivity$2 $r19, $r42, $r60;
+        com.droid.score.OnlineScoreActivity$4 $r21, $r44, $r62;
+        com.droid.game.forestman.GameActivity $r22, $r26;
+        com.droid.game.forestman.GameActivity$2 $r23, $r27, $r45, $r63;
+        com.droid.game.forestman.GameStartActivity $r24, $r28;
+        com.droid.game.forestman.GameStartActivity$1 $r25, $r46, $r64;
+        com.droid.game.forestman.HighScoreActivity $r69;
+        com.droid.activity.MoreActivity $r70;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label07;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label06:
+        if $i0 == 6 goto label04;
+
+     label07:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label08;
+
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 11 goto label08;
+
+     label11:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label14;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 13 goto label14;
+
+     label13:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label13;
+
+     label14:
+        if $i0 == 16 goto label16;
+
+        $r4 = new com.google.android.apps.analytics.AnalyticsReceiver;
+
+        specialinvoke $r4.<com.google.android.apps.analytics.AnalyticsReceiver: void <init>()>();
+
+        if $i0 == 17 goto label16;
+
+     label15:
+        virtualinvoke $r4.<com.google.android.apps.analytics.AnalyticsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 19 goto label15;
+
+     label16:
+        if $i0 == 20 goto label31;
+
+        $r5 = new com.droid.game.forestman.GameStopActivity;
+
+        specialinvoke $r5.<com.droid.game.forestman.GameStopActivity: void <init>()>();
+
+        if $i0 == 21 goto label31;
+
+        virtualinvoke $r5.<com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 23 goto label30;
+
+     label18:
+        $r6 = new com.droid.game.forestman.StageSelectActivity;
+
+        specialinvoke $r6.<com.droid.game.forestman.StageSelectActivity: void <init>()>();
+
+        $r7 = new com.droid.game.forestman.StageSelectActivity$1;
+
+        specialinvoke $r7.<com.droid.game.forestman.StageSelectActivity$1: void <init>(com.droid.game.forestman.StageSelectActivity)>($r6);
+
+        if $i0 == 24 goto label19;
+
+        virtualinvoke $r7.<com.droid.game.forestman.StageSelectActivity$1: void onClick(android.view.View)>(null);
+
+     label19:
+        $r8 = new com.droid.game.forestman.GameStopActivity$1;
+
+        specialinvoke $r8.<com.droid.game.forestman.GameStopActivity$1: void <init>(com.droid.game.forestman.GameStopActivity)>($r5);
+
+        if $i0 == 25 goto label20;
+
+        virtualinvoke $r8.<com.droid.game.forestman.GameStopActivity$1: void onClick(android.view.View)>(null);
+
+     label20:
+        $r9 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r9.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r10 = new com.droid.recommend.RecommendData;
+
+        specialinvoke $r10.<com.droid.recommend.RecommendData: void <init>()>();
+
+        $r11 = new com.droid.recommend.RecommendActivity$1;
+
+        specialinvoke $r11.<com.droid.recommend.RecommendActivity$1: void <init>(com.droid.recommend.RecommendActivity,com.droid.recommend.RecommendData)>($r9, $r10);
+
+        if $i0 == 26 goto label21;
+
+        virtualinvoke $r11.<com.droid.recommend.RecommendActivity$1: void onClick(android.view.View)>(null);
+
+     label21:
+        $r12 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r12.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r13 = new com.droid.score.OnlineScoreActivity$3;
+
+        specialinvoke $r13.<com.droid.score.OnlineScoreActivity$3: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r12, null);
+
+        if $i0 == 27 goto label22;
+
+        virtualinvoke $r13.<com.droid.score.OnlineScoreActivity$3: void onClick(android.view.View)>(null);
+
+     label22:
+        $r14 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r14.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r15 = new com.droid.recommend.RecommendActivity$2;
+
+        specialinvoke $r15.<com.droid.recommend.RecommendActivity$2: void <init>(com.droid.recommend.RecommendActivity)>($r14);
+
+        if $i0 == 28 goto label23;
+
+        virtualinvoke $r15.<com.droid.recommend.RecommendActivity$2: void onClick(android.view.View)>(null);
+
+     label23:
+        if $i0 == 29 goto label24;
+
+        staticinvoke <com.droid.game.forestman.GameStopActivity: void <clinit>()>();
+
+     label24:
+        $r16 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r16.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r17 = new com.droid.score.OnlineScoreActivity$5;
+
+        specialinvoke $r17.<com.droid.score.OnlineScoreActivity$5: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r16, null);
+
+        if $i0 == 30 goto label25;
+
+        virtualinvoke $r17.<com.droid.score.OnlineScoreActivity$5: void onClick(android.view.View)>(null);
+
+     label25:
+        $r18 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r18.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r19 = new com.droid.score.OnlineScoreActivity$2;
+
+        specialinvoke $r19.<com.droid.score.OnlineScoreActivity$2: void <init>(com.droid.score.OnlineScoreActivity)>($r18);
+
+        if $i0 == 31 goto label26;
+
+        virtualinvoke $r19.<com.droid.score.OnlineScoreActivity$2: void onClick(android.view.View)>(null);
+
+     label26:
+        $r20 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r20.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r21 = new com.droid.score.OnlineScoreActivity$4;
+
+        specialinvoke $r21.<com.droid.score.OnlineScoreActivity$4: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r20, null);
+
+        if $i0 == 32 goto label27;
+
+        virtualinvoke $r21.<com.droid.score.OnlineScoreActivity$4: void onClick(android.view.View)>(null);
+
+     label27:
+        $r22 = new com.droid.game.forestman.GameActivity;
+
+        specialinvoke $r22.<com.droid.game.forestman.GameActivity: void <init>()>();
+
+        $r23 = new com.droid.game.forestman.GameActivity$2;
+
+        specialinvoke $r23.<com.droid.game.forestman.GameActivity$2: void <init>(com.droid.game.forestman.GameActivity)>($r22);
+
+        if $i0 == 33 goto label28;
+
+        virtualinvoke $r23.<com.droid.game.forestman.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label28:
+        $r24 = new com.droid.game.forestman.GameStartActivity;
+
+        specialinvoke $r24.<com.droid.game.forestman.GameStartActivity: void <init>()>();
+
+        $r25 = new com.droid.game.forestman.GameStartActivity$1;
+
+        specialinvoke $r25.<com.droid.game.forestman.GameStartActivity$1: void <init>(com.droid.game.forestman.GameStartActivity)>($r24);
+
+        if $i0 == 34 goto label29;
+
+        virtualinvoke $r25.<com.droid.game.forestman.GameStartActivity$1: void onClick(android.view.View)>(null);
+
+     label29:
+        if $i0 == 35 goto label18;
+
+     label30:
+        if $i0 == 36 goto label17;
+
+        if $i0 == 37 goto label31;
+
+        if $i0 == 38 goto label17;
+
+     label31:
+        if $i0 == 40 goto label38;
+
+        $r26 = new com.droid.game.forestman.GameActivity;
+
+        specialinvoke $r26.<com.droid.game.forestman.GameActivity: void <init>()>();
+
+        if $i0 == 41 goto label38;
+
+        virtualinvoke $r26.<com.droid.game.forestman.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        virtualinvoke $r26.<com.droid.game.forestman.GameActivity: void onResume()>();
+
+        if $i0 == 43 goto label37;
+
+     label33:
+        if $i0 == 44 goto label34;
+
+        $z1 = virtualinvoke $r26.<com.droid.game.forestman.GameActivity: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label34:
+        if $i0 == 45 goto label35;
+
+        $z2 = virtualinvoke $r26.<com.droid.game.forestman.GameActivity: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label35:
+        $r27 = new com.droid.game.forestman.GameActivity$2;
+
+        specialinvoke $r27.<com.droid.game.forestman.GameActivity$2: void <init>(com.droid.game.forestman.GameActivity)>($r26);
+
+        if $i0 == 46 goto label36;
+
+        virtualinvoke $r27.<com.droid.game.forestman.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label36:
+        if $i0 == 47 goto label33;
+
+     label37:
+        virtualinvoke $r26.<com.droid.game.forestman.GameActivity: void onPause()>();
+
+        if $i0 == 48 goto label32;
+
+        if $i0 == 49 goto label38;
+
+        if $i0 == 50 goto label32;
+
+     label38:
+        if $i0 == 52 goto label53;
+
+        $r28 = new com.droid.game.forestman.GameStartActivity;
+
+        specialinvoke $r28.<com.droid.game.forestman.GameStartActivity: void <init>()>();
+
+        if $i0 == 53 goto label53;
+
+        virtualinvoke $r28.<com.droid.game.forestman.GameStartActivity: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        virtualinvoke $r28.<com.droid.game.forestman.GameStartActivity: void onResume()>();
+
+        if $i0 == 55 goto label51;
+
+     label40:
+        $r29 = new com.droid.game.forestman.StageSelectActivity;
+
+        specialinvoke $r29.<com.droid.game.forestman.StageSelectActivity: void <init>()>();
+
+        $r30 = new com.droid.game.forestman.StageSelectActivity$1;
+
+        specialinvoke $r30.<com.droid.game.forestman.StageSelectActivity$1: void <init>(com.droid.game.forestman.StageSelectActivity)>($r29);
+
+        if $i0 == 56 goto label41;
+
+        virtualinvoke $r30.<com.droid.game.forestman.StageSelectActivity$1: void onClick(android.view.View)>(null);
+
+     label41:
+        $r31 = new com.droid.game.forestman.GameStopActivity$1;
+
+        specialinvoke $r31.<com.droid.game.forestman.GameStopActivity$1: void <init>(com.droid.game.forestman.GameStopActivity)>($r5);
+
+        if $i0 == 57 goto label42;
+
+        virtualinvoke $r31.<com.droid.game.forestman.GameStopActivity$1: void onClick(android.view.View)>(null);
+
+     label42:
+        $r32 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r32.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r33 = new com.droid.recommend.RecommendData;
+
+        specialinvoke $r33.<com.droid.recommend.RecommendData: void <init>()>();
+
+        $r34 = new com.droid.recommend.RecommendActivity$1;
+
+        specialinvoke $r34.<com.droid.recommend.RecommendActivity$1: void <init>(com.droid.recommend.RecommendActivity,com.droid.recommend.RecommendData)>($r32, $r33);
+
+        if $i0 == 58 goto label43;
+
+        virtualinvoke $r34.<com.droid.recommend.RecommendActivity$1: void onClick(android.view.View)>(null);
+
+     label43:
+        $r35 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r35.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r36 = new com.droid.score.OnlineScoreActivity$3;
+
+        specialinvoke $r36.<com.droid.score.OnlineScoreActivity$3: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r35, null);
+
+        if $i0 == 59 goto label44;
+
+        virtualinvoke $r36.<com.droid.score.OnlineScoreActivity$3: void onClick(android.view.View)>(null);
+
+     label44:
+        $r37 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r37.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r38 = new com.droid.recommend.RecommendActivity$2;
+
+        specialinvoke $r38.<com.droid.recommend.RecommendActivity$2: void <init>(com.droid.recommend.RecommendActivity)>($r37);
+
+        if $i0 == 60 goto label45;
+
+        virtualinvoke $r38.<com.droid.recommend.RecommendActivity$2: void onClick(android.view.View)>(null);
+
+     label45:
+        $r39 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r39.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r40 = new com.droid.score.OnlineScoreActivity$5;
+
+        specialinvoke $r40.<com.droid.score.OnlineScoreActivity$5: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r39, null);
+
+        if $i0 == 61 goto label46;
+
+        virtualinvoke $r40.<com.droid.score.OnlineScoreActivity$5: void onClick(android.view.View)>(null);
+
+     label46:
+        $r41 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r41.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r42 = new com.droid.score.OnlineScoreActivity$2;
+
+        specialinvoke $r42.<com.droid.score.OnlineScoreActivity$2: void <init>(com.droid.score.OnlineScoreActivity)>($r41);
+
+        if $i0 == 62 goto label47;
+
+        virtualinvoke $r42.<com.droid.score.OnlineScoreActivity$2: void onClick(android.view.View)>(null);
+
+     label47:
+        $r43 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r43.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r44 = new com.droid.score.OnlineScoreActivity$4;
+
+        specialinvoke $r44.<com.droid.score.OnlineScoreActivity$4: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r43, null);
+
+        if $i0 == 63 goto label48;
+
+        virtualinvoke $r44.<com.droid.score.OnlineScoreActivity$4: void onClick(android.view.View)>(null);
+
+     label48:
+        $r45 = new com.droid.game.forestman.GameActivity$2;
+
+        specialinvoke $r45.<com.droid.game.forestman.GameActivity$2: void <init>(com.droid.game.forestman.GameActivity)>($r26);
+
+        if $i0 == 64 goto label49;
+
+        virtualinvoke $r45.<com.droid.game.forestman.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label49:
+        $r46 = new com.droid.game.forestman.GameStartActivity$1;
+
+        specialinvoke $r46.<com.droid.game.forestman.GameStartActivity$1: void <init>(com.droid.game.forestman.GameStartActivity)>($r28);
+
+        if $i0 == 65 goto label50;
+
+        virtualinvoke $r46.<com.droid.game.forestman.GameStartActivity$1: void onClick(android.view.View)>(null);
+
+     label50:
+        if $i0 == 66 goto label40;
+
+     label51:
+        virtualinvoke $r28.<com.droid.game.forestman.GameStartActivity: void onPause()>();
+
+        if $i0 == 67 goto label39;
+
+        if $i0 == 68 goto label52;
+
+        if $i0 == 69 goto label39;
+
+     label52:
+        virtualinvoke $r28.<com.droid.game.forestman.GameStartActivity: void onDestroy()>();
+
+     label53:
+        if $i0 == 71 goto label68;
+
+        $r47 = new com.droid.game.forestman.StageSelectActivity;
+
+        specialinvoke $r47.<com.droid.game.forestman.StageSelectActivity: void <init>()>();
+
+        if $i0 == 72 goto label68;
+
+        virtualinvoke $r47.<com.droid.game.forestman.StageSelectActivity: void onCreate(android.os.Bundle)>(null);
+
+     label54:
+        virtualinvoke $r47.<com.droid.game.forestman.StageSelectActivity: void onResume()>();
+
+        if $i0 == 74 goto label66;
+
+     label55:
+        $r48 = new com.droid.game.forestman.StageSelectActivity$1;
+
+        specialinvoke $r48.<com.droid.game.forestman.StageSelectActivity$1: void <init>(com.droid.game.forestman.StageSelectActivity)>($r47);
+
+        if $i0 == 75 goto label56;
+
+        virtualinvoke $r48.<com.droid.game.forestman.StageSelectActivity$1: void onClick(android.view.View)>(null);
+
+     label56:
+        $r49 = new com.droid.game.forestman.GameStopActivity$1;
+
+        specialinvoke $r49.<com.droid.game.forestman.GameStopActivity$1: void <init>(com.droid.game.forestman.GameStopActivity)>($r5);
+
+        if $i0 == 76 goto label57;
+
+        virtualinvoke $r49.<com.droid.game.forestman.GameStopActivity$1: void onClick(android.view.View)>(null);
+
+     label57:
+        $r50 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r50.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r51 = new com.droid.recommend.RecommendData;
+
+        specialinvoke $r51.<com.droid.recommend.RecommendData: void <init>()>();
+
+        $r52 = new com.droid.recommend.RecommendActivity$1;
+
+        specialinvoke $r52.<com.droid.recommend.RecommendActivity$1: void <init>(com.droid.recommend.RecommendActivity,com.droid.recommend.RecommendData)>($r50, $r51);
+
+        if $i0 == 77 goto label58;
+
+        virtualinvoke $r52.<com.droid.recommend.RecommendActivity$1: void onClick(android.view.View)>(null);
+
+     label58:
+        $r53 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r53.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r54 = new com.droid.score.OnlineScoreActivity$3;
+
+        specialinvoke $r54.<com.droid.score.OnlineScoreActivity$3: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r53, null);
+
+        if $i0 == 78 goto label59;
+
+        virtualinvoke $r54.<com.droid.score.OnlineScoreActivity$3: void onClick(android.view.View)>(null);
+
+     label59:
+        $r55 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r55.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r56 = new com.droid.recommend.RecommendActivity$2;
+
+        specialinvoke $r56.<com.droid.recommend.RecommendActivity$2: void <init>(com.droid.recommend.RecommendActivity)>($r55);
+
+        if $i0 == 79 goto label60;
+
+        virtualinvoke $r56.<com.droid.recommend.RecommendActivity$2: void onClick(android.view.View)>(null);
+
+     label60:
+        $r57 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r57.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r58 = new com.droid.score.OnlineScoreActivity$5;
+
+        specialinvoke $r58.<com.droid.score.OnlineScoreActivity$5: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r57, null);
+
+        if $i0 == 80 goto label61;
+
+        virtualinvoke $r58.<com.droid.score.OnlineScoreActivity$5: void onClick(android.view.View)>(null);
+
+     label61:
+        $r59 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r59.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r60 = new com.droid.score.OnlineScoreActivity$2;
+
+        specialinvoke $r60.<com.droid.score.OnlineScoreActivity$2: void <init>(com.droid.score.OnlineScoreActivity)>($r59);
+
+        if $i0 == 81 goto label62;
+
+        virtualinvoke $r60.<com.droid.score.OnlineScoreActivity$2: void onClick(android.view.View)>(null);
+
+     label62:
+        $r61 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r61.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r62 = new com.droid.score.OnlineScoreActivity$4;
+
+        specialinvoke $r62.<com.droid.score.OnlineScoreActivity$4: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r61, null);
+
+        if $i0 == 82 goto label63;
+
+        virtualinvoke $r62.<com.droid.score.OnlineScoreActivity$4: void onClick(android.view.View)>(null);
+
+     label63:
+        $r63 = new com.droid.game.forestman.GameActivity$2;
+
+        specialinvoke $r63.<com.droid.game.forestman.GameActivity$2: void <init>(com.droid.game.forestman.GameActivity)>($r26);
+
+        if $i0 == 83 goto label64;
+
+        virtualinvoke $r63.<com.droid.game.forestman.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label64:
+        $r64 = new com.droid.game.forestman.GameStartActivity$1;
+
+        specialinvoke $r64.<com.droid.game.forestman.GameStartActivity$1: void <init>(com.droid.game.forestman.GameStartActivity)>($r28);
+
+        if $i0 == 84 goto label65;
+
+        virtualinvoke $r64.<com.droid.game.forestman.GameStartActivity$1: void onClick(android.view.View)>(null);
+
+     label65:
+        if $i0 == 85 goto label55;
+
+     label66:
+        if $i0 == 86 goto label54;
+
+        if $i0 == 87 goto label67;
+
+        if $i0 == 88 goto label54;
+
+     label67:
+        virtualinvoke $r47.<com.droid.game.forestman.StageSelectActivity: void onDestroy()>();
+
+     label68:
+        if $i0 == 90 goto label74;
+
+        $r65 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r65.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        if $i0 == 91 goto label74;
+
+        virtualinvoke $r65.<com.droid.recommend.RecommendActivity: void onCreate(android.os.Bundle)>(null);
+
+     label69:
+        if $i0 == 93 goto label73;
+
+     label70:
+        $r66 = new com.droid.recommend.RecommendData;
+
+        specialinvoke $r66.<com.droid.recommend.RecommendData: void <init>()>();
+
+        $r67 = new com.droid.recommend.RecommendActivity$1;
+
+        specialinvoke $r67.<com.droid.recommend.RecommendActivity$1: void <init>(com.droid.recommend.RecommendActivity,com.droid.recommend.RecommendData)>($r65, $r66);
+
+        if $i0 == 94 goto label71;
+
+        virtualinvoke $r67.<com.droid.recommend.RecommendActivity$1: void onClick(android.view.View)>(null);
+
+     label71:
+        $r68 = new com.droid.recommend.RecommendActivity$2;
+
+        specialinvoke $r68.<com.droid.recommend.RecommendActivity$2: void <init>(com.droid.recommend.RecommendActivity)>($r65);
+
+        if $i0 == 95 goto label72;
+
+        virtualinvoke $r68.<com.droid.recommend.RecommendActivity$2: void onClick(android.view.View)>(null);
+
+     label72:
+        if $i0 == 96 goto label70;
+
+     label73:
+        if $i0 == 97 goto label69;
+
+        if $i0 == 98 goto label74;
+
+        if $i0 == 99 goto label69;
+
+     label74:
+        if $i0 == 101 goto label76;
+
+        $r69 = new com.droid.game.forestman.HighScoreActivity;
+
+        specialinvoke $r69.<com.droid.game.forestman.HighScoreActivity: void <init>()>();
+
+        if $i0 == 102 goto label76;
+
+        virtualinvoke $r69.<com.droid.game.forestman.HighScoreActivity: void onCreate(android.os.Bundle)>(null);
+
+     label75:
+        if $i0 == 105 goto label75;
+
+        if $i0 == 106 goto label76;
+
+        if $i0 == 107 goto label75;
+
+     label76:
+        if $i0 == 109 goto label78;
+
+        $r70 = new com.droid.activity.MoreActivity;
+
+        specialinvoke $r70.<com.droid.activity.MoreActivity: void <init>()>();
+
+        if $i0 == 110 goto label78;
+
+        virtualinvoke $r70.<com.droid.activity.MoreActivity: void onCreate(android.os.Bundle)>(null);
+
+     label77:
+        if $i0 == 113 goto label77;
+
+        if $i0 == 114 goto label78;
+
+        if $i0 == 115 goto label77;
+
+     label78:
+        if $i0 == 117 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Running incremental callback analysis for 9 components...
+Incremental callback analysis done.
+Found 51 callback methods for 9 components
+Found {res/layout/level.xml=[-1 - com.google.ads.GoogleAdView, -1 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131034160 - com.droid.game.forestman.StageItem, 2131034161 - com.droid.game.forestman.StageItem, 2131034162 - com.droid.game.forestman.StageItem, -1 - android.widget.TextView, 2131034155 - com.droid.game.forestman.StageItem, -1 - android.widget.TableRow, -1 - android.widget.TableLayout, 2131034158 - com.droid.game.forestman.StageItem, 2131034159 - com.droid.game.forestman.StageItem, 2131034154 - android.widget.LinearLayout, 2131034156 - com.droid.game.forestman.StageItem, 2131034157 - com.droid.game.forestman.StageItem], res/layout/score.xml=[2131034186 - android.widget.TextView, 2131034173 - android.widget.TextView, 2131034179 - android.widget.TextView, 2131034177 - android.widget.TextView, 2131034175 - android.widget.TextView, 2131034181 - android.widget.TextView, 2131034189 - android.widget.EditText, 2131034192 - android.widget.Button, 2131034183 - android.widget.TextView, 2131034190 - android.widget.Button, 2131034170 - android.widget.ProgressBar, 2131034112 - com.google.ads.GoogleAdView, -1 - android.widget.TableRow, 2131034187 - android.widget.TextView, 2131034185 - android.widget.TextView, 2131034178 - android.widget.TextView, 2131034188 - android.widget.LinearLayout, 2131034174 - android.widget.TextView, 2131034169 - android.widget.RelativeLayout, 2131034176 - android.widget.TextView, 2131034193 - android.widget.Button, 2131034180 - android.widget.TextView, 2131034182 - android.widget.TextView, 2131034171 - android.widget.LinearLayout, 2131034184 - android.widget.TextView, 2131034191 - android.widget.Button, -1 - android.widget.TextView, 2131034172 - android.widget.TableLayout, -1 - android.widget.LinearLayout], res/layout-large/level.xml=[-1 - com.google.ads.GoogleAdView, -1 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131034160 - com.droid.game.forestman.StageItem, 2131034161 - com.droid.game.forestman.StageItem, 2131034162 - com.droid.game.forestman.StageItem, -1 - android.widget.TextView, 2131034155 - com.droid.game.forestman.StageItem, -1 - android.widget.TableRow, -1 - android.widget.TableLayout, 2131034158 - com.droid.game.forestman.StageItem, 2131034159 - com.droid.game.forestman.StageItem, 2131034154 - android.widget.LinearLayout, 2131034156 - com.droid.game.forestman.StageItem, 2131034157 - com.droid.game.forestman.StageItem], res/layout/r_dlg.xml=[2131034163 - android.widget.RelativeLayout, 2131034168 - android.widget.ImageView, 2131034167 - android.widget.ImageView, -1 - android.widget.TextView, 2131034164 - android.widget.ImageView, 2131034165 - android.widget.TextView, 2131034166 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/game_start.xml=[-1 - com.google.ads.GoogleAdView, -1 - android.widget.TextView, 2131034121 - com.droid.game.forestman.CloudMove, -1 - android.widget.RelativeLayout, -1 - android.widget.LinearLayout, 2131034124 - android.widget.Button, 2131034125 - android.widget.Button, 2131034123 - android.widget.Button, 2131034122 - android.widget.Button], res/layout/game_stop.xml=[2131034127 - android.widget.TextView, -1 - com.google.ads.GoogleAdView, 2131034130 - android.widget.TextView, 2131034133 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131034131 - android.widget.Button, 2131034124 - android.widget.Button, 2131034128 - com.droid.game.forestman.ScoreStar, 2131034126 - android.widget.ImageView, 2131034129 - android.widget.Button, -1 - android.widget.TextView, 2131034132 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout-large/game_start.xml=[-1 - com.google.ads.GoogleAdView, -1 - android.widget.TextView, 2131034121 - com.droid.game.forestman.CloudMove, -1 - android.widget.RelativeLayout, -1 - android.widget.LinearLayout, 2131034124 - android.widget.Button, 2131034125 - android.widget.Button, 2131034123 - android.widget.Button, 2131034122 - android.widget.Button], res/layout/game.xml=[2131034119 - com.droid.game.basic.BasicGameView, -1 - android.widget.RelativeLayout, 2131034120 - android.widget.ImageButton], res/layout/high_score.xml=[2131034148 - android.widget.TextView, 2131034149 - android.widget.TextView, -1 - com.google.ads.GoogleAdView, -1 - android.widget.RelativeLayout, 2131034137 - android.widget.TextView, 2131034136 - android.widget.TextView, 2131034138 - android.widget.TextView, 2131034139 - android.widget.TextView, 2131034134 - android.widget.TextView, 2131034135 - android.widget.TextView, -1 - android.widget.TextView, 2131034142 - android.widget.TextView, 2131034143 - android.widget.TextView, 2131034141 - android.widget.TextView, 2131034152 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131034153 - android.widget.TextView, 2131034140 - android.widget.TextView, 2131034145 - android.widget.TextView, 2131034151 - android.widget.TextView, 2131034150 - android.widget.TextView, 2131034144 - android.widget.TextView, 2131034147 - android.widget.TextView, 2131034146 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 51 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/05a64c76b56919f4c6063ce376b59ac84c707425d6a442936b5ad659f7293c1e.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Parcelable
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0, $z1, $z2;
+        com.GoldDream.zj.zjReceiver $r3;
+        com.google.android.apps.analytics.AnalyticsReceiver $r4;
+        com.droid.game.forestman.GameStopActivity $r5;
+        com.droid.score.OnlineScoreActivity $r6, $r10, $r12, $r18, $r32, $r34, $r45, $r49, $r54, $r56, $r67, $r70;
+        com.droid.score.OnlineScoreActivity$4 $r7, $r35, $r57;
+        com.droid.game.forestman.GameActivity $r8, $r29;
+        com.droid.game.forestman.GameActivity$2 $r9, $r30, $r40, $r62;
+        com.droid.score.OnlineScoreActivity$5 $r11, $r46, $r68;
+        com.droid.score.OnlineScoreActivity$3 $r13, $r50, $r71;
+        com.droid.game.forestman.GameStopActivity$1 $r14, $r51, $r72;
+        com.droid.game.forestman.ScoreStar $r15;
+        com.droid.game.forestman.GameStartActivity $r16, $r31;
+        com.droid.game.forestman.GameStartActivity$1 $r17, $r52, $r73;
+        com.droid.score.OnlineScoreActivity$2 $r19, $r33, $r55;
+        com.droid.recommend.RecommendActivity $r20, $r24, $r36, $r42, $r58, $r64, $r74;
+        com.droid.recommend.RecommendActivity$2 $r21, $r37, $r59, $r75;
+        com.google.ads.GoogleAdView $r22, $r38, $r60, $r79;
+        android.os.Parcelable $r23, $r39, $r61, $r80;
+        com.droid.recommend.RecommendData $r25, $r43, $r65, $r76;
+        com.droid.recommend.RecommendActivity$1 $r26, $r44, $r66, $r77;
+        com.droid.game.forestman.StageSelectActivity $r27, $r47, $r53;
+        com.droid.game.forestman.StageSelectActivity$1 $r28, $r48, $r69;
+        com.droid.game.forestman.CloudMove $r41;
+        com.droid.game.forestman.StageItem $r63;
+        com.droid.game.forestman.HighScoreActivity $r78;
+        com.droid.activity.MoreActivity $r81;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label012;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label002:
+        if $i0 == 1 goto label003;
+
+        if $i0 == 2 goto label002;
+
+     label003:
+        if $i0 == 3 goto label007;
+
+     label004:
+        if $i0 == 4 goto label005;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label005:
+        if $i0 == 5 goto label006;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label006:
+        if $i0 == 6 goto label004;
+
+     label007:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label008:
+        if $i0 == 7 goto label009;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label009:
+        if $i0 == 8 goto label010;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label010:
+        if $i0 == 9 goto label008;
+
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 10 goto label011;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 11 goto label008;
+
+     label011:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label012:
+        if $i0 == 12 goto label014;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 13 goto label014;
+
+     label013:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label013;
+
+     label014:
+        if $i0 == 16 goto label016;
+
+        $r4 = new com.google.android.apps.analytics.AnalyticsReceiver;
+
+        specialinvoke $r4.<com.google.android.apps.analytics.AnalyticsReceiver: void <init>()>();
+
+        if $i0 == 17 goto label016;
+
+     label015:
+        virtualinvoke $r4.<com.google.android.apps.analytics.AnalyticsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 19 goto label015;
+
+     label016:
+        if $i0 == 20 goto label042;
+
+        $r5 = new com.droid.game.forestman.GameStopActivity;
+
+        specialinvoke $r5.<com.droid.game.forestman.GameStopActivity: void <init>()>();
+
+        if $i0 == 21 goto label042;
+
+        virtualinvoke $r5.<com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label017:
+        if $i0 == 23 goto label041;
+
+     label018:
+        $r6 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r6.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r7 = new com.droid.score.OnlineScoreActivity$4;
+
+        specialinvoke $r7.<com.droid.score.OnlineScoreActivity$4: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r6, null);
+
+        if $i0 == 24 goto label019;
+
+        virtualinvoke $r7.<com.droid.score.OnlineScoreActivity$4: void onClick(android.view.View)>(null);
+
+     label019:
+        $r8 = new com.droid.game.forestman.GameActivity;
+
+        specialinvoke $r8.<com.droid.game.forestman.GameActivity: void <init>()>();
+
+        $r9 = new com.droid.game.forestman.GameActivity$2;
+
+        specialinvoke $r9.<com.droid.game.forestman.GameActivity$2: void <init>(com.droid.game.forestman.GameActivity)>($r8);
+
+        if $i0 == 25 goto label020;
+
+        virtualinvoke $r9.<com.droid.game.forestman.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label020:
+        $r10 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r10.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r11 = new com.droid.score.OnlineScoreActivity$5;
+
+        specialinvoke $r11.<com.droid.score.OnlineScoreActivity$5: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r10, null);
+
+        if $i0 == 26 goto label021;
+
+        virtualinvoke $r11.<com.droid.score.OnlineScoreActivity$5: void onClick(android.view.View)>(null);
+
+     label021:
+        $r12 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r12.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r13 = new com.droid.score.OnlineScoreActivity$3;
+
+        specialinvoke $r13.<com.droid.score.OnlineScoreActivity$3: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r12, null);
+
+        if $i0 == 27 goto label022;
+
+        virtualinvoke $r13.<com.droid.score.OnlineScoreActivity$3: void onClick(android.view.View)>(null);
+
+     label022:
+        $r14 = new com.droid.game.forestman.GameStopActivity$1;
+
+        specialinvoke $r14.<com.droid.game.forestman.GameStopActivity$1: void <init>(com.droid.game.forestman.GameStopActivity)>($r5);
+
+        if $i0 == 28 goto label023;
+
+        virtualinvoke $r14.<com.droid.game.forestman.GameStopActivity$1: void onClick(android.view.View)>(null);
+
+     label023:
+        $r15 = new com.droid.game.forestman.ScoreStar;
+
+        specialinvoke $r15.<com.droid.game.forestman.ScoreStar: void <init>(android.content.Context,android.util.AttributeSet)>($r5, null);
+
+        if $i0 == 29 goto label024;
+
+        virtualinvoke $r15.<com.droid.game.forestman.ScoreStar: void onDraw(android.graphics.Canvas)>(null);
+
+     label024:
+        if $i0 == 30 goto label025;
+
+        virtualinvoke $r15.<com.droid.game.forestman.ScoreStar: void onMeasure(int,int)>(0, 0);
+
+     label025:
+        if $i0 == 31 goto label026;
+
+        staticinvoke <com.droid.game.forestman.ScoreStar: void <clinit>()>();
+
+     label026:
+        $r16 = new com.droid.game.forestman.GameStartActivity;
+
+        specialinvoke $r16.<com.droid.game.forestman.GameStartActivity: void <init>()>();
+
+        $r17 = new com.droid.game.forestman.GameStartActivity$1;
+
+        specialinvoke $r17.<com.droid.game.forestman.GameStartActivity$1: void <init>(com.droid.game.forestman.GameStartActivity)>($r16);
+
+        if $i0 == 32 goto label027;
+
+        virtualinvoke $r17.<com.droid.game.forestman.GameStartActivity$1: void onClick(android.view.View)>(null);
+
+     label027:
+        $r18 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r18.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r19 = new com.droid.score.OnlineScoreActivity$2;
+
+        specialinvoke $r19.<com.droid.score.OnlineScoreActivity$2: void <init>(com.droid.score.OnlineScoreActivity)>($r18);
+
+        if $i0 == 33 goto label028;
+
+        virtualinvoke $r19.<com.droid.score.OnlineScoreActivity$2: void onClick(android.view.View)>(null);
+
+     label028:
+        $r20 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r20.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r21 = new com.droid.recommend.RecommendActivity$2;
+
+        specialinvoke $r21.<com.droid.recommend.RecommendActivity$2: void <init>(com.droid.recommend.RecommendActivity)>($r20);
+
+        if $i0 == 34 goto label029;
+
+        virtualinvoke $r21.<com.droid.recommend.RecommendActivity$2: void onClick(android.view.View)>(null);
+
+     label029:
+        if $i0 == 35 goto label030;
+
+        staticinvoke <com.droid.game.forestman.GameStopActivity: void <clinit>()>();
+
+     label030:
+        $r22 = new com.google.ads.GoogleAdView;
+
+        specialinvoke $r22.<com.google.ads.GoogleAdView: void <init>(android.content.Context)>($r5);
+
+        if $i0 == 36 goto label031;
+
+        virtualinvoke $r22.<com.google.ads.GoogleAdView: void setDisplayedChild(int)>(0);
+
+     label031:
+        if $i0 == 37 goto label032;
+
+        staticinvoke <com.google.ads.GoogleAdView: void <clinit>()>();
+
+     label032:
+        if $i0 == 38 goto label033;
+
+        virtualinvoke $r22.<com.google.ads.GoogleAdView: void reset()>();
+
+     label033:
+        if $i0 == 39 goto label034;
+
+        virtualinvoke $r22.<com.google.ads.GoogleAdView: void onRestoreInstanceState(android.os.Parcelable)>(null);
+
+     label034:
+        if $i0 == 40 goto label035;
+
+        virtualinvoke $r22.<com.google.ads.GoogleAdView: void onWindowFocusChanged(boolean)>(false);
+
+     label035:
+        if $i0 == 41 goto label036;
+
+        virtualinvoke $r22.<com.google.ads.GoogleAdView: void onDetachedFromWindow()>();
+
+     label036:
+        if $i0 == 42 goto label037;
+
+        virtualinvoke $r22.<com.google.ads.GoogleAdView: void onAttachedToWindow()>();
+
+     label037:
+        if $i0 == 43 goto label038;
+
+        $r23 = virtualinvoke $r22.<com.google.ads.GoogleAdView: android.os.Parcelable onSaveInstanceState()>();
+
+     label038:
+        $r24 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r24.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r25 = new com.droid.recommend.RecommendData;
+
+        specialinvoke $r25.<com.droid.recommend.RecommendData: void <init>()>();
+
+        $r26 = new com.droid.recommend.RecommendActivity$1;
+
+        specialinvoke $r26.<com.droid.recommend.RecommendActivity$1: void <init>(com.droid.recommend.RecommendActivity,com.droid.recommend.RecommendData)>($r24, $r25);
+
+        if $i0 == 44 goto label039;
+
+        virtualinvoke $r26.<com.droid.recommend.RecommendActivity$1: void onClick(android.view.View)>(null);
+
+     label039:
+        $r27 = new com.droid.game.forestman.StageSelectActivity;
+
+        specialinvoke $r27.<com.droid.game.forestman.StageSelectActivity: void <init>()>();
+
+        $r28 = new com.droid.game.forestman.StageSelectActivity$1;
+
+        specialinvoke $r28.<com.droid.game.forestman.StageSelectActivity$1: void <init>(com.droid.game.forestman.StageSelectActivity)>($r27);
+
+        if $i0 == 45 goto label040;
+
+        virtualinvoke $r28.<com.droid.game.forestman.StageSelectActivity$1: void onClick(android.view.View)>(null);
+
+     label040:
+        if $i0 == 46 goto label018;
+
+     label041:
+        if $i0 == 47 goto label017;
+
+        if $i0 == 48 goto label042;
+
+        if $i0 == 49 goto label017;
+
+     label042:
+        if $i0 == 51 goto label049;
+
+        $r29 = new com.droid.game.forestman.GameActivity;
+
+        specialinvoke $r29.<com.droid.game.forestman.GameActivity: void <init>()>();
+
+        if $i0 == 52 goto label049;
+
+        virtualinvoke $r29.<com.droid.game.forestman.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label043:
+        virtualinvoke $r29.<com.droid.game.forestman.GameActivity: void onResume()>();
+
+        if $i0 == 54 goto label048;
+
+     label044:
+        $r30 = new com.droid.game.forestman.GameActivity$2;
+
+        specialinvoke $r30.<com.droid.game.forestman.GameActivity$2: void <init>(com.droid.game.forestman.GameActivity)>($r29);
+
+        if $i0 == 55 goto label045;
+
+        virtualinvoke $r30.<com.droid.game.forestman.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label045:
+        if $i0 == 56 goto label046;
+
+        $z1 = virtualinvoke $r29.<com.droid.game.forestman.GameActivity: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label046:
+        if $i0 == 57 goto label047;
+
+        $z2 = virtualinvoke $r29.<com.droid.game.forestman.GameActivity: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label047:
+        if $i0 == 58 goto label044;
+
+     label048:
+        virtualinvoke $r29.<com.droid.game.forestman.GameActivity: void onPause()>();
+
+        if $i0 == 59 goto label043;
+
+        if $i0 == 60 goto label049;
+
+        if $i0 == 61 goto label043;
+
+     label049:
+        if $i0 == 63 goto label073;
+
+        $r31 = new com.droid.game.forestman.GameStartActivity;
+
+        specialinvoke $r31.<com.droid.game.forestman.GameStartActivity: void <init>()>();
+
+        if $i0 == 64 goto label073;
+
+        virtualinvoke $r31.<com.droid.game.forestman.GameStartActivity: void onCreate(android.os.Bundle)>(null);
+
+     label050:
+        virtualinvoke $r31.<com.droid.game.forestman.GameStartActivity: void onResume()>();
+
+        if $i0 == 66 goto label071;
+
+     label051:
+        $r32 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r32.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r33 = new com.droid.score.OnlineScoreActivity$2;
+
+        specialinvoke $r33.<com.droid.score.OnlineScoreActivity$2: void <init>(com.droid.score.OnlineScoreActivity)>($r32);
+
+        if $i0 == 67 goto label052;
+
+        virtualinvoke $r33.<com.droid.score.OnlineScoreActivity$2: void onClick(android.view.View)>(null);
+
+     label052:
+        $r34 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r34.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r35 = new com.droid.score.OnlineScoreActivity$4;
+
+        specialinvoke $r35.<com.droid.score.OnlineScoreActivity$4: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r34, null);
+
+        if $i0 == 68 goto label053;
+
+        virtualinvoke $r35.<com.droid.score.OnlineScoreActivity$4: void onClick(android.view.View)>(null);
+
+     label053:
+        $r36 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r36.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r37 = new com.droid.recommend.RecommendActivity$2;
+
+        specialinvoke $r37.<com.droid.recommend.RecommendActivity$2: void <init>(com.droid.recommend.RecommendActivity)>($r36);
+
+        if $i0 == 69 goto label054;
+
+        virtualinvoke $r37.<com.droid.recommend.RecommendActivity$2: void onClick(android.view.View)>(null);
+
+     label054:
+        $r38 = new com.google.ads.GoogleAdView;
+
+        specialinvoke $r38.<com.google.ads.GoogleAdView: void <init>(android.content.Context)>($r31);
+
+        if $i0 == 70 goto label055;
+
+        virtualinvoke $r38.<com.google.ads.GoogleAdView: void setDisplayedChild(int)>(0);
+
+     label055:
+        if $i0 == 71 goto label056;
+
+        staticinvoke <com.google.ads.GoogleAdView: void <clinit>()>();
+
+     label056:
+        if $i0 == 72 goto label057;
+
+        virtualinvoke $r38.<com.google.ads.GoogleAdView: void reset()>();
+
+     label057:
+        if $i0 == 73 goto label058;
+
+        virtualinvoke $r38.<com.google.ads.GoogleAdView: void onRestoreInstanceState(android.os.Parcelable)>(null);
+
+     label058:
+        if $i0 == 74 goto label059;
+
+        virtualinvoke $r38.<com.google.ads.GoogleAdView: void onWindowFocusChanged(boolean)>(false);
+
+     label059:
+        if $i0 == 75 goto label060;
+
+        virtualinvoke $r38.<com.google.ads.GoogleAdView: void onDetachedFromWindow()>();
+
+     label060:
+        if $i0 == 76 goto label061;
+
+        virtualinvoke $r38.<com.google.ads.GoogleAdView: void onAttachedToWindow()>();
+
+     label061:
+        if $i0 == 77 goto label062;
+
+        $r39 = virtualinvoke $r38.<com.google.ads.GoogleAdView: android.os.Parcelable onSaveInstanceState()>();
+
+     label062:
+        $r40 = new com.droid.game.forestman.GameActivity$2;
+
+        specialinvoke $r40.<com.droid.game.forestman.GameActivity$2: void <init>(com.droid.game.forestman.GameActivity)>($r29);
+
+        if $i0 == 78 goto label063;
+
+        virtualinvoke $r40.<com.droid.game.forestman.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label063:
+        $r41 = new com.droid.game.forestman.CloudMove;
+
+        specialinvoke $r41.<com.droid.game.forestman.CloudMove: void <init>(android.content.Context,android.util.AttributeSet)>($r31, null);
+
+        if $i0 == 79 goto label064;
+
+        virtualinvoke $r41.<com.droid.game.forestman.CloudMove: void onDraw(android.graphics.Canvas)>(null);
+
+     label064:
+        $r42 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r42.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r43 = new com.droid.recommend.RecommendData;
+
+        specialinvoke $r43.<com.droid.recommend.RecommendData: void <init>()>();
+
+        $r44 = new com.droid.recommend.RecommendActivity$1;
+
+        specialinvoke $r44.<com.droid.recommend.RecommendActivity$1: void <init>(com.droid.recommend.RecommendActivity,com.droid.recommend.RecommendData)>($r42, $r43);
+
+        if $i0 == 80 goto label065;
+
+        virtualinvoke $r44.<com.droid.recommend.RecommendActivity$1: void onClick(android.view.View)>(null);
+
+     label065:
+        $r45 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r45.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r46 = new com.droid.score.OnlineScoreActivity$5;
+
+        specialinvoke $r46.<com.droid.score.OnlineScoreActivity$5: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r45, null);
+
+        if $i0 == 81 goto label066;
+
+        virtualinvoke $r46.<com.droid.score.OnlineScoreActivity$5: void onClick(android.view.View)>(null);
+
+     label066:
+        $r47 = new com.droid.game.forestman.StageSelectActivity;
+
+        specialinvoke $r47.<com.droid.game.forestman.StageSelectActivity: void <init>()>();
+
+        $r48 = new com.droid.game.forestman.StageSelectActivity$1;
+
+        specialinvoke $r48.<com.droid.game.forestman.StageSelectActivity$1: void <init>(com.droid.game.forestman.StageSelectActivity)>($r47);
+
+        if $i0 == 82 goto label067;
+
+        virtualinvoke $r48.<com.droid.game.forestman.StageSelectActivity$1: void onClick(android.view.View)>(null);
+
+     label067:
+        $r49 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r49.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r50 = new com.droid.score.OnlineScoreActivity$3;
+
+        specialinvoke $r50.<com.droid.score.OnlineScoreActivity$3: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r49, null);
+
+        if $i0 == 83 goto label068;
+
+        virtualinvoke $r50.<com.droid.score.OnlineScoreActivity$3: void onClick(android.view.View)>(null);
+
+     label068:
+        $r51 = new com.droid.game.forestman.GameStopActivity$1;
+
+        specialinvoke $r51.<com.droid.game.forestman.GameStopActivity$1: void <init>(com.droid.game.forestman.GameStopActivity)>($r5);
+
+        if $i0 == 84 goto label069;
+
+        virtualinvoke $r51.<com.droid.game.forestman.GameStopActivity$1: void onClick(android.view.View)>(null);
+
+     label069:
+        $r52 = new com.droid.game.forestman.GameStartActivity$1;
+
+        specialinvoke $r52.<com.droid.game.forestman.GameStartActivity$1: void <init>(com.droid.game.forestman.GameStartActivity)>($r31);
+
+        if $i0 == 85 goto label070;
+
+        virtualinvoke $r52.<com.droid.game.forestman.GameStartActivity$1: void onClick(android.view.View)>(null);
+
+     label070:
+        if $i0 == 86 goto label051;
+
+     label071:
+        virtualinvoke $r31.<com.droid.game.forestman.GameStartActivity: void onPause()>();
+
+        if $i0 == 87 goto label050;
+
+        if $i0 == 88 goto label072;
+
+        if $i0 == 89 goto label050;
+
+     label072:
+        virtualinvoke $r31.<com.droid.game.forestman.GameStartActivity: void onDestroy()>();
+
+     label073:
+        if $i0 == 91 goto label099;
+
+        $r53 = new com.droid.game.forestman.StageSelectActivity;
+
+        specialinvoke $r53.<com.droid.game.forestman.StageSelectActivity: void <init>()>();
+
+        if $i0 == 92 goto label099;
+
+        virtualinvoke $r53.<com.droid.game.forestman.StageSelectActivity: void onCreate(android.os.Bundle)>(null);
+
+     label074:
+        virtualinvoke $r53.<com.droid.game.forestman.StageSelectActivity: void onResume()>();
+
+        if $i0 == 94 goto label097;
+
+     label075:
+        $r54 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r54.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r55 = new com.droid.score.OnlineScoreActivity$2;
+
+        specialinvoke $r55.<com.droid.score.OnlineScoreActivity$2: void <init>(com.droid.score.OnlineScoreActivity)>($r54);
+
+        if $i0 == 95 goto label076;
+
+        virtualinvoke $r55.<com.droid.score.OnlineScoreActivity$2: void onClick(android.view.View)>(null);
+
+     label076:
+        $r56 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r56.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r57 = new com.droid.score.OnlineScoreActivity$4;
+
+        specialinvoke $r57.<com.droid.score.OnlineScoreActivity$4: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r56, null);
+
+        if $i0 == 96 goto label077;
+
+        virtualinvoke $r57.<com.droid.score.OnlineScoreActivity$4: void onClick(android.view.View)>(null);
+
+     label077:
+        $r58 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r58.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r59 = new com.droid.recommend.RecommendActivity$2;
+
+        specialinvoke $r59.<com.droid.recommend.RecommendActivity$2: void <init>(com.droid.recommend.RecommendActivity)>($r58);
+
+        if $i0 == 97 goto label078;
+
+        virtualinvoke $r59.<com.droid.recommend.RecommendActivity$2: void onClick(android.view.View)>(null);
+
+     label078:
+        $r60 = new com.google.ads.GoogleAdView;
+
+        specialinvoke $r60.<com.google.ads.GoogleAdView: void <init>(android.content.Context)>($r53);
+
+        if $i0 == 98 goto label079;
+
+        virtualinvoke $r60.<com.google.ads.GoogleAdView: void setDisplayedChild(int)>(0);
+
+     label079:
+        if $i0 == 99 goto label080;
+
+        staticinvoke <com.google.ads.GoogleAdView: void <clinit>()>();
+
+     label080:
+        if $i0 == 100 goto label081;
+
+        virtualinvoke $r60.<com.google.ads.GoogleAdView: void reset()>();
+
+     label081:
+        if $i0 == 101 goto label082;
+
+        virtualinvoke $r60.<com.google.ads.GoogleAdView: void onRestoreInstanceState(android.os.Parcelable)>(null);
+
+     label082:
+        if $i0 == 102 goto label083;
+
+        virtualinvoke $r60.<com.google.ads.GoogleAdView: void onWindowFocusChanged(boolean)>(false);
+
+     label083:
+        if $i0 == 103 goto label084;
+
+        virtualinvoke $r60.<com.google.ads.GoogleAdView: void onDetachedFromWindow()>();
+
+     label084:
+        if $i0 == 104 goto label085;
+
+        virtualinvoke $r60.<com.google.ads.GoogleAdView: void onAttachedToWindow()>();
+
+     label085:
+        if $i0 == 105 goto label086;
+
+        $r61 = virtualinvoke $r60.<com.google.ads.GoogleAdView: android.os.Parcelable onSaveInstanceState()>();
+
+     label086:
+        $r62 = new com.droid.game.forestman.GameActivity$2;
+
+        specialinvoke $r62.<com.droid.game.forestman.GameActivity$2: void <init>(com.droid.game.forestman.GameActivity)>($r29);
+
+        if $i0 == 106 goto label087;
+
+        virtualinvoke $r62.<com.droid.game.forestman.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label087:
+        $r63 = new com.droid.game.forestman.StageItem;
+
+        specialinvoke $r63.<com.droid.game.forestman.StageItem: void <init>(android.content.Context,android.util.AttributeSet)>($r53, null);
+
+        if $i0 == 107 goto label088;
+
+        virtualinvoke $r63.<com.droid.game.forestman.StageItem: void onDraw(android.graphics.Canvas)>(null);
+
+     label088:
+        if $i0 == 108 goto label089;
+
+        virtualinvoke $r63.<com.droid.game.forestman.StageItem: void onMeasure(int,int)>(0, 0);
+
+     label089:
+        if $i0 == 109 goto label090;
+
+        staticinvoke <com.droid.game.forestman.StageItem: void <clinit>()>();
+
+     label090:
+        $r64 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r64.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        $r65 = new com.droid.recommend.RecommendData;
+
+        specialinvoke $r65.<com.droid.recommend.RecommendData: void <init>()>();
+
+        $r66 = new com.droid.recommend.RecommendActivity$1;
+
+        specialinvoke $r66.<com.droid.recommend.RecommendActivity$1: void <init>(com.droid.recommend.RecommendActivity,com.droid.recommend.RecommendData)>($r64, $r65);
+
+        if $i0 == 110 goto label091;
+
+        virtualinvoke $r66.<com.droid.recommend.RecommendActivity$1: void onClick(android.view.View)>(null);
+
+     label091:
+        $r67 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r67.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r68 = new com.droid.score.OnlineScoreActivity$5;
+
+        specialinvoke $r68.<com.droid.score.OnlineScoreActivity$5: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r67, null);
+
+        if $i0 == 111 goto label092;
+
+        virtualinvoke $r68.<com.droid.score.OnlineScoreActivity$5: void onClick(android.view.View)>(null);
+
+     label092:
+        $r69 = new com.droid.game.forestman.StageSelectActivity$1;
+
+        specialinvoke $r69.<com.droid.game.forestman.StageSelectActivity$1: void <init>(com.droid.game.forestman.StageSelectActivity)>($r53);
+
+        if $i0 == 112 goto label093;
+
+        virtualinvoke $r69.<com.droid.game.forestman.StageSelectActivity$1: void onClick(android.view.View)>(null);
+
+     label093:
+        $r70 = new com.droid.score.OnlineScoreActivity;
+
+        specialinvoke $r70.<com.droid.score.OnlineScoreActivity: void <init>()>();
+
+        $r71 = new com.droid.score.OnlineScoreActivity$3;
+
+        specialinvoke $r71.<com.droid.score.OnlineScoreActivity$3: void <init>(com.droid.score.OnlineScoreActivity,android.view.View)>($r70, null);
+
+        if $i0 == 113 goto label094;
+
+        virtualinvoke $r71.<com.droid.score.OnlineScoreActivity$3: void onClick(android.view.View)>(null);
+
+     label094:
+        $r72 = new com.droid.game.forestman.GameStopActivity$1;
+
+        specialinvoke $r72.<com.droid.game.forestman.GameStopActivity$1: void <init>(com.droid.game.forestman.GameStopActivity)>($r5);
+
+        if $i0 == 114 goto label095;
+
+        virtualinvoke $r72.<com.droid.game.forestman.GameStopActivity$1: void onClick(android.view.View)>(null);
+
+     label095:
+        $r73 = new com.droid.game.forestman.GameStartActivity$1;
+
+        specialinvoke $r73.<com.droid.game.forestman.GameStartActivity$1: void <init>(com.droid.game.forestman.GameStartActivity)>($r31);
+
+        if $i0 == 115 goto label096;
+
+        virtualinvoke $r73.<com.droid.game.forestman.GameStartActivity$1: void onClick(android.view.View)>(null);
+
+     label096:
+        if $i0 == 116 goto label075;
+
+     label097:
+        if $i0 == 117 goto label074;
+
+        if $i0 == 118 goto label098;
+
+        if $i0 == 119 goto label074;
+
+     label098:
+        virtualinvoke $r53.<com.droid.game.forestman.StageSelectActivity: void onDestroy()>();
+
+     label099:
+        if $i0 == 121 goto label105;
+
+        $r74 = new com.droid.recommend.RecommendActivity;
+
+        specialinvoke $r74.<com.droid.recommend.RecommendActivity: void <init>()>();
+
+        if $i0 == 122 goto label105;
+
+        virtualinvoke $r74.<com.droid.recommend.RecommendActivity: void onCreate(android.os.Bundle)>(null);
+
+     label100:
+        if $i0 == 124 goto label104;
+
+     label101:
+        $r75 = new com.droid.recommend.RecommendActivity$2;
+
+        specialinvoke $r75.<com.droid.recommend.RecommendActivity$2: void <init>(com.droid.recommend.RecommendActivity)>($r74);
+
+        if $i0 == 125 goto label102;
+
+        virtualinvoke $r75.<com.droid.recommend.RecommendActivity$2: void onClick(android.view.View)>(null);
+
+     label102:
+        $r76 = new com.droid.recommend.RecommendData;
+
+        specialinvoke $r76.<com.droid.recommend.RecommendData: void <init>()>();
+
+        $r77 = new com.droid.recommend.RecommendActivity$1;
+
+        specialinvoke $r77.<com.droid.recommend.RecommendActivity$1: void <init>(com.droid.recommend.RecommendActivity,com.droid.recommend.RecommendData)>($r74, $r76);
+
+        if $i0 == 126 goto label103;
+
+        virtualinvoke $r77.<com.droid.recommend.RecommendActivity$1: void onClick(android.view.View)>(null);
+
+     label103:
+        if $i0 == 127 goto label101;
+
+     label104:
+        if $i0 == 128 goto label100;
+
+        if $i0 == 129 goto label105;
+
+        if $i0 == 130 goto label100;
+
+     label105:
+        if $i0 == 132 goto label117;
+
+        $r78 = new com.droid.game.forestman.HighScoreActivity;
+
+        specialinvoke $r78.<com.droid.game.forestman.HighScoreActivity: void <init>()>();
+
+        if $i0 == 133 goto label117;
+
+        virtualinvoke $r78.<com.droid.game.forestman.HighScoreActivity: void onCreate(android.os.Bundle)>(null);
+
+     label106:
+        if $i0 == 135 goto label116;
+
+     label107:
+        $r79 = new com.google.ads.GoogleAdView;
+
+        specialinvoke $r79.<com.google.ads.GoogleAdView: void <init>(android.content.Context)>($r78);
+
+        if $i0 == 136 goto label108;
+
+        virtualinvoke $r79.<com.google.ads.GoogleAdView: void setDisplayedChild(int)>(0);
+
+     label108:
+        if $i0 == 137 goto label109;
+
+        staticinvoke <com.google.ads.GoogleAdView: void <clinit>()>();
+
+     label109:
+        if $i0 == 138 goto label110;
+
+        virtualinvoke $r79.<com.google.ads.GoogleAdView: void reset()>();
+
+     label110:
+        if $i0 == 139 goto label111;
+
+        virtualinvoke $r79.<com.google.ads.GoogleAdView: void onRestoreInstanceState(android.os.Parcelable)>(null);
+
+     label111:
+        if $i0 == 140 goto label112;
+
+        virtualinvoke $r79.<com.google.ads.GoogleAdView: void onWindowFocusChanged(boolean)>(false);
+
+     label112:
+        if $i0 == 141 goto label113;
+
+        virtualinvoke $r79.<com.google.ads.GoogleAdView: void onDetachedFromWindow()>();
+
+     label113:
+        if $i0 == 142 goto label114;
+
+        virtualinvoke $r79.<com.google.ads.GoogleAdView: void onAttachedToWindow()>();
+
+     label114:
+        if $i0 == 143 goto label115;
+
+        $r80 = virtualinvoke $r79.<com.google.ads.GoogleAdView: android.os.Parcelable onSaveInstanceState()>();
+
+     label115:
+        if $i0 == 144 goto label107;
+
+     label116:
+        if $i0 == 145 goto label106;
+
+        if $i0 == 146 goto label117;
+
+        if $i0 == 147 goto label106;
+
+     label117:
+        if $i0 == 149 goto label119;
+
+        $r81 = new com.droid.activity.MoreActivity;
+
+        specialinvoke $r81.<com.droid.activity.MoreActivity: void <init>()>();
+
+        if $i0 == 150 goto label119;
+
+        virtualinvoke $r81.<com.droid.activity.MoreActivity: void onCreate(android.os.Bundle)>(null);
+
+     label118:
+        if $i0 == 153 goto label118;
+
+        if $i0 == 154 goto label119;
+
+        if $i0 == 155 goto label118;
+
+     label119:
+        if $i0 == 157 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.116245084 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.089166221 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3143 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+Could not find assignment to local $i1 in method <com.droid.game.forestman.StageSelectActivity: void initBtns()>
+Could not find assignment to local $i1 in method <com.droid.score.OnlineScoreActivity: void enableAllButtons(boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 55 sources and 54 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1878128
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1678028
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 11026728 forward and 1062294 backward edges solved, processing 16 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 16 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.007037366 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r14.<android.os.Handler: boolean sendMessage(android.os.Message)>($r13) in method <com.droid.score.OnlineScoreActivity: void postRequest(java.util.List,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = interfaceinvoke $r9.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.droid.score.OnlineScoreActivity: void postRequest(java.util.List,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r9 = interfaceinvoke $r4.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r5) in method <com.droid.score.OnlineScoreActivity: void postRequest(java.util.List,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.droid.score.ScoreUtil: java.lang.String getIMEI(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("cs", $r3) in method <com.droid.score.ScoreItem: java.util.List toNameValuePairs()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.droid.score.ScoreUtil: java.lang.String getIMEI(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r13.<java.net.URL: void <init>(java.lang.String)>($r2) in method <com.GoldDream.zj.zjService: java.lang.String getUidfromServer()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6) in method <com.GoldDream.zj.zjReceiver: void WriteRec(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 := @parameter1: android.content.Intent in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("level", $i0) in method <com.droid.game.forestman.GameStopActivity: void play(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("level") in method <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r18.<java.net.URL: void <init>(java.lang.String)>($r7) in method <com.droid.recommend.RecommendUtil: void fetchInThread(android.content.Context,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(0) in method <com.droid.recommend.RecommendUtil: java.lang.String getInstalleddroidList(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0) in method <com.droid.game.forestman.global.Preference: void setBest(android.content.Context,long,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("Score") in method <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("level") in method <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("Life") in method <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("deviceid", $r3) in method <com.droid.score.ScoreItem: java.util.List toNameValuePairs()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.droid.score.ScoreUtil: java.lang.String getIMEI(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5) in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("lock", $i0) in method <com.droid.game.forestman.global.Preference: void setLock(android.content.Context,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("level") in method <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>
+Found a flow to sink virtualinvoke $r14.<android.os.Handler: boolean sendMessage(android.os.Message)>($r13), from the following sources:
+	- $r11 = interfaceinvoke $r9.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.droid.score.OnlineScoreActivity: void postRequest(java.util.List,boolean)>)
+Found a flow to sink $r9 = interfaceinvoke $r4.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r5), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.droid.score.ScoreUtil: java.lang.String getIMEI(android.content.Context)>)
+Found a flow to sink specialinvoke $r2.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("cs", $r3), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.droid.score.ScoreUtil: java.lang.String getIMEI(android.content.Context)>)
+Found a flow to sink specialinvoke r13.<java.net.URL: void <init>(java.lang.String)>($r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+Found a flow to sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6), from the following sources:
+	- $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 := @parameter1: android.content.Intent (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("level", $i0), from the following sources:
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("level") (in <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink specialinvoke r18.<java.net.URL: void <init>(java.lang.String)>($r7), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(0) (in <com.droid.recommend.RecommendUtil: java.lang.String getInstalleddroidList(android.content.Context)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l0), from the following sources:
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("Score") (in <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("level") (in <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("Life") (in <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink specialinvoke $r2.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("deviceid", $r3), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.droid.score.ScoreUtil: java.lang.String getIMEI(android.content.Context)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("lock", $i0), from the following sources:
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("level") (in <com.droid.game.forestman.GameStopActivity: void onCreate(android.os.Bundle)>)
+Maximum memory consumption: 1402.845264 MB
+Analysis has run for 42.845628863 seconds

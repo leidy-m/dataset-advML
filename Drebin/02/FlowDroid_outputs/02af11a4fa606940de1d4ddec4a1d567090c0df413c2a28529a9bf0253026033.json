@@ -1,0 +1,950 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.017169313 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.net.http.SslError is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wRuddyExecutive.MessageViewer $r1;
+        com.wRuddyExecutive.Server.C2DMClientReceiver $r2;
+        com.wRuddyExecutive.MainNavigationActivity $r3;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label05;
+
+        $r1 = new com.wRuddyExecutive.MessageViewer;
+
+        specialinvoke $r1.<com.wRuddyExecutive.MessageViewer: void <init>()>();
+
+        if $i0 == 1 goto label05;
+
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onStart()>();
+
+        if $i0 == 2 goto label03;
+
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label03:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onPause()>();
+
+        if $i0 == 3 goto label03;
+
+        if $i0 == 4 goto label04;
+
+        if $i0 == 5 goto label02;
+
+     label04:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onDestroy()>();
+
+     label05:
+        if $i0 == 7 goto label08;
+
+        $r2 = new com.wRuddyExecutive.Server.C2DMClientReceiver;
+
+        specialinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label06:
+        if $i0 == 8 goto label07;
+
+        if $i0 == 9 goto label06;
+
+     label07:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        if $i0 == 13 goto label11;
+
+        $r3 = new com.wRuddyExecutive.MainNavigationActivity;
+
+        specialinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 14 goto label11;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onResume()>();
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onDestroy()>();
+
+     label11:
+        if $i0 == 20 goto label13;
+
+        $r4 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r4.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 21 goto label13;
+
+     label12:
+        virtualinvoke $r4.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label12;
+
+     label13:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.wRuddyExecutive.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.wRuddyExecutive.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.wRuddyExecutive.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/about_dialog.xml
+Warning: Button is a phantom class!
+Warning: com.wRuddyExecutive.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/connection_error_dialog.xml
+Warning: TableLayout is a phantom class!
+Warning: com.wRuddyExecutive.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.wRuddyExecutive.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 3 layout controls in file res/layout/http_authentication.xml
+Warning: FrameLayout is a phantom class!
+Warning: com.wRuddyExecutive.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.wRuddyExecutive.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 4 layout controls in file res/layout/main.xml
+Warning: WebView is a phantom class!
+Warning: com.wRuddyExecutive.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 5 layout controls in file res/layout/message_viewer.xml
+Found 6 layout controls in file res/layout/no_content_message.xml
+Found 7 layout controls in file res/layout/tab_tag.xml
+Warning: ProgressBar is a phantom class!
+Warning: com.wRuddyExecutive.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 8 layout controls in file res/layout/video_loading_progress.xml
+Found 9 layout controls in file res/layout/web_content.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.net.http.SslError is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.WebView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.HttpAuthHandler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wRuddyExecutive.MessageViewer $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8;
+        com.wRuddyExecutive.Server.C2DMClientReceiver $r2;
+        com.wRuddyExecutive.MainNavigationActivity $r3;
+        com.wRuddyExecutive.MainNavigationActivity$9 $r4;
+        com.wRuddyExecutive.MainNavigationActivity$6 $r5;
+        com.wRuddyExecutive.MainNavigationActivity$8 $r6;
+        com.wRuddyExecutive.Model.WidgetEntity $r7, $r15;
+        com.wRuddyExecutive.Controllers.WebContentController $r8, $r16;
+        com.wRuddyExecutive.Controllers.WebContentController$1 $r9;
+        com.wRuddyExecutive.MainNavigationActivity$7 $r10;
+        com.wRuddyExecutive.Views.AboutDialog $r11;
+        com.wRuddyExecutive.Views.AboutDialog$1 $r12;
+        com.wRuddyExecutive.MainNavigationActivity$2 $r13;
+        com.wRuddyExecutive.MainNavigationActivity$5 $r14;
+        com.wRuddyExecutive.Utils.BrowserDownloadListener $r17;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r18;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.wRuddyExecutive.MessageViewer;
+
+        specialinvoke $r1.<com.wRuddyExecutive.MessageViewer: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onStart()>();
+
+        if $i0 == 2 goto label03;
+
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label03:
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onPause()>();
+
+        if $i0 == 6 goto label03;
+
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label02;
+
+     label07:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label19;
+
+        $r2 = new com.wRuddyExecutive.Server.C2DMClientReceiver;
+
+        specialinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label09:
+        if $i0 == 11 goto label10;
+
+        if $i0 == 12 goto label09;
+
+     label10:
+        if $i0 == 13 goto label15;
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r2, "");
+
+        $r2 = null;
+
+     label12:
+        if $i0 == 15 goto label13;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r2, null);
+
+        $r2 = null;
+
+     label13:
+        if $i0 == 16 goto label14;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r2, "");
+
+        $r2 = null;
+
+     label14:
+        if $i0 == 17 goto label11;
+
+     label15:
+        if $i0 == 18 goto label16;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r2, "");
+
+        $r2 = null;
+
+     label16:
+        if $i0 == 19 goto label17;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r2, null);
+
+        $r2 = null;
+
+     label17:
+        if $i0 == 20 goto label18;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r2, "");
+
+        $r2 = null;
+
+     label18:
+        if $i0 == 21 goto label15;
+
+        if $i0 == 22 goto label19;
+
+        if $i0 == 23 goto label15;
+
+     label19:
+        if $i0 == 24 goto label43;
+
+        $r3 = new com.wRuddyExecutive.MainNavigationActivity;
+
+        specialinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 25 goto label43;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onResume()>();
+
+        if $i0 == 27 goto label41;
+
+     label21:
+        if $i0 == 28 goto label22;
+
+        $z1 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label22:
+        if $i0 == 29 goto label23;
+
+        $z2 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label23:
+        if $i0 == 30 goto label24;
+
+        $z3 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label24:
+        if $i0 == 31 goto label25;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label25:
+        if $i0 == 32 goto label26;
+
+        $z4 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label26:
+        if $i0 == 33 goto label27;
+
+        staticinvoke <com.wRuddyExecutive.MainNavigationActivity: void <clinit>()>();
+
+     label27:
+        if $i0 == 34 goto label28;
+
+        $z5 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label28:
+        if $i0 == 35 goto label29;
+
+        $z6 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onKeyLongPress(int,android.view.KeyEvent)>(0, null);
+
+     label29:
+        if $i0 == 36 goto label30;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label30:
+        if $i0 == 37 goto label31;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label31:
+        $r4 = new com.wRuddyExecutive.MainNavigationActivity$9;
+
+        specialinvoke $r4.<com.wRuddyExecutive.MainNavigationActivity$9: void <init>(com.wRuddyExecutive.MainNavigationActivity,android.view.View,android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.HttpAuthHandler)>($r3, null, null, "", "", null);
+
+        if $i0 == 38 goto label32;
+
+        virtualinvoke $r4.<com.wRuddyExecutive.MainNavigationActivity$9: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label32:
+        $r5 = new com.wRuddyExecutive.MainNavigationActivity$6;
+
+        specialinvoke $r5.<com.wRuddyExecutive.MainNavigationActivity$6: void <init>(com.wRuddyExecutive.MainNavigationActivity)>($r3);
+
+        if $i0 == 39 goto label33;
+
+        virtualinvoke $r5.<com.wRuddyExecutive.MainNavigationActivity$6: void onClick(android.view.View)>(null);
+
+     label33:
+        $r6 = new com.wRuddyExecutive.MainNavigationActivity$8;
+
+        specialinvoke $r6.<com.wRuddyExecutive.MainNavigationActivity$8: void <init>(com.wRuddyExecutive.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r3, null);
+
+        if $i0 == 40 goto label34;
+
+        virtualinvoke $r6.<com.wRuddyExecutive.MainNavigationActivity$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label34:
+        $r7 = new com.wRuddyExecutive.Model.WidgetEntity;
+
+        specialinvoke $r7.<com.wRuddyExecutive.Model.WidgetEntity: void <init>()>();
+
+        $r8 = new com.wRuddyExecutive.Controllers.WebContentController;
+
+        specialinvoke $r8.<com.wRuddyExecutive.Controllers.WebContentController: void <init>(com.wRuddyExecutive.Model.WidgetEntity)>($r7);
+
+        $r9 = new com.wRuddyExecutive.Controllers.WebContentController$1;
+
+        specialinvoke $r9.<com.wRuddyExecutive.Controllers.WebContentController$1: void <init>(com.wRuddyExecutive.Controllers.WebContentController)>($r8);
+
+        if $i0 == 41 goto label35;
+
+        $z7 = virtualinvoke $r9.<com.wRuddyExecutive.Controllers.WebContentController$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label35:
+        $r10 = new com.wRuddyExecutive.MainNavigationActivity$7;
+
+        specialinvoke $r10.<com.wRuddyExecutive.MainNavigationActivity$7: void <init>(com.wRuddyExecutive.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r3, null);
+
+        if $i0 == 42 goto label36;
+
+        virtualinvoke $r10.<com.wRuddyExecutive.MainNavigationActivity$7: void onCancel(android.content.DialogInterface)>(null);
+
+     label36:
+        $r11 = new com.wRuddyExecutive.Views.AboutDialog;
+
+        specialinvoke $r11.<com.wRuddyExecutive.Views.AboutDialog: void <init>(android.content.Context)>($r3);
+
+        $r12 = new com.wRuddyExecutive.Views.AboutDialog$1;
+
+        specialinvoke $r12.<com.wRuddyExecutive.Views.AboutDialog$1: void <init>(com.wRuddyExecutive.Views.AboutDialog,java.lang.String,com.wRuddyExecutive.MainNavigationActivity)>($r11, "", $r3);
+
+        if $i0 == 43 goto label37;
+
+        $z8 = virtualinvoke $r12.<com.wRuddyExecutive.Views.AboutDialog$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label37:
+        $r13 = new com.wRuddyExecutive.MainNavigationActivity$2;
+
+        specialinvoke $r13.<com.wRuddyExecutive.MainNavigationActivity$2: void <init>(com.wRuddyExecutive.MainNavigationActivity)>($r3);
+
+        if $i0 == 44 goto label38;
+
+        virtualinvoke $r13.<com.wRuddyExecutive.MainNavigationActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label38:
+        $r14 = new com.wRuddyExecutive.MainNavigationActivity$5;
+
+        specialinvoke $r14.<com.wRuddyExecutive.MainNavigationActivity$5: void <init>(com.wRuddyExecutive.MainNavigationActivity)>($r3);
+
+        if $i0 == 45 goto label39;
+
+        virtualinvoke $r14.<com.wRuddyExecutive.MainNavigationActivity$5: void onClick(android.view.View)>(null);
+
+     label39:
+        $r15 = new com.wRuddyExecutive.Model.WidgetEntity;
+
+        specialinvoke $r15.<com.wRuddyExecutive.Model.WidgetEntity: void <init>()>();
+
+        $r16 = new com.wRuddyExecutive.Controllers.WebContentController;
+
+        specialinvoke $r16.<com.wRuddyExecutive.Controllers.WebContentController: void <init>(com.wRuddyExecutive.Model.WidgetEntity)>($r15);
+
+        $r17 = new com.wRuddyExecutive.Utils.BrowserDownloadListener;
+
+        specialinvoke $r17.<com.wRuddyExecutive.Utils.BrowserDownloadListener: void <init>(com.wRuddyExecutive.Controllers.WebContentController)>($r16);
+
+        if $i0 == 46 goto label40;
+
+        virtualinvoke $r17.<com.wRuddyExecutive.Utils.BrowserDownloadListener: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label40:
+        if $i0 == 47 goto label21;
+
+     label41:
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 48 goto label20;
+
+        if $i0 == 49 goto label42;
+
+        if $i0 == 50 goto label20;
+
+     label42:
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onDestroy()>();
+
+     label43:
+        if $i0 == 52 goto label45;
+
+        $r18 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r18.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 53 goto label45;
+
+     label44:
+        virtualinvoke $r18.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 55 goto label44;
+
+     label45:
+        if $i0 == 56 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 34 callback methods for 3 components
+Found {res/layout/about_dialog.xml=[2131427329 - android.widget.ImageView, 2131427331 - android.widget.TextView, 2131427328 - android.widget.LinearLayout, 2131427330 - android.widget.TextView], res/layout/no_content_message.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/connection_error_dialog.xml=[2131427333 - android.widget.TextView, 2131427334 - android.widget.Button, 2131427332 - android.widget.LinearLayout, 2131427335 - android.widget.Button, -1 - android.widget.LinearLayout], res/layout/main.xml=[2131427343 - com.wRuddyExecutive.Views.BrowserWebView, 2131427348 - android.widget.RelativeLayout, 2131427350 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131427349 - com.wRuddyExecutive.Views.BrowserWebView, 2131427345 - android.widget.LinearLayout, 2131427347 - android.widget.FrameLayout, -1 - android.widget.FrameLayout, 2131427346 - android.widget.FrameLayout, 2131427341 - com.wRuddyExecutive.Views.TransparentPanel, 2131427344 - android.widget.FrameLayout, 2131427340 - android.widget.LinearLayout], res/layout/http_authentication.xml=[2131427337 - android.widget.EditText, 2131427339 - android.widget.EditText, 2131427338 - android.widget.TextView, -1 - android.widget.TableLayout, 2131427336 - android.widget.TextView], res/layout/tab_tag.xml=[2131427355 - android.widget.TextView, 2131427352 - com.wRuddyExecutive.Views.TabTag, 2131427353 - android.widget.LinearLayout, 2131427354 - android.widget.ImageView], res/layout/video_loading_progress.xml=[16908301 - android.widget.ProgressBar, 2131427356 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/message_viewer.xml=[-1 - android.widget.LinearLayout, 2131427351 - android.webkit.WebView], res/layout/web_content.xml=[2131427361 - android.widget.RelativeLayout, 2131427331 - android.widget.TextView, 2131427357 - com.wRuddyExecutive.Views.WebContent, 2131427358 - com.wRuddyExecutive.Views.BrowserWebView, 2131427359 - android.widget.RelativeLayout, 2131427360 - android.widget.ProgressBar]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 34 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/02af11a4fa606940de1d4ddec4a1d567090c0df413c2a28529a9bf0253026033.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.net.http.SslError is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.WebView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.HttpAuthHandler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wRuddyExecutive.MessageViewer $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8;
+        com.wRuddyExecutive.Server.C2DMClientReceiver $r2;
+        com.wRuddyExecutive.MainNavigationActivity $r3;
+        com.wRuddyExecutive.Views.AboutDialog $r4;
+        com.wRuddyExecutive.Views.AboutDialog$1 $r5;
+        com.wRuddyExecutive.MainNavigationActivity$9 $r6;
+        com.wRuddyExecutive.MainNavigationActivity$7 $r7;
+        com.wRuddyExecutive.MainNavigationActivity$5 $r8;
+        com.wRuddyExecutive.Model.WidgetEntity $r9, $r12;
+        com.wRuddyExecutive.Controllers.WebContentController $r10, $r13;
+        com.wRuddyExecutive.Utils.BrowserDownloadListener $r11;
+        com.wRuddyExecutive.Controllers.WebContentController$1 $r14;
+        com.wRuddyExecutive.MainNavigationActivity$8 $r15;
+        com.wRuddyExecutive.MainNavigationActivity$6 $r16;
+        com.wRuddyExecutive.MainNavigationActivity$2 $r17;
+        com.wRuddyExecutive.Views.TransparentPanel $r18;
+        com.wRuddyExecutive.Views.BrowserWebView $r19;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r20;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.wRuddyExecutive.MessageViewer;
+
+        specialinvoke $r1.<com.wRuddyExecutive.MessageViewer: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onStart()>();
+
+        if $i0 == 2 goto label03;
+
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label03:
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onPause()>();
+
+        if $i0 == 6 goto label03;
+
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label02;
+
+     label07:
+        virtualinvoke $r1.<com.wRuddyExecutive.MessageViewer: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label19;
+
+        $r2 = new com.wRuddyExecutive.Server.C2DMClientReceiver;
+
+        specialinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label09:
+        if $i0 == 11 goto label10;
+
+        if $i0 == 12 goto label09;
+
+     label10:
+        if $i0 == 13 goto label15;
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r2, "");
+
+        $r2 = null;
+
+     label12:
+        if $i0 == 15 goto label13;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r2, "");
+
+        $r2 = null;
+
+     label13:
+        if $i0 == 16 goto label14;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r2, null);
+
+        $r2 = null;
+
+     label14:
+        if $i0 == 17 goto label11;
+
+     label15:
+        if $i0 == 18 goto label16;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r2, "");
+
+        $r2 = null;
+
+     label16:
+        if $i0 == 19 goto label17;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r2, "");
+
+        $r2 = null;
+
+     label17:
+        if $i0 == 20 goto label18;
+
+        virtualinvoke $r2.<com.wRuddyExecutive.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r2, null);
+
+        $r2 = null;
+
+     label18:
+        if $i0 == 21 goto label15;
+
+        if $i0 == 22 goto label19;
+
+        if $i0 == 23 goto label15;
+
+     label19:
+        if $i0 == 24 goto label45;
+
+        $r3 = new com.wRuddyExecutive.MainNavigationActivity;
+
+        specialinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 25 goto label45;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onResume()>();
+
+        if $i0 == 27 goto label43;
+
+     label21:
+        $r4 = new com.wRuddyExecutive.Views.AboutDialog;
+
+        specialinvoke $r4.<com.wRuddyExecutive.Views.AboutDialog: void <init>(android.content.Context)>($r3);
+
+        $r5 = new com.wRuddyExecutive.Views.AboutDialog$1;
+
+        specialinvoke $r5.<com.wRuddyExecutive.Views.AboutDialog$1: void <init>(com.wRuddyExecutive.Views.AboutDialog,java.lang.String,com.wRuddyExecutive.MainNavigationActivity)>($r4, "", $r3);
+
+        if $i0 == 28 goto label22;
+
+        $z1 = virtualinvoke $r5.<com.wRuddyExecutive.Views.AboutDialog$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label22:
+        $r6 = new com.wRuddyExecutive.MainNavigationActivity$9;
+
+        specialinvoke $r6.<com.wRuddyExecutive.MainNavigationActivity$9: void <init>(com.wRuddyExecutive.MainNavigationActivity,android.view.View,android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.HttpAuthHandler)>($r3, null, null, "", "", null);
+
+        if $i0 == 29 goto label23;
+
+        virtualinvoke $r6.<com.wRuddyExecutive.MainNavigationActivity$9: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        $r7 = new com.wRuddyExecutive.MainNavigationActivity$7;
+
+        specialinvoke $r7.<com.wRuddyExecutive.MainNavigationActivity$7: void <init>(com.wRuddyExecutive.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r3, null);
+
+        if $i0 == 30 goto label24;
+
+        virtualinvoke $r7.<com.wRuddyExecutive.MainNavigationActivity$7: void onCancel(android.content.DialogInterface)>(null);
+
+     label24:
+        $r8 = new com.wRuddyExecutive.MainNavigationActivity$5;
+
+        specialinvoke $r8.<com.wRuddyExecutive.MainNavigationActivity$5: void <init>(com.wRuddyExecutive.MainNavigationActivity)>($r3);
+
+        if $i0 == 31 goto label25;
+
+        virtualinvoke $r8.<com.wRuddyExecutive.MainNavigationActivity$5: void onClick(android.view.View)>(null);
+
+     label25:
+        $r9 = new com.wRuddyExecutive.Model.WidgetEntity;
+
+        specialinvoke $r9.<com.wRuddyExecutive.Model.WidgetEntity: void <init>()>();
+
+        $r10 = new com.wRuddyExecutive.Controllers.WebContentController;
+
+        specialinvoke $r10.<com.wRuddyExecutive.Controllers.WebContentController: void <init>(com.wRuddyExecutive.Model.WidgetEntity)>($r9);
+
+        $r11 = new com.wRuddyExecutive.Utils.BrowserDownloadListener;
+
+        specialinvoke $r11.<com.wRuddyExecutive.Utils.BrowserDownloadListener: void <init>(com.wRuddyExecutive.Controllers.WebContentController)>($r10);
+
+        if $i0 == 32 goto label26;
+
+        virtualinvoke $r11.<com.wRuddyExecutive.Utils.BrowserDownloadListener: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label26:
+        $r12 = new com.wRuddyExecutive.Model.WidgetEntity;
+
+        specialinvoke $r12.<com.wRuddyExecutive.Model.WidgetEntity: void <init>()>();
+
+        $r13 = new com.wRuddyExecutive.Controllers.WebContentController;
+
+        specialinvoke $r13.<com.wRuddyExecutive.Controllers.WebContentController: void <init>(com.wRuddyExecutive.Model.WidgetEntity)>($r12);
+
+        $r14 = new com.wRuddyExecutive.Controllers.WebContentController$1;
+
+        specialinvoke $r14.<com.wRuddyExecutive.Controllers.WebContentController$1: void <init>(com.wRuddyExecutive.Controllers.WebContentController)>($r13);
+
+        if $i0 == 33 goto label27;
+
+        $z2 = virtualinvoke $r14.<com.wRuddyExecutive.Controllers.WebContentController$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label27:
+        $r15 = new com.wRuddyExecutive.MainNavigationActivity$8;
+
+        specialinvoke $r15.<com.wRuddyExecutive.MainNavigationActivity$8: void <init>(com.wRuddyExecutive.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r3, null);
+
+        if $i0 == 34 goto label28;
+
+        virtualinvoke $r15.<com.wRuddyExecutive.MainNavigationActivity$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r16 = new com.wRuddyExecutive.MainNavigationActivity$6;
+
+        specialinvoke $r16.<com.wRuddyExecutive.MainNavigationActivity$6: void <init>(com.wRuddyExecutive.MainNavigationActivity)>($r3);
+
+        if $i0 == 35 goto label29;
+
+        virtualinvoke $r16.<com.wRuddyExecutive.MainNavigationActivity$6: void onClick(android.view.View)>(null);
+
+     label29:
+        if $i0 == 36 goto label30;
+
+        $z3 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label30:
+        if $i0 == 37 goto label31;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label31:
+        if $i0 == 38 goto label32;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label32:
+        if $i0 == 39 goto label33;
+
+        staticinvoke <com.wRuddyExecutive.MainNavigationActivity: void <clinit>()>();
+
+     label33:
+        if $i0 == 40 goto label34;
+
+        $z4 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label34:
+        if $i0 == 41 goto label35;
+
+        $z5 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label35:
+        if $i0 == 42 goto label36;
+
+        $z6 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label36:
+        if $i0 == 43 goto label37;
+
+        $z7 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label37:
+        if $i0 == 44 goto label38;
+
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label38:
+        if $i0 == 45 goto label39;
+
+        $z8 = virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: boolean onKeyLongPress(int,android.view.KeyEvent)>(0, null);
+
+     label39:
+        $r17 = new com.wRuddyExecutive.MainNavigationActivity$2;
+
+        specialinvoke $r17.<com.wRuddyExecutive.MainNavigationActivity$2: void <init>(com.wRuddyExecutive.MainNavigationActivity)>($r3);
+
+        if $i0 == 46 goto label40;
+
+        virtualinvoke $r17.<com.wRuddyExecutive.MainNavigationActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label40:
+        $r18 = new com.wRuddyExecutive.Views.TransparentPanel;
+
+        specialinvoke $r18.<com.wRuddyExecutive.Views.TransparentPanel: void <init>(android.content.Context)>($r3);
+
+        if $i0 == 47 goto label41;
+
+        virtualinvoke $r18.<com.wRuddyExecutive.Views.TransparentPanel: void dispatchDraw(android.graphics.Canvas)>(null);
+
+     label41:
+        $r19 = new com.wRuddyExecutive.Views.BrowserWebView;
+
+        specialinvoke $r19.<com.wRuddyExecutive.Views.BrowserWebView: void <init>(android.content.Context,android.util.AttributeSet)>($r3, null);
+
+        if $i0 == 48 goto label42;
+
+        virtualinvoke $r19.<com.wRuddyExecutive.Views.BrowserWebView: void onWindowVisibilityChanged(int)>(0);
+
+     label42:
+        if $i0 == 49 goto label21;
+
+     label43:
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 50 goto label20;
+
+        if $i0 == 51 goto label44;
+
+        if $i0 == 52 goto label20;
+
+     label44:
+        virtualinvoke $r3.<com.wRuddyExecutive.MainNavigationActivity: void onDestroy()>();
+
+     label45:
+        if $i0 == 54 goto label47;
+
+        $r20 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r20.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 55 goto label47;
+
+     label46:
+        virtualinvoke $r20.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 57 goto label46;
+
+     label47:
+        if $i0 == 58 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.443244758 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.044344957 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 944 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 54 sources and 17 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 154
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1215
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 3399 forward and 2263 backward edges solved, processing 2 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 2 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.004976105 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("title", $r1) in method <com.wRuddyExecutive.Utils.AppNotificationManager: android.content.Intent getLaunchIntent(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("title") in method <com.wRuddyExecutive.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("url", $r2) in method <com.wRuddyExecutive.Utils.AppNotificationManager: android.content.Intent getLaunchIntent(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("url") in method <com.wRuddyExecutive.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("title", $r1), from the following sources:
+	- $r6 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("title") (in <com.wRuddyExecutive.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("url", $r2), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("url") (in <com.wRuddyExecutive.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 148.503792 MB
+Analysis has run for 5.089221798 seconds

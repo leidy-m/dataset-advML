@@ -1,0 +1,1483 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.019512578 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.cxjf.battery.AdTest is a phantom class!
+Warning: com.google.ads.AdView is a phantom class!
+Warning: com.google.ads.AdActivity is a phantom class!
+Warning: com.google.ads.e is a phantom class!
+Warning: com.google.ads.f is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardService $r1;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure $r2;
+        com.airpuh.ad.UpdateCheck $r3;
+        android.os.IBinder $r4, $r6, $r9;
+        ad.imadpush.com.poster.AlarmService $r5;
+        com.cxjf.core.LongToast $r7;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService $r8;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget $r10;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash $r11;
+        ad.imadpush.com.poster.PosterInfoActivity $r12;
+        ad.imadpush.com.poster.ReceiverAlarm $r13;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardService;
+
+        specialinvoke $r1.<com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label06;
+
+        $r2 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure;
+
+        specialinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void <init>()>();
+
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void onDestroy()>();
+
+     label06:
+        if $i0 == 11 goto label11;
+
+        $r3 = new com.airpuh.ad.UpdateCheck;
+
+        specialinvoke $r3.<com.airpuh.ad.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r3.<com.airpuh.ad.UpdateCheck: void onCreate()>();
+
+     label07:
+        if $i0 == 12 goto label08;
+
+        if $i0 == 13 goto label07;
+
+     label08:
+        $r4 = virtualinvoke $r3.<com.airpuh.ad.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        if $i0 == 16 goto label09;
+
+     label10:
+        virtualinvoke $r3.<com.airpuh.ad.UpdateCheck: void onDestroy()>();
+
+     label11:
+        if $i0 == 17 goto label15;
+
+        $r5 = new ad.imadpush.com.poster.AlarmService;
+
+        specialinvoke $r5.<ad.imadpush.com.poster.AlarmService: void <init>()>();
+
+        virtualinvoke $r5.<ad.imadpush.com.poster.AlarmService: void onCreate()>();
+
+        virtualinvoke $r5.<ad.imadpush.com.poster.AlarmService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 18 goto label13;
+
+        if $i0 == 19 goto label12;
+
+     label13:
+        $r6 = virtualinvoke $r5.<ad.imadpush.com.poster.AlarmService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 21 goto label15;
+
+        if $i0 == 22 goto label14;
+
+     label15:
+        if $i0 == 23 goto label18;
+
+        $r7 = new com.cxjf.core.LongToast;
+
+        specialinvoke $r7.<com.cxjf.core.LongToast: void <init>()>();
+
+        if $i0 == 24 goto label18;
+
+        virtualinvoke $r7.<com.cxjf.core.LongToast: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r7.<com.cxjf.core.LongToast: void onStart()>();
+
+        if $i0 == 27 goto label17;
+
+        if $i0 == 28 goto label16;
+
+     label17:
+        virtualinvoke $r7.<com.cxjf.core.LongToast: void onDestroy()>();
+
+     label18:
+        if $i0 == 30 goto label22;
+
+        $r8 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService;
+
+        specialinvoke $r8.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: void <init>()>();
+
+        virtualinvoke $r8.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label19:
+        if $i0 == 31 goto label20;
+
+        if $i0 == 32 goto label19;
+
+     label20:
+        $r9 = virtualinvoke $r8.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 34 goto label22;
+
+        if $i0 == 35 goto label21;
+
+     label22:
+        if $i0 == 36 goto label24;
+
+        $r10 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget;
+
+        specialinvoke $r10.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void <init>()>();
+
+        if $i0 == 37 goto label24;
+
+     label23:
+        virtualinvoke $r10.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label23;
+
+     label24:
+        if $i0 == 40 goto label26;
+
+        $r11 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash;
+
+        specialinvoke $r11.<com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash: void <init>()>();
+
+        if $i0 == 41 goto label26;
+
+        virtualinvoke $r11.<com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 44 goto label26;
+
+        if $i0 == 45 goto label25;
+
+     label26:
+        if $i0 == 47 goto label29;
+
+        $r12 = new ad.imadpush.com.poster.PosterInfoActivity;
+
+        specialinvoke $r12.<ad.imadpush.com.poster.PosterInfoActivity: void <init>()>();
+
+        if $i0 == 48 goto label29;
+
+        virtualinvoke $r12.<ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>(null);
+
+     label27:
+        if $i0 == 51 goto label28;
+
+        if $i0 == 52 goto label27;
+
+     label28:
+        virtualinvoke $r12.<ad.imadpush.com.poster.PosterInfoActivity: void onDestroy()>();
+
+     label29:
+        if $i0 == 54 goto label31;
+
+        $r13 = new ad.imadpush.com.poster.ReceiverAlarm;
+
+        specialinvoke $r13.<ad.imadpush.com.poster.ReceiverAlarm: void <init>()>();
+
+        if $i0 == 55 goto label31;
+
+     label30:
+        virtualinvoke $r13.<ad.imadpush.com.poster.ReceiverAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 57 goto label30;
+
+     label31:
+        if $i0 == 58 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.cxjf.multimountsdcard.widget.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.cxjf.multimountsdcard.widget.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.cxjf.multimountsdcard.widget.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: ListView is a phantom class!
+Warning: com.cxjf.multimountsdcard.widget.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 1 layout controls in file res/layout/empty.xml
+Warning: com.cxjf.view.TransparentPanel is a phantom class!
+Warning: com.cxjf.multimountsdcard.widget.com.cxjf.view.TransparentPanel is a phantom class!
+Warning: android.view.com.cxjf.view.TransparentPanel is a phantom class!
+Warning: android.widget.com.cxjf.view.TransparentPanel is a phantom class!
+Warning: android.webkit.com.cxjf.view.TransparentPanel is a phantom class!
+Could not find layout class com.cxjf.view.TransparentPanel
+Warning: ImageView is a phantom class!
+Warning: com.cxjf.multimountsdcard.widget.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TableLayout is a phantom class!
+Warning: com.cxjf.multimountsdcard.widget.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Found 2 layout controls in file res/layout/notification.xml
+Found 3 layout controls in file res/layout/splash.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.cxjf.multimountsdcard.widget.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 4 layout controls in file res/layout/widget.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.cxjf.battery.AdTest is a phantom class!
+Warning: com.google.ads.AdView is a phantom class!
+Warning: com.google.ads.AdActivity is a phantom class!
+Warning: com.google.ads.e is a phantom class!
+Warning: com.google.ads.f is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardService $r1;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure $r2;
+        com.cxjf.multimountsdcard.widget.g $r3;
+        android.app.Dialog $r4, $r26;
+        com.cxjf.multimountsdcard.widget.h $r5;
+        com.cxjf.multimountsdcard.widget.a $r6;
+        com.cxjf.multimountsdcard.widget.l $r7;
+        boolean $z0, $z1, $z2;
+        com.cxjf.multimountsdcard.widget.j $r8;
+        ad.imadpush.com.poster.PosterInfoActivity $r9, $r22;
+        ad.imadpush.com.poster.PosterInfoActivity$PackageReceiver $r10;
+        com.airpuh.ad.UpdateCheck $r11;
+        android.os.IBinder $r12, $r14, $r17;
+        ad.imadpush.com.poster.AlarmService $r13;
+        com.cxjf.core.LongToast $r15;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService $r16;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget $r18;
+        int[] $r19;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash $r20;
+        com.cxjf.multimountsdcard.widget.c $r21;
+        ad.imadpush.com.poster.h $r23;
+        ad.imadpush.com.poster.l $r24;
+        ad.imadpush.com.poster.k $r25;
+        ad.imadpush.com.poster.i $r27;
+        ad.imadpush.com.poster.j $r28;
+        ad.imadpush.com.poster.ReceiverAlarm $r29;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardService;
+
+        specialinvoke $r1.<com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label16;
+
+        $r2 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure;
+
+        specialinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void <init>()>();
+
+        if $i0 == 5 goto label16;
+
+        virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label14;
+
+     label05:
+        $r3 = new com.cxjf.multimountsdcard.widget.g;
+
+        specialinvoke $r3.<com.cxjf.multimountsdcard.widget.g: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<com.cxjf.multimountsdcard.widget.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label06:
+        if $i0 == 9 goto label07;
+
+        virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void setContentView(int)>(0);
+
+     label07:
+        if $i0 == 10 goto label08;
+
+        staticinvoke <com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void <clinit>()>();
+
+     label08:
+        if $i0 == 11 goto label09;
+
+        $r4 = virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: android.app.Dialog onCreateDialog(int)>(0);
+
+     label09:
+        $r5 = new com.cxjf.multimountsdcard.widget.h;
+
+        specialinvoke $r5.<com.cxjf.multimountsdcard.widget.h: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 12 goto label10;
+
+        virtualinvoke $r5.<com.cxjf.multimountsdcard.widget.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label10:
+        $r6 = new com.cxjf.multimountsdcard.widget.a;
+
+        specialinvoke $r6.<com.cxjf.multimountsdcard.widget.a: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 13 goto label11;
+
+        virtualinvoke $r6.<com.cxjf.multimountsdcard.widget.a: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label11:
+        $r7 = new com.cxjf.multimountsdcard.widget.l;
+
+        specialinvoke $r7.<com.cxjf.multimountsdcard.widget.l: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 14 goto label12;
+
+        $z0 = virtualinvoke $r7.<com.cxjf.multimountsdcard.widget.l: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r2);
+
+        $r2 = null;
+
+     label12:
+        $r8 = new com.cxjf.multimountsdcard.widget.j;
+
+        specialinvoke $r8.<com.cxjf.multimountsdcard.widget.j: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 15 goto label13;
+
+        virtualinvoke $r8.<com.cxjf.multimountsdcard.widget.j: void onClick(android.view.View)>(null);
+
+     label13:
+        if $i0 == 16 goto label05;
+
+     label14:
+        if $i0 == 17 goto label04;
+
+        if $i0 == 18 goto label15;
+
+        if $i0 == 19 goto label04;
+
+     label15:
+        virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void onDestroy()>();
+
+     label16:
+        if $i0 == 21 goto label18;
+
+        $r9 = new ad.imadpush.com.poster.PosterInfoActivity;
+
+        specialinvoke $r9.<ad.imadpush.com.poster.PosterInfoActivity: void <init>()>();
+
+        $r10 = new ad.imadpush.com.poster.PosterInfoActivity$PackageReceiver;
+
+        specialinvoke $r10.<ad.imadpush.com.poster.PosterInfoActivity$PackageReceiver: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r9);
+
+        if $i0 == 22 goto label18;
+
+     label17:
+        virtualinvoke $r10.<ad.imadpush.com.poster.PosterInfoActivity$PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label17;
+
+     label18:
+        if $i0 == 25 goto label23;
+
+        $r11 = new com.airpuh.ad.UpdateCheck;
+
+        specialinvoke $r11.<com.airpuh.ad.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r11.<com.airpuh.ad.UpdateCheck: void onCreate()>();
+
+     label19:
+        if $i0 == 26 goto label20;
+
+        if $i0 == 27 goto label19;
+
+     label20:
+        $r12 = virtualinvoke $r11.<com.airpuh.ad.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 29 goto label22;
+
+        if $i0 == 30 goto label21;
+
+     label22:
+        virtualinvoke $r11.<com.airpuh.ad.UpdateCheck: void onDestroy()>();
+
+     label23:
+        if $i0 == 31 goto label27;
+
+        $r13 = new ad.imadpush.com.poster.AlarmService;
+
+        specialinvoke $r13.<ad.imadpush.com.poster.AlarmService: void <init>()>();
+
+        virtualinvoke $r13.<ad.imadpush.com.poster.AlarmService: void onCreate()>();
+
+        virtualinvoke $r13.<ad.imadpush.com.poster.AlarmService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label24:
+        if $i0 == 32 goto label25;
+
+        if $i0 == 33 goto label24;
+
+     label25:
+        $r14 = virtualinvoke $r13.<ad.imadpush.com.poster.AlarmService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label26:
+        if $i0 == 35 goto label27;
+
+        if $i0 == 36 goto label26;
+
+     label27:
+        if $i0 == 37 goto label35;
+
+        $r15 = new com.cxjf.core.LongToast;
+
+        specialinvoke $r15.<com.cxjf.core.LongToast: void <init>()>();
+
+        if $i0 == 38 goto label35;
+
+        virtualinvoke $r15.<com.cxjf.core.LongToast: void onCreate(android.os.Bundle)>(null);
+
+     label28:
+        virtualinvoke $r15.<com.cxjf.core.LongToast: void onStart()>();
+
+     label29:
+        if $i0 == 40 goto label33;
+
+     label30:
+        if $i0 == 41 goto label31;
+
+        $z1 = virtualinvoke $r15.<com.cxjf.core.LongToast: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label31:
+        if $i0 == 42 goto label32;
+
+        $z2 = virtualinvoke $r15.<com.cxjf.core.LongToast: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label32:
+        if $i0 == 43 goto label30;
+
+     label33:
+        if $i0 == 44 goto label29;
+
+        if $i0 == 45 goto label34;
+
+        if $i0 == 46 goto label28;
+
+     label34:
+        virtualinvoke $r15.<com.cxjf.core.LongToast: void onDestroy()>();
+
+     label35:
+        if $i0 == 48 goto label39;
+
+        $r16 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService;
+
+        specialinvoke $r16.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: void <init>()>();
+
+        virtualinvoke $r16.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label36:
+        if $i0 == 49 goto label37;
+
+        if $i0 == 50 goto label36;
+
+     label37:
+        $r17 = virtualinvoke $r16.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label38:
+        if $i0 == 52 goto label39;
+
+        if $i0 == 53 goto label38;
+
+     label39:
+        if $i0 == 54 goto label44;
+
+        $r18 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget;
+
+        specialinvoke $r18.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void <init>()>();
+
+        if $i0 == 55 goto label44;
+
+     label40:
+        virtualinvoke $r18.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 56 goto label43;
+
+     label41:
+        if $i0 == 57 goto label42;
+
+        $r19 = newarray (int)[1];
+
+        $r19[0] = 0;
+
+        virtualinvoke $r18.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r19);
+
+     label42:
+        if $i0 == 58 goto label41;
+
+     label43:
+        if $i0 == 59 goto label40;
+
+     label44:
+        if $i0 == 60 goto label49;
+
+        $r20 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash;
+
+        specialinvoke $r20.<com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash: void <init>()>();
+
+        if $i0 == 61 goto label49;
+
+        virtualinvoke $r20.<com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        if $i0 == 63 goto label48;
+
+     label46:
+        $r21 = new com.cxjf.multimountsdcard.widget.c;
+
+        specialinvoke $r21.<com.cxjf.multimountsdcard.widget.c: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash)>($r20);
+
+        if $i0 == 64 goto label47;
+
+        virtualinvoke $r21.<com.cxjf.multimountsdcard.widget.c: void onClick(android.view.View)>(null);
+
+     label47:
+        if $i0 == 65 goto label46;
+
+     label48:
+        if $i0 == 66 goto label45;
+
+        if $i0 == 67 goto label49;
+
+        if $i0 == 68 goto label45;
+
+     label49:
+        if $i0 == 70 goto label60;
+
+        $r22 = new ad.imadpush.com.poster.PosterInfoActivity;
+
+        specialinvoke $r22.<ad.imadpush.com.poster.PosterInfoActivity: void <init>()>();
+
+        if $i0 == 71 goto label60;
+
+        virtualinvoke $r22.<ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>(null);
+
+     label50:
+        if $i0 == 73 goto label58;
+
+     label51:
+        $r23 = new ad.imadpush.com.poster.h;
+
+        specialinvoke $r23.<ad.imadpush.com.poster.h: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 74 goto label52;
+
+        virtualinvoke $r23.<ad.imadpush.com.poster.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label52:
+        $r24 = new ad.imadpush.com.poster.l;
+
+        specialinvoke $r24.<ad.imadpush.com.poster.l: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 75 goto label53;
+
+        virtualinvoke $r24.<ad.imadpush.com.poster.l: void onClick(android.view.View)>(null);
+
+     label53:
+        $r25 = new ad.imadpush.com.poster.k;
+
+        specialinvoke $r25.<ad.imadpush.com.poster.k: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 76 goto label54;
+
+        virtualinvoke $r25.<ad.imadpush.com.poster.k: void onClick(android.view.View)>(null);
+
+     label54:
+        if $i0 == 77 goto label55;
+
+        $r26 = virtualinvoke $r22.<ad.imadpush.com.poster.PosterInfoActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label55:
+        $r27 = new ad.imadpush.com.poster.i;
+
+        specialinvoke $r27.<ad.imadpush.com.poster.i: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 78 goto label56;
+
+        virtualinvoke $r27.<ad.imadpush.com.poster.i: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label56:
+        $r28 = new ad.imadpush.com.poster.j;
+
+        specialinvoke $r28.<ad.imadpush.com.poster.j: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 79 goto label57;
+
+        virtualinvoke $r28.<ad.imadpush.com.poster.j: void onClick(android.view.View)>(null);
+
+     label57:
+        if $i0 == 80 goto label51;
+
+     label58:
+        if $i0 == 81 goto label50;
+
+        if $i0 == 82 goto label59;
+
+        if $i0 == 83 goto label50;
+
+     label59:
+        virtualinvoke $r22.<ad.imadpush.com.poster.PosterInfoActivity: void onDestroy()>();
+
+     label60:
+        if $i0 == 85 goto label62;
+
+        $r29 = new ad.imadpush.com.poster.ReceiverAlarm;
+
+        specialinvoke $r29.<ad.imadpush.com.poster.ReceiverAlarm: void <init>()>();
+
+        if $i0 == 86 goto label62;
+
+     label61:
+        virtualinvoke $r29.<ad.imadpush.com.poster.ReceiverAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 88 goto label61;
+
+     label62:
+        if $i0 == 89 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Running incremental callback analysis for 10 components...
+Incremental callback analysis done.
+Found 37 callback methods for 10 components
+Found {res/layout/notification.xml=[-1 - android.widget.TableLayout, 2131230722 - android.widget.LinearLayout, 2131230725 - android.widget.ImageView, 2131230728 - android.widget.TextView, 2131230723 - android.widget.LinearLayout, 2131230726 - android.widget.TextView, 2131230727 - android.widget.TextView], res/layout/widget.xml=[2131230733 - android.widget.RelativeLayout, 2131230734 - android.widget.ImageView], res/layout/splash.xml=[2131230732 - android.widget.Button, 2131230729 - android.widget.ImageView, 2131230731 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131230730 - android.widget.TextView], res/layout/empty.xml=[2131230720 - android.widget.TextView, 16908298 - android.widget.ListView, 2131230721 - android.widget.Button, -1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 37 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/06c705212145623b0f1b6aca99ca24af5ee73c48ef4d693a2ff956b3d52659be.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: com.cxjf.battery.AdTest is a phantom class!
+Warning: com.google.ads.AdView is a phantom class!
+Warning: com.google.ads.AdActivity is a phantom class!
+Warning: com.google.ads.e is a phantom class!
+Warning: com.google.ads.f is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardService $r1;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure $r2;
+        com.cxjf.multimountsdcard.widget.h $r3;
+        android.app.Dialog $r4, $r25;
+        com.cxjf.multimountsdcard.widget.j $r5;
+        com.cxjf.multimountsdcard.widget.a $r6;
+        com.cxjf.multimountsdcard.widget.g $r7;
+        com.cxjf.multimountsdcard.widget.l $r8;
+        boolean $z0, $z1, $z2;
+        ad.imadpush.com.poster.PosterInfoActivity $r9, $r22;
+        ad.imadpush.com.poster.PosterInfoActivity$PackageReceiver $r10;
+        com.airpuh.ad.UpdateCheck $r11;
+        android.os.IBinder $r12, $r14, $r17;
+        ad.imadpush.com.poster.AlarmService $r13;
+        com.cxjf.core.LongToast $r15;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService $r16;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget $r18;
+        int[] $r19;
+        com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash $r20;
+        com.cxjf.multimountsdcard.widget.c $r21;
+        ad.imadpush.com.poster.j $r23;
+        ad.imadpush.com.poster.h $r24;
+        ad.imadpush.com.poster.k $r26;
+        ad.imadpush.com.poster.l $r27;
+        ad.imadpush.com.poster.i $r28;
+        ad.imadpush.com.poster.ReceiverAlarm $r29;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardService;
+
+        specialinvoke $r1.<com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label16;
+
+        $r2 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure;
+
+        specialinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void <init>()>();
+
+        if $i0 == 5 goto label16;
+
+        virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label14;
+
+     label05:
+        $r3 = new com.cxjf.multimountsdcard.widget.h;
+
+        specialinvoke $r3.<com.cxjf.multimountsdcard.widget.h: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<com.cxjf.multimountsdcard.widget.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label06:
+        if $i0 == 9 goto label07;
+
+        virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void setContentView(int)>(0);
+
+     label07:
+        if $i0 == 10 goto label08;
+
+        $r4 = virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: android.app.Dialog onCreateDialog(int)>(0);
+
+     label08:
+        if $i0 == 11 goto label09;
+
+        staticinvoke <com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void <clinit>()>();
+
+     label09:
+        $r5 = new com.cxjf.multimountsdcard.widget.j;
+
+        specialinvoke $r5.<com.cxjf.multimountsdcard.widget.j: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 12 goto label10;
+
+        virtualinvoke $r5.<com.cxjf.multimountsdcard.widget.j: void onClick(android.view.View)>(null);
+
+     label10:
+        $r6 = new com.cxjf.multimountsdcard.widget.a;
+
+        specialinvoke $r6.<com.cxjf.multimountsdcard.widget.a: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 13 goto label11;
+
+        virtualinvoke $r6.<com.cxjf.multimountsdcard.widget.a: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label11:
+        $r7 = new com.cxjf.multimountsdcard.widget.g;
+
+        specialinvoke $r7.<com.cxjf.multimountsdcard.widget.g: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 14 goto label12;
+
+        virtualinvoke $r7.<com.cxjf.multimountsdcard.widget.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label12:
+        $r8 = new com.cxjf.multimountsdcard.widget.l;
+
+        specialinvoke $r8.<com.cxjf.multimountsdcard.widget.l: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure)>($r2);
+
+        if $i0 == 15 goto label13;
+
+        $z0 = virtualinvoke $r8.<com.cxjf.multimountsdcard.widget.l: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r2);
+
+        $r2 = null;
+
+     label13:
+        if $i0 == 16 goto label05;
+
+     label14:
+        if $i0 == 17 goto label04;
+
+        if $i0 == 18 goto label15;
+
+        if $i0 == 19 goto label04;
+
+     label15:
+        virtualinvoke $r2.<com.cxjf.multimountsdcard.widget.MultiMountSDCardConfigure: void onDestroy()>();
+
+     label16:
+        if $i0 == 21 goto label18;
+
+        $r9 = new ad.imadpush.com.poster.PosterInfoActivity;
+
+        specialinvoke $r9.<ad.imadpush.com.poster.PosterInfoActivity: void <init>()>();
+
+        $r10 = new ad.imadpush.com.poster.PosterInfoActivity$PackageReceiver;
+
+        specialinvoke $r10.<ad.imadpush.com.poster.PosterInfoActivity$PackageReceiver: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r9);
+
+        if $i0 == 22 goto label18;
+
+     label17:
+        virtualinvoke $r10.<ad.imadpush.com.poster.PosterInfoActivity$PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label17;
+
+     label18:
+        if $i0 == 25 goto label23;
+
+        $r11 = new com.airpuh.ad.UpdateCheck;
+
+        specialinvoke $r11.<com.airpuh.ad.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r11.<com.airpuh.ad.UpdateCheck: void onCreate()>();
+
+     label19:
+        if $i0 == 26 goto label20;
+
+        if $i0 == 27 goto label19;
+
+     label20:
+        $r12 = virtualinvoke $r11.<com.airpuh.ad.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 29 goto label22;
+
+        if $i0 == 30 goto label21;
+
+     label22:
+        virtualinvoke $r11.<com.airpuh.ad.UpdateCheck: void onDestroy()>();
+
+     label23:
+        if $i0 == 31 goto label27;
+
+        $r13 = new ad.imadpush.com.poster.AlarmService;
+
+        specialinvoke $r13.<ad.imadpush.com.poster.AlarmService: void <init>()>();
+
+        virtualinvoke $r13.<ad.imadpush.com.poster.AlarmService: void onCreate()>();
+
+        virtualinvoke $r13.<ad.imadpush.com.poster.AlarmService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label24:
+        if $i0 == 32 goto label25;
+
+        if $i0 == 33 goto label24;
+
+     label25:
+        $r14 = virtualinvoke $r13.<ad.imadpush.com.poster.AlarmService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label26:
+        if $i0 == 35 goto label27;
+
+        if $i0 == 36 goto label26;
+
+     label27:
+        if $i0 == 37 goto label35;
+
+        $r15 = new com.cxjf.core.LongToast;
+
+        specialinvoke $r15.<com.cxjf.core.LongToast: void <init>()>();
+
+        if $i0 == 38 goto label35;
+
+        virtualinvoke $r15.<com.cxjf.core.LongToast: void onCreate(android.os.Bundle)>(null);
+
+     label28:
+        virtualinvoke $r15.<com.cxjf.core.LongToast: void onStart()>();
+
+     label29:
+        if $i0 == 40 goto label33;
+
+     label30:
+        if $i0 == 41 goto label31;
+
+        $z1 = virtualinvoke $r15.<com.cxjf.core.LongToast: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label31:
+        if $i0 == 42 goto label32;
+
+        $z2 = virtualinvoke $r15.<com.cxjf.core.LongToast: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label32:
+        if $i0 == 43 goto label30;
+
+     label33:
+        if $i0 == 44 goto label29;
+
+        if $i0 == 45 goto label34;
+
+        if $i0 == 46 goto label28;
+
+     label34:
+        virtualinvoke $r15.<com.cxjf.core.LongToast: void onDestroy()>();
+
+     label35:
+        if $i0 == 48 goto label39;
+
+        $r16 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService;
+
+        specialinvoke $r16.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: void <init>()>();
+
+        virtualinvoke $r16.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label36:
+        if $i0 == 49 goto label37;
+
+        if $i0 == 50 goto label36;
+
+     label37:
+        $r17 = virtualinvoke $r16.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget$UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label38:
+        if $i0 == 52 goto label39;
+
+        if $i0 == 53 goto label38;
+
+     label39:
+        if $i0 == 54 goto label44;
+
+        $r18 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget;
+
+        specialinvoke $r18.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void <init>()>();
+
+        if $i0 == 55 goto label44;
+
+     label40:
+        virtualinvoke $r18.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 56 goto label43;
+
+     label41:
+        if $i0 == 57 goto label42;
+
+        $r19 = newarray (int)[1];
+
+        $r19[0] = 0;
+
+        virtualinvoke $r18.<com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r19);
+
+     label42:
+        if $i0 == 58 goto label41;
+
+     label43:
+        if $i0 == 59 goto label40;
+
+     label44:
+        if $i0 == 60 goto label49;
+
+        $r20 = new com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash;
+
+        specialinvoke $r20.<com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash: void <init>()>();
+
+        if $i0 == 61 goto label49;
+
+        virtualinvoke $r20.<com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        if $i0 == 63 goto label48;
+
+     label46:
+        $r21 = new com.cxjf.multimountsdcard.widget.c;
+
+        specialinvoke $r21.<com.cxjf.multimountsdcard.widget.c: void <init>(com.cxjf.multimountsdcard.widget.MultiMountSDCardSplash)>($r20);
+
+        if $i0 == 64 goto label47;
+
+        virtualinvoke $r21.<com.cxjf.multimountsdcard.widget.c: void onClick(android.view.View)>(null);
+
+     label47:
+        if $i0 == 65 goto label46;
+
+     label48:
+        if $i0 == 66 goto label45;
+
+        if $i0 == 67 goto label49;
+
+        if $i0 == 68 goto label45;
+
+     label49:
+        if $i0 == 70 goto label60;
+
+        $r22 = new ad.imadpush.com.poster.PosterInfoActivity;
+
+        specialinvoke $r22.<ad.imadpush.com.poster.PosterInfoActivity: void <init>()>();
+
+        if $i0 == 71 goto label60;
+
+        virtualinvoke $r22.<ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>(null);
+
+     label50:
+        if $i0 == 73 goto label58;
+
+     label51:
+        $r23 = new ad.imadpush.com.poster.j;
+
+        specialinvoke $r23.<ad.imadpush.com.poster.j: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 74 goto label52;
+
+        virtualinvoke $r23.<ad.imadpush.com.poster.j: void onClick(android.view.View)>(null);
+
+     label52:
+        $r24 = new ad.imadpush.com.poster.h;
+
+        specialinvoke $r24.<ad.imadpush.com.poster.h: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 75 goto label53;
+
+        virtualinvoke $r24.<ad.imadpush.com.poster.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label53:
+        if $i0 == 76 goto label54;
+
+        $r25 = virtualinvoke $r22.<ad.imadpush.com.poster.PosterInfoActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label54:
+        $r26 = new ad.imadpush.com.poster.k;
+
+        specialinvoke $r26.<ad.imadpush.com.poster.k: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 77 goto label55;
+
+        virtualinvoke $r26.<ad.imadpush.com.poster.k: void onClick(android.view.View)>(null);
+
+     label55:
+        $r27 = new ad.imadpush.com.poster.l;
+
+        specialinvoke $r27.<ad.imadpush.com.poster.l: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 78 goto label56;
+
+        virtualinvoke $r27.<ad.imadpush.com.poster.l: void onClick(android.view.View)>(null);
+
+     label56:
+        $r28 = new ad.imadpush.com.poster.i;
+
+        specialinvoke $r28.<ad.imadpush.com.poster.i: void <init>(ad.imadpush.com.poster.PosterInfoActivity)>($r22);
+
+        if $i0 == 79 goto label57;
+
+        virtualinvoke $r28.<ad.imadpush.com.poster.i: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label57:
+        if $i0 == 80 goto label51;
+
+     label58:
+        if $i0 == 81 goto label50;
+
+        if $i0 == 82 goto label59;
+
+        if $i0 == 83 goto label50;
+
+     label59:
+        virtualinvoke $r22.<ad.imadpush.com.poster.PosterInfoActivity: void onDestroy()>();
+
+     label60:
+        if $i0 == 85 goto label62;
+
+        $r29 = new ad.imadpush.com.poster.ReceiverAlarm;
+
+        specialinvoke $r29.<ad.imadpush.com.poster.ReceiverAlarm: void <init>()>();
+
+        if $i0 == 86 goto label62;
+
+     label61:
+        virtualinvoke $r29.<ad.imadpush.com.poster.ReceiverAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 88 goto label61;
+
+     label62:
+        if $i0 == 89 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.878195933 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.10124329 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2688 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 90 sources and 106 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 228836
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1074965
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 3644820 forward and 946795 backward edges solved, processing 48 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 48 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 39 with task id 38
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 40 with task id 39
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 41 with task id 40
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 42 with task id 41
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 43 with task id 42
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 44 with task id 43
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 45 with task id 44
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 46 with task id 45
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 47 with task id 46
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 48 with task id 47
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.083554286 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r0) in method <ad.imadpush.com.util.l: void a(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("userId") in method <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("dId") in method <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r6) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("imei", $r4) in method <ad.imadpush.com.util.e: java.util.List a(android.app.Activity)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <ad.imadpush.com.util.f: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r4.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r2) in method <ad.imadpush.com.util.e: java.lang.String a(java.lang.String,java.util.List)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("userId") in method <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("dId") in method <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<java.io.OutputStream: void write(byte[],int,int)>($r8, 0, $i0) in method <com.cxjf.multimountsdcard.widget.d: void i()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[identifier]", $r6) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ua", $r6) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) in method <com.cxjf.battery.k: boolean c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") in method <com.cxjf.battery.m: void a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("idv", $r6) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r4.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("IMEI", $r5) in method <ad.imadpush.com.poster.c: java.lang.String a(java.lang.Object[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <ad.imadpush.com.util.f: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("dId", $r7) in method <ad.imadpush.com.poster.e: java.lang.String a(java.lang.Object[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ad.imadpush.com") in method <ad.imadpush.com.util.m: java.lang.Long b(android.app.Activity)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("dId", $l0) in method <ad.imadpush.com.poster.f: void a(android.app.Activity,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ad.imadpush.com") in method <ad.imadpush.com.util.m: java.lang.Long b(android.app.Activity)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r4) in method <com.cxjf.battery.c: void j()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("uid", $r6) in method <ad.imadpush.com.poster.d: java.lang.String a(java.lang.Object[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("userId") in method <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r6) in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: android.widget.RemoteViews a(android.content.Context,java.lang.Boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r10 = interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) in method <com.cxjf.battery.k: boolean c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") in method <com.cxjf.battery.m: void a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("sw", $r6) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) in method <com.cxjf.battery.k: boolean c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") in method <com.cxjf.battery.m: void a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <ad.imadpush.com.poster.ReceiverAlarm: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <ad.imadpush.com.poster.ReceiverAlarm: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r19.<java.io.OutputStream: void write(byte[],int,int)>($r5, 0, $i3) in method <ad.imadpush.com.util.a: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r12.<java.net.URL: java.net.URLConnection openConnection()>() in method <ad.imadpush.com.util.a: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ua", $r4) in method <com.cxjf.battery.c: void j()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) in method <com.cxjf.battery.k: boolean c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") in method <com.cxjf.battery.m: void a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<java.io.OutputStream: void write(byte[],int,int)>($r8, 0, $i0) in method <com.cxjf.multimountsdcard.widget.d: void h()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("dId", $r8) in method <ad.imadpush.com.poster.g: java.lang.String a(java.lang.Object[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ad.imadpush.com") in method <ad.imadpush.com.util.m: java.lang.Long b(android.app.Activity)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("network", $r6) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) in method <com.cxjf.battery.k: boolean c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") in method <com.cxjf.battery.m: void a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0) in method <ad.imadpush.com.util.l: void c(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ad.imadpush.com") in method <ad.imadpush.com.util.m: java.lang.Long b(android.app.Activity)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>("android.intent.action.MAIN") in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[name]", $r6) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("dId", $r6) in method <ad.imadpush.com.poster.d: java.lang.String a(java.lang.Object[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("dId") in method <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("sh", $r6) in method <com.cxjf.battery.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) in method <com.cxjf.battery.k: boolean c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") in method <com.cxjf.battery.m: void a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r31.<java.net.URL: void <init>(java.lang.String)>($r4) in method <ad.imadpush.com.util.a: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <ad.imadpush.com.util.f: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("userId") in method <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("dId") in method <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r12 = interfaceinvoke $r1.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3) in method <com.cxjf.battery.c: void j()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) in method <com.cxjf.battery.k: boolean c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") in method <com.cxjf.battery.b: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.cxjf.battery.b: void h()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") in method <com.cxjf.battery.m: void a(java.lang.String)>
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r0), from the following sources:
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("userId") (in <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>)
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("dId") (in <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r6), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+Found a flow to sink specialinvoke $r3.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("imei", $r4), from the following sources:
+	- $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <ad.imadpush.com.util.f: java.lang.String b(android.content.Context)>)
+Found a flow to sink $r5 = virtualinvoke $r4.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r2), from the following sources:
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("userId") (in <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>)
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("dId") (in <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r7.<java.io.OutputStream: void write(byte[],int,int)>($r8, 0, $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>)
+	- $r1 := @parameter0: android.content.Context (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[identifier]", $r6), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ua", $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.cxjf.battery.b: void h()>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) (in <com.cxjf.battery.k: boolean c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.cxjf.battery.b: void h()>)
+	- $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") (in <com.cxjf.battery.m: void a(java.lang.String)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("idv", $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.cxjf.battery.b: void h()>)
+Found a flow to sink specialinvoke $r4.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("IMEI", $r5), from the following sources:
+	- $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <ad.imadpush.com.util.f: java.lang.String b(android.content.Context)>)
+Found a flow to sink specialinvoke $r3.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("dId", $r7), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ad.imadpush.com") (in <ad.imadpush.com.util.m: java.lang.Long b(android.app.Activity)>)
+Found a flow to sink $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>("dId", $l0), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ad.imadpush.com") (in <ad.imadpush.com.util.m: java.lang.Long b(android.app.Activity)>)
+Found a flow to sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r4), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+Found a flow to sink specialinvoke $r3.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("uid", $r6), from the following sources:
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("userId") (in <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: void sendBroadcast(android.content.Intent)>($r6), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r10 = interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.cxjf.battery.b: void h()>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) (in <com.cxjf.battery.k: boolean c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.cxjf.battery.b: void h()>)
+	- $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") (in <com.cxjf.battery.m: void a(java.lang.String)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("sw", $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.cxjf.battery.b: void h()>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) (in <com.cxjf.battery.k: boolean c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.cxjf.battery.b: void h()>)
+	- $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") (in <com.cxjf.battery.m: void a(java.lang.String)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <ad.imadpush.com.poster.ReceiverAlarm: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r19.<java.io.OutputStream: void write(byte[],int,int)>($r5, 0, $i3), from the following sources:
+	- $r13 = virtualinvoke $r12.<java.net.URL: java.net.URLConnection openConnection()>() (in <ad.imadpush.com.util.a: void run()>)
+Found a flow to sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ua", $r4), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.cxjf.battery.b: void h()>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) (in <com.cxjf.battery.k: boolean c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.cxjf.battery.b: void h()>)
+	- $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") (in <com.cxjf.battery.m: void a(java.lang.String)>)
+Found a flow to sink virtualinvoke $r7.<java.io.OutputStream: void write(byte[],int,int)>($r8, 0, $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardWidget: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>)
+	- $r1 := @parameter0: android.content.Context (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("dId", $r8), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ad.imadpush.com") (in <ad.imadpush.com.util.m: java.lang.Long b(android.app.Activity)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("network", $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.cxjf.battery.b: void h()>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) (in <com.cxjf.battery.k: boolean c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.cxjf.battery.b: void h()>)
+	- $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") (in <com.cxjf.battery.m: void a(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ad.imadpush.com") (in <ad.imadpush.com.util.m: java.lang.Long b(android.app.Activity)>)
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>("android.intent.action.MAIN"), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 := @parameter1: android.content.Intent (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[name]", $r6), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 := @parameter1: android.content.Intent (in <com.cxjf.multimountsdcard.widget.MultiMountSDCardService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r3.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("dId", $r6), from the following sources:
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("dId") (in <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("sh", $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.cxjf.battery.b: void h()>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) (in <com.cxjf.battery.k: boolean c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.cxjf.battery.b: void h()>)
+	- $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") (in <com.cxjf.battery.m: void a(java.lang.String)>)
+Found a flow to sink specialinvoke r31.<java.net.URL: void <init>(java.lang.String)>($r4), from the following sources:
+	- $r1 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <ad.imadpush.com.util.f: java.lang.String b(android.content.Context)>)
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("userId") (in <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>)
+	- $l1 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("dId") (in <ad.imadpush.com.poster.PosterInfoActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink $r12 = interfaceinvoke $r1.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.cxjf.battery.b: void h()>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r9) (in <com.cxjf.battery.k: boolean c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.cxjf.battery.b: void h()>)
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r8, "utf-8") (in <com.cxjf.battery.b: java.lang.String a()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.cxjf.battery.b: void h()>)
+	- $r8 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r11, "utf-8") (in <com.cxjf.battery.m: void a(java.lang.String)>)
+Maximum memory consumption: 1117.169872 MB
+Analysis has run for 24.660127949 seconds

@@ -1,0 +1,551 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.010340649 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        hytre45.uik67r5.EService $r1;
+        android.os.IBinder $r2;
+        hytre45.uik67r5.EHActivity $r3;
+        egb45.g4gYY.Y6Cg03N $r4;
+        hytre45.uik67r5.EReceiver $r5;
+        hytre45.uik67r5.EWebA $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new hytre45.uik67r5.EService;
+
+        specialinvoke $r1.<hytre45.uik67r5.EService: void <init>()>();
+
+        virtualinvoke $r1.<hytre45.uik67r5.EService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<hytre45.uik67r5.EService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<hytre45.uik67r5.EService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new hytre45.uik67r5.EHActivity;
+
+        specialinvoke $r3.<hytre45.uik67r5.EHActivity: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<hytre45.uik67r5.EHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label07;
+
+     label08:
+        if $i0 == 13 goto label10;
+
+        $r4 = new egb45.g4gYY.Y6Cg03N;
+
+        specialinvoke $r4.<egb45.g4gYY.Y6Cg03N: void <init>()>();
+
+        if $i0 == 14 goto label10;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        if $i0 == 20 goto label12;
+
+        $r5 = new hytre45.uik67r5.EReceiver;
+
+        specialinvoke $r5.<hytre45.uik67r5.EReceiver: void <init>()>();
+
+        if $i0 == 21 goto label12;
+
+     label11:
+        virtualinvoke $r5.<hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label11;
+
+     label12:
+        if $i0 == 24 goto label14;
+
+        $r6 = new hytre45.uik67r5.EWebA;
+
+        specialinvoke $r6.<hytre45.uik67r5.EWebA: void <init>()>();
+
+        if $i0 == 25 goto label14;
+
+        virtualinvoke $r6.<hytre45.uik67r5.EWebA: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 28 goto label14;
+
+        if $i0 == 29 goto label13;
+
+     label14:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: egb45.g4gYY.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: egb45.g4gYY.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: egb45.g4gYY.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: egb45.g4gYY.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/end.xml
+Found 2 layout controls in file res/layout/license.xml
+Warning: ImageView is a phantom class!
+Warning: egb45.g4gYY.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: ProgressBar is a phantom class!
+Warning: egb45.g4gYY.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 3 layout controls in file res/layout/load.xml
+Found 4 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        hytre45.uik67r5.EService $r1;
+        android.os.IBinder $r2;
+        hytre45.uik67r5.EHActivity $r3;
+        egb45.g4gYY.Y6Cg03N $r4;
+        hytre45.uik67r5.EReceiver $r5;
+        hytre45.uik67r5.EWebA $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new hytre45.uik67r5.EService;
+
+        specialinvoke $r1.<hytre45.uik67r5.EService: void <init>()>();
+
+        virtualinvoke $r1.<hytre45.uik67r5.EService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<hytre45.uik67r5.EService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<hytre45.uik67r5.EService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label11;
+
+        $r3 = new hytre45.uik67r5.EHActivity;
+
+        specialinvoke $r3.<hytre45.uik67r5.EHActivity: void <init>()>();
+
+        if $i0 == 7 goto label11;
+
+        virtualinvoke $r3.<hytre45.uik67r5.EHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 9 goto label10;
+
+     label08:
+        if $i0 == 10 goto label09;
+
+        staticinvoke <hytre45.uik67r5.EHActivity: void <clinit>()>();
+
+     label09:
+        if $i0 == 11 goto label08;
+
+     label10:
+        if $i0 == 12 goto label07;
+
+        if $i0 == 13 goto label11;
+
+        if $i0 == 14 goto label07;
+
+     label11:
+        if $i0 == 16 goto label16;
+
+        $r4 = new egb45.g4gYY.Y6Cg03N;
+
+        specialinvoke $r4.<egb45.g4gYY.Y6Cg03N: void <init>()>();
+
+        if $i0 == 17 goto label16;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        if $i0 == 19 goto label15;
+
+     label13:
+        if $i0 == 20 goto label14;
+
+        staticinvoke <egb45.g4gYY.Y6Cg03N: void <clinit>()>();
+
+     label14:
+        if $i0 == 21 goto label13;
+
+     label15:
+        if $i0 == 22 goto label12;
+
+        if $i0 == 23 goto label16;
+
+        if $i0 == 24 goto label12;
+
+     label16:
+        if $i0 == 26 goto label18;
+
+        $r5 = new hytre45.uik67r5.EReceiver;
+
+        specialinvoke $r5.<hytre45.uik67r5.EReceiver: void <init>()>();
+
+        if $i0 == 27 goto label18;
+
+     label17:
+        virtualinvoke $r5.<hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 29 goto label17;
+
+     label18:
+        if $i0 == 30 goto label23;
+
+        $r6 = new hytre45.uik67r5.EWebA;
+
+        specialinvoke $r6.<hytre45.uik67r5.EWebA: void <init>()>();
+
+        if $i0 == 31 goto label23;
+
+        virtualinvoke $r6.<hytre45.uik67r5.EWebA: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        if $i0 == 33 goto label22;
+
+     label20:
+        if $i0 == 34 goto label21;
+
+        staticinvoke <hytre45.uik67r5.EWebA: void <clinit>()>();
+
+     label21:
+        if $i0 == 35 goto label20;
+
+     label22:
+        if $i0 == 36 goto label19;
+
+        if $i0 == 37 goto label23;
+
+        if $i0 == 38 goto label19;
+
+     label23:
+        if $i0 == 40 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Found 17 callback methods for 5 components
+Found {res/layout/end.xml=[-1 - android.widget.LinearLayout, 2131099650 - android.widget.Button, 2131099648 - android.widget.ScrollView, 2131099651 - android.widget.Button, 2131099649 - android.widget.TextView], res/layout/load.xml=[-1 - android.widget.LinearLayout, 2131099654 - android.widget.LinearLayout, 2131099656 - android.widget.ProgressBar, 2131099655 - android.widget.TextView, 2131099653 - android.widget.ImageView], res/layout/license.xml=[-1 - android.widget.LinearLayout, 2131099650 - android.widget.Button, 2131099651 - android.widget.Button, -1 - android.widget.ScrollView, 2131099652 - android.widget.Button, 2131099649 - android.widget.TextView], res/layout/main.xml=[2131099650 - android.widget.Button, 2131099657 - android.widget.LinearLayout, 2131099648 - android.widget.ScrollView, 2131099651 - android.widget.Button, 2131099649 - android.widget.TextView, 2131099653 - android.widget.ImageView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 17 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/1be5e7ad90d66a41f410bb7c96398170a08450d97f16fbfb991a687308dfe6bd.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        hytre45.uik67r5.EService $r1;
+        android.os.IBinder $r2;
+        hytre45.uik67r5.EHActivity $r3;
+        egb45.g4gYY.Y6Cg03N $r4;
+        hytre45.uik67r5.EReceiver $r5;
+        hytre45.uik67r5.EWebA $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new hytre45.uik67r5.EService;
+
+        specialinvoke $r1.<hytre45.uik67r5.EService: void <init>()>();
+
+        virtualinvoke $r1.<hytre45.uik67r5.EService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<hytre45.uik67r5.EService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<hytre45.uik67r5.EService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label11;
+
+        $r3 = new hytre45.uik67r5.EHActivity;
+
+        specialinvoke $r3.<hytre45.uik67r5.EHActivity: void <init>()>();
+
+        if $i0 == 7 goto label11;
+
+        virtualinvoke $r3.<hytre45.uik67r5.EHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 9 goto label10;
+
+     label08:
+        if $i0 == 10 goto label09;
+
+        staticinvoke <hytre45.uik67r5.EHActivity: void <clinit>()>();
+
+     label09:
+        if $i0 == 11 goto label08;
+
+     label10:
+        if $i0 == 12 goto label07;
+
+        if $i0 == 13 goto label11;
+
+        if $i0 == 14 goto label07;
+
+     label11:
+        if $i0 == 16 goto label23;
+
+        $r4 = new egb45.g4gYY.Y6Cg03N;
+
+        specialinvoke $r4.<egb45.g4gYY.Y6Cg03N: void <init>()>();
+
+        if $i0 == 17 goto label23;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        if $i0 == 19 goto label22;
+
+     label13:
+        if $i0 == 20 goto label14;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void endButtonClick2(android.view.View)>(null);
+
+     label14:
+        if $i0 == 21 goto label15;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void licButtonClick3(android.view.View)>(null);
+
+     label15:
+        if $i0 == 22 goto label16;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void mainButtonClick1(android.view.View)>(null);
+
+     label16:
+        if $i0 == 23 goto label17;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void endButtonClick1(android.view.View)>(null);
+
+     label17:
+        if $i0 == 24 goto label18;
+
+        staticinvoke <egb45.g4gYY.Y6Cg03N: void <clinit>()>();
+
+     label18:
+        if $i0 == 25 goto label19;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void licButtonClick1(android.view.View)>(null);
+
+     label19:
+        if $i0 == 26 goto label20;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void mainButtonClick2(android.view.View)>(null);
+
+     label20:
+        if $i0 == 27 goto label21;
+
+        virtualinvoke $r4.<egb45.g4gYY.Y6Cg03N: void licButtonClick2(android.view.View)>(null);
+
+     label21:
+        if $i0 == 28 goto label13;
+
+     label22:
+        if $i0 == 29 goto label12;
+
+        if $i0 == 30 goto label23;
+
+        if $i0 == 31 goto label12;
+
+     label23:
+        if $i0 == 33 goto label25;
+
+        $r5 = new hytre45.uik67r5.EReceiver;
+
+        specialinvoke $r5.<hytre45.uik67r5.EReceiver: void <init>()>();
+
+        if $i0 == 34 goto label25;
+
+     label24:
+        virtualinvoke $r5.<hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 36 goto label24;
+
+     label25:
+        if $i0 == 37 goto label30;
+
+        $r6 = new hytre45.uik67r5.EWebA;
+
+        specialinvoke $r6.<hytre45.uik67r5.EWebA: void <init>()>();
+
+        if $i0 == 38 goto label30;
+
+        virtualinvoke $r6.<hytre45.uik67r5.EWebA: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 40 goto label29;
+
+     label27:
+        if $i0 == 41 goto label28;
+
+        staticinvoke <hytre45.uik67r5.EWebA: void <clinit>()>();
+
+     label28:
+        if $i0 == 42 goto label27;
+
+     label29:
+        if $i0 == 43 goto label26;
+
+        if $i0 == 44 goto label30;
+
+        if $i0 == 45 goto label26;
+
+     label30:
+        if $i0 == 47 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.589060486 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.075457462 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3121 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 24 sources and 19 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1758
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1373
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 7787 forward and 779 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.002869497 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r11) in method <hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r11), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <hytre45.uik67r5.EReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 211.365656 MB
+Analysis has run for 4.988058505 seconds

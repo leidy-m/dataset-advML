@@ -1,0 +1,690 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.0167254 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        net.android.app.RuleActivity $r1;
+        net.android.app.InstallActivity $r2;
+        net.android.app.StartupReceiver $r3;
+        net.android.app.LoaderActivity $r4;
+        net.android.app.UpdateReceiver $r5;
+        net.android.app.StartActivity $r6;
+        net.android.app.UpdateService $r7;
+        android.os.IBinder $r8;
+        boolean $z0;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new net.android.app.RuleActivity;
+
+        specialinvoke $r1.<net.android.app.RuleActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<net.android.app.RuleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label05;
+
+        $r2 = new net.android.app.InstallActivity;
+
+        specialinvoke $r2.<net.android.app.InstallActivity: void <init>()>();
+
+        if $i0 == 8 goto label05;
+
+        virtualinvoke $r2.<net.android.app.InstallActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 11 goto label05;
+
+        if $i0 == 12 goto label04;
+
+     label05:
+        if $i0 == 14 goto label07;
+
+        $r3 = new net.android.app.StartupReceiver;
+
+        specialinvoke $r3.<net.android.app.StartupReceiver: void <init>()>();
+
+        if $i0 == 15 goto label07;
+
+     label06:
+        virtualinvoke $r3.<net.android.app.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label06;
+
+     label07:
+        if $i0 == 18 goto label09;
+
+        $r4 = new net.android.app.LoaderActivity;
+
+        specialinvoke $r4.<net.android.app.LoaderActivity: void <init>()>();
+
+        if $i0 == 19 goto label09;
+
+        virtualinvoke $r4.<net.android.app.LoaderActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 22 goto label09;
+
+        if $i0 == 23 goto label08;
+
+     label09:
+        if $i0 == 25 goto label11;
+
+        $r5 = new net.android.app.UpdateReceiver;
+
+        specialinvoke $r5.<net.android.app.UpdateReceiver: void <init>()>();
+
+        if $i0 == 26 goto label11;
+
+     label10:
+        virtualinvoke $r5.<net.android.app.UpdateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 28 goto label10;
+
+     label11:
+        if $i0 == 29 goto label13;
+
+        $r6 = new net.android.app.StartActivity;
+
+        specialinvoke $r6.<net.android.app.StartActivity: void <init>()>();
+
+        if $i0 == 30 goto label13;
+
+        virtualinvoke $r6.<net.android.app.StartActivity: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        if $i0 == 33 goto label13;
+
+        if $i0 == 34 goto label12;
+
+     label13:
+        if $i0 == 36 goto label18;
+
+        $r7 = new net.android.app.UpdateService;
+
+        specialinvoke $r7.<net.android.app.UpdateService: void <init>()>();
+
+        virtualinvoke $r7.<net.android.app.UpdateService: void onCreate()>();
+
+        virtualinvoke $r7.<net.android.app.UpdateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label14:
+        if $i0 == 37 goto label15;
+
+        if $i0 == 38 goto label14;
+
+     label15:
+        $r8 = virtualinvoke $r7.<net.android.app.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label16:
+        $z0 = virtualinvoke $r7.<net.android.app.UpdateService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 40 goto label17;
+
+        if $i0 == 41 goto label16;
+
+     label17:
+        virtualinvoke $r7.<net.android.app.UpdateService: void onDestroy()>();
+
+     label18:
+        if $i0 == 42 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Callback analysis done.
+Skipping file res/layout/ in layout folder...
+Warning: RelativeLayout is a phantom class!
+Warning: net.android.app.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: net.android.app.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/finish.xml
+Warning: ImageView is a phantom class!
+Warning: net.android.app.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: Button is a phantom class!
+Warning: net.android.app.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/first.xml
+Warning: ScrollView is a phantom class!
+Warning: net.android.app.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: net.android.app.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 3 layout controls in file res/layout/information.xml
+Found 4 layout controls in file res/layout/round_progress.xml
+Found 5 layout controls in file res/layout/settings.xml
+Skipping file res/layout-land/ in layout folder...
+Warning: net.android.app.android.webkit.WebView is a phantom class!
+Warning: android.view.android.webkit.WebView is a phantom class!
+Warning: android.widget.android.webkit.WebView is a phantom class!
+Warning: android.webkit.android.webkit.WebView is a phantom class!
+Could not find layout class android.webkit.WebView
+Found 6 layout controls in file res/layout-land/finish.xml
+Warning: ru.android.app.component.RoundProgress is a phantom class!
+Warning: net.android.app.ru.android.app.component.RoundProgress is a phantom class!
+Warning: android.view.ru.android.app.component.RoundProgress is a phantom class!
+Warning: android.widget.ru.android.app.component.RoundProgress is a phantom class!
+Warning: android.webkit.ru.android.app.component.RoundProgress is a phantom class!
+Could not find layout class ru.android.app.component.RoundProgress
+Found 7 layout controls in file res/layout-land/first.xml
+Found 8 layout controls in file res/layout-land/information.xml
+Found 9 layout controls in file res/layout-land/round_progress.xml
+Found 10 layout controls in file res/layout-land/settings.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        net.android.app.RuleActivity $r1;
+        net.android.app.b $r2;
+        net.android.app.InstallActivity $r3;
+        boolean $z0, $z1, $z2;
+        net.android.app.a $r4;
+        net.android.app.StartupReceiver $r5;
+        net.android.app.LoaderActivity $r6;
+        net.android.app.UpdateReceiver $r7;
+        net.android.app.StartActivity $r8;
+        net.android.app.UpdateService $r9;
+        android.os.IBinder $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new net.android.app.RuleActivity;
+
+        specialinvoke $r1.<net.android.app.RuleActivity: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<net.android.app.RuleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        $r2 = new net.android.app.b;
+
+        specialinvoke $r2.<net.android.app.b: void <init>(net.android.app.RuleActivity)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<net.android.app.b: void onClick(android.view.View)>(null);
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label14;
+
+        $r3 = new net.android.app.InstallActivity;
+
+        specialinvoke $r3.<net.android.app.InstallActivity: void <init>()>();
+
+        if $i0 == 11 goto label14;
+
+        virtualinvoke $r3.<net.android.app.InstallActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 13 goto label13;
+
+     label08:
+        if $i0 == 14 goto label09;
+
+        $z0 = virtualinvoke $r3.<net.android.app.InstallActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        $z1 = virtualinvoke $r3.<net.android.app.InstallActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label10:
+        if $i0 == 16 goto label11;
+
+        virtualinvoke $r3.<net.android.app.InstallActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label11:
+        $r4 = new net.android.app.a;
+
+        specialinvoke $r4.<net.android.app.a: void <init>(net.android.app.InstallActivity)>($r3);
+
+        if $i0 == 17 goto label12;
+
+        virtualinvoke $r4.<net.android.app.a: void onClick(android.view.View)>(null);
+
+     label12:
+        if $i0 == 18 goto label08;
+
+     label13:
+        if $i0 == 19 goto label07;
+
+        if $i0 == 20 goto label14;
+
+        if $i0 == 21 goto label07;
+
+     label14:
+        if $i0 == 23 goto label16;
+
+        $r5 = new net.android.app.StartupReceiver;
+
+        specialinvoke $r5.<net.android.app.StartupReceiver: void <init>()>();
+
+        if $i0 == 24 goto label16;
+
+     label15:
+        virtualinvoke $r5.<net.android.app.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 26 goto label15;
+
+     label16:
+        if $i0 == 27 goto label18;
+
+        $r6 = new net.android.app.LoaderActivity;
+
+        specialinvoke $r6.<net.android.app.LoaderActivity: void <init>()>();
+
+        if $i0 == 28 goto label18;
+
+        virtualinvoke $r6.<net.android.app.LoaderActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 31 goto label17;
+
+        if $i0 == 32 goto label18;
+
+        if $i0 == 33 goto label17;
+
+     label18:
+        if $i0 == 35 goto label20;
+
+        $r7 = new net.android.app.UpdateReceiver;
+
+        specialinvoke $r7.<net.android.app.UpdateReceiver: void <init>()>();
+
+        if $i0 == 36 goto label20;
+
+     label19:
+        virtualinvoke $r7.<net.android.app.UpdateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 38 goto label19;
+
+     label20:
+        if $i0 == 39 goto label22;
+
+        $r8 = new net.android.app.StartActivity;
+
+        specialinvoke $r8.<net.android.app.StartActivity: void <init>()>();
+
+        if $i0 == 40 goto label22;
+
+        virtualinvoke $r8.<net.android.app.StartActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 43 goto label21;
+
+        if $i0 == 44 goto label22;
+
+        if $i0 == 45 goto label21;
+
+     label22:
+        if $i0 == 47 goto label27;
+
+        $r9 = new net.android.app.UpdateService;
+
+        specialinvoke $r9.<net.android.app.UpdateService: void <init>()>();
+
+        virtualinvoke $r9.<net.android.app.UpdateService: void onCreate()>();
+
+        virtualinvoke $r9.<net.android.app.UpdateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label23:
+        if $i0 == 48 goto label24;
+
+        if $i0 == 49 goto label23;
+
+     label24:
+        $r10 = virtualinvoke $r9.<net.android.app.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label25:
+        $z2 = virtualinvoke $r9.<net.android.app.UpdateService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 51 goto label26;
+
+        if $i0 == 52 goto label25;
+
+     label26:
+        virtualinvoke $r9.<net.android.app.UpdateService: void onDestroy()>();
+
+     label27:
+        if $i0 == 53 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 14 callback methods for 6 components
+Found {res/layout/round_progress.xml=[2131099663 - android.widget.ImageView, 2131099662 - android.widget.ImageView], res/layout/finish.xml=[2131099648 - android.widget.RelativeLayout, 2131099650 - android.widget.TextView, 2131099649 - android.widget.TextView], res/layout/settings.xml=[2131099664 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout-land/round_progress.xml=[2131099663 - android.widget.ImageView, 2131099662 - android.widget.ImageView], res/layout-land/settings.xml=[2131099664 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout-land/first.xml=[2131099653 - android.widget.RelativeLayout, 2131099655 - android.widget.ImageView, 2131099654 - android.widget.ImageView, 2131099650 - android.widget.TextView, 2131099649 - android.widget.TextView, 2131099657 - android.widget.Button], res/layout-land/finish.xml=[2131099648 - android.widget.RelativeLayout, 2131099650 - android.widget.TextView], res/layout/information.xml=[2131099659 - android.widget.Button, 2131099660 - android.widget.ScrollView, 2131099653 - android.widget.RelativeLayout, 2131099655 - android.widget.ImageView, 2131099661 - android.widget.LinearLayout, 2131099650 - android.widget.TextView, 2131099649 - android.widget.TextView], res/layout-land/information.xml=[2131099659 - android.widget.Button, 2131099660 - android.widget.ScrollView, 2131099653 - android.widget.RelativeLayout, 2131099655 - android.widget.ImageView, 2131099661 - android.widget.LinearLayout, 2131099650 - android.widget.TextView, 2131099649 - android.widget.TextView], res/layout/first.xml=[2131099658 - android.widget.TextView, 2131099656 - net.android.app.component.RoundProgress, 2131099653 - android.widget.RelativeLayout, 2131099655 - android.widget.ImageView, 2131099654 - android.widget.ImageView, 2131099650 - android.widget.TextView, 2131099649 - android.widget.TextView, 2131099657 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 14 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/1a76595f4e09d4bc03a5f77bb3b235c6a0974975e21da85e0c767cf84ae096a9.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        net.android.app.RuleActivity $r1;
+        net.android.app.b $r2;
+        net.android.app.InstallActivity $r3;
+        boolean $z0, $z1, $z2;
+        net.android.app.a $r4;
+        net.android.app.StartupReceiver $r5;
+        net.android.app.LoaderActivity $r6;
+        net.android.app.UpdateReceiver $r7;
+        net.android.app.StartActivity $r8;
+        net.android.app.UpdateService $r9;
+        android.os.IBinder $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new net.android.app.RuleActivity;
+
+        specialinvoke $r1.<net.android.app.RuleActivity: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<net.android.app.RuleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        $r2 = new net.android.app.b;
+
+        specialinvoke $r2.<net.android.app.b: void <init>(net.android.app.RuleActivity)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<net.android.app.b: void onClick(android.view.View)>(null);
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label14;
+
+        $r3 = new net.android.app.InstallActivity;
+
+        specialinvoke $r3.<net.android.app.InstallActivity: void <init>()>();
+
+        if $i0 == 11 goto label14;
+
+        virtualinvoke $r3.<net.android.app.InstallActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 13 goto label13;
+
+     label08:
+        if $i0 == 14 goto label09;
+
+        $z0 = virtualinvoke $r3.<net.android.app.InstallActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        $z1 = virtualinvoke $r3.<net.android.app.InstallActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label10:
+        if $i0 == 16 goto label11;
+
+        virtualinvoke $r3.<net.android.app.InstallActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label11:
+        $r4 = new net.android.app.a;
+
+        specialinvoke $r4.<net.android.app.a: void <init>(net.android.app.InstallActivity)>($r3);
+
+        if $i0 == 17 goto label12;
+
+        virtualinvoke $r4.<net.android.app.a: void onClick(android.view.View)>(null);
+
+     label12:
+        if $i0 == 18 goto label08;
+
+     label13:
+        if $i0 == 19 goto label07;
+
+        if $i0 == 20 goto label14;
+
+        if $i0 == 21 goto label07;
+
+     label14:
+        if $i0 == 23 goto label16;
+
+        $r5 = new net.android.app.StartupReceiver;
+
+        specialinvoke $r5.<net.android.app.StartupReceiver: void <init>()>();
+
+        if $i0 == 24 goto label16;
+
+     label15:
+        virtualinvoke $r5.<net.android.app.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 26 goto label15;
+
+     label16:
+        if $i0 == 27 goto label18;
+
+        $r6 = new net.android.app.LoaderActivity;
+
+        specialinvoke $r6.<net.android.app.LoaderActivity: void <init>()>();
+
+        if $i0 == 28 goto label18;
+
+        virtualinvoke $r6.<net.android.app.LoaderActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 31 goto label17;
+
+        if $i0 == 32 goto label18;
+
+        if $i0 == 33 goto label17;
+
+     label18:
+        if $i0 == 35 goto label20;
+
+        $r7 = new net.android.app.UpdateReceiver;
+
+        specialinvoke $r7.<net.android.app.UpdateReceiver: void <init>()>();
+
+        if $i0 == 36 goto label20;
+
+     label19:
+        virtualinvoke $r7.<net.android.app.UpdateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 38 goto label19;
+
+     label20:
+        if $i0 == 39 goto label22;
+
+        $r8 = new net.android.app.StartActivity;
+
+        specialinvoke $r8.<net.android.app.StartActivity: void <init>()>();
+
+        if $i0 == 40 goto label22;
+
+        virtualinvoke $r8.<net.android.app.StartActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 43 goto label21;
+
+        if $i0 == 44 goto label22;
+
+        if $i0 == 45 goto label21;
+
+     label22:
+        if $i0 == 47 goto label27;
+
+        $r9 = new net.android.app.UpdateService;
+
+        specialinvoke $r9.<net.android.app.UpdateService: void <init>()>();
+
+        virtualinvoke $r9.<net.android.app.UpdateService: void onCreate()>();
+
+        virtualinvoke $r9.<net.android.app.UpdateService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label23:
+        if $i0 == 48 goto label24;
+
+        if $i0 == 49 goto label23;
+
+     label24:
+        $r10 = virtualinvoke $r9.<net.android.app.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label25:
+        $z2 = virtualinvoke $r9.<net.android.app.UpdateService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 51 goto label26;
+
+        if $i0 == 52 goto label25;
+
+     label26:
+        virtualinvoke $r9.<net.android.app.UpdateService: void onDestroy()>();
+
+     label27:
+        if $i0 == 53 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.220744007 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.048822971 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 263 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 18 sources and 12 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 11
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 239 forward and 41 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.004553678 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, $r4, null) in method <net.android.app.StartActivity: void a(net.android.app.StartActivity,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r0, 0, $r3, 0) in method <net.android.app.StartActivity: void a(net.android.app.StartActivity,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r1) in method <net.android.app.f: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Handler: android.os.Message obtainMessage()>() in method <net.android.app.f: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <net.android.app.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <net.android.app.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r5.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, $r4, null), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r0, 0, $r3, 0) (in <net.android.app.StartActivity: void a(net.android.app.StartActivity,java.lang.String,java.lang.String)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r1), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Handler: android.os.Message obtainMessage()>() (in <net.android.app.f: void run()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <net.android.app.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 75.771144 MB
+Analysis has run for 3.494553715 seconds

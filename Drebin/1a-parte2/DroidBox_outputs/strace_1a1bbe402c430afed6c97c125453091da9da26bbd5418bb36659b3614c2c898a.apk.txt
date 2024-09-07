@@ -1,0 +1,659 @@
+1021  18:41:09.731799 futex(0xb8867f60, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1020  18:41:09.780776 futex(0xb885fc28, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1019  18:41:09.781291 futex(0xb8864878, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+59    18:41:09.781645 select(24, [9 23], NULL, NULL, NULL) = ? ERESTARTNOHAND (To be restarted)
+59    18:41:10.585282 --- {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=577, si_status=SIGKILL, si_utime=6, si_stime=8} (Child exited) ---
+59    18:41:10.586166 wait4(-1, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGKILL}], WNOHANG, NULL) = 577
+59    18:41:10.587126 wait4(-1, 0xbeeae2dc, WNOHANG, NULL) = 0
+59    18:41:10.587608 sigreturn()       = ? (mask now [INT FPE KILL PIPE ALRM STKFLT CONT STOP TSTP TTIN TTOU URG VTALRM PROF IO PWR RTMIN])
+59    18:41:10.589191 select(24, [9 23], NULL, NULL, NULL) = 1 (in [23])
+59    18:41:13.282206 ioctl(23, FIONREAD, [151]) = 0
+59    18:41:13.283387 recvmsg(23, {msg_name(0)=NULL, msg_iov(1)=[{"7\n--runtime-init\n--setuid=10050\n"..., 4217}], msg_controllen=0, msg_flags=0}, MSG_NOSIGNAL) = 151
+59    18:41:13.285192 ioctl(23, FIONREAD, [0]) = 0
+59    18:41:13.286496 futex(0xb8864878, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1019  18:41:13.286792 <... futex resumed> ) = 0
+59    18:41:13.287344 <... futex resumed> ) = 1
+1019  18:41:13.287636 futex(0xb8864868, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+59    18:41:13.287999 futex(0xb8864868, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1019  18:41:13.288298 <... futex resumed> ) = -1 EAGAIN (Try again)
+59    18:41:13.307507 <... futex resumed> ) = 0
+1019  18:41:13.307872 futex(0xb8864868, FUTEX_WAKE_PRIVATE, 1) = 0
+1019  18:41:13.309825 futex(0xb8731da0, FUTEX_WAKE_PRIVATE, 1) = 0
+1019  18:41:13.310356 munmap(0xb0e77000, 32768) = 0
+1019  18:41:13.310840 sigprocmask(SIG_SETMASK, ~[SEGV], NULL) = 0
+1019  18:41:13.311626 munmap(0xaf40e000, 1048576) = 0
+1019  18:41:13.312254 exit(0)           = ?
+59    18:41:13.314428 futex(0xb8731da0, FUTEX_WAIT_PRIVATE, -128, NULL) = -1 EAGAIN (Try again)
+59    18:41:13.314901 futex(0xb885fc28, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1020  18:41:13.315214 <... futex resumed> ) = 0
+1020  18:41:13.315451 futex(0xb885fc18, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+59    18:41:13.315660 <... futex resumed> ) = 1
+59    18:41:13.315893 futex(0xb885fc18, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1020  18:41:13.316197 <... futex resumed> ) = 0
+1020  18:41:13.316431 futex(0xb885fc18, FUTEX_WAKE_PRIVATE, 1) = 0
+1020  18:41:13.316939 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+59    18:41:13.317221 <... futex resumed> ) = 1
+59    18:41:13.317455 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1020  18:41:13.317687 <... futex resumed> ) = 0
+1020  18:41:13.317927 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1020  18:41:13.318340 munmap(0xaf406000, 32768) = 0
+1020  18:41:13.318770 sigprocmask(SIG_SETMASK, ~[SEGV], NULL) = 0
+1020  18:41:13.319223 munmap(0xaf306000, 1048576) = 0
+1020  18:41:13.319675 exit(0)           = ?
+59    18:41:13.320125 <... futex resumed> ) = 1
+59    18:41:13.320387 futex(0xb8867f60, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1021  18:41:13.320622 <... futex resumed> ) = 0
+1021  18:41:13.320856 futex(0xb8867f50, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+59    18:41:13.321089 <... futex resumed> ) = 1
+59    18:41:13.321333 futex(0xb8867f50, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1021  18:41:13.321562 <... futex resumed> ) = 0
+1021  18:41:13.321794 futex(0xb8867f50, FUTEX_WAKE_PRIVATE, 1) = 0
+1021  18:41:13.322311 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+59    18:41:13.322520 <... futex resumed> ) = 1
+59    18:41:13.322752 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1021  18:41:13.322982 <... futex resumed> ) = 0
+1021  18:41:13.323258 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1021  18:41:13.323627 munmap(0xaf2fe000, 32768) = 0
+1021  18:41:13.324039 sigprocmask(SIG_SETMASK, ~[SEGV], NULL) = 0
+1021  18:41:13.324488 munmap(0xaf1fe000, 1048576) = 0
+1021  18:41:13.324905 exit(0)           = ?
+59    18:41:13.325349 <... futex resumed> ) = 1
+59    18:41:13.325780 open("/proc/self/task", O_RDONLY|O_DIRECTORY) = 24
+59    18:41:13.326746 getdents64(24, /* 3 entries */, 4200) = 72
+59    18:41:13.327741 getdents64(24, /* 0 entries */, 4200) = 0
+59    18:41:13.328181 close(24)         = 0
+59    18:41:13.328711 sigaction(SIGCHLD, {0xb67c33dd, [], 0}, NULL, 0) = 0
+59    18:41:13.329386 fork()            = 1055
+59    18:41:13.348308 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xb0e77000
+59    18:41:13.348955 madvise(0xb0e77000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+59    18:41:13.349692 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xaf40e000
+59    18:41:13.350304 madvise(0xaf40e000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+59    18:41:13.350743 mprotect(0xaf40e000, 4096, PROT_NONE) = 0
+59    18:41:13.351325 clone( <unfinished ...>
+1056  18:41:13.355170 futex(0xaf50df00, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1055  18:41:13.355626 gettid()          = 1055
+1055  18:41:13.356161 getuid32()        = 0
+1055  18:41:13.356751 open("/acct/uid/0/tasks", O_RDWR|O_CREAT, 0666) = 24
+1055  18:41:13.358940 write(24, "0", 1) = 1
+1055  18:41:13.359688 close(24)         = 0
+1055  18:41:13.360302 prctl(PR_SET_KEEPCAPS, 1) = 0
+1055  18:41:13.360787 setgroups32(2, [3003, 1028]) = 0
+1055  18:41:13.361443 setgid32(10050)   = 0
+1055  18:41:13.371889 open("/acct/uid/10050/tasks", O_RDWR|O_CREAT, 0666) = 24
+1055  18:41:13.372740 write(24, "0", 1) = 1
+1055  18:41:13.373221 close(24)         = 0
+1055  18:41:13.373740 setuid32(10050)   = 0
+1055  18:41:13.374705 personality(0xffffffff /* PER_??? */) = 8388608
+1055  18:41:13.375266 personality(0x840000 /* PER_??? */) = 8388608
+1055  18:41:13.375716 capset(0xbeeae794, 0xbeeae7a4) = 0
+1055  18:41:13.376600 gettid()          = 1055
+1055  18:41:13.377067 access("/dev/cpuctl/tasks", F_OK) = 0
+1055  18:41:13.377695 open("/dev/cpuctl/apps/tasks", O_WRONLY) = 24
+1055  18:41:13.378388 open("/dev/cpuctl/apps/bg_non_interactive/tasks", O_WRONLY) = 25
+1055  18:41:13.379041 futex(0xb6e6029c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+1055  18:41:13.379933 write(24, "1055", 4) = 4
+59    18:41:13.380449 <... clone resumed> child_stack=0xaf50df00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1056
+59    18:41:13.380758 futex(0xaf50df00, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1056  18:41:13.380998 <... futex resumed> ) = 0
+1056  18:41:13.381329 set_tls(0xaf50df00, 0xb882afc0, 0xaf50dffc, 0x40, 0xaf50df00) = 0
+59    18:41:13.381954 <... syscall_240 resumed> ) = 0x1
+59    18:41:13.382273 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -324, NULL <unfinished ...>
+1055  18:41:13.383021 gettid()          = 1055
+1055  18:41:13.383648 prctl(PR_SET_DUMPABLE, 1) = 0
+1055  18:41:13.384127 setrlimit(RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0
+1055  18:41:13.384740 sigaction(SIGCHLD, {SIG_DFL, , NULL, 0) = 0
+1055  18:41:13.385317 clock_gettime(CLOCK_MONOTONIC, {117, 174059434}) = 0
+1055  18:41:13.386513 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xaf40e000
+1055  18:41:13.386988 madvise(0xaf40e000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.387491 mprotect(0xaf40e000, 4096, PROT_NONE) = 0
+1055  18:41:13.387965 clone(child_stack=0xaf50df00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1057
+1055  18:41:13.393533 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -324, NULL <unfinished ...>
+1056  18:41:13.402112 prctl(PR_SET_NAME, 0xaf50de8c, 0, 0, 0) = 0
+1056  18:41:13.402967 gettid()          = 1056
+1056  18:41:13.403803 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+59    18:41:13.404089 <... futex resumed> ) = 0
+59    18:41:13.404345 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1056  18:41:13.404593 <... futex resumed> ) = 1
+1056  18:41:13.404846 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+59    18:41:13.405134 <... futex resumed> ) = 0
+59    18:41:13.405423 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+59    18:41:13.405951 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+59    18:41:13.406635 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xaf406000
+59    18:41:13.407137 madvise(0xaf406000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+59    18:41:13.407620 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xaf306000
+59    18:41:13.408504 madvise(0xaf306000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+59    18:41:13.408951 mprotect(0xaf306000, 4096, PROT_NONE) = 0
+59    18:41:13.409504 clone(child_stack=0xaf405f00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1058
+59    18:41:13.410449 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -328, NULL <unfinished ...>
+1056  18:41:13.410721 <... futex resumed> ) = 1
+1056  18:41:13.411917 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -326, NULL) = -1 EAGAIN (Try again)
+1056  18:41:13.412610 getpriority(PRIO_PROCESS, 1056) = 20
+1056  18:41:13.413151 setpriority(PRIO_PROCESS, 1056, 0) = 0
+1056  18:41:13.413768 futex(0xb8864878, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1058  18:41:13.414226 set_tls(0xaf405f00, 0xb8748068, 0xaf405ffc, 0x40, 0xaf405f00) = 0
+1058  18:41:13.416217 prctl(PR_SET_NAME, 0xaf405e8c, 0, 0, 0) = 0
+1058  18:41:13.416620 gettid()          = 1058
+1058  18:41:13.417073 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647) = 1
+1058  18:41:13.417523 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -330, NULL <unfinished ...>
+59    18:41:13.417740 <... futex resumed> ) = 0
+59    18:41:13.417981 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+1058  18:41:13.418312 <... futex resumed> ) = 0
+1058  18:41:13.418564 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+59    18:41:13.418776 <... futex resumed> ) = 1
+59    18:41:13.419149 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1058  18:41:13.419409 <... futex resumed> ) = 0
+1058  18:41:13.419642 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1058  18:41:13.420127 getpriority(PRIO_PROCESS, 1058) = 20
+1058  18:41:13.420584 setpriority(PRIO_PROCESS, 1058, 0) = 0
+1058  18:41:13.421112 sched_yield()     = 0
+1058  18:41:13.421492 nanosleep({0, 1000000},  <unfinished ...>
+59    18:41:13.422001 <... futex resumed> ) = 1
+59    18:41:13.422480 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xaf2fe000
+59    18:41:13.422909 madvise(0xaf2fe000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+59    18:41:13.423317 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xaf1fe000
+59    18:41:13.423728 madvise(0xaf1fe000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+59    18:41:13.424123 mprotect(0xaf1fe000, 4096, PROT_NONE) = 0
+59    18:41:13.424559 clone(child_stack=0xaf2fdf00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1059
+59    18:41:13.427934 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -332, NULL <unfinished ...>
+1059  18:41:13.429092 set_tls(0xaf2fdf00, 0xb874d548, 0xaf2fdffc, 0x40, 0xaf2fdf00) = 0
+1059  18:41:13.429603 prctl(PR_SET_NAME, 0xaf2fde8c, 0, 0, 0) = 0
+1059  18:41:13.430156 gettid()          = 1059
+1059  18:41:13.430743 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+59    18:41:13.431016 <... futex resumed> ) = 0
+59    18:41:13.431658 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1059  18:41:13.431926 <... futex resumed> ) = 1
+1059  18:41:13.432221 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+59    18:41:13.432472 <... futex resumed> ) = 0
+59    18:41:13.432714 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+59    18:41:13.433104 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+59    18:41:13.433625 getpgid(0xdf)     = 59
+59    18:41:13.434080 setpgid(1055, 59) = 0
+59    18:41:13.434608 sendmsg(23, {msg_name(0)=NULL, msg_iov(1)=[{"\0\0\4\37", 4}], msg_controllen=0, msg_flags=0}, MSG_NOSIGNAL) = 4
+59    18:41:13.435479 sendmsg(23, {msg_name(0)=NULL, msg_iov(1)=[{"\0", 1}], msg_controllen=0, msg_flags=0}, MSG_NOSIGNAL) = 1
+59    18:41:13.436232 select(24, [9 23], NULL, NULL, NULL <unfinished ...>
+1059  18:41:13.436559 <... futex resumed> ) = 1
+1059  18:41:13.436817 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -334, NULL) = -1 EAGAIN (Try again)
+1059  18:41:13.437290 getpriority(PRIO_PROCESS, 1059) = 20
+1059  18:41:13.437703 setpriority(PRIO_PROCESS, 1059, 0) = 0
+1059  18:41:13.438213 futex(0xb8867f60, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1058  18:41:13.462967 <... nanosleep resumed> NULL) = 0
+1058  18:41:13.472447 futex(0xb885fc28, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1057  18:41:13.496817 set_tls(0xaf50df00, 0xb882afc0, 0xaf50dffc, 0x40, 0xaf50df00) = 0
+1057  18:41:13.497379 prctl(PR_SET_NAME, 0xaf50deac, 0, 0, 0) = 0
+1057  18:41:13.498140 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xaf406000
+1057  18:41:13.498775 madvise(0xaf406000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1057  18:41:13.499401 gettid()          = 1057
+1057  18:41:13.500982 getpriority(PRIO_PROCESS, 0) = 20
+1057  18:41:13.520712 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+1055  18:41:13.521034 <... futex resumed> ) = 0
+1055  18:41:13.521347 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1057  18:41:13.521603 <... futex resumed> ) = 1
+1057  18:41:13.521864 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1055  18:41:13.522160 <... futex resumed> ) = 0
+1055  18:41:13.522423 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1055  18:41:13.548304 clock_gettime(CLOCK_MONOTONIC, {117, 337017331}) = 0
+1055  18:41:13.548824 clock_gettime(CLOCK_MONOTONIC, {117, 337518529}) = 0
+1055  18:41:13.549563 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xaf306000
+1055  18:41:13.550169 madvise(0xaf306000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.550652 mprotect(0xaf306000, 4096, PROT_NONE) = 0
+1055  18:41:13.551186 clone(child_stack=0xaf405f00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1060
+1055  18:41:13.553213 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -326, NULL <unfinished ...>
+1057  18:41:13.556108 <... futex resumed> ) = 1
+1057  18:41:13.556418 futex(0xb872f9a8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1060  18:41:13.556818 set_tls(0xaf405f00, 0xb8748068, 0xaf405ffc, 0x40, 0xaf405f00) = 0
+1060  18:41:13.557327 prctl(PR_SET_NAME, 0xaf405eac, 0, 0, 0) = 0
+1060  18:41:13.557845 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xaf2fe000
+1060  18:41:13.558419 madvise(0xaf2fe000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1060  18:41:13.558932 gettid()          = 1060
+1060  18:41:13.559627 getpriority(PRIO_PROCESS, 0) = 20
+1060  18:41:13.560194 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+1055  18:41:13.560476 <... futex resumed> ) = 0
+1055  18:41:13.560744 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1060  18:41:13.560998 <... futex resumed> ) = 1
+1060  18:41:13.561298 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1055  18:41:13.561556 <... futex resumed> ) = 0
+1055  18:41:13.561821 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1055  18:41:13.562294 clock_gettime(CLOCK_MONOTONIC, {117, 350988137}) = 0
+1055  18:41:13.562791 clock_gettime(CLOCK_MONOTONIC, {117, 351482958}) = 0
+1055  18:41:13.563652 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xaf1fe000
+1055  18:41:13.564173 madvise(0xaf1fe000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.564622 mprotect(0xaf1fe000, 4096, PROT_NONE) = 0
+1055  18:41:13.565155 clone(child_stack=0xaf2fdf00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1061
+1055  18:41:13.566188 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -328, NULL <unfinished ...>
+1060  18:41:13.566452 <... futex resumed> ) = 1
+1060  18:41:13.566719 rt_sigtimedwait([QUIT USR1 RT_7 RT_14 RT_15 RT_16 RT_18 RT_20 RT_21 RT_22 RT_23 RT_24 RT_26 RT_27 RT_29 RT_30], NULL, NULL, 8 <unfinished ...>
+1061  18:41:13.567378 set_tls(0xaf2fdf00, 0xb874d548, 0xaf2fdffc, 0x40, 0xaf2fdf00) = 0
+1061  18:41:13.567813 prctl(PR_SET_NAME, 0xaf2fdeac, 0, 0, 0) = 0
+1061  18:41:13.568365 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xaf1f6000
+1061  18:41:13.568822 madvise(0xaf1f6000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1061  18:41:13.569300 gettid()          = 1061
+1061  18:41:13.569885 getpriority(PRIO_PROCESS, 0) = 20
+1061  18:41:13.570434 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+1055  18:41:13.570751 <... futex resumed> ) = 0
+1055  18:41:13.571021 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1061  18:41:13.571316 <... futex resumed> ) = 1
+1061  18:41:13.571576 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1055  18:41:13.571837 <... futex resumed> ) = 0
+1055  18:41:13.572143 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1055  18:41:13.572584 futex(0xb886a6ac, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1061  18:41:13.572837 <... futex resumed> ) = 1
+1061  18:41:13.573139 futex(0xb886a6ac, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+1055  18:41:13.573416 <... futex resumed> ) = 0
+1055  18:41:13.573682 futex(0xb886a6a8, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1061  18:41:13.573934 <... futex resumed> ) = 1
+1061  18:41:13.574239 futex(0xb886a6a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1055  18:41:13.574501 <... futex resumed> ) = 0
+1055  18:41:13.574768 futex(0xb886a6a8, FUTEX_WAKE_PRIVATE, 1) = 0
+1061  18:41:13.604095 <... futex resumed> ) = 1
+1055  18:41:13.604384 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+1061  18:41:13.604676 socket(PF_UNIX, SOCK_STREAM, 0 <unfinished ...>
+1055  18:41:13.605027 <... clock_gettime resumed> {117, 393472333}) = 0
+1061  18:41:13.605526 <... socket resumed> ) = 26
+1055  18:41:13.607256 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+1061  18:41:13.607552 pipe( <unfinished ...>
+1055  18:41:13.607850 <... mmap2 resumed> ) = 0xaf1ee000
+1061  18:41:13.608193 <... pipe resumed> [27, 28]) = 0
+1055  18:41:13.608555 madvise(0xaf1ee000, 32768, 0xc /* MADV_??? */ <unfinished ...>
+1061  18:41:13.609312 getpid( <unfinished ...>
+1055  18:41:13.609554 <... madvise resumed> ) = -1 EINVAL (Invalid argument)
+1061  18:41:13.609932 <... getpid resumed> ) = 1055
+1055  18:41:13.610409 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0 <unfinished ...>
+1061  18:41:13.610800 connect(26, {sa_family=AF_UNIX, path=@"jdwp-control"...}, 15 <unfinished ...>
+1055  18:41:13.611489 <... mmap2 resumed> ) = 0xad261000
+1055  18:41:13.612315 madvise(0xad261000, 1048576, 0xc /* MADV_??? */ <unfinished ...>
+1061  18:41:13.612573 <... connect resumed> ) = 0
+1055  18:41:13.612817 <... madvise resumed> ) = -1 EINVAL (Invalid argument)
+1061  18:41:13.613171 getsockopt(26, SOL_SOCKET, SO_PEERCRED,  <unfinished ...>
+1055  18:41:13.613518 mprotect(0xad261000, 4096, PROT_NONE <unfinished ...>
+1061  18:41:13.613769 <... getsockopt resumed> {pid=66, uid=0, gid=0}, [12]) = 0
+1055  18:41:13.614258 <... mprotect resumed> ) = 0
+1061  18:41:13.614523 sendto(26, "041f", 4, 0, NULL, 0 <unfinished ...>
+1055  18:41:13.614931 clone( <unfinished ...>
+1061  18:41:13.617675 <... sendto resumed> ) = 4
+1055  18:41:13.618102 <... clone resumed> child_stack=0xad360f00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1062
+1061  18:41:13.618452 recvmsg(26,  <unfinished ...>
+1055  18:41:13.618734 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -330, NULL <unfinished ...>
+1062  18:41:13.623580 set_tls(0xad360f00, 0xb874dd38, 0xad360ffc, 0x40, 0xad360f00) = 0
+1062  18:41:13.625682 prctl(PR_SET_NAME, 0xad360e8c, 0, 0, 0) = 0
+1062  18:41:13.626336 gettid()          = 1062
+1062  18:41:13.626928 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+1055  18:41:13.627290 <... futex resumed> ) = 0
+1055  18:41:13.627588 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1062  18:41:13.627848 <... futex resumed> ) = 1
+1062  18:41:13.628168 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1055  18:41:13.628433 <... futex resumed> ) = 0
+1055  18:41:13.628708 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1055  18:41:13.629227 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+1055  18:41:13.630030 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xad259000
+1055  18:41:13.630657 madvise(0xad259000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.631253 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xad159000
+1055  18:41:13.631735 madvise(0xad159000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.632449 mprotect(0xad159000, 4096, PROT_NONE) = 0
+1055  18:41:13.632959 clone(child_stack=0xad258f00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1063
+1055  18:41:13.634973 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -334, NULL <unfinished ...>
+1062  18:41:13.635320 <... futex resumed> ) = 1
+1062  18:41:13.635587 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -332, NULL) = -1 EAGAIN (Try again)
+1062  18:41:13.636067 getpriority(PRIO_PROCESS, 1062) = 20
+1062  18:41:13.636551 setpriority(PRIO_PROCESS, 1062, 0) = 0
+1062  18:41:13.637254 futex(0xb882e810, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1063  18:41:13.637663 set_tls(0xad258f00, 0xb8845ce0, 0xad258ffc, 0x40, 0xad258f00) = 0
+1063  18:41:13.639910 prctl(PR_SET_NAME, 0xad258e8c, 0, 0, 0) = 0
+1063  18:41:13.640443 gettid()          = 1063
+1063  18:41:13.659172 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+1055  18:41:13.682157 <... futex resumed> ) = 0
+1055  18:41:13.682490 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1063  18:41:13.682756 <... futex resumed> ) = 1
+1063  18:41:13.683025 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1055  18:41:13.722113 <... futex resumed> ) = 0
+1055  18:41:13.722474 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1055  18:41:13.722939 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+1055  18:41:13.723897 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xad151000
+1055  18:41:13.724532 madvise(0xad151000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.725124 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xad051000
+1055  18:41:13.725692 madvise(0xad051000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.726280 mprotect(0xad051000, 4096, PROT_NONE) = 0
+1055  18:41:13.726920 clone(child_stack=0xad150f00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1064
+1055  18:41:13.728893 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -338, NULL <unfinished ...>
+1063  18:41:13.729247 <... futex resumed> ) = 1
+1063  18:41:13.729517 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -336, NULL) = -1 EAGAIN (Try again)
+1063  18:41:13.731171 getpriority(PRIO_PROCESS, 1063) = 20
+1063  18:41:13.731647 setpriority(PRIO_PROCESS, 1063, 0) = 0
+1063  18:41:13.732274 futex(0xb88492e8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1064  18:41:13.734340 set_tls(0xad150f00, 0xb8870de0, 0xad150ffc, 0x40, 0xad150f00) = 0
+1064  18:41:13.734821 prctl(PR_SET_NAME, 0xad150e8c, 0, 0, 0) = 0
+1064  18:41:13.735355 gettid()          = 1064
+1064  18:41:13.735807 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647 <unfinished ...>
+1055  18:41:13.736712 <... futex resumed> ) = 0
+1055  18:41:13.736995 futex(0xb680b57c, FUTEX_WAIT_PRIVATE, 2, NULL <unfinished ...>
+1064  18:41:13.737417 <... futex resumed> ) = 1
+1064  18:41:13.737686 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+1055  18:41:13.738020 <... futex resumed> ) = 0
+1055  18:41:13.738440 futex(0xb680b57c, FUTEX_WAKE_PRIVATE, 1) = 0
+1055  18:41:13.738962 futex(0xb680b580, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+1055  18:41:13.740818 close(23)         = 0
+1055  18:41:13.741732 close(9)          = 0
+1064  18:41:13.743034 <... futex resumed> ) = 1
+1064  18:41:13.743372 futex(0xb680b580, FUTEX_WAIT_PRIVATE, -340, NULL) = -1 EAGAIN (Try again)
+1064  18:41:13.743831 getpriority(PRIO_PROCESS, 1064) = 20
+1064  18:41:13.744343 setpriority(PRIO_PROCESS, 1064, 0) = 0
+1064  18:41:13.744871 futex(0xb884f640, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+1055  18:41:13.765908 open("/dev/binder", O_RDWR) = 9
+1055  18:41:13.766763 fcntl64(9, F_SETFD, FD_CLOEXEC) = 0
+1055  18:41:13.767395 ioctl(9, 0xc0046209, 0xbeeae638) = 0
+1055  18:41:13.767967 ioctl(9, 0x40046205, 0xbeeae63c) = 0
+1055  18:41:13.768621 mmap2(NULL, 1040384, PROT_READ, MAP_PRIVATE|MAP_NORESERVE, 9, 0) = 0xacf53000
+1055  18:41:13.769335 madvise(0xacf53000, 1040384, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.769840 prctl(PR_SET_NAME, 0xb8811b8c, 0, 0, 0) = 0
+1055  18:41:13.770452 open("/sys/qemu_trace/process_name", O_RDWR) = 23
+1055  18:41:13.771307 write(23, "MysticGD.iBoobsLite\0", 20) = 20
+1055  18:41:13.771937 close(23)         = 0
+1055  18:41:13.820236 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xace53000
+1055  18:41:13.820888 madvise(0xace53000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:13.824851 mprotect(0xace53000, 4096, PROT_NONE) = 0
+1055  18:41:13.826318 clone(child_stack=0xacf52f00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1067
+1055  18:41:13.830552 writev(3, [{"\4", 1}, {"dalvikvm\0", 9}, {"Turning on JNI app bug workaroun"..., 63}], 3) = 73
+1055  18:41:13.834540 prctl(PR_SET_NAME, 0xb882705a, 0, 0, 0) = 0
+1055  18:41:13.836673 open("/sys/qemu_trace/process_name", O_RDWR) = 23
+1055  18:41:13.837460 write(23, "<pre-initialized>\0", 18) = 18
+1055  18:41:13.838082 close(23)         = 0
+1055  18:41:13.839808 futex(0xb6e4f0c0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+1055  18:41:13.840421 pipe([23, 29])    = 0
+1055  18:41:13.841010 fcntl64(23, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+1055  18:41:13.841550 fcntl64(29, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+1055  18:41:13.842014 epoll_create(0x8) = 30
+1055  18:41:13.842536 epoll_ctl(0x1e, 0x1, 0x17, 0xbeeae300) = 0
+1067  18:41:13.847794 set_tls(0xacf52f00, 0xb8807af8, 0xacf52ffc, 0x40, 0xacf52f00) = 0
+1067  18:41:13.848301 setpriority(PRIO_PROCESS, 0, 0) = 0
+1067  18:41:13.848910 futex(0xb6e4f0b0, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+1067  18:41:13.849414 gettid()          = 1067
+1067  18:41:13.849855 write(24, "1067", 4) = 4
+1067  18:41:13.850414 prctl(PR_SET_NAME, 0xb8810340, 0, 0, 0) = 0
+1067  18:41:13.850894 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xace4b000
+1067  18:41:13.851411 madvise(0xace4b000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1067  18:41:13.862262 gettid()          = 1067
+1067  18:41:13.862921 getpriority(PRIO_PROCESS, 0) = 20
+1067  18:41:13.863869 gettid()          = 1067
+1067  18:41:13.864692 gettid()          = 1067
+1067  18:41:13.865222 getpid()          = 1055
+1067  18:41:13.865696 getuid32()        = 10050
+1067  18:41:13.866584 write(24, "1067", 4) = 4
+1067  18:41:13.867253 ioctl(9, 0xc0186201, 0xacf52e28) = 0
+1067  18:41:13.867781 mmap2(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_NORESERVE, -1, 0) = 0xacd4b000
+1067  18:41:13.868336 madvise(0xacd4b000, 1048576, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1067  18:41:13.868786 mprotect(0xacd4b000, 4096, PROT_NONE) = 0
+1067  18:41:13.869348 clone(child_stack=0xace4af00, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|0x400000) = 1068
+1067  18:41:13.871738 write(24, "1067", 4) = 4
+1067  18:41:13.904523 ioctl(9, 0xc0186201 <unfinished ...>
+1068  18:41:13.937301 set_tls(0xace4af00, 0xb882bf00, 0xace4affc, 0x40, 0xace4af00) = 0
+1068  18:41:13.938099 setpriority(PRIO_PROCESS, 0, 0) = 0
+1068  18:41:13.938570 gettid()          = 1068
+1068  18:41:13.939016 write(24, "1068", 4) = 4
+1068  18:41:13.939617 prctl(PR_SET_NAME, 0xb874a550, 0, 0, 0) = 0
+1068  18:41:13.940353 mmap2(NULL, 32768, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xacd43000
+1068  18:41:13.940845 madvise(0xacd43000, 32768, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1068  18:41:13.941380 gettid()          = 1068
+1068  18:41:13.941997 getpriority(PRIO_PROCESS, 0) = 20
+1068  18:41:13.942623 gettid()          = 1068
+1068  18:41:13.943153 gettid()          = 1068
+1068  18:41:13.943598 getpid()          = 1055
+1068  18:41:13.944037 getuid32()        = 10050
+1068  18:41:13.944650 write(24, "1068", 4) = 4
+1068  18:41:13.945239 ioctl(9, 0xc0186201, 0xace4ae28) = 0
+1068  18:41:13.945718 write(24, "1068", 4) = 4
+1068  18:41:13.946283 ioctl(9, 0xc0186201 <unfinished ...>
+1055  18:41:13.947162 gettid()          = 1055
+1055  18:41:13.947676 getpid()          = 1055
+1055  18:41:13.948202 getuid32()        = 10050
+1055  18:41:13.950448 getpid()          = 1055
+1055  18:41:13.950929 gettid()          = 1055
+1055  18:41:13.951461 clock_gettime(CLOCK_MONOTONIC, {117, 740164232}) = 0
+1055  18:41:13.952005 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:13.952814 clock_gettime(CLOCK_MONOTONIC, {117, 741518264}) = 0
+1055  18:41:13.954426 getpid()          = 1055
+1055  18:41:13.972255 gettid()          = 1055
+1055  18:41:13.972764 clock_gettime(CLOCK_MONOTONIC, {117, 761468400}) = 0
+1055  18:41:13.973375 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:13.981964 ioctl(9, 0xc0186201 <unfinished ...>
+1067  18:41:13.982299 <... ioctl resumed> , 0xacf52e28) = 0
+1067  18:41:13.983355 write(24, "1067", 4) = 4
+1067  18:41:13.984109 getpriority(PRIO_PROCESS, 1067) = 20
+1067  18:41:13.993450 clock_gettime(CLOCK_MONOTONIC, {117, 782171838}) = 0
+1067  18:41:13.994272 clock_gettime(CLOCK_MONOTONIC, {117, 782980735}) = 0
+1067  18:41:13.994895 write(24, "1067", 4) = 4
+1067  18:41:13.995484 ioctl(9, 0xc0186201 <unfinished ...>
+1068  18:41:14.145855 <... ioctl resumed> , 0xace4ae28) = 0
+1068  18:41:14.150346 write(24, "1068", 4) = 4
+1068  18:41:14.154232 getpriority(PRIO_PROCESS, 1068) = 20
+1068  18:41:14.156433 clock_gettime(CLOCK_MONOTONIC, {117, 945142924}) = 0
+1068  18:41:14.157119 write(24, "1068", 4) = 4
+1068  18:41:14.157654 ioctl(9, 0xc0186201 <unfinished ...>
+1067  18:41:14.482746 <... ioctl resumed> , 0xacf52e28) = 0
+1067  18:41:14.483175 write(24, "1067", 4) = 4
+1067  18:41:14.483729 getpriority(PRIO_PROCESS, 1067) = 20
+1055  18:41:14.511260 <... ioctl resumed> , 0xbeeae1f0) = 0
+1055  18:41:14.511625 clock_gettime(CLOCK_MONOTONIC, {118, 302326509}) = 0
+1055  18:41:14.537011 getpid()          = 1055
+1055  18:41:14.537718 open("/proc/1055/cmdline", O_RDONLY) = 31
+1055  18:41:14.538536 fstat64(31, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+1055  18:41:14.540189 mprotect(0xb64f4000, 4096, PROT_READ|PROT_WRITE) = 0
+1055  18:41:14.567449 mprotect(0xb64f4000, 4096, PROT_READ) = 0
+1055  18:41:14.568213 read(31, "<pre-initialized>\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 1024) = 76
+1055  18:41:14.569161 close(31)         = 0
+1055  18:41:14.569668 ioctl(9, 0xc0186201, 0xbeead110) = 0
+1055  18:41:14.570812 ioctl(9, 0xc0186201, 0xbeead110) = 0
+1055  18:41:14.571468 writev(5, [{"$Ë\0\0", 4}, {"\3\5\2\34\0\0\0android.app.IActivityMana"..., 73}], 2) = 77
+1055  18:41:14.573265 mprotect(0xb15ad000, 8192, PROT_READ|PROT_WRITE) = 0
+1067  18:41:14.576015 clock_gettime(CLOCK_MONOTONIC, {118, 366042216}) = 0
+1067  18:41:14.579077 write(24, "1067", 4) = 4
+1067  18:41:14.579655 ioctl(9, 0xc0186201 <unfinished ...>
+1055  18:41:14.588934 getpid()          = 1055
+1055  18:41:14.589682 getuid32()        = 10050
+1055  18:41:14.590303 getpid()          = 1055
+1055  18:41:14.591303 getuid32()        = 10050
+1055  18:41:14.591805 epoll_wait(0x1e, 0xbeeae1f8, 0x10, 0) = 0
+1055  18:41:14.592340 clock_gettime(CLOCK_MONOTONIC, {118, 381042327}) = 0
+1055  18:41:14.594123 open("/sys/kernel/debug/tracing/trace_marker", O_WRONLY) = -1 ENOENT (No such file or directory)
+1055  18:41:14.604829 writev(3, [{"\6", 1}, {"Trace\0", 6}, {"error opening trace file: No suc"..., 56}], 3) = 63
+1055  18:41:14.607141 getpid()          = 1055
+1055  18:41:14.607629 getuid32()        = 10050
+1055  18:41:14.608310 epoll_wait(0x1e, 0xbeeae1f8, 0x10, 0) = 0
+1055  18:41:14.608951 clock_gettime(CLOCK_MONOTONIC, {118, 397704187}) = 0
+1055  18:41:14.609958 prctl(PR_SET_NAME, 0xb8818dd4, 0, 0, 0) = 0
+1055  18:41:14.610605 open("/sys/qemu_trace/process_name", O_RDWR) = 31
+1055  18:41:14.613188 write(31, "MysticGD.iBoobsLite\0", 20) = 20
+1055  18:41:14.613995 close(31)         = 0
+1055  18:41:14.618615 ioctl(9, 0xc0186201, 0xbeeae0c8) = 0
+1055  18:41:14.620369 ioctl(9, 0xc0186201, 0xbeeae108) = 0
+1055  18:41:14.621218 ioctl(9, 0xc0186201, 0xbeeae108) = 0
+1055  18:41:14.621832 ioctl(9, 0xc0186201, 0xbeeae0c8) = 0
+1055  18:41:14.622597 ioctl(9, 0xc0186201, 0xbeeae0c8) = 0
+1055  18:41:14.623149 dup(31)           = 32
+1055  18:41:14.623687 mmap2(NULL, 4096, PROT_READ, MAP_SHARED, 32, 0) = 0xacd42000
+1055  18:41:14.624257 close(31)         = 0
+1055  18:41:14.624730 dup(32)           = 31
+1055  18:41:14.625941 getpid()          = 1055
+1055  18:41:14.626472 gettid()          = 1055
+1055  18:41:14.626938 clock_gettime(CLOCK_MONOTONIC, {118, 415711641}) = 0
+1055  18:41:14.627548 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.628727 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.629268 clock_gettime(CLOCK_MONOTONIC, {118, 417969885}) = 0
+1055  18:41:14.631522 getuid32()        = 10050
+1055  18:41:14.633129 stat64("/system/framework/framework-res.apk", {st_mode=S_IFREG|0644, st_size=8749696, ...}) = 0
+1055  18:41:14.634464 access("/vendor/overlay/framework/framework-res.apk", R_OK) = -1 ENOENT (No such file or directory)
+1055  18:41:14.635442 stat64("/data/app/MysticGD.iBoobsLite-1.apk", {st_mode=S_IFREG|0644, st_size=5019755, ...}) = 0
+1055  18:41:14.655738 stat64("/system/framework/framework-res.apk", {st_mode=S_IFREG|0644, st_size=8749696, ...}) = 0
+1055  18:41:14.657240 stat64("/data/app/MysticGD.iBoobsLite-1.apk", {st_mode=S_IFREG|0644, st_size=5019755, ...}) = 0
+1055  18:41:14.658457 open("/data/app/MysticGD.iBoobsLite-1.apk", O_RDONLY) = 33
+1055  18:41:14.659193 _llseek(33, 0, [5019755], SEEK_END) = 0
+1055  18:41:14.659808 mmap2(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xacd31000
+1055  18:41:14.660355 madvise(0xacd31000, 69632, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:14.660901 _llseek(33, 0, [0], SEEK_SET) = 0
+1055  18:41:14.661543 read(33, "PK\3\4", 4) = 4
+1055  18:41:14.688169 _llseek(33, 4954198, [4954198], SEEK_SET) = 0
+1055  18:41:14.688758 read(33, "Õ\214îRñ\37t\233WÃ\211]a\1S\6ë\21¦\215DçL§\\@«2\v­H\17"..., 65557) = 65557
+1055  18:41:14.690142 munmap(0xacd31000, 69632) = 0
+1055  18:41:14.690744 mmap2(NULL, 2133, PROT_READ, MAP_SHARED, 33, 0x4c9) = 0xacd41000
+1055  18:41:14.691435 pread(33, "PK\3\4\24\0\10\0\10\0ÀK\224>\0\0\0\0\0\0\0\0\0\0\0\0\16\0\0\0", 30, 21549027745071104) = 30
+1055  18:41:14.692415 mmap2(NULL, 4517, PROT_READ, MAP_SHARED, 33, 0x4c8) = 0xacd3f000
+1055  18:41:14.694297 gettimeofday({1725043274, 703787}, NULL) = 0
+1055  18:41:14.704733 access("/data/data/MysticGD.iBoobsLite/cache", F_OK) = -1 ENOENT (No such file or directory)
+1055  18:41:14.705904 access("/data/data/MysticGD.iBoobsLite/cache", F_OK) = -1 ENOENT (No such file or directory)
+1055  18:41:14.707107 mkdir("/data/data/MysticGD.iBoobsLite/cache", 0700) = 0
+1055  18:41:14.708450 chmod("/data/data/MysticGD.iBoobsLite/cache", 0771) = 0
+1055  18:41:14.709562 getuid32()        = 10050
+1055  18:41:14.710512 getuid32()        = 10050
+1055  18:41:14.711746 getpid()          = 1055
+1055  18:41:14.712297 gettid()          = 1055
+1055  18:41:14.712763 clock_gettime(CLOCK_MONOTONIC, {118, 501465624}) = 0
+1055  18:41:14.713381 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.714668 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.715247 clock_gettime(CLOCK_MONOTONIC, {118, 503949863}) = 0
+1055  18:41:14.721241 access("/data/data/MysticGD.iBoobsLite/cache/com.android.renderscript.cache", F_OK) = -1 ENOENT (No such file or directory)
+1055  18:41:14.733591 mkdir("/data/data/MysticGD.iBoobsLite/cache/com.android.renderscript.cache", 0700) = 0
+1055  18:41:14.735543 getpid()          = 1055
+1055  18:41:14.736198 gettid()          = 1055
+1055  18:41:14.738774 clock_gettime(CLOCK_MONOTONIC, {118, 527510732}) = 0
+1055  18:41:14.739533 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.740233 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.758261 clock_gettime(CLOCK_MONOTONIC, {118, 550404637}) = 0
+1055  18:41:14.765212 getpid()          = 1055
+1055  18:41:14.766441 gettid()          = 1055
+1055  18:41:14.767510 clock_gettime(CLOCK_MONOTONIC, {118, 556216807}) = 0
+1055  18:41:14.768091 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.769664 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.770520 clock_gettime(CLOCK_MONOTONIC, {118, 559226210}) = 0
+1055  18:41:14.773506 writev(3, [{"\5", 1}, {"DroidBox\0", 9}, {"DroidBox: { \"DexClassLoader\": { "..., 82}], 3) = 92
+1055  18:41:14.778979 access("/data/app/MysticGD.iBoobsLite-1.apk", F_OK) = 0
+1055  18:41:14.780071 access("/data/app/MysticGD.iBoobsLite-1.apk", R_OK) = 0
+1055  18:41:14.780806 stat64("/data/app/MysticGD.iBoobsLite-1.apk", {st_mode=S_IFREG|0644, st_size=5019755, ...}) = 0
+1055  18:41:14.784265 open("/data/app/MysticGD.iBoobsLite-1.apk", O_RDONLY) = 34
+1055  18:41:14.785125 fstat64(34, {st_mode=S_IFREG|0644, st_size=5019755, ...}) = 0
+1055  18:41:14.788172 fstat64(34, {st_mode=S_IFREG|0644, st_size=5019755, ...}) = 0
+1055  18:41:14.789395 _llseek(34, 5019733, [5019733], SEEK_SET) = 0
+1055  18:41:14.790295 read(34, "PK\5\6", 4) = 4
+1055  18:41:14.790908 fgetxattr(34, "user.taint", 0xbeeae484, 4) = -1 ENODATA (No data available)
+1055  18:41:14.792626 clock_gettime(CLOCK_MONOTONIC, {118, 581335118}) = 0
+1055  18:41:14.793249 getpid()          = 1055
+1055  18:41:14.815193 readlink("/proc/1055/fd/34", "/data/app/MysticGD.iBoobsLite-1.apk", 120) = 35
+1055  18:41:14.823735 read(34, "\0\0\0\0\31\0\31\0 \6\0\0µ\221L\0\0\0", 18) = 18
+1055  18:41:14.824455 fgetxattr(34, "user.taint", 0xbeeae484, 4) = -1 ENODATA (No data available)
+1055  18:41:14.825979 clock_gettime(CLOCK_MONOTONIC, {118, 614744416}) = 0
+1055  18:41:14.826585 getpid()          = 1055
+1055  18:41:14.827133 readlink("/proc/1055/fd/34", "/data/app/MysticGD.iBoobsLite-1.apk", 120) = 35
+1055  18:41:14.828274 fstat64(34, {st_mode=S_IFREG|0644, st_size=5019755, ...}) = 0
+1055  18:41:14.829453 _llseek(34, 5018037, [5018037], SEEK_SET) = 0
+1055  18:41:14.830090 read(34, "PK\1\2\24\0\24\0\10\0\10\0ËK\224>È»\6¶N\3\0\0º\6\0\0\24\0\0\0"..., 1718) = 1718
+1055  18:41:14.830804 fgetxattr(34, "user.taint", 0xbeeae484, 4) = -1 ENODATA (No data available)
+1055  18:41:14.832077 clock_gettime(CLOCK_MONOTONIC, {118, 620796125}) = 0
+1055  18:41:14.832633 getpid()          = 1055
+1055  18:41:14.833159 readlink("/proc/1055/fd/34", "/data/app/MysticGD.iBoobsLite-1.apk", 120) = 35
+1055  18:41:14.837073 open("/data/app/MysticGD.iBoobsLite-1.apk", O_RDONLY) = 35
+1055  18:41:14.837816 lseek(35, 0, SEEK_END) = 5019755
+1055  18:41:14.838396 mmap2(NULL, 69632, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xacd2e000
+1055  18:41:14.838906 madvise(0xacd2e000, 69632, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:14.839492 lseek(35, 4954198, SEEK_SET) = 4954198
+1055  18:41:14.839986 read(35, "Õ\214îRñ\37t\233WÃ\211]a\1S\6ë\21¦\215DçL§\\@«2\v­H\17"..., 65557) = 65557
+1055  18:41:14.841102 mmap2(NULL, 2133, PROT_READ, MAP_SHARED, 35, 0x4c9) = 0xacd2d000
+1055  18:41:14.841612 munmap(0xacd2e000, 69632) = 0
+1055  18:41:14.842294 fcntl64(35, F_GETFD) = 0
+1055  18:41:14.842811 fcntl64(35, F_SETFD, FD_CLOEXEC) = 0
+1055  18:41:14.843328 open("/data/app/MysticGD.iBoobsLite-1.odex", O_RDONLY) = -1 ENOENT (No such file or directory)
+1055  18:41:14.863830 open("/data/dalvik-cache/data@app@MysticGD.iBoobsLite-1.apk@classes.dex", O_RDWR|O_CREAT, 0644) = -1 EACCES (Permission denied)
+1055  18:41:14.866834 open("/data/dalvik-cache/data@app@MysticGD.iBoobsLite-1.apk@classes.dex", O_RDONLY) = 36
+1055  18:41:14.869837 flock(36, LOCK_EX|LOCK_NB) = 0
+1055  18:41:14.874386 fstat64(36, {st_mode=S_IFREG|0644, st_size=182464, ...}) = 0
+1055  18:41:14.875991 stat64("/data/dalvik-cache/data@app@MysticGD.iBoobsLite-1.apk@classes.dex", {st_mode=S_IFREG|0644, st_size=182464, ...}) = 0
+1055  18:41:14.878329 lseek(36, 0, SEEK_SET) = 0
+1055  18:41:14.878867 read(36, "dey\n036\0(\0\0\0¨®\2\0Ð®\2\0Ö\1\0\0¨°\2\0\30\30\0\0"..., 40) = 40
+1055  18:41:14.879797 lseek(36, 175824, SEEK_SET) = 175824
+1055  18:41:14.880359 read(36, "½K\224>5u\0\n\34\0\0\0\10\0\0\0\34\0\0\0/system/fram"..., 470) = 470
+1055  18:41:14.881480 lseek(36, 0, SEEK_SET) = 0
+1055  18:41:14.882132 lseek(36, 0, SEEK_CUR) = 0
+1055  18:41:14.882601 lseek(36, 0, SEEK_END) = 182464
+1055  18:41:14.902296 lseek(36, 0, SEEK_SET) = 0
+1055  18:41:14.953018 mmap2(NULL, 182464, PROT_READ|PROT_WRITE, MAP_PRIVATE, 36, 0) = 0xacd00000
+1055  18:41:14.953822 madvise(0xacd00000, 182464, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:14.954502 mprotect(0xacd00000, 182464, PROT_READ) = 0
+1055  18:41:14.955168 open("/dev/ashmem", O_RDWR) = 37
+1055  18:41:14.955935 ioctl(37, 0x41007701, 0xbeeae254) = 0
+1055  18:41:14.956502 ioctl(37, 0x40047703, 0x5000) = 0
+1055  18:41:14.956991 mmap2(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE, 37, 0) = 0xb0e7a000
+1055  18:41:14.957955 madvise(0xb0e7a000, 20480, 0xc /* MADV_??? */) = -1 EINVAL (Invalid argument)
+1055  18:41:14.958625 close(37)         = 0
+1055  18:41:14.959495 flock(36, LOCK_UN) = 0
+1055  18:41:14.960061 close(36)         = 0
+1055  18:41:14.961423 access("/data/data/MysticGD.iBoobsLite/lib", F_OK) = 0
+1055  18:41:14.984641 access("/data/data/MysticGD.iBoobsLite/lib", R_OK) = 0
+1055  18:41:14.985574 stat64("/data/data/MysticGD.iBoobsLite/lib", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+1055  18:41:14.988285 access("/vendor/lib", F_OK) = -1 ENOENT (No such file or directory)
+1055  18:41:14.989120 access("/system/lib", F_OK) = 0
+1055  18:41:14.989728 access("/system/lib", R_OK) = 0
+1055  18:41:14.990408 stat64("/system/lib", {st_mode=S_IFDIR|0755, st_size=8192, ...}) = 0
+1055  18:41:14.992150 getuid32()        = 10050
+1055  18:41:14.993170 getpid()          = 1055
+1055  18:41:14.993701 gettid()          = 1055
+1055  18:41:14.994421 clock_gettime(CLOCK_MONOTONIC, {118, 783124697}) = 0
+1055  18:41:14.994967 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.998385 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:14.998893 clock_gettime(CLOCK_MONOTONIC, {118, 787622611}) = 0
+1055  18:41:15.002123 gettimeofday({1725043275, 2283}, NULL) = 0
+1055  18:41:15.003271 getpid()          = 1055
+1055  18:41:15.003751 getuid32()        = 10050
+1055  18:41:15.004305 epoll_wait(0x1e, 0xbeeae1f8, 0x10, 0) = 0
+1055  18:41:15.004793 clock_gettime(CLOCK_MONOTONIC, {118, 793490847}) = 0
+1055  18:41:15.005754 getpid()          = 1055
+1055  18:41:15.006281 gettid()          = 1055
+1055  18:41:15.006741 clock_gettime(CLOCK_MONOTONIC, {118, 795438029}) = 0
+1055  18:41:15.007332 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:15.008500 ioctl(9, 0xc0186201, 0xbeeae1f0) = 0
+1055  18:41:15.008999 clock_gettime(CLOCK_MONOTONIC, {118, 797754249}) = 0
+1055  18:41:15.014472 getpid()          = 1055
+1055  18:41:15.015021 getuid32()        = 10050
+1055  18:41:15.015650 epoll_wait(0x1e, 0xbeeae1f8, 0x10, 0) = 0
+1055  18:41:15.016211 clock_gettime(CLOCK_MONOTONIC, {118, 804911669}) = 0
+1055  18:41:15.016866 stat64("/system/framework/framework-res.apk", {st_mode=S_IFREG|0644, st_size=8749696, ...}) = 0
+1055  18:41:15.018139 stat64("/data/app/MysticGD.iBoobsLite-1.apk", {st_mode=S_IFREG|0644, st_size=5019755, ...}) = 0
+1055  18:41:15.020677 mprotect(0xb15ae000, 8192, PROT_READ|PROT_WRITE) = 0
+1055  18:41:15.027691 mprotect(0xb15af000, 8192, PROT_READ|PROT_WRITE) = 0
+1055  18:41:15.029421 access("/data/data/MysticGD.iBoobsLite/lib/libMCore_Android_Release.so", F_OK) = 0
+1055  18:41:15.030349 stat64("/data/data/MysticGD.iBoobsLite/lib/libMCore_Android_Release.so", {st_mode=S_IFREG|0755, st_size=1284813, ...}) = 0
+1055  18:41:15.031771 access("/data/data/MysticGD.iBoobsLite/lib/libMCore_Android_Release.so", R_OK) = 0
+1055  18:41:15.032743 writev(3, [{"\3", 1}, {"dalvikvm\0", 9}, {"Trying to load lib /data/data/My"..., 93}], 3) = 103
+1055  18:41:15.033839 writev(3, [{"\5", 1}, {"dalvikvm\0", 9}, {"Denying lib /data/data/MysticGD."..., 99}], 3) = 109
+1055  18:41:15.054602 writev(3, [{"\5", 1}, {"dalvikvm\0", 9}, {"Exception Ljava/lang/Unsatisfied"..., 104}], 3) = 114
+1055  18:41:15.056103 writev(3, [{"\5", 1}, {"dalvikvm\0", 9}, {"Class init failed in newInstance"..., 75}], 3) = 85
+1055  18:41:15.060979 writev(3, [{"\3", 1}, {"AndroidRuntime\0", 15}, {"Shutting down VM\n\0", 18}], 3) = 34
+1055  18:41:15.064957 writev(3, [{"\5", 1}, {"dalvikvm\0", 9}, {"threadid=1: thread exiting with "..., 70}], 3) = 80
+1055  18:41:15.074534 writev(6, [{"\6", 1}, {"AndroidRuntime\0", 15}, {"FATAL EXCEPTION: main\njava.lang."..., 1243}], 3) = 1259
+1055  18:41:15.079477 getpid()          = 1055
+1055  18:41:15.079959 gettid()          = 1055
+1055  18:41:15.080464 clock_gettime(CLOCK_MONOTONIC, {118, 869165935}) = 0
+1055  18:41:15.081006 ioctl(9, 0xc0186201, 0xbeeae530) = 0
+1055  18:41:15.084604 ioctl(9, 0xc0186201 <unfinished ...>
+1068  18:41:15.160420 <... ioctl resumed> , 0xace4ae28) = 0
+1068  18:41:15.161698 write(24, "1068", 4 <unfinished ...>
+1055  18:41:15.164822 <... ioctl resumed> , 0xbeeae530) = 0
+1055  18:41:15.166554 clock_gettime(CLOCK_MONOTONIC, {118, 955407184}) = 0
+1055  18:41:15.168578 getpid()          = 1055
+1055  18:41:15.169322 writev(3, [{"\4", 1}, {"Process\0", 8}, {"Sending signal. PID: 1055 SIG: 9"..., 33}], 3) = 42
+1055  18:41:15.170372 kill(1055, SIGKILL <unfinished ...>
+1057  18:41:15.172386 +++ killed by SIGKILL +++
+1060  18:41:15.173654 +++ killed by SIGKILL +++
+1061  18:41:15.173986 +++ killed by SIGKILL +++
+1062  18:41:15.174346 +++ killed by SIGKILL +++
+1063  18:41:15.174661 +++ killed by SIGKILL +++
+1064  18:41:15.174971 +++ killed by SIGKILL +++
+1067  18:41:15.175316 +++ killed by SIGKILL +++
+1068  18:41:15.187879 +++ killed by SIGKILL +++
+1055  18:41:15.188230 +++ killed by SIGKILL +++
+59    18:41:15.188823 <... select resumed> ) = ? ERESTARTNOHAND (To be restarted)
+59    18:41:15.189123 --- {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=1055, si_status=SIGKILL, si_utime=6, si_stime=10} (Child exited) ---
+59    18:41:15.189414 wait4(-1, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGKILL}], WNOHANG, NULL) = 1055
+59    18:41:15.190057 wait4(-1, 0xbeeae2dc, WNOHANG, NULL) = 0
+59    18:41:15.190500 sigreturn()       = ? (mask now [INT FPE KILL PIPE ALRM STKFLT CONT STOP TSTP TTIN TTOU URG VTALRM PROF IO PWR RTMIN])
+59    18:41:15.191395 select(24, [9 23], NULL, NULL, NULL) = ? ERESTARTNOHAND (To be restarted)
+59    18:41:38.866752 --- {si_signo=SIGCHLD, si_code=CLD_KILLED, si_pid=793, si_status=SIGKILL, si_utime=18, si_stime=12} (Child exited) ---
+59    18:41:38.867133 wait4(-1, [{WIFSIGNALED(s) && WTERMSIG(s) == SIGKILL}], WNOHANG, NULL) = 793
+59    18:41:38.867717 wait4(-1, 0xbeeae2dc, WNOHANG, NULL) = 0
+59    18:41:38.868153 sigreturn()       = ? (mask now [INT FPE KILL PIPE ALRM STKFLT CONT STOP TSTP TTIN TTOU URG VTALRM PROF IO PWR RTMIN])
+59    18:41:38.869018 select(24, [9 23], NULL, NULL, NULL

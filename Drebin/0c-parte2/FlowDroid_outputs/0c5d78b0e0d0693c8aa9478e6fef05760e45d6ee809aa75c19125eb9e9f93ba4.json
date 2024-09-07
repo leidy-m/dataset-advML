@@ -1,0 +1,601 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.013243334 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: com.mzhengDS is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.dseffects.MonkeyJump2.MonkeyJump2 $r1;
+        com.dseffects.MonkeyJump2.jump2.c.rufCuAtj $r2;
+        com.dseffects.MonkeyJump2.jump2.c.AndroidIME $r3;
+        android.os.IBinder $r4;
+        com.dseffects.MonkeyJump2.jump2.f $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.dseffects.MonkeyJump2.MonkeyJump2;
+
+        specialinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onResume()>();
+
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onPause()>();
+
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 3 goto label02;
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label05;
+
+        $r2 = new com.dseffects.MonkeyJump2.jump2.c.rufCuAtj;
+
+        specialinvoke $r2.<com.dseffects.MonkeyJump2.jump2.c.rufCuAtj: void <init>()>();
+
+        if $i0 == 8 goto label05;
+
+        virtualinvoke $r2.<com.dseffects.MonkeyJump2.jump2.h: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 11 goto label05;
+
+        if $i0 == 12 goto label04;
+
+     label05:
+        if $i0 == 14 goto label10;
+
+        $r3 = new com.dseffects.MonkeyJump2.jump2.c.AndroidIME;
+
+        specialinvoke $r3.<com.dseffects.MonkeyJump2.jump2.c.AndroidIME: void <init>()>();
+
+        virtualinvoke $r3.<com.dseffects.MonkeyJump2.jump2.e: void onCreate()>();
+
+        virtualinvoke $r3.<com.dseffects.MonkeyJump2.jump2.e: void onStart(android.content.Intent,int)>(null, 0);
+
+     label06:
+        if $i0 == 15 goto label07;
+
+        if $i0 == 16 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<com.dseffects.MonkeyJump2.jump2.e: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 18 goto label09;
+
+        if $i0 == 19 goto label08;
+
+     label09:
+        virtualinvoke $r3.<com.dseffects.MonkeyJump2.jump2.e: void onDestroy()>();
+
+     label10:
+        if $i0 == 20 goto label12;
+
+        $r5 = new com.dseffects.MonkeyJump2.jump2.f;
+
+        specialinvoke $r5.<com.dseffects.MonkeyJump2.jump2.f: void <init>()>();
+
+        if $i0 == 21 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.dseffects.MonkeyJump2.jump2.f: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label11;
+
+     label12:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.0 seconds.
+[Spark] Solution found in 2.0 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: com.dseffects.MonkeyJump2.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.dseffects.MonkeyJump2.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found unrecognized XML attribute:  hint
+Found 1 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: com.mzhengDS is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.dseffects.MonkeyJump2.MonkeyJump2 $r1;
+        com.dseffects.MonkeyJump2.jump2.c.rufCuAtj $r2;
+        com.dseffects.MonkeyJump2.jump2.c.AndroidIME $r3;
+        android.os.IBinder $r4;
+        com.dseffects.MonkeyJump2.jump2.f $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.dseffects.MonkeyJump2.MonkeyJump2;
+
+        specialinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onResume()>();
+
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onPause()>();
+
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label05;
+
+        $r2 = new com.dseffects.MonkeyJump2.jump2.c.rufCuAtj;
+
+        specialinvoke $r2.<com.dseffects.MonkeyJump2.jump2.c.rufCuAtj: void <init>()>();
+
+        if $i0 == 9 goto label05;
+
+        virtualinvoke $r2.<com.dseffects.MonkeyJump2.jump2.h: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 12 goto label05;
+
+        if $i0 == 13 goto label04;
+
+     label05:
+        if $i0 == 15 goto label10;
+
+        $r3 = new com.dseffects.MonkeyJump2.jump2.c.AndroidIME;
+
+        specialinvoke $r3.<com.dseffects.MonkeyJump2.jump2.c.AndroidIME: void <init>()>();
+
+        virtualinvoke $r3.<com.dseffects.MonkeyJump2.jump2.e: void onCreate()>();
+
+        virtualinvoke $r3.<com.dseffects.MonkeyJump2.jump2.e: void onStart(android.content.Intent,int)>(null, 0);
+
+     label06:
+        if $i0 == 16 goto label07;
+
+        if $i0 == 17 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<com.dseffects.MonkeyJump2.jump2.e: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 19 goto label09;
+
+        if $i0 == 20 goto label08;
+
+     label09:
+        virtualinvoke $r3.<com.dseffects.MonkeyJump2.jump2.e: void onDestroy()>();
+
+     label10:
+        if $i0 == 21 goto label12;
+
+        $r5 = new com.dseffects.MonkeyJump2.jump2.f;
+
+        specialinvoke $r5.<com.dseffects.MonkeyJump2.jump2.f: void <init>()>();
+
+        if $i0 == 22 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.dseffects.MonkeyJump2.jump2.f: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label11;
+
+     label12:
+        if $i0 == 25 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Running incremental callback analysis for 2 components...
+Incremental callback analysis done.
+Found 14 callback methods for 2 components
+Found {res/layout/main.xml=[2131099649 - android.widget.EditText, 2131099648 - com.dseffects.MonkeyJump2.dsView, -1 - android.widget.FrameLayout, 2131099650 - com.admob.android.ads.AdView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 14 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/0c5d78b0e0d0693c8aa9478e6fef05760e45d6ee809aa75c19125eb9e9f93ba4.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: com.mzhengDS is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.dseffects.MonkeyJump2.MonkeyJump2 $r1;
+        com.dseffects.MonkeyJump2.dsView $r2;
+        boolean $z0;
+        com.admob.android.ads.AdView $r3;
+        com.dseffects.MonkeyJump2.jump2.c.rufCuAtj $r4;
+        com.dseffects.MonkeyJump2.jump2.c.AndroidIME $r5;
+        android.os.IBinder $r6;
+        com.dseffects.MonkeyJump2.jump2.f $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label14;
+
+        $r1 = new com.dseffects.MonkeyJump2.MonkeyJump2;
+
+        specialinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void <init>()>();
+
+        if $i0 == 1 goto label14;
+
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onResume()>();
+
+        if $i0 == 3 goto label13;
+
+     label03:
+        $r2 = new com.dseffects.MonkeyJump2.dsView;
+
+        specialinvoke $r2.<com.dseffects.MonkeyJump2.dsView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r2.<com.dseffects.MonkeyJump2.dsView: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label04:
+        $r3 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r3.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r1);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r3.<com.admob.android.ads.AdView: void onDetachedFromWindow()>();
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r3.<com.admob.android.ads.AdView: void onAttachedToWindow()>();
+
+     label06:
+        if $i0 == 7 goto label07;
+
+        staticinvoke <com.admob.android.ads.AdView: void <clinit>()>();
+
+     label07:
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r3.<com.admob.android.ads.AdView: void setVisibility(int)>(0);
+
+     label08:
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r3.<com.admob.android.ads.AdView: void onWindowFocusChanged(boolean)>(false);
+
+     label09:
+        if $i0 == 10 goto label10;
+
+        virtualinvoke $r3.<com.admob.android.ads.AdView: void setBackgroundColor(int)>(0);
+
+     label10:
+        if $i0 == 11 goto label11;
+
+        $i1 = virtualinvoke $r3.<com.admob.android.ads.AdView: int getVisibility()>();
+
+     label11:
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r3.<com.admob.android.ads.AdView: void onMeasure(int,int)>(0, 0);
+
+     label12:
+        if $i0 == 13 goto label03;
+
+     label13:
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onPause()>();
+
+        virtualinvoke $r1.<com.dseffects.MonkeyJump2.MonkeyJump2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 14 goto label02;
+
+        if $i0 == 15 goto label14;
+
+        if $i0 == 16 goto label02;
+
+     label14:
+        if $i0 == 18 goto label16;
+
+        $r4 = new com.dseffects.MonkeyJump2.jump2.c.rufCuAtj;
+
+        specialinvoke $r4.<com.dseffects.MonkeyJump2.jump2.c.rufCuAtj: void <init>()>();
+
+        if $i0 == 19 goto label16;
+
+        virtualinvoke $r4.<com.dseffects.MonkeyJump2.jump2.h: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 22 goto label16;
+
+        if $i0 == 23 goto label15;
+
+     label16:
+        if $i0 == 25 goto label21;
+
+        $r5 = new com.dseffects.MonkeyJump2.jump2.c.AndroidIME;
+
+        specialinvoke $r5.<com.dseffects.MonkeyJump2.jump2.c.AndroidIME: void <init>()>();
+
+        virtualinvoke $r5.<com.dseffects.MonkeyJump2.jump2.e: void onCreate()>();
+
+        virtualinvoke $r5.<com.dseffects.MonkeyJump2.jump2.e: void onStart(android.content.Intent,int)>(null, 0);
+
+     label17:
+        if $i0 == 26 goto label18;
+
+        if $i0 == 27 goto label17;
+
+     label18:
+        $r6 = virtualinvoke $r5.<com.dseffects.MonkeyJump2.jump2.e: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label19:
+        if $i0 == 29 goto label20;
+
+        if $i0 == 30 goto label19;
+
+     label20:
+        virtualinvoke $r5.<com.dseffects.MonkeyJump2.jump2.e: void onDestroy()>();
+
+     label21:
+        if $i0 == 31 goto label23;
+
+        $r7 = new com.dseffects.MonkeyJump2.jump2.f;
+
+        specialinvoke $r7.<com.dseffects.MonkeyJump2.jump2.f: void <init>()>();
+
+        if $i0 == 32 goto label23;
+
+     label22:
+        virtualinvoke $r7.<com.dseffects.MonkeyJump2.jump2.f: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 34 goto label22;
+
+     label23:
+        if $i0 == 35 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.9 seconds.
+[Spark] Solution found in 1.9 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.93849987 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.211773071 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 4523 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 52 sources and 84 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 879761
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 4355141
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 5484344 forward and 4057124 backward edges solved, processing 32 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 32 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.437890116 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r0, null, $r1, $r7, null) in method <com.dseffects.MonkeyJump2.jump2.e.i: void a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)>($r2, 0, $r3, 0) in method <com.dseffects.MonkeyJump2.jump2.e.i: void a(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r6) in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r1, $r5, $r2) in method <com.dseffects.MonkeyJump2.jump2.e.c: boolean a(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <com.dseffects.MonkeyJump2.jump2.a.i: void b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r12 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, $r7, null, null) in method <com.dseffects.MonkeyJump2.jump2.e.c: java.util.Vector a()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.dseffects.MonkeyJump2.jump2.e.c: java.util.Vector a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r12 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, $r11, null, null) in method <com.dseffects.MonkeyJump2.jump2.e.c: java.util.Vector a()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.dseffects.MonkeyJump2.jump2.e.c: java.util.Vector a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r4) in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r7, $r2) in method <com.dseffects.MonkeyJump2.jump2.e.c: boolean a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.admob.android.ads.Ad: android.graphics.Bitmap fetchImage(java.lang.String,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r3) in method <com.admob.android.ads.AdManager: void setPublisherId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r4) in method <com.admob.android.ads.Ad: android.graphics.Bitmap getIcon()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r8.<java.net.URL: void <init>(java.lang.String)>($r3) in method <com.dseffects.MonkeyJump2.jump2.e.l: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r15.<java.io.OutputStream: void write(byte[],int,int)>($r14, 0, $i0) in method <com.dseffects.MonkeyJump2.jump2.e.n: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.n: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0) in method <com.admob.android.ads.AdManager: void clientError(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r14) in method <com.dseffects.MonkeyJump2.dsView$dsThread: void <init>(com.dseffects.MonkeyJump2.dsView,com.dseffects.MonkeyJump2.dsView,android.os.Handler)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r14 = virtualinvoke $r3.<android.os.Handler: android.os.Message obtainMessage()>() in method <com.dseffects.MonkeyJump2.dsView$dsThread: void <init>(com.dseffects.MonkeyJump2.dsView,com.dseffects.MonkeyJump2.dsView,android.os.Handler)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2) in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.dseffects.MonkeyJump2.jump2.e.n: void a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("ACTIVITY_PARAM_KEY", $r1) in method <com.dseffects.MonkeyJump2.jump2.g: void a(com.dseffects.MonkeyJump2.jump2.c)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.content.Context: void sendBroadcast(android.content.Intent)>($r3) in method <com.dseffects.MonkeyJump2.jump2.e.j: void a(java.lang.String,android.content.Intent,android.graphics.Bitmap)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r7 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r7, $r2) in method <com.dseffects.MonkeyJump2.jump2.e.c: boolean a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r1) in method <com.admob.android.ads.AdManager: java.lang.String getUserAgent()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() in method <com.admob.android.ads.AdManager: java.lang.String getUserAgent()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.dseffects.MonkeyJump2.jump2.e.n: java.io.File b(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r9, $r1) in method <com.dseffects.MonkeyJump2.jump2.a.c: boolean c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4) in method <com.dseffects.MonkeyJump2.jump2.q: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.dseffects.MonkeyJump2.jump2.f: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r8.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r0, null, $r1, $r7, null), from the following sources:
+	- $r7 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)>($r2, 0, $r3, 0) (in <com.dseffects.MonkeyJump2.jump2.e.i: void a(java.lang.String,java.lang.String)>)
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r6), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink virtualinvoke $r4.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r1, $r5, $r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink virtualinvoke $r6.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink $r12 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, $r7, null, null), from the following sources:
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.dseffects.MonkeyJump2.jump2.e.c: java.util.Vector a()>)
+Found a flow to sink $r12 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, $r11, null, null), from the following sources:
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.dseffects.MonkeyJump2.jump2.e.c: java.util.Vector a()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r4), from the following sources:
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>)
+Found a flow to sink virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r7, $r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r6 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r3), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r2, $r4), from the following sources:
+	- $r6 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink specialinvoke $r8.<java.net.URL: void <init>(java.lang.String)>($r3), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink virtualinvoke $r15.<java.io.OutputStream: void write(byte[],int,int)>($r14, 0, $i0), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.n: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r1, $r0), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r14), from the following sources:
+	- $r14 = virtualinvoke $r3.<android.os.Handler: android.os.Message obtainMessage()>() (in <com.dseffects.MonkeyJump2.dsView$dsThread: void <init>(com.dseffects.MonkeyJump2.dsView,com.dseffects.MonkeyJump2.dsView,android.os.Handler)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r1, $r2), from the following sources:
+	- $r6 = virtualinvoke $r5.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("ACTIVITY_PARAM_KEY", $r1), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink virtualinvoke $r5.<android.content.Context: void sendBroadcast(android.content.Intent)>($r3), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink $r7 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r7, $r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r1), from the following sources:
+	- $r1 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() (in <com.admob.android.ads.AdManager: java.lang.String getUserAgent()>)
+Found a flow to sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink virtualinvoke $r8.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r9, $r1), from the following sources:
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.dseffects.MonkeyJump2.jump2.e.l: boolean a(java.lang.String)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.dseffects.MonkeyJump2.jump2.f: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 1275.285744 MB
+Analysis has run for 47.475490258 seconds

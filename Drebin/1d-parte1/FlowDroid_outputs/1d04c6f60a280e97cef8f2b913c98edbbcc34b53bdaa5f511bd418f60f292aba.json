@@ -1,0 +1,937 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.010299313 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.WebSettings$PluginState is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.pad.android.xappad.AdReminderNotification $r1;
+        com.apperhand.device.android.AndroidSDKProvider $r2;
+        com.pad.android.xappad.AdNotification $r3;
+        com.apperhand.device.android.EULAActivity $r4;
+        com.cds.phoneboost.BootReceiver $r5;
+        com.cds.phoneboost.Boost $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.pad.android.xappad.AdReminderNotification;
+
+        specialinvoke $r1.<com.pad.android.xappad.AdReminderNotification: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label06;
+
+        $r2 = new com.apperhand.device.android.AndroidSDKProvider;
+
+        specialinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void <init>()>();
+
+        virtualinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void onCreate()>();
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        if $i0 == 6 goto label04;
+
+     label05:
+        if $i0 == 8 goto label06;
+
+        if $i0 == 9 goto label05;
+
+     label06:
+        if $i0 == 10 goto label08;
+
+        $r3 = new com.pad.android.xappad.AdNotification;
+
+        specialinvoke $r3.<com.pad.android.xappad.AdNotification: void <init>()>();
+
+        if $i0 == 11 goto label08;
+
+     label07:
+        virtualinvoke $r3.<com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label07;
+
+     label08:
+        if $i0 == 14 goto label11;
+
+        $r4 = new com.apperhand.device.android.EULAActivity;
+
+        specialinvoke $r4.<com.apperhand.device.android.EULAActivity: void <init>()>();
+
+        if $i0 == 15 goto label11;
+
+        virtualinvoke $r4.<com.apperhand.device.android.EULAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 18 goto label10;
+
+        if $i0 == 19 goto label09;
+
+     label10:
+        virtualinvoke $r4.<com.apperhand.device.android.EULAActivity: void onDestroy()>();
+
+     label11:
+        if $i0 == 21 goto label13;
+
+        $r5 = new com.cds.phoneboost.BootReceiver;
+
+        specialinvoke $r5.<com.cds.phoneboost.BootReceiver: void <init>()>();
+
+        if $i0 == 22 goto label13;
+
+     label12:
+        virtualinvoke $r5.<com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label12;
+
+     label13:
+        if $i0 == 25 goto label16;
+
+        $r6 = new com.cds.phoneboost.Boost;
+
+        specialinvoke $r6.<com.cds.phoneboost.Boost: void <init>()>();
+
+        if $i0 == 26 goto label16;
+
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onResume()>();
+
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onPause()>();
+
+        if $i0 == 28 goto label14;
+
+        if $i0 == 29 goto label15;
+
+        if $i0 == 30 goto label14;
+
+     label15:
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onDestroy()>();
+
+     label16:
+        if $i0 == 32 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.9 seconds.
+[Spark] Solution found in 1.9 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.cds.phoneboost.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.cds.phoneboost.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.cds.phoneboost.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.WebSettings$PluginState is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.pad.android.xappad.AdReminderNotification $r1;
+        com.apperhand.device.android.AndroidSDKProvider $r2;
+        com.pad.android.xappad.AdNotification $r3;
+        com.apperhand.device.android.EULAActivity $r4;
+        com.cds.phoneboost.BootReceiver $r5;
+        com.cds.phoneboost.Boost $r6;
+        com.pad.android.iappad.AdController $r7, $r9, $r11, $r13, $r15, $r17, $r19;
+        com.pad.android.iappad.AdController$7 $r8;
+        com.pad.android.iappad.AdController$5 $r10;
+        com.pad.android.iappad.AdController$4 $r12;
+        boolean $z0;
+        com.pad.android.iappad.AdController$6 $r14;
+        com.pad.android.iappad.AdController$3 $r16;
+        com.pad.android.iappad.AdController$9 $r18;
+        com.pad.android.iappad.AdController$8 $r20;
+        com.cds.phoneboost.Boost$ButtonClickHandler $r21;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.pad.android.xappad.AdReminderNotification;
+
+        specialinvoke $r1.<com.pad.android.xappad.AdReminderNotification: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label10;
+
+        $r2 = new com.apperhand.device.android.AndroidSDKProvider;
+
+        specialinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void <init>()>();
+
+        virtualinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void onCreate()>();
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        if $i0 == 6 goto label04;
+
+     label05:
+        if $i0 == 7 goto label08;
+
+     label06:
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>(null);
+
+     label07:
+        if $i0 == 9 goto label06;
+
+     label08:
+        if $i0 == 10 goto label09;
+
+        virtualinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label10;
+
+        if $i0 == 13 goto label08;
+
+     label10:
+        if $i0 == 14 goto label12;
+
+        $r3 = new com.pad.android.xappad.AdNotification;
+
+        specialinvoke $r3.<com.pad.android.xappad.AdNotification: void <init>()>();
+
+        if $i0 == 15 goto label12;
+
+     label11:
+        virtualinvoke $r3.<com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label11;
+
+     label12:
+        if $i0 == 18 goto label18;
+
+        $r4 = new com.apperhand.device.android.EULAActivity;
+
+        specialinvoke $r4.<com.apperhand.device.android.EULAActivity: void <init>()>();
+
+        if $i0 == 19 goto label18;
+
+        virtualinvoke $r4.<com.apperhand.device.android.EULAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 21 goto label16;
+
+     label14:
+        if $i0 == 22 goto label15;
+
+        virtualinvoke $r4.<com.apperhand.device.android.EULAActivity: void onBackPressed()>();
+
+     label15:
+        if $i0 == 23 goto label14;
+
+     label16:
+        if $i0 == 24 goto label13;
+
+        if $i0 == 25 goto label17;
+
+        if $i0 == 26 goto label13;
+
+     label17:
+        virtualinvoke $r4.<com.apperhand.device.android.EULAActivity: void onDestroy()>();
+
+     label18:
+        if $i0 == 28 goto label20;
+
+        $r5 = new com.cds.phoneboost.BootReceiver;
+
+        specialinvoke $r5.<com.cds.phoneboost.BootReceiver: void <init>()>();
+
+        if $i0 == 29 goto label20;
+
+     label19:
+        virtualinvoke $r5.<com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 31 goto label19;
+
+     label20:
+        if $i0 == 32 goto label33;
+
+        $r6 = new com.cds.phoneboost.Boost;
+
+        specialinvoke $r6.<com.cds.phoneboost.Boost: void <init>()>();
+
+        if $i0 == 33 goto label33;
+
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onResume()>();
+
+        if $i0 == 35 goto label31;
+
+     label22:
+        $r7 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r7.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r8 = new com.pad.android.iappad.AdController$7;
+
+        specialinvoke $r8.<com.pad.android.iappad.AdController$7: void <init>(com.pad.android.iappad.AdController)>($r7);
+
+        if $i0 == 36 goto label23;
+
+        virtualinvoke $r8.<com.pad.android.iappad.AdController$7: void onClick(android.view.View)>(null);
+
+     label23:
+        $r9 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r9.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r10 = new com.pad.android.iappad.AdController$5;
+
+        specialinvoke $r10.<com.pad.android.iappad.AdController$5: void <init>(com.pad.android.iappad.AdController)>($r9);
+
+        if $i0 == 37 goto label24;
+
+        virtualinvoke $r10.<com.pad.android.iappad.AdController$5: void onClick(android.view.View)>(null);
+
+     label24:
+        $r11 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r11.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r12 = new com.pad.android.iappad.AdController$4;
+
+        specialinvoke $r12.<com.pad.android.iappad.AdController$4: void <init>(com.pad.android.iappad.AdController)>($r11);
+
+        if $i0 == 38 goto label25;
+
+        $z0 = virtualinvoke $r12.<com.pad.android.iappad.AdController$4: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label25:
+        $r13 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r13.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r14 = new com.pad.android.iappad.AdController$6;
+
+        specialinvoke $r14.<com.pad.android.iappad.AdController$6: void <init>(com.pad.android.iappad.AdController)>($r13);
+
+        if $i0 == 39 goto label26;
+
+        virtualinvoke $r14.<com.pad.android.iappad.AdController$6: void onClick(android.view.View)>(null);
+
+     label26:
+        $r15 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r15.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r16 = new com.pad.android.iappad.AdController$3;
+
+        specialinvoke $r16.<com.pad.android.iappad.AdController$3: void <init>(com.pad.android.iappad.AdController)>($r15);
+
+        if $i0 == 40 goto label27;
+
+        virtualinvoke $r16.<com.pad.android.iappad.AdController$3: void onClick(android.view.View)>(null);
+
+     label27:
+        $r17 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r17.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r18 = new com.pad.android.iappad.AdController$9;
+
+        specialinvoke $r18.<com.pad.android.iappad.AdController$9: void <init>(com.pad.android.iappad.AdController)>($r17);
+
+        if $i0 == 41 goto label28;
+
+        virtualinvoke $r18.<com.pad.android.iappad.AdController$9: void onClick(android.view.View)>(null);
+
+     label28:
+        $r19 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r19.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r20 = new com.pad.android.iappad.AdController$8;
+
+        specialinvoke $r20.<com.pad.android.iappad.AdController$8: void <init>(com.pad.android.iappad.AdController)>($r19);
+
+        if $i0 == 42 goto label29;
+
+        virtualinvoke $r20.<com.pad.android.iappad.AdController$8: void onClick(android.view.View)>(null);
+
+     label29:
+        $r21 = new com.cds.phoneboost.Boost$ButtonClickHandler;
+
+        specialinvoke $r21.<com.cds.phoneboost.Boost$ButtonClickHandler: void <init>(com.cds.phoneboost.Boost)>($r6);
+
+        if $i0 == 43 goto label30;
+
+        virtualinvoke $r21.<com.cds.phoneboost.Boost$ButtonClickHandler: void onClick(android.view.View)>(null);
+
+     label30:
+        if $i0 == 44 goto label22;
+
+     label31:
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onPause()>();
+
+        if $i0 == 45 goto label21;
+
+        if $i0 == 46 goto label32;
+
+        if $i0 == 47 goto label21;
+
+     label32:
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onDestroy()>();
+
+     label33:
+        if $i0 == 49 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.1 seconds.
+[Spark] Solution found in 2.1 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 20 callback methods for 6 components
+Found {res/layout/main.xml=[2131099656 - android.widget.ImageView, 2131099649 - android.widget.ImageView, 2131099648 - android.widget.LinearLayout, -1 - android.widget.RelativeLayout, 2131099653 - android.widget.ImageView, 2131099650 - android.widget.ImageView, 2131099651 - android.widget.ImageView, 2131099652 - android.widget.ImageView, 2131099654 - android.widget.ImageView, 2131099655 - android.widget.ImageView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 20 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/1d04c6f60a280e97cef8f2b913c98edbbcc34b53bdaa5f511bd418f60f292aba.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.webkit.WebSettings$PluginState is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.pad.android.xappad.AdReminderNotification $r1;
+        com.apperhand.device.android.AndroidSDKProvider $r2;
+        com.pad.android.xappad.AdNotification $r3;
+        com.apperhand.device.android.EULAActivity $r4;
+        com.cds.phoneboost.BootReceiver $r5;
+        com.cds.phoneboost.Boost $r6;
+        com.pad.android.iappad.AdController $r7, $r9, $r11, $r13, $r15, $r18, $r20;
+        com.pad.android.iappad.AdController$9 $r8;
+        com.pad.android.iappad.AdController$4 $r10;
+        boolean $z0;
+        com.pad.android.iappad.AdController$3 $r12;
+        com.pad.android.iappad.AdController$7 $r14;
+        com.pad.android.iappad.AdController$8 $r16;
+        com.cds.phoneboost.Boost$ButtonClickHandler $r17;
+        com.pad.android.iappad.AdController$5 $r19;
+        com.pad.android.iappad.AdController$6 $r21;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.pad.android.xappad.AdReminderNotification;
+
+        specialinvoke $r1.<com.pad.android.xappad.AdReminderNotification: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label10;
+
+        $r2 = new com.apperhand.device.android.AndroidSDKProvider;
+
+        specialinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void <init>()>();
+
+        virtualinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void onCreate()>();
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        if $i0 == 6 goto label04;
+
+     label05:
+        if $i0 == 7 goto label08;
+
+     label06:
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>(null);
+
+     label07:
+        if $i0 == 9 goto label06;
+
+     label08:
+        if $i0 == 10 goto label09;
+
+        virtualinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label10;
+
+        if $i0 == 13 goto label08;
+
+     label10:
+        if $i0 == 14 goto label12;
+
+        $r3 = new com.pad.android.xappad.AdNotification;
+
+        specialinvoke $r3.<com.pad.android.xappad.AdNotification: void <init>()>();
+
+        if $i0 == 15 goto label12;
+
+     label11:
+        virtualinvoke $r3.<com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label11;
+
+     label12:
+        if $i0 == 18 goto label18;
+
+        $r4 = new com.apperhand.device.android.EULAActivity;
+
+        specialinvoke $r4.<com.apperhand.device.android.EULAActivity: void <init>()>();
+
+        if $i0 == 19 goto label18;
+
+        virtualinvoke $r4.<com.apperhand.device.android.EULAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 21 goto label16;
+
+     label14:
+        if $i0 == 22 goto label15;
+
+        virtualinvoke $r4.<com.apperhand.device.android.EULAActivity: void onBackPressed()>();
+
+     label15:
+        if $i0 == 23 goto label14;
+
+     label16:
+        if $i0 == 24 goto label13;
+
+        if $i0 == 25 goto label17;
+
+        if $i0 == 26 goto label13;
+
+     label17:
+        virtualinvoke $r4.<com.apperhand.device.android.EULAActivity: void onDestroy()>();
+
+     label18:
+        if $i0 == 28 goto label20;
+
+        $r5 = new com.cds.phoneboost.BootReceiver;
+
+        specialinvoke $r5.<com.cds.phoneboost.BootReceiver: void <init>()>();
+
+        if $i0 == 29 goto label20;
+
+     label19:
+        virtualinvoke $r5.<com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 31 goto label19;
+
+     label20:
+        if $i0 == 32 goto label33;
+
+        $r6 = new com.cds.phoneboost.Boost;
+
+        specialinvoke $r6.<com.cds.phoneboost.Boost: void <init>()>();
+
+        if $i0 == 33 goto label33;
+
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onResume()>();
+
+        if $i0 == 35 goto label31;
+
+     label22:
+        $r7 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r7.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r8 = new com.pad.android.iappad.AdController$9;
+
+        specialinvoke $r8.<com.pad.android.iappad.AdController$9: void <init>(com.pad.android.iappad.AdController)>($r7);
+
+        if $i0 == 36 goto label23;
+
+        virtualinvoke $r8.<com.pad.android.iappad.AdController$9: void onClick(android.view.View)>(null);
+
+     label23:
+        $r9 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r9.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r10 = new com.pad.android.iappad.AdController$4;
+
+        specialinvoke $r10.<com.pad.android.iappad.AdController$4: void <init>(com.pad.android.iappad.AdController)>($r9);
+
+        if $i0 == 37 goto label24;
+
+        $z0 = virtualinvoke $r10.<com.pad.android.iappad.AdController$4: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label24:
+        $r11 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r11.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r12 = new com.pad.android.iappad.AdController$3;
+
+        specialinvoke $r12.<com.pad.android.iappad.AdController$3: void <init>(com.pad.android.iappad.AdController)>($r11);
+
+        if $i0 == 38 goto label25;
+
+        virtualinvoke $r12.<com.pad.android.iappad.AdController$3: void onClick(android.view.View)>(null);
+
+     label25:
+        $r13 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r13.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r14 = new com.pad.android.iappad.AdController$7;
+
+        specialinvoke $r14.<com.pad.android.iappad.AdController$7: void <init>(com.pad.android.iappad.AdController)>($r13);
+
+        if $i0 == 39 goto label26;
+
+        virtualinvoke $r14.<com.pad.android.iappad.AdController$7: void onClick(android.view.View)>(null);
+
+     label26:
+        $r15 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r15.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r16 = new com.pad.android.iappad.AdController$8;
+
+        specialinvoke $r16.<com.pad.android.iappad.AdController$8: void <init>(com.pad.android.iappad.AdController)>($r15);
+
+        if $i0 == 40 goto label27;
+
+        virtualinvoke $r16.<com.pad.android.iappad.AdController$8: void onClick(android.view.View)>(null);
+
+     label27:
+        $r17 = new com.cds.phoneboost.Boost$ButtonClickHandler;
+
+        specialinvoke $r17.<com.cds.phoneboost.Boost$ButtonClickHandler: void <init>(com.cds.phoneboost.Boost)>($r6);
+
+        if $i0 == 41 goto label28;
+
+        virtualinvoke $r17.<com.cds.phoneboost.Boost$ButtonClickHandler: void onClick(android.view.View)>(null);
+
+     label28:
+        $r18 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r18.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r19 = new com.pad.android.iappad.AdController$5;
+
+        specialinvoke $r19.<com.pad.android.iappad.AdController$5: void <init>(com.pad.android.iappad.AdController)>($r18);
+
+        if $i0 == 42 goto label29;
+
+        virtualinvoke $r19.<com.pad.android.iappad.AdController$5: void onClick(android.view.View)>(null);
+
+     label29:
+        $r20 = new com.pad.android.iappad.AdController;
+
+        specialinvoke $r20.<com.pad.android.iappad.AdController: void <init>(android.app.Activity,java.lang.String)>($r6, "");
+
+        $r21 = new com.pad.android.iappad.AdController$6;
+
+        specialinvoke $r21.<com.pad.android.iappad.AdController$6: void <init>(com.pad.android.iappad.AdController)>($r20);
+
+        if $i0 == 43 goto label30;
+
+        virtualinvoke $r21.<com.pad.android.iappad.AdController$6: void onClick(android.view.View)>(null);
+
+     label30:
+        if $i0 == 44 goto label22;
+
+     label31:
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onPause()>();
+
+        if $i0 == 45 goto label21;
+
+        if $i0 == 46 goto label32;
+
+        if $i0 == 47 goto label21;
+
+     label32:
+        virtualinvoke $r6.<com.cds.phoneboost.Boost: void onDestroy()>();
+
+     label33:
+        if $i0 == 49 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.8 seconds.
+[Spark] Solution found in 1.8 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.853450639 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.163321977 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 4505 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 62 sources and 92 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 22280
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 66115
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 184848 forward and 20238 backward edges solved, processing 38 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 38 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.011354495 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l3) in method <com.pad.android.xappad.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref13", $r2) in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref8", $r2) in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l2) in method <com.pad.android.xappad.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l2) in method <com.pad.android.xappad.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, $r12) in method <com.pad.android.xappad.AdController: void setAlarmFromCookie()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref12", $r2) in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref10", $r2) in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>() in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LBAdController", $r1) in method <com.pad.android.util.AdLog: void i(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("alarmtype") in method <com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref17", $r2) in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r16.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r5, $l1) in method <com.pad.android.xappad.AdController: void loadNotificationDetails()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("msg", $r1) in method <com.pad.android.util.AdLog: void sendToTextView(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("alarmtype") in method <com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r7) in method <com.pad.android.xappad.AdController: void incrementIterationCounter()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r3.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4) in method <com.apperhand.device.android.c.d: java.lang.String a(java.lang.String,byte[],java.util.List)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("M_SERVER_URL") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref22", $r2) in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r20.<android.net.wifi.WifiInfo: java.lang.String getMacAddress()>() in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l3) in method <com.pad.android.xappad.AdController: void setAlarmFromCookie()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LBAdController", $r1) in method <com.pad.android.util.AdLog: void d(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l2) in method <com.pad.android.xappad.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref9", $r12) in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>() in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l2) in method <com.pad.android.xappad.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, $r12) in method <com.pad.android.xappad.AdController: void setAlarmFromCookie()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref11", $r2) in method <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, "0") in method <com.pad.android.xappad.AdController: void setAlarmFromCookie()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r16.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r5, $i0) in method <com.pad.android.xappad.AdController: void loadNotificationDetails()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l3), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref13", $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref8", $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l2), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, $r12), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref12", $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref10", $r2), from the following sources:
+	- $d0 = virtualinvoke $r11.<android.location.Location: double getLongitude()>() (in <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LBAdController", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r7 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("alarmtype") (in <com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref17", $r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)>)
+Found a flow to sink interfaceinvoke $r16.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r5, $l1), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("msg", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r7 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("alarmtype") (in <com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdReminderNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r7), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r5 = virtualinvoke $r3.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("M_SERVER_URL") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+Found a flow to sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref22", $r2), from the following sources:
+	- $r2 = virtualinvoke $r20.<android.net.wifi.WifiInfo: java.lang.String getMacAddress()>() (in <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l3), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LBAdController", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l2), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref9", $r12), from the following sources:
+	- $d0 = virtualinvoke $r11.<android.location.Location: double getLatitude()>() (in <com.pad.android.util.AdRefValues: java.lang.String adRefValues(android.content.Context,android.telephony.TelephonyManager,java.lang.String,java.util.List,boolean,int,int)>)
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l2), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, $r12), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r28.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref11", $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.cds.phoneboost.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, "0"), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r16.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r5, $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.pad.android.xappad.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 384.23972 MB
+Analysis has run for 11.297377483 seconds

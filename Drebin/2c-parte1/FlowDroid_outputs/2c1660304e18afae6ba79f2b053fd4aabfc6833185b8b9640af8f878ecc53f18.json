@@ -1,0 +1,357 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012549691 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.android.security.MainActivity $r1;
+        com.android.security.SecurityService $r2;
+        android.os.IBinder $r3;
+        com.android.security.SecurityReceiver $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r1 = new com.android.security.MainActivity;
+
+        specialinvoke $r1.<com.android.security.MainActivity: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+        virtualinvoke $r1.<com.android.security.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        if $i0 == 4 goto label3;
+
+        if $i0 == 5 goto label2;
+
+     label3:
+        if $i0 == 7 goto label7;
+
+        $r2 = new com.android.security.SecurityService;
+
+        specialinvoke $r2.<com.android.security.SecurityService: void <init>()>();
+
+        virtualinvoke $r2.<com.android.security.SecurityService: void onCreate()>();
+
+        virtualinvoke $r2.<com.android.security.SecurityService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label4:
+        if $i0 == 8 goto label5;
+
+        $i1 = virtualinvoke $r2.<com.android.security.SecurityService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 9 goto label4;
+
+     label5:
+        $r3 = virtualinvoke $r2.<com.android.security.SecurityService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label6:
+        if $i0 == 11 goto label7;
+
+        if $i0 == 12 goto label6;
+
+     label7:
+        if $i0 == 13 goto label9;
+
+        $r4 = new com.android.security.SecurityReceiver;
+
+        specialinvoke $r4.<com.android.security.SecurityReceiver: void <init>()>();
+
+        if $i0 == 14 goto label9;
+
+     label8:
+        virtualinvoke $r4.<com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label8;
+
+     label9:
+        if $i0 == 17 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.android.security.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.android.security.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.android.security.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: requestFocus is a phantom class!
+Warning: com.android.security.requestFocus is a phantom class!
+Warning: android.view.requestFocus is a phantom class!
+Warning: android.widget.requestFocus is a phantom class!
+Warning: android.webkit.requestFocus is a phantom class!
+Could not find layout class requestFocus
+Found 1 layout controls in file res/layout/main.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.android.security.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Could not find layout class requestFocus
+Warning: ImageView is a phantom class!
+Warning: com.android.security.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 2 layout controls in file res/layout/mainrelative.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.android.security.MainActivity $r1;
+        com.android.security.SecurityService $r2;
+        android.os.IBinder $r3;
+        com.android.security.SecurityReceiver $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r1 = new com.android.security.MainActivity;
+
+        specialinvoke $r1.<com.android.security.MainActivity: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+        virtualinvoke $r1.<com.android.security.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        if $i0 == 4 goto label2;
+
+        if $i0 == 5 goto label3;
+
+        if $i0 == 6 goto label2;
+
+     label3:
+        if $i0 == 8 goto label7;
+
+        $r2 = new com.android.security.SecurityService;
+
+        specialinvoke $r2.<com.android.security.SecurityService: void <init>()>();
+
+        virtualinvoke $r2.<com.android.security.SecurityService: void onCreate()>();
+
+        virtualinvoke $r2.<com.android.security.SecurityService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label4:
+        if $i0 == 9 goto label5;
+
+        $i1 = virtualinvoke $r2.<com.android.security.SecurityService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 10 goto label4;
+
+     label5:
+        $r3 = virtualinvoke $r2.<com.android.security.SecurityService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label6:
+        if $i0 == 12 goto label7;
+
+        if $i0 == 13 goto label6;
+
+     label7:
+        if $i0 == 14 goto label9;
+
+        $r4 = new com.android.security.SecurityReceiver;
+
+        specialinvoke $r4.<com.android.security.SecurityReceiver: void <init>()>();
+
+        if $i0 == 15 goto label9;
+
+     label8:
+        virtualinvoke $r4.<com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label8;
+
+     label9:
+        if $i0 == 18 goto label1;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 5 callback methods for 3 components
+Found {res/layout/mainrelative.xml=[2131034115 - android.widget.ImageView, 2131034112 - android.widget.TextView, 2131034116 - android.widget.TextView, 2131034114 - android.widget.EditText, -1 - android.widget.RelativeLayout], res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131034112 - android.widget.TextView, 2131034113 - android.widget.EditText]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 5 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2c1660304e18afae6ba79f2b053fd4aabfc6833185b8b9640af8f878ecc53f18.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.android.security.MainActivity $r1;
+        com.android.security.SecurityService $r2;
+        android.os.IBinder $r3;
+        com.android.security.SecurityReceiver $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r1 = new com.android.security.MainActivity;
+
+        specialinvoke $r1.<com.android.security.MainActivity: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+        virtualinvoke $r1.<com.android.security.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        if $i0 == 4 goto label2;
+
+        if $i0 == 5 goto label3;
+
+        if $i0 == 6 goto label2;
+
+     label3:
+        if $i0 == 8 goto label7;
+
+        $r2 = new com.android.security.SecurityService;
+
+        specialinvoke $r2.<com.android.security.SecurityService: void <init>()>();
+
+        virtualinvoke $r2.<com.android.security.SecurityService: void onCreate()>();
+
+        virtualinvoke $r2.<com.android.security.SecurityService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label4:
+        if $i0 == 9 goto label5;
+
+        $i1 = virtualinvoke $r2.<com.android.security.SecurityService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 10 goto label4;
+
+     label5:
+        $r3 = virtualinvoke $r2.<com.android.security.SecurityService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label6:
+        if $i0 == 12 goto label7;
+
+        if $i0 == 13 goto label6;
+
+     label7:
+        if $i0 == 14 goto label9;
+
+        $r4 = new com.android.security.SecurityReceiver;
+
+        specialinvoke $r4.<com.android.security.SecurityReceiver: void <init>()>();
+
+        if $i0 == 15 goto label9;
+
+     label8:
+        virtualinvoke $r4.<com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label8;
+
+     label9:
+        if $i0 == 18 goto label1;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.123839783 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.017355908 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 208 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 15 sources and 5 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 218
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 450
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 2630 forward and 299 backward edges solved, processing 4 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 4 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.006035391 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AlternativeNumber", $r1) in method <com.android.security.ValueProvider: boolean SaveStringValue(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("SSuite", $r0) in method <com.android.security.ValueProvider: void LogTrace(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.security.ValueProvider: java.lang.String GetActivationCode()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Intent in method <com.android.security.SecurityService: int onStartCommand(android.content.Intent,int,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r0, null, $r1, null, null) in method <com.android.security.SecurityReceiver: void sendSMS(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.security.ValueProvider: java.lang.String GetActivationCode()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AlternativeNumber", $r1), from the following sources:
+	- $r10 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("SSuite", $r0), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.security.ValueProvider: java.lang.String GetActivationCode()>)
+	- $r2 := @parameter1: android.content.Intent (in <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Intent (in <com.android.security.SecurityService: int onStartCommand(android.content.Intent,int,int)>)
+Found a flow to sink virtualinvoke $r2.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r0, null, $r1, null, null), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.security.ValueProvider: java.lang.String GetActivationCode()>)
+	- $r10 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.android.security.SecurityReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 73.108304 MB
+Analysis has run for 3.055439404 seconds

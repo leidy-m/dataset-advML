@@ -1,0 +1,2156 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.023726337 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        ru.jabox.android.smsbox.app.LoveBoxApplication $r1;
+        ru.jabox.android.smsbox.log.SendLogActivity $r2;
+        ru.jabox.android.smsbox.activity.HelpActivity $r3;
+        ru.jabox.android.smsbox.activity.ChooseTemplateActivity $r4;
+        ru.jabox.android.smsbox.activity.SendMessageActivity $r5;
+        ru.jabox.android.smsbox.activity.OurProjectsActivity $r6;
+        ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity $r7;
+        ru.jabox.android.smsbox.activity.StartupActivity $r8;
+        ru.jabox.android.smsbox.activity.ChooseCategoryActivity $r9;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new ru.jabox.android.smsbox.app.LoveBoxApplication;
+
+        specialinvoke $r1.<ru.jabox.android.smsbox.app.LoveBoxApplication: void <init>()>();
+
+        virtualinvoke $r1.<ru.jabox.android.smsbox.AbstractSmsboxApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r2 = new ru.jabox.android.smsbox.log.SendLogActivity;
+
+        specialinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label05;
+
+        $r3 = new ru.jabox.android.smsbox.activity.HelpActivity;
+
+        specialinvoke $r3.<ru.jabox.android.smsbox.activity.HelpActivity: void <init>()>();
+
+        if $i0 == 8 goto label05;
+
+        virtualinvoke $r3.<ru.jabox.android.smsbox.activity.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 11 goto label05;
+
+        if $i0 == 12 goto label04;
+
+     label05:
+        if $i0 == 14 goto label07;
+
+        $r4 = new ru.jabox.android.smsbox.activity.ChooseTemplateActivity;
+
+        specialinvoke $r4.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void <init>()>();
+
+        if $i0 == 15 goto label07;
+
+        virtualinvoke $r4.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        if $i0 == 18 goto label07;
+
+        if $i0 == 19 goto label06;
+
+     label07:
+        if $i0 == 21 goto label09;
+
+        $r5 = new ru.jabox.android.smsbox.activity.SendMessageActivity;
+
+        specialinvoke $r5.<ru.jabox.android.smsbox.activity.SendMessageActivity: void <init>()>();
+
+        if $i0 == 22 goto label09;
+
+        virtualinvoke $r5.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 25 goto label09;
+
+        if $i0 == 26 goto label08;
+
+     label09:
+        if $i0 == 28 goto label11;
+
+        $r6 = new ru.jabox.android.smsbox.activity.OurProjectsActivity;
+
+        specialinvoke $r6.<ru.jabox.android.smsbox.activity.OurProjectsActivity: void <init>()>();
+
+        if $i0 == 29 goto label11;
+
+        virtualinvoke $r6.<ru.jabox.android.smsbox.activity.OurProjectsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 32 goto label11;
+
+        if $i0 == 33 goto label10;
+
+     label11:
+        if $i0 == 35 goto label13;
+
+        $r7 = new ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity;
+
+        specialinvoke $r7.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void <init>()>();
+
+        if $i0 == 36 goto label13;
+
+        virtualinvoke $r7.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        virtualinvoke $r7.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onResume()>();
+
+        virtualinvoke $r7.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onPause()>();
+
+        if $i0 == 38 goto label12;
+
+        if $i0 == 39 goto label13;
+
+        if $i0 == 40 goto label12;
+
+     label13:
+        if $i0 == 42 goto label15;
+
+        $r8 = new ru.jabox.android.smsbox.activity.StartupActivity;
+
+        specialinvoke $r8.<ru.jabox.android.smsbox.activity.StartupActivity: void <init>()>();
+
+        if $i0 == 43 goto label15;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.StartupActivity: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.StartupActivity: void onPause()>();
+
+        if $i0 == 45 goto label14;
+
+        if $i0 == 46 goto label15;
+
+        if $i0 == 47 goto label14;
+
+     label15:
+        if $i0 == 50 goto label17;
+
+        $r9 = new ru.jabox.android.smsbox.activity.ChooseCategoryActivity;
+
+        specialinvoke $r9.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void <init>()>();
+
+        if $i0 == 51 goto label17;
+
+        virtualinvoke $r9.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r9.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 53 goto label16;
+
+        if $i0 == 54 goto label17;
+
+        if $i0 == 55 goto label16;
+
+     label17:
+        if $i0 == 58 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Callback analysis done.
+Warning: ScrollView is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/agreement.xml
+Warning: LinearLayout is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ListView is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 2 layout controls in file res/layout/category_layout.xml
+Warning: ImageView is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 3 layout controls in file res/layout/category_row.xml
+Warning: CheckBox is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 4 layout controls in file res/layout/confirm_layout.xml
+Warning: RelativeLayout is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 5 layout controls in file res/layout/header_layout.xml
+Found 6 layout controls in file res/layout/help_layout.xml
+Found 7 layout controls in file res/layout/logo_layout.xml
+Warning: Button is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: Spinner is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.Spinner is a phantom class!
+Warning: android.view.Spinner is a phantom class!
+Warning: EditText is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: ImageButton is a phantom class!
+Warning: ru.jabox.android.smsbox.lovebox.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Found 8 layout controls in file res/layout/send_layout.xml
+Found 9 layout controls in file res/layout/send_to_friend.xml
+Found 10 layout controls in file res/layout/template_layout.xml
+Found 11 layout controls in file res/layout/template_row.xml
+Found 12 layout controls in file res/layout/update_layout.xml
+Found 13 layout controls in file res/layout/copy_of_our_projects_page.xml
+Found 14 layout controls in file res/layout/our_projects_page.xml
+Found 15 layout controls in file res/layout/our_projects_row.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.TextView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        ru.jabox.android.smsbox.app.LoveBoxApplication $r1;
+        ru.jabox.android.smsbox.log.SendLogActivity $r2;
+        ru.jabox.android.smsbox.log.b $r3;
+        ru.jabox.android.smsbox.log.c $r4;
+        ru.jabox.android.smsbox.activity.HelpActivity $r5;
+        ru.jabox.android.smsbox.activity.ChooseTemplateActivity $r6;
+        ru.jabox.android.smsbox.activity.a $r7;
+        ru.jabox.android.smsbox.activity.SendMessageActivity $r8;
+        ru.jabox.android.smsbox.activity.j $r9;
+        ru.jabox.android.smsbox.d.a $r10;
+        ru.jabox.android.smsbox.activity.g $r11;
+        ru.jabox.android.smsbox.d.b $r12, $r34;
+        ru.jabox.android.smsbox.activity.h $r13;
+        ru.jabox.android.smsbox.activity.i $r14;
+        ru.jabox.android.smsbox.activity.e $r15;
+        android.app.Dialog $r16, $r24, $r26, $r33;
+        ru.jabox.android.smsbox.d.c $r17, $r36;
+        ru.jabox.android.smsbox.activity.d $r18;
+        ru.jabox.android.smsbox.activity.OurProjectsActivity $r19;
+        ru.jabox.android.smsbox.activity.l $r20;
+        ru.jabox.android.smsbox.activity.k $r21;
+        ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity $r22;
+        ru.jabox.android.smsbox.activity.u $r23;
+        boolean $z0, $z1, $z2;
+        ru.jabox.android.smsbox.activity.StartupActivity $r25;
+        ru.jabox.android.smsbox.activity.m $r27;
+        ru.jabox.android.smsbox.activity.o $r28;
+        ru.jabox.android.smsbox.activity.v $r29;
+        ru.jabox.android.smsbox.activity.p $r30;
+        ru.jabox.android.smsbox.activity.ChooseCategoryActivity $r31;
+        ru.jabox.android.smsbox.activity.r $r32;
+        ru.jabox.android.smsbox.activity.t $r35;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new ru.jabox.android.smsbox.app.LoveBoxApplication;
+
+        specialinvoke $r1.<ru.jabox.android.smsbox.app.LoveBoxApplication: void <init>()>();
+
+        virtualinvoke $r1.<ru.jabox.android.smsbox.AbstractSmsboxApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r2 = new ru.jabox.android.smsbox.log.SendLogActivity;
+
+        specialinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label07;
+
+     label03:
+        $r3 = new ru.jabox.android.smsbox.log.b;
+
+        specialinvoke $r3.<ru.jabox.android.smsbox.log.b: void <init>(ru.jabox.android.smsbox.log.SendLogActivity)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<ru.jabox.android.smsbox.log.b: void onCancel(android.content.DialogInterface)>(null);
+
+     label04:
+        $r4 = new ru.jabox.android.smsbox.log.c;
+
+        specialinvoke $r4.<ru.jabox.android.smsbox.log.c: void <init>(ru.jabox.android.smsbox.log.SendLogActivity)>($r2);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r4.<ru.jabox.android.smsbox.log.c: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        staticinvoke <ru.jabox.android.smsbox.log.SendLogActivity: void <clinit>()>();
+
+     label06:
+        if $i0 == 7 goto label03;
+
+     label07:
+        virtualinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void onPause()>();
+
+        if $i0 == 8 goto label02;
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label02;
+
+     label08:
+        if $i0 == 12 goto label10;
+
+        $r5 = new ru.jabox.android.smsbox.activity.HelpActivity;
+
+        specialinvoke $r5.<ru.jabox.android.smsbox.activity.HelpActivity: void <init>()>();
+
+        if $i0 == 13 goto label10;
+
+        virtualinvoke $r5.<ru.jabox.android.smsbox.activity.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        if $i0 == 20 goto label15;
+
+        $r6 = new ru.jabox.android.smsbox.activity.ChooseTemplateActivity;
+
+        specialinvoke $r6.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+        virtualinvoke $r6.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 23 goto label14;
+
+     label12:
+        $r7 = new ru.jabox.android.smsbox.activity.a;
+
+        specialinvoke $r7.<ru.jabox.android.smsbox.activity.a: void <init>(ru.jabox.android.smsbox.activity.ChooseTemplateActivity)>($r6);
+
+        if $i0 == 24 goto label13;
+
+        virtualinvoke $r7.<ru.jabox.android.smsbox.activity.a: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label13:
+        if $i0 == 25 goto label12;
+
+     label14:
+        if $i0 == 26 goto label11;
+
+        if $i0 == 27 goto label15;
+
+        if $i0 == 28 goto label11;
+
+     label15:
+        if $i0 == 30 goto label31;
+
+        $r8 = new ru.jabox.android.smsbox.activity.SendMessageActivity;
+
+        specialinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void <init>()>();
+
+        if $i0 == 31 goto label31;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 33 goto label30;
+
+     label17:
+        $r9 = new ru.jabox.android.smsbox.activity.j;
+
+        specialinvoke $r9.<ru.jabox.android.smsbox.activity.j: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 34 goto label18;
+
+        virtualinvoke $r9.<ru.jabox.android.smsbox.activity.j: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label18:
+        $r10 = new ru.jabox.android.smsbox.d.a;
+
+        specialinvoke $r10.<ru.jabox.android.smsbox.d.a: void <init>(android.app.Activity)>($r8);
+
+        if $i0 == 35 goto label19;
+
+        virtualinvoke $r10.<ru.jabox.android.smsbox.d.a: void onClick(android.view.View)>(null);
+
+     label19:
+        $r11 = new ru.jabox.android.smsbox.activity.g;
+
+        specialinvoke $r11.<ru.jabox.android.smsbox.activity.g: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 36 goto label20;
+
+        virtualinvoke $r11.<ru.jabox.android.smsbox.activity.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label20:
+        $r12 = new ru.jabox.android.smsbox.d.b;
+
+        specialinvoke $r12.<ru.jabox.android.smsbox.d.b: void <init>(android.app.Activity,android.view.View)>($r8, null);
+
+        if $i0 == 37 goto label21;
+
+        virtualinvoke $r12.<ru.jabox.android.smsbox.d.b: void onFocusChange(android.view.View,boolean)>(null, false);
+
+     label21:
+        $r13 = new ru.jabox.android.smsbox.activity.h;
+
+        specialinvoke $r13.<ru.jabox.android.smsbox.activity.h: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 38 goto label22;
+
+        virtualinvoke $r13.<ru.jabox.android.smsbox.activity.h: void onClick(android.view.View)>(null);
+
+     label22:
+        $r14 = new ru.jabox.android.smsbox.activity.i;
+
+        specialinvoke $r14.<ru.jabox.android.smsbox.activity.i: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 39 goto label23;
+
+        virtualinvoke $r14.<ru.jabox.android.smsbox.activity.i: void onClick(android.view.View)>(null);
+
+     label23:
+        $r15 = new ru.jabox.android.smsbox.activity.e;
+
+        specialinvoke $r15.<ru.jabox.android.smsbox.activity.e: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 40 goto label24;
+
+        virtualinvoke $r15.<ru.jabox.android.smsbox.activity.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label24:
+        if $i0 == 41 goto label25;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label25:
+        if $i0 == 42 goto label26;
+
+        $r16 = virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label26:
+        if $i0 == 43 goto label27;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label27:
+        $r17 = new ru.jabox.android.smsbox.d.c;
+
+        specialinvoke $r17.<ru.jabox.android.smsbox.d.c: void <init>(android.app.Activity,android.widget.TextView)>($r8, null);
+
+        if $i0 == 44 goto label28;
+
+        virtualinvoke $r17.<ru.jabox.android.smsbox.d.c: void onClick(android.view.View)>(null);
+
+     label28:
+        $r18 = new ru.jabox.android.smsbox.activity.d;
+
+        specialinvoke $r18.<ru.jabox.android.smsbox.activity.d: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 45 goto label29;
+
+        virtualinvoke $r18.<ru.jabox.android.smsbox.activity.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        if $i0 == 46 goto label17;
+
+     label30:
+        if $i0 == 47 goto label16;
+
+        if $i0 == 48 goto label31;
+
+        if $i0 == 49 goto label16;
+
+     label31:
+        if $i0 == 51 goto label37;
+
+        $r19 = new ru.jabox.android.smsbox.activity.OurProjectsActivity;
+
+        specialinvoke $r19.<ru.jabox.android.smsbox.activity.OurProjectsActivity: void <init>()>();
+
+        if $i0 == 52 goto label37;
+
+        virtualinvoke $r19.<ru.jabox.android.smsbox.activity.OurProjectsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        if $i0 == 54 goto label36;
+
+     label33:
+        $r20 = new ru.jabox.android.smsbox.activity.l;
+
+        specialinvoke $r20.<ru.jabox.android.smsbox.activity.l: void <init>(ru.jabox.android.smsbox.activity.OurProjectsActivity)>($r19);
+
+        if $i0 == 55 goto label34;
+
+        virtualinvoke $r20.<ru.jabox.android.smsbox.activity.l: void onClick(android.view.View)>(null);
+
+     label34:
+        $r21 = new ru.jabox.android.smsbox.activity.k;
+
+        specialinvoke $r21.<ru.jabox.android.smsbox.activity.k: void <init>(ru.jabox.android.smsbox.activity.OurProjectsActivity)>($r19);
+
+        if $i0 == 56 goto label35;
+
+        virtualinvoke $r21.<ru.jabox.android.smsbox.activity.k: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label35:
+        if $i0 == 57 goto label33;
+
+     label36:
+        if $i0 == 58 goto label32;
+
+        if $i0 == 59 goto label37;
+
+        if $i0 == 60 goto label32;
+
+     label37:
+        if $i0 == 62 goto label44;
+
+        $r22 = new ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity;
+
+        specialinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void <init>()>();
+
+        if $i0 == 63 goto label44;
+
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onResume()>();
+
+        if $i0 == 65 goto label43;
+
+     label39:
+        $r23 = new ru.jabox.android.smsbox.activity.u;
+
+        specialinvoke $r23.<ru.jabox.android.smsbox.activity.u: void <init>(ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity)>($r22);
+
+        if $i0 == 66 goto label40;
+
+        $z0 = virtualinvoke $r23.<ru.jabox.android.smsbox.activity.u: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label40:
+        if $i0 == 67 goto label41;
+
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label41:
+        if $i0 == 68 goto label42;
+
+        $r24 = virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label42:
+        if $i0 == 69 goto label39;
+
+     label43:
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onPause()>();
+
+        if $i0 == 70 goto label38;
+
+        if $i0 == 71 goto label44;
+
+        if $i0 == 72 goto label38;
+
+     label44:
+        if $i0 == 74 goto label54;
+
+        $r25 = new ru.jabox.android.smsbox.activity.StartupActivity;
+
+        specialinvoke $r25.<ru.jabox.android.smsbox.activity.StartupActivity: void <init>()>();
+
+        if $i0 == 75 goto label54;
+
+        virtualinvoke $r25.<ru.jabox.android.smsbox.activity.StartupActivity: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        if $i0 == 77 goto label53;
+
+     label46:
+        if $i0 == 78 goto label47;
+
+        $r26 = virtualinvoke $r25.<ru.jabox.android.smsbox.activity.StartupActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label47:
+        if $i0 == 79 goto label48;
+
+        virtualinvoke $r25.<ru.jabox.android.smsbox.activity.StartupActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label48:
+        $r27 = new ru.jabox.android.smsbox.activity.m;
+
+        specialinvoke $r27.<ru.jabox.android.smsbox.activity.m: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r25);
+
+        if $i0 == 80 goto label49;
+
+        virtualinvoke $r27.<ru.jabox.android.smsbox.activity.m: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label49:
+        $r28 = new ru.jabox.android.smsbox.activity.o;
+
+        specialinvoke $r28.<ru.jabox.android.smsbox.activity.o: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r25);
+
+        if $i0 == 81 goto label50;
+
+        virtualinvoke $r28.<ru.jabox.android.smsbox.activity.o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label50:
+        $r29 = new ru.jabox.android.smsbox.activity.v;
+
+        specialinvoke $r29.<ru.jabox.android.smsbox.activity.v: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r25);
+
+        if $i0 == 82 goto label51;
+
+        virtualinvoke $r29.<ru.jabox.android.smsbox.activity.v: void onClick(android.view.View)>(null);
+
+     label51:
+        $r30 = new ru.jabox.android.smsbox.activity.p;
+
+        specialinvoke $r30.<ru.jabox.android.smsbox.activity.p: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r25);
+
+        if $i0 == 83 goto label52;
+
+        virtualinvoke $r30.<ru.jabox.android.smsbox.activity.p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label52:
+        if $i0 == 84 goto label46;
+
+     label53:
+        virtualinvoke $r25.<ru.jabox.android.smsbox.activity.StartupActivity: void onPause()>();
+
+        if $i0 == 85 goto label45;
+
+        if $i0 == 86 goto label54;
+
+        if $i0 == 87 goto label45;
+
+     label54:
+        if $i0 == 90 goto label67;
+
+        $r31 = new ru.jabox.android.smsbox.activity.ChooseCategoryActivity;
+
+        specialinvoke $r31.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void <init>()>();
+
+        if $i0 == 91 goto label67;
+
+        virtualinvoke $r31.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onCreate(android.os.Bundle)>(null);
+
+     label55:
+        if $i0 == 93 goto label66;
+
+     label56:
+        $r32 = new ru.jabox.android.smsbox.activity.r;
+
+        specialinvoke $r32.<ru.jabox.android.smsbox.activity.r: void <init>(ru.jabox.android.smsbox.activity.ChooseCategoryActivity)>($r31);
+
+        if $i0 == 94 goto label57;
+
+        virtualinvoke $r32.<ru.jabox.android.smsbox.activity.r: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label57:
+        if $i0 == 95 goto label58;
+
+        $z1 = virtualinvoke $r31.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label58:
+        if $i0 == 96 goto label59;
+
+        virtualinvoke $r31.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label59:
+        if $i0 == 97 goto label60;
+
+        virtualinvoke $r31.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label60:
+        if $i0 == 98 goto label61;
+
+        $z2 = virtualinvoke $r31.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label61:
+        if $i0 == 99 goto label62;
+
+        $r33 = virtualinvoke $r31.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label62:
+        $r34 = new ru.jabox.android.smsbox.d.b;
+
+        specialinvoke $r34.<ru.jabox.android.smsbox.d.b: void <init>(android.app.Activity,android.view.View)>($r31, null);
+
+        if $i0 == 100 goto label63;
+
+        virtualinvoke $r34.<ru.jabox.android.smsbox.d.b: void onFocusChange(android.view.View,boolean)>(null, false);
+
+     label63:
+        $r35 = new ru.jabox.android.smsbox.activity.t;
+
+        specialinvoke $r35.<ru.jabox.android.smsbox.activity.t: void <init>(ru.jabox.android.smsbox.activity.ChooseCategoryActivity)>($r31);
+
+        if $i0 == 101 goto label64;
+
+        virtualinvoke $r35.<ru.jabox.android.smsbox.activity.t: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label64:
+        $r36 = new ru.jabox.android.smsbox.d.c;
+
+        specialinvoke $r36.<ru.jabox.android.smsbox.d.c: void <init>(android.app.Activity,android.widget.TextView)>($r31, null);
+
+        if $i0 == 102 goto label65;
+
+        virtualinvoke $r36.<ru.jabox.android.smsbox.d.c: void onClick(android.view.View)>(null);
+
+     label65:
+        if $i0 == 103 goto label56;
+
+     label66:
+        virtualinvoke $r31.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 104 goto label55;
+
+        if $i0 == 105 goto label67;
+
+        if $i0 == 106 goto label55;
+
+     label67:
+        if $i0 == 109 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 8 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.TextView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        ru.jabox.android.smsbox.app.LoveBoxApplication $r1;
+        ru.jabox.android.smsbox.log.SendLogActivity $r2;
+        ru.jabox.android.smsbox.log.b $r3;
+        ru.jabox.android.smsbox.log.c $r4;
+        ru.jabox.android.smsbox.activity.HelpActivity $r5;
+        ru.jabox.android.smsbox.activity.ChooseTemplateActivity $r6;
+        ru.jabox.android.smsbox.activity.a $r7;
+        ru.jabox.android.smsbox.activity.SendMessageActivity $r8;
+        ru.jabox.android.smsbox.activity.g $r9;
+        ru.jabox.android.smsbox.activity.i $r10;
+        ru.jabox.android.smsbox.activity.h $r11;
+        ru.jabox.android.smsbox.d.a $r12;
+        android.app.Dialog $r13, $r31, $r40, $r52;
+        ru.jabox.android.smsbox.d.c $r14, $r53;
+        ru.jabox.android.smsbox.activity.e $r15;
+        ru.jabox.android.smsbox.activity.d $r16;
+        ru.jabox.android.smsbox.activity.j $r17;
+        ru.jabox.android.smsbox.d.b $r18, $r55;
+        ru.jabox.android.smsbox.activity.OurProjectsActivity $r19;
+        ru.jabox.android.smsbox.activity.l $r20;
+        ru.jabox.android.smsbox.activity.k $r21;
+        ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity $r22;
+        ru.jabox.android.smsbox.b.a $r23, $r24, $r27, $r28, $r33, $r34, $r44, $r45, $r48, $r49;
+        ru.jabox.android.smsbox.a.b $r25, $r29, $r35, $r46, $r50;
+        ru.jabox.android.smsbox.a.e $r26, $r47;
+        ru.jabox.android.smsbox.a.c $r30, $r51;
+        ru.jabox.android.smsbox.activity.u $r32;
+        boolean $z0, $z1, $z2;
+        ru.jabox.android.smsbox.a.d $r36;
+        ru.jabox.android.smsbox.activity.StartupActivity $r37;
+        ru.jabox.android.smsbox.activity.v $r38;
+        ru.jabox.android.smsbox.activity.o $r39;
+        ru.jabox.android.smsbox.activity.m $r41;
+        ru.jabox.android.smsbox.activity.p $r42;
+        ru.jabox.android.smsbox.activity.ChooseCategoryActivity $r43;
+        ru.jabox.android.smsbox.activity.r $r54;
+        ru.jabox.android.smsbox.activity.t $r56;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new ru.jabox.android.smsbox.app.LoveBoxApplication;
+
+        specialinvoke $r1.<ru.jabox.android.smsbox.app.LoveBoxApplication: void <init>()>();
+
+        virtualinvoke $r1.<ru.jabox.android.smsbox.AbstractSmsboxApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r2 = new ru.jabox.android.smsbox.log.SendLogActivity;
+
+        specialinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label07;
+
+     label03:
+        $r3 = new ru.jabox.android.smsbox.log.b;
+
+        specialinvoke $r3.<ru.jabox.android.smsbox.log.b: void <init>(ru.jabox.android.smsbox.log.SendLogActivity)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<ru.jabox.android.smsbox.log.b: void onCancel(android.content.DialogInterface)>(null);
+
+     label04:
+        $r4 = new ru.jabox.android.smsbox.log.c;
+
+        specialinvoke $r4.<ru.jabox.android.smsbox.log.c: void <init>(ru.jabox.android.smsbox.log.SendLogActivity)>($r2);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r4.<ru.jabox.android.smsbox.log.c: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        staticinvoke <ru.jabox.android.smsbox.log.SendLogActivity: void <clinit>()>();
+
+     label06:
+        if $i0 == 7 goto label03;
+
+     label07:
+        virtualinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void onPause()>();
+
+        if $i0 == 8 goto label02;
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label02;
+
+     label08:
+        if $i0 == 12 goto label10;
+
+        $r5 = new ru.jabox.android.smsbox.activity.HelpActivity;
+
+        specialinvoke $r5.<ru.jabox.android.smsbox.activity.HelpActivity: void <init>()>();
+
+        if $i0 == 13 goto label10;
+
+        virtualinvoke $r5.<ru.jabox.android.smsbox.activity.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        if $i0 == 20 goto label15;
+
+        $r6 = new ru.jabox.android.smsbox.activity.ChooseTemplateActivity;
+
+        specialinvoke $r6.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+        virtualinvoke $r6.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 23 goto label14;
+
+     label12:
+        $r7 = new ru.jabox.android.smsbox.activity.a;
+
+        specialinvoke $r7.<ru.jabox.android.smsbox.activity.a: void <init>(ru.jabox.android.smsbox.activity.ChooseTemplateActivity)>($r6);
+
+        if $i0 == 24 goto label13;
+
+        virtualinvoke $r7.<ru.jabox.android.smsbox.activity.a: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label13:
+        if $i0 == 25 goto label12;
+
+     label14:
+        if $i0 == 26 goto label11;
+
+        if $i0 == 27 goto label15;
+
+        if $i0 == 28 goto label11;
+
+     label15:
+        if $i0 == 30 goto label31;
+
+        $r8 = new ru.jabox.android.smsbox.activity.SendMessageActivity;
+
+        specialinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void <init>()>();
+
+        if $i0 == 31 goto label31;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 33 goto label30;
+
+     label17:
+        $r9 = new ru.jabox.android.smsbox.activity.g;
+
+        specialinvoke $r9.<ru.jabox.android.smsbox.activity.g: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 34 goto label18;
+
+        virtualinvoke $r9.<ru.jabox.android.smsbox.activity.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label18:
+        $r10 = new ru.jabox.android.smsbox.activity.i;
+
+        specialinvoke $r10.<ru.jabox.android.smsbox.activity.i: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 35 goto label19;
+
+        virtualinvoke $r10.<ru.jabox.android.smsbox.activity.i: void onClick(android.view.View)>(null);
+
+     label19:
+        $r11 = new ru.jabox.android.smsbox.activity.h;
+
+        specialinvoke $r11.<ru.jabox.android.smsbox.activity.h: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 36 goto label20;
+
+        virtualinvoke $r11.<ru.jabox.android.smsbox.activity.h: void onClick(android.view.View)>(null);
+
+     label20:
+        $r12 = new ru.jabox.android.smsbox.d.a;
+
+        specialinvoke $r12.<ru.jabox.android.smsbox.d.a: void <init>(android.app.Activity)>($r8);
+
+        if $i0 == 37 goto label21;
+
+        virtualinvoke $r12.<ru.jabox.android.smsbox.d.a: void onClick(android.view.View)>(null);
+
+     label21:
+        if $i0 == 38 goto label22;
+
+        $r13 = virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label22:
+        if $i0 == 39 goto label23;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label23:
+        if $i0 == 40 goto label24;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label24:
+        $r14 = new ru.jabox.android.smsbox.d.c;
+
+        specialinvoke $r14.<ru.jabox.android.smsbox.d.c: void <init>(android.app.Activity,android.widget.TextView)>($r8, null);
+
+        if $i0 == 41 goto label25;
+
+        virtualinvoke $r14.<ru.jabox.android.smsbox.d.c: void onClick(android.view.View)>(null);
+
+     label25:
+        $r15 = new ru.jabox.android.smsbox.activity.e;
+
+        specialinvoke $r15.<ru.jabox.android.smsbox.activity.e: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 42 goto label26;
+
+        virtualinvoke $r15.<ru.jabox.android.smsbox.activity.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label26:
+        $r16 = new ru.jabox.android.smsbox.activity.d;
+
+        specialinvoke $r16.<ru.jabox.android.smsbox.activity.d: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 43 goto label27;
+
+        virtualinvoke $r16.<ru.jabox.android.smsbox.activity.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r17 = new ru.jabox.android.smsbox.activity.j;
+
+        specialinvoke $r17.<ru.jabox.android.smsbox.activity.j: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 44 goto label28;
+
+        virtualinvoke $r17.<ru.jabox.android.smsbox.activity.j: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label28:
+        $r18 = new ru.jabox.android.smsbox.d.b;
+
+        specialinvoke $r18.<ru.jabox.android.smsbox.d.b: void <init>(android.app.Activity,android.view.View)>($r8, null);
+
+        if $i0 == 45 goto label29;
+
+        virtualinvoke $r18.<ru.jabox.android.smsbox.d.b: void onFocusChange(android.view.View,boolean)>(null, false);
+
+     label29:
+        if $i0 == 46 goto label17;
+
+     label30:
+        if $i0 == 47 goto label16;
+
+        if $i0 == 48 goto label31;
+
+        if $i0 == 49 goto label16;
+
+     label31:
+        if $i0 == 51 goto label37;
+
+        $r19 = new ru.jabox.android.smsbox.activity.OurProjectsActivity;
+
+        specialinvoke $r19.<ru.jabox.android.smsbox.activity.OurProjectsActivity: void <init>()>();
+
+        if $i0 == 52 goto label37;
+
+        virtualinvoke $r19.<ru.jabox.android.smsbox.activity.OurProjectsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        if $i0 == 54 goto label36;
+
+     label33:
+        $r20 = new ru.jabox.android.smsbox.activity.l;
+
+        specialinvoke $r20.<ru.jabox.android.smsbox.activity.l: void <init>(ru.jabox.android.smsbox.activity.OurProjectsActivity)>($r19);
+
+        if $i0 == 55 goto label34;
+
+        virtualinvoke $r20.<ru.jabox.android.smsbox.activity.l: void onClick(android.view.View)>(null);
+
+     label34:
+        $r21 = new ru.jabox.android.smsbox.activity.k;
+
+        specialinvoke $r21.<ru.jabox.android.smsbox.activity.k: void <init>(ru.jabox.android.smsbox.activity.OurProjectsActivity)>($r19);
+
+        if $i0 == 56 goto label35;
+
+        virtualinvoke $r21.<ru.jabox.android.smsbox.activity.k: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label35:
+        if $i0 == 57 goto label33;
+
+     label36:
+        if $i0 == 58 goto label32;
+
+        if $i0 == 59 goto label37;
+
+        if $i0 == 60 goto label32;
+
+     label37:
+        if $i0 == 62 goto label47;
+
+        $r22 = new ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity;
+
+        specialinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void <init>()>();
+
+        if $i0 == 63 goto label47;
+
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onResume()>();
+
+        if $i0 == 65 goto label46;
+
+     label39:
+        $r23 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r23.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r24 = null;
+
+        $r25 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r25.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r22, $r23, $r24, false);
+
+        $r26 = new ru.jabox.android.smsbox.a.e;
+
+        specialinvoke $r26.<ru.jabox.android.smsbox.a.e: void <init>(ru.jabox.android.smsbox.a.b)>($r25);
+
+        if $i0 == 66 goto label40;
+
+        virtualinvoke $r26.<ru.jabox.android.smsbox.a.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label40:
+        $r27 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r27.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r28 = null;
+
+        $r29 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r29.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r22, $r27, $r28, false);
+
+        $r30 = new ru.jabox.android.smsbox.a.c;
+
+        specialinvoke $r30.<ru.jabox.android.smsbox.a.c: void <init>(ru.jabox.android.smsbox.a.b)>($r29);
+
+        if $i0 == 67 goto label41;
+
+        virtualinvoke $r30.<ru.jabox.android.smsbox.a.c: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label41:
+        if $i0 == 68 goto label42;
+
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label42:
+        if $i0 == 69 goto label43;
+
+        $r31 = virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label43:
+        $r32 = new ru.jabox.android.smsbox.activity.u;
+
+        specialinvoke $r32.<ru.jabox.android.smsbox.activity.u: void <init>(ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity)>($r22);
+
+        if $i0 == 70 goto label44;
+
+        $z0 = virtualinvoke $r32.<ru.jabox.android.smsbox.activity.u: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label44:
+        $r33 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r33.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r34 = null;
+
+        $r35 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r35.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r22, $r33, $r34, false);
+
+        $r36 = new ru.jabox.android.smsbox.a.d;
+
+        specialinvoke $r36.<ru.jabox.android.smsbox.a.d: void <init>(ru.jabox.android.smsbox.a.b)>($r35);
+
+        if $i0 == 71 goto label45;
+
+        virtualinvoke $r36.<ru.jabox.android.smsbox.a.d: void onCancel(android.content.DialogInterface)>(null);
+
+     label45:
+        if $i0 == 72 goto label39;
+
+     label46:
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onPause()>();
+
+        if $i0 == 73 goto label38;
+
+        if $i0 == 74 goto label47;
+
+        if $i0 == 75 goto label38;
+
+     label47:
+        if $i0 == 77 goto label57;
+
+        $r37 = new ru.jabox.android.smsbox.activity.StartupActivity;
+
+        specialinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: void <init>()>();
+
+        if $i0 == 78 goto label57;
+
+        virtualinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        if $i0 == 80 goto label56;
+
+     label49:
+        $r38 = new ru.jabox.android.smsbox.activity.v;
+
+        specialinvoke $r38.<ru.jabox.android.smsbox.activity.v: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r37);
+
+        if $i0 == 81 goto label50;
+
+        virtualinvoke $r38.<ru.jabox.android.smsbox.activity.v: void onClick(android.view.View)>(null);
+
+     label50:
+        $r39 = new ru.jabox.android.smsbox.activity.o;
+
+        specialinvoke $r39.<ru.jabox.android.smsbox.activity.o: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r37);
+
+        if $i0 == 82 goto label51;
+
+        virtualinvoke $r39.<ru.jabox.android.smsbox.activity.o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label51:
+        if $i0 == 83 goto label52;
+
+        $r40 = virtualinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label52:
+        if $i0 == 84 goto label53;
+
+        virtualinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label53:
+        $r41 = new ru.jabox.android.smsbox.activity.m;
+
+        specialinvoke $r41.<ru.jabox.android.smsbox.activity.m: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r37);
+
+        if $i0 == 85 goto label54;
+
+        virtualinvoke $r41.<ru.jabox.android.smsbox.activity.m: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label54:
+        $r42 = new ru.jabox.android.smsbox.activity.p;
+
+        specialinvoke $r42.<ru.jabox.android.smsbox.activity.p: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r37);
+
+        if $i0 == 86 goto label55;
+
+        virtualinvoke $r42.<ru.jabox.android.smsbox.activity.p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label55:
+        if $i0 == 87 goto label49;
+
+     label56:
+        virtualinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: void onPause()>();
+
+        if $i0 == 88 goto label48;
+
+        if $i0 == 89 goto label57;
+
+        if $i0 == 90 goto label48;
+
+     label57:
+        if $i0 == 95 goto label72;
+
+        $r43 = new ru.jabox.android.smsbox.activity.ChooseCategoryActivity;
+
+        specialinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void <init>()>();
+
+        if $i0 == 96 goto label72;
+
+        virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onCreate(android.os.Bundle)>(null);
+
+     label58:
+        if $i0 == 98 goto label71;
+
+     label59:
+        $r44 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r44.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r45 = null;
+
+        $r46 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r46.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r43, $r44, $r45, false);
+
+        $r47 = new ru.jabox.android.smsbox.a.e;
+
+        specialinvoke $r47.<ru.jabox.android.smsbox.a.e: void <init>(ru.jabox.android.smsbox.a.b)>($r46);
+
+        if $i0 == 99 goto label60;
+
+        virtualinvoke $r47.<ru.jabox.android.smsbox.a.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label60:
+        $r48 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r48.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r49 = null;
+
+        $r50 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r50.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r43, $r48, $r49, false);
+
+        $r51 = new ru.jabox.android.smsbox.a.c;
+
+        specialinvoke $r51.<ru.jabox.android.smsbox.a.c: void <init>(ru.jabox.android.smsbox.a.b)>($r50);
+
+        if $i0 == 100 goto label61;
+
+        virtualinvoke $r51.<ru.jabox.android.smsbox.a.c: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label61:
+        if $i0 == 101 goto label62;
+
+        virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label62:
+        if $i0 == 102 goto label63;
+
+        $r52 = virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label63:
+        if $i0 == 103 goto label64;
+
+        virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label64:
+        if $i0 == 104 goto label65;
+
+        $z1 = virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label65:
+        if $i0 == 105 goto label66;
+
+        $z2 = virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label66:
+        $r53 = new ru.jabox.android.smsbox.d.c;
+
+        specialinvoke $r53.<ru.jabox.android.smsbox.d.c: void <init>(android.app.Activity,android.widget.TextView)>($r43, null);
+
+        if $i0 == 106 goto label67;
+
+        virtualinvoke $r53.<ru.jabox.android.smsbox.d.c: void onClick(android.view.View)>(null);
+
+     label67:
+        $r54 = new ru.jabox.android.smsbox.activity.r;
+
+        specialinvoke $r54.<ru.jabox.android.smsbox.activity.r: void <init>(ru.jabox.android.smsbox.activity.ChooseCategoryActivity)>($r43);
+
+        if $i0 == 107 goto label68;
+
+        virtualinvoke $r54.<ru.jabox.android.smsbox.activity.r: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label68:
+        $r55 = new ru.jabox.android.smsbox.d.b;
+
+        specialinvoke $r55.<ru.jabox.android.smsbox.d.b: void <init>(android.app.Activity,android.view.View)>($r43, null);
+
+        if $i0 == 108 goto label69;
+
+        virtualinvoke $r55.<ru.jabox.android.smsbox.d.b: void onFocusChange(android.view.View,boolean)>(null, false);
+
+     label69:
+        $r56 = new ru.jabox.android.smsbox.activity.t;
+
+        specialinvoke $r56.<ru.jabox.android.smsbox.activity.t: void <init>(ru.jabox.android.smsbox.activity.ChooseCategoryActivity)>($r43);
+
+        if $i0 == 109 goto label70;
+
+        virtualinvoke $r56.<ru.jabox.android.smsbox.activity.t: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label70:
+        if $i0 == 110 goto label59;
+
+     label71:
+        virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 111 goto label58;
+
+        if $i0 == 112 goto label72;
+
+        if $i0 == 113 goto label58;
+
+     label72:
+        if $i0 == 116 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 50 callback methods for 8 components
+Found {res/layout/agreement.xml=[2131296257 - android.widget.TextView, 2131296256 - android.widget.ScrollView], res/layout/logo_layout.xml=[2131296273 - android.widget.ImageView, 2131296272 - android.widget.LinearLayout, 2131296274 - android.widget.TextView], res/layout/update_layout.xml=[-1 - android.widget.LinearLayout, 2131296299 - android.widget.TextView, 2131296298 - android.widget.ScrollView], res/layout/category_row.xml=[2131296262 - android.widget.ImageView, -1 - android.widget.LinearLayout, -1 - android.widget.ImageView, 2131296261 - android.widget.LinearLayout, 2131296263 - android.widget.TextView], res/layout/header_layout.xml=[2131296269 - android.widget.TextView, 2131296268 - android.widget.ImageView, -1 - android.widget.RelativeLayout], res/layout/help_layout.xml=[-1 - android.widget.LinearLayout, 2131296271 - android.widget.TextView, 2131296270 - android.widget.ScrollView], res/layout/send_to_friend.xml=[2131296290 - android.widget.EditText, 2131296288 - android.widget.TextView, 2131296289 - android.widget.LinearLayout, -1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131296295 - android.widget.ScrollView, 2131296291 - android.widget.ImageButton], res/layout/our_projects_page.xml=[2131296275 - android.widget.RelativeLayout, 2131296260 - android.widget.ListView, 2131296259 - android.widget.LinearLayout, 2131296276 - android.widget.Button], res/layout/send_layout.xml=[2131296283 - android.widget.Button, 2131296287 - android.widget.LinearLayout, 2131296282 - android.widget.Button, 2131296286 - android.widget.Spinner, 2131296288 - android.widget.TextView, 2131296289 - android.widget.LinearLayout, -1 - android.widget.LinearLayout, 2131296290 - android.widget.EditText, -1 - android.widget.TextView, 2131296291 - android.widget.ImageButton, 2131296292 - android.widget.LinearLayout, 2131296293 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131296294 - android.widget.EditText, 2131296284 - android.widget.LinearLayout, -1 - android.widget.ScrollView, 2131296285 - android.widget.TextView, 2131296280 - android.widget.LinearLayout, 2131296281 - android.widget.LinearLayout], res/layout/template_row.xml=[-1 - android.widget.LinearLayout, 2131296297 - android.widget.TextView], res/layout/category_layout.xml=[2131296260 - android.widget.ListView, 2131296258 - android.widget.LinearLayout, 2131296259 - android.widget.LinearLayout], res/layout/template_layout.xml=[2131296296 - android.widget.LinearLayout, 2131296260 - android.widget.ListView, 2131296259 - android.widget.LinearLayout], res/layout/confirm_layout.xml=[2131296265 - android.widget.CheckBox, -1 - android.widget.LinearLayout, 2131296266 - android.widget.TextView, 2131296264 - android.widget.ScrollView], res/layout/our_projects_row.xml=[2131296278 - android.widget.TextView, 2131296279 - android.widget.TextView, 2131296261 - android.widget.RelativeLayout, 2131296277 - android.widget.ImageView], res/layout/copy_of_our_projects_page.xml=[2131296267 - android.widget.LinearLayout, 2131296260 - android.widget.ListView, 2131296259 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 50 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/0ff7e724669c6282391de112bf3bae803b62bf25def662e5fcaabeab30b12767.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.TextView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class ru.jabox.android.smsbox.b.a, substituting with null...
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        ru.jabox.android.smsbox.app.LoveBoxApplication $r1;
+        ru.jabox.android.smsbox.log.SendLogActivity $r2;
+        ru.jabox.android.smsbox.log.c $r3;
+        ru.jabox.android.smsbox.log.b $r4;
+        ru.jabox.android.smsbox.activity.HelpActivity $r5;
+        ru.jabox.android.smsbox.activity.ChooseTemplateActivity $r6;
+        ru.jabox.android.smsbox.activity.a $r7;
+        ru.jabox.android.smsbox.activity.SendMessageActivity $r8;
+        ru.jabox.android.smsbox.activity.h $r9;
+        ru.jabox.android.smsbox.d.a $r10;
+        ru.jabox.android.smsbox.activity.e $r11;
+        ru.jabox.android.smsbox.activity.j $r12;
+        ru.jabox.android.smsbox.activity.i $r13;
+        android.app.Dialog $r14, $r23, $r39, $r47;
+        ru.jabox.android.smsbox.d.c $r15, $r45;
+        ru.jabox.android.smsbox.d.b $r16, $r48;
+        ru.jabox.android.smsbox.activity.g $r17;
+        ru.jabox.android.smsbox.activity.d $r18;
+        ru.jabox.android.smsbox.activity.OurProjectsActivity $r19;
+        ru.jabox.android.smsbox.activity.l $r20;
+        ru.jabox.android.smsbox.activity.k $r21;
+        ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity $r22;
+        ru.jabox.android.smsbox.activity.u $r24;
+        boolean $z0, $z1, $z2;
+        ru.jabox.android.smsbox.b.a $r25, $r26, $r29, $r30, $r33, $r34, $r49, $r50, $r53, $r54;
+        ru.jabox.android.smsbox.a.b $r27, $r31, $r35, $r51, $r55;
+        ru.jabox.android.smsbox.a.d $r28;
+        ru.jabox.android.smsbox.a.c $r32, $r52;
+        ru.jabox.android.smsbox.a.e $r36, $r56;
+        ru.jabox.android.smsbox.activity.StartupActivity $r37;
+        ru.jabox.android.smsbox.activity.o $r38;
+        ru.jabox.android.smsbox.activity.v $r40;
+        ru.jabox.android.smsbox.activity.m $r41;
+        ru.jabox.android.smsbox.activity.p $r42;
+        ru.jabox.android.smsbox.activity.ChooseCategoryActivity $r43;
+        ru.jabox.android.smsbox.activity.r $r44;
+        ru.jabox.android.smsbox.activity.t $r46;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new ru.jabox.android.smsbox.app.LoveBoxApplication;
+
+        specialinvoke $r1.<ru.jabox.android.smsbox.app.LoveBoxApplication: void <init>()>();
+
+        virtualinvoke $r1.<ru.jabox.android.smsbox.AbstractSmsboxApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r2 = new ru.jabox.android.smsbox.log.SendLogActivity;
+
+        specialinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label07;
+
+     label03:
+        $r3 = new ru.jabox.android.smsbox.log.c;
+
+        specialinvoke $r3.<ru.jabox.android.smsbox.log.c: void <init>(ru.jabox.android.smsbox.log.SendLogActivity)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<ru.jabox.android.smsbox.log.c: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        staticinvoke <ru.jabox.android.smsbox.log.SendLogActivity: void <clinit>()>();
+
+     label05:
+        $r4 = new ru.jabox.android.smsbox.log.b;
+
+        specialinvoke $r4.<ru.jabox.android.smsbox.log.b: void <init>(ru.jabox.android.smsbox.log.SendLogActivity)>($r2);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r4.<ru.jabox.android.smsbox.log.b: void onCancel(android.content.DialogInterface)>(null);
+
+     label06:
+        if $i0 == 7 goto label03;
+
+     label07:
+        virtualinvoke $r2.<ru.jabox.android.smsbox.log.SendLogActivity: void onPause()>();
+
+        if $i0 == 8 goto label02;
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label02;
+
+     label08:
+        if $i0 == 12 goto label10;
+
+        $r5 = new ru.jabox.android.smsbox.activity.HelpActivity;
+
+        specialinvoke $r5.<ru.jabox.android.smsbox.activity.HelpActivity: void <init>()>();
+
+        if $i0 == 13 goto label10;
+
+        virtualinvoke $r5.<ru.jabox.android.smsbox.activity.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        if $i0 == 20 goto label15;
+
+        $r6 = new ru.jabox.android.smsbox.activity.ChooseTemplateActivity;
+
+        specialinvoke $r6.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+        virtualinvoke $r6.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 23 goto label14;
+
+     label12:
+        $r7 = new ru.jabox.android.smsbox.activity.a;
+
+        specialinvoke $r7.<ru.jabox.android.smsbox.activity.a: void <init>(ru.jabox.android.smsbox.activity.ChooseTemplateActivity)>($r6);
+
+        if $i0 == 24 goto label13;
+
+        virtualinvoke $r7.<ru.jabox.android.smsbox.activity.a: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label13:
+        if $i0 == 25 goto label12;
+
+     label14:
+        if $i0 == 26 goto label11;
+
+        if $i0 == 27 goto label15;
+
+        if $i0 == 28 goto label11;
+
+     label15:
+        if $i0 == 30 goto label31;
+
+        $r8 = new ru.jabox.android.smsbox.activity.SendMessageActivity;
+
+        specialinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void <init>()>();
+
+        if $i0 == 31 goto label31;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 33 goto label30;
+
+     label17:
+        $r9 = new ru.jabox.android.smsbox.activity.h;
+
+        specialinvoke $r9.<ru.jabox.android.smsbox.activity.h: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 34 goto label18;
+
+        virtualinvoke $r9.<ru.jabox.android.smsbox.activity.h: void onClick(android.view.View)>(null);
+
+     label18:
+        $r10 = new ru.jabox.android.smsbox.d.a;
+
+        specialinvoke $r10.<ru.jabox.android.smsbox.d.a: void <init>(android.app.Activity)>($r8);
+
+        if $i0 == 35 goto label19;
+
+        virtualinvoke $r10.<ru.jabox.android.smsbox.d.a: void onClick(android.view.View)>(null);
+
+     label19:
+        $r11 = new ru.jabox.android.smsbox.activity.e;
+
+        specialinvoke $r11.<ru.jabox.android.smsbox.activity.e: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 36 goto label20;
+
+        virtualinvoke $r11.<ru.jabox.android.smsbox.activity.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label20:
+        $r12 = new ru.jabox.android.smsbox.activity.j;
+
+        specialinvoke $r12.<ru.jabox.android.smsbox.activity.j: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 37 goto label21;
+
+        virtualinvoke $r12.<ru.jabox.android.smsbox.activity.j: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label21:
+        $r13 = new ru.jabox.android.smsbox.activity.i;
+
+        specialinvoke $r13.<ru.jabox.android.smsbox.activity.i: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 38 goto label22;
+
+        virtualinvoke $r13.<ru.jabox.android.smsbox.activity.i: void onClick(android.view.View)>(null);
+
+     label22:
+        if $i0 == 39 goto label23;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label23:
+        if $i0 == 40 goto label24;
+
+        $r14 = virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label24:
+        if $i0 == 41 goto label25;
+
+        virtualinvoke $r8.<ru.jabox.android.smsbox.activity.SendMessageActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label25:
+        $r15 = new ru.jabox.android.smsbox.d.c;
+
+        specialinvoke $r15.<ru.jabox.android.smsbox.d.c: void <init>(android.app.Activity,android.widget.TextView)>($r8, null);
+
+        if $i0 == 42 goto label26;
+
+        virtualinvoke $r15.<ru.jabox.android.smsbox.d.c: void onClick(android.view.View)>(null);
+
+     label26:
+        $r16 = new ru.jabox.android.smsbox.d.b;
+
+        specialinvoke $r16.<ru.jabox.android.smsbox.d.b: void <init>(android.app.Activity,android.view.View)>($r8, null);
+
+        if $i0 == 43 goto label27;
+
+        virtualinvoke $r16.<ru.jabox.android.smsbox.d.b: void onFocusChange(android.view.View,boolean)>(null, false);
+
+     label27:
+        $r17 = new ru.jabox.android.smsbox.activity.g;
+
+        specialinvoke $r17.<ru.jabox.android.smsbox.activity.g: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 44 goto label28;
+
+        virtualinvoke $r17.<ru.jabox.android.smsbox.activity.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r18 = new ru.jabox.android.smsbox.activity.d;
+
+        specialinvoke $r18.<ru.jabox.android.smsbox.activity.d: void <init>(ru.jabox.android.smsbox.activity.SendMessageActivity)>($r8);
+
+        if $i0 == 45 goto label29;
+
+        virtualinvoke $r18.<ru.jabox.android.smsbox.activity.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        if $i0 == 46 goto label17;
+
+     label30:
+        if $i0 == 47 goto label16;
+
+        if $i0 == 48 goto label31;
+
+        if $i0 == 49 goto label16;
+
+     label31:
+        if $i0 == 51 goto label37;
+
+        $r19 = new ru.jabox.android.smsbox.activity.OurProjectsActivity;
+
+        specialinvoke $r19.<ru.jabox.android.smsbox.activity.OurProjectsActivity: void <init>()>();
+
+        if $i0 == 52 goto label37;
+
+        virtualinvoke $r19.<ru.jabox.android.smsbox.activity.OurProjectsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        if $i0 == 54 goto label36;
+
+     label33:
+        $r20 = new ru.jabox.android.smsbox.activity.l;
+
+        specialinvoke $r20.<ru.jabox.android.smsbox.activity.l: void <init>(ru.jabox.android.smsbox.activity.OurProjectsActivity)>($r19);
+
+        if $i0 == 55 goto label34;
+
+        virtualinvoke $r20.<ru.jabox.android.smsbox.activity.l: void onClick(android.view.View)>(null);
+
+     label34:
+        $r21 = new ru.jabox.android.smsbox.activity.k;
+
+        specialinvoke $r21.<ru.jabox.android.smsbox.activity.k: void <init>(ru.jabox.android.smsbox.activity.OurProjectsActivity)>($r19);
+
+        if $i0 == 56 goto label35;
+
+        virtualinvoke $r21.<ru.jabox.android.smsbox.activity.k: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label35:
+        if $i0 == 57 goto label33;
+
+     label36:
+        if $i0 == 58 goto label32;
+
+        if $i0 == 59 goto label37;
+
+        if $i0 == 60 goto label32;
+
+     label37:
+        if $i0 == 62 goto label47;
+
+        $r22 = new ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity;
+
+        specialinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void <init>()>();
+
+        if $i0 == 63 goto label47;
+
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onResume()>();
+
+        if $i0 == 65 goto label46;
+
+     label39:
+        if $i0 == 66 goto label40;
+
+        $r23 = virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label40:
+        if $i0 == 67 goto label41;
+
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label41:
+        $r24 = new ru.jabox.android.smsbox.activity.u;
+
+        specialinvoke $r24.<ru.jabox.android.smsbox.activity.u: void <init>(ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity)>($r22);
+
+        if $i0 == 68 goto label42;
+
+        $z0 = virtualinvoke $r24.<ru.jabox.android.smsbox.activity.u: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label42:
+        $r25 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r25.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r26 = null;
+
+        $r27 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r27.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r22, $r25, $r26, false);
+
+        $r28 = new ru.jabox.android.smsbox.a.d;
+
+        specialinvoke $r28.<ru.jabox.android.smsbox.a.d: void <init>(ru.jabox.android.smsbox.a.b)>($r27);
+
+        if $i0 == 69 goto label43;
+
+        virtualinvoke $r28.<ru.jabox.android.smsbox.a.d: void onCancel(android.content.DialogInterface)>(null);
+
+     label43:
+        $r29 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r29.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r30 = null;
+
+        $r31 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r31.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r22, $r29, $r30, false);
+
+        $r32 = new ru.jabox.android.smsbox.a.c;
+
+        specialinvoke $r32.<ru.jabox.android.smsbox.a.c: void <init>(ru.jabox.android.smsbox.a.b)>($r31);
+
+        if $i0 == 70 goto label44;
+
+        virtualinvoke $r32.<ru.jabox.android.smsbox.a.c: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label44:
+        $r33 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r33.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r34 = null;
+
+        $r35 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r35.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r22, $r33, $r34, false);
+
+        $r36 = new ru.jabox.android.smsbox.a.e;
+
+        specialinvoke $r36.<ru.jabox.android.smsbox.a.e: void <init>(ru.jabox.android.smsbox.a.b)>($r35);
+
+        if $i0 == 71 goto label45;
+
+        virtualinvoke $r36.<ru.jabox.android.smsbox.a.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label45:
+        if $i0 == 72 goto label39;
+
+     label46:
+        virtualinvoke $r22.<ru.jabox.android.smsbox.activity.SmsboxPreferencesActivity: void onPause()>();
+
+        if $i0 == 73 goto label38;
+
+        if $i0 == 74 goto label47;
+
+        if $i0 == 75 goto label38;
+
+     label47:
+        if $i0 == 77 goto label57;
+
+        $r37 = new ru.jabox.android.smsbox.activity.StartupActivity;
+
+        specialinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: void <init>()>();
+
+        if $i0 == 78 goto label57;
+
+        virtualinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        if $i0 == 80 goto label56;
+
+     label49:
+        $r38 = new ru.jabox.android.smsbox.activity.o;
+
+        specialinvoke $r38.<ru.jabox.android.smsbox.activity.o: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r37);
+
+        if $i0 == 81 goto label50;
+
+        virtualinvoke $r38.<ru.jabox.android.smsbox.activity.o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label50:
+        if $i0 == 82 goto label51;
+
+        $r39 = virtualinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label51:
+        if $i0 == 83 goto label52;
+
+        virtualinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label52:
+        $r40 = new ru.jabox.android.smsbox.activity.v;
+
+        specialinvoke $r40.<ru.jabox.android.smsbox.activity.v: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r37);
+
+        if $i0 == 84 goto label53;
+
+        virtualinvoke $r40.<ru.jabox.android.smsbox.activity.v: void onClick(android.view.View)>(null);
+
+     label53:
+        $r41 = new ru.jabox.android.smsbox.activity.m;
+
+        specialinvoke $r41.<ru.jabox.android.smsbox.activity.m: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r37);
+
+        if $i0 == 85 goto label54;
+
+        virtualinvoke $r41.<ru.jabox.android.smsbox.activity.m: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label54:
+        $r42 = new ru.jabox.android.smsbox.activity.p;
+
+        specialinvoke $r42.<ru.jabox.android.smsbox.activity.p: void <init>(ru.jabox.android.smsbox.activity.StartupActivity)>($r37);
+
+        if $i0 == 86 goto label55;
+
+        virtualinvoke $r42.<ru.jabox.android.smsbox.activity.p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label55:
+        if $i0 == 87 goto label49;
+
+     label56:
+        virtualinvoke $r37.<ru.jabox.android.smsbox.activity.StartupActivity: void onPause()>();
+
+        if $i0 == 88 goto label48;
+
+        if $i0 == 89 goto label57;
+
+        if $i0 == 90 goto label48;
+
+     label57:
+        if $i0 == 95 goto label72;
+
+        $r43 = new ru.jabox.android.smsbox.activity.ChooseCategoryActivity;
+
+        specialinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void <init>()>();
+
+        if $i0 == 96 goto label72;
+
+        virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onCreate(android.os.Bundle)>(null);
+
+     label58:
+        if $i0 == 98 goto label71;
+
+     label59:
+        $r44 = new ru.jabox.android.smsbox.activity.r;
+
+        specialinvoke $r44.<ru.jabox.android.smsbox.activity.r: void <init>(ru.jabox.android.smsbox.activity.ChooseCategoryActivity)>($r43);
+
+        if $i0 == 99 goto label60;
+
+        virtualinvoke $r44.<ru.jabox.android.smsbox.activity.r: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label60:
+        $r45 = new ru.jabox.android.smsbox.d.c;
+
+        specialinvoke $r45.<ru.jabox.android.smsbox.d.c: void <init>(android.app.Activity,android.widget.TextView)>($r43, null);
+
+        if $i0 == 100 goto label61;
+
+        virtualinvoke $r45.<ru.jabox.android.smsbox.d.c: void onClick(android.view.View)>(null);
+
+     label61:
+        $r46 = new ru.jabox.android.smsbox.activity.t;
+
+        specialinvoke $r46.<ru.jabox.android.smsbox.activity.t: void <init>(ru.jabox.android.smsbox.activity.ChooseCategoryActivity)>($r43);
+
+        if $i0 == 101 goto label62;
+
+        virtualinvoke $r46.<ru.jabox.android.smsbox.activity.t: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label62:
+        if $i0 == 102 goto label63;
+
+        $r47 = virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label63:
+        if $i0 == 103 goto label64;
+
+        $z1 = virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label64:
+        if $i0 == 104 goto label65;
+
+        virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label65:
+        if $i0 == 105 goto label66;
+
+        $z2 = virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label66:
+        if $i0 == 106 goto label67;
+
+        virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label67:
+        $r48 = new ru.jabox.android.smsbox.d.b;
+
+        specialinvoke $r48.<ru.jabox.android.smsbox.d.b: void <init>(android.app.Activity,android.view.View)>($r43, null);
+
+        if $i0 == 107 goto label68;
+
+        virtualinvoke $r48.<ru.jabox.android.smsbox.d.b: void onFocusChange(android.view.View,boolean)>(null, false);
+
+     label68:
+        $r49 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r49.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r50 = null;
+
+        $r51 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r51.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r43, $r49, $r50, false);
+
+        $r52 = new ru.jabox.android.smsbox.a.c;
+
+        specialinvoke $r52.<ru.jabox.android.smsbox.a.c: void <init>(ru.jabox.android.smsbox.a.b)>($r51);
+
+        if $i0 == 108 goto label69;
+
+        virtualinvoke $r52.<ru.jabox.android.smsbox.a.c: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label69:
+        $r53 = new ru.jabox.android.smsbox.b.a;
+
+        specialinvoke $r53.<ru.jabox.android.smsbox.b.a: void <init>(java.lang.String)>("");
+
+        $r54 = null;
+
+        $r55 = new ru.jabox.android.smsbox.a.b;
+
+        specialinvoke $r55.<ru.jabox.android.smsbox.a.b: void <init>(android.app.Activity,ru.jabox.android.smsbox.b.a,ru.jabox.android.smsbox.b.a,boolean)>($r43, $r53, $r54, false);
+
+        $r56 = new ru.jabox.android.smsbox.a.e;
+
+        specialinvoke $r56.<ru.jabox.android.smsbox.a.e: void <init>(ru.jabox.android.smsbox.a.b)>($r55);
+
+        if $i0 == 109 goto label70;
+
+        virtualinvoke $r56.<ru.jabox.android.smsbox.a.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label70:
+        if $i0 == 110 goto label59;
+
+     label71:
+        virtualinvoke $r43.<ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 111 goto label58;
+
+        if $i0 == 112 goto label72;
+
+        if $i0 == 113 goto label58;
+
+     label72:
+        if $i0 == 116 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.524703777 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.058976912 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1681 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 87 sources and 107 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 4300
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 29869
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 76161 forward and 46699 backward edges solved, processing 6 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 6 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.0088618 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r6, $r5) in method <ru.jabox.android.smsbox.log.SendLogActivity: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r0.<ru.jabox.android.smsbox.log.SendLogActivity: android.content.Intent getIntent()>() in method <ru.jabox.android.smsbox.log.SendLogActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r4) in method <ru.jabox.android.smsbox.activity.SendMessageActivity: void onPrepareDialog(int,android.app.Dialog)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <ru.jabox.android.smsbox.activity.SendMessageActivity: void onPrepareDialog(int,android.app.Dialog)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r15, $r16) in method <ru.jabox.android.smsbox.c.a: void a(ru.jabox.android.smsbox.b.a,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("templateId") in method <ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void startActivity(android.content.Intent)>($r1) in method <ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void a(ru.jabox.android.smsbox.activity.ChooseTemplateActivity,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("categoryId") in method <ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r5) in method <ru.jabox.android.smsbox.c.b: java.util.ArrayList b(android.content.ContextWrapper,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("categoryId") in method <ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("templateSenderName") in method <ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r8, $r14) in method <ru.jabox.android.smsbox.d.c: void a(int,int,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <ru.jabox.android.smsbox.activity.SendMessageActivity: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onActivityResult(int,int,android.content.Intent)>
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r6, $r5), from the following sources:
+	- $r4 = virtualinvoke $r0.<ru.jabox.android.smsbox.log.SendLogActivity: android.content.Intent getIntent()>() (in <ru.jabox.android.smsbox.log.SendLogActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r2, $r4), from the following sources:
+	- $i0 := @parameter0: int (in <ru.jabox.android.smsbox.activity.SendMessageActivity: void onPrepareDialog(int,android.app.Dialog)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r15, $r16), from the following sources:
+	- $r6 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("templateId") (in <ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r0.<ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void startActivity(android.content.Intent)>($r1), from the following sources:
+	- $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("categoryId") (in <ru.jabox.android.smsbox.activity.ChooseTemplateActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r3, $r5), from the following sources:
+	- $r6 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("categoryId") (in <ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>)
+	- $r6 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("templateSenderName") (in <ru.jabox.android.smsbox.activity.SendMessageActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r8, $r14), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <ru.jabox.android.smsbox.activity.SendMessageActivity: void onActivityResult(int,int,android.content.Intent)>)
+	- $r1 := @parameter2: android.content.Intent (in <ru.jabox.android.smsbox.activity.ChooseCategoryActivity: void onActivityResult(int,int,android.content.Intent)>)
+Maximum memory consumption: 369.988792 MB
+Analysis has run for 7.266989917 seconds

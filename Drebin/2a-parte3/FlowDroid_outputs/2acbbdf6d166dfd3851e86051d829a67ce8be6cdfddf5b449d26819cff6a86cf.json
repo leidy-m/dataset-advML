@@ -1,0 +1,3609 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.020463639 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.edwardkim.android.screenshotit.activities.ScreenShotIt $r1;
+        com.edwardkim.android.screenshotit.activities.ScreenShotCountdown $r2;
+        com.kejikeji.MainRun $r3;
+        android.os.IBinder $r4, $r6, $r9, $r15;
+        com.kejikeji.SystemPlus $r5;
+        com.kejikeji.ForAlarm $r7;
+        com.edwardkim.android.screenshotit.services.ScreenShotService $r8;
+        com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver $r10;
+        com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver $r11;
+        com.kejikeji.AdStartBroadcast $r12;
+        com.edwardkim.android.screenshotit.activities.Crop $r13;
+        com.kejikeji.AdSmsService $r14;
+        com.edwardkim.android.screenshotit.activities.Tutorial3 $r16;
+        com.edwardkim.android.screenshotit.activities.Tutorial2 $r17;
+        com.edwardkim.android.screenshotit.activities.Tutorial1 $r18;
+        com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider $r19;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label05;
+
+        $r1 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        if $i0 == 1 goto label05;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onResume()>();
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onPause()>();
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 3 goto label03;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onStop()>();
+
+        if $i0 == 4 goto label04;
+
+        if $i0 == 5 goto label02;
+
+     label04:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onDestroy()>();
+
+     label05:
+        if $i0 == 7 goto label09;
+
+        $r2 = new com.edwardkim.android.screenshotit.activities.ScreenShotCountdown;
+
+        specialinvoke $r2.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void <init>()>();
+
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onStart()>();
+
+     label07:
+        virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onResume()>();
+
+        virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onPause()>();
+
+        virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 10 goto label07;
+
+        virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onStop()>();
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label06;
+
+     label08:
+        virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onDestroy()>();
+
+     label09:
+        if $i0 == 14 goto label13;
+
+        $r3 = new com.kejikeji.MainRun;
+
+        specialinvoke $r3.<com.kejikeji.MainRun: void <init>()>();
+
+        virtualinvoke $r3.<com.kejikeji.MainRun: void onCreate()>();
+
+        virtualinvoke $r3.<com.kejikeji.MainRun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 15 goto label11;
+
+        if $i0 == 16 goto label10;
+
+     label11:
+        $r4 = virtualinvoke $r3.<com.kejikeji.MainRun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 18 goto label13;
+
+        if $i0 == 19 goto label12;
+
+     label13:
+        if $i0 == 20 goto label17;
+
+        $r5 = new com.kejikeji.SystemPlus;
+
+        specialinvoke $r5.<com.kejikeji.SystemPlus: void <init>()>();
+
+        virtualinvoke $r5.<com.kejikeji.SystemPlus: void onCreate()>();
+
+     label14:
+        if $i0 == 21 goto label15;
+
+        if $i0 == 22 goto label14;
+
+     label15:
+        $r6 = virtualinvoke $r5.<com.kejikeji.SystemPlus: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label16:
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label16;
+
+     label17:
+        if $i0 == 26 goto label19;
+
+        $r7 = new com.kejikeji.ForAlarm;
+
+        specialinvoke $r7.<com.kejikeji.ForAlarm: void <init>()>();
+
+        if $i0 == 27 goto label19;
+
+     label18:
+        virtualinvoke $r7.<com.kejikeji.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 29 goto label18;
+
+     label19:
+        if $i0 == 30 goto label24;
+
+        $r8 = new com.edwardkim.android.screenshotit.services.ScreenShotService;
+
+        specialinvoke $r8.<com.edwardkim.android.screenshotit.services.ScreenShotService: void <init>()>();
+
+        virtualinvoke $r8.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onCreate()>();
+
+        virtualinvoke $r8.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label20:
+        if $i0 == 31 goto label21;
+
+        if $i0 == 32 goto label20;
+
+     label21:
+        $r9 = virtualinvoke $r8.<com.edwardkim.android.screenshotit.services.ScreenShotService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label22:
+        if $i0 == 34 goto label23;
+
+        if $i0 == 35 goto label22;
+
+     label23:
+        virtualinvoke $r8.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onDestroy()>();
+
+     label24:
+        if $i0 == 36 goto label26;
+
+        $r10 = new com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver;
+
+        specialinvoke $r10.<com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver: void <init>()>();
+
+        if $i0 == 37 goto label26;
+
+     label25:
+        virtualinvoke $r10.<com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label25;
+
+     label26:
+        if $i0 == 40 goto label28;
+
+        $r11 = new com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver;
+
+        specialinvoke $r11.<com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void <init>()>();
+
+        if $i0 == 41 goto label28;
+
+     label27:
+        virtualinvoke $r11.<com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label27;
+
+     label28:
+        if $i0 == 44 goto label30;
+
+        $r12 = new com.kejikeji.AdStartBroadcast;
+
+        specialinvoke $r12.<com.kejikeji.AdStartBroadcast: void <init>()>();
+
+        if $i0 == 45 goto label30;
+
+     label29:
+        virtualinvoke $r12.<com.kejikeji.AdStartBroadcast: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 47 goto label29;
+
+     label30:
+        if $i0 == 48 goto label34;
+
+        $r13 = new com.edwardkim.android.screenshotit.activities.Crop;
+
+        specialinvoke $r13.<com.edwardkim.android.screenshotit.activities.Crop: void <init>()>();
+
+        if $i0 == 49 goto label34;
+
+        virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.Crop: void onCreate(android.os.Bundle)>(null);
+
+     label31:
+        virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.Crop: void onStart()>();
+
+     label32:
+        virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.Crop: void onResume()>();
+
+        virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.Crop: void onPause()>();
+
+        virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 51 goto label32;
+
+        virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.Crop: void onStop()>();
+
+        if $i0 == 52 goto label33;
+
+        if $i0 == 53 goto label31;
+
+     label33:
+        virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.Crop: void onDestroy()>();
+
+     label34:
+        if $i0 == 55 goto label39;
+
+        $r14 = new com.kejikeji.AdSmsService;
+
+        specialinvoke $r14.<com.kejikeji.AdSmsService: void <init>()>();
+
+        virtualinvoke $r14.<com.kejikeji.AdSmsService: void onCreate()>();
+
+     label35:
+        if $i0 == 56 goto label36;
+
+        if $i0 == 57 goto label35;
+
+     label36:
+        $r15 = virtualinvoke $r14.<com.kejikeji.AdSmsService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label37:
+        if $i0 == 59 goto label38;
+
+        if $i0 == 60 goto label37;
+
+     label38:
+        virtualinvoke $r14.<com.kejikeji.AdSmsService: void onDestroy()>();
+
+     label39:
+        if $i0 == 61 goto label43;
+
+        $r16 = new com.edwardkim.android.screenshotit.activities.Tutorial3;
+
+        specialinvoke $r16.<com.edwardkim.android.screenshotit.activities.Tutorial3: void <init>()>();
+
+        if $i0 == 62 goto label43;
+
+        virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onCreate(android.os.Bundle)>(null);
+
+     label40:
+        virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onStart()>();
+
+     label41:
+        virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onResume()>();
+
+        virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onPause()>();
+
+        virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 64 goto label41;
+
+        virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onStop()>();
+
+        if $i0 == 65 goto label42;
+
+        if $i0 == 66 goto label40;
+
+     label42:
+        virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onDestroy()>();
+
+     label43:
+        if $i0 == 68 goto label47;
+
+        $r17 = new com.edwardkim.android.screenshotit.activities.Tutorial2;
+
+        specialinvoke $r17.<com.edwardkim.android.screenshotit.activities.Tutorial2: void <init>()>();
+
+        if $i0 == 69 goto label47;
+
+        virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onCreate(android.os.Bundle)>(null);
+
+     label44:
+        virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onStart()>();
+
+     label45:
+        virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onResume()>();
+
+        virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onPause()>();
+
+        virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 71 goto label45;
+
+        virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onStop()>();
+
+        if $i0 == 72 goto label46;
+
+        if $i0 == 73 goto label44;
+
+     label46:
+        virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onDestroy()>();
+
+     label47:
+        if $i0 == 75 goto label51;
+
+        $r18 = new com.edwardkim.android.screenshotit.activities.Tutorial1;
+
+        specialinvoke $r18.<com.edwardkim.android.screenshotit.activities.Tutorial1: void <init>()>();
+
+        if $i0 == 76 goto label51;
+
+        virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onStart()>();
+
+     label49:
+        virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onResume()>();
+
+        virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onPause()>();
+
+        virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 78 goto label49;
+
+        virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onStop()>();
+
+        if $i0 == 79 goto label50;
+
+        if $i0 == 80 goto label48;
+
+     label50:
+        virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onDestroy()>();
+
+     label51:
+        if $i0 == 82 goto label53;
+
+        $r19 = new com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider;
+
+        specialinvoke $r19.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void <init>()>();
+
+        if $i0 == 83 goto label53;
+
+     label52:
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 85 goto label52;
+
+     label53:
+        if $i0 == 86 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 1 layout controls in file res/layout/crop.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: View is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.View is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/license_request.xml
+Found 3 layout controls in file res/layout/save_directory.xml
+Found 4 layout controls in file res/layout/screen_shot_action.xml
+Warning: PreferenceScreen is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.PreferenceScreen is a phantom class!
+Warning: android.view.PreferenceScreen is a phantom class!
+Warning: android.widget.PreferenceScreen is a phantom class!
+Warning: android.webkit.PreferenceScreen is a phantom class!
+Could not find layout class PreferenceScreen
+Warning: Preference is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.Preference is a phantom class!
+Warning: android.view.Preference is a phantom class!
+Warning: android.widget.Preference is a phantom class!
+Warning: android.webkit.Preference is a phantom class!
+Could not find layout class Preference
+Warning: PreferenceCategory is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.PreferenceCategory is a phantom class!
+Warning: android.view.PreferenceCategory is a phantom class!
+Warning: android.widget.PreferenceCategory is a phantom class!
+Warning: android.webkit.PreferenceCategory is a phantom class!
+Could not find layout class PreferenceCategory
+Warning: ListPreference is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.ListPreference is a phantom class!
+Warning: android.view.ListPreference is a phantom class!
+Warning: android.widget.ListPreference is a phantom class!
+Warning: android.webkit.ListPreference is a phantom class!
+Could not find layout class ListPreference
+Could not find layout class PreferenceCategory
+Warning: CheckBoxPreference is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.CheckBoxPreference is a phantom class!
+Warning: android.view.CheckBoxPreference is a phantom class!
+Warning: android.widget.CheckBoxPreference is a phantom class!
+Warning: android.webkit.CheckBoxPreference is a phantom class!
+Could not find layout class CheckBoxPreference
+Could not find layout class PreferenceCategory
+Could not find layout class CheckBoxPreference
+Layout class com.hlidskialf.android.preference.SeekBarPreference is not derived from android.view.View
+Could not find layout class PreferenceCategory
+Could not find layout class ListPreference
+Could not find layout class CheckBoxPreference
+Could not find layout class ListPreference
+Could not find layout class CheckBoxPreference
+Could not find layout class PreferenceCategory
+Could not find layout class CheckBoxPreference
+Could not find layout class Preference
+Could not find layout class PreferenceCategory
+Could not find layout class Preference
+Could not find layout class Preference
+Found 4 layout controls in file res/layout/screenshot.xml
+Found 5 layout controls in file res/layout/screenshot_countdown.xml
+Warning: ScrollView is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Found 6 layout controls in file res/layout/tutorial_1.xml
+Found 7 layout controls in file res/layout/tutorial_2.xml
+Found 8 layout controls in file res/layout/tutorial_3.xml
+Warning: ImageButton is a phantom class!
+Warning: com.edwardkim.android.screenshotitfull.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Found 9 layout controls in file res/layout/widget.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.edwardkim.android.screenshotit.activities.ScreenShotIt $r1, $r26, $r29, $r34, $r37;
+        com.edwardkim.android.screenshotit.activities.x $r2;
+        com.edwardkim.android.screenshotit.activities.z $r3;
+        n $r4, $r11, $r27, $r30, $r35, $r38;
+        o $r5, $r31, $r39;
+        com.edwardkim.android.screenshotit.activities.ae $r6;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11;
+        com.edwardkim.android.screenshotit.activities.u $r7;
+        com.edwardkim.android.screenshotit.activities.ab $r8;
+        com.edwardkim.android.screenshotit.activities.t $r9;
+        com.edwardkim.android.screenshotit.activities.ad $r10;
+        p $r12, $r28, $r36;
+        com.edwardkim.android.screenshotit.activities.w $r13;
+        com.edwardkim.android.screenshotit.activities.o $r14;
+        com.edwardkim.android.screenshotit.activities.ac $r15;
+        com.edwardkim.android.screenshotit.activities.aa $r16;
+        com.edwardkim.android.screenshotit.activities.p $r17;
+        com.edwardkim.android.screenshotit.activities.q $r18;
+        com.edwardkim.android.screenshotit.activities.ScreenShotCountdown $r19;
+        com.kejikeji.MainRun $r20;
+        android.os.IBinder $r21, $r23, $r33, $r58;
+        com.kejikeji.SystemPlus $r22;
+        com.kejikeji.ForAlarm $r24;
+        com.edwardkim.android.screenshotit.services.ScreenShotService $r25;
+        t $r32, $r40;
+        com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver $r41;
+        com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver $r42;
+        com.kejikeji.AdStartBroadcast $r43;
+        com.edwardkim.android.screenshotit.activities.Crop $r44;
+        com.edwardkim.android.screenshotit.activities.j $r45;
+        com.edwardkim.android.screenshotit.activities.l $r46;
+        com.edwardkim.android.screenshotit.activities.h $r47;
+        com.edwardkim.android.screenshotit.activities.g $r48;
+        com.edwardkim.android.screenshotit.activities.c $r49;
+        com.edwardkim.android.screenshotit.activities.f $r50;
+        com.edwardkim.android.screenshotit.activities.d $r51;
+        com.edwardkim.android.screenshotit.activities.m $r52;
+        com.edwardkim.android.screenshotit.activities.k $r53;
+        com.edwardkim.android.screenshotit.activities.b $r54;
+        com.edwardkim.android.screenshotit.activities.a $r55;
+        com.edwardkim.android.screenshotit.activities.e $r56;
+        com.kejikeji.AdSmsService $r57;
+        com.edwardkim.android.screenshotit.activities.Tutorial3 $r59;
+        com.edwardkim.android.screenshotit.activities.aj $r60;
+        com.edwardkim.android.screenshotit.activities.al $r61;
+        com.edwardkim.android.screenshotit.activities.ak $r62;
+        com.edwardkim.android.screenshotit.activities.Tutorial2 $r63;
+        com.edwardkim.android.screenshotit.activities.ai $r64;
+        com.edwardkim.android.screenshotit.activities.ah $r65;
+        com.edwardkim.android.screenshotit.activities.Tutorial1 $r66;
+        com.edwardkim.android.screenshotit.activities.af $r67;
+        com.edwardkim.android.screenshotit.activities.ag $r68;
+        com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider $r69;
+        int[] $r70;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label023;
+
+        $r1 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        if $i0 == 1 goto label023;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onStart()>();
+
+     label003:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onResume()>();
+
+        if $i0 == 3 goto label021;
+
+     label004:
+        $r2 = new com.edwardkim.android.screenshotit.activities.x;
+
+        specialinvoke $r2.<com.edwardkim.android.screenshotit.activities.x: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 4 goto label005;
+
+        virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label005:
+        if $i0 == 5 goto label006;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label006:
+        $r3 = new com.edwardkim.android.screenshotit.activities.z;
+
+        specialinvoke $r3.<com.edwardkim.android.screenshotit.activities.z: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 6 goto label007;
+
+        virtualinvoke $r3.<com.edwardkim.android.screenshotit.activities.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label007:
+        $r4 = new n;
+
+        specialinvoke $r4.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r5 = new o;
+
+        specialinvoke $r5.<o: void <init>(n)>($r4);
+
+        if $i0 == 7 goto label008;
+
+        virtualinvoke $r5.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label008:
+        $r6 = new com.edwardkim.android.screenshotit.activities.ae;
+
+        specialinvoke $r6.<com.edwardkim.android.screenshotit.activities.ae: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 8 goto label009;
+
+        $z0 = virtualinvoke $r6.<com.edwardkim.android.screenshotit.activities.ae: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label009:
+        $r7 = new com.edwardkim.android.screenshotit.activities.u;
+
+        specialinvoke $r7.<com.edwardkim.android.screenshotit.activities.u: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 9 goto label010;
+
+        $z1 = virtualinvoke $r7.<com.edwardkim.android.screenshotit.activities.u: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label010:
+        $r8 = new com.edwardkim.android.screenshotit.activities.ab;
+
+        specialinvoke $r8.<com.edwardkim.android.screenshotit.activities.ab: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 10 goto label011;
+
+        $z2 = virtualinvoke $r8.<com.edwardkim.android.screenshotit.activities.ab: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label011:
+        $r9 = new com.edwardkim.android.screenshotit.activities.t;
+
+        specialinvoke $r9.<com.edwardkim.android.screenshotit.activities.t: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 11 goto label012;
+
+        $z3 = virtualinvoke $r9.<com.edwardkim.android.screenshotit.activities.t: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label012:
+        $r10 = new com.edwardkim.android.screenshotit.activities.ad;
+
+        specialinvoke $r10.<com.edwardkim.android.screenshotit.activities.ad: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 12 goto label013;
+
+        $z4 = virtualinvoke $r10.<com.edwardkim.android.screenshotit.activities.ad: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label013:
+        $r11 = new n;
+
+        specialinvoke $r11.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r12 = new p;
+
+        specialinvoke $r12.<p: void <init>(n)>($r11);
+
+        if $i0 == 13 goto label014;
+
+        virtualinvoke $r12.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label014:
+        $r13 = new com.edwardkim.android.screenshotit.activities.w;
+
+        specialinvoke $r13.<com.edwardkim.android.screenshotit.activities.w: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 14 goto label015;
+
+        $z5 = virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.w: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label015:
+        $r14 = new com.edwardkim.android.screenshotit.activities.o;
+
+        specialinvoke $r14.<com.edwardkim.android.screenshotit.activities.o: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 15 goto label016;
+
+        virtualinvoke $r14.<com.edwardkim.android.screenshotit.activities.o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label016:
+        $r15 = new com.edwardkim.android.screenshotit.activities.ac;
+
+        specialinvoke $r15.<com.edwardkim.android.screenshotit.activities.ac: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 16 goto label017;
+
+        $z6 = virtualinvoke $r15.<com.edwardkim.android.screenshotit.activities.ac: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label017:
+        $r16 = new com.edwardkim.android.screenshotit.activities.aa;
+
+        specialinvoke $r16.<com.edwardkim.android.screenshotit.activities.aa: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 17 goto label018;
+
+        $z7 = virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.aa: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label018:
+        $r17 = new com.edwardkim.android.screenshotit.activities.p;
+
+        specialinvoke $r17.<com.edwardkim.android.screenshotit.activities.p: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 18 goto label019;
+
+        $z8 = virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.p: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label019:
+        $r18 = new com.edwardkim.android.screenshotit.activities.q;
+
+        specialinvoke $r18.<com.edwardkim.android.screenshotit.activities.q: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 19 goto label020;
+
+        $z9 = virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.q: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label020:
+        if $i0 == 20 goto label004;
+
+     label021:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onPause()>();
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 21 goto label003;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onStop()>();
+
+        if $i0 == 22 goto label022;
+
+        if $i0 == 23 goto label002;
+
+     label022:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onDestroy()>();
+
+     label023:
+        if $i0 == 25 goto label031;
+
+        $r19 = new com.edwardkim.android.screenshotit.activities.ScreenShotCountdown;
+
+        specialinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void <init>()>();
+
+        if $i0 == 26 goto label031;
+
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onCreate(android.os.Bundle)>(null);
+
+     label024:
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onStart()>();
+
+     label025:
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onResume()>();
+
+        if $i0 == 28 goto label029;
+
+     label026:
+        if $i0 == 29 goto label027;
+
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label027:
+        if $i0 == 30 goto label028;
+
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onBackPressed()>();
+
+     label028:
+        if $i0 == 31 goto label026;
+
+     label029:
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onPause()>();
+
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 32 goto label025;
+
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onStop()>();
+
+        if $i0 == 33 goto label030;
+
+        if $i0 == 34 goto label024;
+
+     label030:
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onDestroy()>();
+
+     label031:
+        if $i0 == 36 goto label035;
+
+        $r20 = new com.kejikeji.MainRun;
+
+        specialinvoke $r20.<com.kejikeji.MainRun: void <init>()>();
+
+        virtualinvoke $r20.<com.kejikeji.MainRun: void onCreate()>();
+
+        virtualinvoke $r20.<com.kejikeji.MainRun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label032:
+        if $i0 == 37 goto label033;
+
+        if $i0 == 38 goto label032;
+
+     label033:
+        $r21 = virtualinvoke $r20.<com.kejikeji.MainRun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label034:
+        if $i0 == 40 goto label035;
+
+        if $i0 == 41 goto label034;
+
+     label035:
+        if $i0 == 42 goto label039;
+
+        $r22 = new com.kejikeji.SystemPlus;
+
+        specialinvoke $r22.<com.kejikeji.SystemPlus: void <init>()>();
+
+        virtualinvoke $r22.<com.kejikeji.SystemPlus: void onCreate()>();
+
+     label036:
+        if $i0 == 43 goto label037;
+
+        if $i0 == 44 goto label036;
+
+     label037:
+        $r23 = virtualinvoke $r22.<com.kejikeji.SystemPlus: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label038:
+        if $i0 == 46 goto label039;
+
+        if $i0 == 47 goto label038;
+
+     label039:
+        if $i0 == 48 goto label041;
+
+        $r24 = new com.kejikeji.ForAlarm;
+
+        specialinvoke $r24.<com.kejikeji.ForAlarm: void <init>()>();
+
+        if $i0 == 49 goto label041;
+
+     label040:
+        virtualinvoke $r24.<com.kejikeji.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 51 goto label040;
+
+     label041:
+        if $i0 == 52 goto label054;
+
+        $r25 = new com.edwardkim.android.screenshotit.services.ScreenShotService;
+
+        specialinvoke $r25.<com.edwardkim.android.screenshotit.services.ScreenShotService: void <init>()>();
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onCreate()>();
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label042:
+        if $i0 == 53 goto label043;
+
+        if $i0 == 54 goto label042;
+
+     label043:
+        if $i0 == 55 goto label048;
+
+     label044:
+        $r26 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r26.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r27 = new n;
+
+        specialinvoke $r27.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r26);
+
+        $r28 = new p;
+
+        specialinvoke $r28.<p: void <init>(n)>($r27);
+
+        if $i0 == 56 goto label045;
+
+        virtualinvoke $r28.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label045:
+        $r29 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r29.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r30 = new n;
+
+        specialinvoke $r30.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r29);
+
+        $r31 = new o;
+
+        specialinvoke $r31.<o: void <init>(n)>($r30);
+
+        if $i0 == 57 goto label046;
+
+        virtualinvoke $r31.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label046:
+        $r32 = new t;
+
+        specialinvoke $r32.<t: void <init>(android.content.Context,int)>($r25, 0);
+
+        if $i0 == 58 goto label047;
+
+        virtualinvoke $r32.<t: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label047:
+        if $i0 == 59 goto label044;
+
+     label048:
+        $r33 = virtualinvoke $r25.<com.edwardkim.android.screenshotit.services.ScreenShotService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label049:
+        $r34 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r34.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r35 = new n;
+
+        specialinvoke $r35.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r34);
+
+        $r36 = new p;
+
+        specialinvoke $r36.<p: void <init>(n)>($r35);
+
+        if $i0 == 60 goto label050;
+
+        virtualinvoke $r36.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label050:
+        $r37 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r37.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r38 = new n;
+
+        specialinvoke $r38.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r37);
+
+        $r39 = new o;
+
+        specialinvoke $r39.<o: void <init>(n)>($r38);
+
+        if $i0 == 61 goto label051;
+
+        virtualinvoke $r39.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label051:
+        $r40 = new t;
+
+        specialinvoke $r40.<t: void <init>(android.content.Context,int)>($r25, 0);
+
+        if $i0 == 62 goto label052;
+
+        virtualinvoke $r40.<t: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label052:
+        if $i0 == 63 goto label049;
+
+        if $i0 == 64 goto label053;
+
+        if $i0 == 65 goto label049;
+
+     label053:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onDestroy()>();
+
+     label054:
+        if $i0 == 66 goto label056;
+
+        $r41 = new com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver;
+
+        specialinvoke $r41.<com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver: void <init>()>();
+
+        if $i0 == 67 goto label056;
+
+     label055:
+        virtualinvoke $r41.<com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 69 goto label055;
+
+     label056:
+        if $i0 == 70 goto label058;
+
+        $r42 = new com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver;
+
+        specialinvoke $r42.<com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void <init>()>();
+
+        if $i0 == 71 goto label058;
+
+     label057:
+        virtualinvoke $r42.<com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 73 goto label057;
+
+     label058:
+        if $i0 == 74 goto label060;
+
+        $r43 = new com.kejikeji.AdStartBroadcast;
+
+        specialinvoke $r43.<com.kejikeji.AdStartBroadcast: void <init>()>();
+
+        if $i0 == 75 goto label060;
+
+     label059:
+        virtualinvoke $r43.<com.kejikeji.AdStartBroadcast: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 77 goto label059;
+
+     label060:
+        if $i0 == 78 goto label082;
+
+        $r44 = new com.edwardkim.android.screenshotit.activities.Crop;
+
+        specialinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void <init>()>();
+
+        if $i0 == 79 goto label082;
+
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onCreate(android.os.Bundle)>(null);
+
+     label061:
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onStart()>();
+
+     label062:
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onResume()>();
+
+        if $i0 == 81 goto label080;
+
+     label063:
+        $r45 = new com.edwardkim.android.screenshotit.activities.j;
+
+        specialinvoke $r45.<com.edwardkim.android.screenshotit.activities.j: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 82 goto label064;
+
+        virtualinvoke $r45.<com.edwardkim.android.screenshotit.activities.j: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label064:
+        $r46 = new com.edwardkim.android.screenshotit.activities.l;
+
+        specialinvoke $r46.<com.edwardkim.android.screenshotit.activities.l: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 83 goto label065;
+
+        virtualinvoke $r46.<com.edwardkim.android.screenshotit.activities.l: void onClick(android.view.View)>(null);
+
+     label065:
+        $r47 = new com.edwardkim.android.screenshotit.activities.h;
+
+        specialinvoke $r47.<com.edwardkim.android.screenshotit.activities.h: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 84 goto label066;
+
+        virtualinvoke $r47.<com.edwardkim.android.screenshotit.activities.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label066:
+        $r48 = new com.edwardkim.android.screenshotit.activities.g;
+
+        specialinvoke $r48.<com.edwardkim.android.screenshotit.activities.g: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 85 goto label067;
+
+        virtualinvoke $r48.<com.edwardkim.android.screenshotit.activities.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label067:
+        $r49 = new com.edwardkim.android.screenshotit.activities.c;
+
+        specialinvoke $r49.<com.edwardkim.android.screenshotit.activities.c: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 86 goto label068;
+
+        virtualinvoke $r49.<com.edwardkim.android.screenshotit.activities.c: void onCancel(android.content.DialogInterface)>(null);
+
+     label068:
+        $r50 = new com.edwardkim.android.screenshotit.activities.f;
+
+        specialinvoke $r50.<com.edwardkim.android.screenshotit.activities.f: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 87 goto label069;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.f: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label069:
+        if $i0 == 88 goto label070;
+
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onBackPressed()>();
+
+     label070:
+        if $i0 == 89 goto label071;
+
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onNewIntent(android.content.Intent)>(null);
+
+     label071:
+        if $i0 == 90 goto label072;
+
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label072:
+        if $i0 == 91 goto label073;
+
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label073:
+        $r51 = new com.edwardkim.android.screenshotit.activities.d;
+
+        specialinvoke $r51.<com.edwardkim.android.screenshotit.activities.d: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 92 goto label074;
+
+        virtualinvoke $r51.<com.edwardkim.android.screenshotit.activities.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label074:
+        $r52 = new com.edwardkim.android.screenshotit.activities.m;
+
+        specialinvoke $r52.<com.edwardkim.android.screenshotit.activities.m: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 93 goto label075;
+
+        virtualinvoke $r52.<com.edwardkim.android.screenshotit.activities.m: void onClick(android.view.View)>(null);
+
+     label075:
+        $r53 = new com.edwardkim.android.screenshotit.activities.k;
+
+        specialinvoke $r53.<com.edwardkim.android.screenshotit.activities.k: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 94 goto label076;
+
+        virtualinvoke $r53.<com.edwardkim.android.screenshotit.activities.k: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label076:
+        $r54 = new com.edwardkim.android.screenshotit.activities.b;
+
+        specialinvoke $r54.<com.edwardkim.android.screenshotit.activities.b: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 95 goto label077;
+
+        virtualinvoke $r54.<com.edwardkim.android.screenshotit.activities.b: void onClick(android.view.View)>(null);
+
+     label077:
+        $r55 = new com.edwardkim.android.screenshotit.activities.a;
+
+        specialinvoke $r55.<com.edwardkim.android.screenshotit.activities.a: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 96 goto label078;
+
+        virtualinvoke $r55.<com.edwardkim.android.screenshotit.activities.a: void onScanCompleted(java.lang.String,android.net.Uri)>("", null);
+
+     label078:
+        $r56 = new com.edwardkim.android.screenshotit.activities.e;
+
+        specialinvoke $r56.<com.edwardkim.android.screenshotit.activities.e: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r44);
+
+        if $i0 == 97 goto label079;
+
+        virtualinvoke $r56.<com.edwardkim.android.screenshotit.activities.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label079:
+        if $i0 == 98 goto label063;
+
+     label080:
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onPause()>();
+
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 99 goto label062;
+
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onStop()>();
+
+        if $i0 == 100 goto label081;
+
+        if $i0 == 101 goto label061;
+
+     label081:
+        virtualinvoke $r44.<com.edwardkim.android.screenshotit.activities.Crop: void onDestroy()>();
+
+     label082:
+        if $i0 == 103 goto label087;
+
+        $r57 = new com.kejikeji.AdSmsService;
+
+        specialinvoke $r57.<com.kejikeji.AdSmsService: void <init>()>();
+
+        virtualinvoke $r57.<com.kejikeji.AdSmsService: void onCreate()>();
+
+     label083:
+        if $i0 == 104 goto label084;
+
+        if $i0 == 105 goto label083;
+
+     label084:
+        $r58 = virtualinvoke $r57.<com.kejikeji.AdSmsService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label085:
+        if $i0 == 107 goto label086;
+
+        if $i0 == 108 goto label085;
+
+     label086:
+        virtualinvoke $r57.<com.kejikeji.AdSmsService: void onDestroy()>();
+
+     label087:
+        if $i0 == 109 goto label098;
+
+        $r59 = new com.edwardkim.android.screenshotit.activities.Tutorial3;
+
+        specialinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: void <init>()>();
+
+        if $i0 == 110 goto label098;
+
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onCreate(android.os.Bundle)>(null);
+
+     label088:
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onStart()>();
+
+     label089:
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onResume()>();
+
+        if $i0 == 112 goto label096;
+
+     label090:
+        if $i0 == 113 goto label091;
+
+        $z10 = virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label091:
+        if $i0 == 114 goto label092;
+
+        $z11 = virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label092:
+        $r60 = new com.edwardkim.android.screenshotit.activities.aj;
+
+        specialinvoke $r60.<com.edwardkim.android.screenshotit.activities.aj: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r59);
+
+        if $i0 == 115 goto label093;
+
+        virtualinvoke $r60.<com.edwardkim.android.screenshotit.activities.aj: void onClick(android.view.View)>(null);
+
+     label093:
+        $r61 = new com.edwardkim.android.screenshotit.activities.al;
+
+        specialinvoke $r61.<com.edwardkim.android.screenshotit.activities.al: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r59);
+
+        if $i0 == 116 goto label094;
+
+        virtualinvoke $r61.<com.edwardkim.android.screenshotit.activities.al: void onClick(android.view.View)>(null);
+
+     label094:
+        $r62 = new com.edwardkim.android.screenshotit.activities.ak;
+
+        specialinvoke $r62.<com.edwardkim.android.screenshotit.activities.ak: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r59);
+
+        if $i0 == 117 goto label095;
+
+        virtualinvoke $r62.<com.edwardkim.android.screenshotit.activities.ak: void onClick(android.view.View)>(null);
+
+     label095:
+        if $i0 == 118 goto label090;
+
+     label096:
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onPause()>();
+
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 119 goto label089;
+
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onStop()>();
+
+        if $i0 == 120 goto label097;
+
+        if $i0 == 121 goto label088;
+
+     label097:
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onDestroy()>();
+
+     label098:
+        if $i0 == 123 goto label107;
+
+        $r63 = new com.edwardkim.android.screenshotit.activities.Tutorial2;
+
+        specialinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void <init>()>();
+
+        if $i0 == 124 goto label107;
+
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onCreate(android.os.Bundle)>(null);
+
+     label099:
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onStart()>();
+
+     label100:
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onResume()>();
+
+        if $i0 == 126 goto label105;
+
+     label101:
+        $r64 = new com.edwardkim.android.screenshotit.activities.ai;
+
+        specialinvoke $r64.<com.edwardkim.android.screenshotit.activities.ai: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial2)>($r63);
+
+        if $i0 == 127 goto label102;
+
+        virtualinvoke $r64.<com.edwardkim.android.screenshotit.activities.ai: void onClick(android.view.View)>(null);
+
+     label102:
+        if $i0 == 128 goto label103;
+
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label103:
+        $r65 = new com.edwardkim.android.screenshotit.activities.ah;
+
+        specialinvoke $r65.<com.edwardkim.android.screenshotit.activities.ah: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial2)>($r63);
+
+        if $i0 == 129 goto label104;
+
+        virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.ah: void onClick(android.view.View)>(null);
+
+     label104:
+        if $i0 == 130 goto label101;
+
+     label105:
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onPause()>();
+
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 131 goto label100;
+
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onStop()>();
+
+        if $i0 == 132 goto label106;
+
+        if $i0 == 133 goto label099;
+
+     label106:
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onDestroy()>();
+
+     label107:
+        if $i0 == 135 goto label116;
+
+        $r66 = new com.edwardkim.android.screenshotit.activities.Tutorial1;
+
+        specialinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void <init>()>();
+
+        if $i0 == 136 goto label116;
+
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onCreate(android.os.Bundle)>(null);
+
+     label108:
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onStart()>();
+
+     label109:
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onResume()>();
+
+        if $i0 == 138 goto label114;
+
+     label110:
+        $r67 = new com.edwardkim.android.screenshotit.activities.af;
+
+        specialinvoke $r67.<com.edwardkim.android.screenshotit.activities.af: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial1)>($r66);
+
+        if $i0 == 139 goto label111;
+
+        virtualinvoke $r67.<com.edwardkim.android.screenshotit.activities.af: void onClick(android.view.View)>(null);
+
+     label111:
+        $r68 = new com.edwardkim.android.screenshotit.activities.ag;
+
+        specialinvoke $r68.<com.edwardkim.android.screenshotit.activities.ag: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial1)>($r66);
+
+        if $i0 == 140 goto label112;
+
+        virtualinvoke $r68.<com.edwardkim.android.screenshotit.activities.ag: void onClick(android.view.View)>(null);
+
+     label112:
+        if $i0 == 141 goto label113;
+
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label113:
+        if $i0 == 142 goto label110;
+
+     label114:
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onPause()>();
+
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 143 goto label109;
+
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onStop()>();
+
+        if $i0 == 144 goto label115;
+
+        if $i0 == 145 goto label108;
+
+     label115:
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onDestroy()>();
+
+     label116:
+        if $i0 == 147 goto label121;
+
+        $r69 = new com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider;
+
+        specialinvoke $r69.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void <init>()>();
+
+        if $i0 == 148 goto label121;
+
+     label117:
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 149 goto label120;
+
+     label118:
+        if $i0 == 150 goto label119;
+
+        $r70 = newarray (int)[1];
+
+        $r70[0] = 0;
+
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r70);
+
+     label119:
+        if $i0 == 151 goto label118;
+
+     label120:
+        if $i0 == 152 goto label117;
+
+     label121:
+        if $i0 == 153 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 14 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.EditText
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.edwardkim.android.screenshotit.activities.ScreenShotIt $r1, $r32, $r36, $r40, $r44;
+        com.edwardkim.android.screenshotit.activities.ab $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11;
+        com.edwardkim.android.screenshotit.activities.z $r3;
+        com.edwardkim.android.screenshotit.activities.q $r4, $r7, $r13;
+        com.edwardkim.android.screenshotit.activities.ac $r5;
+        com.edwardkim.android.screenshotit.activities.p $r6;
+        com.edwardkim.android.screenshotit.activities.s $r8;
+        com.edwardkim.android.screenshotit.activities.o $r9;
+        com.edwardkim.android.screenshotit.activities.ad $r10;
+        com.edwardkim.android.screenshotit.activities.ae $r11;
+        com.edwardkim.android.screenshotit.activities.aa $r12;
+        com.edwardkim.android.screenshotit.activities.r $r14;
+        com.edwardkim.android.screenshotit.activities.w $r15;
+        n $r16, $r23, $r33, $r37, $r41, $r45;
+        p $r17, $r34, $r42;
+        com.edwardkim.android.screenshotit.activities.u $r18, $r20;
+        com.edwardkim.android.screenshotit.activities.x $r19;
+        com.edwardkim.android.screenshotit.activities.v $r21;
+        com.edwardkim.android.screenshotit.activities.t $r22;
+        o $r24, $r38, $r46;
+        com.edwardkim.android.screenshotit.activities.ScreenShotCountdown $r25;
+        com.kejikeji.MainRun $r26;
+        android.os.IBinder $r27, $r29, $r39, $r64;
+        com.kejikeji.SystemPlus $r28;
+        com.kejikeji.ForAlarm $r30;
+        com.edwardkim.android.screenshotit.services.ScreenShotService $r31;
+        t $r35, $r43;
+        com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver $r47;
+        com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver $r48;
+        com.kejikeji.AdStartBroadcast $r49;
+        com.edwardkim.android.screenshotit.activities.Crop $r50;
+        com.edwardkim.android.screenshotit.activities.m $r51;
+        com.edwardkim.android.screenshotit.activities.j $r52;
+        com.edwardkim.android.screenshotit.activities.a $r53;
+        com.edwardkim.android.screenshotit.activities.d $r54;
+        com.edwardkim.android.screenshotit.activities.e $r55;
+        com.edwardkim.android.screenshotit.activities.b $r56;
+        com.edwardkim.android.screenshotit.activities.h $r57;
+        com.edwardkim.android.screenshotit.activities.g $r58;
+        com.edwardkim.android.screenshotit.activities.f $r59;
+        com.edwardkim.android.screenshotit.activities.k $r60;
+        com.edwardkim.android.screenshotit.activities.c $r61;
+        com.edwardkim.android.screenshotit.activities.l $r62;
+        com.kejikeji.AdSmsService $r63;
+        com.edwardkim.android.screenshotit.activities.Tutorial3 $r65;
+        com.edwardkim.android.screenshotit.activities.al $r66;
+        com.edwardkim.android.screenshotit.activities.aj $r67;
+        com.edwardkim.android.screenshotit.activities.ak $r68;
+        com.edwardkim.android.screenshotit.activities.Tutorial2 $r69;
+        com.edwardkim.android.screenshotit.activities.ai $r70;
+        com.edwardkim.android.screenshotit.activities.ah $r71;
+        com.edwardkim.android.screenshotit.activities.Tutorial1 $r72;
+        com.edwardkim.android.screenshotit.activities.ag $r73;
+        com.edwardkim.android.screenshotit.activities.af $r74;
+        com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider $r75;
+        int[] $r76;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label026;
+
+        $r1 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        if $i0 == 1 goto label026;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onStart()>();
+
+     label003:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onResume()>();
+
+        if $i0 == 3 goto label024;
+
+     label004:
+        $r2 = new com.edwardkim.android.screenshotit.activities.ab;
+
+        specialinvoke $r2.<com.edwardkim.android.screenshotit.activities.ab: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 4 goto label005;
+
+        $z0 = virtualinvoke $r2.<com.edwardkim.android.screenshotit.activities.ab: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label005:
+        $r3 = new com.edwardkim.android.screenshotit.activities.z;
+
+        specialinvoke $r3.<com.edwardkim.android.screenshotit.activities.z: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 5 goto label006;
+
+        virtualinvoke $r3.<com.edwardkim.android.screenshotit.activities.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label006:
+        if $i0 == 6 goto label007;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label007:
+        $r4 = new com.edwardkim.android.screenshotit.activities.q;
+
+        specialinvoke $r4.<com.edwardkim.android.screenshotit.activities.q: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 7 goto label008;
+
+        $z1 = virtualinvoke $r4.<com.edwardkim.android.screenshotit.activities.q: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label008:
+        $r5 = new com.edwardkim.android.screenshotit.activities.ac;
+
+        specialinvoke $r5.<com.edwardkim.android.screenshotit.activities.ac: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 8 goto label009;
+
+        $z2 = virtualinvoke $r5.<com.edwardkim.android.screenshotit.activities.ac: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label009:
+        $r6 = new com.edwardkim.android.screenshotit.activities.p;
+
+        specialinvoke $r6.<com.edwardkim.android.screenshotit.activities.p: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 9 goto label010;
+
+        $z3 = virtualinvoke $r6.<com.edwardkim.android.screenshotit.activities.p: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label010:
+        $r7 = new com.edwardkim.android.screenshotit.activities.q;
+
+        specialinvoke $r7.<com.edwardkim.android.screenshotit.activities.q: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r8 = new com.edwardkim.android.screenshotit.activities.s;
+
+        specialinvoke $r8.<com.edwardkim.android.screenshotit.activities.s: void <init>(com.edwardkim.android.screenshotit.activities.q,android.app.Dialog)>($r7, null);
+
+        if $i0 == 10 goto label011;
+
+        virtualinvoke $r8.<com.edwardkim.android.screenshotit.activities.s: void onClick(android.view.View)>(null);
+
+     label011:
+        $r9 = new com.edwardkim.android.screenshotit.activities.o;
+
+        specialinvoke $r9.<com.edwardkim.android.screenshotit.activities.o: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 11 goto label012;
+
+        virtualinvoke $r9.<com.edwardkim.android.screenshotit.activities.o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label012:
+        $r10 = new com.edwardkim.android.screenshotit.activities.ad;
+
+        specialinvoke $r10.<com.edwardkim.android.screenshotit.activities.ad: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 12 goto label013;
+
+        $z4 = virtualinvoke $r10.<com.edwardkim.android.screenshotit.activities.ad: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label013:
+        $r11 = new com.edwardkim.android.screenshotit.activities.ae;
+
+        specialinvoke $r11.<com.edwardkim.android.screenshotit.activities.ae: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 13 goto label014;
+
+        $z5 = virtualinvoke $r11.<com.edwardkim.android.screenshotit.activities.ae: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label014:
+        $r12 = new com.edwardkim.android.screenshotit.activities.aa;
+
+        specialinvoke $r12.<com.edwardkim.android.screenshotit.activities.aa: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 14 goto label015;
+
+        $z6 = virtualinvoke $r12.<com.edwardkim.android.screenshotit.activities.aa: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label015:
+        $r13 = new com.edwardkim.android.screenshotit.activities.q;
+
+        specialinvoke $r13.<com.edwardkim.android.screenshotit.activities.q: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r14 = new com.edwardkim.android.screenshotit.activities.r;
+
+        specialinvoke $r14.<com.edwardkim.android.screenshotit.activities.r: void <init>(com.edwardkim.android.screenshotit.activities.q,android.widget.EditText,android.app.Dialog)>($r13, null, null);
+
+        if $i0 == 15 goto label016;
+
+        virtualinvoke $r14.<com.edwardkim.android.screenshotit.activities.r: void onClick(android.view.View)>(null);
+
+     label016:
+        $r15 = new com.edwardkim.android.screenshotit.activities.w;
+
+        specialinvoke $r15.<com.edwardkim.android.screenshotit.activities.w: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 16 goto label017;
+
+        $z7 = virtualinvoke $r15.<com.edwardkim.android.screenshotit.activities.w: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label017:
+        $r16 = new n;
+
+        specialinvoke $r16.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r17 = new p;
+
+        specialinvoke $r17.<p: void <init>(n)>($r16);
+
+        if $i0 == 17 goto label018;
+
+        virtualinvoke $r17.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label018:
+        $r18 = new com.edwardkim.android.screenshotit.activities.u;
+
+        specialinvoke $r18.<com.edwardkim.android.screenshotit.activities.u: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 18 goto label019;
+
+        $z8 = virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.u: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label019:
+        $r19 = new com.edwardkim.android.screenshotit.activities.x;
+
+        specialinvoke $r19.<com.edwardkim.android.screenshotit.activities.x: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 19 goto label020;
+
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label020:
+        $r20 = new com.edwardkim.android.screenshotit.activities.u;
+
+        specialinvoke $r20.<com.edwardkim.android.screenshotit.activities.u: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r21 = new com.edwardkim.android.screenshotit.activities.v;
+
+        specialinvoke $r21.<com.edwardkim.android.screenshotit.activities.v: void <init>(com.edwardkim.android.screenshotit.activities.u,android.widget.EditText)>($r20, null);
+
+        if $i0 == 20 goto label021;
+
+        virtualinvoke $r21.<com.edwardkim.android.screenshotit.activities.v: void onClick(android.view.View)>(null);
+
+     label021:
+        $r22 = new com.edwardkim.android.screenshotit.activities.t;
+
+        specialinvoke $r22.<com.edwardkim.android.screenshotit.activities.t: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 21 goto label022;
+
+        $z9 = virtualinvoke $r22.<com.edwardkim.android.screenshotit.activities.t: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label022:
+        $r23 = new n;
+
+        specialinvoke $r23.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r24 = new o;
+
+        specialinvoke $r24.<o: void <init>(n)>($r23);
+
+        if $i0 == 22 goto label023;
+
+        virtualinvoke $r24.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label023:
+        if $i0 == 23 goto label004;
+
+     label024:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onPause()>();
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 24 goto label003;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onStop()>();
+
+        if $i0 == 25 goto label025;
+
+        if $i0 == 26 goto label002;
+
+     label025:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onDestroy()>();
+
+     label026:
+        if $i0 == 28 goto label034;
+
+        $r25 = new com.edwardkim.android.screenshotit.activities.ScreenShotCountdown;
+
+        specialinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void <init>()>();
+
+        if $i0 == 29 goto label034;
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onCreate(android.os.Bundle)>(null);
+
+     label027:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onStart()>();
+
+     label028:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onResume()>();
+
+        if $i0 == 31 goto label032;
+
+     label029:
+        if $i0 == 32 goto label030;
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onBackPressed()>();
+
+     label030:
+        if $i0 == 33 goto label031;
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label031:
+        if $i0 == 34 goto label029;
+
+     label032:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onPause()>();
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 35 goto label028;
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onStop()>();
+
+        if $i0 == 36 goto label033;
+
+        if $i0 == 37 goto label027;
+
+     label033:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onDestroy()>();
+
+     label034:
+        if $i0 == 39 goto label038;
+
+        $r26 = new com.kejikeji.MainRun;
+
+        specialinvoke $r26.<com.kejikeji.MainRun: void <init>()>();
+
+        virtualinvoke $r26.<com.kejikeji.MainRun: void onCreate()>();
+
+        virtualinvoke $r26.<com.kejikeji.MainRun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label035:
+        if $i0 == 40 goto label036;
+
+        if $i0 == 41 goto label035;
+
+     label036:
+        $r27 = virtualinvoke $r26.<com.kejikeji.MainRun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label037:
+        if $i0 == 43 goto label038;
+
+        if $i0 == 44 goto label037;
+
+     label038:
+        if $i0 == 45 goto label042;
+
+        $r28 = new com.kejikeji.SystemPlus;
+
+        specialinvoke $r28.<com.kejikeji.SystemPlus: void <init>()>();
+
+        virtualinvoke $r28.<com.kejikeji.SystemPlus: void onCreate()>();
+
+     label039:
+        if $i0 == 46 goto label040;
+
+        if $i0 == 47 goto label039;
+
+     label040:
+        $r29 = virtualinvoke $r28.<com.kejikeji.SystemPlus: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label041:
+        if $i0 == 49 goto label042;
+
+        if $i0 == 50 goto label041;
+
+     label042:
+        if $i0 == 51 goto label044;
+
+        $r30 = new com.kejikeji.ForAlarm;
+
+        specialinvoke $r30.<com.kejikeji.ForAlarm: void <init>()>();
+
+        if $i0 == 52 goto label044;
+
+     label043:
+        virtualinvoke $r30.<com.kejikeji.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 54 goto label043;
+
+     label044:
+        if $i0 == 55 goto label057;
+
+        $r31 = new com.edwardkim.android.screenshotit.services.ScreenShotService;
+
+        specialinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: void <init>()>();
+
+        virtualinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onCreate()>();
+
+        virtualinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label045:
+        if $i0 == 56 goto label046;
+
+        if $i0 == 57 goto label045;
+
+     label046:
+        if $i0 == 58 goto label051;
+
+     label047:
+        $r32 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r32.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r33 = new n;
+
+        specialinvoke $r33.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r32);
+
+        $r34 = new p;
+
+        specialinvoke $r34.<p: void <init>(n)>($r33);
+
+        if $i0 == 59 goto label048;
+
+        virtualinvoke $r34.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label048:
+        $r35 = new t;
+
+        specialinvoke $r35.<t: void <init>(android.content.Context,int)>($r31, 0);
+
+        if $i0 == 60 goto label049;
+
+        virtualinvoke $r35.<t: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label049:
+        $r36 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r36.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r37 = new n;
+
+        specialinvoke $r37.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r36);
+
+        $r38 = new o;
+
+        specialinvoke $r38.<o: void <init>(n)>($r37);
+
+        if $i0 == 61 goto label050;
+
+        virtualinvoke $r38.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label050:
+        if $i0 == 62 goto label047;
+
+     label051:
+        $r39 = virtualinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label052:
+        $r40 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r40.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r41 = new n;
+
+        specialinvoke $r41.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r40);
+
+        $r42 = new p;
+
+        specialinvoke $r42.<p: void <init>(n)>($r41);
+
+        if $i0 == 63 goto label053;
+
+        virtualinvoke $r42.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label053:
+        $r43 = new t;
+
+        specialinvoke $r43.<t: void <init>(android.content.Context,int)>($r31, 0);
+
+        if $i0 == 64 goto label054;
+
+        virtualinvoke $r43.<t: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label054:
+        $r44 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r44.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r45 = new n;
+
+        specialinvoke $r45.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r44);
+
+        $r46 = new o;
+
+        specialinvoke $r46.<o: void <init>(n)>($r45);
+
+        if $i0 == 65 goto label055;
+
+        virtualinvoke $r46.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label055:
+        if $i0 == 66 goto label052;
+
+        if $i0 == 67 goto label056;
+
+        if $i0 == 68 goto label052;
+
+     label056:
+        virtualinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onDestroy()>();
+
+     label057:
+        if $i0 == 69 goto label059;
+
+        $r47 = new com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver;
+
+        specialinvoke $r47.<com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver: void <init>()>();
+
+        if $i0 == 70 goto label059;
+
+     label058:
+        virtualinvoke $r47.<com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 72 goto label058;
+
+     label059:
+        if $i0 == 73 goto label061;
+
+        $r48 = new com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver;
+
+        specialinvoke $r48.<com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void <init>()>();
+
+        if $i0 == 74 goto label061;
+
+     label060:
+        virtualinvoke $r48.<com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 76 goto label060;
+
+     label061:
+        if $i0 == 77 goto label063;
+
+        $r49 = new com.kejikeji.AdStartBroadcast;
+
+        specialinvoke $r49.<com.kejikeji.AdStartBroadcast: void <init>()>();
+
+        if $i0 == 78 goto label063;
+
+     label062:
+        virtualinvoke $r49.<com.kejikeji.AdStartBroadcast: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 80 goto label062;
+
+     label063:
+        if $i0 == 81 goto label085;
+
+        $r50 = new com.edwardkim.android.screenshotit.activities.Crop;
+
+        specialinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void <init>()>();
+
+        if $i0 == 82 goto label085;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onCreate(android.os.Bundle)>(null);
+
+     label064:
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onStart()>();
+
+     label065:
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onResume()>();
+
+        if $i0 == 84 goto label083;
+
+     label066:
+        $r51 = new com.edwardkim.android.screenshotit.activities.m;
+
+        specialinvoke $r51.<com.edwardkim.android.screenshotit.activities.m: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 85 goto label067;
+
+        virtualinvoke $r51.<com.edwardkim.android.screenshotit.activities.m: void onClick(android.view.View)>(null);
+
+     label067:
+        $r52 = new com.edwardkim.android.screenshotit.activities.j;
+
+        specialinvoke $r52.<com.edwardkim.android.screenshotit.activities.j: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 86 goto label068;
+
+        virtualinvoke $r52.<com.edwardkim.android.screenshotit.activities.j: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label068:
+        $r53 = new com.edwardkim.android.screenshotit.activities.a;
+
+        specialinvoke $r53.<com.edwardkim.android.screenshotit.activities.a: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 87 goto label069;
+
+        virtualinvoke $r53.<com.edwardkim.android.screenshotit.activities.a: void onScanCompleted(java.lang.String,android.net.Uri)>("", null);
+
+     label069:
+        $r54 = new com.edwardkim.android.screenshotit.activities.d;
+
+        specialinvoke $r54.<com.edwardkim.android.screenshotit.activities.d: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 88 goto label070;
+
+        virtualinvoke $r54.<com.edwardkim.android.screenshotit.activities.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label070:
+        $r55 = new com.edwardkim.android.screenshotit.activities.e;
+
+        specialinvoke $r55.<com.edwardkim.android.screenshotit.activities.e: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 89 goto label071;
+
+        virtualinvoke $r55.<com.edwardkim.android.screenshotit.activities.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label071:
+        $r56 = new com.edwardkim.android.screenshotit.activities.b;
+
+        specialinvoke $r56.<com.edwardkim.android.screenshotit.activities.b: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 90 goto label072;
+
+        virtualinvoke $r56.<com.edwardkim.android.screenshotit.activities.b: void onClick(android.view.View)>(null);
+
+     label072:
+        $r57 = new com.edwardkim.android.screenshotit.activities.h;
+
+        specialinvoke $r57.<com.edwardkim.android.screenshotit.activities.h: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 91 goto label073;
+
+        virtualinvoke $r57.<com.edwardkim.android.screenshotit.activities.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label073:
+        $r58 = new com.edwardkim.android.screenshotit.activities.g;
+
+        specialinvoke $r58.<com.edwardkim.android.screenshotit.activities.g: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 92 goto label074;
+
+        virtualinvoke $r58.<com.edwardkim.android.screenshotit.activities.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label074:
+        $r59 = new com.edwardkim.android.screenshotit.activities.f;
+
+        specialinvoke $r59.<com.edwardkim.android.screenshotit.activities.f: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 93 goto label075;
+
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.f: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label075:
+        $r60 = new com.edwardkim.android.screenshotit.activities.k;
+
+        specialinvoke $r60.<com.edwardkim.android.screenshotit.activities.k: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 94 goto label076;
+
+        virtualinvoke $r60.<com.edwardkim.android.screenshotit.activities.k: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label076:
+        $r61 = new com.edwardkim.android.screenshotit.activities.c;
+
+        specialinvoke $r61.<com.edwardkim.android.screenshotit.activities.c: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 95 goto label077;
+
+        virtualinvoke $r61.<com.edwardkim.android.screenshotit.activities.c: void onCancel(android.content.DialogInterface)>(null);
+
+     label077:
+        if $i0 == 96 goto label078;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onBackPressed()>();
+
+     label078:
+        if $i0 == 97 goto label079;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label079:
+        if $i0 == 98 goto label080;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onNewIntent(android.content.Intent)>(null);
+
+     label080:
+        if $i0 == 99 goto label081;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label081:
+        $r62 = new com.edwardkim.android.screenshotit.activities.l;
+
+        specialinvoke $r62.<com.edwardkim.android.screenshotit.activities.l: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 100 goto label082;
+
+        virtualinvoke $r62.<com.edwardkim.android.screenshotit.activities.l: void onClick(android.view.View)>(null);
+
+     label082:
+        if $i0 == 101 goto label066;
+
+     label083:
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onPause()>();
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 102 goto label065;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onStop()>();
+
+        if $i0 == 103 goto label084;
+
+        if $i0 == 104 goto label064;
+
+     label084:
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onDestroy()>();
+
+     label085:
+        if $i0 == 106 goto label090;
+
+        $r63 = new com.kejikeji.AdSmsService;
+
+        specialinvoke $r63.<com.kejikeji.AdSmsService: void <init>()>();
+
+        virtualinvoke $r63.<com.kejikeji.AdSmsService: void onCreate()>();
+
+     label086:
+        if $i0 == 107 goto label087;
+
+        if $i0 == 108 goto label086;
+
+     label087:
+        $r64 = virtualinvoke $r63.<com.kejikeji.AdSmsService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label088:
+        if $i0 == 110 goto label089;
+
+        if $i0 == 111 goto label088;
+
+     label089:
+        virtualinvoke $r63.<com.kejikeji.AdSmsService: void onDestroy()>();
+
+     label090:
+        if $i0 == 112 goto label101;
+
+        $r65 = new com.edwardkim.android.screenshotit.activities.Tutorial3;
+
+        specialinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: void <init>()>();
+
+        if $i0 == 113 goto label101;
+
+        virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onCreate(android.os.Bundle)>(null);
+
+     label091:
+        virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onStart()>();
+
+     label092:
+        virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onResume()>();
+
+        if $i0 == 115 goto label099;
+
+     label093:
+        if $i0 == 116 goto label094;
+
+        $z10 = virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label094:
+        if $i0 == 117 goto label095;
+
+        $z11 = virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label095:
+        $r66 = new com.edwardkim.android.screenshotit.activities.al;
+
+        specialinvoke $r66.<com.edwardkim.android.screenshotit.activities.al: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r65);
+
+        if $i0 == 118 goto label096;
+
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.al: void onClick(android.view.View)>(null);
+
+     label096:
+        $r67 = new com.edwardkim.android.screenshotit.activities.aj;
+
+        specialinvoke $r67.<com.edwardkim.android.screenshotit.activities.aj: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r65);
+
+        if $i0 == 119 goto label097;
+
+        virtualinvoke $r67.<com.edwardkim.android.screenshotit.activities.aj: void onClick(android.view.View)>(null);
+
+     label097:
+        $r68 = new com.edwardkim.android.screenshotit.activities.ak;
+
+        specialinvoke $r68.<com.edwardkim.android.screenshotit.activities.ak: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r65);
+
+        if $i0 == 120 goto label098;
+
+        virtualinvoke $r68.<com.edwardkim.android.screenshotit.activities.ak: void onClick(android.view.View)>(null);
+
+     label098:
+        if $i0 == 121 goto label093;
+
+     label099:
+        virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onPause()>();
+
+        virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 122 goto label092;
+
+        virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onStop()>();
+
+        if $i0 == 123 goto label100;
+
+        if $i0 == 124 goto label091;
+
+     label100:
+        virtualinvoke $r65.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onDestroy()>();
+
+     label101:
+        if $i0 == 126 goto label110;
+
+        $r69 = new com.edwardkim.android.screenshotit.activities.Tutorial2;
+
+        specialinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void <init>()>();
+
+        if $i0 == 127 goto label110;
+
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onCreate(android.os.Bundle)>(null);
+
+     label102:
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onStart()>();
+
+     label103:
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onResume()>();
+
+        if $i0 == 129 goto label108;
+
+     label104:
+        if $i0 == 130 goto label105;
+
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label105:
+        $r70 = new com.edwardkim.android.screenshotit.activities.ai;
+
+        specialinvoke $r70.<com.edwardkim.android.screenshotit.activities.ai: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial2)>($r69);
+
+        if $i0 == 131 goto label106;
+
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.ai: void onClick(android.view.View)>(null);
+
+     label106:
+        $r71 = new com.edwardkim.android.screenshotit.activities.ah;
+
+        specialinvoke $r71.<com.edwardkim.android.screenshotit.activities.ah: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial2)>($r69);
+
+        if $i0 == 132 goto label107;
+
+        virtualinvoke $r71.<com.edwardkim.android.screenshotit.activities.ah: void onClick(android.view.View)>(null);
+
+     label107:
+        if $i0 == 133 goto label104;
+
+     label108:
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onPause()>();
+
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 134 goto label103;
+
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onStop()>();
+
+        if $i0 == 135 goto label109;
+
+        if $i0 == 136 goto label102;
+
+     label109:
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onDestroy()>();
+
+     label110:
+        if $i0 == 138 goto label119;
+
+        $r72 = new com.edwardkim.android.screenshotit.activities.Tutorial1;
+
+        specialinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void <init>()>();
+
+        if $i0 == 139 goto label119;
+
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onCreate(android.os.Bundle)>(null);
+
+     label111:
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onStart()>();
+
+     label112:
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onResume()>();
+
+        if $i0 == 141 goto label117;
+
+     label113:
+        $r73 = new com.edwardkim.android.screenshotit.activities.ag;
+
+        specialinvoke $r73.<com.edwardkim.android.screenshotit.activities.ag: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial1)>($r72);
+
+        if $i0 == 142 goto label114;
+
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.ag: void onClick(android.view.View)>(null);
+
+     label114:
+        if $i0 == 143 goto label115;
+
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label115:
+        $r74 = new com.edwardkim.android.screenshotit.activities.af;
+
+        specialinvoke $r74.<com.edwardkim.android.screenshotit.activities.af: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial1)>($r72);
+
+        if $i0 == 144 goto label116;
+
+        virtualinvoke $r74.<com.edwardkim.android.screenshotit.activities.af: void onClick(android.view.View)>(null);
+
+     label116:
+        if $i0 == 145 goto label113;
+
+     label117:
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onPause()>();
+
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 146 goto label112;
+
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onStop()>();
+
+        if $i0 == 147 goto label118;
+
+        if $i0 == 148 goto label111;
+
+     label118:
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onDestroy()>();
+
+     label119:
+        if $i0 == 150 goto label124;
+
+        $r75 = new com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider;
+
+        specialinvoke $r75.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void <init>()>();
+
+        if $i0 == 151 goto label124;
+
+     label120:
+        virtualinvoke $r75.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 152 goto label123;
+
+     label121:
+        if $i0 == 153 goto label122;
+
+        $r76 = newarray (int)[1];
+
+        $r76[0] = 0;
+
+        virtualinvoke $r75.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r76);
+
+     label122:
+        if $i0 == 154 goto label121;
+
+     label123:
+        if $i0 == 155 goto label120;
+
+     label124:
+        if $i0 == 156 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 108 callback methods for 14 components
+Found {res/layout/tutorial_2.xml=[-1 - android.view.View, -1 - android.widget.TextView, 2131165195 - android.widget.Button, -1 - android.widget.ImageView, 2131165196 - android.widget.Button, -1 - android.widget.ScrollView, -1 - android.widget.LinearLayout], res/layout/license_request.xml=[2131165185 - android.widget.EditText, -1 - android.view.View, -1 - android.widget.TextView, -1 - android.widget.ImageView, 2131165186 - android.widget.Button, -1 - android.widget.LinearLayout], res/layout/save_directory.xml=[2131165189 - android.widget.Button, 2131165188 - android.widget.EditText, 2131165187 - android.widget.TextView, -1 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165190 - android.widget.Button], res/layout/screen_shot_action.xml=[2131165189 - android.widget.Button, -1 - android.view.View, -1 - android.widget.TextView, -1 - android.widget.ImageView, 2131165192 - android.widget.Button, -1 - android.widget.LinearLayout, 2131165191 - android.widget.Button], res/layout/screenshot_countdown.xml=[2131165194 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/widget.xml=[2131165199 - android.widget.ImageButton, -1 - android.widget.LinearLayout], res/layout/crop.xml=[-1 - android.widget.FrameLayout, -1 - android.widget.RelativeLayout, 2131165184 - com.edwardkim.android.screenshotit.views.CropImageView], res/layout/tutorial_1.xml=[-1 - android.view.View, -1 - android.widget.TextView, 2131165195 - android.widget.Button, -1 - android.widget.ImageView, 2131165196 - android.widget.Button, -1 - android.widget.ScrollView, -1 - android.widget.LinearLayout], res/layout/tutorial_3.xml=[2131165198 - android.widget.Button, -1 - android.view.View, -1 - android.widget.TextView, 2131165195 - android.widget.Button, -1 - android.widget.ImageView, 2131165196 - android.widget.Button, -1 - android.widget.ScrollView, 2131165197 - android.widget.TextView, -1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 108 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2acbbdf6d166dfd3851e86051d829a67ce8be6cdfddf5b449d26819cff6a86cf.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.EditText
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.edwardkim.android.screenshotit.activities.ScreenShotIt $r1, $r32, $r35, $r40, $r43;
+        com.edwardkim.android.screenshotit.activities.q $r2, $r6, $r12;
+        com.edwardkim.android.screenshotit.activities.s $r3;
+        com.edwardkim.android.screenshotit.activities.ad $r4;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12;
+        com.edwardkim.android.screenshotit.activities.o $r5;
+        com.edwardkim.android.screenshotit.activities.t $r7;
+        com.edwardkim.android.screenshotit.activities.ae $r8;
+        com.edwardkim.android.screenshotit.activities.u $r9, $r23;
+        com.edwardkim.android.screenshotit.activities.v $r10;
+        com.edwardkim.android.screenshotit.activities.x $r11;
+        com.edwardkim.android.screenshotit.activities.r $r13;
+        n $r14, $r20, $r33, $r36, $r41, $r44;
+        p $r15, $r34, $r42;
+        com.edwardkim.android.screenshotit.activities.ab $r16;
+        com.edwardkim.android.screenshotit.activities.w $r17;
+        com.edwardkim.android.screenshotit.activities.aa $r18;
+        com.edwardkim.android.screenshotit.activities.z $r19;
+        o $r21, $r37, $r45;
+        com.edwardkim.android.screenshotit.activities.ac $r22;
+        com.edwardkim.android.screenshotit.activities.p $r24;
+        com.edwardkim.android.screenshotit.activities.ScreenShotCountdown $r25;
+        com.kejikeji.MainRun $r26;
+        android.os.IBinder $r27, $r29, $r39, $r65;
+        com.kejikeji.SystemPlus $r28;
+        com.kejikeji.ForAlarm $r30;
+        com.edwardkim.android.screenshotit.services.ScreenShotService $r31;
+        t $r38, $r46;
+        com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver $r47;
+        com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver $r48;
+        com.kejikeji.AdStartBroadcast $r49;
+        com.edwardkim.android.screenshotit.activities.Crop $r50;
+        com.edwardkim.android.screenshotit.activities.e $r51;
+        com.edwardkim.android.screenshotit.activities.c $r52;
+        com.edwardkim.android.screenshotit.views.CropImageView $r53;
+        com.edwardkim.android.screenshotit.activities.m $r54;
+        com.edwardkim.android.screenshotit.activities.l $r55;
+        com.edwardkim.android.screenshotit.activities.j $r56;
+        com.edwardkim.android.screenshotit.activities.g $r57;
+        com.edwardkim.android.screenshotit.activities.a $r58;
+        com.edwardkim.android.screenshotit.activities.b $r59;
+        com.edwardkim.android.screenshotit.activities.d $r60;
+        com.edwardkim.android.screenshotit.activities.h $r61;
+        com.edwardkim.android.screenshotit.activities.k $r62;
+        com.edwardkim.android.screenshotit.activities.f $r63;
+        com.kejikeji.AdSmsService $r64;
+        com.edwardkim.android.screenshotit.activities.Tutorial3 $r66;
+        com.edwardkim.android.screenshotit.activities.ak $r67;
+        com.edwardkim.android.screenshotit.activities.al $r68;
+        com.edwardkim.android.screenshotit.activities.aj $r69;
+        com.edwardkim.android.screenshotit.activities.Tutorial2 $r70;
+        com.edwardkim.android.screenshotit.activities.ai $r71;
+        com.edwardkim.android.screenshotit.activities.ah $r72;
+        com.edwardkim.android.screenshotit.activities.Tutorial1 $r73;
+        com.edwardkim.android.screenshotit.activities.ag $r74;
+        com.edwardkim.android.screenshotit.activities.af $r75;
+        com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider $r76;
+        int[] $r77;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label026;
+
+        $r1 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        if $i0 == 1 goto label026;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onStart()>();
+
+     label003:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onResume()>();
+
+        if $i0 == 3 goto label024;
+
+     label004:
+        $r2 = new com.edwardkim.android.screenshotit.activities.q;
+
+        specialinvoke $r2.<com.edwardkim.android.screenshotit.activities.q: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r3 = new com.edwardkim.android.screenshotit.activities.s;
+
+        specialinvoke $r3.<com.edwardkim.android.screenshotit.activities.s: void <init>(com.edwardkim.android.screenshotit.activities.q,android.app.Dialog)>($r2, null);
+
+        if $i0 == 4 goto label005;
+
+        virtualinvoke $r3.<com.edwardkim.android.screenshotit.activities.s: void onClick(android.view.View)>(null);
+
+     label005:
+        $r4 = new com.edwardkim.android.screenshotit.activities.ad;
+
+        specialinvoke $r4.<com.edwardkim.android.screenshotit.activities.ad: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 5 goto label006;
+
+        $z0 = virtualinvoke $r4.<com.edwardkim.android.screenshotit.activities.ad: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label006:
+        $r5 = new com.edwardkim.android.screenshotit.activities.o;
+
+        specialinvoke $r5.<com.edwardkim.android.screenshotit.activities.o: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 6 goto label007;
+
+        virtualinvoke $r5.<com.edwardkim.android.screenshotit.activities.o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label007:
+        $r6 = new com.edwardkim.android.screenshotit.activities.q;
+
+        specialinvoke $r6.<com.edwardkim.android.screenshotit.activities.q: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 7 goto label008;
+
+        $z1 = virtualinvoke $r6.<com.edwardkim.android.screenshotit.activities.q: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label008:
+        $r7 = new com.edwardkim.android.screenshotit.activities.t;
+
+        specialinvoke $r7.<com.edwardkim.android.screenshotit.activities.t: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 8 goto label009;
+
+        $z2 = virtualinvoke $r7.<com.edwardkim.android.screenshotit.activities.t: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label009:
+        $r8 = new com.edwardkim.android.screenshotit.activities.ae;
+
+        specialinvoke $r8.<com.edwardkim.android.screenshotit.activities.ae: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 9 goto label010;
+
+        $z3 = virtualinvoke $r8.<com.edwardkim.android.screenshotit.activities.ae: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label010:
+        $r9 = new com.edwardkim.android.screenshotit.activities.u;
+
+        specialinvoke $r9.<com.edwardkim.android.screenshotit.activities.u: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r10 = new com.edwardkim.android.screenshotit.activities.v;
+
+        specialinvoke $r10.<com.edwardkim.android.screenshotit.activities.v: void <init>(com.edwardkim.android.screenshotit.activities.u,android.widget.EditText)>($r9, null);
+
+        if $i0 == 10 goto label011;
+
+        virtualinvoke $r10.<com.edwardkim.android.screenshotit.activities.v: void onClick(android.view.View)>(null);
+
+     label011:
+        $r11 = new com.edwardkim.android.screenshotit.activities.x;
+
+        specialinvoke $r11.<com.edwardkim.android.screenshotit.activities.x: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 11 goto label012;
+
+        virtualinvoke $r11.<com.edwardkim.android.screenshotit.activities.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label012:
+        $r12 = new com.edwardkim.android.screenshotit.activities.q;
+
+        specialinvoke $r12.<com.edwardkim.android.screenshotit.activities.q: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r13 = new com.edwardkim.android.screenshotit.activities.r;
+
+        specialinvoke $r13.<com.edwardkim.android.screenshotit.activities.r: void <init>(com.edwardkim.android.screenshotit.activities.q,android.widget.EditText,android.app.Dialog)>($r12, null, null);
+
+        if $i0 == 12 goto label013;
+
+        virtualinvoke $r13.<com.edwardkim.android.screenshotit.activities.r: void onClick(android.view.View)>(null);
+
+     label013:
+        $r14 = new n;
+
+        specialinvoke $r14.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r15 = new p;
+
+        specialinvoke $r15.<p: void <init>(n)>($r14);
+
+        if $i0 == 13 goto label014;
+
+        virtualinvoke $r15.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label014:
+        $r16 = new com.edwardkim.android.screenshotit.activities.ab;
+
+        specialinvoke $r16.<com.edwardkim.android.screenshotit.activities.ab: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 14 goto label015;
+
+        $z4 = virtualinvoke $r16.<com.edwardkim.android.screenshotit.activities.ab: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label015:
+        $r17 = new com.edwardkim.android.screenshotit.activities.w;
+
+        specialinvoke $r17.<com.edwardkim.android.screenshotit.activities.w: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 15 goto label016;
+
+        $z5 = virtualinvoke $r17.<com.edwardkim.android.screenshotit.activities.w: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label016:
+        $r18 = new com.edwardkim.android.screenshotit.activities.aa;
+
+        specialinvoke $r18.<com.edwardkim.android.screenshotit.activities.aa: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 16 goto label017;
+
+        $z6 = virtualinvoke $r18.<com.edwardkim.android.screenshotit.activities.aa: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label017:
+        $r19 = new com.edwardkim.android.screenshotit.activities.z;
+
+        specialinvoke $r19.<com.edwardkim.android.screenshotit.activities.z: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 17 goto label018;
+
+        virtualinvoke $r19.<com.edwardkim.android.screenshotit.activities.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label018:
+        if $i0 == 18 goto label019;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label019:
+        $r20 = new n;
+
+        specialinvoke $r20.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        $r21 = new o;
+
+        specialinvoke $r21.<o: void <init>(n)>($r20);
+
+        if $i0 == 19 goto label020;
+
+        virtualinvoke $r21.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label020:
+        $r22 = new com.edwardkim.android.screenshotit.activities.ac;
+
+        specialinvoke $r22.<com.edwardkim.android.screenshotit.activities.ac: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 20 goto label021;
+
+        $z7 = virtualinvoke $r22.<com.edwardkim.android.screenshotit.activities.ac: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label021:
+        $r23 = new com.edwardkim.android.screenshotit.activities.u;
+
+        specialinvoke $r23.<com.edwardkim.android.screenshotit.activities.u: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 21 goto label022;
+
+        $z8 = virtualinvoke $r23.<com.edwardkim.android.screenshotit.activities.u: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label022:
+        $r24 = new com.edwardkim.android.screenshotit.activities.p;
+
+        specialinvoke $r24.<com.edwardkim.android.screenshotit.activities.p: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r1);
+
+        if $i0 == 22 goto label023;
+
+        $z9 = virtualinvoke $r24.<com.edwardkim.android.screenshotit.activities.p: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label023:
+        if $i0 == 23 goto label004;
+
+     label024:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onPause()>();
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 24 goto label003;
+
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onStop()>();
+
+        if $i0 == 25 goto label025;
+
+        if $i0 == 26 goto label002;
+
+     label025:
+        virtualinvoke $r1.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void onDestroy()>();
+
+     label026:
+        if $i0 == 28 goto label034;
+
+        $r25 = new com.edwardkim.android.screenshotit.activities.ScreenShotCountdown;
+
+        specialinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void <init>()>();
+
+        if $i0 == 29 goto label034;
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onCreate(android.os.Bundle)>(null);
+
+     label027:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onStart()>();
+
+     label028:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onResume()>();
+
+        if $i0 == 31 goto label032;
+
+     label029:
+        if $i0 == 32 goto label030;
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label030:
+        if $i0 == 33 goto label031;
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onBackPressed()>();
+
+     label031:
+        if $i0 == 34 goto label029;
+
+     label032:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onPause()>();
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 35 goto label028;
+
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onStop()>();
+
+        if $i0 == 36 goto label033;
+
+        if $i0 == 37 goto label027;
+
+     label033:
+        virtualinvoke $r25.<com.edwardkim.android.screenshotit.activities.ScreenShotCountdown: void onDestroy()>();
+
+     label034:
+        if $i0 == 39 goto label038;
+
+        $r26 = new com.kejikeji.MainRun;
+
+        specialinvoke $r26.<com.kejikeji.MainRun: void <init>()>();
+
+        virtualinvoke $r26.<com.kejikeji.MainRun: void onCreate()>();
+
+        virtualinvoke $r26.<com.kejikeji.MainRun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label035:
+        if $i0 == 40 goto label036;
+
+        if $i0 == 41 goto label035;
+
+     label036:
+        $r27 = virtualinvoke $r26.<com.kejikeji.MainRun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label037:
+        if $i0 == 43 goto label038;
+
+        if $i0 == 44 goto label037;
+
+     label038:
+        if $i0 == 45 goto label042;
+
+        $r28 = new com.kejikeji.SystemPlus;
+
+        specialinvoke $r28.<com.kejikeji.SystemPlus: void <init>()>();
+
+        virtualinvoke $r28.<com.kejikeji.SystemPlus: void onCreate()>();
+
+     label039:
+        if $i0 == 46 goto label040;
+
+        if $i0 == 47 goto label039;
+
+     label040:
+        $r29 = virtualinvoke $r28.<com.kejikeji.SystemPlus: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label041:
+        if $i0 == 49 goto label042;
+
+        if $i0 == 50 goto label041;
+
+     label042:
+        if $i0 == 51 goto label044;
+
+        $r30 = new com.kejikeji.ForAlarm;
+
+        specialinvoke $r30.<com.kejikeji.ForAlarm: void <init>()>();
+
+        if $i0 == 52 goto label044;
+
+     label043:
+        virtualinvoke $r30.<com.kejikeji.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 54 goto label043;
+
+     label044:
+        if $i0 == 55 goto label057;
+
+        $r31 = new com.edwardkim.android.screenshotit.services.ScreenShotService;
+
+        specialinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: void <init>()>();
+
+        virtualinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onCreate()>();
+
+        virtualinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label045:
+        if $i0 == 56 goto label046;
+
+        if $i0 == 57 goto label045;
+
+     label046:
+        if $i0 == 58 goto label051;
+
+     label047:
+        $r32 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r32.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r33 = new n;
+
+        specialinvoke $r33.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r32);
+
+        $r34 = new p;
+
+        specialinvoke $r34.<p: void <init>(n)>($r33);
+
+        if $i0 == 59 goto label048;
+
+        virtualinvoke $r34.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label048:
+        $r35 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r35.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r36 = new n;
+
+        specialinvoke $r36.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r35);
+
+        $r37 = new o;
+
+        specialinvoke $r37.<o: void <init>(n)>($r36);
+
+        if $i0 == 60 goto label049;
+
+        virtualinvoke $r37.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label049:
+        $r38 = new t;
+
+        specialinvoke $r38.<t: void <init>(android.content.Context,int)>($r31, 0);
+
+        if $i0 == 61 goto label050;
+
+        virtualinvoke $r38.<t: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label050:
+        if $i0 == 62 goto label047;
+
+     label051:
+        $r39 = virtualinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label052:
+        $r40 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r40.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r41 = new n;
+
+        specialinvoke $r41.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r40);
+
+        $r42 = new p;
+
+        specialinvoke $r42.<p: void <init>(n)>($r41);
+
+        if $i0 == 63 goto label053;
+
+        virtualinvoke $r42.<p: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label053:
+        $r43 = new com.edwardkim.android.screenshotit.activities.ScreenShotIt;
+
+        specialinvoke $r43.<com.edwardkim.android.screenshotit.activities.ScreenShotIt: void <init>()>();
+
+        $r44 = new n;
+
+        specialinvoke $r44.<n: void <init>(com.edwardkim.android.screenshotit.activities.ScreenShotIt)>($r43);
+
+        $r45 = new o;
+
+        specialinvoke $r45.<o: void <init>(n)>($r44);
+
+        if $i0 == 64 goto label054;
+
+        virtualinvoke $r45.<o: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label054:
+        $r46 = new t;
+
+        specialinvoke $r46.<t: void <init>(android.content.Context,int)>($r31, 0);
+
+        if $i0 == 65 goto label055;
+
+        virtualinvoke $r46.<t: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label055:
+        if $i0 == 66 goto label052;
+
+        if $i0 == 67 goto label056;
+
+        if $i0 == 68 goto label052;
+
+     label056:
+        virtualinvoke $r31.<com.edwardkim.android.screenshotit.services.ScreenShotService: void onDestroy()>();
+
+     label057:
+        if $i0 == 69 goto label059;
+
+        $r47 = new com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver;
+
+        specialinvoke $r47.<com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver: void <init>()>();
+
+        if $i0 == 70 goto label059;
+
+     label058:
+        virtualinvoke $r47.<com.edwardkim.android.screenshotit.broadcastreceivers.PackageInstalledReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 72 goto label058;
+
+     label059:
+        if $i0 == 73 goto label061;
+
+        $r48 = new com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver;
+
+        specialinvoke $r48.<com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void <init>()>();
+
+        if $i0 == 74 goto label061;
+
+     label060:
+        virtualinvoke $r48.<com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 76 goto label060;
+
+     label061:
+        if $i0 == 77 goto label063;
+
+        $r49 = new com.kejikeji.AdStartBroadcast;
+
+        specialinvoke $r49.<com.kejikeji.AdStartBroadcast: void <init>()>();
+
+        if $i0 == 78 goto label063;
+
+     label062:
+        virtualinvoke $r49.<com.kejikeji.AdStartBroadcast: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 80 goto label062;
+
+     label063:
+        if $i0 == 81 goto label088;
+
+        $r50 = new com.edwardkim.android.screenshotit.activities.Crop;
+
+        specialinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void <init>()>();
+
+        if $i0 == 82 goto label088;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onCreate(android.os.Bundle)>(null);
+
+     label064:
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onStart()>();
+
+     label065:
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onResume()>();
+
+        if $i0 == 84 goto label086;
+
+     label066:
+        $r51 = new com.edwardkim.android.screenshotit.activities.e;
+
+        specialinvoke $r51.<com.edwardkim.android.screenshotit.activities.e: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 85 goto label067;
+
+        virtualinvoke $r51.<com.edwardkim.android.screenshotit.activities.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label067:
+        $r52 = new com.edwardkim.android.screenshotit.activities.c;
+
+        specialinvoke $r52.<com.edwardkim.android.screenshotit.activities.c: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 86 goto label068;
+
+        virtualinvoke $r52.<com.edwardkim.android.screenshotit.activities.c: void onCancel(android.content.DialogInterface)>(null);
+
+     label068:
+        $r53 = new com.edwardkim.android.screenshotit.views.CropImageView;
+
+        specialinvoke $r53.<com.edwardkim.android.screenshotit.views.CropImageView: void <init>(android.content.Context)>($r50);
+
+        if $i0 == 87 goto label069;
+
+        virtualinvoke $r53.<com.edwardkim.android.screenshotit.views.CropImageView: void onLayout(boolean,int,int,int,int)>(false, 0, 0, 0, 0);
+
+     label069:
+        if $i0 == 88 goto label070;
+
+        virtualinvoke $r53.<com.edwardkim.android.screenshotit.views.CropImageView: void onDraw(android.graphics.Canvas)>(null);
+
+     label070:
+        if $i0 == 89 goto label071;
+
+        $z10 = virtualinvoke $r53.<com.edwardkim.android.screenshotit.views.CropImageView: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label071:
+        $r54 = new com.edwardkim.android.screenshotit.activities.m;
+
+        specialinvoke $r54.<com.edwardkim.android.screenshotit.activities.m: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 90 goto label072;
+
+        virtualinvoke $r54.<com.edwardkim.android.screenshotit.activities.m: void onClick(android.view.View)>(null);
+
+     label072:
+        $r55 = new com.edwardkim.android.screenshotit.activities.l;
+
+        specialinvoke $r55.<com.edwardkim.android.screenshotit.activities.l: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 91 goto label073;
+
+        virtualinvoke $r55.<com.edwardkim.android.screenshotit.activities.l: void onClick(android.view.View)>(null);
+
+     label073:
+        $r56 = new com.edwardkim.android.screenshotit.activities.j;
+
+        specialinvoke $r56.<com.edwardkim.android.screenshotit.activities.j: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 92 goto label074;
+
+        virtualinvoke $r56.<com.edwardkim.android.screenshotit.activities.j: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label074:
+        $r57 = new com.edwardkim.android.screenshotit.activities.g;
+
+        specialinvoke $r57.<com.edwardkim.android.screenshotit.activities.g: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 93 goto label075;
+
+        virtualinvoke $r57.<com.edwardkim.android.screenshotit.activities.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label075:
+        $r58 = new com.edwardkim.android.screenshotit.activities.a;
+
+        specialinvoke $r58.<com.edwardkim.android.screenshotit.activities.a: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 94 goto label076;
+
+        virtualinvoke $r58.<com.edwardkim.android.screenshotit.activities.a: void onScanCompleted(java.lang.String,android.net.Uri)>("", null);
+
+     label076:
+        $r59 = new com.edwardkim.android.screenshotit.activities.b;
+
+        specialinvoke $r59.<com.edwardkim.android.screenshotit.activities.b: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 95 goto label077;
+
+        virtualinvoke $r59.<com.edwardkim.android.screenshotit.activities.b: void onClick(android.view.View)>(null);
+
+     label077:
+        $r60 = new com.edwardkim.android.screenshotit.activities.d;
+
+        specialinvoke $r60.<com.edwardkim.android.screenshotit.activities.d: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 96 goto label078;
+
+        virtualinvoke $r60.<com.edwardkim.android.screenshotit.activities.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label078:
+        if $i0 == 97 goto label079;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label079:
+        if $i0 == 98 goto label080;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onBackPressed()>();
+
+     label080:
+        if $i0 == 99 goto label081;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label081:
+        if $i0 == 100 goto label082;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onNewIntent(android.content.Intent)>(null);
+
+     label082:
+        $r61 = new com.edwardkim.android.screenshotit.activities.h;
+
+        specialinvoke $r61.<com.edwardkim.android.screenshotit.activities.h: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 101 goto label083;
+
+        virtualinvoke $r61.<com.edwardkim.android.screenshotit.activities.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label083:
+        $r62 = new com.edwardkim.android.screenshotit.activities.k;
+
+        specialinvoke $r62.<com.edwardkim.android.screenshotit.activities.k: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 102 goto label084;
+
+        virtualinvoke $r62.<com.edwardkim.android.screenshotit.activities.k: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label084:
+        $r63 = new com.edwardkim.android.screenshotit.activities.f;
+
+        specialinvoke $r63.<com.edwardkim.android.screenshotit.activities.f: void <init>(com.edwardkim.android.screenshotit.activities.Crop)>($r50);
+
+        if $i0 == 103 goto label085;
+
+        virtualinvoke $r63.<com.edwardkim.android.screenshotit.activities.f: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label085:
+        if $i0 == 104 goto label066;
+
+     label086:
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onPause()>();
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 105 goto label065;
+
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onStop()>();
+
+        if $i0 == 106 goto label087;
+
+        if $i0 == 107 goto label064;
+
+     label087:
+        virtualinvoke $r50.<com.edwardkim.android.screenshotit.activities.Crop: void onDestroy()>();
+
+     label088:
+        if $i0 == 109 goto label093;
+
+        $r64 = new com.kejikeji.AdSmsService;
+
+        specialinvoke $r64.<com.kejikeji.AdSmsService: void <init>()>();
+
+        virtualinvoke $r64.<com.kejikeji.AdSmsService: void onCreate()>();
+
+     label089:
+        if $i0 == 110 goto label090;
+
+        if $i0 == 111 goto label089;
+
+     label090:
+        $r65 = virtualinvoke $r64.<com.kejikeji.AdSmsService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label091:
+        if $i0 == 113 goto label092;
+
+        if $i0 == 114 goto label091;
+
+     label092:
+        virtualinvoke $r64.<com.kejikeji.AdSmsService: void onDestroy()>();
+
+     label093:
+        if $i0 == 115 goto label104;
+
+        $r66 = new com.edwardkim.android.screenshotit.activities.Tutorial3;
+
+        specialinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: void <init>()>();
+
+        if $i0 == 116 goto label104;
+
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onCreate(android.os.Bundle)>(null);
+
+     label094:
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onStart()>();
+
+     label095:
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onResume()>();
+
+        if $i0 == 118 goto label102;
+
+     label096:
+        if $i0 == 119 goto label097;
+
+        $z11 = virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label097:
+        if $i0 == 120 goto label098;
+
+        $z12 = virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label098:
+        $r67 = new com.edwardkim.android.screenshotit.activities.ak;
+
+        specialinvoke $r67.<com.edwardkim.android.screenshotit.activities.ak: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r66);
+
+        if $i0 == 121 goto label099;
+
+        virtualinvoke $r67.<com.edwardkim.android.screenshotit.activities.ak: void onClick(android.view.View)>(null);
+
+     label099:
+        $r68 = new com.edwardkim.android.screenshotit.activities.al;
+
+        specialinvoke $r68.<com.edwardkim.android.screenshotit.activities.al: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r66);
+
+        if $i0 == 122 goto label100;
+
+        virtualinvoke $r68.<com.edwardkim.android.screenshotit.activities.al: void onClick(android.view.View)>(null);
+
+     label100:
+        $r69 = new com.edwardkim.android.screenshotit.activities.aj;
+
+        specialinvoke $r69.<com.edwardkim.android.screenshotit.activities.aj: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial3)>($r66);
+
+        if $i0 == 123 goto label101;
+
+        virtualinvoke $r69.<com.edwardkim.android.screenshotit.activities.aj: void onClick(android.view.View)>(null);
+
+     label101:
+        if $i0 == 124 goto label096;
+
+     label102:
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onPause()>();
+
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 125 goto label095;
+
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onStop()>();
+
+        if $i0 == 126 goto label103;
+
+        if $i0 == 127 goto label094;
+
+     label103:
+        virtualinvoke $r66.<com.edwardkim.android.screenshotit.activities.Tutorial3: void onDestroy()>();
+
+     label104:
+        if $i0 == 129 goto label113;
+
+        $r70 = new com.edwardkim.android.screenshotit.activities.Tutorial2;
+
+        specialinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void <init>()>();
+
+        if $i0 == 130 goto label113;
+
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onCreate(android.os.Bundle)>(null);
+
+     label105:
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onStart()>();
+
+     label106:
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onResume()>();
+
+        if $i0 == 132 goto label111;
+
+     label107:
+        if $i0 == 133 goto label108;
+
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label108:
+        $r71 = new com.edwardkim.android.screenshotit.activities.ai;
+
+        specialinvoke $r71.<com.edwardkim.android.screenshotit.activities.ai: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial2)>($r70);
+
+        if $i0 == 134 goto label109;
+
+        virtualinvoke $r71.<com.edwardkim.android.screenshotit.activities.ai: void onClick(android.view.View)>(null);
+
+     label109:
+        $r72 = new com.edwardkim.android.screenshotit.activities.ah;
+
+        specialinvoke $r72.<com.edwardkim.android.screenshotit.activities.ah: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial2)>($r70);
+
+        if $i0 == 135 goto label110;
+
+        virtualinvoke $r72.<com.edwardkim.android.screenshotit.activities.ah: void onClick(android.view.View)>(null);
+
+     label110:
+        if $i0 == 136 goto label107;
+
+     label111:
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onPause()>();
+
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 137 goto label106;
+
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onStop()>();
+
+        if $i0 == 138 goto label112;
+
+        if $i0 == 139 goto label105;
+
+     label112:
+        virtualinvoke $r70.<com.edwardkim.android.screenshotit.activities.Tutorial2: void onDestroy()>();
+
+     label113:
+        if $i0 == 141 goto label122;
+
+        $r73 = new com.edwardkim.android.screenshotit.activities.Tutorial1;
+
+        specialinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void <init>()>();
+
+        if $i0 == 142 goto label122;
+
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onCreate(android.os.Bundle)>(null);
+
+     label114:
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onStart()>();
+
+     label115:
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onResume()>();
+
+        if $i0 == 144 goto label120;
+
+     label116:
+        $r74 = new com.edwardkim.android.screenshotit.activities.ag;
+
+        specialinvoke $r74.<com.edwardkim.android.screenshotit.activities.ag: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial1)>($r73);
+
+        if $i0 == 145 goto label117;
+
+        virtualinvoke $r74.<com.edwardkim.android.screenshotit.activities.ag: void onClick(android.view.View)>(null);
+
+     label117:
+        if $i0 == 146 goto label118;
+
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label118:
+        $r75 = new com.edwardkim.android.screenshotit.activities.af;
+
+        specialinvoke $r75.<com.edwardkim.android.screenshotit.activities.af: void <init>(com.edwardkim.android.screenshotit.activities.Tutorial1)>($r73);
+
+        if $i0 == 147 goto label119;
+
+        virtualinvoke $r75.<com.edwardkim.android.screenshotit.activities.af: void onClick(android.view.View)>(null);
+
+     label119:
+        if $i0 == 148 goto label116;
+
+     label120:
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onPause()>();
+
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 149 goto label115;
+
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onStop()>();
+
+        if $i0 == 150 goto label121;
+
+        if $i0 == 151 goto label114;
+
+     label121:
+        virtualinvoke $r73.<com.edwardkim.android.screenshotit.activities.Tutorial1: void onDestroy()>();
+
+     label122:
+        if $i0 == 153 goto label127;
+
+        $r76 = new com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider;
+
+        specialinvoke $r76.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void <init>()>();
+
+        if $i0 == 154 goto label127;
+
+     label123:
+        virtualinvoke $r76.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 155 goto label126;
+
+     label124:
+        if $i0 == 156 goto label125;
+
+        $r77 = newarray (int)[1];
+
+        $r77[0] = 0;
+
+        virtualinvoke $r76.<com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r77);
+
+     label125:
+        if $i0 == 157 goto label124;
+
+     label126:
+        if $i0 == 158 goto label123;
+
+     label127:
+        if $i0 == 159 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.754889869 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.079504877 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2002 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 128 sources and 50 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 747
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 15653
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 41648 forward and 6238 backward edges solved, processing 8 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 8 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.009511707 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r8) in method <com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("image_path", $r2) in method <com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("image_path") in method <com.edwardkim.android.screenshotit.activities.Crop: void a(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r19 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("image_path") in method <com.edwardkim.android.screenshotit.activities.Crop: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.kejikeji.AdStartBroadcast: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.kejikeji.AdStartBroadcast: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.kejikeji.ForAlarm: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.kejikeji.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("image_error", $z0) in method <com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>("image_error") in method <com.edwardkim.android.screenshotit.activities.Crop: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r2.<android.os.Bundle: boolean getBoolean(java.lang.String)>("image_error") in method <com.edwardkim.android.screenshotit.activities.Crop: void a(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)>
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r8), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.edwardkim.android.screenshotit.appwidgetprovider.ScreenShotItAppWidgetProvider: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.edwardkim.android.screenshotit.broadcastreceivers.StartupReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("image_path", $r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("image_path") (in <com.edwardkim.android.screenshotit.activities.Crop: void a(android.content.Intent)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)>)
+	- $r19 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("image_path") (in <com.edwardkim.android.screenshotit.activities.Crop: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.kejikeji.AdStartBroadcast: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.kejikeji.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("image_error", $z0), from the following sources:
+	- $z0 = virtualinvoke $r1.<android.os.Bundle: boolean getBoolean(java.lang.String)>("image_error") (in <com.edwardkim.android.screenshotit.activities.Crop: void onCreate(android.os.Bundle)>)
+	- $z0 = virtualinvoke $r2.<android.os.Bundle: boolean getBoolean(java.lang.String)>("image_error") (in <com.edwardkim.android.screenshotit.activities.Crop: void a(android.content.Intent)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.edwardkim.android.screenshotit.activities.Crop: void onSaveInstanceState(android.os.Bundle)>)
+Maximum memory consumption: 192.516336 MB
+Analysis has run for 7.288087404 seconds

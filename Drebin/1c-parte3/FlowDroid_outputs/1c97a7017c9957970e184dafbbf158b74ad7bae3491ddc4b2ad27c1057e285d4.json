@@ -1,0 +1,1404 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.023435984 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.magmamobile.game.TapAndFurious.App $r1;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity $r2;
+        com.magmamobile.game.TapAndFurious.activities.GameActivity $r3;
+        com.geinimi.custom.GoogleKeyboard $r4;
+        android.os.IBinder $r5;
+        com.geinimi.custom.Ad3029_30290001 $r6;
+        com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity $r7;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity $r8;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity $r9;
+        com.geinimi.AdServiceReceiver $r10;
+        com.magmamobile.game.TapAndFurious.Main $r11;
+        com.magmamobile.game.TapAndFurious.activities.HighScoresActivity $r12;
+        com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity $r13;
+        com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity $r14;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new com.magmamobile.game.TapAndFurious.App;
+
+        specialinvoke $r1.<com.magmamobile.game.TapAndFurious.App: void <init>()>();
+
+        virtualinvoke $r1.<com.magmamobile.game.engine.GameApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r2 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity;
+
+        specialinvoke $r2.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r2.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r2.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label07;
+
+        $r3 = new com.magmamobile.game.TapAndFurious.activities.GameActivity;
+
+        specialinvoke $r3.<com.magmamobile.game.TapAndFurious.activities.GameActivity: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r3.<com.magmamobile.game.engine.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r3.<com.magmamobile.game.engine.GameActivity: void onStart()>();
+
+     label05:
+        virtualinvoke $r3.<com.magmamobile.game.engine.GameActivity: void onResume()>();
+
+        virtualinvoke $r3.<com.magmamobile.game.engine.GameActivity: void onPause()>();
+
+        if $i0 == 10 goto label05;
+
+        virtualinvoke $r3.<com.magmamobile.game.engine.GameActivity: void onStop()>();
+
+        if $i0 == 11 goto label06;
+
+        if $i0 == 12 goto label04;
+
+     label06:
+        virtualinvoke $r3.<com.magmamobile.game.engine.GameActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 14 goto label12;
+
+        $r4 = new com.geinimi.custom.GoogleKeyboard;
+
+        specialinvoke $r4.<com.geinimi.custom.GoogleKeyboard: void <init>()>();
+
+        virtualinvoke $r4.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r4.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label08:
+        if $i0 == 15 goto label09;
+
+        if $i0 == 16 goto label08;
+
+     label09:
+        $r5 = virtualinvoke $r4.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label10:
+        if $i0 == 18 goto label11;
+
+        if $i0 == 19 goto label10;
+
+     label11:
+        virtualinvoke $r4.<com.geinimi.AdService: void onDestroy()>();
+
+     label12:
+        if $i0 == 20 goto label14;
+
+        $r6 = new com.geinimi.custom.Ad3029_30290001;
+
+        specialinvoke $r6.<com.geinimi.custom.Ad3029_30290001: void <init>()>();
+
+        if $i0 == 21 goto label14;
+
+        virtualinvoke $r6.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 24 goto label14;
+
+        if $i0 == 25 goto label13;
+
+     label14:
+        if $i0 == 27 goto label16;
+
+        $r7 = new com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity;
+
+        specialinvoke $r7.<com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity: void <init>()>();
+
+        if $i0 == 28 goto label16;
+
+        virtualinvoke $r7.<com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 31 goto label16;
+
+        if $i0 == 32 goto label15;
+
+     label16:
+        if $i0 == 35 goto label18;
+
+        $r8 = new com.magmamobile.game.TapAndFurious.activities.MainActivity;
+
+        specialinvoke $r8.<com.magmamobile.game.TapAndFurious.activities.MainActivity: void <init>()>();
+
+        if $i0 == 36 goto label18;
+
+        virtualinvoke $r8.<com.magmamobile.game.TapAndFurious.activities.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 39 goto label18;
+
+        if $i0 == 40 goto label17;
+
+     label18:
+        if $i0 == 42 goto label20;
+
+        $r9 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity;
+
+        specialinvoke $r9.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void <init>()>();
+
+        if $i0 == 43 goto label20;
+
+        virtualinvoke $r9.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        virtualinvoke $r9.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void onResume()>();
+
+        if $i0 == 45 goto label19;
+
+        if $i0 == 46 goto label20;
+
+        if $i0 == 47 goto label19;
+
+     label20:
+        if $i0 == 49 goto label22;
+
+        $r10 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r10.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 50 goto label22;
+
+     label21:
+        virtualinvoke $r10.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 52 goto label21;
+
+     label22:
+        if $i0 == 53 goto label24;
+
+        $r11 = new com.magmamobile.game.TapAndFurious.Main;
+
+        specialinvoke $r11.<com.magmamobile.game.TapAndFurious.Main: void <init>()>();
+
+        if $i0 == 54 goto label24;
+
+        virtualinvoke $r11.<magmamobile.app.SplashActivity: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r11.<magmamobile.app.SplashActivity: void onStart()>();
+
+        virtualinvoke $r11.<magmamobile.app.SplashActivity: void onStop()>();
+
+        if $i0 == 57 goto label24;
+
+        if $i0 == 58 goto label23;
+
+     label24:
+        if $i0 == 60 goto label26;
+
+        $r12 = new com.magmamobile.game.TapAndFurious.activities.HighScoresActivity;
+
+        specialinvoke $r12.<com.magmamobile.game.TapAndFurious.activities.HighScoresActivity: void <init>()>();
+
+        if $i0 == 61 goto label26;
+
+        virtualinvoke $r12.<com.magmamobile.game.TapAndFurious.activities.HighScoresActivity: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 64 goto label26;
+
+        if $i0 == 65 goto label25;
+
+     label26:
+        if $i0 == 67 goto label28;
+
+        $r13 = new com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity;
+
+        specialinvoke $r13.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity: void <init>()>();
+
+        if $i0 == 68 goto label28;
+
+        virtualinvoke $r13.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity: void onCreate(android.os.Bundle)>(null);
+
+     label27:
+        if $i0 == 71 goto label28;
+
+        if $i0 == 72 goto label27;
+
+     label28:
+        if $i0 == 74 goto label30;
+
+        $r14 = new com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity;
+
+        specialinvoke $r14.<com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity: void <init>()>();
+
+        if $i0 == 75 goto label30;
+
+        virtualinvoke $r14.<com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        if $i0 == 78 goto label30;
+
+        if $i0 == 79 goto label29;
+
+     label30:
+        if $i0 == 82 goto label01;
+
+        virtualinvoke $r1.<com.magmamobile.game.TapAndFurious.App: void onTerminate()>();
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.5 seconds.
+[Spark] Solution found in 2.5 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/itemlst_scoreloopscore.xml
+Warning: ImageButton is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Found 2 layout controls in file res/layout/frm_main.xml
+Found 3 layout controls in file res/layout/frm_highscores.xml
+Warning: ProgressBar is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Warning: ListView is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 4 layout controls in file res/layout/inc_highscores.xml
+Found 5 layout controls in file res/layout/inc_ads.xml
+Found 6 layout controls in file res/layout/item_option.xml
+Warning: Gallery is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.Gallery is a phantom class!
+Warning: android.view.Gallery is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 7 layout controls in file res/layout/frm_gamedifficulty.xml
+Found 8 layout controls in file res/layout/frm_gamefinished.xml
+Found 9 layout controls in file res/layout/frm_gamemode.xml
+Warning: ScrollView is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 10 layout controls in file res/layout/scoreloop.xml
+Found 11 layout controls in file res/layout/item_background.xml
+Warning: CheckBox is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 12 layout controls in file res/layout/ask4rate.xml
+Warning: WebView is a phantom class!
+Warning: com.magmamobile.game.TapAndFurious.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 13 layout controls in file res/layout/about.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.AlertDialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CheckBox
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.magmamobile.game.TapAndFurious.App $r1;
+        com.magmamobile.game.TapAndFurious.App$8 $r2;
+        com.magmamobile.game.TapAndFurious.App$7 $r3;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity $r4;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$1 $r5;
+        boolean $z0, $z1, $z2;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$2 $r6;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$3 $r7;
+        com.magmamobile.game.TapAndFurious.activities.GameActivity $r8;
+        com.geinimi.custom.GoogleKeyboard $r9;
+        android.os.IBinder $r10;
+        com.geinimi.custom.Ad3029_30290001 $r11;
+        com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity $r12;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity $r13;
+        com.magmamobile.game.TapAndFurious.modCommon$3 $r14;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity$3 $r15;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity$1 $r16;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity$2 $r17;
+        com.magmamobile.game.TapAndFurious.modCommon$2 $r18;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity $r19;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$5 $r20;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$4 $r21;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$3 $r22;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$2 $r23;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$1 $r24;
+        com.geinimi.AdServiceReceiver $r25;
+        com.magmamobile.game.TapAndFurious.Main $r26;
+        com.magmamobile.game.TapAndFurious.activities.HighScoresActivity $r27;
+        com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity $r28;
+        com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity$1 $r29;
+        com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new com.magmamobile.game.TapAndFurious.App;
+
+        specialinvoke $r1.<com.magmamobile.game.TapAndFurious.App: void <init>()>();
+
+     label01:
+        if $i0 == 0 goto label02;
+
+        $r2 = new com.magmamobile.game.TapAndFurious.App$8;
+
+        specialinvoke $r2.<com.magmamobile.game.TapAndFurious.App$8: void <init>(com.magmamobile.game.TapAndFurious.App)>($r1);
+
+     label02:
+        if $i0 == 2 goto label03;
+
+        $r3 = new com.magmamobile.game.TapAndFurious.App$7;
+
+        specialinvoke $r3.<com.magmamobile.game.TapAndFurious.App$7: void <init>(com.magmamobile.game.TapAndFurious.App)>($r1);
+
+     label03:
+        if $i0 == 3 goto label01;
+
+        virtualinvoke $r1.<com.magmamobile.game.engine.GameApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label04:
+        if $i0 == 4 goto label13;
+
+        $r4 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity;
+
+        specialinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void <init>()>();
+
+        if $i0 == 5 goto label13;
+
+        virtualinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        if $i0 == 7 goto label12;
+
+     label06:
+        $r5 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$1;
+
+        specialinvoke $r5.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$1: void <init>(com.magmamobile.game.TapAndFurious.activities.PreferencesActivity)>($r4);
+
+        if $i0 == 8 goto label07;
+
+        $z0 = virtualinvoke $r5.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$1: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label07:
+        if $i0 == 9 goto label08;
+
+        virtualinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label08:
+        if $i0 == 10 goto label09;
+
+        virtualinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label09:
+        $r6 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$2;
+
+        specialinvoke $r6.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$2: void <init>(com.magmamobile.game.TapAndFurious.activities.PreferencesActivity)>($r4);
+
+        if $i0 == 11 goto label10;
+
+        $z1 = virtualinvoke $r6.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$2: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label10:
+        $r7 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$3;
+
+        specialinvoke $r7.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$3: void <init>(com.magmamobile.game.TapAndFurious.activities.PreferencesActivity)>($r4);
+
+        if $i0 == 12 goto label11;
+
+        $z2 = virtualinvoke $r7.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$3: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label11:
+        if $i0 == 13 goto label06;
+
+     label12:
+        if $i0 == 14 goto label05;
+
+        virtualinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onStop()>();
+
+        if $i0 == 15 goto label13;
+
+        if $i0 == 16 goto label05;
+
+     label13:
+        if $i0 == 18 goto label17;
+
+        $r8 = new com.magmamobile.game.TapAndFurious.activities.GameActivity;
+
+        specialinvoke $r8.<com.magmamobile.game.TapAndFurious.activities.GameActivity: void <init>()>();
+
+        if $i0 == 19 goto label17;
+
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onStart()>();
+
+     label15:
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onResume()>();
+
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onPause()>();
+
+        if $i0 == 21 goto label15;
+
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onStop()>();
+
+        if $i0 == 22 goto label16;
+
+        if $i0 == 23 goto label14;
+
+     label16:
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onDestroy()>();
+
+     label17:
+        if $i0 == 25 goto label22;
+
+        $r9 = new com.geinimi.custom.GoogleKeyboard;
+
+        specialinvoke $r9.<com.geinimi.custom.GoogleKeyboard: void <init>()>();
+
+        virtualinvoke $r9.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r9.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label18:
+        if $i0 == 26 goto label19;
+
+        if $i0 == 27 goto label18;
+
+     label19:
+        $r10 = virtualinvoke $r9.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label20:
+        if $i0 == 29 goto label21;
+
+        if $i0 == 30 goto label20;
+
+     label21:
+        virtualinvoke $r9.<com.geinimi.AdService: void onDestroy()>();
+
+     label22:
+        if $i0 == 31 goto label24;
+
+        $r11 = new com.geinimi.custom.Ad3029_30290001;
+
+        specialinvoke $r11.<com.geinimi.custom.Ad3029_30290001: void <init>()>();
+
+        if $i0 == 32 goto label24;
+
+        virtualinvoke $r11.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        if $i0 == 35 goto label24;
+
+        if $i0 == 36 goto label23;
+
+     label24:
+        if $i0 == 38 goto label29;
+
+        $r12 = new com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity;
+
+        specialinvoke $r12.<com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity: void <init>()>();
+
+        if $i0 == 39 goto label29;
+
+        virtualinvoke $r12.<com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 41 goto label28;
+
+     label26:
+        if $i0 == 42 goto label27;
+
+        virtualinvoke $r12.<com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity: void onClick(android.view.View)>(null);
+
+     label27:
+        if $i0 == 43 goto label26;
+
+     label28:
+        if $i0 == 44 goto label25;
+
+        if $i0 == 45 goto label29;
+
+        if $i0 == 46 goto label25;
+
+     label29:
+        if $i0 == 49 goto label38;
+
+        $r13 = new com.magmamobile.game.TapAndFurious.activities.MainActivity;
+
+        specialinvoke $r13.<com.magmamobile.game.TapAndFurious.activities.MainActivity: void <init>()>();
+
+        if $i0 == 50 goto label38;
+
+        virtualinvoke $r13.<com.magmamobile.game.TapAndFurious.activities.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        if $i0 == 52 goto label37;
+
+     label31:
+        $r14 = new com.magmamobile.game.TapAndFurious.modCommon$3;
+
+        specialinvoke $r14.<com.magmamobile.game.TapAndFurious.modCommon$3: void <init>(android.app.AlertDialog,android.widget.CheckBox,android.content.Context)>(null, null, $r13);
+
+        if $i0 == 53 goto label32;
+
+        virtualinvoke $r14.<com.magmamobile.game.TapAndFurious.modCommon$3: void onClick(android.view.View)>(null);
+
+     label32:
+        $r15 = new com.magmamobile.game.TapAndFurious.activities.MainActivity$3;
+
+        specialinvoke $r15.<com.magmamobile.game.TapAndFurious.activities.MainActivity$3: void <init>(com.magmamobile.game.TapAndFurious.activities.MainActivity)>($r13);
+
+        if $i0 == 54 goto label33;
+
+        virtualinvoke $r15.<com.magmamobile.game.TapAndFurious.activities.MainActivity$3: void onClick(android.view.View)>(null);
+
+     label33:
+        $r16 = new com.magmamobile.game.TapAndFurious.activities.MainActivity$1;
+
+        specialinvoke $r16.<com.magmamobile.game.TapAndFurious.activities.MainActivity$1: void <init>(com.magmamobile.game.TapAndFurious.activities.MainActivity)>($r13);
+
+        if $i0 == 55 goto label34;
+
+        virtualinvoke $r16.<com.magmamobile.game.TapAndFurious.activities.MainActivity$1: void onClick(android.view.View)>(null);
+
+     label34:
+        $r17 = new com.magmamobile.game.TapAndFurious.activities.MainActivity$2;
+
+        specialinvoke $r17.<com.magmamobile.game.TapAndFurious.activities.MainActivity$2: void <init>(com.magmamobile.game.TapAndFurious.activities.MainActivity)>($r13);
+
+        if $i0 == 56 goto label35;
+
+        virtualinvoke $r17.<com.magmamobile.game.TapAndFurious.activities.MainActivity$2: void onClick(android.view.View)>(null);
+
+     label35:
+        $r18 = new com.magmamobile.game.TapAndFurious.modCommon$2;
+
+        specialinvoke $r18.<com.magmamobile.game.TapAndFurious.modCommon$2: void <init>(android.app.AlertDialog,android.content.Context)>(null, $r13);
+
+        if $i0 == 57 goto label36;
+
+        virtualinvoke $r18.<com.magmamobile.game.TapAndFurious.modCommon$2: void onClick(android.view.View)>(null);
+
+     label36:
+        if $i0 == 58 goto label31;
+
+     label37:
+        if $i0 == 59 goto label30;
+
+        if $i0 == 60 goto label38;
+
+        if $i0 == 61 goto label30;
+
+     label38:
+        if $i0 == 63 goto label47;
+
+        $r19 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity;
+
+        specialinvoke $r19.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void <init>()>();
+
+        if $i0 == 64 goto label47;
+
+        virtualinvoke $r19.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        virtualinvoke $r19.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void onResume()>();
+
+        if $i0 == 66 goto label46;
+
+     label40:
+        $r20 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$5;
+
+        specialinvoke $r20.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$5: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 67 goto label41;
+
+        virtualinvoke $r20.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$5: void onClick(android.view.View)>(null);
+
+     label41:
+        $r21 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$4;
+
+        specialinvoke $r21.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$4: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 68 goto label42;
+
+        virtualinvoke $r21.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$4: void onClick(android.view.View)>(null);
+
+     label42:
+        $r22 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$3;
+
+        specialinvoke $r22.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$3: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 69 goto label43;
+
+        virtualinvoke $r22.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$3: void onClick(android.view.View)>(null);
+
+     label43:
+        $r23 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$2;
+
+        specialinvoke $r23.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$2: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 70 goto label44;
+
+        virtualinvoke $r23.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$2: void onClick(android.view.View)>(null);
+
+     label44:
+        $r24 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$1;
+
+        specialinvoke $r24.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$1: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 71 goto label45;
+
+        virtualinvoke $r24.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$1: void onClick(android.view.View)>(null);
+
+     label45:
+        if $i0 == 72 goto label40;
+
+     label46:
+        if $i0 == 73 goto label39;
+
+        if $i0 == 74 goto label47;
+
+        if $i0 == 75 goto label39;
+
+     label47:
+        if $i0 == 77 goto label49;
+
+        $r25 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r25.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 78 goto label49;
+
+     label48:
+        virtualinvoke $r25.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 80 goto label48;
+
+     label49:
+        if $i0 == 81 goto label51;
+
+        $r26 = new com.magmamobile.game.TapAndFurious.Main;
+
+        specialinvoke $r26.<com.magmamobile.game.TapAndFurious.Main: void <init>()>();
+
+        if $i0 == 82 goto label51;
+
+        virtualinvoke $r26.<magmamobile.app.SplashActivity: void onCreate(android.os.Bundle)>(null);
+
+     label50:
+        virtualinvoke $r26.<magmamobile.app.SplashActivity: void onStart()>();
+
+        virtualinvoke $r26.<magmamobile.app.SplashActivity: void onStop()>();
+
+        if $i0 == 85 goto label51;
+
+        if $i0 == 86 goto label50;
+
+     label51:
+        if $i0 == 88 goto label53;
+
+        $r27 = new com.magmamobile.game.TapAndFurious.activities.HighScoresActivity;
+
+        specialinvoke $r27.<com.magmamobile.game.TapAndFurious.activities.HighScoresActivity: void <init>()>();
+
+        if $i0 == 89 goto label53;
+
+        virtualinvoke $r27.<com.magmamobile.game.TapAndFurious.activities.HighScoresActivity: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 92 goto label52;
+
+        if $i0 == 93 goto label53;
+
+        if $i0 == 94 goto label52;
+
+     label53:
+        if $i0 == 96 goto label59;
+
+        $r28 = new com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity;
+
+        specialinvoke $r28.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity: void <init>()>();
+
+        if $i0 == 97 goto label59;
+
+        virtualinvoke $r28.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity: void onCreate(android.os.Bundle)>(null);
+
+     label54:
+        if $i0 == 99 goto label58;
+
+     label55:
+        $r29 = new com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity$1;
+
+        specialinvoke $r29.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity$1: void <init>(com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity,android.app.AlertDialog)>($r28, null);
+
+        if $i0 == 100 goto label56;
+
+        virtualinvoke $r29.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label56:
+        if $i0 == 101 goto label57;
+
+        virtualinvoke $r28.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity: void onClick(android.view.View)>(null);
+
+     label57:
+        if $i0 == 102 goto label55;
+
+     label58:
+        if $i0 == 103 goto label54;
+
+        if $i0 == 104 goto label59;
+
+        if $i0 == 105 goto label54;
+
+     label59:
+        if $i0 == 107 goto label61;
+
+        $r30 = new com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity;
+
+        specialinvoke $r30.<com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity: void <init>()>();
+
+        if $i0 == 108 goto label61;
+
+        virtualinvoke $r30.<com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity: void onCreate(android.os.Bundle)>(null);
+
+     label60:
+        if $i0 == 111 goto label60;
+
+        if $i0 == 112 goto label61;
+
+        if $i0 == 113 goto label60;
+
+     label61:
+        if $i0 == 115 goto label62;
+
+        virtualinvoke $r2.<com.magmamobile.game.TapAndFurious.App$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label62:
+        if $i0 == 116 goto label63;
+
+        virtualinvoke $r3.<com.magmamobile.game.TapAndFurious.App$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label63:
+        if $i0 == 117 goto label61;
+
+        if $i0 == 118 goto label04;
+
+        virtualinvoke $r1.<com.magmamobile.game.TapAndFurious.App: void onTerminate()>();
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.6 seconds.
+[Spark] Solution found in 1.6 seconds.
+Running incremental callback analysis for 9 components...
+Incremental callback analysis done.
+Found 31 callback methods for 9 components
+Found {res/layout/frm_gamemode.xml=[-1 - android.widget.LinearLayout, 2131165206 - android.widget.Button, 2131165205 - android.widget.Button, 2131165204 - android.widget.Button, 2131165189 - android.widget.TextView], res/layout/inc_ads.xml=[-1 - android.widget.LinearLayout, 2131165210 - com.google.ads.GoogleAdView], res/layout/inc_highscores.xml=[-1 - android.widget.ProgressBar, -1 - android.widget.LinearLayout, 2131165213 - android.widget.ListView, -1 - android.widget.TextView, 2131165196 - android.widget.LinearLayout, 2131165211 - android.widget.TextView, 2131165212 - android.widget.LinearLayout], res/layout/frm_highscores.xml=[-1 - android.widget.LinearLayout, 2131165202 - android.widget.TextView], res/layout/item_background.xml=[-1 - android.widget.LinearLayout, 2131165216 - android.widget.ImageView, 2131165214 - android.widget.LinearLayout, 2131165215 - android.widget.TextView], res/layout/ask4rate.xml=[-1 - android.widget.LinearLayout, 2131165188 - android.widget.CheckBox, -1 - android.widget.ScrollView, 2131165185 - android.widget.TextView, 2131165186 - android.widget.Button, 2131165187 - android.widget.Button], res/layout/frm_main.xml=[-1 - android.widget.LinearLayout, 2131165208 - android.widget.ImageButton, 2131165207 - android.widget.ImageButton, 2131165209 - android.widget.ImageButton], res/layout/about.xml=[-1 - android.widget.LinearLayout, 2131165184 - android.webkit.WebView], res/layout/item_option.xml=[2131165219 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165218 - android.widget.ImageView, 2131165217 - android.widget.LinearLayout], res/layout/itemlst_scoreloopscore.xml=[-1 - android.widget.LinearLayout, 2131165222 - android.widget.TextView, 2131165220 - android.widget.LinearLayout, 2131165198 - android.widget.TextView, 2131165221 - android.widget.ImageView, -1 - android.widget.RelativeLayout], res/layout/frm_gamefinished.xml=[2131165197 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165200 - android.widget.TextView, 2131165201 - android.widget.TextView, -1 - android.widget.TextView, 2131165196 - android.widget.LinearLayout, 2131165198 - android.widget.TextView, 2131165199 - android.widget.TextView, 2131165202 - android.widget.TextView], res/layout/scoreloop.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.ScrollView, -1 - android.widget.TextView, 2131165223 - android.widget.EditText, 2131165225 - android.widget.Button, -1 - android.widget.ImageView, 2131165224 - android.widget.EditText], res/layout/frm_gamedifficulty.xml=[-1 - android.widget.LinearLayout, 2131165192 - android.widget.Button, 2131165191 - android.widget.Button, 2131165193 - android.widget.Button, 2131165194 - android.widget.Button, 2131165189 - android.widget.TextView, 2131165190 - android.widget.Gallery]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 31 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/1c97a7017c9957970e184dafbbf158b74ad7bae3491ddc4b2ad27c1057e285d4.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.AlertDialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CheckBox
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.magmamobile.game.TapAndFurious.App $r1;
+        com.magmamobile.game.TapAndFurious.App$8 $r2;
+        com.magmamobile.game.TapAndFurious.App$7 $r3;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity $r4;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$1 $r5;
+        boolean $z0, $z1, $z2;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$2 $r6;
+        com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$3 $r7;
+        com.magmamobile.game.TapAndFurious.activities.GameActivity $r8;
+        com.geinimi.custom.GoogleKeyboard $r9;
+        android.os.IBinder $r10;
+        com.geinimi.custom.Ad3029_30290001 $r11;
+        com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity $r12;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity $r13;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity$1 $r14;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity$3 $r15;
+        com.magmamobile.game.TapAndFurious.modCommon$2 $r16;
+        com.magmamobile.game.TapAndFurious.modCommon$3 $r17;
+        com.magmamobile.game.TapAndFurious.activities.MainActivity$2 $r18;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity $r19;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$3 $r20;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$4 $r21;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$5 $r22;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$2 $r23;
+        com.magmamobile.game.TapAndFurious.activities.GameModeActivity$1 $r24;
+        com.geinimi.AdServiceReceiver $r25;
+        com.magmamobile.game.TapAndFurious.Main $r26;
+        com.magmamobile.game.TapAndFurious.activities.HighScoresActivity $r27;
+        com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity $r28;
+        com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity$1 $r29;
+        com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new com.magmamobile.game.TapAndFurious.App;
+
+        specialinvoke $r1.<com.magmamobile.game.TapAndFurious.App: void <init>()>();
+
+     label01:
+        if $i0 == 0 goto label02;
+
+        $r2 = new com.magmamobile.game.TapAndFurious.App$8;
+
+        specialinvoke $r2.<com.magmamobile.game.TapAndFurious.App$8: void <init>(com.magmamobile.game.TapAndFurious.App)>($r1);
+
+     label02:
+        if $i0 == 2 goto label03;
+
+        $r3 = new com.magmamobile.game.TapAndFurious.App$7;
+
+        specialinvoke $r3.<com.magmamobile.game.TapAndFurious.App$7: void <init>(com.magmamobile.game.TapAndFurious.App)>($r1);
+
+     label03:
+        if $i0 == 3 goto label01;
+
+        virtualinvoke $r1.<com.magmamobile.game.engine.GameApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label04:
+        if $i0 == 4 goto label13;
+
+        $r4 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity;
+
+        specialinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void <init>()>();
+
+        if $i0 == 5 goto label13;
+
+        virtualinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        if $i0 == 7 goto label12;
+
+     label06:
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label07:
+        if $i0 == 9 goto label08;
+
+        virtualinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label08:
+        $r5 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$1;
+
+        specialinvoke $r5.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$1: void <init>(com.magmamobile.game.TapAndFurious.activities.PreferencesActivity)>($r4);
+
+        if $i0 == 10 goto label09;
+
+        $z0 = virtualinvoke $r5.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$1: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label09:
+        $r6 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$2;
+
+        specialinvoke $r6.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$2: void <init>(com.magmamobile.game.TapAndFurious.activities.PreferencesActivity)>($r4);
+
+        if $i0 == 11 goto label10;
+
+        $z1 = virtualinvoke $r6.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$2: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label10:
+        $r7 = new com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$3;
+
+        specialinvoke $r7.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$3: void <init>(com.magmamobile.game.TapAndFurious.activities.PreferencesActivity)>($r4);
+
+        if $i0 == 12 goto label11;
+
+        $z2 = virtualinvoke $r7.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity$3: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label11:
+        if $i0 == 13 goto label06;
+
+     label12:
+        if $i0 == 14 goto label05;
+
+        virtualinvoke $r4.<com.magmamobile.game.TapAndFurious.activities.PreferencesActivity: void onStop()>();
+
+        if $i0 == 15 goto label13;
+
+        if $i0 == 16 goto label05;
+
+     label13:
+        if $i0 == 18 goto label17;
+
+        $r8 = new com.magmamobile.game.TapAndFurious.activities.GameActivity;
+
+        specialinvoke $r8.<com.magmamobile.game.TapAndFurious.activities.GameActivity: void <init>()>();
+
+        if $i0 == 19 goto label17;
+
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onStart()>();
+
+     label15:
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onResume()>();
+
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onPause()>();
+
+        if $i0 == 21 goto label15;
+
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onStop()>();
+
+        if $i0 == 22 goto label16;
+
+        if $i0 == 23 goto label14;
+
+     label16:
+        virtualinvoke $r8.<com.magmamobile.game.engine.GameActivity: void onDestroy()>();
+
+     label17:
+        if $i0 == 25 goto label22;
+
+        $r9 = new com.geinimi.custom.GoogleKeyboard;
+
+        specialinvoke $r9.<com.geinimi.custom.GoogleKeyboard: void <init>()>();
+
+        virtualinvoke $r9.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r9.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label18:
+        if $i0 == 26 goto label19;
+
+        if $i0 == 27 goto label18;
+
+     label19:
+        $r10 = virtualinvoke $r9.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label20:
+        if $i0 == 29 goto label21;
+
+        if $i0 == 30 goto label20;
+
+     label21:
+        virtualinvoke $r9.<com.geinimi.AdService: void onDestroy()>();
+
+     label22:
+        if $i0 == 31 goto label24;
+
+        $r11 = new com.geinimi.custom.Ad3029_30290001;
+
+        specialinvoke $r11.<com.geinimi.custom.Ad3029_30290001: void <init>()>();
+
+        if $i0 == 32 goto label24;
+
+        virtualinvoke $r11.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        if $i0 == 35 goto label24;
+
+        if $i0 == 36 goto label23;
+
+     label24:
+        if $i0 == 38 goto label29;
+
+        $r12 = new com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity;
+
+        specialinvoke $r12.<com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity: void <init>()>();
+
+        if $i0 == 39 goto label29;
+
+        virtualinvoke $r12.<com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 41 goto label28;
+
+     label26:
+        if $i0 == 42 goto label27;
+
+        virtualinvoke $r12.<com.magmamobile.game.TapAndFurious.activities.ScoreloopActivity: void onClick(android.view.View)>(null);
+
+     label27:
+        if $i0 == 43 goto label26;
+
+     label28:
+        if $i0 == 44 goto label25;
+
+        if $i0 == 45 goto label29;
+
+        if $i0 == 46 goto label25;
+
+     label29:
+        if $i0 == 49 goto label38;
+
+        $r13 = new com.magmamobile.game.TapAndFurious.activities.MainActivity;
+
+        specialinvoke $r13.<com.magmamobile.game.TapAndFurious.activities.MainActivity: void <init>()>();
+
+        if $i0 == 50 goto label38;
+
+        virtualinvoke $r13.<com.magmamobile.game.TapAndFurious.activities.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        if $i0 == 52 goto label37;
+
+     label31:
+        $r14 = new com.magmamobile.game.TapAndFurious.activities.MainActivity$1;
+
+        specialinvoke $r14.<com.magmamobile.game.TapAndFurious.activities.MainActivity$1: void <init>(com.magmamobile.game.TapAndFurious.activities.MainActivity)>($r13);
+
+        if $i0 == 53 goto label32;
+
+        virtualinvoke $r14.<com.magmamobile.game.TapAndFurious.activities.MainActivity$1: void onClick(android.view.View)>(null);
+
+     label32:
+        $r15 = new com.magmamobile.game.TapAndFurious.activities.MainActivity$3;
+
+        specialinvoke $r15.<com.magmamobile.game.TapAndFurious.activities.MainActivity$3: void <init>(com.magmamobile.game.TapAndFurious.activities.MainActivity)>($r13);
+
+        if $i0 == 54 goto label33;
+
+        virtualinvoke $r15.<com.magmamobile.game.TapAndFurious.activities.MainActivity$3: void onClick(android.view.View)>(null);
+
+     label33:
+        $r16 = new com.magmamobile.game.TapAndFurious.modCommon$2;
+
+        specialinvoke $r16.<com.magmamobile.game.TapAndFurious.modCommon$2: void <init>(android.app.AlertDialog,android.content.Context)>(null, $r13);
+
+        if $i0 == 55 goto label34;
+
+        virtualinvoke $r16.<com.magmamobile.game.TapAndFurious.modCommon$2: void onClick(android.view.View)>(null);
+
+     label34:
+        $r17 = new com.magmamobile.game.TapAndFurious.modCommon$3;
+
+        specialinvoke $r17.<com.magmamobile.game.TapAndFurious.modCommon$3: void <init>(android.app.AlertDialog,android.widget.CheckBox,android.content.Context)>(null, null, $r13);
+
+        if $i0 == 56 goto label35;
+
+        virtualinvoke $r17.<com.magmamobile.game.TapAndFurious.modCommon$3: void onClick(android.view.View)>(null);
+
+     label35:
+        $r18 = new com.magmamobile.game.TapAndFurious.activities.MainActivity$2;
+
+        specialinvoke $r18.<com.magmamobile.game.TapAndFurious.activities.MainActivity$2: void <init>(com.magmamobile.game.TapAndFurious.activities.MainActivity)>($r13);
+
+        if $i0 == 57 goto label36;
+
+        virtualinvoke $r18.<com.magmamobile.game.TapAndFurious.activities.MainActivity$2: void onClick(android.view.View)>(null);
+
+     label36:
+        if $i0 == 58 goto label31;
+
+     label37:
+        if $i0 == 59 goto label30;
+
+        if $i0 == 60 goto label38;
+
+        if $i0 == 61 goto label30;
+
+     label38:
+        if $i0 == 63 goto label47;
+
+        $r19 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity;
+
+        specialinvoke $r19.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void <init>()>();
+
+        if $i0 == 64 goto label47;
+
+        virtualinvoke $r19.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        virtualinvoke $r19.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity: void onResume()>();
+
+        if $i0 == 66 goto label46;
+
+     label40:
+        $r20 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$3;
+
+        specialinvoke $r20.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$3: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 67 goto label41;
+
+        virtualinvoke $r20.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$3: void onClick(android.view.View)>(null);
+
+     label41:
+        $r21 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$4;
+
+        specialinvoke $r21.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$4: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 68 goto label42;
+
+        virtualinvoke $r21.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$4: void onClick(android.view.View)>(null);
+
+     label42:
+        $r22 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$5;
+
+        specialinvoke $r22.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$5: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 69 goto label43;
+
+        virtualinvoke $r22.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$5: void onClick(android.view.View)>(null);
+
+     label43:
+        $r23 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$2;
+
+        specialinvoke $r23.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$2: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 70 goto label44;
+
+        virtualinvoke $r23.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$2: void onClick(android.view.View)>(null);
+
+     label44:
+        $r24 = new com.magmamobile.game.TapAndFurious.activities.GameModeActivity$1;
+
+        specialinvoke $r24.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$1: void <init>(com.magmamobile.game.TapAndFurious.activities.GameModeActivity)>($r19);
+
+        if $i0 == 71 goto label45;
+
+        virtualinvoke $r24.<com.magmamobile.game.TapAndFurious.activities.GameModeActivity$1: void onClick(android.view.View)>(null);
+
+     label45:
+        if $i0 == 72 goto label40;
+
+     label46:
+        if $i0 == 73 goto label39;
+
+        if $i0 == 74 goto label47;
+
+        if $i0 == 75 goto label39;
+
+     label47:
+        if $i0 == 77 goto label49;
+
+        $r25 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r25.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 78 goto label49;
+
+     label48:
+        virtualinvoke $r25.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 80 goto label48;
+
+     label49:
+        if $i0 == 81 goto label51;
+
+        $r26 = new com.magmamobile.game.TapAndFurious.Main;
+
+        specialinvoke $r26.<com.magmamobile.game.TapAndFurious.Main: void <init>()>();
+
+        if $i0 == 82 goto label51;
+
+        virtualinvoke $r26.<magmamobile.app.SplashActivity: void onCreate(android.os.Bundle)>(null);
+
+     label50:
+        virtualinvoke $r26.<magmamobile.app.SplashActivity: void onStart()>();
+
+        virtualinvoke $r26.<magmamobile.app.SplashActivity: void onStop()>();
+
+        if $i0 == 85 goto label51;
+
+        if $i0 == 86 goto label50;
+
+     label51:
+        if $i0 == 88 goto label53;
+
+        $r27 = new com.magmamobile.game.TapAndFurious.activities.HighScoresActivity;
+
+        specialinvoke $r27.<com.magmamobile.game.TapAndFurious.activities.HighScoresActivity: void <init>()>();
+
+        if $i0 == 89 goto label53;
+
+        virtualinvoke $r27.<com.magmamobile.game.TapAndFurious.activities.HighScoresActivity: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 92 goto label52;
+
+        if $i0 == 93 goto label53;
+
+        if $i0 == 94 goto label52;
+
+     label53:
+        if $i0 == 96 goto label59;
+
+        $r28 = new com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity;
+
+        specialinvoke $r28.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity: void <init>()>();
+
+        if $i0 == 97 goto label59;
+
+        virtualinvoke $r28.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity: void onCreate(android.os.Bundle)>(null);
+
+     label54:
+        if $i0 == 99 goto label58;
+
+     label55:
+        if $i0 == 100 goto label56;
+
+        virtualinvoke $r28.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity: void onClick(android.view.View)>(null);
+
+     label56:
+        $r29 = new com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity$1;
+
+        specialinvoke $r29.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity$1: void <init>(com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity,android.app.AlertDialog)>($r28, null);
+
+        if $i0 == 101 goto label57;
+
+        virtualinvoke $r29.<com.magmamobile.game.TapAndFurious.activities.GameDifficultyActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label57:
+        if $i0 == 102 goto label55;
+
+     label58:
+        if $i0 == 103 goto label54;
+
+        if $i0 == 104 goto label59;
+
+        if $i0 == 105 goto label54;
+
+     label59:
+        if $i0 == 107 goto label61;
+
+        $r30 = new com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity;
+
+        specialinvoke $r30.<com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity: void <init>()>();
+
+        if $i0 == 108 goto label61;
+
+        virtualinvoke $r30.<com.magmamobile.game.TapAndFurious.activities.GameFinishedActivity: void onCreate(android.os.Bundle)>(null);
+
+     label60:
+        if $i0 == 111 goto label60;
+
+        if $i0 == 112 goto label61;
+
+        if $i0 == 113 goto label60;
+
+     label61:
+        if $i0 == 115 goto label62;
+
+        virtualinvoke $r2.<com.magmamobile.game.TapAndFurious.App$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label62:
+        if $i0 == 116 goto label63;
+
+        virtualinvoke $r3.<com.magmamobile.game.TapAndFurious.App$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label63:
+        if $i0 == 117 goto label61;
+
+        if $i0 == 118 goto label04;
+
+        virtualinvoke $r1.<com.magmamobile.game.TapAndFurious.App: void onTerminate()>();
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 3.2 seconds.
+[Spark] Solution found in 3.2 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 3.319263973 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.437094476 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 8100 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 79 sources and 62 sinks.

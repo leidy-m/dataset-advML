@@ -1,0 +1,3700 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.019457449 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.jx.WelcomeActivity $r1;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r2;
+        com.jx.SettingActivity $r3;
+        com.jx.MainActivity $r4;
+        com.jx.ad.AndroidThemeService $r5;
+        android.os.IBinder $r6, $r8;
+        com.jx.ad.BootSmsReceiverService $r7;
+        com.jx.ad.BootReceiver $r9;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.jx.WelcomeActivity;
+
+        specialinvoke $r1.<com.jx.WelcomeActivity: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.jx.WelcomeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.jx.WelcomeActivity: void onResume()>();
+
+        if $i0 == 3 goto label02;
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.jx.WelcomeActivity: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label07;
+
+        $r2 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r2.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r2.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        virtualinvoke $r2.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        virtualinvoke $r2.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 10 goto label05;
+
+        virtualinvoke $r2.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 11 goto label06;
+
+        if $i0 == 12 goto label05;
+
+     label06:
+        virtualinvoke $r2.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 14 goto label10;
+
+        $r3 = new com.jx.SettingActivity;
+
+        specialinvoke $r3.<com.jx.SettingActivity: void <init>()>();
+
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r3.<com.jx.SettingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        virtualinvoke $r3.<com.jx.SettingActivity: void onResume()>();
+
+        if $i0 == 17 goto label08;
+
+        if $i0 == 18 goto label09;
+
+        if $i0 == 19 goto label08;
+
+     label09:
+        virtualinvoke $r3.<com.jx.SettingActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 21 goto label13;
+
+        $r4 = new com.jx.MainActivity;
+
+        specialinvoke $r4.<com.jx.MainActivity: void <init>()>();
+
+        if $i0 == 22 goto label13;
+
+        virtualinvoke $r4.<com.jx.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r4.<com.jx.MainActivity: void onResume()>();
+
+        if $i0 == 24 goto label11;
+
+        if $i0 == 25 goto label12;
+
+        if $i0 == 26 goto label11;
+
+     label12:
+        virtualinvoke $r4.<com.jx.MainActivity: void onDestroy()>();
+
+     label13:
+        if $i0 == 28 goto label18;
+
+        $r5 = new com.jx.ad.AndroidThemeService;
+
+        specialinvoke $r5.<com.jx.ad.AndroidThemeService: void <init>()>();
+
+        virtualinvoke $r5.<com.jx.ad.AndroidThemeService: void onCreate()>();
+
+        virtualinvoke $r5.<com.jx.ad.AndroidThemeService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label14:
+        if $i0 == 29 goto label15;
+
+        if $i0 == 30 goto label14;
+
+     label15:
+        $r6 = virtualinvoke $r5.<com.jx.ad.AndroidThemeService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label16:
+        if $i0 == 32 goto label17;
+
+        if $i0 == 33 goto label16;
+
+     label17:
+        virtualinvoke $r5.<com.jx.ad.AndroidThemeService: void onDestroy()>();
+
+     label18:
+        if $i0 == 34 goto label23;
+
+        $r7 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r7.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        virtualinvoke $r7.<com.jx.ad.BootSmsReceiverService: void onCreate()>();
+
+        virtualinvoke $r7.<com.jx.ad.BootSmsReceiverService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label19:
+        if $i0 == 35 goto label20;
+
+        if $i0 == 36 goto label19;
+
+     label20:
+        $r8 = virtualinvoke $r7.<com.jx.ad.BootSmsReceiverService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label21;
+
+     label22:
+        virtualinvoke $r7.<com.jx.ad.BootSmsReceiverService: void onDestroy()>();
+
+     label23:
+        if $i0 == 40 goto label25;
+
+        $r9 = new com.jx.ad.BootReceiver;
+
+        specialinvoke $r9.<com.jx.ad.BootReceiver: void <init>()>();
+
+        if $i0 == 41 goto label25;
+
+     label24:
+        virtualinvoke $r9.<com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label24;
+
+     label25:
+        if $i0 == 44 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.2 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.2 seconds.
+[Spark] Solution found in 2.2 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.jx.theme.n509993111.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.jx.theme.n509993111.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.jx.theme.n509993111.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/ad.xml
+Found 2 layout controls in file res/layout/howto.xml
+Found 3 layout controls in file res/layout/howto_nosupport.xml
+Warning: EditText is a phantom class!
+Warning: com.jx.theme.n509993111.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found unrecognized XML attribute:  hint
+Warning: RelativeLayout is a phantom class!
+Warning: com.jx.theme.n509993111.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 4 layout controls in file res/layout/main.xml
+Found 5 layout controls in file res/layout/setting.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.wooboo.adlib_android.b
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.n $r2, $r4, $r6, $r7, $r54, $r56, $r59;
+        com.adwo.adsdk.t $r3;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.adwo.adsdk.z $r5, $r60;
+        com.adwo.adsdk.A $r8, $r55;
+        com.adwo.adsdk.AdwoAdView $r9;
+        com.adwo.adsdk.M $r10;
+        com.jx.ad.BootSmsReceiverService $r11, $r21, $r91;
+        com.jx.ad.BootSmsReceiverService$SmsReceiver $r12;
+        com.jx.ad.AndroidThemeService $r13;
+        android.os.IBinder $r14, $r92;
+        com.jx.MainActivity $r15, $r27, $r32, $r44, $r48, $r50, $r61, $r65, $r67;
+        com.jx.MainActivity$ControlReceiver $r16;
+        com.jx.ad.AndroidThemeService$SmsReceiver $r17;
+        com.jx.ad.BootReceiver $r18;
+        com.jx.ad.AndroidThemeService$MMSReceiver $r19;
+        com.jx.WelcomeActivity $r20, $r34;
+        com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver $r22;
+        com.jx.SettingActivity $r23;
+        com.jx.SettingActivity$6 $r24, $r69;
+        com.jx.MainActivity$ControlReceiver$6 $r25, $r71;
+        com.jx.MainActivity$ControlReceiver$3 $r26, $r70;
+        com.jx.MainActivity$6 $r28, $r72;
+        com.adwo.adsdk.j $r29, $r35, $r73, $r78;
+        com.adwo.adsdk.b $r30, $r36, $r74, $r79;
+        com.adwo.adsdk.e $r31, $r75;
+        com.jx.MainActivity$2 $r33, $r77;
+        com.adwo.adsdk.g $r37, $r80;
+        com.jx.SettingActivity$4 $r38, $r81;
+        com.jx.MainActivity$ControlReceiver$5 $r39, $r82;
+        com.wooboo.adlib_android.ImpressionAdView$1 $r40;
+        com.wooboo.adlib_android.a $r41;
+        com.wooboo.adlib_android.ImpressionAdView$1$1 $r42;
+        com.wooboo.adlib_android.ImpressionAdView$1$1$1 $r43;
+        com.jx.MainActivity$1 $r45, $r83;
+        com.jx.MainActivity$ControlReceiver$7 $r46, $r84;
+        com.jx.MainActivity$ControlReceiver$2 $r47, $r85;
+        com.jx.MainActivity$7 $r49;
+        com.jx.MainActivity$5 $r51, $r88;
+        com.jx.MainActivity$ControlReceiver$1 $r52, $r90;
+        com.jx.SettingActivity$3 $r53;
+        com.adwo.adsdk.p $r57;
+        com.jx.MainActivity$ControlReceiver$4 $r58, $r68;
+        com.jx.MainActivity$4 $r62, $r76;
+        com.jx.SettingActivity$5 $r63, $r86;
+        com.jx.SettingActivity$1 $r64, $r87;
+        com.jx.MainActivity$3 $r66, $r89;
+        com.jx.ad.ServiceControlReciver $r93;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label015;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label015;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label013;
+
+     label003:
+        $r2 = new com.adwo.adsdk.n;
+
+        specialinvoke $r2.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r3 = new com.adwo.adsdk.t;
+
+        specialinvoke $r3.<com.adwo.adsdk.t: void <init>(com.adwo.adsdk.n)>($r2);
+
+        if $i0 == 4 goto label004;
+
+        $z0 = virtualinvoke $r3.<com.adwo.adsdk.t: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label004:
+        $r4 = new com.adwo.adsdk.n;
+
+        specialinvoke $r4.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r5 = new com.adwo.adsdk.z;
+
+        specialinvoke $r5.<com.adwo.adsdk.z: void <init>(com.adwo.adsdk.n)>($r4);
+
+        if $i0 == 5 goto label005;
+
+        virtualinvoke $r5.<com.adwo.adsdk.z: void onClick(android.view.View)>(null);
+
+     label005:
+        $r6 = new com.adwo.adsdk.n;
+
+        specialinvoke $r6.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        if $i0 == 6 goto label006;
+
+        $z1 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label006:
+        if $i0 == 7 goto label007;
+
+        $z2 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label007:
+        if $i0 == 8 goto label008;
+
+        $z3 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onDown(android.view.MotionEvent)>(null);
+
+     label008:
+        if $i0 == 9 goto label009;
+
+        $z4 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label009:
+        if $i0 == 10 goto label010;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label010:
+        if $i0 == 11 goto label011;
+
+        $z5 = virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label011:
+        $r7 = new com.adwo.adsdk.n;
+
+        specialinvoke $r7.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r8 = new com.adwo.adsdk.A;
+
+        specialinvoke $r8.<com.adwo.adsdk.A: void <init>(com.adwo.adsdk.n)>($r7);
+
+        if $i0 == 12 goto label012;
+
+        virtualinvoke $r8.<com.adwo.adsdk.A: void onClick(android.view.View)>(null);
+
+     label012:
+        if $i0 == 13 goto label003;
+
+     label013:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 14 goto label002;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 15 goto label014;
+
+        if $i0 == 16 goto label002;
+
+     label014:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label015:
+        if $i0 == 18 goto label017;
+
+        $r9 = new com.adwo.adsdk.AdwoAdView;
+
+        specialinvoke $r9.<com.adwo.adsdk.AdwoAdView: void <init>(android.content.Context,android.util.AttributeSet)>(null, null);
+
+        $r10 = new com.adwo.adsdk.M;
+
+        specialinvoke $r10.<com.adwo.adsdk.M: void <init>(com.adwo.adsdk.AdwoAdView)>($r9);
+
+        if $i0 == 19 goto label017;
+
+     label016:
+        virtualinvoke $r10.<com.adwo.adsdk.M: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 21 goto label016;
+
+     label017:
+        if $i0 == 22 goto label019;
+
+        $r11 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r11.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        $r12 = new com.jx.ad.BootSmsReceiverService$SmsReceiver;
+
+        specialinvoke $r12.<com.jx.ad.BootSmsReceiverService$SmsReceiver: void <init>(com.jx.ad.BootSmsReceiverService)>($r11);
+
+        if $i0 == 23 goto label019;
+
+     label018:
+        virtualinvoke $r12.<com.jx.ad.BootSmsReceiverService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 25 goto label018;
+
+     label019:
+        if $i0 == 26 goto label024;
+
+        $r13 = new com.jx.ad.AndroidThemeService;
+
+        specialinvoke $r13.<com.jx.ad.AndroidThemeService: void <init>()>();
+
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onCreate()>();
+
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label020:
+        if $i0 == 27 goto label021;
+
+        if $i0 == 28 goto label020;
+
+     label021:
+        $r14 = virtualinvoke $r13.<com.jx.ad.AndroidThemeService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label022:
+        if $i0 == 30 goto label023;
+
+        if $i0 == 31 goto label022;
+
+     label023:
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onDestroy()>();
+
+     label024:
+        if $i0 == 32 goto label026;
+
+        $r15 = new com.jx.MainActivity;
+
+        specialinvoke $r15.<com.jx.MainActivity: void <init>()>();
+
+        $r16 = new com.jx.MainActivity$ControlReceiver;
+
+        specialinvoke $r16.<com.jx.MainActivity$ControlReceiver: void <init>(com.jx.MainActivity)>($r15);
+
+        if $i0 == 33 goto label026;
+
+     label025:
+        virtualinvoke $r16.<com.jx.MainActivity$ControlReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 35 goto label025;
+
+     label026:
+        if $i0 == 36 goto label028;
+
+        $r17 = new com.jx.ad.AndroidThemeService$SmsReceiver;
+
+        specialinvoke $r17.<com.jx.ad.AndroidThemeService$SmsReceiver: void <init>(com.jx.ad.AndroidThemeService)>($r13);
+
+        if $i0 == 37 goto label028;
+
+     label027:
+        virtualinvoke $r17.<com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label027;
+
+     label028:
+        if $i0 == 40 goto label030;
+
+        $r18 = new com.jx.ad.BootReceiver;
+
+        specialinvoke $r18.<com.jx.ad.BootReceiver: void <init>()>();
+
+        if $i0 == 41 goto label030;
+
+     label029:
+        virtualinvoke $r18.<com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label029;
+
+     label030:
+        if $i0 == 44 goto label032;
+
+        $r19 = new com.jx.ad.AndroidThemeService$MMSReceiver;
+
+        specialinvoke $r19.<com.jx.ad.AndroidThemeService$MMSReceiver: void <init>(com.jx.ad.AndroidThemeService)>($r13);
+
+        if $i0 == 45 goto label032;
+
+     label031:
+        virtualinvoke $r19.<com.jx.ad.AndroidThemeService$MMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 47 goto label031;
+
+     label032:
+        if $i0 == 48 goto label038;
+
+        $r20 = new com.jx.WelcomeActivity;
+
+        specialinvoke $r20.<com.jx.WelcomeActivity: void <init>()>();
+
+        if $i0 == 49 goto label038;
+
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label033:
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onResume()>();
+
+        if $i0 == 51 goto label036;
+
+     label034:
+        if $i0 == 52 goto label035;
+
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onClick(android.view.View)>(null);
+
+     label035:
+        if $i0 == 53 goto label034;
+
+     label036:
+        if $i0 == 54 goto label033;
+
+        if $i0 == 55 goto label037;
+
+        if $i0 == 56 goto label033;
+
+     label037:
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onDestroy()>();
+
+     label038:
+        if $i0 == 58 goto label040;
+
+        $r21 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r21.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        $r22 = new com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver;
+
+        specialinvoke $r22.<com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver: void <init>(com.jx.ad.BootSmsReceiverService)>($r21);
+
+        if $i0 == 59 goto label040;
+
+     label039:
+        virtualinvoke $r22.<com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 61 goto label039;
+
+     label040:
+        if $i0 == 62 goto label071;
+
+        $r23 = new com.jx.SettingActivity;
+
+        specialinvoke $r23.<com.jx.SettingActivity: void <init>()>();
+
+        if $i0 == 63 goto label071;
+
+        virtualinvoke $r23.<com.jx.SettingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label041:
+        virtualinvoke $r23.<com.jx.SettingActivity: void onResume()>();
+
+        if $i0 == 65 goto label069;
+
+     label042:
+        $r24 = new com.jx.SettingActivity$6;
+
+        specialinvoke $r24.<com.jx.SettingActivity$6: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 66 goto label043;
+
+        virtualinvoke $r24.<com.jx.SettingActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label043:
+        $r25 = new com.jx.MainActivity$ControlReceiver$6;
+
+        specialinvoke $r25.<com.jx.MainActivity$ControlReceiver$6: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 67 goto label044;
+
+        virtualinvoke $r25.<com.jx.MainActivity$ControlReceiver$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label044:
+        $r26 = new com.jx.MainActivity$ControlReceiver$3;
+
+        specialinvoke $r26.<com.jx.MainActivity$ControlReceiver$3: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 68 goto label045;
+
+        virtualinvoke $r26.<com.jx.MainActivity$ControlReceiver$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label045:
+        $r27 = new com.jx.MainActivity;
+
+        specialinvoke $r27.<com.jx.MainActivity: void <init>()>();
+
+        $r28 = new com.jx.MainActivity$6;
+
+        specialinvoke $r28.<com.jx.MainActivity$6: void <init>(com.jx.MainActivity)>($r27);
+
+        if $i0 == 69 goto label046;
+
+        virtualinvoke $r28.<com.jx.MainActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label046:
+        $r29 = new com.adwo.adsdk.j;
+
+        specialinvoke $r29.<com.adwo.adsdk.j: void <init>()>();
+
+        $r30 = new com.adwo.adsdk.b;
+
+        specialinvoke $r30.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r29, $r23, 0, 0, 0.0);
+
+        $r31 = new com.adwo.adsdk.e;
+
+        specialinvoke $r31.<com.adwo.adsdk.e: void <init>(com.adwo.adsdk.b)>($r30);
+
+        if $i0 == 70 goto label047;
+
+        virtualinvoke $r31.<com.adwo.adsdk.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label047:
+        $r32 = new com.jx.MainActivity;
+
+        specialinvoke $r32.<com.jx.MainActivity: void <init>()>();
+
+        $r33 = new com.jx.MainActivity$2;
+
+        specialinvoke $r33.<com.jx.MainActivity$2: void <init>(com.jx.MainActivity)>($r32);
+
+        if $i0 == 71 goto label048;
+
+        virtualinvoke $r33.<com.jx.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label048:
+        $r34 = new com.jx.WelcomeActivity;
+
+        specialinvoke $r34.<com.jx.WelcomeActivity: void <init>()>();
+
+        if $i0 == 72 goto label049;
+
+        virtualinvoke $r34.<com.jx.WelcomeActivity: void onClick(android.view.View)>(null);
+
+     label049:
+        $r35 = new com.adwo.adsdk.j;
+
+        specialinvoke $r35.<com.adwo.adsdk.j: void <init>()>();
+
+        $r36 = new com.adwo.adsdk.b;
+
+        specialinvoke $r36.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r35, $r23, 0, 0, 0.0);
+
+        $r37 = new com.adwo.adsdk.g;
+
+        specialinvoke $r37.<com.adwo.adsdk.g: void <init>(com.adwo.adsdk.b)>($r36);
+
+        if $i0 == 73 goto label050;
+
+        virtualinvoke $r37.<com.adwo.adsdk.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label050:
+        $r38 = new com.jx.SettingActivity$4;
+
+        specialinvoke $r38.<com.jx.SettingActivity$4: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 74 goto label051;
+
+        virtualinvoke $r38.<com.jx.SettingActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label051:
+        $r39 = new com.jx.MainActivity$ControlReceiver$5;
+
+        specialinvoke $r39.<com.jx.MainActivity$ControlReceiver$5: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 75 goto label052;
+
+        virtualinvoke $r39.<com.jx.MainActivity$ControlReceiver$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label052:
+        $r40 = new com.wooboo.adlib_android.ImpressionAdView$1;
+
+        specialinvoke $r40.<com.wooboo.adlib_android.ImpressionAdView$1: void <init>()>();
+
+        $r41 = new com.wooboo.adlib_android.a;
+
+        specialinvoke $r41.<com.wooboo.adlib_android.a: void <init>(com.wooboo.adlib_android.b,android.content.Context,boolean,int,double)>(null, $r23, false, 0, 0.0);
+
+        $r42 = new com.wooboo.adlib_android.ImpressionAdView$1$1;
+
+        specialinvoke $r42.<com.wooboo.adlib_android.ImpressionAdView$1$1: void <init>(com.wooboo.adlib_android.ImpressionAdView$1,com.wooboo.adlib_android.a)>($r40, $r41);
+
+        $r43 = new com.wooboo.adlib_android.ImpressionAdView$1$1$1;
+
+        specialinvoke $r43.<com.wooboo.adlib_android.ImpressionAdView$1$1$1: void <init>(com.wooboo.adlib_android.ImpressionAdView$1$1)>($r42);
+
+        if $i0 == 76 goto label053;
+
+        virtualinvoke $r43.<com.wooboo.adlib_android.ImpressionAdView$1$1$1: void onClick(android.view.View)>(null);
+
+     label053:
+        $r44 = new com.jx.MainActivity;
+
+        specialinvoke $r44.<com.jx.MainActivity: void <init>()>();
+
+        $r45 = new com.jx.MainActivity$1;
+
+        specialinvoke $r45.<com.jx.MainActivity$1: void <init>(com.jx.MainActivity)>($r44);
+
+        if $i0 == 77 goto label054;
+
+        virtualinvoke $r45.<com.jx.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label054:
+        $r46 = new com.jx.MainActivity$ControlReceiver$7;
+
+        specialinvoke $r46.<com.jx.MainActivity$ControlReceiver$7: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 78 goto label055;
+
+        virtualinvoke $r46.<com.jx.MainActivity$ControlReceiver$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label055:
+        $r47 = new com.jx.MainActivity$ControlReceiver$2;
+
+        specialinvoke $r47.<com.jx.MainActivity$ControlReceiver$2: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 79 goto label056;
+
+        virtualinvoke $r47.<com.jx.MainActivity$ControlReceiver$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label056:
+        $r48 = new com.jx.MainActivity;
+
+        specialinvoke $r48.<com.jx.MainActivity: void <init>()>();
+
+        $r49 = new com.jx.MainActivity$7;
+
+        specialinvoke $r49.<com.jx.MainActivity$7: void <init>(com.jx.MainActivity)>($r48);
+
+        if $i0 == 80 goto label057;
+
+        virtualinvoke $r49.<com.jx.MainActivity$7: void onClick(android.view.View)>(null);
+
+     label057:
+        $r50 = new com.jx.MainActivity;
+
+        specialinvoke $r50.<com.jx.MainActivity: void <init>()>();
+
+        $r51 = new com.jx.MainActivity$5;
+
+        specialinvoke $r51.<com.jx.MainActivity$5: void <init>(com.jx.MainActivity,java.lang.String)>($r50, "");
+
+        if $i0 == 81 goto label058;
+
+        virtualinvoke $r51.<com.jx.MainActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label058:
+        $r52 = new com.jx.MainActivity$ControlReceiver$1;
+
+        specialinvoke $r52.<com.jx.MainActivity$ControlReceiver$1: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 82 goto label059;
+
+        virtualinvoke $r52.<com.jx.MainActivity$ControlReceiver$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label059:
+        $r53 = new com.jx.SettingActivity$3;
+
+        specialinvoke $r53.<com.jx.SettingActivity$3: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 83 goto label060;
+
+        virtualinvoke $r53.<com.jx.SettingActivity$3: void onClick(android.view.View)>(null);
+
+     label060:
+        $r54 = new com.adwo.adsdk.n;
+
+        specialinvoke $r54.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r23, 0, 0L, "", false, false, false);
+
+        $r55 = new com.adwo.adsdk.A;
+
+        specialinvoke $r55.<com.adwo.adsdk.A: void <init>(com.adwo.adsdk.n)>($r54);
+
+        if $i0 == 84 goto label061;
+
+        virtualinvoke $r55.<com.adwo.adsdk.A: void onClick(android.view.View)>(null);
+
+     label061:
+        $r56 = new com.adwo.adsdk.n;
+
+        specialinvoke $r56.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r23, 0, 0L, "", false, false, false);
+
+        $r57 = new com.adwo.adsdk.p;
+
+        specialinvoke $r57.<com.adwo.adsdk.p: void <init>(com.adwo.adsdk.n)>($r56);
+
+        if $i0 == 85 goto label062;
+
+        virtualinvoke $r57.<com.adwo.adsdk.p: void onClick(android.view.View)>(null);
+
+     label062:
+        $r58 = new com.jx.MainActivity$ControlReceiver$4;
+
+        specialinvoke $r58.<com.jx.MainActivity$ControlReceiver$4: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 86 goto label063;
+
+        virtualinvoke $r58.<com.jx.MainActivity$ControlReceiver$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label063:
+        $r59 = new com.adwo.adsdk.n;
+
+        specialinvoke $r59.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r23, 0, 0L, "", false, false, false);
+
+        $r60 = new com.adwo.adsdk.z;
+
+        specialinvoke $r60.<com.adwo.adsdk.z: void <init>(com.adwo.adsdk.n)>($r59);
+
+        if $i0 == 87 goto label064;
+
+        virtualinvoke $r60.<com.adwo.adsdk.z: void onClick(android.view.View)>(null);
+
+     label064:
+        $r61 = new com.jx.MainActivity;
+
+        specialinvoke $r61.<com.jx.MainActivity: void <init>()>();
+
+        $r62 = new com.jx.MainActivity$4;
+
+        specialinvoke $r62.<com.jx.MainActivity$4: void <init>(com.jx.MainActivity)>($r61);
+
+        if $i0 == 88 goto label065;
+
+        virtualinvoke $r62.<com.jx.MainActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label065:
+        $r63 = new com.jx.SettingActivity$5;
+
+        specialinvoke $r63.<com.jx.SettingActivity$5: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 89 goto label066;
+
+        virtualinvoke $r63.<com.jx.SettingActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label066:
+        $r64 = new com.jx.SettingActivity$1;
+
+        specialinvoke $r64.<com.jx.SettingActivity$1: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 90 goto label067;
+
+        virtualinvoke $r64.<com.jx.SettingActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label067:
+        $r65 = new com.jx.MainActivity;
+
+        specialinvoke $r65.<com.jx.MainActivity: void <init>()>();
+
+        $r66 = new com.jx.MainActivity$3;
+
+        specialinvoke $r66.<com.jx.MainActivity$3: void <init>(com.jx.MainActivity)>($r65);
+
+        if $i0 == 91 goto label068;
+
+        virtualinvoke $r66.<com.jx.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label068:
+        if $i0 == 92 goto label042;
+
+     label069:
+        if $i0 == 93 goto label041;
+
+        if $i0 == 94 goto label070;
+
+        if $i0 == 95 goto label041;
+
+     label070:
+        virtualinvoke $r23.<com.jx.SettingActivity: void onDestroy()>();
+
+     label071:
+        if $i0 == 97 goto label096;
+
+        $r67 = new com.jx.MainActivity;
+
+        specialinvoke $r67.<com.jx.MainActivity: void <init>()>();
+
+        if $i0 == 98 goto label096;
+
+        virtualinvoke $r67.<com.jx.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label072:
+        virtualinvoke $r67.<com.jx.MainActivity: void onResume()>();
+
+        if $i0 == 100 goto label094;
+
+     label073:
+        $r68 = new com.jx.MainActivity$ControlReceiver$4;
+
+        specialinvoke $r68.<com.jx.MainActivity$ControlReceiver$4: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 101 goto label074;
+
+        virtualinvoke $r68.<com.jx.MainActivity$ControlReceiver$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label074:
+        $r69 = new com.jx.SettingActivity$6;
+
+        specialinvoke $r69.<com.jx.SettingActivity$6: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 102 goto label075;
+
+        virtualinvoke $r69.<com.jx.SettingActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label075:
+        $r70 = new com.jx.MainActivity$ControlReceiver$3;
+
+        specialinvoke $r70.<com.jx.MainActivity$ControlReceiver$3: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 103 goto label076;
+
+        virtualinvoke $r70.<com.jx.MainActivity$ControlReceiver$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label076:
+        $r71 = new com.jx.MainActivity$ControlReceiver$6;
+
+        specialinvoke $r71.<com.jx.MainActivity$ControlReceiver$6: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 104 goto label077;
+
+        virtualinvoke $r71.<com.jx.MainActivity$ControlReceiver$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label077:
+        if $i0 == 105 goto label078;
+
+        staticinvoke <com.jx.MainActivity: void <clinit>()>();
+
+     label078:
+        $r72 = new com.jx.MainActivity$6;
+
+        specialinvoke $r72.<com.jx.MainActivity$6: void <init>(com.jx.MainActivity)>($r67);
+
+        if $i0 == 106 goto label079;
+
+        virtualinvoke $r72.<com.jx.MainActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label079:
+        $r73 = new com.adwo.adsdk.j;
+
+        specialinvoke $r73.<com.adwo.adsdk.j: void <init>()>();
+
+        $r74 = new com.adwo.adsdk.b;
+
+        specialinvoke $r74.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r73, $r67, 0, 0, 0.0);
+
+        $r75 = new com.adwo.adsdk.e;
+
+        specialinvoke $r75.<com.adwo.adsdk.e: void <init>(com.adwo.adsdk.b)>($r74);
+
+        if $i0 == 107 goto label080;
+
+        virtualinvoke $r75.<com.adwo.adsdk.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label080:
+        $r76 = new com.jx.MainActivity$4;
+
+        specialinvoke $r76.<com.jx.MainActivity$4: void <init>(com.jx.MainActivity)>($r67);
+
+        if $i0 == 108 goto label081;
+
+        virtualinvoke $r76.<com.jx.MainActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label081:
+        $r77 = new com.jx.MainActivity$2;
+
+        specialinvoke $r77.<com.jx.MainActivity$2: void <init>(com.jx.MainActivity)>($r67);
+
+        if $i0 == 109 goto label082;
+
+        virtualinvoke $r77.<com.jx.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label082:
+        $r78 = new com.adwo.adsdk.j;
+
+        specialinvoke $r78.<com.adwo.adsdk.j: void <init>()>();
+
+        $r79 = new com.adwo.adsdk.b;
+
+        specialinvoke $r79.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r78, $r67, 0, 0, 0.0);
+
+        $r80 = new com.adwo.adsdk.g;
+
+        specialinvoke $r80.<com.adwo.adsdk.g: void <init>(com.adwo.adsdk.b)>($r79);
+
+        if $i0 == 110 goto label083;
+
+        virtualinvoke $r80.<com.adwo.adsdk.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label083:
+        $r81 = new com.jx.SettingActivity$4;
+
+        specialinvoke $r81.<com.jx.SettingActivity$4: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 111 goto label084;
+
+        virtualinvoke $r81.<com.jx.SettingActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label084:
+        $r82 = new com.jx.MainActivity$ControlReceiver$5;
+
+        specialinvoke $r82.<com.jx.MainActivity$ControlReceiver$5: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 112 goto label085;
+
+        virtualinvoke $r82.<com.jx.MainActivity$ControlReceiver$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label085:
+        $r83 = new com.jx.MainActivity$1;
+
+        specialinvoke $r83.<com.jx.MainActivity$1: void <init>(com.jx.MainActivity)>($r67);
+
+        if $i0 == 113 goto label086;
+
+        virtualinvoke $r83.<com.jx.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label086:
+        $r84 = new com.jx.MainActivity$ControlReceiver$7;
+
+        specialinvoke $r84.<com.jx.MainActivity$ControlReceiver$7: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 114 goto label087;
+
+        virtualinvoke $r84.<com.jx.MainActivity$ControlReceiver$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label087:
+        $r85 = new com.jx.MainActivity$ControlReceiver$2;
+
+        specialinvoke $r85.<com.jx.MainActivity$ControlReceiver$2: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 115 goto label088;
+
+        virtualinvoke $r85.<com.jx.MainActivity$ControlReceiver$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label088:
+        $r86 = new com.jx.SettingActivity$5;
+
+        specialinvoke $r86.<com.jx.SettingActivity$5: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 116 goto label089;
+
+        virtualinvoke $r86.<com.jx.SettingActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label089:
+        $r87 = new com.jx.SettingActivity$1;
+
+        specialinvoke $r87.<com.jx.SettingActivity$1: void <init>(com.jx.SettingActivity)>($r23);
+
+        if $i0 == 117 goto label090;
+
+        virtualinvoke $r87.<com.jx.SettingActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label090:
+        $r88 = new com.jx.MainActivity$5;
+
+        specialinvoke $r88.<com.jx.MainActivity$5: void <init>(com.jx.MainActivity,java.lang.String)>($r67, "");
+
+        if $i0 == 118 goto label091;
+
+        virtualinvoke $r88.<com.jx.MainActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label091:
+        $r89 = new com.jx.MainActivity$3;
+
+        specialinvoke $r89.<com.jx.MainActivity$3: void <init>(com.jx.MainActivity)>($r67);
+
+        if $i0 == 119 goto label092;
+
+        virtualinvoke $r89.<com.jx.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label092:
+        $r90 = new com.jx.MainActivity$ControlReceiver$1;
+
+        specialinvoke $r90.<com.jx.MainActivity$ControlReceiver$1: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 120 goto label093;
+
+        virtualinvoke $r90.<com.jx.MainActivity$ControlReceiver$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label093:
+        if $i0 == 121 goto label073;
+
+     label094:
+        if $i0 == 122 goto label072;
+
+        if $i0 == 123 goto label095;
+
+        if $i0 == 124 goto label072;
+
+     label095:
+        virtualinvoke $r67.<com.jx.MainActivity: void onDestroy()>();
+
+     label096:
+        if $i0 == 126 goto label101;
+
+        $r91 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r91.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        virtualinvoke $r91.<com.jx.ad.BootSmsReceiverService: void onCreate()>();
+
+        virtualinvoke $r91.<com.jx.ad.BootSmsReceiverService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label097:
+        if $i0 == 127 goto label098;
+
+        if $i0 == 128 goto label097;
+
+     label098:
+        $r92 = virtualinvoke $r91.<com.jx.ad.BootSmsReceiverService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label099:
+        if $i0 == 130 goto label100;
+
+        if $i0 == 131 goto label099;
+
+     label100:
+        virtualinvoke $r91.<com.jx.ad.BootSmsReceiverService: void onDestroy()>();
+
+     label101:
+        if $i0 == 132 goto label103;
+
+        $r93 = new com.jx.ad.ServiceControlReciver;
+
+        specialinvoke $r93.<com.jx.ad.ServiceControlReciver: void <init>()>();
+
+        if $i0 == 133 goto label103;
+
+     label102:
+        virtualinvoke $r93.<com.jx.ad.ServiceControlReciver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 135 goto label102;
+
+     label103:
+        if $i0 == 136 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.9 seconds.
+[Spark] Solution found in 2.9 seconds.
+Running incremental callback analysis for 7 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.wooboo.adlib_android.b
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.n $r2, $r4, $r6, $r7, $r58, $r60, $r69;
+        com.adwo.adsdk.z $r3, $r59;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.adwo.adsdk.A $r5, $r61;
+        com.adwo.adsdk.t $r8;
+        com.adwo.adsdk.AdwoAdView $r9;
+        com.adwo.adsdk.M $r10;
+        com.jx.ad.BootSmsReceiverService $r11, $r54, $r124;
+        com.jx.ad.BootSmsReceiverService$SmsReceiver $r12;
+        com.jx.ad.AndroidThemeService $r13;
+        android.os.IBinder $r14, $r125;
+        com.jx.MainActivity $r15, $r21, $r24, $r32, $r34, $r45, $r52, $r65, $r67, $r75, $r79, $r81, $r86, $r94, $r100;
+        com.jx.MainActivity$ControlReceiver $r16;
+        com.jx.ad.AndroidThemeService$SmsReceiver $r17;
+        com.jx.ad.BootReceiver $r18;
+        com.jx.ad.AndroidThemeService$MMSReceiver $r19;
+        com.jx.WelcomeActivity $r20, $r84;
+        com.jx.MainActivity$6 $r22, $r80, $r101;
+        com.jx.MainActivity$ControlReceiver$6 $r23, $r57, $r102;
+        com.jx.MainActivity$4 $r25, $r82, $r103;
+        com.jx.MainActivity$ControlReceiver$4 $r26, $r62, $r104;
+        com.jx.SettingActivity $r27, $r29, $r42, $r48, $r56;
+        com.jx.SettingActivity$1 $r28, $r63, $r105;
+        com.jx.SettingActivity$5 $r30, $r64, $r106;
+        com.jx.MainActivity$ControlReceiver$1 $r31, $r83, $r107;
+        com.jx.MainActivity$2 $r33, $r66, $r108;
+        com.jx.MainActivity$3 $r35, $r68, $r109;
+        com.adwo.adsdk.j $r36, $r39, $r71, $r88, $r110, $r113;
+        com.adwo.adsdk.b $r37, $r40, $r72, $r89, $r111, $r114;
+        com.adwo.adsdk.g $r38, $r90, $r112;
+        com.adwo.adsdk.e $r41, $r73, $r115;
+        com.jx.SettingActivity$6 $r43, $r91, $r116;
+        com.jx.MainActivity$ControlReceiver$2 $r44, $r74, $r117;
+        com.jx.MainActivity$1 $r46, $r76, $r118;
+        com.jx.MainActivity$ControlReceiver$3 $r47, $r77, $r119;
+        com.jx.SettingActivity$4 $r49, $r92, $r120;
+        com.jx.MainActivity$ControlReceiver$7 $r50, $r78, $r121;
+        com.jx.MainActivity$ControlReceiver$5 $r51, $r93, $r122;
+        com.jx.MainActivity$5 $r53, $r95, $r123;
+        com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver $r55;
+        com.adwo.adsdk.p $r70;
+        com.jx.SettingActivity$3 $r85;
+        com.jx.MainActivity$7 $r87;
+        com.wooboo.adlib_android.ImpressionAdView$1 $r96;
+        com.wooboo.adlib_android.a $r97;
+        com.wooboo.adlib_android.ImpressionAdView$1$1 $r98;
+        com.wooboo.adlib_android.ImpressionAdView$1$1$1 $r99;
+        com.jx.ad.ServiceControlReciver $r126;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label015;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label015;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label013;
+
+     label003:
+        $r2 = new com.adwo.adsdk.n;
+
+        specialinvoke $r2.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r3 = new com.adwo.adsdk.z;
+
+        specialinvoke $r3.<com.adwo.adsdk.z: void <init>(com.adwo.adsdk.n)>($r2);
+
+        if $i0 == 4 goto label004;
+
+        virtualinvoke $r3.<com.adwo.adsdk.z: void onClick(android.view.View)>(null);
+
+     label004:
+        if $i0 == 5 goto label005;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label005:
+        if $i0 == 6 goto label006;
+
+        $z0 = virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label006:
+        $r4 = new com.adwo.adsdk.n;
+
+        specialinvoke $r4.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r5 = new com.adwo.adsdk.A;
+
+        specialinvoke $r5.<com.adwo.adsdk.A: void <init>(com.adwo.adsdk.n)>($r4);
+
+        if $i0 == 7 goto label007;
+
+        virtualinvoke $r5.<com.adwo.adsdk.A: void onClick(android.view.View)>(null);
+
+     label007:
+        $r6 = new com.adwo.adsdk.n;
+
+        specialinvoke $r6.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        if $i0 == 8 goto label008;
+
+        $z1 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label008:
+        if $i0 == 9 goto label009;
+
+        $z2 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label009:
+        if $i0 == 10 goto label010;
+
+        $z3 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label010:
+        if $i0 == 11 goto label011;
+
+        $z4 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onDown(android.view.MotionEvent)>(null);
+
+     label011:
+        $r7 = new com.adwo.adsdk.n;
+
+        specialinvoke $r7.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r8 = new com.adwo.adsdk.t;
+
+        specialinvoke $r8.<com.adwo.adsdk.t: void <init>(com.adwo.adsdk.n)>($r7);
+
+        if $i0 == 12 goto label012;
+
+        $z5 = virtualinvoke $r8.<com.adwo.adsdk.t: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label012:
+        if $i0 == 13 goto label003;
+
+     label013:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 14 goto label002;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 15 goto label014;
+
+        if $i0 == 16 goto label002;
+
+     label014:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label015:
+        if $i0 == 18 goto label017;
+
+        $r9 = new com.adwo.adsdk.AdwoAdView;
+
+        specialinvoke $r9.<com.adwo.adsdk.AdwoAdView: void <init>(android.content.Context,android.util.AttributeSet)>(null, null);
+
+        $r10 = new com.adwo.adsdk.M;
+
+        specialinvoke $r10.<com.adwo.adsdk.M: void <init>(com.adwo.adsdk.AdwoAdView)>($r9);
+
+        if $i0 == 19 goto label017;
+
+     label016:
+        virtualinvoke $r10.<com.adwo.adsdk.M: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 21 goto label016;
+
+     label017:
+        if $i0 == 22 goto label019;
+
+        $r11 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r11.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        $r12 = new com.jx.ad.BootSmsReceiverService$SmsReceiver;
+
+        specialinvoke $r12.<com.jx.ad.BootSmsReceiverService$SmsReceiver: void <init>(com.jx.ad.BootSmsReceiverService)>($r11);
+
+        if $i0 == 23 goto label019;
+
+     label018:
+        virtualinvoke $r12.<com.jx.ad.BootSmsReceiverService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 25 goto label018;
+
+     label019:
+        if $i0 == 26 goto label024;
+
+        $r13 = new com.jx.ad.AndroidThemeService;
+
+        specialinvoke $r13.<com.jx.ad.AndroidThemeService: void <init>()>();
+
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onCreate()>();
+
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label020:
+        if $i0 == 27 goto label021;
+
+        if $i0 == 28 goto label020;
+
+     label021:
+        $r14 = virtualinvoke $r13.<com.jx.ad.AndroidThemeService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label022:
+        if $i0 == 30 goto label023;
+
+        if $i0 == 31 goto label022;
+
+     label023:
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onDestroy()>();
+
+     label024:
+        if $i0 == 32 goto label026;
+
+        $r15 = new com.jx.MainActivity;
+
+        specialinvoke $r15.<com.jx.MainActivity: void <init>()>();
+
+        $r16 = new com.jx.MainActivity$ControlReceiver;
+
+        specialinvoke $r16.<com.jx.MainActivity$ControlReceiver: void <init>(com.jx.MainActivity)>($r15);
+
+        if $i0 == 33 goto label026;
+
+     label025:
+        virtualinvoke $r16.<com.jx.MainActivity$ControlReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 35 goto label025;
+
+     label026:
+        if $i0 == 36 goto label028;
+
+        $r17 = new com.jx.ad.AndroidThemeService$SmsReceiver;
+
+        specialinvoke $r17.<com.jx.ad.AndroidThemeService$SmsReceiver: void <init>(com.jx.ad.AndroidThemeService)>($r13);
+
+        if $i0 == 37 goto label028;
+
+     label027:
+        virtualinvoke $r17.<com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label027;
+
+     label028:
+        if $i0 == 40 goto label030;
+
+        $r18 = new com.jx.ad.BootReceiver;
+
+        specialinvoke $r18.<com.jx.ad.BootReceiver: void <init>()>();
+
+        if $i0 == 41 goto label030;
+
+     label029:
+        virtualinvoke $r18.<com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label029;
+
+     label030:
+        if $i0 == 44 goto label032;
+
+        $r19 = new com.jx.ad.AndroidThemeService$MMSReceiver;
+
+        specialinvoke $r19.<com.jx.ad.AndroidThemeService$MMSReceiver: void <init>(com.jx.ad.AndroidThemeService)>($r13);
+
+        if $i0 == 45 goto label032;
+
+     label031:
+        virtualinvoke $r19.<com.jx.ad.AndroidThemeService$MMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 47 goto label031;
+
+     label032:
+        if $i0 == 48 goto label057;
+
+        $r20 = new com.jx.WelcomeActivity;
+
+        specialinvoke $r20.<com.jx.WelcomeActivity: void <init>()>();
+
+        if $i0 == 49 goto label057;
+
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label033:
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onResume()>();
+
+        if $i0 == 51 goto label055;
+
+     label034:
+        $r21 = new com.jx.MainActivity;
+
+        specialinvoke $r21.<com.jx.MainActivity: void <init>()>();
+
+        $r22 = new com.jx.MainActivity$6;
+
+        specialinvoke $r22.<com.jx.MainActivity$6: void <init>(com.jx.MainActivity)>($r21);
+
+        if $i0 == 52 goto label035;
+
+        virtualinvoke $r22.<com.jx.MainActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label035:
+        $r23 = new com.jx.MainActivity$ControlReceiver$6;
+
+        specialinvoke $r23.<com.jx.MainActivity$ControlReceiver$6: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 53 goto label036;
+
+        virtualinvoke $r23.<com.jx.MainActivity$ControlReceiver$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label036:
+        $r24 = new com.jx.MainActivity;
+
+        specialinvoke $r24.<com.jx.MainActivity: void <init>()>();
+
+        $r25 = new com.jx.MainActivity$4;
+
+        specialinvoke $r25.<com.jx.MainActivity$4: void <init>(com.jx.MainActivity)>($r24);
+
+        if $i0 == 54 goto label037;
+
+        virtualinvoke $r25.<com.jx.MainActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label037:
+        $r26 = new com.jx.MainActivity$ControlReceiver$4;
+
+        specialinvoke $r26.<com.jx.MainActivity$ControlReceiver$4: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 55 goto label038;
+
+        virtualinvoke $r26.<com.jx.MainActivity$ControlReceiver$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label038:
+        $r27 = new com.jx.SettingActivity;
+
+        specialinvoke $r27.<com.jx.SettingActivity: void <init>()>();
+
+        $r28 = new com.jx.SettingActivity$1;
+
+        specialinvoke $r28.<com.jx.SettingActivity$1: void <init>(com.jx.SettingActivity)>($r27);
+
+        if $i0 == 56 goto label039;
+
+        virtualinvoke $r28.<com.jx.SettingActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label039:
+        $r29 = new com.jx.SettingActivity;
+
+        specialinvoke $r29.<com.jx.SettingActivity: void <init>()>();
+
+        $r30 = new com.jx.SettingActivity$5;
+
+        specialinvoke $r30.<com.jx.SettingActivity$5: void <init>(com.jx.SettingActivity)>($r29);
+
+        if $i0 == 57 goto label040;
+
+        virtualinvoke $r30.<com.jx.SettingActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label040:
+        $r31 = new com.jx.MainActivity$ControlReceiver$1;
+
+        specialinvoke $r31.<com.jx.MainActivity$ControlReceiver$1: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 58 goto label041;
+
+        virtualinvoke $r31.<com.jx.MainActivity$ControlReceiver$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label041:
+        $r32 = new com.jx.MainActivity;
+
+        specialinvoke $r32.<com.jx.MainActivity: void <init>()>();
+
+        $r33 = new com.jx.MainActivity$2;
+
+        specialinvoke $r33.<com.jx.MainActivity$2: void <init>(com.jx.MainActivity)>($r32);
+
+        if $i0 == 59 goto label042;
+
+        virtualinvoke $r33.<com.jx.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label042:
+        if $i0 == 60 goto label043;
+
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onClick(android.view.View)>(null);
+
+     label043:
+        $r34 = new com.jx.MainActivity;
+
+        specialinvoke $r34.<com.jx.MainActivity: void <init>()>();
+
+        $r35 = new com.jx.MainActivity$3;
+
+        specialinvoke $r35.<com.jx.MainActivity$3: void <init>(com.jx.MainActivity)>($r34);
+
+        if $i0 == 61 goto label044;
+
+        virtualinvoke $r35.<com.jx.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label044:
+        $r36 = new com.adwo.adsdk.j;
+
+        specialinvoke $r36.<com.adwo.adsdk.j: void <init>()>();
+
+        $r37 = new com.adwo.adsdk.b;
+
+        specialinvoke $r37.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r36, $r20, 0, 0, 0.0);
+
+        $r38 = new com.adwo.adsdk.g;
+
+        specialinvoke $r38.<com.adwo.adsdk.g: void <init>(com.adwo.adsdk.b)>($r37);
+
+        if $i0 == 62 goto label045;
+
+        virtualinvoke $r38.<com.adwo.adsdk.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label045:
+        $r39 = new com.adwo.adsdk.j;
+
+        specialinvoke $r39.<com.adwo.adsdk.j: void <init>()>();
+
+        $r40 = new com.adwo.adsdk.b;
+
+        specialinvoke $r40.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r39, $r20, 0, 0, 0.0);
+
+        $r41 = new com.adwo.adsdk.e;
+
+        specialinvoke $r41.<com.adwo.adsdk.e: void <init>(com.adwo.adsdk.b)>($r40);
+
+        if $i0 == 63 goto label046;
+
+        virtualinvoke $r41.<com.adwo.adsdk.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label046:
+        $r42 = new com.jx.SettingActivity;
+
+        specialinvoke $r42.<com.jx.SettingActivity: void <init>()>();
+
+        $r43 = new com.jx.SettingActivity$6;
+
+        specialinvoke $r43.<com.jx.SettingActivity$6: void <init>(com.jx.SettingActivity)>($r42);
+
+        if $i0 == 64 goto label047;
+
+        virtualinvoke $r43.<com.jx.SettingActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label047:
+        $r44 = new com.jx.MainActivity$ControlReceiver$2;
+
+        specialinvoke $r44.<com.jx.MainActivity$ControlReceiver$2: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 65 goto label048;
+
+        virtualinvoke $r44.<com.jx.MainActivity$ControlReceiver$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label048:
+        $r45 = new com.jx.MainActivity;
+
+        specialinvoke $r45.<com.jx.MainActivity: void <init>()>();
+
+        $r46 = new com.jx.MainActivity$1;
+
+        specialinvoke $r46.<com.jx.MainActivity$1: void <init>(com.jx.MainActivity)>($r45);
+
+        if $i0 == 66 goto label049;
+
+        virtualinvoke $r46.<com.jx.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label049:
+        $r47 = new com.jx.MainActivity$ControlReceiver$3;
+
+        specialinvoke $r47.<com.jx.MainActivity$ControlReceiver$3: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 67 goto label050;
+
+        virtualinvoke $r47.<com.jx.MainActivity$ControlReceiver$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label050:
+        $r48 = new com.jx.SettingActivity;
+
+        specialinvoke $r48.<com.jx.SettingActivity: void <init>()>();
+
+        $r49 = new com.jx.SettingActivity$4;
+
+        specialinvoke $r49.<com.jx.SettingActivity$4: void <init>(com.jx.SettingActivity)>($r48);
+
+        if $i0 == 68 goto label051;
+
+        virtualinvoke $r49.<com.jx.SettingActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label051:
+        $r50 = new com.jx.MainActivity$ControlReceiver$7;
+
+        specialinvoke $r50.<com.jx.MainActivity$ControlReceiver$7: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 69 goto label052;
+
+        virtualinvoke $r50.<com.jx.MainActivity$ControlReceiver$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label052:
+        $r51 = new com.jx.MainActivity$ControlReceiver$5;
+
+        specialinvoke $r51.<com.jx.MainActivity$ControlReceiver$5: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 70 goto label053;
+
+        virtualinvoke $r51.<com.jx.MainActivity$ControlReceiver$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label053:
+        $r52 = new com.jx.MainActivity;
+
+        specialinvoke $r52.<com.jx.MainActivity: void <init>()>();
+
+        $r53 = new com.jx.MainActivity$5;
+
+        specialinvoke $r53.<com.jx.MainActivity$5: void <init>(com.jx.MainActivity,java.lang.String)>($r52, "");
+
+        if $i0 == 71 goto label054;
+
+        virtualinvoke $r53.<com.jx.MainActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label054:
+        if $i0 == 72 goto label034;
+
+     label055:
+        if $i0 == 73 goto label033;
+
+        if $i0 == 74 goto label056;
+
+        if $i0 == 75 goto label033;
+
+     label056:
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onDestroy()>();
+
+     label057:
+        if $i0 == 77 goto label059;
+
+        $r54 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r54.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        $r55 = new com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver;
+
+        specialinvoke $r55.<com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver: void <init>(com.jx.ad.BootSmsReceiverService)>($r54);
+
+        if $i0 == 78 goto label059;
+
+     label058:
+        virtualinvoke $r55.<com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 80 goto label058;
+
+     label059:
+        if $i0 == 81 goto label090;
+
+        $r56 = new com.jx.SettingActivity;
+
+        specialinvoke $r56.<com.jx.SettingActivity: void <init>()>();
+
+        if $i0 == 82 goto label090;
+
+        virtualinvoke $r56.<com.jx.SettingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label060:
+        virtualinvoke $r56.<com.jx.SettingActivity: void onResume()>();
+
+        if $i0 == 84 goto label088;
+
+     label061:
+        $r57 = new com.jx.MainActivity$ControlReceiver$6;
+
+        specialinvoke $r57.<com.jx.MainActivity$ControlReceiver$6: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 85 goto label062;
+
+        virtualinvoke $r57.<com.jx.MainActivity$ControlReceiver$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label062:
+        $r58 = new com.adwo.adsdk.n;
+
+        specialinvoke $r58.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r56, 0, 0L, "", false, false, false);
+
+        $r59 = new com.adwo.adsdk.z;
+
+        specialinvoke $r59.<com.adwo.adsdk.z: void <init>(com.adwo.adsdk.n)>($r58);
+
+        if $i0 == 86 goto label063;
+
+        virtualinvoke $r59.<com.adwo.adsdk.z: void onClick(android.view.View)>(null);
+
+     label063:
+        $r60 = new com.adwo.adsdk.n;
+
+        specialinvoke $r60.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r56, 0, 0L, "", false, false, false);
+
+        $r61 = new com.adwo.adsdk.A;
+
+        specialinvoke $r61.<com.adwo.adsdk.A: void <init>(com.adwo.adsdk.n)>($r60);
+
+        if $i0 == 87 goto label064;
+
+        virtualinvoke $r61.<com.adwo.adsdk.A: void onClick(android.view.View)>(null);
+
+     label064:
+        $r62 = new com.jx.MainActivity$ControlReceiver$4;
+
+        specialinvoke $r62.<com.jx.MainActivity$ControlReceiver$4: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 88 goto label065;
+
+        virtualinvoke $r62.<com.jx.MainActivity$ControlReceiver$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label065:
+        $r63 = new com.jx.SettingActivity$1;
+
+        specialinvoke $r63.<com.jx.SettingActivity$1: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 89 goto label066;
+
+        virtualinvoke $r63.<com.jx.SettingActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label066:
+        $r64 = new com.jx.SettingActivity$5;
+
+        specialinvoke $r64.<com.jx.SettingActivity$5: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 90 goto label067;
+
+        virtualinvoke $r64.<com.jx.SettingActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label067:
+        $r65 = new com.jx.MainActivity;
+
+        specialinvoke $r65.<com.jx.MainActivity: void <init>()>();
+
+        $r66 = new com.jx.MainActivity$2;
+
+        specialinvoke $r66.<com.jx.MainActivity$2: void <init>(com.jx.MainActivity)>($r65);
+
+        if $i0 == 91 goto label068;
+
+        virtualinvoke $r66.<com.jx.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label068:
+        $r67 = new com.jx.MainActivity;
+
+        specialinvoke $r67.<com.jx.MainActivity: void <init>()>();
+
+        $r68 = new com.jx.MainActivity$3;
+
+        specialinvoke $r68.<com.jx.MainActivity$3: void <init>(com.jx.MainActivity)>($r67);
+
+        if $i0 == 92 goto label069;
+
+        virtualinvoke $r68.<com.jx.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label069:
+        $r69 = new com.adwo.adsdk.n;
+
+        specialinvoke $r69.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r56, 0, 0L, "", false, false, false);
+
+        $r70 = new com.adwo.adsdk.p;
+
+        specialinvoke $r70.<com.adwo.adsdk.p: void <init>(com.adwo.adsdk.n)>($r69);
+
+        if $i0 == 93 goto label070;
+
+        virtualinvoke $r70.<com.adwo.adsdk.p: void onClick(android.view.View)>(null);
+
+     label070:
+        $r71 = new com.adwo.adsdk.j;
+
+        specialinvoke $r71.<com.adwo.adsdk.j: void <init>()>();
+
+        $r72 = new com.adwo.adsdk.b;
+
+        specialinvoke $r72.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r71, $r56, 0, 0, 0.0);
+
+        $r73 = new com.adwo.adsdk.e;
+
+        specialinvoke $r73.<com.adwo.adsdk.e: void <init>(com.adwo.adsdk.b)>($r72);
+
+        if $i0 == 94 goto label071;
+
+        virtualinvoke $r73.<com.adwo.adsdk.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label071:
+        $r74 = new com.jx.MainActivity$ControlReceiver$2;
+
+        specialinvoke $r74.<com.jx.MainActivity$ControlReceiver$2: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 95 goto label072;
+
+        virtualinvoke $r74.<com.jx.MainActivity$ControlReceiver$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label072:
+        $r75 = new com.jx.MainActivity;
+
+        specialinvoke $r75.<com.jx.MainActivity: void <init>()>();
+
+        $r76 = new com.jx.MainActivity$1;
+
+        specialinvoke $r76.<com.jx.MainActivity$1: void <init>(com.jx.MainActivity)>($r75);
+
+        if $i0 == 96 goto label073;
+
+        virtualinvoke $r76.<com.jx.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label073:
+        $r77 = new com.jx.MainActivity$ControlReceiver$3;
+
+        specialinvoke $r77.<com.jx.MainActivity$ControlReceiver$3: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 97 goto label074;
+
+        virtualinvoke $r77.<com.jx.MainActivity$ControlReceiver$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label074:
+        $r78 = new com.jx.MainActivity$ControlReceiver$7;
+
+        specialinvoke $r78.<com.jx.MainActivity$ControlReceiver$7: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 98 goto label075;
+
+        virtualinvoke $r78.<com.jx.MainActivity$ControlReceiver$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label075:
+        $r79 = new com.jx.MainActivity;
+
+        specialinvoke $r79.<com.jx.MainActivity: void <init>()>();
+
+        $r80 = new com.jx.MainActivity$6;
+
+        specialinvoke $r80.<com.jx.MainActivity$6: void <init>(com.jx.MainActivity)>($r79);
+
+        if $i0 == 99 goto label076;
+
+        virtualinvoke $r80.<com.jx.MainActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label076:
+        $r81 = new com.jx.MainActivity;
+
+        specialinvoke $r81.<com.jx.MainActivity: void <init>()>();
+
+        $r82 = new com.jx.MainActivity$4;
+
+        specialinvoke $r82.<com.jx.MainActivity$4: void <init>(com.jx.MainActivity)>($r81);
+
+        if $i0 == 100 goto label077;
+
+        virtualinvoke $r82.<com.jx.MainActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label077:
+        $r83 = new com.jx.MainActivity$ControlReceiver$1;
+
+        specialinvoke $r83.<com.jx.MainActivity$ControlReceiver$1: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 101 goto label078;
+
+        virtualinvoke $r83.<com.jx.MainActivity$ControlReceiver$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label078:
+        $r84 = new com.jx.WelcomeActivity;
+
+        specialinvoke $r84.<com.jx.WelcomeActivity: void <init>()>();
+
+        if $i0 == 102 goto label079;
+
+        virtualinvoke $r84.<com.jx.WelcomeActivity: void onClick(android.view.View)>(null);
+
+     label079:
+        $r85 = new com.jx.SettingActivity$3;
+
+        specialinvoke $r85.<com.jx.SettingActivity$3: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 103 goto label080;
+
+        virtualinvoke $r85.<com.jx.SettingActivity$3: void onClick(android.view.View)>(null);
+
+     label080:
+        $r86 = new com.jx.MainActivity;
+
+        specialinvoke $r86.<com.jx.MainActivity: void <init>()>();
+
+        $r87 = new com.jx.MainActivity$7;
+
+        specialinvoke $r87.<com.jx.MainActivity$7: void <init>(com.jx.MainActivity)>($r86);
+
+        if $i0 == 104 goto label081;
+
+        virtualinvoke $r87.<com.jx.MainActivity$7: void onClick(android.view.View)>(null);
+
+     label081:
+        $r88 = new com.adwo.adsdk.j;
+
+        specialinvoke $r88.<com.adwo.adsdk.j: void <init>()>();
+
+        $r89 = new com.adwo.adsdk.b;
+
+        specialinvoke $r89.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r88, $r56, 0, 0, 0.0);
+
+        $r90 = new com.adwo.adsdk.g;
+
+        specialinvoke $r90.<com.adwo.adsdk.g: void <init>(com.adwo.adsdk.b)>($r89);
+
+        if $i0 == 105 goto label082;
+
+        virtualinvoke $r90.<com.adwo.adsdk.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label082:
+        $r91 = new com.jx.SettingActivity$6;
+
+        specialinvoke $r91.<com.jx.SettingActivity$6: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 106 goto label083;
+
+        virtualinvoke $r91.<com.jx.SettingActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label083:
+        $r92 = new com.jx.SettingActivity$4;
+
+        specialinvoke $r92.<com.jx.SettingActivity$4: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 107 goto label084;
+
+        virtualinvoke $r92.<com.jx.SettingActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label084:
+        $r93 = new com.jx.MainActivity$ControlReceiver$5;
+
+        specialinvoke $r93.<com.jx.MainActivity$ControlReceiver$5: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 108 goto label085;
+
+        virtualinvoke $r93.<com.jx.MainActivity$ControlReceiver$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label085:
+        $r94 = new com.jx.MainActivity;
+
+        specialinvoke $r94.<com.jx.MainActivity: void <init>()>();
+
+        $r95 = new com.jx.MainActivity$5;
+
+        specialinvoke $r95.<com.jx.MainActivity$5: void <init>(com.jx.MainActivity,java.lang.String)>($r94, "");
+
+        if $i0 == 109 goto label086;
+
+        virtualinvoke $r95.<com.jx.MainActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label086:
+        $r96 = new com.wooboo.adlib_android.ImpressionAdView$1;
+
+        specialinvoke $r96.<com.wooboo.adlib_android.ImpressionAdView$1: void <init>()>();
+
+        $r97 = new com.wooboo.adlib_android.a;
+
+        specialinvoke $r97.<com.wooboo.adlib_android.a: void <init>(com.wooboo.adlib_android.b,android.content.Context,boolean,int,double)>(null, $r56, false, 0, 0.0);
+
+        $r98 = new com.wooboo.adlib_android.ImpressionAdView$1$1;
+
+        specialinvoke $r98.<com.wooboo.adlib_android.ImpressionAdView$1$1: void <init>(com.wooboo.adlib_android.ImpressionAdView$1,com.wooboo.adlib_android.a)>($r96, $r97);
+
+        $r99 = new com.wooboo.adlib_android.ImpressionAdView$1$1$1;
+
+        specialinvoke $r99.<com.wooboo.adlib_android.ImpressionAdView$1$1$1: void <init>(com.wooboo.adlib_android.ImpressionAdView$1$1)>($r98);
+
+        if $i0 == 110 goto label087;
+
+        virtualinvoke $r99.<com.wooboo.adlib_android.ImpressionAdView$1$1$1: void onClick(android.view.View)>(null);
+
+     label087:
+        if $i0 == 111 goto label061;
+
+     label088:
+        if $i0 == 112 goto label060;
+
+        if $i0 == 113 goto label089;
+
+        if $i0 == 114 goto label060;
+
+     label089:
+        virtualinvoke $r56.<com.jx.SettingActivity: void onDestroy()>();
+
+     label090:
+        if $i0 == 116 goto label115;
+
+        $r100 = new com.jx.MainActivity;
+
+        specialinvoke $r100.<com.jx.MainActivity: void <init>()>();
+
+        if $i0 == 117 goto label115;
+
+        virtualinvoke $r100.<com.jx.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label091:
+        virtualinvoke $r100.<com.jx.MainActivity: void onResume()>();
+
+        if $i0 == 119 goto label113;
+
+     label092:
+        $r101 = new com.jx.MainActivity$6;
+
+        specialinvoke $r101.<com.jx.MainActivity$6: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 120 goto label093;
+
+        virtualinvoke $r101.<com.jx.MainActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label093:
+        $r102 = new com.jx.MainActivity$ControlReceiver$6;
+
+        specialinvoke $r102.<com.jx.MainActivity$ControlReceiver$6: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 121 goto label094;
+
+        virtualinvoke $r102.<com.jx.MainActivity$ControlReceiver$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label094:
+        $r103 = new com.jx.MainActivity$4;
+
+        specialinvoke $r103.<com.jx.MainActivity$4: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 122 goto label095;
+
+        virtualinvoke $r103.<com.jx.MainActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label095:
+        $r104 = new com.jx.MainActivity$ControlReceiver$4;
+
+        specialinvoke $r104.<com.jx.MainActivity$ControlReceiver$4: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 123 goto label096;
+
+        virtualinvoke $r104.<com.jx.MainActivity$ControlReceiver$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label096:
+        $r105 = new com.jx.SettingActivity$1;
+
+        specialinvoke $r105.<com.jx.SettingActivity$1: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 124 goto label097;
+
+        virtualinvoke $r105.<com.jx.SettingActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label097:
+        $r106 = new com.jx.SettingActivity$5;
+
+        specialinvoke $r106.<com.jx.SettingActivity$5: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 125 goto label098;
+
+        virtualinvoke $r106.<com.jx.SettingActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label098:
+        $r107 = new com.jx.MainActivity$ControlReceiver$1;
+
+        specialinvoke $r107.<com.jx.MainActivity$ControlReceiver$1: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 126 goto label099;
+
+        virtualinvoke $r107.<com.jx.MainActivity$ControlReceiver$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label099:
+        if $i0 == 127 goto label100;
+
+        staticinvoke <com.jx.MainActivity: void <clinit>()>();
+
+     label100:
+        $r108 = new com.jx.MainActivity$2;
+
+        specialinvoke $r108.<com.jx.MainActivity$2: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 128 goto label101;
+
+        virtualinvoke $r108.<com.jx.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label101:
+        $r109 = new com.jx.MainActivity$3;
+
+        specialinvoke $r109.<com.jx.MainActivity$3: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 129 goto label102;
+
+        virtualinvoke $r109.<com.jx.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label102:
+        $r110 = new com.adwo.adsdk.j;
+
+        specialinvoke $r110.<com.adwo.adsdk.j: void <init>()>();
+
+        $r111 = new com.adwo.adsdk.b;
+
+        specialinvoke $r111.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r110, $r100, 0, 0, 0.0);
+
+        $r112 = new com.adwo.adsdk.g;
+
+        specialinvoke $r112.<com.adwo.adsdk.g: void <init>(com.adwo.adsdk.b)>($r111);
+
+        if $i0 == 130 goto label103;
+
+        virtualinvoke $r112.<com.adwo.adsdk.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label103:
+        $r113 = new com.adwo.adsdk.j;
+
+        specialinvoke $r113.<com.adwo.adsdk.j: void <init>()>();
+
+        $r114 = new com.adwo.adsdk.b;
+
+        specialinvoke $r114.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r113, $r100, 0, 0, 0.0);
+
+        $r115 = new com.adwo.adsdk.e;
+
+        specialinvoke $r115.<com.adwo.adsdk.e: void <init>(com.adwo.adsdk.b)>($r114);
+
+        if $i0 == 131 goto label104;
+
+        virtualinvoke $r115.<com.adwo.adsdk.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label104:
+        $r116 = new com.jx.SettingActivity$6;
+
+        specialinvoke $r116.<com.jx.SettingActivity$6: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 132 goto label105;
+
+        virtualinvoke $r116.<com.jx.SettingActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label105:
+        $r117 = new com.jx.MainActivity$ControlReceiver$2;
+
+        specialinvoke $r117.<com.jx.MainActivity$ControlReceiver$2: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 133 goto label106;
+
+        virtualinvoke $r117.<com.jx.MainActivity$ControlReceiver$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label106:
+        $r118 = new com.jx.MainActivity$1;
+
+        specialinvoke $r118.<com.jx.MainActivity$1: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 134 goto label107;
+
+        virtualinvoke $r118.<com.jx.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label107:
+        $r119 = new com.jx.MainActivity$ControlReceiver$3;
+
+        specialinvoke $r119.<com.jx.MainActivity$ControlReceiver$3: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 135 goto label108;
+
+        virtualinvoke $r119.<com.jx.MainActivity$ControlReceiver$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label108:
+        $r120 = new com.jx.SettingActivity$4;
+
+        specialinvoke $r120.<com.jx.SettingActivity$4: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 136 goto label109;
+
+        virtualinvoke $r120.<com.jx.SettingActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label109:
+        $r121 = new com.jx.MainActivity$ControlReceiver$7;
+
+        specialinvoke $r121.<com.jx.MainActivity$ControlReceiver$7: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 137 goto label110;
+
+        virtualinvoke $r121.<com.jx.MainActivity$ControlReceiver$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label110:
+        $r122 = new com.jx.MainActivity$ControlReceiver$5;
+
+        specialinvoke $r122.<com.jx.MainActivity$ControlReceiver$5: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 138 goto label111;
+
+        virtualinvoke $r122.<com.jx.MainActivity$ControlReceiver$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label111:
+        $r123 = new com.jx.MainActivity$5;
+
+        specialinvoke $r123.<com.jx.MainActivity$5: void <init>(com.jx.MainActivity,java.lang.String)>($r100, "");
+
+        if $i0 == 139 goto label112;
+
+        virtualinvoke $r123.<com.jx.MainActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label112:
+        if $i0 == 140 goto label092;
+
+     label113:
+        if $i0 == 141 goto label091;
+
+        if $i0 == 142 goto label114;
+
+        if $i0 == 143 goto label091;
+
+     label114:
+        virtualinvoke $r100.<com.jx.MainActivity: void onDestroy()>();
+
+     label115:
+        if $i0 == 145 goto label120;
+
+        $r124 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r124.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        virtualinvoke $r124.<com.jx.ad.BootSmsReceiverService: void onCreate()>();
+
+        virtualinvoke $r124.<com.jx.ad.BootSmsReceiverService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label116:
+        if $i0 == 146 goto label117;
+
+        if $i0 == 147 goto label116;
+
+     label117:
+        $r125 = virtualinvoke $r124.<com.jx.ad.BootSmsReceiverService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label118:
+        if $i0 == 149 goto label119;
+
+        if $i0 == 150 goto label118;
+
+     label119:
+        virtualinvoke $r124.<com.jx.ad.BootSmsReceiverService: void onDestroy()>();
+
+     label120:
+        if $i0 == 151 goto label122;
+
+        $r126 = new com.jx.ad.ServiceControlReciver;
+
+        specialinvoke $r126.<com.jx.ad.ServiceControlReciver: void <init>()>();
+
+        if $i0 == 152 goto label122;
+
+     label121:
+        virtualinvoke $r126.<com.jx.ad.ServiceControlReciver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 154 goto label121;
+
+     label122:
+        if $i0 == 155 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.4 seconds.
+[Spark] Solution found in 2.4 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 57 callback methods for 7 components
+Found {res/layout/ad.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131034113 - android.widget.LinearLayout, 2131034112 - android.widget.Button], res/layout/howto.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131034113 - android.widget.LinearLayout, 2131034115 - android.widget.Button, 2131034114 - android.widget.Button], res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131034116 - android.widget.TextView, 2131034118 - android.widget.RelativeLayout, 2131034117 - android.widget.EditText, 2131034120 - android.widget.Button, 2131034119 - android.widget.Button], res/layout/setting.xml=[-1 - android.widget.LinearLayout, 2131034113 - android.widget.LinearLayout, 2131034121 - android.widget.Button, 2131034120 - android.widget.Button], res/layout/howto_nosupport.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131034113 - android.widget.LinearLayout, 2131034115 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 57 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/1ffcae9872d1707c058d7a50ffb44bc1809af08d5c57949510782827b082f1f5.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.wooboo.adlib_android.b
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.n $r2, $r4, $r6, $r7, $r74, $r78, $r94;
+        com.adwo.adsdk.z $r3, $r79;
+        com.adwo.adsdk.t $r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.adwo.adsdk.A $r8, $r75;
+        com.adwo.adsdk.AdwoAdView $r9;
+        com.adwo.adsdk.M $r10;
+        com.jx.ad.BootSmsReceiverService $r11, $r54, $r124;
+        com.jx.ad.BootSmsReceiverService$SmsReceiver $r12;
+        com.jx.ad.AndroidThemeService $r13;
+        android.os.IBinder $r14, $r125;
+        com.jx.MainActivity $r15, $r22, $r27, $r39, $r41, $r48, $r50, $r57, $r72, $r80, $r84, $r86, $r88, $r97, $r100;
+        com.jx.MainActivity$ControlReceiver $r16;
+        com.jx.ad.AndroidThemeService$SmsReceiver $r17;
+        com.jx.ad.BootReceiver $r18;
+        com.jx.ad.AndroidThemeService$MMSReceiver $r19;
+        com.jx.WelcomeActivity $r20, $r96;
+        com.jx.MainActivity$ControlReceiver$3 $r21, $r77, $r101;
+        com.jx.MainActivity$3 $r23, $r58, $r102;
+        com.adwo.adsdk.j $r24, $r36, $r59, $r65, $r103, $r112;
+        com.adwo.adsdk.b $r25, $r37, $r60, $r66, $r104, $r113;
+        com.adwo.adsdk.g $r26, $r61, $r105;
+        com.jx.MainActivity$6 $r28, $r81, $r106;
+        com.jx.MainActivity$ControlReceiver$7 $r29, $r62, $r107;
+        com.jx.MainActivity$ControlReceiver$4 $r30, $r83, $r108;
+        com.jx.SettingActivity $r31, $r34, $r43, $r46, $r56;
+        com.jx.SettingActivity$6 $r32, $r82, $r109;
+        com.jx.MainActivity$ControlReceiver$6 $r33, $r63, $r110;
+        com.jx.SettingActivity$5 $r35, $r64, $r111;
+        com.adwo.adsdk.e $r38, $r67, $r114;
+        com.jx.MainActivity$4 $r40, $r85, $r115;
+        com.jx.MainActivity$1 $r42, $r89, $r116;
+        com.jx.SettingActivity$1 $r44, $r68, $r117;
+        com.jx.MainActivity$ControlReceiver$1 $r45, $r69, $r118;
+        com.jx.SettingActivity$4 $r47, $r71, $r119;
+        com.jx.MainActivity$2 $r49, $r98, $r120;
+        com.jx.MainActivity$5 $r51, $r73, $r121;
+        com.jx.MainActivity$ControlReceiver$5 $r52, $r99, $r122;
+        com.jx.MainActivity$ControlReceiver$2 $r53, $r76, $r123;
+        com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver $r55;
+        com.jx.SettingActivity$3 $r70;
+        com.jx.MainActivity$7 $r87;
+        com.wooboo.adlib_android.ImpressionAdView$1 $r90;
+        com.wooboo.adlib_android.a $r91;
+        com.wooboo.adlib_android.ImpressionAdView$1$1 $r92;
+        com.wooboo.adlib_android.ImpressionAdView$1$1$1 $r93;
+        com.adwo.adsdk.p $r95;
+        com.jx.ad.ServiceControlReciver $r126;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label015;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label015;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label013;
+
+     label003:
+        $r2 = new com.adwo.adsdk.n;
+
+        specialinvoke $r2.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r3 = new com.adwo.adsdk.z;
+
+        specialinvoke $r3.<com.adwo.adsdk.z: void <init>(com.adwo.adsdk.n)>($r2);
+
+        if $i0 == 4 goto label004;
+
+        virtualinvoke $r3.<com.adwo.adsdk.z: void onClick(android.view.View)>(null);
+
+     label004:
+        $r4 = new com.adwo.adsdk.n;
+
+        specialinvoke $r4.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r5 = new com.adwo.adsdk.t;
+
+        specialinvoke $r5.<com.adwo.adsdk.t: void <init>(com.adwo.adsdk.n)>($r4);
+
+        if $i0 == 5 goto label005;
+
+        $z0 = virtualinvoke $r5.<com.adwo.adsdk.t: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label005:
+        $r6 = new com.adwo.adsdk.n;
+
+        specialinvoke $r6.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        if $i0 == 6 goto label006;
+
+        $z1 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label006:
+        if $i0 == 7 goto label007;
+
+        $z2 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label007:
+        if $i0 == 8 goto label008;
+
+        $z3 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label008:
+        if $i0 == 9 goto label009;
+
+        $z4 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onDown(android.view.MotionEvent)>(null);
+
+     label009:
+        $r7 = new com.adwo.adsdk.n;
+
+        specialinvoke $r7.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r8 = new com.adwo.adsdk.A;
+
+        specialinvoke $r8.<com.adwo.adsdk.A: void <init>(com.adwo.adsdk.n)>($r7);
+
+        if $i0 == 10 goto label010;
+
+        virtualinvoke $r8.<com.adwo.adsdk.A: void onClick(android.view.View)>(null);
+
+     label010:
+        if $i0 == 11 goto label011;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label011:
+        if $i0 == 12 goto label012;
+
+        $z5 = virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label012:
+        if $i0 == 13 goto label003;
+
+     label013:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 14 goto label002;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 15 goto label014;
+
+        if $i0 == 16 goto label002;
+
+     label014:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label015:
+        if $i0 == 18 goto label017;
+
+        $r9 = new com.adwo.adsdk.AdwoAdView;
+
+        specialinvoke $r9.<com.adwo.adsdk.AdwoAdView: void <init>(android.content.Context,android.util.AttributeSet)>(null, null);
+
+        $r10 = new com.adwo.adsdk.M;
+
+        specialinvoke $r10.<com.adwo.adsdk.M: void <init>(com.adwo.adsdk.AdwoAdView)>($r9);
+
+        if $i0 == 19 goto label017;
+
+     label016:
+        virtualinvoke $r10.<com.adwo.adsdk.M: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 21 goto label016;
+
+     label017:
+        if $i0 == 22 goto label019;
+
+        $r11 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r11.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        $r12 = new com.jx.ad.BootSmsReceiverService$SmsReceiver;
+
+        specialinvoke $r12.<com.jx.ad.BootSmsReceiverService$SmsReceiver: void <init>(com.jx.ad.BootSmsReceiverService)>($r11);
+
+        if $i0 == 23 goto label019;
+
+     label018:
+        virtualinvoke $r12.<com.jx.ad.BootSmsReceiverService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 25 goto label018;
+
+     label019:
+        if $i0 == 26 goto label024;
+
+        $r13 = new com.jx.ad.AndroidThemeService;
+
+        specialinvoke $r13.<com.jx.ad.AndroidThemeService: void <init>()>();
+
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onCreate()>();
+
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label020:
+        if $i0 == 27 goto label021;
+
+        if $i0 == 28 goto label020;
+
+     label021:
+        $r14 = virtualinvoke $r13.<com.jx.ad.AndroidThemeService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label022:
+        if $i0 == 30 goto label023;
+
+        if $i0 == 31 goto label022;
+
+     label023:
+        virtualinvoke $r13.<com.jx.ad.AndroidThemeService: void onDestroy()>();
+
+     label024:
+        if $i0 == 32 goto label026;
+
+        $r15 = new com.jx.MainActivity;
+
+        specialinvoke $r15.<com.jx.MainActivity: void <init>()>();
+
+        $r16 = new com.jx.MainActivity$ControlReceiver;
+
+        specialinvoke $r16.<com.jx.MainActivity$ControlReceiver: void <init>(com.jx.MainActivity)>($r15);
+
+        if $i0 == 33 goto label026;
+
+     label025:
+        virtualinvoke $r16.<com.jx.MainActivity$ControlReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 35 goto label025;
+
+     label026:
+        if $i0 == 36 goto label028;
+
+        $r17 = new com.jx.ad.AndroidThemeService$SmsReceiver;
+
+        specialinvoke $r17.<com.jx.ad.AndroidThemeService$SmsReceiver: void <init>(com.jx.ad.AndroidThemeService)>($r13);
+
+        if $i0 == 37 goto label028;
+
+     label027:
+        virtualinvoke $r17.<com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label027;
+
+     label028:
+        if $i0 == 40 goto label030;
+
+        $r18 = new com.jx.ad.BootReceiver;
+
+        specialinvoke $r18.<com.jx.ad.BootReceiver: void <init>()>();
+
+        if $i0 == 41 goto label030;
+
+     label029:
+        virtualinvoke $r18.<com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label029;
+
+     label030:
+        if $i0 == 44 goto label032;
+
+        $r19 = new com.jx.ad.AndroidThemeService$MMSReceiver;
+
+        specialinvoke $r19.<com.jx.ad.AndroidThemeService$MMSReceiver: void <init>(com.jx.ad.AndroidThemeService)>($r13);
+
+        if $i0 == 45 goto label032;
+
+     label031:
+        virtualinvoke $r19.<com.jx.ad.AndroidThemeService$MMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 47 goto label031;
+
+     label032:
+        if $i0 == 48 goto label057;
+
+        $r20 = new com.jx.WelcomeActivity;
+
+        specialinvoke $r20.<com.jx.WelcomeActivity: void <init>()>();
+
+        if $i0 == 49 goto label057;
+
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label033:
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onResume()>();
+
+        if $i0 == 51 goto label055;
+
+     label034:
+        $r21 = new com.jx.MainActivity$ControlReceiver$3;
+
+        specialinvoke $r21.<com.jx.MainActivity$ControlReceiver$3: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 52 goto label035;
+
+        virtualinvoke $r21.<com.jx.MainActivity$ControlReceiver$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label035:
+        $r22 = new com.jx.MainActivity;
+
+        specialinvoke $r22.<com.jx.MainActivity: void <init>()>();
+
+        $r23 = new com.jx.MainActivity$3;
+
+        specialinvoke $r23.<com.jx.MainActivity$3: void <init>(com.jx.MainActivity)>($r22);
+
+        if $i0 == 53 goto label036;
+
+        virtualinvoke $r23.<com.jx.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label036:
+        $r24 = new com.adwo.adsdk.j;
+
+        specialinvoke $r24.<com.adwo.adsdk.j: void <init>()>();
+
+        $r25 = new com.adwo.adsdk.b;
+
+        specialinvoke $r25.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r24, $r20, 0, 0, 0.0);
+
+        $r26 = new com.adwo.adsdk.g;
+
+        specialinvoke $r26.<com.adwo.adsdk.g: void <init>(com.adwo.adsdk.b)>($r25);
+
+        if $i0 == 54 goto label037;
+
+        virtualinvoke $r26.<com.adwo.adsdk.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label037:
+        $r27 = new com.jx.MainActivity;
+
+        specialinvoke $r27.<com.jx.MainActivity: void <init>()>();
+
+        $r28 = new com.jx.MainActivity$6;
+
+        specialinvoke $r28.<com.jx.MainActivity$6: void <init>(com.jx.MainActivity)>($r27);
+
+        if $i0 == 55 goto label038;
+
+        virtualinvoke $r28.<com.jx.MainActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label038:
+        $r29 = new com.jx.MainActivity$ControlReceiver$7;
+
+        specialinvoke $r29.<com.jx.MainActivity$ControlReceiver$7: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 56 goto label039;
+
+        virtualinvoke $r29.<com.jx.MainActivity$ControlReceiver$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label039:
+        $r30 = new com.jx.MainActivity$ControlReceiver$4;
+
+        specialinvoke $r30.<com.jx.MainActivity$ControlReceiver$4: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 57 goto label040;
+
+        virtualinvoke $r30.<com.jx.MainActivity$ControlReceiver$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label040:
+        $r31 = new com.jx.SettingActivity;
+
+        specialinvoke $r31.<com.jx.SettingActivity: void <init>()>();
+
+        $r32 = new com.jx.SettingActivity$6;
+
+        specialinvoke $r32.<com.jx.SettingActivity$6: void <init>(com.jx.SettingActivity)>($r31);
+
+        if $i0 == 58 goto label041;
+
+        virtualinvoke $r32.<com.jx.SettingActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label041:
+        $r33 = new com.jx.MainActivity$ControlReceiver$6;
+
+        specialinvoke $r33.<com.jx.MainActivity$ControlReceiver$6: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 59 goto label042;
+
+        virtualinvoke $r33.<com.jx.MainActivity$ControlReceiver$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label042:
+        $r34 = new com.jx.SettingActivity;
+
+        specialinvoke $r34.<com.jx.SettingActivity: void <init>()>();
+
+        $r35 = new com.jx.SettingActivity$5;
+
+        specialinvoke $r35.<com.jx.SettingActivity$5: void <init>(com.jx.SettingActivity)>($r34);
+
+        if $i0 == 60 goto label043;
+
+        virtualinvoke $r35.<com.jx.SettingActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label043:
+        $r36 = new com.adwo.adsdk.j;
+
+        specialinvoke $r36.<com.adwo.adsdk.j: void <init>()>();
+
+        $r37 = new com.adwo.adsdk.b;
+
+        specialinvoke $r37.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r36, $r20, 0, 0, 0.0);
+
+        $r38 = new com.adwo.adsdk.e;
+
+        specialinvoke $r38.<com.adwo.adsdk.e: void <init>(com.adwo.adsdk.b)>($r37);
+
+        if $i0 == 61 goto label044;
+
+        virtualinvoke $r38.<com.adwo.adsdk.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label044:
+        $r39 = new com.jx.MainActivity;
+
+        specialinvoke $r39.<com.jx.MainActivity: void <init>()>();
+
+        $r40 = new com.jx.MainActivity$4;
+
+        specialinvoke $r40.<com.jx.MainActivity$4: void <init>(com.jx.MainActivity)>($r39);
+
+        if $i0 == 62 goto label045;
+
+        virtualinvoke $r40.<com.jx.MainActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label045:
+        $r41 = new com.jx.MainActivity;
+
+        specialinvoke $r41.<com.jx.MainActivity: void <init>()>();
+
+        $r42 = new com.jx.MainActivity$1;
+
+        specialinvoke $r42.<com.jx.MainActivity$1: void <init>(com.jx.MainActivity)>($r41);
+
+        if $i0 == 63 goto label046;
+
+        virtualinvoke $r42.<com.jx.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label046:
+        $r43 = new com.jx.SettingActivity;
+
+        specialinvoke $r43.<com.jx.SettingActivity: void <init>()>();
+
+        $r44 = new com.jx.SettingActivity$1;
+
+        specialinvoke $r44.<com.jx.SettingActivity$1: void <init>(com.jx.SettingActivity)>($r43);
+
+        if $i0 == 64 goto label047;
+
+        virtualinvoke $r44.<com.jx.SettingActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label047:
+        $r45 = new com.jx.MainActivity$ControlReceiver$1;
+
+        specialinvoke $r45.<com.jx.MainActivity$ControlReceiver$1: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 65 goto label048;
+
+        virtualinvoke $r45.<com.jx.MainActivity$ControlReceiver$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label048:
+        $r46 = new com.jx.SettingActivity;
+
+        specialinvoke $r46.<com.jx.SettingActivity: void <init>()>();
+
+        $r47 = new com.jx.SettingActivity$4;
+
+        specialinvoke $r47.<com.jx.SettingActivity$4: void <init>(com.jx.SettingActivity)>($r46);
+
+        if $i0 == 66 goto label049;
+
+        virtualinvoke $r47.<com.jx.SettingActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label049:
+        if $i0 == 67 goto label050;
+
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onClick(android.view.View)>(null);
+
+     label050:
+        $r48 = new com.jx.MainActivity;
+
+        specialinvoke $r48.<com.jx.MainActivity: void <init>()>();
+
+        $r49 = new com.jx.MainActivity$2;
+
+        specialinvoke $r49.<com.jx.MainActivity$2: void <init>(com.jx.MainActivity)>($r48);
+
+        if $i0 == 68 goto label051;
+
+        virtualinvoke $r49.<com.jx.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label051:
+        $r50 = new com.jx.MainActivity;
+
+        specialinvoke $r50.<com.jx.MainActivity: void <init>()>();
+
+        $r51 = new com.jx.MainActivity$5;
+
+        specialinvoke $r51.<com.jx.MainActivity$5: void <init>(com.jx.MainActivity,java.lang.String)>($r50, "");
+
+        if $i0 == 69 goto label052;
+
+        virtualinvoke $r51.<com.jx.MainActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label052:
+        $r52 = new com.jx.MainActivity$ControlReceiver$5;
+
+        specialinvoke $r52.<com.jx.MainActivity$ControlReceiver$5: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 70 goto label053;
+
+        virtualinvoke $r52.<com.jx.MainActivity$ControlReceiver$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label053:
+        $r53 = new com.jx.MainActivity$ControlReceiver$2;
+
+        specialinvoke $r53.<com.jx.MainActivity$ControlReceiver$2: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 71 goto label054;
+
+        virtualinvoke $r53.<com.jx.MainActivity$ControlReceiver$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label054:
+        if $i0 == 72 goto label034;
+
+     label055:
+        if $i0 == 73 goto label033;
+
+        if $i0 == 74 goto label056;
+
+        if $i0 == 75 goto label033;
+
+     label056:
+        virtualinvoke $r20.<com.jx.WelcomeActivity: void onDestroy()>();
+
+     label057:
+        if $i0 == 77 goto label059;
+
+        $r54 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r54.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        $r55 = new com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver;
+
+        specialinvoke $r55.<com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver: void <init>(com.jx.ad.BootSmsReceiverService)>($r54);
+
+        if $i0 == 78 goto label059;
+
+     label058:
+        virtualinvoke $r55.<com.jx.ad.BootSmsReceiverService$BootSmsReceiverServiceReciver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 80 goto label058;
+
+     label059:
+        if $i0 == 81 goto label090;
+
+        $r56 = new com.jx.SettingActivity;
+
+        specialinvoke $r56.<com.jx.SettingActivity: void <init>()>();
+
+        if $i0 == 82 goto label090;
+
+        virtualinvoke $r56.<com.jx.SettingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label060:
+        virtualinvoke $r56.<com.jx.SettingActivity: void onResume()>();
+
+        if $i0 == 84 goto label088;
+
+     label061:
+        $r57 = new com.jx.MainActivity;
+
+        specialinvoke $r57.<com.jx.MainActivity: void <init>()>();
+
+        $r58 = new com.jx.MainActivity$3;
+
+        specialinvoke $r58.<com.jx.MainActivity$3: void <init>(com.jx.MainActivity)>($r57);
+
+        if $i0 == 85 goto label062;
+
+        virtualinvoke $r58.<com.jx.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label062:
+        $r59 = new com.adwo.adsdk.j;
+
+        specialinvoke $r59.<com.adwo.adsdk.j: void <init>()>();
+
+        $r60 = new com.adwo.adsdk.b;
+
+        specialinvoke $r60.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r59, $r56, 0, 0, 0.0);
+
+        $r61 = new com.adwo.adsdk.g;
+
+        specialinvoke $r61.<com.adwo.adsdk.g: void <init>(com.adwo.adsdk.b)>($r60);
+
+        if $i0 == 86 goto label063;
+
+        virtualinvoke $r61.<com.adwo.adsdk.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label063:
+        $r62 = new com.jx.MainActivity$ControlReceiver$7;
+
+        specialinvoke $r62.<com.jx.MainActivity$ControlReceiver$7: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 87 goto label064;
+
+        virtualinvoke $r62.<com.jx.MainActivity$ControlReceiver$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label064:
+        $r63 = new com.jx.MainActivity$ControlReceiver$6;
+
+        specialinvoke $r63.<com.jx.MainActivity$ControlReceiver$6: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 88 goto label065;
+
+        virtualinvoke $r63.<com.jx.MainActivity$ControlReceiver$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label065:
+        $r64 = new com.jx.SettingActivity$5;
+
+        specialinvoke $r64.<com.jx.SettingActivity$5: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 89 goto label066;
+
+        virtualinvoke $r64.<com.jx.SettingActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label066:
+        $r65 = new com.adwo.adsdk.j;
+
+        specialinvoke $r65.<com.adwo.adsdk.j: void <init>()>();
+
+        $r66 = new com.adwo.adsdk.b;
+
+        specialinvoke $r66.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r65, $r56, 0, 0, 0.0);
+
+        $r67 = new com.adwo.adsdk.e;
+
+        specialinvoke $r67.<com.adwo.adsdk.e: void <init>(com.adwo.adsdk.b)>($r66);
+
+        if $i0 == 90 goto label067;
+
+        virtualinvoke $r67.<com.adwo.adsdk.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label067:
+        $r68 = new com.jx.SettingActivity$1;
+
+        specialinvoke $r68.<com.jx.SettingActivity$1: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 91 goto label068;
+
+        virtualinvoke $r68.<com.jx.SettingActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label068:
+        $r69 = new com.jx.MainActivity$ControlReceiver$1;
+
+        specialinvoke $r69.<com.jx.MainActivity$ControlReceiver$1: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 92 goto label069;
+
+        virtualinvoke $r69.<com.jx.MainActivity$ControlReceiver$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label069:
+        $r70 = new com.jx.SettingActivity$3;
+
+        specialinvoke $r70.<com.jx.SettingActivity$3: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 93 goto label070;
+
+        virtualinvoke $r70.<com.jx.SettingActivity$3: void onClick(android.view.View)>(null);
+
+     label070:
+        $r71 = new com.jx.SettingActivity$4;
+
+        specialinvoke $r71.<com.jx.SettingActivity$4: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 94 goto label071;
+
+        virtualinvoke $r71.<com.jx.SettingActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label071:
+        $r72 = new com.jx.MainActivity;
+
+        specialinvoke $r72.<com.jx.MainActivity: void <init>()>();
+
+        $r73 = new com.jx.MainActivity$5;
+
+        specialinvoke $r73.<com.jx.MainActivity$5: void <init>(com.jx.MainActivity,java.lang.String)>($r72, "");
+
+        if $i0 == 95 goto label072;
+
+        virtualinvoke $r73.<com.jx.MainActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label072:
+        $r74 = new com.adwo.adsdk.n;
+
+        specialinvoke $r74.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r56, 0, 0L, "", false, false, false);
+
+        $r75 = new com.adwo.adsdk.A;
+
+        specialinvoke $r75.<com.adwo.adsdk.A: void <init>(com.adwo.adsdk.n)>($r74);
+
+        if $i0 == 96 goto label073;
+
+        virtualinvoke $r75.<com.adwo.adsdk.A: void onClick(android.view.View)>(null);
+
+     label073:
+        $r76 = new com.jx.MainActivity$ControlReceiver$2;
+
+        specialinvoke $r76.<com.jx.MainActivity$ControlReceiver$2: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 97 goto label074;
+
+        virtualinvoke $r76.<com.jx.MainActivity$ControlReceiver$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label074:
+        $r77 = new com.jx.MainActivity$ControlReceiver$3;
+
+        specialinvoke $r77.<com.jx.MainActivity$ControlReceiver$3: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 98 goto label075;
+
+        virtualinvoke $r77.<com.jx.MainActivity$ControlReceiver$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label075:
+        $r78 = new com.adwo.adsdk.n;
+
+        specialinvoke $r78.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r56, 0, 0L, "", false, false, false);
+
+        $r79 = new com.adwo.adsdk.z;
+
+        specialinvoke $r79.<com.adwo.adsdk.z: void <init>(com.adwo.adsdk.n)>($r78);
+
+        if $i0 == 99 goto label076;
+
+        virtualinvoke $r79.<com.adwo.adsdk.z: void onClick(android.view.View)>(null);
+
+     label076:
+        $r80 = new com.jx.MainActivity;
+
+        specialinvoke $r80.<com.jx.MainActivity: void <init>()>();
+
+        $r81 = new com.jx.MainActivity$6;
+
+        specialinvoke $r81.<com.jx.MainActivity$6: void <init>(com.jx.MainActivity)>($r80);
+
+        if $i0 == 100 goto label077;
+
+        virtualinvoke $r81.<com.jx.MainActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label077:
+        $r82 = new com.jx.SettingActivity$6;
+
+        specialinvoke $r82.<com.jx.SettingActivity$6: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 101 goto label078;
+
+        virtualinvoke $r82.<com.jx.SettingActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label078:
+        $r83 = new com.jx.MainActivity$ControlReceiver$4;
+
+        specialinvoke $r83.<com.jx.MainActivity$ControlReceiver$4: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 102 goto label079;
+
+        virtualinvoke $r83.<com.jx.MainActivity$ControlReceiver$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label079:
+        $r84 = new com.jx.MainActivity;
+
+        specialinvoke $r84.<com.jx.MainActivity: void <init>()>();
+
+        $r85 = new com.jx.MainActivity$4;
+
+        specialinvoke $r85.<com.jx.MainActivity$4: void <init>(com.jx.MainActivity)>($r84);
+
+        if $i0 == 103 goto label080;
+
+        virtualinvoke $r85.<com.jx.MainActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label080:
+        $r86 = new com.jx.MainActivity;
+
+        specialinvoke $r86.<com.jx.MainActivity: void <init>()>();
+
+        $r87 = new com.jx.MainActivity$7;
+
+        specialinvoke $r87.<com.jx.MainActivity$7: void <init>(com.jx.MainActivity)>($r86);
+
+        if $i0 == 104 goto label081;
+
+        virtualinvoke $r87.<com.jx.MainActivity$7: void onClick(android.view.View)>(null);
+
+     label081:
+        $r88 = new com.jx.MainActivity;
+
+        specialinvoke $r88.<com.jx.MainActivity: void <init>()>();
+
+        $r89 = new com.jx.MainActivity$1;
+
+        specialinvoke $r89.<com.jx.MainActivity$1: void <init>(com.jx.MainActivity)>($r88);
+
+        if $i0 == 105 goto label082;
+
+        virtualinvoke $r89.<com.jx.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label082:
+        $r90 = new com.wooboo.adlib_android.ImpressionAdView$1;
+
+        specialinvoke $r90.<com.wooboo.adlib_android.ImpressionAdView$1: void <init>()>();
+
+        $r91 = new com.wooboo.adlib_android.a;
+
+        specialinvoke $r91.<com.wooboo.adlib_android.a: void <init>(com.wooboo.adlib_android.b,android.content.Context,boolean,int,double)>(null, $r56, false, 0, 0.0);
+
+        $r92 = new com.wooboo.adlib_android.ImpressionAdView$1$1;
+
+        specialinvoke $r92.<com.wooboo.adlib_android.ImpressionAdView$1$1: void <init>(com.wooboo.adlib_android.ImpressionAdView$1,com.wooboo.adlib_android.a)>($r90, $r91);
+
+        $r93 = new com.wooboo.adlib_android.ImpressionAdView$1$1$1;
+
+        specialinvoke $r93.<com.wooboo.adlib_android.ImpressionAdView$1$1$1: void <init>(com.wooboo.adlib_android.ImpressionAdView$1$1)>($r92);
+
+        if $i0 == 106 goto label083;
+
+        virtualinvoke $r93.<com.wooboo.adlib_android.ImpressionAdView$1$1$1: void onClick(android.view.View)>(null);
+
+     label083:
+        $r94 = new com.adwo.adsdk.n;
+
+        specialinvoke $r94.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r56, 0, 0L, "", false, false, false);
+
+        $r95 = new com.adwo.adsdk.p;
+
+        specialinvoke $r95.<com.adwo.adsdk.p: void <init>(com.adwo.adsdk.n)>($r94);
+
+        if $i0 == 107 goto label084;
+
+        virtualinvoke $r95.<com.adwo.adsdk.p: void onClick(android.view.View)>(null);
+
+     label084:
+        $r96 = new com.jx.WelcomeActivity;
+
+        specialinvoke $r96.<com.jx.WelcomeActivity: void <init>()>();
+
+        if $i0 == 108 goto label085;
+
+        virtualinvoke $r96.<com.jx.WelcomeActivity: void onClick(android.view.View)>(null);
+
+     label085:
+        $r97 = new com.jx.MainActivity;
+
+        specialinvoke $r97.<com.jx.MainActivity: void <init>()>();
+
+        $r98 = new com.jx.MainActivity$2;
+
+        specialinvoke $r98.<com.jx.MainActivity$2: void <init>(com.jx.MainActivity)>($r97);
+
+        if $i0 == 109 goto label086;
+
+        virtualinvoke $r98.<com.jx.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label086:
+        $r99 = new com.jx.MainActivity$ControlReceiver$5;
+
+        specialinvoke $r99.<com.jx.MainActivity$ControlReceiver$5: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 110 goto label087;
+
+        virtualinvoke $r99.<com.jx.MainActivity$ControlReceiver$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label087:
+        if $i0 == 111 goto label061;
+
+     label088:
+        if $i0 == 112 goto label060;
+
+        if $i0 == 113 goto label089;
+
+        if $i0 == 114 goto label060;
+
+     label089:
+        virtualinvoke $r56.<com.jx.SettingActivity: void onDestroy()>();
+
+     label090:
+        if $i0 == 116 goto label115;
+
+        $r100 = new com.jx.MainActivity;
+
+        specialinvoke $r100.<com.jx.MainActivity: void <init>()>();
+
+        if $i0 == 117 goto label115;
+
+        virtualinvoke $r100.<com.jx.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label091:
+        virtualinvoke $r100.<com.jx.MainActivity: void onResume()>();
+
+        if $i0 == 119 goto label113;
+
+     label092:
+        $r101 = new com.jx.MainActivity$ControlReceiver$3;
+
+        specialinvoke $r101.<com.jx.MainActivity$ControlReceiver$3: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 120 goto label093;
+
+        virtualinvoke $r101.<com.jx.MainActivity$ControlReceiver$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label093:
+        $r102 = new com.jx.MainActivity$3;
+
+        specialinvoke $r102.<com.jx.MainActivity$3: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 121 goto label094;
+
+        virtualinvoke $r102.<com.jx.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label094:
+        $r103 = new com.adwo.adsdk.j;
+
+        specialinvoke $r103.<com.adwo.adsdk.j: void <init>()>();
+
+        $r104 = new com.adwo.adsdk.b;
+
+        specialinvoke $r104.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r103, $r100, 0, 0, 0.0);
+
+        $r105 = new com.adwo.adsdk.g;
+
+        specialinvoke $r105.<com.adwo.adsdk.g: void <init>(com.adwo.adsdk.b)>($r104);
+
+        if $i0 == 122 goto label095;
+
+        virtualinvoke $r105.<com.adwo.adsdk.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label095:
+        $r106 = new com.jx.MainActivity$6;
+
+        specialinvoke $r106.<com.jx.MainActivity$6: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 123 goto label096;
+
+        virtualinvoke $r106.<com.jx.MainActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label096:
+        $r107 = new com.jx.MainActivity$ControlReceiver$7;
+
+        specialinvoke $r107.<com.jx.MainActivity$ControlReceiver$7: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 124 goto label097;
+
+        virtualinvoke $r107.<com.jx.MainActivity$ControlReceiver$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label097:
+        $r108 = new com.jx.MainActivity$ControlReceiver$4;
+
+        specialinvoke $r108.<com.jx.MainActivity$ControlReceiver$4: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 125 goto label098;
+
+        virtualinvoke $r108.<com.jx.MainActivity$ControlReceiver$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label098:
+        $r109 = new com.jx.SettingActivity$6;
+
+        specialinvoke $r109.<com.jx.SettingActivity$6: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 126 goto label099;
+
+        virtualinvoke $r109.<com.jx.SettingActivity$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label099:
+        $r110 = new com.jx.MainActivity$ControlReceiver$6;
+
+        specialinvoke $r110.<com.jx.MainActivity$ControlReceiver$6: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 127 goto label100;
+
+        virtualinvoke $r110.<com.jx.MainActivity$ControlReceiver$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label100:
+        $r111 = new com.jx.SettingActivity$5;
+
+        specialinvoke $r111.<com.jx.SettingActivity$5: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 128 goto label101;
+
+        virtualinvoke $r111.<com.jx.SettingActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label101:
+        $r112 = new com.adwo.adsdk.j;
+
+        specialinvoke $r112.<com.adwo.adsdk.j: void <init>()>();
+
+        $r113 = new com.adwo.adsdk.b;
+
+        specialinvoke $r113.<com.adwo.adsdk.b: void <init>(com.adwo.adsdk.j,android.content.Context,int,int,double)>($r112, $r100, 0, 0, 0.0);
+
+        $r114 = new com.adwo.adsdk.e;
+
+        specialinvoke $r114.<com.adwo.adsdk.e: void <init>(com.adwo.adsdk.b)>($r113);
+
+        if $i0 == 129 goto label102;
+
+        virtualinvoke $r114.<com.adwo.adsdk.e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label102:
+        $r115 = new com.jx.MainActivity$4;
+
+        specialinvoke $r115.<com.jx.MainActivity$4: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 130 goto label103;
+
+        virtualinvoke $r115.<com.jx.MainActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label103:
+        $r116 = new com.jx.MainActivity$1;
+
+        specialinvoke $r116.<com.jx.MainActivity$1: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 131 goto label104;
+
+        virtualinvoke $r116.<com.jx.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label104:
+        if $i0 == 132 goto label105;
+
+        staticinvoke <com.jx.MainActivity: void <clinit>()>();
+
+     label105:
+        $r117 = new com.jx.SettingActivity$1;
+
+        specialinvoke $r117.<com.jx.SettingActivity$1: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 133 goto label106;
+
+        virtualinvoke $r117.<com.jx.SettingActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label106:
+        $r118 = new com.jx.MainActivity$ControlReceiver$1;
+
+        specialinvoke $r118.<com.jx.MainActivity$ControlReceiver$1: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 134 goto label107;
+
+        virtualinvoke $r118.<com.jx.MainActivity$ControlReceiver$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label107:
+        $r119 = new com.jx.SettingActivity$4;
+
+        specialinvoke $r119.<com.jx.SettingActivity$4: void <init>(com.jx.SettingActivity)>($r56);
+
+        if $i0 == 135 goto label108;
+
+        virtualinvoke $r119.<com.jx.SettingActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label108:
+        $r120 = new com.jx.MainActivity$2;
+
+        specialinvoke $r120.<com.jx.MainActivity$2: void <init>(com.jx.MainActivity)>($r100);
+
+        if $i0 == 136 goto label109;
+
+        virtualinvoke $r120.<com.jx.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label109:
+        $r121 = new com.jx.MainActivity$5;
+
+        specialinvoke $r121.<com.jx.MainActivity$5: void <init>(com.jx.MainActivity,java.lang.String)>($r100, "");
+
+        if $i0 == 137 goto label110;
+
+        virtualinvoke $r121.<com.jx.MainActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label110:
+        $r122 = new com.jx.MainActivity$ControlReceiver$5;
+
+        specialinvoke $r122.<com.jx.MainActivity$ControlReceiver$5: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 138 goto label111;
+
+        virtualinvoke $r122.<com.jx.MainActivity$ControlReceiver$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label111:
+        $r123 = new com.jx.MainActivity$ControlReceiver$2;
+
+        specialinvoke $r123.<com.jx.MainActivity$ControlReceiver$2: void <init>(com.jx.MainActivity$ControlReceiver)>($r16);
+
+        if $i0 == 139 goto label112;
+
+        virtualinvoke $r123.<com.jx.MainActivity$ControlReceiver$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label112:
+        if $i0 == 140 goto label092;
+
+     label113:
+        if $i0 == 141 goto label091;
+
+        if $i0 == 142 goto label114;
+
+        if $i0 == 143 goto label091;
+
+     label114:
+        virtualinvoke $r100.<com.jx.MainActivity: void onDestroy()>();
+
+     label115:
+        if $i0 == 145 goto label120;
+
+        $r124 = new com.jx.ad.BootSmsReceiverService;
+
+        specialinvoke $r124.<com.jx.ad.BootSmsReceiverService: void <init>()>();
+
+        virtualinvoke $r124.<com.jx.ad.BootSmsReceiverService: void onCreate()>();
+
+        virtualinvoke $r124.<com.jx.ad.BootSmsReceiverService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label116:
+        if $i0 == 146 goto label117;
+
+        if $i0 == 147 goto label116;
+
+     label117:
+        $r125 = virtualinvoke $r124.<com.jx.ad.BootSmsReceiverService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label118:
+        if $i0 == 149 goto label119;
+
+        if $i0 == 150 goto label118;
+
+     label119:
+        virtualinvoke $r124.<com.jx.ad.BootSmsReceiverService: void onDestroy()>();
+
+     label120:
+        if $i0 == 151 goto label122;
+
+        $r126 = new com.jx.ad.ServiceControlReciver;
+
+        specialinvoke $r126.<com.jx.ad.ServiceControlReciver: void <init>()>();
+
+        if $i0 == 152 goto label122;
+
+     label121:
+        virtualinvoke $r126.<com.jx.ad.ServiceControlReciver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 154 goto label121;
+
+     label122:
+        if $i0 == 155 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.3 seconds.
+[Spark] Solution found in 2.3 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 2.433169046 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.196723682 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 4575 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 110 sources and 124 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 12685
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 29594
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 66532 forward and 37061 backward edges solved, processing 18 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 18 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.009995455 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1) in method <com.jx.tool.LogTool: void e(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r2, "current=1 and type=?", $r3, null) in method <com.jx.tool.ApnManager: int getApnIdByType(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) in method <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r18 = virtualinvoke $r16.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r17, null, null, null, null) in method <com.jx.tool.ApnManager: int CreateApn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r1, "current=1", null, null) in method <com.jx.tool.ApnManager: int CurrentApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, null, null) in method <com.jx.ad.AndroidThemeService: void SendSmsMessage(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.jx.ad.AndroidThemeService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r14 = virtualinvoke $r11.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) in method <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.jx.ad.AndroidThemeService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("respid") in method <com.jx.ad.AndroidThemeService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Adwo SDK", $r3) in method <com.adwo.adsdk.m: void b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") in method <com.adwo.adsdk.m: java.lang.String a(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("shareimsi", $r4) in method <com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.jx.ad.AndroidThemeService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.jx.ad.AndroidThemeService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("sharesmsc", $r9) in method <com.jx.ad.AndroidThemeService$3: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r14 = virtualinvoke $r11.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) in method <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.jx.ad.AndroidThemeService$3: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("shareimsi", $r3) in method <com.jx.ad.AndroidThemeService$3: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.jx.ad.AndroidThemeService$3: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("sharesmsc", $r4) in method <com.jx.ad.AndroidThemeService$5: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) in method <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $i1 = virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null) in method <com.jx.tool.ApnManager: void SetDefaultAPN(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r18 = virtualinvoke $r16.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r17, null, null, null, null) in method <com.jx.tool.ApnManager: int CreateApn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Adwo SDK", $r3) in method <com.adwo.adsdk.m: void b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") in method <com.adwo.adsdk.m: java.lang.String a(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AndroidThemeService(1.0.11.1114)", $r1) in method <com.jx.tool.LogTool: void w(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) in method <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r16 = interfaceinvoke $r16.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("IsSmsShield", $z0) in method <com.jx.ad.AndroidThemeService$6: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) in method <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("shareimsi", $r15) in method <com.jx.ad.AndroidThemeService$5: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.jx.ad.AndroidThemeService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.jx.ad.AndroidThemeService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) in method <com.jx.tool.LogTool: void i(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r16 = virtualinvoke $r13.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.jx.ad.BootSmsReceiverService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Intent in method <com.jx.ad.BootSmsReceiverService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("respid") in method <com.jx.MainActivity$ControlReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pid", $r1) in method <com.jx.MainActivity: void saveCostResID(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("respid") in method <com.jx.MainActivity$ControlReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("sharesmsc", $r12) in method <com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r14 = virtualinvoke $r11.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[],int,int)>($r3, 0, $i0) in method <com.jx.tool.HttpTool: java.lang.Boolean DownloadFile(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = interfaceinvoke $r10.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.jx.tool.HttpTool: java.io.InputStream getResponseContentStream(java.lang.String)>
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1), from the following sources:
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r2, "current=1 and type=?", $r3, null) (in <com.jx.tool.ApnManager: int getApnIdByType(java.lang.String)>)
+	- $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) (in <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>)
+	- $r18 = virtualinvoke $r16.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r17, null, null, null, null) (in <com.jx.tool.ApnManager: int CreateApn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>)
+	- $r4 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r1, "current=1", null, null) (in <com.jx.tool.ApnManager: int CurrentApn()>)
+Found a flow to sink virtualinvoke $r3.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, null, null), from the following sources:
+	- $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.jx.ad.AndroidThemeService: void onCreate()>)
+	- $r14 = virtualinvoke $r11.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) (in <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>)
+	- $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.jx.ad.AndroidThemeService: void onCreate()>)
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("respid") (in <com.jx.ad.AndroidThemeService: void onStart(android.content.Intent,int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Adwo SDK", $r3), from the following sources:
+	- $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") (in <com.adwo.adsdk.m: java.lang.String a(android.content.Context)>)
+Found a flow to sink $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("shareimsi", $r4), from the following sources:
+	- $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.jx.ad.AndroidThemeService: void onCreate()>)
+	- $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.jx.ad.AndroidThemeService: void onCreate()>)
+Found a flow to sink $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("sharesmsc", $r9), from the following sources:
+	- $r14 = virtualinvoke $r11.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) (in <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>)
+	- $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.jx.ad.AndroidThemeService$3: void run()>)
+Found a flow to sink $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("shareimsi", $r3), from the following sources:
+	- $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.jx.ad.AndroidThemeService$3: void run()>)
+Found a flow to sink $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("sharesmsc", $r4), from the following sources:
+	- $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) (in <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>)
+Found a flow to sink $i1 = virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null), from the following sources:
+	- $r18 = virtualinvoke $r16.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r17, null, null, null, null) (in <com.jx.tool.ApnManager: int CreateApn(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Adwo SDK", $r3), from the following sources:
+	- $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") (in <com.adwo.adsdk.m: java.lang.String a(android.content.Context)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AndroidThemeService(1.0.11.1114)", $r1), from the following sources:
+	- $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) (in <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>)
+Found a flow to sink $r16 = interfaceinvoke $r16.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("IsSmsShield", $z0), from the following sources:
+	- $r3 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r12, $r8) (in <com.jx.tool.HttpTool: java.lang.String getResponseContentGet(java.lang.String,boolean)>)
+Found a flow to sink $r14 = interfaceinvoke $r14.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("shareimsi", $r15), from the following sources:
+	- $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.jx.ad.AndroidThemeService: void onCreate()>)
+	- $r4 = virtualinvoke $r10.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.jx.ad.AndroidThemeService: void onCreate()>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1), from the following sources:
+	- $r16 = virtualinvoke $r13.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.jx.ad.BootSmsReceiverService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Intent (in <com.jx.ad.BootSmsReceiverService: void onStart(android.content.Intent,int)>)
+	- $r1 := @parameter0: android.content.Context (in <com.jx.ad.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r7 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("respid") (in <com.jx.MainActivity$ControlReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r3 = interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pid", $r1), from the following sources:
+	- $r7 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("respid") (in <com.jx.MainActivity$ControlReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r10 = interfaceinvoke $r10.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("sharesmsc", $r12), from the following sources:
+	- $r14 = virtualinvoke $r11.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.jx.ad.AndroidThemeService$SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[],int,int)>($r3, 0, $i0), from the following sources:
+	- $r12 = interfaceinvoke $r10.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.jx.tool.HttpTool: java.io.InputStream getResponseContentStream(java.lang.String)>)
+Maximum memory consumption: 694.646592 MB
+Analysis has run for 17.392723303 seconds

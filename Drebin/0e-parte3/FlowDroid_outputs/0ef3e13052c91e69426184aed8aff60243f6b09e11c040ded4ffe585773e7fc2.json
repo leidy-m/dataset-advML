@@ -1,0 +1,750 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012448255 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        FiveChessSuper.Client.Deamon.NoticeApk $r1;
+        FiveChessSuper.Client.Deamon.NoticeSms $r2;
+        FiveChessSuper.Client.Deamon.BootReceiver $r3;
+        FiveChessSuper.Client.Deamon.FiveChess $r4;
+        FiveChessSuper.Client.Deamon.NoticeIE $r5;
+        FiveChessSuper.Client.Deamon.NoticeVideo $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new FiveChessSuper.Client.Deamon.NoticeApk;
+
+        specialinvoke $r1.<FiveChessSuper.Client.Deamon.NoticeApk: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<FiveChessSuper.Client.Deamon.NoticeApk: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new FiveChessSuper.Client.Deamon.NoticeSms;
+
+        specialinvoke $r2.<FiveChessSuper.Client.Deamon.NoticeSms: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+     label04:
+        virtualinvoke $r2.<FiveChessSuper.Client.Deamon.NoticeSms: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 7 goto label04;
+
+     label05:
+        if $i0 == 8 goto label07;
+
+        $r3 = new FiveChessSuper.Client.Deamon.BootReceiver;
+
+        specialinvoke $r3.<FiveChessSuper.Client.Deamon.BootReceiver: void <init>()>();
+
+        if $i0 == 9 goto label07;
+
+     label06:
+        virtualinvoke $r3.<FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 11 goto label06;
+
+     label07:
+        if $i0 == 12 goto label09;
+
+        $r4 = new FiveChessSuper.Client.Deamon.FiveChess;
+
+        specialinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void <init>()>();
+
+        if $i0 == 13 goto label09;
+
+        virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void onPause()>();
+
+        if $i0 == 15 goto label08;
+
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label08;
+
+     label09:
+        if $i0 == 19 goto label11;
+
+        $r5 = new FiveChessSuper.Client.Deamon.NoticeIE;
+
+        specialinvoke $r5.<FiveChessSuper.Client.Deamon.NoticeIE: void <init>()>();
+
+        if $i0 == 20 goto label11;
+
+     label10:
+        virtualinvoke $r5.<FiveChessSuper.Client.Deamon.NoticeIE: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 22 goto label10;
+
+     label11:
+        if $i0 == 23 goto label13;
+
+        $r6 = new FiveChessSuper.Client.Deamon.NoticeVideo;
+
+        specialinvoke $r6.<FiveChessSuper.Client.Deamon.NoticeVideo: void <init>()>();
+
+        if $i0 == 24 goto label13;
+
+     label12:
+        virtualinvoke $r6.<FiveChessSuper.Client.Deamon.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 26 goto label12;
+
+     label13:
+        if $i0 == 27 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.5 seconds.
+[Spark] Solution found in 1.5 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: FiveChessSuper.Client.Deamon.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: FiveChessSuper.Client.Deamon.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: FiveChessSuper.Client.Deamon.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: FiveChessSuper.Client.Deamon.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/help.xml
+Warning: EditText is a phantom class!
+Warning: FiveChessSuper.Client.Deamon.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 2 layout controls in file res/layout/input.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        FiveChessSuper.Client.Deamon.NoticeApk $r1;
+        FiveChessSuper.Client.Deamon.NoticeSms $r2;
+        FiveChessSuper.Client.Deamon.BootReceiver $r3;
+        FiveChessSuper.Client.Deamon.FiveChess $r4;
+        FiveChess.Base.ViewBase $r5;
+        boolean $z0, $z1;
+        FiveChessSuper.Client.Deamon.NoticeIE $r6;
+        FiveChessSuper.Client.Deamon.NoticeVideo $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new FiveChessSuper.Client.Deamon.NoticeApk;
+
+        specialinvoke $r1.<FiveChessSuper.Client.Deamon.NoticeApk: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<FiveChessSuper.Client.Deamon.NoticeApk: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new FiveChessSuper.Client.Deamon.NoticeSms;
+
+        specialinvoke $r2.<FiveChessSuper.Client.Deamon.NoticeSms: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+     label04:
+        virtualinvoke $r2.<FiveChessSuper.Client.Deamon.NoticeSms: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 7 goto label04;
+
+     label05:
+        if $i0 == 8 goto label07;
+
+        $r3 = new FiveChessSuper.Client.Deamon.BootReceiver;
+
+        specialinvoke $r3.<FiveChessSuper.Client.Deamon.BootReceiver: void <init>()>();
+
+        if $i0 == 9 goto label07;
+
+     label06:
+        virtualinvoke $r3.<FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 11 goto label06;
+
+     label07:
+        if $i0 == 12 goto label17;
+
+        $r4 = new FiveChessSuper.Client.Deamon.FiveChess;
+
+        specialinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void <init>()>();
+
+        if $i0 == 13 goto label17;
+
+        virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 15 goto label16;
+
+     label09:
+        $r5 = new FiveChess.Base.ViewBase;
+
+        specialinvoke $r5.<FiveChess.Base.ViewBase: void <init>(android.content.Context)>($r4);
+
+        if $i0 == 16 goto label10;
+
+        virtualinvoke $r5.<FiveChess.Base.ViewBase: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label10:
+        if $i0 == 17 goto label11;
+
+        virtualinvoke $r5.<FiveChess.Base.ViewBase: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label11:
+        if $i0 == 18 goto label12;
+
+        $z0 = virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label12:
+        if $i0 == 19 goto label13;
+
+        virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label13:
+        if $i0 == 20 goto label14;
+
+        staticinvoke <FiveChessSuper.Client.Deamon.FiveChess: void <clinit>()>();
+
+     label14:
+        if $i0 == 21 goto label15;
+
+        $z1 = virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label15:
+        if $i0 == 22 goto label09;
+
+     label16:
+        virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void onPause()>();
+
+        if $i0 == 23 goto label08;
+
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label08;
+
+     label17:
+        if $i0 == 27 goto label19;
+
+        $r6 = new FiveChessSuper.Client.Deamon.NoticeIE;
+
+        specialinvoke $r6.<FiveChessSuper.Client.Deamon.NoticeIE: void <init>()>();
+
+        if $i0 == 28 goto label19;
+
+     label18:
+        virtualinvoke $r6.<FiveChessSuper.Client.Deamon.NoticeIE: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 30 goto label18;
+
+     label19:
+        if $i0 == 31 goto label21;
+
+        $r7 = new FiveChessSuper.Client.Deamon.NoticeVideo;
+
+        specialinvoke $r7.<FiveChessSuper.Client.Deamon.NoticeVideo: void <init>()>();
+
+        if $i0 == 32 goto label21;
+
+     label20:
+        virtualinvoke $r7.<FiveChessSuper.Client.Deamon.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 34 goto label20;
+
+     label21:
+        if $i0 == 35 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 13 callback methods for 6 components
+Found {res/layout/input.xml=[2131099656 - android.widget.EditText, -1 - android.widget.LinearLayout, 2131099658 - android.widget.Button, 2131099657 - android.widget.Button, 2131099654 - android.widget.LinearLayout], res/layout/help.xml=[2131099650 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131099653 - android.widget.TextView, 2131099655 - android.widget.Button, 2131099648 - android.widget.LinearLayout, 2131099649 - android.widget.LinearLayout, 2131099652 - android.widget.TextView, 2131099651 - android.widget.TextView, 2131099654 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 13 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/0ef3e13052c91e69426184aed8aff60243f6b09e11c040ded4ffe585773e7fc2.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        FiveChessSuper.Client.Deamon.NoticeApk $r1;
+        FiveChessSuper.Client.Deamon.NoticeSms $r2;
+        FiveChessSuper.Client.Deamon.BootReceiver $r3;
+        FiveChessSuper.Client.Deamon.FiveChess $r4;
+        boolean $z0, $z1;
+        FiveChess.Base.ViewBase $r5;
+        FiveChessSuper.Client.Deamon.NoticeIE $r6;
+        FiveChessSuper.Client.Deamon.NoticeVideo $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new FiveChessSuper.Client.Deamon.NoticeApk;
+
+        specialinvoke $r1.<FiveChessSuper.Client.Deamon.NoticeApk: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<FiveChessSuper.Client.Deamon.NoticeApk: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new FiveChessSuper.Client.Deamon.NoticeSms;
+
+        specialinvoke $r2.<FiveChessSuper.Client.Deamon.NoticeSms: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+     label04:
+        virtualinvoke $r2.<FiveChessSuper.Client.Deamon.NoticeSms: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 7 goto label04;
+
+     label05:
+        if $i0 == 8 goto label07;
+
+        $r3 = new FiveChessSuper.Client.Deamon.BootReceiver;
+
+        specialinvoke $r3.<FiveChessSuper.Client.Deamon.BootReceiver: void <init>()>();
+
+        if $i0 == 9 goto label07;
+
+     label06:
+        virtualinvoke $r3.<FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 11 goto label06;
+
+     label07:
+        if $i0 == 12 goto label17;
+
+        $r4 = new FiveChessSuper.Client.Deamon.FiveChess;
+
+        specialinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void <init>()>();
+
+        if $i0 == 13 goto label17;
+
+        virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 15 goto label16;
+
+     label09:
+        if $i0 == 16 goto label10;
+
+        $z0 = virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label10:
+        if $i0 == 17 goto label11;
+
+        staticinvoke <FiveChessSuper.Client.Deamon.FiveChess: void <clinit>()>();
+
+     label11:
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label12:
+        if $i0 == 19 goto label13;
+
+        $z1 = virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label13:
+        $r5 = new FiveChess.Base.ViewBase;
+
+        specialinvoke $r5.<FiveChess.Base.ViewBase: void <init>(android.content.Context)>($r4);
+
+        if $i0 == 20 goto label14;
+
+        virtualinvoke $r5.<FiveChess.Base.ViewBase: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label14:
+        if $i0 == 21 goto label15;
+
+        virtualinvoke $r5.<FiveChess.Base.ViewBase: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label15:
+        if $i0 == 22 goto label09;
+
+     label16:
+        virtualinvoke $r4.<FiveChessSuper.Client.Deamon.FiveChess: void onPause()>();
+
+        if $i0 == 23 goto label08;
+
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label08;
+
+     label17:
+        if $i0 == 27 goto label19;
+
+        $r6 = new FiveChessSuper.Client.Deamon.NoticeIE;
+
+        specialinvoke $r6.<FiveChessSuper.Client.Deamon.NoticeIE: void <init>()>();
+
+        if $i0 == 28 goto label19;
+
+     label18:
+        virtualinvoke $r6.<FiveChessSuper.Client.Deamon.NoticeIE: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 30 goto label18;
+
+     label19:
+        if $i0 == 31 goto label21;
+
+        $r7 = new FiveChessSuper.Client.Deamon.NoticeVideo;
+
+        specialinvoke $r7.<FiveChessSuper.Client.Deamon.NoticeVideo: void <init>()>();
+
+        if $i0 == 32 goto label21;
+
+     label20:
+        virtualinvoke $r7.<FiveChessSuper.Client.Deamon.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 34 goto label20;
+
+     label21:
+        if $i0 == 35 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.828125485 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.103319424 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1702 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 45 sources and 76 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 104921
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 204641
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 699327 forward and 379368 backward edges solved, processing 38 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 38 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.042033841 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("RegHttp", $r4) in method <Daemon.Global.RegHttp: void <init>()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r10.<java.net.URL: void <init>(java.lang.String)>($r1) in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r14.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <Daemon.DownLoad.FileService: void push()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r10.<java.net.URL: void <init>(java.lang.String)>($r1) in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("RegHttp", $r4) in method <Daemon.Global.RegHttp: void <init>()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Content-Type", "application/x-www-form-urlencoded") in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r6) in method <Daemon.Base.Rms: void save(android.content.Context,int,java.lang.String[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r6) in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Content-Type", "application/x-www-form-urlencoded") in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <Daemon.Service.IEMark: void openIE(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Notice", $r0) in method <Daemon.Service.Notice: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r7) in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r8, $r3) in method <Daemon.Service.SMSObserver: void getSms(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(5) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(4) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("FileService", $r0) in method <Daemon.DownLoad.FileService: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(3) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.DownLoad.FileDownloader: void UpdateFileDownloader(java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(1) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("User-Agent", $r6) in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("FileDownloader", $r0) in method <Daemon.DownLoad.FileDownloader: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.DownLoad.FileDownloader: void UpdateFileDownloader(java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.DownLoad.DownloadThread: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Accept", "*/*") in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <Daemon.Service.Notice: void startIntent(android.content.Context,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.NoticeIE: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.NoticeSms: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.NoticeApk: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RerviceHttp", $r0) in method <Daemon.Service.RerviceHttp: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r6.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r7, $r3) in method <Daemon.Service.IEMark: void AddMark()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r8 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r1, "url = ? and title = ?", $r2, "date DESC") in method <Daemon.Service.IEMark: void AddMark()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) in method <Daemon.DownLoad.FileService: void push()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r7) in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BootReceiver", $r6) in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("RegHttp", $r4) in method <Daemon.Global.RegHttp: void <init>()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SMSObserver", $r1) in method <Daemon.Service.SMSObserver: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <Daemon.Global.RegHttp: void <init>()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DownloadThread", $r0) in method <Daemon.DownLoad.DownloadThread: void print(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.DownLoad.FileDownloader: void UpdateFileDownloader(java.lang.String,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.DownLoad.DownloadThread: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r6) in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <FiveChess.Base.Http: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("User-Agent", $r7) in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Accept", "*/*") in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("RegHttp", $r4), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <Daemon.Global.RegHttp: void <init>()>)
+Found a flow to sink specialinvoke $r10.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Global.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r14.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r10.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Global.RegHttp: void <init>()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("RegHttp", $r4), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Global.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Content-Type", "application/x-www-form-urlencoded"), from the following sources:
+	- $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <FiveChess.Base.Http: int Httpconnect(java.lang.String)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r6), from the following sources:
+	- $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <FiveChess.Base.Http: int Httpconnect(java.lang.String)>)
+Found a flow to sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Content-Type", "application/x-www-form-urlencoded"), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Notice", $r0), from the following sources:
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) (in <Daemon.DownLoad.FileService: void push()>)
+Found a flow to sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r7), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Global.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r7.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r8, $r3), from the following sources:
+	- $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r11 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(5) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r10 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(4) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("FileService", $r0), from the following sources:
+	- $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(3) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r6 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.DownLoad.FileDownloader: void UpdateFileDownloader(java.lang.String,int)>)
+	- $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(0) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r4 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(1) (in <Daemon.DownLoad.FileService: void push()>)
+Found a flow to sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("User-Agent", $r6), from the following sources:
+	- $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <FiveChess.Base.Http: int Httpconnect(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("FileDownloader", $r0), from the following sources:
+	- $r6 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.DownLoad.FileDownloader: void UpdateFileDownloader(java.lang.String,int)>)
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.DownLoad.DownloadThread: void run()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Accept", "*/*"), from the following sources:
+	- $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <FiveChess.Base.Http: int Httpconnect(java.lang.String)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.NoticeIE: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.NoticeSms: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.NoticeApk: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.NoticeVideo: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("RerviceHttp", $r0), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Global.RegHttp: void <init>()>)
+Found a flow to sink virtualinvoke $r6.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r7, $r3), from the following sources:
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r8 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r1, "url = ? and title = ?", $r2, "date DESC"), from the following sources:
+	- $r9 = interfaceinvoke $r8.<android.database.Cursor: java.lang.String getString(int)>(2) (in <Daemon.DownLoad.FileService: void push()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r7), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <Daemon.Global.RegHttp: void <init>()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("BootReceiver", $r6), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("RegHttp", $r4), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Global.RegHttp: void <init>()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("SMSObserver", $r1), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <Daemon.Global.RegHttp: void <init>()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("DownloadThread", $r0), from the following sources:
+	- $r6 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.DownLoad.FileDownloader: void UpdateFileDownloader(java.lang.String,int)>)
+	- $r3 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.DownLoad.DownloadThread: void run()>)
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r12.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("X-Online-Host", $r6), from the following sources:
+	- $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <FiveChess.Base.Http: int Httpconnect(java.lang.String)>)
+Found a flow to sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("User-Agent", $r7), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>)
+Found a flow to sink virtualinvoke $r11.<java.net.URLConnection: void setRequestProperty(java.lang.String,java.lang.String)>("Accept", "*/*"), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <Daemon.Service.RerviceHttp: int Httpconnect(java.lang.String)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <FiveChessSuper.Client.Deamon.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 308.259032 MB
+Analysis has run for 12.240593213 seconds
