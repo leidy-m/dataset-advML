@@ -1,0 +1,2172 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.023106353 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.app.WallpaperManager is a phantom class!
+Warning: android.provider.ContactsContract$CommonDataKinds$Email is a phantom class!
+Warning: android.provider.ContactsContract$CommonDataKinds$Phone is a phantom class!
+Warning: android.provider.ContactsContract$Contacts is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        wbs.netsentry.backend.InterfaceStatsProvider $r1;
+        boolean $z0;
+        com.geinimi.AdService $r2;
+        android.os.IBinder $r3;
+        wbs.netsentry.ui.InterfaceStatsList $r4;
+        wbs.netsentry.ui.InterfaceStatsEditor $r5;
+        wbs.netsentry.ui.ChartInterfaceStats $r6;
+        wbs.netsentry.ui.ApplicationPreferences $r7;
+        com.geinimi.AdServiceReceiver $r8;
+        wbs.netsentry.backend.scheduler.CronScheduler $r9;
+        wbs.netsentry.logo.WbsLogoAct $r10;
+        com.geinimi.custom.Ad00000005_2 $r11;
+        wbs.netsentry.backend.Updater $r12;
+        wbs.netsentry.backend.Bootstrapper $r13;
+        wbs.netsentry.backend.Resetter $r14;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        $r1 = new wbs.netsentry.backend.InterfaceStatsProvider;
+
+        specialinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: void <init>()>();
+
+        if $i0 == 0 goto label02;
+
+        $z0 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: boolean onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label01;
+
+     label03:
+        if $i0 == 2 goto label08;
+
+        $r2 = new com.geinimi.AdService;
+
+        specialinvoke $r2.<com.geinimi.AdService: void <init>()>();
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label04:
+        if $i0 == 3 goto label05;
+
+        if $i0 == 4 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        if $i0 == 7 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.geinimi.AdService: void onDestroy()>();
+
+     label08:
+        if $i0 == 8 goto label11;
+
+        $r4 = new wbs.netsentry.ui.InterfaceStatsList;
+
+        specialinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void <init>()>();
+
+        if $i0 == 9 goto label11;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onResume()>();
+
+        if $i0 == 11 goto label09;
+
+        if $i0 == 12 goto label10;
+
+        if $i0 == 13 goto label09;
+
+     label10:
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onDestroy()>();
+
+     label11:
+        if $i0 == 15 goto label13;
+
+        $r5 = new wbs.netsentry.ui.InterfaceStatsEditor;
+
+        specialinvoke $r5.<wbs.netsentry.ui.InterfaceStatsEditor: void <init>()>();
+
+        if $i0 == 16 goto label13;
+
+        virtualinvoke $r5.<wbs.netsentry.ui.InterfaceStatsEditor: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        virtualinvoke $r5.<wbs.netsentry.ui.InterfaceStatsEditor: void onResume()>();
+
+        virtualinvoke $r5.<wbs.netsentry.ui.InterfaceStatsEditor: void onPause()>();
+
+        if $i0 == 18 goto label12;
+
+        if $i0 == 19 goto label13;
+
+        if $i0 == 20 goto label12;
+
+     label13:
+        if $i0 == 22 goto label16;
+
+        $r6 = new wbs.netsentry.ui.ChartInterfaceStats;
+
+        specialinvoke $r6.<wbs.netsentry.ui.ChartInterfaceStats: void <init>()>();
+
+        if $i0 == 23 goto label16;
+
+        virtualinvoke $r6.<wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 26 goto label15;
+
+        if $i0 == 27 goto label14;
+
+     label15:
+        virtualinvoke $r6.<wbs.netsentry.ui.ChartInterfaceStats: void onDestroy()>();
+
+     label16:
+        if $i0 == 29 goto label18;
+
+        $r7 = new wbs.netsentry.ui.ApplicationPreferences;
+
+        specialinvoke $r7.<wbs.netsentry.ui.ApplicationPreferences: void <init>()>();
+
+        if $i0 == 30 goto label18;
+
+        virtualinvoke $r7.<wbs.netsentry.ui.ApplicationPreferences: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 33 goto label18;
+
+        if $i0 == 34 goto label17;
+
+     label18:
+        if $i0 == 36 goto label20;
+
+        $r8 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r8.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 37 goto label20;
+
+     label19:
+        virtualinvoke $r8.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label19;
+
+     label20:
+        if $i0 == 40 goto label22;
+
+        $r9 = new wbs.netsentry.backend.scheduler.CronScheduler;
+
+        specialinvoke $r9.<wbs.netsentry.backend.scheduler.CronScheduler: void <init>()>();
+
+        if $i0 == 41 goto label22;
+
+     label21:
+        virtualinvoke $r9.<wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label21;
+
+     label22:
+        if $i0 == 44 goto label24;
+
+        $r10 = new wbs.netsentry.logo.WbsLogoAct;
+
+        specialinvoke $r10.<wbs.netsentry.logo.WbsLogoAct: void <init>()>();
+
+        if $i0 == 45 goto label24;
+
+        virtualinvoke $r10.<wbs.netsentry.logo.WbsLogoAct: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r10.<wbs.netsentry.logo.WbsLogoAct: void onResume()>();
+
+        virtualinvoke $r10.<wbs.netsentry.logo.WbsLogoAct: void onPause()>();
+
+        if $i0 == 47 goto label23;
+
+        if $i0 == 48 goto label24;
+
+        virtualinvoke $r10.<wbs.netsentry.logo.WbsLogoAct: void onRestart()>();
+
+        if $i0 == 49 goto label23;
+
+     label24:
+        if $i0 == 51 goto label26;
+
+        $r11 = new com.geinimi.custom.Ad00000005_2;
+
+        specialinvoke $r11.<com.geinimi.custom.Ad00000005_2: void <init>()>();
+
+        if $i0 == 52 goto label26;
+
+        virtualinvoke $r11.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 55 goto label26;
+
+        if $i0 == 56 goto label25;
+
+     label26:
+        if $i0 == 58 goto label28;
+
+        $r12 = new wbs.netsentry.backend.Updater;
+
+        specialinvoke $r12.<wbs.netsentry.backend.Updater: void <init>()>();
+
+        if $i0 == 59 goto label28;
+
+     label27:
+        virtualinvoke $r12.<wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 61 goto label27;
+
+     label28:
+        if $i0 == 65 goto label30;
+
+        $r13 = new wbs.netsentry.backend.Bootstrapper;
+
+        specialinvoke $r13.<wbs.netsentry.backend.Bootstrapper: void <init>()>();
+
+        if $i0 == 66 goto label30;
+
+     label29:
+        virtualinvoke $r13.<wbs.netsentry.backend.Bootstrapper: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 68 goto label29;
+
+     label30:
+        if $i0 == 69 goto label32;
+
+        $r14 = new wbs.netsentry.backend.Resetter;
+
+        specialinvoke $r14.<wbs.netsentry.backend.Resetter: void <init>()>();
+
+        if $i0 == 70 goto label32;
+
+     label31:
+        virtualinvoke $r14.<wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 72 goto label31;
+
+     label32:
+        if $i0 == 73 goto label03;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.1 seconds.
+[Spark] Solution found in 2.1 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: wbs.netsentry.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: wbs.netsentry.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: wbs.netsentry.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: wbs.netsentry.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/about_dialog.xml
+Warning: RelativeLayout is a phantom class!
+Warning: wbs.netsentry.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: wbs.netsentry.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/chart_interfacestats.xml
+Warning: Spinner is a phantom class!
+Warning: wbs.netsentry.Spinner is a phantom class!
+Warning: android.view.Spinner is a phantom class!
+Found 3 layout controls in file res/layout/cron_picker.xml
+Found 4 layout controls in file res/layout/cron_picker_monthly.xml
+Found 5 layout controls in file res/layout/cron_picker_monthly_day_dialog.xml
+Found 6 layout controls in file res/layout/cron_picker_weekly.xml
+Found 7 layout controls in file res/layout/data_picker.xml
+Found 8 layout controls in file res/layout/data_picker_dialog.xml
+Warning: ImageView is a phantom class!
+Warning: wbs.netsentry.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: View is a phantom class!
+Warning: wbs.netsentry.View is a phantom class!
+Found 9 layout controls in file res/layout/interfacestats_editor.xml
+Found 10 layout controls in file res/layout/interfacestats_list_item.xml
+Warning: AbsoluteLayout is a phantom class!
+Warning: wbs.netsentry.AbsoluteLayout is a phantom class!
+Warning: android.view.AbsoluteLayout is a phantom class!
+Found 11 layout controls in file res/layout/logowbs.xml
+Warning: EditText is a phantom class!
+Warning: wbs.netsentry.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 12 layout controls in file res/layout/number_picker.xml
+Found 13 layout controls in file res/layout/percentage_picker.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.app.WallpaperManager is a phantom class!
+Warning: android.provider.ContactsContract$CommonDataKinds$Email is a phantom class!
+Warning: android.provider.ContactsContract$CommonDataKinds$Phone is a phantom class!
+Warning: android.provider.ContactsContract$Contacts is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.ContentValues
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r25, $r27, $r28, $r30;
+        int $i0, $i1, $i2;
+        wbs.netsentry.backend.InterfaceStatsProvider $r1;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        com.geinimi.AdService $r2;
+        android.os.IBinder $r3;
+        wbs.netsentry.ui.InterfaceStatsList $r4;
+        android.app.Dialog $r5, $r12;
+        wbs.netsentry.backend.Bootstrapper$1 $r6, $r32;
+        wbs.netsentry.ui.InterfaceStatsEditor $r7;
+        wbs.netsentry.ui.InterfaceStatsEditor$3 $r8;
+        wbs.netsentry.ui.InterfaceStatsEditor$7 $r9;
+        wbs.netsentry.ui.InterfaceStatsEditor$2 $r10;
+        wbs.netsentry.ui.InterfaceStatsEditor$4 $r11;
+        wbs.netsentry.ui.ChartInterfaceStats $r13;
+        wbs.netsentry.ui.ApplicationPreferences $r14;
+        com.geinimi.AdServiceReceiver $r15;
+        wbs.netsentry.backend.scheduler.CronScheduler $r16;
+        wbs.netsentry.logo.WbsLogoAct $r17;
+        wbs.netsentry.logo.WbsLogoWiew $r18, $r20;
+        wbs.netsentry.logo.WbsLogoWiew$1 $r19;
+        wbs.netsentry.logo.WbsLogoWiew$2 $r21;
+        com.geinimi.custom.Ad00000005_2 $r22;
+        wbs.netsentry.backend.Updater $r23;
+        android.net.Uri $r24;
+        java.lang.String $r26;
+        android.database.Cursor $r29;
+        wbs.netsentry.backend.Bootstrapper $r31;
+        wbs.netsentry.backend.Resetter $r33;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        $r1 = new wbs.netsentry.backend.InterfaceStatsProvider;
+
+        specialinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: void <init>()>();
+
+        if $i0 == 0 goto label02;
+
+        $z0 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: boolean onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label01;
+
+     label03:
+        if $i0 == 2 goto label12;
+
+        $r2 = new com.geinimi.AdService;
+
+        specialinvoke $r2.<com.geinimi.AdService: void <init>()>();
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label04:
+        if $i0 == 3 goto label05;
+
+        if $i0 == 4 goto label04;
+
+     label05:
+        if $i0 == 5 goto label08;
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onLowMemory()>();
+
+     label07:
+        if $i0 == 7 goto label06;
+
+     label08:
+        $r3 = virtualinvoke $r2.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label09;
+
+        if $i0 == 10 goto label11;
+
+        if $i0 == 11 goto label09;
+
+     label11:
+        virtualinvoke $r2.<com.geinimi.AdService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label25;
+
+        $r4 = new wbs.netsentry.ui.InterfaceStatsList;
+
+        specialinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void <init>()>();
+
+        if $i0 == 13 goto label25;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onResume()>();
+
+        if $i0 == 15 goto label23;
+
+     label14:
+        if $i0 == 16 goto label15;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label15:
+        if $i0 == 17 goto label16;
+
+        $z1 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label16:
+        if $i0 == 18 goto label17;
+
+        staticinvoke <wbs.netsentry.ui.InterfaceStatsList: void <clinit>()>();
+
+     label17:
+        if $i0 == 19 goto label18;
+
+        $z2 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label18:
+        if $i0 == 20 goto label19;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label19:
+        if $i0 == 21 goto label20;
+
+        $z3 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label20:
+        if $i0 == 22 goto label21;
+
+        $r5 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: android.app.Dialog onCreateDialog(int)>(0);
+
+     label21:
+        $r6 = new wbs.netsentry.backend.Bootstrapper$1;
+
+        specialinvoke $r6.<wbs.netsentry.backend.Bootstrapper$1: void <init>(android.content.Context)>($r4);
+
+        if $i0 == 23 goto label22;
+
+        virtualinvoke $r6.<wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label22:
+        if $i0 == 24 goto label14;
+
+     label23:
+        if $i0 == 25 goto label13;
+
+        if $i0 == 26 goto label24;
+
+        if $i0 == 27 goto label13;
+
+     label24:
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onDestroy()>();
+
+     label25:
+        if $i0 == 29 goto label35;
+
+        $r7 = new wbs.netsentry.ui.InterfaceStatsEditor;
+
+        specialinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void <init>()>();
+
+        if $i0 == 30 goto label35;
+
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onResume()>();
+
+        if $i0 == 32 goto label34;
+
+     label27:
+        $r8 = new wbs.netsentry.ui.InterfaceStatsEditor$3;
+
+        specialinvoke $r8.<wbs.netsentry.ui.InterfaceStatsEditor$3: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 33 goto label28;
+
+        virtualinvoke $r8.<wbs.netsentry.ui.InterfaceStatsEditor$3: void onClick(android.view.View)>(null);
+
+     label28:
+        $r9 = new wbs.netsentry.ui.InterfaceStatsEditor$7;
+
+        specialinvoke $r9.<wbs.netsentry.ui.InterfaceStatsEditor$7: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 34 goto label29;
+
+        virtualinvoke $r9.<wbs.netsentry.ui.InterfaceStatsEditor$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        $r10 = new wbs.netsentry.ui.InterfaceStatsEditor$2;
+
+        specialinvoke $r10.<wbs.netsentry.ui.InterfaceStatsEditor$2: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 35 goto label30;
+
+        virtualinvoke $r10.<wbs.netsentry.ui.InterfaceStatsEditor$2: void onClick(android.view.View)>(null);
+
+     label30:
+        $r11 = new wbs.netsentry.ui.InterfaceStatsEditor$4;
+
+        specialinvoke $r11.<wbs.netsentry.ui.InterfaceStatsEditor$4: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 36 goto label31;
+
+        virtualinvoke $r11.<wbs.netsentry.ui.InterfaceStatsEditor$4: void onClick(android.view.View)>(null);
+
+     label31:
+        if $i0 == 37 goto label32;
+
+        $r12 = virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: android.app.Dialog onCreateDialog(int)>(0);
+
+     label32:
+        if $i0 == 38 goto label33;
+
+        staticinvoke <wbs.netsentry.ui.InterfaceStatsEditor: void <clinit>()>();
+
+     label33:
+        if $i0 == 39 goto label27;
+
+     label34:
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onPause()>();
+
+        if $i0 == 40 goto label26;
+
+        if $i0 == 41 goto label35;
+
+        if $i0 == 42 goto label26;
+
+     label35:
+        if $i0 == 44 goto label38;
+
+        $r13 = new wbs.netsentry.ui.ChartInterfaceStats;
+
+        specialinvoke $r13.<wbs.netsentry.ui.ChartInterfaceStats: void <init>()>();
+
+        if $i0 == 45 goto label38;
+
+        virtualinvoke $r13.<wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>(null);
+
+     label36:
+        if $i0 == 48 goto label36;
+
+        if $i0 == 49 goto label37;
+
+        if $i0 == 50 goto label36;
+
+     label37:
+        virtualinvoke $r13.<wbs.netsentry.ui.ChartInterfaceStats: void onDestroy()>();
+
+     label38:
+        if $i0 == 52 goto label40;
+
+        $r14 = new wbs.netsentry.ui.ApplicationPreferences;
+
+        specialinvoke $r14.<wbs.netsentry.ui.ApplicationPreferences: void <init>()>();
+
+        if $i0 == 53 goto label40;
+
+        virtualinvoke $r14.<wbs.netsentry.ui.ApplicationPreferences: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        if $i0 == 56 goto label39;
+
+        if $i0 == 57 goto label40;
+
+        if $i0 == 58 goto label39;
+
+     label40:
+        if $i0 == 60 goto label42;
+
+        $r15 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r15.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 61 goto label42;
+
+     label41:
+        virtualinvoke $r15.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 63 goto label41;
+
+     label42:
+        if $i0 == 64 goto label44;
+
+        $r16 = new wbs.netsentry.backend.scheduler.CronScheduler;
+
+        specialinvoke $r16.<wbs.netsentry.backend.scheduler.CronScheduler: void <init>()>();
+
+        if $i0 == 65 goto label44;
+
+     label43:
+        virtualinvoke $r16.<wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 67 goto label43;
+
+     label44:
+        if $i0 == 68 goto label51;
+
+        $r17 = new wbs.netsentry.logo.WbsLogoAct;
+
+        specialinvoke $r17.<wbs.netsentry.logo.WbsLogoAct: void <init>()>();
+
+        if $i0 == 69 goto label51;
+
+        virtualinvoke $r17.<wbs.netsentry.logo.WbsLogoAct: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        virtualinvoke $r17.<wbs.netsentry.logo.WbsLogoAct: void onResume()>();
+
+        if $i0 == 71 goto label50;
+
+     label46:
+        $r18 = new wbs.netsentry.logo.WbsLogoWiew;
+
+        specialinvoke $r18.<wbs.netsentry.logo.WbsLogoWiew: void <init>(android.content.Context)>($r17);
+
+        $r19 = new wbs.netsentry.logo.WbsLogoWiew$1;
+
+        specialinvoke $r19.<wbs.netsentry.logo.WbsLogoWiew$1: void <init>(wbs.netsentry.logo.WbsLogoWiew)>($r18);
+
+        if $i0 == 72 goto label47;
+
+        virtualinvoke $r19.<wbs.netsentry.logo.WbsLogoWiew$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label47:
+        $r20 = new wbs.netsentry.logo.WbsLogoWiew;
+
+        specialinvoke $r20.<wbs.netsentry.logo.WbsLogoWiew: void <init>(android.content.Context)>($r17);
+
+        $r21 = new wbs.netsentry.logo.WbsLogoWiew$2;
+
+        specialinvoke $r21.<wbs.netsentry.logo.WbsLogoWiew$2: void <init>(wbs.netsentry.logo.WbsLogoWiew)>($r20);
+
+        if $i0 == 73 goto label48;
+
+        virtualinvoke $r21.<wbs.netsentry.logo.WbsLogoWiew$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label48:
+        if $i0 == 74 goto label49;
+
+        $z4 = virtualinvoke $r17.<wbs.netsentry.logo.WbsLogoAct: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label49:
+        if $i0 == 75 goto label46;
+
+     label50:
+        virtualinvoke $r17.<wbs.netsentry.logo.WbsLogoAct: void onPause()>();
+
+        if $i0 == 76 goto label45;
+
+        if $i0 == 77 goto label51;
+
+        virtualinvoke $r17.<wbs.netsentry.logo.WbsLogoAct: void onRestart()>();
+
+        if $i0 == 78 goto label45;
+
+     label51:
+        if $i0 == 80 goto label53;
+
+        $r22 = new com.geinimi.custom.Ad00000005_2;
+
+        specialinvoke $r22.<com.geinimi.custom.Ad00000005_2: void <init>()>();
+
+        if $i0 == 81 goto label53;
+
+        virtualinvoke $r22.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 84 goto label53;
+
+        if $i0 == 85 goto label52;
+
+     label53:
+        if $i0 == 87 goto label55;
+
+        $r23 = new wbs.netsentry.backend.Updater;
+
+        specialinvoke $r23.<wbs.netsentry.backend.Updater: void <init>()>();
+
+        if $i0 == 88 goto label55;
+
+     label54:
+        virtualinvoke $r23.<wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 90 goto label54;
+
+     label55:
+        if $i0 == 91 goto label62;
+
+        if $i0 == 92 goto label62;
+
+        if $i0 == 93 goto label62;
+
+     label56:
+        if $i0 == 94 goto label57;
+
+        $r24 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(null, null);
+
+     label57:
+        if $i0 == 95 goto label58;
+
+        $r25 = newarray (java.lang.String)[1];
+
+        $r25[0] = "";
+
+        $i1 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(null, "", $r25);
+
+     label58:
+        if $i0 == 96 goto label59;
+
+        $r26 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: java.lang.String getType(android.net.Uri)>(null);
+
+     label59:
+        if $i0 == 97 goto label60;
+
+        $r27 = newarray (java.lang.String)[1];
+
+        $r27[0] = "";
+
+        $r28 = newarray (java.lang.String)[1];
+
+        $r28[0] = "";
+
+        $r29 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(null, $r27, "", $r28, "");
+
+     label60:
+        if $i0 == 98 goto label61;
+
+        $r30 = newarray (java.lang.String)[1];
+
+        $r30[0] = "";
+
+        $i2 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(null, null, "", $r30);
+
+     label61:
+        if $i0 == 99 goto label56;
+
+     label62:
+        if $i0 == 100 goto label67;
+
+        $r31 = new wbs.netsentry.backend.Bootstrapper;
+
+        specialinvoke $r31.<wbs.netsentry.backend.Bootstrapper: void <init>()>();
+
+        if $i0 == 101 goto label67;
+
+     label63:
+        virtualinvoke $r31.<wbs.netsentry.backend.Bootstrapper: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 102 goto label66;
+
+     label64:
+        $r32 = new wbs.netsentry.backend.Bootstrapper$1;
+
+        specialinvoke $r32.<wbs.netsentry.backend.Bootstrapper$1: void <init>(android.content.Context)>(null);
+
+        if $i0 == 103 goto label65;
+
+        virtualinvoke $r32.<wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label65:
+        if $i0 == 104 goto label64;
+
+     label66:
+        if $i0 == 105 goto label63;
+
+     label67:
+        if $i0 == 106 goto label69;
+
+        $r33 = new wbs.netsentry.backend.Resetter;
+
+        specialinvoke $r33.<wbs.netsentry.backend.Resetter: void <init>()>();
+
+        if $i0 == 107 goto label69;
+
+     label68:
+        virtualinvoke $r33.<wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 109 goto label68;
+
+     label69:
+        if $i0 == 110 goto label03;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.3 seconds.
+[Spark] Solution found in 1.3 seconds.
+Running incremental callback analysis for 12 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.app.WallpaperManager is a phantom class!
+Warning: android.provider.ContactsContract$CommonDataKinds$Email is a phantom class!
+Warning: android.provider.ContactsContract$CommonDataKinds$Phone is a phantom class!
+Warning: android.provider.ContactsContract$Contacts is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for wbs.netsentry.widget.DataPicker$OnBytesChangedListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.ContentValues
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r25, $r26, $r28, $r31;
+        int $i0, $i1, $i2;
+        wbs.netsentry.backend.InterfaceStatsProvider $r1;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        com.geinimi.AdService $r2;
+        android.os.IBinder $r3;
+        wbs.netsentry.ui.InterfaceStatsList $r4;
+        wbs.netsentry.backend.Bootstrapper$1 $r5, $r33;
+        android.app.Dialog $r6, $r13;
+        wbs.netsentry.ui.InterfaceStatsEditor $r7;
+        wbs.netsentry.ui.InterfaceStatsEditor$2 $r8;
+        wbs.netsentry.widget.DataPickerDialog $r9;
+        wbs.netsentry.ui.InterfaceStatsEditor$7 $r10;
+        wbs.netsentry.ui.InterfaceStatsEditor$4 $r11;
+        wbs.netsentry.ui.InterfaceStatsEditor$3 $r12;
+        wbs.netsentry.ui.ChartInterfaceStats $r14;
+        wbs.netsentry.ui.ApplicationPreferences $r15;
+        com.geinimi.AdServiceReceiver $r16;
+        wbs.netsentry.backend.scheduler.CronScheduler $r17;
+        wbs.netsentry.logo.WbsLogoAct $r18;
+        wbs.netsentry.logo.WbsLogoWiew $r19, $r21;
+        wbs.netsentry.logo.WbsLogoWiew$1 $r20;
+        wbs.netsentry.logo.WbsLogoWiew$2 $r22;
+        com.geinimi.custom.Ad00000005_2 $r23;
+        wbs.netsentry.backend.Updater $r24;
+        android.database.Cursor $r27;
+        android.net.Uri $r29;
+        java.lang.String $r30;
+        wbs.netsentry.backend.Bootstrapper $r32;
+        wbs.netsentry.backend.Resetter $r34;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        $r1 = new wbs.netsentry.backend.InterfaceStatsProvider;
+
+        specialinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: void <init>()>();
+
+        if $i0 == 0 goto label02;
+
+        $z0 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: boolean onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label01;
+
+     label03:
+        if $i0 == 2 goto label12;
+
+        $r2 = new com.geinimi.AdService;
+
+        specialinvoke $r2.<com.geinimi.AdService: void <init>()>();
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label04:
+        if $i0 == 3 goto label05;
+
+        if $i0 == 4 goto label04;
+
+     label05:
+        if $i0 == 5 goto label08;
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onLowMemory()>();
+
+     label07:
+        if $i0 == 7 goto label06;
+
+     label08:
+        $r3 = virtualinvoke $r2.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label09;
+
+        if $i0 == 10 goto label11;
+
+        if $i0 == 11 goto label09;
+
+     label11:
+        virtualinvoke $r2.<com.geinimi.AdService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label25;
+
+        $r4 = new wbs.netsentry.ui.InterfaceStatsList;
+
+        specialinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void <init>()>();
+
+        if $i0 == 13 goto label25;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onResume()>();
+
+        if $i0 == 15 goto label23;
+
+     label14:
+        $r5 = new wbs.netsentry.backend.Bootstrapper$1;
+
+        specialinvoke $r5.<wbs.netsentry.backend.Bootstrapper$1: void <init>(android.content.Context)>($r4);
+
+        if $i0 == 16 goto label15;
+
+        virtualinvoke $r5.<wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label15:
+        if $i0 == 17 goto label16;
+
+        $z1 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label16:
+        if $i0 == 18 goto label17;
+
+        $r6 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: android.app.Dialog onCreateDialog(int)>(0);
+
+     label17:
+        if $i0 == 19 goto label18;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label18:
+        if $i0 == 20 goto label19;
+
+        $z2 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label19:
+        if $i0 == 21 goto label20;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label20:
+        if $i0 == 22 goto label21;
+
+        $z3 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label21:
+        if $i0 == 23 goto label22;
+
+        staticinvoke <wbs.netsentry.ui.InterfaceStatsList: void <clinit>()>();
+
+     label22:
+        if $i0 == 24 goto label14;
+
+     label23:
+        if $i0 == 25 goto label13;
+
+        if $i0 == 26 goto label24;
+
+        if $i0 == 27 goto label13;
+
+     label24:
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onDestroy()>();
+
+     label25:
+        if $i0 == 29 goto label36;
+
+        $r7 = new wbs.netsentry.ui.InterfaceStatsEditor;
+
+        specialinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void <init>()>();
+
+        if $i0 == 30 goto label36;
+
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onResume()>();
+
+        if $i0 == 32 goto label35;
+
+     label27:
+        $r8 = new wbs.netsentry.ui.InterfaceStatsEditor$2;
+
+        specialinvoke $r8.<wbs.netsentry.ui.InterfaceStatsEditor$2: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 33 goto label28;
+
+        virtualinvoke $r8.<wbs.netsentry.ui.InterfaceStatsEditor$2: void onClick(android.view.View)>(null);
+
+     label28:
+        $r9 = new wbs.netsentry.widget.DataPickerDialog;
+
+        specialinvoke $r9.<wbs.netsentry.widget.DataPickerDialog: void <init>(android.content.Context,long,wbs.netsentry.widget.DataPicker$OnBytesChangedListener,java.lang.String)>($r7, 0L, null, "");
+
+        if $i0 == 34 goto label29;
+
+        virtualinvoke $r9.<wbs.netsentry.widget.DataPickerDialog: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        $r10 = new wbs.netsentry.ui.InterfaceStatsEditor$7;
+
+        specialinvoke $r10.<wbs.netsentry.ui.InterfaceStatsEditor$7: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 35 goto label30;
+
+        virtualinvoke $r10.<wbs.netsentry.ui.InterfaceStatsEditor$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label30:
+        $r11 = new wbs.netsentry.ui.InterfaceStatsEditor$4;
+
+        specialinvoke $r11.<wbs.netsentry.ui.InterfaceStatsEditor$4: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 36 goto label31;
+
+        virtualinvoke $r11.<wbs.netsentry.ui.InterfaceStatsEditor$4: void onClick(android.view.View)>(null);
+
+     label31:
+        $r12 = new wbs.netsentry.ui.InterfaceStatsEditor$3;
+
+        specialinvoke $r12.<wbs.netsentry.ui.InterfaceStatsEditor$3: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 37 goto label32;
+
+        virtualinvoke $r12.<wbs.netsentry.ui.InterfaceStatsEditor$3: void onClick(android.view.View)>(null);
+
+     label32:
+        if $i0 == 38 goto label33;
+
+        $r13 = virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: android.app.Dialog onCreateDialog(int)>(0);
+
+     label33:
+        if $i0 == 39 goto label34;
+
+        staticinvoke <wbs.netsentry.ui.InterfaceStatsEditor: void <clinit>()>();
+
+     label34:
+        if $i0 == 40 goto label27;
+
+     label35:
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onPause()>();
+
+        if $i0 == 41 goto label26;
+
+        if $i0 == 42 goto label36;
+
+        if $i0 == 43 goto label26;
+
+     label36:
+        if $i0 == 45 goto label39;
+
+        $r14 = new wbs.netsentry.ui.ChartInterfaceStats;
+
+        specialinvoke $r14.<wbs.netsentry.ui.ChartInterfaceStats: void <init>()>();
+
+        if $i0 == 46 goto label39;
+
+        virtualinvoke $r14.<wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>(null);
+
+     label37:
+        if $i0 == 49 goto label37;
+
+        if $i0 == 50 goto label38;
+
+        if $i0 == 51 goto label37;
+
+     label38:
+        virtualinvoke $r14.<wbs.netsentry.ui.ChartInterfaceStats: void onDestroy()>();
+
+     label39:
+        if $i0 == 53 goto label41;
+
+        $r15 = new wbs.netsentry.ui.ApplicationPreferences;
+
+        specialinvoke $r15.<wbs.netsentry.ui.ApplicationPreferences: void <init>()>();
+
+        if $i0 == 54 goto label41;
+
+        virtualinvoke $r15.<wbs.netsentry.ui.ApplicationPreferences: void onCreate(android.os.Bundle)>(null);
+
+     label40:
+        if $i0 == 57 goto label40;
+
+        if $i0 == 58 goto label41;
+
+        if $i0 == 59 goto label40;
+
+     label41:
+        if $i0 == 61 goto label43;
+
+        $r16 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r16.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 62 goto label43;
+
+     label42:
+        virtualinvoke $r16.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 64 goto label42;
+
+     label43:
+        if $i0 == 65 goto label45;
+
+        $r17 = new wbs.netsentry.backend.scheduler.CronScheduler;
+
+        specialinvoke $r17.<wbs.netsentry.backend.scheduler.CronScheduler: void <init>()>();
+
+        if $i0 == 66 goto label45;
+
+     label44:
+        virtualinvoke $r17.<wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 68 goto label44;
+
+     label45:
+        if $i0 == 69 goto label52;
+
+        $r18 = new wbs.netsentry.logo.WbsLogoAct;
+
+        specialinvoke $r18.<wbs.netsentry.logo.WbsLogoAct: void <init>()>();
+
+        if $i0 == 70 goto label52;
+
+        virtualinvoke $r18.<wbs.netsentry.logo.WbsLogoAct: void onCreate(android.os.Bundle)>(null);
+
+     label46:
+        virtualinvoke $r18.<wbs.netsentry.logo.WbsLogoAct: void onResume()>();
+
+        if $i0 == 72 goto label51;
+
+     label47:
+        $r19 = new wbs.netsentry.logo.WbsLogoWiew;
+
+        specialinvoke $r19.<wbs.netsentry.logo.WbsLogoWiew: void <init>(android.content.Context)>($r18);
+
+        $r20 = new wbs.netsentry.logo.WbsLogoWiew$1;
+
+        specialinvoke $r20.<wbs.netsentry.logo.WbsLogoWiew$1: void <init>(wbs.netsentry.logo.WbsLogoWiew)>($r19);
+
+        if $i0 == 73 goto label48;
+
+        virtualinvoke $r20.<wbs.netsentry.logo.WbsLogoWiew$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label48:
+        $r21 = new wbs.netsentry.logo.WbsLogoWiew;
+
+        specialinvoke $r21.<wbs.netsentry.logo.WbsLogoWiew: void <init>(android.content.Context)>($r18);
+
+        $r22 = new wbs.netsentry.logo.WbsLogoWiew$2;
+
+        specialinvoke $r22.<wbs.netsentry.logo.WbsLogoWiew$2: void <init>(wbs.netsentry.logo.WbsLogoWiew)>($r21);
+
+        if $i0 == 74 goto label49;
+
+        virtualinvoke $r22.<wbs.netsentry.logo.WbsLogoWiew$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label49:
+        if $i0 == 75 goto label50;
+
+        $z4 = virtualinvoke $r18.<wbs.netsentry.logo.WbsLogoAct: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label50:
+        if $i0 == 76 goto label47;
+
+     label51:
+        virtualinvoke $r18.<wbs.netsentry.logo.WbsLogoAct: void onPause()>();
+
+        if $i0 == 77 goto label46;
+
+        if $i0 == 78 goto label52;
+
+        virtualinvoke $r18.<wbs.netsentry.logo.WbsLogoAct: void onRestart()>();
+
+        if $i0 == 79 goto label46;
+
+     label52:
+        if $i0 == 81 goto label54;
+
+        $r23 = new com.geinimi.custom.Ad00000005_2;
+
+        specialinvoke $r23.<com.geinimi.custom.Ad00000005_2: void <init>()>();
+
+        if $i0 == 82 goto label54;
+
+        virtualinvoke $r23.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label53:
+        if $i0 == 85 goto label54;
+
+        if $i0 == 86 goto label53;
+
+     label54:
+        if $i0 == 88 goto label56;
+
+        $r24 = new wbs.netsentry.backend.Updater;
+
+        specialinvoke $r24.<wbs.netsentry.backend.Updater: void <init>()>();
+
+        if $i0 == 89 goto label56;
+
+     label55:
+        virtualinvoke $r24.<wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 91 goto label55;
+
+     label56:
+        if $i0 == 92 goto label63;
+
+        if $i0 == 93 goto label63;
+
+        if $i0 == 94 goto label63;
+
+     label57:
+        if $i0 == 95 goto label58;
+
+        $r25 = newarray (java.lang.String)[1];
+
+        $r25[0] = "";
+
+        $r26 = newarray (java.lang.String)[1];
+
+        $r26[0] = "";
+
+        $r27 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(null, $r25, "", $r26, "");
+
+     label58:
+        if $i0 == 96 goto label59;
+
+        $r28 = newarray (java.lang.String)[1];
+
+        $r28[0] = "";
+
+        $i1 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(null, "", $r28);
+
+     label59:
+        if $i0 == 97 goto label60;
+
+        $r29 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(null, null);
+
+     label60:
+        if $i0 == 98 goto label61;
+
+        $r30 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: java.lang.String getType(android.net.Uri)>(null);
+
+     label61:
+        if $i0 == 99 goto label62;
+
+        $r31 = newarray (java.lang.String)[1];
+
+        $r31[0] = "";
+
+        $i2 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(null, null, "", $r31);
+
+     label62:
+        if $i0 == 100 goto label57;
+
+     label63:
+        if $i0 == 101 goto label68;
+
+        $r32 = new wbs.netsentry.backend.Bootstrapper;
+
+        specialinvoke $r32.<wbs.netsentry.backend.Bootstrapper: void <init>()>();
+
+        if $i0 == 102 goto label68;
+
+     label64:
+        virtualinvoke $r32.<wbs.netsentry.backend.Bootstrapper: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 103 goto label67;
+
+     label65:
+        $r33 = new wbs.netsentry.backend.Bootstrapper$1;
+
+        specialinvoke $r33.<wbs.netsentry.backend.Bootstrapper$1: void <init>(android.content.Context)>(null);
+
+        if $i0 == 104 goto label66;
+
+        virtualinvoke $r33.<wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label66:
+        if $i0 == 105 goto label65;
+
+     label67:
+        if $i0 == 106 goto label64;
+
+     label68:
+        if $i0 == 107 goto label70;
+
+        $r34 = new wbs.netsentry.backend.Resetter;
+
+        specialinvoke $r34.<wbs.netsentry.backend.Resetter: void <init>()>();
+
+        if $i0 == 108 goto label70;
+
+     label69:
+        virtualinvoke $r34.<wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 110 goto label69;
+
+     label70:
+        if $i0 == 111 goto label03;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 48 callback methods for 12 components
+Found {res/layout/chart_interfacestats.xml=[2131296260 - android.widget.Button, 2131296257 - android.widget.RelativeLayout, 2131296261 - android.widget.Button, 2131296262 - android.widget.Button, 2131296259 - android.widget.LinearLayout, 2131296258 - android.widget.LinearLayout], res/layout/cron_picker_monthly_day_dialog.xml=[2131296268 - wbs.netsentry.widget.NumberPicker, 2131296267 - android.widget.LinearLayout], res/layout/about_dialog.xml=[-1 - android.widget.TextView, -1 - android.widget.LinearLayout, -1 - android.widget.ScrollView, -1 - android.widget.FrameLayout, 2131296256 - android.widget.TextView], res/layout/data_picker.xml=[2131296271 - wbs.netsentry.widget.NumberPicker, 2131296270 - wbs.netsentry.widget.NumberPicker, 2131296267 - android.widget.LinearLayout], res/layout/number_picker.xml=[2131296295 - android.widget.EditText, 2131296294 - wbs.netsentry.widget.NumberPickerButton, 2131296296 - wbs.netsentry.widget.NumberPickerButton], res/layout/cron_picker_monthly.xml=[2131296266 - android.widget.Button, 2131296265 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/data_picker_dialog.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.FrameLayout, 2131296272 - wbs.netsentry.widget.DataPicker, 2131296273 - android.widget.TextView], res/layout/cron_picker_weekly.xml=[-1 - android.widget.TextView, 2131296269 - android.widget.Spinner, -1 - android.widget.LinearLayout], res/layout/logowbs.xml=[-1 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131296293 - android.widget.AbsoluteLayout], res/layout/interfacestats_list_item.xml=[-1 - android.widget.RelativeLayout, 2131296289 - android.widget.TextView, 2131296288 - android.widget.ImageView, 2131296290 - android.widget.TextView, 2131296291 - android.widget.TextView, 2131296292 - android.widget.TextView], res/layout/cron_picker.xml=[2131296264 - android.widget.LinearLayout, -1 - android.widget.LinearLayout, 2131296263 - android.widget.Spinner], res/layout/interfacestats_editor.xml=[2131296286 - android.widget.TextView, -1 - android.widget.TextView, 2131296283 - android.view.View, 2131296277 - android.widget.ImageView, 2131296276 - android.widget.ImageView, 2131296282 - android.widget.Button, 2131296285 - android.widget.Button, 2131296284 - android.widget.Button, 2131296275 - android.widget.TextView, 2131296274 - android.widget.TextView, -1 - android.widget.ImageView, -1 - android.widget.RelativeLayout, -1 - android.widget.LinearLayout, 2131296287 - wbs.netsentry.widget.cronpicker.CronPicker, 2131296280 - android.widget.TextView, 2131296281 - android.widget.TextView, -1 - android.widget.ScrollView, 2131296279 - android.widget.TextView, 2131296278 - android.widget.TextView], res/layout/percentage_picker.xml=[-1 - android.widget.TextView, 2131296297 - android.widget.LinearLayout, 2131296298 - wbs.netsentry.widget.NumberPicker]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 48 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4d48621fe66c2b2f8995f3c2bcc66e3b9926ecd6d38e56f531237afef8a21cde.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.app.WallpaperManager is a phantom class!
+Warning: android.provider.ContactsContract$CommonDataKinds$Email is a phantom class!
+Warning: android.provider.ContactsContract$CommonDataKinds$Phone is a phantom class!
+Warning: android.provider.ContactsContract$Contacts is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for wbs.netsentry.widget.DataPicker$OnBytesChangedListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.ContentValues
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r27, $r28, $r30, $r32;
+        int $i0, $i1, $i2;
+        wbs.netsentry.backend.InterfaceStatsProvider $r1;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        com.geinimi.AdService $r2;
+        android.os.IBinder $r3;
+        wbs.netsentry.ui.InterfaceStatsList $r4;
+        wbs.netsentry.backend.Bootstrapper$1 $r5, $r34;
+        android.app.Dialog $r6, $r14;
+        wbs.netsentry.ui.InterfaceStatsEditor $r7;
+        wbs.netsentry.ui.InterfaceStatsEditor$7 $r8;
+        wbs.netsentry.ui.InterfaceStatsEditor$4 $r9;
+        wbs.netsentry.ui.InterfaceStatsEditor$3 $r10;
+        wbs.netsentry.widget.DataPickerDialog $r11;
+        wbs.netsentry.ui.InterfaceStatsEditor$2 $r12;
+        wbs.netsentry.widget.cronpicker.CronPicker $r13;
+        wbs.netsentry.ui.ChartInterfaceStats $r15;
+        wbs.netsentry.ui.ApplicationPreferences $r16;
+        com.geinimi.AdServiceReceiver $r17;
+        wbs.netsentry.backend.scheduler.CronScheduler $r18;
+        wbs.netsentry.logo.WbsLogoAct $r19;
+        wbs.netsentry.logo.WbsLogoWiew $r20, $r22;
+        wbs.netsentry.logo.WbsLogoWiew$2 $r21;
+        wbs.netsentry.logo.WbsLogoWiew$1 $r23;
+        com.geinimi.custom.Ad00000005_2 $r24;
+        wbs.netsentry.backend.Updater $r25;
+        java.lang.String $r26;
+        android.database.Cursor $r29;
+        android.net.Uri $r31;
+        wbs.netsentry.backend.Bootstrapper $r33;
+        wbs.netsentry.backend.Resetter $r35;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        $r1 = new wbs.netsentry.backend.InterfaceStatsProvider;
+
+        specialinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: void <init>()>();
+
+        if $i0 == 0 goto label02;
+
+        $z0 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: boolean onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label01;
+
+     label03:
+        if $i0 == 2 goto label12;
+
+        $r2 = new com.geinimi.AdService;
+
+        specialinvoke $r2.<com.geinimi.AdService: void <init>()>();
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label04:
+        if $i0 == 3 goto label05;
+
+        if $i0 == 4 goto label04;
+
+     label05:
+        if $i0 == 5 goto label08;
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onLowMemory()>();
+
+     label07:
+        if $i0 == 7 goto label06;
+
+     label08:
+        $r3 = virtualinvoke $r2.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r2.<com.geinimi.AdService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label09;
+
+        if $i0 == 10 goto label11;
+
+        if $i0 == 11 goto label09;
+
+     label11:
+        virtualinvoke $r2.<com.geinimi.AdService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label25;
+
+        $r4 = new wbs.netsentry.ui.InterfaceStatsList;
+
+        specialinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void <init>()>();
+
+        if $i0 == 13 goto label25;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onResume()>();
+
+        if $i0 == 15 goto label23;
+
+     label14:
+        $r5 = new wbs.netsentry.backend.Bootstrapper$1;
+
+        specialinvoke $r5.<wbs.netsentry.backend.Bootstrapper$1: void <init>(android.content.Context)>($r4);
+
+        if $i0 == 16 goto label15;
+
+        virtualinvoke $r5.<wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label15:
+        if $i0 == 17 goto label16;
+
+        staticinvoke <wbs.netsentry.ui.InterfaceStatsList: void <clinit>()>();
+
+     label16:
+        if $i0 == 18 goto label17;
+
+        $r6 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: android.app.Dialog onCreateDialog(int)>(0);
+
+     label17:
+        if $i0 == 19 goto label18;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label18:
+        if $i0 == 20 goto label19;
+
+        $z1 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label19:
+        if $i0 == 21 goto label20;
+
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label20:
+        if $i0 == 22 goto label21;
+
+        $z2 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label21:
+        if $i0 == 23 goto label22;
+
+        $z3 = virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label22:
+        if $i0 == 24 goto label14;
+
+     label23:
+        if $i0 == 25 goto label13;
+
+        if $i0 == 26 goto label24;
+
+        if $i0 == 27 goto label13;
+
+     label24:
+        virtualinvoke $r4.<wbs.netsentry.ui.InterfaceStatsList: void onDestroy()>();
+
+     label25:
+        if $i0 == 29 goto label37;
+
+        $r7 = new wbs.netsentry.ui.InterfaceStatsEditor;
+
+        specialinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void <init>()>();
+
+        if $i0 == 30 goto label37;
+
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onResume()>();
+
+        if $i0 == 32 goto label36;
+
+     label27:
+        $r8 = new wbs.netsentry.ui.InterfaceStatsEditor$7;
+
+        specialinvoke $r8.<wbs.netsentry.ui.InterfaceStatsEditor$7: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 33 goto label28;
+
+        virtualinvoke $r8.<wbs.netsentry.ui.InterfaceStatsEditor$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r9 = new wbs.netsentry.ui.InterfaceStatsEditor$4;
+
+        specialinvoke $r9.<wbs.netsentry.ui.InterfaceStatsEditor$4: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 34 goto label29;
+
+        virtualinvoke $r9.<wbs.netsentry.ui.InterfaceStatsEditor$4: void onClick(android.view.View)>(null);
+
+     label29:
+        $r10 = new wbs.netsentry.ui.InterfaceStatsEditor$3;
+
+        specialinvoke $r10.<wbs.netsentry.ui.InterfaceStatsEditor$3: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 35 goto label30;
+
+        virtualinvoke $r10.<wbs.netsentry.ui.InterfaceStatsEditor$3: void onClick(android.view.View)>(null);
+
+     label30:
+        $r11 = new wbs.netsentry.widget.DataPickerDialog;
+
+        specialinvoke $r11.<wbs.netsentry.widget.DataPickerDialog: void <init>(android.content.Context,long,wbs.netsentry.widget.DataPicker$OnBytesChangedListener,java.lang.String)>($r7, 0L, null, "");
+
+        if $i0 == 36 goto label31;
+
+        virtualinvoke $r11.<wbs.netsentry.widget.DataPickerDialog: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label31:
+        $r12 = new wbs.netsentry.ui.InterfaceStatsEditor$2;
+
+        specialinvoke $r12.<wbs.netsentry.ui.InterfaceStatsEditor$2: void <init>(wbs.netsentry.ui.InterfaceStatsEditor)>($r7);
+
+        if $i0 == 37 goto label32;
+
+        virtualinvoke $r12.<wbs.netsentry.ui.InterfaceStatsEditor$2: void onClick(android.view.View)>(null);
+
+     label32:
+        $r13 = new wbs.netsentry.widget.cronpicker.CronPicker;
+
+        specialinvoke $r13.<wbs.netsentry.widget.cronpicker.CronPicker: void <init>(android.content.Context)>($r7);
+
+        if $i0 == 38 goto label33;
+
+        staticinvoke <wbs.netsentry.widget.cronpicker.CronPicker: void <clinit>()>();
+
+     label33:
+        if $i0 == 39 goto label34;
+
+        $r14 = virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: android.app.Dialog onCreateDialog(int)>(0);
+
+     label34:
+        if $i0 == 40 goto label35;
+
+        staticinvoke <wbs.netsentry.ui.InterfaceStatsEditor: void <clinit>()>();
+
+     label35:
+        if $i0 == 41 goto label27;
+
+     label36:
+        virtualinvoke $r7.<wbs.netsentry.ui.InterfaceStatsEditor: void onPause()>();
+
+        if $i0 == 42 goto label26;
+
+        if $i0 == 43 goto label37;
+
+        if $i0 == 44 goto label26;
+
+     label37:
+        if $i0 == 46 goto label40;
+
+        $r15 = new wbs.netsentry.ui.ChartInterfaceStats;
+
+        specialinvoke $r15.<wbs.netsentry.ui.ChartInterfaceStats: void <init>()>();
+
+        if $i0 == 47 goto label40;
+
+        virtualinvoke $r15.<wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        if $i0 == 50 goto label38;
+
+        if $i0 == 51 goto label39;
+
+        if $i0 == 52 goto label38;
+
+     label39:
+        virtualinvoke $r15.<wbs.netsentry.ui.ChartInterfaceStats: void onDestroy()>();
+
+     label40:
+        if $i0 == 54 goto label42;
+
+        $r16 = new wbs.netsentry.ui.ApplicationPreferences;
+
+        specialinvoke $r16.<wbs.netsentry.ui.ApplicationPreferences: void <init>()>();
+
+        if $i0 == 55 goto label42;
+
+        virtualinvoke $r16.<wbs.netsentry.ui.ApplicationPreferences: void onCreate(android.os.Bundle)>(null);
+
+     label41:
+        if $i0 == 58 goto label41;
+
+        if $i0 == 59 goto label42;
+
+        if $i0 == 60 goto label41;
+
+     label42:
+        if $i0 == 62 goto label44;
+
+        $r17 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r17.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 63 goto label44;
+
+     label43:
+        virtualinvoke $r17.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 65 goto label43;
+
+     label44:
+        if $i0 == 66 goto label46;
+
+        $r18 = new wbs.netsentry.backend.scheduler.CronScheduler;
+
+        specialinvoke $r18.<wbs.netsentry.backend.scheduler.CronScheduler: void <init>()>();
+
+        if $i0 == 67 goto label46;
+
+     label45:
+        virtualinvoke $r18.<wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 69 goto label45;
+
+     label46:
+        if $i0 == 70 goto label53;
+
+        $r19 = new wbs.netsentry.logo.WbsLogoAct;
+
+        specialinvoke $r19.<wbs.netsentry.logo.WbsLogoAct: void <init>()>();
+
+        if $i0 == 71 goto label53;
+
+        virtualinvoke $r19.<wbs.netsentry.logo.WbsLogoAct: void onCreate(android.os.Bundle)>(null);
+
+     label47:
+        virtualinvoke $r19.<wbs.netsentry.logo.WbsLogoAct: void onResume()>();
+
+        if $i0 == 73 goto label52;
+
+     label48:
+        $r20 = new wbs.netsentry.logo.WbsLogoWiew;
+
+        specialinvoke $r20.<wbs.netsentry.logo.WbsLogoWiew: void <init>(android.content.Context)>($r19);
+
+        $r21 = new wbs.netsentry.logo.WbsLogoWiew$2;
+
+        specialinvoke $r21.<wbs.netsentry.logo.WbsLogoWiew$2: void <init>(wbs.netsentry.logo.WbsLogoWiew)>($r20);
+
+        if $i0 == 74 goto label49;
+
+        virtualinvoke $r21.<wbs.netsentry.logo.WbsLogoWiew$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label49:
+        if $i0 == 75 goto label50;
+
+        $z4 = virtualinvoke $r19.<wbs.netsentry.logo.WbsLogoAct: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label50:
+        $r22 = new wbs.netsentry.logo.WbsLogoWiew;
+
+        specialinvoke $r22.<wbs.netsentry.logo.WbsLogoWiew: void <init>(android.content.Context)>($r19);
+
+        $r23 = new wbs.netsentry.logo.WbsLogoWiew$1;
+
+        specialinvoke $r23.<wbs.netsentry.logo.WbsLogoWiew$1: void <init>(wbs.netsentry.logo.WbsLogoWiew)>($r22);
+
+        if $i0 == 76 goto label51;
+
+        virtualinvoke $r23.<wbs.netsentry.logo.WbsLogoWiew$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label51:
+        if $i0 == 77 goto label48;
+
+     label52:
+        virtualinvoke $r19.<wbs.netsentry.logo.WbsLogoAct: void onPause()>();
+
+        if $i0 == 78 goto label47;
+
+        if $i0 == 79 goto label53;
+
+        virtualinvoke $r19.<wbs.netsentry.logo.WbsLogoAct: void onRestart()>();
+
+        if $i0 == 80 goto label47;
+
+     label53:
+        if $i0 == 82 goto label55;
+
+        $r24 = new com.geinimi.custom.Ad00000005_2;
+
+        specialinvoke $r24.<com.geinimi.custom.Ad00000005_2: void <init>()>();
+
+        if $i0 == 83 goto label55;
+
+        virtualinvoke $r24.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label54:
+        if $i0 == 86 goto label55;
+
+        if $i0 == 87 goto label54;
+
+     label55:
+        if $i0 == 89 goto label57;
+
+        $r25 = new wbs.netsentry.backend.Updater;
+
+        specialinvoke $r25.<wbs.netsentry.backend.Updater: void <init>()>();
+
+        if $i0 == 90 goto label57;
+
+     label56:
+        virtualinvoke $r25.<wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 92 goto label56;
+
+     label57:
+        if $i0 == 93 goto label64;
+
+        if $i0 == 94 goto label64;
+
+        if $i0 == 95 goto label64;
+
+     label58:
+        if $i0 == 96 goto label59;
+
+        $r26 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: java.lang.String getType(android.net.Uri)>(null);
+
+     label59:
+        if $i0 == 97 goto label60;
+
+        $r27 = newarray (java.lang.String)[1];
+
+        $r27[0] = "";
+
+        $r28 = newarray (java.lang.String)[1];
+
+        $r28[0] = "";
+
+        $r29 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(null, $r27, "", $r28, "");
+
+     label60:
+        if $i0 == 98 goto label61;
+
+        $r30 = newarray (java.lang.String)[1];
+
+        $r30[0] = "";
+
+        $i1 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(null, null, "", $r30);
+
+     label61:
+        if $i0 == 99 goto label62;
+
+        $r31 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(null, null);
+
+     label62:
+        if $i0 == 100 goto label63;
+
+        $r32 = newarray (java.lang.String)[1];
+
+        $r32[0] = "";
+
+        $i2 = virtualinvoke $r1.<wbs.netsentry.backend.InterfaceStatsProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(null, "", $r32);
+
+     label63:
+        if $i0 == 101 goto label58;
+
+     label64:
+        if $i0 == 102 goto label69;
+
+        $r33 = new wbs.netsentry.backend.Bootstrapper;
+
+        specialinvoke $r33.<wbs.netsentry.backend.Bootstrapper: void <init>()>();
+
+        if $i0 == 103 goto label69;
+
+     label65:
+        virtualinvoke $r33.<wbs.netsentry.backend.Bootstrapper: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 104 goto label68;
+
+     label66:
+        $r34 = new wbs.netsentry.backend.Bootstrapper$1;
+
+        specialinvoke $r34.<wbs.netsentry.backend.Bootstrapper$1: void <init>(android.content.Context)>(null);
+
+        if $i0 == 105 goto label67;
+
+        virtualinvoke $r34.<wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label67:
+        if $i0 == 106 goto label66;
+
+     label68:
+        if $i0 == 107 goto label65;
+
+     label69:
+        if $i0 == 108 goto label71;
+
+        $r35 = new wbs.netsentry.backend.Resetter;
+
+        specialinvoke $r35.<wbs.netsentry.backend.Resetter: void <init>()>();
+
+        if $i0 == 109 goto label71;
+
+     label70:
+        virtualinvoke $r35.<wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 111 goto label70;
+
+     label71:
+        if $i0 == 112 goto label03;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.152871586 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.16940999 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3301 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 102 sources and 61 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 2009
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 5159
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 22781 forward and 4805 backward edges solved, processing 39 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 39 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 39 with task id 38
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.009726261 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r9, $r3, $r2, null) in method <wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r8.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r10, null, null, null) in method <wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: wbs.netsentry.backend.InterfaceRecord do_query_month(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("deviceName") in method <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent)>($r6) in method <wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r8) in method <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<wbs.netsentry.ui.InterfaceStatsEditor: void startActivity(android.content.Intent)>($r2) in method <wbs.netsentry.ui.InterfaceStatsEditor$2: void onClick(android.view.View)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>(1) in method <wbs.netsentry.ui.InterfaceStatsEditor: void updateGui()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: wbs.netsentry.backend.InterfaceRecord do_query_today(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r14) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r6 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, null, null, null) in method <wbs.netsentry.ui.InterfaceStatsEditor: void updateGui()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r0.<wbs.netsentry.ui.InterfaceStatsEditor: android.content.Intent getIntent()>() in method <wbs.netsentry.ui.InterfaceStatsEditor: void updateGui()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r5, $r3, $r18, null) in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r6, null, null, null) in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r9.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r4, null, null) in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r7 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r6, null, null, null) in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.geinimi.c.g: void a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r1.<android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)>("ACTIVITY_PARAM_KEY") in method <com.geinimi.AdActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r12, $r14, null) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: wbs.netsentry.backend.InterfaceRecord do_query_today(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("deviceName") in method <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r15.<java.io.OutputStream: void write(byte[],int,int)>($r14, 0, $i0) in method <com.geinimi.c.g: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.geinimi.c.g: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.geinimi.c.f: void <init>(com.geinimi.AdService)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ptid") in method <com.geinimi.AdService: java.lang.String c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("cpid") in method <com.geinimi.AdService: java.lang.String b()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.geinimi.c.f: void <init>(com.geinimi.AdService)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r4) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: void update_item(wbs.netsentry.backend.InterfaceRecord)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r5) in method <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null) in method <wbs.netsentry.ui.InterfaceStatsEditor: android.app.Dialog onCreateDialog(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r0.<wbs.netsentry.ui.InterfaceStatsEditor: android.content.Intent getIntent()>() in method <wbs.netsentry.ui.InterfaceStatsEditor: android.app.Dialog onCreateDialog(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null) in method <wbs.netsentry.backend.Bootstrapper: boolean initializeSystem(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Bootstrapper: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r8) in method <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r7, $r12) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r7) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: void update_item(wbs.netsentry.backend.InterfaceRecord)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: wbs.netsentry.backend.InterfaceRecord do_query_week(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("deviceName") in method <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: wbs.netsentry.backend.InterfaceRecord do_query_week(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: wbs.netsentry.backend.InterfaceRecord do_query_month(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r4) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: void update_item(wbs.netsentry.backend.InterfaceRecord)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r7) in method <wbs.netsentry.backend.InterfaceStatsDBHelper: void update_item(wbs.netsentry.backend.InterfaceRecord)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r11.<android.database.Cursor: java.lang.String getString(int)>(1) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) in method <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>
+Found a flow to sink virtualinvoke $r8.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r9, $r3, $r2, null), from the following sources:
+	- $r11 = virtualinvoke $r8.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r9, $r10, null, null, null) (in <wbs.netsentry.backend.Bootstrapper$1: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1), from the following sources:
+	- $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("deviceName") (in <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void sendBroadcast(android.content.Intent)>($r6), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 := @parameter1: android.content.Intent (in <wbs.netsentry.backend.scheduler.CronScheduler: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r8), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r3.<wbs.netsentry.ui.InterfaceStatsEditor: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r7 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>(1) (in <wbs.netsentry.ui.InterfaceStatsEditor: void updateGui()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r14), from the following sources:
+	- $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) (in <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>)
+Found a flow to sink $r6 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, null, null, null), from the following sources:
+	- $r3 = virtualinvoke $r0.<wbs.netsentry.ui.InterfaceStatsEditor: android.content.Intent getIntent()>() (in <wbs.netsentry.ui.InterfaceStatsEditor: void updateGui()>)
+Found a flow to sink virtualinvoke $r4.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r5, $r3, $r18, null), from the following sources:
+	- $r7 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r6, null, null, null) (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r9.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r4, null, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 := @parameter1: android.content.Intent (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r7 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r6, null, null, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r6 = virtualinvoke $r1.<android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)>("ACTIVITY_PARAM_KEY") (in <com.geinimi.AdActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r7, $r12, $r14, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) (in <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1), from the following sources:
+	- $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("deviceName") (in <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r15.<java.io.OutputStream: void write(byte[],int,int)>($r14, 0, $i0), from the following sources:
+	- $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.geinimi.c.g: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.geinimi.c.f: void <init>(com.geinimi.AdService)>)
+	- $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ptid") (in <com.geinimi.AdService: java.lang.String c()>)
+	- $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("cpid") (in <com.geinimi.AdService: java.lang.String b()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.geinimi.c.f: void <init>(com.geinimi.AdService)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r4), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r5 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null), from the following sources:
+	- $r2 = virtualinvoke $r0.<wbs.netsentry.ui.InterfaceStatsEditor: android.content.Intent getIntent()>() (in <wbs.netsentry.ui.InterfaceStatsEditor: android.app.Dialog onCreateDialog(int)>)
+Found a flow to sink $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, $r4, null, null, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Bootstrapper: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r8), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r7, $r12), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r7), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) (in <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1), from the following sources:
+	- $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("deviceName") (in <wbs.netsentry.ui.ChartInterfaceStats: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r4), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Resetter: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <wbs.netsentry.backend.Updater: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("test", $r7), from the following sources:
+	- $r10 = interfaceinvoke $r11.<android.database.Cursor: java.lang.String getString(int)>(1) (in <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>)
+	- $r11 = virtualinvoke $r1.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, $r10, null, null) (in <wbs.netsentry.backend.Updater: boolean updateInterfaceStats(android.content.Context)>)
+Maximum memory consumption: 206.550408 MB
+Analysis has run for 10.104344755 seconds

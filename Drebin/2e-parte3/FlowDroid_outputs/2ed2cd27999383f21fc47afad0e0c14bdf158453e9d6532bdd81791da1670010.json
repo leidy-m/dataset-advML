@@ -1,0 +1,517 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.010014286 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        net.maxicom.android.snake.BootDetector $r1;
+        net.maxicom.android.snake.Snake $r2;
+        net.maxicom.android.snake.SnakeService $r3;
+        android.os.IBinder $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new net.maxicom.android.snake.BootDetector;
+
+        specialinvoke $r1.<net.maxicom.android.snake.BootDetector: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<net.maxicom.android.snake.BootDetector: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new net.maxicom.android.snake.Snake;
+
+        specialinvoke $r2.<net.maxicom.android.snake.Snake: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onResume()>();
+
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onPause()>();
+
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 7 goto label04;
+
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        if $i0 == 11 goto label10;
+
+        $r3 = new net.maxicom.android.snake.SnakeService;
+
+        specialinvoke $r3.<net.maxicom.android.snake.SnakeService: void <init>()>();
+
+        virtualinvoke $r3.<net.maxicom.android.snake.SnakeService: void onCreate()>();
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        if $i0 == 13 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<net.maxicom.android.snake.SnakeService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 15 goto label09;
+
+        if $i0 == 16 goto label08;
+
+     label09:
+        virtualinvoke $r3.<net.maxicom.android.snake.SnakeService: void onDestroy()>();
+
+     label10:
+        if $i0 == 17 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: net.maxicom.android.snake.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: net.maxicom.android.snake.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: net.maxicom.android.snake.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/snake_layout.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Handler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        net.maxicom.android.snake.BootDetector $r1;
+        net.maxicom.android.snake.Snake $r2;
+        net.maxicom.android.snake.Snake$2 $r3;
+        net.maxicom.android.snake.Snake$1 $r4;
+        boolean $z0, $z1, $z2;
+        net.maxicom.android.snake.SnakeService $r5;
+        net.maxicom.android.snake.LocationListener $r6, $r8;
+        android.os.IBinder $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new net.maxicom.android.snake.BootDetector;
+
+        specialinvoke $r1.<net.maxicom.android.snake.BootDetector: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<net.maxicom.android.snake.BootDetector: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label12;
+
+        $r2 = new net.maxicom.android.snake.Snake;
+
+        specialinvoke $r2.<net.maxicom.android.snake.Snake: void <init>()>();
+
+        if $i0 == 5 goto label12;
+
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onResume()>();
+
+        if $i0 == 7 goto label11;
+
+     label05:
+        $r3 = new net.maxicom.android.snake.Snake$2;
+
+        specialinvoke $r3.<net.maxicom.android.snake.Snake$2: void <init>(net.maxicom.android.snake.Snake)>($r2);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<net.maxicom.android.snake.Snake$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label06:
+        $r4 = new net.maxicom.android.snake.Snake$1;
+
+        specialinvoke $r4.<net.maxicom.android.snake.Snake$1: void <init>(net.maxicom.android.snake.Snake)>($r2);
+
+        if $i0 == 9 goto label07;
+
+        virtualinvoke $r4.<net.maxicom.android.snake.Snake$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label07:
+        if $i0 == 10 goto label08;
+
+        $z0 = virtualinvoke $r2.<net.maxicom.android.snake.Snake: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label08:
+        if $i0 == 11 goto label09;
+
+        $z1 = virtualinvoke $r2.<net.maxicom.android.snake.Snake: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label09:
+        if $i0 == 12 goto label10;
+
+        $z2 = virtualinvoke $r2.<net.maxicom.android.snake.Snake: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label10:
+        if $i0 == 13 goto label05;
+
+     label11:
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onPause()>();
+
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 14 goto label04;
+
+        if $i0 == 15 goto label12;
+
+        if $i0 == 16 goto label04;
+
+     label12:
+        if $i0 == 18 goto label21;
+
+        $r5 = new net.maxicom.android.snake.SnakeService;
+
+        specialinvoke $r5.<net.maxicom.android.snake.SnakeService: void <init>()>();
+
+        virtualinvoke $r5.<net.maxicom.android.snake.SnakeService: void onCreate()>();
+
+     label13:
+        if $i0 == 19 goto label14;
+
+        if $i0 == 20 goto label13;
+
+     label14:
+        if $i0 == 21 goto label17;
+
+     label15:
+        $r6 = new net.maxicom.android.snake.LocationListener;
+
+        specialinvoke $r6.<net.maxicom.android.snake.LocationListener: void <init>(android.os.Handler)>(null);
+
+        if $i0 == 22 goto label16;
+
+        virtualinvoke $r6.<net.maxicom.android.snake.LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label16:
+        if $i0 == 23 goto label15;
+
+     label17:
+        $r7 = virtualinvoke $r5.<net.maxicom.android.snake.SnakeService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        $r8 = new net.maxicom.android.snake.LocationListener;
+
+        specialinvoke $r8.<net.maxicom.android.snake.LocationListener: void <init>(android.os.Handler)>(null);
+
+        if $i0 == 24 goto label19;
+
+        virtualinvoke $r8.<net.maxicom.android.snake.LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label19:
+        if $i0 == 25 goto label18;
+
+        if $i0 == 26 goto label20;
+
+        if $i0 == 27 goto label18;
+
+     label20:
+        virtualinvoke $r5.<net.maxicom.android.snake.SnakeService: void onDestroy()>();
+
+     label21:
+        if $i0 == 28 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 16 callback methods for 3 components
+Found {res/layout/snake_layout.xml=[-1 - android.widget.RelativeLayout, -1 - android.widget.FrameLayout, 2131034112 - net.maxicom.android.snake.SnakeView, 2131034113 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 16 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2ed2cd27999383f21fc47afad0e0c14bdf158453e9d6532bdd81791da1670010.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Handler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        net.maxicom.android.snake.BootDetector $r1;
+        net.maxicom.android.snake.Snake $r2;
+        net.maxicom.android.snake.SnakeView $r3;
+        boolean $z0, $z1, $z2, $z3;
+        net.maxicom.android.snake.Snake$1 $r4;
+        net.maxicom.android.snake.Snake$2 $r5;
+        net.maxicom.android.snake.SnakeService $r6;
+        net.maxicom.android.snake.LocationListener $r7, $r9;
+        android.os.IBinder $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new net.maxicom.android.snake.BootDetector;
+
+        specialinvoke $r1.<net.maxicom.android.snake.BootDetector: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<net.maxicom.android.snake.BootDetector: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label14;
+
+        $r2 = new net.maxicom.android.snake.Snake;
+
+        specialinvoke $r2.<net.maxicom.android.snake.Snake: void <init>()>();
+
+        if $i0 == 5 goto label14;
+
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onResume()>();
+
+        if $i0 == 7 goto label13;
+
+     label05:
+        $r3 = new net.maxicom.android.snake.SnakeView;
+
+        specialinvoke $r3.<net.maxicom.android.snake.SnakeView: void <init>(android.content.Context,android.util.AttributeSet)>($r2, null);
+
+        if $i0 == 8 goto label06;
+
+        staticinvoke <net.maxicom.android.snake.SnakeView: void <clinit>()>();
+
+     label06:
+        if $i0 == 9 goto label07;
+
+        $z0 = virtualinvoke $r3.<net.maxicom.android.snake.SnakeView: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label07:
+        $r4 = new net.maxicom.android.snake.Snake$1;
+
+        specialinvoke $r4.<net.maxicom.android.snake.Snake$1: void <init>(net.maxicom.android.snake.Snake)>($r2);
+
+        if $i0 == 10 goto label08;
+
+        virtualinvoke $r4.<net.maxicom.android.snake.Snake$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label08:
+        $r5 = new net.maxicom.android.snake.Snake$2;
+
+        specialinvoke $r5.<net.maxicom.android.snake.Snake$2: void <init>(net.maxicom.android.snake.Snake)>($r2);
+
+        if $i0 == 11 goto label09;
+
+        virtualinvoke $r5.<net.maxicom.android.snake.Snake$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label09:
+        if $i0 == 12 goto label10;
+
+        $z1 = virtualinvoke $r2.<net.maxicom.android.snake.Snake: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label10:
+        if $i0 == 13 goto label11;
+
+        $z2 = virtualinvoke $r2.<net.maxicom.android.snake.Snake: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        $z3 = virtualinvoke $r2.<net.maxicom.android.snake.Snake: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label12:
+        if $i0 == 15 goto label05;
+
+     label13:
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onPause()>();
+
+        virtualinvoke $r2.<net.maxicom.android.snake.Snake: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 16 goto label04;
+
+        if $i0 == 17 goto label14;
+
+        if $i0 == 18 goto label04;
+
+     label14:
+        if $i0 == 20 goto label23;
+
+        $r6 = new net.maxicom.android.snake.SnakeService;
+
+        specialinvoke $r6.<net.maxicom.android.snake.SnakeService: void <init>()>();
+
+        virtualinvoke $r6.<net.maxicom.android.snake.SnakeService: void onCreate()>();
+
+     label15:
+        if $i0 == 21 goto label16;
+
+        if $i0 == 22 goto label15;
+
+     label16:
+        if $i0 == 23 goto label19;
+
+     label17:
+        $r7 = new net.maxicom.android.snake.LocationListener;
+
+        specialinvoke $r7.<net.maxicom.android.snake.LocationListener: void <init>(android.os.Handler)>(null);
+
+        if $i0 == 24 goto label18;
+
+        virtualinvoke $r7.<net.maxicom.android.snake.LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label18:
+        if $i0 == 25 goto label17;
+
+     label19:
+        $r8 = virtualinvoke $r6.<net.maxicom.android.snake.SnakeService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label20:
+        $r9 = new net.maxicom.android.snake.LocationListener;
+
+        specialinvoke $r9.<net.maxicom.android.snake.LocationListener: void <init>(android.os.Handler)>(null);
+
+        if $i0 == 26 goto label21;
+
+        virtualinvoke $r9.<net.maxicom.android.snake.LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label21:
+        if $i0 == 27 goto label20;
+
+        if $i0 == 28 goto label22;
+
+        if $i0 == 29 goto label20;
+
+     label22:
+        virtualinvoke $r6.<net.maxicom.android.snake.SnakeService: void onDestroy()>();
+
+     label23:
+        if $i0 == 30 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.156407215 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.017866048 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 237 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 15 sources and 3 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 14
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 31
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 295 forward and 45 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.002016456 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBundle(java.lang.String,android.os.Bundle)>("snake-view", $r2) in method <net.maxicom.android.snake.Snake: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <net.maxicom.android.snake.Snake: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <net.maxicom.android.snake.BootDetector: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <net.maxicom.android.snake.BootDetector: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r2) in method <net.maxicom.android.snake.LocationListener: void onLocationChanged(android.location.Location)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.location.Location in method <net.maxicom.android.snake.LocationListener: void onLocationChanged(android.location.Location)>
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putBundle(java.lang.String,android.os.Bundle)>("snake-view", $r2), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <net.maxicom.android.snake.Snake: void onSaveInstanceState(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <net.maxicom.android.snake.BootDetector: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r2), from the following sources:
+	- $r1 := @parameter0: android.location.Location (in <net.maxicom.android.snake.LocationListener: void onLocationChanged(android.location.Location)>)
+Maximum memory consumption: 69.765808 MB
+Analysis has run for 2.412868546 seconds

@@ -1,0 +1,739 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.010042867 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: mService is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        spy.lifemonitor.com.RepeatingAlarmService $r1;
+        spy.lifemonitor.com.LifemonitorActivity $r2;
+        spy.lifemonitor.com.tracking $r3;
+        spy.lifemonitor.com.OnBootReceiver $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new spy.lifemonitor.com.RepeatingAlarmService;
+
+        specialinvoke $r1.<spy.lifemonitor.com.RepeatingAlarmService: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 6 goto label06;
+
+        $r2 = new spy.lifemonitor.com.LifemonitorActivity;
+
+        specialinvoke $r2.<spy.lifemonitor.com.LifemonitorActivity: void <init>()>();
+
+        if $i0 == 7 goto label06;
+
+        virtualinvoke $r2.<spy.lifemonitor.com.LifemonitorActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<spy.lifemonitor.com.LifemonitorActivity: void onResume()>();
+
+        virtualinvoke $r2.<spy.lifemonitor.com.LifemonitorActivity: void onPause()>();
+
+        if $i0 == 9 goto label04;
+
+        if $i0 == 10 goto label05;
+
+        if $i0 == 11 goto label04;
+
+     label05:
+        virtualinvoke $r2.<spy.lifemonitor.com.LifemonitorActivity: void onDestroy()>();
+
+     label06:
+        if $i0 == 13 goto label09;
+
+        $r3 = new spy.lifemonitor.com.tracking;
+
+        specialinvoke $r3.<spy.lifemonitor.com.tracking: void <init>()>();
+
+        if $i0 == 14 goto label09;
+
+        virtualinvoke $r3.<spy.lifemonitor.com.tracking: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<spy.lifemonitor.com.tracking: void onResume()>();
+
+        virtualinvoke $r3.<spy.lifemonitor.com.tracking: void onPause()>();
+
+        if $i0 == 16 goto label07;
+
+        if $i0 == 17 goto label08;
+
+        if $i0 == 18 goto label07;
+
+     label08:
+        virtualinvoke $r3.<spy.lifemonitor.com.tracking: void onDestroy()>();
+
+     label09:
+        if $i0 == 20 goto label11;
+
+        $r4 = new spy.lifemonitor.com.OnBootReceiver;
+
+        specialinvoke $r4.<spy.lifemonitor.com.OnBootReceiver: void <init>()>();
+
+        if $i0 == 21 goto label11;
+
+     label10:
+        virtualinvoke $r4.<spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label10;
+
+     label11:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: spy.lifemonitor.com.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: spy.lifemonitor.com.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: EditText is a phantom class!
+Warning: spy.lifemonitor.com.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: TextView is a phantom class!
+Warning: spy.lifemonitor.com.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: spy.lifemonitor.com.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: SeekBar is a phantom class!
+Warning: spy.lifemonitor.com.SeekBar is a phantom class!
+Warning: android.view.SeekBar is a phantom class!
+Warning: TextSwitcher is a phantom class!
+Warning: spy.lifemonitor.com.TextSwitcher is a phantom class!
+Warning: android.view.TextSwitcher is a phantom class!
+Found 2 layout controls in file res/layout/tracking.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: mService is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        spy.lifemonitor.com.RepeatingAlarmService $r1;
+        spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener $r2;
+        spy.lifemonitor.com.LifemonitorActivity $r3;
+        android.app.Dialog $r4, $r9;
+        spy.lifemonitor.com.tracking $r5;
+        spy.lifemonitor.com.tracking$5 $r6;
+        spy.lifemonitor.com.tracking$4 $r7;
+        spy.lifemonitor.com.tracking$1 $r8;
+        boolean $z0;
+        spy.lifemonitor.com.OnBootReceiver $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new spy.lifemonitor.com.RepeatingAlarmService;
+
+        specialinvoke $r1.<spy.lifemonitor.com.RepeatingAlarmService: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+     label02:
+        virtualinvoke $r1.<spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 2 goto label07;
+
+     label03:
+        $r2 = new spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener;
+
+        specialinvoke $r2.<spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void <init>(spy.lifemonitor.com.RepeatingAlarmService)>($r1);
+
+        if $i0 == 3 goto label04;
+
+        virtualinvoke $r2.<spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onProviderDisabled(java.lang.String)>("");
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onProviderEnabled(java.lang.String)>("");
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r2.<spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label06:
+        if $i0 == 6 goto label03;
+
+     label07:
+        if $i0 == 7 goto label02;
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r3 = new spy.lifemonitor.com.LifemonitorActivity;
+
+        specialinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onResume()>();
+
+        if $i0 == 13 goto label13;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        $r4 = virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label11:
+        if $i0 == 15 goto label12;
+
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onClick(android.view.View)>(null);
+
+     label12:
+        if $i0 == 16 goto label10;
+
+     label13:
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onPause()>();
+
+        if $i0 == 17 goto label09;
+
+        if $i0 == 18 goto label14;
+
+        if $i0 == 19 goto label09;
+
+     label14:
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 21 goto label28;
+
+        $r5 = new spy.lifemonitor.com.tracking;
+
+        specialinvoke $r5.<spy.lifemonitor.com.tracking: void <init>()>();
+
+        if $i0 == 22 goto label28;
+
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onResume()>();
+
+        if $i0 == 24 goto label26;
+
+     label17:
+        $r6 = new spy.lifemonitor.com.tracking$5;
+
+        specialinvoke $r6.<spy.lifemonitor.com.tracking$5: void <init>(spy.lifemonitor.com.tracking)>($r5);
+
+        if $i0 == 25 goto label18;
+
+        virtualinvoke $r6.<spy.lifemonitor.com.tracking$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label18:
+        $r7 = new spy.lifemonitor.com.tracking$4;
+
+        specialinvoke $r7.<spy.lifemonitor.com.tracking$4: void <init>(spy.lifemonitor.com.tracking)>($r5);
+
+        if $i0 == 26 goto label19;
+
+        virtualinvoke $r7.<spy.lifemonitor.com.tracking$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r8 = new spy.lifemonitor.com.tracking$1;
+
+        specialinvoke $r8.<spy.lifemonitor.com.tracking$1: void <init>(spy.lifemonitor.com.tracking)>($r5);
+
+        if $i0 == 27 goto label20;
+
+        virtualinvoke $r8.<spy.lifemonitor.com.tracking$1: void onStartTrackingTouch(android.widget.SeekBar)>(null);
+
+     label20:
+        if $i0 == 28 goto label21;
+
+        virtualinvoke $r8.<spy.lifemonitor.com.tracking$1: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label21:
+        if $i0 == 29 goto label22;
+
+        virtualinvoke $r8.<spy.lifemonitor.com.tracking$1: void onStopTrackingTouch(android.widget.SeekBar)>(null);
+
+     label22:
+        if $i0 == 30 goto label23;
+
+        $z0 = virtualinvoke $r5.<spy.lifemonitor.com.tracking: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label23:
+        if $i0 == 31 goto label24;
+
+        $r9 = virtualinvoke $r5.<spy.lifemonitor.com.tracking: android.app.Dialog onCreateDialog(int)>(0);
+
+     label24:
+        if $i0 == 32 goto label25;
+
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onClick(android.view.View)>(null);
+
+     label25:
+        if $i0 == 33 goto label17;
+
+     label26:
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onPause()>();
+
+        if $i0 == 34 goto label16;
+
+        if $i0 == 35 goto label27;
+
+        if $i0 == 36 goto label16;
+
+     label27:
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onDestroy()>();
+
+     label28:
+        if $i0 == 38 goto label30;
+
+        $r10 = new spy.lifemonitor.com.OnBootReceiver;
+
+        specialinvoke $r10.<spy.lifemonitor.com.OnBootReceiver: void <init>()>();
+
+        if $i0 == 39 goto label30;
+
+     label29:
+        virtualinvoke $r10.<spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 41 goto label29;
+
+     label30:
+        if $i0 == 42 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Found 23 callback methods for 4 components
+Found {res/layout/main.xml=[2131034114 - android.widget.EditText, 2131034115 - android.widget.TextView, 2131034120 - android.widget.TextView, 2131034119 - android.widget.TextView, 2131034117 - android.widget.TextView, 2131034118 - android.widget.Button, 2131034116 - android.widget.EditText, 2131034113 - android.widget.RelativeLayout, 2131034112 - android.widget.RelativeLayout, -1 - android.widget.LinearLayout], res/layout/tracking.xml=[2131034115 - android.widget.TextView, 2131034124 - android.widget.TextSwitcher, 2131034123 - android.widget.SeekBar, 2131034113 - android.widget.RelativeLayout, 2131034121 - android.widget.Button, 2131034112 - android.widget.RelativeLayout, 2131034122 - android.widget.Button, -1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 23 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2db01aa53076e35f1bc856e61358b7f64ef62f96cc2a3c47f7bb8edc4d4467b9.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: mService is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        spy.lifemonitor.com.RepeatingAlarmService $r1;
+        spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener $r2;
+        spy.lifemonitor.com.LifemonitorActivity $r3;
+        android.app.Dialog $r4, $r8;
+        spy.lifemonitor.com.tracking $r5;
+        spy.lifemonitor.com.tracking$5 $r6;
+        spy.lifemonitor.com.tracking$1 $r7;
+        boolean $z0;
+        spy.lifemonitor.com.tracking$4 $r9;
+        spy.lifemonitor.com.OnBootReceiver $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new spy.lifemonitor.com.RepeatingAlarmService;
+
+        specialinvoke $r1.<spy.lifemonitor.com.RepeatingAlarmService: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+     label02:
+        virtualinvoke $r1.<spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 2 goto label07;
+
+     label03:
+        $r2 = new spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener;
+
+        specialinvoke $r2.<spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void <init>(spy.lifemonitor.com.RepeatingAlarmService)>($r1);
+
+        if $i0 == 3 goto label04;
+
+        virtualinvoke $r2.<spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onProviderDisabled(java.lang.String)>("");
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r2.<spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onProviderEnabled(java.lang.String)>("");
+
+     label06:
+        if $i0 == 6 goto label03;
+
+     label07:
+        if $i0 == 7 goto label02;
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r3 = new spy.lifemonitor.com.LifemonitorActivity;
+
+        specialinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onResume()>();
+
+        if $i0 == 13 goto label13;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        $r4 = virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label11:
+        if $i0 == 15 goto label12;
+
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onClick(android.view.View)>(null);
+
+     label12:
+        if $i0 == 16 goto label10;
+
+     label13:
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onPause()>();
+
+        if $i0 == 17 goto label09;
+
+        if $i0 == 18 goto label14;
+
+        if $i0 == 19 goto label09;
+
+     label14:
+        virtualinvoke $r3.<spy.lifemonitor.com.LifemonitorActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 21 goto label28;
+
+        $r5 = new spy.lifemonitor.com.tracking;
+
+        specialinvoke $r5.<spy.lifemonitor.com.tracking: void <init>()>();
+
+        if $i0 == 22 goto label28;
+
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onResume()>();
+
+        if $i0 == 24 goto label26;
+
+     label17:
+        $r6 = new spy.lifemonitor.com.tracking$5;
+
+        specialinvoke $r6.<spy.lifemonitor.com.tracking$5: void <init>(spy.lifemonitor.com.tracking)>($r5);
+
+        if $i0 == 25 goto label18;
+
+        virtualinvoke $r6.<spy.lifemonitor.com.tracking$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label18:
+        $r7 = new spy.lifemonitor.com.tracking$1;
+
+        specialinvoke $r7.<spy.lifemonitor.com.tracking$1: void <init>(spy.lifemonitor.com.tracking)>($r5);
+
+        if $i0 == 26 goto label19;
+
+        virtualinvoke $r7.<spy.lifemonitor.com.tracking$1: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label19:
+        if $i0 == 27 goto label20;
+
+        virtualinvoke $r7.<spy.lifemonitor.com.tracking$1: void onStopTrackingTouch(android.widget.SeekBar)>(null);
+
+     label20:
+        if $i0 == 28 goto label21;
+
+        virtualinvoke $r7.<spy.lifemonitor.com.tracking$1: void onStartTrackingTouch(android.widget.SeekBar)>(null);
+
+     label21:
+        if $i0 == 29 goto label22;
+
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onClick(android.view.View)>(null);
+
+     label22:
+        if $i0 == 30 goto label23;
+
+        $z0 = virtualinvoke $r5.<spy.lifemonitor.com.tracking: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label23:
+        if $i0 == 31 goto label24;
+
+        $r8 = virtualinvoke $r5.<spy.lifemonitor.com.tracking: android.app.Dialog onCreateDialog(int)>(0);
+
+     label24:
+        $r9 = new spy.lifemonitor.com.tracking$4;
+
+        specialinvoke $r9.<spy.lifemonitor.com.tracking$4: void <init>(spy.lifemonitor.com.tracking)>($r5);
+
+        if $i0 == 32 goto label25;
+
+        virtualinvoke $r9.<spy.lifemonitor.com.tracking$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        if $i0 == 33 goto label17;
+
+     label26:
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onPause()>();
+
+        if $i0 == 34 goto label16;
+
+        if $i0 == 35 goto label27;
+
+        if $i0 == 36 goto label16;
+
+     label27:
+        virtualinvoke $r5.<spy.lifemonitor.com.tracking: void onDestroy()>();
+
+     label28:
+        if $i0 == 38 goto label30;
+
+        $r10 = new spy.lifemonitor.com.OnBootReceiver;
+
+        specialinvoke $r10.<spy.lifemonitor.com.OnBootReceiver: void <init>()>();
+
+        if $i0 == 39 goto label30;
+
+     label29:
+        virtualinvoke $r10.<spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 41 goto label29;
+
+     label30:
+        if $i0 == 42 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.232032082 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.026943741 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 448 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 38 sources and 79 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 245
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 713
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 5595 forward and 330 backward edges solved, processing 20 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 20 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.006457723 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r7) in method <spy.lifemonitor.com.RepeatingAlarmService: boolean checkInternet()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 := @parameter0: android.content.Context in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4) in method <spy.lifemonitor.com.RepeatingAlarmService: boolean update(double,double,double,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.location.Location in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 := @parameter0: android.content.Context in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <spy.lifemonitor.com.LifemonitorActivity: org.json.JSONObject sendGETRequest(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r0.<spy.lifemonitor.com.LifemonitorActivity: android.view.View findViewById(int)>(2131034116) in method <spy.lifemonitor.com.LifemonitorActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r7) in method <spy.lifemonitor.com.RepeatingAlarmService: boolean checkInternet()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 := @parameter0: android.content.Context in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.location.Location in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pass", $r3) in method <spy.lifemonitor.com.LifemonitorActivity: void onClick(android.view.View)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r0.<spy.lifemonitor.com.LifemonitorActivity: android.view.View findViewById(int)>(2131034116) in method <spy.lifemonitor.com.LifemonitorActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r1) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 := @parameter0: android.content.Context in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <spy.lifemonitor.com.OnBootReceiver: org.json.JSONObject sendGETRequest(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <spy.lifemonitor.com.RepeatingAlarmService: org.json.JSONObject sendGETRequest(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.location.Location in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3) in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 := @parameter0: android.content.Context in method <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8) in method <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8) in method <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r7), from the following sources:
+	- $r4 := @parameter0: android.content.Context (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4), from the following sources:
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $r1 := @parameter0: android.location.Location (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r13 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3) (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12), from the following sources:
+	- $r4 := @parameter0: android.content.Context (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r3 = virtualinvoke $r0.<spy.lifemonitor.com.LifemonitorActivity: android.view.View findViewById(int)>(2131034116) (in <spy.lifemonitor.com.LifemonitorActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r7), from the following sources:
+	- $r4 := @parameter0: android.content.Context (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12), from the following sources:
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $r1 := @parameter0: android.location.Location (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r13 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3) (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12), from the following sources:
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+Found a flow to sink interfaceinvoke $r8.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pass", $r3), from the following sources:
+	- $r3 = virtualinvoke $r0.<spy.lifemonitor.com.LifemonitorActivity: android.view.View findViewById(int)>(2131034116) (in <spy.lifemonitor.com.LifemonitorActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12), from the following sources:
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r3, $r12), from the following sources:
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r13 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3) (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r1), from the following sources:
+	- $r4 := @parameter0: android.content.Context (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLatitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $r1 := @parameter0: android.location.Location (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService$MyLocationListener: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r9.<android.location.Location: double getLongitude()>() (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r13 = virtualinvoke $r6.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>($r3) (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 := @parameter0: android.content.Context (in <spy.lifemonitor.com.RepeatingAlarmService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r6, $r8), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <spy.lifemonitor.com.OnBootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 81.441384 MB
+Analysis has run for 3.386533658 seconds

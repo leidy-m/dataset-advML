@@ -1,0 +1,1947 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.022911358 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.opengl.ETC1Util is a phantom class!
+Warning: android.opengl.GLES20 is a phantom class!
+Warning: android.os.SystemProperties is a phantom class!
+Warning: com.android.internal.telephony.ITelephony is a phantom class!
+Warning: com.cooguo.koipond.KoiActivity$KoiGLView is a phantom class!
+Warning: com.cooguo.koipond.KoiActivity$KoiRenderer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1, $i2;
+        com.android.apple.TestActivity $r1;
+        com.cooguo.koipond.WallpaperSettings $r2;
+        com.android.apple.AppleService $r3;
+        android.os.IBinder $r4, $r12;
+        com.android.apple.AppleReceiver $r5;
+        com.cooguo.koipond.HowToActivity $r6;
+        com.android.cgos.GosReceiver $r7;
+        com.cooguo.koipond.WallpaperService $r8;
+        com.cooguo.koipond.TestActivity $r9;
+        com.android.cgos.AlarmReceiver $r10;
+        com.android.cgos.GosService $r11;
+        com.android.cgos.Activity3 $r13;
+        com.android.cgos.Activity2 $r14;
+        com.android.cgos.Activity1 $r15;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.apple.TestActivity;
+
+        specialinvoke $r1.<com.android.apple.TestActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.android.apple.TestActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label06;
+
+        $r2 = new com.cooguo.koipond.WallpaperSettings;
+
+        specialinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void <init>()>();
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onResume()>();
+
+        if $i0 == 10 goto label04;
+
+        if $i0 == 11 goto label05;
+
+        if $i0 == 12 goto label04;
+
+     label05:
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onDestroy()>();
+
+     label06:
+        if $i0 == 14 goto label11;
+
+        $r3 = new com.android.apple.AppleService;
+
+        specialinvoke $r3.<com.android.apple.AppleService: void <init>()>();
+
+        virtualinvoke $r3.<com.android.apple.AppleService: void onCreate()>();
+
+     label07:
+        if $i0 == 15 goto label08;
+
+        $i1 = virtualinvoke $r3.<com.android.apple.AppleService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 16 goto label07;
+
+     label08:
+        $r4 = virtualinvoke $r3.<com.android.apple.AppleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 18 goto label10;
+
+        if $i0 == 19 goto label09;
+
+     label10:
+        virtualinvoke $r3.<com.android.apple.AppleService: void onDestroy()>();
+
+     label11:
+        if $i0 == 20 goto label13;
+
+        $r5 = new com.android.apple.AppleReceiver;
+
+        specialinvoke $r5.<com.android.apple.AppleReceiver: void <init>()>();
+
+        if $i0 == 21 goto label13;
+
+     label12:
+        virtualinvoke $r5.<com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label12;
+
+     label13:
+        if $i0 == 24 goto label15;
+
+        $r6 = new com.cooguo.koipond.HowToActivity;
+
+        specialinvoke $r6.<com.cooguo.koipond.HowToActivity: void <init>()>();
+
+        if $i0 == 25 goto label15;
+
+        virtualinvoke $r6.<com.cooguo.koipond.HowToActivity: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 28 goto label15;
+
+        if $i0 == 29 goto label14;
+
+     label15:
+        if $i0 == 31 goto label17;
+
+        $r7 = new com.android.cgos.GosReceiver;
+
+        specialinvoke $r7.<com.android.cgos.GosReceiver: void <init>()>();
+
+        if $i0 == 32 goto label17;
+
+     label16:
+        virtualinvoke $r7.<com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 34 goto label16;
+
+     label17:
+        if $i0 == 35 goto label21;
+
+        $r8 = new com.cooguo.koipond.WallpaperService;
+
+        specialinvoke $r8.<com.cooguo.koipond.WallpaperService: void <init>()>();
+
+        virtualinvoke $r8.<fishnoodle._engine20.BaseWallpaperService: void onCreate()>();
+
+     label18:
+        if $i0 == 36 goto label19;
+
+        if $i0 == 37 goto label18;
+
+     label19:
+        if $i0 == 39 goto label20;
+
+        if $i0 == 40 goto label19;
+
+     label20:
+        virtualinvoke $r8.<fishnoodle._engine20.BaseWallpaperService: void onDestroy()>();
+
+     label21:
+        if $i0 == 41 goto label24;
+
+        $r9 = new com.cooguo.koipond.TestActivity;
+
+        specialinvoke $r9.<com.cooguo.koipond.TestActivity: void <init>()>();
+
+        if $i0 == 42 goto label24;
+
+        virtualinvoke $r9.<fishnoodle._engine20.BaseWallpaperTestActivity: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        virtualinvoke $r9.<fishnoodle._engine20.BaseWallpaperTestActivity: void onResume()>();
+
+        virtualinvoke $r9.<fishnoodle._engine20.BaseWallpaperTestActivity: void onPause()>();
+
+        if $i0 == 44 goto label22;
+
+        if $i0 == 45 goto label23;
+
+        if $i0 == 46 goto label22;
+
+     label23:
+        virtualinvoke $r9.<fishnoodle._engine20.BaseWallpaperTestActivity: void onDestroy()>();
+
+     label24:
+        if $i0 == 48 goto label26;
+
+        $r10 = new com.android.cgos.AlarmReceiver;
+
+        specialinvoke $r10.<com.android.cgos.AlarmReceiver: void <init>()>();
+
+        if $i0 == 49 goto label26;
+
+     label25:
+        virtualinvoke $r10.<com.android.cgos.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 51 goto label25;
+
+     label26:
+        if $i0 == 52 goto label31;
+
+        $r11 = new com.android.cgos.GosService;
+
+        specialinvoke $r11.<com.android.cgos.GosService: void <init>()>();
+
+        virtualinvoke $r11.<com.android.cgos.GosService: void onCreate()>();
+
+     label27:
+        if $i0 == 53 goto label28;
+
+        $i2 = virtualinvoke $r11.<com.android.cgos.GosService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 54 goto label27;
+
+     label28:
+        $r12 = virtualinvoke $r11.<com.android.cgos.GosService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label29:
+        if $i0 == 56 goto label30;
+
+        if $i0 == 57 goto label29;
+
+     label30:
+        virtualinvoke $r11.<com.android.cgos.GosService: void onDestroy()>();
+
+     label31:
+        if $i0 == 58 goto label33;
+
+        $r13 = new com.android.cgos.Activity3;
+
+        specialinvoke $r13.<com.android.cgos.Activity3: void <init>()>();
+
+        if $i0 == 59 goto label33;
+
+        virtualinvoke $r13.<com.android.cgos.Activity3: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        if $i0 == 62 goto label33;
+
+        if $i0 == 63 goto label32;
+
+     label33:
+        if $i0 == 65 goto label35;
+
+        $r14 = new com.android.cgos.Activity2;
+
+        specialinvoke $r14.<com.android.cgos.Activity2: void <init>()>();
+
+        if $i0 == 66 goto label35;
+
+        virtualinvoke $r14.<com.android.cgos.Activity2: void onCreate(android.os.Bundle)>(null);
+
+     label34:
+        if $i0 == 69 goto label35;
+
+        if $i0 == 70 goto label34;
+
+     label35:
+        if $i0 == 72 goto label37;
+
+        $r15 = new com.android.cgos.Activity1;
+
+        specialinvoke $r15.<com.android.cgos.Activity1: void <init>()>();
+
+        if $i0 == 73 goto label37;
+
+        virtualinvoke $r15.<com.android.cgos.Activity1: void onCreate(android.os.Bundle)>(null);
+
+     label36:
+        if $i0 == 76 goto label37;
+
+        if $i0 == 77 goto label36;
+
+     label37:
+        if $i0 == 79 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.8 seconds.
+[Spark] Solution found in 1.8 seconds.
+Callback analysis done.
+Warning: ScrollView is a phantom class!
+Warning: com.cooguo.koipond.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: com.cooguo.koipond.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: View is a phantom class!
+Warning: com.cooguo.koipond.View is a phantom class!
+Warning: SeekBar is a phantom class!
+Warning: com.cooguo.koipond.SeekBar is a phantom class!
+Warning: android.view.SeekBar is a phantom class!
+Found 1 layout controls in file res/layout/color_picker.xml
+Warning: Gallery is a phantom class!
+Warning: com.cooguo.koipond.Gallery is a phantom class!
+Warning: android.view.Gallery is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.cooguo.koipond.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 2 layout controls in file res/layout/dialogkoi_layout.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.cooguo.koipond.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.cooguo.koipond.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 3 layout controls in file res/layout/howto.xml
+Found 4 layout controls in file res/layout/howto_landscape.xml
+Found 5 layout controls in file res/layout/howto_nook.xml
+Found 6 layout controls in file res/layout/howto_nosupport.xml
+Warning: ImageView is a phantom class!
+Warning: com.cooguo.koipond.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 7 layout controls in file res/layout/preferencecolor_layout.xml
+Found 8 layout controls in file res/layout/preferencethumbnail_layout.xml
+Found 9 layout controls in file res/layout/testactivitylayout.xml
+Found 10 layout controls in file res/layout/upsell.xml
+Found 11 layout controls in file res/layout/upsell_landscape.xml
+Found 12 layout controls in file res/layout/value_slider.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.opengl.ETC1Util is a phantom class!
+Warning: android.opengl.GLES20 is a phantom class!
+Warning: android.os.SystemProperties is a phantom class!
+Warning: com.android.internal.telephony.ITelephony is a phantom class!
+Warning: com.cooguo.koipond.KoiActivity$KoiGLView is a phantom class!
+Warning: com.cooguo.koipond.KoiActivity$KoiRenderer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonTakeMeListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonCloseListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonUpgradeListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1, $i2;
+        com.android.apple.TestActivity $r1;
+        com.cooguo.koipond.WallpaperSettings $r2;
+        fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener $r3;
+        boolean $z0, $z1;
+        com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener $r4;
+        com.android.apple.AppleService $r5;
+        android.os.IBinder $r6, $r24;
+        com.android.apple.AppleReceiver $r7;
+        com.cooguo.koipond.HowToActivity $r8;
+        fishnoodle._engine20.HowToActivity$ButtonTakeMeListener $r9, $r10;
+        fishnoodle._engine20.HowToActivity$ButtonCloseListener $r11, $r12;
+        fishnoodle._engine20.HowToActivity$ButtonUpgradeListener $r13, $r14;
+        com.android.cgos.GosReceiver $r15;
+        com.cooguo.koipond.WallpaperService $r16;
+        android.service.wallpaper.WallpaperService$Engine $r17, $r19;
+        com.cooguo.koipond.IsolatedRenderer $r18, $r20;
+        com.cooguo.koipond.TestActivity $r21;
+        com.android.cgos.AlarmReceiver $r22;
+        com.android.cgos.GosService $r23;
+        com.android.cgos.Activity3 $r25;
+        com.android.cgos.Activity2 $r26;
+        com.android.cgos.b $r27;
+        com.android.cgos.NetworkPakcage$ADResponsePackage $r28;
+        com.android.cgos.d $r29;
+        com.android.cgos.Activity1 $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.apple.TestActivity;
+
+        specialinvoke $r1.<com.android.apple.TestActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.android.apple.TestActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label11;
+
+        $r2 = new com.cooguo.koipond.WallpaperSettings;
+
+        specialinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void <init>()>();
+
+        if $i0 == 9 goto label11;
+
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onResume()>();
+
+        if $i0 == 11 goto label09;
+
+     label05:
+        $r3 = new fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener;
+
+        specialinvoke $r3.<fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener: void <init>(fishnoodle._engine20.BaseWallpaperSettingsActivity,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String)>($r2, "", "", 0, 0, "", "");
+
+        if $i0 == 12 goto label06;
+
+        $z0 = virtualinvoke $r3.<fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label06:
+        $r4 = new com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener;
+
+        specialinvoke $r4.<com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener: void <init>(com.cooguo.koipond.WallpaperSettings,int)>($r2, 0);
+
+        if $i0 == 13 goto label07;
+
+        $z1 = virtualinvoke $r4.<com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label07:
+        if $i0 == 14 goto label08;
+
+        staticinvoke <com.cooguo.koipond.WallpaperSettings: void <clinit>()>();
+
+     label08:
+        if $i0 == 15 goto label05;
+
+     label09:
+        if $i0 == 16 goto label04;
+
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label04;
+
+     label10:
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onDestroy()>();
+
+     label11:
+        if $i0 == 20 goto label16;
+
+        $r5 = new com.android.apple.AppleService;
+
+        specialinvoke $r5.<com.android.apple.AppleService: void <init>()>();
+
+        virtualinvoke $r5.<com.android.apple.AppleService: void onCreate()>();
+
+     label12:
+        if $i0 == 21 goto label13;
+
+        $i1 = virtualinvoke $r5.<com.android.apple.AppleService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 22 goto label12;
+
+     label13:
+        $r6 = virtualinvoke $r5.<com.android.apple.AppleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 24 goto label15;
+
+        if $i0 == 25 goto label14;
+
+     label15:
+        virtualinvoke $r5.<com.android.apple.AppleService: void onDestroy()>();
+
+     label16:
+        if $i0 == 26 goto label18;
+
+        $r7 = new com.android.apple.AppleReceiver;
+
+        specialinvoke $r7.<com.android.apple.AppleReceiver: void <init>()>();
+
+        if $i0 == 27 goto label18;
+
+     label17:
+        virtualinvoke $r7.<com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 29 goto label17;
+
+     label18:
+        if $i0 == 30 goto label25;
+
+        $r8 = new com.cooguo.koipond.HowToActivity;
+
+        specialinvoke $r8.<com.cooguo.koipond.HowToActivity: void <init>()>();
+
+        if $i0 == 31 goto label25;
+
+        virtualinvoke $r8.<com.cooguo.koipond.HowToActivity: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        if $i0 == 33 goto label24;
+
+     label20:
+        $r9 = null;
+
+        $r10 = new fishnoodle._engine20.HowToActivity$ButtonTakeMeListener;
+
+        specialinvoke $r10.<fishnoodle._engine20.HowToActivity$ButtonTakeMeListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonTakeMeListener)>($r8, $r9);
+
+        if $i0 == 34 goto label21;
+
+        virtualinvoke $r10.<fishnoodle._engine20.HowToActivity$ButtonTakeMeListener: void onClick(android.view.View)>(null);
+
+     label21:
+        $r11 = null;
+
+        $r12 = new fishnoodle._engine20.HowToActivity$ButtonCloseListener;
+
+        specialinvoke $r12.<fishnoodle._engine20.HowToActivity$ButtonCloseListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonCloseListener)>($r8, $r11);
+
+        if $i0 == 35 goto label22;
+
+        virtualinvoke $r12.<fishnoodle._engine20.HowToActivity$ButtonCloseListener: void onClick(android.view.View)>(null);
+
+     label22:
+        $r13 = null;
+
+        $r14 = new fishnoodle._engine20.HowToActivity$ButtonUpgradeListener;
+
+        specialinvoke $r14.<fishnoodle._engine20.HowToActivity$ButtonUpgradeListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonUpgradeListener)>($r8, $r13);
+
+        if $i0 == 36 goto label23;
+
+        virtualinvoke $r14.<fishnoodle._engine20.HowToActivity$ButtonUpgradeListener: void onClick(android.view.View)>(null);
+
+     label23:
+        if $i0 == 37 goto label20;
+
+     label24:
+        if $i0 == 38 goto label19;
+
+        if $i0 == 39 goto label25;
+
+        if $i0 == 40 goto label19;
+
+     label25:
+        if $i0 == 42 goto label27;
+
+        $r15 = new com.android.cgos.GosReceiver;
+
+        specialinvoke $r15.<com.android.cgos.GosReceiver: void <init>()>();
+
+        if $i0 == 43 goto label27;
+
+     label26:
+        virtualinvoke $r15.<com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 45 goto label26;
+
+     label27:
+        if $i0 == 46 goto label37;
+
+        $r16 = new com.cooguo.koipond.WallpaperService;
+
+        specialinvoke $r16.<com.cooguo.koipond.WallpaperService: void <init>()>();
+
+        virtualinvoke $r16.<fishnoodle._engine20.BaseWallpaperService: void onCreate()>();
+
+     label28:
+        if $i0 == 47 goto label29;
+
+        if $i0 == 48 goto label28;
+
+     label29:
+        if $i0 == 49 goto label33;
+
+     label30:
+        if $i0 == 50 goto label31;
+
+        $r17 = virtualinvoke $r16.<com.cooguo.koipond.WallpaperService: android.service.wallpaper.WallpaperService$Engine onCreateEngine()>();
+
+     label31:
+        $r18 = new com.cooguo.koipond.IsolatedRenderer;
+
+        specialinvoke $r18.<com.cooguo.koipond.IsolatedRenderer: void <init>(android.content.Context)>($r16);
+
+        if $i0 == 51 goto label32;
+
+        virtualinvoke $r18.<com.cooguo.koipond.IsolatedRenderer: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label32:
+        if $i0 == 52 goto label30;
+
+     label33:
+        if $i0 == 53 goto label34;
+
+        $r19 = virtualinvoke $r16.<com.cooguo.koipond.WallpaperService: android.service.wallpaper.WallpaperService$Engine onCreateEngine()>();
+
+     label34:
+        $r20 = new com.cooguo.koipond.IsolatedRenderer;
+
+        specialinvoke $r20.<com.cooguo.koipond.IsolatedRenderer: void <init>(android.content.Context)>($r16);
+
+        if $i0 == 54 goto label35;
+
+        virtualinvoke $r20.<com.cooguo.koipond.IsolatedRenderer: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label35:
+        if $i0 == 55 goto label33;
+
+        if $i0 == 56 goto label36;
+
+        if $i0 == 57 goto label33;
+
+     label36:
+        virtualinvoke $r16.<fishnoodle._engine20.BaseWallpaperService: void onDestroy()>();
+
+     label37:
+        if $i0 == 58 goto label40;
+
+        $r21 = new com.cooguo.koipond.TestActivity;
+
+        specialinvoke $r21.<com.cooguo.koipond.TestActivity: void <init>()>();
+
+        if $i0 == 59 goto label40;
+
+        virtualinvoke $r21.<fishnoodle._engine20.BaseWallpaperTestActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        virtualinvoke $r21.<fishnoodle._engine20.BaseWallpaperTestActivity: void onResume()>();
+
+        virtualinvoke $r21.<fishnoodle._engine20.BaseWallpaperTestActivity: void onPause()>();
+
+        if $i0 == 61 goto label38;
+
+        if $i0 == 62 goto label39;
+
+        if $i0 == 63 goto label38;
+
+     label39:
+        virtualinvoke $r21.<fishnoodle._engine20.BaseWallpaperTestActivity: void onDestroy()>();
+
+     label40:
+        if $i0 == 65 goto label42;
+
+        $r22 = new com.android.cgos.AlarmReceiver;
+
+        specialinvoke $r22.<com.android.cgos.AlarmReceiver: void <init>()>();
+
+        if $i0 == 66 goto label42;
+
+     label41:
+        virtualinvoke $r22.<com.android.cgos.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 68 goto label41;
+
+     label42:
+        if $i0 == 69 goto label47;
+
+        $r23 = new com.android.cgos.GosService;
+
+        specialinvoke $r23.<com.android.cgos.GosService: void <init>()>();
+
+        virtualinvoke $r23.<com.android.cgos.GosService: void onCreate()>();
+
+     label43:
+        if $i0 == 70 goto label44;
+
+        $i2 = virtualinvoke $r23.<com.android.cgos.GosService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 71 goto label43;
+
+     label44:
+        $r24 = virtualinvoke $r23.<com.android.cgos.GosService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label45:
+        if $i0 == 73 goto label46;
+
+        if $i0 == 74 goto label45;
+
+     label46:
+        virtualinvoke $r23.<com.android.cgos.GosService: void onDestroy()>();
+
+     label47:
+        if $i0 == 75 goto label52;
+
+        $r25 = new com.android.cgos.Activity3;
+
+        specialinvoke $r25.<com.android.cgos.Activity3: void <init>()>();
+
+        if $i0 == 76 goto label52;
+
+        virtualinvoke $r25.<com.android.cgos.Activity3: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        if $i0 == 78 goto label51;
+
+     label49:
+        if $i0 == 79 goto label50;
+
+        virtualinvoke $r25.<com.android.cgos.Activity3: void onWindowFocusChanged(boolean)>(false);
+
+     label50:
+        if $i0 == 80 goto label49;
+
+     label51:
+        if $i0 == 81 goto label48;
+
+        if $i0 == 82 goto label52;
+
+        if $i0 == 83 goto label48;
+
+     label52:
+        if $i0 == 85 goto label59;
+
+        $r26 = new com.android.cgos.Activity2;
+
+        specialinvoke $r26.<com.android.cgos.Activity2: void <init>()>();
+
+        if $i0 == 86 goto label59;
+
+        virtualinvoke $r26.<com.android.cgos.Activity2: void onCreate(android.os.Bundle)>(null);
+
+     label53:
+        if $i0 == 88 goto label58;
+
+     label54:
+        $r27 = new com.android.cgos.b;
+
+        specialinvoke $r27.<com.android.cgos.b: void <init>(com.android.cgos.Activity2)>($r26);
+
+        if $i0 == 89 goto label55;
+
+        virtualinvoke $r27.<com.android.cgos.b: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label55:
+        if $i0 == 90 goto label56;
+
+        virtualinvoke $r26.<com.android.cgos.Activity2: void onWindowFocusChanged(boolean)>(false);
+
+     label56:
+        $r28 = new com.android.cgos.NetworkPakcage$ADResponsePackage;
+
+        specialinvoke $r28.<com.android.cgos.NetworkPakcage$ADResponsePackage: void <init>()>();
+
+        $r29 = new com.android.cgos.d;
+
+        specialinvoke $r29.<com.android.cgos.d: void <init>(com.android.cgos.Activity2,com.android.cgos.NetworkPakcage$ADResponsePackage)>($r26, $r28);
+
+        if $i0 == 91 goto label57;
+
+        virtualinvoke $r29.<com.android.cgos.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label57:
+        if $i0 == 92 goto label54;
+
+     label58:
+        if $i0 == 93 goto label53;
+
+        if $i0 == 94 goto label59;
+
+        if $i0 == 95 goto label53;
+
+     label59:
+        if $i0 == 97 goto label64;
+
+        $r30 = new com.android.cgos.Activity1;
+
+        specialinvoke $r30.<com.android.cgos.Activity1: void <init>()>();
+
+        if $i0 == 98 goto label64;
+
+        virtualinvoke $r30.<com.android.cgos.Activity1: void onCreate(android.os.Bundle)>(null);
+
+     label60:
+        if $i0 == 100 goto label63;
+
+     label61:
+        if $i0 == 101 goto label62;
+
+        virtualinvoke $r30.<com.android.cgos.Activity1: void onWindowFocusChanged(boolean)>(false);
+
+     label62:
+        if $i0 == 102 goto label61;
+
+     label63:
+        if $i0 == 103 goto label60;
+
+        if $i0 == 104 goto label64;
+
+        if $i0 == 105 goto label60;
+
+     label64:
+        if $i0 == 107 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+Running incremental callback analysis for 12 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.opengl.ETC1Util is a phantom class!
+Warning: android.opengl.GLES20 is a phantom class!
+Warning: android.os.SystemProperties is a phantom class!
+Warning: com.android.internal.telephony.ITelephony is a phantom class!
+Warning: com.cooguo.koipond.KoiActivity$KoiGLView is a phantom class!
+Warning: com.cooguo.koipond.KoiActivity$KoiRenderer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for fishnoodle._engine20.DialogSlider$OnClickListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonTakeMeListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonUpgradeListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonCloseListener, substituting with null...
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1, $i2;
+        com.android.apple.TestActivity $r1;
+        com.cooguo.koipond.WallpaperSettings $r2;
+        fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener $r3;
+        boolean $z0, $z1;
+        fishnoodle._engine20.DialogSlider $r4;
+        com.cooguo.koipond.DialogKoi $r5, $r7;
+        com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener $r6;
+        com.cooguo.koipond.DialogKoi$SeekBarChangedListener $r8;
+        com.android.apple.AppleService $r9;
+        android.os.IBinder $r10, $r28;
+        com.android.apple.AppleReceiver $r11;
+        com.cooguo.koipond.HowToActivity $r12;
+        fishnoodle._engine20.HowToActivity$ButtonTakeMeListener $r13, $r14;
+        fishnoodle._engine20.HowToActivity$ButtonUpgradeListener $r15, $r16;
+        fishnoodle._engine20.HowToActivity$ButtonCloseListener $r17, $r18;
+        com.android.cgos.GosReceiver $r19;
+        com.cooguo.koipond.WallpaperService $r20;
+        com.cooguo.koipond.IsolatedRenderer $r21, $r23;
+        android.service.wallpaper.WallpaperService$Engine $r22, $r24;
+        com.cooguo.koipond.TestActivity $r25;
+        com.android.cgos.AlarmReceiver $r26;
+        com.android.cgos.GosService $r27;
+        com.android.cgos.Activity3 $r29;
+        com.android.cgos.Activity2 $r30;
+        com.android.cgos.b $r31;
+        com.android.cgos.NetworkPakcage$ADResponsePackage $r32;
+        com.android.cgos.d $r33;
+        com.android.cgos.Activity1 $r34;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.apple.TestActivity;
+
+        specialinvoke $r1.<com.android.apple.TestActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.android.apple.TestActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label15;
+
+        $r2 = new com.cooguo.koipond.WallpaperSettings;
+
+        specialinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void <init>()>();
+
+        if $i0 == 9 goto label15;
+
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onResume()>();
+
+        if $i0 == 11 goto label13;
+
+     label05:
+        $r3 = new fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener;
+
+        specialinvoke $r3.<fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener: void <init>(fishnoodle._engine20.BaseWallpaperSettingsActivity,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String)>($r2, "", "", 0, 0, "", "");
+
+        if $i0 == 12 goto label06;
+
+        $z0 = virtualinvoke $r3.<fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label06:
+        if $i0 == 13 goto label07;
+
+        staticinvoke <com.cooguo.koipond.WallpaperSettings: void <clinit>()>();
+
+     label07:
+        $r4 = new fishnoodle._engine20.DialogSlider;
+
+        specialinvoke $r4.<fishnoodle._engine20.DialogSlider: void <init>(android.content.Context,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,int,int,int,fishnoodle._engine20.DialogSlider$OnClickListener)>($r2, $r2, "", "", "", 0, 0, 0, null);
+
+        if $i0 == 14 goto label08;
+
+        virtualinvoke $r4.<fishnoodle._engine20.DialogSlider: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label08:
+        if $i0 == 15 goto label09;
+
+        virtualinvoke $r4.<fishnoodle._engine20.DialogSlider: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label09:
+        $r5 = new com.cooguo.koipond.DialogKoi;
+
+        specialinvoke $r5.<com.cooguo.koipond.DialogKoi: void <init>(android.content.Context,java.lang.String,android.content.SharedPreferences,java.lang.String,int)>($r2, "", null, "", 0);
+
+        if $i0 == 16 goto label10;
+
+        virtualinvoke $r5.<com.cooguo.koipond.DialogKoi: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label10:
+        $r6 = new com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener;
+
+        specialinvoke $r6.<com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener: void <init>(com.cooguo.koipond.WallpaperSettings,int)>($r2, 0);
+
+        if $i0 == 17 goto label11;
+
+        $z1 = virtualinvoke $r6.<com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label11:
+        $r7 = new com.cooguo.koipond.DialogKoi;
+
+        specialinvoke $r7.<com.cooguo.koipond.DialogKoi: void <init>(android.content.Context,java.lang.String,android.content.SharedPreferences,java.lang.String,int)>($r2, "", null, "", 0);
+
+        $r8 = new com.cooguo.koipond.DialogKoi$SeekBarChangedListener;
+
+        specialinvoke $r8.<com.cooguo.koipond.DialogKoi$SeekBarChangedListener: void <init>(com.cooguo.koipond.DialogKoi,int)>($r7, 0);
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r8.<com.cooguo.koipond.DialogKoi$SeekBarChangedListener: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label12:
+        if $i0 == 19 goto label05;
+
+     label13:
+        if $i0 == 20 goto label04;
+
+        if $i0 == 21 goto label14;
+
+        if $i0 == 22 goto label04;
+
+     label14:
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onDestroy()>();
+
+     label15:
+        if $i0 == 24 goto label20;
+
+        $r9 = new com.android.apple.AppleService;
+
+        specialinvoke $r9.<com.android.apple.AppleService: void <init>()>();
+
+        virtualinvoke $r9.<com.android.apple.AppleService: void onCreate()>();
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        $i1 = virtualinvoke $r9.<com.android.apple.AppleService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 26 goto label16;
+
+     label17:
+        $r10 = virtualinvoke $r9.<com.android.apple.AppleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        if $i0 == 29 goto label18;
+
+     label19:
+        virtualinvoke $r9.<com.android.apple.AppleService: void onDestroy()>();
+
+     label20:
+        if $i0 == 30 goto label22;
+
+        $r11 = new com.android.apple.AppleReceiver;
+
+        specialinvoke $r11.<com.android.apple.AppleReceiver: void <init>()>();
+
+        if $i0 == 31 goto label22;
+
+     label21:
+        virtualinvoke $r11.<com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 33 goto label21;
+
+     label22:
+        if $i0 == 34 goto label29;
+
+        $r12 = new com.cooguo.koipond.HowToActivity;
+
+        specialinvoke $r12.<com.cooguo.koipond.HowToActivity: void <init>()>();
+
+        if $i0 == 35 goto label29;
+
+        virtualinvoke $r12.<com.cooguo.koipond.HowToActivity: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        if $i0 == 37 goto label28;
+
+     label24:
+        $r13 = null;
+
+        $r14 = new fishnoodle._engine20.HowToActivity$ButtonTakeMeListener;
+
+        specialinvoke $r14.<fishnoodle._engine20.HowToActivity$ButtonTakeMeListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonTakeMeListener)>($r12, $r13);
+
+        if $i0 == 38 goto label25;
+
+        virtualinvoke $r14.<fishnoodle._engine20.HowToActivity$ButtonTakeMeListener: void onClick(android.view.View)>(null);
+
+     label25:
+        $r15 = null;
+
+        $r16 = new fishnoodle._engine20.HowToActivity$ButtonUpgradeListener;
+
+        specialinvoke $r16.<fishnoodle._engine20.HowToActivity$ButtonUpgradeListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonUpgradeListener)>($r12, $r15);
+
+        if $i0 == 39 goto label26;
+
+        virtualinvoke $r16.<fishnoodle._engine20.HowToActivity$ButtonUpgradeListener: void onClick(android.view.View)>(null);
+
+     label26:
+        $r17 = null;
+
+        $r18 = new fishnoodle._engine20.HowToActivity$ButtonCloseListener;
+
+        specialinvoke $r18.<fishnoodle._engine20.HowToActivity$ButtonCloseListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonCloseListener)>($r12, $r17);
+
+        if $i0 == 40 goto label27;
+
+        virtualinvoke $r18.<fishnoodle._engine20.HowToActivity$ButtonCloseListener: void onClick(android.view.View)>(null);
+
+     label27:
+        if $i0 == 41 goto label24;
+
+     label28:
+        if $i0 == 42 goto label23;
+
+        if $i0 == 43 goto label29;
+
+        if $i0 == 44 goto label23;
+
+     label29:
+        if $i0 == 46 goto label31;
+
+        $r19 = new com.android.cgos.GosReceiver;
+
+        specialinvoke $r19.<com.android.cgos.GosReceiver: void <init>()>();
+
+        if $i0 == 47 goto label31;
+
+     label30:
+        virtualinvoke $r19.<com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 49 goto label30;
+
+     label31:
+        if $i0 == 50 goto label41;
+
+        $r20 = new com.cooguo.koipond.WallpaperService;
+
+        specialinvoke $r20.<com.cooguo.koipond.WallpaperService: void <init>()>();
+
+        virtualinvoke $r20.<fishnoodle._engine20.BaseWallpaperService: void onCreate()>();
+
+     label32:
+        if $i0 == 51 goto label33;
+
+        if $i0 == 52 goto label32;
+
+     label33:
+        if $i0 == 53 goto label37;
+
+     label34:
+        $r21 = new com.cooguo.koipond.IsolatedRenderer;
+
+        specialinvoke $r21.<com.cooguo.koipond.IsolatedRenderer: void <init>(android.content.Context)>($r20);
+
+        if $i0 == 54 goto label35;
+
+        virtualinvoke $r21.<com.cooguo.koipond.IsolatedRenderer: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label35:
+        if $i0 == 55 goto label36;
+
+        $r22 = virtualinvoke $r20.<com.cooguo.koipond.WallpaperService: android.service.wallpaper.WallpaperService$Engine onCreateEngine()>();
+
+     label36:
+        if $i0 == 56 goto label34;
+
+     label37:
+        $r23 = new com.cooguo.koipond.IsolatedRenderer;
+
+        specialinvoke $r23.<com.cooguo.koipond.IsolatedRenderer: void <init>(android.content.Context)>($r20);
+
+        if $i0 == 57 goto label38;
+
+        virtualinvoke $r23.<com.cooguo.koipond.IsolatedRenderer: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label38:
+        if $i0 == 58 goto label39;
+
+        $r24 = virtualinvoke $r20.<com.cooguo.koipond.WallpaperService: android.service.wallpaper.WallpaperService$Engine onCreateEngine()>();
+
+     label39:
+        if $i0 == 59 goto label37;
+
+        if $i0 == 60 goto label40;
+
+        if $i0 == 61 goto label37;
+
+     label40:
+        virtualinvoke $r20.<fishnoodle._engine20.BaseWallpaperService: void onDestroy()>();
+
+     label41:
+        if $i0 == 62 goto label44;
+
+        $r25 = new com.cooguo.koipond.TestActivity;
+
+        specialinvoke $r25.<com.cooguo.koipond.TestActivity: void <init>()>();
+
+        if $i0 == 63 goto label44;
+
+        virtualinvoke $r25.<fishnoodle._engine20.BaseWallpaperTestActivity: void onCreate(android.os.Bundle)>(null);
+
+     label42:
+        virtualinvoke $r25.<fishnoodle._engine20.BaseWallpaperTestActivity: void onResume()>();
+
+        virtualinvoke $r25.<fishnoodle._engine20.BaseWallpaperTestActivity: void onPause()>();
+
+        if $i0 == 65 goto label42;
+
+        if $i0 == 66 goto label43;
+
+        if $i0 == 67 goto label42;
+
+     label43:
+        virtualinvoke $r25.<fishnoodle._engine20.BaseWallpaperTestActivity: void onDestroy()>();
+
+     label44:
+        if $i0 == 69 goto label46;
+
+        $r26 = new com.android.cgos.AlarmReceiver;
+
+        specialinvoke $r26.<com.android.cgos.AlarmReceiver: void <init>()>();
+
+        if $i0 == 70 goto label46;
+
+     label45:
+        virtualinvoke $r26.<com.android.cgos.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 72 goto label45;
+
+     label46:
+        if $i0 == 73 goto label51;
+
+        $r27 = new com.android.cgos.GosService;
+
+        specialinvoke $r27.<com.android.cgos.GosService: void <init>()>();
+
+        virtualinvoke $r27.<com.android.cgos.GosService: void onCreate()>();
+
+     label47:
+        if $i0 == 74 goto label48;
+
+        $i2 = virtualinvoke $r27.<com.android.cgos.GosService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 75 goto label47;
+
+     label48:
+        $r28 = virtualinvoke $r27.<com.android.cgos.GosService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label49:
+        if $i0 == 77 goto label50;
+
+        if $i0 == 78 goto label49;
+
+     label50:
+        virtualinvoke $r27.<com.android.cgos.GosService: void onDestroy()>();
+
+     label51:
+        if $i0 == 79 goto label56;
+
+        $r29 = new com.android.cgos.Activity3;
+
+        specialinvoke $r29.<com.android.cgos.Activity3: void <init>()>();
+
+        if $i0 == 80 goto label56;
+
+        virtualinvoke $r29.<com.android.cgos.Activity3: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 82 goto label55;
+
+     label53:
+        if $i0 == 83 goto label54;
+
+        virtualinvoke $r29.<com.android.cgos.Activity3: void onWindowFocusChanged(boolean)>(false);
+
+     label54:
+        if $i0 == 84 goto label53;
+
+     label55:
+        if $i0 == 85 goto label52;
+
+        if $i0 == 86 goto label56;
+
+        if $i0 == 87 goto label52;
+
+     label56:
+        if $i0 == 89 goto label63;
+
+        $r30 = new com.android.cgos.Activity2;
+
+        specialinvoke $r30.<com.android.cgos.Activity2: void <init>()>();
+
+        if $i0 == 90 goto label63;
+
+        virtualinvoke $r30.<com.android.cgos.Activity2: void onCreate(android.os.Bundle)>(null);
+
+     label57:
+        if $i0 == 92 goto label62;
+
+     label58:
+        $r31 = new com.android.cgos.b;
+
+        specialinvoke $r31.<com.android.cgos.b: void <init>(com.android.cgos.Activity2)>($r30);
+
+        if $i0 == 93 goto label59;
+
+        virtualinvoke $r31.<com.android.cgos.b: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label59:
+        if $i0 == 94 goto label60;
+
+        virtualinvoke $r30.<com.android.cgos.Activity2: void onWindowFocusChanged(boolean)>(false);
+
+     label60:
+        $r32 = new com.android.cgos.NetworkPakcage$ADResponsePackage;
+
+        specialinvoke $r32.<com.android.cgos.NetworkPakcage$ADResponsePackage: void <init>()>();
+
+        $r33 = new com.android.cgos.d;
+
+        specialinvoke $r33.<com.android.cgos.d: void <init>(com.android.cgos.Activity2,com.android.cgos.NetworkPakcage$ADResponsePackage)>($r30, $r32);
+
+        if $i0 == 95 goto label61;
+
+        virtualinvoke $r33.<com.android.cgos.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label61:
+        if $i0 == 96 goto label58;
+
+     label62:
+        if $i0 == 97 goto label57;
+
+        if $i0 == 98 goto label63;
+
+        if $i0 == 99 goto label57;
+
+     label63:
+        if $i0 == 101 goto label68;
+
+        $r34 = new com.android.cgos.Activity1;
+
+        specialinvoke $r34.<com.android.cgos.Activity1: void <init>()>();
+
+        if $i0 == 102 goto label68;
+
+        virtualinvoke $r34.<com.android.cgos.Activity1: void onCreate(android.os.Bundle)>(null);
+
+     label64:
+        if $i0 == 104 goto label67;
+
+     label65:
+        if $i0 == 105 goto label66;
+
+        virtualinvoke $r34.<com.android.cgos.Activity1: void onWindowFocusChanged(boolean)>(false);
+
+     label66:
+        if $i0 == 106 goto label65;
+
+     label67:
+        if $i0 == 107 goto label64;
+
+        if $i0 == 108 goto label68;
+
+        if $i0 == 109 goto label64;
+
+     label68:
+        if $i0 == 111 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 36 callback methods for 12 components
+Found {res/layout/howto_nook.xml=[2131230737 - android.widget.Button, 2131230730 - android.widget.LinearLayout, 2131230735 - android.widget.TextView, 2131230743 - android.widget.Button, -1 - android.widget.RelativeLayout, 2131230733 - android.widget.TextView, 2131230734 - android.widget.TextView, 2131230732 - android.widget.TextView, 2131230731 - android.widget.TextView, 2131230739 - android.widget.Button], res/layout/upsell_landscape.xml=[2131230763 - android.widget.TextView, 2131230770 - android.widget.LinearLayout, 2131230764 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131230730 - android.widget.LinearLayout, 2131230767 - android.widget.TextView, 2131230761 - android.widget.TextView, 2131230759 - android.widget.TextView, 2131230762 - android.widget.TextView, 2131230738 - android.widget.Button, 2131230760 - android.widget.TextView, 2131230739 - android.widget.Button, 2131230765 - android.widget.LinearLayout, 2131230768 - android.widget.LinearLayout, 2131230769 - android.widget.LinearLayout, 2131230766 - android.widget.Button], res/layout/testactivitylayout.xml=[2131230751 - android.widget.LinearLayout, 2131230752 - android.widget.LinearLayout, 2131230756 - android.widget.Button, 2131230757 - android.widget.Button, 2131230755 - android.widget.Button, 2131230753 - android.widget.Button, 2131230754 - android.widget.Button, 2131230743 - android.widget.Button, -1 - android.widget.RelativeLayout], res/layout/color_picker.xml=[2131230724 - android.widget.SeekBar, -1 - android.widget.LinearLayout, 2131230720 - android.view.View, 2131230721 - android.widget.SeekBar, -1 - android.widget.ScrollView, 2131230722 - android.widget.SeekBar, 2131230723 - android.widget.SeekBar], res/layout/howto.xml=[2131230737 - android.widget.Button, 2131230730 - android.widget.LinearLayout, 2131230736 - android.widget.TextView, 2131230735 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131230733 - android.widget.TextView, 2131230734 - android.widget.TextView, 2131230732 - android.widget.TextView, 2131230738 - android.widget.Button, 2131230731 - android.widget.TextView, 2131230739 - android.widget.Button], res/layout/dialogkoi_layout.xml=[2131230727 - android.widget.LinearLayout, 2131230725 - android.widget.LinearLayout, 2131230726 - android.widget.Gallery, 2131230728 - android.widget.TextView, 2131230729 - android.widget.SeekBar], res/layout/preferencecolor_layout.xml=[2131230748 - android.widget.TextView, 2131230747 - android.widget.TextView, 2131230749 - android.widget.ImageView, 2131230746 - android.widget.LinearLayout, 2131230745 - android.widget.LinearLayout], res/layout/upsell.xml=[2131230763 - android.widget.TextView, 2131230764 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131230730 - android.widget.LinearLayout, 2131230758 - android.widget.TextView, 2131230761 - android.widget.TextView, 2131230759 - android.widget.TextView, 2131230762 - android.widget.TextView, 2131230738 - android.widget.Button, 2131230760 - android.widget.TextView, 2131230739 - android.widget.Button, 2131230765 - android.widget.LinearLayout, 2131230766 - android.widget.Button], res/layout/howto_landscape.xml=[2131230730 - android.widget.LinearLayout, 2131230741 - android.widget.LinearLayout, 2131230740 - android.widget.LinearLayout, 2131230742 - android.widget.LinearLayout, 2131230738 - android.widget.Button, 2131230739 - android.widget.Button, 2131230737 - android.widget.Button, 2131230736 - android.widget.TextView, 2131230735 - android.widget.TextView, 2131230733 - android.widget.TextView, 2131230734 - android.widget.TextView, 2131230732 - android.widget.TextView, 2131230731 - android.widget.TextView], res/layout/preferencethumbnail_layout.xml=[2131230748 - android.widget.TextView, 2131230747 - android.widget.TextView, 2131230750 - android.widget.ImageView, 2131230746 - android.widget.LinearLayout, 2131230745 - android.widget.LinearLayout], res/layout/howto_nosupport.xml=[2131230730 - android.widget.LinearLayout, 2131230744 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131230731 - android.widget.TextView, 2131230739 - android.widget.Button], res/layout/value_slider.xml=[-1 - android.widget.LinearLayout, 2131230771 - android.widget.TextView, 2131230773 - android.widget.TextView, 2131230774 - android.widget.SeekBar, 2131230775 - android.widget.TextView, -1 - android.widget.ScrollView, 2131230772 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 36 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4eae155c5fb1784f5036879c93b43c1f6b574a7ff5c98551f29c4729dff83477.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.opengl.ETC1Util is a phantom class!
+Warning: android.opengl.GLES20 is a phantom class!
+Warning: android.os.SystemProperties is a phantom class!
+Warning: com.android.internal.telephony.ITelephony is a phantom class!
+Warning: com.cooguo.koipond.KoiActivity$KoiGLView is a phantom class!
+Warning: com.cooguo.koipond.KoiActivity$KoiRenderer is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for fishnoodle._engine20.DialogSlider$OnClickListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonUpgradeListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonCloseListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class fishnoodle._engine20.HowToActivity$ButtonTakeMeListener, substituting with null...
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1, $i2;
+        com.android.apple.TestActivity $r1;
+        com.cooguo.koipond.WallpaperSettings $r2;
+        fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener $r3;
+        boolean $z0, $z1;
+        com.cooguo.koipond.DialogKoi $r4, $r6;
+        fishnoodle._engine20.DialogSlider $r5;
+        com.cooguo.koipond.DialogKoi$SeekBarChangedListener $r7;
+        com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener $r8;
+        com.android.apple.AppleService $r9;
+        android.os.IBinder $r10, $r28;
+        com.android.apple.AppleReceiver $r11;
+        com.cooguo.koipond.HowToActivity $r12;
+        fishnoodle._engine20.HowToActivity$ButtonUpgradeListener $r13, $r14;
+        fishnoodle._engine20.HowToActivity$ButtonCloseListener $r15, $r16;
+        fishnoodle._engine20.HowToActivity$ButtonTakeMeListener $r17, $r18;
+        com.android.cgos.GosReceiver $r19;
+        com.cooguo.koipond.WallpaperService $r20;
+        com.cooguo.koipond.IsolatedRenderer $r21, $r23;
+        android.service.wallpaper.WallpaperService$Engine $r22, $r24;
+        com.cooguo.koipond.TestActivity $r25;
+        com.android.cgos.AlarmReceiver $r26;
+        com.android.cgos.GosService $r27;
+        com.android.cgos.Activity3 $r29;
+        com.android.cgos.Activity2 $r30;
+        com.android.cgos.b $r31;
+        com.android.cgos.NetworkPakcage$ADResponsePackage $r32;
+        com.android.cgos.d $r33;
+        com.android.cgos.Activity1 $r34;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.apple.TestActivity;
+
+        specialinvoke $r1.<com.android.apple.TestActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.android.apple.TestActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label15;
+
+        $r2 = new com.cooguo.koipond.WallpaperSettings;
+
+        specialinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void <init>()>();
+
+        if $i0 == 9 goto label15;
+
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onResume()>();
+
+        if $i0 == 11 goto label13;
+
+     label05:
+        $r3 = new fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener;
+
+        specialinvoke $r3.<fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener: void <init>(fishnoodle._engine20.BaseWallpaperSettingsActivity,java.lang.String,java.lang.String,int,int,java.lang.String,java.lang.String)>($r2, "", "", 0, 0, "", "");
+
+        if $i0 == 12 goto label06;
+
+        $z0 = virtualinvoke $r3.<fishnoodle._engine20.BaseWallpaperSettingsActivity$PrefButtonSliderListener: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label06:
+        $r4 = new com.cooguo.koipond.DialogKoi;
+
+        specialinvoke $r4.<com.cooguo.koipond.DialogKoi: void <init>(android.content.Context,java.lang.String,android.content.SharedPreferences,java.lang.String,int)>($r2, "", null, "", 0);
+
+        if $i0 == 13 goto label07;
+
+        virtualinvoke $r4.<com.cooguo.koipond.DialogKoi: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label07:
+        $r5 = new fishnoodle._engine20.DialogSlider;
+
+        specialinvoke $r5.<fishnoodle._engine20.DialogSlider: void <init>(android.content.Context,java.lang.Object,java.lang.String,java.lang.String,java.lang.String,int,int,int,fishnoodle._engine20.DialogSlider$OnClickListener)>($r2, $r2, "", "", "", 0, 0, 0, null);
+
+        if $i0 == 14 goto label08;
+
+        virtualinvoke $r5.<fishnoodle._engine20.DialogSlider: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label08:
+        if $i0 == 15 goto label09;
+
+        virtualinvoke $r5.<fishnoodle._engine20.DialogSlider: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label09:
+        $r6 = new com.cooguo.koipond.DialogKoi;
+
+        specialinvoke $r6.<com.cooguo.koipond.DialogKoi: void <init>(android.content.Context,java.lang.String,android.content.SharedPreferences,java.lang.String,int)>($r2, "", null, "", 0);
+
+        $r7 = new com.cooguo.koipond.DialogKoi$SeekBarChangedListener;
+
+        specialinvoke $r7.<com.cooguo.koipond.DialogKoi$SeekBarChangedListener: void <init>(com.cooguo.koipond.DialogKoi,int)>($r6, 0);
+
+        if $i0 == 16 goto label10;
+
+        virtualinvoke $r7.<com.cooguo.koipond.DialogKoi$SeekBarChangedListener: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label10:
+        if $i0 == 17 goto label11;
+
+        staticinvoke <com.cooguo.koipond.WallpaperSettings: void <clinit>()>();
+
+     label11:
+        $r8 = new com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener;
+
+        specialinvoke $r8.<com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener: void <init>(com.cooguo.koipond.WallpaperSettings,int)>($r2, 0);
+
+        if $i0 == 18 goto label12;
+
+        $z1 = virtualinvoke $r8.<com.cooguo.koipond.WallpaperSettings$PrefButtonKoiListener: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label12:
+        if $i0 == 19 goto label05;
+
+     label13:
+        if $i0 == 20 goto label04;
+
+        if $i0 == 21 goto label14;
+
+        if $i0 == 22 goto label04;
+
+     label14:
+        virtualinvoke $r2.<com.cooguo.koipond.WallpaperSettings: void onDestroy()>();
+
+     label15:
+        if $i0 == 24 goto label20;
+
+        $r9 = new com.android.apple.AppleService;
+
+        specialinvoke $r9.<com.android.apple.AppleService: void <init>()>();
+
+        virtualinvoke $r9.<com.android.apple.AppleService: void onCreate()>();
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        $i1 = virtualinvoke $r9.<com.android.apple.AppleService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 26 goto label16;
+
+     label17:
+        $r10 = virtualinvoke $r9.<com.android.apple.AppleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        if $i0 == 29 goto label18;
+
+     label19:
+        virtualinvoke $r9.<com.android.apple.AppleService: void onDestroy()>();
+
+     label20:
+        if $i0 == 30 goto label22;
+
+        $r11 = new com.android.apple.AppleReceiver;
+
+        specialinvoke $r11.<com.android.apple.AppleReceiver: void <init>()>();
+
+        if $i0 == 31 goto label22;
+
+     label21:
+        virtualinvoke $r11.<com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 33 goto label21;
+
+     label22:
+        if $i0 == 34 goto label29;
+
+        $r12 = new com.cooguo.koipond.HowToActivity;
+
+        specialinvoke $r12.<com.cooguo.koipond.HowToActivity: void <init>()>();
+
+        if $i0 == 35 goto label29;
+
+        virtualinvoke $r12.<com.cooguo.koipond.HowToActivity: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        if $i0 == 37 goto label28;
+
+     label24:
+        $r13 = null;
+
+        $r14 = new fishnoodle._engine20.HowToActivity$ButtonUpgradeListener;
+
+        specialinvoke $r14.<fishnoodle._engine20.HowToActivity$ButtonUpgradeListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonUpgradeListener)>($r12, $r13);
+
+        if $i0 == 38 goto label25;
+
+        virtualinvoke $r14.<fishnoodle._engine20.HowToActivity$ButtonUpgradeListener: void onClick(android.view.View)>(null);
+
+     label25:
+        $r15 = null;
+
+        $r16 = new fishnoodle._engine20.HowToActivity$ButtonCloseListener;
+
+        specialinvoke $r16.<fishnoodle._engine20.HowToActivity$ButtonCloseListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonCloseListener)>($r12, $r15);
+
+        if $i0 == 39 goto label26;
+
+        virtualinvoke $r16.<fishnoodle._engine20.HowToActivity$ButtonCloseListener: void onClick(android.view.View)>(null);
+
+     label26:
+        $r17 = null;
+
+        $r18 = new fishnoodle._engine20.HowToActivity$ButtonTakeMeListener;
+
+        specialinvoke $r18.<fishnoodle._engine20.HowToActivity$ButtonTakeMeListener: void <init>(fishnoodle._engine20.HowToActivity,fishnoodle._engine20.HowToActivity$ButtonTakeMeListener)>($r12, $r17);
+
+        if $i0 == 40 goto label27;
+
+        virtualinvoke $r18.<fishnoodle._engine20.HowToActivity$ButtonTakeMeListener: void onClick(android.view.View)>(null);
+
+     label27:
+        if $i0 == 41 goto label24;
+
+     label28:
+        if $i0 == 42 goto label23;
+
+        if $i0 == 43 goto label29;
+
+        if $i0 == 44 goto label23;
+
+     label29:
+        if $i0 == 46 goto label31;
+
+        $r19 = new com.android.cgos.GosReceiver;
+
+        specialinvoke $r19.<com.android.cgos.GosReceiver: void <init>()>();
+
+        if $i0 == 47 goto label31;
+
+     label30:
+        virtualinvoke $r19.<com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 49 goto label30;
+
+     label31:
+        if $i0 == 50 goto label41;
+
+        $r20 = new com.cooguo.koipond.WallpaperService;
+
+        specialinvoke $r20.<com.cooguo.koipond.WallpaperService: void <init>()>();
+
+        virtualinvoke $r20.<fishnoodle._engine20.BaseWallpaperService: void onCreate()>();
+
+     label32:
+        if $i0 == 51 goto label33;
+
+        if $i0 == 52 goto label32;
+
+     label33:
+        if $i0 == 53 goto label37;
+
+     label34:
+        $r21 = new com.cooguo.koipond.IsolatedRenderer;
+
+        specialinvoke $r21.<com.cooguo.koipond.IsolatedRenderer: void <init>(android.content.Context)>($r20);
+
+        if $i0 == 54 goto label35;
+
+        virtualinvoke $r21.<com.cooguo.koipond.IsolatedRenderer: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label35:
+        if $i0 == 55 goto label36;
+
+        $r22 = virtualinvoke $r20.<com.cooguo.koipond.WallpaperService: android.service.wallpaper.WallpaperService$Engine onCreateEngine()>();
+
+     label36:
+        if $i0 == 56 goto label34;
+
+     label37:
+        $r23 = new com.cooguo.koipond.IsolatedRenderer;
+
+        specialinvoke $r23.<com.cooguo.koipond.IsolatedRenderer: void <init>(android.content.Context)>($r20);
+
+        if $i0 == 57 goto label38;
+
+        virtualinvoke $r23.<com.cooguo.koipond.IsolatedRenderer: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label38:
+        if $i0 == 58 goto label39;
+
+        $r24 = virtualinvoke $r20.<com.cooguo.koipond.WallpaperService: android.service.wallpaper.WallpaperService$Engine onCreateEngine()>();
+
+     label39:
+        if $i0 == 59 goto label37;
+
+        if $i0 == 60 goto label40;
+
+        if $i0 == 61 goto label37;
+
+     label40:
+        virtualinvoke $r20.<fishnoodle._engine20.BaseWallpaperService: void onDestroy()>();
+
+     label41:
+        if $i0 == 62 goto label44;
+
+        $r25 = new com.cooguo.koipond.TestActivity;
+
+        specialinvoke $r25.<com.cooguo.koipond.TestActivity: void <init>()>();
+
+        if $i0 == 63 goto label44;
+
+        virtualinvoke $r25.<fishnoodle._engine20.BaseWallpaperTestActivity: void onCreate(android.os.Bundle)>(null);
+
+     label42:
+        virtualinvoke $r25.<fishnoodle._engine20.BaseWallpaperTestActivity: void onResume()>();
+
+        virtualinvoke $r25.<fishnoodle._engine20.BaseWallpaperTestActivity: void onPause()>();
+
+        if $i0 == 65 goto label42;
+
+        if $i0 == 66 goto label43;
+
+        if $i0 == 67 goto label42;
+
+     label43:
+        virtualinvoke $r25.<fishnoodle._engine20.BaseWallpaperTestActivity: void onDestroy()>();
+
+     label44:
+        if $i0 == 69 goto label46;
+
+        $r26 = new com.android.cgos.AlarmReceiver;
+
+        specialinvoke $r26.<com.android.cgos.AlarmReceiver: void <init>()>();
+
+        if $i0 == 70 goto label46;
+
+     label45:
+        virtualinvoke $r26.<com.android.cgos.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 72 goto label45;
+
+     label46:
+        if $i0 == 73 goto label51;
+
+        $r27 = new com.android.cgos.GosService;
+
+        specialinvoke $r27.<com.android.cgos.GosService: void <init>()>();
+
+        virtualinvoke $r27.<com.android.cgos.GosService: void onCreate()>();
+
+     label47:
+        if $i0 == 74 goto label48;
+
+        $i2 = virtualinvoke $r27.<com.android.cgos.GosService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 75 goto label47;
+
+     label48:
+        $r28 = virtualinvoke $r27.<com.android.cgos.GosService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label49:
+        if $i0 == 77 goto label50;
+
+        if $i0 == 78 goto label49;
+
+     label50:
+        virtualinvoke $r27.<com.android.cgos.GosService: void onDestroy()>();
+
+     label51:
+        if $i0 == 79 goto label56;
+
+        $r29 = new com.android.cgos.Activity3;
+
+        specialinvoke $r29.<com.android.cgos.Activity3: void <init>()>();
+
+        if $i0 == 80 goto label56;
+
+        virtualinvoke $r29.<com.android.cgos.Activity3: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 82 goto label55;
+
+     label53:
+        if $i0 == 83 goto label54;
+
+        virtualinvoke $r29.<com.android.cgos.Activity3: void onWindowFocusChanged(boolean)>(false);
+
+     label54:
+        if $i0 == 84 goto label53;
+
+     label55:
+        if $i0 == 85 goto label52;
+
+        if $i0 == 86 goto label56;
+
+        if $i0 == 87 goto label52;
+
+     label56:
+        if $i0 == 89 goto label63;
+
+        $r30 = new com.android.cgos.Activity2;
+
+        specialinvoke $r30.<com.android.cgos.Activity2: void <init>()>();
+
+        if $i0 == 90 goto label63;
+
+        virtualinvoke $r30.<com.android.cgos.Activity2: void onCreate(android.os.Bundle)>(null);
+
+     label57:
+        if $i0 == 92 goto label62;
+
+     label58:
+        $r31 = new com.android.cgos.b;
+
+        specialinvoke $r31.<com.android.cgos.b: void <init>(com.android.cgos.Activity2)>($r30);
+
+        if $i0 == 93 goto label59;
+
+        virtualinvoke $r31.<com.android.cgos.b: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label59:
+        if $i0 == 94 goto label60;
+
+        virtualinvoke $r30.<com.android.cgos.Activity2: void onWindowFocusChanged(boolean)>(false);
+
+     label60:
+        $r32 = new com.android.cgos.NetworkPakcage$ADResponsePackage;
+
+        specialinvoke $r32.<com.android.cgos.NetworkPakcage$ADResponsePackage: void <init>()>();
+
+        $r33 = new com.android.cgos.d;
+
+        specialinvoke $r33.<com.android.cgos.d: void <init>(com.android.cgos.Activity2,com.android.cgos.NetworkPakcage$ADResponsePackage)>($r30, $r32);
+
+        if $i0 == 95 goto label61;
+
+        virtualinvoke $r33.<com.android.cgos.d: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label61:
+        if $i0 == 96 goto label58;
+
+     label62:
+        if $i0 == 97 goto label57;
+
+        if $i0 == 98 goto label63;
+
+        if $i0 == 99 goto label57;
+
+     label63:
+        if $i0 == 101 goto label68;
+
+        $r34 = new com.android.cgos.Activity1;
+
+        specialinvoke $r34.<com.android.cgos.Activity1: void <init>()>();
+
+        if $i0 == 102 goto label68;
+
+        virtualinvoke $r34.<com.android.cgos.Activity1: void onCreate(android.os.Bundle)>(null);
+
+     label64:
+        if $i0 == 104 goto label67;
+
+     label65:
+        if $i0 == 105 goto label66;
+
+        virtualinvoke $r34.<com.android.cgos.Activity1: void onWindowFocusChanged(boolean)>(false);
+
+     label66:
+        if $i0 == 106 goto label65;
+
+     label67:
+        if $i0 == 107 goto label64;
+
+        if $i0 == 108 goto label68;
+
+        if $i0 == 109 goto label64;
+
+     label68:
+        if $i0 == 111 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.219143074 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.134421836 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2533 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 57 sources and 64 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 16611
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 60016
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 239142 forward and 74578 backward edges solved, processing 10 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 10 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.006884543 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<com.android.apple.AppleService$ServiceHandler: boolean sendMessage(android.os.Message)>($r2) in method <com.android.apple.AppleService: int onStartCommand(android.content.Intent,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Intent in method <com.android.apple.AppleService: int onStartCommand(android.content.Intent,int,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r6) in method <com.android.cgos.GosUtil: boolean updateMessageState(android.content.Context,com.android.cgos.NetworkPakcage$ADResponsePackage)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r0.<com.android.cgos.Activity2: android.content.Intent getIntent()>() in method <com.android.cgos.Activity2: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r0.<com.android.cgos.Activity1: android.content.Intent getIntent()>() in method <com.android.cgos.Activity1: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r0.<com.android.cgos.Activity3: android.content.Intent getIntent()>() in method <com.android.cgos.Activity3: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("apple", $r3) in method <com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1) in method <com.android.apple.AppleReceiver: void beginStartingService(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("android_gos", $r3) in method <com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5) in method <com.android.cgos.GosReceiver: void a(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<com.android.cgos.k: boolean sendMessage(android.os.Message)>($r3) in method <com.android.cgos.GosService: int onStartCommand(android.content.Intent,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.cgos.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<com.android.cgos.k: android.os.Message obtainMessage()>() in method <com.android.cgos.GosService: int onStartCommand(android.content.Intent,int,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.os.Handler: boolean sendMessage(android.os.Message)>($r2) in method <com.android.cgos.j: void a()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <com.android.cgos.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r3.<com.android.apple.AppleService$ServiceHandler: boolean sendMessage(android.os.Message)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Intent (in <com.android.apple.AppleService: int onStartCommand(android.content.Intent,int,int)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r4, $r6), from the following sources:
+	- $r3 = virtualinvoke $r0.<com.android.cgos.Activity2: android.content.Intent getIntent()>() (in <com.android.cgos.Activity2: void onCreate(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r0.<com.android.cgos.Activity1: android.content.Intent getIntent()>() (in <com.android.cgos.Activity1: void onCreate(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = virtualinvoke $r0.<com.android.cgos.Activity3: android.content.Intent getIntent()>() (in <com.android.cgos.Activity3: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("apple", $r3), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.apple.AppleReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("android_gos", $r3), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.cgos.GosReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r2.<com.android.cgos.k: boolean sendMessage(android.os.Message)>($r3), from the following sources:
+	- $r0 := @parameter0: android.content.Context (in <com.android.cgos.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = virtualinvoke $r2.<com.android.cgos.k: android.os.Message obtainMessage()>() (in <com.android.cgos.GosService: int onStartCommand(android.content.Intent,int,int)>)
+Found a flow to sink virtualinvoke $r5.<android.os.Handler: boolean sendMessage(android.os.Message)>($r2), from the following sources:
+	- $r0 := @parameter0: android.content.Context (in <com.android.cgos.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 508.144736 MB
+Analysis has run for 10.825333595 seconds

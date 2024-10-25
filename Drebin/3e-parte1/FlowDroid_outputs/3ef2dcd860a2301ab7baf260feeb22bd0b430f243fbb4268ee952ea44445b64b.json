@@ -1,0 +1,513 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012690944 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.app.downloader.ServiceController $r1;
+        com.app.downloader.AndroidService $r2;
+        android.os.IBinder $r3;
+        boolean $z0;
+        com.app.downloader.SmsReceiver $r4;
+        com.app.downloader.BootReceiver $r5;
+        com.app.downloader.AppDownloaderActivity $r6;
+        com.app.downloader.FinalActivity $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.app.downloader.ServiceController;
+
+        specialinvoke $r1.<com.app.downloader.ServiceController: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label08;
+
+        $r2 = new com.app.downloader.AndroidService;
+
+        specialinvoke $r2.<com.app.downloader.AndroidService: void <init>()>();
+
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onCreate()>();
+
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        if $i0 == 6 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.app.downloader.AndroidService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        $z0 = virtualinvoke $r2.<com.app.downloader.AndroidService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 8 goto label07;
+
+        if $i0 == 9 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label10;
+
+        $r4 = new com.app.downloader.SmsReceiver;
+
+        specialinvoke $r4.<com.app.downloader.SmsReceiver: void <init>()>();
+
+        if $i0 == 11 goto label10;
+
+     label09:
+        virtualinvoke $r4.<com.app.downloader.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label09;
+
+     label10:
+        if $i0 == 14 goto label12;
+
+        $r5 = new com.app.downloader.BootReceiver;
+
+        specialinvoke $r5.<com.app.downloader.BootReceiver: void <init>()>();
+
+        if $i0 == 15 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.app.downloader.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label11;
+
+     label12:
+        if $i0 == 18 goto label14;
+
+        $r6 = new com.app.downloader.AppDownloaderActivity;
+
+        specialinvoke $r6.<com.app.downloader.AppDownloaderActivity: void <init>()>();
+
+        if $i0 == 19 goto label14;
+
+        virtualinvoke $r6.<com.app.downloader.AppDownloaderActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 22 goto label14;
+
+        if $i0 == 23 goto label13;
+
+     label14:
+        if $i0 == 25 goto label16;
+
+        $r7 = new com.app.downloader.FinalActivity;
+
+        specialinvoke $r7.<com.app.downloader.FinalActivity: void <init>()>();
+
+        if $i0 == 26 goto label16;
+
+        virtualinvoke $r7.<com.app.downloader.FinalActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 29 goto label16;
+
+        if $i0 == 30 goto label15;
+
+     label16:
+        if $i0 == 32 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.app.downloader.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.app.downloader.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.app.downloader.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/info.xml
+Warning: ProgressBar is a phantom class!
+Warning: com.app.downloader.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.app.downloader.ServiceController $r1;
+        com.app.downloader.AndroidService $r2;
+        android.os.IBinder $r3;
+        boolean $z0;
+        com.app.downloader.SmsReceiver $r4;
+        com.app.downloader.BootReceiver $r5;
+        com.app.downloader.AppDownloaderActivity $r6;
+        com.app.downloader.FinalActivity $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.app.downloader.ServiceController;
+
+        specialinvoke $r1.<com.app.downloader.ServiceController: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label08;
+
+        $r2 = new com.app.downloader.AndroidService;
+
+        specialinvoke $r2.<com.app.downloader.AndroidService: void <init>()>();
+
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onCreate()>();
+
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        if $i0 == 6 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.app.downloader.AndroidService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        $z0 = virtualinvoke $r2.<com.app.downloader.AndroidService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 8 goto label07;
+
+        if $i0 == 9 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label10;
+
+        $r4 = new com.app.downloader.SmsReceiver;
+
+        specialinvoke $r4.<com.app.downloader.SmsReceiver: void <init>()>();
+
+        if $i0 == 11 goto label10;
+
+     label09:
+        virtualinvoke $r4.<com.app.downloader.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label09;
+
+     label10:
+        if $i0 == 14 goto label12;
+
+        $r5 = new com.app.downloader.BootReceiver;
+
+        specialinvoke $r5.<com.app.downloader.BootReceiver: void <init>()>();
+
+        if $i0 == 15 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.app.downloader.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label11;
+
+     label12:
+        if $i0 == 18 goto label14;
+
+        $r6 = new com.app.downloader.AppDownloaderActivity;
+
+        specialinvoke $r6.<com.app.downloader.AppDownloaderActivity: void <init>()>();
+
+        if $i0 == 19 goto label14;
+
+        virtualinvoke $r6.<com.app.downloader.AppDownloaderActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 22 goto label13;
+
+        if $i0 == 23 goto label14;
+
+        if $i0 == 24 goto label13;
+
+     label14:
+        if $i0 == 26 goto label16;
+
+        $r7 = new com.app.downloader.FinalActivity;
+
+        specialinvoke $r7.<com.app.downloader.FinalActivity: void <init>()>();
+
+        if $i0 == 27 goto label16;
+
+        virtualinvoke $r7.<com.app.downloader.FinalActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 30 goto label15;
+
+        if $i0 == 31 goto label16;
+
+        if $i0 == 32 goto label15;
+
+     label16:
+        if $i0 == 34 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 9 callback methods for 6 components
+Found {res/layout/main.xml=[2131034115 - android.widget.ProgressBar, 2131034116 - android.widget.TextView, 2131034117 - android.widget.TextView, 2131034114 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131034113 - android.widget.TextView], res/layout/info.xml=[2131034112 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131034113 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 9 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/3ef2dcd860a2301ab7baf260feeb22bd0b430f243fbb4268ee952ea44445b64b.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.app.downloader.ServiceController $r1;
+        com.app.downloader.AndroidService $r2;
+        android.os.IBinder $r3;
+        boolean $z0;
+        com.app.downloader.SmsReceiver $r4;
+        com.app.downloader.BootReceiver $r5;
+        com.app.downloader.AppDownloaderActivity $r6;
+        com.app.downloader.FinalActivity $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.app.downloader.ServiceController;
+
+        specialinvoke $r1.<com.app.downloader.ServiceController: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label08;
+
+        $r2 = new com.app.downloader.AndroidService;
+
+        specialinvoke $r2.<com.app.downloader.AndroidService: void <init>()>();
+
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onCreate()>();
+
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        if $i0 == 6 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.app.downloader.AndroidService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        $z0 = virtualinvoke $r2.<com.app.downloader.AndroidService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 8 goto label07;
+
+        if $i0 == 9 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.app.downloader.AndroidService: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label10;
+
+        $r4 = new com.app.downloader.SmsReceiver;
+
+        specialinvoke $r4.<com.app.downloader.SmsReceiver: void <init>()>();
+
+        if $i0 == 11 goto label10;
+
+     label09:
+        virtualinvoke $r4.<com.app.downloader.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label09;
+
+     label10:
+        if $i0 == 14 goto label12;
+
+        $r5 = new com.app.downloader.BootReceiver;
+
+        specialinvoke $r5.<com.app.downloader.BootReceiver: void <init>()>();
+
+        if $i0 == 15 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.app.downloader.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label11;
+
+     label12:
+        if $i0 == 18 goto label14;
+
+        $r6 = new com.app.downloader.AppDownloaderActivity;
+
+        specialinvoke $r6.<com.app.downloader.AppDownloaderActivity: void <init>()>();
+
+        if $i0 == 19 goto label14;
+
+        virtualinvoke $r6.<com.app.downloader.AppDownloaderActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 22 goto label13;
+
+        if $i0 == 23 goto label14;
+
+        if $i0 == 24 goto label13;
+
+     label14:
+        if $i0 == 26 goto label16;
+
+        $r7 = new com.app.downloader.FinalActivity;
+
+        specialinvoke $r7.<com.app.downloader.FinalActivity: void <init>()>();
+
+        if $i0 == 27 goto label16;
+
+        virtualinvoke $r7.<com.app.downloader.FinalActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 30 goto label15;
+
+        if $i0 == 31 goto label16;
+
+        if $i0 == 32 goto label15;
+
+     label16:
+        if $i0 == 34 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.226246447 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.029450617 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 269 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 29 sources and 12 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 957
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1706
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 9546 forward and 3041 backward edges solved, processing 7 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 7 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.005291988 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r23 = virtualinvoke $r21.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r22, null, null, null, null) in method <com.app.downloader.ServiceController$CheckTask: java.lang.String doInBackground(java.lang.String[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r28 = virtualinvoke $r21.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r22, null, $r12, null, null) in method <com.app.downloader.ServiceController$CheckTask: java.lang.String doInBackground(java.lang.String[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = interfaceinvoke $r23.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.app.downloader.ServiceController$CheckTask: java.lang.String doInBackground(java.lang.String[])>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = interfaceinvoke $r28.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.app.downloader.ServiceController$CheckTask: java.lang.String doInBackground(java.lang.String[])>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r1) in method <com.app.downloader.AppDownloaderActivity$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Handler: android.os.Message obtainMessage()>() in method <com.app.downloader.AppDownloaderActivity$2: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<android.content.Context: void startActivity(android.content.Intent)>($r25) in method <com.app.downloader.ServiceController$CheckTask: java.lang.String doInBackground(java.lang.String[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r3) in method <com.app.downloader.ServiceController: void saveBookmark(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.app.downloader.BootReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.app.downloader.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink $r23 = virtualinvoke $r21.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r22, null, null, null, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r28 = virtualinvoke $r21.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r22, null, $r12, null, null), from the following sources:
+	- $r12 = interfaceinvoke $r23.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.app.downloader.ServiceController$CheckTask: java.lang.String doInBackground(java.lang.String[])>)
+	- $r12 = interfaceinvoke $r28.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.app.downloader.ServiceController$CheckTask: java.lang.String doInBackground(java.lang.String[])>)
+	- $r1 := @parameter0: android.content.Context (in <com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r1), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Handler: android.os.Message obtainMessage()>() (in <com.app.downloader.AppDownloaderActivity$2: void run()>)
+Found a flow to sink virtualinvoke $r8.<android.content.Context: void startActivity(android.content.Intent)>($r25), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r3), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.app.downloader.ServiceController: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.app.downloader.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 74.588472 MB
+Analysis has run for 3.755545438 seconds

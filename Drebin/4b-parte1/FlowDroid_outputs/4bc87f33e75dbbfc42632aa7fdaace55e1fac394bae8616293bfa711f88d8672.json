@@ -1,0 +1,883 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.010818431 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.testService.TServiceBroadcastReceiver $r1;
+        com.testService.testService $r2;
+        com.testService.TService $r3;
+        android.os.IBinder $r4;
+        boolean $z0;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.testService.TServiceBroadcastReceiver;
+
+        specialinvoke $r1.<com.testService.TServiceBroadcastReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.testService.TServiceBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.testService.testService;
+
+        specialinvoke $r2.<com.testService.testService: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<com.testService.testService: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        if $i0 == 11 goto label10;
+
+        $r3 = new com.testService.TService;
+
+        specialinvoke $r3.<com.testService.TService: void <init>()>();
+
+        virtualinvoke $r3.<com.testService.TService: void onCreate()>();
+
+        virtualinvoke $r3.<com.testService.TService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        if $i0 == 13 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<com.testService.TService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        $z0 = virtualinvoke $r3.<com.testService.TService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 15 goto label09;
+
+        virtualinvoke $r3.<com.testService.TService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 16 goto label08;
+
+     label09:
+        virtualinvoke $r3.<com.testService.TService: void onDestroy()>();
+
+     label10:
+        if $i0 == 17 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.testService.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.testService.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.testService.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.testService.TServiceBroadcastReceiver $r1;
+        com.testService.testService $r2;
+        net.ludodevel.sabcontrol.SABcontrol $r3, $r6, $r10, $r12, $r20, $r31;
+        net.ludodevel.sabcontrol.SABcontrol$16 $r4;
+        com.testService.testService$1 $r5;
+        net.ludodevel.sabcontrol.SABcontrol$2 $r7;
+        net.ludodevel.filechooser.FileChooser $r8, $r18, $r24, $r33, $r35;
+        net.ludodevel.filechooser.FileChooser$4 $r9;
+        net.ludodevel.sabcontrol.SABcontrol$17 $r11;
+        net.ludodevel.sabcontrol.SABcontrol$15 $r13;
+        com.android.Main $r14, $r16, $r22, $r29;
+        com.android.Main$4 $r15;
+        com.android.Main$3 $r17;
+        net.ludodevel.filechooser.FileChooser$3 $r19;
+        net.ludodevel.sabcontrol.SABcontrol$1 $r21;
+        com.android.Main$2 $r23;
+        net.ludodevel.filechooser.FileChooser$2 $r25;
+        com.testService.testService$2 $r26;
+        org.dssl.fileMonitor.FileMonitorActivity $r27;
+        org.dssl.fileMonitor.FileMonitorActivity$1 $r28;
+        com.android.Main$1 $r30;
+        net.ludodevel.sabcontrol.SABcontrol$3 $r32;
+        net.ludodevel.filechooser.FileChooser$6 $r34;
+        net.ludodevel.filechooser.FileChooser$5 $r36;
+        com.testService.TService $r37;
+        android.os.IBinder $r38;
+        boolean $z0;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.testService.TServiceBroadcastReceiver;
+
+        specialinvoke $r1.<com.testService.TServiceBroadcastReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.testService.TServiceBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label25;
+
+        $r2 = new com.testService.testService;
+
+        specialinvoke $r2.<com.testService.testService: void <init>()>();
+
+        if $i0 == 5 goto label25;
+
+        virtualinvoke $r2.<com.testService.testService: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label24;
+
+     label05:
+        $r3 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r3.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r4 = new net.ludodevel.sabcontrol.SABcontrol$16;
+
+        specialinvoke $r4.<net.ludodevel.sabcontrol.SABcontrol$16: void <init>(net.ludodevel.sabcontrol.SABcontrol,android.view.View)>($r3, null);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r4.<net.ludodevel.sabcontrol.SABcontrol$16: void onClick(android.view.View)>(null);
+
+     label06:
+        $r5 = new com.testService.testService$1;
+
+        specialinvoke $r5.<com.testService.testService$1: void <init>(com.testService.testService)>($r2);
+
+        if $i0 == 9 goto label07;
+
+        virtualinvoke $r5.<com.testService.testService$1: void onClick(android.view.View)>(null);
+
+     label07:
+        $r6 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r6.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r7 = new net.ludodevel.sabcontrol.SABcontrol$2;
+
+        specialinvoke $r7.<net.ludodevel.sabcontrol.SABcontrol$2: void <init>(net.ludodevel.sabcontrol.SABcontrol)>($r6);
+
+        if $i0 == 10 goto label08;
+
+        virtualinvoke $r7.<net.ludodevel.sabcontrol.SABcontrol$2: void onClick(android.view.View)>(null);
+
+     label08:
+        $r8 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r8.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r9 = new net.ludodevel.filechooser.FileChooser$4;
+
+        specialinvoke $r9.<net.ludodevel.filechooser.FileChooser$4: void <init>(net.ludodevel.filechooser.FileChooser)>($r8);
+
+        if $i0 == 11 goto label09;
+
+        virtualinvoke $r9.<net.ludodevel.filechooser.FileChooser$4: void onClick(android.view.View)>(null);
+
+     label09:
+        $r10 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r10.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r11 = new net.ludodevel.sabcontrol.SABcontrol$17;
+
+        specialinvoke $r11.<net.ludodevel.sabcontrol.SABcontrol$17: void <init>(net.ludodevel.sabcontrol.SABcontrol)>($r10);
+
+        if $i0 == 12 goto label10;
+
+        virtualinvoke $r11.<net.ludodevel.sabcontrol.SABcontrol$17: void onClick(android.view.View)>(null);
+
+     label10:
+        $r12 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r12.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r13 = new net.ludodevel.sabcontrol.SABcontrol$15;
+
+        specialinvoke $r13.<net.ludodevel.sabcontrol.SABcontrol$15: void <init>(net.ludodevel.sabcontrol.SABcontrol,android.view.View)>($r12, null);
+
+        if $i0 == 13 goto label11;
+
+        virtualinvoke $r13.<net.ludodevel.sabcontrol.SABcontrol$15: void onClick(android.view.View)>(null);
+
+     label11:
+        $r14 = new com.android.Main;
+
+        specialinvoke $r14.<com.android.Main: void <init>()>();
+
+        $r15 = new com.android.Main$4;
+
+        specialinvoke $r15.<com.android.Main$4: void <init>(com.android.Main)>($r14);
+
+        if $i0 == 14 goto label12;
+
+        virtualinvoke $r15.<com.android.Main$4: void onClick(android.view.View)>(null);
+
+     label12:
+        $r16 = new com.android.Main;
+
+        specialinvoke $r16.<com.android.Main: void <init>()>();
+
+        $r17 = new com.android.Main$3;
+
+        specialinvoke $r17.<com.android.Main$3: void <init>(com.android.Main)>($r16);
+
+        if $i0 == 15 goto label13;
+
+        virtualinvoke $r17.<com.android.Main$3: void onClick(android.view.View)>(null);
+
+     label13:
+        $r18 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r18.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r19 = new net.ludodevel.filechooser.FileChooser$3;
+
+        specialinvoke $r19.<net.ludodevel.filechooser.FileChooser$3: void <init>(net.ludodevel.filechooser.FileChooser)>($r18);
+
+        if $i0 == 16 goto label14;
+
+        virtualinvoke $r19.<net.ludodevel.filechooser.FileChooser$3: void onClick(android.view.View)>(null);
+
+     label14:
+        $r20 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r20.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r21 = new net.ludodevel.sabcontrol.SABcontrol$1;
+
+        specialinvoke $r21.<net.ludodevel.sabcontrol.SABcontrol$1: void <init>(net.ludodevel.sabcontrol.SABcontrol)>($r20);
+
+        if $i0 == 17 goto label15;
+
+        virtualinvoke $r21.<net.ludodevel.sabcontrol.SABcontrol$1: void onClick(android.view.View)>(null);
+
+     label15:
+        $r22 = new com.android.Main;
+
+        specialinvoke $r22.<com.android.Main: void <init>()>();
+
+        $r23 = new com.android.Main$2;
+
+        specialinvoke $r23.<com.android.Main$2: void <init>(com.android.Main)>($r22);
+
+        if $i0 == 18 goto label16;
+
+        virtualinvoke $r23.<com.android.Main$2: void onClick(android.view.View)>(null);
+
+     label16:
+        $r24 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r24.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r25 = new net.ludodevel.filechooser.FileChooser$2;
+
+        specialinvoke $r25.<net.ludodevel.filechooser.FileChooser$2: void <init>(net.ludodevel.filechooser.FileChooser)>($r24);
+
+        if $i0 == 19 goto label17;
+
+        virtualinvoke $r25.<net.ludodevel.filechooser.FileChooser$2: void onClick(android.view.View)>(null);
+
+     label17:
+        $r26 = new com.testService.testService$2;
+
+        specialinvoke $r26.<com.testService.testService$2: void <init>(com.testService.testService)>($r2);
+
+        if $i0 == 20 goto label18;
+
+        virtualinvoke $r26.<com.testService.testService$2: void onClick(android.view.View)>(null);
+
+     label18:
+        $r27 = new org.dssl.fileMonitor.FileMonitorActivity;
+
+        specialinvoke $r27.<org.dssl.fileMonitor.FileMonitorActivity: void <init>()>();
+
+        $r28 = new org.dssl.fileMonitor.FileMonitorActivity$1;
+
+        specialinvoke $r28.<org.dssl.fileMonitor.FileMonitorActivity$1: void <init>(org.dssl.fileMonitor.FileMonitorActivity)>($r27);
+
+        if $i0 == 21 goto label19;
+
+        virtualinvoke $r28.<org.dssl.fileMonitor.FileMonitorActivity$1: void onClick(android.view.View)>(null);
+
+     label19:
+        $r29 = new com.android.Main;
+
+        specialinvoke $r29.<com.android.Main: void <init>()>();
+
+        $r30 = new com.android.Main$1;
+
+        specialinvoke $r30.<com.android.Main$1: void <init>(com.android.Main)>($r29);
+
+        if $i0 == 22 goto label20;
+
+        virtualinvoke $r30.<com.android.Main$1: void onClick(android.view.View)>(null);
+
+     label20:
+        $r31 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r31.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r32 = new net.ludodevel.sabcontrol.SABcontrol$3;
+
+        specialinvoke $r32.<net.ludodevel.sabcontrol.SABcontrol$3: void <init>(net.ludodevel.sabcontrol.SABcontrol)>($r31);
+
+        if $i0 == 23 goto label21;
+
+        virtualinvoke $r32.<net.ludodevel.sabcontrol.SABcontrol$3: void onClick(android.view.View)>(null);
+
+     label21:
+        $r33 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r33.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r34 = new net.ludodevel.filechooser.FileChooser$6;
+
+        specialinvoke $r34.<net.ludodevel.filechooser.FileChooser$6: void <init>(net.ludodevel.filechooser.FileChooser)>($r33);
+
+        if $i0 == 24 goto label22;
+
+        virtualinvoke $r34.<net.ludodevel.filechooser.FileChooser$6: void onClick(android.view.View)>(null);
+
+     label22:
+        $r35 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r35.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r36 = new net.ludodevel.filechooser.FileChooser$5;
+
+        specialinvoke $r36.<net.ludodevel.filechooser.FileChooser$5: void <init>(net.ludodevel.filechooser.FileChooser)>($r35);
+
+        if $i0 == 25 goto label23;
+
+        virtualinvoke $r36.<net.ludodevel.filechooser.FileChooser$5: void onClick(android.view.View)>(null);
+
+     label23:
+        if $i0 == 26 goto label05;
+
+     label24:
+        if $i0 == 27 goto label04;
+
+        if $i0 == 28 goto label25;
+
+        if $i0 == 29 goto label04;
+
+     label25:
+        if $i0 == 31 goto label30;
+
+        $r37 = new com.testService.TService;
+
+        specialinvoke $r37.<com.testService.TService: void <init>()>();
+
+        virtualinvoke $r37.<com.testService.TService: void onCreate()>();
+
+        virtualinvoke $r37.<com.testService.TService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label26:
+        if $i0 == 32 goto label27;
+
+        if $i0 == 33 goto label26;
+
+     label27:
+        $r38 = virtualinvoke $r37.<com.testService.TService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label28:
+        $z0 = virtualinvoke $r37.<com.testService.TService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 35 goto label29;
+
+        virtualinvoke $r37.<com.testService.TService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 36 goto label28;
+
+     label29:
+        virtualinvoke $r37.<com.testService.TService: void onDestroy()>();
+
+     label30:
+        if $i0 == 37 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 26 callback methods for 3 components
+Found {res/layout/main.xml=[-1 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131034112 - android.widget.Button, 2131034113 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 26 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4bc87f33e75dbbfc42632aa7fdaace55e1fac394bae8616293bfa711f88d8672.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.testService.TServiceBroadcastReceiver $r1;
+        com.testService.testService $r2;
+        net.ludodevel.sabcontrol.SABcontrol $r3, $r5, $r9, $r13, $r20, $r33;
+        net.ludodevel.sabcontrol.SABcontrol$3 $r4;
+        net.ludodevel.sabcontrol.SABcontrol$17 $r6;
+        com.android.Main $r7, $r11, $r25, $r35;
+        com.android.Main$4 $r8;
+        net.ludodevel.sabcontrol.SABcontrol$1 $r10;
+        com.android.Main$1 $r12;
+        net.ludodevel.sabcontrol.SABcontrol$15 $r14;
+        com.testService.testService$2 $r15;
+        net.ludodevel.filechooser.FileChooser $r16, $r23, $r27, $r29, $r31;
+        net.ludodevel.filechooser.FileChooser$6 $r17;
+        org.dssl.fileMonitor.FileMonitorActivity $r18;
+        org.dssl.fileMonitor.FileMonitorActivity$1 $r19;
+        net.ludodevel.sabcontrol.SABcontrol$16 $r21;
+        com.testService.testService$1 $r22;
+        net.ludodevel.filechooser.FileChooser$4 $r24;
+        com.android.Main$3 $r26;
+        net.ludodevel.filechooser.FileChooser$5 $r28;
+        net.ludodevel.filechooser.FileChooser$3 $r30;
+        net.ludodevel.filechooser.FileChooser$2 $r32;
+        net.ludodevel.sabcontrol.SABcontrol$2 $r34;
+        com.android.Main$2 $r36;
+        com.testService.TService $r37;
+        android.os.IBinder $r38;
+        boolean $z0;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.testService.TServiceBroadcastReceiver;
+
+        specialinvoke $r1.<com.testService.TServiceBroadcastReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.testService.TServiceBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label25;
+
+        $r2 = new com.testService.testService;
+
+        specialinvoke $r2.<com.testService.testService: void <init>()>();
+
+        if $i0 == 5 goto label25;
+
+        virtualinvoke $r2.<com.testService.testService: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label24;
+
+     label05:
+        $r3 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r3.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r4 = new net.ludodevel.sabcontrol.SABcontrol$3;
+
+        specialinvoke $r4.<net.ludodevel.sabcontrol.SABcontrol$3: void <init>(net.ludodevel.sabcontrol.SABcontrol)>($r3);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r4.<net.ludodevel.sabcontrol.SABcontrol$3: void onClick(android.view.View)>(null);
+
+     label06:
+        $r5 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r5.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r6 = new net.ludodevel.sabcontrol.SABcontrol$17;
+
+        specialinvoke $r6.<net.ludodevel.sabcontrol.SABcontrol$17: void <init>(net.ludodevel.sabcontrol.SABcontrol)>($r5);
+
+        if $i0 == 9 goto label07;
+
+        virtualinvoke $r6.<net.ludodevel.sabcontrol.SABcontrol$17: void onClick(android.view.View)>(null);
+
+     label07:
+        $r7 = new com.android.Main;
+
+        specialinvoke $r7.<com.android.Main: void <init>()>();
+
+        $r8 = new com.android.Main$4;
+
+        specialinvoke $r8.<com.android.Main$4: void <init>(com.android.Main)>($r7);
+
+        if $i0 == 10 goto label08;
+
+        virtualinvoke $r8.<com.android.Main$4: void onClick(android.view.View)>(null);
+
+     label08:
+        $r9 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r9.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r10 = new net.ludodevel.sabcontrol.SABcontrol$1;
+
+        specialinvoke $r10.<net.ludodevel.sabcontrol.SABcontrol$1: void <init>(net.ludodevel.sabcontrol.SABcontrol)>($r9);
+
+        if $i0 == 11 goto label09;
+
+        virtualinvoke $r10.<net.ludodevel.sabcontrol.SABcontrol$1: void onClick(android.view.View)>(null);
+
+     label09:
+        $r11 = new com.android.Main;
+
+        specialinvoke $r11.<com.android.Main: void <init>()>();
+
+        $r12 = new com.android.Main$1;
+
+        specialinvoke $r12.<com.android.Main$1: void <init>(com.android.Main)>($r11);
+
+        if $i0 == 12 goto label10;
+
+        virtualinvoke $r12.<com.android.Main$1: void onClick(android.view.View)>(null);
+
+     label10:
+        $r13 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r13.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r14 = new net.ludodevel.sabcontrol.SABcontrol$15;
+
+        specialinvoke $r14.<net.ludodevel.sabcontrol.SABcontrol$15: void <init>(net.ludodevel.sabcontrol.SABcontrol,android.view.View)>($r13, null);
+
+        if $i0 == 13 goto label11;
+
+        virtualinvoke $r14.<net.ludodevel.sabcontrol.SABcontrol$15: void onClick(android.view.View)>(null);
+
+     label11:
+        $r15 = new com.testService.testService$2;
+
+        specialinvoke $r15.<com.testService.testService$2: void <init>(com.testService.testService)>($r2);
+
+        if $i0 == 14 goto label12;
+
+        virtualinvoke $r15.<com.testService.testService$2: void onClick(android.view.View)>(null);
+
+     label12:
+        $r16 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r16.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r17 = new net.ludodevel.filechooser.FileChooser$6;
+
+        specialinvoke $r17.<net.ludodevel.filechooser.FileChooser$6: void <init>(net.ludodevel.filechooser.FileChooser)>($r16);
+
+        if $i0 == 15 goto label13;
+
+        virtualinvoke $r17.<net.ludodevel.filechooser.FileChooser$6: void onClick(android.view.View)>(null);
+
+     label13:
+        $r18 = new org.dssl.fileMonitor.FileMonitorActivity;
+
+        specialinvoke $r18.<org.dssl.fileMonitor.FileMonitorActivity: void <init>()>();
+
+        $r19 = new org.dssl.fileMonitor.FileMonitorActivity$1;
+
+        specialinvoke $r19.<org.dssl.fileMonitor.FileMonitorActivity$1: void <init>(org.dssl.fileMonitor.FileMonitorActivity)>($r18);
+
+        if $i0 == 16 goto label14;
+
+        virtualinvoke $r19.<org.dssl.fileMonitor.FileMonitorActivity$1: void onClick(android.view.View)>(null);
+
+     label14:
+        $r20 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r20.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r21 = new net.ludodevel.sabcontrol.SABcontrol$16;
+
+        specialinvoke $r21.<net.ludodevel.sabcontrol.SABcontrol$16: void <init>(net.ludodevel.sabcontrol.SABcontrol,android.view.View)>($r20, null);
+
+        if $i0 == 17 goto label15;
+
+        virtualinvoke $r21.<net.ludodevel.sabcontrol.SABcontrol$16: void onClick(android.view.View)>(null);
+
+     label15:
+        $r22 = new com.testService.testService$1;
+
+        specialinvoke $r22.<com.testService.testService$1: void <init>(com.testService.testService)>($r2);
+
+        if $i0 == 18 goto label16;
+
+        virtualinvoke $r22.<com.testService.testService$1: void onClick(android.view.View)>(null);
+
+     label16:
+        $r23 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r23.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r24 = new net.ludodevel.filechooser.FileChooser$4;
+
+        specialinvoke $r24.<net.ludodevel.filechooser.FileChooser$4: void <init>(net.ludodevel.filechooser.FileChooser)>($r23);
+
+        if $i0 == 19 goto label17;
+
+        virtualinvoke $r24.<net.ludodevel.filechooser.FileChooser$4: void onClick(android.view.View)>(null);
+
+     label17:
+        $r25 = new com.android.Main;
+
+        specialinvoke $r25.<com.android.Main: void <init>()>();
+
+        $r26 = new com.android.Main$3;
+
+        specialinvoke $r26.<com.android.Main$3: void <init>(com.android.Main)>($r25);
+
+        if $i0 == 20 goto label18;
+
+        virtualinvoke $r26.<com.android.Main$3: void onClick(android.view.View)>(null);
+
+     label18:
+        $r27 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r27.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r28 = new net.ludodevel.filechooser.FileChooser$5;
+
+        specialinvoke $r28.<net.ludodevel.filechooser.FileChooser$5: void <init>(net.ludodevel.filechooser.FileChooser)>($r27);
+
+        if $i0 == 21 goto label19;
+
+        virtualinvoke $r28.<net.ludodevel.filechooser.FileChooser$5: void onClick(android.view.View)>(null);
+
+     label19:
+        $r29 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r29.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r30 = new net.ludodevel.filechooser.FileChooser$3;
+
+        specialinvoke $r30.<net.ludodevel.filechooser.FileChooser$3: void <init>(net.ludodevel.filechooser.FileChooser)>($r29);
+
+        if $i0 == 22 goto label20;
+
+        virtualinvoke $r30.<net.ludodevel.filechooser.FileChooser$3: void onClick(android.view.View)>(null);
+
+     label20:
+        $r31 = new net.ludodevel.filechooser.FileChooser;
+
+        specialinvoke $r31.<net.ludodevel.filechooser.FileChooser: void <init>()>();
+
+        $r32 = new net.ludodevel.filechooser.FileChooser$2;
+
+        specialinvoke $r32.<net.ludodevel.filechooser.FileChooser$2: void <init>(net.ludodevel.filechooser.FileChooser)>($r31);
+
+        if $i0 == 23 goto label21;
+
+        virtualinvoke $r32.<net.ludodevel.filechooser.FileChooser$2: void onClick(android.view.View)>(null);
+
+     label21:
+        $r33 = new net.ludodevel.sabcontrol.SABcontrol;
+
+        specialinvoke $r33.<net.ludodevel.sabcontrol.SABcontrol: void <init>()>();
+
+        $r34 = new net.ludodevel.sabcontrol.SABcontrol$2;
+
+        specialinvoke $r34.<net.ludodevel.sabcontrol.SABcontrol$2: void <init>(net.ludodevel.sabcontrol.SABcontrol)>($r33);
+
+        if $i0 == 24 goto label22;
+
+        virtualinvoke $r34.<net.ludodevel.sabcontrol.SABcontrol$2: void onClick(android.view.View)>(null);
+
+     label22:
+        $r35 = new com.android.Main;
+
+        specialinvoke $r35.<com.android.Main: void <init>()>();
+
+        $r36 = new com.android.Main$2;
+
+        specialinvoke $r36.<com.android.Main$2: void <init>(com.android.Main)>($r35);
+
+        if $i0 == 25 goto label23;
+
+        virtualinvoke $r36.<com.android.Main$2: void onClick(android.view.View)>(null);
+
+     label23:
+        if $i0 == 26 goto label05;
+
+     label24:
+        if $i0 == 27 goto label04;
+
+        if $i0 == 28 goto label25;
+
+        if $i0 == 29 goto label04;
+
+     label25:
+        if $i0 == 31 goto label30;
+
+        $r37 = new com.testService.TService;
+
+        specialinvoke $r37.<com.testService.TService: void <init>()>();
+
+        virtualinvoke $r37.<com.testService.TService: void onCreate()>();
+
+        virtualinvoke $r37.<com.testService.TService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label26:
+        if $i0 == 32 goto label27;
+
+        if $i0 == 33 goto label26;
+
+     label27:
+        $r38 = virtualinvoke $r37.<com.testService.TService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label28:
+        $z0 = virtualinvoke $r37.<com.testService.TService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 35 goto label29;
+
+        virtualinvoke $r37.<com.testService.TService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 36 goto label28;
+
+     label29:
+        virtualinvoke $r37.<com.testService.TService: void onDestroy()>();
+
+     label30:
+        if $i0 == 37 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.436024769 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.054727334 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1250 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+Layout control with ID 2131034115 not found
+Layout control with ID 2131034115 not found
+Layout control with ID 2131034117 not found
+Layout control with ID 2131034118 not found
+Layout control with ID 2131165202 not found
+Layout control with ID 2131165204 not found
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 31 sources and 17 sinks.
+Layout control with ID 2131034115 not found
+Layout control with ID 2131034115 not found
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 125
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 828
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 3416 forward and 526 backward edges solved, processing 7 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 7 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.008780292 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i1) in method <com.testService.process.CMainControl: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.testService.TService: java.lang.String getPhoneNumber()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i1) in method <com.testService.process.CMainControl: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.testService.TService: java.lang.String getPhoneNumber()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.testService.TServiceBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.testService.TServiceBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i1) in method <com.testService.process.CMainControl: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.testService.TService: java.lang.String getPhoneNumber()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, 64) in method <com.testService.process.CMainControl: int mSendReport(java.io.OutputStream,byte[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.testService.TService: java.lang.String getPhoneNumber()>
+Found a flow to sink virtualinvoke $r8.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i1), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.testService.TService: java.lang.String getPhoneNumber()>)
+Found a flow to sink virtualinvoke $r8.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i1), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.testService.TService: java.lang.String getPhoneNumber()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.testService.TServiceBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r8.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, $i1), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.testService.TService: java.lang.String getPhoneNumber()>)
+Found a flow to sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[],int,int)>($r2, 0, 64), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.testService.TService: java.lang.String getPhoneNumber()>)
+Maximum memory consumption: 102.415336 MB
+Analysis has run for 4.171278089 seconds

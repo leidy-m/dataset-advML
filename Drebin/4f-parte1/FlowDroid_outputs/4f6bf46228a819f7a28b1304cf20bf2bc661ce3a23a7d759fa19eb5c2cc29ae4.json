@@ -1,0 +1,1476 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.025871137 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.activities.UpdateActivity is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity $r1;
+        de.trier.infsec.koch.droidsheep.activities.DonateActivity $r2;
+        de.trier.infsec.koch.droidsheep.services.ArpspoofService $r3;
+        de.trier.infsec.koch.droidsheep.activities.HijackActivity $r4;
+        de.trier.infsec.koch.droidsheep.services.DroidSheepService $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 2 goto label05;
+
+        $r1 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity;
+
+        specialinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void <init>()>();
+
+        if $i0 == 3 goto label05;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onResume()>();
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label04;
+
+        if $i0 == 7 goto label02;
+
+     label04:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onDestroy()>();
+
+     label05:
+        if $i0 == 9 goto label07;
+
+        $r2 = new de.trier.infsec.koch.droidsheep.activities.DonateActivity;
+
+        specialinvoke $r2.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void <init>()>();
+
+        if $i0 == 10 goto label07;
+
+        virtualinvoke $r2.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        virtualinvoke $r2.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onStart()>();
+
+        if $i0 == 13 goto label07;
+
+        if $i0 == 14 goto label06;
+
+     label07:
+        if $i0 == 16 goto label11;
+
+        $r3 = new de.trier.infsec.koch.droidsheep.services.ArpspoofService;
+
+        specialinvoke $r3.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void <init>()>();
+
+     label08:
+        if $i0 == 17 goto label09;
+
+        if $i0 == 18 goto label08;
+
+     label09:
+        if $i0 == 20 goto label10;
+
+        if $i0 == 21 goto label09;
+
+     label10:
+        virtualinvoke $r3.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onDestroy()>();
+
+     label11:
+        if $i0 == 22 goto label14;
+
+        $r4 = new de.trier.infsec.koch.droidsheep.activities.HijackActivity;
+
+        specialinvoke $r4.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void <init>()>();
+
+        if $i0 == 23 goto label14;
+
+        virtualinvoke $r4.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        virtualinvoke $r4.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onStart()>();
+
+        virtualinvoke $r4.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onStop()>();
+
+        if $i0 == 26 goto label13;
+
+        if $i0 == 27 goto label12;
+
+     label13:
+        virtualinvoke $r4.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onDestroy()>();
+
+     label14:
+        if $i0 == 29 goto label18;
+
+        $r5 = new de.trier.infsec.koch.droidsheep.services.DroidSheepService;
+
+        specialinvoke $r5.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void <init>()>();
+
+     label15:
+        if $i0 == 30 goto label16;
+
+        if $i0 == 31 goto label15;
+
+     label16:
+        if $i0 == 33 goto label17;
+
+        if $i0 == 34 goto label16;
+
+     label17:
+        virtualinvoke $r5.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onDestroy()>();
+
+     label18:
+        if $i0 == 35 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: ListView is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Warning: Button is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/debug.xml
+Warning: RelativeLayout is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: CheckBox is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 2 layout controls in file res/layout/disclaimer.xml
+Warning: ImageView is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 3 layout controls in file res/layout/donation.xml
+Found 4 layout controls in file res/layout/listelement.xml
+Warning: ProgressBar is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 5 layout controls in file res/layout/listen.xml
+Found 6 layout controls in file res/layout/unrooted.xml
+Warning: WebView is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 7 layout controls in file res/layout/webview.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.activities.UpdateActivity is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.EditText
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Handler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$6 $r2;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$3 $r3;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$5 $r4;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$4 $r5;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$1 $r6;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$8 $r7;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$2 $r8;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$5 $r9;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$2 $r10;
+        de.trier.infsec.koch.droidsheep.activities.DonateActivity $r11;
+        de.trier.infsec.koch.droidsheep.services.ArpspoofService $r12;
+        de.trier.infsec.koch.droidsheep.activities.HijackActivity $r13;
+        de.trier.infsec.koch.droidsheep.activities.HijackActivity$2 $r14;
+        de.trier.infsec.koch.droidsheep.services.DroidSheepService $r15;
+        de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker $r16;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 2 goto label26;
+
+        $r1 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity;
+
+        specialinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void <init>()>();
+
+        if $i0 == 3 goto label26;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onResume()>();
+
+        if $i0 == 5 goto label24;
+
+     label04:
+        if $i0 == 6 goto label05;
+
+        $z0 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label05:
+        if $i0 == 7 goto label06;
+
+        $z1 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label06:
+        if $i0 == 8 goto label07;
+
+        $z2 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label07:
+        if $i0 == 9 goto label08;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label08:
+        if $i0 == 10 goto label09;
+
+        $z3 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label09:
+        if $i0 == 11 goto label10;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label10:
+        if $i0 == 12 goto label11;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onClick(android.view.View)>(null);
+
+     label11:
+        if $i0 == 13 goto label12;
+
+        staticinvoke <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void <clinit>()>();
+
+     label12:
+        if $i0 == 14 goto label13;
+
+        $z4 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label13:
+        if $i0 == 15 goto label14;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label14:
+        $r2 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$6;
+
+        specialinvoke $r2.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$6: void <init>()>();
+
+        if $i0 == 16 goto label15;
+
+        virtualinvoke $r2.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label15:
+        $r3 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$3;
+
+        specialinvoke $r3.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$3: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 17 goto label16;
+
+        virtualinvoke $r3.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label16:
+        $r4 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$5;
+
+        specialinvoke $r4.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$5: void <init>()>();
+
+        if $i0 == 18 goto label17;
+
+        virtualinvoke $r4.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label17:
+        $r5 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$4;
+
+        specialinvoke $r5.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$4: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 19 goto label18;
+
+        virtualinvoke $r5.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label18:
+        $r6 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$1;
+
+        specialinvoke $r6.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$1: void <init>()>();
+
+        if $i0 == 20 goto label19;
+
+        virtualinvoke $r6.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r7 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$8;
+
+        specialinvoke $r7.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$8: void <init>(android.view.View)>(null);
+
+        if $i0 == 21 goto label20;
+
+        virtualinvoke $r7.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label20:
+        $r8 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$2;
+
+        specialinvoke $r8.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$2: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 22 goto label21;
+
+        virtualinvoke $r8.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label21:
+        $r9 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$5;
+
+        specialinvoke $r9.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$5: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 23 goto label22;
+
+        virtualinvoke $r9.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label22:
+        $r10 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$2;
+
+        specialinvoke $r10.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$2: void <init>()>();
+
+        if $i0 == 24 goto label23;
+
+        virtualinvoke $r10.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        if $i0 == 25 goto label04;
+
+     label24:
+        if $i0 == 26 goto label03;
+
+        if $i0 == 27 goto label25;
+
+        if $i0 == 28 goto label02;
+
+     label25:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onDestroy()>();
+
+     label26:
+        if $i0 == 30 goto label32;
+
+        $r11 = new de.trier.infsec.koch.droidsheep.activities.DonateActivity;
+
+        specialinvoke $r11.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void <init>()>();
+
+        if $i0 == 31 goto label32;
+
+        virtualinvoke $r11.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onCreate(android.os.Bundle)>(null);
+
+     label27:
+        virtualinvoke $r11.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onStart()>();
+
+     label28:
+        if $i0 == 33 goto label31;
+
+     label29:
+        if $i0 == 34 goto label30;
+
+        virtualinvoke $r11.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onClick(android.view.View)>(null);
+
+     label30:
+        if $i0 == 35 goto label29;
+
+     label31:
+        if $i0 == 36 goto label28;
+
+        if $i0 == 37 goto label32;
+
+        if $i0 == 38 goto label27;
+
+     label32:
+        if $i0 == 40 goto label40;
+
+        $r12 = new de.trier.infsec.koch.droidsheep.services.ArpspoofService;
+
+        specialinvoke $r12.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void <init>()>();
+
+     label33:
+        if $i0 == 41 goto label34;
+
+        if $i0 == 42 goto label33;
+
+     label34:
+        if $i0 == 43 goto label37;
+
+     label35:
+        if $i0 == 44 goto label36;
+
+        virtualinvoke $r12.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onHandleIntent(android.content.Intent)>(null);
+
+     label36:
+        if $i0 == 45 goto label35;
+
+     label37:
+        if $i0 == 46 goto label38;
+
+        virtualinvoke $r12.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onHandleIntent(android.content.Intent)>(null);
+
+     label38:
+        if $i0 == 47 goto label37;
+
+        if $i0 == 48 goto label39;
+
+        if $i0 == 49 goto label37;
+
+     label39:
+        virtualinvoke $r12.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onDestroy()>();
+
+     label40:
+        if $i0 == 50 goto label50;
+
+        $r13 = new de.trier.infsec.koch.droidsheep.activities.HijackActivity;
+
+        specialinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void <init>()>();
+
+        if $i0 == 51 goto label50;
+
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onCreate(android.os.Bundle)>(null);
+
+     label41:
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onStart()>();
+
+     label42:
+        if $i0 == 53 goto label48;
+
+     label43:
+        $r14 = new de.trier.infsec.koch.droidsheep.activities.HijackActivity$2;
+
+        specialinvoke $r14.<de.trier.infsec.koch.droidsheep.activities.HijackActivity$2: void <init>(de.trier.infsec.koch.droidsheep.activities.HijackActivity,android.widget.EditText)>($r13, null);
+
+        if $i0 == 54 goto label44;
+
+        virtualinvoke $r14.<de.trier.infsec.koch.droidsheep.activities.HijackActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label44:
+        if $i0 == 55 goto label45;
+
+        $z5 = virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label45:
+        if $i0 == 56 goto label46;
+
+        $z6 = virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label46:
+        if $i0 == 57 goto label47;
+
+        $z7 = virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label47:
+        if $i0 == 58 goto label43;
+
+     label48:
+        if $i0 == 59 goto label42;
+
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onStop()>();
+
+        if $i0 == 60 goto label49;
+
+        if $i0 == 61 goto label41;
+
+     label49:
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onDestroy()>();
+
+     label50:
+        if $i0 == 63 goto label58;
+
+        $r15 = new de.trier.infsec.koch.droidsheep.services.DroidSheepService;
+
+        specialinvoke $r15.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void <init>()>();
+
+     label51:
+        if $i0 == 64 goto label52;
+
+        if $i0 == 65 goto label51;
+
+     label52:
+        if $i0 == 66 goto label55;
+
+     label53:
+        if $i0 == 67 goto label54;
+
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onHandleIntent(android.content.Intent)>(null);
+
+     label54:
+        if $i0 == 68 goto label53;
+
+     label55:
+        if $i0 == 69 goto label56;
+
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onHandleIntent(android.content.Intent)>(null);
+
+     label56:
+        if $i0 == 70 goto label55;
+
+        if $i0 == 71 goto label57;
+
+        if $i0 == 72 goto label55;
+
+     label57:
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onDestroy()>();
+
+     label58:
+        if $i0 == 73 goto label60;
+
+        $r16 = new de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker;
+
+        specialinvoke $r16.<de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void <init>(android.os.Handler)>(null);
+
+        if $i0 == 74 goto label60;
+
+     label59:
+        virtualinvoke $r16.<de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 76 goto label59;
+
+     label60:
+        if $i0 == 77 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: de.trier.infsec.koch.droidsheep.activities.UpdateActivity is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.EditText
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Handler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity $r1;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$2 $r2;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$3 $r3;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$5 $r4;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$3 $r5;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$6 $r6;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$5 $r7;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$4 $r8;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$2 $r9;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$4 $r10;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$1 $r11;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$8 $r12;
+        de.trier.infsec.koch.droidsheep.activities.DonateActivity $r13;
+        de.trier.infsec.koch.droidsheep.services.ArpspoofService $r14;
+        de.trier.infsec.koch.droidsheep.activities.HijackActivity $r15;
+        de.trier.infsec.koch.droidsheep.activities.HijackActivity$2 $r16;
+        de.trier.infsec.koch.droidsheep.services.DroidSheepService $r17;
+        de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker $r18;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 2 goto label28;
+
+        $r1 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity;
+
+        specialinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void <init>()>();
+
+        if $i0 == 3 goto label28;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onResume()>();
+
+        if $i0 == 5 goto label26;
+
+     label04:
+        $r2 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$2;
+
+        specialinvoke $r2.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$2: void <init>()>();
+
+        if $i0 == 6 goto label05;
+
+        virtualinvoke $r2.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        $r3 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$3;
+
+        specialinvoke $r3.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$3: void <init>()>();
+
+        if $i0 == 7 goto label06;
+
+        virtualinvoke $r3.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label06:
+        $r4 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$5;
+
+        specialinvoke $r4.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$5: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r4.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label07:
+        $r5 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$3;
+
+        specialinvoke $r5.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$3: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 9 goto label08;
+
+        virtualinvoke $r5.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label08:
+        $r6 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$6;
+
+        specialinvoke $r6.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$6: void <init>()>();
+
+        if $i0 == 10 goto label09;
+
+        virtualinvoke $r6.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label09:
+        $r7 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$5;
+
+        specialinvoke $r7.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$5: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 11 goto label10;
+
+        virtualinvoke $r7.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label10:
+        if $i0 == 12 goto label11;
+
+        $z0 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label11:
+        if $i0 == 13 goto label12;
+
+        $z1 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label12:
+        if $i0 == 14 goto label13;
+
+        staticinvoke <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void <clinit>()>();
+
+     label13:
+        if $i0 == 15 goto label14;
+
+        $z2 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label14:
+        if $i0 == 16 goto label15;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label15:
+        if $i0 == 17 goto label16;
+
+        $z3 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label16:
+        if $i0 == 18 goto label17;
+
+        $z4 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label17:
+        if $i0 == 19 goto label18;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label18:
+        if $i0 == 20 goto label19;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onClick(android.view.View)>(null);
+
+     label19:
+        if $i0 == 21 goto label20;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label20:
+        $r8 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$4;
+
+        specialinvoke $r8.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$4: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 22 goto label21;
+
+        virtualinvoke $r8.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label21:
+        $r9 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$2;
+
+        specialinvoke $r9.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$2: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 23 goto label22;
+
+        virtualinvoke $r9.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label22:
+        $r10 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$4;
+
+        specialinvoke $r10.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$4: void <init>()>();
+
+        if $i0 == 24 goto label23;
+
+        virtualinvoke $r10.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        $r11 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$1;
+
+        specialinvoke $r11.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$1: void <init>()>();
+
+        if $i0 == 25 goto label24;
+
+        virtualinvoke $r11.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label24:
+        $r12 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$8;
+
+        specialinvoke $r12.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$8: void <init>(android.view.View)>(null);
+
+        if $i0 == 26 goto label25;
+
+        virtualinvoke $r12.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        if $i0 == 27 goto label04;
+
+     label26:
+        if $i0 == 28 goto label03;
+
+        if $i0 == 29 goto label27;
+
+        if $i0 == 30 goto label02;
+
+     label27:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onDestroy()>();
+
+     label28:
+        if $i0 == 32 goto label34;
+
+        $r13 = new de.trier.infsec.koch.droidsheep.activities.DonateActivity;
+
+        specialinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void <init>()>();
+
+        if $i0 == 33 goto label34;
+
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onStart()>();
+
+     label30:
+        if $i0 == 35 goto label33;
+
+     label31:
+        if $i0 == 36 goto label32;
+
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onClick(android.view.View)>(null);
+
+     label32:
+        if $i0 == 37 goto label31;
+
+     label33:
+        if $i0 == 38 goto label30;
+
+        if $i0 == 39 goto label34;
+
+        if $i0 == 40 goto label29;
+
+     label34:
+        if $i0 == 42 goto label42;
+
+        $r14 = new de.trier.infsec.koch.droidsheep.services.ArpspoofService;
+
+        specialinvoke $r14.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void <init>()>();
+
+     label35:
+        if $i0 == 43 goto label36;
+
+        if $i0 == 44 goto label35;
+
+     label36:
+        if $i0 == 45 goto label39;
+
+     label37:
+        if $i0 == 46 goto label38;
+
+        virtualinvoke $r14.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onHandleIntent(android.content.Intent)>(null);
+
+     label38:
+        if $i0 == 47 goto label37;
+
+     label39:
+        if $i0 == 48 goto label40;
+
+        virtualinvoke $r14.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onHandleIntent(android.content.Intent)>(null);
+
+     label40:
+        if $i0 == 49 goto label39;
+
+        if $i0 == 50 goto label41;
+
+        if $i0 == 51 goto label39;
+
+     label41:
+        virtualinvoke $r14.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onDestroy()>();
+
+     label42:
+        if $i0 == 52 goto label52;
+
+        $r15 = new de.trier.infsec.koch.droidsheep.activities.HijackActivity;
+
+        specialinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void <init>()>();
+
+        if $i0 == 53 goto label52;
+
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onCreate(android.os.Bundle)>(null);
+
+     label43:
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onStart()>();
+
+     label44:
+        if $i0 == 55 goto label50;
+
+     label45:
+        $r16 = new de.trier.infsec.koch.droidsheep.activities.HijackActivity$2;
+
+        specialinvoke $r16.<de.trier.infsec.koch.droidsheep.activities.HijackActivity$2: void <init>(de.trier.infsec.koch.droidsheep.activities.HijackActivity,android.widget.EditText)>($r15, null);
+
+        if $i0 == 56 goto label46;
+
+        virtualinvoke $r16.<de.trier.infsec.koch.droidsheep.activities.HijackActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label46:
+        if $i0 == 57 goto label47;
+
+        $z5 = virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label47:
+        if $i0 == 58 goto label48;
+
+        $z6 = virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label48:
+        if $i0 == 59 goto label49;
+
+        $z7 = virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label49:
+        if $i0 == 60 goto label45;
+
+     label50:
+        if $i0 == 61 goto label44;
+
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onStop()>();
+
+        if $i0 == 62 goto label51;
+
+        if $i0 == 63 goto label43;
+
+     label51:
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onDestroy()>();
+
+     label52:
+        if $i0 == 65 goto label60;
+
+        $r17 = new de.trier.infsec.koch.droidsheep.services.DroidSheepService;
+
+        specialinvoke $r17.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void <init>()>();
+
+     label53:
+        if $i0 == 66 goto label54;
+
+        if $i0 == 67 goto label53;
+
+     label54:
+        if $i0 == 68 goto label57;
+
+     label55:
+        if $i0 == 69 goto label56;
+
+        virtualinvoke $r17.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onHandleIntent(android.content.Intent)>(null);
+
+     label56:
+        if $i0 == 70 goto label55;
+
+     label57:
+        if $i0 == 71 goto label58;
+
+        virtualinvoke $r17.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onHandleIntent(android.content.Intent)>(null);
+
+     label58:
+        if $i0 == 72 goto label57;
+
+        if $i0 == 73 goto label59;
+
+        if $i0 == 74 goto label57;
+
+     label59:
+        virtualinvoke $r17.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onDestroy()>();
+
+     label60:
+        if $i0 == 75 goto label62;
+
+        $r18 = new de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker;
+
+        specialinvoke $r18.<de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void <init>(android.os.Handler)>(null);
+
+        if $i0 == 76 goto label62;
+
+     label61:
+        virtualinvoke $r18.<de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 78 goto label61;
+
+     label62:
+        if $i0 == 79 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 40 callback methods for 5 components
+Found {res/layout/unrooted.xml=[-1 - android.widget.ScrollView, 2131165189 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/webview.xml=[2131165208 - android.webkit.WebView, 2131165207 - android.widget.LinearLayout], res/layout/disclaimer.xml=[-1 - android.widget.ScrollView, 2131165189 - android.widget.TextView, 2131165190 - android.widget.CheckBox, 2131165188 - android.widget.RelativeLayout, -1 - android.widget.LinearLayout], res/layout/debug.xml=[2131165184 - android.widget.ScrollView, 2131165186 - android.widget.LinearLayout, -1 - android.widget.LinearLayout, 2131165185 - android.widget.ListView, 2131165187 - android.widget.Button], res/layout/donation.xml=[-1 - android.widget.ScrollView, 2131165194 - android.widget.Button, 2131165188 - android.widget.RelativeLayout, 2131165191 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131165193 - android.widget.Button, 2131165192 - android.widget.TextView], res/layout/listen.xml=[2131165199 - android.widget.TextView, 2131165206 - android.widget.Button, 2131165205 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165203 - android.widget.CheckBox, 2131165204 - android.widget.ProgressBar, 2131165198 - android.widget.TextView, 2131165201 - android.widget.LinearLayout, 2131165202 - android.widget.CheckBox, 2131165200 - de.trier.infsec.koch.droidsheep.objects.SessionListView], res/layout/listelement.xml=[2131165195 - android.widget.ImageView, 2131165196 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165197 - android.widget.TextView, -1 - android.widget.RelativeLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 40 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4f6bf46228a819f7a28b1304cf20bf2bc661ce3a23a7d759fa19eb5c2cc29ae4.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: de.trier.infsec.koch.droidsheep.activities.UpdateActivity is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.EditText
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Handler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity $r1;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$2 $r2;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$8 $r3;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$1 $r4;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$4 $r5;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$4 $r6;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$2 $r7;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$3 $r8;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$6 $r9;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$3 $r10;
+        de.trier.infsec.koch.droidsheep.helper.DialogHelper$5 $r11;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        de.trier.infsec.koch.droidsheep.activities.ListenActivity$5 $r12;
+        de.trier.infsec.koch.droidsheep.activities.DonateActivity $r13;
+        de.trier.infsec.koch.droidsheep.services.ArpspoofService $r14;
+        de.trier.infsec.koch.droidsheep.activities.HijackActivity $r15;
+        de.trier.infsec.koch.droidsheep.activities.HijackActivity$2 $r16;
+        de.trier.infsec.koch.droidsheep.services.DroidSheepService $r17;
+        de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker $r18;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 2 goto label28;
+
+        $r1 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity;
+
+        specialinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void <init>()>();
+
+        if $i0 == 3 goto label28;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onResume()>();
+
+        if $i0 == 5 goto label26;
+
+     label04:
+        $r2 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$2;
+
+        specialinvoke $r2.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$2: void <init>()>();
+
+        if $i0 == 6 goto label05;
+
+        virtualinvoke $r2.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        $r3 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$8;
+
+        specialinvoke $r3.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$8: void <init>(android.view.View)>(null);
+
+        if $i0 == 7 goto label06;
+
+        virtualinvoke $r3.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label06:
+        $r4 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$1;
+
+        specialinvoke $r4.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$1: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r4.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label07:
+        $r5 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$4;
+
+        specialinvoke $r5.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$4: void <init>()>();
+
+        if $i0 == 9 goto label08;
+
+        virtualinvoke $r5.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label08:
+        $r6 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$4;
+
+        specialinvoke $r6.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$4: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 10 goto label09;
+
+        virtualinvoke $r6.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label09:
+        $r7 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$2;
+
+        specialinvoke $r7.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$2: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 11 goto label10;
+
+        virtualinvoke $r7.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label10:
+        $r8 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$3;
+
+        specialinvoke $r8.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$3: void <init>()>();
+
+        if $i0 == 12 goto label11;
+
+        virtualinvoke $r8.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label11:
+        $r9 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$6;
+
+        specialinvoke $r9.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$6: void <init>()>();
+
+        if $i0 == 13 goto label12;
+
+        virtualinvoke $r9.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label12:
+        $r10 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$3;
+
+        specialinvoke $r10.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$3: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 14 goto label13;
+
+        virtualinvoke $r10.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label13:
+        $r11 = new de.trier.infsec.koch.droidsheep.helper.DialogHelper$5;
+
+        specialinvoke $r11.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$5: void <init>()>();
+
+        if $i0 == 15 goto label14;
+
+        virtualinvoke $r11.<de.trier.infsec.koch.droidsheep.helper.DialogHelper$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label14:
+        if $i0 == 16 goto label15;
+
+        $z0 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label15:
+        if $i0 == 17 goto label16;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onClick(android.view.View)>(null);
+
+     label16:
+        if $i0 == 18 goto label17;
+
+        $z1 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label17:
+        if $i0 == 19 goto label18;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label18:
+        if $i0 == 20 goto label19;
+
+        $z2 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label19:
+        if $i0 == 21 goto label20;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label20:
+        if $i0 == 22 goto label21;
+
+        $z3 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label21:
+        if $i0 == 23 goto label22;
+
+        staticinvoke <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void <clinit>()>();
+
+     label22:
+        if $i0 == 24 goto label23;
+
+        $z4 = virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label23:
+        if $i0 == 25 goto label24;
+
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label24:
+        $r12 = new de.trier.infsec.koch.droidsheep.activities.ListenActivity$5;
+
+        specialinvoke $r12.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$5: void <init>(de.trier.infsec.koch.droidsheep.activities.ListenActivity)>($r1);
+
+        if $i0 == 26 goto label25;
+
+        virtualinvoke $r12.<de.trier.infsec.koch.droidsheep.activities.ListenActivity$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        if $i0 == 27 goto label04;
+
+     label26:
+        if $i0 == 28 goto label03;
+
+        if $i0 == 29 goto label27;
+
+        if $i0 == 30 goto label02;
+
+     label27:
+        virtualinvoke $r1.<de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onDestroy()>();
+
+     label28:
+        if $i0 == 32 goto label34;
+
+        $r13 = new de.trier.infsec.koch.droidsheep.activities.DonateActivity;
+
+        specialinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void <init>()>();
+
+        if $i0 == 33 goto label34;
+
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onStart()>();
+
+     label30:
+        if $i0 == 35 goto label33;
+
+     label31:
+        if $i0 == 36 goto label32;
+
+        virtualinvoke $r13.<de.trier.infsec.koch.droidsheep.activities.DonateActivity: void onClick(android.view.View)>(null);
+
+     label32:
+        if $i0 == 37 goto label31;
+
+     label33:
+        if $i0 == 38 goto label30;
+
+        if $i0 == 39 goto label34;
+
+        if $i0 == 40 goto label29;
+
+     label34:
+        if $i0 == 42 goto label42;
+
+        $r14 = new de.trier.infsec.koch.droidsheep.services.ArpspoofService;
+
+        specialinvoke $r14.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void <init>()>();
+
+     label35:
+        if $i0 == 43 goto label36;
+
+        if $i0 == 44 goto label35;
+
+     label36:
+        if $i0 == 45 goto label39;
+
+     label37:
+        if $i0 == 46 goto label38;
+
+        virtualinvoke $r14.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onHandleIntent(android.content.Intent)>(null);
+
+     label38:
+        if $i0 == 47 goto label37;
+
+     label39:
+        if $i0 == 48 goto label40;
+
+        virtualinvoke $r14.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onHandleIntent(android.content.Intent)>(null);
+
+     label40:
+        if $i0 == 49 goto label39;
+
+        if $i0 == 50 goto label41;
+
+        if $i0 == 51 goto label39;
+
+     label41:
+        virtualinvoke $r14.<de.trier.infsec.koch.droidsheep.services.ArpspoofService: void onDestroy()>();
+
+     label42:
+        if $i0 == 52 goto label52;
+
+        $r15 = new de.trier.infsec.koch.droidsheep.activities.HijackActivity;
+
+        specialinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void <init>()>();
+
+        if $i0 == 53 goto label52;
+
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onCreate(android.os.Bundle)>(null);
+
+     label43:
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onStart()>();
+
+     label44:
+        if $i0 == 55 goto label50;
+
+     label45:
+        $r16 = new de.trier.infsec.koch.droidsheep.activities.HijackActivity$2;
+
+        specialinvoke $r16.<de.trier.infsec.koch.droidsheep.activities.HijackActivity$2: void <init>(de.trier.infsec.koch.droidsheep.activities.HijackActivity,android.widget.EditText)>($r15, null);
+
+        if $i0 == 56 goto label46;
+
+        virtualinvoke $r16.<de.trier.infsec.koch.droidsheep.activities.HijackActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label46:
+        if $i0 == 57 goto label47;
+
+        $z5 = virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label47:
+        if $i0 == 58 goto label48;
+
+        $z6 = virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label48:
+        if $i0 == 59 goto label49;
+
+        $z7 = virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label49:
+        if $i0 == 60 goto label45;
+
+     label50:
+        if $i0 == 61 goto label44;
+
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onStop()>();
+
+        if $i0 == 62 goto label51;
+
+        if $i0 == 63 goto label43;
+
+     label51:
+        virtualinvoke $r15.<de.trier.infsec.koch.droidsheep.activities.HijackActivity: void onDestroy()>();
+
+     label52:
+        if $i0 == 65 goto label60;
+
+        $r17 = new de.trier.infsec.koch.droidsheep.services.DroidSheepService;
+
+        specialinvoke $r17.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void <init>()>();
+
+     label53:
+        if $i0 == 66 goto label54;
+
+        if $i0 == 67 goto label53;
+
+     label54:
+        if $i0 == 68 goto label57;
+
+     label55:
+        if $i0 == 69 goto label56;
+
+        virtualinvoke $r17.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onHandleIntent(android.content.Intent)>(null);
+
+     label56:
+        if $i0 == 70 goto label55;
+
+     label57:
+        if $i0 == 71 goto label58;
+
+        virtualinvoke $r17.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onHandleIntent(android.content.Intent)>(null);
+
+     label58:
+        if $i0 == 72 goto label57;
+
+        if $i0 == 73 goto label59;
+
+        if $i0 == 74 goto label57;
+
+     label59:
+        virtualinvoke $r17.<de.trier.infsec.koch.droidsheep.services.DroidSheepService: void onDestroy()>();
+
+     label60:
+        if $i0 == 75 goto label62;
+
+        $r18 = new de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker;
+
+        specialinvoke $r18.<de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void <init>(android.os.Handler)>(null);
+
+        if $i0 == 76 goto label62;
+
+     label61:
+        virtualinvoke $r18.<de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 78 goto label61;
+
+     label62:
+        if $i0 == 79 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.444118518 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.055637947 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1374 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 69 sources and 63 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1271
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 4672
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 12929 forward and 6420 backward edges solved, processing 5 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.0031341 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.os.Handler: boolean sendMessage(android.os.Message)>($r2) in method <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void startDebug()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r5.<android.os.Handler: android.os.Message obtainMessage()>() in method <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void startDebug()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.os.Handler: boolean sendMessage(android.os.Message)>($r4) in method <de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r5.<android.os.Handler: android.os.Message obtainMessage()>() in method <de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r4) in method <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onClick(android.view.View)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Handler: android.os.Message obtainMessage()>() in method <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Handler: boolean sendMessage(android.os.Message)>($r12) in method <de.trier.infsec.koch.droidsheep.helper.SystemHelper: void readAuthFiles(android.content.Context,android.os.Handler)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r1.<android.os.Handler: android.os.Message obtainMessage()>() in method <de.trier.infsec.koch.droidsheep.helper.SystemHelper: void readAuthFiles(android.content.Context,android.os.Handler)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r6.<android.os.Handler: boolean sendMessage(android.os.Message)>($r7) in method <de.trier.infsec.koch.droidsheep.auth.AuthHelper: void process(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r6.<android.os.Handler: android.os.Message obtainMessage()>() in method <de.trier.infsec.koch.droidsheep.auth.AuthHelper: void process(java.lang.String)>
+Found a flow to sink virtualinvoke $r5.<android.os.Handler: boolean sendMessage(android.os.Message)>($r2), from the following sources:
+	- $r2 = virtualinvoke $r5.<android.os.Handler: android.os.Message obtainMessage()>() (in <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void startDebug()>)
+Found a flow to sink virtualinvoke $r5.<android.os.Handler: boolean sendMessage(android.os.Message)>($r4), from the following sources:
+	- $r4 = virtualinvoke $r5.<android.os.Handler: android.os.Message obtainMessage()>() (in <de.trier.infsec.koch.droidsheep.objects.WifiChangeChecker: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Handler: boolean sendMessage(android.os.Message)>($r4), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Handler: android.os.Message obtainMessage()>() (in <de.trier.infsec.koch.droidsheep.activities.ListenActivity: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Handler: boolean sendMessage(android.os.Message)>($r12), from the following sources:
+	- $r12 = virtualinvoke $r1.<android.os.Handler: android.os.Message obtainMessage()>() (in <de.trier.infsec.koch.droidsheep.helper.SystemHelper: void readAuthFiles(android.content.Context,android.os.Handler)>)
+Found a flow to sink virtualinvoke $r6.<android.os.Handler: boolean sendMessage(android.os.Message)>($r7), from the following sources:
+	- $r7 = virtualinvoke $r6.<android.os.Handler: android.os.Message obtainMessage()>() (in <de.trier.infsec.koch.droidsheep.auth.AuthHelper: void process(java.lang.String)>)
+Maximum memory consumption: 181.46144 MB
+Analysis has run for 5.484194187 seconds

@@ -1,0 +1,237 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.014956086 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.mmmm.bl.FreeMelody $r1;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r1 = new com.mmmm.bl.FreeMelody;
+
+        specialinvoke $r1.<com.mmmm.bl.FreeMelody: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+        virtualinvoke $r1.<com.mmmm.bl.FreeMelody: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        virtualinvoke $r1.<com.mmmm.bl.FreeMelody: void onStart()>();
+
+        if $i0 == 4 goto label3;
+
+        if $i0 == 5 goto label2;
+
+     label3:
+        if $i0 == 7 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: com.mmmm.bl.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.mmmm.bl.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.mmmm.bl.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/freemelody.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.mmmm.bl.FreeMelody $r1;
+        boolean $z0;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label7;
+
+        $r1 = new com.mmmm.bl.FreeMelody;
+
+        specialinvoke $r1.<com.mmmm.bl.FreeMelody: void <init>()>();
+
+        if $i0 == 1 goto label7;
+
+        virtualinvoke $r1.<com.mmmm.bl.FreeMelody: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        virtualinvoke $r1.<com.mmmm.bl.FreeMelody: void onStart()>();
+
+     label3:
+        if $i0 == 3 goto label6;
+
+     label4:
+        if $i0 == 4 goto label5;
+
+        $z0 = virtualinvoke $r1.<com.mmmm.bl.FreeMelody: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label5:
+        if $i0 == 5 goto label4;
+
+     label6:
+        if $i0 == 6 goto label3;
+
+        if $i0 == 7 goto label7;
+
+        if $i0 == 8 goto label2;
+
+     label7:
+        if $i0 == 10 goto label1;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.0 seconds.
+[Spark] Solution found in 0.0 seconds.
+Running incremental callback analysis for 1 components...
+Incremental callback analysis done.
+Found 3 callback methods for 1 components
+Found {res/layout/freemelody.xml=[2131034113 - android.widget.TextView, -1 - android.widget.FrameLayout, 2131034112 - android.widget.ImageView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 3 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4c03f8a1549d567096703b4e7be6d04d8f27730b8a1b4e1bbac92b728a4515ba.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.mmmm.bl.FreeMelody $r1;
+        boolean $z0;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label7;
+
+        $r1 = new com.mmmm.bl.FreeMelody;
+
+        specialinvoke $r1.<com.mmmm.bl.FreeMelody: void <init>()>();
+
+        if $i0 == 1 goto label7;
+
+        virtualinvoke $r1.<com.mmmm.bl.FreeMelody: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        virtualinvoke $r1.<com.mmmm.bl.FreeMelody: void onStart()>();
+
+     label3:
+        if $i0 == 3 goto label6;
+
+     label4:
+        if $i0 == 4 goto label5;
+
+        $z0 = virtualinvoke $r1.<com.mmmm.bl.FreeMelody: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label5:
+        if $i0 == 5 goto label4;
+
+     label6:
+        if $i0 == 6 goto label3;
+
+        if $i0 == 7 goto label7;
+
+        if $i0 == 8 goto label2;
+
+     label7:
+        if $i0 == 10 goto label1;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.136456789 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.016035847 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 107 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 13 sources and 5 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 608
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 775
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 3025 forward and 983 backward edges solved, processing 5 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.006304431 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r13 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, "contact_id = ? ", $r12, null) in method <com.mmmm.bl.FreeMelody$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.mmmm.bl.FreeMelody$1: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r8.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("test", $r1) in method <com.mmmm.bl.FreeMelody: java.lang.String postHttp(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r13.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.mmmm.bl.FreeMelody$1: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r13 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, "contact_id = ? ", $r12, null) in method <com.mmmm.bl.FreeMelody$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.mmmm.bl.FreeMelody$1: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r9 = interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4) in method <com.mmmm.bl.FreeMelody: java.lang.String postHttp(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r13.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.mmmm.bl.FreeMelody$1: void run()>
+Found a flow to sink $r13 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, "contact_id = ? ", $r12, null), from the following sources:
+	- $r6 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.mmmm.bl.FreeMelody$1: void run()>)
+Found a flow to sink specialinvoke $r8.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("test", $r1), from the following sources:
+	- $r10 = interfaceinvoke $r13.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.mmmm.bl.FreeMelody$1: void run()>)
+Found a flow to sink $r13 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, "contact_id = ? ", $r12, null), from the following sources:
+	- $r6 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.mmmm.bl.FreeMelody$1: void run()>)
+Found a flow to sink $r9 = interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4), from the following sources:
+	- $r10 = interfaceinvoke $r13.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.mmmm.bl.FreeMelody$1: void run()>)
+Maximum memory consumption: 104.416184 MB
+Analysis has run for 2.695501563 seconds

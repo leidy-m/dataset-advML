@@ -1,0 +1,806 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.009982338 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.km.charge.BootReceiver $r1;
+        com.km.installer.InstallerActivity $r2;
+        com.km.charge.MainService $r3;
+        android.os.IBinder $r4, $r8;
+        com.km.charge.MainActivity $r5;
+        com.km.charge.HoldMessage $r6;
+        com.km.charge.CycleService $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.km.charge.BootReceiver;
+
+        specialinvoke $r1.<com.km.charge.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.km.installer.InstallerActivity;
+
+        specialinvoke $r2.<com.km.installer.InstallerActivity: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<com.km.installer.InstallerActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        if $i0 == 11 goto label10;
+
+        $r3 = new com.km.charge.MainService;
+
+        specialinvoke $r3.<com.km.charge.MainService: void <init>()>();
+
+        virtualinvoke $r3.<com.km.charge.MainService: void onCreate()>();
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        if $i0 == 13 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<com.km.charge.MainService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 15 goto label09;
+
+        if $i0 == 16 goto label08;
+
+     label09:
+        virtualinvoke $r3.<com.km.charge.MainService: void onDestroy()>();
+
+     label10:
+        if $i0 == 17 goto label12;
+
+        $r5 = new com.km.charge.MainActivity;
+
+        specialinvoke $r5.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r5.<com.km.charge.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 21 goto label12;
+
+        if $i0 == 22 goto label11;
+
+     label12:
+        if $i0 == 24 goto label14;
+
+        $r6 = new com.km.charge.HoldMessage;
+
+        specialinvoke $r6.<com.km.charge.HoldMessage: void <init>()>();
+
+        if $i0 == 25 goto label14;
+
+     label13:
+        virtualinvoke $r6.<com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 27 goto label13;
+
+     label14:
+        if $i0 == 28 goto label18;
+
+        $r7 = new com.km.charge.CycleService;
+
+        specialinvoke $r7.<com.km.charge.CycleService: void <init>()>();
+
+        virtualinvoke $r7.<com.km.charge.CycleService: void onCreate()>();
+
+     label15:
+        if $i0 == 29 goto label16;
+
+        if $i0 == 30 goto label15;
+
+     label16:
+        $r8 = virtualinvoke $r7.<com.km.charge.CycleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label17:
+        if $i0 == 32 goto label18;
+
+        if $i0 == 33 goto label17;
+
+     label18:
+        if $i0 == 34 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.km.installer.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.km.installer.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: framelayout is a phantom class!
+Warning: com.km.installer.framelayout is a phantom class!
+Warning: android.view.framelayout is a phantom class!
+Warning: android.widget.framelayout is a phantom class!
+Warning: android.webkit.framelayout is a phantom class!
+Could not find layout class framelayout
+Warning: videoview is a phantom class!
+Warning: com.km.installer.videoview is a phantom class!
+Warning: android.view.videoview is a phantom class!
+Warning: android.widget.videoview is a phantom class!
+Warning: android.webkit.videoview is a phantom class!
+Could not find layout class videoview
+Found 1 layout controls in file res/layout/videoscreen.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.km.charge.SendMessageInterface, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.km.charge.BootReceiver $r1;
+        com.km.installer.InstallerActivity $r2;
+        com.km.charge.MainService $r3;
+        android.os.IBinder $r4, $r10;
+        com.km.charge.MainActivity $r5;
+        com.km.charge.HoldMessage $r6;
+        com.km.charge.SendMessage $r7;
+        com.km.charge.SendMessage$SendMessageReceiver $r8;
+        com.km.charge.CycleService $r9;
+        com.km.charge.HttpBox $r11;
+        com.km.charge.HttpBox$ConnectivityReceiver $r12;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.km.charge.BootReceiver;
+
+        specialinvoke $r1.<com.km.charge.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.km.installer.InstallerActivity;
+
+        specialinvoke $r2.<com.km.installer.InstallerActivity: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<com.km.installer.InstallerActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 8 goto label04;
+
+        if $i0 == 9 goto label05;
+
+        if $i0 == 10 goto label04;
+
+     label05:
+        if $i0 == 12 goto label10;
+
+        $r3 = new com.km.charge.MainService;
+
+        specialinvoke $r3.<com.km.charge.MainService: void <init>()>();
+
+        virtualinvoke $r3.<com.km.charge.MainService: void onCreate()>();
+
+     label06:
+        if $i0 == 13 goto label07;
+
+        if $i0 == 14 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<com.km.charge.MainService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label08;
+
+     label09:
+        virtualinvoke $r3.<com.km.charge.MainService: void onDestroy()>();
+
+     label10:
+        if $i0 == 18 goto label16;
+
+        $r5 = new com.km.charge.MainActivity;
+
+        specialinvoke $r5.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 19 goto label16;
+
+        virtualinvoke $r5.<com.km.charge.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 21 goto label15;
+
+     label12:
+        if $i0 == 22 goto label13;
+
+        virtualinvoke $r5.<com.km.charge.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label13:
+        if $i0 == 23 goto label14;
+
+        virtualinvoke $r5.<com.km.charge.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label14:
+        if $i0 == 24 goto label12;
+
+     label15:
+        if $i0 == 25 goto label11;
+
+        if $i0 == 26 goto label16;
+
+        if $i0 == 27 goto label11;
+
+     label16:
+        if $i0 == 29 goto label18;
+
+        $r6 = new com.km.charge.HoldMessage;
+
+        specialinvoke $r6.<com.km.charge.HoldMessage: void <init>()>();
+
+        if $i0 == 30 goto label18;
+
+     label17:
+        virtualinvoke $r6.<com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 32 goto label17;
+
+     label18:
+        if $i0 == 33 goto label20;
+
+        $r7 = new com.km.charge.SendMessage;
+
+        specialinvoke $r7.<com.km.charge.SendMessage: void <init>(android.content.Context,com.km.charge.SendMessageInterface)>(null, null);
+
+        $r8 = new com.km.charge.SendMessage$SendMessageReceiver;
+
+        specialinvoke $r8.<com.km.charge.SendMessage$SendMessageReceiver: void <init>(com.km.charge.SendMessage)>($r7);
+
+        if $i0 == 34 goto label20;
+
+     label19:
+        virtualinvoke $r8.<com.km.charge.SendMessage$SendMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 36 goto label19;
+
+     label20:
+        if $i0 == 37 goto label24;
+
+        $r9 = new com.km.charge.CycleService;
+
+        specialinvoke $r9.<com.km.charge.CycleService: void <init>()>();
+
+        virtualinvoke $r9.<com.km.charge.CycleService: void onCreate()>();
+
+     label21:
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label21;
+
+     label22:
+        $r10 = virtualinvoke $r9.<com.km.charge.CycleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label23:
+        if $i0 == 41 goto label24;
+
+        if $i0 == 42 goto label23;
+
+     label24:
+        if $i0 == 43 goto label26;
+
+        $r11 = new com.km.charge.HttpBox;
+
+        specialinvoke $r11.<com.km.charge.HttpBox: void <init>(android.content.Context)>(null);
+
+        $r12 = new com.km.charge.HttpBox$ConnectivityReceiver;
+
+        specialinvoke $r12.<com.km.charge.HttpBox$ConnectivityReceiver: void <init>(com.km.charge.HttpBox)>($r11);
+
+        if $i0 == 44 goto label26;
+
+     label25:
+        virtualinvoke $r12.<com.km.charge.HttpBox$ConnectivityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 46 goto label25;
+
+     label26:
+        if $i0 == 47 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 11 callback methods for 6 components
+Found {res/layout/main.xml=[-1 - android.widget.TextView, -1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 11 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2f3fe4bdd402868935a96957bcc51c0b1f0fdca7ca8b591c30860aa161e00b3c.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.km.charge.SendMessageInterface, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.km.charge.BootReceiver $r1;
+        com.km.installer.InstallerActivity $r2;
+        com.km.charge.MainService $r3;
+        android.os.IBinder $r4, $r10;
+        com.km.charge.MainActivity $r5;
+        com.km.charge.HoldMessage $r6;
+        com.km.charge.SendMessage $r7;
+        com.km.charge.SendMessage$SendMessageReceiver $r8;
+        com.km.charge.CycleService $r9;
+        com.km.charge.HttpBox $r11;
+        com.km.charge.HttpBox$ConnectivityReceiver $r12;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.km.charge.BootReceiver;
+
+        specialinvoke $r1.<com.km.charge.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.km.installer.InstallerActivity;
+
+        specialinvoke $r2.<com.km.installer.InstallerActivity: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<com.km.installer.InstallerActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 8 goto label04;
+
+        if $i0 == 9 goto label05;
+
+        if $i0 == 10 goto label04;
+
+     label05:
+        if $i0 == 12 goto label10;
+
+        $r3 = new com.km.charge.MainService;
+
+        specialinvoke $r3.<com.km.charge.MainService: void <init>()>();
+
+        virtualinvoke $r3.<com.km.charge.MainService: void onCreate()>();
+
+     label06:
+        if $i0 == 13 goto label07;
+
+        if $i0 == 14 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<com.km.charge.MainService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label08;
+
+     label09:
+        virtualinvoke $r3.<com.km.charge.MainService: void onDestroy()>();
+
+     label10:
+        if $i0 == 18 goto label16;
+
+        $r5 = new com.km.charge.MainActivity;
+
+        specialinvoke $r5.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 19 goto label16;
+
+        virtualinvoke $r5.<com.km.charge.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 21 goto label15;
+
+     label12:
+        if $i0 == 22 goto label13;
+
+        virtualinvoke $r5.<com.km.charge.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label13:
+        if $i0 == 23 goto label14;
+
+        virtualinvoke $r5.<com.km.charge.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label14:
+        if $i0 == 24 goto label12;
+
+     label15:
+        if $i0 == 25 goto label11;
+
+        if $i0 == 26 goto label16;
+
+        if $i0 == 27 goto label11;
+
+     label16:
+        if $i0 == 29 goto label18;
+
+        $r6 = new com.km.charge.HoldMessage;
+
+        specialinvoke $r6.<com.km.charge.HoldMessage: void <init>()>();
+
+        if $i0 == 30 goto label18;
+
+     label17:
+        virtualinvoke $r6.<com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 32 goto label17;
+
+     label18:
+        if $i0 == 33 goto label20;
+
+        $r7 = new com.km.charge.SendMessage;
+
+        specialinvoke $r7.<com.km.charge.SendMessage: void <init>(android.content.Context,com.km.charge.SendMessageInterface)>(null, null);
+
+        $r8 = new com.km.charge.SendMessage$SendMessageReceiver;
+
+        specialinvoke $r8.<com.km.charge.SendMessage$SendMessageReceiver: void <init>(com.km.charge.SendMessage)>($r7);
+
+        if $i0 == 34 goto label20;
+
+     label19:
+        virtualinvoke $r8.<com.km.charge.SendMessage$SendMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 36 goto label19;
+
+     label20:
+        if $i0 == 37 goto label24;
+
+        $r9 = new com.km.charge.CycleService;
+
+        specialinvoke $r9.<com.km.charge.CycleService: void <init>()>();
+
+        virtualinvoke $r9.<com.km.charge.CycleService: void onCreate()>();
+
+     label21:
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label21;
+
+     label22:
+        $r10 = virtualinvoke $r9.<com.km.charge.CycleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label23:
+        if $i0 == 41 goto label24;
+
+        if $i0 == 42 goto label23;
+
+     label24:
+        if $i0 == 43 goto label26;
+
+        $r11 = new com.km.charge.HttpBox;
+
+        specialinvoke $r11.<com.km.charge.HttpBox: void <init>(android.content.Context)>(null);
+
+        $r12 = new com.km.charge.HttpBox$ConnectivityReceiver;
+
+        specialinvoke $r12.<com.km.charge.HttpBox$ConnectivityReceiver: void <init>(com.km.charge.HttpBox)>($r11);
+
+        if $i0 == 44 goto label26;
+
+     label25:
+        virtualinvoke $r12.<com.km.charge.HttpBox$ConnectivityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 46 goto label25;
+
+     label26:
+        if $i0 == 47 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.727374032 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.080549866 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1993 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 27 sources and 37 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 843907
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 4262664
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 4790199 forward and 6888348 backward edges solved, processing 41 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 41 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 39 with task id 38
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 40 with task id 39
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 41 with task id 40
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.735531171 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r1) in method <com.km.tool.ApnManager: int CreateGPRSApn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("getApnId", $r1) in method <com.km.tool.Log: void d(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1) in method <com.km.charge.HttpBox: void registerListen()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2) in method <com.km.charge.HttpBox: void write()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3) in method <com.km.charge.HttpBox: void connect()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r2, $r4, null) in method <com.km.tool.ApnManager: void delete(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2) in method <com.km.tool.Http: void write()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<android.os.Handler: boolean sendMessage(android.os.Message)>($r7) in method <com.km.charge.BbxChargeEngine$HttpClient: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateGPRSApn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.km.tool.Http: void setUrl(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrlPath(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrlPath(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1) in method <com.km.tool.Http: void registerListen()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3) in method <com.km.tool.Http: void connectOperate()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrlPath(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrlPath(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r1) in method <com.km.tool.ApnManager: int CreateWapApn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateWapApn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null) in method <com.km.tool.ApnManager: boolean SetDefaultAPN(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateGPRSApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateWapApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.km.tool.Util: void startServiceWithSingleMode(android.content.Context,java.lang.Class)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r8 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, $r7, null, null) in method <com.km.tool.ApnManager: boolean SetDefaultAPN(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateGPRSApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateWapApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r7, $r3) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r2, 1) in method <com.km.installer.InstallerActivity: void chargeAction(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.km.charge.HttpBox: void setUrl(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1) in method <com.km.tool.Log: void w(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("networkInfo") in method <com.km.charge.HttpBox$ConnectivityReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) in method <com.km.tool.Log: void i(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.km.charge.HoldMessage: android.telephony.gsm.SmsMessage getSms(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>($r3, 0, $i0) in method <com.km.installer.InstallerActivity: boolean write(java.lang.String,java.io.OutputStream)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<com.km.installer.InstallerActivity: void startActivity(android.content.Intent)>($r2) in method <com.km.installer.InstallerActivity: void setup(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) in method <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>
+Found a flow to sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r1), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("getApnId", $r1), from the following sources:
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+Found a flow to sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r1.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r2, $r4, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+Found a flow to sink virtualinvoke $r8.<android.os.Handler: boolean sendMessage(android.os.Message)>($r7), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+Found a flow to sink $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+	- $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrlPath(android.content.Context,int)>)
+	- $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrlPath(android.content.Context,int)>)
+Found a flow to sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+	- $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrlPath(android.content.Context,int)>)
+	- $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrlPath(android.content.Context,int)>)
+Found a flow to sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null), from the following sources:
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateGPRSApn()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateWapApn()>)
+	- $r1 := @parameter0: android.content.Context (in <com.km.charge.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r8 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, $r7, null, null), from the following sources:
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateGPRSApn()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateWapApn()>)
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r5.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r7, $r3), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+Found a flow to sink $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r2, 1), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("networkInfo") (in <com.km.charge.HttpBox$ConnectivityReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.km.charge.HoldMessage: android.telephony.gsm.SmsMessage getSms(android.content.Intent)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>($r3, 0, $i0), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+Found a flow to sink virtualinvoke $r0.<com.km.installer.InstallerActivity: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r4 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r5, 0, $r2, 0) (in <com.km.charge.SendMessage: void setIInterface(com.km.charge.SendMessageInterface)>)
+Maximum memory consumption: 1918.477184 MB
+Analysis has run for 55.986746428 seconds

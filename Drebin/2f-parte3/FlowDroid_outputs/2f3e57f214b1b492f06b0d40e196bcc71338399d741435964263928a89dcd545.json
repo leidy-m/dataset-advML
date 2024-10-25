@@ -1,0 +1,610 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.014184215 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.orderlong.netTrafficStats.TrafficApp $r1;
+        com.atools.battery.ShowTips $r2;
+        com.orderlong.netTrafficStats.NetTrafficStats $r3;
+        com.atools.netTrafficStats.MainActivity $r4;
+        com.atools.battery.UpdateService $r5;
+        android.os.IBinder $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new com.orderlong.netTrafficStats.TrafficApp;
+
+        specialinvoke $r1.<com.orderlong.netTrafficStats.TrafficApp: void <init>()>();
+
+        virtualinvoke $r1.<com.orderlong.netTrafficStats.TrafficApp: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r2 = new com.atools.battery.ShowTips;
+
+        specialinvoke $r2.<com.atools.battery.ShowTips: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r2.<com.atools.battery.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 8 goto label05;
+
+        $r3 = new com.orderlong.netTrafficStats.NetTrafficStats;
+
+        specialinvoke $r3.<com.orderlong.netTrafficStats.NetTrafficStats: void <init>()>();
+
+        if $i0 == 9 goto label05;
+
+        virtualinvoke $r3.<com.orderlong.netTrafficStats.NetTrafficStats: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r3.<com.orderlong.netTrafficStats.NetTrafficStats: void onResume()>();
+
+        virtualinvoke $r3.<com.orderlong.netTrafficStats.NetTrafficStats: void onPause()>();
+
+        if $i0 == 11 goto label04;
+
+        if $i0 == 12 goto label05;
+
+        if $i0 == 13 goto label04;
+
+     label05:
+        if $i0 == 15 goto label08;
+
+        $r4 = new com.atools.netTrafficStats.MainActivity;
+
+        specialinvoke $r4.<com.atools.netTrafficStats.MainActivity: void <init>()>();
+
+        if $i0 == 16 goto label08;
+
+        virtualinvoke $r4.<com.atools.netTrafficStats.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        virtualinvoke $r4.<com.atools.netTrafficStats.MainActivity: void onStart()>();
+
+     label07:
+        virtualinvoke $r4.<com.atools.netTrafficStats.MainActivity: void onResume()>();
+
+        virtualinvoke $r4.<com.atools.netTrafficStats.MainActivity: void onPause()>();
+
+        if $i0 == 18 goto label07;
+
+        if $i0 == 19 goto label08;
+
+        if $i0 == 20 goto label06;
+
+     label08:
+        if $i0 == 22 goto label13;
+
+        $r5 = new com.atools.battery.UpdateService;
+
+        specialinvoke $r5.<com.atools.battery.UpdateService: void <init>()>();
+
+        virtualinvoke $r5.<com.atools.battery.UpdateService: void onCreate()>();
+
+     label09:
+        if $i0 == 23 goto label10;
+
+        if $i0 == 24 goto label09;
+
+     label10:
+        $r6 = virtualinvoke $r5.<com.atools.battery.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label11:
+        if $i0 == 26 goto label12;
+
+        if $i0 == 27 goto label11;
+
+     label12:
+        virtualinvoke $r5.<com.atools.battery.UpdateService: void onDestroy()>();
+
+     label13:
+        if $i0 == 29 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.2 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.atools.netTrafficStats.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.atools.netTrafficStats.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.atools.netTrafficStats.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.atools.netTrafficStats.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: ToggleButton is a phantom class!
+Warning: com.atools.netTrafficStats.ToggleButton is a phantom class!
+Warning: android.view.ToggleButton is a phantom class!
+Found 1 layout controls in file res/layout/appinfo_layout.xml
+Found 2 layout controls in file res/layout/item_row.xml
+Warning: SlidingDrawer is a phantom class!
+Warning: com.atools.netTrafficStats.SlidingDrawer is a phantom class!
+Warning: android.view.SlidingDrawer is a phantom class!
+Found 3 layout controls in file res/layout/main.xml
+Found 4 layout controls in file res/layout-hdpi/item_row.xml
+Found 5 layout controls in file res/layout-land-hdpi/main.xml
+Found 6 layout controls in file res/layout-land-mdpi/appinfo_layout.xml
+Found 7 layout controls in file res/layout-land-mdpi/item_row.xml
+Found 8 layout controls in file res/layout-land-mdpi/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.orderlong.netTrafficStats.TrafficApp $r1;
+        com.atools.battery.ShowTips $r2;
+        com.atools.battery.ShowTips$1 $r3;
+        android.app.Dialog $r4;
+        com.orderlong.netTrafficStats.NetTrafficStats $r5;
+        boolean $z0, $z1, $z2;
+        com.atools.netTrafficStats.MainActivity $r6;
+        com.atools.battery.UpdateService $r7;
+        android.os.IBinder $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new com.orderlong.netTrafficStats.TrafficApp;
+
+        specialinvoke $r1.<com.orderlong.netTrafficStats.TrafficApp: void <init>()>();
+
+     label01:
+        if $i0 == 1 goto label01;
+
+        virtualinvoke $r1.<com.orderlong.netTrafficStats.TrafficApp: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label02:
+        if $i0 == 2 goto label08;
+
+        $r2 = new com.atools.battery.ShowTips;
+
+        specialinvoke $r2.<com.atools.battery.ShowTips: void <init>()>();
+
+        if $i0 == 3 goto label08;
+
+        virtualinvoke $r2.<com.atools.battery.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label03:
+        if $i0 == 5 goto label07;
+
+     label04:
+        $r3 = new com.atools.battery.ShowTips$1;
+
+        specialinvoke $r3.<com.atools.battery.ShowTips$1: void <init>(com.atools.battery.ShowTips)>($r2);
+
+        if $i0 == 6 goto label05;
+
+        virtualinvoke $r3.<com.atools.battery.ShowTips$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        if $i0 == 7 goto label06;
+
+        $r4 = virtualinvoke $r2.<com.atools.battery.ShowTips: android.app.Dialog onCreateDialog(int)>(0);
+
+     label06:
+        if $i0 == 8 goto label04;
+
+     label07:
+        if $i0 == 9 goto label03;
+
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label03;
+
+     label08:
+        if $i0 == 14 goto label15;
+
+        $r5 = new com.orderlong.netTrafficStats.NetTrafficStats;
+
+        specialinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: void <init>()>();
+
+        if $i0 == 15 goto label15;
+
+        virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: void onResume()>();
+
+        if $i0 == 17 goto label14;
+
+     label10:
+        if $i0 == 18 goto label11;
+
+        $z0 = virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label11:
+        if $i0 == 19 goto label12;
+
+        $z1 = virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: boolean onCreatePanelMenu(int,android.view.Menu)>(0, null);
+
+     label12:
+        if $i0 == 20 goto label13;
+
+        $z2 = virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label13:
+        if $i0 == 21 goto label10;
+
+     label14:
+        virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: void onPause()>();
+
+        if $i0 == 22 goto label09;
+
+        if $i0 == 23 goto label15;
+
+        if $i0 == 24 goto label09;
+
+     label15:
+        if $i0 == 26 goto label18;
+
+        $r6 = new com.atools.netTrafficStats.MainActivity;
+
+        specialinvoke $r6.<com.atools.netTrafficStats.MainActivity: void <init>()>();
+
+        if $i0 == 27 goto label18;
+
+        virtualinvoke $r6.<com.atools.netTrafficStats.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r6.<com.atools.netTrafficStats.MainActivity: void onStart()>();
+
+     label17:
+        virtualinvoke $r6.<com.atools.netTrafficStats.MainActivity: void onResume()>();
+
+        virtualinvoke $r6.<com.atools.netTrafficStats.MainActivity: void onPause()>();
+
+        if $i0 == 30 goto label17;
+
+        if $i0 == 31 goto label18;
+
+        if $i0 == 32 goto label16;
+
+     label18:
+        if $i0 == 34 goto label23;
+
+        $r7 = new com.atools.battery.UpdateService;
+
+        specialinvoke $r7.<com.atools.battery.UpdateService: void <init>()>();
+
+        virtualinvoke $r7.<com.atools.battery.UpdateService: void onCreate()>();
+
+     label19:
+        if $i0 == 35 goto label20;
+
+        if $i0 == 36 goto label19;
+
+     label20:
+        $r8 = virtualinvoke $r7.<com.atools.battery.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label21;
+
+     label22:
+        virtualinvoke $r7.<com.atools.battery.UpdateService: void onDestroy()>();
+
+     label23:
+        if $i0 == 41 goto label02;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Found 17 callback methods for 5 components
+Found {res/layout-land-mdpi/appinfo_layout.xml=[2131230724 - android.widget.TextView, 2131230725 - android.widget.TextView, 2131230723 - android.widget.TextView, 2131230726 - android.widget.ToggleButton, 2131230722 - android.widget.TextView, 2131230727 - android.widget.ToggleButton, -1 - android.widget.LinearLayout, -1 - android.widget.RelativeLayout, 2131230721 - android.widget.TextView, 2131230720 - android.widget.ImageView], res/layout-hdpi/item_row.xml=[2131230723 - android.widget.TextView, 2131230722 - android.widget.TextView, 2131230728 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131230729 - android.widget.TextView], res/layout/main.xml=[2131230730 - android.widget.LinearLayout, 2131230734 - android.widget.LinearLayout, 2131230732 - android.widget.LinearLayout, 2131230731 - android.widget.SlidingDrawer, 2131230733 - android.widget.LinearLayout, -1 - android.widget.ImageView, -1 - android.widget.RelativeLayout], res/layout/item_row.xml=[2131230723 - android.widget.TextView, 2131230722 - android.widget.TextView, 2131230728 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131230729 - android.widget.TextView], res/layout-land-mdpi/main.xml=[2131230730 - android.widget.LinearLayout, 2131230734 - android.widget.LinearLayout, 2131230731 - android.widget.SlidingDrawer, 2131230733 - android.widget.LinearLayout, -1 - android.widget.ImageView, 2131230735 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131230732 - android.widget.RelativeLayout], res/layout/appinfo_layout.xml=[2131230724 - android.widget.TextView, 2131230725 - android.widget.TextView, 2131230723 - android.widget.TextView, 2131230726 - android.widget.ToggleButton, 2131230722 - android.widget.TextView, 2131230727 - android.widget.ToggleButton, -1 - android.widget.LinearLayout, -1 - android.widget.RelativeLayout, 2131230721 - android.widget.TextView, 2131230720 - android.widget.ImageView], res/layout-land-mdpi/item_row.xml=[2131230723 - android.widget.TextView, 2131230722 - android.widget.TextView, 2131230728 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131230729 - android.widget.TextView], res/layout-land-hdpi/main.xml=[2131230730 - android.widget.LinearLayout, 2131230734 - android.widget.LinearLayout, 2131230732 - android.widget.LinearLayout, 2131230731 - android.widget.SlidingDrawer, -1 - android.widget.LinearLayout, 2131230733 - android.widget.LinearLayout, -1 - android.widget.ImageView, -1 - android.widget.RelativeLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 17 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2f3e57f214b1b492f06b0d40e196bcc71338399d741435964263928a89dcd545.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.orderlong.netTrafficStats.TrafficApp $r1;
+        com.atools.battery.ShowTips $r2;
+        android.app.Dialog $r3;
+        com.atools.battery.ShowTips$1 $r4;
+        com.orderlong.netTrafficStats.NetTrafficStats $r5;
+        boolean $z0, $z1, $z2;
+        com.atools.netTrafficStats.MainActivity $r6;
+        com.atools.battery.UpdateService $r7;
+        android.os.IBinder $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new com.orderlong.netTrafficStats.TrafficApp;
+
+        specialinvoke $r1.<com.orderlong.netTrafficStats.TrafficApp: void <init>()>();
+
+     label01:
+        if $i0 == 1 goto label01;
+
+        virtualinvoke $r1.<com.orderlong.netTrafficStats.TrafficApp: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label02:
+        if $i0 == 2 goto label08;
+
+        $r2 = new com.atools.battery.ShowTips;
+
+        specialinvoke $r2.<com.atools.battery.ShowTips: void <init>()>();
+
+        if $i0 == 3 goto label08;
+
+        virtualinvoke $r2.<com.atools.battery.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label03:
+        if $i0 == 5 goto label07;
+
+     label04:
+        if $i0 == 6 goto label05;
+
+        $r3 = virtualinvoke $r2.<com.atools.battery.ShowTips: android.app.Dialog onCreateDialog(int)>(0);
+
+     label05:
+        $r4 = new com.atools.battery.ShowTips$1;
+
+        specialinvoke $r4.<com.atools.battery.ShowTips$1: void <init>(com.atools.battery.ShowTips)>($r2);
+
+        if $i0 == 7 goto label06;
+
+        virtualinvoke $r4.<com.atools.battery.ShowTips$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label06:
+        if $i0 == 8 goto label04;
+
+     label07:
+        if $i0 == 9 goto label03;
+
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label03;
+
+     label08:
+        if $i0 == 14 goto label15;
+
+        $r5 = new com.orderlong.netTrafficStats.NetTrafficStats;
+
+        specialinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: void <init>()>();
+
+        if $i0 == 15 goto label15;
+
+        virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: void onResume()>();
+
+        if $i0 == 17 goto label14;
+
+     label10:
+        if $i0 == 18 goto label11;
+
+        $z0 = virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: boolean onCreatePanelMenu(int,android.view.Menu)>(0, null);
+
+     label11:
+        if $i0 == 19 goto label12;
+
+        $z1 = virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label12:
+        if $i0 == 20 goto label13;
+
+        $z2 = virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label13:
+        if $i0 == 21 goto label10;
+
+     label14:
+        virtualinvoke $r5.<com.orderlong.netTrafficStats.NetTrafficStats: void onPause()>();
+
+        if $i0 == 22 goto label09;
+
+        if $i0 == 23 goto label15;
+
+        if $i0 == 24 goto label09;
+
+     label15:
+        if $i0 == 26 goto label18;
+
+        $r6 = new com.atools.netTrafficStats.MainActivity;
+
+        specialinvoke $r6.<com.atools.netTrafficStats.MainActivity: void <init>()>();
+
+        if $i0 == 27 goto label18;
+
+        virtualinvoke $r6.<com.atools.netTrafficStats.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r6.<com.atools.netTrafficStats.MainActivity: void onStart()>();
+
+     label17:
+        virtualinvoke $r6.<com.atools.netTrafficStats.MainActivity: void onResume()>();
+
+        virtualinvoke $r6.<com.atools.netTrafficStats.MainActivity: void onPause()>();
+
+        if $i0 == 30 goto label17;
+
+        if $i0 == 31 goto label18;
+
+        if $i0 == 32 goto label16;
+
+     label18:
+        if $i0 == 34 goto label23;
+
+        $r7 = new com.atools.battery.UpdateService;
+
+        specialinvoke $r7.<com.atools.battery.UpdateService: void <init>()>();
+
+        virtualinvoke $r7.<com.atools.battery.UpdateService: void onCreate()>();
+
+     label19:
+        if $i0 == 35 goto label20;
+
+        if $i0 == 36 goto label19;
+
+     label20:
+        $r8 = virtualinvoke $r7.<com.atools.battery.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label21;
+
+     label22:
+        virtualinvoke $r7.<com.atools.battery.UpdateService: void onDestroy()>();
+
+     label23:
+        if $i0 == 41 goto label02;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.771002804 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.083348951 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1955 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 59 sources and 92 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 17507
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 30846
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 120300 forward and 25350 backward edges solved, processing 14 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 14 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.007853005 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r10 = interfaceinvoke $r1.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3) in method <com.atools.battery.NewDomob: boolean requestOnce()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") in method <com.atools.battery.AdBase: java.lang.String getParams()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[name]", $r6) in method <com.atools.battery.NewDomob: boolean requestOnce()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") in method <com.atools.battery.AdBase: java.lang.String getParams()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[])>($r10) in method <com.atools.battery.UpdateService: void updateInfo(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("SAFE_PID") in method <com.atools.battery.UpdateService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.atools.battery.UpdateService: void updateInfo(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("idv", $r6) in method <com.atools.battery.NewDomob: boolean requestOnce()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.atools.battery.AdBase: void getPhoneInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.atools.battery.AdBase: void getPhoneInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r13 = interfaceinvoke $r1.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4) in method <com.atools.battery.NewDomob: void doReportUrl()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") in method <com.atools.battery.AdBase: java.lang.String getParams()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r6) in method <com.atools.battery.NewDomob: void doReportUrl()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") in method <com.atools.battery.AdBase: java.lang.String getParams()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SDK", $r2) in method <com.gfan.sdk.statistics.m: void a(org.apache.http.HttpResponse)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r3, "UTF-8") in method <com.gfan.sdk.statistics.m: void a(org.apache.http.HttpResponse)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r6) in method <com.atools.battery.NewDomob: boolean requestOnce()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") in method <com.atools.battery.AdBase: java.lang.String getParams()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[identifier]", $r6) in method <com.atools.battery.NewDomob: boolean requestOnce()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") in method <com.atools.battery.AdBase: java.lang.String getParams()>
+Found a flow to sink $r10 = interfaceinvoke $r1.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3), from the following sources:
+	- $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") (in <com.atools.battery.AdBase: java.lang.String getParams()>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[name]", $r6), from the following sources:
+	- $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") (in <com.atools.battery.AdBase: java.lang.String getParams()>)
+Found a flow to sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[])>($r10), from the following sources:
+	- $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("SAFE_PID") (in <com.atools.battery.UpdateService: void onCreate()>)
+	- $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.atools.battery.UpdateService: void updateInfo(java.lang.String)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("idv", $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.atools.battery.AdBase: void getPhoneInfo()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.atools.battery.AdBase: void getPhoneInfo()>)
+Found a flow to sink $r13 = interfaceinvoke $r1.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4), from the following sources:
+	- $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") (in <com.atools.battery.AdBase: java.lang.String getParams()>)
+Found a flow to sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r6), from the following sources:
+	- $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") (in <com.atools.battery.AdBase: java.lang.String getParams()>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("SDK", $r2), from the following sources:
+	- $r2 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r3, "UTF-8") (in <com.gfan.sdk.statistics.m: void a(org.apache.http.HttpResponse)>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ipb", $r6), from the following sources:
+	- $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") (in <com.atools.battery.AdBase: java.lang.String getParams()>)
+Found a flow to sink specialinvoke $r5.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("pb[identifier]", $r6), from the following sources:
+	- $r5 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r9, "utf-8") (in <com.atools.battery.AdBase: java.lang.String getParams()>)
+Maximum memory consumption: 370.425536 MB
+Analysis has run for 6.871468776 seconds

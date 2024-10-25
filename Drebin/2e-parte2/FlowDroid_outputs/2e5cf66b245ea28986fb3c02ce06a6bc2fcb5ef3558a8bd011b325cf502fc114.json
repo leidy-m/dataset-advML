@@ -1,0 +1,263 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012890836 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.neore.ukeee.A $r1;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label4;
+
+        $r1 = new com.neore.ukeee.A;
+
+        specialinvoke $r1.<com.neore.ukeee.A: void <init>()>();
+
+        if $i0 == 1 goto label4;
+
+        virtualinvoke $r1.<com.neore.ukeee.A: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        virtualinvoke $r1.<com.neore.ukeee.A: void onStart()>();
+
+        if $i0 == 4 goto label3;
+
+        if $i0 == 5 goto label2;
+
+     label3:
+        virtualinvoke $r1.<com.neore.ukeee.A: void onDestroy()>();
+
+     label4:
+        if $i0 == 7 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.neore.ukeee.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.neore.ukeee.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: FrameLayout is a phantom class!
+Warning: com.neore.ukeee.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.neore.ukeee.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Found 2 layout controls in file res/layout/maintow.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.neore.ukeee.A $r1;
+        com.neore.ukeee.crfE2xetB $r2;
+        android.app.Dialog $r3;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.neore.ukeee.A;
+
+        specialinvoke $r1.<com.neore.ukeee.A: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.neore.ukeee.A: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.neore.ukeee.A: void onStart()>();
+
+     label03:
+        if $i0 == 3 goto label08;
+
+     label04:
+        $r2 = new com.neore.ukeee.crfE2xetB;
+
+        specialinvoke $r2.<com.neore.ukeee.crfE2xetB: void <init>(com.neore.ukeee.A)>($r1);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<com.neore.ukeee.crfE2xetB: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        $r3 = virtualinvoke $r1.<com.neore.ukeee.A: android.app.Dialog onCreateDialog(int)>(0);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.neore.ukeee.A: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label07:
+        if $i0 == 7 goto label04;
+
+     label08:
+        if $i0 == 8 goto label03;
+
+        if $i0 == 9 goto label09;
+
+        if $i0 == 10 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.neore.ukeee.A: void onDestroy()>();
+
+     label10:
+        if $i0 == 12 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Running incremental callback analysis for 1 components...
+Incremental callback analysis done.
+Found 6 callback methods for 1 components
+Found {res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131165185 - android.widget.ImageView, 2131165184 - android.widget.ImageView, 2131165186 - android.widget.ImageView, -1 - android.widget.FrameLayout, 2131165187 - android.widget.Button], res/layout/maintow.xml=[-1 - android.widget.LinearLayout, 2131165185 - android.widget.ImageView, 2131165186 - android.widget.ImageView, -1 - android.widget.FrameLayout, 2131165187 - android.widget.Button, 2131165188 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 6 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2e5cf66b245ea28986fb3c02ce06a6bc2fcb5ef3558a8bd011b325cf502fc114.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.neore.ukeee.A $r1;
+        com.neore.ukeee.crfE2xetB $r2;
+        android.app.Dialog $r3;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.neore.ukeee.A;
+
+        specialinvoke $r1.<com.neore.ukeee.A: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.neore.ukeee.A: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.neore.ukeee.A: void onStart()>();
+
+     label03:
+        if $i0 == 3 goto label08;
+
+     label04:
+        $r2 = new com.neore.ukeee.crfE2xetB;
+
+        specialinvoke $r2.<com.neore.ukeee.crfE2xetB: void <init>(com.neore.ukeee.A)>($r1);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<com.neore.ukeee.crfE2xetB: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        $r3 = virtualinvoke $r1.<com.neore.ukeee.A: android.app.Dialog onCreateDialog(int)>(0);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.neore.ukeee.A: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label07:
+        if $i0 == 7 goto label04;
+
+     label08:
+        if $i0 == 8 goto label03;
+
+        if $i0 == 9 goto label09;
+
+        if $i0 == 10 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.neore.ukeee.A: void onDestroy()>();
+
+     label10:
+        if $i0 == 12 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.124000234 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.017633775 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 248 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 6 sources and 1 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 0
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 11
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 56 forward and 4 backward edges solved, processing 0 results...
+[main] WARN soot.jimple.infoflow.Infoflow - No results found.
+Maximum memory consumption: 77.979456 MB
+Analysis has run for 3.120603765 seconds

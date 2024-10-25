@@ -1,0 +1,703 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012898831 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.gmail.nagamatu.drocap.main $r1;
+        com.gmail.nagamatu.drocap.DrocapService $r2;
+        android.os.IBinder $r3;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label4;
+
+        $r1 = new com.gmail.nagamatu.drocap.main;
+
+        specialinvoke $r1.<com.gmail.nagamatu.drocap.main: void <init>()>();
+
+        if $i0 == 1 goto label4;
+
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onStart()>();
+
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onStop()>();
+
+        if $i0 == 4 goto label3;
+
+        if $i0 == 5 goto label2;
+
+     label3:
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onDestroy()>();
+
+     label4:
+        if $i0 == 7 goto label9;
+
+        $r2 = new com.gmail.nagamatu.drocap.DrocapService;
+
+        specialinvoke $r2.<com.gmail.nagamatu.drocap.DrocapService: void <init>()>();
+
+        virtualinvoke $r2.<com.gmail.nagamatu.drocap.DrocapService: void onCreate()>();
+
+     label5:
+        if $i0 == 8 goto label6;
+
+        if $i0 == 9 goto label5;
+
+     label6:
+        $r3 = virtualinvoke $r2.<com.gmail.nagamatu.drocap.DrocapService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label7:
+        if $i0 == 11 goto label8;
+
+        if $i0 == 12 goto label7;
+
+     label8:
+        virtualinvoke $r2.<com.gmail.nagamatu.drocap.DrocapService: void onDestroy()>();
+
+     label9:
+        if $i0 == 13 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Callback analysis done.
+Skipping file res/layout/ in layout folder...
+Warning: LinearLayout is a phantom class!
+Warning: com.gmail.nagamatu.drocap.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.gmail.nagamatu.drocap.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.gmail.nagamatu.drocap.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.gmail.nagamatu.drocap.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/info.xml
+Warning: ViewFlipper is a phantom class!
+Warning: com.gmail.nagamatu.drocap.ViewFlipper is a phantom class!
+Warning: android.view.ViewFlipper is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.gmail.nagamatu.drocap.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: SeekBar is a phantom class!
+Warning: com.gmail.nagamatu.drocap.SeekBar is a phantom class!
+Warning: android.view.SeekBar is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Skipping file res/layout-land/ in layout folder...
+Found 3 layout controls in file res/layout-land/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorManager
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.gmail.nagamatu.drocap.main $r1;
+        boolean $z0, $z1, $z2, $z3;
+        android.app.Dialog $r2;
+        com.gmail.nagamatu.drocap.main$2 $r3;
+        com.gmail.nagamatu.drocap.main$3 $r4;
+        com.gmail.nagamatu.drocap.main$4 $r5;
+        com.gmail.nagamatu.drocap.main$7 $r6;
+        com.gmail.nagamatu.drocap.main$6 $r7;
+        com.gmail.nagamatu.drocap.main$5 $r8;
+        com.gmail.nagamatu.drocap.DrocapService $r9;
+        com.gmail.nagamatu.drocap.DrocapService$2 $r10, $r14;
+        com.gmail.nagamatu.drocap.DrocapService$3 $r11, $r15;
+        com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient $r12, $r16;
+        android.os.IBinder $r13;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label19;
+
+        $r1 = new com.gmail.nagamatu.drocap.main;
+
+        specialinvoke $r1.<com.gmail.nagamatu.drocap.main: void <init>()>();
+
+        if $i0 == 1 goto label19;
+
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onStart()>();
+
+     label03:
+        if $i0 == 3 goto label17;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        $z0 = virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        staticinvoke <com.gmail.nagamatu.drocap.main: void <clinit>()>();
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        $r2 = virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: android.app.Dialog onCreateDialog(int)>(0);
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        $z1 = virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        $z2 = virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label10:
+        $r3 = new com.gmail.nagamatu.drocap.main$2;
+
+        specialinvoke $r3.<com.gmail.nagamatu.drocap.main$2: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r3.<com.gmail.nagamatu.drocap.main$2: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label11:
+        $r4 = new com.gmail.nagamatu.drocap.main$3;
+
+        specialinvoke $r4.<com.gmail.nagamatu.drocap.main$3: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 11 goto label12;
+
+        $z3 = virtualinvoke $r4.<com.gmail.nagamatu.drocap.main$3: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label12:
+        $r5 = new com.gmail.nagamatu.drocap.main$4;
+
+        specialinvoke $r5.<com.gmail.nagamatu.drocap.main$4: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 12 goto label13;
+
+        virtualinvoke $r5.<com.gmail.nagamatu.drocap.main$4: void onClick(android.view.View)>(null);
+
+     label13:
+        $r6 = new com.gmail.nagamatu.drocap.main$7;
+
+        specialinvoke $r6.<com.gmail.nagamatu.drocap.main$7: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 13 goto label14;
+
+        virtualinvoke $r6.<com.gmail.nagamatu.drocap.main$7: void onClick(android.view.View)>(null);
+
+     label14:
+        $r7 = new com.gmail.nagamatu.drocap.main$6;
+
+        specialinvoke $r7.<com.gmail.nagamatu.drocap.main$6: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 14 goto label15;
+
+        virtualinvoke $r7.<com.gmail.nagamatu.drocap.main$6: void onDismiss(android.content.DialogInterface)>(null);
+
+     label15:
+        $r8 = new com.gmail.nagamatu.drocap.main$5;
+
+        specialinvoke $r8.<com.gmail.nagamatu.drocap.main$5: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 15 goto label16;
+
+        virtualinvoke $r8.<com.gmail.nagamatu.drocap.main$5: void onClick(android.view.View)>(null);
+
+     label16:
+        if $i0 == 16 goto label04;
+
+     label17:
+        if $i0 == 17 goto label03;
+
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onStop()>();
+
+        if $i0 == 18 goto label18;
+
+        if $i0 == 19 goto label02;
+
+     label18:
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onDestroy()>();
+
+     label19:
+        if $i0 == 21 goto label34;
+
+        $r9 = new com.gmail.nagamatu.drocap.DrocapService;
+
+        specialinvoke $r9.<com.gmail.nagamatu.drocap.DrocapService: void <init>()>();
+
+        virtualinvoke $r9.<com.gmail.nagamatu.drocap.DrocapService: void onCreate()>();
+
+     label20:
+        if $i0 == 22 goto label21;
+
+        if $i0 == 23 goto label20;
+
+     label21:
+        if $i0 == 24 goto label27;
+
+     label22:
+        $r10 = new com.gmail.nagamatu.drocap.DrocapService$2;
+
+        specialinvoke $r10.<com.gmail.nagamatu.drocap.DrocapService$2: void <init>(com.gmail.nagamatu.drocap.DrocapService,android.hardware.SensorManager,java.lang.String)>($r9, null, "");
+
+        if $i0 == 25 goto label23;
+
+        virtualinvoke $r10.<com.gmail.nagamatu.drocap.DrocapService$2: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label23:
+        $r11 = new com.gmail.nagamatu.drocap.DrocapService$3;
+
+        specialinvoke $r11.<com.gmail.nagamatu.drocap.DrocapService$3: void <init>(com.gmail.nagamatu.drocap.DrocapService)>($r9);
+
+        if $i0 == 26 goto label24;
+
+        virtualinvoke $r11.<com.gmail.nagamatu.drocap.DrocapService$3: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label24:
+        $r12 = new com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient;
+
+        specialinvoke $r12.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void <init>(com.gmail.nagamatu.drocap.DrocapService,java.lang.String)>($r9, "");
+
+        if $i0 == 27 goto label25;
+
+        virtualinvoke $r12.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onMediaScannerConnected()>();
+
+     label25:
+        if $i0 == 28 goto label26;
+
+        virtualinvoke $r12.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)>("", null);
+
+     label26:
+        if $i0 == 29 goto label22;
+
+     label27:
+        $r13 = virtualinvoke $r9.<com.gmail.nagamatu.drocap.DrocapService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label28:
+        $r14 = new com.gmail.nagamatu.drocap.DrocapService$2;
+
+        specialinvoke $r14.<com.gmail.nagamatu.drocap.DrocapService$2: void <init>(com.gmail.nagamatu.drocap.DrocapService,android.hardware.SensorManager,java.lang.String)>($r9, null, "");
+
+        if $i0 == 30 goto label29;
+
+        virtualinvoke $r14.<com.gmail.nagamatu.drocap.DrocapService$2: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label29:
+        $r15 = new com.gmail.nagamatu.drocap.DrocapService$3;
+
+        specialinvoke $r15.<com.gmail.nagamatu.drocap.DrocapService$3: void <init>(com.gmail.nagamatu.drocap.DrocapService)>($r9);
+
+        if $i0 == 31 goto label30;
+
+        virtualinvoke $r15.<com.gmail.nagamatu.drocap.DrocapService$3: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label30:
+        $r16 = new com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient;
+
+        specialinvoke $r16.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void <init>(com.gmail.nagamatu.drocap.DrocapService,java.lang.String)>($r9, "");
+
+        if $i0 == 32 goto label31;
+
+        virtualinvoke $r16.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onMediaScannerConnected()>();
+
+     label31:
+        if $i0 == 33 goto label32;
+
+        virtualinvoke $r16.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)>("", null);
+
+     label32:
+        if $i0 == 34 goto label28;
+
+        if $i0 == 35 goto label33;
+
+        if $i0 == 36 goto label28;
+
+     label33:
+        virtualinvoke $r9.<com.gmail.nagamatu.drocap.DrocapService: void onDestroy()>();
+
+     label34:
+        if $i0 == 37 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 2 components...
+Incremental callback analysis done.
+Found 23 callback methods for 2 components
+Found {res/layout/main.xml=[2131165190 - android.widget.SeekBar, 2131165191 - android.widget.Button, 2131165187 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165186 - android.widget.ViewFlipper, 2131165185 - android.widget.Button, 2131165189 - android.widget.EditText, 2131165188 - android.widget.TextView], res/layout/info.xml=[-1 - android.widget.ImageView, -1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131165184 - android.widget.Button], res/layout-land/main.xml=[2131165191 - android.widget.Button, 2131165190 - android.widget.SeekBar, 2131165187 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131165186 - android.widget.ViewFlipper, 2131165185 - android.widget.Button, 2131165189 - android.widget.EditText, 2131165188 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 23 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4c70f5ef9618d7563df6485c168748eaceb0cc4d97a7ebd08612d2ff4640d27e.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorManager
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.gmail.nagamatu.drocap.main $r1;
+        com.gmail.nagamatu.drocap.main$5 $r2;
+        com.gmail.nagamatu.drocap.main$6 $r3;
+        com.gmail.nagamatu.drocap.main$4 $r4;
+        com.gmail.nagamatu.drocap.main$7 $r5;
+        boolean $z0, $z1, $z2, $z3;
+        android.app.Dialog $r6;
+        com.gmail.nagamatu.drocap.main$3 $r7;
+        com.gmail.nagamatu.drocap.main$2 $r8;
+        com.gmail.nagamatu.drocap.DrocapService $r9;
+        com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient $r10, $r14;
+        com.gmail.nagamatu.drocap.DrocapService$2 $r11, $r15;
+        com.gmail.nagamatu.drocap.DrocapService$3 $r12, $r16;
+        android.os.IBinder $r13;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label19;
+
+        $r1 = new com.gmail.nagamatu.drocap.main;
+
+        specialinvoke $r1.<com.gmail.nagamatu.drocap.main: void <init>()>();
+
+        if $i0 == 1 goto label19;
+
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onStart()>();
+
+     label03:
+        if $i0 == 3 goto label17;
+
+     label04:
+        $r2 = new com.gmail.nagamatu.drocap.main$5;
+
+        specialinvoke $r2.<com.gmail.nagamatu.drocap.main$5: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<com.gmail.nagamatu.drocap.main$5: void onClick(android.view.View)>(null);
+
+     label05:
+        $r3 = new com.gmail.nagamatu.drocap.main$6;
+
+        specialinvoke $r3.<com.gmail.nagamatu.drocap.main$6: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r3.<com.gmail.nagamatu.drocap.main$6: void onDismiss(android.content.DialogInterface)>(null);
+
+     label06:
+        $r4 = new com.gmail.nagamatu.drocap.main$4;
+
+        specialinvoke $r4.<com.gmail.nagamatu.drocap.main$4: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r4.<com.gmail.nagamatu.drocap.main$4: void onClick(android.view.View)>(null);
+
+     label07:
+        $r5 = new com.gmail.nagamatu.drocap.main$7;
+
+        specialinvoke $r5.<com.gmail.nagamatu.drocap.main$7: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r5.<com.gmail.nagamatu.drocap.main$7: void onClick(android.view.View)>(null);
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        $z0 = virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        staticinvoke <com.gmail.nagamatu.drocap.main: void <clinit>()>();
+
+     label11:
+        if $i0 == 11 goto label12;
+
+        $z1 = virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label12:
+        if $i0 == 12 goto label13;
+
+        $z2 = virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label13:
+        if $i0 == 13 goto label14;
+
+        $r6 = virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: android.app.Dialog onCreateDialog(int)>(0);
+
+     label14:
+        $r7 = new com.gmail.nagamatu.drocap.main$3;
+
+        specialinvoke $r7.<com.gmail.nagamatu.drocap.main$3: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 14 goto label15;
+
+        $z3 = virtualinvoke $r7.<com.gmail.nagamatu.drocap.main$3: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label15:
+        $r8 = new com.gmail.nagamatu.drocap.main$2;
+
+        specialinvoke $r8.<com.gmail.nagamatu.drocap.main$2: void <init>(com.gmail.nagamatu.drocap.main)>($r1);
+
+        if $i0 == 15 goto label16;
+
+        virtualinvoke $r8.<com.gmail.nagamatu.drocap.main$2: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label16:
+        if $i0 == 16 goto label04;
+
+     label17:
+        if $i0 == 17 goto label03;
+
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onStop()>();
+
+        if $i0 == 18 goto label18;
+
+        if $i0 == 19 goto label02;
+
+     label18:
+        virtualinvoke $r1.<com.gmail.nagamatu.drocap.main: void onDestroy()>();
+
+     label19:
+        if $i0 == 21 goto label34;
+
+        $r9 = new com.gmail.nagamatu.drocap.DrocapService;
+
+        specialinvoke $r9.<com.gmail.nagamatu.drocap.DrocapService: void <init>()>();
+
+        virtualinvoke $r9.<com.gmail.nagamatu.drocap.DrocapService: void onCreate()>();
+
+     label20:
+        if $i0 == 22 goto label21;
+
+        if $i0 == 23 goto label20;
+
+     label21:
+        if $i0 == 24 goto label27;
+
+     label22:
+        $r10 = new com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient;
+
+        specialinvoke $r10.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void <init>(com.gmail.nagamatu.drocap.DrocapService,java.lang.String)>($r9, "");
+
+        if $i0 == 25 goto label23;
+
+        virtualinvoke $r10.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onMediaScannerConnected()>();
+
+     label23:
+        if $i0 == 26 goto label24;
+
+        virtualinvoke $r10.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)>("", null);
+
+     label24:
+        $r11 = new com.gmail.nagamatu.drocap.DrocapService$2;
+
+        specialinvoke $r11.<com.gmail.nagamatu.drocap.DrocapService$2: void <init>(com.gmail.nagamatu.drocap.DrocapService,android.hardware.SensorManager,java.lang.String)>($r9, null, "");
+
+        if $i0 == 27 goto label25;
+
+        virtualinvoke $r11.<com.gmail.nagamatu.drocap.DrocapService$2: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label25:
+        $r12 = new com.gmail.nagamatu.drocap.DrocapService$3;
+
+        specialinvoke $r12.<com.gmail.nagamatu.drocap.DrocapService$3: void <init>(com.gmail.nagamatu.drocap.DrocapService)>($r9);
+
+        if $i0 == 28 goto label26;
+
+        virtualinvoke $r12.<com.gmail.nagamatu.drocap.DrocapService$3: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label26:
+        if $i0 == 29 goto label22;
+
+     label27:
+        $r13 = virtualinvoke $r9.<com.gmail.nagamatu.drocap.DrocapService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label28:
+        $r14 = new com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient;
+
+        specialinvoke $r14.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void <init>(com.gmail.nagamatu.drocap.DrocapService,java.lang.String)>($r9, "");
+
+        if $i0 == 30 goto label29;
+
+        virtualinvoke $r14.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onMediaScannerConnected()>();
+
+     label29:
+        if $i0 == 31 goto label30;
+
+        virtualinvoke $r14.<com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)>("", null);
+
+     label30:
+        $r15 = new com.gmail.nagamatu.drocap.DrocapService$2;
+
+        specialinvoke $r15.<com.gmail.nagamatu.drocap.DrocapService$2: void <init>(com.gmail.nagamatu.drocap.DrocapService,android.hardware.SensorManager,java.lang.String)>($r9, null, "");
+
+        if $i0 == 32 goto label31;
+
+        virtualinvoke $r15.<com.gmail.nagamatu.drocap.DrocapService$2: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label31:
+        $r16 = new com.gmail.nagamatu.drocap.DrocapService$3;
+
+        specialinvoke $r16.<com.gmail.nagamatu.drocap.DrocapService$3: void <init>(com.gmail.nagamatu.drocap.DrocapService)>($r9);
+
+        if $i0 == 33 goto label32;
+
+        virtualinvoke $r16.<com.gmail.nagamatu.drocap.DrocapService$3: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label32:
+        if $i0 == 34 goto label28;
+
+        if $i0 == 35 goto label33;
+
+        if $i0 == 36 goto label28;
+
+     label33:
+        virtualinvoke $r9.<com.gmail.nagamatu.drocap.DrocapService: void onDestroy()>();
+
+     label34:
+        if $i0 == 37 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.199902693 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.031097246 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 490 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 25 sources and 37 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 20
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 331
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 1416 forward and 187 backward edges solved, processing 5 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.005761038 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DrocapService", $r8) in method <com.gmail.nagamatu.drocap.DrocapService$2: void onSensorChanged(android.hardware.SensorEvent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.hardware.SensorEvent in method <com.gmail.nagamatu.drocap.DrocapService$2: void onSensorChanged(android.hardware.SensorEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("drocap", $r3) in method <com.gmail.nagamatu.drocap.main: void onPrepareDialog(int,android.app.Dialog)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter1: android.app.Dialog in method <com.gmail.nagamatu.drocap.main: void onPrepareDialog(int,android.app.Dialog)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.gmail.nagamatu.drocap.main: void onPrepareDialog(int,android.app.Dialog)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("drocap", $r3) in method <com.gmail.nagamatu.drocap.main: android.app.Dialog onCreateDialog(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.gmail.nagamatu.drocap.main: android.app.Dialog onCreateDialog(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DrocapService", $r4) in method <com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.net.Uri in method <com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, null) in method <com.gmail.nagamatu.drocap.DrocapService: java.lang.String getBucketId(android.net.Uri)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.net.Uri in method <com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)>
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DrocapService", $r8), from the following sources:
+	- $r1 := @parameter0: android.hardware.SensorEvent (in <com.gmail.nagamatu.drocap.DrocapService$2: void onSensorChanged(android.hardware.SensorEvent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("drocap", $r3), from the following sources:
+	- $r1 := @parameter1: android.app.Dialog (in <com.gmail.nagamatu.drocap.main: void onPrepareDialog(int,android.app.Dialog)>)
+	- $i0 := @parameter0: int (in <com.gmail.nagamatu.drocap.main: void onPrepareDialog(int,android.app.Dialog)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("drocap", $r3), from the following sources:
+	- $i0 := @parameter0: int (in <com.gmail.nagamatu.drocap.main: android.app.Dialog onCreateDialog(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("DrocapService", $r4), from the following sources:
+	- $r2 := @parameter1: android.net.Uri (in <com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)>)
+Found a flow to sink $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, null), from the following sources:
+	- $r2 := @parameter1: android.net.Uri (in <com.gmail.nagamatu.drocap.DrocapService$RegisterMediaClient: void onScanCompleted(java.lang.String,android.net.Uri)>)
+Maximum memory consumption: 60.235584 MB
+Analysis has run for 3.068775883 seconds

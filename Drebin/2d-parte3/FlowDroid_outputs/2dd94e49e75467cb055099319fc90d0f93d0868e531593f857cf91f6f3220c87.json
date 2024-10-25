@@ -1,0 +1,1174 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.019471975 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.net.http.SslError is a phantom class!
+Warning: android.webkit.ConsoleMessage$MessageLevel is a phantom class!
+Warning: android.webkit.ConsoleMessage is a phantom class!
+Warning: android.webkit.WebResourceResponse is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wAppzmob.Server.C2DMClientReceiver $r1;
+        com.wAppzmob.MainNavigationActivity $r2;
+        com.google.ads.AdActivity $r3;
+        com.wAppzmob.MessageViewer $r4;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.wAppzmob.Server.C2DMClientReceiver;
+
+        specialinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        if $i0 == 5 goto label03;
+
+     label04:
+        if $i0 == 6 goto label07;
+
+        $r2 = new com.wAppzmob.MainNavigationActivity;
+
+        specialinvoke $r2.<com.wAppzmob.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onResume()>();
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 9 goto label05;
+
+        if $i0 == 10 goto label06;
+
+        if $i0 == 11 goto label05;
+
+     label06:
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 13 goto label10;
+
+        $r3 = new com.google.ads.AdActivity;
+
+        specialinvoke $r3.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 14 goto label10;
+
+        virtualinvoke $r3.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        virtualinvoke $r3.<com.google.ads.AdActivity: void onPause()>();
+
+        if $i0 == 16 goto label08;
+
+        if $i0 == 17 goto label09;
+
+        if $i0 == 18 goto label08;
+
+     label09:
+        virtualinvoke $r3.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 20 goto label14;
+
+        $r4 = new com.wAppzmob.MessageViewer;
+
+        specialinvoke $r4.<com.wAppzmob.MessageViewer: void <init>()>();
+
+        if $i0 == 21 goto label14;
+
+        virtualinvoke $r4.<com.wAppzmob.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r4.<com.wAppzmob.MessageViewer: void onStart()>();
+
+        if $i0 == 22 goto label12;
+
+        virtualinvoke $r4.<com.wAppzmob.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label12:
+        virtualinvoke $r4.<com.wAppzmob.MessageViewer: void onPause()>();
+
+        if $i0 == 23 goto label12;
+
+        if $i0 == 24 goto label13;
+
+        if $i0 == 25 goto label11;
+
+     label13:
+        virtualinvoke $r4.<com.wAppzmob.MessageViewer: void onDestroy()>();
+
+     label14:
+        if $i0 == 27 goto label16;
+
+        $r5 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r5.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 28 goto label16;
+
+     label15:
+        virtualinvoke $r5.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 30 goto label15;
+
+     label16:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.wAppzmob.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.wAppzmob.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.wAppzmob.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/about_dialog.xml
+Warning: Button is a phantom class!
+Warning: com.wAppzmob.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/connection_error_dialog.xml
+Warning: TableLayout is a phantom class!
+Warning: com.wAppzmob.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.wAppzmob.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 3 layout controls in file res/layout/http_authentication.xml
+Warning: FrameLayout is a phantom class!
+Warning: com.wAppzmob.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.wAppzmob.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 4 layout controls in file res/layout/main.xml
+Warning: WebView is a phantom class!
+Warning: com.wAppzmob.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 5 layout controls in file res/layout/message_viewer.xml
+Found 6 layout controls in file res/layout/no_content_message.xml
+Found 7 layout controls in file res/layout/startup_screen.xml
+Found 8 layout controls in file res/layout/tab_tag.xml
+Warning: ProgressBar is a phantom class!
+Warning: com.wAppzmob.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 9 layout controls in file res/layout/video_loading_progress.xml
+Found 10 layout controls in file res/layout/web_content.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.net.http.SslError is a phantom class!
+Warning: android.webkit.ConsoleMessage$MessageLevel is a phantom class!
+Warning: android.webkit.ConsoleMessage is a phantom class!
+Warning: android.webkit.WebResourceResponse is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.HttpAuthHandler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.WebView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.google.ads.l
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.google.ads.Ad, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ViewGroup
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.google.ads.internal.h
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.google.ads.AdSize, substituting with null...
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wAppzmob.Server.C2DMClientReceiver $r1;
+        com.wAppzmob.MainNavigationActivity $r2;
+        com.wAppzmob.MainNavigationActivity$1 $r3;
+        com.wAppzmob.Views.AboutDialog $r4;
+        com.wAppzmob.Views.AboutDialog$1 $r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9;
+        com.wAppzmob.Model.WidgetEntity $r6, $r16;
+        com.wAppzmob.Controllers.WebContentController $r7, $r17;
+        com.wAppzmob.Controllers.WebContentController$1 $r8;
+        com.wAppzmob.MainNavigationActivity$6 $r9;
+        com.wAppzmob.MainNavigationActivity$8 $r10;
+        com.wAppzmob.ads.AdsLoader $r11;
+        com.wAppzmob.ads.AdsLoader$1 $r12;
+        com.wAppzmob.MainNavigationActivity$7 $r13;
+        com.wAppzmob.MainNavigationActivity$4 $r14;
+        com.wAppzmob.MainNavigationActivity$5 $r15;
+        com.wAppzmob.Utils.BrowserDownloadListener $r18;
+        com.google.ads.AdActivity $r19;
+        com.google.ads.AdSize $r20, $r24;
+        com.google.ads.AdView $r21;
+        com.google.ads.InterstitialAd $r22;
+        com.google.ads.m $r23;
+        com.google.ads.internal.AdWebView $r25;
+        com.google.ads.internal.AdWebView$1 $r26;
+        com.wAppzmob.MessageViewer $r27;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r28;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.wAppzmob.Server.C2DMClientReceiver;
+
+        specialinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label08;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r1, null);
+
+        $r1 = null;
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label07:
+        if $i0 == 7 goto label04;
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r1, null);
+
+        $r1 = null;
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label11:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label12;
+
+        if $i0 == 13 goto label08;
+
+     label12:
+        if $i0 == 14 goto label37;
+
+        $r2 = new com.wAppzmob.MainNavigationActivity;
+
+        specialinvoke $r2.<com.wAppzmob.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 15 goto label37;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onResume()>();
+
+        if $i0 == 17 goto label35;
+
+     label14:
+        $r3 = new com.wAppzmob.MainNavigationActivity$1;
+
+        specialinvoke $r3.<com.wAppzmob.MainNavigationActivity$1: void <init>(com.wAppzmob.MainNavigationActivity)>($r2);
+
+        if $i0 == 18 goto label15;
+
+        virtualinvoke $r3.<com.wAppzmob.MainNavigationActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label15:
+        $r4 = new com.wAppzmob.Views.AboutDialog;
+
+        specialinvoke $r4.<com.wAppzmob.Views.AboutDialog: void <init>(android.content.Context)>($r2);
+
+        $r5 = new com.wAppzmob.Views.AboutDialog$1;
+
+        specialinvoke $r5.<com.wAppzmob.Views.AboutDialog$1: void <init>(com.wAppzmob.Views.AboutDialog,java.lang.String,com.wAppzmob.MainNavigationActivity)>($r4, "", $r2);
+
+        if $i0 == 19 goto label16;
+
+        $z0 = virtualinvoke $r5.<com.wAppzmob.Views.AboutDialog$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label16:
+        if $i0 == 20 goto label17;
+
+        $z1 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label17:
+        if $i0 == 21 goto label18;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label18:
+        if $i0 == 22 goto label19;
+
+        $z2 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onKeyLongPress(int,android.view.KeyEvent)>(0, null);
+
+     label19:
+        if $i0 == 23 goto label20;
+
+        $z3 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label20:
+        if $i0 == 24 goto label21;
+
+        $z4 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label21:
+        if $i0 == 25 goto label22;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label22:
+        if $i0 == 26 goto label23;
+
+        $z5 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label23:
+        if $i0 == 27 goto label24;
+
+        staticinvoke <com.wAppzmob.MainNavigationActivity: void <clinit>()>();
+
+     label24:
+        if $i0 == 28 goto label25;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label25:
+        if $i0 == 29 goto label26;
+
+        $z6 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label26:
+        $r6 = new com.wAppzmob.Model.WidgetEntity;
+
+        specialinvoke $r6.<com.wAppzmob.Model.WidgetEntity: void <init>()>();
+
+        $r7 = new com.wAppzmob.Controllers.WebContentController;
+
+        specialinvoke $r7.<com.wAppzmob.Controllers.WebContentController: void <init>(com.wAppzmob.Model.WidgetEntity)>($r6);
+
+        $r8 = new com.wAppzmob.Controllers.WebContentController$1;
+
+        specialinvoke $r8.<com.wAppzmob.Controllers.WebContentController$1: void <init>(com.wAppzmob.Controllers.WebContentController)>($r7);
+
+        if $i0 == 30 goto label27;
+
+        $z7 = virtualinvoke $r8.<com.wAppzmob.Controllers.WebContentController$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label27:
+        $r9 = new com.wAppzmob.MainNavigationActivity$6;
+
+        specialinvoke $r9.<com.wAppzmob.MainNavigationActivity$6: void <init>(com.wAppzmob.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r2, null);
+
+        if $i0 == 31 goto label28;
+
+        virtualinvoke $r9.<com.wAppzmob.MainNavigationActivity$6: void onCancel(android.content.DialogInterface)>(null);
+
+     label28:
+        $r10 = new com.wAppzmob.MainNavigationActivity$8;
+
+        specialinvoke $r10.<com.wAppzmob.MainNavigationActivity$8: void <init>(com.wAppzmob.MainNavigationActivity,android.view.View,android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.HttpAuthHandler)>($r2, null, null, "", "", null);
+
+        if $i0 == 32 goto label29;
+
+        virtualinvoke $r10.<com.wAppzmob.MainNavigationActivity$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        $r11 = new com.wAppzmob.ads.AdsLoader;
+
+        specialinvoke $r11.<com.wAppzmob.ads.AdsLoader: void <init>()>();
+
+        $r12 = new com.wAppzmob.ads.AdsLoader$1;
+
+        specialinvoke $r12.<com.wAppzmob.ads.AdsLoader$1: void <init>(com.wAppzmob.ads.AdsLoader)>($r11);
+
+        if $i0 == 33 goto label30;
+
+        $z8 = virtualinvoke $r12.<com.wAppzmob.ads.AdsLoader$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label30:
+        $r13 = new com.wAppzmob.MainNavigationActivity$7;
+
+        specialinvoke $r13.<com.wAppzmob.MainNavigationActivity$7: void <init>(com.wAppzmob.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r2, null);
+
+        if $i0 == 34 goto label31;
+
+        virtualinvoke $r13.<com.wAppzmob.MainNavigationActivity$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label31:
+        $r14 = new com.wAppzmob.MainNavigationActivity$4;
+
+        specialinvoke $r14.<com.wAppzmob.MainNavigationActivity$4: void <init>(com.wAppzmob.MainNavigationActivity)>($r2);
+
+        if $i0 == 35 goto label32;
+
+        virtualinvoke $r14.<com.wAppzmob.MainNavigationActivity$4: void onClick(android.view.View)>(null);
+
+     label32:
+        $r15 = new com.wAppzmob.MainNavigationActivity$5;
+
+        specialinvoke $r15.<com.wAppzmob.MainNavigationActivity$5: void <init>(com.wAppzmob.MainNavigationActivity)>($r2);
+
+        if $i0 == 36 goto label33;
+
+        virtualinvoke $r15.<com.wAppzmob.MainNavigationActivity$5: void onClick(android.view.View)>(null);
+
+     label33:
+        $r16 = new com.wAppzmob.Model.WidgetEntity;
+
+        specialinvoke $r16.<com.wAppzmob.Model.WidgetEntity: void <init>()>();
+
+        $r17 = new com.wAppzmob.Controllers.WebContentController;
+
+        specialinvoke $r17.<com.wAppzmob.Controllers.WebContentController: void <init>(com.wAppzmob.Model.WidgetEntity)>($r16);
+
+        $r18 = new com.wAppzmob.Utils.BrowserDownloadListener;
+
+        specialinvoke $r18.<com.wAppzmob.Utils.BrowserDownloadListener: void <init>(com.wAppzmob.Controllers.WebContentController)>($r17);
+
+        if $i0 == 37 goto label34;
+
+        virtualinvoke $r18.<com.wAppzmob.Utils.BrowserDownloadListener: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label34:
+        if $i0 == 38 goto label14;
+
+     label35:
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 39 goto label13;
+
+        if $i0 == 40 goto label36;
+
+        if $i0 == 41 goto label13;
+
+     label36:
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onDestroy()>();
+
+     label37:
+        if $i0 == 43 goto label44;
+
+        $r19 = new com.google.ads.AdActivity;
+
+        specialinvoke $r19.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 44 goto label44;
+
+        virtualinvoke $r19.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        if $i0 == 46 goto label42;
+
+     label39:
+        if $i0 == 47 goto label40;
+
+        virtualinvoke $r19.<com.google.ads.AdActivity: void onClick(android.view.View)>(null);
+
+     label40:
+        $r20 = new com.google.ads.AdSize;
+
+        specialinvoke $r20.<com.google.ads.AdSize: void <init>(int,int)>(0, 0);
+
+        $r21 = new com.google.ads.AdView;
+
+        specialinvoke $r21.<com.google.ads.AdView: void <init>(android.app.Activity,com.google.ads.AdSize,java.lang.String)>($r19, $r20, "");
+
+        $r22 = new com.google.ads.InterstitialAd;
+
+        specialinvoke $r22.<com.google.ads.InterstitialAd: void <init>(android.app.Activity,java.lang.String)>($r19, "");
+
+        $r23 = new com.google.ads.m;
+
+        specialinvoke $r23.<com.google.ads.m: void <init>(com.google.ads.l,com.google.ads.Ad,com.google.ads.AdView,com.google.ads.InterstitialAd,java.lang.String,android.app.Activity,android.content.Context,android.view.ViewGroup,com.google.ads.internal.h)>(null, null, $r21, $r22, "", $r19, $r19, null, null);
+
+        $r24 = null;
+
+        $r25 = new com.google.ads.internal.AdWebView;
+
+        specialinvoke $r25.<com.google.ads.internal.AdWebView: void <init>(com.google.ads.m,com.google.ads.AdSize)>($r23, $r24);
+
+        $r26 = new com.google.ads.internal.AdWebView$1;
+
+        specialinvoke $r26.<com.google.ads.internal.AdWebView$1: void <init>(com.google.ads.internal.AdWebView)>($r25);
+
+        if $i0 == 48 goto label41;
+
+        virtualinvoke $r26.<com.google.ads.internal.AdWebView$1: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label41:
+        if $i0 == 49 goto label39;
+
+     label42:
+        virtualinvoke $r19.<com.google.ads.AdActivity: void onPause()>();
+
+        if $i0 == 50 goto label38;
+
+        if $i0 == 51 goto label43;
+
+        if $i0 == 52 goto label38;
+
+     label43:
+        virtualinvoke $r19.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label44:
+        if $i0 == 54 goto label51;
+
+        $r27 = new com.wAppzmob.MessageViewer;
+
+        specialinvoke $r27.<com.wAppzmob.MessageViewer: void <init>()>();
+
+        if $i0 == 55 goto label51;
+
+        virtualinvoke $r27.<com.wAppzmob.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        virtualinvoke $r27.<com.wAppzmob.MessageViewer: void onStart()>();
+
+        if $i0 == 56 goto label46;
+
+        virtualinvoke $r27.<com.wAppzmob.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label46:
+        if $i0 == 57 goto label49;
+
+     label47:
+        if $i0 == 58 goto label48;
+
+        $z9 = virtualinvoke $r27.<com.wAppzmob.MessageViewer: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label48:
+        if $i0 == 59 goto label47;
+
+     label49:
+        virtualinvoke $r27.<com.wAppzmob.MessageViewer: void onPause()>();
+
+        if $i0 == 60 goto label46;
+
+        if $i0 == 61 goto label50;
+
+        if $i0 == 62 goto label45;
+
+     label50:
+        virtualinvoke $r27.<com.wAppzmob.MessageViewer: void onDestroy()>();
+
+     label51:
+        if $i0 == 64 goto label53;
+
+        $r28 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r28.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 65 goto label53;
+
+     label52:
+        virtualinvoke $r28.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 67 goto label52;
+
+     label53:
+        if $i0 == 68 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Found 37 callback methods for 4 components
+Found {res/layout/about_dialog.xml=[2131427328 - android.widget.LinearLayout, 2131427331 - android.widget.TextView, 2131427329 - android.widget.ImageView, 2131427330 - android.widget.TextView], res/layout/no_content_message.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/startup_screen.xml=[-1 - android.widget.RelativeLayout, 2131427350 - com.wAppzmob.Views.BrowserWebView, 2131427353 - android.widget.RelativeLayout, 2131427351 - android.widget.TextView], res/layout/connection_error_dialog.xml=[2131427333 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131427332 - android.widget.LinearLayout, 2131427334 - android.widget.Button, 2131427335 - android.widget.Button], res/layout/main.xml=[2131427349 - android.widget.RelativeLayout, 2131427344 - com.wAppzmob.Views.BrowserWebView, -1 - android.widget.FrameLayout, 2131427340 - android.widget.LinearLayout, 2131427346 - android.widget.LinearLayout, 2131427351 - android.widget.TextView, 2131427347 - android.widget.FrameLayout, 2131427345 - android.widget.FrameLayout, -1 - android.widget.RelativeLayout, 2131427350 - com.wAppzmob.Views.BrowserWebView, 2131427343 - android.widget.FrameLayout, 2131427348 - android.widget.FrameLayout, 2131427341 - com.wAppzmob.Views.TransparentPanel], res/layout/http_authentication.xml=[-1 - android.widget.TableLayout, 2131427338 - android.widget.TextView, 2131427336 - android.widget.TextView, 2131427339 - android.widget.EditText, 2131427337 - android.widget.EditText], res/layout/tab_tag.xml=[2131427356 - android.widget.ImageView, 2131427357 - android.widget.TextView, 2131427354 - com.wAppzmob.Views.TabTag, 2131427355 - android.widget.LinearLayout], res/layout/video_loading_progress.xml=[16908301 - android.widget.ProgressBar, 2131427358 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/message_viewer.xml=[2131427352 - android.webkit.WebView, -1 - android.widget.LinearLayout], res/layout/web_content.xml=[2131427359 - com.wAppzmob.Views.WebContent, 2131427361 - android.widget.RelativeLayout, 2131427331 - android.widget.TextView, 2131427362 - android.widget.ProgressBar, 2131427363 - android.widget.RelativeLayout, 2131427364 - android.widget.RelativeLayout, 2131427360 - com.wAppzmob.Views.BrowserWebView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 37 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2dd94e49e75467cb055099319fc90d0f93d0868e531593f857cf91f6f3220c87.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.net.http.SslError is a phantom class!
+Warning: android.webkit.ConsoleMessage$MessageLevel is a phantom class!
+Warning: android.webkit.ConsoleMessage is a phantom class!
+Warning: android.webkit.WebResourceResponse is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.WebView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.HttpAuthHandler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.google.ads.l
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.google.ads.Ad, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ViewGroup
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.google.ads.internal.h
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.google.ads.AdSize, substituting with null...
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wAppzmob.Server.C2DMClientReceiver $r1;
+        com.wAppzmob.MainNavigationActivity $r2;
+        com.wAppzmob.MainNavigationActivity$8 $r3;
+        com.wAppzmob.ads.AdsLoader $r4;
+        com.wAppzmob.ads.AdsLoader$1 $r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9;
+        com.wAppzmob.Views.BrowserWebView $r6;
+        com.wAppzmob.Views.TransparentPanel $r7;
+        com.wAppzmob.Model.WidgetEntity $r8, $r14;
+        com.wAppzmob.Controllers.WebContentController $r9, $r15;
+        com.wAppzmob.Controllers.WebContentController$1 $r10;
+        com.wAppzmob.Views.AboutDialog $r11;
+        com.wAppzmob.Views.AboutDialog$1 $r12;
+        com.wAppzmob.MainNavigationActivity$6 $r13;
+        com.wAppzmob.Utils.BrowserDownloadListener $r16;
+        com.wAppzmob.MainNavigationActivity$5 $r17;
+        com.wAppzmob.MainNavigationActivity$4 $r18;
+        com.wAppzmob.MainNavigationActivity$1 $r19;
+        com.wAppzmob.MainNavigationActivity$7 $r20;
+        com.google.ads.AdActivity $r21;
+        com.google.ads.AdSize $r22, $r26;
+        com.google.ads.AdView $r23;
+        com.google.ads.InterstitialAd $r24;
+        com.google.ads.m $r25;
+        com.google.ads.internal.AdWebView $r27;
+        com.google.ads.internal.AdWebView$1 $r28;
+        com.wAppzmob.MessageViewer $r29;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.wAppzmob.Server.C2DMClientReceiver;
+
+        specialinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label08;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r1, null);
+
+        $r1 = null;
+
+     label07:
+        if $i0 == 7 goto label04;
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.wAppzmob.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r1, null);
+
+        $r1 = null;
+
+     label11:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label12;
+
+        if $i0 == 13 goto label08;
+
+     label12:
+        if $i0 == 14 goto label39;
+
+        $r2 = new com.wAppzmob.MainNavigationActivity;
+
+        specialinvoke $r2.<com.wAppzmob.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 15 goto label39;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onResume()>();
+
+        if $i0 == 17 goto label37;
+
+     label14:
+        $r3 = new com.wAppzmob.MainNavigationActivity$8;
+
+        specialinvoke $r3.<com.wAppzmob.MainNavigationActivity$8: void <init>(com.wAppzmob.MainNavigationActivity,android.view.View,android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.HttpAuthHandler)>($r2, null, null, "", "", null);
+
+        if $i0 == 18 goto label15;
+
+        virtualinvoke $r3.<com.wAppzmob.MainNavigationActivity$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label15:
+        $r4 = new com.wAppzmob.ads.AdsLoader;
+
+        specialinvoke $r4.<com.wAppzmob.ads.AdsLoader: void <init>()>();
+
+        $r5 = new com.wAppzmob.ads.AdsLoader$1;
+
+        specialinvoke $r5.<com.wAppzmob.ads.AdsLoader$1: void <init>(com.wAppzmob.ads.AdsLoader)>($r4);
+
+        if $i0 == 19 goto label16;
+
+        $z0 = virtualinvoke $r5.<com.wAppzmob.ads.AdsLoader$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label16:
+        $r6 = new com.wAppzmob.Views.BrowserWebView;
+
+        specialinvoke $r6.<com.wAppzmob.Views.BrowserWebView: void <init>(android.content.Context,android.util.AttributeSet)>($r2, null);
+
+        if $i0 == 20 goto label17;
+
+        virtualinvoke $r6.<com.wAppzmob.Views.BrowserWebView: void onWindowVisibilityChanged(int)>(0);
+
+     label17:
+        $r7 = new com.wAppzmob.Views.TransparentPanel;
+
+        specialinvoke $r7.<com.wAppzmob.Views.TransparentPanel: void <init>(android.content.Context)>($r2);
+
+        if $i0 == 21 goto label18;
+
+        virtualinvoke $r7.<com.wAppzmob.Views.TransparentPanel: void dispatchDraw(android.graphics.Canvas)>(null);
+
+     label18:
+        $r8 = new com.wAppzmob.Model.WidgetEntity;
+
+        specialinvoke $r8.<com.wAppzmob.Model.WidgetEntity: void <init>()>();
+
+        $r9 = new com.wAppzmob.Controllers.WebContentController;
+
+        specialinvoke $r9.<com.wAppzmob.Controllers.WebContentController: void <init>(com.wAppzmob.Model.WidgetEntity)>($r8);
+
+        $r10 = new com.wAppzmob.Controllers.WebContentController$1;
+
+        specialinvoke $r10.<com.wAppzmob.Controllers.WebContentController$1: void <init>(com.wAppzmob.Controllers.WebContentController)>($r9);
+
+        if $i0 == 22 goto label19;
+
+        $z1 = virtualinvoke $r10.<com.wAppzmob.Controllers.WebContentController$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label19:
+        if $i0 == 23 goto label20;
+
+        staticinvoke <com.wAppzmob.MainNavigationActivity: void <clinit>()>();
+
+     label20:
+        if $i0 == 24 goto label21;
+
+        $z2 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label21:
+        if $i0 == 25 goto label22;
+
+        $z3 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label22:
+        if $i0 == 26 goto label23;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label23:
+        if $i0 == 27 goto label24;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label24:
+        if $i0 == 28 goto label25;
+
+        $z4 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label25:
+        if $i0 == 29 goto label26;
+
+        $z5 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onKeyLongPress(int,android.view.KeyEvent)>(0, null);
+
+     label26:
+        if $i0 == 30 goto label27;
+
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label27:
+        if $i0 == 31 goto label28;
+
+        $z6 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label28:
+        if $i0 == 32 goto label29;
+
+        $z7 = virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label29:
+        $r11 = new com.wAppzmob.Views.AboutDialog;
+
+        specialinvoke $r11.<com.wAppzmob.Views.AboutDialog: void <init>(android.content.Context)>($r2);
+
+        $r12 = new com.wAppzmob.Views.AboutDialog$1;
+
+        specialinvoke $r12.<com.wAppzmob.Views.AboutDialog$1: void <init>(com.wAppzmob.Views.AboutDialog,java.lang.String,com.wAppzmob.MainNavigationActivity)>($r11, "", $r2);
+
+        if $i0 == 33 goto label30;
+
+        $z8 = virtualinvoke $r12.<com.wAppzmob.Views.AboutDialog$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label30:
+        $r13 = new com.wAppzmob.MainNavigationActivity$6;
+
+        specialinvoke $r13.<com.wAppzmob.MainNavigationActivity$6: void <init>(com.wAppzmob.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r2, null);
+
+        if $i0 == 34 goto label31;
+
+        virtualinvoke $r13.<com.wAppzmob.MainNavigationActivity$6: void onCancel(android.content.DialogInterface)>(null);
+
+     label31:
+        $r14 = new com.wAppzmob.Model.WidgetEntity;
+
+        specialinvoke $r14.<com.wAppzmob.Model.WidgetEntity: void <init>()>();
+
+        $r15 = new com.wAppzmob.Controllers.WebContentController;
+
+        specialinvoke $r15.<com.wAppzmob.Controllers.WebContentController: void <init>(com.wAppzmob.Model.WidgetEntity)>($r14);
+
+        $r16 = new com.wAppzmob.Utils.BrowserDownloadListener;
+
+        specialinvoke $r16.<com.wAppzmob.Utils.BrowserDownloadListener: void <init>(com.wAppzmob.Controllers.WebContentController)>($r15);
+
+        if $i0 == 35 goto label32;
+
+        virtualinvoke $r16.<com.wAppzmob.Utils.BrowserDownloadListener: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label32:
+        $r17 = new com.wAppzmob.MainNavigationActivity$5;
+
+        specialinvoke $r17.<com.wAppzmob.MainNavigationActivity$5: void <init>(com.wAppzmob.MainNavigationActivity)>($r2);
+
+        if $i0 == 36 goto label33;
+
+        virtualinvoke $r17.<com.wAppzmob.MainNavigationActivity$5: void onClick(android.view.View)>(null);
+
+     label33:
+        $r18 = new com.wAppzmob.MainNavigationActivity$4;
+
+        specialinvoke $r18.<com.wAppzmob.MainNavigationActivity$4: void <init>(com.wAppzmob.MainNavigationActivity)>($r2);
+
+        if $i0 == 37 goto label34;
+
+        virtualinvoke $r18.<com.wAppzmob.MainNavigationActivity$4: void onClick(android.view.View)>(null);
+
+     label34:
+        $r19 = new com.wAppzmob.MainNavigationActivity$1;
+
+        specialinvoke $r19.<com.wAppzmob.MainNavigationActivity$1: void <init>(com.wAppzmob.MainNavigationActivity)>($r2);
+
+        if $i0 == 38 goto label35;
+
+        virtualinvoke $r19.<com.wAppzmob.MainNavigationActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label35:
+        $r20 = new com.wAppzmob.MainNavigationActivity$7;
+
+        specialinvoke $r20.<com.wAppzmob.MainNavigationActivity$7: void <init>(com.wAppzmob.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r2, null);
+
+        if $i0 == 39 goto label36;
+
+        virtualinvoke $r20.<com.wAppzmob.MainNavigationActivity$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label36:
+        if $i0 == 40 goto label14;
+
+     label37:
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 41 goto label13;
+
+        if $i0 == 42 goto label38;
+
+        if $i0 == 43 goto label13;
+
+     label38:
+        virtualinvoke $r2.<com.wAppzmob.MainNavigationActivity: void onDestroy()>();
+
+     label39:
+        if $i0 == 45 goto label46;
+
+        $r21 = new com.google.ads.AdActivity;
+
+        specialinvoke $r21.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 46 goto label46;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label40:
+        if $i0 == 48 goto label44;
+
+     label41:
+        $r22 = new com.google.ads.AdSize;
+
+        specialinvoke $r22.<com.google.ads.AdSize: void <init>(int,int)>(0, 0);
+
+        $r23 = new com.google.ads.AdView;
+
+        specialinvoke $r23.<com.google.ads.AdView: void <init>(android.app.Activity,com.google.ads.AdSize,java.lang.String)>($r21, $r22, "");
+
+        $r24 = new com.google.ads.InterstitialAd;
+
+        specialinvoke $r24.<com.google.ads.InterstitialAd: void <init>(android.app.Activity,java.lang.String)>($r21, "");
+
+        $r25 = new com.google.ads.m;
+
+        specialinvoke $r25.<com.google.ads.m: void <init>(com.google.ads.l,com.google.ads.Ad,com.google.ads.AdView,com.google.ads.InterstitialAd,java.lang.String,android.app.Activity,android.content.Context,android.view.ViewGroup,com.google.ads.internal.h)>(null, null, $r23, $r24, "", $r21, $r21, null, null);
+
+        $r26 = null;
+
+        $r27 = new com.google.ads.internal.AdWebView;
+
+        specialinvoke $r27.<com.google.ads.internal.AdWebView: void <init>(com.google.ads.m,com.google.ads.AdSize)>($r25, $r26);
+
+        $r28 = new com.google.ads.internal.AdWebView$1;
+
+        specialinvoke $r28.<com.google.ads.internal.AdWebView$1: void <init>(com.google.ads.internal.AdWebView)>($r27);
+
+        if $i0 == 49 goto label42;
+
+        virtualinvoke $r28.<com.google.ads.internal.AdWebView$1: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label42:
+        if $i0 == 50 goto label43;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onClick(android.view.View)>(null);
+
+     label43:
+        if $i0 == 51 goto label41;
+
+     label44:
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onPause()>();
+
+        if $i0 == 52 goto label40;
+
+        if $i0 == 53 goto label45;
+
+        if $i0 == 54 goto label40;
+
+     label45:
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label46:
+        if $i0 == 56 goto label53;
+
+        $r29 = new com.wAppzmob.MessageViewer;
+
+        specialinvoke $r29.<com.wAppzmob.MessageViewer: void <init>()>();
+
+        if $i0 == 57 goto label53;
+
+        virtualinvoke $r29.<com.wAppzmob.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label47:
+        virtualinvoke $r29.<com.wAppzmob.MessageViewer: void onStart()>();
+
+        if $i0 == 58 goto label48;
+
+        virtualinvoke $r29.<com.wAppzmob.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label48:
+        if $i0 == 59 goto label51;
+
+     label49:
+        if $i0 == 60 goto label50;
+
+        $z9 = virtualinvoke $r29.<com.wAppzmob.MessageViewer: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label50:
+        if $i0 == 61 goto label49;
+
+     label51:
+        virtualinvoke $r29.<com.wAppzmob.MessageViewer: void onPause()>();
+
+        if $i0 == 62 goto label48;
+
+        if $i0 == 63 goto label52;
+
+        if $i0 == 64 goto label47;
+
+     label52:
+        virtualinvoke $r29.<com.wAppzmob.MessageViewer: void onDestroy()>();
+
+     label53:
+        if $i0 == 66 goto label55;
+
+        $r30 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r30.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 67 goto label55;
+
+     label54:
+        virtualinvoke $r30.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 69 goto label54;
+
+     label55:
+        if $i0 == 70 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.757715434 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.068479077 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2075 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 60 sources and 17 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 11609
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 73408
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 153636 forward and 65931 backward edges solved, processing 4 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 4 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.011175471 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("title", $r1) in method <com.wAppzmob.Utils.AppNotificationManager: android.content.Intent getLaunchIntent(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("title") in method <com.wAppzmob.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.wAppzmob.Server.AppsGeyserServerClient: java.util.Map loadHeaders(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.wAppzmob.Utils.DeviceIdParser: java.lang.String getDeviceId(android.app.Activity)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("url", $r2) in method <com.wAppzmob.Utils.AppNotificationManager: android.content.Intent getLaunchIntent(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("url") in method <com.wAppzmob.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("title", $r1), from the following sources:
+	- $r6 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("title") (in <com.wAppzmob.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.wAppzmob.Utils.DeviceIdParser: java.lang.String getDeviceId(android.app.Activity)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("url", $r2), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("url") (in <com.wAppzmob.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 419.343904 MB
+Analysis has run for 7.258884482 seconds

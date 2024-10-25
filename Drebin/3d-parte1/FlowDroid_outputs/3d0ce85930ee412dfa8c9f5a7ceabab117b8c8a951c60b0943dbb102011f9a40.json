@@ -1,0 +1,312 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.01070669 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.gone60.MyService $r1;
+        android.os.IBinder $r2;
+        com.gone60.gone60 $r3;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label6;
+
+        $r1 = new com.gone60.MyService;
+
+        specialinvoke $r1.<com.gone60.MyService: void <init>()>();
+
+        virtualinvoke $r1.<com.gone60.MyService: void onCreate()>();
+
+        virtualinvoke $r1.<com.gone60.MyService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label2:
+        if $i0 == 1 goto label3;
+
+        if $i0 == 2 goto label2;
+
+     label3:
+        $r2 = virtualinvoke $r1.<com.gone60.MyService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label4:
+        if $i0 == 4 goto label5;
+
+        if $i0 == 5 goto label4;
+
+     label5:
+        virtualinvoke $r1.<com.gone60.MyService: void onDestroy()>();
+
+     label6:
+        if $i0 == 6 goto label8;
+
+        $r3 = new com.gone60.gone60;
+
+        specialinvoke $r3.<com.gone60.gone60: void <init>()>();
+
+        if $i0 == 7 goto label8;
+
+        virtualinvoke $r3.<com.gone60.gone60: void onCreate(android.os.Bundle)>(null);
+
+     label7:
+        if $i0 == 10 goto label8;
+
+        if $i0 == 11 goto label7;
+
+     label8:
+        if $i0 == 13 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.gone60.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: Chronometer is a phantom class!
+Warning: com.gone60.Chronometer is a phantom class!
+Warning: android.view.Chronometer is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.gone60.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.gone60.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.gone60.gone60$DataUpdateReceiver, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.gone60.MyService $r1;
+        android.os.IBinder $r2;
+        com.gone60.gone60 $r3;
+        com.gone60.gone60$DataUpdateReceiver $r4, $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.gone60.MyService;
+
+        specialinvoke $r1.<com.gone60.MyService: void <init>()>();
+
+        virtualinvoke $r1.<com.gone60.MyService: void onCreate()>();
+
+        virtualinvoke $r1.<com.gone60.MyService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.gone60.MyService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.gone60.MyService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.gone60.gone60;
+
+        specialinvoke $r3.<com.gone60.gone60: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<com.gone60.gone60: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 10 goto label07;
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        if $i0 == 14 goto label10;
+
+        $r4 = null;
+
+        $r5 = new com.gone60.gone60$DataUpdateReceiver;
+
+        specialinvoke $r5.<com.gone60.gone60$DataUpdateReceiver: void <init>(com.gone60.gone60,com.gone60.gone60$DataUpdateReceiver)>($r3, $r4);
+
+        if $i0 == 15 goto label10;
+
+     label09:
+        virtualinvoke $r5.<com.gone60.gone60$DataUpdateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label09;
+
+     label10:
+        if $i0 == 18 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.0 seconds.
+[Spark] Solution found in 0.0 seconds.
+Running incremental callback analysis for 2 components...
+Incremental callback analysis done.
+Found 5 callback methods for 2 components
+Found {res/layout/main.xml=[2131034114 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131034112 - android.widget.Chronometer, 2131034118 - android.widget.ImageView, 2131034117 - android.widget.ImageView, 2131034115 - android.widget.ImageView, 2131034116 - android.widget.ImageView, 2131034120 - android.widget.TextView, 2131034119 - android.widget.TextView, 2131034113 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 5 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/3d0ce85930ee412dfa8c9f5a7ceabab117b8c8a951c60b0943dbb102011f9a40.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.gone60.gone60$DataUpdateReceiver, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.gone60.MyService $r1;
+        android.os.IBinder $r2;
+        com.gone60.gone60 $r3;
+        com.gone60.gone60$DataUpdateReceiver $r4, $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.gone60.MyService;
+
+        specialinvoke $r1.<com.gone60.MyService: void <init>()>();
+
+        virtualinvoke $r1.<com.gone60.MyService: void onCreate()>();
+
+        virtualinvoke $r1.<com.gone60.MyService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.gone60.MyService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.gone60.MyService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.gone60.gone60;
+
+        specialinvoke $r3.<com.gone60.gone60: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<com.gone60.gone60: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 10 goto label07;
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        if $i0 == 14 goto label10;
+
+        $r4 = null;
+
+        $r5 = new com.gone60.gone60$DataUpdateReceiver;
+
+        specialinvoke $r5.<com.gone60.gone60$DataUpdateReceiver: void <init>(com.gone60.gone60,com.gone60.gone60$DataUpdateReceiver)>($r3, $r4);
+
+        if $i0 == 15 goto label10;
+
+     label09:
+        virtualinvoke $r5.<com.gone60.gone60$DataUpdateReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label09;
+
+     label10:
+        if $i0 == 18 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.0 seconds.
+[Spark] Solution found in 0.0 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.066227689 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.010642684 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 66 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 4 sources and 2 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 0
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 7
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 40 forward and 3 backward edges solved, processing 0 results...
+[main] WARN soot.jimple.infoflow.Infoflow - No results found.
+Maximum memory consumption: 52.428936 MB
+Analysis has run for 2.351077247 seconds

@@ -1,0 +1,645 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.010646181 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.geinimi.AdService $r1;
+        android.os.IBinder $r2;
+        com.xmobileapp.taskmanager.TaskManager $r3;
+        com.geinimi.custom.Ad0000_000004 $r4;
+        com.geinimi.AdServiceReceiver $r5;
+        wbs.logo.WbsLogoAct $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.geinimi.AdService;
+
+        specialinvoke $r1.<com.geinimi.AdService: void <init>()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.geinimi.AdService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.xmobileapp.taskmanager.TaskManager;
+
+        specialinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void onResume()>();
+
+        if $i0 == 9 goto label07;
+
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label07;
+
+     label08:
+        if $i0 == 13 goto label10;
+
+        $r4 = new com.geinimi.custom.Ad0000_000004;
+
+        specialinvoke $r4.<com.geinimi.custom.Ad0000_000004: void <init>()>();
+
+        if $i0 == 14 goto label10;
+
+        virtualinvoke $r4.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        if $i0 == 20 goto label12;
+
+        $r5 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r5.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 21 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label11;
+
+     label12:
+        if $i0 == 24 goto label14;
+
+        $r6 = new wbs.logo.WbsLogoAct;
+
+        specialinvoke $r6.<wbs.logo.WbsLogoAct: void <init>()>();
+
+        if $i0 == 25 goto label14;
+
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onResume()>();
+
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onPause()>();
+
+        if $i0 == 27 goto label13;
+
+        if $i0 == 28 goto label14;
+
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onRestart()>();
+
+        if $i0 == 29 goto label13;
+
+     label14:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+Callback analysis done.
+Skipping file res/layout/ in layout folder...
+Warning: RelativeLayout is a phantom class!
+Warning: wbs.logo.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: wbs.logo.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: wbs.logo.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/list_main.xml
+Found 2 layout controls in file res/layout/logo.xml
+Warning: LinearLayout is a phantom class!
+Warning: wbs.logo.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: AbsoluteLayout is a phantom class!
+Warning: wbs.logo.AbsoluteLayout is a phantom class!
+Warning: android.view.AbsoluteLayout is a phantom class!
+Found 3 layout controls in file res/layout/logowbs.xml
+Warning: ListView is a phantom class!
+Warning: wbs.logo.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 4 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.geinimi.AdService $r1;
+        android.os.IBinder $r2;
+        com.xmobileapp.taskmanager.TaskManager $r3;
+        com.geinimi.custom.Ad0000_000004 $r4;
+        com.geinimi.AdServiceReceiver $r5;
+        wbs.logo.WbsLogoAct $r6;
+        wbs.logo.WbsLogoWiew $r7, $r9;
+        wbs.logo.WbsLogoWiew$1 $r8;
+        wbs.logo.WbsLogoWiew$2 $r10;
+        boolean $z0;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.geinimi.AdService;
+
+        specialinvoke $r1.<com.geinimi.AdService: void <init>()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onLowMemory()>();
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        $r2 = virtualinvoke $r1.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label07:
+        if $i0 == 6 goto label08;
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onLowMemory()>();
+
+     label08:
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label09;
+
+        if $i0 == 9 goto label07;
+
+     label09:
+        virtualinvoke $r1.<com.geinimi.AdService: void onDestroy()>();
+
+     label10:
+        if $i0 == 10 goto label15;
+
+        $r3 = new com.xmobileapp.taskmanager.TaskManager;
+
+        specialinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void onResume()>();
+
+        if $i0 == 13 goto label14;
+
+     label12:
+        if $i0 == 14 goto label13;
+
+        virtualinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label13:
+        if $i0 == 15 goto label12;
+
+     label14:
+        if $i0 == 16 goto label11;
+
+        if $i0 == 17 goto label15;
+
+        if $i0 == 18 goto label11;
+
+     label15:
+        if $i0 == 20 goto label17;
+
+        $r4 = new com.geinimi.custom.Ad0000_000004;
+
+        specialinvoke $r4.<com.geinimi.custom.Ad0000_000004: void <init>()>();
+
+        if $i0 == 21 goto label17;
+
+        virtualinvoke $r4.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label16;
+
+     label17:
+        if $i0 == 29 goto label19;
+
+        $r5 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r5.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 30 goto label19;
+
+     label18:
+        virtualinvoke $r5.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 32 goto label18;
+
+     label19:
+        if $i0 == 33 goto label26;
+
+        $r6 = new wbs.logo.WbsLogoAct;
+
+        specialinvoke $r6.<wbs.logo.WbsLogoAct: void <init>()>();
+
+        if $i0 == 34 goto label26;
+
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onResume()>();
+
+        if $i0 == 36 goto label25;
+
+     label21:
+        $r7 = new wbs.logo.WbsLogoWiew;
+
+        specialinvoke $r7.<wbs.logo.WbsLogoWiew: void <init>(android.content.Context)>($r6);
+
+        $r8 = new wbs.logo.WbsLogoWiew$1;
+
+        specialinvoke $r8.<wbs.logo.WbsLogoWiew$1: void <init>(wbs.logo.WbsLogoWiew)>($r7);
+
+        if $i0 == 37 goto label22;
+
+        virtualinvoke $r8.<wbs.logo.WbsLogoWiew$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label22:
+        $r9 = new wbs.logo.WbsLogoWiew;
+
+        specialinvoke $r9.<wbs.logo.WbsLogoWiew: void <init>(android.content.Context)>($r6);
+
+        $r10 = new wbs.logo.WbsLogoWiew$2;
+
+        specialinvoke $r10.<wbs.logo.WbsLogoWiew$2: void <init>(wbs.logo.WbsLogoWiew)>($r9);
+
+        if $i0 == 38 goto label23;
+
+        virtualinvoke $r10.<wbs.logo.WbsLogoWiew$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        if $i0 == 39 goto label24;
+
+        $z0 = virtualinvoke $r6.<wbs.logo.WbsLogoAct: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label24:
+        if $i0 == 40 goto label21;
+
+     label25:
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onPause()>();
+
+        if $i0 == 41 goto label20;
+
+        if $i0 == 42 goto label26;
+
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onRestart()>();
+
+        if $i0 == 43 goto label20;
+
+     label26:
+        if $i0 == 45 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Found 16 callback methods for 4 components
+Found {res/layout/logowbs.xml=[2131165189 - android.widget.AbsoluteLayout, -1 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/logo.xml=[2131165187 - android.widget.RelativeLayout, 2131165188 - android.widget.ImageView], res/layout/main.xml=[-1 - android.widget.RelativeLayout, 2131165190 - android.widget.RelativeLayout, 2131165191 - android.widget.ListView], res/layout/list_main.xml=[-1 - android.widget.RelativeLayout, 2131165185 - android.widget.TextView, 2131165184 - android.widget.ImageView, 2131165186 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 16 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4f74d243c46ae5b3d6ba9742b263c4ed717577a8fc8b2775f7dbdbfa2fb5e86f.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.geinimi.AdService $r1;
+        android.os.IBinder $r2;
+        com.xmobileapp.taskmanager.TaskManager $r3;
+        com.geinimi.custom.Ad0000_000004 $r4;
+        com.geinimi.AdServiceReceiver $r5;
+        wbs.logo.WbsLogoAct $r6;
+        boolean $z0;
+        wbs.logo.WbsLogoWiew $r7, $r9;
+        wbs.logo.WbsLogoWiew$1 $r8;
+        wbs.logo.WbsLogoWiew$2 $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.geinimi.AdService;
+
+        specialinvoke $r1.<com.geinimi.AdService: void <init>()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onLowMemory()>();
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        $r2 = virtualinvoke $r1.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label07:
+        if $i0 == 6 goto label08;
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onLowMemory()>();
+
+     label08:
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label09;
+
+        if $i0 == 9 goto label07;
+
+     label09:
+        virtualinvoke $r1.<com.geinimi.AdService: void onDestroy()>();
+
+     label10:
+        if $i0 == 10 goto label15;
+
+        $r3 = new com.xmobileapp.taskmanager.TaskManager;
+
+        specialinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void onResume()>();
+
+        if $i0 == 13 goto label14;
+
+     label12:
+        if $i0 == 14 goto label13;
+
+        virtualinvoke $r3.<com.xmobileapp.taskmanager.TaskManager: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label13:
+        if $i0 == 15 goto label12;
+
+     label14:
+        if $i0 == 16 goto label11;
+
+        if $i0 == 17 goto label15;
+
+        if $i0 == 18 goto label11;
+
+     label15:
+        if $i0 == 20 goto label17;
+
+        $r4 = new com.geinimi.custom.Ad0000_000004;
+
+        specialinvoke $r4.<com.geinimi.custom.Ad0000_000004: void <init>()>();
+
+        if $i0 == 21 goto label17;
+
+        virtualinvoke $r4.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 24 goto label17;
+
+        if $i0 == 25 goto label16;
+
+     label17:
+        if $i0 == 29 goto label19;
+
+        $r5 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r5.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 30 goto label19;
+
+     label18:
+        virtualinvoke $r5.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 32 goto label18;
+
+     label19:
+        if $i0 == 33 goto label26;
+
+        $r6 = new wbs.logo.WbsLogoAct;
+
+        specialinvoke $r6.<wbs.logo.WbsLogoAct: void <init>()>();
+
+        if $i0 == 34 goto label26;
+
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onResume()>();
+
+        if $i0 == 36 goto label25;
+
+     label21:
+        if $i0 == 37 goto label22;
+
+        $z0 = virtualinvoke $r6.<wbs.logo.WbsLogoAct: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label22:
+        $r7 = new wbs.logo.WbsLogoWiew;
+
+        specialinvoke $r7.<wbs.logo.WbsLogoWiew: void <init>(android.content.Context)>($r6);
+
+        $r8 = new wbs.logo.WbsLogoWiew$1;
+
+        specialinvoke $r8.<wbs.logo.WbsLogoWiew$1: void <init>(wbs.logo.WbsLogoWiew)>($r7);
+
+        if $i0 == 38 goto label23;
+
+        virtualinvoke $r8.<wbs.logo.WbsLogoWiew$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        $r9 = new wbs.logo.WbsLogoWiew;
+
+        specialinvoke $r9.<wbs.logo.WbsLogoWiew: void <init>(android.content.Context)>($r6);
+
+        $r10 = new wbs.logo.WbsLogoWiew$2;
+
+        specialinvoke $r10.<wbs.logo.WbsLogoWiew$2: void <init>(wbs.logo.WbsLogoWiew)>($r9);
+
+        if $i0 == 39 goto label24;
+
+        virtualinvoke $r10.<wbs.logo.WbsLogoWiew$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label24:
+        if $i0 == 40 goto label21;
+
+     label25:
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onPause()>();
+
+        if $i0 == 41 goto label20;
+
+        if $i0 == 42 goto label26;
+
+        virtualinvoke $r6.<wbs.logo.WbsLogoAct: void onRestart()>();
+
+        if $i0 == 43 goto label20;
+
+     label26:
+        if $i0 == 45 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.658398086 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.080373904 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2114 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 34 sources and 22 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 278
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1523
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 6553 forward and 891 backward edges solved, processing 6 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 6 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.005406926 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.geinimi.c.g: void a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r1.<android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)>("ACTIVITY_PARAM_KEY") in method <com.geinimi.AdActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r15.<java.io.OutputStream: void write(byte[],int,int)>($r14, 0, $i0) in method <com.geinimi.c.g: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("cpid") in method <com.geinimi.AdService: java.lang.String b()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.geinimi.c.g: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ptid") in method <com.geinimi.AdService: java.lang.String c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.geinimi.c.f: void <init>(com.geinimi.AdService)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.geinimi.c.f: void <init>(com.geinimi.AdService)>
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r6 = virtualinvoke $r1.<android.os.Bundle: android.os.Parcelable getParcelable(java.lang.String)>("ACTIVITY_PARAM_KEY") (in <com.geinimi.AdActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r15.<java.io.OutputStream: void write(byte[],int,int)>($r14, 0, $i0), from the following sources:
+	- $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("cpid") (in <com.geinimi.AdService: java.lang.String b()>)
+	- $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.geinimi.c.g: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)>)
+	- $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ptid") (in <com.geinimi.AdService: java.lang.String c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.geinimi.c.f: void <init>(com.geinimi.AdService)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.geinimi.c.f: void <init>(com.geinimi.AdService)>)
+Maximum memory consumption: 189.849496 MB
+Analysis has run for 5.139102874 seconds

@@ -1,0 +1,1594 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.018428532 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.xxx.yyy.MyBoolService $r1;
+        com.xxx.yyy.NetWorkReceiver $r2;
+        com.xxx.yyy.MyAlarmReceiver $r3;
+        com.xxx.yyy.CustomBroadcastReceiver $r4;
+        com.noisysounds.sendFriendsAct $r5;
+        com.xxx.yyy.MyService $r6;
+        android.os.IBinder $r7;
+        com.noisysounds.crossSellingAct $r8;
+        com.noisysounds.noisysoundsview $r9;
+        com.noisysounds.noisysounds $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.xxx.yyy.MyBoolService;
+
+        specialinvoke $r1.<com.xxx.yyy.MyBoolService: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.xxx.yyy.MyBoolService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.xxx.yyy.NetWorkReceiver;
+
+        specialinvoke $r2.<com.xxx.yyy.NetWorkReceiver: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+     label04:
+        virtualinvoke $r2.<com.xxx.yyy.NetWorkReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 7 goto label04;
+
+     label05:
+        if $i0 == 8 goto label07;
+
+        $r3 = new com.xxx.yyy.MyAlarmReceiver;
+
+        specialinvoke $r3.<com.xxx.yyy.MyAlarmReceiver: void <init>()>();
+
+        if $i0 == 9 goto label07;
+
+     label06:
+        virtualinvoke $r3.<com.xxx.yyy.MyAlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 11 goto label06;
+
+     label07:
+        if $i0 == 12 goto label09;
+
+        $r4 = new com.xxx.yyy.CustomBroadcastReceiver;
+
+        specialinvoke $r4.<com.xxx.yyy.CustomBroadcastReceiver: void <init>()>();
+
+        if $i0 == 13 goto label09;
+
+     label08:
+        virtualinvoke $r4.<com.xxx.yyy.CustomBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label08;
+
+     label09:
+        if $i0 == 16 goto label11;
+
+        $r5 = new com.noisysounds.sendFriendsAct;
+
+        specialinvoke $r5.<com.noisysounds.sendFriendsAct: void <init>()>();
+
+        if $i0 == 17 goto label11;
+
+        virtualinvoke $r5.<com.noisysounds.sendFriendsAct: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 20 goto label11;
+
+        if $i0 == 21 goto label10;
+
+     label11:
+        if $i0 == 23 goto label16;
+
+        $r6 = new com.xxx.yyy.MyService;
+
+        specialinvoke $r6.<com.xxx.yyy.MyService: void <init>()>();
+
+        virtualinvoke $r6.<com.xxx.yyy.MyService: void onCreate()>();
+
+        virtualinvoke $r6.<com.xxx.yyy.MyService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 24 goto label13;
+
+        if $i0 == 25 goto label12;
+
+     label13:
+        $r7 = virtualinvoke $r6.<com.xxx.yyy.MyService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 27 goto label15;
+
+        if $i0 == 28 goto label14;
+
+     label15:
+        virtualinvoke $r6.<com.xxx.yyy.MyService: void onDestroy()>();
+
+     label16:
+        if $i0 == 29 goto label18;
+
+        $r8 = new com.noisysounds.crossSellingAct;
+
+        specialinvoke $r8.<com.noisysounds.crossSellingAct: void <init>()>();
+
+        if $i0 == 30 goto label18;
+
+        virtualinvoke $r8.<com.noisysounds.crossSellingAct: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 33 goto label18;
+
+        if $i0 == 34 goto label17;
+
+     label18:
+        if $i0 == 36 goto label21;
+
+        $r9 = new com.noisysounds.noisysoundsview;
+
+        specialinvoke $r9.<com.noisysounds.noisysoundsview: void <init>()>();
+
+        if $i0 == 37 goto label21;
+
+        virtualinvoke $r9.<com.noisysounds.noisysoundsview: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        virtualinvoke $r9.<com.noisysounds.noisysoundsview: void onPause()>();
+
+        if $i0 == 39 goto label19;
+
+        if $i0 == 40 goto label20;
+
+        virtualinvoke $r9.<com.noisysounds.noisysoundsview: void onRestart()>();
+
+        if $i0 == 41 goto label19;
+
+     label20:
+        virtualinvoke $r9.<com.noisysounds.noisysoundsview: void onDestroy()>();
+
+     label21:
+        if $i0 == 43 goto label23;
+
+        $r10 = new com.noisysounds.noisysounds;
+
+        specialinvoke $r10.<com.noisysounds.noisysounds: void <init>()>();
+
+        if $i0 == 44 goto label23;
+
+        virtualinvoke $r10.<com.noisysounds.noisysounds: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 47 goto label23;
+
+        virtualinvoke $r10.<com.noisysounds.noisysounds: void onRestart()>();
+
+        if $i0 == 48 goto label22;
+
+     label23:
+        if $i0 == 50 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: ScrollView is a phantom class!
+Warning: com.noisysounds.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: com.noisysounds.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.noisysounds.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.noisysounds.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: TableLayout is a phantom class!
+Warning: com.noisysounds.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: TableRow is a phantom class!
+Warning: com.noisysounds.TableRow is a phantom class!
+Warning: android.view.TableRow is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.noisysounds.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/alert_dialog_email.xml
+Found 2 layout controls in file res/layout/alert_dialog_emails.xml
+Warning: GridView is a phantom class!
+Warning: com.noisysounds.GridView is a phantom class!
+Warning: android.view.GridView is a phantom class!
+Warning: WebView is a phantom class!
+Warning: com.noisysounds.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 3 layout controls in file res/layout/noisysounds.xml
+Warning: ImageView is a phantom class!
+Warning: com.noisysounds.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 4 layout controls in file res/layout/main.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.noisysounds.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageSwitcher is a phantom class!
+Warning: com.noisysounds.ImageSwitcher is a phantom class!
+Warning: android.view.ImageSwitcher is a phantom class!
+Warning: Gallery is a phantom class!
+Warning: com.noisysounds.Gallery is a phantom class!
+Warning: android.view.Gallery is a phantom class!
+Found 5 layout controls in file res/layout/image_switcher_1.xml
+Warning: RatingBar is a phantom class!
+Warning: com.noisysounds.RatingBar is a phantom class!
+Warning: android.view.RatingBar is a phantom class!
+Found 6 layout controls in file res/layout/crossselling.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.admob.android.ads.Ad
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.flurry.android.FlurryAgent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class com.flurry.android.FlurryAgent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.xxx.yyy.MyBoolService $r1;
+        com.xxx.yyy.NetWorkReceiver $r2;
+        com.xxx.yyy.MyAlarmReceiver $r3;
+        com.xxx.yyy.CustomBroadcastReceiver $r4;
+        com.noisysounds.sendFriendsAct $r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        android.app.Dialog $r6;
+        com.noisysounds.sendFriendsAct$4 $r7;
+        com.noisysounds.sendFriendsAct$3 $r8;
+        com.noisysounds.sendFriendsAct$6 $r9;
+        com.noisysounds.sendFriendsAct$5 $r10;
+        com.xxx.yyy.MyService $r11;
+        android.os.IBinder $r12;
+        com.noisysounds.crossSellingAct $r13;
+        com.noisysounds.noisysoundsview $r14;
+        com.admob.android.ads.AdManager$1 $r15;
+        com.noisysounds.noisysoundsview$1 $r16;
+        com.admob.android.ads.AdView $r17;
+        com.admob.android.ads.AdContainer $r18;
+        com.admob.android.ads.AdView$3 $r19;
+        com.noisysounds.noisysounds $r20;
+        com.noisysounds.noisysounds$1 $r21;
+        com.noisysounds.noisysounds$2 $r22;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.xxx.yyy.MyBoolService;
+
+        specialinvoke $r1.<com.xxx.yyy.MyBoolService: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.xxx.yyy.MyBoolService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.xxx.yyy.NetWorkReceiver;
+
+        specialinvoke $r2.<com.xxx.yyy.NetWorkReceiver: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+     label04:
+        virtualinvoke $r2.<com.xxx.yyy.NetWorkReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 7 goto label04;
+
+     label05:
+        if $i0 == 8 goto label07;
+
+        $r3 = new com.xxx.yyy.MyAlarmReceiver;
+
+        specialinvoke $r3.<com.xxx.yyy.MyAlarmReceiver: void <init>()>();
+
+        if $i0 == 9 goto label07;
+
+     label06:
+        virtualinvoke $r3.<com.xxx.yyy.MyAlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 11 goto label06;
+
+     label07:
+        if $i0 == 12 goto label09;
+
+        $r4 = new com.xxx.yyy.CustomBroadcastReceiver;
+
+        specialinvoke $r4.<com.xxx.yyy.CustomBroadcastReceiver: void <init>()>();
+
+        if $i0 == 13 goto label09;
+
+     label08:
+        virtualinvoke $r4.<com.xxx.yyy.CustomBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label08;
+
+     label09:
+        if $i0 == 16 goto label23;
+
+        $r5 = new com.noisysounds.sendFriendsAct;
+
+        specialinvoke $r5.<com.noisysounds.sendFriendsAct: void <init>()>();
+
+        if $i0 == 17 goto label23;
+
+        virtualinvoke $r5.<com.noisysounds.sendFriendsAct: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 19 goto label22;
+
+     label11:
+        if $i0 == 20 goto label12;
+
+        $z0 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label12:
+        if $i0 == 21 goto label13;
+
+        $z1 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label13:
+        if $i0 == 22 goto label14;
+
+        virtualinvoke $r5.<com.noisysounds.sendFriendsAct: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label14:
+        if $i0 == 23 goto label15;
+
+        $z2 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label15:
+        if $i0 == 24 goto label16;
+
+        staticinvoke <com.noisysounds.sendFriendsAct: void <clinit>()>();
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        $r6 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: android.app.Dialog onCreateDialog(int)>(0);
+
+     label17:
+        $r7 = new com.noisysounds.sendFriendsAct$4;
+
+        specialinvoke $r7.<com.noisysounds.sendFriendsAct$4: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 26 goto label18;
+
+        virtualinvoke $r7.<com.noisysounds.sendFriendsAct$4: void onClick(android.view.View)>(null);
+
+     label18:
+        $r8 = new com.noisysounds.sendFriendsAct$3;
+
+        specialinvoke $r8.<com.noisysounds.sendFriendsAct$3: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 27 goto label19;
+
+        virtualinvoke $r8.<com.noisysounds.sendFriendsAct$3: void onClick(android.view.View)>(null);
+
+     label19:
+        $r9 = new com.noisysounds.sendFriendsAct$6;
+
+        specialinvoke $r9.<com.noisysounds.sendFriendsAct$6: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 28 goto label20;
+
+        virtualinvoke $r9.<com.noisysounds.sendFriendsAct$6: void onClick(android.view.View)>(null);
+
+     label20:
+        $r10 = new com.noisysounds.sendFriendsAct$5;
+
+        specialinvoke $r10.<com.noisysounds.sendFriendsAct$5: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 29 goto label21;
+
+        virtualinvoke $r10.<com.noisysounds.sendFriendsAct$5: void onClick(android.view.View)>(null);
+
+     label21:
+        if $i0 == 30 goto label11;
+
+     label22:
+        if $i0 == 31 goto label10;
+
+        if $i0 == 32 goto label23;
+
+        if $i0 == 33 goto label10;
+
+     label23:
+        if $i0 == 35 goto label28;
+
+        $r11 = new com.xxx.yyy.MyService;
+
+        specialinvoke $r11.<com.xxx.yyy.MyService: void <init>()>();
+
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onCreate()>();
+
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label24:
+        if $i0 == 36 goto label25;
+
+        if $i0 == 37 goto label24;
+
+     label25:
+        $r12 = virtualinvoke $r11.<com.xxx.yyy.MyService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label26:
+        if $i0 == 39 goto label27;
+
+        if $i0 == 40 goto label26;
+
+     label27:
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onDestroy()>();
+
+     label28:
+        if $i0 == 41 goto label34;
+
+        $r13 = new com.noisysounds.crossSellingAct;
+
+        specialinvoke $r13.<com.noisysounds.crossSellingAct: void <init>()>();
+
+        if $i0 == 42 goto label34;
+
+        virtualinvoke $r13.<com.noisysounds.crossSellingAct: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        if $i0 == 44 goto label33;
+
+     label30:
+        if $i0 == 45 goto label31;
+
+        staticinvoke <com.noisysounds.crossSellingAct: void <clinit>()>();
+
+     label31:
+        if $i0 == 46 goto label32;
+
+        virtualinvoke $r13.<com.noisysounds.crossSellingAct: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label32:
+        if $i0 == 47 goto label30;
+
+     label33:
+        if $i0 == 48 goto label29;
+
+        if $i0 == 49 goto label34;
+
+        if $i0 == 50 goto label29;
+
+     label34:
+        if $i0 == 52 goto label45;
+
+        $r14 = new com.noisysounds.noisysoundsview;
+
+        specialinvoke $r14.<com.noisysounds.noisysoundsview: void <init>()>();
+
+        if $i0 == 53 goto label45;
+
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onCreate(android.os.Bundle)>(null);
+
+     label35:
+        if $i0 == 55 goto label43;
+
+     label36:
+        if $i0 == 56 goto label37;
+
+        $z3 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label37:
+        if $i0 == 57 goto label38;
+
+        $z4 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label38:
+        if $i0 == 58 goto label39;
+
+        $z5 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label39:
+        $r15 = new com.admob.android.ads.AdManager$1;
+
+        specialinvoke $r15.<com.admob.android.ads.AdManager$1: void <init>()>();
+
+        if $i0 == 59 goto label40;
+
+        virtualinvoke $r15.<com.admob.android.ads.AdManager$1: void onLocationChanged(android.location.Location)>(null);
+
+     label40:
+        $r16 = new com.noisysounds.noisysoundsview$1;
+
+        specialinvoke $r16.<com.noisysounds.noisysoundsview$1: void <init>(com.noisysounds.noisysoundsview)>($r14);
+
+        if $i0 == 60 goto label41;
+
+        virtualinvoke $r16.<com.noisysounds.noisysoundsview$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label41:
+        $r17 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r17.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r14);
+
+        $r18 = new com.admob.android.ads.AdContainer;
+
+        specialinvoke $r18.<com.admob.android.ads.AdContainer: void <init>(com.admob.android.ads.Ad,android.content.Context)>(null, $r14);
+
+        $r19 = new com.admob.android.ads.AdView$3;
+
+        specialinvoke $r19.<com.admob.android.ads.AdView$3: void <init>(com.admob.android.ads.AdView,com.admob.android.ads.AdContainer)>($r17, $r18);
+
+        if $i0 == 61 goto label42;
+
+        virtualinvoke $r19.<com.admob.android.ads.AdView$3: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label42:
+        if $i0 == 62 goto label36;
+
+     label43:
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onPause()>();
+
+        if $i0 == 63 goto label35;
+
+        if $i0 == 64 goto label44;
+
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onRestart()>();
+
+        if $i0 == 65 goto label35;
+
+     label44:
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onDestroy()>();
+
+     label45:
+        if $i0 == 67 goto label51;
+
+        $r20 = new com.noisysounds.noisysounds;
+
+        specialinvoke $r20.<com.noisysounds.noisysounds: void <init>()>();
+
+        if $i0 == 68 goto label51;
+
+        virtualinvoke $r20.<com.noisysounds.noisysounds: void onCreate(android.os.Bundle)>(null);
+
+     label46:
+        if $i0 == 70 goto label50;
+
+     label47:
+        $r21 = new com.noisysounds.noisysounds$1;
+
+        specialinvoke $r21.<com.noisysounds.noisysounds$1: void <init>(com.noisysounds.noisysounds)>($r20);
+
+        if $i0 == 71 goto label48;
+
+        virtualinvoke $r21.<com.noisysounds.noisysounds$1: void onClick(android.view.View)>(null);
+
+     label48:
+        $r22 = new com.noisysounds.noisysounds$2;
+
+        specialinvoke $r22.<com.noisysounds.noisysounds$2: void <init>(com.noisysounds.noisysounds)>($r20);
+
+        if $i0 == 72 goto label49;
+
+        virtualinvoke $r22.<com.noisysounds.noisysounds$2: void onClick(android.view.View)>(null);
+
+     label49:
+        if $i0 == 73 goto label47;
+
+     label50:
+        if $i0 == 74 goto label46;
+
+        if $i0 == 75 goto label51;
+
+        virtualinvoke $r20.<com.noisysounds.noisysounds: void onRestart()>();
+
+        if $i0 == 76 goto label46;
+
+     label51:
+        if $i0 == 78 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 9 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.admob.android.ads.Ad
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.flurry.android.FlurryAgent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class com.flurry.android.FlurryAgent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.xxx.yyy.MyBoolService $r1;
+        com.xxx.yyy.NetWorkReceiver $r2;
+        com.xxx.yyy.MyAlarmReceiver $r3;
+        com.xxx.yyy.CustomBroadcastReceiver $r4;
+        com.noisysounds.sendFriendsAct $r5;
+        com.noisysounds.sendFriendsAct$6 $r6;
+        com.noisysounds.sendFriendsAct$5 $r7;
+        com.noisysounds.sendFriendsAct$3 $r8;
+        com.noisysounds.sendFriendsAct$4 $r9;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        android.app.Dialog $r10;
+        com.xxx.yyy.MyService $r11;
+        android.os.IBinder $r12;
+        com.noisysounds.crossSellingAct $r13;
+        com.noisysounds.noisysoundsview $r14;
+        com.admob.android.ads.AdView $r15, $r19;
+        com.admob.android.ads.AdContainer $r16, $r20;
+        com.admob.android.ads.AdView$3 $r17;
+        com.noisysounds.noisysoundsview$1 $r18;
+        com.admob.android.ads.AdView$SwapViews $r21;
+        com.admob.android.ads.AdView$SwapViews$1 $r22;
+        com.admob.android.ads.AdManager$1 $r23;
+        com.noisysounds.noisysounds $r24;
+        com.noisysounds.noisysounds$2 $r25;
+        com.noisysounds.noisysounds$1 $r26;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.xxx.yyy.MyBoolService;
+
+        specialinvoke $r1.<com.xxx.yyy.MyBoolService: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.xxx.yyy.MyBoolService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.xxx.yyy.NetWorkReceiver;
+
+        specialinvoke $r2.<com.xxx.yyy.NetWorkReceiver: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+     label04:
+        virtualinvoke $r2.<com.xxx.yyy.NetWorkReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 7 goto label04;
+
+     label05:
+        if $i0 == 8 goto label07;
+
+        $r3 = new com.xxx.yyy.MyAlarmReceiver;
+
+        specialinvoke $r3.<com.xxx.yyy.MyAlarmReceiver: void <init>()>();
+
+        if $i0 == 9 goto label07;
+
+     label06:
+        virtualinvoke $r3.<com.xxx.yyy.MyAlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 11 goto label06;
+
+     label07:
+        if $i0 == 12 goto label09;
+
+        $r4 = new com.xxx.yyy.CustomBroadcastReceiver;
+
+        specialinvoke $r4.<com.xxx.yyy.CustomBroadcastReceiver: void <init>()>();
+
+        if $i0 == 13 goto label09;
+
+     label08:
+        virtualinvoke $r4.<com.xxx.yyy.CustomBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label08;
+
+     label09:
+        if $i0 == 16 goto label23;
+
+        $r5 = new com.noisysounds.sendFriendsAct;
+
+        specialinvoke $r5.<com.noisysounds.sendFriendsAct: void <init>()>();
+
+        if $i0 == 17 goto label23;
+
+        virtualinvoke $r5.<com.noisysounds.sendFriendsAct: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 19 goto label22;
+
+     label11:
+        $r6 = new com.noisysounds.sendFriendsAct$6;
+
+        specialinvoke $r6.<com.noisysounds.sendFriendsAct$6: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 20 goto label12;
+
+        virtualinvoke $r6.<com.noisysounds.sendFriendsAct$6: void onClick(android.view.View)>(null);
+
+     label12:
+        $r7 = new com.noisysounds.sendFriendsAct$5;
+
+        specialinvoke $r7.<com.noisysounds.sendFriendsAct$5: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 21 goto label13;
+
+        virtualinvoke $r7.<com.noisysounds.sendFriendsAct$5: void onClick(android.view.View)>(null);
+
+     label13:
+        $r8 = new com.noisysounds.sendFriendsAct$3;
+
+        specialinvoke $r8.<com.noisysounds.sendFriendsAct$3: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 22 goto label14;
+
+        virtualinvoke $r8.<com.noisysounds.sendFriendsAct$3: void onClick(android.view.View)>(null);
+
+     label14:
+        $r9 = new com.noisysounds.sendFriendsAct$4;
+
+        specialinvoke $r9.<com.noisysounds.sendFriendsAct$4: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 23 goto label15;
+
+        virtualinvoke $r9.<com.noisysounds.sendFriendsAct$4: void onClick(android.view.View)>(null);
+
+     label15:
+        if $i0 == 24 goto label16;
+
+        $z0 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        $z1 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label17:
+        if $i0 == 26 goto label18;
+
+        staticinvoke <com.noisysounds.sendFriendsAct: void <clinit>()>();
+
+     label18:
+        if $i0 == 27 goto label19;
+
+        virtualinvoke $r5.<com.noisysounds.sendFriendsAct: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label19:
+        if $i0 == 28 goto label20;
+
+        $r10 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: android.app.Dialog onCreateDialog(int)>(0);
+
+     label20:
+        if $i0 == 29 goto label21;
+
+        $z2 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label21:
+        if $i0 == 30 goto label11;
+
+     label22:
+        if $i0 == 31 goto label10;
+
+        if $i0 == 32 goto label23;
+
+        if $i0 == 33 goto label10;
+
+     label23:
+        if $i0 == 35 goto label28;
+
+        $r11 = new com.xxx.yyy.MyService;
+
+        specialinvoke $r11.<com.xxx.yyy.MyService: void <init>()>();
+
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onCreate()>();
+
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label24:
+        if $i0 == 36 goto label25;
+
+        if $i0 == 37 goto label24;
+
+     label25:
+        $r12 = virtualinvoke $r11.<com.xxx.yyy.MyService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label26:
+        if $i0 == 39 goto label27;
+
+        if $i0 == 40 goto label26;
+
+     label27:
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onDestroy()>();
+
+     label28:
+        if $i0 == 41 goto label34;
+
+        $r13 = new com.noisysounds.crossSellingAct;
+
+        specialinvoke $r13.<com.noisysounds.crossSellingAct: void <init>()>();
+
+        if $i0 == 42 goto label34;
+
+        virtualinvoke $r13.<com.noisysounds.crossSellingAct: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        if $i0 == 44 goto label33;
+
+     label30:
+        if $i0 == 45 goto label31;
+
+        staticinvoke <com.noisysounds.crossSellingAct: void <clinit>()>();
+
+     label31:
+        if $i0 == 46 goto label32;
+
+        virtualinvoke $r13.<com.noisysounds.crossSellingAct: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label32:
+        if $i0 == 47 goto label30;
+
+     label33:
+        if $i0 == 48 goto label29;
+
+        if $i0 == 49 goto label34;
+
+        if $i0 == 50 goto label29;
+
+     label34:
+        if $i0 == 52 goto label46;
+
+        $r14 = new com.noisysounds.noisysoundsview;
+
+        specialinvoke $r14.<com.noisysounds.noisysoundsview: void <init>()>();
+
+        if $i0 == 53 goto label46;
+
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onCreate(android.os.Bundle)>(null);
+
+     label35:
+        if $i0 == 55 goto label44;
+
+     label36:
+        if $i0 == 56 goto label37;
+
+        $z3 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label37:
+        if $i0 == 57 goto label38;
+
+        $z4 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label38:
+        if $i0 == 58 goto label39;
+
+        $z5 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label39:
+        $r15 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r15.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r14);
+
+        $r16 = new com.admob.android.ads.AdContainer;
+
+        specialinvoke $r16.<com.admob.android.ads.AdContainer: void <init>(com.admob.android.ads.Ad,android.content.Context)>(null, $r14);
+
+        $r17 = new com.admob.android.ads.AdView$3;
+
+        specialinvoke $r17.<com.admob.android.ads.AdView$3: void <init>(com.admob.android.ads.AdView,com.admob.android.ads.AdContainer)>($r15, $r16);
+
+        if $i0 == 59 goto label40;
+
+        virtualinvoke $r17.<com.admob.android.ads.AdView$3: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label40:
+        $r18 = new com.noisysounds.noisysoundsview$1;
+
+        specialinvoke $r18.<com.noisysounds.noisysoundsview$1: void <init>(com.noisysounds.noisysoundsview)>($r14);
+
+        if $i0 == 60 goto label41;
+
+        virtualinvoke $r18.<com.noisysounds.noisysoundsview$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label41:
+        $r19 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r19.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r14);
+
+        $r20 = new com.admob.android.ads.AdContainer;
+
+        specialinvoke $r20.<com.admob.android.ads.AdContainer: void <init>(com.admob.android.ads.Ad,android.content.Context)>(null, $r14);
+
+        $r21 = new com.admob.android.ads.AdView$SwapViews;
+
+        specialinvoke $r21.<com.admob.android.ads.AdView$SwapViews: void <init>(com.admob.android.ads.AdView,com.admob.android.ads.AdContainer)>($r19, $r20);
+
+        $r22 = new com.admob.android.ads.AdView$SwapViews$1;
+
+        specialinvoke $r22.<com.admob.android.ads.AdView$SwapViews$1: void <init>(com.admob.android.ads.AdView$SwapViews)>($r21);
+
+        if $i0 == 61 goto label42;
+
+        virtualinvoke $r22.<com.admob.android.ads.AdView$SwapViews$1: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label42:
+        $r23 = new com.admob.android.ads.AdManager$1;
+
+        specialinvoke $r23.<com.admob.android.ads.AdManager$1: void <init>()>();
+
+        if $i0 == 62 goto label43;
+
+        virtualinvoke $r23.<com.admob.android.ads.AdManager$1: void onLocationChanged(android.location.Location)>(null);
+
+     label43:
+        if $i0 == 63 goto label36;
+
+     label44:
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onPause()>();
+
+        if $i0 == 64 goto label35;
+
+        if $i0 == 65 goto label45;
+
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onRestart()>();
+
+        if $i0 == 66 goto label35;
+
+     label45:
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onDestroy()>();
+
+     label46:
+        if $i0 == 68 goto label52;
+
+        $r24 = new com.noisysounds.noisysounds;
+
+        specialinvoke $r24.<com.noisysounds.noisysounds: void <init>()>();
+
+        if $i0 == 69 goto label52;
+
+        virtualinvoke $r24.<com.noisysounds.noisysounds: void onCreate(android.os.Bundle)>(null);
+
+     label47:
+        if $i0 == 71 goto label51;
+
+     label48:
+        $r25 = new com.noisysounds.noisysounds$2;
+
+        specialinvoke $r25.<com.noisysounds.noisysounds$2: void <init>(com.noisysounds.noisysounds)>($r24);
+
+        if $i0 == 72 goto label49;
+
+        virtualinvoke $r25.<com.noisysounds.noisysounds$2: void onClick(android.view.View)>(null);
+
+     label49:
+        $r26 = new com.noisysounds.noisysounds$1;
+
+        specialinvoke $r26.<com.noisysounds.noisysounds$1: void <init>(com.noisysounds.noisysounds)>($r24);
+
+        if $i0 == 73 goto label50;
+
+        virtualinvoke $r26.<com.noisysounds.noisysounds$1: void onClick(android.view.View)>(null);
+
+     label50:
+        if $i0 == 74 goto label48;
+
+     label51:
+        if $i0 == 75 goto label47;
+
+        if $i0 == 76 goto label52;
+
+        virtualinvoke $r24.<com.noisysounds.noisysounds: void onRestart()>();
+
+        if $i0 == 77 goto label47;
+
+     label52:
+        if $i0 == 79 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 37 callback methods for 9 components
+Found {res/layout/noisysounds.xml=[-1 - android.widget.LinearLayout, 2131165205 - android.widget.GridView, 2131165206 - android.webkit.WebView], res/layout/image_switcher_1.xml=[2131165202 - android.widget.ImageSwitcher, 2131165203 - android.widget.Gallery, -1 - android.widget.RelativeLayout], res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131165204 - android.widget.ImageView], res/layout/crossselling.xml=[-1 - android.widget.LinearLayout, 2131165201 - android.widget.RatingBar, 2131165200 - android.widget.TextView, 2131165199 - android.widget.ImageView], res/layout/alert_dialog_email.xml=[-1 - android.widget.LinearLayout, 2131165184 - android.widget.ScrollView, 2131165193 - android.widget.Button, 2131165187 - android.widget.TextView, 2131165194 - android.widget.Button, 2131165185 - android.widget.TextView, 2131165188 - android.widget.EditText, 2131165189 - android.widget.TextView, 2131165192 - android.widget.TableRow, 2131165191 - android.widget.TableLayout, 2131165186 - android.widget.EditText, 2131165190 - android.widget.EditText], res/layout/alert_dialog_emails.xml=[-1 - android.widget.LinearLayout, 2131165195 - android.widget.TextView, 2131165196 - android.widget.EditText, 2131165184 - android.widget.ScrollView, 2131165192 - android.widget.TableRow, 2131165191 - android.widget.TableLayout, 2131165197 - android.widget.Button, 2131165198 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 37 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/2d9a2b0c61a8ceab8a6f72c83e3db3c644d8aab4bd112f4ab44e29b149cce623.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.admob.android.ads.Ad
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.flurry.android.FlurryAgent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class com.flurry.android.FlurryAgent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.xxx.yyy.MyBoolService $r1;
+        com.xxx.yyy.NetWorkReceiver $r2;
+        com.xxx.yyy.MyAlarmReceiver $r3;
+        com.xxx.yyy.CustomBroadcastReceiver $r4;
+        com.noisysounds.sendFriendsAct $r5;
+        com.noisysounds.sendFriendsAct$5 $r6;
+        com.noisysounds.sendFriendsAct$3 $r7;
+        com.noisysounds.sendFriendsAct$4 $r8;
+        android.app.Dialog $r9;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.noisysounds.sendFriendsAct$6 $r10;
+        com.xxx.yyy.MyService $r11;
+        android.os.IBinder $r12;
+        com.noisysounds.crossSellingAct $r13;
+        com.noisysounds.noisysoundsview $r14;
+        com.admob.android.ads.AdView $r15, $r19;
+        com.admob.android.ads.AdContainer $r16, $r20;
+        com.admob.android.ads.AdView$SwapViews $r17;
+        com.admob.android.ads.AdView$SwapViews$1 $r18;
+        com.admob.android.ads.AdView$3 $r21;
+        com.admob.android.ads.AdManager$1 $r22;
+        com.noisysounds.noisysoundsview$1 $r23;
+        com.noisysounds.noisysounds $r24;
+        com.noisysounds.noisysounds$1 $r25;
+        com.noisysounds.noisysounds$2 $r26;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.xxx.yyy.MyBoolService;
+
+        specialinvoke $r1.<com.xxx.yyy.MyBoolService: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.xxx.yyy.MyBoolService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.xxx.yyy.NetWorkReceiver;
+
+        specialinvoke $r2.<com.xxx.yyy.NetWorkReceiver: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+     label04:
+        virtualinvoke $r2.<com.xxx.yyy.NetWorkReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 7 goto label04;
+
+     label05:
+        if $i0 == 8 goto label07;
+
+        $r3 = new com.xxx.yyy.MyAlarmReceiver;
+
+        specialinvoke $r3.<com.xxx.yyy.MyAlarmReceiver: void <init>()>();
+
+        if $i0 == 9 goto label07;
+
+     label06:
+        virtualinvoke $r3.<com.xxx.yyy.MyAlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 11 goto label06;
+
+     label07:
+        if $i0 == 12 goto label09;
+
+        $r4 = new com.xxx.yyy.CustomBroadcastReceiver;
+
+        specialinvoke $r4.<com.xxx.yyy.CustomBroadcastReceiver: void <init>()>();
+
+        if $i0 == 13 goto label09;
+
+     label08:
+        virtualinvoke $r4.<com.xxx.yyy.CustomBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label08;
+
+     label09:
+        if $i0 == 16 goto label23;
+
+        $r5 = new com.noisysounds.sendFriendsAct;
+
+        specialinvoke $r5.<com.noisysounds.sendFriendsAct: void <init>()>();
+
+        if $i0 == 17 goto label23;
+
+        virtualinvoke $r5.<com.noisysounds.sendFriendsAct: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 19 goto label22;
+
+     label11:
+        $r6 = new com.noisysounds.sendFriendsAct$5;
+
+        specialinvoke $r6.<com.noisysounds.sendFriendsAct$5: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 20 goto label12;
+
+        virtualinvoke $r6.<com.noisysounds.sendFriendsAct$5: void onClick(android.view.View)>(null);
+
+     label12:
+        $r7 = new com.noisysounds.sendFriendsAct$3;
+
+        specialinvoke $r7.<com.noisysounds.sendFriendsAct$3: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 21 goto label13;
+
+        virtualinvoke $r7.<com.noisysounds.sendFriendsAct$3: void onClick(android.view.View)>(null);
+
+     label13:
+        $r8 = new com.noisysounds.sendFriendsAct$4;
+
+        specialinvoke $r8.<com.noisysounds.sendFriendsAct$4: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 22 goto label14;
+
+        virtualinvoke $r8.<com.noisysounds.sendFriendsAct$4: void onClick(android.view.View)>(null);
+
+     label14:
+        if $i0 == 23 goto label15;
+
+        virtualinvoke $r5.<com.noisysounds.sendFriendsAct: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label15:
+        if $i0 == 24 goto label16;
+
+        $r9 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: android.app.Dialog onCreateDialog(int)>(0);
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        $z0 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label17:
+        if $i0 == 26 goto label18;
+
+        staticinvoke <com.noisysounds.sendFriendsAct: void <clinit>()>();
+
+     label18:
+        if $i0 == 27 goto label19;
+
+        $z1 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label19:
+        if $i0 == 28 goto label20;
+
+        $z2 = virtualinvoke $r5.<com.noisysounds.sendFriendsAct: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label20:
+        $r10 = new com.noisysounds.sendFriendsAct$6;
+
+        specialinvoke $r10.<com.noisysounds.sendFriendsAct$6: void <init>(com.noisysounds.sendFriendsAct)>($r5);
+
+        if $i0 == 29 goto label21;
+
+        virtualinvoke $r10.<com.noisysounds.sendFriendsAct$6: void onClick(android.view.View)>(null);
+
+     label21:
+        if $i0 == 30 goto label11;
+
+     label22:
+        if $i0 == 31 goto label10;
+
+        if $i0 == 32 goto label23;
+
+        if $i0 == 33 goto label10;
+
+     label23:
+        if $i0 == 35 goto label28;
+
+        $r11 = new com.xxx.yyy.MyService;
+
+        specialinvoke $r11.<com.xxx.yyy.MyService: void <init>()>();
+
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onCreate()>();
+
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label24:
+        if $i0 == 36 goto label25;
+
+        if $i0 == 37 goto label24;
+
+     label25:
+        $r12 = virtualinvoke $r11.<com.xxx.yyy.MyService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label26:
+        if $i0 == 39 goto label27;
+
+        if $i0 == 40 goto label26;
+
+     label27:
+        virtualinvoke $r11.<com.xxx.yyy.MyService: void onDestroy()>();
+
+     label28:
+        if $i0 == 41 goto label34;
+
+        $r13 = new com.noisysounds.crossSellingAct;
+
+        specialinvoke $r13.<com.noisysounds.crossSellingAct: void <init>()>();
+
+        if $i0 == 42 goto label34;
+
+        virtualinvoke $r13.<com.noisysounds.crossSellingAct: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        if $i0 == 44 goto label33;
+
+     label30:
+        if $i0 == 45 goto label31;
+
+        virtualinvoke $r13.<com.noisysounds.crossSellingAct: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label31:
+        if $i0 == 46 goto label32;
+
+        staticinvoke <com.noisysounds.crossSellingAct: void <clinit>()>();
+
+     label32:
+        if $i0 == 47 goto label30;
+
+     label33:
+        if $i0 == 48 goto label29;
+
+        if $i0 == 49 goto label34;
+
+        if $i0 == 50 goto label29;
+
+     label34:
+        if $i0 == 52 goto label46;
+
+        $r14 = new com.noisysounds.noisysoundsview;
+
+        specialinvoke $r14.<com.noisysounds.noisysoundsview: void <init>()>();
+
+        if $i0 == 53 goto label46;
+
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onCreate(android.os.Bundle)>(null);
+
+     label35:
+        if $i0 == 55 goto label44;
+
+     label36:
+        $r15 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r15.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r14);
+
+        $r16 = new com.admob.android.ads.AdContainer;
+
+        specialinvoke $r16.<com.admob.android.ads.AdContainer: void <init>(com.admob.android.ads.Ad,android.content.Context)>(null, $r14);
+
+        $r17 = new com.admob.android.ads.AdView$SwapViews;
+
+        specialinvoke $r17.<com.admob.android.ads.AdView$SwapViews: void <init>(com.admob.android.ads.AdView,com.admob.android.ads.AdContainer)>($r15, $r16);
+
+        $r18 = new com.admob.android.ads.AdView$SwapViews$1;
+
+        specialinvoke $r18.<com.admob.android.ads.AdView$SwapViews$1: void <init>(com.admob.android.ads.AdView$SwapViews)>($r17);
+
+        if $i0 == 56 goto label37;
+
+        virtualinvoke $r18.<com.admob.android.ads.AdView$SwapViews$1: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label37:
+        $r19 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r19.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r14);
+
+        $r20 = new com.admob.android.ads.AdContainer;
+
+        specialinvoke $r20.<com.admob.android.ads.AdContainer: void <init>(com.admob.android.ads.Ad,android.content.Context)>(null, $r14);
+
+        $r21 = new com.admob.android.ads.AdView$3;
+
+        specialinvoke $r21.<com.admob.android.ads.AdView$3: void <init>(com.admob.android.ads.AdView,com.admob.android.ads.AdContainer)>($r19, $r20);
+
+        if $i0 == 57 goto label38;
+
+        virtualinvoke $r21.<com.admob.android.ads.AdView$3: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label38:
+        $r22 = new com.admob.android.ads.AdManager$1;
+
+        specialinvoke $r22.<com.admob.android.ads.AdManager$1: void <init>()>();
+
+        if $i0 == 58 goto label39;
+
+        virtualinvoke $r22.<com.admob.android.ads.AdManager$1: void onLocationChanged(android.location.Location)>(null);
+
+     label39:
+        $r23 = new com.noisysounds.noisysoundsview$1;
+
+        specialinvoke $r23.<com.noisysounds.noisysoundsview$1: void <init>(com.noisysounds.noisysoundsview)>($r14);
+
+        if $i0 == 59 goto label40;
+
+        virtualinvoke $r23.<com.noisysounds.noisysoundsview$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label40:
+        if $i0 == 60 goto label41;
+
+        $z3 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label41:
+        if $i0 == 61 goto label42;
+
+        $z4 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label42:
+        if $i0 == 62 goto label43;
+
+        $z5 = virtualinvoke $r14.<com.noisysounds.noisysoundsview: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label43:
+        if $i0 == 63 goto label36;
+
+     label44:
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onPause()>();
+
+        if $i0 == 64 goto label35;
+
+        if $i0 == 65 goto label45;
+
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onRestart()>();
+
+        if $i0 == 66 goto label35;
+
+     label45:
+        virtualinvoke $r14.<com.noisysounds.noisysoundsview: void onDestroy()>();
+
+     label46:
+        if $i0 == 68 goto label52;
+
+        $r24 = new com.noisysounds.noisysounds;
+
+        specialinvoke $r24.<com.noisysounds.noisysounds: void <init>()>();
+
+        if $i0 == 69 goto label52;
+
+        virtualinvoke $r24.<com.noisysounds.noisysounds: void onCreate(android.os.Bundle)>(null);
+
+     label47:
+        if $i0 == 71 goto label51;
+
+     label48:
+        $r25 = new com.noisysounds.noisysounds$1;
+
+        specialinvoke $r25.<com.noisysounds.noisysounds$1: void <init>(com.noisysounds.noisysounds)>($r24);
+
+        if $i0 == 72 goto label49;
+
+        virtualinvoke $r25.<com.noisysounds.noisysounds$1: void onClick(android.view.View)>(null);
+
+     label49:
+        $r26 = new com.noisysounds.noisysounds$2;
+
+        specialinvoke $r26.<com.noisysounds.noisysounds$2: void <init>(com.noisysounds.noisysounds)>($r24);
+
+        if $i0 == 73 goto label50;
+
+        virtualinvoke $r26.<com.noisysounds.noisysounds$2: void onClick(android.view.View)>(null);
+
+     label50:
+        if $i0 == 74 goto label48;
+
+     label51:
+        if $i0 == 75 goto label47;
+
+        if $i0 == 76 goto label52;
+
+        virtualinvoke $r24.<com.noisysounds.noisysounds: void onRestart()>();
+
+        if $i0 == 77 goto label47;
+
+     label52:
+        if $i0 == 79 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.561309705 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.083082776 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1750 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 72 sources and 69 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 6006
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 17257
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 54794 forward and 13125 backward edges solved, processing 15 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 15 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.007414651 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r2) in method <com.admob.android.ads.AdManager: void setPublisherId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.xxx.yyy.MyAlarmReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.xxx.yyy.MyAlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r4) in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("HttpPostConnection OK", $r0) in method <com.noisysounds.Utils: boolean httpconnection(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.noisysounds.Utils: boolean httpconnection(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.xxx.yyy.NetWorkReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.xxx.yyy.NetWorkReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("HttpPostConnection NOT OK ", $r0) in method <com.noisysounds.Utils: boolean httpconnection(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.noisysounds.Utils: boolean httpconnection(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.admob.android.ads.Ad: android.graphics.Bitmap fetchImage(java.lang.String,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[],int,int)>($r13, 0, $i0) in method <com.xxx.yyy.UpdateHelper: boolean GetO(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r8.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.xxx.yyy.UpdateHelper: boolean GetO(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1) in method <com.admob.android.ads.AdManager: java.lang.String getUserAgent()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() in method <com.admob.android.ads.AdManager: java.lang.String getUserAgent()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1) in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMob SDK", $r0) in method <com.admob.android.ads.AdManager: void clientError(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r6) in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AdMob SDK", $r2) in method <com.admob.android.ads.Ad: android.graphics.Bitmap getIcon()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r7 = virtualinvoke $r6.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4) in method <com.xxx.yyy.BBBB: java.lang.String HppGet(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.xxx.yyy.MyService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.xxx.yyy.MyService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r0, 0, $r1, 0) in method <com.xxx.yyy.MyService: void onCreate()>
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.xxx.yyy.MyAlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r4), from the following sources:
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("HttpPostConnection OK", $r0), from the following sources:
+	- $r4 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.noisysounds.Utils: boolean httpconnection(java.lang.String)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.xxx.yyy.NetWorkReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("HttpPostConnection NOT OK ", $r0), from the following sources:
+	- $r4 = virtualinvoke $r2.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.noisysounds.Utils: boolean httpconnection(java.lang.String)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[],int,int)>($r13, 0, $i0), from the following sources:
+	- $r10 = interfaceinvoke $r8.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.xxx.yyy.UpdateHelper: boolean GetO(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1), from the following sources:
+	- $r1 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() (in <com.admob.android.ads.AdManager: java.lang.String getUserAgent()>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMob SDK", $r0), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r6), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AdMob SDK", $r2), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink $r7 = virtualinvoke $r6.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r4), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.xxx.yyy.MyService: void onStart(android.content.Intent,int)>)
+	- $r6 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.xxx.yyy.MyService: void onStart(android.content.Intent,int)>)
+	- $r2 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getBroadcast(android.content.Context,int,android.content.Intent,int)>($r0, 0, $r1, 0) (in <com.xxx.yyy.MyService: void onCreate()>)
+Maximum memory consumption: 136.788648 MB
+Analysis has run for 6.368351774 seconds

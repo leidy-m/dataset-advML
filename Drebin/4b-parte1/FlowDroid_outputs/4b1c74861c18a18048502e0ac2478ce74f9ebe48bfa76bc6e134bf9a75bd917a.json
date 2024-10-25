@@ -1,0 +1,1828 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.024711254 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0;
+        com.GoldDream.zj.zjReceiver $r3;
+        gt.labs.lnlink.free.main $r4;
+        gt.labs.lnlink.free.AboutMe $r5;
+        gt.labs.lnlink.free.COption $r6;
+        gt.labs.lnlink.free.InputName $r7;
+        gt.labs.lnlink.free.Help $r8;
+        gt.labs.lnlink.free.Pause $r9;
+        gt.labs.lnlink.free.LinkWeb $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label11;
+
+        $r4 = new gt.labs.lnlink.free.main;
+
+        specialinvoke $r4.<gt.labs.lnlink.free.main: void <init>()>();
+
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onPause()>();
+
+        if $i0 == 13 goto label09;
+
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onDestroy()>();
+
+     label11:
+        if $i0 == 17 goto label13;
+
+        $r5 = new gt.labs.lnlink.free.AboutMe;
+
+        specialinvoke $r5.<gt.labs.lnlink.free.AboutMe: void <init>()>();
+
+        if $i0 == 18 goto label13;
+
+        virtualinvoke $r5.<gt.labs.lnlink.free.AboutMe: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        if $i0 == 21 goto label13;
+
+        if $i0 == 22 goto label12;
+
+     label13:
+        if $i0 == 24 goto label15;
+
+        $r6 = new gt.labs.lnlink.free.COption;
+
+        specialinvoke $r6.<gt.labs.lnlink.free.COption: void <init>()>();
+
+        if $i0 == 25 goto label15;
+
+        virtualinvoke $r6.<gt.labs.lnlink.free.COption: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 28 goto label15;
+
+        if $i0 == 29 goto label14;
+
+     label15:
+        if $i0 == 31 goto label17;
+
+        $r7 = new gt.labs.lnlink.free.InputName;
+
+        specialinvoke $r7.<gt.labs.lnlink.free.InputName: void <init>()>();
+
+        if $i0 == 32 goto label17;
+
+        virtualinvoke $r7.<gt.labs.lnlink.free.InputName: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r7.<gt.labs.lnlink.free.InputName: void onResume()>();
+
+        virtualinvoke $r7.<gt.labs.lnlink.free.InputName: void onPause()>();
+
+        if $i0 == 34 goto label16;
+
+        if $i0 == 35 goto label17;
+
+        if $i0 == 36 goto label16;
+
+     label17:
+        if $i0 == 38 goto label19;
+
+        $r8 = new gt.labs.lnlink.free.Help;
+
+        specialinvoke $r8.<gt.labs.lnlink.free.Help: void <init>()>();
+
+        if $i0 == 39 goto label19;
+
+        virtualinvoke $r8.<gt.labs.lnlink.free.Help: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        if $i0 == 42 goto label19;
+
+        if $i0 == 43 goto label18;
+
+     label19:
+        if $i0 == 45 goto label21;
+
+        $r9 = new gt.labs.lnlink.free.Pause;
+
+        specialinvoke $r9.<gt.labs.lnlink.free.Pause: void <init>()>();
+
+        if $i0 == 46 goto label21;
+
+        virtualinvoke $r9.<gt.labs.lnlink.free.Pause: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        if $i0 == 49 goto label21;
+
+        if $i0 == 50 goto label20;
+
+     label21:
+        if $i0 == 52 goto label23;
+
+        $r10 = new gt.labs.lnlink.free.LinkWeb;
+
+        specialinvoke $r10.<gt.labs.lnlink.free.LinkWeb: void <init>()>();
+
+        if $i0 == 53 goto label23;
+
+        virtualinvoke $r10.<gt.labs.lnlink.free.LinkWeb: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 56 goto label23;
+
+        if $i0 == 57 goto label22;
+
+     label23:
+        if $i0 == 59 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: gt.labs.lnlink.free.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TableLayout is a phantom class!
+Warning: gt.labs.lnlink.free.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: TableRow is a phantom class!
+Warning: gt.labs.lnlink.free.TableRow is a phantom class!
+Warning: android.view.TableRow is a phantom class!
+Warning: Button is a phantom class!
+Warning: gt.labs.lnlink.free.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: TextView is a phantom class!
+Warning: gt.labs.lnlink.free.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/aboutme.xml
+Warning: ProgressBar is a phantom class!
+Warning: gt.labs.lnlink.free.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Warning: WebView is a phantom class!
+Warning: gt.labs.lnlink.free.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 2 layout controls in file res/layout/linkweb.xml
+Warning: AbsoluteLayout is a phantom class!
+Warning: gt.labs.lnlink.free.AbsoluteLayout is a phantom class!
+Warning: android.view.AbsoluteLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: gt.labs.lnlink.free.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 3 layout controls in file res/layout/menu.xml
+Warning: EditText is a phantom class!
+Warning: gt.labs.lnlink.free.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 4 layout controls in file res/layout/inputname.xml
+Warning: FrameLayout is a phantom class!
+Warning: gt.labs.lnlink.free.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Found 5 layout controls in file res/layout/main.xml
+Warning: ScrollView is a phantom class!
+Warning: gt.labs.lnlink.free.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Found 6 layout controls in file res/layout/help.xml
+Found 7 layout controls in file res/layout/menulist.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12;
+        com.GoldDream.zj.zjReceiver $r3;
+        gt.labs.lnlink.free.main $r4;
+        gt.labs.lnlink.free.main$8 $r5;
+        gt.labs.lnlink.free.main$15 $r6;
+        gt.labs.lnlink.free.main$20 $r7;
+        gt.labs.lnlink.free.main$11 $r8;
+        gt.labs.lnlink.free.main$1 $r9;
+        gt.labs.lnlink.free.main$21 $r10;
+        gt.labs.lnlink.free.main$7 $r11;
+        gt.labs.lnlink.free.main$17 $r12;
+        gt.labs.lnlink.free.main$22 $r13;
+        gt.labs.lnlink.free.main$4 $r14;
+        gt.labs.lnlink.free.main$19 $r15;
+        gt.labs.lnlink.free.main$25 $r16;
+        gt.labs.lnlink.free.main$6 $r17;
+        gt.labs.lnlink.free.main$18 $r18;
+        gt.labs.lnlink.free.main$3 $r19;
+        gt.labs.lnlink.free.main$5 $r20;
+        gt.labs.lnlink.free.main$16 $r21;
+        gt.labs.lnlink.free.main$12 $r22;
+        gt.labs.lnlink.free.main$14 $r23;
+        gt.labs.lnlink.free.main$9 $r24;
+        gt.labs.lnlink.free.main$10 $r25;
+        gt.labs.lnlink.free.main$2 $r26;
+        gt.labs.lnlink.free.main$24 $r27;
+        gt.labs.lnlink.free.main$13 $r28;
+        android.app.Dialog $r29, $r42, $r52;
+        gt.labs.lnlink.free.AboutMe $r30;
+        gt.labs.lnlink.free.AboutMe$2 $r31;
+        gt.labs.lnlink.free.AboutMe$1 $r32;
+        gt.labs.lnlink.free.COption $r33;
+        gt.labs.lnlink.free.COption$CheckPreferenceClickListener $r34;
+        gt.labs.lnlink.free.COption$1 $r35;
+        gt.labs.lnlink.free.COption$2 $r36;
+        gt.labs.lnlink.free.InputName $r37;
+        gt.labs.lnlink.free.InputName$2 $r38;
+        gt.labs.lnlink.free.InputName$3 $r39;
+        gt.labs.lnlink.free.InputName$1 $r40;
+        gt.labs.lnlink.free.InputName$4 $r41;
+        gt.labs.lnlink.free.Help $r43;
+        gt.labs.lnlink.free.Help$1 $r44;
+        gt.labs.lnlink.free.Pause $r45;
+        gt.labs.lnlink.free.Pause$4 $r46;
+        gt.labs.lnlink.free.Pause$1 $r47;
+        gt.labs.lnlink.free.Pause$3 $r48;
+        gt.labs.lnlink.free.Pause$2 $r49;
+        gt.labs.lnlink.free.LinkWeb $r50;
+        gt.labs.lnlink.free.LinkWeb$1 $r51;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label07;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label06:
+        if $i0 == 6 goto label04;
+
+     label07:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label08;
+
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 11 goto label08;
+
+     label11:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label14;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 13 goto label14;
+
+     label13:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label13;
+
+     label14:
+        if $i0 == 16 goto label47;
+
+        $r4 = new gt.labs.lnlink.free.main;
+
+        specialinvoke $r4.<gt.labs.lnlink.free.main: void <init>()>();
+
+        if $i0 == 17 goto label47;
+
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 19 goto label45;
+
+     label16:
+        $r5 = new gt.labs.lnlink.free.main$8;
+
+        specialinvoke $r5.<gt.labs.lnlink.free.main$8: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 20 goto label17;
+
+        virtualinvoke $r5.<gt.labs.lnlink.free.main$8: void onClick(android.view.View)>(null);
+
+     label17:
+        $r6 = new gt.labs.lnlink.free.main$15;
+
+        specialinvoke $r6.<gt.labs.lnlink.free.main$15: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 21 goto label18;
+
+        virtualinvoke $r6.<gt.labs.lnlink.free.main$15: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label18:
+        $r7 = new gt.labs.lnlink.free.main$20;
+
+        specialinvoke $r7.<gt.labs.lnlink.free.main$20: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 22 goto label19;
+
+        virtualinvoke $r7.<gt.labs.lnlink.free.main$20: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r8 = new gt.labs.lnlink.free.main$11;
+
+        specialinvoke $r8.<gt.labs.lnlink.free.main$11: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 23 goto label20;
+
+        virtualinvoke $r8.<gt.labs.lnlink.free.main$11: void onDismiss(android.content.DialogInterface)>(null);
+
+     label20:
+        $r9 = new gt.labs.lnlink.free.main$1;
+
+        specialinvoke $r9.<gt.labs.lnlink.free.main$1: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 24 goto label21;
+
+        virtualinvoke $r9.<gt.labs.lnlink.free.main$1: void onClick(android.view.View)>(null);
+
+     label21:
+        $r10 = new gt.labs.lnlink.free.main$21;
+
+        specialinvoke $r10.<gt.labs.lnlink.free.main$21: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 25 goto label22;
+
+        virtualinvoke $r10.<gt.labs.lnlink.free.main$21: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label22:
+        $r11 = new gt.labs.lnlink.free.main$7;
+
+        specialinvoke $r11.<gt.labs.lnlink.free.main$7: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 26 goto label23;
+
+        virtualinvoke $r11.<gt.labs.lnlink.free.main$7: void onClick(android.view.View)>(null);
+
+     label23:
+        $r12 = new gt.labs.lnlink.free.main$17;
+
+        specialinvoke $r12.<gt.labs.lnlink.free.main$17: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 27 goto label24;
+
+        virtualinvoke $r12.<gt.labs.lnlink.free.main$17: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label24:
+        $r13 = new gt.labs.lnlink.free.main$22;
+
+        specialinvoke $r13.<gt.labs.lnlink.free.main$22: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 28 goto label25;
+
+        virtualinvoke $r13.<gt.labs.lnlink.free.main$22: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r14 = new gt.labs.lnlink.free.main$4;
+
+        specialinvoke $r14.<gt.labs.lnlink.free.main$4: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 29 goto label26;
+
+        virtualinvoke $r14.<gt.labs.lnlink.free.main$4: void onClick(android.view.View)>(null);
+
+     label26:
+        $r15 = new gt.labs.lnlink.free.main$19;
+
+        specialinvoke $r15.<gt.labs.lnlink.free.main$19: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 30 goto label27;
+
+        virtualinvoke $r15.<gt.labs.lnlink.free.main$19: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r16 = new gt.labs.lnlink.free.main$25;
+
+        specialinvoke $r16.<gt.labs.lnlink.free.main$25: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 31 goto label28;
+
+        virtualinvoke $r16.<gt.labs.lnlink.free.main$25: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r17 = new gt.labs.lnlink.free.main$6;
+
+        specialinvoke $r17.<gt.labs.lnlink.free.main$6: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 32 goto label29;
+
+        virtualinvoke $r17.<gt.labs.lnlink.free.main$6: void onClick(android.view.View)>(null);
+
+     label29:
+        $r18 = new gt.labs.lnlink.free.main$18;
+
+        specialinvoke $r18.<gt.labs.lnlink.free.main$18: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 33 goto label30;
+
+        virtualinvoke $r18.<gt.labs.lnlink.free.main$18: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label30:
+        $r19 = new gt.labs.lnlink.free.main$3;
+
+        specialinvoke $r19.<gt.labs.lnlink.free.main$3: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 34 goto label31;
+
+        virtualinvoke $r19.<gt.labs.lnlink.free.main$3: void onClick(android.view.View)>(null);
+
+     label31:
+        $r20 = new gt.labs.lnlink.free.main$5;
+
+        specialinvoke $r20.<gt.labs.lnlink.free.main$5: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 35 goto label32;
+
+        virtualinvoke $r20.<gt.labs.lnlink.free.main$5: void onClick(android.view.View)>(null);
+
+     label32:
+        $r21 = new gt.labs.lnlink.free.main$16;
+
+        specialinvoke $r21.<gt.labs.lnlink.free.main$16: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 36 goto label33;
+
+        virtualinvoke $r21.<gt.labs.lnlink.free.main$16: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label33:
+        $r22 = new gt.labs.lnlink.free.main$12;
+
+        specialinvoke $r22.<gt.labs.lnlink.free.main$12: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 37 goto label34;
+
+        virtualinvoke $r22.<gt.labs.lnlink.free.main$12: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label34:
+        $r23 = new gt.labs.lnlink.free.main$14;
+
+        specialinvoke $r23.<gt.labs.lnlink.free.main$14: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 38 goto label35;
+
+        virtualinvoke $r23.<gt.labs.lnlink.free.main$14: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label35:
+        $r24 = new gt.labs.lnlink.free.main$9;
+
+        specialinvoke $r24.<gt.labs.lnlink.free.main$9: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 39 goto label36;
+
+        virtualinvoke $r24.<gt.labs.lnlink.free.main$9: void onClick(android.view.View)>(null);
+
+     label36:
+        $r25 = new gt.labs.lnlink.free.main$10;
+
+        specialinvoke $r25.<gt.labs.lnlink.free.main$10: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 40 goto label37;
+
+        virtualinvoke $r25.<gt.labs.lnlink.free.main$10: void onClick(android.view.View)>(null);
+
+     label37:
+        $r26 = new gt.labs.lnlink.free.main$2;
+
+        specialinvoke $r26.<gt.labs.lnlink.free.main$2: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 41 goto label38;
+
+        virtualinvoke $r26.<gt.labs.lnlink.free.main$2: void onClick(android.view.View)>(null);
+
+     label38:
+        $r27 = new gt.labs.lnlink.free.main$24;
+
+        specialinvoke $r27.<gt.labs.lnlink.free.main$24: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 42 goto label39;
+
+        virtualinvoke $r27.<gt.labs.lnlink.free.main$24: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label39:
+        $r28 = new gt.labs.lnlink.free.main$13;
+
+        specialinvoke $r28.<gt.labs.lnlink.free.main$13: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 43 goto label40;
+
+        virtualinvoke $r28.<gt.labs.lnlink.free.main$13: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label40:
+        if $i0 == 44 goto label41;
+
+        $r29 = virtualinvoke $r4.<gt.labs.lnlink.free.main: android.app.Dialog onCreateDialog(int)>(0);
+
+     label41:
+        if $i0 == 45 goto label42;
+
+        $z1 = virtualinvoke $r4.<gt.labs.lnlink.free.main: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label42:
+        if $i0 == 46 goto label43;
+
+        $z2 = virtualinvoke $r4.<gt.labs.lnlink.free.main: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label43:
+        if $i0 == 47 goto label44;
+
+        staticinvoke <gt.labs.lnlink.free.main: void <clinit>()>();
+
+     label44:
+        if $i0 == 48 goto label16;
+
+     label45:
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onPause()>();
+
+        if $i0 == 49 goto label15;
+
+        if $i0 == 50 goto label46;
+
+        if $i0 == 51 goto label15;
+
+     label46:
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onDestroy()>();
+
+     label47:
+        if $i0 == 53 goto label54;
+
+        $r30 = new gt.labs.lnlink.free.AboutMe;
+
+        specialinvoke $r30.<gt.labs.lnlink.free.AboutMe: void <init>()>();
+
+        if $i0 == 54 goto label54;
+
+        virtualinvoke $r30.<gt.labs.lnlink.free.AboutMe: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        if $i0 == 56 goto label53;
+
+     label49:
+        $r31 = new gt.labs.lnlink.free.AboutMe$2;
+
+        specialinvoke $r31.<gt.labs.lnlink.free.AboutMe$2: void <init>(gt.labs.lnlink.free.AboutMe)>($r30);
+
+        if $i0 == 57 goto label50;
+
+        virtualinvoke $r31.<gt.labs.lnlink.free.AboutMe$2: void onClick(android.view.View)>(null);
+
+     label50:
+        $r32 = new gt.labs.lnlink.free.AboutMe$1;
+
+        specialinvoke $r32.<gt.labs.lnlink.free.AboutMe$1: void <init>(gt.labs.lnlink.free.AboutMe)>($r30);
+
+        if $i0 == 58 goto label51;
+
+        virtualinvoke $r32.<gt.labs.lnlink.free.AboutMe$1: void onClick(android.view.View)>(null);
+
+     label51:
+        if $i0 == 59 goto label52;
+
+        $z3 = virtualinvoke $r30.<gt.labs.lnlink.free.AboutMe: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label52:
+        if $i0 == 60 goto label49;
+
+     label53:
+        if $i0 == 61 goto label48;
+
+        if $i0 == 62 goto label54;
+
+        if $i0 == 63 goto label48;
+
+     label54:
+        if $i0 == 65 goto label62;
+
+        $r33 = new gt.labs.lnlink.free.COption;
+
+        specialinvoke $r33.<gt.labs.lnlink.free.COption: void <init>()>();
+
+        if $i0 == 66 goto label62;
+
+        virtualinvoke $r33.<gt.labs.lnlink.free.COption: void onCreate(android.os.Bundle)>(null);
+
+     label55:
+        if $i0 == 68 goto label61;
+
+     label56:
+        if $i0 == 69 goto label57;
+
+        $z4 = virtualinvoke $r33.<gt.labs.lnlink.free.COption: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label57:
+        $r34 = new gt.labs.lnlink.free.COption$CheckPreferenceClickListener;
+
+        specialinvoke $r34.<gt.labs.lnlink.free.COption$CheckPreferenceClickListener: void <init>(gt.labs.lnlink.free.COption)>($r33);
+
+        if $i0 == 70 goto label58;
+
+        $z5 = virtualinvoke $r34.<gt.labs.lnlink.free.COption$CheckPreferenceClickListener: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label58:
+        $r35 = new gt.labs.lnlink.free.COption$1;
+
+        specialinvoke $r35.<gt.labs.lnlink.free.COption$1: void <init>(gt.labs.lnlink.free.COption)>($r33);
+
+        if $i0 == 71 goto label59;
+
+        $z6 = virtualinvoke $r35.<gt.labs.lnlink.free.COption$1: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r33);
+
+        $r33 = null;
+
+     label59:
+        $r36 = new gt.labs.lnlink.free.COption$2;
+
+        specialinvoke $r36.<gt.labs.lnlink.free.COption$2: void <init>(gt.labs.lnlink.free.COption)>($r33);
+
+        if $i0 == 72 goto label60;
+
+        $z7 = virtualinvoke $r36.<gt.labs.lnlink.free.COption$2: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r33);
+
+        $r33 = null;
+
+     label60:
+        if $i0 == 73 goto label56;
+
+     label61:
+        if $i0 == 74 goto label55;
+
+        if $i0 == 75 goto label62;
+
+        if $i0 == 76 goto label55;
+
+     label62:
+        if $i0 == 78 goto label72;
+
+        $r37 = new gt.labs.lnlink.free.InputName;
+
+        specialinvoke $r37.<gt.labs.lnlink.free.InputName: void <init>()>();
+
+        if $i0 == 79 goto label72;
+
+        virtualinvoke $r37.<gt.labs.lnlink.free.InputName: void onCreate(android.os.Bundle)>(null);
+
+     label63:
+        virtualinvoke $r37.<gt.labs.lnlink.free.InputName: void onResume()>();
+
+        if $i0 == 81 goto label71;
+
+     label64:
+        $r38 = new gt.labs.lnlink.free.InputName$2;
+
+        specialinvoke $r38.<gt.labs.lnlink.free.InputName$2: void <init>(gt.labs.lnlink.free.InputName)>($r37);
+
+        if $i0 == 82 goto label65;
+
+        virtualinvoke $r38.<gt.labs.lnlink.free.InputName$2: void onClick(android.view.View)>(null);
+
+     label65:
+        $r39 = new gt.labs.lnlink.free.InputName$3;
+
+        specialinvoke $r39.<gt.labs.lnlink.free.InputName$3: void <init>(gt.labs.lnlink.free.InputName)>($r37);
+
+        if $i0 == 83 goto label66;
+
+        $z8 = virtualinvoke $r39.<gt.labs.lnlink.free.InputName$3: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label66:
+        $r40 = new gt.labs.lnlink.free.InputName$1;
+
+        specialinvoke $r40.<gt.labs.lnlink.free.InputName$1: void <init>(gt.labs.lnlink.free.InputName)>($r37);
+
+        if $i0 == 84 goto label67;
+
+        virtualinvoke $r40.<gt.labs.lnlink.free.InputName$1: void onClick(android.view.View)>(null);
+
+     label67:
+        $r41 = new gt.labs.lnlink.free.InputName$4;
+
+        specialinvoke $r41.<gt.labs.lnlink.free.InputName$4: void <init>(gt.labs.lnlink.free.InputName)>($r37);
+
+        if $i0 == 85 goto label68;
+
+        virtualinvoke $r41.<gt.labs.lnlink.free.InputName$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label68:
+        if $i0 == 86 goto label69;
+
+        $r42 = virtualinvoke $r37.<gt.labs.lnlink.free.InputName: android.app.Dialog onCreateDialog(int)>(0);
+
+     label69:
+        if $i0 == 87 goto label70;
+
+        $z9 = virtualinvoke $r37.<gt.labs.lnlink.free.InputName: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label70:
+        if $i0 == 88 goto label64;
+
+     label71:
+        virtualinvoke $r37.<gt.labs.lnlink.free.InputName: void onPause()>();
+
+        if $i0 == 89 goto label63;
+
+        if $i0 == 90 goto label72;
+
+        if $i0 == 91 goto label63;
+
+     label72:
+        if $i0 == 93 goto label78;
+
+        $r43 = new gt.labs.lnlink.free.Help;
+
+        specialinvoke $r43.<gt.labs.lnlink.free.Help: void <init>()>();
+
+        if $i0 == 94 goto label78;
+
+        virtualinvoke $r43.<gt.labs.lnlink.free.Help: void onCreate(android.os.Bundle)>(null);
+
+     label73:
+        if $i0 == 96 goto label77;
+
+     label74:
+        $r44 = new gt.labs.lnlink.free.Help$1;
+
+        specialinvoke $r44.<gt.labs.lnlink.free.Help$1: void <init>(gt.labs.lnlink.free.Help)>($r43);
+
+        if $i0 == 97 goto label75;
+
+        virtualinvoke $r44.<gt.labs.lnlink.free.Help$1: void onClick(android.view.View)>(null);
+
+     label75:
+        if $i0 == 98 goto label76;
+
+        $z10 = virtualinvoke $r43.<gt.labs.lnlink.free.Help: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label76:
+        if $i0 == 99 goto label74;
+
+     label77:
+        if $i0 == 100 goto label73;
+
+        if $i0 == 101 goto label78;
+
+        if $i0 == 102 goto label73;
+
+     label78:
+        if $i0 == 104 goto label87;
+
+        $r45 = new gt.labs.lnlink.free.Pause;
+
+        specialinvoke $r45.<gt.labs.lnlink.free.Pause: void <init>()>();
+
+        if $i0 == 105 goto label87;
+
+        virtualinvoke $r45.<gt.labs.lnlink.free.Pause: void onCreate(android.os.Bundle)>(null);
+
+     label79:
+        if $i0 == 107 goto label86;
+
+     label80:
+        $r46 = new gt.labs.lnlink.free.Pause$4;
+
+        specialinvoke $r46.<gt.labs.lnlink.free.Pause$4: void <init>(gt.labs.lnlink.free.Pause)>($r45);
+
+        if $i0 == 108 goto label81;
+
+        virtualinvoke $r46.<gt.labs.lnlink.free.Pause$4: void onClick(android.view.View)>(null);
+
+     label81:
+        $r47 = new gt.labs.lnlink.free.Pause$1;
+
+        specialinvoke $r47.<gt.labs.lnlink.free.Pause$1: void <init>(gt.labs.lnlink.free.Pause)>($r45);
+
+        if $i0 == 109 goto label82;
+
+        virtualinvoke $r47.<gt.labs.lnlink.free.Pause$1: void onClick(android.view.View)>(null);
+
+     label82:
+        $r48 = new gt.labs.lnlink.free.Pause$3;
+
+        specialinvoke $r48.<gt.labs.lnlink.free.Pause$3: void <init>(gt.labs.lnlink.free.Pause)>($r45);
+
+        if $i0 == 110 goto label83;
+
+        virtualinvoke $r48.<gt.labs.lnlink.free.Pause$3: void onClick(android.view.View)>(null);
+
+     label83:
+        $r49 = new gt.labs.lnlink.free.Pause$2;
+
+        specialinvoke $r49.<gt.labs.lnlink.free.Pause$2: void <init>(gt.labs.lnlink.free.Pause)>($r45);
+
+        if $i0 == 111 goto label84;
+
+        virtualinvoke $r49.<gt.labs.lnlink.free.Pause$2: void onClick(android.view.View)>(null);
+
+     label84:
+        if $i0 == 112 goto label85;
+
+        $z11 = virtualinvoke $r45.<gt.labs.lnlink.free.Pause: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label85:
+        if $i0 == 113 goto label80;
+
+     label86:
+        if $i0 == 114 goto label79;
+
+        if $i0 == 115 goto label87;
+
+        if $i0 == 116 goto label79;
+
+     label87:
+        if $i0 == 118 goto label94;
+
+        $r50 = new gt.labs.lnlink.free.LinkWeb;
+
+        specialinvoke $r50.<gt.labs.lnlink.free.LinkWeb: void <init>()>();
+
+        if $i0 == 119 goto label94;
+
+        virtualinvoke $r50.<gt.labs.lnlink.free.LinkWeb: void onCreate(android.os.Bundle)>(null);
+
+     label88:
+        if $i0 == 121 goto label93;
+
+     label89:
+        $r51 = new gt.labs.lnlink.free.LinkWeb$1;
+
+        specialinvoke $r51.<gt.labs.lnlink.free.LinkWeb$1: void <init>(gt.labs.lnlink.free.LinkWeb)>($r50);
+
+        if $i0 == 122 goto label90;
+
+        virtualinvoke $r51.<gt.labs.lnlink.free.LinkWeb$1: void onClick(android.view.View)>(null);
+
+     label90:
+        if $i0 == 123 goto label91;
+
+        $z12 = virtualinvoke $r50.<gt.labs.lnlink.free.LinkWeb: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label91:
+        if $i0 == 124 goto label92;
+
+        $r52 = virtualinvoke $r50.<gt.labs.lnlink.free.LinkWeb: android.app.Dialog onCreateDialog(int)>(0);
+
+     label92:
+        if $i0 == 125 goto label89;
+
+     label93:
+        if $i0 == 126 goto label88;
+
+        if $i0 == 127 goto label94;
+
+        if $i0 == 128 goto label88;
+
+     label94:
+        if $i0 == 130 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 9 components...
+Incremental callback analysis done.
+Found 71 callback methods for 9 components
+Found {res/layout/aboutme.xml=[2131230722 - android.widget.TableRow, -1 - android.widget.TextView, 2131230721 - android.widget.TableLayout, 2131230720 - android.widget.LinearLayout, 2131230723 - android.widget.Button, 2131230724 - android.widget.Button, 2131230725 - android.widget.Button], res/layout/main.xml=[-1 - android.widget.FrameLayout, 2131230732 - gt.labs.lnlink.free.CGameView, 2131230733 - gt.labs.lnlink.free.CUi], res/layout/inputname.xml=[2131230729 - android.widget.Button, -1 - android.widget.LinearLayout, 2131230722 - android.widget.TableRow, 2131230727 - android.widget.EditText, 2131230721 - android.widget.TableLayout, 2131230728 - android.widget.Button], res/layout/menu.xml=[2131230740 - android.widget.Button, 2131230735 - android.widget.ImageView, 2131230739 - android.widget.Button, 2131230737 - android.widget.Button, 2131230742 - com.mobclix.android.sdk.MobclixMMABannerXLAdView, 2131230734 - android.widget.AbsoluteLayout, 2131230738 - android.widget.Button, 2131230741 - android.widget.ImageView, 2131230736 - android.widget.Button], res/layout/help.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.ScrollView, -1 - android.widget.TextView, 2131230722 - android.widget.TableRow, -1 - android.widget.ImageView, 2131230721 - android.widget.TableLayout, 2131230726 - android.widget.Button], res/layout/linkweb.xml=[-1 - android.widget.LinearLayout, 2131230731 - android.webkit.WebView, 2131230726 - android.widget.Button, 2131230730 - android.widget.ProgressBar], res/layout/menulist.xml=[-1 - android.widget.LinearLayout, 2131230743 - android.widget.ImageView, 2131230744 - android.widget.Button, 2131230724 - android.widget.Button, 2131230745 - android.widget.Button, 2131230725 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 71 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4b1c74861c18a18048502e0ac2478ce74f9ebe48bfa76bc6e134bf9a75bd917a.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12;
+        com.GoldDream.zj.zjReceiver $r3;
+        gt.labs.lnlink.free.main $r4;
+        gt.labs.lnlink.free.main$15 $r5;
+        android.app.Dialog $r6, $r41, $r52;
+        gt.labs.lnlink.free.main$2 $r7;
+        gt.labs.lnlink.free.main$8 $r8;
+        gt.labs.lnlink.free.main$25 $r9;
+        gt.labs.lnlink.free.main$11 $r10;
+        gt.labs.lnlink.free.main$12 $r11;
+        gt.labs.lnlink.free.main$21 $r12;
+        gt.labs.lnlink.free.main$20 $r13;
+        gt.labs.lnlink.free.main$5 $r14;
+        gt.labs.lnlink.free.main$10 $r15;
+        gt.labs.lnlink.free.main$18 $r16;
+        gt.labs.lnlink.free.main$22 $r17;
+        gt.labs.lnlink.free.main$14 $r18;
+        gt.labs.lnlink.free.main$4 $r19;
+        gt.labs.lnlink.free.main$1 $r20;
+        gt.labs.lnlink.free.main$19 $r21;
+        gt.labs.lnlink.free.main$7 $r22;
+        gt.labs.lnlink.free.main$13 $r23;
+        gt.labs.lnlink.free.main$3 $r24;
+        gt.labs.lnlink.free.main$9 $r25;
+        gt.labs.lnlink.free.main$6 $r26;
+        gt.labs.lnlink.free.main$17 $r27;
+        gt.labs.lnlink.free.main$24 $r28;
+        gt.labs.lnlink.free.main$16 $r29;
+        gt.labs.lnlink.free.AboutMe $r30;
+        gt.labs.lnlink.free.AboutMe$2 $r31;
+        gt.labs.lnlink.free.AboutMe$1 $r32;
+        gt.labs.lnlink.free.COption $r33;
+        gt.labs.lnlink.free.COption$2 $r34;
+        gt.labs.lnlink.free.COption$CheckPreferenceClickListener $r35;
+        gt.labs.lnlink.free.COption$1 $r36;
+        gt.labs.lnlink.free.InputName $r37;
+        gt.labs.lnlink.free.InputName$3 $r38;
+        gt.labs.lnlink.free.InputName$4 $r39;
+        gt.labs.lnlink.free.InputName$2 $r40;
+        gt.labs.lnlink.free.InputName$1 $r42;
+        gt.labs.lnlink.free.Help $r43;
+        gt.labs.lnlink.free.Help$1 $r44;
+        gt.labs.lnlink.free.Pause $r45;
+        gt.labs.lnlink.free.Pause$4 $r46;
+        gt.labs.lnlink.free.Pause$2 $r47;
+        gt.labs.lnlink.free.Pause$3 $r48;
+        gt.labs.lnlink.free.Pause$1 $r49;
+        gt.labs.lnlink.free.LinkWeb $r50;
+        gt.labs.lnlink.free.LinkWeb$1 $r51;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label07;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label06:
+        if $i0 == 6 goto label04;
+
+     label07:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label08;
+
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 11 goto label08;
+
+     label11:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label14;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 13 goto label14;
+
+     label13:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label13;
+
+     label14:
+        if $i0 == 16 goto label47;
+
+        $r4 = new gt.labs.lnlink.free.main;
+
+        specialinvoke $r4.<gt.labs.lnlink.free.main: void <init>()>();
+
+        if $i0 == 17 goto label47;
+
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 19 goto label45;
+
+     label16:
+        $r5 = new gt.labs.lnlink.free.main$15;
+
+        specialinvoke $r5.<gt.labs.lnlink.free.main$15: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 20 goto label17;
+
+        virtualinvoke $r5.<gt.labs.lnlink.free.main$15: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label17:
+        if $i0 == 21 goto label18;
+
+        $z1 = virtualinvoke $r4.<gt.labs.lnlink.free.main: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label18:
+        if $i0 == 22 goto label19;
+
+        $z2 = virtualinvoke $r4.<gt.labs.lnlink.free.main: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label19:
+        if $i0 == 23 goto label20;
+
+        staticinvoke <gt.labs.lnlink.free.main: void <clinit>()>();
+
+     label20:
+        if $i0 == 24 goto label21;
+
+        $r6 = virtualinvoke $r4.<gt.labs.lnlink.free.main: android.app.Dialog onCreateDialog(int)>(0);
+
+     label21:
+        $r7 = new gt.labs.lnlink.free.main$2;
+
+        specialinvoke $r7.<gt.labs.lnlink.free.main$2: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 25 goto label22;
+
+        virtualinvoke $r7.<gt.labs.lnlink.free.main$2: void onClick(android.view.View)>(null);
+
+     label22:
+        $r8 = new gt.labs.lnlink.free.main$8;
+
+        specialinvoke $r8.<gt.labs.lnlink.free.main$8: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 26 goto label23;
+
+        virtualinvoke $r8.<gt.labs.lnlink.free.main$8: void onClick(android.view.View)>(null);
+
+     label23:
+        $r9 = new gt.labs.lnlink.free.main$25;
+
+        specialinvoke $r9.<gt.labs.lnlink.free.main$25: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 27 goto label24;
+
+        virtualinvoke $r9.<gt.labs.lnlink.free.main$25: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label24:
+        $r10 = new gt.labs.lnlink.free.main$11;
+
+        specialinvoke $r10.<gt.labs.lnlink.free.main$11: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 28 goto label25;
+
+        virtualinvoke $r10.<gt.labs.lnlink.free.main$11: void onDismiss(android.content.DialogInterface)>(null);
+
+     label25:
+        $r11 = new gt.labs.lnlink.free.main$12;
+
+        specialinvoke $r11.<gt.labs.lnlink.free.main$12: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 29 goto label26;
+
+        virtualinvoke $r11.<gt.labs.lnlink.free.main$12: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label26:
+        $r12 = new gt.labs.lnlink.free.main$21;
+
+        specialinvoke $r12.<gt.labs.lnlink.free.main$21: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 30 goto label27;
+
+        virtualinvoke $r12.<gt.labs.lnlink.free.main$21: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r13 = new gt.labs.lnlink.free.main$20;
+
+        specialinvoke $r13.<gt.labs.lnlink.free.main$20: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 31 goto label28;
+
+        virtualinvoke $r13.<gt.labs.lnlink.free.main$20: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r14 = new gt.labs.lnlink.free.main$5;
+
+        specialinvoke $r14.<gt.labs.lnlink.free.main$5: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 32 goto label29;
+
+        virtualinvoke $r14.<gt.labs.lnlink.free.main$5: void onClick(android.view.View)>(null);
+
+     label29:
+        $r15 = new gt.labs.lnlink.free.main$10;
+
+        specialinvoke $r15.<gt.labs.lnlink.free.main$10: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 33 goto label30;
+
+        virtualinvoke $r15.<gt.labs.lnlink.free.main$10: void onClick(android.view.View)>(null);
+
+     label30:
+        $r16 = new gt.labs.lnlink.free.main$18;
+
+        specialinvoke $r16.<gt.labs.lnlink.free.main$18: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 34 goto label31;
+
+        virtualinvoke $r16.<gt.labs.lnlink.free.main$18: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label31:
+        $r17 = new gt.labs.lnlink.free.main$22;
+
+        specialinvoke $r17.<gt.labs.lnlink.free.main$22: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 35 goto label32;
+
+        virtualinvoke $r17.<gt.labs.lnlink.free.main$22: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label32:
+        $r18 = new gt.labs.lnlink.free.main$14;
+
+        specialinvoke $r18.<gt.labs.lnlink.free.main$14: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 36 goto label33;
+
+        virtualinvoke $r18.<gt.labs.lnlink.free.main$14: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label33:
+        $r19 = new gt.labs.lnlink.free.main$4;
+
+        specialinvoke $r19.<gt.labs.lnlink.free.main$4: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 37 goto label34;
+
+        virtualinvoke $r19.<gt.labs.lnlink.free.main$4: void onClick(android.view.View)>(null);
+
+     label34:
+        $r20 = new gt.labs.lnlink.free.main$1;
+
+        specialinvoke $r20.<gt.labs.lnlink.free.main$1: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 38 goto label35;
+
+        virtualinvoke $r20.<gt.labs.lnlink.free.main$1: void onClick(android.view.View)>(null);
+
+     label35:
+        $r21 = new gt.labs.lnlink.free.main$19;
+
+        specialinvoke $r21.<gt.labs.lnlink.free.main$19: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 39 goto label36;
+
+        virtualinvoke $r21.<gt.labs.lnlink.free.main$19: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label36:
+        $r22 = new gt.labs.lnlink.free.main$7;
+
+        specialinvoke $r22.<gt.labs.lnlink.free.main$7: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 40 goto label37;
+
+        virtualinvoke $r22.<gt.labs.lnlink.free.main$7: void onClick(android.view.View)>(null);
+
+     label37:
+        $r23 = new gt.labs.lnlink.free.main$13;
+
+        specialinvoke $r23.<gt.labs.lnlink.free.main$13: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 41 goto label38;
+
+        virtualinvoke $r23.<gt.labs.lnlink.free.main$13: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label38:
+        $r24 = new gt.labs.lnlink.free.main$3;
+
+        specialinvoke $r24.<gt.labs.lnlink.free.main$3: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 42 goto label39;
+
+        virtualinvoke $r24.<gt.labs.lnlink.free.main$3: void onClick(android.view.View)>(null);
+
+     label39:
+        $r25 = new gt.labs.lnlink.free.main$9;
+
+        specialinvoke $r25.<gt.labs.lnlink.free.main$9: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 43 goto label40;
+
+        virtualinvoke $r25.<gt.labs.lnlink.free.main$9: void onClick(android.view.View)>(null);
+
+     label40:
+        $r26 = new gt.labs.lnlink.free.main$6;
+
+        specialinvoke $r26.<gt.labs.lnlink.free.main$6: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 44 goto label41;
+
+        virtualinvoke $r26.<gt.labs.lnlink.free.main$6: void onClick(android.view.View)>(null);
+
+     label41:
+        $r27 = new gt.labs.lnlink.free.main$17;
+
+        specialinvoke $r27.<gt.labs.lnlink.free.main$17: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 45 goto label42;
+
+        virtualinvoke $r27.<gt.labs.lnlink.free.main$17: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label42:
+        $r28 = new gt.labs.lnlink.free.main$24;
+
+        specialinvoke $r28.<gt.labs.lnlink.free.main$24: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 46 goto label43;
+
+        virtualinvoke $r28.<gt.labs.lnlink.free.main$24: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label43:
+        $r29 = new gt.labs.lnlink.free.main$16;
+
+        specialinvoke $r29.<gt.labs.lnlink.free.main$16: void <init>(gt.labs.lnlink.free.main)>($r4);
+
+        if $i0 == 47 goto label44;
+
+        virtualinvoke $r29.<gt.labs.lnlink.free.main$16: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label44:
+        if $i0 == 48 goto label16;
+
+     label45:
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onPause()>();
+
+        if $i0 == 49 goto label15;
+
+        if $i0 == 50 goto label46;
+
+        if $i0 == 51 goto label15;
+
+     label46:
+        virtualinvoke $r4.<gt.labs.lnlink.free.main: void onDestroy()>();
+
+     label47:
+        if $i0 == 53 goto label54;
+
+        $r30 = new gt.labs.lnlink.free.AboutMe;
+
+        specialinvoke $r30.<gt.labs.lnlink.free.AboutMe: void <init>()>();
+
+        if $i0 == 54 goto label54;
+
+        virtualinvoke $r30.<gt.labs.lnlink.free.AboutMe: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        if $i0 == 56 goto label53;
+
+     label49:
+        if $i0 == 57 goto label50;
+
+        $z3 = virtualinvoke $r30.<gt.labs.lnlink.free.AboutMe: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label50:
+        $r31 = new gt.labs.lnlink.free.AboutMe$2;
+
+        specialinvoke $r31.<gt.labs.lnlink.free.AboutMe$2: void <init>(gt.labs.lnlink.free.AboutMe)>($r30);
+
+        if $i0 == 58 goto label51;
+
+        virtualinvoke $r31.<gt.labs.lnlink.free.AboutMe$2: void onClick(android.view.View)>(null);
+
+     label51:
+        $r32 = new gt.labs.lnlink.free.AboutMe$1;
+
+        specialinvoke $r32.<gt.labs.lnlink.free.AboutMe$1: void <init>(gt.labs.lnlink.free.AboutMe)>($r30);
+
+        if $i0 == 59 goto label52;
+
+        virtualinvoke $r32.<gt.labs.lnlink.free.AboutMe$1: void onClick(android.view.View)>(null);
+
+     label52:
+        if $i0 == 60 goto label49;
+
+     label53:
+        if $i0 == 61 goto label48;
+
+        if $i0 == 62 goto label54;
+
+        if $i0 == 63 goto label48;
+
+     label54:
+        if $i0 == 65 goto label62;
+
+        $r33 = new gt.labs.lnlink.free.COption;
+
+        specialinvoke $r33.<gt.labs.lnlink.free.COption: void <init>()>();
+
+        if $i0 == 66 goto label62;
+
+        virtualinvoke $r33.<gt.labs.lnlink.free.COption: void onCreate(android.os.Bundle)>(null);
+
+     label55:
+        if $i0 == 68 goto label61;
+
+     label56:
+        $r34 = new gt.labs.lnlink.free.COption$2;
+
+        specialinvoke $r34.<gt.labs.lnlink.free.COption$2: void <init>(gt.labs.lnlink.free.COption)>($r33);
+
+        if $i0 == 69 goto label57;
+
+        $z4 = virtualinvoke $r34.<gt.labs.lnlink.free.COption$2: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r33);
+
+        $r33 = null;
+
+     label57:
+        $r35 = new gt.labs.lnlink.free.COption$CheckPreferenceClickListener;
+
+        specialinvoke $r35.<gt.labs.lnlink.free.COption$CheckPreferenceClickListener: void <init>(gt.labs.lnlink.free.COption)>($r33);
+
+        if $i0 == 70 goto label58;
+
+        $z5 = virtualinvoke $r35.<gt.labs.lnlink.free.COption$CheckPreferenceClickListener: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label58:
+        if $i0 == 71 goto label59;
+
+        $z6 = virtualinvoke $r33.<gt.labs.lnlink.free.COption: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label59:
+        $r36 = new gt.labs.lnlink.free.COption$1;
+
+        specialinvoke $r36.<gt.labs.lnlink.free.COption$1: void <init>(gt.labs.lnlink.free.COption)>($r33);
+
+        if $i0 == 72 goto label60;
+
+        $z7 = virtualinvoke $r36.<gt.labs.lnlink.free.COption$1: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r33);
+
+        $r33 = null;
+
+     label60:
+        if $i0 == 73 goto label56;
+
+     label61:
+        if $i0 == 74 goto label55;
+
+        if $i0 == 75 goto label62;
+
+        if $i0 == 76 goto label55;
+
+     label62:
+        if $i0 == 78 goto label72;
+
+        $r37 = new gt.labs.lnlink.free.InputName;
+
+        specialinvoke $r37.<gt.labs.lnlink.free.InputName: void <init>()>();
+
+        if $i0 == 79 goto label72;
+
+        virtualinvoke $r37.<gt.labs.lnlink.free.InputName: void onCreate(android.os.Bundle)>(null);
+
+     label63:
+        virtualinvoke $r37.<gt.labs.lnlink.free.InputName: void onResume()>();
+
+        if $i0 == 81 goto label71;
+
+     label64:
+        $r38 = new gt.labs.lnlink.free.InputName$3;
+
+        specialinvoke $r38.<gt.labs.lnlink.free.InputName$3: void <init>(gt.labs.lnlink.free.InputName)>($r37);
+
+        if $i0 == 82 goto label65;
+
+        $z8 = virtualinvoke $r38.<gt.labs.lnlink.free.InputName$3: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label65:
+        $r39 = new gt.labs.lnlink.free.InputName$4;
+
+        specialinvoke $r39.<gt.labs.lnlink.free.InputName$4: void <init>(gt.labs.lnlink.free.InputName)>($r37);
+
+        if $i0 == 83 goto label66;
+
+        virtualinvoke $r39.<gt.labs.lnlink.free.InputName$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label66:
+        $r40 = new gt.labs.lnlink.free.InputName$2;
+
+        specialinvoke $r40.<gt.labs.lnlink.free.InputName$2: void <init>(gt.labs.lnlink.free.InputName)>($r37);
+
+        if $i0 == 84 goto label67;
+
+        virtualinvoke $r40.<gt.labs.lnlink.free.InputName$2: void onClick(android.view.View)>(null);
+
+     label67:
+        if $i0 == 85 goto label68;
+
+        $r41 = virtualinvoke $r37.<gt.labs.lnlink.free.InputName: android.app.Dialog onCreateDialog(int)>(0);
+
+     label68:
+        if $i0 == 86 goto label69;
+
+        $z9 = virtualinvoke $r37.<gt.labs.lnlink.free.InputName: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label69:
+        $r42 = new gt.labs.lnlink.free.InputName$1;
+
+        specialinvoke $r42.<gt.labs.lnlink.free.InputName$1: void <init>(gt.labs.lnlink.free.InputName)>($r37);
+
+        if $i0 == 87 goto label70;
+
+        virtualinvoke $r42.<gt.labs.lnlink.free.InputName$1: void onClick(android.view.View)>(null);
+
+     label70:
+        if $i0 == 88 goto label64;
+
+     label71:
+        virtualinvoke $r37.<gt.labs.lnlink.free.InputName: void onPause()>();
+
+        if $i0 == 89 goto label63;
+
+        if $i0 == 90 goto label72;
+
+        if $i0 == 91 goto label63;
+
+     label72:
+        if $i0 == 93 goto label78;
+
+        $r43 = new gt.labs.lnlink.free.Help;
+
+        specialinvoke $r43.<gt.labs.lnlink.free.Help: void <init>()>();
+
+        if $i0 == 94 goto label78;
+
+        virtualinvoke $r43.<gt.labs.lnlink.free.Help: void onCreate(android.os.Bundle)>(null);
+
+     label73:
+        if $i0 == 96 goto label77;
+
+     label74:
+        if $i0 == 97 goto label75;
+
+        $z10 = virtualinvoke $r43.<gt.labs.lnlink.free.Help: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label75:
+        $r44 = new gt.labs.lnlink.free.Help$1;
+
+        specialinvoke $r44.<gt.labs.lnlink.free.Help$1: void <init>(gt.labs.lnlink.free.Help)>($r43);
+
+        if $i0 == 98 goto label76;
+
+        virtualinvoke $r44.<gt.labs.lnlink.free.Help$1: void onClick(android.view.View)>(null);
+
+     label76:
+        if $i0 == 99 goto label74;
+
+     label77:
+        if $i0 == 100 goto label73;
+
+        if $i0 == 101 goto label78;
+
+        if $i0 == 102 goto label73;
+
+     label78:
+        if $i0 == 104 goto label87;
+
+        $r45 = new gt.labs.lnlink.free.Pause;
+
+        specialinvoke $r45.<gt.labs.lnlink.free.Pause: void <init>()>();
+
+        if $i0 == 105 goto label87;
+
+        virtualinvoke $r45.<gt.labs.lnlink.free.Pause: void onCreate(android.os.Bundle)>(null);
+
+     label79:
+        if $i0 == 107 goto label86;
+
+     label80:
+        $r46 = new gt.labs.lnlink.free.Pause$4;
+
+        specialinvoke $r46.<gt.labs.lnlink.free.Pause$4: void <init>(gt.labs.lnlink.free.Pause)>($r45);
+
+        if $i0 == 108 goto label81;
+
+        virtualinvoke $r46.<gt.labs.lnlink.free.Pause$4: void onClick(android.view.View)>(null);
+
+     label81:
+        $r47 = new gt.labs.lnlink.free.Pause$2;
+
+        specialinvoke $r47.<gt.labs.lnlink.free.Pause$2: void <init>(gt.labs.lnlink.free.Pause)>($r45);
+
+        if $i0 == 109 goto label82;
+
+        virtualinvoke $r47.<gt.labs.lnlink.free.Pause$2: void onClick(android.view.View)>(null);
+
+     label82:
+        $r48 = new gt.labs.lnlink.free.Pause$3;
+
+        specialinvoke $r48.<gt.labs.lnlink.free.Pause$3: void <init>(gt.labs.lnlink.free.Pause)>($r45);
+
+        if $i0 == 110 goto label83;
+
+        virtualinvoke $r48.<gt.labs.lnlink.free.Pause$3: void onClick(android.view.View)>(null);
+
+     label83:
+        if $i0 == 111 goto label84;
+
+        $z11 = virtualinvoke $r45.<gt.labs.lnlink.free.Pause: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label84:
+        $r49 = new gt.labs.lnlink.free.Pause$1;
+
+        specialinvoke $r49.<gt.labs.lnlink.free.Pause$1: void <init>(gt.labs.lnlink.free.Pause)>($r45);
+
+        if $i0 == 112 goto label85;
+
+        virtualinvoke $r49.<gt.labs.lnlink.free.Pause$1: void onClick(android.view.View)>(null);
+
+     label85:
+        if $i0 == 113 goto label80;
+
+     label86:
+        if $i0 == 114 goto label79;
+
+        if $i0 == 115 goto label87;
+
+        if $i0 == 116 goto label79;
+
+     label87:
+        if $i0 == 118 goto label94;
+
+        $r50 = new gt.labs.lnlink.free.LinkWeb;
+
+        specialinvoke $r50.<gt.labs.lnlink.free.LinkWeb: void <init>()>();
+
+        if $i0 == 119 goto label94;
+
+        virtualinvoke $r50.<gt.labs.lnlink.free.LinkWeb: void onCreate(android.os.Bundle)>(null);
+
+     label88:
+        if $i0 == 121 goto label93;
+
+     label89:
+        $r51 = new gt.labs.lnlink.free.LinkWeb$1;
+
+        specialinvoke $r51.<gt.labs.lnlink.free.LinkWeb$1: void <init>(gt.labs.lnlink.free.LinkWeb)>($r50);
+
+        if $i0 == 122 goto label90;
+
+        virtualinvoke $r51.<gt.labs.lnlink.free.LinkWeb$1: void onClick(android.view.View)>(null);
+
+     label90:
+        if $i0 == 123 goto label91;
+
+        $r52 = virtualinvoke $r50.<gt.labs.lnlink.free.LinkWeb: android.app.Dialog onCreateDialog(int)>(0);
+
+     label91:
+        if $i0 == 124 goto label92;
+
+        $z12 = virtualinvoke $r50.<gt.labs.lnlink.free.LinkWeb: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label92:
+        if $i0 == 125 goto label89;
+
+     label93:
+        if $i0 == 126 goto label88;
+
+        if $i0 == 127 goto label94;
+
+        if $i0 == 128 goto label88;
+
+     label94:
+        if $i0 == 130 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.458445187 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.051395701 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1713 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 101 sources and 38 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 733
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 2788
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 8913 forward and 3215 backward edges solved, processing 5 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.00495177 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r13.<java.net.URL: void <init>(java.lang.String)>($r2) in method <com.GoldDream.zj.zjService: java.lang.String getUidfromServer()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5) in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6) in method <com.GoldDream.zj.zjReceiver: void WriteRec(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 := @parameter1: android.content.Intent in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink specialinvoke r13.<java.net.URL: void <init>(java.lang.String)>($r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 := @parameter1: android.content.Intent (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 191.401376 MB
+Analysis has run for 4.531614821 seconds

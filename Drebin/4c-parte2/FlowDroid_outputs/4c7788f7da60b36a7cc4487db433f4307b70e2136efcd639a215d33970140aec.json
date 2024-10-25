@@ -1,0 +1,797 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012435322 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.google.update.Receiver $r2;
+        com.ps.mine.Main $r3;
+        com.google.update.Dialog $r4;
+        com.google.update.UpdateService $r5;
+        android.os.IBinder $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label06;
+
+        $r2 = new com.google.update.Receiver;
+
+        specialinvoke $r2.<com.google.update.Receiver: void <init>()>();
+
+        if $i0 == 8 goto label06;
+
+     label05:
+        virtualinvoke $r2.<com.google.update.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 10 goto label05;
+
+     label06:
+        if $i0 == 11 goto label08;
+
+        $r3 = new com.ps.mine.Main;
+
+        specialinvoke $r3.<com.ps.mine.Main: void <init>()>();
+
+        if $i0 == 12 goto label08;
+
+        virtualinvoke $r3.<com.ps.mine.Main: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.ps.mine.Main: void onPause()>();
+
+        if $i0 == 14 goto label07;
+
+        if $i0 == 15 goto label08;
+
+        if $i0 == 16 goto label07;
+
+     label08:
+        if $i0 == 18 goto label10;
+
+        $r4 = new com.google.update.Dialog;
+
+        specialinvoke $r4.<com.google.update.Dialog: void <init>()>();
+
+        if $i0 == 19 goto label10;
+
+        virtualinvoke $r4.<com.google.update.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 22 goto label10;
+
+        if $i0 == 23 goto label09;
+
+     label10:
+        if $i0 == 25 goto label15;
+
+        $r5 = new com.google.update.UpdateService;
+
+        specialinvoke $r5.<com.google.update.UpdateService: void <init>()>();
+
+        virtualinvoke $r5.<com.google.update.UpdateService: void onCreate()>();
+
+     label11:
+        if $i0 == 26 goto label12;
+
+        if $i0 == 27 goto label11;
+
+     label12:
+        $r6 = virtualinvoke $r5.<com.google.update.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 29 goto label14;
+
+        if $i0 == 30 goto label13;
+
+     label14:
+        virtualinvoke $r5.<com.google.update.UpdateService: void onDestroy()>();
+
+     label15:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.ps.mine.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r10;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.j $r2, $r4, $r6;
+        com.adwo.adsdk.q $r3;
+        com.adwo.adsdk.s $r5;
+        com.adwo.adsdk.r $r7;
+        com.google.update.Receiver $r8;
+        com.ps.mine.Main $r9;
+        boolean $z0, $z1;
+        com.ps.mine.Main$1 $r11;
+        com.google.update.Dialog $r12;
+        com.google.update.Dialog$2 $r13;
+        com.google.update.Dialog$1 $r14;
+        com.google.update.UpdateService $r15;
+        android.os.IBinder $r16;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.adwo.adsdk.j;
+
+        specialinvoke $r2.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r3 = new com.adwo.adsdk.q;
+
+        specialinvoke $r3.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label05:
+        $r4 = new com.adwo.adsdk.j;
+
+        specialinvoke $r4.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r5 = new com.adwo.adsdk.s;
+
+        specialinvoke $r5.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r4);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r5.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label06:
+        $r6 = new com.adwo.adsdk.j;
+
+        specialinvoke $r6.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r7 = new com.adwo.adsdk.r;
+
+        specialinvoke $r7.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r6);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r7.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label12;
+
+        $r8 = new com.google.update.Receiver;
+
+        specialinvoke $r8.<com.google.update.Receiver: void <init>()>();
+
+        if $i0 == 14 goto label12;
+
+     label11:
+        virtualinvoke $r8.<com.google.update.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label11;
+
+     label12:
+        if $i0 == 17 goto label19;
+
+        $r9 = new com.ps.mine.Main;
+
+        specialinvoke $r9.<com.ps.mine.Main: void <init>()>();
+
+        if $i0 == 18 goto label19;
+
+        virtualinvoke $r9.<com.ps.mine.Main: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 20 goto label18;
+
+     label14:
+        if $i0 == 21 goto label15;
+
+        $z0 = virtualinvoke $r9.<com.ps.mine.Main: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label15:
+        if $i0 == 22 goto label16;
+
+        $z1 = virtualinvoke $r9.<com.ps.mine.Main: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label16:
+        $r10 = newarray (java.lang.String)[1];
+
+        $r10[0] = "";
+
+        $r11 = new com.ps.mine.Main$1;
+
+        specialinvoke $r11.<com.ps.mine.Main$1: void <init>(com.ps.mine.Main,java.lang.String[])>($r9, $r10);
+
+        if $i0 == 23 goto label17;
+
+        virtualinvoke $r11.<com.ps.mine.Main$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label17:
+        if $i0 == 24 goto label14;
+
+     label18:
+        virtualinvoke $r9.<com.ps.mine.Main: void onPause()>();
+
+        if $i0 == 25 goto label13;
+
+        if $i0 == 26 goto label19;
+
+        if $i0 == 27 goto label13;
+
+     label19:
+        if $i0 == 29 goto label25;
+
+        $r12 = new com.google.update.Dialog;
+
+        specialinvoke $r12.<com.google.update.Dialog: void <init>()>();
+
+        if $i0 == 30 goto label25;
+
+        virtualinvoke $r12.<com.google.update.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        if $i0 == 32 goto label24;
+
+     label21:
+        $r13 = new com.google.update.Dialog$2;
+
+        specialinvoke $r13.<com.google.update.Dialog$2: void <init>(com.google.update.Dialog)>($r12);
+
+        if $i0 == 33 goto label22;
+
+        virtualinvoke $r13.<com.google.update.Dialog$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label22:
+        $r14 = new com.google.update.Dialog$1;
+
+        specialinvoke $r14.<com.google.update.Dialog$1: void <init>(com.google.update.Dialog)>($r12);
+
+        if $i0 == 34 goto label23;
+
+        virtualinvoke $r14.<com.google.update.Dialog$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        if $i0 == 35 goto label21;
+
+     label24:
+        if $i0 == 36 goto label20;
+
+        if $i0 == 37 goto label25;
+
+        if $i0 == 38 goto label20;
+
+     label25:
+        if $i0 == 40 goto label30;
+
+        $r15 = new com.google.update.UpdateService;
+
+        specialinvoke $r15.<com.google.update.UpdateService: void <init>()>();
+
+        virtualinvoke $r15.<com.google.update.UpdateService: void onCreate()>();
+
+     label26:
+        if $i0 == 41 goto label27;
+
+        if $i0 == 42 goto label26;
+
+     label27:
+        $r16 = virtualinvoke $r15.<com.google.update.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label28:
+        if $i0 == 44 goto label29;
+
+        if $i0 == 45 goto label28;
+
+     label29:
+        virtualinvoke $r15.<com.google.update.UpdateService: void onDestroy()>();
+
+     label30:
+        if $i0 == 46 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 31 callback methods for 3 components
+Found {res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131165185 - com.ps.mine.GameView, 2131165184 - com.adwo.adsdk.AdwoAdView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 31 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4c7788f7da60b36a7cc4487db433f4307b70e2136efcd639a215d33970140aec.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r12;
+        int $i0, $i1;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.j $r2, $r4, $r6;
+        com.adwo.adsdk.q $r3;
+        com.adwo.adsdk.s $r5;
+        com.adwo.adsdk.r $r7;
+        com.google.update.Receiver $r8;
+        com.ps.mine.Main $r9;
+        com.adwo.adsdk.AdwoAdView $r10;
+        com.ps.mine.GameView $r11;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        com.ps.mine.Main$1 $r13;
+        com.google.update.Dialog $r14;
+        com.google.update.Dialog$2 $r15;
+        com.google.update.Dialog$1 $r16;
+        com.google.update.UpdateService $r17;
+        android.os.IBinder $r18;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.adwo.adsdk.j;
+
+        specialinvoke $r2.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r3 = new com.adwo.adsdk.q;
+
+        specialinvoke $r3.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label04:
+        $r4 = new com.adwo.adsdk.j;
+
+        specialinvoke $r4.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r5 = new com.adwo.adsdk.s;
+
+        specialinvoke $r5.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r4);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r5.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label06:
+        $r6 = new com.adwo.adsdk.j;
+
+        specialinvoke $r6.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r7 = new com.adwo.adsdk.r;
+
+        specialinvoke $r7.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r6);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r7.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label12;
+
+        $r8 = new com.google.update.Receiver;
+
+        specialinvoke $r8.<com.google.update.Receiver: void <init>()>();
+
+        if $i0 == 14 goto label12;
+
+     label11:
+        virtualinvoke $r8.<com.google.update.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label11;
+
+     label12:
+        if $i0 == 17 goto label34;
+
+        $r9 = new com.ps.mine.Main;
+
+        specialinvoke $r9.<com.ps.mine.Main: void <init>()>();
+
+        if $i0 == 18 goto label34;
+
+        virtualinvoke $r9.<com.ps.mine.Main: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 20 goto label33;
+
+     label14:
+        $r10 = new com.adwo.adsdk.AdwoAdView;
+
+        specialinvoke $r10.<com.adwo.adsdk.AdwoAdView: void <init>(android.content.Context,android.util.AttributeSet)>($r9, null);
+
+        if $i0 == 21 goto label15;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdView: void <clinit>()>();
+
+     label15:
+        if $i0 == 22 goto label16;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void onWindowVisibilityChanged(int)>(0);
+
+     label16:
+        if $i0 == 23 goto label17;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void onDetachedFromWindow()>();
+
+     label17:
+        if $i0 == 24 goto label18;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void finalize()>();
+
+     label18:
+        if $i0 == 25 goto label19;
+
+        $i1 = virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: int getVisibility()>();
+
+     label19:
+        if $i0 == 26 goto label20;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void setVisibility(int)>(0);
+
+     label20:
+        if $i0 == 27 goto label21;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void setBackgroundColor(int)>(0);
+
+     label21:
+        if $i0 == 28 goto label22;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void onMeasure(int,int)>(0, 0);
+
+     label22:
+        if $i0 == 29 goto label23;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void onAttachedToWindow()>();
+
+     label23:
+        $r11 = new com.ps.mine.GameView;
+
+        specialinvoke $r11.<com.ps.mine.GameView: void <init>(android.content.Context)>($r9);
+
+        if $i0 == 30 goto label24;
+
+        $z0 = virtualinvoke $r11.<com.ps.mine.GameView: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label24:
+        if $i0 == 31 goto label25;
+
+        staticinvoke <com.ps.mine.GameView: void <clinit>()>();
+
+     label25:
+        if $i0 == 32 goto label26;
+
+        virtualinvoke $r11.<com.ps.mine.GameView: void onLayout(boolean,int,int,int,int)>(false, 0, 0, 0, 0);
+
+     label26:
+        if $i0 == 33 goto label27;
+
+        virtualinvoke $r11.<com.ps.mine.GameView: void onDraw(android.graphics.Canvas)>(null);
+
+     label27:
+        if $i0 == 34 goto label28;
+
+        $z1 = virtualinvoke $r11.<com.ps.mine.GameView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label28:
+        if $i0 == 35 goto label29;
+
+        $z2 = virtualinvoke $r11.<com.ps.mine.GameView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label29:
+        if $i0 == 36 goto label30;
+
+        $z3 = virtualinvoke $r9.<com.ps.mine.Main: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label30:
+        if $i0 == 37 goto label31;
+
+        $z4 = virtualinvoke $r9.<com.ps.mine.Main: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label31:
+        $r12 = newarray (java.lang.String)[1];
+
+        $r12[0] = "";
+
+        $r13 = new com.ps.mine.Main$1;
+
+        specialinvoke $r13.<com.ps.mine.Main$1: void <init>(com.ps.mine.Main,java.lang.String[])>($r9, $r12);
+
+        if $i0 == 38 goto label32;
+
+        virtualinvoke $r13.<com.ps.mine.Main$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label32:
+        if $i0 == 39 goto label14;
+
+     label33:
+        virtualinvoke $r9.<com.ps.mine.Main: void onPause()>();
+
+        if $i0 == 40 goto label13;
+
+        if $i0 == 41 goto label34;
+
+        if $i0 == 42 goto label13;
+
+     label34:
+        if $i0 == 44 goto label40;
+
+        $r14 = new com.google.update.Dialog;
+
+        specialinvoke $r14.<com.google.update.Dialog: void <init>()>();
+
+        if $i0 == 45 goto label40;
+
+        virtualinvoke $r14.<com.google.update.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label35:
+        if $i0 == 47 goto label39;
+
+     label36:
+        $r15 = new com.google.update.Dialog$2;
+
+        specialinvoke $r15.<com.google.update.Dialog$2: void <init>(com.google.update.Dialog)>($r14);
+
+        if $i0 == 48 goto label37;
+
+        virtualinvoke $r15.<com.google.update.Dialog$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label37:
+        $r16 = new com.google.update.Dialog$1;
+
+        specialinvoke $r16.<com.google.update.Dialog$1: void <init>(com.google.update.Dialog)>($r14);
+
+        if $i0 == 49 goto label38;
+
+        virtualinvoke $r16.<com.google.update.Dialog$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label38:
+        if $i0 == 50 goto label36;
+
+     label39:
+        if $i0 == 51 goto label35;
+
+        if $i0 == 52 goto label40;
+
+        if $i0 == 53 goto label35;
+
+     label40:
+        if $i0 == 55 goto label45;
+
+        $r17 = new com.google.update.UpdateService;
+
+        specialinvoke $r17.<com.google.update.UpdateService: void <init>()>();
+
+        virtualinvoke $r17.<com.google.update.UpdateService: void onCreate()>();
+
+     label41:
+        if $i0 == 56 goto label42;
+
+        if $i0 == 57 goto label41;
+
+     label42:
+        $r18 = virtualinvoke $r17.<com.google.update.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label43:
+        if $i0 == 59 goto label44;
+
+        if $i0 == 60 goto label43;
+
+     label44:
+        virtualinvoke $r17.<com.google.update.UpdateService: void onDestroy()>();
+
+     label45:
+        if $i0 == 61 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.7 seconds.
+[Spark] Solution found in 1.7 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.729389287 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.126279574 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2747 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 52 sources and 50 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 7525
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 13389
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 61749 forward and 10111 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.00928913 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Adwo SDK", $r3) in method <com.adwo.adsdk.i: void b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") in method <com.adwo.adsdk.i: java.lang.String a(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r28.<java.io.OutputStream: void write(byte[])>($r0) in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Adwo SDK", $r0) in method <com.adwo.adsdk.i: void a(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") in method <com.adwo.adsdk.i: java.lang.String a(android.content.Context)>
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Adwo SDK", $r3), from the following sources:
+	- $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") (in <com.adwo.adsdk.i: java.lang.String a(android.content.Context)>)
+Found a flow to sink virtualinvoke $r28.<java.io.OutputStream: void write(byte[])>($r0), from the following sources:
+	- $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>)
+	- $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Adwo SDK", $r0), from the following sources:
+	- $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") (in <com.adwo.adsdk.i: java.lang.String a(android.content.Context)>)
+Maximum memory consumption: 153.861512 MB
+Analysis has run for 6.835890379 seconds

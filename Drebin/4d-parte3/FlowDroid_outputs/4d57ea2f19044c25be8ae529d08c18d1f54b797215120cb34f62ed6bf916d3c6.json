@@ -1,0 +1,2762 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.032808577 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: org.apache.commons.logging.LogFactory is a phantom class!
+Warning: org.apache.http.annotation.Immutable is a phantom class!
+Warning: org.apache.http.annotation.NotThreadSafe is a phantom class!
+Warning: org.apache.http.annotation.ThreadSafe is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.nubee.coinpirates.TopActivity $r1;
+        com.tapjoy.TJCOffersWebView $r2;
+        com.android.SMSReceiver $r3;
+        com.nubee.coinpirates.TitleActivity $r4;
+        com.tapjoy.TapjoyReferralTracker $r5;
+        com.tapjoy.TapjoyFeaturedAppWebView $r6;
+        com.admob.android.ads.AdMobActivity $r7;
+        com.nubee.coinpirates.game.GameActivity $r8;
+        com.android.MonitorService $r9;
+        android.os.IBinder $r10, $r14;
+        com.android.BootReceiver $r11;
+        com.admob.android.ads.analytics.InstallReceiver $r12;
+        com.nubee.coinpirates.common.AnalyticsService $r13;
+        boolean $z0;
+        com.android.AlarmReceiver $r15;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label05;
+
+        $r1 = new com.nubee.coinpirates.TopActivity;
+
+        specialinvoke $r1.<com.nubee.coinpirates.TopActivity: void <init>()>();
+
+        if $i0 == 1 goto label05;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.TopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onResume()>();
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onPause()>();
+
+        if $i0 == 3 goto label03;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 5 goto label02;
+
+     label04:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onDestroy()>();
+
+     label05:
+        if $i0 == 7 goto label07;
+
+        $r2 = new com.tapjoy.TJCOffersWebView;
+
+        specialinvoke $r2.<com.tapjoy.TJCOffersWebView: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: void onResume()>();
+
+        if $i0 == 10 goto label06;
+
+        if $i0 == 11 goto label07;
+
+        if $i0 == 12 goto label06;
+
+     label07:
+        if $i0 == 14 goto label09;
+
+        $r3 = new com.android.SMSReceiver;
+
+        specialinvoke $r3.<com.android.SMSReceiver: void <init>()>();
+
+        if $i0 == 15 goto label09;
+
+     label08:
+        virtualinvoke $r3.<com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label08;
+
+     label09:
+        if $i0 == 18 goto label13;
+
+        $r4 = new com.nubee.coinpirates.TitleActivity;
+
+        specialinvoke $r4.<com.nubee.coinpirates.TitleActivity: void <init>()>();
+
+        if $i0 == 19 goto label13;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+     label11:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onResume()>();
+
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onPause()>();
+
+        if $i0 == 21 goto label11;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 22 goto label12;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 23 goto label10;
+
+     label12:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onDestroy()>();
+
+     label13:
+        if $i0 == 25 goto label15;
+
+        $r5 = new com.tapjoy.TapjoyReferralTracker;
+
+        specialinvoke $r5.<com.tapjoy.TapjoyReferralTracker: void <init>()>();
+
+        if $i0 == 26 goto label15;
+
+     label14:
+        virtualinvoke $r5.<com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 28 goto label14;
+
+     label15:
+        if $i0 == 29 goto label17;
+
+        $r6 = new com.tapjoy.TapjoyFeaturedAppWebView;
+
+        specialinvoke $r6.<com.tapjoy.TapjoyFeaturedAppWebView: void <init>()>();
+
+        if $i0 == 30 goto label17;
+
+        virtualinvoke $r6.<com.tapjoy.TapjoyFeaturedAppWebView: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 33 goto label17;
+
+        if $i0 == 34 goto label16;
+
+     label17:
+        if $i0 == 36 goto label20;
+
+        $r7 = new com.admob.android.ads.AdMobActivity;
+
+        specialinvoke $r7.<com.admob.android.ads.AdMobActivity: void <init>()>();
+
+        if $i0 == 37 goto label20;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdMobActivity: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        if $i0 == 40 goto label19;
+
+        if $i0 == 41 goto label18;
+
+     label19:
+        virtualinvoke $r7.<com.admob.android.ads.AdMobActivity: void onDestroy()>();
+
+     label20:
+        if $i0 == 43 goto label24;
+
+        $r8 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r8.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        if $i0 == 44 goto label24;
+
+        virtualinvoke $r8.<com.nubee.coinpirates.game.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        virtualinvoke $r8.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+        if $i0 == 45 goto label22;
+
+        virtualinvoke $r8.<com.nubee.coinpirates.game.GameActivity: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label22:
+        virtualinvoke $r8.<com.nubee.coinpirates.game.GameActivity: void onResume()>();
+
+        virtualinvoke $r8.<com.nubee.coinpirates.game.GameActivity: void onPause()>();
+
+        virtualinvoke $r8.<com.nubee.coinpirates.game.GameActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 46 goto label22;
+
+        virtualinvoke $r8.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 47 goto label23;
+
+        virtualinvoke $r8.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 48 goto label21;
+
+     label23:
+        virtualinvoke $r8.<com.nubee.coinpirates.game.GameActivity: void onDestroy()>();
+
+     label24:
+        if $i0 == 50 goto label29;
+
+        $r9 = new com.android.MonitorService;
+
+        specialinvoke $r9.<com.android.MonitorService: void <init>()>();
+
+        virtualinvoke $r9.<com.android.MonitorService: void onCreate()>();
+
+        virtualinvoke $r9.<com.android.MonitorService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label25:
+        if $i0 == 51 goto label26;
+
+        if $i0 == 52 goto label25;
+
+     label26:
+        $r10 = virtualinvoke $r9.<com.android.MonitorService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label27:
+        if $i0 == 54 goto label28;
+
+        if $i0 == 55 goto label27;
+
+     label28:
+        virtualinvoke $r9.<com.android.MonitorService: void onDestroy()>();
+
+     label29:
+        if $i0 == 56 goto label31;
+
+        $r11 = new com.android.BootReceiver;
+
+        specialinvoke $r11.<com.android.BootReceiver: void <init>()>();
+
+        if $i0 == 57 goto label31;
+
+     label30:
+        virtualinvoke $r11.<com.android.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 59 goto label30;
+
+     label31:
+        if $i0 == 60 goto label33;
+
+        $r12 = new com.admob.android.ads.analytics.InstallReceiver;
+
+        specialinvoke $r12.<com.admob.android.ads.analytics.InstallReceiver: void <init>()>();
+
+        if $i0 == 61 goto label33;
+
+     label32:
+        virtualinvoke $r12.<com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 63 goto label32;
+
+     label33:
+        if $i0 == 64 goto label38;
+
+        $r13 = new com.nubee.coinpirates.common.AnalyticsService;
+
+        specialinvoke $r13.<com.nubee.coinpirates.common.AnalyticsService: void <init>()>();
+
+        virtualinvoke $r13.<com.nubee.coinpirates.common.AnalyticsService: void onCreate()>();
+
+        virtualinvoke $r13.<com.nubee.coinpirates.common.AnalyticsService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label34:
+        if $i0 == 65 goto label35;
+
+        if $i0 == 66 goto label34;
+
+     label35:
+        $r14 = virtualinvoke $r13.<com.nubee.coinpirates.common.AnalyticsService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label36:
+        $z0 = virtualinvoke $r13.<com.nubee.coinpirates.common.AnalyticsService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 68 goto label37;
+
+        virtualinvoke $r13.<com.nubee.coinpirates.common.AnalyticsService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 69 goto label36;
+
+     label37:
+        virtualinvoke $r13.<com.nubee.coinpirates.common.AnalyticsService: void onDestroy()>();
+
+     label38:
+        if $i0 == 70 goto label40;
+
+        $r15 = new com.android.AlarmReceiver;
+
+        specialinvoke $r15.<com.android.AlarmReceiver: void <init>()>();
+
+        if $i0 == 71 goto label40;
+
+     label39:
+        virtualinvoke $r15.<com.android.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 73 goto label39;
+
+     label40:
+        if $i0 == 74 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.6 seconds.
+[Spark] Solution found in 1.6 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.nubee.coinpirates.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: com.nubee.coinpirates.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.nubee.coinpirates.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 1 layout controls in file res/layout/image_tap_dialog.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.nubee.coinpirates.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.nubee.coinpirates.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.nubee.coinpirates.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.nubee.coinpirates.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: ImageButton is a phantom class!
+Warning: com.nubee.coinpirates.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Found 2 layout controls in file res/layout/login.xml
+Found 3 layout controls in file res/layout/main.xml
+Warning: RadioGroup is a phantom class!
+Warning: com.nubee.coinpirates.RadioGroup is a phantom class!
+Warning: android.view.RadioGroup is a phantom class!
+Warning: RadioButton is a phantom class!
+Warning: com.nubee.coinpirates.RadioButton is a phantom class!
+Warning: android.view.RadioButton is a phantom class!
+Warning: Spinner is a phantom class!
+Warning: com.nubee.coinpirates.Spinner is a phantom class!
+Warning: android.view.Spinner is a phantom class!
+Warning: CheckBox is a phantom class!
+Warning: com.nubee.coinpirates.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 4 layout controls in file res/layout/new_affilate_regist.xml
+Found 5 layout controls in file res/layout/progress_dialog_ex.xml
+Warning: WebView is a phantom class!
+Warning: com.nubee.coinpirates.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Warning: ProgressBar is a phantom class!
+Warning: com.nubee.coinpirates.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 6 layout controls in file res/layout/tapjoy_featured_app_web_view.xml
+Found 7 layout controls in file res/layout/tapjoy_offers_web_view.xml
+Found 8 layout controls in file res/layout/title.xml
+Found 9 layout controls in file res/layout/top.xml
+Found 10 layout controls in file res/layout/use_item_dialog.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: org.apache.commons.logging.LogFactory is a phantom class!
+Warning: org.apache.http.annotation.Immutable is a phantom class!
+Warning: org.apache.http.annotation.NotThreadSafe is a phantom class!
+Warning: org.apache.http.annotation.ThreadSafe is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.lang.ref.WeakReference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.tapjoy.TJCOffersWebView$TapjoyWebViewClient, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.nubee.coinpirates.common.BaseActivity, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.nubee.coinpirates.TopActivity $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.tapjoy.TJCOffersWebView $r2;
+        com.android.SMSReceiver $r3;
+        com.nubee.coinpirates.TitleActivity $r4;
+        com.tapjoy.TapjoyReferralTracker $r5;
+        com.tapjoy.TapjoyFeaturedAppWebView $r6;
+        com.admob.android.ads.AdMobActivity $r7;
+        com.admob.android.ads.view.AdMobWebView $r8;
+        com.admob.android.ads.q $r9;
+        com.admob.android.ads.y $r10;
+        com.nubee.coinpirates.game.GameActivity $r11;
+        com.nubee.coinpirates.common.BaseActivity$2 $r12;
+        com.nubee.coinpirates.game.GameRenderer $r13;
+        com.nubee.coinpirates.common.CommonConfig$1 $r14;
+        com.nubee.coinpirates.game.GameActivity$11 $r15;
+        com.nubee.coinpirates.common.CommonConfig$2 $r16;
+        com.tapjoy.TJCOffersWebView$TapjoyWebViewClient $r17, $r18;
+        com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1 $r19;
+        com.nubee.coinpirates.game.GameActivity$10 $r20;
+        com.nubee.coinpirates.game.GameActivity$6 $r21;
+        com.nubee.coinpirates.game.GameActivity$6$1 $r22;
+        com.android.MonitorService $r23;
+        android.os.IBinder $r24, $r30;
+        com.android.BootReceiver $r25;
+        com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver $r26, $r27;
+        com.admob.android.ads.analytics.InstallReceiver $r28;
+        com.nubee.coinpirates.common.AnalyticsService $r29;
+        com.android.AlarmReceiver $r31;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.nubee.coinpirates.TopActivity;
+
+        specialinvoke $r1.<com.nubee.coinpirates.TopActivity: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.TopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onResume()>();
+
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.nubee.coinpirates.TopActivity: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onPause()>();
+
+        if $i0 == 6 goto label03;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 8 goto label02;
+
+     label07:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label13;
+
+        $r2 = new com.tapjoy.TJCOffersWebView;
+
+        specialinvoke $r2.<com.tapjoy.TJCOffersWebView: void <init>()>();
+
+        if $i0 == 11 goto label13;
+
+        virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: void onResume()>();
+
+        if $i0 == 13 goto label12;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        $z1 = virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label11:
+        if $i0 == 15 goto label10;
+
+     label12:
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label13;
+
+        if $i0 == 18 goto label09;
+
+     label13:
+        if $i0 == 20 goto label15;
+
+        $r3 = new com.android.SMSReceiver;
+
+        specialinvoke $r3.<com.android.SMSReceiver: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+     label14:
+        virtualinvoke $r3.<com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label14;
+
+     label15:
+        if $i0 == 24 goto label24;
+
+        $r4 = new com.nubee.coinpirates.TitleActivity;
+
+        specialinvoke $r4.<com.nubee.coinpirates.TitleActivity: void <init>()>();
+
+        if $i0 == 25 goto label24;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+     label17:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onResume()>();
+
+        if $i0 == 27 goto label22;
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onClick(android.view.View)>(null);
+
+     label19:
+        if $i0 == 29 goto label20;
+
+        staticinvoke <com.nubee.coinpirates.TitleActivity: void <clinit>()>();
+
+     label20:
+        if $i0 == 30 goto label21;
+
+        $z2 = virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label21:
+        if $i0 == 31 goto label18;
+
+     label22:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onPause()>();
+
+        if $i0 == 32 goto label17;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 33 goto label23;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 34 goto label16;
+
+     label23:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onDestroy()>();
+
+     label24:
+        if $i0 == 36 goto label26;
+
+        $r5 = new com.tapjoy.TapjoyReferralTracker;
+
+        specialinvoke $r5.<com.tapjoy.TapjoyReferralTracker: void <init>()>();
+
+        if $i0 == 37 goto label26;
+
+     label25:
+        virtualinvoke $r5.<com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label25;
+
+     label26:
+        if $i0 == 40 goto label31;
+
+        $r6 = new com.tapjoy.TapjoyFeaturedAppWebView;
+
+        specialinvoke $r6.<com.tapjoy.TapjoyFeaturedAppWebView: void <init>()>();
+
+        if $i0 == 41 goto label31;
+
+        virtualinvoke $r6.<com.tapjoy.TapjoyFeaturedAppWebView: void onCreate(android.os.Bundle)>(null);
+
+     label27:
+        if $i0 == 43 goto label30;
+
+     label28:
+        if $i0 == 44 goto label29;
+
+        virtualinvoke $r6.<com.tapjoy.TapjoyFeaturedAppWebView: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label29:
+        if $i0 == 45 goto label28;
+
+     label30:
+        if $i0 == 46 goto label27;
+
+        if $i0 == 47 goto label31;
+
+        if $i0 == 48 goto label27;
+
+     label31:
+        if $i0 == 50 goto label40;
+
+        $r7 = new com.admob.android.ads.AdMobActivity;
+
+        specialinvoke $r7.<com.admob.android.ads.AdMobActivity: void <init>()>();
+
+        if $i0 == 51 goto label40;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdMobActivity: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        if $i0 == 53 goto label38;
+
+     label33:
+        $r8 = new com.admob.android.ads.view.AdMobWebView;
+
+        specialinvoke $r8.<com.admob.android.ads.view.AdMobWebView: void <init>(android.content.Context,boolean,java.lang.ref.WeakReference)>($r7, false, null);
+
+        if $i0 == 54 goto label34;
+
+        virtualinvoke $r8.<com.admob.android.ads.view.AdMobWebView: void onClick(android.view.View)>(null);
+
+     label34:
+        $r9 = new com.admob.android.ads.q;
+
+        specialinvoke $r9.<com.admob.android.ads.q: void <init>()>();
+
+        $r10 = new com.admob.android.ads.y;
+
+        specialinvoke $r10.<com.admob.android.ads.y: void <init>(android.app.Activity,java.lang.String,com.admob.android.ads.q)>($r7, "", $r9);
+
+        if $i0 == 55 goto label35;
+
+        $z3 = virtualinvoke $r10.<com.admob.android.ads.y: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label35:
+        if $i0 == 56 goto label36;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdMobActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label36:
+        if $i0 == 57 goto label37;
+
+        virtualinvoke $r7.<com.admob.android.ads.AdMobActivity: void finish()>();
+
+     label37:
+        if $i0 == 58 goto label33;
+
+     label38:
+        if $i0 == 59 goto label32;
+
+        if $i0 == 60 goto label39;
+
+        if $i0 == 61 goto label32;
+
+     label39:
+        virtualinvoke $r7.<com.admob.android.ads.AdMobActivity: void onDestroy()>();
+
+     label40:
+        if $i0 == 63 goto label57;
+
+        $r11 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r11.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        if $i0 == 64 goto label57;
+
+        virtualinvoke $r11.<com.nubee.coinpirates.game.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label41:
+        virtualinvoke $r11.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+        if $i0 == 65 goto label42;
+
+        virtualinvoke $r11.<com.nubee.coinpirates.game.GameActivity: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label42:
+        virtualinvoke $r11.<com.nubee.coinpirates.game.GameActivity: void onResume()>();
+
+        if $i0 == 66 goto label55;
+
+     label43:
+        $r12 = new com.nubee.coinpirates.common.BaseActivity$2;
+
+        specialinvoke $r12.<com.nubee.coinpirates.common.BaseActivity$2: void <init>(com.nubee.coinpirates.common.BaseActivity)>($r11);
+
+        if $i0 == 67 goto label44;
+
+        virtualinvoke $r12.<com.nubee.coinpirates.common.BaseActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label44:
+        $r13 = new com.nubee.coinpirates.game.GameRenderer;
+
+        specialinvoke $r13.<com.nubee.coinpirates.game.GameRenderer: void <init>(android.content.Context)>($r11);
+
+        if $i0 == 68 goto label45;
+
+        $z4 = virtualinvoke $r13.<com.nubee.coinpirates.game.GameRenderer: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label45:
+        $r14 = new com.nubee.coinpirates.common.CommonConfig$1;
+
+        specialinvoke $r14.<com.nubee.coinpirates.common.CommonConfig$1: void <init>(android.app.Activity)>($r11);
+
+        if $i0 == 69 goto label46;
+
+        virtualinvoke $r14.<com.nubee.coinpirates.common.CommonConfig$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label46:
+        if $i0 == 70 goto label47;
+
+        $z5 = virtualinvoke $r11.<com.nubee.coinpirates.game.GameActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label47:
+        if $i0 == 71 goto label48;
+
+        $z6 = virtualinvoke $r11.<com.nubee.coinpirates.game.GameActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label48:
+        if $i0 == 72 goto label49;
+
+        staticinvoke <com.nubee.coinpirates.game.GameActivity: void <clinit>()>();
+
+     label49:
+        $r15 = new com.nubee.coinpirates.game.GameActivity$11;
+
+        specialinvoke $r15.<com.nubee.coinpirates.game.GameActivity$11: void <init>(com.nubee.coinpirates.game.GameActivity)>($r11);
+
+        if $i0 == 73 goto label50;
+
+        virtualinvoke $r15.<com.nubee.coinpirates.game.GameActivity$11: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label50:
+        $r16 = new com.nubee.coinpirates.common.CommonConfig$2;
+
+        specialinvoke $r16.<com.nubee.coinpirates.common.CommonConfig$2: void <init>(android.app.Activity)>($r11);
+
+        if $i0 == 74 goto label51;
+
+        virtualinvoke $r16.<com.nubee.coinpirates.common.CommonConfig$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label51:
+        $r17 = null;
+
+        $r18 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient;
+
+        specialinvoke $r18.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient: void <init>(com.tapjoy.TJCOffersWebView,com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r2, $r17);
+
+        $r19 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1;
+
+        specialinvoke $r19.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void <init>(com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r18);
+
+        if $i0 == 75 goto label52;
+
+        virtualinvoke $r19.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label52:
+        $r20 = new com.nubee.coinpirates.game.GameActivity$10;
+
+        specialinvoke $r20.<com.nubee.coinpirates.game.GameActivity$10: void <init>(com.nubee.coinpirates.game.GameActivity,java.lang.String,java.lang.String,int)>($r11, "", "", 0);
+
+        if $i0 == 76 goto label53;
+
+        virtualinvoke $r20.<com.nubee.coinpirates.game.GameActivity$10: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label53:
+        $r21 = new com.nubee.coinpirates.game.GameActivity$6;
+
+        specialinvoke $r21.<com.nubee.coinpirates.game.GameActivity$6: void <init>(com.nubee.coinpirates.game.GameActivity)>($r11);
+
+        $r22 = new com.nubee.coinpirates.game.GameActivity$6$1;
+
+        specialinvoke $r22.<com.nubee.coinpirates.game.GameActivity$6$1: void <init>(com.nubee.coinpirates.game.GameActivity$6)>($r21);
+
+        if $i0 == 77 goto label54;
+
+        virtualinvoke $r22.<com.nubee.coinpirates.game.GameActivity$6$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label54:
+        if $i0 == 78 goto label43;
+
+     label55:
+        virtualinvoke $r11.<com.nubee.coinpirates.game.GameActivity: void onPause()>();
+
+        virtualinvoke $r11.<com.nubee.coinpirates.game.GameActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 79 goto label42;
+
+        virtualinvoke $r11.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 80 goto label56;
+
+        virtualinvoke $r11.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 81 goto label41;
+
+     label56:
+        virtualinvoke $r11.<com.nubee.coinpirates.game.GameActivity: void onDestroy()>();
+
+     label57:
+        if $i0 == 83 goto label62;
+
+        $r23 = new com.android.MonitorService;
+
+        specialinvoke $r23.<com.android.MonitorService: void <init>()>();
+
+        virtualinvoke $r23.<com.android.MonitorService: void onCreate()>();
+
+        virtualinvoke $r23.<com.android.MonitorService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label58:
+        if $i0 == 84 goto label59;
+
+        if $i0 == 85 goto label58;
+
+     label59:
+        $r24 = virtualinvoke $r23.<com.android.MonitorService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label60:
+        if $i0 == 87 goto label61;
+
+        if $i0 == 88 goto label60;
+
+     label61:
+        virtualinvoke $r23.<com.android.MonitorService: void onDestroy()>();
+
+     label62:
+        if $i0 == 89 goto label64;
+
+        $r25 = new com.android.BootReceiver;
+
+        specialinvoke $r25.<com.android.BootReceiver: void <init>()>();
+
+        if $i0 == 90 goto label64;
+
+     label63:
+        virtualinvoke $r25.<com.android.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 92 goto label63;
+
+     label64:
+        if $i0 == 93 goto label66;
+
+        $r26 = null;
+
+        $r27 = new com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver;
+
+        specialinvoke $r27.<com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver: void <init>(com.nubee.coinpirates.common.BaseActivity,com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver)>(null, $r26);
+
+        if $i0 == 94 goto label66;
+
+     label65:
+        virtualinvoke $r27.<com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 96 goto label65;
+
+     label66:
+        if $i0 == 97 goto label68;
+
+        $r28 = new com.admob.android.ads.analytics.InstallReceiver;
+
+        specialinvoke $r28.<com.admob.android.ads.analytics.InstallReceiver: void <init>()>();
+
+        if $i0 == 98 goto label68;
+
+     label67:
+        virtualinvoke $r28.<com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 100 goto label67;
+
+     label68:
+        if $i0 == 101 goto label73;
+
+        $r29 = new com.nubee.coinpirates.common.AnalyticsService;
+
+        specialinvoke $r29.<com.nubee.coinpirates.common.AnalyticsService: void <init>()>();
+
+        virtualinvoke $r29.<com.nubee.coinpirates.common.AnalyticsService: void onCreate()>();
+
+        virtualinvoke $r29.<com.nubee.coinpirates.common.AnalyticsService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label69:
+        if $i0 == 102 goto label70;
+
+        if $i0 == 103 goto label69;
+
+     label70:
+        $r30 = virtualinvoke $r29.<com.nubee.coinpirates.common.AnalyticsService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label71:
+        $z7 = virtualinvoke $r29.<com.nubee.coinpirates.common.AnalyticsService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 105 goto label72;
+
+        virtualinvoke $r29.<com.nubee.coinpirates.common.AnalyticsService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 106 goto label71;
+
+     label72:
+        virtualinvoke $r29.<com.nubee.coinpirates.common.AnalyticsService: void onDestroy()>();
+
+     label73:
+        if $i0 == 107 goto label75;
+
+        $r31 = new com.android.AlarmReceiver;
+
+        specialinvoke $r31.<com.android.AlarmReceiver: void <init>()>();
+
+        if $i0 == 108 goto label75;
+
+     label74:
+        virtualinvoke $r31.<com.android.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 110 goto label74;
+
+     label75:
+        if $i0 == 111 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Running incremental callback analysis for 13 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: org.apache.commons.logging.LogFactory is a phantom class!
+Warning: org.apache.http.annotation.Immutable is a phantom class!
+Warning: org.apache.http.annotation.NotThreadSafe is a phantom class!
+Warning: org.apache.http.annotation.ThreadSafe is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.tapjoy.TJCOffersWebView$TapjoyWebViewClient, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.lang.ref.WeakReference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.tapjoy.TJCOffersWebView$TapjoyWebViewClient, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.nubee.coinpirates.common.BaseActivity, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.nubee.coinpirates.TopActivity $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.tapjoy.TJCOffersWebView $r2;
+        com.android.SMSReceiver $r3;
+        com.nubee.coinpirates.TitleActivity $r4;
+        com.nubee.coinpirates.game.GameActivity $r5, $r7, $r14, $r24;
+        com.nubee.coinpirates.game.GameActivity$11 $r6, $r25;
+        com.nubee.coinpirates.game.GameActivity$6 $r8, $r26;
+        com.nubee.coinpirates.game.GameActivity$6$1 $r9, $r27;
+        com.nubee.coinpirates.common.BaseActivity$2 $r10, $r29;
+        com.tapjoy.TJCOffersWebView$TapjoyWebViewClient $r11, $r12, $r30, $r31;
+        com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1 $r13, $r32;
+        com.nubee.coinpirates.game.GameActivity$10 $r15, $r33;
+        com.nubee.coinpirates.common.CommonConfig$2 $r16, $r34;
+        com.nubee.coinpirates.common.CommonConfig$1 $r17, $r35;
+        com.tapjoy.TapjoyReferralTracker $r18;
+        com.tapjoy.TapjoyFeaturedAppWebView $r19;
+        com.admob.android.ads.AdMobActivity $r20;
+        com.admob.android.ads.q $r21;
+        com.admob.android.ads.y $r22;
+        com.admob.android.ads.view.AdMobWebView $r23;
+        com.nubee.coinpirates.game.GameRenderer $r28;
+        com.android.MonitorService $r36;
+        android.os.IBinder $r37, $r43;
+        com.android.BootReceiver $r38;
+        com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver $r39, $r40;
+        com.admob.android.ads.analytics.InstallReceiver $r41;
+        com.nubee.coinpirates.common.AnalyticsService $r42;
+        com.android.AlarmReceiver $r44;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.nubee.coinpirates.TopActivity;
+
+        specialinvoke $r1.<com.nubee.coinpirates.TopActivity: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.TopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onResume()>();
+
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.nubee.coinpirates.TopActivity: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onPause()>();
+
+        if $i0 == 6 goto label03;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 8 goto label02;
+
+     label07:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label13;
+
+        $r2 = new com.tapjoy.TJCOffersWebView;
+
+        specialinvoke $r2.<com.tapjoy.TJCOffersWebView: void <init>()>();
+
+        if $i0 == 11 goto label13;
+
+        virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: void onResume()>();
+
+        if $i0 == 13 goto label12;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        $z1 = virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label11:
+        if $i0 == 15 goto label10;
+
+     label12:
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label13;
+
+        if $i0 == 18 goto label09;
+
+     label13:
+        if $i0 == 20 goto label15;
+
+        $r3 = new com.android.SMSReceiver;
+
+        specialinvoke $r3.<com.android.SMSReceiver: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+     label14:
+        virtualinvoke $r3.<com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label14;
+
+     label15:
+        if $i0 == 24 goto label31;
+
+        $r4 = new com.nubee.coinpirates.TitleActivity;
+
+        specialinvoke $r4.<com.nubee.coinpirates.TitleActivity: void <init>()>();
+
+        if $i0 == 25 goto label31;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+     label17:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onResume()>();
+
+        if $i0 == 27 goto label29;
+
+     label18:
+        if $i0 == 28 goto label19;
+
+        $z2 = virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label19:
+        $r5 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r5.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        $r6 = new com.nubee.coinpirates.game.GameActivity$11;
+
+        specialinvoke $r6.<com.nubee.coinpirates.game.GameActivity$11: void <init>(com.nubee.coinpirates.game.GameActivity)>($r5);
+
+        if $i0 == 29 goto label20;
+
+        virtualinvoke $r6.<com.nubee.coinpirates.game.GameActivity$11: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label20:
+        $r7 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r7.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        $r8 = new com.nubee.coinpirates.game.GameActivity$6;
+
+        specialinvoke $r8.<com.nubee.coinpirates.game.GameActivity$6: void <init>(com.nubee.coinpirates.game.GameActivity)>($r7);
+
+        $r9 = new com.nubee.coinpirates.game.GameActivity$6$1;
+
+        specialinvoke $r9.<com.nubee.coinpirates.game.GameActivity$6$1: void <init>(com.nubee.coinpirates.game.GameActivity$6)>($r8);
+
+        if $i0 == 30 goto label21;
+
+        virtualinvoke $r9.<com.nubee.coinpirates.game.GameActivity$6$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label21:
+        if $i0 == 31 goto label22;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onClick(android.view.View)>(null);
+
+     label22:
+        if $i0 == 32 goto label23;
+
+        staticinvoke <com.nubee.coinpirates.TitleActivity: void <clinit>()>();
+
+     label23:
+        $r10 = new com.nubee.coinpirates.common.BaseActivity$2;
+
+        specialinvoke $r10.<com.nubee.coinpirates.common.BaseActivity$2: void <init>(com.nubee.coinpirates.common.BaseActivity)>($r4);
+
+        if $i0 == 33 goto label24;
+
+        virtualinvoke $r10.<com.nubee.coinpirates.common.BaseActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label24:
+        $r11 = null;
+
+        $r12 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient;
+
+        specialinvoke $r12.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient: void <init>(com.tapjoy.TJCOffersWebView,com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r2, $r11);
+
+        $r13 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1;
+
+        specialinvoke $r13.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void <init>(com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r12);
+
+        if $i0 == 34 goto label25;
+
+        virtualinvoke $r13.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r14 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r14.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        $r15 = new com.nubee.coinpirates.game.GameActivity$10;
+
+        specialinvoke $r15.<com.nubee.coinpirates.game.GameActivity$10: void <init>(com.nubee.coinpirates.game.GameActivity,java.lang.String,java.lang.String,int)>($r14, "", "", 0);
+
+        if $i0 == 35 goto label26;
+
+        virtualinvoke $r15.<com.nubee.coinpirates.game.GameActivity$10: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label26:
+        $r16 = new com.nubee.coinpirates.common.CommonConfig$2;
+
+        specialinvoke $r16.<com.nubee.coinpirates.common.CommonConfig$2: void <init>(android.app.Activity)>($r4);
+
+        if $i0 == 36 goto label27;
+
+        virtualinvoke $r16.<com.nubee.coinpirates.common.CommonConfig$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r17 = new com.nubee.coinpirates.common.CommonConfig$1;
+
+        specialinvoke $r17.<com.nubee.coinpirates.common.CommonConfig$1: void <init>(android.app.Activity)>($r4);
+
+        if $i0 == 37 goto label28;
+
+        virtualinvoke $r17.<com.nubee.coinpirates.common.CommonConfig$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        if $i0 == 38 goto label18;
+
+     label29:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onPause()>();
+
+        if $i0 == 39 goto label17;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 40 goto label30;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 41 goto label16;
+
+     label30:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onDestroy()>();
+
+     label31:
+        if $i0 == 43 goto label33;
+
+        $r18 = new com.tapjoy.TapjoyReferralTracker;
+
+        specialinvoke $r18.<com.tapjoy.TapjoyReferralTracker: void <init>()>();
+
+        if $i0 == 44 goto label33;
+
+     label32:
+        virtualinvoke $r18.<com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 46 goto label32;
+
+     label33:
+        if $i0 == 47 goto label38;
+
+        $r19 = new com.tapjoy.TapjoyFeaturedAppWebView;
+
+        specialinvoke $r19.<com.tapjoy.TapjoyFeaturedAppWebView: void <init>()>();
+
+        if $i0 == 48 goto label38;
+
+        virtualinvoke $r19.<com.tapjoy.TapjoyFeaturedAppWebView: void onCreate(android.os.Bundle)>(null);
+
+     label34:
+        if $i0 == 50 goto label37;
+
+     label35:
+        if $i0 == 51 goto label36;
+
+        virtualinvoke $r19.<com.tapjoy.TapjoyFeaturedAppWebView: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label36:
+        if $i0 == 52 goto label35;
+
+     label37:
+        if $i0 == 53 goto label34;
+
+        if $i0 == 54 goto label38;
+
+        if $i0 == 55 goto label34;
+
+     label38:
+        if $i0 == 57 goto label47;
+
+        $r20 = new com.admob.android.ads.AdMobActivity;
+
+        specialinvoke $r20.<com.admob.android.ads.AdMobActivity: void <init>()>();
+
+        if $i0 == 58 goto label47;
+
+        virtualinvoke $r20.<com.admob.android.ads.AdMobActivity: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        if $i0 == 60 goto label45;
+
+     label40:
+        $r21 = new com.admob.android.ads.q;
+
+        specialinvoke $r21.<com.admob.android.ads.q: void <init>()>();
+
+        $r22 = new com.admob.android.ads.y;
+
+        specialinvoke $r22.<com.admob.android.ads.y: void <init>(android.app.Activity,java.lang.String,com.admob.android.ads.q)>($r20, "", $r21);
+
+        if $i0 == 61 goto label41;
+
+        $z3 = virtualinvoke $r22.<com.admob.android.ads.y: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label41:
+        if $i0 == 62 goto label42;
+
+        virtualinvoke $r20.<com.admob.android.ads.AdMobActivity: void finish()>();
+
+     label42:
+        if $i0 == 63 goto label43;
+
+        virtualinvoke $r20.<com.admob.android.ads.AdMobActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label43:
+        $r23 = new com.admob.android.ads.view.AdMobWebView;
+
+        specialinvoke $r23.<com.admob.android.ads.view.AdMobWebView: void <init>(android.content.Context,boolean,java.lang.ref.WeakReference)>($r20, false, null);
+
+        if $i0 == 64 goto label44;
+
+        virtualinvoke $r23.<com.admob.android.ads.view.AdMobWebView: void onClick(android.view.View)>(null);
+
+     label44:
+        if $i0 == 65 goto label40;
+
+     label45:
+        if $i0 == 66 goto label39;
+
+        if $i0 == 67 goto label46;
+
+        if $i0 == 68 goto label39;
+
+     label46:
+        virtualinvoke $r20.<com.admob.android.ads.AdMobActivity: void onDestroy()>();
+
+     label47:
+        if $i0 == 70 goto label64;
+
+        $r24 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        if $i0 == 71 goto label64;
+
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        virtualinvoke $r24.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+        if $i0 == 72 goto label49;
+
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label49:
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onResume()>();
+
+        if $i0 == 73 goto label62;
+
+     label50:
+        $r25 = new com.nubee.coinpirates.game.GameActivity$11;
+
+        specialinvoke $r25.<com.nubee.coinpirates.game.GameActivity$11: void <init>(com.nubee.coinpirates.game.GameActivity)>($r24);
+
+        if $i0 == 74 goto label51;
+
+        virtualinvoke $r25.<com.nubee.coinpirates.game.GameActivity$11: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label51:
+        if $i0 == 75 goto label52;
+
+        $z4 = virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label52:
+        if $i0 == 76 goto label53;
+
+        $z5 = virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label53:
+        if $i0 == 77 goto label54;
+
+        staticinvoke <com.nubee.coinpirates.game.GameActivity: void <clinit>()>();
+
+     label54:
+        $r26 = new com.nubee.coinpirates.game.GameActivity$6;
+
+        specialinvoke $r26.<com.nubee.coinpirates.game.GameActivity$6: void <init>(com.nubee.coinpirates.game.GameActivity)>($r24);
+
+        $r27 = new com.nubee.coinpirates.game.GameActivity$6$1;
+
+        specialinvoke $r27.<com.nubee.coinpirates.game.GameActivity$6$1: void <init>(com.nubee.coinpirates.game.GameActivity$6)>($r26);
+
+        if $i0 == 78 goto label55;
+
+        virtualinvoke $r27.<com.nubee.coinpirates.game.GameActivity$6$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label55:
+        $r28 = new com.nubee.coinpirates.game.GameRenderer;
+
+        specialinvoke $r28.<com.nubee.coinpirates.game.GameRenderer: void <init>(android.content.Context)>($r24);
+
+        if $i0 == 79 goto label56;
+
+        $z6 = virtualinvoke $r28.<com.nubee.coinpirates.game.GameRenderer: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label56:
+        $r29 = new com.nubee.coinpirates.common.BaseActivity$2;
+
+        specialinvoke $r29.<com.nubee.coinpirates.common.BaseActivity$2: void <init>(com.nubee.coinpirates.common.BaseActivity)>($r24);
+
+        if $i0 == 80 goto label57;
+
+        virtualinvoke $r29.<com.nubee.coinpirates.common.BaseActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label57:
+        $r30 = null;
+
+        $r31 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient;
+
+        specialinvoke $r31.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient: void <init>(com.tapjoy.TJCOffersWebView,com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r2, $r30);
+
+        $r32 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1;
+
+        specialinvoke $r32.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void <init>(com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r31);
+
+        if $i0 == 81 goto label58;
+
+        virtualinvoke $r32.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label58:
+        $r33 = new com.nubee.coinpirates.game.GameActivity$10;
+
+        specialinvoke $r33.<com.nubee.coinpirates.game.GameActivity$10: void <init>(com.nubee.coinpirates.game.GameActivity,java.lang.String,java.lang.String,int)>($r24, "", "", 0);
+
+        if $i0 == 82 goto label59;
+
+        virtualinvoke $r33.<com.nubee.coinpirates.game.GameActivity$10: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label59:
+        $r34 = new com.nubee.coinpirates.common.CommonConfig$2;
+
+        specialinvoke $r34.<com.nubee.coinpirates.common.CommonConfig$2: void <init>(android.app.Activity)>($r24);
+
+        if $i0 == 83 goto label60;
+
+        virtualinvoke $r34.<com.nubee.coinpirates.common.CommonConfig$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label60:
+        $r35 = new com.nubee.coinpirates.common.CommonConfig$1;
+
+        specialinvoke $r35.<com.nubee.coinpirates.common.CommonConfig$1: void <init>(android.app.Activity)>($r24);
+
+        if $i0 == 84 goto label61;
+
+        virtualinvoke $r35.<com.nubee.coinpirates.common.CommonConfig$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label61:
+        if $i0 == 85 goto label50;
+
+     label62:
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onPause()>();
+
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 86 goto label49;
+
+        virtualinvoke $r24.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 87 goto label63;
+
+        virtualinvoke $r24.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 88 goto label48;
+
+     label63:
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onDestroy()>();
+
+     label64:
+        if $i0 == 90 goto label69;
+
+        $r36 = new com.android.MonitorService;
+
+        specialinvoke $r36.<com.android.MonitorService: void <init>()>();
+
+        virtualinvoke $r36.<com.android.MonitorService: void onCreate()>();
+
+        virtualinvoke $r36.<com.android.MonitorService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label65:
+        if $i0 == 91 goto label66;
+
+        if $i0 == 92 goto label65;
+
+     label66:
+        $r37 = virtualinvoke $r36.<com.android.MonitorService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label67:
+        if $i0 == 94 goto label68;
+
+        if $i0 == 95 goto label67;
+
+     label68:
+        virtualinvoke $r36.<com.android.MonitorService: void onDestroy()>();
+
+     label69:
+        if $i0 == 96 goto label71;
+
+        $r38 = new com.android.BootReceiver;
+
+        specialinvoke $r38.<com.android.BootReceiver: void <init>()>();
+
+        if $i0 == 97 goto label71;
+
+     label70:
+        virtualinvoke $r38.<com.android.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 99 goto label70;
+
+     label71:
+        if $i0 == 100 goto label73;
+
+        $r39 = null;
+
+        $r40 = new com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver;
+
+        specialinvoke $r40.<com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver: void <init>(com.nubee.coinpirates.common.BaseActivity,com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver)>(null, $r39);
+
+        if $i0 == 101 goto label73;
+
+     label72:
+        virtualinvoke $r40.<com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 103 goto label72;
+
+     label73:
+        if $i0 == 104 goto label75;
+
+        $r41 = new com.admob.android.ads.analytics.InstallReceiver;
+
+        specialinvoke $r41.<com.admob.android.ads.analytics.InstallReceiver: void <init>()>();
+
+        if $i0 == 105 goto label75;
+
+     label74:
+        virtualinvoke $r41.<com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 107 goto label74;
+
+     label75:
+        if $i0 == 108 goto label80;
+
+        $r42 = new com.nubee.coinpirates.common.AnalyticsService;
+
+        specialinvoke $r42.<com.nubee.coinpirates.common.AnalyticsService: void <init>()>();
+
+        virtualinvoke $r42.<com.nubee.coinpirates.common.AnalyticsService: void onCreate()>();
+
+        virtualinvoke $r42.<com.nubee.coinpirates.common.AnalyticsService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label76:
+        if $i0 == 109 goto label77;
+
+        if $i0 == 110 goto label76;
+
+     label77:
+        $r43 = virtualinvoke $r42.<com.nubee.coinpirates.common.AnalyticsService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label78:
+        $z7 = virtualinvoke $r42.<com.nubee.coinpirates.common.AnalyticsService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 112 goto label79;
+
+        virtualinvoke $r42.<com.nubee.coinpirates.common.AnalyticsService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 113 goto label78;
+
+     label79:
+        virtualinvoke $r42.<com.nubee.coinpirates.common.AnalyticsService: void onDestroy()>();
+
+     label80:
+        if $i0 == 114 goto label82;
+
+        $r44 = new com.android.AlarmReceiver;
+
+        specialinvoke $r44.<com.android.AlarmReceiver: void <init>()>();
+
+        if $i0 == 115 goto label82;
+
+     label81:
+        virtualinvoke $r44.<com.android.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 117 goto label81;
+
+     label82:
+        if $i0 == 118 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 60 callback methods for 13 components
+Found {res/layout/use_item_dialog.xml=[2131296313 - android.widget.TextView, 2131296319 - android.widget.Button, 2131296316 - android.widget.ImageView, 2131296305 - android.widget.RelativeLayout, -1 - android.widget.ImageView, 2131296318 - android.widget.Button, 2131296317 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131296315 - android.widget.TextView, 2131296312 - android.widget.ImageView, -1 - android.widget.TextView, 2131296314 - android.widget.Spinner], res/layout/top.xml=[2131296276 - android.widget.LinearLayout, -1 - android.widget.RelativeLayout], res/layout/new_affilate_regist.xml=[2131296298 - android.widget.Spinner, 2131296284 - android.widget.EditText, 2131296294 - android.widget.RadioButton, 2131296293 - android.widget.RadioGroup, 2131296286 - android.widget.TextView, 2131296297 - android.widget.TextView, 2131296280 - android.widget.LinearLayout, 2131296282 - android.widget.LinearLayout, 2131296288 - android.widget.LinearLayout, 2131296290 - android.widget.EditText, 2131296292 - android.widget.TextView, 2131296299 - android.widget.LinearLayout, -1 - android.widget.ScrollView, 2131296279 - android.widget.TextView, 2131296283 - android.widget.TextView, -1 - android.widget.RelativeLayout, -1 - android.widget.LinearLayout, 2131296295 - android.widget.RadioButton, 2131296301 - android.widget.CheckBox, 2131296278 - android.widget.ImageView, 2131296291 - android.widget.LinearLayout, 2131296281 - android.widget.EditText, 2131296285 - android.widget.LinearLayout, 2131296300 - android.widget.TextView, 2131296296 - android.widget.LinearLayout, 2131296289 - android.widget.TextView, 2131296302 - android.widget.Button, 2131296287 - android.widget.EditText], res/layout/image_tap_dialog.xml=[2131296258 - android.widget.ScrollView, 2131296257 - android.widget.LinearLayout, 2131296259 - android.widget.ImageView, 2131296256 - android.widget.LinearLayout], res/layout/tapjoy_offers_web_view.xml=[2131296305 - android.widget.RelativeLayout, 2131296303 - android.widget.LinearLayout, 2131296309 - android.widget.ProgressBar, 2131296308 - android.webkit.WebView], res/layout/main.xml=[2131296276 - android.widget.LinearLayout, -1 - android.widget.RelativeLayout, 2131296277 - com.admob.android.ads.AdView], res/layout/progress_dialog_ex.xml=[2131296303 - android.widget.LinearLayout, 2131296304 - android.widget.ImageView], res/layout/login.xml=[2131296262 - android.widget.LinearLayout, 2131296273 - android.widget.ImageButton, 2131296272 - android.widget.ImageButton, 2131296263 - android.widget.LinearLayout, 2131296265 - android.widget.EditText, -1 - android.widget.RelativeLayout, 2131296269 - android.widget.Button, 2131296267 - android.widget.EditText, 2131296274 - android.widget.LinearLayout, 2131296270 - android.widget.LinearLayout, 2131296271 - android.widget.LinearLayout, 2131296264 - android.widget.TextView, 2131296268 - android.widget.LinearLayout, 2131296275 - android.widget.TextView, 2131296260 - android.widget.LinearLayout, 2131296266 - android.widget.TextView, 2131296261 - android.widget.ImageView], res/layout/tapjoy_featured_app_web_view.xml=[2131296307 - android.widget.ProgressBar, 2131296305 - android.widget.RelativeLayout, 2131296303 - android.widget.LinearLayout, 2131296306 - android.webkit.WebView], res/layout/title.xml=[-1 - android.widget.RelativeLayout, -1 - android.widget.LinearLayout, 2131296310 - android.widget.RelativeLayout, 2131296311 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 60 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4d57ea2f19044c25be8ae529d08c18d1f54b797215120cb34f62ed6bf916d3c6.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: org.apache.commons.logging.LogFactory is a phantom class!
+Warning: org.apache.http.annotation.Immutable is a phantom class!
+Warning: org.apache.http.annotation.NotThreadSafe is a phantom class!
+Warning: org.apache.http.annotation.ThreadSafe is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.tapjoy.TJCOffersWebView$TapjoyWebViewClient, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.lang.ref.WeakReference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.tapjoy.TJCOffersWebView$TapjoyWebViewClient, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.nubee.coinpirates.common.BaseActivity, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.nubee.coinpirates.TopActivity $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.tapjoy.TJCOffersWebView $r2;
+        com.android.SMSReceiver $r3;
+        com.nubee.coinpirates.TitleActivity $r4;
+        com.tapjoy.TJCOffersWebView$TapjoyWebViewClient $r5, $r6, $r25, $r26;
+        com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1 $r7, $r27;
+        com.nubee.coinpirates.game.GameActivity $r8, $r11, $r16, $r24;
+        com.nubee.coinpirates.game.GameActivity$6 $r9, $r28;
+        com.nubee.coinpirates.game.GameActivity$6$1 $r10, $r29;
+        com.nubee.coinpirates.game.GameActivity$11 $r12, $r30;
+        com.nubee.coinpirates.common.CommonConfig$1 $r13, $r31;
+        com.nubee.coinpirates.common.BaseActivity$2 $r14, $r33;
+        com.nubee.coinpirates.common.CommonConfig$2 $r15, $r35;
+        com.nubee.coinpirates.game.GameActivity$10 $r17, $r36;
+        com.tapjoy.TapjoyReferralTracker $r18;
+        com.tapjoy.TapjoyFeaturedAppWebView $r19;
+        com.admob.android.ads.AdMobActivity $r20;
+        com.admob.android.ads.view.AdMobWebView $r21;
+        com.admob.android.ads.q $r22;
+        com.admob.android.ads.y $r23;
+        com.admob.android.ads.AdView $r32;
+        com.nubee.coinpirates.game.GameRenderer $r34;
+        com.android.MonitorService $r37;
+        android.os.IBinder $r38, $r44;
+        com.android.BootReceiver $r39;
+        com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver $r40, $r41;
+        com.admob.android.ads.analytics.InstallReceiver $r42;
+        com.nubee.coinpirates.common.AnalyticsService $r43;
+        com.android.AlarmReceiver $r45;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.nubee.coinpirates.TopActivity;
+
+        specialinvoke $r1.<com.nubee.coinpirates.TopActivity: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.TopActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onResume()>();
+
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.nubee.coinpirates.TopActivity: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onPause()>();
+
+        if $i0 == 6 goto label03;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 8 goto label02;
+
+     label07:
+        virtualinvoke $r1.<com.nubee.coinpirates.common.BaseActivity: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label13;
+
+        $r2 = new com.tapjoy.TJCOffersWebView;
+
+        specialinvoke $r2.<com.tapjoy.TJCOffersWebView: void <init>()>();
+
+        if $i0 == 11 goto label13;
+
+        virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: void onResume()>();
+
+        if $i0 == 13 goto label12;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        $z1 = virtualinvoke $r2.<com.tapjoy.TJCOffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label11:
+        if $i0 == 15 goto label10;
+
+     label12:
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label13;
+
+        if $i0 == 18 goto label09;
+
+     label13:
+        if $i0 == 20 goto label15;
+
+        $r3 = new com.android.SMSReceiver;
+
+        specialinvoke $r3.<com.android.SMSReceiver: void <init>()>();
+
+        if $i0 == 21 goto label15;
+
+     label14:
+        virtualinvoke $r3.<com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label14;
+
+     label15:
+        if $i0 == 24 goto label31;
+
+        $r4 = new com.nubee.coinpirates.TitleActivity;
+
+        specialinvoke $r4.<com.nubee.coinpirates.TitleActivity: void <init>()>();
+
+        if $i0 == 25 goto label31;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+     label17:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onResume()>();
+
+        if $i0 == 27 goto label29;
+
+     label18:
+        $r5 = null;
+
+        $r6 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient;
+
+        specialinvoke $r6.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient: void <init>(com.tapjoy.TJCOffersWebView,com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r2, $r5);
+
+        $r7 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1;
+
+        specialinvoke $r7.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void <init>(com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r6);
+
+        if $i0 == 28 goto label19;
+
+        virtualinvoke $r7.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r8 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r8.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        $r9 = new com.nubee.coinpirates.game.GameActivity$6;
+
+        specialinvoke $r9.<com.nubee.coinpirates.game.GameActivity$6: void <init>(com.nubee.coinpirates.game.GameActivity)>($r8);
+
+        $r10 = new com.nubee.coinpirates.game.GameActivity$6$1;
+
+        specialinvoke $r10.<com.nubee.coinpirates.game.GameActivity$6$1: void <init>(com.nubee.coinpirates.game.GameActivity$6)>($r9);
+
+        if $i0 == 29 goto label20;
+
+        virtualinvoke $r10.<com.nubee.coinpirates.game.GameActivity$6$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label20:
+        $r11 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r11.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        $r12 = new com.nubee.coinpirates.game.GameActivity$11;
+
+        specialinvoke $r12.<com.nubee.coinpirates.game.GameActivity$11: void <init>(com.nubee.coinpirates.game.GameActivity)>($r11);
+
+        if $i0 == 30 goto label21;
+
+        virtualinvoke $r12.<com.nubee.coinpirates.game.GameActivity$11: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label21:
+        $r13 = new com.nubee.coinpirates.common.CommonConfig$1;
+
+        specialinvoke $r13.<com.nubee.coinpirates.common.CommonConfig$1: void <init>(android.app.Activity)>($r4);
+
+        if $i0 == 31 goto label22;
+
+        virtualinvoke $r13.<com.nubee.coinpirates.common.CommonConfig$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label22:
+        $r14 = new com.nubee.coinpirates.common.BaseActivity$2;
+
+        specialinvoke $r14.<com.nubee.coinpirates.common.BaseActivity$2: void <init>(com.nubee.coinpirates.common.BaseActivity)>($r4);
+
+        if $i0 == 32 goto label23;
+
+        virtualinvoke $r14.<com.nubee.coinpirates.common.BaseActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        $r15 = new com.nubee.coinpirates.common.CommonConfig$2;
+
+        specialinvoke $r15.<com.nubee.coinpirates.common.CommonConfig$2: void <init>(android.app.Activity)>($r4);
+
+        if $i0 == 33 goto label24;
+
+        virtualinvoke $r15.<com.nubee.coinpirates.common.CommonConfig$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label24:
+        if $i0 == 34 goto label25;
+
+        $z2 = virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label25:
+        if $i0 == 35 goto label26;
+
+        staticinvoke <com.nubee.coinpirates.TitleActivity: void <clinit>()>();
+
+     label26:
+        if $i0 == 36 goto label27;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onClick(android.view.View)>(null);
+
+     label27:
+        $r16 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r16.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        $r17 = new com.nubee.coinpirates.game.GameActivity$10;
+
+        specialinvoke $r17.<com.nubee.coinpirates.game.GameActivity$10: void <init>(com.nubee.coinpirates.game.GameActivity,java.lang.String,java.lang.String,int)>($r16, "", "", 0);
+
+        if $i0 == 37 goto label28;
+
+        virtualinvoke $r17.<com.nubee.coinpirates.game.GameActivity$10: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        if $i0 == 38 goto label18;
+
+     label29:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onPause()>();
+
+        if $i0 == 39 goto label17;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 40 goto label30;
+
+        virtualinvoke $r4.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 41 goto label16;
+
+     label30:
+        virtualinvoke $r4.<com.nubee.coinpirates.TitleActivity: void onDestroy()>();
+
+     label31:
+        if $i0 == 43 goto label33;
+
+        $r18 = new com.tapjoy.TapjoyReferralTracker;
+
+        specialinvoke $r18.<com.tapjoy.TapjoyReferralTracker: void <init>()>();
+
+        if $i0 == 44 goto label33;
+
+     label32:
+        virtualinvoke $r18.<com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 46 goto label32;
+
+     label33:
+        if $i0 == 47 goto label38;
+
+        $r19 = new com.tapjoy.TapjoyFeaturedAppWebView;
+
+        specialinvoke $r19.<com.tapjoy.TapjoyFeaturedAppWebView: void <init>()>();
+
+        if $i0 == 48 goto label38;
+
+        virtualinvoke $r19.<com.tapjoy.TapjoyFeaturedAppWebView: void onCreate(android.os.Bundle)>(null);
+
+     label34:
+        if $i0 == 50 goto label37;
+
+     label35:
+        if $i0 == 51 goto label36;
+
+        virtualinvoke $r19.<com.tapjoy.TapjoyFeaturedAppWebView: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label36:
+        if $i0 == 52 goto label35;
+
+     label37:
+        if $i0 == 53 goto label34;
+
+        if $i0 == 54 goto label38;
+
+        if $i0 == 55 goto label34;
+
+     label38:
+        if $i0 == 57 goto label47;
+
+        $r20 = new com.admob.android.ads.AdMobActivity;
+
+        specialinvoke $r20.<com.admob.android.ads.AdMobActivity: void <init>()>();
+
+        if $i0 == 58 goto label47;
+
+        virtualinvoke $r20.<com.admob.android.ads.AdMobActivity: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        if $i0 == 60 goto label45;
+
+     label40:
+        $r21 = new com.admob.android.ads.view.AdMobWebView;
+
+        specialinvoke $r21.<com.admob.android.ads.view.AdMobWebView: void <init>(android.content.Context,boolean,java.lang.ref.WeakReference)>($r20, false, null);
+
+        if $i0 == 61 goto label41;
+
+        virtualinvoke $r21.<com.admob.android.ads.view.AdMobWebView: void onClick(android.view.View)>(null);
+
+     label41:
+        $r22 = new com.admob.android.ads.q;
+
+        specialinvoke $r22.<com.admob.android.ads.q: void <init>()>();
+
+        $r23 = new com.admob.android.ads.y;
+
+        specialinvoke $r23.<com.admob.android.ads.y: void <init>(android.app.Activity,java.lang.String,com.admob.android.ads.q)>($r20, "", $r22);
+
+        if $i0 == 62 goto label42;
+
+        $z3 = virtualinvoke $r23.<com.admob.android.ads.y: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label42:
+        if $i0 == 63 goto label43;
+
+        virtualinvoke $r20.<com.admob.android.ads.AdMobActivity: void finish()>();
+
+     label43:
+        if $i0 == 64 goto label44;
+
+        virtualinvoke $r20.<com.admob.android.ads.AdMobActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label44:
+        if $i0 == 65 goto label40;
+
+     label45:
+        if $i0 == 66 goto label39;
+
+        if $i0 == 67 goto label46;
+
+        if $i0 == 68 goto label39;
+
+     label46:
+        virtualinvoke $r20.<com.admob.android.ads.AdMobActivity: void onDestroy()>();
+
+     label47:
+        if $i0 == 70 goto label73;
+
+        $r24 = new com.nubee.coinpirates.game.GameActivity;
+
+        specialinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void <init>()>();
+
+        if $i0 == 71 goto label73;
+
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        virtualinvoke $r24.<com.nubee.coinpirates.common.BaseActivity: void onStart()>();
+
+        if $i0 == 72 goto label49;
+
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label49:
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onResume()>();
+
+        if $i0 == 73 goto label71;
+
+     label50:
+        $r25 = null;
+
+        $r26 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient;
+
+        specialinvoke $r26.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient: void <init>(com.tapjoy.TJCOffersWebView,com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r2, $r25);
+
+        $r27 = new com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1;
+
+        specialinvoke $r27.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void <init>(com.tapjoy.TJCOffersWebView$TapjoyWebViewClient)>($r26);
+
+        if $i0 == 74 goto label51;
+
+        virtualinvoke $r27.<com.tapjoy.TJCOffersWebView$TapjoyWebViewClient$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label51:
+        $r28 = new com.nubee.coinpirates.game.GameActivity$6;
+
+        specialinvoke $r28.<com.nubee.coinpirates.game.GameActivity$6: void <init>(com.nubee.coinpirates.game.GameActivity)>($r24);
+
+        $r29 = new com.nubee.coinpirates.game.GameActivity$6$1;
+
+        specialinvoke $r29.<com.nubee.coinpirates.game.GameActivity$6$1: void <init>(com.nubee.coinpirates.game.GameActivity$6)>($r28);
+
+        if $i0 == 75 goto label52;
+
+        virtualinvoke $r29.<com.nubee.coinpirates.game.GameActivity$6$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label52:
+        $r30 = new com.nubee.coinpirates.game.GameActivity$11;
+
+        specialinvoke $r30.<com.nubee.coinpirates.game.GameActivity$11: void <init>(com.nubee.coinpirates.game.GameActivity)>($r24);
+
+        if $i0 == 76 goto label53;
+
+        virtualinvoke $r30.<com.nubee.coinpirates.game.GameActivity$11: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label53:
+        $r31 = new com.nubee.coinpirates.common.CommonConfig$1;
+
+        specialinvoke $r31.<com.nubee.coinpirates.common.CommonConfig$1: void <init>(android.app.Activity)>($r24);
+
+        if $i0 == 77 goto label54;
+
+        virtualinvoke $r31.<com.nubee.coinpirates.common.CommonConfig$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label54:
+        $r32 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r32.<com.admob.android.ads.AdView: void <init>(android.app.Activity)>($r24);
+
+        if $i0 == 78 goto label55;
+
+        staticinvoke <com.admob.android.ads.AdView: void <clinit>()>();
+
+     label55:
+        if $i0 == 79 goto label56;
+
+        virtualinvoke $r32.<com.admob.android.ads.AdView: void setVisibility(int)>(0);
+
+     label56:
+        if $i0 == 80 goto label57;
+
+        virtualinvoke $r32.<com.admob.android.ads.AdView: void onWindowVisibilityChanged(int)>(0);
+
+     label57:
+        if $i0 == 81 goto label58;
+
+        virtualinvoke $r32.<com.admob.android.ads.AdView: void setBackgroundColor(int)>(0);
+
+     label58:
+        if $i0 == 82 goto label59;
+
+        virtualinvoke $r32.<com.admob.android.ads.AdView: void onWindowFocusChanged(boolean)>(false);
+
+     label59:
+        if $i0 == 83 goto label60;
+
+        virtualinvoke $r32.<com.admob.android.ads.AdView: void onAttachedToWindow()>();
+
+     label60:
+        if $i0 == 84 goto label61;
+
+        virtualinvoke $r32.<com.admob.android.ads.AdView: void setEnabled(boolean)>(false);
+
+     label61:
+        if $i0 == 85 goto label62;
+
+        virtualinvoke $r32.<com.admob.android.ads.AdView: void onDetachedFromWindow()>();
+
+     label62:
+        if $i0 == 86 goto label63;
+
+        virtualinvoke $r32.<com.admob.android.ads.AdView: void onMeasure(int,int)>(0, 0);
+
+     label63:
+        $r33 = new com.nubee.coinpirates.common.BaseActivity$2;
+
+        specialinvoke $r33.<com.nubee.coinpirates.common.BaseActivity$2: void <init>(com.nubee.coinpirates.common.BaseActivity)>($r24);
+
+        if $i0 == 87 goto label64;
+
+        virtualinvoke $r33.<com.nubee.coinpirates.common.BaseActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label64:
+        $r34 = new com.nubee.coinpirates.game.GameRenderer;
+
+        specialinvoke $r34.<com.nubee.coinpirates.game.GameRenderer: void <init>(android.content.Context)>($r24);
+
+        if $i0 == 88 goto label65;
+
+        $z4 = virtualinvoke $r34.<com.nubee.coinpirates.game.GameRenderer: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label65:
+        $r35 = new com.nubee.coinpirates.common.CommonConfig$2;
+
+        specialinvoke $r35.<com.nubee.coinpirates.common.CommonConfig$2: void <init>(android.app.Activity)>($r24);
+
+        if $i0 == 89 goto label66;
+
+        virtualinvoke $r35.<com.nubee.coinpirates.common.CommonConfig$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label66:
+        if $i0 == 90 goto label67;
+
+        $z5 = virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label67:
+        if $i0 == 91 goto label68;
+
+        $z6 = virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label68:
+        if $i0 == 92 goto label69;
+
+        staticinvoke <com.nubee.coinpirates.game.GameActivity: void <clinit>()>();
+
+     label69:
+        $r36 = new com.nubee.coinpirates.game.GameActivity$10;
+
+        specialinvoke $r36.<com.nubee.coinpirates.game.GameActivity$10: void <init>(com.nubee.coinpirates.game.GameActivity,java.lang.String,java.lang.String,int)>($r24, "", "", 0);
+
+        if $i0 == 93 goto label70;
+
+        virtualinvoke $r36.<com.nubee.coinpirates.game.GameActivity$10: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label70:
+        if $i0 == 94 goto label50;
+
+     label71:
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onPause()>();
+
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 95 goto label49;
+
+        virtualinvoke $r24.<com.nubee.coinpirates.common.BaseActivity: void onStop()>();
+
+        if $i0 == 96 goto label72;
+
+        virtualinvoke $r24.<com.nubee.coinpirates.common.BaseActivity: void onRestart()>();
+
+        if $i0 == 97 goto label48;
+
+     label72:
+        virtualinvoke $r24.<com.nubee.coinpirates.game.GameActivity: void onDestroy()>();
+
+     label73:
+        if $i0 == 99 goto label78;
+
+        $r37 = new com.android.MonitorService;
+
+        specialinvoke $r37.<com.android.MonitorService: void <init>()>();
+
+        virtualinvoke $r37.<com.android.MonitorService: void onCreate()>();
+
+        virtualinvoke $r37.<com.android.MonitorService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label74:
+        if $i0 == 100 goto label75;
+
+        if $i0 == 101 goto label74;
+
+     label75:
+        $r38 = virtualinvoke $r37.<com.android.MonitorService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label76:
+        if $i0 == 103 goto label77;
+
+        if $i0 == 104 goto label76;
+
+     label77:
+        virtualinvoke $r37.<com.android.MonitorService: void onDestroy()>();
+
+     label78:
+        if $i0 == 105 goto label80;
+
+        $r39 = new com.android.BootReceiver;
+
+        specialinvoke $r39.<com.android.BootReceiver: void <init>()>();
+
+        if $i0 == 106 goto label80;
+
+     label79:
+        virtualinvoke $r39.<com.android.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 108 goto label79;
+
+     label80:
+        if $i0 == 109 goto label82;
+
+        $r40 = null;
+
+        $r41 = new com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver;
+
+        specialinvoke $r41.<com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver: void <init>(com.nubee.coinpirates.common.BaseActivity,com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver)>(null, $r40);
+
+        if $i0 == 110 goto label82;
+
+     label81:
+        virtualinvoke $r41.<com.nubee.coinpirates.common.BaseActivity$ActivityServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 112 goto label81;
+
+     label82:
+        if $i0 == 113 goto label84;
+
+        $r42 = new com.admob.android.ads.analytics.InstallReceiver;
+
+        specialinvoke $r42.<com.admob.android.ads.analytics.InstallReceiver: void <init>()>();
+
+        if $i0 == 114 goto label84;
+
+     label83:
+        virtualinvoke $r42.<com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 116 goto label83;
+
+     label84:
+        if $i0 == 117 goto label89;
+
+        $r43 = new com.nubee.coinpirates.common.AnalyticsService;
+
+        specialinvoke $r43.<com.nubee.coinpirates.common.AnalyticsService: void <init>()>();
+
+        virtualinvoke $r43.<com.nubee.coinpirates.common.AnalyticsService: void onCreate()>();
+
+        virtualinvoke $r43.<com.nubee.coinpirates.common.AnalyticsService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label85:
+        if $i0 == 118 goto label86;
+
+        if $i0 == 119 goto label85;
+
+     label86:
+        $r44 = virtualinvoke $r43.<com.nubee.coinpirates.common.AnalyticsService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label87:
+        $z7 = virtualinvoke $r43.<com.nubee.coinpirates.common.AnalyticsService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 121 goto label88;
+
+        virtualinvoke $r43.<com.nubee.coinpirates.common.AnalyticsService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 122 goto label87;
+
+     label88:
+        virtualinvoke $r43.<com.nubee.coinpirates.common.AnalyticsService: void onDestroy()>();
+
+     label89:
+        if $i0 == 123 goto label91;
+
+        $r45 = new com.android.AlarmReceiver;
+
+        specialinvoke $r45.<com.android.AlarmReceiver: void <init>()>();
+
+        if $i0 == 124 goto label91;
+
+     label90:
+        virtualinvoke $r45.<com.android.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 126 goto label90;
+
+     label91:
+        if $i0 == 127 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.4 seconds.
+[Spark] Solution found in 1.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.508159125 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.145628267 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 4313 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 153 sources and 237 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 12511
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 40138
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 127348 forward and 33370 backward edges solved, processing 77 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 77 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 39 with task id 38
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 40 with task id 39
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 41 with task id 40
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 42 with task id 41
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 43 with task id 42
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 44 with task id 43
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 45 with task id 44
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 46 with task id 45
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 47 with task id 46
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 48 with task id 47
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 49 with task id 48
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 50 with task id 49
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 51 with task id 50
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 52 with task id 51
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 53 with task id 52
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 54 with task id 53
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 55 with task id 54
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 56 with task id 55
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 57 with task id 56
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 58 with task id 57
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 59 with task id 58
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 60 with task id 59
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 61 with task id 60
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 62 with task id 61
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 63 with task id 62
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 64 with task id 63
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 65 with task id 64
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 66 with task id 65
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 67 with task id 66
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 68 with task id 67
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 69 with task id 68
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 70 with task id 69
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 71 with task id 70
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 72 with task id 71
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 73 with task id 72
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 74 with task id 73
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 75 with task id 74
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 76 with task id 75
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 77 with task id 76
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.011995403 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4) in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.i: boolean d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4) in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r3, null, null) in method <com.android.MonitorService: void SendRegSms()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null) in method <com.android.MonitorService: void setDefaultAPN(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, null, null) in method <com.android.MonitorService: int findAPNId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, null, null, null, null) in method <com.android.MonitorService: int addNewApn(com.android.ApnNode)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("InstallReferral", $r3) in method <com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.content.Intent: android.content.Intent setAction(java.lang.String)>("com.android.MonitorService") in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r7) in method <com.admob.android.ads.i: boolean d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r9.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r10, $r4) in method <com.android.MonitorService: void addBookmark(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.android.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r1) in method <com.admob.android.ads.b: void a(java.lang.StringBuilder,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.admob.android.ads.AdView: void setBackgroundColor(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r8 = virtualinvoke $r4.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3) in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) in method <com.android.MonitorService: java.lang.String GetRequest(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sender") in method <com.android.MonitorService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("body") in method <com.android.MonitorService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.u: void a(com.admob.android.ads.e,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMobSDK", $r0) in method <com.admob.android.ads.AdManager: void clientError(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MonitorService", $r18) in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<java.io.OutputStream: void write(byte[])>($r2) in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,byte[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r10) in method <com.android.MonitorService: java.lang.String GetRequest(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4) in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() in method <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Robert", $r4) in method <com.android.MonitorService: int addNewApn(com.android.ApnNode)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, null, null, null, null) in method <com.android.MonitorService: int addNewApn(com.android.ApnNode)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r3) in method <com.tapjoy.TapjoyConnect: void showOffers(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r18.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVICE_ID") in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.i: boolean d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.android.BootReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MyMonitor", $r1) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r0) in method <com.admob.android.ads.f: java.lang.String h()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() in method <com.admob.android.ads.f: java.lang.String h()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4) in method <com.admob.android.ads.q$1: void a(com.admob.android.ads.e)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>($r2, $r7) in method <com.android.MonitorService: void AccessRemote(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.AdView$d: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.admob.android.ads.AdView: void setBackgroundColor(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("content", $r1) in method <com.android.MonitorService: void AccessRemote(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) in method <com.android.MonitorService: java.lang.String GetRequest(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMobSDK", $r2) in method <com.admob.android.ads.AdManager: void setPublisherId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AdMobSDK", $r5, $r2) in method <com.admob.android.ads.q$1: void a(com.admob.android.ads.e,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r9) in method <com.admob.android.ads.analytics.InstallReceiver: void a(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r9) in method <com.admob.android.ads.analytics.InstallReceiver: void a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r11.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, null, null) in method <com.android.MonitorService: void HandleSmsCmd(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MonitorService", $r18) in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AdMobSDK", $r5, $r2) in method <com.admob.android.ads.u: void a(com.admob.android.ads.e,java.lang.Exception)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("uid", $r2) in method <com.android.MonitorService: void AccessRemote(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, null, null) in method <com.android.MonitorService: void HandleSmsFee(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r26.<java.net.URL: void <init>(java.lang.String)>($r5) in method <com.admob.android.ads.i: boolean d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.i: boolean d()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MyMonitor", $r1) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r11) in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.admob.android.ads.i: void <init>(java.lang.String,java.lang.String,java.lang.String,com.admob.android.ads.h,int,java.util.Map,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") in method <com.admob.android.ads.r: boolean a(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("content", $r4) in method <com.android.MonitorService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sender") in method <com.android.MonitorService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("body") in method <com.android.MonitorService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MyMonitor", $r1) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) in method <com.tapjoy.TapjoyLog: void i(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.tapjoy.TJCOffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r18.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVICE_ID") in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.tapjoy.TJCOffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.tapjoy.TJCOffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("FULLSCREEN_AD_URL") in method <com.tapjoy.TapjoyFeaturedAppWebView: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) in method <com.tapjoy.TapjoyURLConnection: java.lang.String connectToURL(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>() in method <com.tapjoy.TapjoyConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r2) in method <com.admob.android.ads.AdManager: void a(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.admob.android.ads.AdView: void setBackgroundColor(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MyMonitor", $r1) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMobSDK", $r2) in method <com.admob.android.ads.AdManager: void setInterstitialPublisherId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>($r1, $r2) in method <com.nubee.coinpirates.common.HttpRequestHelper: void setParameter(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.nubee.coinpirates.login.GuestLogin: java.lang.String getDeviceId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MonitorService", $r18) in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r18 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>($i2) in method <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r11 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r3, $r8, null, null) in method <com.android.MonitorService: void addBookmark(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") in method <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("IMSI", $r2) in method <com.android.MonitorService$2: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("uid", $r4) in method <com.android.MonitorService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.MonitorService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5) in method <com.admob.android.ads.AdManager: void a(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.admob.android.ads.AdView: void setBackgroundColor(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink virtualinvoke $r4.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r3, null, null), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, null, null, null) (in <com.android.MonitorService: int findAPNId(java.lang.String)>)
+	- $r7 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, null, null, null, null) (in <com.android.MonitorService: int addNewApn(com.android.ApnNode)>)
+Found a flow to sink interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("InstallReferral", $r3), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent setAction(java.lang.String)>("com.android.MonitorService"), from the following sources:
+	- $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r7), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+Found a flow to sink virtualinvoke $r9.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r10, $r4), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r1), from the following sources:
+	- $i0 := @parameter0: int (in <com.admob.android.ads.AdView: void setBackgroundColor(int)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>)
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+	- $r1 := @parameter0: android.content.Context (in <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>)
+Found a flow to sink $r8 = virtualinvoke $r4.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+	- $r6 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) (in <com.android.MonitorService: java.lang.String GetRequest(java.lang.String)>)
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.android.MonitorService: void onCreate()>)
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sender") (in <com.android.MonitorService: void onStart(android.content.Intent,int)>)
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("body") (in <com.android.MonitorService: void onStart(android.content.Intent,int)>)
+Found a flow to sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMobSDK", $r0), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MonitorService", $r18), from the following sources:
+	- $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r12.<java.io.OutputStream: void write(byte[])>($r2), from the following sources:
+	- $r11 = staticinvoke <org.apache.http.util.EntityUtils: byte[] toByteArray(org.apache.http.HttpEntity)>($r10) (in <com.android.MonitorService: java.lang.String GetRequest(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4), from the following sources:
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.admob.android.ads.AdManager: java.lang.String b(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Robert", $r4), from the following sources:
+	- $r7 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r6, null, null, null, null) (in <com.android.MonitorService: int addNewApn(com.android.ApnNode)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r3), from the following sources:
+	- $r2 = virtualinvoke $r18.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+	- $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVICE_ID") (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+	- $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+	- $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MyMonitor", $r1), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r0), from the following sources:
+	- $r0 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() (in <com.admob.android.ads.f: java.lang.String h()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+Found a flow to sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>($r2, $r7), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $i0 := @parameter0: int (in <com.admob.android.ads.AdView: void setBackgroundColor(int)>)
+Found a flow to sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("content", $r1), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+	- $r6 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) (in <com.android.MonitorService: java.lang.String GetRequest(java.lang.String)>)
+Found a flow to sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMobSDK", $r2), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AdMobSDK", $r5, $r2), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r9), from the following sources:
+	- $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r9) (in <com.admob.android.ads.analytics.InstallReceiver: void a(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r6.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("Uid", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink virtualinvoke $r11.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, null, null), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MonitorService", $r18), from the following sources:
+	- $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)>("AdMobSDK", $r5, $r2), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("uid", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink virtualinvoke $r12.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, null, null), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink specialinvoke r26.<java.net.URL: void <init>(java.lang.String)>($r5), from the following sources:
+	- $r8 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.i: boolean d()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MyMonitor", $r1), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink virtualinvoke $r13.<java.io.OutputStream: void write(byte[])>($r11), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink specialinvoke $r7.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $z0 = virtualinvoke $r9.<android.os.Bundle: boolean getBoolean(java.lang.String,boolean)>("p", 0) (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("u") (in <com.admob.android.ads.r: boolean a(android.os.Bundle)>)
+Found a flow to sink specialinvoke $r2.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("content", $r4), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sender") (in <com.android.MonitorService: void onStart(android.content.Intent,int)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("body") (in <com.android.MonitorService: void onStart(android.content.Intent,int)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MyMonitor", $r1), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.tapjoy.TJCOffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r18.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+	- $r2 := @parameter1: android.content.Intent (in <com.tapjoy.TapjoyReferralTracker: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVICE_ID") (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.tapjoy.TJCOffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.tapjoy.TJCOffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+	- $r2 = virtualinvoke $r7.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+	- $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("FULLSCREEN_AD_URL") (in <com.tapjoy.TapjoyFeaturedAppWebView: void onCreate(android.os.Bundle)>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) (in <com.tapjoy.TapjoyURLConnection: java.lang.String connectToURL(java.lang.String,java.lang.String)>)
+	- $r2 = virtualinvoke $r9.<java.util.Locale: java.lang.String getCountry()>() (in <com.tapjoy.TapjoyConnect: void initMetaData()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r2), from the following sources:
+	- $i0 := @parameter0: int (in <com.admob.android.ads.AdView: void setBackgroundColor(int)>)
+	- $r1 := @parameter0: android.content.Context (in <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMobSDK", $r4), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MyMonitor", $r1), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMobSDK", $r2), from the following sources:
+	- $r1 = virtualinvoke $r0.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.admob.android.ads.AdManager: java.lang.String a(android.os.Bundle,java.lang.String,java.lang.String)>)
+Found a flow to sink specialinvoke $r6.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>($r1, $r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.nubee.coinpirates.login.GuestLogin: java.lang.String getDeviceId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("MonitorService", $r18), from the following sources:
+	- $r18 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>($i2) (in <com.android.SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r11 = virtualinvoke $r9.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r10, $r3, $r8, null, null), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity,java.lang.String)>($r10, "utf-8") (in <com.android.MonitorService: java.lang.String PostRequest(java.lang.String,java.util.List)>)
+Found a flow to sink specialinvoke $r7.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("IMSI", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink specialinvoke $r2.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("uid", $r4), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.MonitorService: void onCreate()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("AdMobSDK", $r5), from the following sources:
+	- $i0 := @parameter0: int (in <com.admob.android.ads.AdView: void setBackgroundColor(int)>)
+	- $r1 := @parameter0: android.content.Context (in <com.admob.android.ads.analytics.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 749.268464 MB
+Analysis has run for 10.616090474 seconds

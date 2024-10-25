@@ -1,0 +1,931 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.019522011 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.ap.op.R$layout is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.main.ActionReceiver $r1;
+        com.android.main.TANCActivity $r2;
+        com.apk.op.Applause $r3;
+        com.android.main.MainService $r4;
+        android.os.IBinder $r5;
+        com.android.main.SmsReceiver $r6;
+        com.apk.op.OptionActivity $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.main.ActionReceiver;
+
+        specialinvoke $r1.<com.android.main.ActionReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.android.main.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new com.android.main.TANCActivity;
+
+        specialinvoke $r2.<com.android.main.TANCActivity: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<com.android.main.TANCActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        if $i0 == 11 goto label07;
+
+        $r3 = new com.apk.op.Applause;
+
+        specialinvoke $r3.<com.apk.op.Applause: void <init>()>();
+
+        if $i0 == 12 goto label07;
+
+        virtualinvoke $r3.<com.apk.op.Applause: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        virtualinvoke $r3.<com.apk.op.Applause: void onResume()>();
+
+        virtualinvoke $r3.<com.apk.op.Applause: void onPause()>();
+
+        if $i0 == 14 goto label06;
+
+        if $i0 == 15 goto label07;
+
+        if $i0 == 16 goto label06;
+
+     label07:
+        if $i0 == 18 goto label11;
+
+        $r4 = new com.android.main.MainService;
+
+        specialinvoke $r4.<com.android.main.MainService: void <init>()>();
+
+        virtualinvoke $r4.<com.android.main.MainService: void onCreate()>();
+
+     label08:
+        if $i0 == 19 goto label09;
+
+        if $i0 == 20 goto label08;
+
+     label09:
+        $r5 = virtualinvoke $r4.<com.android.main.MainService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label10:
+        if $i0 == 22 goto label11;
+
+        if $i0 == 23 goto label10;
+
+     label11:
+        if $i0 == 24 goto label13;
+
+        $r6 = new com.android.main.SmsReceiver;
+
+        specialinvoke $r6.<com.android.main.SmsReceiver: void <init>()>();
+
+        if $i0 == 25 goto label13;
+
+     label12:
+        virtualinvoke $r6.<com.android.main.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 27 goto label12;
+
+     label13:
+        if $i0 == 28 goto label15;
+
+        $r7 = new com.apk.op.OptionActivity;
+
+        specialinvoke $r7.<com.apk.op.OptionActivity: void <init>()>();
+
+        if $i0 == 29 goto label15;
+
+        virtualinvoke $r7.<com.apk.op.OptionActivity: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 32 goto label15;
+
+        if $i0 == 33 goto label14;
+
+     label15:
+        if $i0 == 35 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Callback analysis done.
+Warning: RelativeLayout is a phantom class!
+Warning: com.apk.op.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: com.apk.op.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.apk.op.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.apk.op.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: ProgressBar is a phantom class!
+Warning: com.apk.op.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Warning: TableLayout is a phantom class!
+Warning: com.apk.op.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: TableRow is a phantom class!
+Warning: com.apk.op.TableRow is a phantom class!
+Warning: android.view.TableRow is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: FrameLayout is a phantom class!
+Warning: com.apk.op.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Found 2 layout controls in file res/layout/main_droid.xml
+Found 3 layout controls in file res/layout/main_old.xml
+Warning: CheckBox is a phantom class!
+Warning: com.apk.op.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.apk.op.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 4 layout controls in file res/layout/option.xml
+Warning: ListView is a phantom class!
+Warning: com.apk.op.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 5 layout controls in file res/layout/popup_lv.xml
+Found 6 layout controls in file res/layout/popup_lv_item.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.ap.op.R$layout is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ImageView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.main.ActionReceiver $r1;
+        com.android.main.TANCActivity $r2;
+        com.android.main.TANCActivity$TANCButtonListener $r3;
+        com.apk.op.Applause $r4;
+        com.apk.op.Applause$4 $r5;
+        com.apk.op.Applause$7 $r6;
+        boolean $z0, $z1, $z2;
+        com.apk.op.Applause$6 $r7;
+        com.apk.op.Applause$3 $r8;
+        com.android.main.MainService $r9;
+        android.os.IBinder $r10;
+        com.android.main.SmsReceiver $r11;
+        com.android.main.MainService$SMSReceiver $r12;
+        com.apk.op.OptionActivity $r13;
+        com.apk.op.OptionActivity$1 $r14;
+        com.apk.op.OptionActivity$2 $r15;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.main.ActionReceiver;
+
+        specialinvoke $r1.<com.android.main.ActionReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.android.main.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label08;
+
+        $r2 = new com.android.main.TANCActivity;
+
+        specialinvoke $r2.<com.android.main.TANCActivity: void <init>()>();
+
+        if $i0 == 5 goto label08;
+
+        virtualinvoke $r2.<com.android.main.TANCActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label07;
+
+     label05:
+        $r3 = new com.android.main.TANCActivity$TANCButtonListener;
+
+        specialinvoke $r3.<com.android.main.TANCActivity$TANCButtonListener: void <init>(com.android.main.TANCActivity,java.lang.String)>($r2, "");
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<com.android.main.TANCActivity$TANCButtonListener: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label06:
+        if $i0 == 9 goto label05;
+
+     label07:
+        if $i0 == 10 goto label04;
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label04;
+
+     label08:
+        if $i0 == 14 goto label20;
+
+        $r4 = new com.apk.op.Applause;
+
+        specialinvoke $r4.<com.apk.op.Applause: void <init>()>();
+
+        if $i0 == 15 goto label20;
+
+        virtualinvoke $r4.<com.apk.op.Applause: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r4.<com.apk.op.Applause: void onResume()>();
+
+        if $i0 == 17 goto label19;
+
+     label10:
+        $r5 = new com.apk.op.Applause$4;
+
+        specialinvoke $r5.<com.apk.op.Applause$4: void <init>(com.apk.op.Applause)>($r4);
+
+        if $i0 == 18 goto label11;
+
+        virtualinvoke $r5.<com.apk.op.Applause$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label11:
+        $r6 = new com.apk.op.Applause$7;
+
+        specialinvoke $r6.<com.apk.op.Applause$7: void <init>(com.apk.op.Applause)>($r4);
+
+        if $i0 == 19 goto label12;
+
+        virtualinvoke $r6.<com.apk.op.Applause$7: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label12:
+        if $i0 == 20 goto label13;
+
+        $z0 = virtualinvoke $r4.<com.apk.op.Applause: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label13:
+        if $i0 == 21 goto label14;
+
+        virtualinvoke $r4.<com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label14:
+        if $i0 == 22 goto label15;
+
+        $z1 = virtualinvoke $r4.<com.apk.op.Applause: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label15:
+        if $i0 == 23 goto label16;
+
+        $z2 = virtualinvoke $r4.<com.apk.op.Applause: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label16:
+        $r7 = new com.apk.op.Applause$6;
+
+        specialinvoke $r7.<com.apk.op.Applause$6: void <init>(com.apk.op.Applause)>($r4);
+
+        if $i0 == 24 goto label17;
+
+        virtualinvoke $r7.<com.apk.op.Applause$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label17:
+        $r8 = new com.apk.op.Applause$3;
+
+        specialinvoke $r8.<com.apk.op.Applause$3: void <init>(com.apk.op.Applause,int,android.widget.ImageView)>($r4, 0, null);
+
+        if $i0 == 25 goto label18;
+
+        virtualinvoke $r8.<com.apk.op.Applause$3: void onClick(android.view.View)>(null);
+
+     label18:
+        if $i0 == 26 goto label10;
+
+     label19:
+        virtualinvoke $r4.<com.apk.op.Applause: void onPause()>();
+
+        if $i0 == 27 goto label09;
+
+        if $i0 == 28 goto label20;
+
+        if $i0 == 29 goto label09;
+
+     label20:
+        if $i0 == 31 goto label24;
+
+        $r9 = new com.android.main.MainService;
+
+        specialinvoke $r9.<com.android.main.MainService: void <init>()>();
+
+        virtualinvoke $r9.<com.android.main.MainService: void onCreate()>();
+
+     label21:
+        if $i0 == 32 goto label22;
+
+        if $i0 == 33 goto label21;
+
+     label22:
+        $r10 = virtualinvoke $r9.<com.android.main.MainService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label23:
+        if $i0 == 35 goto label24;
+
+        if $i0 == 36 goto label23;
+
+     label24:
+        if $i0 == 37 goto label26;
+
+        $r11 = new com.android.main.SmsReceiver;
+
+        specialinvoke $r11.<com.android.main.SmsReceiver: void <init>()>();
+
+        if $i0 == 38 goto label26;
+
+     label25:
+        virtualinvoke $r11.<com.android.main.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 40 goto label25;
+
+     label26:
+        if $i0 == 41 goto label28;
+
+        $r12 = new com.android.main.MainService$SMSReceiver;
+
+        specialinvoke $r12.<com.android.main.MainService$SMSReceiver: void <init>(com.android.main.MainService)>($r9);
+
+        if $i0 == 42 goto label28;
+
+     label27:
+        virtualinvoke $r12.<com.android.main.MainService$SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 44 goto label27;
+
+     label28:
+        if $i0 == 45 goto label34;
+
+        $r13 = new com.apk.op.OptionActivity;
+
+        specialinvoke $r13.<com.apk.op.OptionActivity: void <init>()>();
+
+        if $i0 == 46 goto label34;
+
+        virtualinvoke $r13.<com.apk.op.OptionActivity: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        if $i0 == 48 goto label33;
+
+     label30:
+        $r14 = new com.apk.op.OptionActivity$1;
+
+        specialinvoke $r14.<com.apk.op.OptionActivity$1: void <init>(com.apk.op.OptionActivity)>($r13);
+
+        if $i0 == 49 goto label31;
+
+        virtualinvoke $r14.<com.apk.op.OptionActivity$1: void onClick(android.view.View)>(null);
+
+     label31:
+        $r15 = new com.apk.op.OptionActivity$2;
+
+        specialinvoke $r15.<com.apk.op.OptionActivity$2: void <init>(com.apk.op.OptionActivity)>($r13);
+
+        if $i0 == 50 goto label32;
+
+        virtualinvoke $r15.<com.apk.op.OptionActivity$2: void onClick(android.view.View)>(null);
+
+     label32:
+        if $i0 == 51 goto label30;
+
+     label33:
+        if $i0 == 52 goto label29;
+
+        if $i0 == 53 goto label34;
+
+        if $i0 == 54 goto label29;
+
+     label34:
+        if $i0 == 56 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 28 callback methods for 6 components
+Found {res/layout/main_old.xml=[2131165191 - android.widget.ImageView, -1 - com.wooboo.adlib_android.WoobooAdView, 2131165193 - android.widget.ImageView, -1 - android.widget.TableLayout, 2131165195 - android.widget.ImageView, -1 - android.widget.TableRow, 2131165201 - android.widget.ImageView, 2131165186 - android.widget.TextView, -1 - android.widget.FrameLayout, 2131165203 - android.widget.ImageView, 2131165197 - android.widget.ImageView, 2131165199 - android.widget.ImageView, 2131165207 - android.widget.ImageView, 2131165205 - android.widget.ImageView, 2131165209 - android.widget.ImageView, 2131165190 - android.widget.ImageView, 2131165188 - android.widget.ProgressBar, 2131165192 - android.widget.ImageView, 2131165194 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131165196 - android.widget.ImageView, 2131165202 - android.widget.ImageView, 2131165204 - android.widget.ImageView, 2131165200 - android.widget.ImageView, 2131165198 - android.widget.ImageView, 2131165184 - android.widget.RelativeLayout, 2131165208 - android.widget.ImageView, 2131165206 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131165187 - android.widget.TextView], res/layout/main.xml=[2131165191 - android.widget.ImageView, -1 - com.wooboo.adlib_android.WoobooAdView, 2131165193 - android.widget.ImageView, -1 - android.widget.TableLayout, 2131165185 - android.widget.ImageView, 2131165195 - android.widget.ImageView, -1 - android.widget.TableRow, 2131165201 - android.widget.ImageView, 2131165186 - android.widget.TextView, 2131165203 - android.widget.ImageView, 2131165197 - android.widget.ImageView, 2131165199 - android.widget.ImageView, 2131165207 - android.widget.ImageView, 2131165205 - android.widget.ImageView, 2131165209 - android.widget.ImageView, 2131165190 - android.widget.ImageView, 2131165188 - android.widget.ProgressBar, 2131165192 - android.widget.ImageView, 2131165194 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131165196 - android.widget.ImageView, 2131165202 - android.widget.ImageView, 2131165204 - android.widget.ImageView, 2131165200 - android.widget.ImageView, 2131165198 - android.widget.ImageView, 2131165184 - android.widget.RelativeLayout, 2131165208 - android.widget.ImageView, 2131165206 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131165187 - android.widget.TextView, 2131165189 - android.widget.TextView], res/layout/popup_lv.xml=[-1 - android.widget.FrameLayout, -1 - android.widget.LinearLayout, 2131165223 - android.widget.ListView], res/layout/option.xml=[2131165217 - android.widget.CheckBox, 2131165218 - android.widget.CheckBox, 2131165219 - android.widget.CheckBox, 2131165220 - android.widget.CheckBox, 2131165221 - android.widget.Button, 2131165222 - android.widget.Button, -1 - android.widget.RelativeLayout, 2131165216 - android.widget.TextView], res/layout/main_droid.xml=[2131165212 - android.widget.ImageView, 2131165191 - android.widget.ImageView, -1 - com.wooboo.adlib_android.WoobooAdView, 2131165193 - android.widget.ImageView, -1 - android.widget.TableLayout, 2131165195 - android.widget.ImageView, 2131165211 - android.widget.TextView, -1 - android.widget.TableRow, 2131165201 - android.widget.ImageView, 2131165186 - android.widget.TextView, -1 - android.widget.FrameLayout, 2131165203 - android.widget.ImageView, 2131165197 - android.widget.ImageView, 2131165199 - android.widget.ImageView, 2131165207 - android.widget.ImageView, 2131165205 - android.widget.ImageView, 2131165215 - android.widget.ImageView, 2131165209 - android.widget.ImageView, 2131165213 - android.widget.ImageView, 2131165190 - android.widget.ImageView, 2131165192 - android.widget.ImageView, 2131165194 - android.widget.ImageView, 2131165196 - android.widget.ImageView, 2131165202 - android.widget.ImageView, 2131165204 - android.widget.ImageView, 2131165200 - android.widget.ImageView, 2131165198 - android.widget.ImageView, 2131165184 - android.widget.RelativeLayout, 2131165208 - android.widget.ImageView, 2131165206 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131165214 - android.widget.ImageView], res/layout/popup_lv_item.xml=[2131165224 - android.widget.ImageView, -1 - android.widget.TableLayout, 2131165225 - android.widget.TextView, -1 - android.widget.TableRow]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 28 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4fda06a96d0f0d1f261bec3d11e7e2e7811397ddd93cbcd28d82f80a47349df5.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: com.ap.op.R$layout is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ImageView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.android.main.ActionReceiver $r1;
+        com.android.main.TANCActivity $r2;
+        com.android.main.TANCActivity$TANCButtonListener $r3;
+        com.apk.op.Applause $r4;
+        com.apk.op.Applause$6 $r5;
+        com.wooboo.adlib_android.WoobooAdView $r6;
+        com.apk.op.Applause$7 $r7;
+        com.apk.op.Applause$4 $r8;
+        com.apk.op.Applause$3 $r9;
+        boolean $z0, $z1, $z2;
+        com.android.main.MainService $r10;
+        android.os.IBinder $r11;
+        com.android.main.SmsReceiver $r12;
+        com.android.main.MainService$SMSReceiver $r13;
+        com.apk.op.OptionActivity $r14;
+        com.apk.op.OptionActivity$2 $r15;
+        com.apk.op.OptionActivity$1 $r16;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.main.ActionReceiver;
+
+        specialinvoke $r1.<com.android.main.ActionReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.android.main.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label08;
+
+        $r2 = new com.android.main.TANCActivity;
+
+        specialinvoke $r2.<com.android.main.TANCActivity: void <init>()>();
+
+        if $i0 == 5 goto label08;
+
+        virtualinvoke $r2.<com.android.main.TANCActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label07;
+
+     label05:
+        $r3 = new com.android.main.TANCActivity$TANCButtonListener;
+
+        specialinvoke $r3.<com.android.main.TANCActivity$TANCButtonListener: void <init>(com.android.main.TANCActivity,java.lang.String)>($r2, "");
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<com.android.main.TANCActivity$TANCButtonListener: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label06:
+        if $i0 == 9 goto label05;
+
+     label07:
+        if $i0 == 10 goto label04;
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label04;
+
+     label08:
+        if $i0 == 14 goto label28;
+
+        $r4 = new com.apk.op.Applause;
+
+        specialinvoke $r4.<com.apk.op.Applause: void <init>()>();
+
+        if $i0 == 15 goto label28;
+
+        virtualinvoke $r4.<com.apk.op.Applause: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r4.<com.apk.op.Applause: void onResume()>();
+
+        if $i0 == 17 goto label27;
+
+     label10:
+        $r5 = new com.apk.op.Applause$6;
+
+        specialinvoke $r5.<com.apk.op.Applause$6: void <init>(com.apk.op.Applause)>($r4);
+
+        if $i0 == 18 goto label11;
+
+        virtualinvoke $r5.<com.apk.op.Applause$6: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label11:
+        $r6 = new com.wooboo.adlib_android.WoobooAdView;
+
+        specialinvoke $r6.<com.wooboo.adlib_android.WoobooAdView: void <init>(android.content.Context,android.util.AttributeSet)>($r4, null);
+
+        if $i0 == 19 goto label12;
+
+        virtualinvoke $r6.<com.wooboo.adlib_android.WoobooAdView: void onAttachedToWindow()>();
+
+     label12:
+        if $i0 == 20 goto label13;
+
+        virtualinvoke $r6.<com.wooboo.adlib_android.WoobooAdView: void onWindowVisibilityChanged(int)>(0);
+
+     label13:
+        if $i0 == 21 goto label14;
+
+        $i1 = virtualinvoke $r6.<com.wooboo.adlib_android.WoobooAdView: int getVisibility()>();
+
+     label14:
+        if $i0 == 22 goto label15;
+
+        virtualinvoke $r6.<com.wooboo.adlib_android.WoobooAdView: void onMeasure(int,int)>(0, 0);
+
+     label15:
+        if $i0 == 23 goto label16;
+
+        staticinvoke <com.wooboo.adlib_android.WoobooAdView: void <clinit>()>();
+
+     label16:
+        if $i0 == 24 goto label17;
+
+        virtualinvoke $r6.<com.wooboo.adlib_android.WoobooAdView: void setBackgroundColor(int)>(0);
+
+     label17:
+        if $i0 == 25 goto label18;
+
+        virtualinvoke $r6.<com.wooboo.adlib_android.WoobooAdView: void onDetachedFromWindow()>();
+
+     label18:
+        if $i0 == 26 goto label19;
+
+        virtualinvoke $r6.<com.wooboo.adlib_android.WoobooAdView: void setVisibility(int)>(0);
+
+     label19:
+        $r7 = new com.apk.op.Applause$7;
+
+        specialinvoke $r7.<com.apk.op.Applause$7: void <init>(com.apk.op.Applause)>($r4);
+
+        if $i0 == 27 goto label20;
+
+        virtualinvoke $r7.<com.apk.op.Applause$7: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label20:
+        $r8 = new com.apk.op.Applause$4;
+
+        specialinvoke $r8.<com.apk.op.Applause$4: void <init>(com.apk.op.Applause)>($r4);
+
+        if $i0 == 28 goto label21;
+
+        virtualinvoke $r8.<com.apk.op.Applause$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label21:
+        $r9 = new com.apk.op.Applause$3;
+
+        specialinvoke $r9.<com.apk.op.Applause$3: void <init>(com.apk.op.Applause,int,android.widget.ImageView)>($r4, 0, null);
+
+        if $i0 == 29 goto label22;
+
+        virtualinvoke $r9.<com.apk.op.Applause$3: void onClick(android.view.View)>(null);
+
+     label22:
+        if $i0 == 30 goto label23;
+
+        $z0 = virtualinvoke $r4.<com.apk.op.Applause: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label23:
+        if $i0 == 31 goto label24;
+
+        virtualinvoke $r4.<com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label24:
+        if $i0 == 32 goto label25;
+
+        $z1 = virtualinvoke $r4.<com.apk.op.Applause: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label25:
+        if $i0 == 33 goto label26;
+
+        $z2 = virtualinvoke $r4.<com.apk.op.Applause: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label26:
+        if $i0 == 34 goto label10;
+
+     label27:
+        virtualinvoke $r4.<com.apk.op.Applause: void onPause()>();
+
+        if $i0 == 35 goto label09;
+
+        if $i0 == 36 goto label28;
+
+        if $i0 == 37 goto label09;
+
+     label28:
+        if $i0 == 39 goto label32;
+
+        $r10 = new com.android.main.MainService;
+
+        specialinvoke $r10.<com.android.main.MainService: void <init>()>();
+
+        virtualinvoke $r10.<com.android.main.MainService: void onCreate()>();
+
+     label29:
+        if $i0 == 40 goto label30;
+
+        if $i0 == 41 goto label29;
+
+     label30:
+        $r11 = virtualinvoke $r10.<com.android.main.MainService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label31:
+        if $i0 == 43 goto label32;
+
+        if $i0 == 44 goto label31;
+
+     label32:
+        if $i0 == 45 goto label34;
+
+        $r12 = new com.android.main.SmsReceiver;
+
+        specialinvoke $r12.<com.android.main.SmsReceiver: void <init>()>();
+
+        if $i0 == 46 goto label34;
+
+     label33:
+        virtualinvoke $r12.<com.android.main.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 48 goto label33;
+
+     label34:
+        if $i0 == 49 goto label36;
+
+        $r13 = new com.android.main.MainService$SMSReceiver;
+
+        specialinvoke $r13.<com.android.main.MainService$SMSReceiver: void <init>(com.android.main.MainService)>($r10);
+
+        if $i0 == 50 goto label36;
+
+     label35:
+        virtualinvoke $r13.<com.android.main.MainService$SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 52 goto label35;
+
+     label36:
+        if $i0 == 53 goto label42;
+
+        $r14 = new com.apk.op.OptionActivity;
+
+        specialinvoke $r14.<com.apk.op.OptionActivity: void <init>()>();
+
+        if $i0 == 54 goto label42;
+
+        virtualinvoke $r14.<com.apk.op.OptionActivity: void onCreate(android.os.Bundle)>(null);
+
+     label37:
+        if $i0 == 56 goto label41;
+
+     label38:
+        $r15 = new com.apk.op.OptionActivity$2;
+
+        specialinvoke $r15.<com.apk.op.OptionActivity$2: void <init>(com.apk.op.OptionActivity)>($r14);
+
+        if $i0 == 57 goto label39;
+
+        virtualinvoke $r15.<com.apk.op.OptionActivity$2: void onClick(android.view.View)>(null);
+
+     label39:
+        $r16 = new com.apk.op.OptionActivity$1;
+
+        specialinvoke $r16.<com.apk.op.OptionActivity$1: void <init>(com.apk.op.OptionActivity)>($r14);
+
+        if $i0 == 58 goto label40;
+
+        virtualinvoke $r16.<com.apk.op.OptionActivity$1: void onClick(android.view.View)>(null);
+
+     label40:
+        if $i0 == 59 goto label38;
+
+     label41:
+        if $i0 == 60 goto label37;
+
+        if $i0 == 61 goto label42;
+
+        if $i0 == 62 goto label37;
+
+     label42:
+        if $i0 == 64 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.3 seconds.
+[Spark] Solution found in 1.3 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.378592715 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.106929435 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1983 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i0 in method <com.apk.op.Applause: void doCountDown(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 63 sources and 50 sinks.
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i0 in method <com.apk.op.Applause: void doCountDown(int)>
+Could not find assignment to local $i0 in method <com.apk.op.Applause: void doCountDown(int)>
+Could not find assignment to local $i0 in method <com.apk.op.Applause: void doCountDown(int)>
+Could not find assignment to local $i0 in method <com.apk.op.Applause: void doCountDown(int)>
+Could not find assignment to local $i0 in method <com.apk.op.Applause: void doCountDown(int)>
+Could not find assignment to local $i0 in method <com.apk.op.Applause: void doCountDown(int)>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+Could not find assignment to local $i1 in method <com.apk.op.Applause: void initGame()>
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 28342
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 135300
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 483567 forward and 203919 backward edges solved, processing 18 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 18 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.009764177 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.android.main.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.main.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isMusic", $z0) in method <com.apk.op.Applause: void saveGameParam()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ANDROID_INFO", $r4) in method <com.android.main.MainService$SMSReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.main.MainService$SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.android.main.BaseAuthenicationHttpClient: java.lang.String getStringByURL(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.main.MainService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.android.main.MainService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.android.main.MainService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.android.main.MainService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r6.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r4) in method <com.android.main.MainService: int insertAndroidBookmark(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r3, null, null, null) in method <com.android.main.MainService: int insertAndroidBookmark(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("info", $r7) in method <com.android.main.BaseAuthenicationHttpClient: java.lang.String getStringByURL(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.android.main.BaseAuthenicationHttpClient: java.lang.String getStringByURL(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<com.apk.op.Applause: void startActivityForResult(android.content.Intent,int)>($r1, 2) in method <com.apk.op.Applause: void showOptionDlg()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Wooboo SDK", $r0) in method <com.wooboo.adlib_android.___: void clientError(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Wooboo_PID") in method <com.wooboo.adlib_android.WoobooAdView: java.lang.String getPID(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Wooboo SDK", $r2) in method <com.wooboo.adlib_android.WoobooAdView: int getMID(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i1 = virtualinvoke $r4.<android.os.Bundle: int getInt(java.lang.String,int)>("Market_ID", 1) in method <com.wooboo.adlib_android.WoobooAdView: int getMID(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<com.apk.op.OptionActivity: void setResult(int,android.content.Intent)>(-1, $r3) in method <com.apk.op.OptionActivity$1: void onClick(android.view.View)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r0.<com.apk.op.OptionActivity: android.content.Intent getIntent()>() in method <com.apk.op.OptionActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isMatchSound", $z0) in method <com.apk.op.Applause: void saveGameParam()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Wooboo SDK", $r7) in method <com.wooboo.adlib_android.WoobooAdView: java.lang.String getPID(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Wooboo_PID") in method <com.wooboo.adlib_android.WoobooAdView: java.lang.String getPID(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r0) in method <com.android.main.FileAct: void writeByte(byte[],java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.android.main.MainService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isChangeTheme", $z0) in method <com.apk.op.Applause: void saveGameParam()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isVibrate", $z0) in method <com.apk.op.Applause: void saveGameParam()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.android.main.BaseAuthenicationHttpClient: int getCodeByURL(java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.android.main.MainService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.android.main.MainService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.android.main.MainService$SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.android.main.MainService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.android.main.MainService: void onCreate()>
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.main.ActionReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isMusic", $z0), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("ANDROID_INFO", $r4), from the following sources:
+	- $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.main.MainService$SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.main.MainService: void onCreate()>)
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.android.main.MainService: void onCreate()>)
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.android.main.MainService: void onCreate()>)
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.android.main.MainService: void onCreate()>)
+Found a flow to sink $r5 = virtualinvoke $r6.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r4), from the following sources:
+	- $r7 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r3, null, null, null) (in <com.android.main.MainService: int insertAndroidBookmark(java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("info", $r7), from the following sources:
+	- $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.android.main.BaseAuthenicationHttpClient: java.lang.String getStringByURL(java.lang.String)>)
+Found a flow to sink virtualinvoke $r0.<com.apk.op.Applause: void startActivityForResult(android.content.Intent,int)>($r1, 2), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Wooboo SDK", $r0), from the following sources:
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Wooboo_PID") (in <com.wooboo.adlib_android.WoobooAdView: java.lang.String getPID(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Wooboo SDK", $r2), from the following sources:
+	- $i1 = virtualinvoke $r4.<android.os.Bundle: int getInt(java.lang.String,int)>("Market_ID", 1) (in <com.wooboo.adlib_android.WoobooAdView: int getMID(android.content.Context)>)
+Found a flow to sink virtualinvoke $r2.<com.apk.op.OptionActivity: void setResult(int,android.content.Intent)>(-1, $r3), from the following sources:
+	- $r2 = virtualinvoke $r0.<com.apk.op.OptionActivity: android.content.Intent getIntent()>() (in <com.apk.op.OptionActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isMatchSound", $z0), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Wooboo SDK", $r7), from the following sources:
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Wooboo_PID") (in <com.wooboo.adlib_android.WoobooAdView: java.lang.String getPID(android.content.Context)>)
+Found a flow to sink virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r0), from the following sources:
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.android.main.MainService: void onCreate()>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isChangeTheme", $z0), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("isVibrate", $z0), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.apk.op.Applause: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.android.main.MainService: void onCreate()>)
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.android.main.MainService: void onCreate()>)
+	- $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.android.main.MainService$SMSReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.android.main.MainService: void onCreate()>)
+	- $r3 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.android.main.MainService: void onCreate()>)
+Maximum memory consumption: 391.873008 MB
+Analysis has run for 9.052583817 seconds

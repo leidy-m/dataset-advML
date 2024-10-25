@@ -1,0 +1,689 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.011462352 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: rrreh.nyur.FABReceiver is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        bgf.a.FAHActivity $r1;
+        bgf.a.FAService $r2;
+        android.os.IBinder $r3;
+        rrreh.nyur.MTGwtReceiver $r4;
+        bgf.a.FAWebA $r5;
+        rrreh.nyur.NTYfgd $r6;
+        bgf.a.FAReceiver $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new bgf.a.FAHActivity;
+
+        specialinvoke $r1.<bgf.a.FAHActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<bgf.a.FAHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label08;
+
+        $r2 = new bgf.a.FAService;
+
+        specialinvoke $r2.<bgf.a.FAService: void <init>()>();
+
+        virtualinvoke $r2.<bgf.a.FAService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<bgf.a.FAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 11 goto label07;
+
+        if $i0 == 12 goto label06;
+
+     label07:
+        virtualinvoke $r2.<bgf.a.FAService: void onDestroy()>();
+
+     label08:
+        if $i0 == 15 goto label10;
+
+        $r4 = new rrreh.nyur.MTGwtReceiver;
+
+        specialinvoke $r4.<rrreh.nyur.MTGwtReceiver: void <init>()>();
+
+        if $i0 == 16 goto label10;
+
+     label09:
+        virtualinvoke $r4.<rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        if $i0 == 19 goto label12;
+
+        $r5 = new bgf.a.FAWebA;
+
+        specialinvoke $r5.<bgf.a.FAWebA: void <init>()>();
+
+        if $i0 == 20 goto label12;
+
+        virtualinvoke $r5.<bgf.a.FAWebA: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 23 goto label12;
+
+        if $i0 == 24 goto label11;
+
+     label12:
+        if $i0 == 26 goto label14;
+
+        $r6 = new rrreh.nyur.NTYfgd;
+
+        specialinvoke $r6.<rrreh.nyur.NTYfgd: void <init>()>();
+
+        if $i0 == 27 goto label14;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void onStart()>();
+
+        if $i0 == 30 goto label14;
+
+        if $i0 == 31 goto label13;
+
+     label14:
+        if $i0 == 33 goto label16;
+
+        $r7 = new bgf.a.FAReceiver;
+
+        specialinvoke $r7.<bgf.a.FAReceiver: void <init>()>();
+
+        if $i0 == 34 goto label16;
+
+     label15:
+        virtualinvoke $r7.<bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 36 goto label15;
+
+     label16:
+        if $i0 == 37 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 3.1 seconds.
+[Spark] Solution found in 3.1 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: rrreh.nyur.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: rrreh.nyur.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: rrreh.nyur.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: rrreh.nyur.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/end.xml
+Found 2 layout controls in file res/layout/license.xml
+Warning: ImageView is a phantom class!
+Warning: rrreh.nyur.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: ProgressBar is a phantom class!
+Warning: rrreh.nyur.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 3 layout controls in file res/layout/load.xml
+Found 4 layout controls in file res/layout/main.xml
+Warning: menu is a phantom class!
+Warning: rrreh.nyur.menu is a phantom class!
+Warning: android.view.menu is a phantom class!
+Warning: android.widget.menu is a phantom class!
+Warning: android.webkit.menu is a phantom class!
+Could not find layout class menu
+Warning: item is a phantom class!
+Warning: rrreh.nyur.item is a phantom class!
+Warning: android.view.item is a phantom class!
+Warning: android.widget.item is a phantom class!
+Warning: android.webkit.item is a phantom class!
+Could not find layout class item
+Found 4 layout controls in file res/layout/mainmenu.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: rrreh.nyur.FABReceiver is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        bgf.a.FAHActivity $r1;
+        bgf.a.FAService $r2;
+        android.os.IBinder $r3;
+        rrreh.nyur.MTGwtReceiver $r4;
+        bgf.a.FAWebA $r5;
+        rrreh.nyur.NTYfgd $r6;
+        boolean $z0, $z1, $z2;
+        bgf.a.FAReceiver $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new bgf.a.FAHActivity;
+
+        specialinvoke $r1.<bgf.a.FAHActivity: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<bgf.a.FAHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <bgf.a.FAHActivity: void <clinit>()>();
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label11;
+
+        $r2 = new bgf.a.FAService;
+
+        specialinvoke $r2.<bgf.a.FAService: void <init>()>();
+
+        virtualinvoke $r2.<bgf.a.FAService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label07:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        $r3 = virtualinvoke $r2.<bgf.a.FAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        virtualinvoke $r2.<bgf.a.FAService: void onDestroy()>();
+
+     label11:
+        if $i0 == 18 goto label13;
+
+        $r4 = new rrreh.nyur.MTGwtReceiver;
+
+        specialinvoke $r4.<rrreh.nyur.MTGwtReceiver: void <init>()>();
+
+        if $i0 == 19 goto label13;
+
+     label12:
+        virtualinvoke $r4.<rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 21 goto label12;
+
+     label13:
+        if $i0 == 22 goto label18;
+
+        $r5 = new bgf.a.FAWebA;
+
+        specialinvoke $r5.<bgf.a.FAWebA: void <init>()>();
+
+        if $i0 == 23 goto label18;
+
+        virtualinvoke $r5.<bgf.a.FAWebA: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 25 goto label17;
+
+     label15:
+        if $i0 == 26 goto label16;
+
+        staticinvoke <bgf.a.FAWebA: void <clinit>()>();
+
+     label16:
+        if $i0 == 27 goto label15;
+
+     label17:
+        if $i0 == 28 goto label14;
+
+        if $i0 == 29 goto label18;
+
+        if $i0 == 30 goto label14;
+
+     label18:
+        if $i0 == 32 goto label28;
+
+        $r6 = new rrreh.nyur.NTYfgd;
+
+        specialinvoke $r6.<rrreh.nyur.NTYfgd: void <init>()>();
+
+        if $i0 == 33 goto label28;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void onStart()>();
+
+     label20:
+        if $i0 == 35 goto label27;
+
+     label21:
+        if $i0 == 36 goto label22;
+
+        $z0 = virtualinvoke $r6.<rrreh.nyur.NTYfgd: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label22:
+        if $i0 == 37 goto label23;
+
+        $z1 = virtualinvoke $r6.<rrreh.nyur.NTYfgd: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label23:
+        if $i0 == 38 goto label24;
+
+        $z2 = virtualinvoke $r6.<rrreh.nyur.NTYfgd: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label24:
+        if $i0 == 39 goto label25;
+
+        staticinvoke <rrreh.nyur.NTYfgd: void <clinit>()>();
+
+     label25:
+        if $i0 == 40 goto label26;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label26:
+        if $i0 == 41 goto label21;
+
+     label27:
+        if $i0 == 42 goto label20;
+
+        if $i0 == 43 goto label28;
+
+        if $i0 == 44 goto label19;
+
+     label28:
+        if $i0 == 46 goto label30;
+
+        $r7 = new bgf.a.FAReceiver;
+
+        specialinvoke $r7.<bgf.a.FAReceiver: void <init>()>();
+
+        if $i0 == 47 goto label30;
+
+     label29:
+        virtualinvoke $r7.<bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 49 goto label29;
+
+     label30:
+        if $i0 == 50 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.7 seconds.
+[Spark] Solution found in 1.7 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 23 callback methods for 6 components
+Found {res/layout/end.xml=[-1 - android.widget.LinearLayout, 2131099649 - android.widget.TextView, 2131099648 - android.widget.ScrollView, 2131099650 - android.widget.Button, 2131099651 - android.widget.Button], res/layout/load.xml=[-1 - android.widget.LinearLayout, 2131099654 - android.widget.LinearLayout, 2131099656 - android.widget.ProgressBar, 2131099653 - android.widget.ImageView, 2131099655 - android.widget.TextView], res/layout/license.xml=[-1 - android.widget.LinearLayout, 2131099649 - android.widget.TextView, 2131099650 - android.widget.Button, 2131099651 - android.widget.Button, -1 - android.widget.ScrollView, 2131099652 - android.widget.Button], res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131099654 - android.widget.LinearLayout, 2131099649 - android.widget.TextView, 2131099657 - android.widget.LinearLayout, 2131099658 - android.widget.LinearLayout, 2131099660 - android.widget.LinearLayout, 2131099650 - android.widget.Button, 2131099651 - android.widget.Button, 2131099659 - android.widget.TextView, 2131099661 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 23 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/3e50e94fe5b0b6ede136bd78702a7e4ef110bb2b62337f1c184bce67efa8888a.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: rrreh.nyur.FABReceiver is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        bgf.a.FAHActivity $r1;
+        bgf.a.FAService $r2;
+        android.os.IBinder $r3;
+        rrreh.nyur.MTGwtReceiver $r4;
+        bgf.a.FAWebA $r5;
+        rrreh.nyur.NTYfgd $r6;
+        boolean $z0, $z1, $z2;
+        bgf.a.FAReceiver $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new bgf.a.FAHActivity;
+
+        specialinvoke $r1.<bgf.a.FAHActivity: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<bgf.a.FAHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <bgf.a.FAHActivity: void <clinit>()>();
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label11;
+
+        $r2 = new bgf.a.FAService;
+
+        specialinvoke $r2.<bgf.a.FAService: void <init>()>();
+
+        virtualinvoke $r2.<bgf.a.FAService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label07:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        $r3 = virtualinvoke $r2.<bgf.a.FAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        virtualinvoke $r2.<bgf.a.FAService: void onDestroy()>();
+
+     label11:
+        if $i0 == 18 goto label13;
+
+        $r4 = new rrreh.nyur.MTGwtReceiver;
+
+        specialinvoke $r4.<rrreh.nyur.MTGwtReceiver: void <init>()>();
+
+        if $i0 == 19 goto label13;
+
+     label12:
+        virtualinvoke $r4.<rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 21 goto label12;
+
+     label13:
+        if $i0 == 22 goto label18;
+
+        $r5 = new bgf.a.FAWebA;
+
+        specialinvoke $r5.<bgf.a.FAWebA: void <init>()>();
+
+        if $i0 == 23 goto label18;
+
+        virtualinvoke $r5.<bgf.a.FAWebA: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 25 goto label17;
+
+     label15:
+        if $i0 == 26 goto label16;
+
+        staticinvoke <bgf.a.FAWebA: void <clinit>()>();
+
+     label16:
+        if $i0 == 27 goto label15;
+
+     label17:
+        if $i0 == 28 goto label14;
+
+        if $i0 == 29 goto label18;
+
+        if $i0 == 30 goto label14;
+
+     label18:
+        if $i0 == 32 goto label35;
+
+        $r6 = new rrreh.nyur.NTYfgd;
+
+        specialinvoke $r6.<rrreh.nyur.NTYfgd: void <init>()>();
+
+        if $i0 == 33 goto label35;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void onStart()>();
+
+     label20:
+        if $i0 == 35 goto label34;
+
+     label21:
+        if $i0 == 36 goto label22;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void mainButtonClick1(android.view.View)>(null);
+
+     label22:
+        if $i0 == 37 goto label23;
+
+        $z0 = virtualinvoke $r6.<rrreh.nyur.NTYfgd: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label23:
+        if $i0 == 38 goto label24;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void endButtonClick1(android.view.View)>(null);
+
+     label24:
+        if $i0 == 39 goto label25;
+
+        $z1 = virtualinvoke $r6.<rrreh.nyur.NTYfgd: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label25:
+        if $i0 == 40 goto label26;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label26:
+        if $i0 == 41 goto label27;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void mainButtonClick2(android.view.View)>(null);
+
+     label27:
+        if $i0 == 42 goto label28;
+
+        $z2 = virtualinvoke $r6.<rrreh.nyur.NTYfgd: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label28:
+        if $i0 == 43 goto label29;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void endButtonClick2(android.view.View)>(null);
+
+     label29:
+        if $i0 == 44 goto label30;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void licButtonClick3(android.view.View)>(null);
+
+     label30:
+        if $i0 == 45 goto label31;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void licButtonClick2(android.view.View)>(null);
+
+     label31:
+        if $i0 == 46 goto label32;
+
+        virtualinvoke $r6.<rrreh.nyur.NTYfgd: void licButtonClick1(android.view.View)>(null);
+
+     label32:
+        if $i0 == 47 goto label33;
+
+        staticinvoke <rrreh.nyur.NTYfgd: void <clinit>()>();
+
+     label33:
+        if $i0 == 48 goto label21;
+
+     label34:
+        if $i0 == 49 goto label20;
+
+        if $i0 == 50 goto label35;
+
+        if $i0 == 51 goto label19;
+
+     label35:
+        if $i0 == 53 goto label37;
+
+        $r7 = new bgf.a.FAReceiver;
+
+        specialinvoke $r7.<bgf.a.FAReceiver: void <init>()>();
+
+        if $i0 == 54 goto label37;
+
+     label36:
+        virtualinvoke $r7.<bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 56 goto label36;
+
+     label37:
+        if $i0 == 57 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 3.8 seconds.
+[Spark] Solution found in 3.8 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 3.908803105 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.667051657 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 19894 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 31 sources and 23 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 21291
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 2565
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 61653 forward and 12452 backward edges solved, processing 8 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 8 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.005998734 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r8.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>($r4, $r0) in method <rrreh.nyur.war: void After(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <rrreh.nyur.After: java.lang.String After(android.app.Activity)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>($r8) in method <rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r0) in method <rrreh.nyur.war: void After(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>($r8) in method <rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r11) in method <bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r6) in method <rrreh.nyur.war: void After(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <rrreh.nyur.After: java.lang.String After(android.app.Activity)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>($r8) in method <rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink specialinvoke $r8.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>($r4, $r0), from the following sources:
+	- $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <rrreh.nyur.After: java.lang.String After(android.app.Activity)>)
+	- $r9 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>($r8) (in <rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 := @parameter1: android.content.Intent (in <bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r2, $r0), from the following sources:
+	- $r9 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>($r8) (in <rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r11), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <bgf.a.FAReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r6), from the following sources:
+	- $r3 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <rrreh.nyur.After: java.lang.String After(android.app.Activity)>)
+	- $r9 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>($r8) (in <rrreh.nyur.MTGwtReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 654.58148 MB
+Analysis has run for 13.632224975 seconds

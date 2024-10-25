@@ -1,0 +1,3128 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.036901732 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.danti.Background $r1;
+        com.android.view.custom.ThirdAService $r2;
+        android.os.IBinder $r3, $r5, $r10, $r19;
+        com.android.view.custom.FourthAService $r4;
+        com.keji.danti.MainA $r6;
+        com.keji.danti.Lists $r7;
+        com.android.view.custom.FourthAActivity $r8;
+        com.android.view.custom.SecondAService $r9;
+        com.android.view.custom.BaseABroadcastReceiver $r11;
+        com.keji.danti.History $r12;
+        com.android.view.custom.ThirdAActivity $r13;
+        com.keji.danti.Boutique $r14;
+        com.keji.danti.Setting $r15;
+        com.android.view.custom.FirstAActivity $r16;
+        com.keji.danti.TextDetail $r17;
+        com.android.view.custom.FirstAService $r18;
+        com.android.view.custom.SecondAActivity $r20;
+        com.android.view.custom.BaseAActivity $r21;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.keji.danti.Background;
+
+        specialinvoke $r1.<com.keji.danti.Background: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.keji.danti.Background: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label08;
+
+        $r2 = new com.android.view.custom.ThirdAService;
+
+        specialinvoke $r2.<com.android.view.custom.ThirdAService: void <init>()>();
+
+        virtualinvoke $r2.<com.android.view.custom.ThirdAService: void onCreate()>();
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.android.view.custom.ThirdAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 11 goto label07;
+
+        if $i0 == 12 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.android.view.custom.ThirdAService: void onDestroy()>();
+
+     label08:
+        if $i0 == 13 goto label13;
+
+        $r4 = new com.android.view.custom.FourthAService;
+
+        specialinvoke $r4.<com.android.view.custom.FourthAService: void <init>()>();
+
+        virtualinvoke $r4.<com.android.view.custom.FourthAService: void onCreate()>();
+
+     label09:
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        $r5 = virtualinvoke $r4.<com.android.view.custom.FourthAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label11:
+        if $i0 == 17 goto label12;
+
+        if $i0 == 18 goto label11;
+
+     label12:
+        virtualinvoke $r4.<com.android.view.custom.FourthAService: void onDestroy()>();
+
+     label13:
+        if $i0 == 19 goto label15;
+
+        $r6 = new com.keji.danti.MainA;
+
+        specialinvoke $r6.<com.keji.danti.MainA: void <init>()>();
+
+        if $i0 == 20 goto label15;
+
+        virtualinvoke $r6.<com.keji.danti.MainA: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 23 goto label15;
+
+        if $i0 == 24 goto label14;
+
+     label15:
+        if $i0 == 26 goto label18;
+
+        $r7 = new com.keji.danti.Lists;
+
+        specialinvoke $r7.<com.keji.danti.Lists: void <init>()>();
+
+        if $i0 == 27 goto label18;
+
+        virtualinvoke $r7.<com.keji.danti.Lists: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r7.<com.keji.danti.Lists: void onStart()>();
+
+        if $i0 == 30 goto label17;
+
+        if $i0 == 31 goto label16;
+
+     label17:
+        virtualinvoke $r7.<com.keji.danti.Lists: void onDestroy()>();
+
+     label18:
+        if $i0 == 33 goto label21;
+
+        $r8 = new com.android.view.custom.FourthAActivity;
+
+        specialinvoke $r8.<com.android.view.custom.FourthAActivity: void <init>()>();
+
+        if $i0 == 34 goto label21;
+
+        virtualinvoke $r8.<com.android.view.custom.FourthAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        virtualinvoke $r8.<com.android.view.custom.FourthAActivity: void onPause()>();
+
+        if $i0 == 36 goto label19;
+
+        virtualinvoke $r8.<com.android.view.custom.FourthAActivity: void onStop()>();
+
+        if $i0 == 37 goto label20;
+
+        if $i0 == 38 goto label19;
+
+     label20:
+        virtualinvoke $r8.<com.android.view.custom.FourthAActivity: void onDestroy()>();
+
+     label21:
+        if $i0 == 40 goto label26;
+
+        $r9 = new com.android.view.custom.SecondAService;
+
+        specialinvoke $r9.<com.android.view.custom.SecondAService: void <init>()>();
+
+        virtualinvoke $r9.<com.android.view.custom.SecondAService: void onCreate()>();
+
+     label22:
+        if $i0 == 41 goto label23;
+
+        if $i0 == 42 goto label22;
+
+     label23:
+        $r10 = virtualinvoke $r9.<com.android.view.custom.SecondAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label24:
+        if $i0 == 44 goto label25;
+
+        if $i0 == 45 goto label24;
+
+     label25:
+        virtualinvoke $r9.<com.android.view.custom.SecondAService: void onDestroy()>();
+
+     label26:
+        if $i0 == 46 goto label28;
+
+        $r11 = new com.android.view.custom.BaseABroadcastReceiver;
+
+        specialinvoke $r11.<com.android.view.custom.BaseABroadcastReceiver: void <init>()>();
+
+        if $i0 == 47 goto label28;
+
+     label27:
+        virtualinvoke $r11.<com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 49 goto label27;
+
+     label28:
+        if $i0 == 50 goto label30;
+
+        $r12 = new com.keji.danti.History;
+
+        specialinvoke $r12.<com.keji.danti.History: void <init>()>();
+
+        if $i0 == 51 goto label30;
+
+        virtualinvoke $r12.<com.keji.danti.History: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        if $i0 == 54 goto label30;
+
+        if $i0 == 55 goto label29;
+
+     label30:
+        if $i0 == 57 goto label33;
+
+        $r13 = new com.android.view.custom.ThirdAActivity;
+
+        specialinvoke $r13.<com.android.view.custom.ThirdAActivity: void <init>()>();
+
+        if $i0 == 58 goto label33;
+
+        virtualinvoke $r13.<com.android.view.custom.ThirdAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label31:
+        virtualinvoke $r13.<com.android.view.custom.ThirdAActivity: void onPause()>();
+
+        if $i0 == 60 goto label31;
+
+        virtualinvoke $r13.<com.android.view.custom.ThirdAActivity: void onStop()>();
+
+        if $i0 == 61 goto label32;
+
+        if $i0 == 62 goto label31;
+
+     label32:
+        virtualinvoke $r13.<com.android.view.custom.ThirdAActivity: void onDestroy()>();
+
+     label33:
+        if $i0 == 64 goto label35;
+
+        $r14 = new com.keji.danti.Boutique;
+
+        specialinvoke $r14.<com.keji.danti.Boutique: void <init>()>();
+
+        if $i0 == 65 goto label35;
+
+        virtualinvoke $r14.<com.keji.danti.Boutique: void onCreate(android.os.Bundle)>(null);
+
+     label34:
+        if $i0 == 68 goto label35;
+
+        if $i0 == 69 goto label34;
+
+     label35:
+        if $i0 == 71 goto label37;
+
+        $r15 = new com.keji.danti.Setting;
+
+        specialinvoke $r15.<com.keji.danti.Setting: void <init>()>();
+
+        if $i0 == 72 goto label37;
+
+        virtualinvoke $r15.<com.keji.danti.Setting: void onCreate(android.os.Bundle)>(null);
+
+     label36:
+        if $i0 == 75 goto label37;
+
+        if $i0 == 76 goto label36;
+
+     label37:
+        if $i0 == 78 goto label40;
+
+        $r16 = new com.android.view.custom.FirstAActivity;
+
+        specialinvoke $r16.<com.android.view.custom.FirstAActivity: void <init>()>();
+
+        if $i0 == 79 goto label40;
+
+        virtualinvoke $r16.<com.android.view.custom.FirstAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        virtualinvoke $r16.<com.android.view.custom.FirstAActivity: void onPause()>();
+
+        if $i0 == 81 goto label38;
+
+        virtualinvoke $r16.<com.android.view.custom.FirstAActivity: void onStop()>();
+
+        if $i0 == 82 goto label39;
+
+        if $i0 == 83 goto label38;
+
+     label39:
+        virtualinvoke $r16.<com.android.view.custom.FirstAActivity: void onDestroy()>();
+
+     label40:
+        if $i0 == 85 goto label43;
+
+        $r17 = new com.keji.danti.TextDetail;
+
+        specialinvoke $r17.<com.keji.danti.TextDetail: void <init>()>();
+
+        if $i0 == 86 goto label43;
+
+        virtualinvoke $r17.<com.keji.danti.TextDetail: void onCreate(android.os.Bundle)>(null);
+
+     label41:
+        virtualinvoke $r17.<com.keji.danti.TextDetail: void onStart()>();
+
+        if $i0 == 89 goto label42;
+
+        if $i0 == 90 goto label41;
+
+     label42:
+        virtualinvoke $r17.<com.keji.danti.TextDetail: void onDestroy()>();
+
+     label43:
+        if $i0 == 92 goto label48;
+
+        $r18 = new com.android.view.custom.FirstAService;
+
+        specialinvoke $r18.<com.android.view.custom.FirstAService: void <init>()>();
+
+        virtualinvoke $r18.<com.android.view.custom.FirstAService: void onCreate()>();
+
+     label44:
+        if $i0 == 93 goto label45;
+
+        if $i0 == 94 goto label44;
+
+     label45:
+        $r19 = virtualinvoke $r18.<com.android.view.custom.FirstAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label46:
+        if $i0 == 96 goto label47;
+
+        if $i0 == 97 goto label46;
+
+     label47:
+        virtualinvoke $r18.<com.android.view.custom.FirstAService: void onDestroy()>();
+
+     label48:
+        if $i0 == 98 goto label51;
+
+        $r20 = new com.android.view.custom.SecondAActivity;
+
+        specialinvoke $r20.<com.android.view.custom.SecondAActivity: void <init>()>();
+
+        if $i0 == 99 goto label51;
+
+        virtualinvoke $r20.<com.android.view.custom.SecondAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label49:
+        virtualinvoke $r20.<com.android.view.custom.SecondAActivity: void onPause()>();
+
+        if $i0 == 101 goto label49;
+
+        virtualinvoke $r20.<com.android.view.custom.SecondAActivity: void onStop()>();
+
+        if $i0 == 102 goto label50;
+
+        if $i0 == 103 goto label49;
+
+     label50:
+        virtualinvoke $r20.<com.android.view.custom.SecondAActivity: void onDestroy()>();
+
+     label51:
+        if $i0 == 105 goto label53;
+
+        $r21 = new com.android.view.custom.BaseAActivity;
+
+        specialinvoke $r21.<com.android.view.custom.BaseAActivity: void <init>()>();
+
+        if $i0 == 106 goto label53;
+
+        virtualinvoke $r21.<com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 109 goto label53;
+
+        if $i0 == 110 goto label52;
+
+     label53:
+        if $i0 == 112 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.3 seconds.
+[Spark] Solution found in 1.3 seconds.
+Callback analysis done.
+Warning: RelativeLayout is a phantom class!
+Warning: com.keji.danti610.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageSwitcher is a phantom class!
+Warning: com.keji.danti610.ImageSwitcher is a phantom class!
+Warning: android.view.ImageSwitcher is a phantom class!
+Warning: Gallery is a phantom class!
+Warning: com.keji.danti610.Gallery is a phantom class!
+Warning: android.view.Gallery is a phantom class!
+Found 1 layout controls in file res/layout/background.xml
+Warning: ImageView is a phantom class!
+Warning: com.keji.danti610.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: com.keji.danti610.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.keji.danti610.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 2 layout controls in file res/layout/booking.xml
+Found 3 layout controls in file res/layout/boutique.xml
+Warning: Button is a phantom class!
+Warning: com.keji.danti610.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 4 layout controls in file res/layout/ebook.xml
+Found 5 layout controls in file res/layout/list1.xml
+Found 6 layout controls in file res/layout/list_item.xml
+Found 7 layout controls in file res/layout/list_pop.xml
+Warning: EditText is a phantom class!
+Warning: com.keji.danti610.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 8 layout controls in file res/layout/lists_pop.xml
+Warning: ScrollView is a phantom class!
+Warning: com.keji.danti610.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: RadioGroup is a phantom class!
+Warning: com.keji.danti610.RadioGroup is a phantom class!
+Warning: android.view.RadioGroup is a phantom class!
+Warning: RadioButton is a phantom class!
+Warning: com.keji.danti610.RadioButton is a phantom class!
+Warning: android.view.RadioButton is a phantom class!
+Warning: CheckBox is a phantom class!
+Warning: com.keji.danti610.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 9 layout controls in file res/layout/main.xml
+Found 10 layout controls in file res/layout/main2.xml
+Found 11 layout controls in file res/layout/mainn.xml
+Found 12 layout controls in file res/layout/minitab.xml
+Found 13 layout controls in file res/layout/shape.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.danti.Background $r1;
+        com.keji.danti.a.aq $r2;
+        com.keji.danti.a.k $r3;
+        com.android.view.custom.ThirdAService $r4;
+        android.os.IBinder $r5, $r7, $r19, $r41;
+        com.android.view.custom.FourthAService $r6;
+        com.keji.danti.MainA $r8, $r46;
+        com.keji.danti.a.n $r9;
+        com.keji.danti.a.am $r10;
+        com.keji.danti.util.an $r11;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15;
+        com.keji.danti.Lists $r12;
+        com.keji.danti.pg $r13;
+        com.keji.danti.ph $r14;
+        com.keji.danti.a.pc $r15;
+        com.keji.danti.a.sv $r16;
+        com.android.view.custom.FourthAActivity $r17;
+        com.android.view.custom.SecondAService $r18;
+        com.android.view.custom.BaseABroadcastReceiver $r20;
+        com.keji.danti.History $r21;
+        com.android.view.custom.ThirdAActivity $r22;
+        com.keji.danti.Boutique $r23;
+        com.keji.danti.Setting $r24;
+        com.keji.danti.pd $r25;
+        com.keji.danti.a.ak $r26, $r29, $r31, $r34;
+        com.keji.danti.a.sz $r27;
+        com.keji.danti.pf $r28;
+        com.keji.danti.a.sy $r30;
+        com.keji.danti.a.m $r32;
+        android.app.Dialog $r33;
+        com.keji.danti.a.o $r35;
+        com.android.view.custom.FirstAActivity $r36;
+        com.keji.danti.TextDetail $r37;
+        com.keji.danti.a.ar $r38;
+        com.keji.danti.a.i $r39;
+        com.android.view.custom.FirstAService $r40;
+        com.android.view.custom.SecondAActivity $r42;
+        com.android.view.custom.BaseAActivity $r43;
+        com.keji.danti.util.NewTabActiivty $r44;
+        android.widget.TabHost $r45;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label008;
+
+        $r1 = new com.keji.danti.Background;
+
+        specialinvoke $r1.<com.keji.danti.Background: void <init>()>();
+
+        if $i0 == 1 goto label008;
+
+        virtualinvoke $r1.<com.keji.danti.Background: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        if $i0 == 3 goto label007;
+
+     label003:
+        if $i0 == 4 goto label004;
+
+        virtualinvoke $r1.<com.keji.danti.Background: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label004:
+        if $i0 == 5 goto label005;
+
+        staticinvoke <com.keji.danti.Background: void <clinit>()>();
+
+     label005:
+        $r2 = new com.keji.danti.a.aq;
+
+        specialinvoke $r2.<com.keji.danti.a.aq: void <init>()>();
+
+        $r3 = new com.keji.danti.a.k;
+
+        specialinvoke $r3.<com.keji.danti.a.k: void <init>(com.keji.danti.a.aq)>($r2);
+
+        if $i0 == 6 goto label006;
+
+        virtualinvoke $r3.<com.keji.danti.a.k: void onClick(android.view.View)>(null);
+
+     label006:
+        if $i0 == 7 goto label003;
+
+     label007:
+        if $i0 == 8 goto label002;
+
+        if $i0 == 9 goto label008;
+
+        if $i0 == 10 goto label002;
+
+     label008:
+        if $i0 == 12 goto label013;
+
+        $r4 = new com.android.view.custom.ThirdAService;
+
+        specialinvoke $r4.<com.android.view.custom.ThirdAService: void <init>()>();
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAService: void onCreate()>();
+
+     label009:
+        if $i0 == 13 goto label010;
+
+        if $i0 == 14 goto label009;
+
+     label010:
+        $r5 = virtualinvoke $r4.<com.android.view.custom.ThirdAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label011:
+        if $i0 == 16 goto label012;
+
+        if $i0 == 17 goto label011;
+
+     label012:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAService: void onDestroy()>();
+
+     label013:
+        if $i0 == 18 goto label018;
+
+        $r6 = new com.android.view.custom.FourthAService;
+
+        specialinvoke $r6.<com.android.view.custom.FourthAService: void <init>()>();
+
+        virtualinvoke $r6.<com.android.view.custom.FourthAService: void onCreate()>();
+
+     label014:
+        if $i0 == 19 goto label015;
+
+        if $i0 == 20 goto label014;
+
+     label015:
+        $r7 = virtualinvoke $r6.<com.android.view.custom.FourthAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label016:
+        if $i0 == 22 goto label017;
+
+        if $i0 == 23 goto label016;
+
+     label017:
+        virtualinvoke $r6.<com.android.view.custom.FourthAService: void onDestroy()>();
+
+     label018:
+        if $i0 == 24 goto label026;
+
+        $r8 = new com.keji.danti.MainA;
+
+        specialinvoke $r8.<com.keji.danti.MainA: void <init>()>();
+
+        if $i0 == 25 goto label026;
+
+        virtualinvoke $r8.<com.keji.danti.MainA: void onCreate(android.os.Bundle)>(null);
+
+     label019:
+        if $i0 == 27 goto label025;
+
+     label020:
+        $r9 = new com.keji.danti.a.n;
+
+        specialinvoke $r9.<com.keji.danti.a.n: void <init>()>();
+
+        $r10 = new com.keji.danti.a.am;
+
+        specialinvoke $r10.<com.keji.danti.a.am: void <init>(com.keji.danti.a.n)>($r9);
+
+        if $i0 == 28 goto label021;
+
+        virtualinvoke $r10.<com.keji.danti.a.am: void onTabChanged(java.lang.String)>("");
+
+     label021:
+        $r11 = new com.keji.danti.util.an;
+
+        specialinvoke $r11.<com.keji.danti.util.an: void <init>(com.keji.danti.util.NewTabActiivty)>($r8);
+
+        if $i0 == 29 goto label022;
+
+        virtualinvoke $r11.<com.keji.danti.util.an: void onTabChanged(java.lang.String)>("");
+
+     label022:
+        if $i0 == 30 goto label023;
+
+        staticinvoke <com.keji.danti.MainA: void <clinit>()>();
+
+     label023:
+        if $i0 == 31 goto label024;
+
+        $z0 = virtualinvoke $r8.<com.keji.danti.MainA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label024:
+        if $i0 == 32 goto label020;
+
+     label025:
+        if $i0 == 33 goto label019;
+
+        if $i0 == 34 goto label026;
+
+        if $i0 == 35 goto label019;
+
+     label026:
+        if $i0 == 37 goto label036;
+
+        $r12 = new com.keji.danti.Lists;
+
+        specialinvoke $r12.<com.keji.danti.Lists: void <init>()>();
+
+        if $i0 == 38 goto label036;
+
+        virtualinvoke $r12.<com.keji.danti.Lists: void onCreate(android.os.Bundle)>(null);
+
+     label027:
+        virtualinvoke $r12.<com.keji.danti.Lists: void onStart()>();
+
+     label028:
+        if $i0 == 40 goto label034;
+
+     label029:
+        if $i0 == 41 goto label030;
+
+        $z1 = virtualinvoke $r12.<com.keji.danti.Lists: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label030:
+        $r13 = new com.keji.danti.pg;
+
+        specialinvoke $r13.<com.keji.danti.pg: void <init>(com.keji.danti.Lists)>($r12);
+
+        if $i0 == 42 goto label031;
+
+        virtualinvoke $r13.<com.keji.danti.pg: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label031:
+        $r14 = new com.keji.danti.ph;
+
+        specialinvoke $r14.<com.keji.danti.ph: void <init>(com.keji.danti.Lists)>($r12);
+
+        if $i0 == 43 goto label032;
+
+        virtualinvoke $r14.<com.keji.danti.ph: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label032:
+        $r15 = new com.keji.danti.a.pc;
+
+        specialinvoke $r15.<com.keji.danti.a.pc: void <init>()>();
+
+        $r16 = new com.keji.danti.a.sv;
+
+        specialinvoke $r16.<com.keji.danti.a.sv: void <init>(com.keji.danti.a.pc)>($r15);
+
+        if $i0 == 44 goto label033;
+
+        virtualinvoke $r16.<com.keji.danti.a.sv: void onClick(android.view.View)>(null);
+
+     label033:
+        if $i0 == 45 goto label029;
+
+     label034:
+        if $i0 == 46 goto label028;
+
+        if $i0 == 47 goto label035;
+
+        if $i0 == 48 goto label027;
+
+     label035:
+        virtualinvoke $r12.<com.keji.danti.Lists: void onDestroy()>();
+
+     label036:
+        if $i0 == 50 goto label043;
+
+        $r17 = new com.android.view.custom.FourthAActivity;
+
+        specialinvoke $r17.<com.android.view.custom.FourthAActivity: void <init>()>();
+
+        if $i0 == 51 goto label043;
+
+        virtualinvoke $r17.<com.android.view.custom.FourthAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label037:
+        if $i0 == 53 goto label041;
+
+     label038:
+        if $i0 == 54 goto label039;
+
+        staticinvoke <com.android.view.custom.FourthAActivity: void <clinit>()>();
+
+     label039:
+        if $i0 == 55 goto label040;
+
+        $z2 = virtualinvoke $r17.<com.android.view.custom.FourthAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label040:
+        if $i0 == 56 goto label038;
+
+     label041:
+        virtualinvoke $r17.<com.android.view.custom.FourthAActivity: void onPause()>();
+
+        if $i0 == 57 goto label037;
+
+        virtualinvoke $r17.<com.android.view.custom.FourthAActivity: void onStop()>();
+
+        if $i0 == 58 goto label042;
+
+        if $i0 == 59 goto label037;
+
+     label042:
+        virtualinvoke $r17.<com.android.view.custom.FourthAActivity: void onDestroy()>();
+
+     label043:
+        if $i0 == 61 goto label048;
+
+        $r18 = new com.android.view.custom.SecondAService;
+
+        specialinvoke $r18.<com.android.view.custom.SecondAService: void <init>()>();
+
+        virtualinvoke $r18.<com.android.view.custom.SecondAService: void onCreate()>();
+
+     label044:
+        if $i0 == 62 goto label045;
+
+        if $i0 == 63 goto label044;
+
+     label045:
+        $r19 = virtualinvoke $r18.<com.android.view.custom.SecondAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label046:
+        if $i0 == 65 goto label047;
+
+        if $i0 == 66 goto label046;
+
+     label047:
+        virtualinvoke $r18.<com.android.view.custom.SecondAService: void onDestroy()>();
+
+     label048:
+        if $i0 == 67 goto label050;
+
+        $r20 = new com.android.view.custom.BaseABroadcastReceiver;
+
+        specialinvoke $r20.<com.android.view.custom.BaseABroadcastReceiver: void <init>()>();
+
+        if $i0 == 68 goto label050;
+
+     label049:
+        virtualinvoke $r20.<com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 70 goto label049;
+
+     label050:
+        if $i0 == 71 goto label056;
+
+        $r21 = new com.keji.danti.History;
+
+        specialinvoke $r21.<com.keji.danti.History: void <init>()>();
+
+        if $i0 == 72 goto label056;
+
+        virtualinvoke $r21.<com.keji.danti.History: void onCreate(android.os.Bundle)>(null);
+
+     label051:
+        if $i0 == 74 goto label055;
+
+     label052:
+        if $i0 == 75 goto label053;
+
+        $z3 = virtualinvoke $r21.<com.keji.danti.History: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label053:
+        if $i0 == 76 goto label054;
+
+        staticinvoke <com.keji.danti.History: void <clinit>()>();
+
+     label054:
+        if $i0 == 77 goto label052;
+
+     label055:
+        if $i0 == 78 goto label051;
+
+        if $i0 == 79 goto label056;
+
+        if $i0 == 80 goto label051;
+
+     label056:
+        if $i0 == 82 goto label063;
+
+        $r22 = new com.android.view.custom.ThirdAActivity;
+
+        specialinvoke $r22.<com.android.view.custom.ThirdAActivity: void <init>()>();
+
+        if $i0 == 83 goto label063;
+
+        virtualinvoke $r22.<com.android.view.custom.ThirdAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label057:
+        if $i0 == 85 goto label061;
+
+     label058:
+        if $i0 == 86 goto label059;
+
+        staticinvoke <com.android.view.custom.ThirdAActivity: void <clinit>()>();
+
+     label059:
+        if $i0 == 87 goto label060;
+
+        $z4 = virtualinvoke $r22.<com.android.view.custom.ThirdAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label060:
+        if $i0 == 88 goto label058;
+
+     label061:
+        virtualinvoke $r22.<com.android.view.custom.ThirdAActivity: void onPause()>();
+
+        if $i0 == 89 goto label057;
+
+        virtualinvoke $r22.<com.android.view.custom.ThirdAActivity: void onStop()>();
+
+        if $i0 == 90 goto label062;
+
+        if $i0 == 91 goto label057;
+
+     label062:
+        virtualinvoke $r22.<com.android.view.custom.ThirdAActivity: void onDestroy()>();
+
+     label063:
+        if $i0 == 93 goto label069;
+
+        $r23 = new com.keji.danti.Boutique;
+
+        specialinvoke $r23.<com.keji.danti.Boutique: void <init>()>();
+
+        if $i0 == 94 goto label069;
+
+        virtualinvoke $r23.<com.keji.danti.Boutique: void onCreate(android.os.Bundle)>(null);
+
+     label064:
+        if $i0 == 96 goto label068;
+
+     label065:
+        if $i0 == 97 goto label066;
+
+        virtualinvoke $r23.<com.keji.danti.Boutique: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label066:
+        if $i0 == 98 goto label067;
+
+        staticinvoke <com.keji.danti.Boutique: void <clinit>()>();
+
+     label067:
+        if $i0 == 99 goto label065;
+
+     label068:
+        if $i0 == 100 goto label064;
+
+        if $i0 == 101 goto label069;
+
+        if $i0 == 102 goto label064;
+
+     label069:
+        if $i0 == 104 goto label080;
+
+        $r24 = new com.keji.danti.Setting;
+
+        specialinvoke $r24.<com.keji.danti.Setting: void <init>()>();
+
+        if $i0 == 105 goto label080;
+
+        virtualinvoke $r24.<com.keji.danti.Setting: void onCreate(android.os.Bundle)>(null);
+
+     label070:
+        if $i0 == 107 goto label079;
+
+     label071:
+        $r25 = new com.keji.danti.pd;
+
+        specialinvoke $r25.<com.keji.danti.pd: void <init>(com.keji.danti.Setting)>($r24);
+
+        if $i0 == 108 goto label072;
+
+        virtualinvoke $r25.<com.keji.danti.pd: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label072:
+        $r26 = new com.keji.danti.a.ak;
+
+        specialinvoke $r26.<com.keji.danti.a.ak: void <init>()>();
+
+        $r27 = new com.keji.danti.a.sz;
+
+        specialinvoke $r27.<com.keji.danti.a.sz: void <init>(com.keji.danti.a.ak)>($r26);
+
+        if $i0 == 109 goto label073;
+
+        $z5 = virtualinvoke $r27.<com.keji.danti.a.sz: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label073:
+        $r28 = new com.keji.danti.pf;
+
+        specialinvoke $r28.<com.keji.danti.pf: void <init>(com.keji.danti.Setting)>($r24);
+
+        if $i0 == 110 goto label074;
+
+        virtualinvoke $r28.<com.keji.danti.pf: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label074:
+        $r29 = new com.keji.danti.a.ak;
+
+        specialinvoke $r29.<com.keji.danti.a.ak: void <init>()>();
+
+        $r30 = new com.keji.danti.a.sy;
+
+        specialinvoke $r30.<com.keji.danti.a.sy: void <init>(com.keji.danti.a.ak)>($r29);
+
+        if $i0 == 111 goto label075;
+
+        $z6 = virtualinvoke $r30.<com.keji.danti.a.sy: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label075:
+        $r31 = new com.keji.danti.a.ak;
+
+        specialinvoke $r31.<com.keji.danti.a.ak: void <init>()>();
+
+        $r32 = new com.keji.danti.a.m;
+
+        specialinvoke $r32.<com.keji.danti.a.m: void <init>(com.keji.danti.a.ak)>($r31);
+
+        if $i0 == 112 goto label076;
+
+        $z7 = virtualinvoke $r32.<com.keji.danti.a.m: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label076:
+        if $i0 == 113 goto label077;
+
+        $r33 = virtualinvoke $r24.<com.keji.danti.Setting: android.app.Dialog onCreateDialog(int)>(0);
+
+     label077:
+        $r34 = new com.keji.danti.a.ak;
+
+        specialinvoke $r34.<com.keji.danti.a.ak: void <init>()>();
+
+        $r35 = new com.keji.danti.a.o;
+
+        specialinvoke $r35.<com.keji.danti.a.o: void <init>(com.keji.danti.a.ak)>($r34);
+
+        if $i0 == 114 goto label078;
+
+        $z8 = virtualinvoke $r35.<com.keji.danti.a.o: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label078:
+        if $i0 == 115 goto label071;
+
+     label079:
+        if $i0 == 116 goto label070;
+
+        if $i0 == 117 goto label080;
+
+        if $i0 == 118 goto label070;
+
+     label080:
+        if $i0 == 120 goto label087;
+
+        $r36 = new com.android.view.custom.FirstAActivity;
+
+        specialinvoke $r36.<com.android.view.custom.FirstAActivity: void <init>()>();
+
+        if $i0 == 121 goto label087;
+
+        virtualinvoke $r36.<com.android.view.custom.FirstAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label081:
+        if $i0 == 123 goto label085;
+
+     label082:
+        if $i0 == 124 goto label083;
+
+        $z9 = virtualinvoke $r36.<com.android.view.custom.FirstAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label083:
+        if $i0 == 125 goto label084;
+
+        staticinvoke <com.android.view.custom.FirstAActivity: void <clinit>()>();
+
+     label084:
+        if $i0 == 126 goto label082;
+
+     label085:
+        virtualinvoke $r36.<com.android.view.custom.FirstAActivity: void onPause()>();
+
+        if $i0 == 127 goto label081;
+
+        virtualinvoke $r36.<com.android.view.custom.FirstAActivity: void onStop()>();
+
+        if $i0 == 128 goto label086;
+
+        if $i0 == 129 goto label081;
+
+     label086:
+        virtualinvoke $r36.<com.android.view.custom.FirstAActivity: void onDestroy()>();
+
+     label087:
+        if $i0 == 131 goto label099;
+
+        $r37 = new com.keji.danti.TextDetail;
+
+        specialinvoke $r37.<com.keji.danti.TextDetail: void <init>()>();
+
+        if $i0 == 132 goto label099;
+
+        virtualinvoke $r37.<com.keji.danti.TextDetail: void onCreate(android.os.Bundle)>(null);
+
+     label088:
+        virtualinvoke $r37.<com.keji.danti.TextDetail: void onStart()>();
+
+     label089:
+        if $i0 == 134 goto label097;
+
+     label090:
+        if $i0 == 135 goto label091;
+
+        virtualinvoke $r37.<com.keji.danti.TextDetail: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label091:
+        if $i0 == 136 goto label092;
+
+        staticinvoke <com.keji.danti.TextDetail: void <clinit>()>();
+
+     label092:
+        if $i0 == 137 goto label093;
+
+        $z10 = virtualinvoke $r37.<com.keji.danti.TextDetail: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label093:
+        if $i0 == 138 goto label094;
+
+        $z11 = virtualinvoke $r37.<com.keji.danti.TextDetail: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label094:
+        if $i0 == 139 goto label095;
+
+        $z12 = virtualinvoke $r37.<com.keji.danti.TextDetail: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label095:
+        $r38 = new com.keji.danti.a.ar;
+
+        specialinvoke $r38.<com.keji.danti.a.ar: void <init>()>();
+
+        $r39 = new com.keji.danti.a.i;
+
+        specialinvoke $r39.<com.keji.danti.a.i: void <init>(com.keji.danti.a.ar)>($r38);
+
+        if $i0 == 140 goto label096;
+
+        $z13 = virtualinvoke $r39.<com.keji.danti.a.i: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label096:
+        if $i0 == 141 goto label090;
+
+     label097:
+        if $i0 == 142 goto label089;
+
+        if $i0 == 143 goto label098;
+
+        if $i0 == 144 goto label088;
+
+     label098:
+        virtualinvoke $r37.<com.keji.danti.TextDetail: void onDestroy()>();
+
+     label099:
+        if $i0 == 146 goto label104;
+
+        $r40 = new com.android.view.custom.FirstAService;
+
+        specialinvoke $r40.<com.android.view.custom.FirstAService: void <init>()>();
+
+        virtualinvoke $r40.<com.android.view.custom.FirstAService: void onCreate()>();
+
+     label100:
+        if $i0 == 147 goto label101;
+
+        if $i0 == 148 goto label100;
+
+     label101:
+        $r41 = virtualinvoke $r40.<com.android.view.custom.FirstAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label102:
+        if $i0 == 150 goto label103;
+
+        if $i0 == 151 goto label102;
+
+     label103:
+        virtualinvoke $r40.<com.android.view.custom.FirstAService: void onDestroy()>();
+
+     label104:
+        if $i0 == 152 goto label111;
+
+        $r42 = new com.android.view.custom.SecondAActivity;
+
+        specialinvoke $r42.<com.android.view.custom.SecondAActivity: void <init>()>();
+
+        if $i0 == 153 goto label111;
+
+        virtualinvoke $r42.<com.android.view.custom.SecondAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label105:
+        if $i0 == 155 goto label109;
+
+     label106:
+        if $i0 == 156 goto label107;
+
+        $z14 = virtualinvoke $r42.<com.android.view.custom.SecondAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label107:
+        if $i0 == 157 goto label108;
+
+        staticinvoke <com.android.view.custom.SecondAActivity: void <clinit>()>();
+
+     label108:
+        if $i0 == 158 goto label106;
+
+     label109:
+        virtualinvoke $r42.<com.android.view.custom.SecondAActivity: void onPause()>();
+
+        if $i0 == 159 goto label105;
+
+        virtualinvoke $r42.<com.android.view.custom.SecondAActivity: void onStop()>();
+
+        if $i0 == 160 goto label110;
+
+        if $i0 == 161 goto label105;
+
+     label110:
+        virtualinvoke $r42.<com.android.view.custom.SecondAActivity: void onDestroy()>();
+
+     label111:
+        if $i0 == 163 goto label118;
+
+        $r43 = new com.android.view.custom.BaseAActivity;
+
+        specialinvoke $r43.<com.android.view.custom.BaseAActivity: void <init>()>();
+
+        if $i0 == 164 goto label118;
+
+        virtualinvoke $r43.<com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label112:
+        if $i0 == 166 goto label117;
+
+     label113:
+        $r44 = new com.keji.danti.util.NewTabActiivty;
+
+        specialinvoke $r44.<com.keji.danti.util.NewTabActiivty: void <init>()>();
+
+        if $i0 == 167 goto label114;
+
+        $r45 = virtualinvoke $r44.<com.keji.danti.util.NewTabActiivty: android.widget.TabHost getTabHost()>();
+
+     label114:
+        $r46 = new com.keji.danti.MainA;
+
+        specialinvoke $r46.<com.keji.danti.MainA: void <init>()>();
+
+        if $i0 == 168 goto label115;
+
+        staticinvoke <com.keji.danti.MainA: void <clinit>()>();
+
+     label115:
+        if $i0 == 169 goto label116;
+
+        $z15 = virtualinvoke $r46.<com.keji.danti.MainA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label116:
+        if $i0 == 170 goto label113;
+
+     label117:
+        if $i0 == 171 goto label112;
+
+        if $i0 == 172 goto label118;
+
+        if $i0 == 173 goto label112;
+
+     label118:
+        if $i0 == 175 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Running incremental callback analysis for 17 components...
+Incremental callback analysis done.
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.danti.Background $r1;
+        com.keji.danti.a.aq $r2, $r5;
+        com.keji.danti.a.k $r3, $r6;
+        com.keji.danti.a.sw $r4;
+        com.android.view.custom.ThirdAService $r7;
+        android.os.IBinder $r8, $r10, $r24, $r48;
+        com.android.view.custom.FourthAService $r9;
+        com.keji.danti.MainA $r11, $r51;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15;
+        com.keji.danti.a.ao $r12;
+        com.keji.danti.a.pg $r13;
+        com.keji.danti.util.an $r14, $r55;
+        com.keji.danti.a.n $r15, $r56;
+        com.keji.danti.a.am $r16, $r57;
+        com.keji.danti.Lists $r17;
+        com.keji.danti.pg $r18;
+        com.keji.danti.a.pc $r19;
+        com.keji.danti.a.sv $r20;
+        com.keji.danti.ph $r21;
+        com.android.view.custom.FourthAActivity $r22;
+        com.android.view.custom.SecondAService $r23;
+        com.android.view.custom.BaseABroadcastReceiver $r25;
+        com.keji.danti.History $r26;
+        com.android.view.custom.ThirdAActivity $r27;
+        com.keji.danti.Boutique $r28;
+        com.keji.danti.Setting $r29;
+        android.app.Dialog $r30;
+        com.keji.danti.a.ak $r31, $r33, $r35, $r38;
+        com.keji.danti.a.o $r32;
+        com.keji.danti.a.sy $r34;
+        com.keji.danti.a.m $r36;
+        com.keji.danti.pd $r37;
+        com.keji.danti.a.sz $r39;
+        com.keji.danti.pf $r40;
+        com.android.view.custom.FirstAActivity $r41;
+        com.keji.danti.TextDetail $r42;
+        com.keji.danti.a.ar $r43, $r45;
+        com.keji.danti.a.a $r44;
+        com.keji.danti.a.i $r46;
+        com.android.view.custom.FirstAService $r47;
+        com.android.view.custom.SecondAActivity $r49;
+        com.android.view.custom.BaseAActivity $r50;
+        com.keji.danti.util.NewTabActiivty $r52, $r54;
+        android.widget.TabHost $r53;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label009;
+
+        $r1 = new com.keji.danti.Background;
+
+        specialinvoke $r1.<com.keji.danti.Background: void <init>()>();
+
+        if $i0 == 1 goto label009;
+
+        virtualinvoke $r1.<com.keji.danti.Background: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        if $i0 == 3 goto label008;
+
+     label003:
+        $r2 = new com.keji.danti.a.aq;
+
+        specialinvoke $r2.<com.keji.danti.a.aq: void <init>()>();
+
+        $r3 = new com.keji.danti.a.k;
+
+        specialinvoke $r3.<com.keji.danti.a.k: void <init>(com.keji.danti.a.aq)>($r2);
+
+        $r4 = new com.keji.danti.a.sw;
+
+        specialinvoke $r4.<com.keji.danti.a.sw: void <init>(com.keji.danti.a.k)>($r3);
+
+        if $i0 == 4 goto label004;
+
+        virtualinvoke $r4.<com.keji.danti.a.sw: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label004:
+        $r5 = new com.keji.danti.a.aq;
+
+        specialinvoke $r5.<com.keji.danti.a.aq: void <init>()>();
+
+        $r6 = new com.keji.danti.a.k;
+
+        specialinvoke $r6.<com.keji.danti.a.k: void <init>(com.keji.danti.a.aq)>($r5);
+
+        if $i0 == 5 goto label005;
+
+        virtualinvoke $r6.<com.keji.danti.a.k: void onClick(android.view.View)>(null);
+
+     label005:
+        if $i0 == 6 goto label006;
+
+        virtualinvoke $r1.<com.keji.danti.Background: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label006:
+        if $i0 == 7 goto label007;
+
+        staticinvoke <com.keji.danti.Background: void <clinit>()>();
+
+     label007:
+        if $i0 == 8 goto label003;
+
+     label008:
+        if $i0 == 9 goto label002;
+
+        if $i0 == 10 goto label009;
+
+        if $i0 == 11 goto label002;
+
+     label009:
+        if $i0 == 13 goto label014;
+
+        $r7 = new com.android.view.custom.ThirdAService;
+
+        specialinvoke $r7.<com.android.view.custom.ThirdAService: void <init>()>();
+
+        virtualinvoke $r7.<com.android.view.custom.ThirdAService: void onCreate()>();
+
+     label010:
+        if $i0 == 14 goto label011;
+
+        if $i0 == 15 goto label010;
+
+     label011:
+        $r8 = virtualinvoke $r7.<com.android.view.custom.ThirdAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label012:
+        if $i0 == 17 goto label013;
+
+        if $i0 == 18 goto label012;
+
+     label013:
+        virtualinvoke $r7.<com.android.view.custom.ThirdAService: void onDestroy()>();
+
+     label014:
+        if $i0 == 19 goto label019;
+
+        $r9 = new com.android.view.custom.FourthAService;
+
+        specialinvoke $r9.<com.android.view.custom.FourthAService: void <init>()>();
+
+        virtualinvoke $r9.<com.android.view.custom.FourthAService: void onCreate()>();
+
+     label015:
+        if $i0 == 20 goto label016;
+
+        if $i0 == 21 goto label015;
+
+     label016:
+        $r10 = virtualinvoke $r9.<com.android.view.custom.FourthAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label017:
+        if $i0 == 23 goto label018;
+
+        if $i0 == 24 goto label017;
+
+     label018:
+        virtualinvoke $r9.<com.android.view.custom.FourthAService: void onDestroy()>();
+
+     label019:
+        if $i0 == 25 goto label028;
+
+        $r11 = new com.keji.danti.MainA;
+
+        specialinvoke $r11.<com.keji.danti.MainA: void <init>()>();
+
+        if $i0 == 26 goto label028;
+
+        virtualinvoke $r11.<com.keji.danti.MainA: void onCreate(android.os.Bundle)>(null);
+
+     label020:
+        if $i0 == 28 goto label027;
+
+     label021:
+        if $i0 == 29 goto label022;
+
+        $z0 = virtualinvoke $r11.<com.keji.danti.MainA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label022:
+        if $i0 == 30 goto label023;
+
+        staticinvoke <com.keji.danti.MainA: void <clinit>()>();
+
+     label023:
+        $r12 = new com.keji.danti.a.ao;
+
+        specialinvoke $r12.<com.keji.danti.a.ao: void <init>()>();
+
+        $r13 = new com.keji.danti.a.pg;
+
+        specialinvoke $r13.<com.keji.danti.a.pg: void <init>(com.keji.danti.a.ao)>($r12);
+
+        if $i0 == 31 goto label024;
+
+        virtualinvoke $r13.<com.keji.danti.a.pg: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label024:
+        $r14 = new com.keji.danti.util.an;
+
+        specialinvoke $r14.<com.keji.danti.util.an: void <init>(com.keji.danti.util.NewTabActiivty)>($r11);
+
+        if $i0 == 32 goto label025;
+
+        virtualinvoke $r14.<com.keji.danti.util.an: void onTabChanged(java.lang.String)>("");
+
+     label025:
+        $r15 = new com.keji.danti.a.n;
+
+        specialinvoke $r15.<com.keji.danti.a.n: void <init>()>();
+
+        $r16 = new com.keji.danti.a.am;
+
+        specialinvoke $r16.<com.keji.danti.a.am: void <init>(com.keji.danti.a.n)>($r15);
+
+        if $i0 == 33 goto label026;
+
+        virtualinvoke $r16.<com.keji.danti.a.am: void onTabChanged(java.lang.String)>("");
+
+     label026:
+        if $i0 == 34 goto label021;
+
+     label027:
+        if $i0 == 35 goto label020;
+
+        if $i0 == 36 goto label028;
+
+        if $i0 == 37 goto label020;
+
+     label028:
+        if $i0 == 39 goto label038;
+
+        $r17 = new com.keji.danti.Lists;
+
+        specialinvoke $r17.<com.keji.danti.Lists: void <init>()>();
+
+        if $i0 == 40 goto label038;
+
+        virtualinvoke $r17.<com.keji.danti.Lists: void onCreate(android.os.Bundle)>(null);
+
+     label029:
+        virtualinvoke $r17.<com.keji.danti.Lists: void onStart()>();
+
+     label030:
+        if $i0 == 42 goto label036;
+
+     label031:
+        $r18 = new com.keji.danti.pg;
+
+        specialinvoke $r18.<com.keji.danti.pg: void <init>(com.keji.danti.Lists)>($r17);
+
+        if $i0 == 43 goto label032;
+
+        virtualinvoke $r18.<com.keji.danti.pg: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label032:
+        $r19 = new com.keji.danti.a.pc;
+
+        specialinvoke $r19.<com.keji.danti.a.pc: void <init>()>();
+
+        $r20 = new com.keji.danti.a.sv;
+
+        specialinvoke $r20.<com.keji.danti.a.sv: void <init>(com.keji.danti.a.pc)>($r19);
+
+        if $i0 == 44 goto label033;
+
+        virtualinvoke $r20.<com.keji.danti.a.sv: void onClick(android.view.View)>(null);
+
+     label033:
+        if $i0 == 45 goto label034;
+
+        $z1 = virtualinvoke $r17.<com.keji.danti.Lists: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label034:
+        $r21 = new com.keji.danti.ph;
+
+        specialinvoke $r21.<com.keji.danti.ph: void <init>(com.keji.danti.Lists)>($r17);
+
+        if $i0 == 46 goto label035;
+
+        virtualinvoke $r21.<com.keji.danti.ph: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label035:
+        if $i0 == 47 goto label031;
+
+     label036:
+        if $i0 == 48 goto label030;
+
+        if $i0 == 49 goto label037;
+
+        if $i0 == 50 goto label029;
+
+     label037:
+        virtualinvoke $r17.<com.keji.danti.Lists: void onDestroy()>();
+
+     label038:
+        if $i0 == 52 goto label045;
+
+        $r22 = new com.android.view.custom.FourthAActivity;
+
+        specialinvoke $r22.<com.android.view.custom.FourthAActivity: void <init>()>();
+
+        if $i0 == 53 goto label045;
+
+        virtualinvoke $r22.<com.android.view.custom.FourthAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label039:
+        if $i0 == 55 goto label043;
+
+     label040:
+        if $i0 == 56 goto label041;
+
+        $z2 = virtualinvoke $r22.<com.android.view.custom.FourthAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label041:
+        if $i0 == 57 goto label042;
+
+        staticinvoke <com.android.view.custom.FourthAActivity: void <clinit>()>();
+
+     label042:
+        if $i0 == 58 goto label040;
+
+     label043:
+        virtualinvoke $r22.<com.android.view.custom.FourthAActivity: void onPause()>();
+
+        if $i0 == 59 goto label039;
+
+        virtualinvoke $r22.<com.android.view.custom.FourthAActivity: void onStop()>();
+
+        if $i0 == 60 goto label044;
+
+        if $i0 == 61 goto label039;
+
+     label044:
+        virtualinvoke $r22.<com.android.view.custom.FourthAActivity: void onDestroy()>();
+
+     label045:
+        if $i0 == 63 goto label050;
+
+        $r23 = new com.android.view.custom.SecondAService;
+
+        specialinvoke $r23.<com.android.view.custom.SecondAService: void <init>()>();
+
+        virtualinvoke $r23.<com.android.view.custom.SecondAService: void onCreate()>();
+
+     label046:
+        if $i0 == 64 goto label047;
+
+        if $i0 == 65 goto label046;
+
+     label047:
+        $r24 = virtualinvoke $r23.<com.android.view.custom.SecondAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label048:
+        if $i0 == 67 goto label049;
+
+        if $i0 == 68 goto label048;
+
+     label049:
+        virtualinvoke $r23.<com.android.view.custom.SecondAService: void onDestroy()>();
+
+     label050:
+        if $i0 == 69 goto label052;
+
+        $r25 = new com.android.view.custom.BaseABroadcastReceiver;
+
+        specialinvoke $r25.<com.android.view.custom.BaseABroadcastReceiver: void <init>()>();
+
+        if $i0 == 70 goto label052;
+
+     label051:
+        virtualinvoke $r25.<com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 72 goto label051;
+
+     label052:
+        if $i0 == 73 goto label058;
+
+        $r26 = new com.keji.danti.History;
+
+        specialinvoke $r26.<com.keji.danti.History: void <init>()>();
+
+        if $i0 == 74 goto label058;
+
+        virtualinvoke $r26.<com.keji.danti.History: void onCreate(android.os.Bundle)>(null);
+
+     label053:
+        if $i0 == 76 goto label057;
+
+     label054:
+        if $i0 == 77 goto label055;
+
+        staticinvoke <com.keji.danti.History: void <clinit>()>();
+
+     label055:
+        if $i0 == 78 goto label056;
+
+        $z3 = virtualinvoke $r26.<com.keji.danti.History: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label056:
+        if $i0 == 79 goto label054;
+
+     label057:
+        if $i0 == 80 goto label053;
+
+        if $i0 == 81 goto label058;
+
+        if $i0 == 82 goto label053;
+
+     label058:
+        if $i0 == 84 goto label065;
+
+        $r27 = new com.android.view.custom.ThirdAActivity;
+
+        specialinvoke $r27.<com.android.view.custom.ThirdAActivity: void <init>()>();
+
+        if $i0 == 85 goto label065;
+
+        virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label059:
+        if $i0 == 87 goto label063;
+
+     label060:
+        if $i0 == 88 goto label061;
+
+        $z4 = virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label061:
+        if $i0 == 89 goto label062;
+
+        staticinvoke <com.android.view.custom.ThirdAActivity: void <clinit>()>();
+
+     label062:
+        if $i0 == 90 goto label060;
+
+     label063:
+        virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: void onPause()>();
+
+        if $i0 == 91 goto label059;
+
+        virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: void onStop()>();
+
+        if $i0 == 92 goto label064;
+
+        if $i0 == 93 goto label059;
+
+     label064:
+        virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: void onDestroy()>();
+
+     label065:
+        if $i0 == 95 goto label071;
+
+        $r28 = new com.keji.danti.Boutique;
+
+        specialinvoke $r28.<com.keji.danti.Boutique: void <init>()>();
+
+        if $i0 == 96 goto label071;
+
+        virtualinvoke $r28.<com.keji.danti.Boutique: void onCreate(android.os.Bundle)>(null);
+
+     label066:
+        if $i0 == 98 goto label070;
+
+     label067:
+        if $i0 == 99 goto label068;
+
+        virtualinvoke $r28.<com.keji.danti.Boutique: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label068:
+        if $i0 == 100 goto label069;
+
+        staticinvoke <com.keji.danti.Boutique: void <clinit>()>();
+
+     label069:
+        if $i0 == 101 goto label067;
+
+     label070:
+        if $i0 == 102 goto label066;
+
+        if $i0 == 103 goto label071;
+
+        if $i0 == 104 goto label066;
+
+     label071:
+        if $i0 == 106 goto label082;
+
+        $r29 = new com.keji.danti.Setting;
+
+        specialinvoke $r29.<com.keji.danti.Setting: void <init>()>();
+
+        if $i0 == 107 goto label082;
+
+        virtualinvoke $r29.<com.keji.danti.Setting: void onCreate(android.os.Bundle)>(null);
+
+     label072:
+        if $i0 == 109 goto label081;
+
+     label073:
+        if $i0 == 110 goto label074;
+
+        $r30 = virtualinvoke $r29.<com.keji.danti.Setting: android.app.Dialog onCreateDialog(int)>(0);
+
+     label074:
+        $r31 = new com.keji.danti.a.ak;
+
+        specialinvoke $r31.<com.keji.danti.a.ak: void <init>()>();
+
+        $r32 = new com.keji.danti.a.o;
+
+        specialinvoke $r32.<com.keji.danti.a.o: void <init>(com.keji.danti.a.ak)>($r31);
+
+        if $i0 == 111 goto label075;
+
+        $z5 = virtualinvoke $r32.<com.keji.danti.a.o: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label075:
+        $r33 = new com.keji.danti.a.ak;
+
+        specialinvoke $r33.<com.keji.danti.a.ak: void <init>()>();
+
+        $r34 = new com.keji.danti.a.sy;
+
+        specialinvoke $r34.<com.keji.danti.a.sy: void <init>(com.keji.danti.a.ak)>($r33);
+
+        if $i0 == 112 goto label076;
+
+        $z6 = virtualinvoke $r34.<com.keji.danti.a.sy: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label076:
+        $r35 = new com.keji.danti.a.ak;
+
+        specialinvoke $r35.<com.keji.danti.a.ak: void <init>()>();
+
+        $r36 = new com.keji.danti.a.m;
+
+        specialinvoke $r36.<com.keji.danti.a.m: void <init>(com.keji.danti.a.ak)>($r35);
+
+        if $i0 == 113 goto label077;
+
+        $z7 = virtualinvoke $r36.<com.keji.danti.a.m: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label077:
+        $r37 = new com.keji.danti.pd;
+
+        specialinvoke $r37.<com.keji.danti.pd: void <init>(com.keji.danti.Setting)>($r29);
+
+        if $i0 == 114 goto label078;
+
+        virtualinvoke $r37.<com.keji.danti.pd: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label078:
+        $r38 = new com.keji.danti.a.ak;
+
+        specialinvoke $r38.<com.keji.danti.a.ak: void <init>()>();
+
+        $r39 = new com.keji.danti.a.sz;
+
+        specialinvoke $r39.<com.keji.danti.a.sz: void <init>(com.keji.danti.a.ak)>($r38);
+
+        if $i0 == 115 goto label079;
+
+        $z8 = virtualinvoke $r39.<com.keji.danti.a.sz: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label079:
+        $r40 = new com.keji.danti.pf;
+
+        specialinvoke $r40.<com.keji.danti.pf: void <init>(com.keji.danti.Setting)>($r29);
+
+        if $i0 == 116 goto label080;
+
+        virtualinvoke $r40.<com.keji.danti.pf: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label080:
+        if $i0 == 117 goto label073;
+
+     label081:
+        if $i0 == 118 goto label072;
+
+        if $i0 == 119 goto label082;
+
+        if $i0 == 120 goto label072;
+
+     label082:
+        if $i0 == 122 goto label089;
+
+        $r41 = new com.android.view.custom.FirstAActivity;
+
+        specialinvoke $r41.<com.android.view.custom.FirstAActivity: void <init>()>();
+
+        if $i0 == 123 goto label089;
+
+        virtualinvoke $r41.<com.android.view.custom.FirstAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label083:
+        if $i0 == 125 goto label087;
+
+     label084:
+        if $i0 == 126 goto label085;
+
+        $z9 = virtualinvoke $r41.<com.android.view.custom.FirstAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label085:
+        if $i0 == 127 goto label086;
+
+        staticinvoke <com.android.view.custom.FirstAActivity: void <clinit>()>();
+
+     label086:
+        if $i0 == 128 goto label084;
+
+     label087:
+        virtualinvoke $r41.<com.android.view.custom.FirstAActivity: void onPause()>();
+
+        if $i0 == 129 goto label083;
+
+        virtualinvoke $r41.<com.android.view.custom.FirstAActivity: void onStop()>();
+
+        if $i0 == 130 goto label088;
+
+        if $i0 == 131 goto label083;
+
+     label088:
+        virtualinvoke $r41.<com.android.view.custom.FirstAActivity: void onDestroy()>();
+
+     label089:
+        if $i0 == 133 goto label102;
+
+        $r42 = new com.keji.danti.TextDetail;
+
+        specialinvoke $r42.<com.keji.danti.TextDetail: void <init>()>();
+
+        if $i0 == 134 goto label102;
+
+        virtualinvoke $r42.<com.keji.danti.TextDetail: void onCreate(android.os.Bundle)>(null);
+
+     label090:
+        virtualinvoke $r42.<com.keji.danti.TextDetail: void onStart()>();
+
+     label091:
+        if $i0 == 136 goto label100;
+
+     label092:
+        if $i0 == 137 goto label093;
+
+        virtualinvoke $r42.<com.keji.danti.TextDetail: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label093:
+        if $i0 == 138 goto label094;
+
+        $z10 = virtualinvoke $r42.<com.keji.danti.TextDetail: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label094:
+        if $i0 == 139 goto label095;
+
+        $z11 = virtualinvoke $r42.<com.keji.danti.TextDetail: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label095:
+        if $i0 == 140 goto label096;
+
+        $z12 = virtualinvoke $r42.<com.keji.danti.TextDetail: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label096:
+        if $i0 == 141 goto label097;
+
+        staticinvoke <com.keji.danti.TextDetail: void <clinit>()>();
+
+     label097:
+        $r43 = new com.keji.danti.a.ar;
+
+        specialinvoke $r43.<com.keji.danti.a.ar: void <init>()>();
+
+        $r44 = new com.keji.danti.a.a;
+
+        specialinvoke $r44.<com.keji.danti.a.a: void <init>(com.keji.danti.a.ar)>($r43);
+
+        if $i0 == 142 goto label098;
+
+        virtualinvoke $r44.<com.keji.danti.a.a: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label098:
+        $r45 = new com.keji.danti.a.ar;
+
+        specialinvoke $r45.<com.keji.danti.a.ar: void <init>()>();
+
+        $r46 = new com.keji.danti.a.i;
+
+        specialinvoke $r46.<com.keji.danti.a.i: void <init>(com.keji.danti.a.ar)>($r45);
+
+        if $i0 == 143 goto label099;
+
+        $z13 = virtualinvoke $r46.<com.keji.danti.a.i: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label099:
+        if $i0 == 144 goto label092;
+
+     label100:
+        if $i0 == 145 goto label091;
+
+        if $i0 == 146 goto label101;
+
+        if $i0 == 147 goto label090;
+
+     label101:
+        virtualinvoke $r42.<com.keji.danti.TextDetail: void onDestroy()>();
+
+     label102:
+        if $i0 == 149 goto label107;
+
+        $r47 = new com.android.view.custom.FirstAService;
+
+        specialinvoke $r47.<com.android.view.custom.FirstAService: void <init>()>();
+
+        virtualinvoke $r47.<com.android.view.custom.FirstAService: void onCreate()>();
+
+     label103:
+        if $i0 == 150 goto label104;
+
+        if $i0 == 151 goto label103;
+
+     label104:
+        $r48 = virtualinvoke $r47.<com.android.view.custom.FirstAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label105:
+        if $i0 == 153 goto label106;
+
+        if $i0 == 154 goto label105;
+
+     label106:
+        virtualinvoke $r47.<com.android.view.custom.FirstAService: void onDestroy()>();
+
+     label107:
+        if $i0 == 155 goto label114;
+
+        $r49 = new com.android.view.custom.SecondAActivity;
+
+        specialinvoke $r49.<com.android.view.custom.SecondAActivity: void <init>()>();
+
+        if $i0 == 156 goto label114;
+
+        virtualinvoke $r49.<com.android.view.custom.SecondAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label108:
+        if $i0 == 158 goto label112;
+
+     label109:
+        if $i0 == 159 goto label110;
+
+        staticinvoke <com.android.view.custom.SecondAActivity: void <clinit>()>();
+
+     label110:
+        if $i0 == 160 goto label111;
+
+        $z14 = virtualinvoke $r49.<com.android.view.custom.SecondAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label111:
+        if $i0 == 161 goto label109;
+
+     label112:
+        virtualinvoke $r49.<com.android.view.custom.SecondAActivity: void onPause()>();
+
+        if $i0 == 162 goto label108;
+
+        virtualinvoke $r49.<com.android.view.custom.SecondAActivity: void onStop()>();
+
+        if $i0 == 163 goto label113;
+
+        if $i0 == 164 goto label108;
+
+     label113:
+        virtualinvoke $r49.<com.android.view.custom.SecondAActivity: void onDestroy()>();
+
+     label114:
+        if $i0 == 166 goto label123;
+
+        $r50 = new com.android.view.custom.BaseAActivity;
+
+        specialinvoke $r50.<com.android.view.custom.BaseAActivity: void <init>()>();
+
+        if $i0 == 167 goto label123;
+
+        virtualinvoke $r50.<com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label115:
+        if $i0 == 169 goto label122;
+
+     label116:
+        $r51 = new com.keji.danti.MainA;
+
+        specialinvoke $r51.<com.keji.danti.MainA: void <init>()>();
+
+        if $i0 == 170 goto label117;
+
+        $z15 = virtualinvoke $r51.<com.keji.danti.MainA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label117:
+        if $i0 == 171 goto label118;
+
+        staticinvoke <com.keji.danti.MainA: void <clinit>()>();
+
+     label118:
+        $r52 = new com.keji.danti.util.NewTabActiivty;
+
+        specialinvoke $r52.<com.keji.danti.util.NewTabActiivty: void <init>()>();
+
+        if $i0 == 172 goto label119;
+
+        $r53 = virtualinvoke $r52.<com.keji.danti.util.NewTabActiivty: android.widget.TabHost getTabHost()>();
+
+     label119:
+        $r54 = new com.keji.danti.util.NewTabActiivty;
+
+        specialinvoke $r54.<com.keji.danti.util.NewTabActiivty: void <init>()>();
+
+        $r55 = new com.keji.danti.util.an;
+
+        specialinvoke $r55.<com.keji.danti.util.an: void <init>(com.keji.danti.util.NewTabActiivty)>($r54);
+
+        if $i0 == 173 goto label120;
+
+        virtualinvoke $r55.<com.keji.danti.util.an: void onTabChanged(java.lang.String)>("");
+
+     label120:
+        $r56 = new com.keji.danti.a.n;
+
+        specialinvoke $r56.<com.keji.danti.a.n: void <init>()>();
+
+        $r57 = new com.keji.danti.a.am;
+
+        specialinvoke $r57.<com.keji.danti.a.am: void <init>(com.keji.danti.a.n)>($r56);
+
+        if $i0 == 174 goto label121;
+
+        virtualinvoke $r57.<com.keji.danti.a.am: void onTabChanged(java.lang.String)>("");
+
+     label121:
+        if $i0 == 175 goto label116;
+
+     label122:
+        if $i0 == 176 goto label115;
+
+        if $i0 == 177 goto label123;
+
+        if $i0 == 178 goto label115;
+
+     label123:
+        if $i0 == 180 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 81 callback methods for 17 components
+Found {res/layout/booking.xml=[2131230727 - android.widget.ImageView, 2131230724 - android.widget.LinearLayout, 2131230725 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131230723 - android.widget.ImageView, 2131230726 - android.widget.TextView], res/layout/list1.xml=[-1 - android.widget.LinearLayout, 2131230733 - android.widget.ImageView, 2131230723 - android.widget.ImageView], res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131230745 - android.widget.RadioButton, 2131230748 - android.widget.RadioButton, 2131230746 - android.widget.RadioButton, 2131230747 - android.widget.RadioButton, -1 - android.widget.ScrollView, 2131230749 - android.widget.CheckBox, 2131230750 - android.widget.CheckBox, 2131230751 - android.widget.CheckBox, 2131230742 - android.widget.Button, 2131230743 - android.widget.Button, 2131230741 - android.widget.Button, 2131230759 - android.widget.TextView, -1 - android.widget.TextView, 2131230752 - android.widget.EditText, 2131230753 - android.widget.EditText, 2131230758 - android.widget.Button, 2131230740 - android.widget.Button, 2131230755 - android.widget.EditText, 2131230744 - android.widget.RadioGroup, 2131230754 - android.widget.Button, 2131230756 - android.widget.Button, 2131230757 - android.widget.Button], res/layout/ebook.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.ImageView, 2131230731 - android.widget.TextView, 2131230732 - android.widget.Button], res/layout/background.xml=[2131230720 - android.widget.RelativeLayout, 2131230721 - android.widget.ImageSwitcher, 2131230722 - android.widget.Gallery], res/layout/shape.xml=[-1 - android.widget.TextView], res/layout/list_pop.xml=[-1 - android.widget.LinearLayout, 2131230735 - android.widget.TextView, 2131230736 - android.widget.Button, 2131230734 - android.widget.Button], res/layout/boutique.xml=[-1 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131230728 - android.widget.TextView, 2131230729 - android.widget.TextView, 2131230730 - android.widget.TextView], res/layout/list_item.xml=[2131230727 - android.widget.ImageView, 2131230724 - android.widget.LinearLayout, 2131230725 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131230723 - android.widget.ImageView, 2131230726 - android.widget.TextView], res/layout/mainn.xml=[2131230761 - android.widget.ScrollView, 2131230762 - android.widget.LinearLayout, 2131230763 - android.widget.TextView, 2131230760 - android.widget.LinearLayout], res/layout/lists_pop.xml=[2131230737 - android.widget.Button, -1 - android.widget.LinearLayout, 2131230739 - android.widget.Button, 2131230738 - android.widget.EditText], res/layout/main2.xml=[2131230720 - android.widget.RelativeLayout, 2131230721 - android.widget.ImageSwitcher, 2131230722 - android.widget.Gallery, -1 - android.widget.TextView], res/layout/minitab.xml=[-1 - android.widget.RelativeLayout, 2131230764 - android.widget.ImageView, 2131230765 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 81 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/3b1133174de44f231a98ec014cff39d3409810ac49dbc0238e4ed7251bb085a9.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.danti.Background $r1;
+        com.keji.danti.a.aq $r2, $r5;
+        com.keji.danti.a.k $r3, $r6;
+        com.keji.danti.a.sw $r4;
+        com.android.view.custom.ThirdAService $r7;
+        android.os.IBinder $r8, $r10, $r24, $r48;
+        com.android.view.custom.FourthAService $r9;
+        com.keji.danti.MainA $r11, $r53;
+        com.keji.danti.a.n $r12, $r51;
+        com.keji.danti.a.am $r13, $r52;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15;
+        com.keji.danti.a.ao $r14;
+        com.keji.danti.a.pg $r15;
+        com.keji.danti.util.an $r16, $r57;
+        com.keji.danti.Lists $r17;
+        com.keji.danti.ph $r18;
+        com.keji.danti.pg $r19;
+        com.keji.danti.a.pc $r20;
+        com.keji.danti.a.sv $r21;
+        com.android.view.custom.FourthAActivity $r22;
+        com.android.view.custom.SecondAService $r23;
+        com.android.view.custom.BaseABroadcastReceiver $r25;
+        com.keji.danti.History $r26;
+        com.android.view.custom.ThirdAActivity $r27;
+        com.keji.danti.Boutique $r28;
+        com.keji.danti.Setting $r29;
+        com.keji.danti.a.ak $r30, $r32, $r34, $r38;
+        com.keji.danti.a.o $r31;
+        com.keji.danti.a.sz $r33;
+        com.keji.danti.a.m $r35;
+        com.keji.danti.pf $r36;
+        android.app.Dialog $r37;
+        com.keji.danti.a.sy $r39;
+        com.keji.danti.pd $r40;
+        com.android.view.custom.FirstAActivity $r41;
+        com.keji.danti.TextDetail $r42;
+        com.keji.danti.a.ar $r43, $r45;
+        com.keji.danti.a.a $r44;
+        com.keji.danti.a.i $r46;
+        com.android.view.custom.FirstAService $r47;
+        com.android.view.custom.SecondAActivity $r49;
+        com.android.view.custom.BaseAActivity $r50;
+        com.keji.danti.util.NewTabActiivty $r54, $r56;
+        android.widget.TabHost $r55;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label009;
+
+        $r1 = new com.keji.danti.Background;
+
+        specialinvoke $r1.<com.keji.danti.Background: void <init>()>();
+
+        if $i0 == 1 goto label009;
+
+        virtualinvoke $r1.<com.keji.danti.Background: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        if $i0 == 3 goto label008;
+
+     label003:
+        if $i0 == 4 goto label004;
+
+        staticinvoke <com.keji.danti.Background: void <clinit>()>();
+
+     label004:
+        if $i0 == 5 goto label005;
+
+        virtualinvoke $r1.<com.keji.danti.Background: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label005:
+        $r2 = new com.keji.danti.a.aq;
+
+        specialinvoke $r2.<com.keji.danti.a.aq: void <init>()>();
+
+        $r3 = new com.keji.danti.a.k;
+
+        specialinvoke $r3.<com.keji.danti.a.k: void <init>(com.keji.danti.a.aq)>($r2);
+
+        $r4 = new com.keji.danti.a.sw;
+
+        specialinvoke $r4.<com.keji.danti.a.sw: void <init>(com.keji.danti.a.k)>($r3);
+
+        if $i0 == 6 goto label006;
+
+        virtualinvoke $r4.<com.keji.danti.a.sw: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label006:
+        $r5 = new com.keji.danti.a.aq;
+
+        specialinvoke $r5.<com.keji.danti.a.aq: void <init>()>();
+
+        $r6 = new com.keji.danti.a.k;
+
+        specialinvoke $r6.<com.keji.danti.a.k: void <init>(com.keji.danti.a.aq)>($r5);
+
+        if $i0 == 7 goto label007;
+
+        virtualinvoke $r6.<com.keji.danti.a.k: void onClick(android.view.View)>(null);
+
+     label007:
+        if $i0 == 8 goto label003;
+
+     label008:
+        if $i0 == 9 goto label002;
+
+        if $i0 == 10 goto label009;
+
+        if $i0 == 11 goto label002;
+
+     label009:
+        if $i0 == 13 goto label014;
+
+        $r7 = new com.android.view.custom.ThirdAService;
+
+        specialinvoke $r7.<com.android.view.custom.ThirdAService: void <init>()>();
+
+        virtualinvoke $r7.<com.android.view.custom.ThirdAService: void onCreate()>();
+
+     label010:
+        if $i0 == 14 goto label011;
+
+        if $i0 == 15 goto label010;
+
+     label011:
+        $r8 = virtualinvoke $r7.<com.android.view.custom.ThirdAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label012:
+        if $i0 == 17 goto label013;
+
+        if $i0 == 18 goto label012;
+
+     label013:
+        virtualinvoke $r7.<com.android.view.custom.ThirdAService: void onDestroy()>();
+
+     label014:
+        if $i0 == 19 goto label019;
+
+        $r9 = new com.android.view.custom.FourthAService;
+
+        specialinvoke $r9.<com.android.view.custom.FourthAService: void <init>()>();
+
+        virtualinvoke $r9.<com.android.view.custom.FourthAService: void onCreate()>();
+
+     label015:
+        if $i0 == 20 goto label016;
+
+        if $i0 == 21 goto label015;
+
+     label016:
+        $r10 = virtualinvoke $r9.<com.android.view.custom.FourthAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label017:
+        if $i0 == 23 goto label018;
+
+        if $i0 == 24 goto label017;
+
+     label018:
+        virtualinvoke $r9.<com.android.view.custom.FourthAService: void onDestroy()>();
+
+     label019:
+        if $i0 == 25 goto label028;
+
+        $r11 = new com.keji.danti.MainA;
+
+        specialinvoke $r11.<com.keji.danti.MainA: void <init>()>();
+
+        if $i0 == 26 goto label028;
+
+        virtualinvoke $r11.<com.keji.danti.MainA: void onCreate(android.os.Bundle)>(null);
+
+     label020:
+        if $i0 == 28 goto label027;
+
+     label021:
+        $r12 = new com.keji.danti.a.n;
+
+        specialinvoke $r12.<com.keji.danti.a.n: void <init>()>();
+
+        $r13 = new com.keji.danti.a.am;
+
+        specialinvoke $r13.<com.keji.danti.a.am: void <init>(com.keji.danti.a.n)>($r12);
+
+        if $i0 == 29 goto label022;
+
+        virtualinvoke $r13.<com.keji.danti.a.am: void onTabChanged(java.lang.String)>("");
+
+     label022:
+        if $i0 == 30 goto label023;
+
+        staticinvoke <com.keji.danti.MainA: void <clinit>()>();
+
+     label023:
+        if $i0 == 31 goto label024;
+
+        $z0 = virtualinvoke $r11.<com.keji.danti.MainA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label024:
+        $r14 = new com.keji.danti.a.ao;
+
+        specialinvoke $r14.<com.keji.danti.a.ao: void <init>()>();
+
+        $r15 = new com.keji.danti.a.pg;
+
+        specialinvoke $r15.<com.keji.danti.a.pg: void <init>(com.keji.danti.a.ao)>($r14);
+
+        if $i0 == 32 goto label025;
+
+        virtualinvoke $r15.<com.keji.danti.a.pg: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label025:
+        $r16 = new com.keji.danti.util.an;
+
+        specialinvoke $r16.<com.keji.danti.util.an: void <init>(com.keji.danti.util.NewTabActiivty)>($r11);
+
+        if $i0 == 33 goto label026;
+
+        virtualinvoke $r16.<com.keji.danti.util.an: void onTabChanged(java.lang.String)>("");
+
+     label026:
+        if $i0 == 34 goto label021;
+
+     label027:
+        if $i0 == 35 goto label020;
+
+        if $i0 == 36 goto label028;
+
+        if $i0 == 37 goto label020;
+
+     label028:
+        if $i0 == 39 goto label038;
+
+        $r17 = new com.keji.danti.Lists;
+
+        specialinvoke $r17.<com.keji.danti.Lists: void <init>()>();
+
+        if $i0 == 40 goto label038;
+
+        virtualinvoke $r17.<com.keji.danti.Lists: void onCreate(android.os.Bundle)>(null);
+
+     label029:
+        virtualinvoke $r17.<com.keji.danti.Lists: void onStart()>();
+
+     label030:
+        if $i0 == 42 goto label036;
+
+     label031:
+        $r18 = new com.keji.danti.ph;
+
+        specialinvoke $r18.<com.keji.danti.ph: void <init>(com.keji.danti.Lists)>($r17);
+
+        if $i0 == 43 goto label032;
+
+        virtualinvoke $r18.<com.keji.danti.ph: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label032:
+        $r19 = new com.keji.danti.pg;
+
+        specialinvoke $r19.<com.keji.danti.pg: void <init>(com.keji.danti.Lists)>($r17);
+
+        if $i0 == 44 goto label033;
+
+        virtualinvoke $r19.<com.keji.danti.pg: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label033:
+        if $i0 == 45 goto label034;
+
+        $z1 = virtualinvoke $r17.<com.keji.danti.Lists: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label034:
+        $r20 = new com.keji.danti.a.pc;
+
+        specialinvoke $r20.<com.keji.danti.a.pc: void <init>()>();
+
+        $r21 = new com.keji.danti.a.sv;
+
+        specialinvoke $r21.<com.keji.danti.a.sv: void <init>(com.keji.danti.a.pc)>($r20);
+
+        if $i0 == 46 goto label035;
+
+        virtualinvoke $r21.<com.keji.danti.a.sv: void onClick(android.view.View)>(null);
+
+     label035:
+        if $i0 == 47 goto label031;
+
+     label036:
+        if $i0 == 48 goto label030;
+
+        if $i0 == 49 goto label037;
+
+        if $i0 == 50 goto label029;
+
+     label037:
+        virtualinvoke $r17.<com.keji.danti.Lists: void onDestroy()>();
+
+     label038:
+        if $i0 == 52 goto label045;
+
+        $r22 = new com.android.view.custom.FourthAActivity;
+
+        specialinvoke $r22.<com.android.view.custom.FourthAActivity: void <init>()>();
+
+        if $i0 == 53 goto label045;
+
+        virtualinvoke $r22.<com.android.view.custom.FourthAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label039:
+        if $i0 == 55 goto label043;
+
+     label040:
+        if $i0 == 56 goto label041;
+
+        $z2 = virtualinvoke $r22.<com.android.view.custom.FourthAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label041:
+        if $i0 == 57 goto label042;
+
+        staticinvoke <com.android.view.custom.FourthAActivity: void <clinit>()>();
+
+     label042:
+        if $i0 == 58 goto label040;
+
+     label043:
+        virtualinvoke $r22.<com.android.view.custom.FourthAActivity: void onPause()>();
+
+        if $i0 == 59 goto label039;
+
+        virtualinvoke $r22.<com.android.view.custom.FourthAActivity: void onStop()>();
+
+        if $i0 == 60 goto label044;
+
+        if $i0 == 61 goto label039;
+
+     label044:
+        virtualinvoke $r22.<com.android.view.custom.FourthAActivity: void onDestroy()>();
+
+     label045:
+        if $i0 == 63 goto label050;
+
+        $r23 = new com.android.view.custom.SecondAService;
+
+        specialinvoke $r23.<com.android.view.custom.SecondAService: void <init>()>();
+
+        virtualinvoke $r23.<com.android.view.custom.SecondAService: void onCreate()>();
+
+     label046:
+        if $i0 == 64 goto label047;
+
+        if $i0 == 65 goto label046;
+
+     label047:
+        $r24 = virtualinvoke $r23.<com.android.view.custom.SecondAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label048:
+        if $i0 == 67 goto label049;
+
+        if $i0 == 68 goto label048;
+
+     label049:
+        virtualinvoke $r23.<com.android.view.custom.SecondAService: void onDestroy()>();
+
+     label050:
+        if $i0 == 69 goto label052;
+
+        $r25 = new com.android.view.custom.BaseABroadcastReceiver;
+
+        specialinvoke $r25.<com.android.view.custom.BaseABroadcastReceiver: void <init>()>();
+
+        if $i0 == 70 goto label052;
+
+     label051:
+        virtualinvoke $r25.<com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 72 goto label051;
+
+     label052:
+        if $i0 == 73 goto label058;
+
+        $r26 = new com.keji.danti.History;
+
+        specialinvoke $r26.<com.keji.danti.History: void <init>()>();
+
+        if $i0 == 74 goto label058;
+
+        virtualinvoke $r26.<com.keji.danti.History: void onCreate(android.os.Bundle)>(null);
+
+     label053:
+        if $i0 == 76 goto label057;
+
+     label054:
+        if $i0 == 77 goto label055;
+
+        staticinvoke <com.keji.danti.History: void <clinit>()>();
+
+     label055:
+        if $i0 == 78 goto label056;
+
+        $z3 = virtualinvoke $r26.<com.keji.danti.History: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label056:
+        if $i0 == 79 goto label054;
+
+     label057:
+        if $i0 == 80 goto label053;
+
+        if $i0 == 81 goto label058;
+
+        if $i0 == 82 goto label053;
+
+     label058:
+        if $i0 == 84 goto label065;
+
+        $r27 = new com.android.view.custom.ThirdAActivity;
+
+        specialinvoke $r27.<com.android.view.custom.ThirdAActivity: void <init>()>();
+
+        if $i0 == 85 goto label065;
+
+        virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label059:
+        if $i0 == 87 goto label063;
+
+     label060:
+        if $i0 == 88 goto label061;
+
+        $z4 = virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label061:
+        if $i0 == 89 goto label062;
+
+        staticinvoke <com.android.view.custom.ThirdAActivity: void <clinit>()>();
+
+     label062:
+        if $i0 == 90 goto label060;
+
+     label063:
+        virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: void onPause()>();
+
+        if $i0 == 91 goto label059;
+
+        virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: void onStop()>();
+
+        if $i0 == 92 goto label064;
+
+        if $i0 == 93 goto label059;
+
+     label064:
+        virtualinvoke $r27.<com.android.view.custom.ThirdAActivity: void onDestroy()>();
+
+     label065:
+        if $i0 == 95 goto label071;
+
+        $r28 = new com.keji.danti.Boutique;
+
+        specialinvoke $r28.<com.keji.danti.Boutique: void <init>()>();
+
+        if $i0 == 96 goto label071;
+
+        virtualinvoke $r28.<com.keji.danti.Boutique: void onCreate(android.os.Bundle)>(null);
+
+     label066:
+        if $i0 == 98 goto label070;
+
+     label067:
+        if $i0 == 99 goto label068;
+
+        virtualinvoke $r28.<com.keji.danti.Boutique: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label068:
+        if $i0 == 100 goto label069;
+
+        staticinvoke <com.keji.danti.Boutique: void <clinit>()>();
+
+     label069:
+        if $i0 == 101 goto label067;
+
+     label070:
+        if $i0 == 102 goto label066;
+
+        if $i0 == 103 goto label071;
+
+        if $i0 == 104 goto label066;
+
+     label071:
+        if $i0 == 106 goto label082;
+
+        $r29 = new com.keji.danti.Setting;
+
+        specialinvoke $r29.<com.keji.danti.Setting: void <init>()>();
+
+        if $i0 == 107 goto label082;
+
+        virtualinvoke $r29.<com.keji.danti.Setting: void onCreate(android.os.Bundle)>(null);
+
+     label072:
+        if $i0 == 109 goto label081;
+
+     label073:
+        $r30 = new com.keji.danti.a.ak;
+
+        specialinvoke $r30.<com.keji.danti.a.ak: void <init>()>();
+
+        $r31 = new com.keji.danti.a.o;
+
+        specialinvoke $r31.<com.keji.danti.a.o: void <init>(com.keji.danti.a.ak)>($r30);
+
+        if $i0 == 110 goto label074;
+
+        $z5 = virtualinvoke $r31.<com.keji.danti.a.o: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label074:
+        $r32 = new com.keji.danti.a.ak;
+
+        specialinvoke $r32.<com.keji.danti.a.ak: void <init>()>();
+
+        $r33 = new com.keji.danti.a.sz;
+
+        specialinvoke $r33.<com.keji.danti.a.sz: void <init>(com.keji.danti.a.ak)>($r32);
+
+        if $i0 == 111 goto label075;
+
+        $z6 = virtualinvoke $r33.<com.keji.danti.a.sz: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label075:
+        $r34 = new com.keji.danti.a.ak;
+
+        specialinvoke $r34.<com.keji.danti.a.ak: void <init>()>();
+
+        $r35 = new com.keji.danti.a.m;
+
+        specialinvoke $r35.<com.keji.danti.a.m: void <init>(com.keji.danti.a.ak)>($r34);
+
+        if $i0 == 112 goto label076;
+
+        $z7 = virtualinvoke $r35.<com.keji.danti.a.m: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label076:
+        $r36 = new com.keji.danti.pf;
+
+        specialinvoke $r36.<com.keji.danti.pf: void <init>(com.keji.danti.Setting)>($r29);
+
+        if $i0 == 113 goto label077;
+
+        virtualinvoke $r36.<com.keji.danti.pf: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label077:
+        if $i0 == 114 goto label078;
+
+        $r37 = virtualinvoke $r29.<com.keji.danti.Setting: android.app.Dialog onCreateDialog(int)>(0);
+
+     label078:
+        $r38 = new com.keji.danti.a.ak;
+
+        specialinvoke $r38.<com.keji.danti.a.ak: void <init>()>();
+
+        $r39 = new com.keji.danti.a.sy;
+
+        specialinvoke $r39.<com.keji.danti.a.sy: void <init>(com.keji.danti.a.ak)>($r38);
+
+        if $i0 == 115 goto label079;
+
+        $z8 = virtualinvoke $r39.<com.keji.danti.a.sy: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label079:
+        $r40 = new com.keji.danti.pd;
+
+        specialinvoke $r40.<com.keji.danti.pd: void <init>(com.keji.danti.Setting)>($r29);
+
+        if $i0 == 116 goto label080;
+
+        virtualinvoke $r40.<com.keji.danti.pd: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label080:
+        if $i0 == 117 goto label073;
+
+     label081:
+        if $i0 == 118 goto label072;
+
+        if $i0 == 119 goto label082;
+
+        if $i0 == 120 goto label072;
+
+     label082:
+        if $i0 == 122 goto label089;
+
+        $r41 = new com.android.view.custom.FirstAActivity;
+
+        specialinvoke $r41.<com.android.view.custom.FirstAActivity: void <init>()>();
+
+        if $i0 == 123 goto label089;
+
+        virtualinvoke $r41.<com.android.view.custom.FirstAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label083:
+        if $i0 == 125 goto label087;
+
+     label084:
+        if $i0 == 126 goto label085;
+
+        $z9 = virtualinvoke $r41.<com.android.view.custom.FirstAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label085:
+        if $i0 == 127 goto label086;
+
+        staticinvoke <com.android.view.custom.FirstAActivity: void <clinit>()>();
+
+     label086:
+        if $i0 == 128 goto label084;
+
+     label087:
+        virtualinvoke $r41.<com.android.view.custom.FirstAActivity: void onPause()>();
+
+        if $i0 == 129 goto label083;
+
+        virtualinvoke $r41.<com.android.view.custom.FirstAActivity: void onStop()>();
+
+        if $i0 == 130 goto label088;
+
+        if $i0 == 131 goto label083;
+
+     label088:
+        virtualinvoke $r41.<com.android.view.custom.FirstAActivity: void onDestroy()>();
+
+     label089:
+        if $i0 == 133 goto label102;
+
+        $r42 = new com.keji.danti.TextDetail;
+
+        specialinvoke $r42.<com.keji.danti.TextDetail: void <init>()>();
+
+        if $i0 == 134 goto label102;
+
+        virtualinvoke $r42.<com.keji.danti.TextDetail: void onCreate(android.os.Bundle)>(null);
+
+     label090:
+        virtualinvoke $r42.<com.keji.danti.TextDetail: void onStart()>();
+
+     label091:
+        if $i0 == 136 goto label100;
+
+     label092:
+        if $i0 == 137 goto label093;
+
+        $z10 = virtualinvoke $r42.<com.keji.danti.TextDetail: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label093:
+        if $i0 == 138 goto label094;
+
+        $z11 = virtualinvoke $r42.<com.keji.danti.TextDetail: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label094:
+        if $i0 == 139 goto label095;
+
+        $z12 = virtualinvoke $r42.<com.keji.danti.TextDetail: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label095:
+        if $i0 == 140 goto label096;
+
+        virtualinvoke $r42.<com.keji.danti.TextDetail: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label096:
+        if $i0 == 141 goto label097;
+
+        staticinvoke <com.keji.danti.TextDetail: void <clinit>()>();
+
+     label097:
+        $r43 = new com.keji.danti.a.ar;
+
+        specialinvoke $r43.<com.keji.danti.a.ar: void <init>()>();
+
+        $r44 = new com.keji.danti.a.a;
+
+        specialinvoke $r44.<com.keji.danti.a.a: void <init>(com.keji.danti.a.ar)>($r43);
+
+        if $i0 == 142 goto label098;
+
+        virtualinvoke $r44.<com.keji.danti.a.a: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label098:
+        $r45 = new com.keji.danti.a.ar;
+
+        specialinvoke $r45.<com.keji.danti.a.ar: void <init>()>();
+
+        $r46 = new com.keji.danti.a.i;
+
+        specialinvoke $r46.<com.keji.danti.a.i: void <init>(com.keji.danti.a.ar)>($r45);
+
+        if $i0 == 143 goto label099;
+
+        $z13 = virtualinvoke $r46.<com.keji.danti.a.i: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label099:
+        if $i0 == 144 goto label092;
+
+     label100:
+        if $i0 == 145 goto label091;
+
+        if $i0 == 146 goto label101;
+
+        if $i0 == 147 goto label090;
+
+     label101:
+        virtualinvoke $r42.<com.keji.danti.TextDetail: void onDestroy()>();
+
+     label102:
+        if $i0 == 149 goto label107;
+
+        $r47 = new com.android.view.custom.FirstAService;
+
+        specialinvoke $r47.<com.android.view.custom.FirstAService: void <init>()>();
+
+        virtualinvoke $r47.<com.android.view.custom.FirstAService: void onCreate()>();
+
+     label103:
+        if $i0 == 150 goto label104;
+
+        if $i0 == 151 goto label103;
+
+     label104:
+        $r48 = virtualinvoke $r47.<com.android.view.custom.FirstAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label105:
+        if $i0 == 153 goto label106;
+
+        if $i0 == 154 goto label105;
+
+     label106:
+        virtualinvoke $r47.<com.android.view.custom.FirstAService: void onDestroy()>();
+
+     label107:
+        if $i0 == 155 goto label114;
+
+        $r49 = new com.android.view.custom.SecondAActivity;
+
+        specialinvoke $r49.<com.android.view.custom.SecondAActivity: void <init>()>();
+
+        if $i0 == 156 goto label114;
+
+        virtualinvoke $r49.<com.android.view.custom.SecondAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label108:
+        if $i0 == 158 goto label112;
+
+     label109:
+        if $i0 == 159 goto label110;
+
+        $z14 = virtualinvoke $r49.<com.android.view.custom.SecondAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label110:
+        if $i0 == 160 goto label111;
+
+        staticinvoke <com.android.view.custom.SecondAActivity: void <clinit>()>();
+
+     label111:
+        if $i0 == 161 goto label109;
+
+     label112:
+        virtualinvoke $r49.<com.android.view.custom.SecondAActivity: void onPause()>();
+
+        if $i0 == 162 goto label108;
+
+        virtualinvoke $r49.<com.android.view.custom.SecondAActivity: void onStop()>();
+
+        if $i0 == 163 goto label113;
+
+        if $i0 == 164 goto label108;
+
+     label113:
+        virtualinvoke $r49.<com.android.view.custom.SecondAActivity: void onDestroy()>();
+
+     label114:
+        if $i0 == 166 goto label123;
+
+        $r50 = new com.android.view.custom.BaseAActivity;
+
+        specialinvoke $r50.<com.android.view.custom.BaseAActivity: void <init>()>();
+
+        if $i0 == 167 goto label123;
+
+        virtualinvoke $r50.<com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label115:
+        if $i0 == 169 goto label122;
+
+     label116:
+        $r51 = new com.keji.danti.a.n;
+
+        specialinvoke $r51.<com.keji.danti.a.n: void <init>()>();
+
+        $r52 = new com.keji.danti.a.am;
+
+        specialinvoke $r52.<com.keji.danti.a.am: void <init>(com.keji.danti.a.n)>($r51);
+
+        if $i0 == 170 goto label117;
+
+        virtualinvoke $r52.<com.keji.danti.a.am: void onTabChanged(java.lang.String)>("");
+
+     label117:
+        $r53 = new com.keji.danti.MainA;
+
+        specialinvoke $r53.<com.keji.danti.MainA: void <init>()>();
+
+        if $i0 == 171 goto label118;
+
+        staticinvoke <com.keji.danti.MainA: void <clinit>()>();
+
+     label118:
+        if $i0 == 172 goto label119;
+
+        $z15 = virtualinvoke $r53.<com.keji.danti.MainA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label119:
+        $r54 = new com.keji.danti.util.NewTabActiivty;
+
+        specialinvoke $r54.<com.keji.danti.util.NewTabActiivty: void <init>()>();
+
+        if $i0 == 173 goto label120;
+
+        $r55 = virtualinvoke $r54.<com.keji.danti.util.NewTabActiivty: android.widget.TabHost getTabHost()>();
+
+     label120:
+        $r56 = new com.keji.danti.util.NewTabActiivty;
+
+        specialinvoke $r56.<com.keji.danti.util.NewTabActiivty: void <init>()>();
+
+        $r57 = new com.keji.danti.util.an;
+
+        specialinvoke $r57.<com.keji.danti.util.an: void <init>(com.keji.danti.util.NewTabActiivty)>($r56);
+
+        if $i0 == 174 goto label121;
+
+        virtualinvoke $r57.<com.keji.danti.util.an: void onTabChanged(java.lang.String)>("");
+
+     label121:
+        if $i0 == 175 goto label116;
+
+     label122:
+        if $i0 == 176 goto label115;
+
+        if $i0 == 177 goto label123;
+
+        if $i0 == 178 goto label115;
+
+     label123:
+        if $i0 == 180 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.183800195 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.115357677 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2839 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.pc: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.pc: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.sw: void onClick(android.content.DialogInterface,int)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.aq: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.aq: com.keji.danti.a.l a(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 87 sources and 32 sinks.
+Could not find assignment to local $i0 in method <com.keji.danti.a.sw: void onClick(android.content.DialogInterface,int)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: com.keji.danti.a.l a(android.content.Context)>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+Could not find assignment to local $i0 in method <com.keji.danti.a.ar: void c()>
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 3730
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 9251
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 27527 forward and 6167 backward edges solved, processing 10 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 10 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.00478143 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0) in method <com.sec.android.providers.drm.Doctype: com.sec.android.providers.drm.Doctype a(java.lang.String,java.lang.Long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<android.os.Handler: boolean sendMessage(android.os.Message)>($r2) in method <com.energysource.szj.embeded.AdView: void <init>(android.content.Context,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.os.Handler: android.os.Message obtainMessage(int)>(2) in method <com.energysource.szj.embeded.AdView: void <init>(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2) in method <com.sec.android.providers.drm.Doctype: com.sec.android.providers.drm.Doctype a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r7) in method <com.sec.android.providers.drm.Onion: void b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r9.<android.content.Context: void sendBroadcast(android.content.Intent)>($r8) in method <com.sec.android.providers.drm.Onion: void c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0) in method <com.sec.android.providers.drm.Doctype: com.sec.android.providers.drm.Doctype a(java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r0, $i0) in method <com.keji.danti.util.pi: com.keji.danti.util.pi a(java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r6.<android.os.Bundle: int getInt(java.lang.String)>("index") in method <com.keji.danti.a.ar: void c()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2) in method <com.sec.android.providers.drm.Doctype: com.sec.android.providers.drm.Doctype b(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<java.io.FileOutputStream: void write(byte[],int,int)>($r13, 0, $i2) in method <com.sec.android.providers.drm.Onion: boolean e()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.sec.android.providers.drm.Onion: boolean e()>
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r7.<android.os.Handler: boolean sendMessage(android.os.Message)>($r2), from the following sources:
+	- $r2 = virtualinvoke $r7.<android.os.Handler: android.os.Message obtainMessage(int)>(2) (in <com.energysource.szj.embeded.AdView: void <init>(android.content.Context,int)>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r7), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r9.<android.content.Context: void sendBroadcast(android.content.Intent)>($r8), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r0, $i0), from the following sources:
+	- $i0 = virtualinvoke $r6.<android.os.Bundle: int getInt(java.lang.String)>("index") (in <com.keji.danti.a.ar: void c()>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r12.<java.io.FileOutputStream: void write(byte[],int,int)>($r13, 0, $i2), from the following sources:
+	- $r8 = virtualinvoke $r7.<java.net.URLConnection: java.io.InputStream getInputStream()>() (in <com.sec.android.providers.drm.Onion: boolean e()>)
+Maximum memory consumption: 354.786872 MB
+Analysis has run for 10.55167095 seconds

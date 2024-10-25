@@ -1,0 +1,482 @@
+D/InputEventConsistencyVerifier(  606): KeyEvent: ACTION_UP but key was not down.
+D/InputEventConsistencyVerifier(  606):   in com.android.internal.policy.impl.PhoneWindow$DecorView@b410cbf0
+D/InputEventConsistencyVerifier(  606):   0: sent at 94237000000, KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_RIGHT, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=94237, downTime=94237, deviceId=-1, source=0x101 }
+W/dalvikvm(  934): DroidBox: { "FdAccess": { "path": "2f6465762f696e7075742f6576656e7430", "id": "744541773" } }
+W/DroidBox(  934): DroidBox: { "FileRW": { "operation": "write", "data": "efbfbd060000efbfbdefbfbd0c000500000000000000", "id": "744541773" } }
+I/ActivityManager(  222): START {act=android.search.action.GLOBAL_SEARCH flg=0x10000000 cmp=com.android.quicksearchbox/.SearchActivity bnds=[5,43][475,103] (has extras) u=0} from pid 606
+I/Choreographer(  606): Skipped 46 frames!  The application may be doing too much work on its main thread.
+E/Trace   (  952): error opening trace file: No such file or directory (2)
+W/DroidBox(  952): DroidBox: { "DexClassLoader": { "path": "/data/app/com.km.installer-1.apk" } }
+I/dalvikvm-heap(  606): Grow heap (frag case) to 15.077MB for 1463056-byte allocation
+I/ActivityManager(  222): START {flg=0x10000000 cmp=com.km.installer/com.km.charge.MainActivity u=0} from pid 952
+W/DroidBox(  952): DroidBox: { "ServiceStart": { "name": "com.km.charge.CycleService" } }
+I/Choreographer(  952): Skipped 32 frames!  The application may be doing too much work on its main thread.
+I/Choreographer(  222): Skipped 58 frames!  The application may be doing too much work on its main thread.
+W/dalvikvm(  952): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e6b6d2e696e7374616c6c65722f7368617265645f70726566732f54696d65496e666f2e786d6c", "id": "260585693" } }
+W/DroidBox(  952): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c737472696e67206e616d653d226e74223e32303234303932373138313934303c2f737472", "id": "260585693" } }
+W/InputMethodManagerService(  222): Starting input on non-focused client com.android.internal.view.IInputMethodClient$Stub$Proxy@b4141b28 (uid=10019 pid=606)
+D/InputEventConsistencyVerifier(  606): KeyEvent: ACTION_UP but key was not down.
+D/InputEventConsistencyVerifier(  606):   in com.android.launcher2.Cling@b4149f18
+D/InputEventConsistencyVerifier(  606):   0: sent at 94697000000, KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=94697, downTime=94697, deviceId=-1, source=0x101 }
+I/Choreographer(  606): Skipped 401 frames!  The application may be doing too much work on its main thread.
+V/PhoneStatusBar(  416): setLightsOn(true)
+I/Choreographer(  952): Skipped 175 frames!  The application may be doing too much work on its main thread.
+I/InputDispatcher(  222): Window 'Window{b3fd9020 com.android.launcher/com.android.launcher2.Launcher paused=false}' spent 2016.0ms processing the last input event: MotionEvent(action=0, deviceId=0, source=0x00001002)
+I/InputDispatcher(  222): Window 'Window{b3fd9020 com.android.launcher/com.android.launcher2.Launcher paused=false}' spent 2048.0ms processing the last input event: MotionEvent(action=1, deviceId=0, source=0x00001002)
+I/Choreographer(  606): Skipped 139 frames!  The application may be doing too much work on its main thread.
+E/DatabaseUtils(  489): Writing exception to parcel
+E/DatabaseUtils(  489): java.lang.SecurityException: No permission to write APN settings: Neither user 10050 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/DatabaseUtils(  489): 	at android.app.ContextImpl.enforce(ContextImpl.java:1315)
+E/DatabaseUtils(  489): 	at android.app.ContextImpl.enforceCallingOrSelfPermission(ContextImpl.java:1344)
+E/DatabaseUtils(  489): 	at com.android.providers.telephony.TelephonyProvider.checkPermission(TelephonyProvider.java:719)
+E/DatabaseUtils(  489): 	at com.android.providers.telephony.TelephonyProvider.insert(TelephonyProvider.java:490)
+E/DatabaseUtils(  489): 	at android.content.ContentProvider$Transport.insert(ContentProvider.java:201)
+E/DatabaseUtils(  489): 	at android.content.ContentProviderNative.onTransact(ContentProviderNative.java:148)
+E/DatabaseUtils(  489): 	at android.os.Binder.execTransact(Binder.java:367)
+E/DatabaseUtils(  489): 	at dalvik.system.NativeStart.run(Native Method)
+W/dalvikvm(  952): threadid=12: thread exiting with uncaught exception (group=0xb3581e20)
+E/AndroidRuntime(  952): FATAL EXCEPTION: Thread-88
+E/AndroidRuntime(  952): java.lang.SecurityException: No permission to write APN settings: Neither user 10050 nor current process has android.permission.WRITE_APN_SETTINGS.
+E/AndroidRuntime(  952): 	at android.os.Parcel.readException(Parcel.java:1501)
+E/AndroidRuntime(  952): 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:188)
+E/AndroidRuntime(  952): 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:140)
+E/AndroidRuntime(  952): 	at android.content.ContentProviderProxy.insert(ContentProviderNative.java:420)
+E/AndroidRuntime(  952): 	at android.content.ContentResolver.insert(ContentResolver.java:889)
+E/AndroidRuntime(  952): 	at com.km.tool.ApnManager.CreateWapApn(ApnManager.java:71)
+E/AndroidRuntime(  952): 	at com.km.tool.Http.apnChangedCheck(Http.java:140)
+E/AndroidRuntime(  952): 	at com.km.tool.Http.connect(Http.java:158)
+E/AndroidRuntime(  952): 	at com.km.tool.PhoneNumber.getPhoneNumber(PhoneNumber.java:37)
+E/AndroidRuntime(  952): 	at com.km.charge.ChargeUtil.getUrlPath(ChargeUtil.java:49)
+E/AndroidRuntime(  952): 	at com.km.charge.MainActivity.run(MainActivity.java:134)
+E/AndroidRuntime(  952): 	at java.lang.Thread.run(Thread.java:856)
+W/ActivityManager(  222):   Force finishing activity com.km.installer/com.km.charge.MainActivity
+W/WindowManager(  222): Failure taking screenshot for (246x410) to layer 21025
+W/ActivityManager(  222):   Force finishing activity com.km.installer/.InstallerActivity
+I/Choreographer(  606): Skipped 84 frames!  The application may be doing too much work on its main thread.
+I/Process (  952): Sending signal. PID: 952 SIG: 9
+I/ActivityManager(  222): Process com.km.installer (pid 952) has died.
+I/WindowState(  222): WIN DEATH: Window{b40ee3b0 com.km.installer/com.km.installer.InstallerActivity paused=true}
+W/ActivityManager(  222): Scheduling restart of crashed service com.km.installer/com.km.charge.CycleService in 5000ms
+I/WindowState(  222): WIN DEATH: Window{b3e93db0 com.km.installer/com.km.charge.MainActivity paused=true}
+I/WindowState(  222): WIN DEATH: Window{b4241a38 请稍等... paused=true}
+W/InputMethodManagerService(  222): Window already focused, ignoring focus gain of: com.android.internal.view.IInputMethodClient$Stub$Proxy@b3ea7910 attribute=android.view.inputmethod.EditorInfo@b40e1220
+I/AndroidRuntime(  934): VM exiting with result code 20.
+D/InputEventConsistencyVerifier(  606): KeyEvent: ACTION_UP but key was not down.
+D/InputEventConsistencyVerifier(  606):   in com.android.internal.policy.impl.PhoneWindow$DecorView@b410cbf0
+D/InputEventConsistencyVerifier(  606):   0: sent at 97785000000, KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_LEFT, scanCode=0, metaState=0, flags=0x400, repeatCount=0, eventTime=97785, downTime=97785, deviceId=-1, source=0x101 }
+D/InputEventConsistencyVerifier(  606):   -- recent events --
+D/InputEventConsistencyVerifier(  606):   1: sent at 97521000000, (unhandled) MotionEvent { action=ACTION_MOVE, id[0]=0, x[0]=-2.0, y[0]=0.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=97521, downTime=-1, deviceId=0, source=0x10004 }
+D/InputEventConsistencyVerifier(  606):   2: sent at 94840000000, MotionEvent { action=ACTION_UP, id[0]=0, x[0]=313.0, y[0]=367.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=94840, downTime=94802, deviceId=0, source=0x1002 }
+D/InputEventConsistencyVerifier(  606):   3: sent at 94803000000, MotionEvent { action=ACTION_DOWN, id[0]=0, x[0]=313.0, y[0]=367.0, toolType[0]=TOOL_TYPE_UNKNOWN, buttonState=0, metaState=0, flags=0x0, edgeFlags=0x0, pointerCount=1, historySize=0, eventTime=94803, downTime=94802, deviceId=0, source=0x1002 }
+D/InputEventConsistencyVerifier(  606):   4: sent at 94697000000, (unhandled) KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=94697, downTime=94697, deviceId=-1, source=0x101 }
+D/InputEventConsistencyVerifier(  606):   5: sent at 94540000000, (unhandled) KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_DPAD_DOWN, scanCode=0, metaState=0, flags=0x8, repeatCount=0, eventTime=94540, downTime=94540, deviceId=-1, source=0x101 }
+D/InputEventConsistencyVerifier(  606): KeyEvent: ACTION_UP but key was not down.
+D/InputEventConsistencyVerifier(  606):   in com.android.launcher2.Hotseat@b412ade8
+D/InputEventConsistencyVerifier(  606):   0: sent at 97785000000, KeyEvent { action=ACTION_UP, keyCode=KEYCODE_DPAD_LEFT, scanCode=0, metaState=0, flags=0x400, repeatCount=0, eventTime=97785, downTime=97785, deviceId=-1, source=0x101 }
+W/WindowManager(  222): Rebuild removed 3 windows but added 1
+W/WindowManager(  222): This window was lost: Window{b3e93db0 com.km.installer/com.km.charge.MainActivity paused=true}
+W/WindowManager(  222): mSession=Session{b4002570 uid 10050} mClient=android.os.BinderProxy@b3f4cac0
+W/WindowManager(  222): mAttrs=WM.LayoutParams{(0,0)(fillxfill) sim=#120 ty=1 fl=#8010100 pfl=0x8 wanim=0x1030001}
+W/WindowManager(  222): Requested w=480 h=800 mLayoutSeq=44
+W/WindowManager(  222): mBaseLayer=21000 mSubLayer=0 mAnimLayer=21000+0=21000 mLastLayer=21015
+W/WindowManager(  222): mToken=AppWindowToken{b42ec730 token=Token{b43146f8 ActivityRecord{b3ec4c20 com.km.installer/com.km.charge.MainActivity}}}
+W/WindowManager(  222): mRootToken=AppWindowToken{b42ec730 token=Token{b43146f8 ActivityRecord{b3ec4c20 com.km.installer/com.km.charge.MainActivity}}}
+W/WindowManager(  222): mAppToken=AppWindowToken{b42ec730 token=Token{b43146f8 ActivityRecord{b3ec4c20 com.km.installer/com.km.charge.MainActivity}}}
+W/WindowManager(  222): mViewVisibility=0x0 mHaveFrame=true mObscured=true
+W/WindowManager(  222): mSeq=0 mSystemUiVisibility=0x0
+W/WindowManager(  222): mGivenContentInsets=[0,0][0,0] mGivenVisibleInsets=[0,0][0,0]
+W/WindowManager(  222): mConfiguration={1.0 310mcc260mnc en_US sw320dp w320dp h508dp nrml long port -touch -keyb/v/h tball/v s.6}
+W/WindowManager(  222): mHasSurface=true mShownFrame=[0.0,0.0][480.0,800.0]
+W/WindowManager(  222): mFrame=[0,0][480,800] last=[0,0][480,800]
+W/WindowManager(  222): mSystemDecorRect=[0,38][480,800] last=[0,38][480,800]
+W/WindowManager(  222): Frames: containing=[0,0][480,800] parent=[0,0][480,800] display=[0,0][480,800]
+W/WindowManager(  222):     content=[0,38][480,800] visible=[0,38][480,800]
+W/WindowManager(  222): Cur insets: content=[0,38][0,0] visible=[0,38][0,0]
+W/WindowManager(  222): Lst insets: content=[0,38][0,0] visible=[0,38][0,0]
+W/WindowManager(  222): mSurface=Surface(name=com.km.installer/com.km.charge.MainActivity, identity=14)
+W/WindowManager(  222): mDrawState=DRAW_PENDING mLastHidden=true
+W/WindowManager(  222): Surface: shown=false layer=21015 alpha=1.0 rect=(0.0,0.0) 480.0 x 800.0
+W/WindowManager(  222): mExiting=true mRemoveOnExit=true mDestroying=false mRemoved=false
+W/WindowManager(  222): This window was lost: Window{b4241a38 请稍等... paused=true}
+W/WindowManager(  222): mSession=Session{b4002570 uid 10050} mClient=android.os.BinderProxy@b4120848
+W/WindowManager(  222): mAttrs=WM.LayoutParams{(0,0)(wrapxwrap) gr=#11 sim=#120 ty=2 fl=#8020002 pfl=0x8 fmt=-2 wanim=0x1030002}
+W/WindowManager(  222): Requested w=480 h=345 mLayoutSeq=44
+W/WindowManager(  222): mBaseLayer=21000 mSubLayer=0 mAnimLayer=21005+0=21005 mLastLayer=21020
+W/WindowManager(  222): mToken=AppWindowToken{b42ec730 token=Token{b43146f8 ActivityRecord{b3ec4c20 com.km.installer/com.km.charge.MainActivity}}}
+W/WindowManager(  222): mRootToken=AppWindowToken{b42ec730 token=Token{b43146f8 ActivityRecord{b3ec4c20 com.km.installer/com.km.charge.MainActivity}}}
+W/WindowManager(  222): mAppToken=AppWindowToken{b42ec730 token=Token{b43146f8 ActivityRecord{b3ec4c20 com.km.installer/com.km.charge.MainActivity}}}
+W/WindowManager(  222): mViewVisibility=0x0 mHaveFrame=true mObscured=true
+W/WindowManager(  222): mSeq=0 mSystemUiVisibility=0x0
+W/WindowManager(  222): mGivenContentInsets=[0,0][0,0] mGivenVisibleInsets=[0,0][0,0]
+W/WindowManager(  222): mConfiguration={1.0 310mcc260mnc en_US sw320dp w320dp h508dp nrml long port -touch -keyb/v/h tball/v s.6}
+W/WindowManager(  222): mHasSurface=true mShownFrame=[0.0,246.0][480.0,591.0]
+W/WindowManager(  222): mFrame=[0,246][480,591] last=[0,246][480,591]
+W/WindowManager(  222): mSystemDecorRect=[0,0][480,345] last=[0,0][480,345]
+W/WindowManager(  222): Frames: containing=[0,38][480,800] parent=[0,38][480,800] display=[0,38][480,800]
+W/WindowManager(  222):     content=[0,246][480,591] visible=[0,246][480,591]
+W/WindowManager(  222): Cur insets: content=[0,0][0,0] visible=[0,0][0,0]
+W/WindowManager(  222): Lst insets: content=[0,0][0,0] visible=[0,0][0,0]
+W/WindowManager(  222): mSurface=Surface(name=请稍等..., identity=12)
+W/WindowManager(  222): mDrawState=DRAW_PENDING mLastHidden=true
+W/WindowManager(  222): Surface: shown=false layer=21020 alpha=1.0 rect=(0.0,246.0) 480.0 x 345.0
+W/WindowManager(  222): mExiting=true mRemoveOnExit=true mDestroying=false mRemoved=false
+W/WindowManager(  222): Current app token list:
+V/WindowManager(  222):   #0: Token{b40ed508 ActivityRecord{b3e9a1f8 com.android.launcher/com.android.launcher2.Launcher}}
+W/WindowManager(  222): Final window list:
+V/WindowManager(  222):   #3: Window{b4252c18 RecentsPanel paused=false}
+V/WindowManager(  222):   #2: Window{b41d9810 StatusBar paused=false}
+V/WindowManager(  222):   #1: Window{b3fd9020 com.android.launcher/com.android.launcher2.Launcher paused=false}
+V/WindowManager(  222):   #0: Window{b3fc2d58 com.android.systemui.ImageWallpaper paused=false}
+E/StrictMode(  628): A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+E/StrictMode(  628): java.lang.Throwable: Explicit termination method 'close' not called
+E/StrictMode(  628): 	at dalvik.system.CloseGuard.open(CloseGuard.java:184)
+E/StrictMode(  628): 	at android.database.CursorWindow.<init>(CursorWindow.java:137)
+E/StrictMode(  628): 	at android.database.CursorWindow.<init>(CursorWindow.java:41)
+E/StrictMode(  628): 	at android.database.CursorWindow$1.createFromParcel(CursorWindow.java:681)
+E/StrictMode(  628): 	at android.database.CursorWindow$1.createFromParcel(CursorWindow.java:679)
+E/StrictMode(  628): 	at android.database.BulkCursorDescriptor.readFromParcel(BulkCursorDescriptor.java:75)
+E/StrictMode(  628): 	at android.database.BulkCursorDescriptor$1.createFromParcel(BulkCursorDescriptor.java:34)
+E/StrictMode(  628): 	at android.database.BulkCursorDescriptor$1.createFromParcel(BulkCursorDescriptor.java:30)
+E/StrictMode(  628): 	at android.content.ContentProviderProxy.query(ContentProviderNative.java:369)
+E/StrictMode(  628): 	at android.content.ContentResolver.query(ContentResolver.java:373)
+E/StrictMode(  628): 	at android.content.CursorLoader.loadInBackground(CursorLoader.java:65)
+E/StrictMode(  628): 	at android.content.CursorLoader.loadInBackground(CursorLoader.java:43)
+E/StrictMode(  628): 	at android.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:301)
+E/StrictMode(  628): 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:68)
+E/StrictMode(  628): 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:56)
+E/StrictMode(  628): 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+E/StrictMode(  628): 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+E/StrictMode(  628): 	at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+E/StrictMode(  628): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+E/StrictMode(  628): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+E/StrictMode(  628): 	at java.lang.Thread.run(Thread.java:856)
+E/StrictMode(  628): A resource was acquired at attached stack trace but never released. See java.io.Closeable for information on avoiding resource leaks.
+E/StrictMode(  628): java.lang.Throwable: Explicit termination method 'close' not called
+E/StrictMode(  628): 	at dalvik.system.CloseGuard.open(CloseGuard.java:184)
+E/StrictMode(  628): 	at android.content.ContentResolver$CursorWrapperInner.<init>(ContentResolver.java:1860)
+E/StrictMode(  628): 	at android.content.ContentResolver.query(ContentResolver.java:412)
+E/StrictMode(  628): 	at android.content.CursorLoader.loadInBackground(CursorLoader.java:65)
+E/StrictMode(  628): 	at android.content.CursorLoader.loadInBackground(CursorLoader.java:43)
+E/StrictMode(  628): 	at android.content.AsyncTaskLoader.onLoadInBackground(AsyncTaskLoader.java:301)
+E/StrictMode(  628): 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:68)
+E/StrictMode(  628): 	at android.content.AsyncTaskLoader$LoadTask.doInBackground(AsyncTaskLoader.java:56)
+E/StrictMode(  628): 	at android.os.AsyncTask$2.call(AsyncTask.java:287)
+E/StrictMode(  628): 	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:305)
+E/StrictMode(  628): 	at java.util.concurrent.FutureTask.run(FutureTask.java:137)
+E/StrictMode(  628): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1076)
+E/StrictMode(  628): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:569)
+E/StrictMode(  628): 	at java.lang.Thread.run(Thread.java:856)
+W/CursorWrapperInner(  628): Cursor finalized without prior close()
+W/CursorWrapperInner(  628): Cursor finalized without prior close()
+E/WVMExtractor(   63): Failed to open libwvm.so
+W/dalvikvm(  840): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e67616c6c65727933642f7368617265645f70726566732f636f6d2e616e64726f69642e67616c6c65727933645f707265666572656e6365732e786d6c", "id": "466685391" } }
+W/DroidBox(  840): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c696e74206e616d653d227061636b616765732d76657273696f6e222076616c75653d2232", "id": "466685391" } }
+W/dalvikvm(  840): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e67616c6c65727933642f7368617265645f70726566732f636f6d2e616e64726f69642e67616c6c65727933645f707265666572656e6365732e786d6c", "id": "1375208383" } }
+W/DroidBox(  840): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c696e74206e616d653d227061636b616765732d76657273696f6e222076616c75653d2233", "id": "1375208383" } }
+W/DroidBox(  778): DroidBox: { "ServiceStart": { "name": "com.android.providers.downloads.DownloadService" } }
+W/DroidBox(  778): DroidBox: { "ServiceStart": { "name": "com.android.providers.downloads.DownloadService" } }
+W/DroidBox(  678): DroidBox: { "ServiceStart": { "name": "com.android.providers.calendar.CalendarProviderIntentService" } }
+W/DroidBox(  678): DroidBox: { "ServiceStart": { "name": "com.android.providers.calendar.CalendarProviderIntentService" } }
+D/AlertReceiver(  628): onReceive: a=android.intent.action.PROVIDER_CHANGED Intent { act=android.intent.action.PROVIDER_CHANGED dat=content://com.android.calendar flg=0x10 cmp=com.android.calendar/.alerts.AlertReceiver }
+W/DroidBox(  628): DroidBox: { "ServiceStart": { "name": "com.android.calendar.alerts.AlertService" } }
+W/DroidBox(  628): DroidBox: { "ServiceStart": { "name": "com.android.calendar.alerts.AlertService" } }
+D/AlertService(  628): 0 Action = android.intent.action.PROVIDER_CHANGED
+D/AlertService(  628): Beginning updateAlertNotification
+W/ActivityManager(  222): Permission denied: checkComponentPermission() owningUid=1000
+W/BroadcastQueue(  222): Permission Denial: broadcasting Intent { act=android.appwidget.action.APPWIDGET_UPDATE_OPTIONS flg=0x10 cmp=com.android.settings/.widget.SettingsAppWidgetProvider (has extras) } from android (pid=606, uid=10019) is not exported from uid 1000 due to receiver com.android.settings/com.android.settings.widget.SettingsAppWidgetProvider
+I/ActivityManager(  222): Start proc com.android.quicksearchbox for broadcast com.android.quicksearchbox/.CorporaUpdateReceiver: pid=990 uid=10033 gids={3003, 1028}
+D/AlertService(  628): No fired or scheduled alerts
+E/Trace   (  990): error opening trace file: No such file or directory (2)
+W/DroidBox(  990): DroidBox: { "DexClassLoader": { "path": "/system/app/QuickSearchBox.apk" } }
+I/ActivityThread(  990): Pub com.android.quicksearchbox.google: com.android.quicksearchbox.google.GoogleSuggestionProvider
+I/ActivityThread(  990): Pub com.android.quicksearchbox.shortcuts: com.android.quicksearchbox.ShortcutsProvider
+W/dalvikvm(  840): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e67616c6c65727933642f7368617265645f70726566732f636f6d2e616e64726f69642e67616c6c65727933645f707265666572656e6365732e786d6c", "id": "54688689" } }
+W/DroidBox(  840): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c696e74206e616d653d227061636b616765732d76657273696f6e222076616c75653d2234", "id": "54688689" } }
+W/dalvikvm(  550): DroidBox: { "FdAccess": { "path": "2f70726f632f6d656d696e666f", "id": "1560015600" } }
+W/DroidBox(  550): DroidBox: { "FileRW": { "operation": "read", "data": "4d656d546f74616c3a202020202020202020373438393634206b420a4d656d467265653a20202020202020202020343830353830206b420a427566666572733a20202020202020202020202034383234206b420a4361636865643a202020202020202020", "id": "1560015600" } }
+W/dalvikvm(  472): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e696e7075746d6574686f642e6c6174696e2f66696c65732f636f6e74616374732e656e5f55532e646963742e74656d70", "id": "1965091641" } }
+W/DroidBox(  472): DroidBox: { "FileRW": { "operation": "write", "data": "78efbfbd010000", "id": "1965091641" } }
+I/ActivityManager(  222): Start proc com.android.musicfx for broadcast com.android.musicfx/.Compatibility$Receiver: pid=1004 uid=10025 gids={3003, 3002, 1028}
+W/dalvikvm(  472): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e696e7075746d6574686f642e6c6174696e2f66696c65732f636f6e74616374732e656e5f55532e646963742e74656d70", "id": "738922539" } }
+W/DroidBox(  472): DroidBox: { "FileRW": { "operation": "write", "data": "00", "id": "738922539" } }
+E/Trace   ( 1004): error opening trace file: No such file or directory (2)
+W/DroidBox( 1004): DroidBox: { "DexClassLoader": { "path": "/system/app/MusicFX.apk" } }
+E/WVMExtractor(   63): Failed to open libwvm.so
+W/DroidBox( 1004): DroidBox: { "ServiceStart": { "name": "com.android.musicfx.Compatibility$Service" } }
+W/DroidBox( 1004): DroidBox: { "ServiceStart": { "name": "com.android.musicfx.Compatibility$Service" } }
+I/ActivityManager(  222): Start proc com.svox.pico for broadcast com.svox.pico/.VoiceDataInstallerReceiver: pid=1016 uid=10030 gids={1015, 1028}
+I/ActivityManager(  222): Start proc com.km.installer for service com.km.installer/com.km.charge.CycleService: pid=1024 uid=10050 gids={3003, 1015, 1028}
+I/ContactDirectoryManager(  550): deleted 0 stale rows which don't have any relevant directory
+I/ContactDirectoryManager(  550): Discovered 0 contact directories in 969ms
+I/ContactsDatabaseHelper(  550): Switching to locale en_US
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/Trace   ( 1016): error opening trace file: No such file or directory (2)
+E/Trace   ( 1024): error opening trace file: No such file or directory (2)
+W/DroidBox( 1016): DroidBox: { "DexClassLoader": { "path": "/system/app/PicoTts.apk" } }
+W/DroidBox( 1024): DroidBox: { "DexClassLoader": { "path": "/data/app/com.km.installer-1.apk" } }
+I/ActivityThread( 1016): Pub com.svox.pico.providers.SettingsProvider: com.svox.pico.providers.SettingsProvider
+E/WVMExtractor(   63): Failed to open libwvm.so
+W/dalvikvm(  840): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e67616c6c65727933642f7368617265645f70726566732f636f6d2e616e64726f69642e67616c6c65727933645f707265666572656e6365732e786d6c", "id": "2103619756" } }
+W/DroidBox(  840): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c696e74206e616d653d227061636b616765732d76657273696f6e222076616c75653d2235", "id": "2103619756" } }
+I/CycleService( 1024): onCreate
+W/dalvikvm( 1024): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e6b6d2e696e7374616c6c65722f7368617265645f70726566732f54696d65496e666f2e786d6c", "id": "960089535" } }
+W/DroidBox( 1024): DroidBox: { "FileRW": { "operation": "read", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c737472696e67206e616d653d226e74223e32303234303932373138313934303c2f737472", "id": "960089535" } }
+I/getNextTime( 1024): 20240927181940
+I/sleepTime( 1024): 20240927181940
+W/dalvikvm(  840): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e67616c6c65727933642f7368617265645f70726566732f636f6d2e616e64726f69642e67616c6c65727933645f707265666572656e6365732e786d6c", "id": "1047224962" } }
+W/DroidBox(  840): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c696e74206e616d653d227061636b616765732d76657273696f6e222076616c75653d2236", "id": "1047224962" } }
+W/dalvikvm( 1004): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e6d7573696366782f7368617265645f70726566732f6d7573696366782e786d6c", "id": "229006781" } }
+W/DroidBox( 1004): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c737472696e67206e616d653d2264656661756c7470616e656c7061636b616765223e636f", "id": "229006781" } }
+W/dalvikvm(  222): DroidBox: { "FdAccess": { "path": "2f70726f632f3939302f636d646c696e65", "id": "504360817" } }
+W/DroidBox(  222): DroidBox: { "FileRW": { "operation": "read", "data": "636f6d2e616e64726f69642e717569636b736561726368626f78000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035393163333038363061613136316530306233632e61706b", "id": "504360817" } }
+W/dalvikvm(  222): DroidBox: { "FdAccess": { "path": "2f70726f632f313030342f636d646c696e65", "id": "1872825790" } }
+W/DroidBox(  222): DroidBox: { "FileRW": { "operation": "read", "data": "636f6d2e616e64726f69642e6d75736963667800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035393163333038363061613136316530306233632e61706b", "id": "1872825790" } }
+W/dalvikvm(  222): DroidBox: { "FdAccess": { "path": "2f70726f632f313031362f636d646c696e65", "id": "770927766" } }
+W/DroidBox(  222): DroidBox: { "FileRW": { "operation": "read", "data": "636f6d2e73766f782e7069636f00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035393163333038363061613136316530306233632e61706b", "id": "770927766" } }
+W/dalvikvm(  222): DroidBox: { "FdAccess": { "path": "2f70726f632f313032342f636d646c696e65", "id": "1440165905" } }
+W/DroidBox(  222): DroidBox: { "FileRW": { "operation": "read", "data": "636f6d2e6b6d2e696e7374616c6c657200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000035393163333038363061613136316530306233632e61706b", "id": "1440165905" } }
+I/ContactsDatabaseHelper(  550): Locale change completed in 2044ms
+I/ContactsDatabaseHelper(  550): Switching to locale en_US
+E/WVMExtractor(   63): Failed to open libwvm.so
+W/BackupManagerService(  222): dataChanged but no participant pkg='com.android.providers.settings' uid=10011
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/MetadataRetrieverClient(   63): failed to extract an album art
+E/WVMExtractor(   63): Failed to open libwvm.so
+I/ContactsDatabaseHelper(  550): Locale change completed in 868ms
+I/ContactsProvider(  550): Upgrading aggregation algorithm
+I/ContactAggregator(  550): Marked all visible contacts for aggregation: 0 raw contacts, 4 ms
+I/ContactsProvider(  550): Aggregation algorithm upgraded for 0 raw contacts in 18ms
+I/ContactsFTS(  550): Rebuild contact search index in 31ms, 0 contacts
+E/WVMExtractor(   63): Failed to open libwvm.so
+W/dalvikvm(  550): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e70726f7669646572732e636f6e74616374732f7368617265645f70726566732f636f6d2e616e64726f69642e70726f7669646572732e636f6e74616374735f707265666572656e6365732e786d6c", "id": "1281961739" } }
+W/DroidBox(  550): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c737472696e67206e616d653d226c6f63616c65223e656e5f55533c2f737472696e673e0a", "id": "1281961739" } }
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+D/PackageManager(  222): generateServicesMap(android.accounts.AccountAuthenticator): 2 services unchanged
+D/PackageManager(  222): generateServicesMap(android.content.SyncAdapter): 4 services unchanged
+D/PackageManager(  222): generateServicesMap(android.accounts.AccountAuthenticator): 2 services unchanged
+D/PackageManager(  222): generateServicesMap(android.content.SyncAdapter): 4 services unchanged
+I/InputReader(  222): Reconfiguring input devices.  changes=0x00000010
+I/InputReader(  222): Reconfiguring input devices.  changes=0x00000010
+W/dalvikvm(  840): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e67616c6c65727933642f7368617265645f70726566732f636f6d2e616e64726f69642e67616c6c65727933645f707265666572656e6365732e786d6c", "id": "947304370" } }
+W/DroidBox(  840): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c696e74206e616d653d227061636b616765732d76657273696f6e222076616c75653d2237", "id": "947304370" } }
+I/AccountTypeManager(  708): Loaded meta-data for 1 account types, 0 accounts in 358ms(wall) 30ms(cpu)
+W/dalvikvm(  840): DroidBox: { "FdAccess": { "path": "2f646174612f646174612f636f6d2e616e64726f69642e67616c6c65727933642f7368617265645f70726566732f636f6d2e616e64726f69642e67616c6c65727933645f707265666572656e6365732e786d6c", "id": "1114899813" } }
+W/DroidBox(  840): DroidBox: { "FileRW": { "operation": "write", "data": "3c3f786d6c2076657273696f6e3d27312e302720656e636f64696e673d277574662d3827207374616e64616c6f6e653d2779657327203f3e0a3c6d61703e0a3c696e74206e616d653d227061636b616765732d76657273696f6e222076616c75653d2238", "id": "1114899813" } }
+I/AccountTypeManager(  708): Loaded meta-data for 1 account types, 0 accounts in 88ms(wall) 10ms(cpu)
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+I/NetworkPolicy(  222): no policy for active mobile network; generating default policy
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/NetdConnector(  222): NDC Command {11 bandwidth setiquota eth0 9223372036854775807} took too long (1211ms)
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+I/Choreographer(  606): Skipped 36 frames!  The application may be doing too much work on its main thread.
+E/NetdConnector(  222): NDC Command {13 bandwidth setiquota eth0 9223372036854775807} took too long (1176ms)
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+W/BackupManagerService(  222): dataChanged but no participant pkg='com.android.providers.settings' uid=10011
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/MetadataRetrieverClient(   63): failed to extract an album art
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+D/ExchangeService(  819): Received deviceId from Email app: androidc1412937439
+D/ExchangeService(  819): Reconciling accounts...
+E/WVMExtractor(   63): Failed to open libwvm.so
+I/ActivityManager(  222): No longer want com.android.provision (pid 582): hidden #16
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+W/BackupManagerService(  222): dataChanged but no participant pkg='com.android.providers.settings' uid=10011
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/MetadataRetrieverClient(   63): failed to extract an album art
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+W/BackupManagerService(  222): dataChanged but no participant pkg='com.android.providers.settings' uid=1001
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/MetadataRetrieverClient(   63): failed to extract an album art
+E/WVMExtractor(   63): Failed to open libwvm.so
+E/MetadataRetrieverClient(   63): failed to extract an album art
+I/ActivityManager(  222): No longer want com.android.contacts (pid 708): hidden #16
+I/qtaguid (  222): Failed write_ctrl(s 1 10050) res=-1 errno=1
+W/NetworkManagementSocketTagger(  222): setKernelCountSet(10050, 1) failed with errno -1
+I/qtaguid (  222): Failed write_ctrl(s 0 10050) res=-1 errno=1
+W/NetworkManagementSocketTagger(  222): setKernelCountSet(10050, 0) failed with errno -1
+W/dalvikvm(  222): DroidBox: { "FdAccess": { "path": "2f70726f632f3232322f6e65742f78745f717461677569642f69666163655f737461745f616c6c", "id": "268816588" } }
+W/DroidBox(  222): DroidBox: { "FileRW": { "operation": "read", "data": "6c6f20312030203020302030203336333620353120333633362035310a65746830203120302030203020302032333637383420313537362031393534393020313337340a0000000000000000000000000000000000000000000000000000000000000000", "id": "268816588" } }
+W/dalvikvm(  222): DroidBox: { "FdAccess": { "path": "2f70726f632f3232322f6e65742f78745f717461677569642f69666163655f737461745f616c6c", "id": "115526136" } }
+W/DroidBox(  222): DroidBox: { "FileRW": { "operation": "read", "data": "313337340a3020313337340a313337340a3020313337340a340a340a340a340a340a313337340a37340a313337340a37340a313337340a340a340a340a340a340a37340a0000000000000000000000000000000000000000000000000000000000000000", "id": "115526136" } }
+W/ThrottleService(  222): unable to find stats for iface rmnet0
+E/ThrottleService(  222): Error reading data file

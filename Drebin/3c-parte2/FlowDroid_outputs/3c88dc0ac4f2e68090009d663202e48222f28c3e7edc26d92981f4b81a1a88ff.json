@@ -1,0 +1,532 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012408507 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.malice.updater.Settings is a phantom class!
+Warning: com.malice.updater.License is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.malice.updater.Info $r1;
+        com.malice.updater.Updater $r2;
+        com.malice.updater.xBotLocker $r3;
+        com.malice.updater.xBotService $r4;
+        android.os.IBinder $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.malice.updater.Info;
+
+        specialinvoke $r1.<com.malice.updater.Info: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.malice.updater.Info: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 11 goto label05;
+
+        $r2 = new com.malice.updater.Updater;
+
+        specialinvoke $r2.<com.malice.updater.Updater: void <init>()>();
+
+        if $i0 == 12 goto label05;
+
+        virtualinvoke $r2.<com.malice.updater.Updater: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 15 goto label05;
+
+        if $i0 == 16 goto label04;
+
+     label05:
+        if $i0 == 18 goto label07;
+
+        $r3 = new com.malice.updater.xBotLocker;
+
+        specialinvoke $r3.<com.malice.updater.xBotLocker: void <init>()>();
+
+        if $i0 == 19 goto label07;
+
+     label06:
+        virtualinvoke $r3.<com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 21 goto label06;
+
+     label07:
+        if $i0 == 22 goto label12;
+
+        $r4 = new com.malice.updater.xBotService;
+
+        specialinvoke $r4.<com.malice.updater.xBotService: void <init>()>();
+
+        virtualinvoke $r4.<com.malice.updater.xBotService: void onCreate()>();
+
+        virtualinvoke $r4.<com.malice.updater.xBotService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label08:
+        if $i0 == 23 goto label09;
+
+        if $i0 == 24 goto label08;
+
+     label09:
+        $r5 = virtualinvoke $r4.<com.malice.updater.xBotService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label10:
+        if $i0 == 26 goto label11;
+
+        if $i0 == 27 goto label10;
+
+     label11:
+        virtualinvoke $r4.<com.malice.updater.xBotService: void onDestroy()>();
+
+     label12:
+        if $i0 == 28 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.malice.updater.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.malice.updater.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/info.xml
+Warning: ImageView is a phantom class!
+Warning: com.malice.updater.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.malice.updater.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: WebView is a phantom class!
+Warning: com.malice.updater.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.malice.updater.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageButton is a phantom class!
+Warning: com.malice.updater.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Found 3 layout controls in file res/layout/window_title.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.malice.updater.Settings is a phantom class!
+Warning: com.malice.updater.License is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.malice.updater.Info $r1;
+        com.malice.updater.Updater $r2;
+        android.app.Dialog $r3;
+        com.malice.updater.xBotLocker $r4;
+        com.malice.updater.xBotService $r5;
+        android.os.IBinder $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.malice.updater.Info;
+
+        specialinvoke $r1.<com.malice.updater.Info: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.malice.updater.Info: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 12 goto label09;
+
+        $r2 = new com.malice.updater.Updater;
+
+        specialinvoke $r2.<com.malice.updater.Updater: void <init>()>();
+
+        if $i0 == 13 goto label09;
+
+        virtualinvoke $r2.<com.malice.updater.Updater: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 15 goto label08;
+
+     label05:
+        if $i0 == 16 goto label06;
+
+        virtualinvoke $r2.<com.malice.updater.Updater: void onClick(android.view.View)>(null);
+
+     label06:
+        if $i0 == 17 goto label07;
+
+        $r3 = virtualinvoke $r2.<com.malice.updater.Updater: android.app.Dialog onCreateDialog(int)>(0);
+
+     label07:
+        if $i0 == 18 goto label05;
+
+     label08:
+        if $i0 == 19 goto label04;
+
+        if $i0 == 20 goto label09;
+
+        if $i0 == 21 goto label04;
+
+     label09:
+        if $i0 == 23 goto label11;
+
+        $r4 = new com.malice.updater.xBotLocker;
+
+        specialinvoke $r4.<com.malice.updater.xBotLocker: void <init>()>();
+
+        if $i0 == 24 goto label11;
+
+     label10:
+        virtualinvoke $r4.<com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 26 goto label10;
+
+     label11:
+        if $i0 == 27 goto label16;
+
+        $r5 = new com.malice.updater.xBotService;
+
+        specialinvoke $r5.<com.malice.updater.xBotService: void <init>()>();
+
+        virtualinvoke $r5.<com.malice.updater.xBotService: void onCreate()>();
+
+        virtualinvoke $r5.<com.malice.updater.xBotService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 28 goto label13;
+
+        if $i0 == 29 goto label12;
+
+     label13:
+        $r6 = virtualinvoke $r5.<com.malice.updater.xBotService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 31 goto label15;
+
+        if $i0 == 32 goto label14;
+
+     label15:
+        virtualinvoke $r5.<com.malice.updater.xBotService: void onDestroy()>();
+
+     label16:
+        if $i0 == 33 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.0 seconds.
+[Spark] Solution found in 0.0 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Found 7 callback methods for 4 components
+Found {res/layout/window_title.xml=[2131165191 - android.widget.ImageButton, 2131165192 - android.widget.ImageButton, 2131165189 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2131165190 - android.widget.TextView], res/layout/main.xml=[2131165188 - android.webkit.WebView, 2131165186 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131165187 - android.widget.Button], res/layout/info.xml=[-1 - android.widget.LinearLayout, 2131165185 - android.widget.TextView, 2131165184 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 7 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/3c88dc0ac4f2e68090009d663202e48222f28c3e7edc26d92981f4b81a1a88ff.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: com.malice.updater.Settings is a phantom class!
+Warning: com.malice.updater.License is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.malice.updater.Info $r1;
+        com.malice.updater.Updater $r2;
+        android.app.Dialog $r3;
+        com.malice.updater.xBotLocker $r4;
+        com.malice.updater.xBotService $r5;
+        android.os.IBinder $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.malice.updater.Info;
+
+        specialinvoke $r1.<com.malice.updater.Info: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.malice.updater.Info: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 12 goto label09;
+
+        $r2 = new com.malice.updater.Updater;
+
+        specialinvoke $r2.<com.malice.updater.Updater: void <init>()>();
+
+        if $i0 == 13 goto label09;
+
+        virtualinvoke $r2.<com.malice.updater.Updater: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 15 goto label08;
+
+     label05:
+        if $i0 == 16 goto label06;
+
+        virtualinvoke $r2.<com.malice.updater.Updater: void onClick(android.view.View)>(null);
+
+     label06:
+        if $i0 == 17 goto label07;
+
+        $r3 = virtualinvoke $r2.<com.malice.updater.Updater: android.app.Dialog onCreateDialog(int)>(0);
+
+     label07:
+        if $i0 == 18 goto label05;
+
+     label08:
+        if $i0 == 19 goto label04;
+
+        if $i0 == 20 goto label09;
+
+        if $i0 == 21 goto label04;
+
+     label09:
+        if $i0 == 23 goto label11;
+
+        $r4 = new com.malice.updater.xBotLocker;
+
+        specialinvoke $r4.<com.malice.updater.xBotLocker: void <init>()>();
+
+        if $i0 == 24 goto label11;
+
+     label10:
+        virtualinvoke $r4.<com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 26 goto label10;
+
+     label11:
+        if $i0 == 27 goto label16;
+
+        $r5 = new com.malice.updater.xBotService;
+
+        specialinvoke $r5.<com.malice.updater.xBotService: void <init>()>();
+
+        virtualinvoke $r5.<com.malice.updater.xBotService: void onCreate()>();
+
+        virtualinvoke $r5.<com.malice.updater.xBotService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 28 goto label13;
+
+        if $i0 == 29 goto label12;
+
+     label13:
+        $r6 = virtualinvoke $r5.<com.malice.updater.xBotService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 31 goto label15;
+
+        if $i0 == 32 goto label14;
+
+     label15:
+        virtualinvoke $r5.<com.malice.updater.xBotService: void onDestroy()>();
+
+     label16:
+        if $i0 == 33 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.186889497 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.023148685 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 283 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 12 sources and 38 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 505
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 171
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 2633 forward and 71 backward edges solved, processing 20 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 20 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.006012486 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lastCmd", $r8) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Fnd", $r14) in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("smsAll", $r9) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("xBotService", $r9) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r16.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r15, "address=?", $r17) in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("xBotService", $r9) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Message Locked!!", $r14) in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("num", $r2) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("numToLock", $r2) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("xBotService", $r9) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("numToLock", $r5) in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("savedSendTime", $r2) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r7 = interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.malice.updater.xBotService$1: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.malice.updater.xBotService$1: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("xBotService", $r9) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.malice.updater.xBotService$1: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.malice.updater.xBotService$1: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pref", $r8) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("xBotService", $r2) in method <com.malice.updater.xBotService$1: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) in method <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("All messages locked!", $r14) in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r16.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r15, "address=?", $r17) in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("lastCmd", $r8), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Fnd", $r14), from the following sources:
+	- $r8 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("smsAll", $r9), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("xBotService", $r9), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink virtualinvoke $r16.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r15, "address=?", $r17), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("xBotService", $r9), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("Message Locked!!", $r14), from the following sources:
+	- $r8 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("num", $r2), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("numToLock", $r2), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("xBotService", $r9), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("numToLock", $r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("savedSendTime", $r2), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink $r7 = interfaceinvoke $r2.<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r3), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+	- $r8 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.malice.updater.xBotService$1: void run()>)
+	- $r2 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.malice.updater.xBotService$1: void run()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("xBotService", $r9), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+	- $r8 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.malice.updater.xBotService$1: void run()>)
+	- $r2 = virtualinvoke $r7.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.malice.updater.xBotService$1: void run()>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("pref", $r8), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("xBotService", $r2), from the following sources:
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r9) (in <com.malice.updater.xBotService: java.lang.String executeCommand(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("All messages locked!", $r14), from the following sources:
+	- $r8 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r16.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r15, "address=?", $r17), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.malice.updater.xBotLocker: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 81.41948 MB
+Analysis has run for 3.240011994 seconds
