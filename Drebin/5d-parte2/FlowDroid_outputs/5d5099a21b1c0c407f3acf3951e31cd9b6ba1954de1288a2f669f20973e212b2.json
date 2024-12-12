@@ -1,0 +1,649 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012111429 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.soft.android.appinstaller.RulesActivity is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.soft.android.appinstaller.QuestionActivity $r1;
+        com.soft.android.appinstaller.MemberActivity $r2;
+        com.soft.android.appinstaller.FirstActivity $r3;
+        com.soft.android.appinstaller.FinishActivity $r4;
+        com.soft.android.appinstaller.sms.BinarySMSReceiver $r5;
+        com.soft.android.appinstaller.services.SMSSenderService $r6;
+        android.os.IBinder $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.soft.android.appinstaller.QuestionActivity;
+
+        specialinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label05;
+
+        $r2 = new com.soft.android.appinstaller.MemberActivity;
+
+        specialinvoke $r2.<com.soft.android.appinstaller.MemberActivity: void <init>()>();
+
+        if $i0 == 8 goto label05;
+
+        virtualinvoke $r2.<com.soft.android.appinstaller.MemberActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 11 goto label05;
+
+        if $i0 == 12 goto label04;
+
+     label05:
+        if $i0 == 14 goto label07;
+
+        $r3 = new com.soft.android.appinstaller.FirstActivity;
+
+        specialinvoke $r3.<com.soft.android.appinstaller.FirstActivity: void <init>()>();
+
+        if $i0 == 15 goto label07;
+
+        virtualinvoke $r3.<com.soft.android.appinstaller.FirstActivity: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        if $i0 == 18 goto label07;
+
+        if $i0 == 19 goto label06;
+
+     label07:
+        if $i0 == 21 goto label09;
+
+        $r4 = new com.soft.android.appinstaller.FinishActivity;
+
+        specialinvoke $r4.<com.soft.android.appinstaller.FinishActivity: void <init>()>();
+
+        if $i0 == 22 goto label09;
+
+        virtualinvoke $r4.<com.soft.android.appinstaller.FinishActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 25 goto label09;
+
+        if $i0 == 26 goto label08;
+
+     label09:
+        if $i0 == 28 goto label11;
+
+        $r5 = new com.soft.android.appinstaller.sms.BinarySMSReceiver;
+
+        specialinvoke $r5.<com.soft.android.appinstaller.sms.BinarySMSReceiver: void <init>()>();
+
+        if $i0 == 29 goto label11;
+
+     label10:
+        virtualinvoke $r5.<com.soft.android.appinstaller.sms.BinarySMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 31 goto label10;
+
+     label11:
+        if $i0 == 34 goto label15;
+
+        $r6 = new com.soft.android.appinstaller.services.SMSSenderService;
+
+        specialinvoke $r6.<com.soft.android.appinstaller.services.SMSSenderService: void <init>()>();
+
+        virtualinvoke $r6.<com.soft.android.appinstaller.services.SMSSenderService: void onCreate()>();
+
+        virtualinvoke $r6.<com.soft.android.appinstaller.services.SMSSenderService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 35 goto label13;
+
+        if $i0 == 36 goto label12;
+
+     label13:
+        $r7 = virtualinvoke $r6.<com.soft.android.appinstaller.services.SMSSenderService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 38 goto label15;
+
+        if $i0 == 39 goto label14;
+
+     label15:
+        if $i0 == 40 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.soft.android.appinstaller.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.soft.android.appinstaller.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.soft.android.appinstaller.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/finish.xml
+Warning: requestFocus is a phantom class!
+Warning: com.soft.android.appinstaller.requestFocus is a phantom class!
+Warning: android.view.requestFocus is a phantom class!
+Warning: android.widget.requestFocus is a phantom class!
+Warning: android.webkit.requestFocus is a phantom class!
+Could not find layout class requestFocus
+Found 2 layout controls in file res/layout/main.xml
+Warning: ListView is a phantom class!
+Warning: com.soft.android.appinstaller.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 3 layout controls in file res/layout/member.xml
+Could not find layout class requestFocus
+Found 4 layout controls in file res/layout/question.xml
+Could not find layout class requestFocus
+Found 5 layout controls in file res/layout/rules.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.soft.android.appinstaller.RulesActivity is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.soft.android.appinstaller.QuestionActivity $r1;
+        boolean $z0, $z1, $z2;
+        com.soft.android.appinstaller.MemberActivity $r2;
+        com.soft.android.appinstaller.MemberActivity$1 $r3;
+        com.soft.android.appinstaller.FirstActivity $r4;
+        com.soft.android.appinstaller.FinishActivity $r5;
+        com.soft.android.appinstaller.sms.BinarySMSReceiver $r6;
+        com.soft.android.appinstaller.services.SMSSenderService $r7;
+        android.os.IBinder $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.soft.android.appinstaller.QuestionActivity;
+
+        specialinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label12;
+
+        $r2 = new com.soft.android.appinstaller.MemberActivity;
+
+        specialinvoke $r2.<com.soft.android.appinstaller.MemberActivity: void <init>()>();
+
+        if $i0 == 11 goto label12;
+
+        virtualinvoke $r2.<com.soft.android.appinstaller.MemberActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 13 goto label11;
+
+     label08:
+        $r3 = new com.soft.android.appinstaller.MemberActivity$1;
+
+        specialinvoke $r3.<com.soft.android.appinstaller.MemberActivity$1: void <init>(com.soft.android.appinstaller.MemberActivity)>($r2);
+
+        if $i0 == 14 goto label09;
+
+        virtualinvoke $r3.<com.soft.android.appinstaller.MemberActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        $z1 = virtualinvoke $r2.<com.soft.android.appinstaller.MemberActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label10:
+        if $i0 == 16 goto label08;
+
+     label11:
+        if $i0 == 17 goto label07;
+
+        if $i0 == 18 goto label12;
+
+        if $i0 == 19 goto label07;
+
+     label12:
+        if $i0 == 21 goto label14;
+
+        $r4 = new com.soft.android.appinstaller.FirstActivity;
+
+        specialinvoke $r4.<com.soft.android.appinstaller.FirstActivity: void <init>()>();
+
+        if $i0 == 22 goto label14;
+
+        virtualinvoke $r4.<com.soft.android.appinstaller.FirstActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 25 goto label13;
+
+        if $i0 == 26 goto label14;
+
+        if $i0 == 27 goto label13;
+
+     label14:
+        if $i0 == 29 goto label19;
+
+        $r5 = new com.soft.android.appinstaller.FinishActivity;
+
+        specialinvoke $r5.<com.soft.android.appinstaller.FinishActivity: void <init>()>();
+
+        if $i0 == 30 goto label19;
+
+        virtualinvoke $r5.<com.soft.android.appinstaller.FinishActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 32 goto label18;
+
+     label16:
+        if $i0 == 33 goto label17;
+
+        $z2 = virtualinvoke $r5.<com.soft.android.appinstaller.FinishActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label17:
+        if $i0 == 34 goto label16;
+
+     label18:
+        if $i0 == 35 goto label15;
+
+        if $i0 == 36 goto label19;
+
+        if $i0 == 37 goto label15;
+
+     label19:
+        if $i0 == 39 goto label21;
+
+        $r6 = new com.soft.android.appinstaller.sms.BinarySMSReceiver;
+
+        specialinvoke $r6.<com.soft.android.appinstaller.sms.BinarySMSReceiver: void <init>()>();
+
+        if $i0 == 40 goto label21;
+
+     label20:
+        virtualinvoke $r6.<com.soft.android.appinstaller.sms.BinarySMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 42 goto label20;
+
+     label21:
+        if $i0 == 45 goto label25;
+
+        $r7 = new com.soft.android.appinstaller.services.SMSSenderService;
+
+        specialinvoke $r7.<com.soft.android.appinstaller.services.SMSSenderService: void <init>()>();
+
+        virtualinvoke $r7.<com.soft.android.appinstaller.services.SMSSenderService: void onCreate()>();
+
+        virtualinvoke $r7.<com.soft.android.appinstaller.services.SMSSenderService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label22:
+        if $i0 == 46 goto label23;
+
+        if $i0 == 47 goto label22;
+
+     label23:
+        $r8 = virtualinvoke $r7.<com.soft.android.appinstaller.services.SMSSenderService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label24:
+        if $i0 == 49 goto label25;
+
+        if $i0 == 50 goto label24;
+
+     label25:
+        if $i0 == 51 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 21 callback methods for 6 components
+Found {res/layout/rules.xml=[2131165204 - android.widget.TextView, 2131165206 - android.widget.Button, 2131165205 - android.widget.LinearLayout, 2131165184 - android.widget.LinearLayout, 2131165207 - android.widget.Button], res/layout/finish.xml=[2131165185 - android.widget.TextView, 2131165186 - android.widget.LinearLayout, 2131165187 - android.widget.Button, 2131165188 - android.widget.Button, 2131165184 - android.widget.LinearLayout], res/layout/main.xml=[2131165194 - android.widget.Button, 2131165192 - android.widget.TextView, 2131165190 - android.widget.TextView, 2131165191 - android.widget.LinearLayout, 2131165189 - android.widget.LinearLayout, 2131165193 - android.widget.LinearLayout, 2131165195 - android.widget.Button], res/layout/member.xml=[-1 - android.widget.LinearLayout, 2131165198 - android.widget.Button, 2131165193 - android.widget.LinearLayout, 2131165196 - android.widget.ListView, 2131165197 - android.widget.Button], res/layout/question.xml=[2131165199 - android.widget.LinearLayout, 2131165203 - android.widget.Button, 2131165200 - android.widget.TextView, 2131165201 - android.widget.LinearLayout, 2131165202 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 21 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/5d5099a21b1c0c407f3acf3951e31cd9b6ba1954de1288a2f669f20973e212b2.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: com.soft.android.appinstaller.RulesActivity is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.soft.android.appinstaller.QuestionActivity $r1;
+        boolean $z0, $z1, $z2;
+        com.soft.android.appinstaller.MemberActivity $r2;
+        com.soft.android.appinstaller.MemberActivity$1 $r3;
+        com.soft.android.appinstaller.FirstActivity $r4;
+        com.soft.android.appinstaller.FinishActivity $r5;
+        com.soft.android.appinstaller.sms.BinarySMSReceiver $r6;
+        com.soft.android.appinstaller.services.SMSSenderService $r7;
+        android.os.IBinder $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.soft.android.appinstaller.QuestionActivity;
+
+        specialinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label07;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: void onNoClicked(android.view.View)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r1.<com.soft.android.appinstaller.QuestionActivity: void onYesClicked(android.view.View)>(null);
+
+     label06:
+        if $i0 == 7 goto label03;
+
+     label07:
+        if $i0 == 8 goto label02;
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label02;
+
+     label08:
+        if $i0 == 12 goto label16;
+
+        $r2 = new com.soft.android.appinstaller.MemberActivity;
+
+        specialinvoke $r2.<com.soft.android.appinstaller.MemberActivity: void <init>()>();
+
+        if $i0 == 13 goto label16;
+
+        virtualinvoke $r2.<com.soft.android.appinstaller.MemberActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 15 goto label15;
+
+     label10:
+        if $i0 == 16 goto label11;
+
+        virtualinvoke $r2.<com.soft.android.appinstaller.MemberActivity: void onMemberExitClicked(android.view.View)>(null);
+
+     label11:
+        if $i0 == 17 goto label12;
+
+        $z1 = virtualinvoke $r2.<com.soft.android.appinstaller.MemberActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label12:
+        if $i0 == 18 goto label13;
+
+        virtualinvoke $r2.<com.soft.android.appinstaller.MemberActivity: void onMemberOpenClicked(android.view.View)>(null);
+
+     label13:
+        $r3 = new com.soft.android.appinstaller.MemberActivity$1;
+
+        specialinvoke $r3.<com.soft.android.appinstaller.MemberActivity$1: void <init>(com.soft.android.appinstaller.MemberActivity)>($r2);
+
+        if $i0 == 19 goto label14;
+
+        virtualinvoke $r3.<com.soft.android.appinstaller.MemberActivity$1: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label14:
+        if $i0 == 20 goto label10;
+
+     label15:
+        if $i0 == 21 goto label09;
+
+        if $i0 == 22 goto label16;
+
+        if $i0 == 23 goto label09;
+
+     label16:
+        if $i0 == 25 goto label23;
+
+        $r4 = new com.soft.android.appinstaller.FirstActivity;
+
+        specialinvoke $r4.<com.soft.android.appinstaller.FirstActivity: void <init>()>();
+
+        if $i0 == 26 goto label23;
+
+        virtualinvoke $r4.<com.soft.android.appinstaller.FirstActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 28 goto label22;
+
+     label18:
+        if $i0 == 29 goto label19;
+
+        virtualinvoke $r4.<com.soft.android.appinstaller.FirstActivity: void onExitClicked(android.view.View)>(null);
+
+     label19:
+        if $i0 == 30 goto label20;
+
+        virtualinvoke $r4.<com.soft.android.appinstaller.FirstActivity: void onRulesClicked(android.view.View)>(null);
+
+     label20:
+        if $i0 == 31 goto label21;
+
+        virtualinvoke $r4.<com.soft.android.appinstaller.FirstActivity: void onNextClicked(android.view.View)>(null);
+
+     label21:
+        if $i0 == 32 goto label18;
+
+     label22:
+        if $i0 == 33 goto label17;
+
+        if $i0 == 34 goto label23;
+
+        if $i0 == 35 goto label17;
+
+     label23:
+        if $i0 == 37 goto label30;
+
+        $r5 = new com.soft.android.appinstaller.FinishActivity;
+
+        specialinvoke $r5.<com.soft.android.appinstaller.FinishActivity: void <init>()>();
+
+        if $i0 == 38 goto label30;
+
+        virtualinvoke $r5.<com.soft.android.appinstaller.FinishActivity: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 40 goto label29;
+
+     label25:
+        if $i0 == 41 goto label26;
+
+        virtualinvoke $r5.<com.soft.android.appinstaller.FinishActivity: void onNextClicked(android.view.View)>(null);
+
+     label26:
+        if $i0 == 42 goto label27;
+
+        virtualinvoke $r5.<com.soft.android.appinstaller.FinishActivity: void onExitClicked(android.view.View)>(null);
+
+     label27:
+        if $i0 == 43 goto label28;
+
+        $z2 = virtualinvoke $r5.<com.soft.android.appinstaller.FinishActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label28:
+        if $i0 == 44 goto label25;
+
+     label29:
+        if $i0 == 45 goto label24;
+
+        if $i0 == 46 goto label30;
+
+        if $i0 == 47 goto label24;
+
+     label30:
+        if $i0 == 49 goto label32;
+
+        $r6 = new com.soft.android.appinstaller.sms.BinarySMSReceiver;
+
+        specialinvoke $r6.<com.soft.android.appinstaller.sms.BinarySMSReceiver: void <init>()>();
+
+        if $i0 == 50 goto label32;
+
+     label31:
+        virtualinvoke $r6.<com.soft.android.appinstaller.sms.BinarySMSReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 52 goto label31;
+
+     label32:
+        if $i0 == 55 goto label36;
+
+        $r7 = new com.soft.android.appinstaller.services.SMSSenderService;
+
+        specialinvoke $r7.<com.soft.android.appinstaller.services.SMSSenderService: void <init>()>();
+
+        virtualinvoke $r7.<com.soft.android.appinstaller.services.SMSSenderService: void onCreate()>();
+
+        virtualinvoke $r7.<com.soft.android.appinstaller.services.SMSSenderService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label33:
+        if $i0 == 56 goto label34;
+
+        if $i0 == 57 goto label33;
+
+     label34:
+        $r8 = virtualinvoke $r7.<com.soft.android.appinstaller.services.SMSSenderService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label35:
+        if $i0 == 59 goto label36;
+
+        if $i0 == 60 goto label35;
+
+     label36:
+        if $i0 == 61 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.372521421 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.039399843 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 963 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 32 sources and 51 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 79
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 283
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 1553 forward and 151 backward edges solved, processing 2 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 2 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.001925775 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, $r4) in method <com.soft.android.appinstaller.core.Internals: void calculateLocation()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.soft.android.appinstaller.core.Internals: java.lang.String getPhone()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r5, null, $r4, $r7, null) in method <com.soft.android.appinstaller.sms.BasicSMSSender: void SendMessage(android.content.Context,com.soft.android.appinstaller.core.SmsInfo$SMS)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)>($r1, 0, $r6, 0) in method <com.soft.android.appinstaller.sms.BasicSMSSender: void SendMessage(android.content.Context,com.soft.android.appinstaller.core.SmsInfo$SMS)>
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r2, $r4), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.soft.android.appinstaller.core.Internals: java.lang.String getPhone()>)
+Found a flow to sink virtualinvoke $r8.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r5, null, $r4, $r7, null), from the following sources:
+	- $r7 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)>($r1, 0, $r6, 0) (in <com.soft.android.appinstaller.sms.BasicSMSSender: void SendMessage(android.content.Context,com.soft.android.appinstaller.core.SmsInfo$SMS)>)
+Maximum memory consumption: 174.243608 MB
+Analysis has run for 3.51579199 seconds

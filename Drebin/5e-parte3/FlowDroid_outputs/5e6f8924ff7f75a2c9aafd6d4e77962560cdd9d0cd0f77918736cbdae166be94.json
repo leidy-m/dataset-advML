@@ -1,0 +1,689 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.020060164 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: broadCastReceiver is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        skz.skz.GpsPlusService $r1;
+        android.os.IBinder $r2;
+        skz.skz.SafeKidZone $r3;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label6;
+
+        $r1 = new skz.skz.GpsPlusService;
+
+        specialinvoke $r1.<skz.skz.GpsPlusService: void <init>()>();
+
+        virtualinvoke $r1.<skz.skz.GpsPlusService: void onCreate()>();
+
+     label2:
+        if $i0 == 1 goto label3;
+
+        if $i0 == 2 goto label2;
+
+     label3:
+        $r2 = virtualinvoke $r1.<skz.skz.GpsPlusService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label4:
+        if $i0 == 4 goto label5;
+
+        if $i0 == 5 goto label4;
+
+     label5:
+        virtualinvoke $r1.<skz.skz.GpsPlusService: void onDestroy()>();
+
+     label6:
+        if $i0 == 6 goto label9;
+
+        $r3 = new skz.skz.SafeKidZone;
+
+        specialinvoke $r3.<skz.skz.SafeKidZone: void <init>()>();
+
+        if $i0 == 7 goto label9;
+
+        virtualinvoke $r3.<skz.skz.SafeKidZone: void onCreate(android.os.Bundle)>(null);
+
+     label7:
+        virtualinvoke $r3.<skz.skz.SafeKidZone: void onResume()>();
+
+        virtualinvoke $r3.<skz.skz.SafeKidZone: void onPause()>();
+
+        if $i0 == 9 goto label7;
+
+        if $i0 == 10 goto label8;
+
+        if $i0 == 11 goto label7;
+
+     label8:
+        virtualinvoke $r3.<skz.skz.SafeKidZone: void onDestroy()>();
+
+     label9:
+        if $i0 == 15 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: skz.skz.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: skz.skz.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: EditText is a phantom class!
+Warning: skz.skz.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: Button is a phantom class!
+Warning: skz.skz.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/contact.xml
+Warning: TextView is a phantom class!
+Warning: skz.skz.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: skz.skz.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Found 3 layout controls in file res/layout/register.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: broadCastReceiver is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        skz.skz.GpsPlusService $r1;
+        skz.skz.GpsPlusService$1 $r2, $r4;
+        android.os.IBinder $r3;
+        skz.skz.SafeKidZone $r5;
+        skz.skz.SafeKidZone$2 $r6;
+        skz.skz.SafeKidZone$4 $r7;
+        skz.skz.SafeKidZone$6 $r8;
+        boolean $z0, $z1;
+        skz.skz.SafeKidZone$3 $r9;
+        skz.skz.SafeKidZone$9 $r10;
+        skz.skz.SafeKidZone$7 $r11;
+        skz.skz.SafeKidZone$8 $r12;
+        skz.skz.SafeKidZone$5 $r13;
+        skz.skz.broadCastReceiver $r14;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label16;
+
+        $r1 = new skz.skz.GpsPlusService;
+
+        specialinvoke $r1.<skz.skz.GpsPlusService: void <init>()>();
+
+        virtualinvoke $r1.<skz.skz.GpsPlusService: void onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label09;
+
+     label04:
+        $r2 = new skz.skz.GpsPlusService$1;
+
+        specialinvoke $r2.<skz.skz.GpsPlusService$1: void <init>(skz.skz.GpsPlusService)>($r1);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<skz.skz.GpsPlusService$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r2.<skz.skz.GpsPlusService$1: void onProviderEnabled(java.lang.String)>("");
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r2.<skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>(null);
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r2.<skz.skz.GpsPlusService$1: void onProviderDisabled(java.lang.String)>("");
+
+     label08:
+        if $i0 == 8 goto label04;
+
+     label09:
+        $r3 = virtualinvoke $r1.<skz.skz.GpsPlusService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label10:
+        $r4 = new skz.skz.GpsPlusService$1;
+
+        specialinvoke $r4.<skz.skz.GpsPlusService$1: void <init>(skz.skz.GpsPlusService)>($r1);
+
+        if $i0 == 9 goto label11;
+
+        virtualinvoke $r4.<skz.skz.GpsPlusService$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label11:
+        if $i0 == 10 goto label12;
+
+        virtualinvoke $r4.<skz.skz.GpsPlusService$1: void onProviderEnabled(java.lang.String)>("");
+
+     label12:
+        if $i0 == 11 goto label13;
+
+        virtualinvoke $r4.<skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>(null);
+
+     label13:
+        if $i0 == 12 goto label14;
+
+        virtualinvoke $r4.<skz.skz.GpsPlusService$1: void onProviderDisabled(java.lang.String)>("");
+
+     label14:
+        if $i0 == 13 goto label10;
+
+        if $i0 == 14 goto label15;
+
+        if $i0 == 15 goto label10;
+
+     label15:
+        virtualinvoke $r1.<skz.skz.GpsPlusService: void onDestroy()>();
+
+     label16:
+        if $i0 == 16 goto label32;
+
+        $r5 = new skz.skz.SafeKidZone;
+
+        specialinvoke $r5.<skz.skz.SafeKidZone: void <init>()>();
+
+        if $i0 == 17 goto label32;
+
+        virtualinvoke $r5.<skz.skz.SafeKidZone: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        virtualinvoke $r5.<skz.skz.SafeKidZone: void onResume()>();
+
+        if $i0 == 19 goto label30;
+
+     label18:
+        $r6 = new skz.skz.SafeKidZone$2;
+
+        specialinvoke $r6.<skz.skz.SafeKidZone$2: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 20 goto label19;
+
+        virtualinvoke $r6.<skz.skz.SafeKidZone$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r7 = new skz.skz.SafeKidZone$4;
+
+        specialinvoke $r7.<skz.skz.SafeKidZone$4: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 21 goto label20;
+
+        virtualinvoke $r7.<skz.skz.SafeKidZone$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label20:
+        $r8 = new skz.skz.SafeKidZone$6;
+
+        specialinvoke $r8.<skz.skz.SafeKidZone$6: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 22 goto label21;
+
+        virtualinvoke $r8.<skz.skz.SafeKidZone$6: void onClick(android.view.View)>(null);
+
+     label21:
+        if $i0 == 23 goto label22;
+
+        $z0 = virtualinvoke $r5.<skz.skz.SafeKidZone: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label22:
+        if $i0 == 24 goto label23;
+
+        $z1 = virtualinvoke $r5.<skz.skz.SafeKidZone: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label23:
+        if $i0 == 25 goto label24;
+
+        staticinvoke <skz.skz.SafeKidZone: void <clinit>()>();
+
+     label24:
+        $r9 = new skz.skz.SafeKidZone$3;
+
+        specialinvoke $r9.<skz.skz.SafeKidZone$3: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 26 goto label25;
+
+        virtualinvoke $r9.<skz.skz.SafeKidZone$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r10 = new skz.skz.SafeKidZone$9;
+
+        specialinvoke $r10.<skz.skz.SafeKidZone$9: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 27 goto label26;
+
+        virtualinvoke $r10.<skz.skz.SafeKidZone$9: void onClick(android.view.View)>(null);
+
+     label26:
+        $r11 = new skz.skz.SafeKidZone$7;
+
+        specialinvoke $r11.<skz.skz.SafeKidZone$7: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 28 goto label27;
+
+        virtualinvoke $r11.<skz.skz.SafeKidZone$7: void onClick(android.view.View)>(null);
+
+     label27:
+        $r12 = new skz.skz.SafeKidZone$8;
+
+        specialinvoke $r12.<skz.skz.SafeKidZone$8: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 29 goto label28;
+
+        virtualinvoke $r12.<skz.skz.SafeKidZone$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r13 = new skz.skz.SafeKidZone$5;
+
+        specialinvoke $r13.<skz.skz.SafeKidZone$5: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 30 goto label29;
+
+        virtualinvoke $r13.<skz.skz.SafeKidZone$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        if $i0 == 31 goto label18;
+
+     label30:
+        virtualinvoke $r5.<skz.skz.SafeKidZone: void onPause()>();
+
+        if $i0 == 32 goto label17;
+
+        if $i0 == 33 goto label31;
+
+        if $i0 == 34 goto label17;
+
+     label31:
+        virtualinvoke $r5.<skz.skz.SafeKidZone: void onDestroy()>();
+
+     label32:
+        if $i0 == 38 goto label34;
+
+        $r14 = new skz.skz.broadCastReceiver;
+
+        specialinvoke $r14.<skz.skz.broadCastReceiver: void <init>()>();
+
+        if $i0 == 39 goto label34;
+
+     label33:
+        virtualinvoke $r14.<skz.skz.broadCastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 41 goto label33;
+
+     label34:
+        if $i0 == 42 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 2 components...
+Incremental callback analysis done.
+Found 22 callback methods for 2 components
+Found {res/layout/register.xml=[-1 - android.widget.LinearLayout, 2131099653 - android.widget.RelativeLayout, 2131099654 - android.widget.TextView, 2131099655 - android.widget.EditText, 2131099658 - android.widget.Button, 2131099657 - android.widget.Button, 2131099656 - android.widget.EditText], res/layout/contact.xml=[-1 - android.widget.LinearLayout, 2131099649 - android.widget.EditText, 2131099650 - android.widget.Button, 2131099648 - android.widget.RelativeLayout], res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131099652 - android.widget.ImageView, 2131099651 - android.widget.TextView, 2131099648 - android.widget.RelativeLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 22 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/5e6f8924ff7f75a2c9aafd6d4e77962560cdd9d0cd0f77918736cbdae166be94.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: broadCastReceiver is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        skz.skz.GpsPlusService $r1;
+        skz.skz.GpsPlusService$1 $r2, $r4;
+        android.os.IBinder $r3;
+        skz.skz.SafeKidZone $r5;
+        skz.skz.SafeKidZone$5 $r6;
+        skz.skz.SafeKidZone$9 $r7;
+        skz.skz.SafeKidZone$8 $r8;
+        boolean $z0, $z1;
+        skz.skz.SafeKidZone$2 $r9;
+        skz.skz.SafeKidZone$3 $r10;
+        skz.skz.SafeKidZone$4 $r11;
+        skz.skz.SafeKidZone$6 $r12;
+        skz.skz.SafeKidZone$7 $r13;
+        skz.skz.broadCastReceiver $r14;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label16;
+
+        $r1 = new skz.skz.GpsPlusService;
+
+        specialinvoke $r1.<skz.skz.GpsPlusService: void <init>()>();
+
+        virtualinvoke $r1.<skz.skz.GpsPlusService: void onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label09;
+
+     label04:
+        $r2 = new skz.skz.GpsPlusService$1;
+
+        specialinvoke $r2.<skz.skz.GpsPlusService$1: void <init>(skz.skz.GpsPlusService)>($r1);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r2.<skz.skz.GpsPlusService$1: void onProviderDisabled(java.lang.String)>("");
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r2.<skz.skz.GpsPlusService$1: void onProviderEnabled(java.lang.String)>("");
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r2.<skz.skz.GpsPlusService$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label08:
+        if $i0 == 8 goto label04;
+
+     label09:
+        $r3 = virtualinvoke $r1.<skz.skz.GpsPlusService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label10:
+        $r4 = new skz.skz.GpsPlusService$1;
+
+        specialinvoke $r4.<skz.skz.GpsPlusService$1: void <init>(skz.skz.GpsPlusService)>($r1);
+
+        if $i0 == 9 goto label11;
+
+        virtualinvoke $r4.<skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>(null);
+
+     label11:
+        if $i0 == 10 goto label12;
+
+        virtualinvoke $r4.<skz.skz.GpsPlusService$1: void onProviderDisabled(java.lang.String)>("");
+
+     label12:
+        if $i0 == 11 goto label13;
+
+        virtualinvoke $r4.<skz.skz.GpsPlusService$1: void onProviderEnabled(java.lang.String)>("");
+
+     label13:
+        if $i0 == 12 goto label14;
+
+        virtualinvoke $r4.<skz.skz.GpsPlusService$1: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label14:
+        if $i0 == 13 goto label10;
+
+        if $i0 == 14 goto label15;
+
+        if $i0 == 15 goto label10;
+
+     label15:
+        virtualinvoke $r1.<skz.skz.GpsPlusService: void onDestroy()>();
+
+     label16:
+        if $i0 == 16 goto label32;
+
+        $r5 = new skz.skz.SafeKidZone;
+
+        specialinvoke $r5.<skz.skz.SafeKidZone: void <init>()>();
+
+        if $i0 == 17 goto label32;
+
+        virtualinvoke $r5.<skz.skz.SafeKidZone: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        virtualinvoke $r5.<skz.skz.SafeKidZone: void onResume()>();
+
+        if $i0 == 19 goto label30;
+
+     label18:
+        $r6 = new skz.skz.SafeKidZone$5;
+
+        specialinvoke $r6.<skz.skz.SafeKidZone$5: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 20 goto label19;
+
+        virtualinvoke $r6.<skz.skz.SafeKidZone$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r7 = new skz.skz.SafeKidZone$9;
+
+        specialinvoke $r7.<skz.skz.SafeKidZone$9: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 21 goto label20;
+
+        virtualinvoke $r7.<skz.skz.SafeKidZone$9: void onClick(android.view.View)>(null);
+
+     label20:
+        $r8 = new skz.skz.SafeKidZone$8;
+
+        specialinvoke $r8.<skz.skz.SafeKidZone$8: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 22 goto label21;
+
+        virtualinvoke $r8.<skz.skz.SafeKidZone$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label21:
+        if $i0 == 23 goto label22;
+
+        staticinvoke <skz.skz.SafeKidZone: void <clinit>()>();
+
+     label22:
+        if $i0 == 24 goto label23;
+
+        $z0 = virtualinvoke $r5.<skz.skz.SafeKidZone: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label23:
+        if $i0 == 25 goto label24;
+
+        $z1 = virtualinvoke $r5.<skz.skz.SafeKidZone: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label24:
+        $r9 = new skz.skz.SafeKidZone$2;
+
+        specialinvoke $r9.<skz.skz.SafeKidZone$2: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 26 goto label25;
+
+        virtualinvoke $r9.<skz.skz.SafeKidZone$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r10 = new skz.skz.SafeKidZone$3;
+
+        specialinvoke $r10.<skz.skz.SafeKidZone$3: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 27 goto label26;
+
+        virtualinvoke $r10.<skz.skz.SafeKidZone$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label26:
+        $r11 = new skz.skz.SafeKidZone$4;
+
+        specialinvoke $r11.<skz.skz.SafeKidZone$4: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 28 goto label27;
+
+        virtualinvoke $r11.<skz.skz.SafeKidZone$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r12 = new skz.skz.SafeKidZone$6;
+
+        specialinvoke $r12.<skz.skz.SafeKidZone$6: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 29 goto label28;
+
+        virtualinvoke $r12.<skz.skz.SafeKidZone$6: void onClick(android.view.View)>(null);
+
+     label28:
+        $r13 = new skz.skz.SafeKidZone$7;
+
+        specialinvoke $r13.<skz.skz.SafeKidZone$7: void <init>(skz.skz.SafeKidZone)>($r5);
+
+        if $i0 == 30 goto label29;
+
+        virtualinvoke $r13.<skz.skz.SafeKidZone$7: void onClick(android.view.View)>(null);
+
+     label29:
+        if $i0 == 31 goto label18;
+
+     label30:
+        virtualinvoke $r5.<skz.skz.SafeKidZone: void onPause()>();
+
+        if $i0 == 32 goto label17;
+
+        if $i0 == 33 goto label31;
+
+        if $i0 == 34 goto label17;
+
+     label31:
+        virtualinvoke $r5.<skz.skz.SafeKidZone: void onDestroy()>();
+
+     label32:
+        if $i0 == 38 goto label34;
+
+        $r14 = new skz.skz.broadCastReceiver;
+
+        specialinvoke $r14.<skz.skz.broadCastReceiver: void <init>()>();
+
+        if $i0 == 39 goto label34;
+
+     label33:
+        virtualinvoke $r14.<skz.skz.broadCastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 41 goto label33;
+
+     label34:
+        if $i0 == 42 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.249864777 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.027843823 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 619 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 29 sources and 24 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 586
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1494
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 5017 forward and 685 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.00565255 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r0) in method <skz.skz.SafeKidZone: java.lang.String httpReq(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() in method <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r2.<skz.skz.SafeKidZone: android.view.View findViewById(int)>(2131099656) in method <skz.skz.SafeKidZone$6: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r8.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <skz.skz.SafeKidZone: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPS+", $r4) in method <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() in method <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() in method <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>
+Found a flow to sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>)
+	- $r1 = virtualinvoke $r2.<skz.skz.SafeKidZone: android.view.View findViewById(int)>(2131099656) (in <skz.skz.SafeKidZone$6: void onClick(android.view.View)>)
+	- $r9 = virtualinvoke $r8.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <skz.skz.SafeKidZone: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("GPS+", $r4), from the following sources:
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <skz.skz.GpsPlusService$1: void onLocationChanged(android.location.Location)>)
+Maximum memory consumption: 67.931336 MB
+Analysis has run for 3.089217599 seconds

@@ -1,0 +1,987 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.016080227 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.net.http.SslError is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wTempleruntips.Server.C2DMClientReceiver $r1;
+        com.wTempleruntips.MessageViewer $r2;
+        com.wTempleruntips.MainNavigationActivity $r3;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.wTempleruntips.Server.C2DMClientReceiver;
+
+        specialinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        if $i0 == 5 goto label03;
+
+     label04:
+        if $i0 == 6 goto label08;
+
+        $r2 = new com.wTempleruntips.MessageViewer;
+
+        specialinvoke $r2.<com.wTempleruntips.MessageViewer: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onStart()>();
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label06:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onPause()>();
+
+        if $i0 == 9 goto label06;
+
+        if $i0 == 10 goto label07;
+
+        if $i0 == 11 goto label05;
+
+     label07:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onDestroy()>();
+
+     label08:
+        if $i0 == 13 goto label11;
+
+        $r3 = new com.wTempleruntips.MainNavigationActivity;
+
+        specialinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 14 goto label11;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onResume()>();
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 16 goto label09;
+
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onDestroy()>();
+
+     label11:
+        if $i0 == 20 goto label13;
+
+        $r4 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r4.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 21 goto label13;
+
+     label12:
+        virtualinvoke $r4.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label12;
+
+     label13:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.wTempleruntips.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.wTempleruntips.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.wTempleruntips.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/about_dialog.xml
+Warning: Button is a phantom class!
+Warning: com.wTempleruntips.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/connection_error_dialog.xml
+Warning: TableLayout is a phantom class!
+Warning: com.wTempleruntips.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.wTempleruntips.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 3 layout controls in file res/layout/http_authentication.xml
+Warning: FrameLayout is a phantom class!
+Warning: com.wTempleruntips.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.wTempleruntips.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 4 layout controls in file res/layout/main.xml
+Warning: WebView is a phantom class!
+Warning: com.wTempleruntips.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 5 layout controls in file res/layout/message_viewer.xml
+Found 6 layout controls in file res/layout/no_content_message.xml
+Found 7 layout controls in file res/layout/startup_screen.xml
+Found 8 layout controls in file res/layout/tab_tag.xml
+Warning: ProgressBar is a phantom class!
+Warning: com.wTempleruntips.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 9 layout controls in file res/layout/video_loading_progress.xml
+Found 10 layout controls in file res/layout/web_content.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.net.http.SslError is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.WebView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.HttpAuthHandler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wTempleruntips.Server.C2DMClientReceiver $r1;
+        com.wTempleruntips.MessageViewer $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9;
+        com.wTempleruntips.MainNavigationActivity $r3;
+        com.wTempleruntips.Model.WidgetEntity $r4, $r8;
+        com.wTempleruntips.Controllers.WebContentController $r5, $r9;
+        com.wTempleruntips.Utils.BrowserDownloadListener $r6;
+        com.wTempleruntips.MainNavigationActivity$5 $r7;
+        com.wTempleruntips.Controllers.WebContentController$1 $r10;
+        com.wTempleruntips.MainNavigationActivity$8 $r11;
+        com.wTempleruntips.MainNavigationActivity$4 $r12;
+        com.wTempleruntips.MainNavigationActivity$7 $r13;
+        com.wTempleruntips.MainNavigationActivity$1 $r14;
+        com.wTempleruntips.MainNavigationActivity$6 $r15;
+        com.wTempleruntips.Views.AboutDialog $r16;
+        com.wTempleruntips.Views.AboutDialog$1 $r17;
+        com.wTempleruntips.ads.AdsLoader $r18;
+        com.wTempleruntips.ads.AdsLoader$1 $r19;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r20;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.wTempleruntips.Server.C2DMClientReceiver;
+
+        specialinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label08;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r1, null);
+
+        $r1 = null;
+
+     label07:
+        if $i0 == 7 goto label04;
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r1, null);
+
+        $r1 = null;
+
+     label11:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label12;
+
+        if $i0 == 13 goto label08;
+
+     label12:
+        if $i0 == 14 goto label19;
+
+        $r2 = new com.wTempleruntips.MessageViewer;
+
+        specialinvoke $r2.<com.wTempleruntips.MessageViewer: void <init>()>();
+
+        if $i0 == 15 goto label19;
+
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onStart()>();
+
+        if $i0 == 16 goto label14;
+
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 17 goto label17;
+
+     label15:
+        if $i0 == 18 goto label16;
+
+        $z0 = virtualinvoke $r2.<com.wTempleruntips.MessageViewer: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label16:
+        if $i0 == 19 goto label15;
+
+     label17:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onPause()>();
+
+        if $i0 == 20 goto label14;
+
+        if $i0 == 21 goto label18;
+
+        if $i0 == 22 goto label13;
+
+     label18:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onDestroy()>();
+
+     label19:
+        if $i0 == 24 goto label44;
+
+        $r3 = new com.wTempleruntips.MainNavigationActivity;
+
+        specialinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 25 goto label44;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onResume()>();
+
+        if $i0 == 27 goto label42;
+
+     label21:
+        if $i0 == 28 goto label22;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label22:
+        if $i0 == 29 goto label23;
+
+        $z1 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label23:
+        if $i0 == 30 goto label24;
+
+        $z2 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label24:
+        if $i0 == 31 goto label25;
+
+        $z3 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label25:
+        if $i0 == 32 goto label26;
+
+        $z4 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onKeyLongPress(int,android.view.KeyEvent)>(0, null);
+
+     label26:
+        if $i0 == 33 goto label27;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label27:
+        if $i0 == 34 goto label28;
+
+        $z5 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label28:
+        if $i0 == 35 goto label29;
+
+        staticinvoke <com.wTempleruntips.MainNavigationActivity: void <clinit>()>();
+
+     label29:
+        if $i0 == 36 goto label30;
+
+        $z6 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label30:
+        if $i0 == 37 goto label31;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label31:
+        $r4 = new com.wTempleruntips.Model.WidgetEntity;
+
+        specialinvoke $r4.<com.wTempleruntips.Model.WidgetEntity: void <init>()>();
+
+        $r5 = new com.wTempleruntips.Controllers.WebContentController;
+
+        specialinvoke $r5.<com.wTempleruntips.Controllers.WebContentController: void <init>(com.wTempleruntips.Model.WidgetEntity)>($r4);
+
+        $r6 = new com.wTempleruntips.Utils.BrowserDownloadListener;
+
+        specialinvoke $r6.<com.wTempleruntips.Utils.BrowserDownloadListener: void <init>(com.wTempleruntips.Controllers.WebContentController)>($r5);
+
+        if $i0 == 38 goto label32;
+
+        virtualinvoke $r6.<com.wTempleruntips.Utils.BrowserDownloadListener: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label32:
+        $r7 = new com.wTempleruntips.MainNavigationActivity$5;
+
+        specialinvoke $r7.<com.wTempleruntips.MainNavigationActivity$5: void <init>(com.wTempleruntips.MainNavigationActivity)>($r3);
+
+        if $i0 == 39 goto label33;
+
+        virtualinvoke $r7.<com.wTempleruntips.MainNavigationActivity$5: void onClick(android.view.View)>(null);
+
+     label33:
+        $r8 = new com.wTempleruntips.Model.WidgetEntity;
+
+        specialinvoke $r8.<com.wTempleruntips.Model.WidgetEntity: void <init>()>();
+
+        $r9 = new com.wTempleruntips.Controllers.WebContentController;
+
+        specialinvoke $r9.<com.wTempleruntips.Controllers.WebContentController: void <init>(com.wTempleruntips.Model.WidgetEntity)>($r8);
+
+        $r10 = new com.wTempleruntips.Controllers.WebContentController$1;
+
+        specialinvoke $r10.<com.wTempleruntips.Controllers.WebContentController$1: void <init>(com.wTempleruntips.Controllers.WebContentController)>($r9);
+
+        if $i0 == 40 goto label34;
+
+        $z7 = virtualinvoke $r10.<com.wTempleruntips.Controllers.WebContentController$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label34:
+        $r11 = new com.wTempleruntips.MainNavigationActivity$8;
+
+        specialinvoke $r11.<com.wTempleruntips.MainNavigationActivity$8: void <init>(com.wTempleruntips.MainNavigationActivity,android.view.View,android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.HttpAuthHandler)>($r3, null, null, "", "", null);
+
+        if $i0 == 41 goto label35;
+
+        virtualinvoke $r11.<com.wTempleruntips.MainNavigationActivity$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label35:
+        $r12 = new com.wTempleruntips.MainNavigationActivity$4;
+
+        specialinvoke $r12.<com.wTempleruntips.MainNavigationActivity$4: void <init>(com.wTempleruntips.MainNavigationActivity)>($r3);
+
+        if $i0 == 42 goto label36;
+
+        virtualinvoke $r12.<com.wTempleruntips.MainNavigationActivity$4: void onClick(android.view.View)>(null);
+
+     label36:
+        $r13 = new com.wTempleruntips.MainNavigationActivity$7;
+
+        specialinvoke $r13.<com.wTempleruntips.MainNavigationActivity$7: void <init>(com.wTempleruntips.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r3, null);
+
+        if $i0 == 43 goto label37;
+
+        virtualinvoke $r13.<com.wTempleruntips.MainNavigationActivity$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label37:
+        $r14 = new com.wTempleruntips.MainNavigationActivity$1;
+
+        specialinvoke $r14.<com.wTempleruntips.MainNavigationActivity$1: void <init>(com.wTempleruntips.MainNavigationActivity)>($r3);
+
+        if $i0 == 44 goto label38;
+
+        virtualinvoke $r14.<com.wTempleruntips.MainNavigationActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label38:
+        $r15 = new com.wTempleruntips.MainNavigationActivity$6;
+
+        specialinvoke $r15.<com.wTempleruntips.MainNavigationActivity$6: void <init>(com.wTempleruntips.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r3, null);
+
+        if $i0 == 45 goto label39;
+
+        virtualinvoke $r15.<com.wTempleruntips.MainNavigationActivity$6: void onCancel(android.content.DialogInterface)>(null);
+
+     label39:
+        $r16 = new com.wTempleruntips.Views.AboutDialog;
+
+        specialinvoke $r16.<com.wTempleruntips.Views.AboutDialog: void <init>(android.content.Context)>($r3);
+
+        $r17 = new com.wTempleruntips.Views.AboutDialog$1;
+
+        specialinvoke $r17.<com.wTempleruntips.Views.AboutDialog$1: void <init>(com.wTempleruntips.Views.AboutDialog,java.lang.String,com.wTempleruntips.MainNavigationActivity)>($r16, "", $r3);
+
+        if $i0 == 46 goto label40;
+
+        $z8 = virtualinvoke $r17.<com.wTempleruntips.Views.AboutDialog$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label40:
+        $r18 = new com.wTempleruntips.ads.AdsLoader;
+
+        specialinvoke $r18.<com.wTempleruntips.ads.AdsLoader: void <init>()>();
+
+        $r19 = new com.wTempleruntips.ads.AdsLoader$1;
+
+        specialinvoke $r19.<com.wTempleruntips.ads.AdsLoader$1: void <init>(com.wTempleruntips.ads.AdsLoader)>($r18);
+
+        if $i0 == 47 goto label41;
+
+        $z9 = virtualinvoke $r19.<com.wTempleruntips.ads.AdsLoader$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label41:
+        if $i0 == 48 goto label21;
+
+     label42:
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 49 goto label20;
+
+        if $i0 == 50 goto label43;
+
+        if $i0 == 51 goto label20;
+
+     label43:
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onDestroy()>();
+
+     label44:
+        if $i0 == 53 goto label46;
+
+        $r20 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r20.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 54 goto label46;
+
+     label45:
+        virtualinvoke $r20.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 56 goto label45;
+
+     label46:
+        if $i0 == 57 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 35 callback methods for 3 components
+Found {res/layout/about_dialog.xml=[2131427331 - android.widget.TextView, 2131427330 - android.widget.TextView, 2131427328 - android.widget.LinearLayout, 2131427329 - android.widget.ImageView], res/layout/no_content_message.xml=[-1 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/startup_screen.xml=[-1 - android.widget.RelativeLayout, 2131427352 - android.widget.RelativeLayout, 2131427349 - com.wTempleruntips.Views.BrowserWebView, 2131427350 - android.widget.TextView], res/layout/connection_error_dialog.xml=[2131427333 - android.widget.TextView, 2131427332 - android.widget.LinearLayout, 2131427335 - android.widget.Button, 2131427334 - android.widget.Button, -1 - android.widget.LinearLayout], res/layout/main.xml=[-1 - android.widget.RelativeLayout, 2131427347 - android.widget.FrameLayout, 2131427345 - android.widget.LinearLayout, 2131427340 - android.widget.LinearLayout, 2131427346 - android.widget.FrameLayout, 2131427344 - android.widget.FrameLayout, -1 - android.widget.FrameLayout, 2131427349 - com.wTempleruntips.Views.BrowserWebView, 2131427348 - android.widget.RelativeLayout, 2131427341 - com.wTempleruntips.Views.TransparentPanel, 2131427350 - android.widget.TextView, 2131427343 - com.wTempleruntips.Views.BrowserWebView], res/layout/http_authentication.xml=[2131427339 - android.widget.EditText, -1 - android.widget.TableLayout, 2131427336 - android.widget.TextView, 2131427338 - android.widget.TextView, 2131427337 - android.widget.EditText], res/layout/tab_tag.xml=[2131427353 - com.wTempleruntips.Views.TabTag, 2131427356 - android.widget.TextView, 2131427354 - android.widget.LinearLayout, 2131427355 - android.widget.ImageView], res/layout/video_loading_progress.xml=[-1 - android.widget.TextView, 16908301 - android.widget.ProgressBar, 2131427357 - android.widget.LinearLayout], res/layout/message_viewer.xml=[-1 - android.widget.LinearLayout, 2131427351 - android.webkit.WebView], res/layout/web_content.xml=[2131427331 - android.widget.TextView, 2131427358 - com.wTempleruntips.Views.WebContent, 2131427361 - android.widget.ProgressBar, 2131427359 - com.wTempleruntips.Views.BrowserWebView, 2131427360 - android.widget.RelativeLayout, 2131427362 - android.widget.RelativeLayout, 2131427363 - android.widget.RelativeLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 35 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/5c21c5f4cf27824676ebb64919abff932e51e4caa6a2df8bfdf36c57b7b659a4.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.net.http.SslError is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.HttpAuthHandler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.WebView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wTempleruntips.Server.C2DMClientReceiver $r1;
+        com.wTempleruntips.MessageViewer $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9;
+        com.wTempleruntips.MainNavigationActivity $r3;
+        com.wTempleruntips.MainNavigationActivity$1 $r4;
+        com.wTempleruntips.Views.BrowserWebView $r5;
+        com.wTempleruntips.Views.AboutDialog $r6;
+        com.wTempleruntips.Views.AboutDialog$1 $r7;
+        com.wTempleruntips.ads.AdsLoader $r8;
+        com.wTempleruntips.ads.AdsLoader$1 $r9;
+        com.wTempleruntips.Model.WidgetEntity $r10, $r16;
+        com.wTempleruntips.Controllers.WebContentController $r11, $r17;
+        com.wTempleruntips.Controllers.WebContentController$1 $r12;
+        com.wTempleruntips.MainNavigationActivity$6 $r13;
+        com.wTempleruntips.MainNavigationActivity$8 $r14;
+        com.wTempleruntips.MainNavigationActivity$4 $r15;
+        com.wTempleruntips.Utils.BrowserDownloadListener $r18;
+        com.wTempleruntips.Views.TransparentPanel $r19;
+        com.wTempleruntips.MainNavigationActivity$7 $r20;
+        com.wTempleruntips.MainNavigationActivity$5 $r21;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r22;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.wTempleruntips.Server.C2DMClientReceiver;
+
+        specialinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label08;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r1, null);
+
+        $r1 = null;
+
+     label07:
+        if $i0 == 7 goto label04;
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r1, "");
+
+        $r1 = null;
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.wTempleruntips.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r1, null);
+
+        $r1 = null;
+
+     label11:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label12;
+
+        if $i0 == 13 goto label08;
+
+     label12:
+        if $i0 == 14 goto label19;
+
+        $r2 = new com.wTempleruntips.MessageViewer;
+
+        specialinvoke $r2.<com.wTempleruntips.MessageViewer: void <init>()>();
+
+        if $i0 == 15 goto label19;
+
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onStart()>();
+
+        if $i0 == 16 goto label14;
+
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 17 goto label17;
+
+     label15:
+        if $i0 == 18 goto label16;
+
+        $z0 = virtualinvoke $r2.<com.wTempleruntips.MessageViewer: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label16:
+        if $i0 == 19 goto label15;
+
+     label17:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onPause()>();
+
+        if $i0 == 20 goto label14;
+
+        if $i0 == 21 goto label18;
+
+        if $i0 == 22 goto label13;
+
+     label18:
+        virtualinvoke $r2.<com.wTempleruntips.MessageViewer: void onDestroy()>();
+
+     label19:
+        if $i0 == 24 goto label46;
+
+        $r3 = new com.wTempleruntips.MainNavigationActivity;
+
+        specialinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 25 goto label46;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onResume()>();
+
+        if $i0 == 27 goto label44;
+
+     label21:
+        $r4 = new com.wTempleruntips.MainNavigationActivity$1;
+
+        specialinvoke $r4.<com.wTempleruntips.MainNavigationActivity$1: void <init>(com.wTempleruntips.MainNavigationActivity)>($r3);
+
+        if $i0 == 28 goto label22;
+
+        virtualinvoke $r4.<com.wTempleruntips.MainNavigationActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label22:
+        $r5 = new com.wTempleruntips.Views.BrowserWebView;
+
+        specialinvoke $r5.<com.wTempleruntips.Views.BrowserWebView: void <init>(android.content.Context,android.util.AttributeSet)>($r3, null);
+
+        if $i0 == 29 goto label23;
+
+        virtualinvoke $r5.<com.wTempleruntips.Views.BrowserWebView: void onWindowVisibilityChanged(int)>(0);
+
+     label23:
+        $r6 = new com.wTempleruntips.Views.AboutDialog;
+
+        specialinvoke $r6.<com.wTempleruntips.Views.AboutDialog: void <init>(android.content.Context)>($r3);
+
+        $r7 = new com.wTempleruntips.Views.AboutDialog$1;
+
+        specialinvoke $r7.<com.wTempleruntips.Views.AboutDialog$1: void <init>(com.wTempleruntips.Views.AboutDialog,java.lang.String,com.wTempleruntips.MainNavigationActivity)>($r6, "", $r3);
+
+        if $i0 == 30 goto label24;
+
+        $z1 = virtualinvoke $r7.<com.wTempleruntips.Views.AboutDialog$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label24:
+        $r8 = new com.wTempleruntips.ads.AdsLoader;
+
+        specialinvoke $r8.<com.wTempleruntips.ads.AdsLoader: void <init>()>();
+
+        $r9 = new com.wTempleruntips.ads.AdsLoader$1;
+
+        specialinvoke $r9.<com.wTempleruntips.ads.AdsLoader$1: void <init>(com.wTempleruntips.ads.AdsLoader)>($r8);
+
+        if $i0 == 31 goto label25;
+
+        $z2 = virtualinvoke $r9.<com.wTempleruntips.ads.AdsLoader$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label25:
+        $r10 = new com.wTempleruntips.Model.WidgetEntity;
+
+        specialinvoke $r10.<com.wTempleruntips.Model.WidgetEntity: void <init>()>();
+
+        $r11 = new com.wTempleruntips.Controllers.WebContentController;
+
+        specialinvoke $r11.<com.wTempleruntips.Controllers.WebContentController: void <init>(com.wTempleruntips.Model.WidgetEntity)>($r10);
+
+        $r12 = new com.wTempleruntips.Controllers.WebContentController$1;
+
+        specialinvoke $r12.<com.wTempleruntips.Controllers.WebContentController$1: void <init>(com.wTempleruntips.Controllers.WebContentController)>($r11);
+
+        if $i0 == 32 goto label26;
+
+        $z3 = virtualinvoke $r12.<com.wTempleruntips.Controllers.WebContentController$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label26:
+        if $i0 == 33 goto label27;
+
+        $z4 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label27:
+        if $i0 == 34 goto label28;
+
+        staticinvoke <com.wTempleruntips.MainNavigationActivity: void <clinit>()>();
+
+     label28:
+        if $i0 == 35 goto label29;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label29:
+        if $i0 == 36 goto label30;
+
+        $z5 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label30:
+        if $i0 == 37 goto label31;
+
+        $z6 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onKeyLongPress(int,android.view.KeyEvent)>(0, null);
+
+     label31:
+        if $i0 == 38 goto label32;
+
+        $z7 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label32:
+        if $i0 == 39 goto label33;
+
+        $z8 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label33:
+        if $i0 == 40 goto label34;
+
+        $z9 = virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label34:
+        if $i0 == 41 goto label35;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label35:
+        if $i0 == 42 goto label36;
+
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label36:
+        $r13 = new com.wTempleruntips.MainNavigationActivity$6;
+
+        specialinvoke $r13.<com.wTempleruntips.MainNavigationActivity$6: void <init>(com.wTempleruntips.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r3, null);
+
+        if $i0 == 43 goto label37;
+
+        virtualinvoke $r13.<com.wTempleruntips.MainNavigationActivity$6: void onCancel(android.content.DialogInterface)>(null);
+
+     label37:
+        $r14 = new com.wTempleruntips.MainNavigationActivity$8;
+
+        specialinvoke $r14.<com.wTempleruntips.MainNavigationActivity$8: void <init>(com.wTempleruntips.MainNavigationActivity,android.view.View,android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.HttpAuthHandler)>($r3, null, null, "", "", null);
+
+        if $i0 == 44 goto label38;
+
+        virtualinvoke $r14.<com.wTempleruntips.MainNavigationActivity$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label38:
+        $r15 = new com.wTempleruntips.MainNavigationActivity$4;
+
+        specialinvoke $r15.<com.wTempleruntips.MainNavigationActivity$4: void <init>(com.wTempleruntips.MainNavigationActivity)>($r3);
+
+        if $i0 == 45 goto label39;
+
+        virtualinvoke $r15.<com.wTempleruntips.MainNavigationActivity$4: void onClick(android.view.View)>(null);
+
+     label39:
+        $r16 = new com.wTempleruntips.Model.WidgetEntity;
+
+        specialinvoke $r16.<com.wTempleruntips.Model.WidgetEntity: void <init>()>();
+
+        $r17 = new com.wTempleruntips.Controllers.WebContentController;
+
+        specialinvoke $r17.<com.wTempleruntips.Controllers.WebContentController: void <init>(com.wTempleruntips.Model.WidgetEntity)>($r16);
+
+        $r18 = new com.wTempleruntips.Utils.BrowserDownloadListener;
+
+        specialinvoke $r18.<com.wTempleruntips.Utils.BrowserDownloadListener: void <init>(com.wTempleruntips.Controllers.WebContentController)>($r17);
+
+        if $i0 == 46 goto label40;
+
+        virtualinvoke $r18.<com.wTempleruntips.Utils.BrowserDownloadListener: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label40:
+        $r19 = new com.wTempleruntips.Views.TransparentPanel;
+
+        specialinvoke $r19.<com.wTempleruntips.Views.TransparentPanel: void <init>(android.content.Context)>($r3);
+
+        if $i0 == 47 goto label41;
+
+        virtualinvoke $r19.<com.wTempleruntips.Views.TransparentPanel: void dispatchDraw(android.graphics.Canvas)>(null);
+
+     label41:
+        $r20 = new com.wTempleruntips.MainNavigationActivity$7;
+
+        specialinvoke $r20.<com.wTempleruntips.MainNavigationActivity$7: void <init>(com.wTempleruntips.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r3, null);
+
+        if $i0 == 48 goto label42;
+
+        virtualinvoke $r20.<com.wTempleruntips.MainNavigationActivity$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label42:
+        $r21 = new com.wTempleruntips.MainNavigationActivity$5;
+
+        specialinvoke $r21.<com.wTempleruntips.MainNavigationActivity$5: void <init>(com.wTempleruntips.MainNavigationActivity)>($r3);
+
+        if $i0 == 49 goto label43;
+
+        virtualinvoke $r21.<com.wTempleruntips.MainNavigationActivity$5: void onClick(android.view.View)>(null);
+
+     label43:
+        if $i0 == 50 goto label21;
+
+     label44:
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 51 goto label20;
+
+        if $i0 == 52 goto label45;
+
+        if $i0 == 53 goto label20;
+
+     label45:
+        virtualinvoke $r3.<com.wTempleruntips.MainNavigationActivity: void onDestroy()>();
+
+     label46:
+        if $i0 == 55 goto label48;
+
+        $r22 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r22.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 56 goto label48;
+
+     label47:
+        virtualinvoke $r22.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 58 goto label47;
+
+     label48:
+        if $i0 == 59 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.420578702 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.055436184 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1075 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 60 sources and 17 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 11573
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 71828
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 151532 forward and 64264 backward edges solved, processing 4 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 4 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.01447674 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("url", $r2) in method <com.wTempleruntips.Utils.AppNotificationManager: android.content.Intent getLaunchIntent(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("url") in method <com.wTempleruntips.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("title", $r1) in method <com.wTempleruntips.Utils.AppNotificationManager: android.content.Intent getLaunchIntent(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("title") in method <com.wTempleruntips.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.wTempleruntips.Server.AppsGeyserServerClient: java.util.Map loadHeaders(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.wTempleruntips.Utils.DeviceIdParser: java.lang.String getDeviceId(android.app.Activity)>
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("url", $r2), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("url") (in <com.wTempleruntips.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("title", $r1), from the following sources:
+	- $r6 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("title") (in <com.wTempleruntips.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.wTempleruntips.Utils.DeviceIdParser: java.lang.String getDeviceId(android.app.Activity)>)
+Maximum memory consumption: 249.51152 MB
+Analysis has run for 7.791882257 seconds

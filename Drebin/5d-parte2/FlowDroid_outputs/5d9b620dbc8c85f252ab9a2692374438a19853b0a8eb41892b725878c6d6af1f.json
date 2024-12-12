@@ -1,0 +1,1130 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012325051 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: android.webkit.ValueCallback is a phantom class!
+Warning: android.webkit.WebChromeClient$CustomViewCallback is a phantom class!
+Warning: android.webkit.WebStorage$QuotaUpdater is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.ps.square.eloscomplex.ElosComplex $r2;
+        com.ps.square.Square $r3;
+        com.ps.square.elos.Elos $r4;
+        com.google.update.Receiver $r5;
+        com.google.update.Dialog $r6;
+        com.google.update.UpdateService $r7;
+        android.os.IBinder $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label06;
+
+        $r2 = new com.ps.square.eloscomplex.ElosComplex;
+
+        specialinvoke $r2.<com.ps.square.eloscomplex.ElosComplex: void <init>()>();
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r2.<com.ps.square.eloscomplex.ElosComplex: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        virtualinvoke $r2.<com.ps.square.eloscomplex.ElosComplex: void onStop()>();
+
+        if $i0 == 11 goto label06;
+
+        if $i0 == 12 goto label05;
+
+     label06:
+        if $i0 == 14 goto label08;
+
+        $r3 = new com.ps.square.Square;
+
+        specialinvoke $r3.<com.ps.square.Square: void <init>()>();
+
+        if $i0 == 15 goto label08;
+
+        virtualinvoke $r3.<com.ps.square.Square: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 18 goto label08;
+
+        if $i0 == 19 goto label07;
+
+     label08:
+        if $i0 == 21 goto label10;
+
+        $r4 = new com.ps.square.elos.Elos;
+
+        specialinvoke $r4.<com.ps.square.elos.Elos: void <init>()>();
+
+        if $i0 == 22 goto label10;
+
+        virtualinvoke $r4.<com.ps.square.elos.Elos: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r4.<com.ps.square.elos.Elos: void onStop()>();
+
+        if $i0 == 25 goto label10;
+
+        if $i0 == 26 goto label09;
+
+     label10:
+        if $i0 == 28 goto label12;
+
+        $r5 = new com.google.update.Receiver;
+
+        specialinvoke $r5.<com.google.update.Receiver: void <init>()>();
+
+        if $i0 == 29 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.google.update.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 31 goto label11;
+
+     label12:
+        if $i0 == 32 goto label14;
+
+        $r6 = new com.google.update.Dialog;
+
+        specialinvoke $r6.<com.google.update.Dialog: void <init>()>();
+
+        if $i0 == 33 goto label14;
+
+        virtualinvoke $r6.<com.google.update.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 36 goto label14;
+
+        if $i0 == 37 goto label13;
+
+     label14:
+        if $i0 == 39 goto label19;
+
+        $r7 = new com.google.update.UpdateService;
+
+        specialinvoke $r7.<com.google.update.UpdateService: void <init>()>();
+
+        virtualinvoke $r7.<com.google.update.UpdateService: void onCreate()>();
+
+     label15:
+        if $i0 == 40 goto label16;
+
+        if $i0 == 41 goto label15;
+
+     label16:
+        $r8 = virtualinvoke $r7.<com.google.update.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label17:
+        if $i0 == 43 goto label18;
+
+        if $i0 == 44 goto label17;
+
+     label18:
+        virtualinvoke $r7.<com.google.update.UpdateService: void onDestroy()>();
+
+     label19:
+        if $i0 == 45 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.ps.square.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 1 layout controls in file res/layout/elos.xml
+Warning: ListView is a phantom class!
+Warning: com.ps.square.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: android.webkit.ValueCallback is a phantom class!
+Warning: android.webkit.WebChromeClient$CustomViewCallback is a phantom class!
+Warning: android.webkit.WebStorage$QuotaUpdater is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.ps.square.Square$ItemClickListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.n $r2, $r4, $r6, $r7;
+        com.adwo.adsdk.A $r3;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13;
+        com.adwo.adsdk.t $r5;
+        com.adwo.adsdk.z $r8;
+        com.ps.square.eloscomplex.ElosComplex $r9;
+        com.ps.square.Square $r10;
+        com.ps.square.Square$ItemClickListener $r11, $r12;
+        com.ps.square.elos.Elos $r13;
+        com.google.update.Receiver $r14;
+        com.google.update.Dialog $r15;
+        com.google.update.Dialog$2 $r16;
+        com.google.update.Dialog$1 $r17;
+        com.google.update.UpdateService $r18;
+        android.os.IBinder $r19;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label15;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label15;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label13;
+
+     label03:
+        $r2 = new com.adwo.adsdk.n;
+
+        specialinvoke $r2.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r3 = new com.adwo.adsdk.A;
+
+        specialinvoke $r3.<com.adwo.adsdk.A: void <init>(com.adwo.adsdk.n)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<com.adwo.adsdk.A: void onClick(android.view.View)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z0 = virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label06:
+        $r4 = new com.adwo.adsdk.n;
+
+        specialinvoke $r4.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r5 = new com.adwo.adsdk.t;
+
+        specialinvoke $r5.<com.adwo.adsdk.t: void <init>(com.adwo.adsdk.n)>($r4);
+
+        if $i0 == 7 goto label07;
+
+        $z1 = virtualinvoke $r5.<com.adwo.adsdk.t: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label07:
+        $r6 = new com.adwo.adsdk.n;
+
+        specialinvoke $r6.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        if $i0 == 8 goto label08;
+
+        $z2 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onDown(android.view.MotionEvent)>(null);
+
+     label08:
+        if $i0 == 9 goto label09;
+
+        $z3 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label09:
+        if $i0 == 10 goto label10;
+
+        $z4 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label10:
+        if $i0 == 11 goto label11;
+
+        $z5 = virtualinvoke $r6.<com.adwo.adsdk.n: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label11:
+        $r7 = new com.adwo.adsdk.n;
+
+        specialinvoke $r7.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r8 = new com.adwo.adsdk.z;
+
+        specialinvoke $r8.<com.adwo.adsdk.z: void <init>(com.adwo.adsdk.n)>($r7);
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r8.<com.adwo.adsdk.z: void onClick(android.view.View)>(null);
+
+     label12:
+        if $i0 == 13 goto label03;
+
+     label13:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 14 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 15 goto label14;
+
+        if $i0 == 16 goto label02;
+
+     label14:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 18 goto label23;
+
+        $r9 = new com.ps.square.eloscomplex.ElosComplex;
+
+        specialinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: void <init>()>();
+
+        if $i0 == 19 goto label23;
+
+        virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 21 goto label22;
+
+     label17:
+        if $i0 == 22 goto label18;
+
+        $z6 = virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label18:
+        if $i0 == 23 goto label19;
+
+        $z7 = virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label19:
+        if $i0 == 24 goto label20;
+
+        $z8 = virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label20:
+        if $i0 == 25 goto label21;
+
+        $z9 = virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label21:
+        if $i0 == 26 goto label17;
+
+     label22:
+        if $i0 == 27 goto label16;
+
+        virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: void onStop()>();
+
+        if $i0 == 28 goto label23;
+
+        if $i0 == 29 goto label16;
+
+     label23:
+        if $i0 == 31 goto label28;
+
+        $r10 = new com.ps.square.Square;
+
+        specialinvoke $r10.<com.ps.square.Square: void <init>()>();
+
+        if $i0 == 32 goto label28;
+
+        virtualinvoke $r10.<com.ps.square.Square: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 34 goto label27;
+
+     label25:
+        $r11 = null;
+
+        $r12 = new com.ps.square.Square$ItemClickListener;
+
+        specialinvoke $r12.<com.ps.square.Square$ItemClickListener: void <init>(com.ps.square.Square,com.ps.square.Square$ItemClickListener)>($r10, $r11);
+
+        if $i0 == 35 goto label26;
+
+        virtualinvoke $r12.<com.ps.square.Square$ItemClickListener: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label26:
+        if $i0 == 36 goto label25;
+
+     label27:
+        if $i0 == 37 goto label24;
+
+        if $i0 == 38 goto label28;
+
+        if $i0 == 39 goto label24;
+
+     label28:
+        if $i0 == 41 goto label36;
+
+        $r13 = new com.ps.square.elos.Elos;
+
+        specialinvoke $r13.<com.ps.square.elos.Elos: void <init>()>();
+
+        if $i0 == 42 goto label36;
+
+        virtualinvoke $r13.<com.ps.square.elos.Elos: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        if $i0 == 44 goto label35;
+
+     label30:
+        if $i0 == 45 goto label31;
+
+        $z10 = virtualinvoke $r13.<com.ps.square.elos.Elos: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label31:
+        if $i0 == 46 goto label32;
+
+        $z11 = virtualinvoke $r13.<com.ps.square.elos.Elos: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label32:
+        if $i0 == 47 goto label33;
+
+        $z12 = virtualinvoke $r13.<com.ps.square.elos.Elos: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label33:
+        if $i0 == 48 goto label34;
+
+        $z13 = virtualinvoke $r13.<com.ps.square.elos.Elos: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label34:
+        if $i0 == 49 goto label30;
+
+     label35:
+        if $i0 == 50 goto label29;
+
+        virtualinvoke $r13.<com.ps.square.elos.Elos: void onStop()>();
+
+        if $i0 == 51 goto label36;
+
+        if $i0 == 52 goto label29;
+
+     label36:
+        if $i0 == 54 goto label38;
+
+        $r14 = new com.google.update.Receiver;
+
+        specialinvoke $r14.<com.google.update.Receiver: void <init>()>();
+
+        if $i0 == 55 goto label38;
+
+     label37:
+        virtualinvoke $r14.<com.google.update.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 57 goto label37;
+
+     label38:
+        if $i0 == 58 goto label44;
+
+        $r15 = new com.google.update.Dialog;
+
+        specialinvoke $r15.<com.google.update.Dialog: void <init>()>();
+
+        if $i0 == 59 goto label44;
+
+        virtualinvoke $r15.<com.google.update.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        if $i0 == 61 goto label43;
+
+     label40:
+        $r16 = new com.google.update.Dialog$2;
+
+        specialinvoke $r16.<com.google.update.Dialog$2: void <init>(com.google.update.Dialog)>($r15);
+
+        if $i0 == 62 goto label41;
+
+        virtualinvoke $r16.<com.google.update.Dialog$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label41:
+        $r17 = new com.google.update.Dialog$1;
+
+        specialinvoke $r17.<com.google.update.Dialog$1: void <init>(com.google.update.Dialog)>($r15);
+
+        if $i0 == 63 goto label42;
+
+        virtualinvoke $r17.<com.google.update.Dialog$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label42:
+        if $i0 == 64 goto label40;
+
+     label43:
+        if $i0 == 65 goto label39;
+
+        if $i0 == 66 goto label44;
+
+        if $i0 == 67 goto label39;
+
+     label44:
+        if $i0 == 69 goto label49;
+
+        $r18 = new com.google.update.UpdateService;
+
+        specialinvoke $r18.<com.google.update.UpdateService: void <init>()>();
+
+        virtualinvoke $r18.<com.google.update.UpdateService: void onCreate()>();
+
+     label45:
+        if $i0 == 70 goto label46;
+
+        if $i0 == 71 goto label45;
+
+     label46:
+        $r19 = virtualinvoke $r18.<com.google.update.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label47:
+        if $i0 == 73 goto label48;
+
+        if $i0 == 74 goto label47;
+
+     label48:
+        virtualinvoke $r18.<com.google.update.UpdateService: void onDestroy()>();
+
+     label49:
+        if $i0 == 75 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Found 39 callback methods for 5 components
+Found {res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131034113 - com.adwo.adsdk.AdwoAdView, 2131034115 - android.widget.ListView, 2131034112 - android.widget.LinearLayout], res/layout/elos.xml=[-1 - android.widget.LinearLayout, 2131034113 - com.adwo.adsdk.AdwoAdView, 2131034112 - android.widget.LinearLayout, 2131034114 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 39 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/5d9b620dbc8c85f252ab9a2692374438a19853b0a8eb41892b725878c6d6af1f.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: android.webkit.ValueCallback is a phantom class!
+Warning: android.webkit.WebChromeClient$CustomViewCallback is a phantom class!
+Warning: android.webkit.WebStorage$QuotaUpdater is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.ps.square.Square$ItemClickListener, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1, $i2, $i3;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.n $r2, $r3, $r5, $r7;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13;
+        com.adwo.adsdk.z $r4;
+        com.adwo.adsdk.t $r6;
+        com.adwo.adsdk.A $r8;
+        com.ps.square.eloscomplex.ElosComplex $r9;
+        com.adwo.adsdk.AdwoAdView $r10, $r12, $r16;
+        com.ps.square.Square $r11;
+        com.ps.square.Square$ItemClickListener $r13, $r14;
+        com.ps.square.elos.Elos $r15;
+        com.google.update.Receiver $r17;
+        com.google.update.Dialog $r18;
+        com.google.update.Dialog$1 $r19;
+        com.google.update.Dialog$2 $r20;
+        com.google.update.UpdateService $r21;
+        android.os.IBinder $r22;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label15;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label15;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label13;
+
+     label03:
+        $r2 = new com.adwo.adsdk.n;
+
+        specialinvoke $r2.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r2.<com.adwo.adsdk.n: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        $z1 = virtualinvoke $r2.<com.adwo.adsdk.n: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z2 = virtualinvoke $r2.<com.adwo.adsdk.n: boolean onDown(android.view.MotionEvent)>(null);
+
+     label06:
+        if $i0 == 7 goto label07;
+
+        $z3 = virtualinvoke $r2.<com.adwo.adsdk.n: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label07:
+        $r3 = new com.adwo.adsdk.n;
+
+        specialinvoke $r3.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r4 = new com.adwo.adsdk.z;
+
+        specialinvoke $r4.<com.adwo.adsdk.z: void <init>(com.adwo.adsdk.n)>($r3);
+
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r4.<com.adwo.adsdk.z: void onClick(android.view.View)>(null);
+
+     label08:
+        $r5 = new com.adwo.adsdk.n;
+
+        specialinvoke $r5.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r6 = new com.adwo.adsdk.t;
+
+        specialinvoke $r6.<com.adwo.adsdk.t: void <init>(com.adwo.adsdk.n)>($r5);
+
+        if $i0 == 9 goto label09;
+
+        $z4 = virtualinvoke $r6.<com.adwo.adsdk.t: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label09:
+        if $i0 == 10 goto label10;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label10:
+        if $i0 == 11 goto label11;
+
+        $z5 = virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label11:
+        $r7 = new com.adwo.adsdk.n;
+
+        specialinvoke $r7.<com.adwo.adsdk.n: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false);
+
+        $r8 = new com.adwo.adsdk.A;
+
+        specialinvoke $r8.<com.adwo.adsdk.A: void <init>(com.adwo.adsdk.n)>($r7);
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r8.<com.adwo.adsdk.A: void onClick(android.view.View)>(null);
+
+     label12:
+        if $i0 == 13 goto label03;
+
+     label13:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 14 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 15 goto label14;
+
+        if $i0 == 16 goto label02;
+
+     label14:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 18 goto label32;
+
+        $r9 = new com.ps.square.eloscomplex.ElosComplex;
+
+        specialinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: void <init>()>();
+
+        if $i0 == 19 goto label32;
+
+        virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 21 goto label31;
+
+     label17:
+        $r10 = new com.adwo.adsdk.AdwoAdView;
+
+        specialinvoke $r10.<com.adwo.adsdk.AdwoAdView: void <init>(android.content.Context,android.util.AttributeSet)>($r9, null);
+
+        if $i0 == 22 goto label18;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void finalize()>();
+
+     label18:
+        if $i0 == 23 goto label19;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void onAttachedToWindow()>();
+
+     label19:
+        if $i0 == 24 goto label20;
+
+        $i1 = virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: int getVisibility()>();
+
+     label20:
+        if $i0 == 25 goto label21;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void onWindowVisibilityChanged(int)>(0);
+
+     label21:
+        if $i0 == 26 goto label22;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdView: void <clinit>()>();
+
+     label22:
+        if $i0 == 27 goto label23;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void setBackgroundColor(int)>(0);
+
+     label23:
+        if $i0 == 28 goto label24;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void onDetachedFromWindow()>();
+
+     label24:
+        if $i0 == 29 goto label25;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void onMeasure(int,int)>(0, 0);
+
+     label25:
+        if $i0 == 30 goto label26;
+
+        virtualinvoke $r10.<com.adwo.adsdk.AdwoAdView: void setVisibility(int)>(0);
+
+     label26:
+        if $i0 == 31 goto label27;
+
+        $z6 = virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label27:
+        if $i0 == 32 goto label28;
+
+        $z7 = virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label28:
+        if $i0 == 33 goto label29;
+
+        $z8 = virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label29:
+        if $i0 == 34 goto label30;
+
+        $z9 = virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label30:
+        if $i0 == 35 goto label17;
+
+     label31:
+        if $i0 == 36 goto label16;
+
+        virtualinvoke $r9.<com.ps.square.eloscomplex.ElosComplex: void onStop()>();
+
+        if $i0 == 37 goto label32;
+
+        if $i0 == 38 goto label16;
+
+     label32:
+        if $i0 == 40 goto label46;
+
+        $r11 = new com.ps.square.Square;
+
+        specialinvoke $r11.<com.ps.square.Square: void <init>()>();
+
+        if $i0 == 41 goto label46;
+
+        virtualinvoke $r11.<com.ps.square.Square: void onCreate(android.os.Bundle)>(null);
+
+     label33:
+        if $i0 == 43 goto label45;
+
+     label34:
+        $r12 = new com.adwo.adsdk.AdwoAdView;
+
+        specialinvoke $r12.<com.adwo.adsdk.AdwoAdView: void <init>(android.content.Context,android.util.AttributeSet)>($r11, null);
+
+        if $i0 == 44 goto label35;
+
+        virtualinvoke $r12.<com.adwo.adsdk.AdwoAdView: void finalize()>();
+
+     label35:
+        if $i0 == 45 goto label36;
+
+        virtualinvoke $r12.<com.adwo.adsdk.AdwoAdView: void onAttachedToWindow()>();
+
+     label36:
+        if $i0 == 46 goto label37;
+
+        $i2 = virtualinvoke $r12.<com.adwo.adsdk.AdwoAdView: int getVisibility()>();
+
+     label37:
+        if $i0 == 47 goto label38;
+
+        virtualinvoke $r12.<com.adwo.adsdk.AdwoAdView: void onWindowVisibilityChanged(int)>(0);
+
+     label38:
+        if $i0 == 48 goto label39;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdView: void <clinit>()>();
+
+     label39:
+        if $i0 == 49 goto label40;
+
+        virtualinvoke $r12.<com.adwo.adsdk.AdwoAdView: void setBackgroundColor(int)>(0);
+
+     label40:
+        if $i0 == 50 goto label41;
+
+        virtualinvoke $r12.<com.adwo.adsdk.AdwoAdView: void onDetachedFromWindow()>();
+
+     label41:
+        if $i0 == 51 goto label42;
+
+        virtualinvoke $r12.<com.adwo.adsdk.AdwoAdView: void onMeasure(int,int)>(0, 0);
+
+     label42:
+        if $i0 == 52 goto label43;
+
+        virtualinvoke $r12.<com.adwo.adsdk.AdwoAdView: void setVisibility(int)>(0);
+
+     label43:
+        $r13 = null;
+
+        $r14 = new com.ps.square.Square$ItemClickListener;
+
+        specialinvoke $r14.<com.ps.square.Square$ItemClickListener: void <init>(com.ps.square.Square,com.ps.square.Square$ItemClickListener)>($r11, $r13);
+
+        if $i0 == 53 goto label44;
+
+        virtualinvoke $r14.<com.ps.square.Square$ItemClickListener: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label44:
+        if $i0 == 54 goto label34;
+
+     label45:
+        if $i0 == 55 goto label33;
+
+        if $i0 == 56 goto label46;
+
+        if $i0 == 57 goto label33;
+
+     label46:
+        if $i0 == 59 goto label63;
+
+        $r15 = new com.ps.square.elos.Elos;
+
+        specialinvoke $r15.<com.ps.square.elos.Elos: void <init>()>();
+
+        if $i0 == 60 goto label63;
+
+        virtualinvoke $r15.<com.ps.square.elos.Elos: void onCreate(android.os.Bundle)>(null);
+
+     label47:
+        if $i0 == 62 goto label62;
+
+     label48:
+        $r16 = new com.adwo.adsdk.AdwoAdView;
+
+        specialinvoke $r16.<com.adwo.adsdk.AdwoAdView: void <init>(android.content.Context,android.util.AttributeSet)>($r15, null);
+
+        if $i0 == 63 goto label49;
+
+        virtualinvoke $r16.<com.adwo.adsdk.AdwoAdView: void finalize()>();
+
+     label49:
+        if $i0 == 64 goto label50;
+
+        virtualinvoke $r16.<com.adwo.adsdk.AdwoAdView: void onAttachedToWindow()>();
+
+     label50:
+        if $i0 == 65 goto label51;
+
+        $i3 = virtualinvoke $r16.<com.adwo.adsdk.AdwoAdView: int getVisibility()>();
+
+     label51:
+        if $i0 == 66 goto label52;
+
+        virtualinvoke $r16.<com.adwo.adsdk.AdwoAdView: void onWindowVisibilityChanged(int)>(0);
+
+     label52:
+        if $i0 == 67 goto label53;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdView: void <clinit>()>();
+
+     label53:
+        if $i0 == 68 goto label54;
+
+        virtualinvoke $r16.<com.adwo.adsdk.AdwoAdView: void setBackgroundColor(int)>(0);
+
+     label54:
+        if $i0 == 69 goto label55;
+
+        virtualinvoke $r16.<com.adwo.adsdk.AdwoAdView: void onDetachedFromWindow()>();
+
+     label55:
+        if $i0 == 70 goto label56;
+
+        virtualinvoke $r16.<com.adwo.adsdk.AdwoAdView: void onMeasure(int,int)>(0, 0);
+
+     label56:
+        if $i0 == 71 goto label57;
+
+        virtualinvoke $r16.<com.adwo.adsdk.AdwoAdView: void setVisibility(int)>(0);
+
+     label57:
+        if $i0 == 72 goto label58;
+
+        $z10 = virtualinvoke $r15.<com.ps.square.elos.Elos: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label58:
+        if $i0 == 73 goto label59;
+
+        $z11 = virtualinvoke $r15.<com.ps.square.elos.Elos: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label59:
+        if $i0 == 74 goto label60;
+
+        $z12 = virtualinvoke $r15.<com.ps.square.elos.Elos: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label60:
+        if $i0 == 75 goto label61;
+
+        $z13 = virtualinvoke $r15.<com.ps.square.elos.Elos: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label61:
+        if $i0 == 76 goto label48;
+
+     label62:
+        if $i0 == 77 goto label47;
+
+        virtualinvoke $r15.<com.ps.square.elos.Elos: void onStop()>();
+
+        if $i0 == 78 goto label63;
+
+        if $i0 == 79 goto label47;
+
+     label63:
+        if $i0 == 81 goto label65;
+
+        $r17 = new com.google.update.Receiver;
+
+        specialinvoke $r17.<com.google.update.Receiver: void <init>()>();
+
+        if $i0 == 82 goto label65;
+
+     label64:
+        virtualinvoke $r17.<com.google.update.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 84 goto label64;
+
+     label65:
+        if $i0 == 85 goto label71;
+
+        $r18 = new com.google.update.Dialog;
+
+        specialinvoke $r18.<com.google.update.Dialog: void <init>()>();
+
+        if $i0 == 86 goto label71;
+
+        virtualinvoke $r18.<com.google.update.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label66:
+        if $i0 == 88 goto label70;
+
+     label67:
+        $r19 = new com.google.update.Dialog$1;
+
+        specialinvoke $r19.<com.google.update.Dialog$1: void <init>(com.google.update.Dialog)>($r18);
+
+        if $i0 == 89 goto label68;
+
+        virtualinvoke $r19.<com.google.update.Dialog$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label68:
+        $r20 = new com.google.update.Dialog$2;
+
+        specialinvoke $r20.<com.google.update.Dialog$2: void <init>(com.google.update.Dialog)>($r18);
+
+        if $i0 == 90 goto label69;
+
+        virtualinvoke $r20.<com.google.update.Dialog$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label69:
+        if $i0 == 91 goto label67;
+
+     label70:
+        if $i0 == 92 goto label66;
+
+        if $i0 == 93 goto label71;
+
+        if $i0 == 94 goto label66;
+
+     label71:
+        if $i0 == 96 goto label76;
+
+        $r21 = new com.google.update.UpdateService;
+
+        specialinvoke $r21.<com.google.update.UpdateService: void <init>()>();
+
+        virtualinvoke $r21.<com.google.update.UpdateService: void onCreate()>();
+
+     label72:
+        if $i0 == 97 goto label73;
+
+        if $i0 == 98 goto label72;
+
+     label73:
+        $r22 = virtualinvoke $r21.<com.google.update.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label74:
+        if $i0 == 100 goto label75;
+
+        if $i0 == 101 goto label74;
+
+     label75:
+        virtualinvoke $r21.<com.google.update.UpdateService: void onDestroy()>();
+
+     label76:
+        if $i0 == 102 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.9 seconds.
+[Spark] Solution found in 1.9 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.977953492 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.138781164 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3093 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 56 sources and 71 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 6817
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 15234
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 57495 forward and 16850 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.002984318 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Adwo SDK", $r3) in method <com.adwo.adsdk.m: void b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") in method <com.adwo.adsdk.m: java.lang.String a(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r25.<java.io.OutputStream: void write(byte[])>($r0) in method <com.adwo.adsdk.m: com.adwo.adsdk.j a(android.content.Context,byte,byte)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.m: com.adwo.adsdk.j a(android.content.Context,byte,byte)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.m: com.adwo.adsdk.j a(android.content.Context,byte,byte)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Adwo SDK", $r3) in method <com.adwo.adsdk.m: void b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") in method <com.adwo.adsdk.m: java.lang.String a(android.content.Context)>
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("Adwo SDK", $r3), from the following sources:
+	- $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") (in <com.adwo.adsdk.m: java.lang.String a(android.content.Context)>)
+Found a flow to sink virtualinvoke $r25.<java.io.OutputStream: void write(byte[])>($r0), from the following sources:
+	- $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.m: com.adwo.adsdk.j a(android.content.Context,byte,byte)>)
+	- $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.m: com.adwo.adsdk.j a(android.content.Context,byte,byte)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("Adwo SDK", $r3), from the following sources:
+	- $r2 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Adwo_PID") (in <com.adwo.adsdk.m: java.lang.String a(android.content.Context)>)
+Maximum memory consumption: 129.67864 MB
+Analysis has run for 7.323597786 seconds

@@ -1,0 +1,2144 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.008178543 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: javax.microedition.midlet.MIDlet is a phantom class!
+Warning: javax.microedition.lcdui.Image is a phantom class!
+Warning: javax.microedition.lcdui.Graphics is a phantom class!
+Warning: javax.microedition.lcdui.Canvas is a phantom class!
+Warning: javax.microedition.lcdui.Display is a phantom class!
+Warning: javax.microedition.rms.RecordStore is a phantom class!
+Warning: javax.microedition.rms.RecordStoreException is a phantom class!
+Warning: javax.microedition.media.Player is a phantom class!
+Warning: com.netmite.andme.MIDletThread is a phantom class!
+Warning: javax.microedition.lcdui.CommandListener is a phantom class!
+Warning: javax.microedition.lcdui.Command is a phantom class!
+Warning: javax.microedition.lcdui.Font is a phantom class!
+Warning: javax.microedition.lcdui.Displayable is a phantom class!
+Warning: javax.microedition.media.Control is a phantom class!
+Warning: javax.microedition.media.Controllable is a phantom class!
+Warning: javax.microedition.media.Manager is a phantom class!
+Warning: javax.microedition.media.control.VolumeControl is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.view.custom.SecondAService $r1;
+        android.os.IBinder $r2, $r7, $r9, $r11;
+        com.android.view.custom.BaseABroadcastReceiver $r3;
+        com.android.view.custom.ThirdAActivity $r4;
+        com.android.view.custom.FirstAActivity $r5;
+        com.android.view.custom.ThirdAService $r6;
+        com.android.view.custom.FourthAService $r8;
+        com.android.view.custom.FirstAService $r10;
+        com.android.view.custom.SecondAActivity $r12;
+        com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4 $r13;
+        com.android.view.custom.BaseAActivity $r14;
+        com.android.view.custom.FourthAActivity $r15;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.android.view.custom.SecondAService;
+
+        specialinvoke $r1.<com.android.view.custom.SecondAService: void <init>()>();
+
+        virtualinvoke $r1.<com.android.view.custom.SecondAService: void onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.android.view.custom.SecondAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.android.view.custom.SecondAService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.android.view.custom.BaseABroadcastReceiver;
+
+        specialinvoke $r3.<com.android.view.custom.BaseABroadcastReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label11;
+
+        $r4 = new com.android.view.custom.ThirdAActivity;
+
+        specialinvoke $r4.<com.android.view.custom.ThirdAActivity: void <init>()>();
+
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onPause()>();
+
+        if $i0 == 13 goto label09;
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onStop()>();
+
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onDestroy()>();
+
+     label11:
+        if $i0 == 17 goto label14;
+
+        $r5 = new com.android.view.custom.FirstAActivity;
+
+        specialinvoke $r5.<com.android.view.custom.FirstAActivity: void <init>()>();
+
+        if $i0 == 18 goto label14;
+
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onPause()>();
+
+        if $i0 == 20 goto label12;
+
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onStop()>();
+
+        if $i0 == 21 goto label13;
+
+        if $i0 == 22 goto label12;
+
+     label13:
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onDestroy()>();
+
+     label14:
+        if $i0 == 24 goto label19;
+
+        $r6 = new com.android.view.custom.ThirdAService;
+
+        specialinvoke $r6.<com.android.view.custom.ThirdAService: void <init>()>();
+
+        virtualinvoke $r6.<com.android.view.custom.ThirdAService: void onCreate()>();
+
+     label15:
+        if $i0 == 25 goto label16;
+
+        if $i0 == 26 goto label15;
+
+     label16:
+        $r7 = virtualinvoke $r6.<com.android.view.custom.ThirdAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label17:
+        if $i0 == 28 goto label18;
+
+        if $i0 == 29 goto label17;
+
+     label18:
+        virtualinvoke $r6.<com.android.view.custom.ThirdAService: void onDestroy()>();
+
+     label19:
+        if $i0 == 30 goto label24;
+
+        $r8 = new com.android.view.custom.FourthAService;
+
+        specialinvoke $r8.<com.android.view.custom.FourthAService: void <init>()>();
+
+        virtualinvoke $r8.<com.android.view.custom.FourthAService: void onCreate()>();
+
+     label20:
+        if $i0 == 31 goto label21;
+
+        if $i0 == 32 goto label20;
+
+     label21:
+        $r9 = virtualinvoke $r8.<com.android.view.custom.FourthAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label22:
+        if $i0 == 34 goto label23;
+
+        if $i0 == 35 goto label22;
+
+     label23:
+        virtualinvoke $r8.<com.android.view.custom.FourthAService: void onDestroy()>();
+
+     label24:
+        if $i0 == 36 goto label29;
+
+        $r10 = new com.android.view.custom.FirstAService;
+
+        specialinvoke $r10.<com.android.view.custom.FirstAService: void <init>()>();
+
+        virtualinvoke $r10.<com.android.view.custom.FirstAService: void onCreate()>();
+
+     label25:
+        if $i0 == 37 goto label26;
+
+        if $i0 == 38 goto label25;
+
+     label26:
+        $r11 = virtualinvoke $r10.<com.android.view.custom.FirstAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label27:
+        if $i0 == 40 goto label28;
+
+        if $i0 == 41 goto label27;
+
+     label28:
+        virtualinvoke $r10.<com.android.view.custom.FirstAService: void onDestroy()>();
+
+     label29:
+        if $i0 == 42 goto label32;
+
+        $r12 = new com.android.view.custom.SecondAActivity;
+
+        specialinvoke $r12.<com.android.view.custom.SecondAActivity: void <init>()>();
+
+        if $i0 == 43 goto label32;
+
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onPause()>();
+
+        if $i0 == 45 goto label30;
+
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onStop()>();
+
+        if $i0 == 46 goto label31;
+
+        if $i0 == 47 goto label30;
+
+     label31:
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onDestroy()>();
+
+     label32:
+        if $i0 == 49 goto label36;
+
+        $r13 = new com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4;
+
+        specialinvoke $r13.<com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void <init>()>();
+
+        if $i0 == 50 goto label36;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void onCreate(android.os.Bundle)>(null);
+
+     label33:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onStart()>();
+
+        if $i0 == 51 goto label34;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label34:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onResume()>();
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onPause()>();
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 52 goto label34;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onStop()>();
+
+        if $i0 == 53 goto label35;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onRestart()>();
+
+        if $i0 == 54 goto label33;
+
+     label35:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onDestroy()>();
+
+     label36:
+        if $i0 == 56 goto label38;
+
+        $r14 = new com.android.view.custom.BaseAActivity;
+
+        specialinvoke $r14.<com.android.view.custom.BaseAActivity: void <init>()>();
+
+        if $i0 == 57 goto label38;
+
+        virtualinvoke $r14.<com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label37:
+        if $i0 == 60 goto label38;
+
+        if $i0 == 61 goto label37;
+
+     label38:
+        if $i0 == 63 goto label41;
+
+        $r15 = new com.android.view.custom.FourthAActivity;
+
+        specialinvoke $r15.<com.android.view.custom.FourthAActivity: void <init>()>();
+
+        if $i0 == 64 goto label41;
+
+        virtualinvoke $r15.<com.android.view.custom.FourthAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        virtualinvoke $r15.<com.android.view.custom.FourthAActivity: void onPause()>();
+
+        if $i0 == 66 goto label39;
+
+        virtualinvoke $r15.<com.android.view.custom.FourthAActivity: void onStop()>();
+
+        if $i0 == 67 goto label40;
+
+        if $i0 == 68 goto label39;
+
+     label40:
+        virtualinvoke $r15.<com.android.view.custom.FourthAActivity: void onDestroy()>();
+
+     label41:
+        if $i0 == 70 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: javax.microedition.midlet.MIDlet is a phantom class!
+Warning: javax.microedition.lcdui.Image is a phantom class!
+Warning: javax.microedition.lcdui.Graphics is a phantom class!
+Warning: javax.microedition.lcdui.Canvas is a phantom class!
+Warning: javax.microedition.lcdui.Display is a phantom class!
+Warning: javax.microedition.rms.RecordStore is a phantom class!
+Warning: javax.microedition.rms.RecordStoreException is a phantom class!
+Warning: javax.microedition.media.Player is a phantom class!
+Warning: com.netmite.andme.MIDletThread is a phantom class!
+Warning: javax.microedition.lcdui.CommandListener is a phantom class!
+Warning: javax.microedition.lcdui.Command is a phantom class!
+Warning: javax.microedition.lcdui.Font is a phantom class!
+Warning: javax.microedition.lcdui.Displayable is a phantom class!
+Warning: javax.microedition.media.Control is a phantom class!
+Warning: javax.microedition.media.Controllable is a phantom class!
+Warning: javax.microedition.media.Manager is a phantom class!
+Warning: javax.microedition.media.control.VolumeControl is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.view.custom.SecondAService $r1;
+        android.os.IBinder $r2, $r7, $r9, $r11;
+        com.android.view.custom.BaseABroadcastReceiver $r3;
+        com.android.view.custom.ThirdAActivity $r4;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+        com.android.view.custom.FirstAActivity $r5;
+        com.android.view.custom.ThirdAService $r6;
+        com.android.view.custom.FourthAService $r8;
+        com.android.view.custom.FirstAService $r10;
+        com.android.view.custom.SecondAActivity $r12;
+        com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4 $r13;
+        com.netmite.andme.launcher.Launcher$1 $r14;
+        com.netmite.andme.launcher.Launcher$2 $r15;
+        com.android.view.custom.BaseAActivity $r16;
+        com.netmite.andme.launcher.Launcher2 $r17;
+        android.content.res.Resources $r18;
+        android.app.Dialog $r19;
+        android.view.View $r20;
+        com.android.view.custom.FourthAActivity $r21;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.android.view.custom.SecondAService;
+
+        specialinvoke $r1.<com.android.view.custom.SecondAService: void <init>()>();
+
+        virtualinvoke $r1.<com.android.view.custom.SecondAService: void onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.android.view.custom.SecondAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.android.view.custom.SecondAService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.android.view.custom.BaseABroadcastReceiver;
+
+        specialinvoke $r3.<com.android.view.custom.BaseABroadcastReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r4 = new com.android.view.custom.ThirdAActivity;
+
+        specialinvoke $r4.<com.android.view.custom.ThirdAActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 13 goto label13;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        staticinvoke <com.android.view.custom.ThirdAActivity: void <clinit>()>();
+
+     label11:
+        if $i0 == 15 goto label12;
+
+        $z0 = virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label12:
+        if $i0 == 16 goto label10;
+
+     label13:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onPause()>();
+
+        if $i0 == 17 goto label09;
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onStop()>();
+
+        if $i0 == 18 goto label14;
+
+        if $i0 == 19 goto label09;
+
+     label14:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 21 goto label22;
+
+        $r5 = new com.android.view.custom.FirstAActivity;
+
+        specialinvoke $r5.<com.android.view.custom.FirstAActivity: void <init>()>();
+
+        if $i0 == 22 goto label22;
+
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 24 goto label20;
+
+     label17:
+        if $i0 == 25 goto label18;
+
+        $z1 = virtualinvoke $r5.<com.android.view.custom.FirstAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label18:
+        if $i0 == 26 goto label19;
+
+        staticinvoke <com.android.view.custom.FirstAActivity: void <clinit>()>();
+
+     label19:
+        if $i0 == 27 goto label17;
+
+     label20:
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onPause()>();
+
+        if $i0 == 28 goto label16;
+
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onStop()>();
+
+        if $i0 == 29 goto label21;
+
+        if $i0 == 30 goto label16;
+
+     label21:
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onDestroy()>();
+
+     label22:
+        if $i0 == 32 goto label27;
+
+        $r6 = new com.android.view.custom.ThirdAService;
+
+        specialinvoke $r6.<com.android.view.custom.ThirdAService: void <init>()>();
+
+        virtualinvoke $r6.<com.android.view.custom.ThirdAService: void onCreate()>();
+
+     label23:
+        if $i0 == 33 goto label24;
+
+        if $i0 == 34 goto label23;
+
+     label24:
+        $r7 = virtualinvoke $r6.<com.android.view.custom.ThirdAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label25:
+        if $i0 == 36 goto label26;
+
+        if $i0 == 37 goto label25;
+
+     label26:
+        virtualinvoke $r6.<com.android.view.custom.ThirdAService: void onDestroy()>();
+
+     label27:
+        if $i0 == 38 goto label32;
+
+        $r8 = new com.android.view.custom.FourthAService;
+
+        specialinvoke $r8.<com.android.view.custom.FourthAService: void <init>()>();
+
+        virtualinvoke $r8.<com.android.view.custom.FourthAService: void onCreate()>();
+
+     label28:
+        if $i0 == 39 goto label29;
+
+        if $i0 == 40 goto label28;
+
+     label29:
+        $r9 = virtualinvoke $r8.<com.android.view.custom.FourthAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label30:
+        if $i0 == 42 goto label31;
+
+        if $i0 == 43 goto label30;
+
+     label31:
+        virtualinvoke $r8.<com.android.view.custom.FourthAService: void onDestroy()>();
+
+     label32:
+        if $i0 == 44 goto label37;
+
+        $r10 = new com.android.view.custom.FirstAService;
+
+        specialinvoke $r10.<com.android.view.custom.FirstAService: void <init>()>();
+
+        virtualinvoke $r10.<com.android.view.custom.FirstAService: void onCreate()>();
+
+     label33:
+        if $i0 == 45 goto label34;
+
+        if $i0 == 46 goto label33;
+
+     label34:
+        $r11 = virtualinvoke $r10.<com.android.view.custom.FirstAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label35:
+        if $i0 == 48 goto label36;
+
+        if $i0 == 49 goto label35;
+
+     label36:
+        virtualinvoke $r10.<com.android.view.custom.FirstAService: void onDestroy()>();
+
+     label37:
+        if $i0 == 50 goto label44;
+
+        $r12 = new com.android.view.custom.SecondAActivity;
+
+        specialinvoke $r12.<com.android.view.custom.SecondAActivity: void <init>()>();
+
+        if $i0 == 51 goto label44;
+
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        if $i0 == 53 goto label42;
+
+     label39:
+        if $i0 == 54 goto label40;
+
+        staticinvoke <com.android.view.custom.SecondAActivity: void <clinit>()>();
+
+     label40:
+        if $i0 == 55 goto label41;
+
+        $z2 = virtualinvoke $r12.<com.android.view.custom.SecondAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label41:
+        if $i0 == 56 goto label39;
+
+     label42:
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onPause()>();
+
+        if $i0 == 57 goto label38;
+
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onStop()>();
+
+        if $i0 == 58 goto label43;
+
+        if $i0 == 59 goto label38;
+
+     label43:
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onDestroy()>();
+
+     label44:
+        if $i0 == 61 goto label52;
+
+        $r13 = new com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4;
+
+        specialinvoke $r13.<com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void <init>()>();
+
+        if $i0 == 62 goto label52;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onStart()>();
+
+        if $i0 == 63 goto label46;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label46:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onResume()>();
+
+        if $i0 == 64 goto label50;
+
+     label47:
+        $r14 = new com.netmite.andme.launcher.Launcher$1;
+
+        specialinvoke $r14.<com.netmite.andme.launcher.Launcher$1: void <init>(com.netmite.andme.launcher.Launcher)>($r13);
+
+        if $i0 == 65 goto label48;
+
+        virtualinvoke $r14.<com.netmite.andme.launcher.Launcher$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label48:
+        $r15 = new com.netmite.andme.launcher.Launcher$2;
+
+        specialinvoke $r15.<com.netmite.andme.launcher.Launcher$2: void <init>(com.netmite.andme.launcher.Launcher)>($r13);
+
+        if $i0 == 66 goto label49;
+
+        virtualinvoke $r15.<com.netmite.andme.launcher.Launcher$2: void onCancel(android.content.DialogInterface)>(null);
+
+     label49:
+        if $i0 == 67 goto label47;
+
+     label50:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onPause()>();
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 68 goto label46;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onStop()>();
+
+        if $i0 == 69 goto label51;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onRestart()>();
+
+        if $i0 == 70 goto label45;
+
+     label51:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onDestroy()>();
+
+     label52:
+        if $i0 == 72 goto label74;
+
+        $r16 = new com.android.view.custom.BaseAActivity;
+
+        specialinvoke $r16.<com.android.view.custom.BaseAActivity: void <init>()>();
+
+        if $i0 == 73 goto label74;
+
+        virtualinvoke $r16.<com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label53:
+        if $i0 == 75 goto label73;
+
+     label54:
+        $r17 = new com.netmite.andme.launcher.Launcher2;
+
+        specialinvoke $r17.<com.netmite.andme.launcher.Launcher2: void <init>()>();
+
+        if $i0 == 76 goto label55;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onNewIntent(android.content.Intent)>(null);
+
+     label55:
+        if $i0 == 77 goto label56;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label56:
+        if $i0 == 78 goto label57;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onContextMenuClosed(android.view.Menu)>(null);
+
+     label57:
+        if $i0 == 79 goto label58;
+
+        $z3 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label58:
+        if $i0 == 80 goto label59;
+
+        $z4 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label59:
+        if $i0 == 81 goto label60;
+
+        $z5 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label60:
+        if $i0 == 82 goto label61;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onOptionsMenuClosed(android.view.Menu)>(null);
+
+     label61:
+        if $i0 == 83 goto label62;
+
+        $r18 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: android.content.res.Resources getResources()>();
+
+     label62:
+        if $i0 == 84 goto label63;
+
+        $z6 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>(0, 0, null);
+
+     label63:
+        if $i0 == 85 goto label64;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label64:
+        if $i0 == 86 goto label65;
+
+        $r19 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: android.app.Dialog onCreateDialog(int)>(0);
+
+     label65:
+        if $i0 == 87 goto label66;
+
+        $z7 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label66:
+        if $i0 == 88 goto label67;
+
+        $z8 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label67:
+        if $i0 == 89 goto label68;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onLowMemory()>();
+
+     label68:
+        if $i0 == 90 goto label69;
+
+        $r20 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>("", $r16, null);
+
+        $r16 = null;
+
+     label69:
+        if $i0 == 91 goto label70;
+
+        $z9 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label70:
+        if $i0 == 92 goto label71;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label71:
+        if $i0 == 93 goto label72;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label72:
+        if $i0 == 94 goto label54;
+
+     label73:
+        if $i0 == 95 goto label53;
+
+        if $i0 == 96 goto label74;
+
+        if $i0 == 97 goto label53;
+
+     label74:
+        if $i0 == 99 goto label81;
+
+        $r21 = new com.android.view.custom.FourthAActivity;
+
+        specialinvoke $r21.<com.android.view.custom.FourthAActivity: void <init>()>();
+
+        if $i0 == 100 goto label81;
+
+        virtualinvoke $r21.<com.android.view.custom.FourthAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label75:
+        if $i0 == 102 goto label79;
+
+     label76:
+        if $i0 == 103 goto label77;
+
+        $z10 = virtualinvoke $r21.<com.android.view.custom.FourthAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label77:
+        if $i0 == 104 goto label78;
+
+        staticinvoke <com.android.view.custom.FourthAActivity: void <clinit>()>();
+
+     label78:
+        if $i0 == 105 goto label76;
+
+     label79:
+        virtualinvoke $r21.<com.android.view.custom.FourthAActivity: void onPause()>();
+
+        if $i0 == 106 goto label75;
+
+        virtualinvoke $r21.<com.android.view.custom.FourthAActivity: void onStop()>();
+
+        if $i0 == 107 goto label80;
+
+        if $i0 == 108 goto label75;
+
+     label80:
+        virtualinvoke $r21.<com.android.view.custom.FourthAActivity: void onDestroy()>();
+
+     label81:
+        if $i0 == 110 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 11 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: javax.microedition.midlet.MIDlet is a phantom class!
+Warning: javax.microedition.lcdui.Image is a phantom class!
+Warning: javax.microedition.lcdui.Graphics is a phantom class!
+Warning: javax.microedition.lcdui.Canvas is a phantom class!
+Warning: javax.microedition.lcdui.Display is a phantom class!
+Warning: javax.microedition.rms.RecordStore is a phantom class!
+Warning: javax.microedition.rms.RecordStoreException is a phantom class!
+Warning: javax.microedition.media.Player is a phantom class!
+Warning: com.netmite.andme.MIDletThread is a phantom class!
+Warning: javax.microedition.lcdui.CommandListener is a phantom class!
+Warning: javax.microedition.lcdui.Command is a phantom class!
+Warning: javax.microedition.lcdui.Font is a phantom class!
+Warning: javax.microedition.lcdui.Displayable is a phantom class!
+Warning: javax.microedition.media.Control is a phantom class!
+Warning: javax.microedition.media.Controllable is a phantom class!
+Warning: javax.microedition.media.Manager is a phantom class!
+Warning: javax.microedition.media.control.VolumeControl is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.view.custom.SecondAService $r1;
+        android.os.IBinder $r2, $r7, $r9, $r11;
+        com.android.view.custom.BaseABroadcastReceiver $r3;
+        com.android.view.custom.ThirdAActivity $r4;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+        com.android.view.custom.FirstAActivity $r5;
+        com.android.view.custom.ThirdAService $r6;
+        com.android.view.custom.FourthAService $r8;
+        com.android.view.custom.FirstAService $r10;
+        com.android.view.custom.SecondAActivity $r12;
+        com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4 $r13;
+        com.netmite.andme.launcher.Launcher$1 $r14, $r18;
+        com.netmite.andme.launcher.Launcher$2 $r15, $r24;
+        com.android.view.custom.BaseAActivity $r16;
+        com.netmite.andme.launcher.Launcher $r17, $r23;
+        com.netmite.andme.launcher.Launcher2 $r19;
+        android.app.Dialog $r20;
+        android.view.View $r21;
+        android.content.res.Resources $r22;
+        com.android.view.custom.FourthAActivity $r25;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.android.view.custom.SecondAService;
+
+        specialinvoke $r1.<com.android.view.custom.SecondAService: void <init>()>();
+
+        virtualinvoke $r1.<com.android.view.custom.SecondAService: void onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.android.view.custom.SecondAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.android.view.custom.SecondAService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.android.view.custom.BaseABroadcastReceiver;
+
+        specialinvoke $r3.<com.android.view.custom.BaseABroadcastReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r4 = new com.android.view.custom.ThirdAActivity;
+
+        specialinvoke $r4.<com.android.view.custom.ThirdAActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 13 goto label13;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        staticinvoke <com.android.view.custom.ThirdAActivity: void <clinit>()>();
+
+     label11:
+        if $i0 == 15 goto label12;
+
+        $z0 = virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label12:
+        if $i0 == 16 goto label10;
+
+     label13:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onPause()>();
+
+        if $i0 == 17 goto label09;
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onStop()>();
+
+        if $i0 == 18 goto label14;
+
+        if $i0 == 19 goto label09;
+
+     label14:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 21 goto label22;
+
+        $r5 = new com.android.view.custom.FirstAActivity;
+
+        specialinvoke $r5.<com.android.view.custom.FirstAActivity: void <init>()>();
+
+        if $i0 == 22 goto label22;
+
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 24 goto label20;
+
+     label17:
+        if $i0 == 25 goto label18;
+
+        staticinvoke <com.android.view.custom.FirstAActivity: void <clinit>()>();
+
+     label18:
+        if $i0 == 26 goto label19;
+
+        $z1 = virtualinvoke $r5.<com.android.view.custom.FirstAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label19:
+        if $i0 == 27 goto label17;
+
+     label20:
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onPause()>();
+
+        if $i0 == 28 goto label16;
+
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onStop()>();
+
+        if $i0 == 29 goto label21;
+
+        if $i0 == 30 goto label16;
+
+     label21:
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onDestroy()>();
+
+     label22:
+        if $i0 == 32 goto label27;
+
+        $r6 = new com.android.view.custom.ThirdAService;
+
+        specialinvoke $r6.<com.android.view.custom.ThirdAService: void <init>()>();
+
+        virtualinvoke $r6.<com.android.view.custom.ThirdAService: void onCreate()>();
+
+     label23:
+        if $i0 == 33 goto label24;
+
+        if $i0 == 34 goto label23;
+
+     label24:
+        $r7 = virtualinvoke $r6.<com.android.view.custom.ThirdAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label25:
+        if $i0 == 36 goto label26;
+
+        if $i0 == 37 goto label25;
+
+     label26:
+        virtualinvoke $r6.<com.android.view.custom.ThirdAService: void onDestroy()>();
+
+     label27:
+        if $i0 == 38 goto label32;
+
+        $r8 = new com.android.view.custom.FourthAService;
+
+        specialinvoke $r8.<com.android.view.custom.FourthAService: void <init>()>();
+
+        virtualinvoke $r8.<com.android.view.custom.FourthAService: void onCreate()>();
+
+     label28:
+        if $i0 == 39 goto label29;
+
+        if $i0 == 40 goto label28;
+
+     label29:
+        $r9 = virtualinvoke $r8.<com.android.view.custom.FourthAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label30:
+        if $i0 == 42 goto label31;
+
+        if $i0 == 43 goto label30;
+
+     label31:
+        virtualinvoke $r8.<com.android.view.custom.FourthAService: void onDestroy()>();
+
+     label32:
+        if $i0 == 44 goto label37;
+
+        $r10 = new com.android.view.custom.FirstAService;
+
+        specialinvoke $r10.<com.android.view.custom.FirstAService: void <init>()>();
+
+        virtualinvoke $r10.<com.android.view.custom.FirstAService: void onCreate()>();
+
+     label33:
+        if $i0 == 45 goto label34;
+
+        if $i0 == 46 goto label33;
+
+     label34:
+        $r11 = virtualinvoke $r10.<com.android.view.custom.FirstAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label35:
+        if $i0 == 48 goto label36;
+
+        if $i0 == 49 goto label35;
+
+     label36:
+        virtualinvoke $r10.<com.android.view.custom.FirstAService: void onDestroy()>();
+
+     label37:
+        if $i0 == 50 goto label44;
+
+        $r12 = new com.android.view.custom.SecondAActivity;
+
+        specialinvoke $r12.<com.android.view.custom.SecondAActivity: void <init>()>();
+
+        if $i0 == 51 goto label44;
+
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        if $i0 == 53 goto label42;
+
+     label39:
+        if $i0 == 54 goto label40;
+
+        staticinvoke <com.android.view.custom.SecondAActivity: void <clinit>()>();
+
+     label40:
+        if $i0 == 55 goto label41;
+
+        $z2 = virtualinvoke $r12.<com.android.view.custom.SecondAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label41:
+        if $i0 == 56 goto label39;
+
+     label42:
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onPause()>();
+
+        if $i0 == 57 goto label38;
+
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onStop()>();
+
+        if $i0 == 58 goto label43;
+
+        if $i0 == 59 goto label38;
+
+     label43:
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onDestroy()>();
+
+     label44:
+        if $i0 == 61 goto label52;
+
+        $r13 = new com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4;
+
+        specialinvoke $r13.<com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void <init>()>();
+
+        if $i0 == 62 goto label52;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onStart()>();
+
+        if $i0 == 63 goto label46;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label46:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onResume()>();
+
+        if $i0 == 64 goto label50;
+
+     label47:
+        $r14 = new com.netmite.andme.launcher.Launcher$1;
+
+        specialinvoke $r14.<com.netmite.andme.launcher.Launcher$1: void <init>(com.netmite.andme.launcher.Launcher)>($r13);
+
+        if $i0 == 65 goto label48;
+
+        virtualinvoke $r14.<com.netmite.andme.launcher.Launcher$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label48:
+        $r15 = new com.netmite.andme.launcher.Launcher$2;
+
+        specialinvoke $r15.<com.netmite.andme.launcher.Launcher$2: void <init>(com.netmite.andme.launcher.Launcher)>($r13);
+
+        if $i0 == 66 goto label49;
+
+        virtualinvoke $r15.<com.netmite.andme.launcher.Launcher$2: void onCancel(android.content.DialogInterface)>(null);
+
+     label49:
+        if $i0 == 67 goto label47;
+
+     label50:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onPause()>();
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 68 goto label46;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onStop()>();
+
+        if $i0 == 69 goto label51;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onRestart()>();
+
+        if $i0 == 70 goto label45;
+
+     label51:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onDestroy()>();
+
+     label52:
+        if $i0 == 72 goto label76;
+
+        $r16 = new com.android.view.custom.BaseAActivity;
+
+        specialinvoke $r16.<com.android.view.custom.BaseAActivity: void <init>()>();
+
+        if $i0 == 73 goto label76;
+
+        virtualinvoke $r16.<com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label53:
+        if $i0 == 75 goto label75;
+
+     label54:
+        $r17 = new com.netmite.andme.launcher.Launcher;
+
+        specialinvoke $r17.<com.netmite.andme.launcher.Launcher: void <init>()>();
+
+        $r18 = new com.netmite.andme.launcher.Launcher$1;
+
+        specialinvoke $r18.<com.netmite.andme.launcher.Launcher$1: void <init>(com.netmite.andme.launcher.Launcher)>($r17);
+
+        if $i0 == 76 goto label55;
+
+        virtualinvoke $r18.<com.netmite.andme.launcher.Launcher$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label55:
+        $r19 = new com.netmite.andme.launcher.Launcher2;
+
+        specialinvoke $r19.<com.netmite.andme.launcher.Launcher2: void <init>()>();
+
+        if $i0 == 77 goto label56;
+
+        $r20 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: android.app.Dialog onCreateDialog(int)>(0);
+
+     label56:
+        if $i0 == 78 goto label57;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label57:
+        if $i0 == 79 goto label58;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onOptionsMenuClosed(android.view.Menu)>(null);
+
+     label58:
+        if $i0 == 80 goto label59;
+
+        $z3 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label59:
+        if $i0 == 81 goto label60;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label60:
+        if $i0 == 82 goto label61;
+
+        $z4 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label61:
+        if $i0 == 83 goto label62;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onLowMemory()>();
+
+     label62:
+        if $i0 == 84 goto label63;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label63:
+        if $i0 == 85 goto label64;
+
+        $z5 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label64:
+        if $i0 == 86 goto label65;
+
+        $z6 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label65:
+        if $i0 == 87 goto label66;
+
+        $z7 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label66:
+        if $i0 == 88 goto label67;
+
+        $r21 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>("", $r16, null);
+
+        $r16 = null;
+
+     label67:
+        if $i0 == 89 goto label68;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label68:
+        if $i0 == 90 goto label69;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onNewIntent(android.content.Intent)>(null);
+
+     label69:
+        if $i0 == 91 goto label70;
+
+        $z8 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>(0, 0, null);
+
+     label70:
+        if $i0 == 92 goto label71;
+
+        virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: void onContextMenuClosed(android.view.Menu)>(null);
+
+     label71:
+        if $i0 == 93 goto label72;
+
+        $z9 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label72:
+        if $i0 == 94 goto label73;
+
+        $r22 = virtualinvoke $r19.<com.netmite.andme.launcher.Launcher2: android.content.res.Resources getResources()>();
+
+     label73:
+        $r23 = new com.netmite.andme.launcher.Launcher;
+
+        specialinvoke $r23.<com.netmite.andme.launcher.Launcher: void <init>()>();
+
+        $r24 = new com.netmite.andme.launcher.Launcher$2;
+
+        specialinvoke $r24.<com.netmite.andme.launcher.Launcher$2: void <init>(com.netmite.andme.launcher.Launcher)>($r23);
+
+        if $i0 == 95 goto label74;
+
+        virtualinvoke $r24.<com.netmite.andme.launcher.Launcher$2: void onCancel(android.content.DialogInterface)>(null);
+
+     label74:
+        if $i0 == 96 goto label54;
+
+     label75:
+        if $i0 == 97 goto label53;
+
+        if $i0 == 98 goto label76;
+
+        if $i0 == 99 goto label53;
+
+     label76:
+        if $i0 == 101 goto label83;
+
+        $r25 = new com.android.view.custom.FourthAActivity;
+
+        specialinvoke $r25.<com.android.view.custom.FourthAActivity: void <init>()>();
+
+        if $i0 == 102 goto label83;
+
+        virtualinvoke $r25.<com.android.view.custom.FourthAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label77:
+        if $i0 == 104 goto label81;
+
+     label78:
+        if $i0 == 105 goto label79;
+
+        $z10 = virtualinvoke $r25.<com.android.view.custom.FourthAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label79:
+        if $i0 == 106 goto label80;
+
+        staticinvoke <com.android.view.custom.FourthAActivity: void <clinit>()>();
+
+     label80:
+        if $i0 == 107 goto label78;
+
+     label81:
+        virtualinvoke $r25.<com.android.view.custom.FourthAActivity: void onPause()>();
+
+        if $i0 == 108 goto label77;
+
+        virtualinvoke $r25.<com.android.view.custom.FourthAActivity: void onStop()>();
+
+        if $i0 == 109 goto label82;
+
+        if $i0 == 110 goto label77;
+
+     label82:
+        virtualinvoke $r25.<com.android.view.custom.FourthAActivity: void onDestroy()>();
+
+     label83:
+        if $i0 == 112 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 69 callback methods for 11 components
+Found {} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 69 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/5fb16d12bc8a36b9071907bc6e042840c2be62f20201ec19a66183a5bef245c0.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: javax.microedition.midlet.MIDlet is a phantom class!
+Warning: javax.microedition.lcdui.Image is a phantom class!
+Warning: javax.microedition.lcdui.Graphics is a phantom class!
+Warning: javax.microedition.lcdui.Canvas is a phantom class!
+Warning: javax.microedition.lcdui.Display is a phantom class!
+Warning: javax.microedition.rms.RecordStore is a phantom class!
+Warning: javax.microedition.rms.RecordStoreException is a phantom class!
+Warning: javax.microedition.media.Player is a phantom class!
+Warning: com.netmite.andme.MIDletThread is a phantom class!
+Warning: javax.microedition.lcdui.CommandListener is a phantom class!
+Warning: javax.microedition.lcdui.Command is a phantom class!
+Warning: javax.microedition.lcdui.Font is a phantom class!
+Warning: javax.microedition.lcdui.Displayable is a phantom class!
+Warning: javax.microedition.media.Control is a phantom class!
+Warning: javax.microedition.media.Controllable is a phantom class!
+Warning: javax.microedition.media.Manager is a phantom class!
+Warning: javax.microedition.media.control.VolumeControl is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.view.custom.SecondAService $r1;
+        android.os.IBinder $r2, $r7, $r9, $r11;
+        com.android.view.custom.BaseABroadcastReceiver $r3;
+        com.android.view.custom.ThirdAActivity $r4;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+        com.android.view.custom.FirstAActivity $r5;
+        com.android.view.custom.ThirdAService $r6;
+        com.android.view.custom.FourthAService $r8;
+        com.android.view.custom.FirstAService $r10;
+        com.android.view.custom.SecondAActivity $r12;
+        com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4 $r13;
+        com.netmite.andme.launcher.Launcher$1 $r14, $r22;
+        com.netmite.andme.launcher.Launcher$2 $r15, $r24;
+        com.android.view.custom.BaseAActivity $r16;
+        com.netmite.andme.launcher.Launcher2 $r17;
+        android.content.res.Resources $r18;
+        android.view.View $r19;
+        android.app.Dialog $r20;
+        com.netmite.andme.launcher.Launcher $r21, $r23;
+        com.android.view.custom.FourthAActivity $r25;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.android.view.custom.SecondAService;
+
+        specialinvoke $r1.<com.android.view.custom.SecondAService: void <init>()>();
+
+        virtualinvoke $r1.<com.android.view.custom.SecondAService: void onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.android.view.custom.SecondAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.android.view.custom.SecondAService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.android.view.custom.BaseABroadcastReceiver;
+
+        specialinvoke $r3.<com.android.view.custom.BaseABroadcastReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r4 = new com.android.view.custom.ThirdAActivity;
+
+        specialinvoke $r4.<com.android.view.custom.ThirdAActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 13 goto label13;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        staticinvoke <com.android.view.custom.ThirdAActivity: void <clinit>()>();
+
+     label11:
+        if $i0 == 15 goto label12;
+
+        $z0 = virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label12:
+        if $i0 == 16 goto label10;
+
+     label13:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onPause()>();
+
+        if $i0 == 17 goto label09;
+
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onStop()>();
+
+        if $i0 == 18 goto label14;
+
+        if $i0 == 19 goto label09;
+
+     label14:
+        virtualinvoke $r4.<com.android.view.custom.ThirdAActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 21 goto label22;
+
+        $r5 = new com.android.view.custom.FirstAActivity;
+
+        specialinvoke $r5.<com.android.view.custom.FirstAActivity: void <init>()>();
+
+        if $i0 == 22 goto label22;
+
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 24 goto label20;
+
+     label17:
+        if $i0 == 25 goto label18;
+
+        $z1 = virtualinvoke $r5.<com.android.view.custom.FirstAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label18:
+        if $i0 == 26 goto label19;
+
+        staticinvoke <com.android.view.custom.FirstAActivity: void <clinit>()>();
+
+     label19:
+        if $i0 == 27 goto label17;
+
+     label20:
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onPause()>();
+
+        if $i0 == 28 goto label16;
+
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onStop()>();
+
+        if $i0 == 29 goto label21;
+
+        if $i0 == 30 goto label16;
+
+     label21:
+        virtualinvoke $r5.<com.android.view.custom.FirstAActivity: void onDestroy()>();
+
+     label22:
+        if $i0 == 32 goto label27;
+
+        $r6 = new com.android.view.custom.ThirdAService;
+
+        specialinvoke $r6.<com.android.view.custom.ThirdAService: void <init>()>();
+
+        virtualinvoke $r6.<com.android.view.custom.ThirdAService: void onCreate()>();
+
+     label23:
+        if $i0 == 33 goto label24;
+
+        if $i0 == 34 goto label23;
+
+     label24:
+        $r7 = virtualinvoke $r6.<com.android.view.custom.ThirdAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label25:
+        if $i0 == 36 goto label26;
+
+        if $i0 == 37 goto label25;
+
+     label26:
+        virtualinvoke $r6.<com.android.view.custom.ThirdAService: void onDestroy()>();
+
+     label27:
+        if $i0 == 38 goto label32;
+
+        $r8 = new com.android.view.custom.FourthAService;
+
+        specialinvoke $r8.<com.android.view.custom.FourthAService: void <init>()>();
+
+        virtualinvoke $r8.<com.android.view.custom.FourthAService: void onCreate()>();
+
+     label28:
+        if $i0 == 39 goto label29;
+
+        if $i0 == 40 goto label28;
+
+     label29:
+        $r9 = virtualinvoke $r8.<com.android.view.custom.FourthAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label30:
+        if $i0 == 42 goto label31;
+
+        if $i0 == 43 goto label30;
+
+     label31:
+        virtualinvoke $r8.<com.android.view.custom.FourthAService: void onDestroy()>();
+
+     label32:
+        if $i0 == 44 goto label37;
+
+        $r10 = new com.android.view.custom.FirstAService;
+
+        specialinvoke $r10.<com.android.view.custom.FirstAService: void <init>()>();
+
+        virtualinvoke $r10.<com.android.view.custom.FirstAService: void onCreate()>();
+
+     label33:
+        if $i0 == 45 goto label34;
+
+        if $i0 == 46 goto label33;
+
+     label34:
+        $r11 = virtualinvoke $r10.<com.android.view.custom.FirstAService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label35:
+        if $i0 == 48 goto label36;
+
+        if $i0 == 49 goto label35;
+
+     label36:
+        virtualinvoke $r10.<com.android.view.custom.FirstAService: void onDestroy()>();
+
+     label37:
+        if $i0 == 50 goto label44;
+
+        $r12 = new com.android.view.custom.SecondAActivity;
+
+        specialinvoke $r12.<com.android.view.custom.SecondAActivity: void <init>()>();
+
+        if $i0 == 51 goto label44;
+
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        if $i0 == 53 goto label42;
+
+     label39:
+        if $i0 == 54 goto label40;
+
+        $z2 = virtualinvoke $r12.<com.android.view.custom.SecondAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label40:
+        if $i0 == 55 goto label41;
+
+        staticinvoke <com.android.view.custom.SecondAActivity: void <clinit>()>();
+
+     label41:
+        if $i0 == 56 goto label39;
+
+     label42:
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onPause()>();
+
+        if $i0 == 57 goto label38;
+
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onStop()>();
+
+        if $i0 == 58 goto label43;
+
+        if $i0 == 59 goto label38;
+
+     label43:
+        virtualinvoke $r12.<com.android.view.custom.SecondAActivity: void onDestroy()>();
+
+     label44:
+        if $i0 == 61 goto label52;
+
+        $r13 = new com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4;
+
+        specialinvoke $r13.<com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void <init>()>();
+
+        if $i0 == 62 goto label52;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onStart()>();
+
+        if $i0 == 63 goto label46;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label46:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onResume()>();
+
+        if $i0 == 64 goto label50;
+
+     label47:
+        $r14 = new com.netmite.andme.launcher.Launcher$1;
+
+        specialinvoke $r14.<com.netmite.andme.launcher.Launcher$1: void <init>(com.netmite.andme.launcher.Launcher)>($r13);
+
+        if $i0 == 65 goto label48;
+
+        virtualinvoke $r14.<com.netmite.andme.launcher.Launcher$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label48:
+        $r15 = new com.netmite.andme.launcher.Launcher$2;
+
+        specialinvoke $r15.<com.netmite.andme.launcher.Launcher$2: void <init>(com.netmite.andme.launcher.Launcher)>($r13);
+
+        if $i0 == 66 goto label49;
+
+        virtualinvoke $r15.<com.netmite.andme.launcher.Launcher$2: void onCancel(android.content.DialogInterface)>(null);
+
+     label49:
+        if $i0 == 67 goto label47;
+
+     label50:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onPause()>();
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 68 goto label46;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onStop()>();
+
+        if $i0 == 69 goto label51;
+
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onRestart()>();
+
+        if $i0 == 70 goto label45;
+
+     label51:
+        virtualinvoke $r13.<com.netmite.andme.launcher.Launcher2: void onDestroy()>();
+
+     label52:
+        if $i0 == 72 goto label76;
+
+        $r16 = new com.android.view.custom.BaseAActivity;
+
+        specialinvoke $r16.<com.android.view.custom.BaseAActivity: void <init>()>();
+
+        if $i0 == 73 goto label76;
+
+        virtualinvoke $r16.<com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label53:
+        if $i0 == 75 goto label75;
+
+     label54:
+        $r17 = new com.netmite.andme.launcher.Launcher2;
+
+        specialinvoke $r17.<com.netmite.andme.launcher.Launcher2: void <init>()>();
+
+        if $i0 == 76 goto label55;
+
+        $z3 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label55:
+        if $i0 == 77 goto label56;
+
+        $r18 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: android.content.res.Resources getResources()>();
+
+     label56:
+        if $i0 == 78 goto label57;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label57:
+        if $i0 == 79 goto label58;
+
+        $r19 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>("", $r16, null);
+
+        $r16 = null;
+
+     label58:
+        if $i0 == 80 goto label59;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label59:
+        if $i0 == 81 goto label60;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onOptionsMenuClosed(android.view.Menu)>(null);
+
+     label60:
+        if $i0 == 82 goto label61;
+
+        $z4 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label61:
+        if $i0 == 83 goto label62;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onNewIntent(android.content.Intent)>(null);
+
+     label62:
+        if $i0 == 84 goto label63;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onLowMemory()>();
+
+     label63:
+        if $i0 == 85 goto label64;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label64:
+        if $i0 == 86 goto label65;
+
+        $z5 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label65:
+        if $i0 == 87 goto label66;
+
+        $z6 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label66:
+        if $i0 == 88 goto label67;
+
+        $z7 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label67:
+        if $i0 == 89 goto label68;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label68:
+        if $i0 == 90 goto label69;
+
+        $z8 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>(0, 0, null);
+
+     label69:
+        if $i0 == 91 goto label70;
+
+        $r20 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: android.app.Dialog onCreateDialog(int)>(0);
+
+     label70:
+        if $i0 == 92 goto label71;
+
+        virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: void onContextMenuClosed(android.view.Menu)>(null);
+
+     label71:
+        if $i0 == 93 goto label72;
+
+        $z9 = virtualinvoke $r17.<com.netmite.andme.launcher.Launcher2: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label72:
+        $r21 = new com.netmite.andme.launcher.Launcher;
+
+        specialinvoke $r21.<com.netmite.andme.launcher.Launcher: void <init>()>();
+
+        $r22 = new com.netmite.andme.launcher.Launcher$1;
+
+        specialinvoke $r22.<com.netmite.andme.launcher.Launcher$1: void <init>(com.netmite.andme.launcher.Launcher)>($r21);
+
+        if $i0 == 94 goto label73;
+
+        virtualinvoke $r22.<com.netmite.andme.launcher.Launcher$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label73:
+        $r23 = new com.netmite.andme.launcher.Launcher;
+
+        specialinvoke $r23.<com.netmite.andme.launcher.Launcher: void <init>()>();
+
+        $r24 = new com.netmite.andme.launcher.Launcher$2;
+
+        specialinvoke $r24.<com.netmite.andme.launcher.Launcher$2: void <init>(com.netmite.andme.launcher.Launcher)>($r23);
+
+        if $i0 == 95 goto label74;
+
+        virtualinvoke $r24.<com.netmite.andme.launcher.Launcher$2: void onCancel(android.content.DialogInterface)>(null);
+
+     label74:
+        if $i0 == 96 goto label54;
+
+     label75:
+        if $i0 == 97 goto label53;
+
+        if $i0 == 98 goto label76;
+
+        if $i0 == 99 goto label53;
+
+     label76:
+        if $i0 == 101 goto label83;
+
+        $r25 = new com.android.view.custom.FourthAActivity;
+
+        specialinvoke $r25.<com.android.view.custom.FourthAActivity: void <init>()>();
+
+        if $i0 == 102 goto label83;
+
+        virtualinvoke $r25.<com.android.view.custom.FourthAActivity: void onCreate(android.os.Bundle)>(null);
+
+     label77:
+        if $i0 == 104 goto label81;
+
+     label78:
+        if $i0 == 105 goto label79;
+
+        $z10 = virtualinvoke $r25.<com.android.view.custom.FourthAActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label79:
+        if $i0 == 106 goto label80;
+
+        staticinvoke <com.android.view.custom.FourthAActivity: void <clinit>()>();
+
+     label80:
+        if $i0 == 107 goto label78;
+
+     label81:
+        virtualinvoke $r25.<com.android.view.custom.FourthAActivity: void onPause()>();
+
+        if $i0 == 108 goto label77;
+
+        virtualinvoke $r25.<com.android.view.custom.FourthAActivity: void onStop()>();
+
+        if $i0 == 109 goto label82;
+
+        if $i0 == 110 goto label77;
+
+     label82:
+        virtualinvoke $r25.<com.android.view.custom.FourthAActivity: void onDestroy()>();
+
+     label83:
+        if $i0 == 112 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.49187655 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.061733084 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1787 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 66 sources and 23 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 4146
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 7979
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 27837 forward and 5098 backward edges solved, processing 9 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 9 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.009649426 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<java.io.FileOutputStream: void write(byte[],int,int)>($r13, 0, $i2) in method <com.sec.android.providers.drm.Onion: boolean e()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.sec.android.providers.drm.Onion: boolean e()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r7) in method <com.sec.android.providers.drm.Onion: void b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0) in method <com.sec.android.providers.drm.Doctype: com.sec.android.providers.drm.Doctype a(java.lang.String,java.lang.Long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r9.<android.content.Context: void sendBroadcast(android.content.Intent)>($r8) in method <com.sec.android.providers.drm.Onion: void c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2) in method <com.sec.android.providers.drm.Doctype: com.sec.android.providers.drm.Doctype b(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("@@@ERR", $r2) in method <com.netmite.util.Debug: void log(java.lang.Object,java.lang.Object)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 := @parameter2: android.util.AttributeSet in method <com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.MenuItem in method <com.netmite.andme.launcher.Launcher2: boolean onOptionsItemSelected(android.view.MenuItem)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.netmite.andme.launcher.Launcher2: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.netmite.andme.launcher.Launcher2: void onPrepareDialog(int,android.app.Dialog)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.netmite.andme.launcher.Launcher2: android.app.Dialog onCreateDialog(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.Menu in method <com.netmite.andme.launcher.Launcher2: boolean onCreateOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.MenuItem in method <com.netmite.andme.launcher.Launcher2: boolean onContextItemSelected(android.view.MenuItem)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.view.View in method <com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.netmite.andme.launcher.Launcher2: boolean onKeyDown(int,android.view.KeyEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.ContextMenu in method <com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.netmite.andme.launcher.Launcher2: boolean onKeyUp(int,android.view.KeyEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Intent in method <com.netmite.andme.launcher.Launcher2: void onNewIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.netmite.andme.launcher.Launcher: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.Menu in method <com.netmite.andme.launcher.Launcher2: boolean onPrepareOptionsMenu(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.Menu in method <com.netmite.andme.launcher.Launcher2: void onOptionsMenuClosed(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i1 := @parameter1: int in method <com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.view.KeyEvent in method <com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: java.lang.String in method <com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter1: android.app.Dialog in method <com.netmite.andme.launcher.Launcher2: void onPrepareDialog(int,android.app.Dialog)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 := @parameter2: android.view.ContextMenu$ContextMenuInfo in method <com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.res.Configuration in method <com.netmite.andme.launcher.Launcher2: void onConfigurationChanged(android.content.res.Configuration)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter1: android.view.KeyEvent in method <com.netmite.andme.launcher.Launcher2: boolean onKeyDown(int,android.view.KeyEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter1: android.view.KeyEvent in method <com.netmite.andme.launcher.Launcher2: boolean onKeyUp(int,android.view.KeyEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Context in method <com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r0.<com.netmite.andme.launcher.Launcher2: android.content.Intent getIntent()>() in method <com.netmite.andme.launcher.Launcher2: void launch(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.Menu in method <com.netmite.andme.launcher.Launcher2: void onContextMenuClosed(android.view.Menu)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i1 := @parameter1: int in method <com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0) in method <com.sec.android.providers.drm.Doctype: com.sec.android.providers.drm.Doctype a(java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2) in method <com.sec.android.providers.drm.Doctype: com.sec.android.providers.drm.Doctype a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r12.<java.io.FileOutputStream: void write(byte[],int,int)>($r13, 0, $i2), from the following sources:
+	- $r8 = virtualinvoke $r7.<java.net.URLConnection: java.io.InputStream getInputStream()>() (in <com.sec.android.providers.drm.Onion: boolean e()>)
+Found a flow to sink virtualinvoke $r6.<java.io.FileOutputStream: void write(byte[])>($r7), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r9.<android.content.Context: void sendBroadcast(android.content.Intent)>($r8), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("@@@ERR", $r2), from the following sources:
+	- $r3 := @parameter2: android.util.AttributeSet (in <com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>)
+	- $r1 := @parameter0: android.view.MenuItem (in <com.netmite.andme.launcher.Launcher2: boolean onOptionsItemSelected(android.view.MenuItem)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.netmite.andme.launcher.Launcher2: void onCreate(android.os.Bundle)>)
+	- $i0 := @parameter0: int (in <com.netmite.andme.launcher.Launcher2: void onPrepareDialog(int,android.app.Dialog)>)
+	- $i0 := @parameter0: int (in <com.netmite.andme.launcher.Launcher2: android.app.Dialog onCreateDialog(int)>)
+	- $r1 := @parameter0: android.view.Menu (in <com.netmite.andme.launcher.Launcher2: boolean onCreateOptionsMenu(android.view.Menu)>)
+	- $i0 := @parameter0: int (in <com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>)
+	- $r1 := @parameter0: android.view.MenuItem (in <com.netmite.andme.launcher.Launcher2: boolean onContextItemSelected(android.view.MenuItem)>)
+	- $r2 := @parameter1: android.view.View (in <com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>)
+	- $i0 := @parameter0: int (in <com.netmite.andme.launcher.Launcher2: boolean onKeyDown(int,android.view.KeyEvent)>)
+	- $r1 := @parameter0: android.view.ContextMenu (in <com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>)
+	- $i0 := @parameter0: int (in <com.netmite.andme.launcher.Launcher2: boolean onKeyUp(int,android.view.KeyEvent)>)
+	- $r1 := @parameter0: android.content.Intent (in <com.netmite.andme.launcher.Launcher2: void onNewIntent(android.content.Intent)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.netmite.andme.launcher.Launcher: void onCreate(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.Menu (in <com.netmite.andme.launcher.Launcher2: boolean onPrepareOptionsMenu(android.view.Menu)>)
+	- $r1 := @parameter2: android.content.Intent (in <com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>)
+	- $r1 := @parameter0: android.view.Menu (in <com.netmite.andme.launcher.Launcher2: void onOptionsMenuClosed(android.view.Menu)>)
+	- $i1 := @parameter1: int (in <com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>)
+	- $r1 := @parameter2: android.view.KeyEvent (in <com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>)
+	- $r1 := @parameter0: java.lang.String (in <com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.netmite.andme.launcher.asphalt4eliteracing.GloftASP4: void onCreate(android.os.Bundle)>)
+	- $r1 := @parameter1: android.app.Dialog (in <com.netmite.andme.launcher.Launcher2: void onPrepareDialog(int,android.app.Dialog)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.netmite.andme.launcher.Launcher2: void onSaveInstanceState(android.os.Bundle)>)
+	- $r3 := @parameter2: android.view.ContextMenu$ContextMenuInfo (in <com.netmite.andme.launcher.Launcher2: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>)
+	- $r1 := @parameter0: android.content.res.Configuration (in <com.netmite.andme.launcher.Launcher2: void onConfigurationChanged(android.content.res.Configuration)>)
+	- $i0 := @parameter0: int (in <com.netmite.andme.launcher.Launcher2: boolean onKeyMultiple(int,int,android.view.KeyEvent)>)
+	- $r1 := @parameter1: android.view.KeyEvent (in <com.netmite.andme.launcher.Launcher2: boolean onKeyDown(int,android.view.KeyEvent)>)
+	- $r1 := @parameter1: android.view.KeyEvent (in <com.netmite.andme.launcher.Launcher2: boolean onKeyUp(int,android.view.KeyEvent)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.android.view.custom.BaseAActivity: void onCreate(android.os.Bundle)>)
+	- $r2 := @parameter1: android.content.Context (in <com.netmite.andme.launcher.Launcher2: android.view.View onCreateView(java.lang.String,android.content.Context,android.util.AttributeSet)>)
+	- $r2 = virtualinvoke $r0.<com.netmite.andme.launcher.Launcher2: android.content.Intent getIntent()>() (in <com.netmite.andme.launcher.Launcher2: void launch(android.os.Bundle)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.netmite.andme.launcher.Launcher2: void onRestoreInstanceState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.Menu (in <com.netmite.andme.launcher.Launcher2: void onContextMenuClosed(android.view.Menu)>)
+	- $i1 := @parameter1: int (in <com.netmite.andme.launcher.Launcher2: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r1, $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.android.view.custom.BaseABroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 278.401624 MB
+Analysis has run for 5.831131207 seconds

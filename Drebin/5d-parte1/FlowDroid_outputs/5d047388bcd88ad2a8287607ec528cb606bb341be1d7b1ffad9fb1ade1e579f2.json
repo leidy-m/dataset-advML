@@ -1,0 +1,428 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.011777375 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        rom.jonas.eley.StartAtBootServiceReceiver $r1;
+        rom.jonas.eley.Podcepilicucerachu $r2;
+        rom.jonas.eley.AlarmReceiver $r3;
+        rom.jonas.eley.NewsReaderService $r4;
+        android.os.IBinder $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new rom.jonas.eley.StartAtBootServiceReceiver;
+
+        specialinvoke $r1.<rom.jonas.eley.StartAtBootServiceReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label05;
+
+        $r2 = new rom.jonas.eley.Podcepilicucerachu;
+
+        specialinvoke $r2.<rom.jonas.eley.Podcepilicucerachu: void <init>()>();
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<rom.jonas.eley.Podcepilicucerachu: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        if $i0 == 11 goto label07;
+
+        $r3 = new rom.jonas.eley.AlarmReceiver;
+
+        specialinvoke $r3.<rom.jonas.eley.AlarmReceiver: void <init>()>();
+
+        if $i0 == 12 goto label07;
+
+     label06:
+        virtualinvoke $r3.<rom.jonas.eley.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 14 goto label06;
+
+     label07:
+        if $i0 == 15 goto label12;
+
+        $r4 = new rom.jonas.eley.NewsReaderService;
+
+        specialinvoke $r4.<rom.jonas.eley.NewsReaderService: void <init>()>();
+
+        virtualinvoke $r4.<rom.jonas.eley.NewsReaderService: void onCreate()>();
+
+     label08:
+        if $i0 == 16 goto label09;
+
+        $i1 = virtualinvoke $r4.<rom.jonas.eley.NewsReaderService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 17 goto label08;
+
+     label09:
+        $r5 = virtualinvoke $r4.<rom.jonas.eley.NewsReaderService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label10:
+        if $i0 == 19 goto label11;
+
+        if $i0 == 20 goto label10;
+
+     label11:
+        virtualinvoke $r4.<rom.jonas.eley.NewsReaderService: void onDestroy()>();
+
+     label12:
+        if $i0 == 21 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: rom.jonas.eley.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: rom.jonas.eley.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: rom.jonas.eley.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/news_notification.xml
+Warning: RelativeLayout is a phantom class!
+Warning: rom.jonas.eley.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: rom.jonas.eley.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: CheckBox is a phantom class!
+Warning: rom.jonas.eley.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Warning: Button is a phantom class!
+Warning: rom.jonas.eley.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        rom.jonas.eley.StartAtBootServiceReceiver $r1;
+        rom.jonas.eley.Podcepilicucerachu $r2;
+        rom.jonas.eley.Podcepilicucerachu$2 $r3;
+        rom.jonas.eley.AlarmReceiver $r4;
+        rom.jonas.eley.NewsReaderService $r5;
+        android.os.IBinder $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new rom.jonas.eley.StartAtBootServiceReceiver;
+
+        specialinvoke $r1.<rom.jonas.eley.StartAtBootServiceReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label08;
+
+        $r2 = new rom.jonas.eley.Podcepilicucerachu;
+
+        specialinvoke $r2.<rom.jonas.eley.Podcepilicucerachu: void <init>()>();
+
+        if $i0 == 5 goto label08;
+
+        virtualinvoke $r2.<rom.jonas.eley.Podcepilicucerachu: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label07;
+
+     label05:
+        $r3 = new rom.jonas.eley.Podcepilicucerachu$2;
+
+        specialinvoke $r3.<rom.jonas.eley.Podcepilicucerachu$2: void <init>(rom.jonas.eley.Podcepilicucerachu)>($r2);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<rom.jonas.eley.Podcepilicucerachu$2: void onClick(android.view.View)>(null);
+
+     label06:
+        if $i0 == 9 goto label05;
+
+     label07:
+        if $i0 == 10 goto label04;
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label04;
+
+     label08:
+        if $i0 == 14 goto label10;
+
+        $r4 = new rom.jonas.eley.AlarmReceiver;
+
+        specialinvoke $r4.<rom.jonas.eley.AlarmReceiver: void <init>()>();
+
+        if $i0 == 15 goto label10;
+
+     label09:
+        virtualinvoke $r4.<rom.jonas.eley.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label09;
+
+     label10:
+        if $i0 == 18 goto label15;
+
+        $r5 = new rom.jonas.eley.NewsReaderService;
+
+        specialinvoke $r5.<rom.jonas.eley.NewsReaderService: void <init>()>();
+
+        virtualinvoke $r5.<rom.jonas.eley.NewsReaderService: void onCreate()>();
+
+     label11:
+        if $i0 == 19 goto label12;
+
+        $i1 = virtualinvoke $r5.<rom.jonas.eley.NewsReaderService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 20 goto label11;
+
+     label12:
+        $r6 = virtualinvoke $r5.<rom.jonas.eley.NewsReaderService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 22 goto label14;
+
+        if $i0 == 23 goto label13;
+
+     label14:
+        virtualinvoke $r5.<rom.jonas.eley.NewsReaderService: void onDestroy()>();
+
+     label15:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Callback method selfDestruct not found in class rom.jonas.eley.Podcepilicucerachu
+Found 8 callback methods for 4 components
+Found {res/layout/main.xml=[2131165193 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131165190 - android.widget.CheckBox, 2131165191 - android.widget.CheckBox, 2131165188 - android.widget.CheckBox, 2131165189 - android.widget.CheckBox, 2131165194 - android.widget.TextView, 2131165187 - android.widget.TextView, 2131165198 - android.widget.CheckBox, 2131165184 - android.widget.ScrollView, 2131165197 - android.widget.CheckBox, 2131165196 - android.widget.CheckBox, 2131165199 - android.widget.Button, 2131165185 - android.widget.RelativeLayout, 2131165192 - android.widget.CheckBox, 2131165195 - android.widget.CheckBox, 2131165186 - android.widget.LinearLayout], res/layout/news_notification.xml=[2131165200 - android.widget.LinearLayout, 2131165202 - android.widget.LinearLayout, 2131165204 - android.widget.TextView, 2131165203 - android.widget.TextView, 2131165201 - android.widget.ImageView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 8 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/5d047388bcd88ad2a8287607ec528cb606bb341be1d7b1ffad9fb1ade1e579f2.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        rom.jonas.eley.StartAtBootServiceReceiver $r1;
+        rom.jonas.eley.Podcepilicucerachu $r2;
+        rom.jonas.eley.Podcepilicucerachu$2 $r3;
+        rom.jonas.eley.AlarmReceiver $r4;
+        rom.jonas.eley.NewsReaderService $r5;
+        android.os.IBinder $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new rom.jonas.eley.StartAtBootServiceReceiver;
+
+        specialinvoke $r1.<rom.jonas.eley.StartAtBootServiceReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label08;
+
+        $r2 = new rom.jonas.eley.Podcepilicucerachu;
+
+        specialinvoke $r2.<rom.jonas.eley.Podcepilicucerachu: void <init>()>();
+
+        if $i0 == 5 goto label08;
+
+        virtualinvoke $r2.<rom.jonas.eley.Podcepilicucerachu: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label07;
+
+     label05:
+        $r3 = new rom.jonas.eley.Podcepilicucerachu$2;
+
+        specialinvoke $r3.<rom.jonas.eley.Podcepilicucerachu$2: void <init>(rom.jonas.eley.Podcepilicucerachu)>($r2);
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r3.<rom.jonas.eley.Podcepilicucerachu$2: void onClick(android.view.View)>(null);
+
+     label06:
+        if $i0 == 9 goto label05;
+
+     label07:
+        if $i0 == 10 goto label04;
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label04;
+
+     label08:
+        if $i0 == 14 goto label10;
+
+        $r4 = new rom.jonas.eley.AlarmReceiver;
+
+        specialinvoke $r4.<rom.jonas.eley.AlarmReceiver: void <init>()>();
+
+        if $i0 == 15 goto label10;
+
+     label09:
+        virtualinvoke $r4.<rom.jonas.eley.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label09;
+
+     label10:
+        if $i0 == 18 goto label15;
+
+        $r5 = new rom.jonas.eley.NewsReaderService;
+
+        specialinvoke $r5.<rom.jonas.eley.NewsReaderService: void <init>()>();
+
+        virtualinvoke $r5.<rom.jonas.eley.NewsReaderService: void onCreate()>();
+
+     label11:
+        if $i0 == 19 goto label12;
+
+        $i1 = virtualinvoke $r5.<rom.jonas.eley.NewsReaderService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 20 goto label11;
+
+     label12:
+        $r6 = virtualinvoke $r5.<rom.jonas.eley.NewsReaderService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 22 goto label14;
+
+        if $i0 == 23 goto label13;
+
+     label14:
+        virtualinvoke $r5.<rom.jonas.eley.NewsReaderService: void onDestroy()>();
+
+     label15:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.438751837 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.035766967 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 394 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 19 sources and 15 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 327
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 382
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 2861 forward and 228 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.003805595 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <rom.jonas.eley.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <rom.jonas.eley.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <rom.jonas.eley.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <rom.jonas.eley.StartAtBootServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 110.825664 MB
+Analysis has run for 3.680832739 seconds
