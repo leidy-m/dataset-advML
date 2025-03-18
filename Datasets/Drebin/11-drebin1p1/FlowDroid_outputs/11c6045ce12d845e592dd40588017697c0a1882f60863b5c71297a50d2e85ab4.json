@@ -1,0 +1,686 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.011839963 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: restore is a phantom class!
+Warning: install is a phantom class!
+Warning: rList is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.catsw.FontMgr.FileList $r1;
+        com.catsw.FontMgr.UpdateCheck $r2;
+        android.os.IBinder $r3;
+        com.catsw.FontMgr.FontMgr $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.catsw.FontMgr.FileList;
+
+        specialinvoke $r1.<com.catsw.FontMgr.FileList: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.catsw.FontMgr.FileList: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 11 goto label08;
+
+        $r2 = new com.catsw.FontMgr.UpdateCheck;
+
+        specialinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void onCreate()>();
+
+     label04:
+        if $i0 == 12 goto label05;
+
+        if $i0 == 13 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 15 goto label07;
+
+        if $i0 == 16 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void onDestroy()>();
+
+     label08:
+        if $i0 == 19 goto label10;
+
+        $r4 = new com.catsw.FontMgr.FontMgr;
+
+        specialinvoke $r4.<com.catsw.FontMgr.FontMgr: void <init>()>();
+
+        if $i0 == 20 goto label10;
+
+        virtualinvoke $r4.<com.catsw.FontMgr.FontMgr: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 23 goto label10;
+
+        if $i0 == 24 goto label09;
+
+     label10:
+        if $i0 == 26 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Callback analysis done.
+Warning: AbsoluteLayout is a phantom class!
+Warning: com.catsw.FontMgr.AbsoluteLayout is a phantom class!
+Warning: android.view.AbsoluteLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.catsw.FontMgr.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.catsw.FontMgr.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.catsw.FontMgr.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/about.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.catsw.FontMgr.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ListView is a phantom class!
+Warning: com.catsw.FontMgr.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 2 layout controls in file res/layout/directory_list.xml
+Found 3 layout controls in file res/layout/file_row.xml
+Warning: CheckBox is a phantom class!
+Warning: com.catsw.FontMgr.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 4 layout controls in file res/layout/install.xml
+Found 5 layout controls in file res/layout/main.xml
+Found 6 layout controls in file res/layout/restore.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: restore is a phantom class!
+Warning: install is a phantom class!
+Warning: rList is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.catsw.FontMgr.FileList $r1;
+        boolean $z0, $z1, $z2, $z3;
+        com.catsw.FontMgr.UpdateCheck $r2;
+        android.os.IBinder $r3;
+        com.catsw.FontMgr.FontMgr $r4;
+        com.catsw.FontMgr.FontMgr$11 $r5;
+        com.catsw.FontMgr.FontMgr$12 $r6;
+        com.catsw.FontMgr.FontMgr$10 $r7;
+        com.catsw.FontMgr.FontMgr$5 $r8;
+        com.catsw.FontMgr.FontMgr$1 $r9;
+        com.catsw.FontMgr.FontMgr$3 $r10;
+        com.catsw.FontMgr.FontMgr$8 $r11;
+        com.catsw.FontMgr.FontMgr$6 $r12;
+        com.catsw.FontMgr.FontMgr$9 $r13;
+        com.catsw.FontMgr.FontMgr$2 $r14;
+        com.catsw.FontMgr.FontMgr$4 $r15;
+        com.catsw.FontMgr.FontMgr$7 $r16;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.catsw.FontMgr.FileList;
+
+        specialinvoke $r1.<com.catsw.FontMgr.FileList: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.catsw.FontMgr.FileList: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label07;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r1.<com.catsw.FontMgr.FileList: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r1.<com.catsw.FontMgr.FileList: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z1 = virtualinvoke $r1.<com.catsw.FontMgr.FileList: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label06:
+        if $i0 == 7 goto label03;
+
+     label07:
+        if $i0 == 8 goto label02;
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label02;
+
+     label08:
+        if $i0 == 16 goto label13;
+
+        $r2 = new com.catsw.FontMgr.UpdateCheck;
+
+        specialinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void onCreate()>();
+
+     label09:
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        $r3 = virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label11:
+        if $i0 == 20 goto label12;
+
+        if $i0 == 21 goto label11;
+
+     label12:
+        virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void onDestroy()>();
+
+     label13:
+        if $i0 == 24 goto label31;
+
+        $r4 = new com.catsw.FontMgr.FontMgr;
+
+        specialinvoke $r4.<com.catsw.FontMgr.FontMgr: void <init>()>();
+
+        if $i0 == 25 goto label31;
+
+        virtualinvoke $r4.<com.catsw.FontMgr.FontMgr: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 27 goto label30;
+
+     label15:
+        $r5 = new com.catsw.FontMgr.FontMgr$11;
+
+        specialinvoke $r5.<com.catsw.FontMgr.FontMgr$11: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 28 goto label16;
+
+        virtualinvoke $r5.<com.catsw.FontMgr.FontMgr$11: void onClick(android.view.View)>(null);
+
+     label16:
+        $r6 = new com.catsw.FontMgr.FontMgr$12;
+
+        specialinvoke $r6.<com.catsw.FontMgr.FontMgr$12: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 29 goto label17;
+
+        virtualinvoke $r6.<com.catsw.FontMgr.FontMgr$12: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label17:
+        $r7 = new com.catsw.FontMgr.FontMgr$10;
+
+        specialinvoke $r7.<com.catsw.FontMgr.FontMgr$10: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 30 goto label18;
+
+        virtualinvoke $r7.<com.catsw.FontMgr.FontMgr$10: void onClick(android.view.View)>(null);
+
+     label18:
+        $r8 = new com.catsw.FontMgr.FontMgr$5;
+
+        specialinvoke $r8.<com.catsw.FontMgr.FontMgr$5: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 31 goto label19;
+
+        virtualinvoke $r8.<com.catsw.FontMgr.FontMgr$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r9 = new com.catsw.FontMgr.FontMgr$1;
+
+        specialinvoke $r9.<com.catsw.FontMgr.FontMgr$1: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 32 goto label20;
+
+        virtualinvoke $r9.<com.catsw.FontMgr.FontMgr$1: void onClick(android.view.View)>(null);
+
+     label20:
+        $r10 = new com.catsw.FontMgr.FontMgr$3;
+
+        specialinvoke $r10.<com.catsw.FontMgr.FontMgr$3: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 33 goto label21;
+
+        virtualinvoke $r10.<com.catsw.FontMgr.FontMgr$3: void onClick(android.view.View)>(null);
+
+     label21:
+        $r11 = new com.catsw.FontMgr.FontMgr$8;
+
+        specialinvoke $r11.<com.catsw.FontMgr.FontMgr$8: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 34 goto label22;
+
+        virtualinvoke $r11.<com.catsw.FontMgr.FontMgr$8: void onClick(android.view.View)>(null);
+
+     label22:
+        if $i0 == 35 goto label23;
+
+        $z2 = virtualinvoke $r4.<com.catsw.FontMgr.FontMgr: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label23:
+        if $i0 == 36 goto label24;
+
+        $z3 = virtualinvoke $r4.<com.catsw.FontMgr.FontMgr: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label24:
+        $r12 = new com.catsw.FontMgr.FontMgr$6;
+
+        specialinvoke $r12.<com.catsw.FontMgr.FontMgr$6: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 37 goto label25;
+
+        virtualinvoke $r12.<com.catsw.FontMgr.FontMgr$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r13 = new com.catsw.FontMgr.FontMgr$9;
+
+        specialinvoke $r13.<com.catsw.FontMgr.FontMgr$9: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 38 goto label26;
+
+        virtualinvoke $r13.<com.catsw.FontMgr.FontMgr$9: void onClick(android.view.View)>(null);
+
+     label26:
+        $r14 = new com.catsw.FontMgr.FontMgr$2;
+
+        specialinvoke $r14.<com.catsw.FontMgr.FontMgr$2: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 39 goto label27;
+
+        virtualinvoke $r14.<com.catsw.FontMgr.FontMgr$2: void onClick(android.view.View)>(null);
+
+     label27:
+        $r15 = new com.catsw.FontMgr.FontMgr$4;
+
+        specialinvoke $r15.<com.catsw.FontMgr.FontMgr$4: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 40 goto label28;
+
+        virtualinvoke $r15.<com.catsw.FontMgr.FontMgr$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r16 = new com.catsw.FontMgr.FontMgr$7;
+
+        specialinvoke $r16.<com.catsw.FontMgr.FontMgr$7: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 41 goto label29;
+
+        virtualinvoke $r16.<com.catsw.FontMgr.FontMgr$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        if $i0 == 42 goto label15;
+
+     label30:
+        if $i0 == 43 goto label14;
+
+        if $i0 == 44 goto label31;
+
+        if $i0 == 45 goto label14;
+
+     label31:
+        if $i0 == 47 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 22 callback methods for 3 components
+Found {res/layout/restore.xml=[2131099649 - android.widget.TextView, 2131099658 - android.widget.Button, 2131099656 - android.widget.CheckBox, 2131099657 - android.widget.CheckBox, 2131099659 - android.widget.Button, 2131099660 - android.widget.Button, -1 - android.widget.AbsoluteLayout, 2131099661 - android.widget.Button], res/layout/install.xml=[2131099649 - android.widget.TextView, 2131099658 - android.widget.Button, 2131099656 - android.widget.CheckBox, 2131099657 - android.widget.CheckBox, 2131099659 - android.widget.Button, 2131099660 - android.widget.Button, -1 - android.widget.AbsoluteLayout, 2131099661 - android.widget.Button], res/layout/about.xml=[2131099649 - android.widget.TextView, 2131099650 - android.widget.TextView, 2131099653 - android.widget.Button, -1 - android.widget.AbsoluteLayout, 2131099648 - android.widget.ImageView, 2131099652 - android.widget.TextView, 2131099651 - android.widget.TextView, 2131099654 - android.widget.TextView], res/layout/file_row.xml=[2131099655 - android.widget.TextView], res/layout/main.xml=[2131099665 - android.widget.Button, 2131099663 - android.widget.Button, 2131099664 - android.widget.Button, 2131099662 - android.widget.AbsoluteLayout, 2131099666 - android.widget.TextView], res/layout/directory_list.xml=[16908292 - android.widget.TextView, 16908298 - android.widget.ListView, -1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 22 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/11c6045ce12d845e592dd40588017697c0a1882f60863b5c71297a50d2e85ab4.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: restore is a phantom class!
+Warning: install is a phantom class!
+Warning: rList is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.catsw.FontMgr.FileList $r1;
+        boolean $z0, $z1, $z2, $z3;
+        com.catsw.FontMgr.UpdateCheck $r2;
+        android.os.IBinder $r3;
+        com.catsw.FontMgr.FontMgr $r4;
+        com.catsw.FontMgr.FontMgr$12 $r5;
+        com.catsw.FontMgr.FontMgr$10 $r6;
+        com.catsw.FontMgr.FontMgr$8 $r7;
+        com.catsw.FontMgr.FontMgr$5 $r8;
+        com.catsw.FontMgr.FontMgr$3 $r9;
+        com.catsw.FontMgr.FontMgr$11 $r10;
+        com.catsw.FontMgr.FontMgr$1 $r11;
+        com.catsw.FontMgr.FontMgr$7 $r12;
+        com.catsw.FontMgr.FontMgr$4 $r13;
+        com.catsw.FontMgr.FontMgr$9 $r14;
+        com.catsw.FontMgr.FontMgr$2 $r15;
+        com.catsw.FontMgr.FontMgr$6 $r16;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.catsw.FontMgr.FileList;
+
+        specialinvoke $r1.<com.catsw.FontMgr.FileList: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.catsw.FontMgr.FileList: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label07;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r1.<com.catsw.FontMgr.FileList: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.catsw.FontMgr.FileList: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z1 = virtualinvoke $r1.<com.catsw.FontMgr.FileList: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label06:
+        if $i0 == 7 goto label03;
+
+     label07:
+        if $i0 == 8 goto label02;
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label02;
+
+     label08:
+        if $i0 == 16 goto label13;
+
+        $r2 = new com.catsw.FontMgr.UpdateCheck;
+
+        specialinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void onCreate()>();
+
+     label09:
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        $r3 = virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label11:
+        if $i0 == 20 goto label12;
+
+        if $i0 == 21 goto label11;
+
+     label12:
+        virtualinvoke $r2.<com.catsw.FontMgr.UpdateCheck: void onDestroy()>();
+
+     label13:
+        if $i0 == 24 goto label31;
+
+        $r4 = new com.catsw.FontMgr.FontMgr;
+
+        specialinvoke $r4.<com.catsw.FontMgr.FontMgr: void <init>()>();
+
+        if $i0 == 25 goto label31;
+
+        virtualinvoke $r4.<com.catsw.FontMgr.FontMgr: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 27 goto label30;
+
+     label15:
+        $r5 = new com.catsw.FontMgr.FontMgr$12;
+
+        specialinvoke $r5.<com.catsw.FontMgr.FontMgr$12: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 28 goto label16;
+
+        virtualinvoke $r5.<com.catsw.FontMgr.FontMgr$12: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label16:
+        $r6 = new com.catsw.FontMgr.FontMgr$10;
+
+        specialinvoke $r6.<com.catsw.FontMgr.FontMgr$10: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 29 goto label17;
+
+        virtualinvoke $r6.<com.catsw.FontMgr.FontMgr$10: void onClick(android.view.View)>(null);
+
+     label17:
+        $r7 = new com.catsw.FontMgr.FontMgr$8;
+
+        specialinvoke $r7.<com.catsw.FontMgr.FontMgr$8: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 30 goto label18;
+
+        virtualinvoke $r7.<com.catsw.FontMgr.FontMgr$8: void onClick(android.view.View)>(null);
+
+     label18:
+        $r8 = new com.catsw.FontMgr.FontMgr$5;
+
+        specialinvoke $r8.<com.catsw.FontMgr.FontMgr$5: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 31 goto label19;
+
+        virtualinvoke $r8.<com.catsw.FontMgr.FontMgr$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r9 = new com.catsw.FontMgr.FontMgr$3;
+
+        specialinvoke $r9.<com.catsw.FontMgr.FontMgr$3: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 32 goto label20;
+
+        virtualinvoke $r9.<com.catsw.FontMgr.FontMgr$3: void onClick(android.view.View)>(null);
+
+     label20:
+        $r10 = new com.catsw.FontMgr.FontMgr$11;
+
+        specialinvoke $r10.<com.catsw.FontMgr.FontMgr$11: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 33 goto label21;
+
+        virtualinvoke $r10.<com.catsw.FontMgr.FontMgr$11: void onClick(android.view.View)>(null);
+
+     label21:
+        $r11 = new com.catsw.FontMgr.FontMgr$1;
+
+        specialinvoke $r11.<com.catsw.FontMgr.FontMgr$1: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 34 goto label22;
+
+        virtualinvoke $r11.<com.catsw.FontMgr.FontMgr$1: void onClick(android.view.View)>(null);
+
+     label22:
+        $r12 = new com.catsw.FontMgr.FontMgr$7;
+
+        specialinvoke $r12.<com.catsw.FontMgr.FontMgr$7: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 35 goto label23;
+
+        virtualinvoke $r12.<com.catsw.FontMgr.FontMgr$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        if $i0 == 36 goto label24;
+
+        $z2 = virtualinvoke $r4.<com.catsw.FontMgr.FontMgr: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label24:
+        if $i0 == 37 goto label25;
+
+        $z3 = virtualinvoke $r4.<com.catsw.FontMgr.FontMgr: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label25:
+        $r13 = new com.catsw.FontMgr.FontMgr$4;
+
+        specialinvoke $r13.<com.catsw.FontMgr.FontMgr$4: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 38 goto label26;
+
+        virtualinvoke $r13.<com.catsw.FontMgr.FontMgr$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label26:
+        $r14 = new com.catsw.FontMgr.FontMgr$9;
+
+        specialinvoke $r14.<com.catsw.FontMgr.FontMgr$9: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 39 goto label27;
+
+        virtualinvoke $r14.<com.catsw.FontMgr.FontMgr$9: void onClick(android.view.View)>(null);
+
+     label27:
+        $r15 = new com.catsw.FontMgr.FontMgr$2;
+
+        specialinvoke $r15.<com.catsw.FontMgr.FontMgr$2: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 40 goto label28;
+
+        virtualinvoke $r15.<com.catsw.FontMgr.FontMgr$2: void onClick(android.view.View)>(null);
+
+     label28:
+        $r16 = new com.catsw.FontMgr.FontMgr$6;
+
+        specialinvoke $r16.<com.catsw.FontMgr.FontMgr$6: void <init>(com.catsw.FontMgr.FontMgr)>($r4);
+
+        if $i0 == 41 goto label29;
+
+        virtualinvoke $r16.<com.catsw.FontMgr.FontMgr$6: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        if $i0 == 42 goto label15;
+
+     label30:
+        if $i0 == 43 goto label14;
+
+        if $i0 == 44 goto label31;
+
+        if $i0 == 45 goto label14;
+
+     label31:
+        if $i0 == 47 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.161594448 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.021002954 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 263 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 32 sources and 10 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 122
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 253
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 1430 forward and 91 backward edges solved, processing 2 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 2 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.002798906 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ftxt", $r9) in method <com.catsw.FontMgr.FileList: void onListItemClick(android.widget.ListView,android.view.View,int,long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ftxt") in method <com.catsw.FontMgr.FileList: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ftxt", $r9) in method <com.catsw.FontMgr.FileList: void onListItemClick(android.widget.ListView,android.view.View,int,long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ftxt") in method <com.catsw.FontMgr.FileList: void onCreate(android.os.Bundle)>
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ftxt", $r9), from the following sources:
+	- $r3 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ftxt") (in <com.catsw.FontMgr.FileList: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("ftxt", $r9), from the following sources:
+	- $r3 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ftxt") (in <com.catsw.FontMgr.FileList: void onCreate(android.os.Bundle)>)
+Maximum memory consumption: 62.747312 MB
+Analysis has run for 2.933984064 seconds

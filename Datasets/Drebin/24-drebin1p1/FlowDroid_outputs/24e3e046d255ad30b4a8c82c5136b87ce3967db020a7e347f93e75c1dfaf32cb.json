@@ -1,0 +1,1556 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.015799404 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        csllc.CellShark.services.PhoneManagerService $r1;
+        android.os.IBinder $r2;
+        csllc.CellShark.receivers.BootCompletedReceiver $r3;
+        csllc.CellShark.activities.CreateAccountActivity $r4;
+        csllc.CellShark.activities.InfoActivity $r5;
+        csllc.CellShark.receivers.SmsReceiver $r6;
+        csllc.CellShark.activities.CellSharkActivity $r7;
+        com.google.ads.AdActivity $r8;
+        csllc.CellShark.activities.AgreementActivity $r9;
+        csllc.CellShark.activities.AuthenticationActivity $r10;
+        csllc.CellShark.activities.HomeActivity $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new csllc.CellShark.services.PhoneManagerService;
+
+        specialinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void <init>()>();
+
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onCreate()>();
+
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        $i1 = virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new csllc.CellShark.receivers.BootCompletedReceiver;
+
+        specialinvoke $r3.<csllc.CellShark.receivers.BootCompletedReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<csllc.CellShark.receivers.BootCompletedReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label10;
+
+        $r4 = new csllc.CellShark.activities.CreateAccountActivity;
+
+        specialinvoke $r4.<csllc.CellShark.activities.CreateAccountActivity: void <init>()>();
+
+        if $i0 == 11 goto label10;
+
+        virtualinvoke $r4.<csllc.CellShark.activities.CreateAccountActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r4.<csllc.CellShark.activities.CreateAccountActivity: void onStart()>();
+
+        virtualinvoke $r4.<csllc.CellShark.activities.CreateAccountActivity: void onStop()>();
+
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        if $i0 == 17 goto label12;
+
+        $r5 = new csllc.CellShark.activities.InfoActivity;
+
+        specialinvoke $r5.<csllc.CellShark.activities.InfoActivity: void <init>()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r5.<csllc.CellShark.activities.InfoActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r5.<csllc.CellShark.activities.InfoActivity: void onStart()>();
+
+        virtualinvoke $r5.<csllc.CellShark.activities.InfoActivity: void onStop()>();
+
+        if $i0 == 21 goto label12;
+
+        if $i0 == 22 goto label11;
+
+     label12:
+        if $i0 == 24 goto label14;
+
+        $r6 = new csllc.CellShark.receivers.SmsReceiver;
+
+        specialinvoke $r6.<csllc.CellShark.receivers.SmsReceiver: void <init>()>();
+
+        if $i0 == 25 goto label14;
+
+     label13:
+        virtualinvoke $r6.<csllc.CellShark.receivers.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 27 goto label13;
+
+     label14:
+        if $i0 == 28 goto label16;
+
+        $r7 = new csllc.CellShark.activities.CellSharkActivity;
+
+        specialinvoke $r7.<csllc.CellShark.activities.CellSharkActivity: void <init>()>();
+
+        if $i0 == 29 goto label16;
+
+        virtualinvoke $r7.<csllc.CellShark.activities.CellSharkActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        virtualinvoke $r7.<csllc.CellShark.activities.CellSharkActivity: void onStart()>();
+
+        virtualinvoke $r7.<csllc.CellShark.activities.CellSharkActivity: void onStop()>();
+
+        if $i0 == 32 goto label16;
+
+        if $i0 == 33 goto label15;
+
+     label16:
+        if $i0 == 35 goto label19;
+
+        $r8 = new com.google.ads.AdActivity;
+
+        specialinvoke $r8.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 36 goto label19;
+
+        virtualinvoke $r8.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 39 goto label18;
+
+        if $i0 == 40 goto label17;
+
+     label18:
+        virtualinvoke $r8.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label19:
+        if $i0 == 42 goto label21;
+
+        $r9 = new csllc.CellShark.activities.AgreementActivity;
+
+        specialinvoke $r9.<csllc.CellShark.activities.AgreementActivity: void <init>()>();
+
+        if $i0 == 43 goto label21;
+
+        virtualinvoke $r9.<csllc.CellShark.activities.AgreementActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r9.<csllc.CellShark.activities.AgreementActivity: void onStart()>();
+
+        virtualinvoke $r9.<csllc.CellShark.activities.AgreementActivity: void onStop()>();
+
+        if $i0 == 46 goto label21;
+
+        if $i0 == 47 goto label20;
+
+     label21:
+        if $i0 == 49 goto label23;
+
+        $r10 = new csllc.CellShark.activities.AuthenticationActivity;
+
+        specialinvoke $r10.<csllc.CellShark.activities.AuthenticationActivity: void <init>()>();
+
+        if $i0 == 50 goto label23;
+
+        virtualinvoke $r10.<csllc.CellShark.activities.AuthenticationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        virtualinvoke $r10.<csllc.CellShark.activities.AuthenticationActivity: void onStart()>();
+
+        virtualinvoke $r10.<csllc.CellShark.activities.AuthenticationActivity: void onStop()>();
+
+        if $i0 == 53 goto label23;
+
+        if $i0 == 54 goto label22;
+
+     label23:
+        if $i0 == 56 goto label25;
+
+        $r11 = new csllc.CellShark.activities.HomeActivity;
+
+        specialinvoke $r11.<csllc.CellShark.activities.HomeActivity: void <init>()>();
+
+        if $i0 == 57 goto label25;
+
+        virtualinvoke $r11.<csllc.CellShark.activities.HomeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 60 goto label25;
+
+        if $i0 == 61 goto label24;
+
+     label25:
+        if $i0 == 63 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.4 seconds.
+[Spark] Solution found in 1.4 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: csllc.CellShark.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: csllc.CellShark.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: csllc.CellShark.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/accessdenied.xml
+Found 2 layout controls in file res/layout/agreement.xml
+Warning: ScrollView is a phantom class!
+Warning: csllc.CellShark.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: EditText is a phantom class!
+Warning: csllc.CellShark.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 3 layout controls in file res/layout/authentication.xml
+Found 4 layout controls in file res/layout/createaccount.xml
+Found 5 layout controls in file res/layout/home.xml
+Warning: CheckBox is a phantom class!
+Warning: csllc.CellShark.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 6 layout controls in file res/layout/info.xml
+Found 7 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.EditText
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CheckBox
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        csllc.CellShark.services.PhoneManagerService $r1;
+        csllc.CellShark.listeners.GpsListener$1 $r2, $r4;
+        android.os.IBinder $r3;
+        csllc.CellShark.receivers.BootCompletedReceiver $r5;
+        csllc.CellShark.activities.CreateAccountActivity $r6;
+        android.app.Dialog $r7, $r19, $r27, $r35;
+        csllc.CellShark.activities.CreateAccountActivity$2 $r8;
+        csllc.CellShark.activities.CreateAccountActivity$3 $r9;
+        csllc.CellShark.activities.CreateAccountActivity$1 $r10;
+        csllc.CellShark.activities.InfoActivity $r11;
+        csllc.CellShark.activities.InfoActivity$1 $r12;
+        csllc.CellShark.activities.InfoActivity$2 $r13;
+        csllc.CellShark.receivers.SmsReceiver $r14;
+        csllc.CellShark.activities.CellSharkActivity $r15;
+        csllc.CellShark.activities.CellSharkActivity$2 $r16;
+        csllc.CellShark.activities.CellSharkActivity$4 $r17;
+        csllc.CellShark.activities.CellSharkActivity$1 $r18;
+        csllc.CellShark.activities.CellSharkActivity$3 $r20;
+        com.google.ads.AdActivity $r21;
+        boolean $z0;
+        csllc.CellShark.activities.AgreementActivity $r22;
+        csllc.CellShark.activities.AgreementActivity$1 $r23;
+        csllc.CellShark.activities.AuthenticationActivity $r24;
+        csllc.CellShark.activities.AuthenticationActivity$3 $r25;
+        csllc.CellShark.activities.AuthenticationActivity$2 $r26;
+        csllc.CellShark.activities.AuthenticationActivity$1 $r28;
+        com.google.ads.util.AdUtil$UserActivityReceiver $r29;
+        csllc.CellShark.activities.HomeActivity $r30;
+        csllc.CellShark.activities.HomeActivity$4 $r31;
+        csllc.CellShark.activities.HomeActivity$2 $r32;
+        csllc.CellShark.activities.HomeActivity$1 $r33;
+        csllc.CellShark.activities.HomeActivity$3 $r34;
+        csllc.CellShark.activities.HomeActivity$5 $r36;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new csllc.CellShark.services.PhoneManagerService;
+
+        specialinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void <init>()>();
+
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onCreate()>();
+
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        $i1 = virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label06;
+
+     label04:
+        $r2 = new csllc.CellShark.listeners.GpsListener$1;
+
+        specialinvoke $r2.<csllc.CellShark.listeners.GpsListener$1: void <init>()>();
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<csllc.CellShark.listeners.GpsListener$1: void onLocationChanged(android.location.Location)>(null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        $r3 = virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label07:
+        $r4 = new csllc.CellShark.listeners.GpsListener$1;
+
+        specialinvoke $r4.<csllc.CellShark.listeners.GpsListener$1: void <init>()>();
+
+        if $i0 == 6 goto label08;
+
+        virtualinvoke $r4.<csllc.CellShark.listeners.GpsListener$1: void onLocationChanged(android.location.Location)>(null);
+
+     label08:
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label09;
+
+        if $i0 == 9 goto label07;
+
+     label09:
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onDestroy()>();
+
+     label10:
+        if $i0 == 10 goto label12;
+
+        $r5 = new csllc.CellShark.receivers.BootCompletedReceiver;
+
+        specialinvoke $r5.<csllc.CellShark.receivers.BootCompletedReceiver: void <init>()>();
+
+        if $i0 == 11 goto label12;
+
+     label11:
+        virtualinvoke $r5.<csllc.CellShark.receivers.BootCompletedReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label11;
+
+     label12:
+        if $i0 == 14 goto label21;
+
+        $r6 = new csllc.CellShark.activities.CreateAccountActivity;
+
+        specialinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: void <init>()>();
+
+        if $i0 == 15 goto label21;
+
+        virtualinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: void onStart()>();
+
+     label14:
+        if $i0 == 17 goto label20;
+
+     label15:
+        if $i0 == 18 goto label16;
+
+        $r7 = virtualinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label16:
+        $r8 = new csllc.CellShark.activities.CreateAccountActivity$2;
+
+        specialinvoke $r8.<csllc.CellShark.activities.CreateAccountActivity$2: void <init>(csllc.CellShark.activities.CreateAccountActivity,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText)>($r6, null, null, null, null, null, null);
+
+        if $i0 == 19 goto label17;
+
+        virtualinvoke $r8.<csllc.CellShark.activities.CreateAccountActivity$2: void onClick(android.view.View)>(null);
+
+     label17:
+        $r9 = new csllc.CellShark.activities.CreateAccountActivity$3;
+
+        specialinvoke $r9.<csllc.CellShark.activities.CreateAccountActivity$3: void <init>(csllc.CellShark.activities.CreateAccountActivity,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText)>($r6, null, null, null, null, null, null);
+
+        if $i0 == 20 goto label18;
+
+        virtualinvoke $r9.<csllc.CellShark.activities.CreateAccountActivity$3: void onClick(android.view.View)>(null);
+
+     label18:
+        $r10 = new csllc.CellShark.activities.CreateAccountActivity$1;
+
+        specialinvoke $r10.<csllc.CellShark.activities.CreateAccountActivity$1: void <init>(csllc.CellShark.activities.CreateAccountActivity)>($r6);
+
+        if $i0 == 21 goto label19;
+
+        virtualinvoke $r10.<csllc.CellShark.activities.CreateAccountActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        if $i0 == 22 goto label15;
+
+     label20:
+        if $i0 == 23 goto label14;
+
+        virtualinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: void onStop()>();
+
+        if $i0 == 24 goto label21;
+
+        if $i0 == 25 goto label13;
+
+     label21:
+        if $i0 == 27 goto label28;
+
+        $r11 = new csllc.CellShark.activities.InfoActivity;
+
+        specialinvoke $r11.<csllc.CellShark.activities.InfoActivity: void <init>()>();
+
+        if $i0 == 28 goto label28;
+
+        virtualinvoke $r11.<csllc.CellShark.activities.InfoActivity: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        virtualinvoke $r11.<csllc.CellShark.activities.InfoActivity: void onStart()>();
+
+     label23:
+        if $i0 == 30 goto label27;
+
+     label24:
+        $r12 = new csllc.CellShark.activities.InfoActivity$1;
+
+        specialinvoke $r12.<csllc.CellShark.activities.InfoActivity$1: void <init>(csllc.CellShark.activities.InfoActivity)>($r11);
+
+        if $i0 == 31 goto label25;
+
+        virtualinvoke $r12.<csllc.CellShark.activities.InfoActivity$1: void onClick(android.view.View)>(null);
+
+     label25:
+        $r13 = new csllc.CellShark.activities.InfoActivity$2;
+
+        specialinvoke $r13.<csllc.CellShark.activities.InfoActivity$2: void <init>(csllc.CellShark.activities.InfoActivity,android.widget.CheckBox)>($r11, null);
+
+        if $i0 == 32 goto label26;
+
+        virtualinvoke $r13.<csllc.CellShark.activities.InfoActivity$2: void onClick(android.view.View)>(null);
+
+     label26:
+        if $i0 == 33 goto label24;
+
+     label27:
+        if $i0 == 34 goto label23;
+
+        virtualinvoke $r11.<csllc.CellShark.activities.InfoActivity: void onStop()>();
+
+        if $i0 == 35 goto label28;
+
+        if $i0 == 36 goto label22;
+
+     label28:
+        if $i0 == 38 goto label30;
+
+        $r14 = new csllc.CellShark.receivers.SmsReceiver;
+
+        specialinvoke $r14.<csllc.CellShark.receivers.SmsReceiver: void <init>()>();
+
+        if $i0 == 39 goto label30;
+
+     label29:
+        virtualinvoke $r14.<csllc.CellShark.receivers.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 41 goto label29;
+
+     label30:
+        if $i0 == 42 goto label41;
+
+        $r15 = new csllc.CellShark.activities.CellSharkActivity;
+
+        specialinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void <init>()>();
+
+        if $i0 == 43 goto label41;
+
+        virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void onCreate(android.os.Bundle)>(null);
+
+     label31:
+        virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void onStart()>();
+
+     label32:
+        if $i0 == 45 goto label40;
+
+     label33:
+        $r16 = new csllc.CellShark.activities.CellSharkActivity$2;
+
+        specialinvoke $r16.<csllc.CellShark.activities.CellSharkActivity$2: void <init>(csllc.CellShark.activities.CellSharkActivity)>($r15);
+
+        if $i0 == 46 goto label34;
+
+        virtualinvoke $r16.<csllc.CellShark.activities.CellSharkActivity$2: void onClick(android.view.View)>(null);
+
+     label34:
+        $r17 = new csllc.CellShark.activities.CellSharkActivity$4;
+
+        specialinvoke $r17.<csllc.CellShark.activities.CellSharkActivity$4: void <init>(csllc.CellShark.activities.CellSharkActivity)>($r15);
+
+        if $i0 == 47 goto label35;
+
+        virtualinvoke $r17.<csllc.CellShark.activities.CellSharkActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label35:
+        $r18 = new csllc.CellShark.activities.CellSharkActivity$1;
+
+        specialinvoke $r18.<csllc.CellShark.activities.CellSharkActivity$1: void <init>(csllc.CellShark.activities.CellSharkActivity)>($r15);
+
+        if $i0 == 48 goto label36;
+
+        virtualinvoke $r18.<csllc.CellShark.activities.CellSharkActivity$1: void onClick(android.view.View)>(null);
+
+     label36:
+        if $i0 == 49 goto label37;
+
+        $r19 = virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label37:
+        if $i0 == 50 goto label38;
+
+        virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label38:
+        $r20 = new csllc.CellShark.activities.CellSharkActivity$3;
+
+        specialinvoke $r20.<csllc.CellShark.activities.CellSharkActivity$3: void <init>(csllc.CellShark.activities.CellSharkActivity)>($r15);
+
+        if $i0 == 51 goto label39;
+
+        virtualinvoke $r20.<csllc.CellShark.activities.CellSharkActivity$3: void onClick(android.view.View)>(null);
+
+     label39:
+        if $i0 == 52 goto label33;
+
+     label40:
+        if $i0 == 53 goto label32;
+
+        virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void onStop()>();
+
+        if $i0 == 54 goto label41;
+
+        if $i0 == 55 goto label31;
+
+     label41:
+        if $i0 == 57 goto label50;
+
+        $r21 = new com.google.ads.AdActivity;
+
+        specialinvoke $r21.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 58 goto label50;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label42:
+        if $i0 == 60 goto label48;
+
+     label43:
+        if $i0 == 61 goto label44;
+
+        $z0 = virtualinvoke $r21.<com.google.ads.AdActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label44:
+        if $i0 == 62 goto label45;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label45:
+        if $i0 == 63 goto label46;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onClick(android.view.View)>(null);
+
+     label46:
+        if $i0 == 64 goto label47;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onPrepared(android.media.MediaPlayer)>(null);
+
+     label47:
+        if $i0 == 65 goto label43;
+
+     label48:
+        if $i0 == 66 goto label42;
+
+        if $i0 == 67 goto label49;
+
+        if $i0 == 68 goto label42;
+
+     label49:
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label50:
+        if $i0 == 70 goto label56;
+
+        $r22 = new csllc.CellShark.activities.AgreementActivity;
+
+        specialinvoke $r22.<csllc.CellShark.activities.AgreementActivity: void <init>()>();
+
+        if $i0 == 71 goto label56;
+
+        virtualinvoke $r22.<csllc.CellShark.activities.AgreementActivity: void onCreate(android.os.Bundle)>(null);
+
+     label51:
+        virtualinvoke $r22.<csllc.CellShark.activities.AgreementActivity: void onStart()>();
+
+     label52:
+        if $i0 == 73 goto label55;
+
+     label53:
+        $r23 = new csllc.CellShark.activities.AgreementActivity$1;
+
+        specialinvoke $r23.<csllc.CellShark.activities.AgreementActivity$1: void <init>(csllc.CellShark.activities.AgreementActivity)>($r22);
+
+        if $i0 == 74 goto label54;
+
+        virtualinvoke $r23.<csllc.CellShark.activities.AgreementActivity$1: void onClick(android.view.View)>(null);
+
+     label54:
+        if $i0 == 75 goto label53;
+
+     label55:
+        if $i0 == 76 goto label52;
+
+        virtualinvoke $r22.<csllc.CellShark.activities.AgreementActivity: void onStop()>();
+
+        if $i0 == 77 goto label56;
+
+        if $i0 == 78 goto label51;
+
+     label56:
+        if $i0 == 80 goto label66;
+
+        $r24 = new csllc.CellShark.activities.AuthenticationActivity;
+
+        specialinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: void <init>()>();
+
+        if $i0 == 81 goto label66;
+
+        virtualinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label57:
+        virtualinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: void onStart()>();
+
+     label58:
+        if $i0 == 83 goto label65;
+
+     label59:
+        $r25 = new csllc.CellShark.activities.AuthenticationActivity$3;
+
+        specialinvoke $r25.<csllc.CellShark.activities.AuthenticationActivity$3: void <init>(csllc.CellShark.activities.AuthenticationActivity,android.widget.EditText,android.widget.EditText)>($r24, null, null);
+
+        if $i0 == 84 goto label60;
+
+        virtualinvoke $r25.<csllc.CellShark.activities.AuthenticationActivity$3: void onClick(android.view.View)>(null);
+
+     label60:
+        $r26 = new csllc.CellShark.activities.AuthenticationActivity$2;
+
+        specialinvoke $r26.<csllc.CellShark.activities.AuthenticationActivity$2: void <init>(csllc.CellShark.activities.AuthenticationActivity,android.widget.EditText,android.widget.EditText)>($r24, null, null);
+
+        if $i0 == 85 goto label61;
+
+        virtualinvoke $r26.<csllc.CellShark.activities.AuthenticationActivity$2: void onClick(android.view.View)>(null);
+
+     label61:
+        if $i0 == 86 goto label62;
+
+        $r27 = virtualinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label62:
+        if $i0 == 87 goto label63;
+
+        staticinvoke <csllc.CellShark.activities.AuthenticationActivity: void <clinit>()>();
+
+     label63:
+        $r28 = new csllc.CellShark.activities.AuthenticationActivity$1;
+
+        specialinvoke $r28.<csllc.CellShark.activities.AuthenticationActivity$1: void <init>(csllc.CellShark.activities.AuthenticationActivity)>($r24);
+
+        if $i0 == 88 goto label64;
+
+        virtualinvoke $r28.<csllc.CellShark.activities.AuthenticationActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label64:
+        if $i0 == 89 goto label59;
+
+     label65:
+        if $i0 == 90 goto label58;
+
+        virtualinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: void onStop()>();
+
+        if $i0 == 91 goto label66;
+
+        if $i0 == 92 goto label57;
+
+     label66:
+        if $i0 == 94 goto label68;
+
+        $r29 = new com.google.ads.util.AdUtil$UserActivityReceiver;
+
+        specialinvoke $r29.<com.google.ads.util.AdUtil$UserActivityReceiver: void <init>()>();
+
+        if $i0 == 95 goto label68;
+
+     label67:
+        virtualinvoke $r29.<com.google.ads.util.AdUtil$UserActivityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 97 goto label67;
+
+     label68:
+        if $i0 == 98 goto label79;
+
+        $r30 = new csllc.CellShark.activities.HomeActivity;
+
+        specialinvoke $r30.<csllc.CellShark.activities.HomeActivity: void <init>()>();
+
+        if $i0 == 99 goto label79;
+
+        virtualinvoke $r30.<csllc.CellShark.activities.HomeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label69:
+        if $i0 == 101 goto label78;
+
+     label70:
+        $r31 = new csllc.CellShark.activities.HomeActivity$4;
+
+        specialinvoke $r31.<csllc.CellShark.activities.HomeActivity$4: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 102 goto label71;
+
+        virtualinvoke $r31.<csllc.CellShark.activities.HomeActivity$4: void onClick(android.view.View)>(null);
+
+     label71:
+        $r32 = new csllc.CellShark.activities.HomeActivity$2;
+
+        specialinvoke $r32.<csllc.CellShark.activities.HomeActivity$2: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 103 goto label72;
+
+        virtualinvoke $r32.<csllc.CellShark.activities.HomeActivity$2: void onClick(android.view.View)>(null);
+
+     label72:
+        $r33 = new csllc.CellShark.activities.HomeActivity$1;
+
+        specialinvoke $r33.<csllc.CellShark.activities.HomeActivity$1: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 104 goto label73;
+
+        virtualinvoke $r33.<csllc.CellShark.activities.HomeActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label73:
+        $r34 = new csllc.CellShark.activities.HomeActivity$3;
+
+        specialinvoke $r34.<csllc.CellShark.activities.HomeActivity$3: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 105 goto label74;
+
+        virtualinvoke $r34.<csllc.CellShark.activities.HomeActivity$3: void onClick(android.view.View)>(null);
+
+     label74:
+        if $i0 == 106 goto label75;
+
+        staticinvoke <csllc.CellShark.activities.HomeActivity: void <clinit>()>();
+
+     label75:
+        if $i0 == 107 goto label76;
+
+        $r35 = virtualinvoke $r30.<csllc.CellShark.activities.HomeActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label76:
+        $r36 = new csllc.CellShark.activities.HomeActivity$5;
+
+        specialinvoke $r36.<csllc.CellShark.activities.HomeActivity$5: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 108 goto label77;
+
+        virtualinvoke $r36.<csllc.CellShark.activities.HomeActivity$5: void onClick(android.view.View)>(null);
+
+     label77:
+        if $i0 == 109 goto label70;
+
+     label78:
+        if $i0 == 110 goto label69;
+
+        if $i0 == 111 goto label79;
+
+        if $i0 == 112 goto label69;
+
+     label79:
+        if $i0 == 114 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.4 seconds.
+[Spark] Solution found in 1.4 seconds.
+Running incremental callback analysis for 10 components...
+Incremental callback analysis done.
+Found 52 callback methods for 10 components
+Found {res/layout/accessdenied.xml=[-1 - android.widget.TextView, -1 - android.widget.LinearLayout, -1 - android.widget.Button], res/layout/agreement.xml=[2131099648 - android.widget.Button, -1 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/createaccount.xml=[2131099657 - android.widget.EditText, 2131099654 - android.widget.EditText, -1 - android.widget.TextView, 2131099649 - android.widget.EditText, 2131099651 - android.widget.Button, -1 - android.widget.ScrollView, 2131099656 - android.widget.EditText, 2131099655 - android.widget.EditText, -1 - android.widget.LinearLayout, 2131099652 - android.widget.Button, 2131099650 - android.widget.EditText], res/layout/main.xml=[-1 - android.widget.TextView, -1 - android.widget.ScrollView, 2131099666 - android.widget.LinearLayout, 2131099667 - android.widget.Button, 2131099668 - android.widget.Button, 2131099669 - android.widget.Button], res/layout/info.xml=[2131099663 - android.widget.CheckBox, -1 - android.widget.TextView, -1 - android.widget.ScrollView, -1 - android.widget.LinearLayout, 2131099665 - android.widget.Button, 2131099664 - android.widget.Button], res/layout/authentication.xml=[-1 - android.widget.TextView, 2131099649 - android.widget.EditText, 2131099651 - android.widget.Button, -1 - android.widget.ScrollView, -1 - android.widget.LinearLayout, 2131099652 - android.widget.Button, 2131099653 - android.widget.TextView, 2131099650 - android.widget.EditText], res/layout/home.xml=[2131099659 - android.widget.Button, 2131099660 - android.widget.Button, -1 - android.widget.TextView, -1 - android.widget.ScrollView, 2131099661 - android.widget.Button, 2131099658 - android.widget.Button, -1 - android.widget.LinearLayout, 2131099662 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 52 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/24e3e046d255ad30b4a8c82c5136b87ce3967db020a7e347f93e75c1dfaf32cb.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.EditText
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CheckBox
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        csllc.CellShark.services.PhoneManagerService $r1;
+        csllc.CellShark.listeners.GpsListener$1 $r2, $r4;
+        android.os.IBinder $r3;
+        csllc.CellShark.receivers.BootCompletedReceiver $r5;
+        csllc.CellShark.activities.CreateAccountActivity $r6;
+        csllc.CellShark.activities.CreateAccountActivity$3 $r7;
+        csllc.CellShark.activities.CreateAccountActivity$2 $r8;
+        android.app.Dialog $r9, $r16, $r26, $r34;
+        csllc.CellShark.activities.CreateAccountActivity$1 $r10;
+        csllc.CellShark.activities.InfoActivity $r11;
+        csllc.CellShark.activities.InfoActivity$2 $r12;
+        csllc.CellShark.activities.InfoActivity$1 $r13;
+        csllc.CellShark.receivers.SmsReceiver $r14;
+        csllc.CellShark.activities.CellSharkActivity $r15;
+        csllc.CellShark.activities.CellSharkActivity$4 $r17;
+        csllc.CellShark.activities.CellSharkActivity$1 $r18;
+        csllc.CellShark.activities.CellSharkActivity$2 $r19;
+        csllc.CellShark.activities.CellSharkActivity$3 $r20;
+        com.google.ads.AdActivity $r21;
+        boolean $z0;
+        csllc.CellShark.activities.AgreementActivity $r22;
+        csllc.CellShark.activities.AgreementActivity$1 $r23;
+        csllc.CellShark.activities.AuthenticationActivity $r24;
+        csllc.CellShark.activities.AuthenticationActivity$3 $r25;
+        csllc.CellShark.activities.AuthenticationActivity$1 $r27;
+        csllc.CellShark.activities.AuthenticationActivity$2 $r28;
+        com.google.ads.util.AdUtil$UserActivityReceiver $r29;
+        csllc.CellShark.activities.HomeActivity $r30;
+        csllc.CellShark.activities.HomeActivity$2 $r31;
+        csllc.CellShark.activities.HomeActivity$1 $r32;
+        csllc.CellShark.activities.HomeActivity$5 $r33;
+        csllc.CellShark.activities.HomeActivity$3 $r35;
+        csllc.CellShark.activities.HomeActivity$4 $r36;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new csllc.CellShark.services.PhoneManagerService;
+
+        specialinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void <init>()>();
+
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onCreate()>();
+
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        $i1 = virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label06;
+
+     label04:
+        $r2 = new csllc.CellShark.listeners.GpsListener$1;
+
+        specialinvoke $r2.<csllc.CellShark.listeners.GpsListener$1: void <init>()>();
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<csllc.CellShark.listeners.GpsListener$1: void onLocationChanged(android.location.Location)>(null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        $r3 = virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label07:
+        $r4 = new csllc.CellShark.listeners.GpsListener$1;
+
+        specialinvoke $r4.<csllc.CellShark.listeners.GpsListener$1: void <init>()>();
+
+        if $i0 == 6 goto label08;
+
+        virtualinvoke $r4.<csllc.CellShark.listeners.GpsListener$1: void onLocationChanged(android.location.Location)>(null);
+
+     label08:
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label09;
+
+        if $i0 == 9 goto label07;
+
+     label09:
+        virtualinvoke $r1.<csllc.CellShark.services.PhoneManagerService: void onDestroy()>();
+
+     label10:
+        if $i0 == 10 goto label12;
+
+        $r5 = new csllc.CellShark.receivers.BootCompletedReceiver;
+
+        specialinvoke $r5.<csllc.CellShark.receivers.BootCompletedReceiver: void <init>()>();
+
+        if $i0 == 11 goto label12;
+
+     label11:
+        virtualinvoke $r5.<csllc.CellShark.receivers.BootCompletedReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label11;
+
+     label12:
+        if $i0 == 14 goto label21;
+
+        $r6 = new csllc.CellShark.activities.CreateAccountActivity;
+
+        specialinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: void <init>()>();
+
+        if $i0 == 15 goto label21;
+
+        virtualinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: void onStart()>();
+
+     label14:
+        if $i0 == 17 goto label20;
+
+     label15:
+        $r7 = new csllc.CellShark.activities.CreateAccountActivity$3;
+
+        specialinvoke $r7.<csllc.CellShark.activities.CreateAccountActivity$3: void <init>(csllc.CellShark.activities.CreateAccountActivity,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText)>($r6, null, null, null, null, null, null);
+
+        if $i0 == 18 goto label16;
+
+        virtualinvoke $r7.<csllc.CellShark.activities.CreateAccountActivity$3: void onClick(android.view.View)>(null);
+
+     label16:
+        $r8 = new csllc.CellShark.activities.CreateAccountActivity$2;
+
+        specialinvoke $r8.<csllc.CellShark.activities.CreateAccountActivity$2: void <init>(csllc.CellShark.activities.CreateAccountActivity,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText,android.widget.EditText)>($r6, null, null, null, null, null, null);
+
+        if $i0 == 19 goto label17;
+
+        virtualinvoke $r8.<csllc.CellShark.activities.CreateAccountActivity$2: void onClick(android.view.View)>(null);
+
+     label17:
+        if $i0 == 20 goto label18;
+
+        $r9 = virtualinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label18:
+        $r10 = new csllc.CellShark.activities.CreateAccountActivity$1;
+
+        specialinvoke $r10.<csllc.CellShark.activities.CreateAccountActivity$1: void <init>(csllc.CellShark.activities.CreateAccountActivity)>($r6);
+
+        if $i0 == 21 goto label19;
+
+        virtualinvoke $r10.<csllc.CellShark.activities.CreateAccountActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        if $i0 == 22 goto label15;
+
+     label20:
+        if $i0 == 23 goto label14;
+
+        virtualinvoke $r6.<csllc.CellShark.activities.CreateAccountActivity: void onStop()>();
+
+        if $i0 == 24 goto label21;
+
+        if $i0 == 25 goto label13;
+
+     label21:
+        if $i0 == 27 goto label28;
+
+        $r11 = new csllc.CellShark.activities.InfoActivity;
+
+        specialinvoke $r11.<csllc.CellShark.activities.InfoActivity: void <init>()>();
+
+        if $i0 == 28 goto label28;
+
+        virtualinvoke $r11.<csllc.CellShark.activities.InfoActivity: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        virtualinvoke $r11.<csllc.CellShark.activities.InfoActivity: void onStart()>();
+
+     label23:
+        if $i0 == 30 goto label27;
+
+     label24:
+        $r12 = new csllc.CellShark.activities.InfoActivity$2;
+
+        specialinvoke $r12.<csllc.CellShark.activities.InfoActivity$2: void <init>(csllc.CellShark.activities.InfoActivity,android.widget.CheckBox)>($r11, null);
+
+        if $i0 == 31 goto label25;
+
+        virtualinvoke $r12.<csllc.CellShark.activities.InfoActivity$2: void onClick(android.view.View)>(null);
+
+     label25:
+        $r13 = new csllc.CellShark.activities.InfoActivity$1;
+
+        specialinvoke $r13.<csllc.CellShark.activities.InfoActivity$1: void <init>(csllc.CellShark.activities.InfoActivity)>($r11);
+
+        if $i0 == 32 goto label26;
+
+        virtualinvoke $r13.<csllc.CellShark.activities.InfoActivity$1: void onClick(android.view.View)>(null);
+
+     label26:
+        if $i0 == 33 goto label24;
+
+     label27:
+        if $i0 == 34 goto label23;
+
+        virtualinvoke $r11.<csllc.CellShark.activities.InfoActivity: void onStop()>();
+
+        if $i0 == 35 goto label28;
+
+        if $i0 == 36 goto label22;
+
+     label28:
+        if $i0 == 38 goto label30;
+
+        $r14 = new csllc.CellShark.receivers.SmsReceiver;
+
+        specialinvoke $r14.<csllc.CellShark.receivers.SmsReceiver: void <init>()>();
+
+        if $i0 == 39 goto label30;
+
+     label29:
+        virtualinvoke $r14.<csllc.CellShark.receivers.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 41 goto label29;
+
+     label30:
+        if $i0 == 42 goto label41;
+
+        $r15 = new csllc.CellShark.activities.CellSharkActivity;
+
+        specialinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void <init>()>();
+
+        if $i0 == 43 goto label41;
+
+        virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void onCreate(android.os.Bundle)>(null);
+
+     label31:
+        virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void onStart()>();
+
+     label32:
+        if $i0 == 45 goto label40;
+
+     label33:
+        if $i0 == 46 goto label34;
+
+        virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label34:
+        if $i0 == 47 goto label35;
+
+        $r16 = virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label35:
+        $r17 = new csllc.CellShark.activities.CellSharkActivity$4;
+
+        specialinvoke $r17.<csllc.CellShark.activities.CellSharkActivity$4: void <init>(csllc.CellShark.activities.CellSharkActivity)>($r15);
+
+        if $i0 == 48 goto label36;
+
+        virtualinvoke $r17.<csllc.CellShark.activities.CellSharkActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label36:
+        $r18 = new csllc.CellShark.activities.CellSharkActivity$1;
+
+        specialinvoke $r18.<csllc.CellShark.activities.CellSharkActivity$1: void <init>(csllc.CellShark.activities.CellSharkActivity)>($r15);
+
+        if $i0 == 49 goto label37;
+
+        virtualinvoke $r18.<csllc.CellShark.activities.CellSharkActivity$1: void onClick(android.view.View)>(null);
+
+     label37:
+        $r19 = new csllc.CellShark.activities.CellSharkActivity$2;
+
+        specialinvoke $r19.<csllc.CellShark.activities.CellSharkActivity$2: void <init>(csllc.CellShark.activities.CellSharkActivity)>($r15);
+
+        if $i0 == 50 goto label38;
+
+        virtualinvoke $r19.<csllc.CellShark.activities.CellSharkActivity$2: void onClick(android.view.View)>(null);
+
+     label38:
+        $r20 = new csllc.CellShark.activities.CellSharkActivity$3;
+
+        specialinvoke $r20.<csllc.CellShark.activities.CellSharkActivity$3: void <init>(csllc.CellShark.activities.CellSharkActivity)>($r15);
+
+        if $i0 == 51 goto label39;
+
+        virtualinvoke $r20.<csllc.CellShark.activities.CellSharkActivity$3: void onClick(android.view.View)>(null);
+
+     label39:
+        if $i0 == 52 goto label33;
+
+     label40:
+        if $i0 == 53 goto label32;
+
+        virtualinvoke $r15.<csllc.CellShark.activities.CellSharkActivity: void onStop()>();
+
+        if $i0 == 54 goto label41;
+
+        if $i0 == 55 goto label31;
+
+     label41:
+        if $i0 == 57 goto label50;
+
+        $r21 = new com.google.ads.AdActivity;
+
+        specialinvoke $r21.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 58 goto label50;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label42:
+        if $i0 == 60 goto label48;
+
+     label43:
+        if $i0 == 61 goto label44;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onClick(android.view.View)>(null);
+
+     label44:
+        if $i0 == 62 goto label45;
+
+        $z0 = virtualinvoke $r21.<com.google.ads.AdActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label45:
+        if $i0 == 63 goto label46;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onPrepared(android.media.MediaPlayer)>(null);
+
+     label46:
+        if $i0 == 64 goto label47;
+
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label47:
+        if $i0 == 65 goto label43;
+
+     label48:
+        if $i0 == 66 goto label42;
+
+        if $i0 == 67 goto label49;
+
+        if $i0 == 68 goto label42;
+
+     label49:
+        virtualinvoke $r21.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label50:
+        if $i0 == 70 goto label56;
+
+        $r22 = new csllc.CellShark.activities.AgreementActivity;
+
+        specialinvoke $r22.<csllc.CellShark.activities.AgreementActivity: void <init>()>();
+
+        if $i0 == 71 goto label56;
+
+        virtualinvoke $r22.<csllc.CellShark.activities.AgreementActivity: void onCreate(android.os.Bundle)>(null);
+
+     label51:
+        virtualinvoke $r22.<csllc.CellShark.activities.AgreementActivity: void onStart()>();
+
+     label52:
+        if $i0 == 73 goto label55;
+
+     label53:
+        $r23 = new csllc.CellShark.activities.AgreementActivity$1;
+
+        specialinvoke $r23.<csllc.CellShark.activities.AgreementActivity$1: void <init>(csllc.CellShark.activities.AgreementActivity)>($r22);
+
+        if $i0 == 74 goto label54;
+
+        virtualinvoke $r23.<csllc.CellShark.activities.AgreementActivity$1: void onClick(android.view.View)>(null);
+
+     label54:
+        if $i0 == 75 goto label53;
+
+     label55:
+        if $i0 == 76 goto label52;
+
+        virtualinvoke $r22.<csllc.CellShark.activities.AgreementActivity: void onStop()>();
+
+        if $i0 == 77 goto label56;
+
+        if $i0 == 78 goto label51;
+
+     label56:
+        if $i0 == 80 goto label66;
+
+        $r24 = new csllc.CellShark.activities.AuthenticationActivity;
+
+        specialinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: void <init>()>();
+
+        if $i0 == 81 goto label66;
+
+        virtualinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label57:
+        virtualinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: void onStart()>();
+
+     label58:
+        if $i0 == 83 goto label65;
+
+     label59:
+        $r25 = new csllc.CellShark.activities.AuthenticationActivity$3;
+
+        specialinvoke $r25.<csllc.CellShark.activities.AuthenticationActivity$3: void <init>(csllc.CellShark.activities.AuthenticationActivity,android.widget.EditText,android.widget.EditText)>($r24, null, null);
+
+        if $i0 == 84 goto label60;
+
+        virtualinvoke $r25.<csllc.CellShark.activities.AuthenticationActivity$3: void onClick(android.view.View)>(null);
+
+     label60:
+        if $i0 == 85 goto label61;
+
+        staticinvoke <csllc.CellShark.activities.AuthenticationActivity: void <clinit>()>();
+
+     label61:
+        if $i0 == 86 goto label62;
+
+        $r26 = virtualinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label62:
+        $r27 = new csllc.CellShark.activities.AuthenticationActivity$1;
+
+        specialinvoke $r27.<csllc.CellShark.activities.AuthenticationActivity$1: void <init>(csllc.CellShark.activities.AuthenticationActivity)>($r24);
+
+        if $i0 == 87 goto label63;
+
+        virtualinvoke $r27.<csllc.CellShark.activities.AuthenticationActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label63:
+        $r28 = new csllc.CellShark.activities.AuthenticationActivity$2;
+
+        specialinvoke $r28.<csllc.CellShark.activities.AuthenticationActivity$2: void <init>(csllc.CellShark.activities.AuthenticationActivity,android.widget.EditText,android.widget.EditText)>($r24, null, null);
+
+        if $i0 == 88 goto label64;
+
+        virtualinvoke $r28.<csllc.CellShark.activities.AuthenticationActivity$2: void onClick(android.view.View)>(null);
+
+     label64:
+        if $i0 == 89 goto label59;
+
+     label65:
+        if $i0 == 90 goto label58;
+
+        virtualinvoke $r24.<csllc.CellShark.activities.AuthenticationActivity: void onStop()>();
+
+        if $i0 == 91 goto label66;
+
+        if $i0 == 92 goto label57;
+
+     label66:
+        if $i0 == 94 goto label68;
+
+        $r29 = new com.google.ads.util.AdUtil$UserActivityReceiver;
+
+        specialinvoke $r29.<com.google.ads.util.AdUtil$UserActivityReceiver: void <init>()>();
+
+        if $i0 == 95 goto label68;
+
+     label67:
+        virtualinvoke $r29.<com.google.ads.util.AdUtil$UserActivityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 97 goto label67;
+
+     label68:
+        if $i0 == 98 goto label79;
+
+        $r30 = new csllc.CellShark.activities.HomeActivity;
+
+        specialinvoke $r30.<csllc.CellShark.activities.HomeActivity: void <init>()>();
+
+        if $i0 == 99 goto label79;
+
+        virtualinvoke $r30.<csllc.CellShark.activities.HomeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label69:
+        if $i0 == 101 goto label78;
+
+     label70:
+        $r31 = new csllc.CellShark.activities.HomeActivity$2;
+
+        specialinvoke $r31.<csllc.CellShark.activities.HomeActivity$2: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 102 goto label71;
+
+        virtualinvoke $r31.<csllc.CellShark.activities.HomeActivity$2: void onClick(android.view.View)>(null);
+
+     label71:
+        $r32 = new csllc.CellShark.activities.HomeActivity$1;
+
+        specialinvoke $r32.<csllc.CellShark.activities.HomeActivity$1: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 103 goto label72;
+
+        virtualinvoke $r32.<csllc.CellShark.activities.HomeActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label72:
+        $r33 = new csllc.CellShark.activities.HomeActivity$5;
+
+        specialinvoke $r33.<csllc.CellShark.activities.HomeActivity$5: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 104 goto label73;
+
+        virtualinvoke $r33.<csllc.CellShark.activities.HomeActivity$5: void onClick(android.view.View)>(null);
+
+     label73:
+        if $i0 == 105 goto label74;
+
+        $r34 = virtualinvoke $r30.<csllc.CellShark.activities.HomeActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label74:
+        if $i0 == 106 goto label75;
+
+        staticinvoke <csllc.CellShark.activities.HomeActivity: void <clinit>()>();
+
+     label75:
+        $r35 = new csllc.CellShark.activities.HomeActivity$3;
+
+        specialinvoke $r35.<csllc.CellShark.activities.HomeActivity$3: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 107 goto label76;
+
+        virtualinvoke $r35.<csllc.CellShark.activities.HomeActivity$3: void onClick(android.view.View)>(null);
+
+     label76:
+        $r36 = new csllc.CellShark.activities.HomeActivity$4;
+
+        specialinvoke $r36.<csllc.CellShark.activities.HomeActivity$4: void <init>(csllc.CellShark.activities.HomeActivity)>($r30);
+
+        if $i0 == 108 goto label77;
+
+        virtualinvoke $r36.<csllc.CellShark.activities.HomeActivity$4: void onClick(android.view.View)>(null);
+
+     label77:
+        if $i0 == 109 goto label70;
+
+     label78:
+        if $i0 == 110 goto label69;
+
+        if $i0 == 111 goto label79;
+
+        if $i0 == 112 goto label69;
+
+     label79:
+        if $i0 == 114 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.4 seconds.
+[Spark] Solution found in 1.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.484130965 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.17454786 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3739 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 109 sources and 71 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 11545
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 21406
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 82803 forward and 13316 backward edges solved, processing 15 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 15 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.009729657 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r0, $i0) in method <csllc.CellShark.Settings: void setInt(int,java.lang.String,android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, "date ASC") in method <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, "date ASC") in method <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r2) in method <csllc.CellShark.Settings: void saveContactHashValues(android.content.Context,java.util.Hashtable)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>(5) in method <csllc.CellShark.observers.ContactsObserver: void initializeHashValues()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>(6) in method <csllc.CellShark.observers.ContactsObserver: void initializeHashValues()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(2) in method <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(3) in method <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(0) in method <csllc.CellShark.observers.ContactsObserver: void setNickname(csllc.CellShark.bo.Contact)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(5) in method <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(0) in method <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(1) in method <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, "_id = ?", $r6, null) in method <csllc.CellShark.observers.ContactsObserver: void setContactStats(csllc.CellShark.bo.Contact)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(4) in method <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <csllc.CellShark.receivers.BootCompletedReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <csllc.CellShark.receivers.BootCompletedReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0) in method <csllc.CellShark.Settings: void setLong(java.lang.Long,java.lang.String,android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, "date ASC") in method <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, "date ASC") in method <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r5, $l0) in method <d: void a(long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <b: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r7) in method <csllc.CellShark.ErrorLog: boolean insertInFile(java.lang.String,java.lang.String,java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <csllc.CellShark.Settings: java.lang.String getDeviceId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CSDBCreatPw") in method <csllc.CellShark.commwrapper.CreateAccountAsync: void CreateAccount()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 := @parameter0: android.content.Context in method <csllc.CellShark.receivers.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() in method <csllc.CellShark.listeners.GpsListener$1: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) in method <csllc.cellsharkcommapi.HttpRequest: java.lang.String sendPost(java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() in method <csllc.CellShark.listeners.GpsListener$1: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CSDBCreatUn") in method <csllc.CellShark.commwrapper.CreateAccountAsync: void CreateAccount()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("phNumber", $r1) in method <csllc.CellShark.Settings: java.lang.String getOwnPhoneNumber(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <csllc.CellShark.Settings: java.lang.String getOwnPhoneNumber(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceId", $r1) in method <csllc.CellShark.Settings: java.lang.String getDeviceId(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <csllc.CellShark.Settings: java.lang.String getDeviceId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("username", $r1) in method <csllc.CellShark.Settings: void setUsername(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CSDBCreatUn") in method <csllc.CellShark.commwrapper.CreateAccountAsync: void CreateAccount()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r2) in method <b: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <b: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("password", $r1) in method <csllc.CellShark.Settings: void setPassword(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CSDBCreatPw") in method <csllc.CellShark.commwrapper.CreateAccountAsync: void CreateAccount()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) in method <csllc.cellsharkcommapi.HttpRequest: java.lang.String sendPost(java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r0) in method <csllc.CellShark.Settings: void setString(java.lang.String,java.lang.String,android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <csllc.CellShark.receivers.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i5) in method <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i5) in method <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceId", $r4) in method <csllc.CellShark.RetrieveDeviceIdThread: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <csllc.CellShark.RetrieveDeviceIdThread: void run()>
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r0, $i0), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, "date ASC") (in <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>)
+	- $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, "date ASC") (in <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>)
+Found a flow to sink virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[])>($r2), from the following sources:
+	- $r10 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>(5) (in <csllc.CellShark.observers.ContactsObserver: void initializeHashValues()>)
+	- $r10 = interfaceinvoke $r7.<android.database.Cursor: java.lang.String getString(int)>(6) (in <csllc.CellShark.observers.ContactsObserver: void initializeHashValues()>)
+	- $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(2) (in <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>)
+	- $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(3) (in <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>)
+	- $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(0) (in <csllc.CellShark.observers.ContactsObserver: void setNickname(csllc.CellShark.bo.Contact)>)
+	- $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(5) (in <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>)
+	- $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(0) (in <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>)
+	- $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(1) (in <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>)
+	- $r9 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, "_id = ?", $r6, null) (in <csllc.CellShark.observers.ContactsObserver: void setContactStats(csllc.CellShark.bo.Contact)>)
+	- $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>(4) (in <csllc.CellShark.observers.ContactsObserver: void setStructuredName(csllc.CellShark.bo.Contact)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <csllc.CellShark.receivers.BootCompletedReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r1, $l0), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, "date ASC") (in <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>)
+	- $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, "date ASC") (in <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r5, $l0), from the following sources:
+	- $r3 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <b: void run()>)
+Found a flow to sink virtualinvoke $r9.<java.io.FileOutputStream: void write(byte[])>($r7), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <csllc.CellShark.Settings: java.lang.String getDeviceId(android.content.Context)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CSDBCreatPw") (in <csllc.CellShark.commwrapper.CreateAccountAsync: void CreateAccount()>)
+	- $r0 := @parameter0: android.content.Context (in <csllc.CellShark.receivers.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $d0 = virtualinvoke $r1.<android.location.Location: double getLatitude()>() (in <csllc.CellShark.listeners.GpsListener$1: void onLocationChanged(android.location.Location)>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) (in <csllc.cellsharkcommapi.HttpRequest: java.lang.String sendPost(java.lang.String,java.lang.String,java.lang.String)>)
+	- $d1 = virtualinvoke $r1.<android.location.Location: double getLongitude()>() (in <csllc.CellShark.listeners.GpsListener$1: void onLocationChanged(android.location.Location)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CSDBCreatUn") (in <csllc.CellShark.commwrapper.CreateAccountAsync: void CreateAccount()>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("phNumber", $r1), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <csllc.CellShark.Settings: java.lang.String getOwnPhoneNumber(android.content.Context)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceId", $r1), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <csllc.CellShark.Settings: java.lang.String getDeviceId(android.content.Context)>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("username", $r1), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CSDBCreatUn") (in <csllc.CellShark.commwrapper.CreateAccountAsync: void CreateAccount()>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r2), from the following sources:
+	- $r3 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <b: void run()>)
+Found a flow to sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("password", $r1), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CSDBCreatPw") (in <csllc.CellShark.commwrapper.CreateAccountAsync: void CreateAccount()>)
+	- $r1 = staticinvoke <org.apache.http.util.EntityUtils: java.lang.String toString(org.apache.http.HttpEntity)>($r10) (in <csllc.cellsharkcommapi.HttpRequest: java.lang.String sendPost(java.lang.String,java.lang.String,java.lang.String)>)
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r0), from the following sources:
+	- $r7 = virtualinvoke $r6.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <csllc.CellShark.receivers.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r7 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i5) (in <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>)
+	- $r7 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i5) (in <csllc.CellShark.observers.SmsObserver: void forceSMS(android.content.Context)>)
+Found a flow to sink interfaceinvoke $r7.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("deviceId", $r4), from the following sources:
+	- $r4 = virtualinvoke $r6.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <csllc.CellShark.RetrieveDeviceIdThread: void run()>)
+Maximum memory consumption: 141.972096 MB
+Analysis has run for 9.064454153 seconds

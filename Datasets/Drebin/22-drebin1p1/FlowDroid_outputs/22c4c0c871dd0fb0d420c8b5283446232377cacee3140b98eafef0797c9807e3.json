@@ -1,0 +1,1145 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.016079966 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        km.home.ThemeListActivity $r1;
+        km.home.UnlockActivity $r2;
+        com.km.MainActivity $r3;
+        com.km.HoldMessage $r4;
+        km.home.Home $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new km.home.ThemeListActivity;
+
+        specialinvoke $r1.<km.home.ThemeListActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<km.home.ThemeListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label07;
+
+        $r2 = new km.home.UnlockActivity;
+
+        specialinvoke $r2.<km.home.UnlockActivity: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onStart()>();
+
+     label05:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onResume()>();
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onPause()>();
+
+        if $i0 == 10 goto label05;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onStop()>();
+
+        if $i0 == 11 goto label06;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onRestart()>();
+
+        if $i0 == 12 goto label04;
+
+     label06:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 14 goto label09;
+
+        $r3 = new com.km.MainActivity;
+
+        specialinvoke $r3.<com.km.MainActivity: void <init>()>();
+
+        if $i0 == 15 goto label09;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 18 goto label09;
+
+        if $i0 == 19 goto label08;
+
+     label09:
+        if $i0 == 21 goto label11;
+
+        $r4 = new com.km.HoldMessage;
+
+        specialinvoke $r4.<com.km.HoldMessage: void <init>()>();
+
+        if $i0 == 22 goto label11;
+
+     label10:
+        virtualinvoke $r4.<com.km.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label10;
+
+     label11:
+        if $i0 == 25 goto label15;
+
+        $r5 = new km.home.Home;
+
+        specialinvoke $r5.<km.home.Home: void <init>()>();
+
+        if $i0 == 26 goto label15;
+
+        virtualinvoke $r5.<km.home.Home: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        if $i0 == 27 goto label13;
+
+        virtualinvoke $r5.<km.home.Home: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r5.<km.home.Home: void onResume()>();
+
+        virtualinvoke $r5.<km.home.Home: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 28 goto label13;
+
+        if $i0 == 29 goto label14;
+
+        if $i0 == 30 goto label12;
+
+     label14:
+        virtualinvoke $r5.<km.home.Home: void onDestroy()>();
+
+     label15:
+        if $i0 == 32 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: km.home.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: CheckBox is a phantom class!
+Warning: km.home.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Found 1 layout controls in file res/layout/all_applications_button.xml
+Warning: TextView is a phantom class!
+Warning: km.home.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 2 layout controls in file res/layout/application.xml
+Found 3 layout controls in file res/layout/favorite.xml
+Warning: GridView is a phantom class!
+Warning: km.home.GridView is a phantom class!
+Warning: android.view.GridView is a phantom class!
+Found 4 layout controls in file res/layout/home.xml
+Warning: ImageView is a phantom class!
+Warning: km.home.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 5 layout controls in file res/layout/new_application.xml
+Found 6 layout controls in file res/layout/theme_item.xml
+Warning: Button is a phantom class!
+Warning: km.home.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 7 layout controls in file res/layout/unlock.xml
+Warning: RelativeLayout is a phantom class!
+Warning: km.home.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: Gallery is a phantom class!
+Warning: km.home.Gallery is a phantom class!
+Warning: android.view.Gallery is a phantom class!
+Found 8 layout controls in file res/layout/wallpaper.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class km.home.Home$ApplicationLauncher, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        km.home.ThemeListActivity $r1;
+        km.home.UnlockActivity $r2;
+        boolean $z0, $z1, $z2, $z3;
+        com.km.MainActivity $r3;
+        com.km.HoldMessage $r4;
+        km.home.Home $r5;
+        km.home.Home$ApplicationLauncher $r6, $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new km.home.ThemeListActivity;
+
+        specialinvoke $r1.<km.home.ThemeListActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<km.home.ThemeListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label13;
+
+        $r2 = new km.home.UnlockActivity;
+
+        specialinvoke $r2.<km.home.UnlockActivity: void <init>()>();
+
+        if $i0 == 9 goto label13;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onStart()>();
+
+     label05:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onResume()>();
+
+        if $i0 == 11 goto label11;
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void finish()>();
+
+     label07:
+        if $i0 == 13 goto label08;
+
+        staticinvoke <km.home.UnlockActivity: void <clinit>()>();
+
+     label08:
+        if $i0 == 14 goto label09;
+
+        $z0 = virtualinvoke $r2.<km.home.UnlockActivity: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onClick(android.view.View)>(null);
+
+     label10:
+        if $i0 == 16 goto label06;
+
+     label11:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onPause()>();
+
+        if $i0 == 17 goto label05;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onStop()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onRestart()>();
+
+        if $i0 == 19 goto label04;
+
+     label12:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onDestroy()>();
+
+     label13:
+        if $i0 == 21 goto label20;
+
+        $r3 = new com.km.MainActivity;
+
+        specialinvoke $r3.<com.km.MainActivity: void <init>()>();
+
+        if $i0 == 22 goto label20;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 24 goto label19;
+
+     label15:
+        if $i0 == 25 goto label16;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label16:
+        if $i0 == 26 goto label17;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label17:
+        if $i0 == 27 goto label18;
+
+        virtualinvoke $r3.<com.km.MainActivity: void finish()>();
+
+     label18:
+        if $i0 == 28 goto label15;
+
+     label19:
+        if $i0 == 29 goto label14;
+
+        if $i0 == 30 goto label20;
+
+        if $i0 == 31 goto label14;
+
+     label20:
+        if $i0 == 33 goto label22;
+
+        $r4 = new com.km.HoldMessage;
+
+        specialinvoke $r4.<com.km.HoldMessage: void <init>()>();
+
+        if $i0 == 34 goto label22;
+
+     label21:
+        virtualinvoke $r4.<com.km.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 36 goto label21;
+
+     label22:
+        if $i0 == 39 goto label33;
+
+        $r5 = new km.home.Home;
+
+        specialinvoke $r5.<km.home.Home: void <init>()>();
+
+        if $i0 == 40 goto label33;
+
+        virtualinvoke $r5.<km.home.Home: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        if $i0 == 41 goto label24;
+
+        virtualinvoke $r5.<km.home.Home: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label24:
+        virtualinvoke $r5.<km.home.Home: void onResume()>();
+
+        if $i0 == 42 goto label31;
+
+     label25:
+        if $i0 == 43 goto label26;
+
+        $z1 = virtualinvoke $r5.<km.home.Home: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label26:
+        if $i0 == 44 goto label27;
+
+        $z2 = virtualinvoke $r5.<km.home.Home: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label27:
+        if $i0 == 45 goto label28;
+
+        $z3 = virtualinvoke $r5.<km.home.Home: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label28:
+        if $i0 == 46 goto label29;
+
+        virtualinvoke $r5.<km.home.Home: void onNewIntent(android.content.Intent)>(null);
+
+     label29:
+        $r6 = null;
+
+        $r7 = new km.home.Home$ApplicationLauncher;
+
+        specialinvoke $r7.<km.home.Home$ApplicationLauncher: void <init>(km.home.Home,km.home.Home$ApplicationLauncher)>($r5, $r6);
+
+        if $i0 == 47 goto label30;
+
+        virtualinvoke $r7.<km.home.Home$ApplicationLauncher: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label30:
+        if $i0 == 48 goto label25;
+
+     label31:
+        virtualinvoke $r5.<km.home.Home: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 49 goto label24;
+
+        if $i0 == 50 goto label32;
+
+        if $i0 == 51 goto label23;
+
+     label32:
+        virtualinvoke $r5.<km.home.Home: void onDestroy()>();
+
+     label33:
+        if $i0 == 53 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.km.SendMessageInterface, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class km.home.Home$ApplicationLauncher, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        km.home.ThemeListActivity $r1;
+        km.home.UnlockActivity $r2, $r4;
+        boolean $z0, $z1, $z2, $z3;
+        com.km.MainActivity $r3, $r11;
+        com.km.HoldMessage $r5;
+        com.km.SendMessage $r6;
+        com.km.SendMessage$SendMessageReceiver $r7;
+        km.home.Home $r8;
+        km.home.Home$ApplicationLauncher $r9, $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new km.home.ThemeListActivity;
+
+        specialinvoke $r1.<km.home.ThemeListActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<km.home.ThemeListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label13;
+
+        $r2 = new km.home.UnlockActivity;
+
+        specialinvoke $r2.<km.home.UnlockActivity: void <init>()>();
+
+        if $i0 == 9 goto label13;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onStart()>();
+
+     label05:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onResume()>();
+
+        if $i0 == 11 goto label11;
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 13 goto label08;
+
+        staticinvoke <km.home.UnlockActivity: void <clinit>()>();
+
+     label08:
+        if $i0 == 14 goto label09;
+
+        $z0 = virtualinvoke $r2.<km.home.UnlockActivity: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void finish()>();
+
+     label10:
+        if $i0 == 16 goto label06;
+
+     label11:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onPause()>();
+
+        if $i0 == 17 goto label05;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onStop()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onRestart()>();
+
+        if $i0 == 19 goto label04;
+
+     label12:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onDestroy()>();
+
+     label13:
+        if $i0 == 21 goto label21;
+
+        $r3 = new com.km.MainActivity;
+
+        specialinvoke $r3.<com.km.MainActivity: void <init>()>();
+
+        if $i0 == 22 goto label21;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 24 goto label20;
+
+     label15:
+        if $i0 == 25 goto label16;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label16:
+        if $i0 == 26 goto label17;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label17:
+        if $i0 == 27 goto label18;
+
+        virtualinvoke $r3.<com.km.MainActivity: void finish()>();
+
+     label18:
+        $r4 = new km.home.UnlockActivity;
+
+        specialinvoke $r4.<km.home.UnlockActivity: void <init>()>();
+
+        if $i0 == 28 goto label19;
+
+        virtualinvoke $r4.<km.home.UnlockActivity: void onClick(android.view.View)>(null);
+
+     label19:
+        if $i0 == 29 goto label15;
+
+     label20:
+        if $i0 == 30 goto label14;
+
+        if $i0 == 31 goto label21;
+
+        if $i0 == 32 goto label14;
+
+     label21:
+        if $i0 == 34 goto label23;
+
+        $r5 = new com.km.HoldMessage;
+
+        specialinvoke $r5.<com.km.HoldMessage: void <init>()>();
+
+        if $i0 == 35 goto label23;
+
+     label22:
+        virtualinvoke $r5.<com.km.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 37 goto label22;
+
+     label23:
+        if $i0 == 38 goto label25;
+
+        $r6 = new com.km.SendMessage;
+
+        specialinvoke $r6.<com.km.SendMessage: void <init>(android.content.Context,com.km.SendMessageInterface)>(null, null);
+
+        $r7 = new com.km.SendMessage$SendMessageReceiver;
+
+        specialinvoke $r7.<com.km.SendMessage$SendMessageReceiver: void <init>(com.km.SendMessage)>($r6);
+
+        if $i0 == 39 goto label25;
+
+     label24:
+        virtualinvoke $r7.<com.km.SendMessage$SendMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 41 goto label24;
+
+     label25:
+        if $i0 == 44 goto label39;
+
+        $r8 = new km.home.Home;
+
+        specialinvoke $r8.<km.home.Home: void <init>()>();
+
+        if $i0 == 45 goto label39;
+
+        virtualinvoke $r8.<km.home.Home: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 46 goto label27;
+
+        virtualinvoke $r8.<km.home.Home: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label27:
+        virtualinvoke $r8.<km.home.Home: void onResume()>();
+
+        if $i0 == 47 goto label37;
+
+     label28:
+        $r9 = null;
+
+        $r10 = new km.home.Home$ApplicationLauncher;
+
+        specialinvoke $r10.<km.home.Home$ApplicationLauncher: void <init>(km.home.Home,km.home.Home$ApplicationLauncher)>($r8, $r9);
+
+        if $i0 == 48 goto label29;
+
+        virtualinvoke $r10.<km.home.Home$ApplicationLauncher: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label29:
+        $r11 = new com.km.MainActivity;
+
+        specialinvoke $r11.<com.km.MainActivity: void <init>()>();
+
+        if $i0 == 49 goto label30;
+
+        virtualinvoke $r11.<com.km.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label30:
+        if $i0 == 50 goto label31;
+
+        virtualinvoke $r11.<com.km.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label31:
+        if $i0 == 51 goto label32;
+
+        $z1 = virtualinvoke $r8.<km.home.Home: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label32:
+        if $i0 == 52 goto label33;
+
+        $z2 = virtualinvoke $r8.<km.home.Home: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label33:
+        if $i0 == 53 goto label34;
+
+        virtualinvoke $r8.<km.home.Home: void onNewIntent(android.content.Intent)>(null);
+
+     label34:
+        if $i0 == 54 goto label35;
+
+        $z3 = virtualinvoke $r8.<km.home.Home: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label35:
+        if $i0 == 55 goto label36;
+
+        virtualinvoke $r8.<km.home.Home: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label36:
+        if $i0 == 56 goto label28;
+
+     label37:
+        virtualinvoke $r8.<km.home.Home: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 57 goto label27;
+
+        if $i0 == 58 goto label38;
+
+        if $i0 == 59 goto label26;
+
+     label38:
+        virtualinvoke $r8.<km.home.Home: void onDestroy()>();
+
+     label39:
+        if $i0 == 61 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 28 callback methods for 5 components
+Found {res/layout/theme_item.xml=[-1 - android.widget.LinearLayout, 2131099657 - android.widget.TextView, 2131099656 - android.widget.ImageView], res/layout/application.xml=[2131099652 - android.widget.TextView], res/layout/favorite.xml=[-1 - android.widget.TextView], res/layout/new_application.xml=[-1 - android.widget.LinearLayout, 2131099652 - km.home.BubbleTextView, 2131099655 - android.widget.ImageView], res/layout/unlock.xml=[-1 - android.widget.LinearLayout, 2131099661 - android.widget.Button, 2131099660 - android.widget.TextView, 2131099658 - android.widget.LinearLayout, 2131099659 - android.widget.TextView], res/layout/wallpaper.xml=[-1 - android.widget.RelativeLayout, -1 - android.widget.TextView, 2131099662 - android.widget.Gallery], res/layout/home.xml=[2131099653 - android.widget.LinearLayout, 2131099654 - android.widget.GridView], res/layout/all_applications_button.xml=[2131099651 - android.widget.CheckBox, 2131099650 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 28 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/22c4c0c871dd0fb0d420c8b5283446232377cacee3140b98eafef0797c9807e3.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.km.SendMessageInterface, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class km.home.Home$ApplicationLauncher, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        km.home.ThemeListActivity $r1;
+        km.home.UnlockActivity $r2, $r4;
+        boolean $z0, $z1, $z2, $z3;
+        com.km.MainActivity $r3, $r9;
+        com.km.HoldMessage $r5;
+        com.km.SendMessage $r6;
+        com.km.SendMessage$SendMessageReceiver $r7;
+        km.home.Home $r8;
+        km.home.Home$ApplicationLauncher $r10, $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new km.home.ThemeListActivity;
+
+        specialinvoke $r1.<km.home.ThemeListActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<km.home.ThemeListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label13;
+
+        $r2 = new km.home.UnlockActivity;
+
+        specialinvoke $r2.<km.home.UnlockActivity: void <init>()>();
+
+        if $i0 == 9 goto label13;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onStart()>();
+
+     label05:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onResume()>();
+
+        if $i0 == 11 goto label11;
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void finish()>();
+
+     label07:
+        if $i0 == 13 goto label08;
+
+        $z0 = virtualinvoke $r2.<km.home.UnlockActivity: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label08:
+        if $i0 == 14 goto label09;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onClick(android.view.View)>(null);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        staticinvoke <km.home.UnlockActivity: void <clinit>()>();
+
+     label10:
+        if $i0 == 16 goto label06;
+
+     label11:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onPause()>();
+
+        if $i0 == 17 goto label05;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onStop()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r2.<km.home.UnlockActivity: void onRestart()>();
+
+        if $i0 == 19 goto label04;
+
+     label12:
+        virtualinvoke $r2.<km.home.UnlockActivity: void onDestroy()>();
+
+     label13:
+        if $i0 == 21 goto label21;
+
+        $r3 = new com.km.MainActivity;
+
+        specialinvoke $r3.<com.km.MainActivity: void <init>()>();
+
+        if $i0 == 22 goto label21;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 24 goto label20;
+
+     label15:
+        if $i0 == 25 goto label16;
+
+        virtualinvoke $r3.<com.km.MainActivity: void finish()>();
+
+     label16:
+        if $i0 == 26 goto label17;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label17:
+        if $i0 == 27 goto label18;
+
+        virtualinvoke $r3.<com.km.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label18:
+        $r4 = new km.home.UnlockActivity;
+
+        specialinvoke $r4.<km.home.UnlockActivity: void <init>()>();
+
+        if $i0 == 28 goto label19;
+
+        virtualinvoke $r4.<km.home.UnlockActivity: void onClick(android.view.View)>(null);
+
+     label19:
+        if $i0 == 29 goto label15;
+
+     label20:
+        if $i0 == 30 goto label14;
+
+        if $i0 == 31 goto label21;
+
+        if $i0 == 32 goto label14;
+
+     label21:
+        if $i0 == 34 goto label23;
+
+        $r5 = new com.km.HoldMessage;
+
+        specialinvoke $r5.<com.km.HoldMessage: void <init>()>();
+
+        if $i0 == 35 goto label23;
+
+     label22:
+        virtualinvoke $r5.<com.km.HoldMessage: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 37 goto label22;
+
+     label23:
+        if $i0 == 38 goto label25;
+
+        $r6 = new com.km.SendMessage;
+
+        specialinvoke $r6.<com.km.SendMessage: void <init>(android.content.Context,com.km.SendMessageInterface)>(null, null);
+
+        $r7 = new com.km.SendMessage$SendMessageReceiver;
+
+        specialinvoke $r7.<com.km.SendMessage$SendMessageReceiver: void <init>(com.km.SendMessage)>($r6);
+
+        if $i0 == 39 goto label25;
+
+     label24:
+        virtualinvoke $r7.<com.km.SendMessage$SendMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 41 goto label24;
+
+     label25:
+        if $i0 == 44 goto label39;
+
+        $r8 = new km.home.Home;
+
+        specialinvoke $r8.<km.home.Home: void <init>()>();
+
+        if $i0 == 45 goto label39;
+
+        virtualinvoke $r8.<km.home.Home: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 46 goto label27;
+
+        virtualinvoke $r8.<km.home.Home: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label27:
+        virtualinvoke $r8.<km.home.Home: void onResume()>();
+
+        if $i0 == 47 goto label37;
+
+     label28:
+        $r9 = new com.km.MainActivity;
+
+        specialinvoke $r9.<com.km.MainActivity: void <init>()>();
+
+        if $i0 == 48 goto label29;
+
+        virtualinvoke $r9.<com.km.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        if $i0 == 49 goto label30;
+
+        virtualinvoke $r9.<com.km.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label30:
+        if $i0 == 50 goto label31;
+
+        virtualinvoke $r8.<km.home.Home: void onNewIntent(android.content.Intent)>(null);
+
+     label31:
+        if $i0 == 51 goto label32;
+
+        $z1 = virtualinvoke $r8.<km.home.Home: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label32:
+        if $i0 == 52 goto label33;
+
+        $z2 = virtualinvoke $r8.<km.home.Home: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label33:
+        if $i0 == 53 goto label34;
+
+        $z3 = virtualinvoke $r8.<km.home.Home: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label34:
+        if $i0 == 54 goto label35;
+
+        virtualinvoke $r8.<km.home.Home: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label35:
+        $r10 = null;
+
+        $r11 = new km.home.Home$ApplicationLauncher;
+
+        specialinvoke $r11.<km.home.Home$ApplicationLauncher: void <init>(km.home.Home,km.home.Home$ApplicationLauncher)>($r8, $r10);
+
+        if $i0 == 55 goto label36;
+
+        virtualinvoke $r11.<km.home.Home$ApplicationLauncher: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label36:
+        if $i0 == 56 goto label28;
+
+     label37:
+        virtualinvoke $r8.<km.home.Home: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 57 goto label27;
+
+        if $i0 == 58 goto label38;
+
+        if $i0 == 59 goto label26;
+
+     label38:
+        virtualinvoke $r8.<km.home.Home: void onDestroy()>();
+
+     label39:
+        if $i0 == 61 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.729768389 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.131910185 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2118 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 40 sources and 70 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 12161
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 40462
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 116078 forward and 48449 backward edges solved, processing 26 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 26 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.012664772 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("bef", $r2) in method <com.km.tool.HttpBox: void autoTurn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3) in method <com.km.tool.HttpBox: void connect()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("X-Online-Host", $r2) in method <com.km.tool.HttpBox: void connect()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("getApnId", $r7) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("end", $r2) in method <com.km.tool.HttpBox: void connect()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2) in method <com.km.tool.Http: void write()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2) in method <com.km.HttpBox: void write()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2) in method <com.km.tool.HttpBox: void write()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r8 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, $r7, null, null) in method <com.km.tool.ApnManager: boolean SetDefaultAPN(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateGPRSApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateWapApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r4, $r5) in method <com.km.tool.mms.MmsContent: void connect()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("end", $r2) in method <com.km.tool.HttpBox: void connect()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.km.tool.Http: void setUrl(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.MainActivity: java.lang.String getUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.MainActivity: java.lang.String getUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3) in method <com.km.HttpBox: void connect()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.km.HttpBox: void setUrl(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.km.tool.HttpBox: void setUrl(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<km.home.Home: void startActivity(android.content.Intent)>($r4) in method <km.home.Home$ApplicationLauncher: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.widget.AdapterView in method <km.home.Home$ApplicationLauncher: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("end", $r2) in method <com.km.tool.HttpBox: void autoTurn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3) in method <com.km.tool.Http: void connectOperate()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.MainActivity: java.lang.String getUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.MainActivity: java.lang.String getUrl()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r2, $r4, null) in method <com.km.tool.ApnManager: void delete(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null) in method <com.km.tool.ApnManager: boolean SetDefaultAPN(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateGPRSApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateWapApn()>
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("bef", $r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("X-Online-Host", $r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("getApnId", $r7), from the following sources:
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("end", $r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+Found a flow to sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink $r8 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, $r7, null, null), from the following sources:
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateGPRSApn()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateWapApn()>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r4, $r5), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("end", $r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r5 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.MainActivity: java.lang.String getUrl()>)
+	- $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.MainActivity: java.lang.String getUrl()>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r3.<km.home.Home: void startActivity(android.content.Intent)>($r4), from the following sources:
+	- $r1 := @parameter0: android.widget.AdapterView (in <km.home.Home$ApplicationLauncher: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("end", $r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3), from the following sources:
+	- $r5 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.MainActivity: java.lang.String getUrl()>)
+	- $r6 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.MainActivity: java.lang.String getUrl()>)
+Found a flow to sink virtualinvoke $r1.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r2, $r4, null), from the following sources:
+	- $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+Found a flow to sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null), from the following sources:
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateGPRSApn()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateWapApn()>)
+Maximum memory consumption: 245.94424 MB
+Analysis has run for 7.175086642 seconds

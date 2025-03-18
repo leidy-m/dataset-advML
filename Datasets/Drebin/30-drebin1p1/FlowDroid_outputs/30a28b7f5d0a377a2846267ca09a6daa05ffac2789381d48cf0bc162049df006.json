@@ -1,0 +1,701 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.014024397 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.tx.read.activity.TxHallWebActivity $r1;
+        com.tx.read.activity.TxActivity $r2;
+        com.tx.read.activity.SplashActivity $r3;
+        com.tx.read.activity.MenuLayout $r4;
+        com.tx.read.service.login.LoginService $r5;
+        android.os.IBinder $r6;
+        boolean $z0;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.tx.read.activity.TxHallWebActivity;
+
+        specialinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label07;
+
+        $r2 = new com.tx.read.activity.TxActivity;
+
+        specialinvoke $r2.<com.tx.read.activity.TxActivity: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r2.<com.tx.read.activity.TxActivity: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        if $i0 == 11 goto label06;
+
+        if $i0 == 12 goto label05;
+
+     label06:
+        virtualinvoke $r2.<com.tx.read.activity.TxActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 14 goto label09;
+
+        $r3 = new com.tx.read.activity.SplashActivity;
+
+        specialinvoke $r3.<com.tx.read.activity.SplashActivity: void <init>()>();
+
+        if $i0 == 15 goto label09;
+
+        virtualinvoke $r3.<com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        virtualinvoke $r3.<com.tx.read.activity.SplashActivity: void onResume()>();
+
+        virtualinvoke $r3.<com.tx.read.activity.SplashActivity: void onPause()>();
+
+        if $i0 == 17 goto label08;
+
+        if $i0 == 18 goto label09;
+
+        if $i0 == 19 goto label08;
+
+     label09:
+        if $i0 == 21 goto label11;
+
+        $r4 = new com.tx.read.activity.MenuLayout;
+
+        specialinvoke $r4.<com.tx.read.activity.MenuLayout: void <init>()>();
+
+        if $i0 == 22 goto label11;
+
+        virtualinvoke $r4.<com.tx.read.activity.MenuLayout: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 25 goto label11;
+
+        if $i0 == 26 goto label10;
+
+     label11:
+        if $i0 == 28 goto label16;
+
+        $r5 = new com.tx.read.service.login.LoginService;
+
+        specialinvoke $r5.<com.tx.read.service.login.LoginService: void <init>()>();
+
+        virtualinvoke $r5.<com.tx.read.service.login.LoginService: void onCreate()>();
+
+        virtualinvoke $r5.<com.tx.read.service.login.LoginService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 29 goto label13;
+
+        if $i0 == 30 goto label12;
+
+     label13:
+        $r6 = virtualinvoke $r5.<com.tx.read.service.login.LoginService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        $z0 = virtualinvoke $r5.<com.tx.read.service.login.LoginService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 32 goto label15;
+
+        if $i0 == 33 goto label14;
+
+     label15:
+        virtualinvoke $r5.<com.tx.read.service.login.LoginService: void onDestroy()>();
+
+     label16:
+        if $i0 == 34 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.tx.read.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.tx.read.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: FrameLayout is a phantom class!
+Warning: com.tx.read.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Found 2 layout controls in file res/layout/menulayout.xml
+Found 3 layout controls in file res/layout/popup.xml
+Warning: ImageView is a phantom class!
+Warning: com.tx.read.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 4 layout controls in file res/layout/splash_activity.xml
+Warning: WebView is a phantom class!
+Warning: com.tx.read.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 5 layout controls in file res/layout/tx_activity.xml
+Warning: ProgressBar is a phantom class!
+Warning: com.tx.read.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 6 layout controls in file res/layout/tx_hall_activity.xml
+Found 7 layout controls in file res/layout/tx_hall_web_activity.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.tx.read.activity.TxHallWebActivity $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.tx.read.activity.TxActivity $r2;
+        com.tx.read.activity.TxActivity$4 $r3;
+        com.tx.read.activity.TxActivity$2 $r4;
+        com.tx.read.activity.TxActivity$3 $r5;
+        com.tx.read.activity.SplashActivity $r6;
+        com.tx.read.activity.MenuLayout $r7;
+        com.tx.read.service.login.LoginService $r8;
+        android.os.IBinder $r9;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label09;
+
+        $r1 = new com.tx.read.activity.TxHallWebActivity;
+
+        specialinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void <init>()>();
+
+        if $i0 == 1 goto label09;
+
+        virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label07;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        $z1 = virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z2 = virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label06:
+        if $i0 == 7 goto label03;
+
+     label07:
+        if $i0 == 8 goto label02;
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label02;
+
+     label08:
+        virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void onDestroy()>();
+
+     label09:
+        if $i0 == 12 goto label20;
+
+        $r2 = new com.tx.read.activity.TxActivity;
+
+        specialinvoke $r2.<com.tx.read.activity.TxActivity: void <init>()>();
+
+        if $i0 == 13 goto label20;
+
+        virtualinvoke $r2.<com.tx.read.activity.TxActivity: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 15 goto label18;
+
+     label11:
+        if $i0 == 16 goto label12;
+
+        $z3 = virtualinvoke $r2.<com.tx.read.activity.TxActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label12:
+        if $i0 == 17 goto label13;
+
+        $z4 = virtualinvoke $r2.<com.tx.read.activity.TxActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label13:
+        if $i0 == 18 goto label14;
+
+        $z5 = virtualinvoke $r2.<com.tx.read.activity.TxActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label14:
+        $r3 = new com.tx.read.activity.TxActivity$4;
+
+        specialinvoke $r3.<com.tx.read.activity.TxActivity$4: void <init>(com.tx.read.activity.TxActivity)>($r2);
+
+        if $i0 == 19 goto label15;
+
+        virtualinvoke $r3.<com.tx.read.activity.TxActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label15:
+        $r4 = new com.tx.read.activity.TxActivity$2;
+
+        specialinvoke $r4.<com.tx.read.activity.TxActivity$2: void <init>(com.tx.read.activity.TxActivity)>($r2);
+
+        if $i0 == 20 goto label16;
+
+        virtualinvoke $r4.<com.tx.read.activity.TxActivity$2: void onClick(android.view.View)>(null);
+
+     label16:
+        $r5 = new com.tx.read.activity.TxActivity$3;
+
+        specialinvoke $r5.<com.tx.read.activity.TxActivity$3: void <init>(com.tx.read.activity.TxActivity)>($r2);
+
+        if $i0 == 21 goto label17;
+
+        virtualinvoke $r5.<com.tx.read.activity.TxActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label17:
+        if $i0 == 22 goto label11;
+
+     label18:
+        if $i0 == 23 goto label10;
+
+        if $i0 == 24 goto label19;
+
+        if $i0 == 25 goto label10;
+
+     label19:
+        virtualinvoke $r2.<com.tx.read.activity.TxActivity: void onDestroy()>();
+
+     label20:
+        if $i0 == 27 goto label25;
+
+        $r6 = new com.tx.read.activity.SplashActivity;
+
+        specialinvoke $r6.<com.tx.read.activity.SplashActivity: void <init>()>();
+
+        if $i0 == 28 goto label25;
+
+        virtualinvoke $r6.<com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        virtualinvoke $r6.<com.tx.read.activity.SplashActivity: void onResume()>();
+
+        if $i0 == 30 goto label24;
+
+     label22:
+        if $i0 == 31 goto label23;
+
+        $z6 = virtualinvoke $r6.<com.tx.read.activity.SplashActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label23:
+        if $i0 == 32 goto label22;
+
+     label24:
+        virtualinvoke $r6.<com.tx.read.activity.SplashActivity: void onPause()>();
+
+        if $i0 == 33 goto label21;
+
+        if $i0 == 34 goto label25;
+
+        if $i0 == 35 goto label21;
+
+     label25:
+        if $i0 == 37 goto label27;
+
+        $r7 = new com.tx.read.activity.MenuLayout;
+
+        specialinvoke $r7.<com.tx.read.activity.MenuLayout: void <init>()>();
+
+        if $i0 == 38 goto label27;
+
+        virtualinvoke $r7.<com.tx.read.activity.MenuLayout: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 41 goto label26;
+
+        if $i0 == 42 goto label27;
+
+        if $i0 == 43 goto label26;
+
+     label27:
+        if $i0 == 45 goto label32;
+
+        $r8 = new com.tx.read.service.login.LoginService;
+
+        specialinvoke $r8.<com.tx.read.service.login.LoginService: void <init>()>();
+
+        virtualinvoke $r8.<com.tx.read.service.login.LoginService: void onCreate()>();
+
+        virtualinvoke $r8.<com.tx.read.service.login.LoginService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label28:
+        if $i0 == 46 goto label29;
+
+        if $i0 == 47 goto label28;
+
+     label29:
+        $r9 = virtualinvoke $r8.<com.tx.read.service.login.LoginService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label30:
+        $z7 = virtualinvoke $r8.<com.tx.read.service.login.LoginService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 49 goto label31;
+
+        if $i0 == 50 goto label30;
+
+     label31:
+        virtualinvoke $r8.<com.tx.read.service.login.LoginService: void onDestroy()>();
+
+     label32:
+        if $i0 == 51 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Found 23 callback methods for 5 components
+Found {res/layout/splash_activity.xml=[2131034115 - android.widget.ImageView, -1 - android.widget.LinearLayout], res/layout/main.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/tx_activity.xml=[-1 - android.widget.FrameLayout, 2131034117 - android.widget.LinearLayout, 2131034118 - android.widget.ImageView, 2131034116 - android.webkit.WebView], res/layout/menulayout.xml=[-1 - android.widget.FrameLayout, 2131034113 - android.widget.TextView, 2131034114 - android.widget.TextView, 2131034112 - android.widget.TextView], res/layout/popup.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/tx_hall_activity.xml=[-1 - android.widget.LinearLayout, 2131034119 - android.webkit.WebView, 2131034120 - android.widget.ProgressBar], res/layout/tx_hall_web_activity.xml=[-1 - android.widget.LinearLayout, 2131034121 - android.webkit.WebView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 23 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/30a28b7f5d0a377a2846267ca09a6daa05ffac2789381d48cf0bc162049df006.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.tx.read.activity.TxHallWebActivity $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.tx.read.activity.TxActivity $r2;
+        com.tx.read.activity.TxActivity$3 $r3;
+        com.tx.read.activity.TxActivity$2 $r4;
+        com.tx.read.activity.TxActivity$4 $r5;
+        com.tx.read.activity.SplashActivity $r6;
+        com.tx.read.activity.MenuLayout $r7;
+        com.tx.read.service.login.LoginService $r8;
+        android.os.IBinder $r9;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label09;
+
+        $r1 = new com.tx.read.activity.TxHallWebActivity;
+
+        specialinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void <init>()>();
+
+        if $i0 == 1 goto label09;
+
+        virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label07;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        $z1 = virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z2 = virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label06:
+        if $i0 == 7 goto label03;
+
+     label07:
+        if $i0 == 8 goto label02;
+
+        if $i0 == 9 goto label08;
+
+        if $i0 == 10 goto label02;
+
+     label08:
+        virtualinvoke $r1.<com.tx.read.activity.TxHallWebActivity: void onDestroy()>();
+
+     label09:
+        if $i0 == 12 goto label20;
+
+        $r2 = new com.tx.read.activity.TxActivity;
+
+        specialinvoke $r2.<com.tx.read.activity.TxActivity: void <init>()>();
+
+        if $i0 == 13 goto label20;
+
+        virtualinvoke $r2.<com.tx.read.activity.TxActivity: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 15 goto label18;
+
+     label11:
+        $r3 = new com.tx.read.activity.TxActivity$3;
+
+        specialinvoke $r3.<com.tx.read.activity.TxActivity$3: void <init>(com.tx.read.activity.TxActivity)>($r2);
+
+        if $i0 == 16 goto label12;
+
+        virtualinvoke $r3.<com.tx.read.activity.TxActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label12:
+        if $i0 == 17 goto label13;
+
+        $z3 = virtualinvoke $r2.<com.tx.read.activity.TxActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label13:
+        if $i0 == 18 goto label14;
+
+        $z4 = virtualinvoke $r2.<com.tx.read.activity.TxActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label14:
+        if $i0 == 19 goto label15;
+
+        $z5 = virtualinvoke $r2.<com.tx.read.activity.TxActivity: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label15:
+        $r4 = new com.tx.read.activity.TxActivity$2;
+
+        specialinvoke $r4.<com.tx.read.activity.TxActivity$2: void <init>(com.tx.read.activity.TxActivity)>($r2);
+
+        if $i0 == 20 goto label16;
+
+        virtualinvoke $r4.<com.tx.read.activity.TxActivity$2: void onClick(android.view.View)>(null);
+
+     label16:
+        $r5 = new com.tx.read.activity.TxActivity$4;
+
+        specialinvoke $r5.<com.tx.read.activity.TxActivity$4: void <init>(com.tx.read.activity.TxActivity)>($r2);
+
+        if $i0 == 21 goto label17;
+
+        virtualinvoke $r5.<com.tx.read.activity.TxActivity$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label17:
+        if $i0 == 22 goto label11;
+
+     label18:
+        if $i0 == 23 goto label10;
+
+        if $i0 == 24 goto label19;
+
+        if $i0 == 25 goto label10;
+
+     label19:
+        virtualinvoke $r2.<com.tx.read.activity.TxActivity: void onDestroy()>();
+
+     label20:
+        if $i0 == 27 goto label25;
+
+        $r6 = new com.tx.read.activity.SplashActivity;
+
+        specialinvoke $r6.<com.tx.read.activity.SplashActivity: void <init>()>();
+
+        if $i0 == 28 goto label25;
+
+        virtualinvoke $r6.<com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        virtualinvoke $r6.<com.tx.read.activity.SplashActivity: void onResume()>();
+
+        if $i0 == 30 goto label24;
+
+     label22:
+        if $i0 == 31 goto label23;
+
+        $z6 = virtualinvoke $r6.<com.tx.read.activity.SplashActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label23:
+        if $i0 == 32 goto label22;
+
+     label24:
+        virtualinvoke $r6.<com.tx.read.activity.SplashActivity: void onPause()>();
+
+        if $i0 == 33 goto label21;
+
+        if $i0 == 34 goto label25;
+
+        if $i0 == 35 goto label21;
+
+     label25:
+        if $i0 == 37 goto label27;
+
+        $r7 = new com.tx.read.activity.MenuLayout;
+
+        specialinvoke $r7.<com.tx.read.activity.MenuLayout: void <init>()>();
+
+        if $i0 == 38 goto label27;
+
+        virtualinvoke $r7.<com.tx.read.activity.MenuLayout: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 41 goto label26;
+
+        if $i0 == 42 goto label27;
+
+        if $i0 == 43 goto label26;
+
+     label27:
+        if $i0 == 45 goto label32;
+
+        $r8 = new com.tx.read.service.login.LoginService;
+
+        specialinvoke $r8.<com.tx.read.service.login.LoginService: void <init>()>();
+
+        virtualinvoke $r8.<com.tx.read.service.login.LoginService: void onCreate()>();
+
+        virtualinvoke $r8.<com.tx.read.service.login.LoginService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label28:
+        if $i0 == 46 goto label29;
+
+        if $i0 == 47 goto label28;
+
+     label29:
+        $r9 = virtualinvoke $r8.<com.tx.read.service.login.LoginService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label30:
+        $z7 = virtualinvoke $r8.<com.tx.read.service.login.LoginService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 49 goto label31;
+
+        if $i0 == 50 goto label30;
+
+     label31:
+        virtualinvoke $r8.<com.tx.read.service.login.LoginService: void onDestroy()>();
+
+     label32:
+        if $i0 == 51 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.283071461 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.03533461 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 563 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 31 sources and 16 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1747
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 3773
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 13414 forward and 1875 backward edges solved, processing 6 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 6 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.008907688 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r6.<java.io.OutputStream: void write(byte[])>($r7) in method <com.tx.http.util.HttpUtil: java.lang.String postQueryMap(java.lang.String,java.util.Map)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Intent in method <com.tx.read.service.login.LoginService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.tx.http.util.HttpUtil: java.lang.String postQueryMap(java.lang.String,java.util.Map)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("SplashActivity", $r15) in method <com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r13.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r4, $r6) in method <com.tx.read.service.login.LoginService: boolean isRegister()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.tx.http.util.HttpUtil: java.lang.String postQueryMap(java.lang.String,java.util.Map)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LoginService", $r3) in method <com.tx.read.service.login.LoginService: void onStart(android.content.Intent,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Intent in method <com.tx.read.service.login.LoginService: void onStart(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r17.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("imsi", $r10) in method <com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r13.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)>
+Found a flow to sink virtualinvoke $r6.<java.io.OutputStream: void write(byte[])>($r7), from the following sources:
+	- $r1 := @parameter0: android.content.Intent (in <com.tx.read.service.login.LoginService: void onStart(android.content.Intent,int)>)
+	- $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.tx.http.util.HttpUtil: java.lang.String postQueryMap(java.lang.String,java.util.Map)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("SplashActivity", $r15), from the following sources:
+	- $r10 = virtualinvoke $r13.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r4, $r6), from the following sources:
+	- $r4 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.tx.http.util.HttpUtil: java.lang.String postQueryMap(java.lang.String,java.util.Map)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LoginService", $r3), from the following sources:
+	- $r1 := @parameter0: android.content.Intent (in <com.tx.read.service.login.LoginService: void onStart(android.content.Intent,int)>)
+Found a flow to sink interfaceinvoke $r17.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("imsi", $r10), from the following sources:
+	- $r10 = virtualinvoke $r13.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.tx.read.activity.SplashActivity: void onCreate(android.os.Bundle)>)
+Maximum memory consumption: 156.597328 MB
+Analysis has run for 3.817933638 seconds

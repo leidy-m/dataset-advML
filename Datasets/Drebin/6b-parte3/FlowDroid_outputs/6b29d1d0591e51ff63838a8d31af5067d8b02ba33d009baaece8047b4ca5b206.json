@@ -1,0 +1,1430 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.029647064 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: java.awt.Graphics is a phantom class!
+Warning: java.awt.GraphicsEnvironment is a phantom class!
+Warning: java.awt.Image is a phantom class!
+Warning: java.awt.Point is a phantom class!
+Warning: java.awt.Toolkit is a phantom class!
+Warning: java.awt.color.ColorSpace is a phantom class!
+Warning: java.awt.datatransfer.Clipboard is a phantom class!
+Warning: java.awt.datatransfer.DataFlavor is a phantom class!
+Warning: java.awt.datatransfer.FlavorMap is a phantom class!
+Warning: java.awt.datatransfer.SystemFlavorMap is a phantom class!
+Warning: java.awt.datatransfer.Transferable is a phantom class!
+Warning: java.awt.datatransfer.UnsupportedFlavorException is a phantom class!
+Warning: java.awt.dnd.DragGestureEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceContext is a phantom class!
+Warning: java.awt.dnd.DragSourceDragEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceDropEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceEvent is a phantom class!
+Warning: java.awt.dnd.DropTargetContext is a phantom class!
+Warning: java.awt.dnd.peer.DragSourceContextPeer is a phantom class!
+Warning: java.awt.dnd.peer.DropTargetContextPeer is a phantom class!
+Warning: java.awt.image.BufferedImage is a phantom class!
+Warning: java.awt.image.ColorModel is a phantom class!
+Warning: java.awt.image.ComponentColorModel is a phantom class!
+Warning: java.awt.image.DataBuffer is a phantom class!
+Warning: java.awt.image.DataBufferByte is a phantom class!
+Warning: java.awt.image.DataBufferInt is a phantom class!
+Warning: java.awt.image.DataBufferUShort is a phantom class!
+Warning: java.awt.image.DirectColorModel is a phantom class!
+Warning: java.awt.image.ImageObserver is a phantom class!
+Warning: java.awt.image.Raster is a phantom class!
+Warning: java.awt.image.WritableRaster is a phantom class!
+Warning: java.beans.Beans is a phantom class!
+Warning: javax.security.auth.callback.NameCallback is a phantom class!
+Warning: javax.security.sasl.RealmCallback is a phantom class!
+Warning: javax.security.sasl.RealmChoiceCallback is a phantom class!
+Warning: javax.security.sasl.Sasl is a phantom class!
+Warning: javax.security.sasl.SaslClient is a phantom class!
+Warning: javax.security.sasl.SaslException is a phantom class!
+Warning: sms.SMSreceiver is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.sendere.FileSender $r1;
+        android.os.IBinder $r2, $r4, $r8, $r10;
+        com.keji.sendere.service.SysM $r3;
+        com.keji.sendere.ReceiveCode $r5;
+        com.keji.sendere.FileBrowse $r6;
+        com.keji.sendere.FileReceive $r7;
+        com.keji.sendere.service.Mrun $r9;
+        com.keji.sendere.Start $r11;
+        com.keji.sendere.FileReady $r12;
+        com.keji.sendere.Recorder $r13;
+        com.keji.sendere.service.ForAlarm $r14;
+        com.keji.sendere.FileView $r15;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.keji.sendere.FileSender;
+
+        specialinvoke $r1.<com.keji.sendere.FileSender: void <init>()>();
+
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onCreate()>();
+
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.keji.sendere.FileSender: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label10;
+
+        $r3 = new com.keji.sendere.service.SysM;
+
+        specialinvoke $r3.<com.keji.sendere.service.SysM: void <init>()>();
+
+        virtualinvoke $r3.<com.keji.sendere.service.SysM: void onCreate()>();
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        if $i0 == 8 goto label07;
+
+     label08:
+        $r4 = virtualinvoke $r3.<com.keji.sendere.service.SysM: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 10 goto label10;
+
+        if $i0 == 11 goto label09;
+
+     label10:
+        if $i0 == 14 goto label12;
+
+        $r5 = new com.keji.sendere.ReceiveCode;
+
+        specialinvoke $r5.<com.keji.sendere.ReceiveCode: void <init>()>();
+
+        if $i0 == 15 goto label12;
+
+        virtualinvoke $r5.<com.keji.sendere.ReceiveCode: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 18 goto label12;
+
+        if $i0 == 19 goto label11;
+
+     label12:
+        if $i0 == 21 goto label14;
+
+        $r6 = new com.keji.sendere.FileBrowse;
+
+        specialinvoke $r6.<com.keji.sendere.FileBrowse: void <init>()>();
+
+        if $i0 == 22 goto label14;
+
+        virtualinvoke $r6.<com.keji.sendere.FileBrowse: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 25 goto label14;
+
+        if $i0 == 26 goto label13;
+
+     label14:
+        if $i0 == 28 goto label19;
+
+        $r7 = new com.keji.sendere.FileReceive;
+
+        specialinvoke $r7.<com.keji.sendere.FileReceive: void <init>()>();
+
+        virtualinvoke $r7.<com.keji.sendere.FileReceive: void onCreate()>();
+
+        virtualinvoke $r7.<com.keji.sendere.FileReceive: void onStart(android.content.Intent,int)>(null, 0);
+
+     label15:
+        if $i0 == 29 goto label16;
+
+        if $i0 == 30 goto label15;
+
+     label16:
+        $r8 = virtualinvoke $r7.<com.keji.sendere.FileReceive: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label17:
+        if $i0 == 32 goto label18;
+
+        if $i0 == 33 goto label17;
+
+     label18:
+        virtualinvoke $r7.<com.keji.sendere.FileReceive: void onDestroy()>();
+
+     label19:
+        if $i0 == 34 goto label23;
+
+        $r9 = new com.keji.sendere.service.Mrun;
+
+        specialinvoke $r9.<com.keji.sendere.service.Mrun: void <init>()>();
+
+        virtualinvoke $r9.<com.keji.sendere.service.Mrun: void onCreate()>();
+
+        virtualinvoke $r9.<com.keji.sendere.service.Mrun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label20:
+        if $i0 == 35 goto label21;
+
+        if $i0 == 36 goto label20;
+
+     label21:
+        $r10 = virtualinvoke $r9.<com.keji.sendere.service.Mrun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label22:
+        if $i0 == 38 goto label23;
+
+        if $i0 == 39 goto label22;
+
+     label23:
+        if $i0 == 40 goto label25;
+
+        $r11 = new com.keji.sendere.Start;
+
+        specialinvoke $r11.<com.keji.sendere.Start: void <init>()>();
+
+        if $i0 == 41 goto label25;
+
+        virtualinvoke $r11.<com.keji.sendere.Start: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 44 goto label25;
+
+        if $i0 == 45 goto label24;
+
+     label25:
+        if $i0 == 47 goto label28;
+
+        $r12 = new com.keji.sendere.FileReady;
+
+        specialinvoke $r12.<com.keji.sendere.FileReady: void <init>()>();
+
+        if $i0 == 48 goto label28;
+
+        virtualinvoke $r12.<com.keji.sendere.FileReady: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 51 goto label27;
+
+        if $i0 == 52 goto label26;
+
+     label27:
+        virtualinvoke $r12.<com.keji.sendere.FileReady: void onDestroy()>();
+
+     label28:
+        if $i0 == 54 goto label31;
+
+        $r13 = new com.keji.sendere.Recorder;
+
+        specialinvoke $r13.<com.keji.sendere.Recorder: void <init>()>();
+
+        if $i0 == 55 goto label31;
+
+        virtualinvoke $r13.<com.keji.sendere.Recorder: void onCreate(android.os.Bundle)>(null);
+
+     label29:
+        if $i0 == 58 goto label30;
+
+        if $i0 == 59 goto label29;
+
+     label30:
+        virtualinvoke $r13.<com.keji.sendere.Recorder: void onDestroy()>();
+
+     label31:
+        if $i0 == 61 goto label33;
+
+        $r14 = new com.keji.sendere.service.ForAlarm;
+
+        specialinvoke $r14.<com.keji.sendere.service.ForAlarm: void <init>()>();
+
+        if $i0 == 62 goto label33;
+
+     label32:
+        virtualinvoke $r14.<com.keji.sendere.service.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 64 goto label32;
+
+     label33:
+        if $i0 == 65 goto label35;
+
+        $r15 = new com.keji.sendere.FileView;
+
+        specialinvoke $r15.<com.keji.sendere.FileView: void <init>()>();
+
+        if $i0 == 66 goto label35;
+
+        virtualinvoke $r15.<com.keji.sendere.FileView: void onCreate(android.os.Bundle)>(null);
+
+     label34:
+        virtualinvoke $r15.<com.keji.sendere.FileView: void onStart()>();
+
+        if $i0 == 69 goto label35;
+
+        if $i0 == 70 goto label34;
+
+     label35:
+        if $i0 == 72 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Callback analysis done.
+Skipping file res/layout/ in layout folder...
+Warning: LinearLayout is a phantom class!
+Warning: com.keji.sendere.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.keji.sendere.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.keji.sendere.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/file.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.keji.sendere.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.keji.sendere.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/index.xml
+Found 3 layout controls in file res/layout/main.xml
+Warning: TableLayout is a phantom class!
+Warning: com.keji.sendere.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: TableRow is a phantom class!
+Warning: com.keji.sendere.TableRow is a phantom class!
+Warning: android.view.TableRow is a phantom class!
+Found 4 layout controls in file res/layout/newindex.xml
+Warning: EditText is a phantom class!
+Warning: com.keji.sendere.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 5 layout controls in file res/layout/ready.xml
+Found 6 layout controls in file res/layout/record.xml
+Found 7 layout controls in file res/layout/tiqu.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: java.awt.Graphics is a phantom class!
+Warning: java.awt.GraphicsEnvironment is a phantom class!
+Warning: java.awt.Image is a phantom class!
+Warning: java.awt.Point is a phantom class!
+Warning: java.awt.Toolkit is a phantom class!
+Warning: java.awt.color.ColorSpace is a phantom class!
+Warning: java.awt.datatransfer.Clipboard is a phantom class!
+Warning: java.awt.datatransfer.DataFlavor is a phantom class!
+Warning: java.awt.datatransfer.FlavorMap is a phantom class!
+Warning: java.awt.datatransfer.SystemFlavorMap is a phantom class!
+Warning: java.awt.datatransfer.Transferable is a phantom class!
+Warning: java.awt.datatransfer.UnsupportedFlavorException is a phantom class!
+Warning: java.awt.dnd.DragGestureEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceContext is a phantom class!
+Warning: java.awt.dnd.DragSourceDragEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceDropEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceEvent is a phantom class!
+Warning: java.awt.dnd.DropTargetContext is a phantom class!
+Warning: java.awt.dnd.peer.DragSourceContextPeer is a phantom class!
+Warning: java.awt.dnd.peer.DropTargetContextPeer is a phantom class!
+Warning: java.awt.image.BufferedImage is a phantom class!
+Warning: java.awt.image.ColorModel is a phantom class!
+Warning: java.awt.image.ComponentColorModel is a phantom class!
+Warning: java.awt.image.DataBuffer is a phantom class!
+Warning: java.awt.image.DataBufferByte is a phantom class!
+Warning: java.awt.image.DataBufferInt is a phantom class!
+Warning: java.awt.image.DataBufferUShort is a phantom class!
+Warning: java.awt.image.DirectColorModel is a phantom class!
+Warning: java.awt.image.ImageObserver is a phantom class!
+Warning: java.awt.image.Raster is a phantom class!
+Warning: java.awt.image.WritableRaster is a phantom class!
+Warning: java.beans.Beans is a phantom class!
+Warning: javax.security.auth.callback.NameCallback is a phantom class!
+Warning: javax.security.sasl.RealmCallback is a phantom class!
+Warning: javax.security.sasl.RealmChoiceCallback is a phantom class!
+Warning: javax.security.sasl.Sasl is a phantom class!
+Warning: javax.security.sasl.SaslClient is a phantom class!
+Warning: javax.security.sasl.SaslException is a phantom class!
+Warning: sms.SMSreceiver is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.sendere.FileSender $r1;
+        android.os.IBinder $r2, $r4, $r7, $r29;
+        com.keji.sendere.service.SysM $r3;
+        com.keji.sendere.FileBrowse $r5;
+        boolean $z0, $z1;
+        com.keji.sendere.service.Mrun $r6;
+        com.keji.sendere.Start $r8;
+        t $r9;
+        s $r10;
+        v $r11;
+        z $r12;
+        w $r13;
+        com.keji.sendere.FileReady $r14;
+        ad $r15;
+        ab $r16;
+        ac $r17;
+        aa $r18;
+        y $r19;
+        com.keji.sendere.Recorder $r20;
+        q $r21;
+        r $r22;
+        u $r23;
+        com.keji.sendere.service.ForAlarm $r24;
+        com.keji.sendere.ReceiveCode $r25;
+        e $r26;
+        c $r27;
+        com.keji.sendere.FileReceive $r28;
+        com.keji.sendere.FileView $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.keji.sendere.FileSender;
+
+        specialinvoke $r1.<com.keji.sendere.FileSender: void <init>()>();
+
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onCreate()>();
+
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.keji.sendere.FileSender: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label10;
+
+        $r3 = new com.keji.sendere.service.SysM;
+
+        specialinvoke $r3.<com.keji.sendere.service.SysM: void <init>()>();
+
+        virtualinvoke $r3.<com.keji.sendere.service.SysM: void onCreate()>();
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        if $i0 == 8 goto label07;
+
+     label08:
+        $r4 = virtualinvoke $r3.<com.keji.sendere.service.SysM: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 10 goto label10;
+
+        if $i0 == 11 goto label09;
+
+     label10:
+        if $i0 == 12 goto label16;
+
+        $r5 = new com.keji.sendere.FileBrowse;
+
+        specialinvoke $r5.<com.keji.sendere.FileBrowse: void <init>()>();
+
+        if $i0 == 13 goto label16;
+
+        virtualinvoke $r5.<com.keji.sendere.FileBrowse: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 15 goto label15;
+
+     label12:
+        if $i0 == 16 goto label13;
+
+        virtualinvoke $r5.<com.keji.sendere.FileBrowse: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label13:
+        if $i0 == 17 goto label14;
+
+        $z0 = virtualinvoke $r5.<com.keji.sendere.FileBrowse: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label14:
+        if $i0 == 18 goto label12;
+
+     label15:
+        if $i0 == 19 goto label11;
+
+        if $i0 == 20 goto label16;
+
+        if $i0 == 21 goto label11;
+
+     label16:
+        if $i0 == 23 goto label20;
+
+        $r6 = new com.keji.sendere.service.Mrun;
+
+        specialinvoke $r6.<com.keji.sendere.service.Mrun: void <init>()>();
+
+        virtualinvoke $r6.<com.keji.sendere.service.Mrun: void onCreate()>();
+
+        virtualinvoke $r6.<com.keji.sendere.service.Mrun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label17:
+        if $i0 == 24 goto label18;
+
+        if $i0 == 25 goto label17;
+
+     label18:
+        $r7 = virtualinvoke $r6.<com.keji.sendere.service.Mrun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label19:
+        if $i0 == 27 goto label20;
+
+        if $i0 == 28 goto label19;
+
+     label20:
+        if $i0 == 29 goto label29;
+
+        $r8 = new com.keji.sendere.Start;
+
+        specialinvoke $r8.<com.keji.sendere.Start: void <init>()>();
+
+        if $i0 == 30 goto label29;
+
+        virtualinvoke $r8.<com.keji.sendere.Start: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 32 goto label28;
+
+     label22:
+        $r9 = new t;
+
+        specialinvoke $r9.<t: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 33 goto label23;
+
+        virtualinvoke $r9.<t: void onClick(android.view.View)>(null);
+
+     label23:
+        $r10 = new s;
+
+        specialinvoke $r10.<s: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 34 goto label24;
+
+        virtualinvoke $r10.<s: void onClick(android.view.View)>(null);
+
+     label24:
+        $r11 = new v;
+
+        specialinvoke $r11.<v: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 35 goto label25;
+
+        virtualinvoke $r11.<v: void onClick(android.view.View)>(null);
+
+     label25:
+        $r12 = new z;
+
+        specialinvoke $r12.<z: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 36 goto label26;
+
+        $z1 = virtualinvoke $r12.<z: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label26:
+        $r13 = new w;
+
+        specialinvoke $r13.<w: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 37 goto label27;
+
+        virtualinvoke $r13.<w: void onClick(android.view.View)>(null);
+
+     label27:
+        if $i0 == 38 goto label22;
+
+     label28:
+        if $i0 == 39 goto label21;
+
+        if $i0 == 40 goto label29;
+
+        if $i0 == 41 goto label21;
+
+     label29:
+        if $i0 == 43 goto label40;
+
+        $r14 = new com.keji.sendere.FileReady;
+
+        specialinvoke $r14.<com.keji.sendere.FileReady: void <init>()>();
+
+        if $i0 == 44 goto label40;
+
+        virtualinvoke $r14.<com.keji.sendere.FileReady: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        if $i0 == 46 goto label38;
+
+     label31:
+        $r15 = new ad;
+
+        specialinvoke $r15.<ad: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 47 goto label32;
+
+        virtualinvoke $r15.<ad: void onClick(android.view.View)>(null);
+
+     label32:
+        $r16 = new ab;
+
+        specialinvoke $r16.<ab: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 48 goto label33;
+
+        virtualinvoke $r16.<ab: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label33:
+        $r17 = new ac;
+
+        specialinvoke $r17.<ac: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 49 goto label34;
+
+        virtualinvoke $r17.<ac: void onClick(android.view.View)>(null);
+
+     label34:
+        if $i0 == 50 goto label35;
+
+        virtualinvoke $r14.<com.keji.sendere.FileReady: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label35:
+        $r18 = new aa;
+
+        specialinvoke $r18.<aa: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 51 goto label36;
+
+        virtualinvoke $r18.<aa: void onClick(android.view.View)>(null);
+
+     label36:
+        $r19 = new y;
+
+        specialinvoke $r19.<y: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 52 goto label37;
+
+        virtualinvoke $r19.<y: void onClick(android.view.View)>(null);
+
+     label37:
+        if $i0 == 53 goto label31;
+
+     label38:
+        if $i0 == 54 goto label30;
+
+        if $i0 == 55 goto label39;
+
+        if $i0 == 56 goto label30;
+
+     label39:
+        virtualinvoke $r14.<com.keji.sendere.FileReady: void onDestroy()>();
+
+     label40:
+        if $i0 == 58 goto label48;
+
+        $r20 = new com.keji.sendere.Recorder;
+
+        specialinvoke $r20.<com.keji.sendere.Recorder: void <init>()>();
+
+        if $i0 == 59 goto label48;
+
+        virtualinvoke $r20.<com.keji.sendere.Recorder: void onCreate(android.os.Bundle)>(null);
+
+     label41:
+        if $i0 == 61 goto label46;
+
+     label42:
+        $r21 = new q;
+
+        specialinvoke $r21.<q: void <init>(com.keji.sendere.Recorder)>($r20);
+
+        if $i0 == 62 goto label43;
+
+        virtualinvoke $r21.<q: void onClick(android.view.View)>(null);
+
+     label43:
+        $r22 = new r;
+
+        specialinvoke $r22.<r: void <init>(com.keji.sendere.Recorder)>($r20);
+
+        if $i0 == 63 goto label44;
+
+        virtualinvoke $r22.<r: void onClick(android.view.View)>(null);
+
+     label44:
+        $r23 = new u;
+
+        specialinvoke $r23.<u: void <init>(com.keji.sendere.Recorder)>($r20);
+
+        if $i0 == 64 goto label45;
+
+        virtualinvoke $r23.<u: void onClick(android.view.View)>(null);
+
+     label45:
+        if $i0 == 65 goto label42;
+
+     label46:
+        if $i0 == 66 goto label41;
+
+        if $i0 == 67 goto label47;
+
+        if $i0 == 68 goto label41;
+
+     label47:
+        virtualinvoke $r20.<com.keji.sendere.Recorder: void onDestroy()>();
+
+     label48:
+        if $i0 == 70 goto label50;
+
+        $r24 = new com.keji.sendere.service.ForAlarm;
+
+        specialinvoke $r24.<com.keji.sendere.service.ForAlarm: void <init>()>();
+
+        if $i0 == 71 goto label50;
+
+     label49:
+        virtualinvoke $r24.<com.keji.sendere.service.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 73 goto label49;
+
+     label50:
+        if $i0 == 78 goto label56;
+
+        $r25 = new com.keji.sendere.ReceiveCode;
+
+        specialinvoke $r25.<com.keji.sendere.ReceiveCode: void <init>()>();
+
+        if $i0 == 79 goto label56;
+
+        virtualinvoke $r25.<com.keji.sendere.ReceiveCode: void onCreate(android.os.Bundle)>(null);
+
+     label51:
+        if $i0 == 81 goto label55;
+
+     label52:
+        $r26 = new e;
+
+        specialinvoke $r26.<e: void <init>(com.keji.sendere.ReceiveCode)>($r25);
+
+        if $i0 == 82 goto label53;
+
+        virtualinvoke $r26.<e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label53:
+        $r27 = new c;
+
+        specialinvoke $r27.<c: void <init>(com.keji.sendere.ReceiveCode)>($r25);
+
+        if $i0 == 83 goto label54;
+
+        virtualinvoke $r27.<c: void onClick(android.view.View)>(null);
+
+     label54:
+        if $i0 == 84 goto label52;
+
+     label55:
+        if $i0 == 85 goto label51;
+
+        if $i0 == 86 goto label56;
+
+        if $i0 == 87 goto label51;
+
+     label56:
+        if $i0 == 89 goto label61;
+
+        $r28 = new com.keji.sendere.FileReceive;
+
+        specialinvoke $r28.<com.keji.sendere.FileReceive: void <init>()>();
+
+        virtualinvoke $r28.<com.keji.sendere.FileReceive: void onCreate()>();
+
+        virtualinvoke $r28.<com.keji.sendere.FileReceive: void onStart(android.content.Intent,int)>(null, 0);
+
+     label57:
+        if $i0 == 90 goto label58;
+
+        if $i0 == 91 goto label57;
+
+     label58:
+        $r29 = virtualinvoke $r28.<com.keji.sendere.FileReceive: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label59:
+        if $i0 == 93 goto label60;
+
+        if $i0 == 94 goto label59;
+
+     label60:
+        virtualinvoke $r28.<com.keji.sendere.FileReceive: void onDestroy()>();
+
+     label61:
+        if $i0 == 95 goto label67;
+
+        $r30 = new com.keji.sendere.FileView;
+
+        specialinvoke $r30.<com.keji.sendere.FileView: void <init>()>();
+
+        if $i0 == 96 goto label67;
+
+        virtualinvoke $r30.<com.keji.sendere.FileView: void onCreate(android.os.Bundle)>(null);
+
+     label62:
+        virtualinvoke $r30.<com.keji.sendere.FileView: void onStart()>();
+
+     label63:
+        if $i0 == 98 goto label66;
+
+     label64:
+        if $i0 == 99 goto label65;
+
+        virtualinvoke $r30.<com.keji.sendere.FileView: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label65:
+        if $i0 == 100 goto label64;
+
+     label66:
+        if $i0 == 101 goto label63;
+
+        if $i0 == 102 goto label67;
+
+        if $i0 == 103 goto label62;
+
+     label67:
+        if $i0 == 105 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Running incremental callback analysis for 11 components...
+Incremental callback analysis done.
+Found 42 callback methods for 11 components
+Found {res/layout/record.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131230733 - android.widget.TextView, -1 - android.widget.RelativeLayout, 2131230735 - android.widget.Button, 2131230734 - android.widget.Button, 2131230736 - android.widget.Button], res/layout/file.xml=[-1 - android.widget.LinearLayout, 2131230720 - android.widget.ImageView, 2131230721 - android.widget.TextView], res/layout/main.xml=[-1 - android.widget.LinearLayout, 2131230726 - android.widget.TextView], res/layout/ready.xml=[2131230732 - android.widget.Button, -1 - android.widget.LinearLayout, 2131230730 - android.widget.Button, 2131230731 - android.widget.Button, 2131230729 - android.widget.EditText, 2131230728 - android.widget.TextView, -1 - android.widget.RelativeLayout], res/layout/index.xml=[-1 - android.widget.LinearLayout, 2131230724 - android.widget.Button, 2131230722 - android.widget.Button, 2131230725 - android.widget.Button, 2131230723 - android.widget.Button, -1 - android.widget.RelativeLayout], res/layout/tiqu.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131230737 - android.widget.EditText, 2131230738 - android.widget.Button], res/layout/newindex.xml=[2131230727 - android.widget.TableLayout, 2131230724 - android.widget.Button, 2131230722 - android.widget.Button, 2131230725 - android.widget.Button, 2131230723 - android.widget.Button, -1 - android.widget.TableRow, -1 - android.widget.RelativeLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 42 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6b29d1d0591e51ff63838a8d31af5067d8b02ba33d009baaece8047b4ca5b206.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.awt.Graphics is a phantom class!
+Warning: java.awt.GraphicsEnvironment is a phantom class!
+Warning: java.awt.Image is a phantom class!
+Warning: java.awt.Point is a phantom class!
+Warning: java.awt.Toolkit is a phantom class!
+Warning: java.awt.color.ColorSpace is a phantom class!
+Warning: java.awt.datatransfer.Clipboard is a phantom class!
+Warning: java.awt.datatransfer.DataFlavor is a phantom class!
+Warning: java.awt.datatransfer.FlavorMap is a phantom class!
+Warning: java.awt.datatransfer.SystemFlavorMap is a phantom class!
+Warning: java.awt.datatransfer.Transferable is a phantom class!
+Warning: java.awt.datatransfer.UnsupportedFlavorException is a phantom class!
+Warning: java.awt.dnd.DragGestureEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceContext is a phantom class!
+Warning: java.awt.dnd.DragSourceDragEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceDropEvent is a phantom class!
+Warning: java.awt.dnd.DragSourceEvent is a phantom class!
+Warning: java.awt.dnd.DropTargetContext is a phantom class!
+Warning: java.awt.dnd.peer.DragSourceContextPeer is a phantom class!
+Warning: java.awt.dnd.peer.DropTargetContextPeer is a phantom class!
+Warning: java.awt.image.BufferedImage is a phantom class!
+Warning: java.awt.image.ColorModel is a phantom class!
+Warning: java.awt.image.ComponentColorModel is a phantom class!
+Warning: java.awt.image.DataBuffer is a phantom class!
+Warning: java.awt.image.DataBufferByte is a phantom class!
+Warning: java.awt.image.DataBufferInt is a phantom class!
+Warning: java.awt.image.DataBufferUShort is a phantom class!
+Warning: java.awt.image.DirectColorModel is a phantom class!
+Warning: java.awt.image.ImageObserver is a phantom class!
+Warning: java.awt.image.Raster is a phantom class!
+Warning: java.awt.image.WritableRaster is a phantom class!
+Warning: java.beans.Beans is a phantom class!
+Warning: javax.security.auth.callback.NameCallback is a phantom class!
+Warning: javax.security.sasl.RealmCallback is a phantom class!
+Warning: javax.security.sasl.RealmChoiceCallback is a phantom class!
+Warning: javax.security.sasl.Sasl is a phantom class!
+Warning: javax.security.sasl.SaslClient is a phantom class!
+Warning: javax.security.sasl.SaslException is a phantom class!
+Warning: sms.SMSreceiver is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.sendere.FileSender $r1;
+        android.os.IBinder $r2, $r4, $r7, $r29;
+        com.keji.sendere.service.SysM $r3;
+        com.keji.sendere.FileBrowse $r5;
+        boolean $z0, $z1;
+        com.keji.sendere.service.Mrun $r6;
+        com.keji.sendere.Start $r8;
+        w $r9;
+        z $r10;
+        t $r11;
+        v $r12;
+        s $r13;
+        com.keji.sendere.FileReady $r14;
+        ac $r15;
+        y $r16;
+        ab $r17;
+        aa $r18;
+        ad $r19;
+        com.keji.sendere.Recorder $r20;
+        r $r21;
+        u $r22;
+        q $r23;
+        com.keji.sendere.service.ForAlarm $r24;
+        com.keji.sendere.ReceiveCode $r25;
+        c $r26;
+        e $r27;
+        com.keji.sendere.FileReceive $r28;
+        com.keji.sendere.FileView $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.keji.sendere.FileSender;
+
+        specialinvoke $r1.<com.keji.sendere.FileSender: void <init>()>();
+
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onCreate()>();
+
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.keji.sendere.FileSender: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.keji.sendere.FileSender: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label10;
+
+        $r3 = new com.keji.sendere.service.SysM;
+
+        specialinvoke $r3.<com.keji.sendere.service.SysM: void <init>()>();
+
+        virtualinvoke $r3.<com.keji.sendere.service.SysM: void onCreate()>();
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        if $i0 == 8 goto label07;
+
+     label08:
+        $r4 = virtualinvoke $r3.<com.keji.sendere.service.SysM: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label09:
+        if $i0 == 10 goto label10;
+
+        if $i0 == 11 goto label09;
+
+     label10:
+        if $i0 == 12 goto label16;
+
+        $r5 = new com.keji.sendere.FileBrowse;
+
+        specialinvoke $r5.<com.keji.sendere.FileBrowse: void <init>()>();
+
+        if $i0 == 13 goto label16;
+
+        virtualinvoke $r5.<com.keji.sendere.FileBrowse: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 15 goto label15;
+
+     label12:
+        if $i0 == 16 goto label13;
+
+        $z0 = virtualinvoke $r5.<com.keji.sendere.FileBrowse: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label13:
+        if $i0 == 17 goto label14;
+
+        virtualinvoke $r5.<com.keji.sendere.FileBrowse: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label14:
+        if $i0 == 18 goto label12;
+
+     label15:
+        if $i0 == 19 goto label11;
+
+        if $i0 == 20 goto label16;
+
+        if $i0 == 21 goto label11;
+
+     label16:
+        if $i0 == 23 goto label20;
+
+        $r6 = new com.keji.sendere.service.Mrun;
+
+        specialinvoke $r6.<com.keji.sendere.service.Mrun: void <init>()>();
+
+        virtualinvoke $r6.<com.keji.sendere.service.Mrun: void onCreate()>();
+
+        virtualinvoke $r6.<com.keji.sendere.service.Mrun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label17:
+        if $i0 == 24 goto label18;
+
+        if $i0 == 25 goto label17;
+
+     label18:
+        $r7 = virtualinvoke $r6.<com.keji.sendere.service.Mrun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label19:
+        if $i0 == 27 goto label20;
+
+        if $i0 == 28 goto label19;
+
+     label20:
+        if $i0 == 29 goto label29;
+
+        $r8 = new com.keji.sendere.Start;
+
+        specialinvoke $r8.<com.keji.sendere.Start: void <init>()>();
+
+        if $i0 == 30 goto label29;
+
+        virtualinvoke $r8.<com.keji.sendere.Start: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 32 goto label28;
+
+     label22:
+        $r9 = new w;
+
+        specialinvoke $r9.<w: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 33 goto label23;
+
+        virtualinvoke $r9.<w: void onClick(android.view.View)>(null);
+
+     label23:
+        $r10 = new z;
+
+        specialinvoke $r10.<z: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 34 goto label24;
+
+        $z1 = virtualinvoke $r10.<z: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label24:
+        $r11 = new t;
+
+        specialinvoke $r11.<t: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 35 goto label25;
+
+        virtualinvoke $r11.<t: void onClick(android.view.View)>(null);
+
+     label25:
+        $r12 = new v;
+
+        specialinvoke $r12.<v: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 36 goto label26;
+
+        virtualinvoke $r12.<v: void onClick(android.view.View)>(null);
+
+     label26:
+        $r13 = new s;
+
+        specialinvoke $r13.<s: void <init>(com.keji.sendere.Start)>($r8);
+
+        if $i0 == 37 goto label27;
+
+        virtualinvoke $r13.<s: void onClick(android.view.View)>(null);
+
+     label27:
+        if $i0 == 38 goto label22;
+
+     label28:
+        if $i0 == 39 goto label21;
+
+        if $i0 == 40 goto label29;
+
+        if $i0 == 41 goto label21;
+
+     label29:
+        if $i0 == 43 goto label40;
+
+        $r14 = new com.keji.sendere.FileReady;
+
+        specialinvoke $r14.<com.keji.sendere.FileReady: void <init>()>();
+
+        if $i0 == 44 goto label40;
+
+        virtualinvoke $r14.<com.keji.sendere.FileReady: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        if $i0 == 46 goto label38;
+
+     label31:
+        $r15 = new ac;
+
+        specialinvoke $r15.<ac: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 47 goto label32;
+
+        virtualinvoke $r15.<ac: void onClick(android.view.View)>(null);
+
+     label32:
+        $r16 = new y;
+
+        specialinvoke $r16.<y: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 48 goto label33;
+
+        virtualinvoke $r16.<y: void onClick(android.view.View)>(null);
+
+     label33:
+        $r17 = new ab;
+
+        specialinvoke $r17.<ab: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 49 goto label34;
+
+        virtualinvoke $r17.<ab: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label34:
+        $r18 = new aa;
+
+        specialinvoke $r18.<aa: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 50 goto label35;
+
+        virtualinvoke $r18.<aa: void onClick(android.view.View)>(null);
+
+     label35:
+        if $i0 == 51 goto label36;
+
+        virtualinvoke $r14.<com.keji.sendere.FileReady: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label36:
+        $r19 = new ad;
+
+        specialinvoke $r19.<ad: void <init>(com.keji.sendere.FileReady)>($r14);
+
+        if $i0 == 52 goto label37;
+
+        virtualinvoke $r19.<ad: void onClick(android.view.View)>(null);
+
+     label37:
+        if $i0 == 53 goto label31;
+
+     label38:
+        if $i0 == 54 goto label30;
+
+        if $i0 == 55 goto label39;
+
+        if $i0 == 56 goto label30;
+
+     label39:
+        virtualinvoke $r14.<com.keji.sendere.FileReady: void onDestroy()>();
+
+     label40:
+        if $i0 == 58 goto label48;
+
+        $r20 = new com.keji.sendere.Recorder;
+
+        specialinvoke $r20.<com.keji.sendere.Recorder: void <init>()>();
+
+        if $i0 == 59 goto label48;
+
+        virtualinvoke $r20.<com.keji.sendere.Recorder: void onCreate(android.os.Bundle)>(null);
+
+     label41:
+        if $i0 == 61 goto label46;
+
+     label42:
+        $r21 = new r;
+
+        specialinvoke $r21.<r: void <init>(com.keji.sendere.Recorder)>($r20);
+
+        if $i0 == 62 goto label43;
+
+        virtualinvoke $r21.<r: void onClick(android.view.View)>(null);
+
+     label43:
+        $r22 = new u;
+
+        specialinvoke $r22.<u: void <init>(com.keji.sendere.Recorder)>($r20);
+
+        if $i0 == 63 goto label44;
+
+        virtualinvoke $r22.<u: void onClick(android.view.View)>(null);
+
+     label44:
+        $r23 = new q;
+
+        specialinvoke $r23.<q: void <init>(com.keji.sendere.Recorder)>($r20);
+
+        if $i0 == 64 goto label45;
+
+        virtualinvoke $r23.<q: void onClick(android.view.View)>(null);
+
+     label45:
+        if $i0 == 65 goto label42;
+
+     label46:
+        if $i0 == 66 goto label41;
+
+        if $i0 == 67 goto label47;
+
+        if $i0 == 68 goto label41;
+
+     label47:
+        virtualinvoke $r20.<com.keji.sendere.Recorder: void onDestroy()>();
+
+     label48:
+        if $i0 == 70 goto label50;
+
+        $r24 = new com.keji.sendere.service.ForAlarm;
+
+        specialinvoke $r24.<com.keji.sendere.service.ForAlarm: void <init>()>();
+
+        if $i0 == 71 goto label50;
+
+     label49:
+        virtualinvoke $r24.<com.keji.sendere.service.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 73 goto label49;
+
+     label50:
+        if $i0 == 78 goto label56;
+
+        $r25 = new com.keji.sendere.ReceiveCode;
+
+        specialinvoke $r25.<com.keji.sendere.ReceiveCode: void <init>()>();
+
+        if $i0 == 79 goto label56;
+
+        virtualinvoke $r25.<com.keji.sendere.ReceiveCode: void onCreate(android.os.Bundle)>(null);
+
+     label51:
+        if $i0 == 81 goto label55;
+
+     label52:
+        $r26 = new c;
+
+        specialinvoke $r26.<c: void <init>(com.keji.sendere.ReceiveCode)>($r25);
+
+        if $i0 == 82 goto label53;
+
+        virtualinvoke $r26.<c: void onClick(android.view.View)>(null);
+
+     label53:
+        $r27 = new e;
+
+        specialinvoke $r27.<e: void <init>(com.keji.sendere.ReceiveCode)>($r25);
+
+        if $i0 == 83 goto label54;
+
+        virtualinvoke $r27.<e: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label54:
+        if $i0 == 84 goto label52;
+
+     label55:
+        if $i0 == 85 goto label51;
+
+        if $i0 == 86 goto label56;
+
+        if $i0 == 87 goto label51;
+
+     label56:
+        if $i0 == 89 goto label61;
+
+        $r28 = new com.keji.sendere.FileReceive;
+
+        specialinvoke $r28.<com.keji.sendere.FileReceive: void <init>()>();
+
+        virtualinvoke $r28.<com.keji.sendere.FileReceive: void onCreate()>();
+
+        virtualinvoke $r28.<com.keji.sendere.FileReceive: void onStart(android.content.Intent,int)>(null, 0);
+
+     label57:
+        if $i0 == 90 goto label58;
+
+        if $i0 == 91 goto label57;
+
+     label58:
+        $r29 = virtualinvoke $r28.<com.keji.sendere.FileReceive: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label59:
+        if $i0 == 93 goto label60;
+
+        if $i0 == 94 goto label59;
+
+     label60:
+        virtualinvoke $r28.<com.keji.sendere.FileReceive: void onDestroy()>();
+
+     label61:
+        if $i0 == 95 goto label67;
+
+        $r30 = new com.keji.sendere.FileView;
+
+        specialinvoke $r30.<com.keji.sendere.FileView: void <init>()>();
+
+        if $i0 == 96 goto label67;
+
+        virtualinvoke $r30.<com.keji.sendere.FileView: void onCreate(android.os.Bundle)>(null);
+
+     label62:
+        virtualinvoke $r30.<com.keji.sendere.FileView: void onStart()>();
+
+     label63:
+        if $i0 == 98 goto label66;
+
+     label64:
+        if $i0 == 99 goto label65;
+
+        virtualinvoke $r30.<com.keji.sendere.FileView: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label65:
+        if $i0 == 100 goto label64;
+
+     label66:
+        if $i0 == 101 goto label63;
+
+        if $i0 == 102 goto label67;
+
+        if $i0 == 103 goto label62;
+
+     label67:
+        if $i0 == 105 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.413243679 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.050630964 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 861 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 53 sources and 36 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 135
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1471
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 5075 forward and 359 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.00351221 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("datas", $r1) in method <com.keji.sendere.FileReady: void a(int,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r0.<com.keji.sendere.FileReady: android.content.Intent getIntent()>() in method <com.keji.sendere.FileReady: void f()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.keji.sendere.service.ForAlarm: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.keji.sendere.service.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, null) in method <h: java.lang.String a(android.content.Context,android.net.Uri)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.keji.sendere.FileReady: void onActivityResult(int,int,android.content.Intent)>
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("datas", $r1), from the following sources:
+	- $r1 = virtualinvoke $r0.<com.keji.sendere.FileReady: android.content.Intent getIntent()>() (in <com.keji.sendere.FileReady: void f()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.keji.sendere.service.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r1, $r2, null, null, null), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.keji.sendere.FileReady: void onActivityResult(int,int,android.content.Intent)>)
+Maximum memory consumption: 179.763232 MB
+Analysis has run for 6.792350011 seconds

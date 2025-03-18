@@ -1,0 +1,757 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.021419329 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0;
+        com.GoldDream.zj.zjReceiver $r3;
+        com.google.ads.AdActivity $r4;
+        com.GoldDream.TingTing11ii.TingTing21 $r5;
+        com.GoldDream.TingTing11ii.readme $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+     label07:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        if $i0 == 10 goto label11;
+
+        $r4 = new com.google.ads.AdActivity;
+
+        specialinvoke $r4.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label11:
+        if $i0 == 17 goto label13;
+
+        $r5 = new com.GoldDream.TingTing11ii.TingTing21;
+
+        specialinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: void <init>()>();
+
+        if $i0 == 18 goto label13;
+
+        virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        if $i0 == 21 goto label13;
+
+        if $i0 == 22 goto label12;
+
+     label13:
+        if $i0 == 24 goto label15;
+
+        $r6 = new com.GoldDream.TingTing11ii.readme;
+
+        specialinvoke $r6.<com.GoldDream.TingTing11ii.readme: void <init>()>();
+
+        if $i0 == 25 goto label15;
+
+        virtualinvoke $r6.<com.GoldDream.TingTing11ii.readme: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 28 goto label15;
+
+        if $i0 == 29 goto label14;
+
+     label15:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: com.GoldDream.TingTing11ii.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: ViewFlipper is a phantom class!
+Warning: com.GoldDream.TingTing11ii.ViewFlipper is a phantom class!
+Warning: android.view.ViewFlipper is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: com.GoldDream.TingTing11ii.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: TextView is a phantom class!
+Warning: com.GoldDream.TingTing11ii.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 2 layout controls in file res/layout/readme.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+        com.GoldDream.zj.zjReceiver $r3;
+        com.google.ads.AdActivity $r4;
+        com.GoldDream.TingTing11ii.TingTing21 $r5;
+        com.google.ads.util.AdUtil$UserActivityReceiver $r6;
+        com.GoldDream.TingTing11ii.readme $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label07;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label06:
+        if $i0 == 6 goto label04;
+
+     label07:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label08;
+
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 11 goto label08;
+
+     label11:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label14;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 13 goto label14;
+
+     label13:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label13;
+
+     label14:
+        if $i0 == 16 goto label23;
+
+        $r4 = new com.google.ads.AdActivity;
+
+        specialinvoke $r4.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 17 goto label23;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 19 goto label21;
+
+     label16:
+        if $i0 == 20 goto label17;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label17:
+        if $i0 == 21 goto label18;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onClick(android.view.View)>(null);
+
+     label18:
+        if $i0 == 22 goto label19;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onPrepared(android.media.MediaPlayer)>(null);
+
+     label19:
+        if $i0 == 23 goto label20;
+
+        $z1 = virtualinvoke $r4.<com.google.ads.AdActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label20:
+        if $i0 == 24 goto label16;
+
+     label21:
+        if $i0 == 25 goto label15;
+
+        if $i0 == 26 goto label22;
+
+        if $i0 == 27 goto label15;
+
+     label22:
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label23:
+        if $i0 == 29 goto label35;
+
+        $r5 = new com.GoldDream.TingTing11ii.TingTing21;
+
+        specialinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: void <init>()>();
+
+        if $i0 == 30 goto label35;
+
+        virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 32 goto label34;
+
+     label25:
+        if $i0 == 33 goto label26;
+
+        $z2 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label26:
+        if $i0 == 34 goto label27;
+
+        $z3 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onDown(android.view.MotionEvent)>(null);
+
+     label27:
+        if $i0 == 35 goto label28;
+
+        $z4 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label28:
+        if $i0 == 36 goto label29;
+
+        $z5 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label29:
+        if $i0 == 37 goto label30;
+
+        staticinvoke <com.GoldDream.TingTing11ii.TingTing21: void <clinit>()>();
+
+     label30:
+        if $i0 == 38 goto label31;
+
+        $z6 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label31:
+        if $i0 == 39 goto label32;
+
+        $z7 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label32:
+        if $i0 == 40 goto label33;
+
+        $z8 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label33:
+        if $i0 == 41 goto label25;
+
+     label34:
+        if $i0 == 42 goto label24;
+
+        if $i0 == 43 goto label35;
+
+        if $i0 == 44 goto label24;
+
+     label35:
+        if $i0 == 46 goto label37;
+
+        $r6 = new com.google.ads.util.AdUtil$UserActivityReceiver;
+
+        specialinvoke $r6.<com.google.ads.util.AdUtil$UserActivityReceiver: void <init>()>();
+
+        if $i0 == 47 goto label37;
+
+     label36:
+        virtualinvoke $r6.<com.google.ads.util.AdUtil$UserActivityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 49 goto label36;
+
+     label37:
+        if $i0 == 50 goto label43;
+
+        $r7 = new com.GoldDream.TingTing11ii.readme;
+
+        specialinvoke $r7.<com.GoldDream.TingTing11ii.readme: void <init>()>();
+
+        if $i0 == 51 goto label43;
+
+        virtualinvoke $r7.<com.GoldDream.TingTing11ii.readme: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        if $i0 == 53 goto label42;
+
+     label39:
+        if $i0 == 54 goto label40;
+
+        $z9 = virtualinvoke $r7.<com.GoldDream.TingTing11ii.readme: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label40:
+        if $i0 == 55 goto label41;
+
+        $z10 = virtualinvoke $r7.<com.GoldDream.TingTing11ii.readme: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label41:
+        if $i0 == 56 goto label39;
+
+     label42:
+        if $i0 == 57 goto label38;
+
+        if $i0 == 58 goto label43;
+
+        if $i0 == 59 goto label38;
+
+     label43:
+        if $i0 == 61 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Found 25 callback methods for 5 components
+Found {res/layout/main.xml=[2131099648 - android.widget.ViewFlipper, 2131099649 - android.widget.LinearLayout, -1 - android.widget.FrameLayout], res/layout/readme.xml=[2131099650 - android.widget.LinearLayout, 2131099651 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 25 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/16a0ac35562031f623e0fe735428fc89b57655613491dea32e558ee8a5627649.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+        com.GoldDream.zj.zjReceiver $r3;
+        com.google.ads.AdActivity $r4;
+        com.GoldDream.TingTing11ii.TingTing21 $r5;
+        com.google.ads.util.AdUtil$UserActivityReceiver $r6;
+        com.GoldDream.TingTing11ii.readme $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label07;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label06:
+        if $i0 == 6 goto label04;
+
+     label07:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label08;
+
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 11 goto label08;
+
+     label11:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label14;
+
+        $r3 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r3.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 13 goto label14;
+
+     label13:
+        virtualinvoke $r3.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 15 goto label13;
+
+     label14:
+        if $i0 == 16 goto label23;
+
+        $r4 = new com.google.ads.AdActivity;
+
+        specialinvoke $r4.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 17 goto label23;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 19 goto label21;
+
+     label16:
+        if $i0 == 20 goto label17;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onClick(android.view.View)>(null);
+
+     label17:
+        if $i0 == 21 goto label18;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onPrepared(android.media.MediaPlayer)>(null);
+
+     label18:
+        if $i0 == 22 goto label19;
+
+        $z1 = virtualinvoke $r4.<com.google.ads.AdActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label19:
+        if $i0 == 23 goto label20;
+
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label20:
+        if $i0 == 24 goto label16;
+
+     label21:
+        if $i0 == 25 goto label15;
+
+        if $i0 == 26 goto label22;
+
+        if $i0 == 27 goto label15;
+
+     label22:
+        virtualinvoke $r4.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label23:
+        if $i0 == 29 goto label35;
+
+        $r5 = new com.GoldDream.TingTing11ii.TingTing21;
+
+        specialinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: void <init>()>();
+
+        if $i0 == 30 goto label35;
+
+        virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 32 goto label34;
+
+     label25:
+        if $i0 == 33 goto label26;
+
+        $z2 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label26:
+        if $i0 == 34 goto label27;
+
+        $z3 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onDown(android.view.MotionEvent)>(null);
+
+     label27:
+        if $i0 == 35 goto label28;
+
+        $z4 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label28:
+        if $i0 == 36 goto label29;
+
+        staticinvoke <com.GoldDream.TingTing11ii.TingTing21: void <clinit>()>();
+
+     label29:
+        if $i0 == 37 goto label30;
+
+        $z5 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label30:
+        if $i0 == 38 goto label31;
+
+        $z6 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label31:
+        if $i0 == 39 goto label32;
+
+        $z7 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label32:
+        if $i0 == 40 goto label33;
+
+        $z8 = virtualinvoke $r5.<com.GoldDream.TingTing11ii.TingTing21: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label33:
+        if $i0 == 41 goto label25;
+
+     label34:
+        if $i0 == 42 goto label24;
+
+        if $i0 == 43 goto label35;
+
+        if $i0 == 44 goto label24;
+
+     label35:
+        if $i0 == 46 goto label37;
+
+        $r6 = new com.google.ads.util.AdUtil$UserActivityReceiver;
+
+        specialinvoke $r6.<com.google.ads.util.AdUtil$UserActivityReceiver: void <init>()>();
+
+        if $i0 == 47 goto label37;
+
+     label36:
+        virtualinvoke $r6.<com.google.ads.util.AdUtil$UserActivityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 49 goto label36;
+
+     label37:
+        if $i0 == 50 goto label43;
+
+        $r7 = new com.GoldDream.TingTing11ii.readme;
+
+        specialinvoke $r7.<com.GoldDream.TingTing11ii.readme: void <init>()>();
+
+        if $i0 == 51 goto label43;
+
+        virtualinvoke $r7.<com.GoldDream.TingTing11ii.readme: void onCreate(android.os.Bundle)>(null);
+
+     label38:
+        if $i0 == 53 goto label42;
+
+     label39:
+        if $i0 == 54 goto label40;
+
+        $z9 = virtualinvoke $r7.<com.GoldDream.TingTing11ii.readme: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label40:
+        if $i0 == 55 goto label41;
+
+        $z10 = virtualinvoke $r7.<com.GoldDream.TingTing11ii.readme: boolean onMenuItemSelected(int,android.view.MenuItem)>(0, null);
+
+     label41:
+        if $i0 == 56 goto label39;
+
+     label42:
+        if $i0 == 57 goto label38;
+
+        if $i0 == 58 goto label43;
+
+        if $i0 == 59 goto label38;
+
+     label43:
+        if $i0 == 61 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.520255639 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.053826494 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1656 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 36 sources and 15 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 603
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 735
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 4464 forward and 1005 backward edges solved, processing 5 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.00365365 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5) in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6) in method <com.GoldDream.zj.zjReceiver: void WriteRec(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 := @parameter1: android.content.Intent in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r13.<java.net.URL: void <init>(java.lang.String)>($r2) in method <com.GoldDream.zj.zjService: java.lang.String getUidfromServer()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6), from the following sources:
+	- $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 := @parameter1: android.content.Intent (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r13.<java.net.URL: void <init>(java.lang.String)>($r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+Maximum memory consumption: 118.7984 MB
+Analysis has run for 4.749980161 seconds

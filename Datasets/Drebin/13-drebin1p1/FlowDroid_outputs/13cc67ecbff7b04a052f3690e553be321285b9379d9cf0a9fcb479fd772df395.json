@@ -1,0 +1,313 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012014867 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.reg.MainRegActivity $r1;
+        com.reg.SmsReceiver $r2;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r1 = new com.reg.MainRegActivity;
+
+        specialinvoke $r1.<com.reg.MainRegActivity: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+        virtualinvoke $r1.<com.reg.MainRegActivity: void onCreate(android.os.Bundle)>(null);
+
+     label2:
+        if $i0 == 4 goto label3;
+
+        if $i0 == 5 goto label2;
+
+     label3:
+        if $i0 == 7 goto label5;
+
+        $r2 = new com.reg.SmsReceiver;
+
+        specialinvoke $r2.<com.reg.SmsReceiver: void <init>()>();
+
+        if $i0 == 8 goto label5;
+
+     label4:
+        virtualinvoke $r2.<com.reg.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 10 goto label4;
+
+     label5:
+        if $i0 == 11 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.reg.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.reg.MainRegActivity $r1;
+        com.reg.MainRegActivity$1 $r2;
+        com.reg.MainRegActivity$3 $r3;
+        com.reg.MainRegActivity$2 $r4;
+        com.reg.SmsReceiver $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label09;
+
+        $r1 = new com.reg.MainRegActivity;
+
+        specialinvoke $r1.<com.reg.MainRegActivity: void <init>()>();
+
+        if $i0 == 1 goto label09;
+
+        virtualinvoke $r1.<com.reg.MainRegActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.reg.MainRegActivity$1;
+
+        specialinvoke $r2.<com.reg.MainRegActivity$1: void <init>(com.reg.MainRegActivity)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<com.reg.MainRegActivity$1: void onClick(android.view.View)>(null);
+
+     label04:
+        $r3 = new com.reg.MainRegActivity$3;
+
+        specialinvoke $r3.<com.reg.MainRegActivity$3: void <init>(com.reg.MainRegActivity)>($r1);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r3.<com.reg.MainRegActivity$3: void onClick(android.view.View)>(null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        staticinvoke <com.reg.MainRegActivity: void <clinit>()>();
+
+     label06:
+        $r4 = new com.reg.MainRegActivity$2;
+
+        specialinvoke $r4.<com.reg.MainRegActivity$2: void <init>(com.reg.MainRegActivity)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r4.<com.reg.MainRegActivity$2: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        if $i0 == 9 goto label02;
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        if $i0 == 13 goto label11;
+
+        $r5 = new com.reg.SmsReceiver;
+
+        specialinvoke $r5.<com.reg.SmsReceiver: void <init>()>();
+
+        if $i0 == 14 goto label11;
+
+     label10:
+        virtualinvoke $r5.<com.reg.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label10;
+
+     label11:
+        if $i0 == 17 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Running incremental callback analysis for 2 components...
+Incremental callback analysis done.
+Found 6 callback methods for 2 components
+Found {res/layout/main.xml=[-1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 6 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/13cc67ecbff7b04a052f3690e553be321285b9379d9cf0a9fcb479fd772df395.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.reg.MainRegActivity $r1;
+        com.reg.MainRegActivity$1 $r2;
+        com.reg.MainRegActivity$2 $r3;
+        com.reg.MainRegActivity$3 $r4;
+        com.reg.SmsReceiver $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label09;
+
+        $r1 = new com.reg.MainRegActivity;
+
+        specialinvoke $r1.<com.reg.MainRegActivity: void <init>()>();
+
+        if $i0 == 1 goto label09;
+
+        virtualinvoke $r1.<com.reg.MainRegActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label08;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <com.reg.MainRegActivity: void <clinit>()>();
+
+     label04:
+        $r2 = new com.reg.MainRegActivity$1;
+
+        specialinvoke $r2.<com.reg.MainRegActivity$1: void <init>(com.reg.MainRegActivity)>($r1);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<com.reg.MainRegActivity$1: void onClick(android.view.View)>(null);
+
+     label05:
+        $r3 = new com.reg.MainRegActivity$2;
+
+        specialinvoke $r3.<com.reg.MainRegActivity$2: void <init>(com.reg.MainRegActivity)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r3.<com.reg.MainRegActivity$2: void onClick(android.view.View)>(null);
+
+     label06:
+        $r4 = new com.reg.MainRegActivity$3;
+
+        specialinvoke $r4.<com.reg.MainRegActivity$3: void <init>(com.reg.MainRegActivity)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r4.<com.reg.MainRegActivity$3: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        if $i0 == 9 goto label02;
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        if $i0 == 13 goto label11;
+
+        $r5 = new com.reg.SmsReceiver;
+
+        specialinvoke $r5.<com.reg.SmsReceiver: void <init>()>();
+
+        if $i0 == 14 goto label11;
+
+     label10:
+        virtualinvoke $r5.<com.reg.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label10;
+
+     label11:
+        if $i0 == 17 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.157497236 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.023959366 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 311 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 8 sources and 1 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 0
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 25
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 277 forward and 36 backward edges solved, processing 0 results...
+[main] WARN soot.jimple.infoflow.Infoflow - No results found.
+Maximum memory consumption: 96.044312 MB
+Analysis has run for 3.134881502 seconds

@@ -1,0 +1,1174 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.016854614 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.net.http.SslError is a phantom class!
+Warning: android.webkit.ConsoleMessage$MessageLevel is a phantom class!
+Warning: android.webkit.ConsoleMessage is a phantom class!
+Warning: android.webkit.WebResourceResponse is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wSHAMNATION.MessageViewer $r1;
+        com.google.ads.AdActivity $r2;
+        com.wSHAMNATION.MainNavigationActivity $r3;
+        com.wSHAMNATION.Server.C2DMClientReceiver $r4;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label05;
+
+        $r1 = new com.wSHAMNATION.MessageViewer;
+
+        specialinvoke $r1.<com.wSHAMNATION.MessageViewer: void <init>()>();
+
+        if $i0 == 1 goto label05;
+
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onStart()>();
+
+        if $i0 == 2 goto label03;
+
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label03:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onPause()>();
+
+        if $i0 == 3 goto label03;
+
+        if $i0 == 4 goto label04;
+
+        if $i0 == 5 goto label02;
+
+     label04:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onDestroy()>();
+
+     label05:
+        if $i0 == 7 goto label08;
+
+        $r2 = new com.google.ads.AdActivity;
+
+        specialinvoke $r2.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label06:
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onPause()>();
+
+        if $i0 == 10 goto label06;
+
+        if $i0 == 11 goto label07;
+
+        if $i0 == 12 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label08:
+        if $i0 == 14 goto label11;
+
+        $r3 = new com.wSHAMNATION.MainNavigationActivity;
+
+        specialinvoke $r3.<com.wSHAMNATION.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 15 goto label11;
+
+        virtualinvoke $r3.<com.wSHAMNATION.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r3.<com.wSHAMNATION.MainNavigationActivity: void onResume()>();
+
+        virtualinvoke $r3.<com.wSHAMNATION.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 17 goto label09;
+
+        if $i0 == 18 goto label10;
+
+        if $i0 == 19 goto label09;
+
+     label10:
+        virtualinvoke $r3.<com.wSHAMNATION.MainNavigationActivity: void onDestroy()>();
+
+     label11:
+        if $i0 == 21 goto label14;
+
+        $r4 = new com.wSHAMNATION.Server.C2DMClientReceiver;
+
+        specialinvoke $r4.<com.wSHAMNATION.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label12:
+        if $i0 == 22 goto label13;
+
+        if $i0 == 23 goto label12;
+
+     label13:
+        if $i0 == 25 goto label14;
+
+        if $i0 == 26 goto label13;
+
+     label14:
+        if $i0 == 27 goto label16;
+
+        $r5 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r5.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 28 goto label16;
+
+     label15:
+        virtualinvoke $r5.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 30 goto label15;
+
+     label16:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.wSHAMNATION.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.wSHAMNATION.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.wSHAMNATION.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/about_dialog.xml
+Warning: Button is a phantom class!
+Warning: com.wSHAMNATION.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/connection_error_dialog.xml
+Warning: TableLayout is a phantom class!
+Warning: com.wSHAMNATION.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.wSHAMNATION.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 3 layout controls in file res/layout/http_authentication.xml
+Warning: FrameLayout is a phantom class!
+Warning: com.wSHAMNATION.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.wSHAMNATION.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 4 layout controls in file res/layout/main.xml
+Warning: WebView is a phantom class!
+Warning: com.wSHAMNATION.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Found 5 layout controls in file res/layout/message_viewer.xml
+Found 6 layout controls in file res/layout/no_content_message.xml
+Found 7 layout controls in file res/layout/startup_screen.xml
+Found 8 layout controls in file res/layout/tab_tag.xml
+Warning: ProgressBar is a phantom class!
+Warning: com.wSHAMNATION.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 9 layout controls in file res/layout/video_loading_progress.xml
+Found 10 layout controls in file res/layout/web_content.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.net.http.SslError is a phantom class!
+Warning: android.webkit.ConsoleMessage$MessageLevel is a phantom class!
+Warning: android.webkit.ConsoleMessage is a phantom class!
+Warning: android.webkit.WebResourceResponse is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.google.ads.l
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.google.ads.Ad, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ViewGroup
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.google.ads.internal.h
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.google.ads.AdSize, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.HttpAuthHandler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.WebView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wSHAMNATION.MessageViewer $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9;
+        com.google.ads.AdActivity $r2;
+        com.google.ads.AdSize $r3, $r7;
+        com.google.ads.AdView $r4;
+        com.google.ads.InterstitialAd $r5;
+        com.google.ads.m $r6;
+        com.google.ads.internal.AdWebView $r8;
+        com.google.ads.internal.AdWebView$1 $r9;
+        com.wSHAMNATION.MainNavigationActivity $r10;
+        com.wSHAMNATION.Views.AboutDialog $r11;
+        com.wSHAMNATION.Views.AboutDialog$1 $r12;
+        com.wSHAMNATION.MainNavigationActivity$7 $r13;
+        com.wSHAMNATION.ads.AdsLoader $r14;
+        com.wSHAMNATION.ads.AdsLoader$1 $r15;
+        com.wSHAMNATION.Model.WidgetEntity $r16, $r19;
+        com.wSHAMNATION.Controllers.WebContentController $r17, $r20;
+        com.wSHAMNATION.Utils.BrowserDownloadListener $r18;
+        com.wSHAMNATION.Controllers.WebContentController$1 $r21;
+        com.wSHAMNATION.MainNavigationActivity$4 $r22;
+        com.wSHAMNATION.MainNavigationActivity$5 $r23;
+        com.wSHAMNATION.MainNavigationActivity$8 $r24;
+        com.wSHAMNATION.MainNavigationActivity$1 $r25;
+        com.wSHAMNATION.MainNavigationActivity$6 $r26;
+        com.wSHAMNATION.Server.C2DMClientReceiver $r27;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r28;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.wSHAMNATION.MessageViewer;
+
+        specialinvoke $r1.<com.wSHAMNATION.MessageViewer: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onStart()>();
+
+        if $i0 == 2 goto label03;
+
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label03:
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onPause()>();
+
+        if $i0 == 6 goto label03;
+
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label02;
+
+     label07:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r2 = new com.google.ads.AdActivity;
+
+        specialinvoke $r2.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 13 goto label13;
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onClick(android.view.View)>(null);
+
+     label11:
+        $r3 = new com.google.ads.AdSize;
+
+        specialinvoke $r3.<com.google.ads.AdSize: void <init>(int,int)>(0, 0);
+
+        $r4 = new com.google.ads.AdView;
+
+        specialinvoke $r4.<com.google.ads.AdView: void <init>(android.app.Activity,com.google.ads.AdSize,java.lang.String)>($r2, $r3, "");
+
+        $r5 = new com.google.ads.InterstitialAd;
+
+        specialinvoke $r5.<com.google.ads.InterstitialAd: void <init>(android.app.Activity,java.lang.String)>($r2, "");
+
+        $r6 = new com.google.ads.m;
+
+        specialinvoke $r6.<com.google.ads.m: void <init>(com.google.ads.l,com.google.ads.Ad,com.google.ads.AdView,com.google.ads.InterstitialAd,java.lang.String,android.app.Activity,android.content.Context,android.view.ViewGroup,com.google.ads.internal.h)>(null, null, $r4, $r5, "", $r2, $r2, null, null);
+
+        $r7 = null;
+
+        $r8 = new com.google.ads.internal.AdWebView;
+
+        specialinvoke $r8.<com.google.ads.internal.AdWebView: void <init>(com.google.ads.m,com.google.ads.AdSize)>($r6, $r7);
+
+        $r9 = new com.google.ads.internal.AdWebView$1;
+
+        specialinvoke $r9.<com.google.ads.internal.AdWebView$1: void <init>(com.google.ads.internal.AdWebView)>($r8);
+
+        if $i0 == 15 goto label12;
+
+        virtualinvoke $r9.<com.google.ads.internal.AdWebView$1: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label12:
+        if $i0 == 16 goto label10;
+
+     label13:
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onPause()>();
+
+        if $i0 == 17 goto label09;
+
+        if $i0 == 18 goto label14;
+
+        if $i0 == 19 goto label09;
+
+     label14:
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 21 goto label40;
+
+        $r10 = new com.wSHAMNATION.MainNavigationActivity;
+
+        specialinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 22 goto label40;
+
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onResume()>();
+
+        if $i0 == 24 goto label38;
+
+     label17:
+        $r11 = new com.wSHAMNATION.Views.AboutDialog;
+
+        specialinvoke $r11.<com.wSHAMNATION.Views.AboutDialog: void <init>(android.content.Context)>($r10);
+
+        $r12 = new com.wSHAMNATION.Views.AboutDialog$1;
+
+        specialinvoke $r12.<com.wSHAMNATION.Views.AboutDialog$1: void <init>(com.wSHAMNATION.Views.AboutDialog,java.lang.String,com.wSHAMNATION.MainNavigationActivity)>($r11, "", $r10);
+
+        if $i0 == 25 goto label18;
+
+        $z1 = virtualinvoke $r12.<com.wSHAMNATION.Views.AboutDialog$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label18:
+        $r13 = new com.wSHAMNATION.MainNavigationActivity$7;
+
+        specialinvoke $r13.<com.wSHAMNATION.MainNavigationActivity$7: void <init>(com.wSHAMNATION.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r10, null);
+
+        if $i0 == 26 goto label19;
+
+        virtualinvoke $r13.<com.wSHAMNATION.MainNavigationActivity$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        $r14 = new com.wSHAMNATION.ads.AdsLoader;
+
+        specialinvoke $r14.<com.wSHAMNATION.ads.AdsLoader: void <init>()>();
+
+        $r15 = new com.wSHAMNATION.ads.AdsLoader$1;
+
+        specialinvoke $r15.<com.wSHAMNATION.ads.AdsLoader$1: void <init>(com.wSHAMNATION.ads.AdsLoader)>($r14);
+
+        if $i0 == 27 goto label20;
+
+        $z2 = virtualinvoke $r15.<com.wSHAMNATION.ads.AdsLoader$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label20:
+        $r16 = new com.wSHAMNATION.Model.WidgetEntity;
+
+        specialinvoke $r16.<com.wSHAMNATION.Model.WidgetEntity: void <init>()>();
+
+        $r17 = new com.wSHAMNATION.Controllers.WebContentController;
+
+        specialinvoke $r17.<com.wSHAMNATION.Controllers.WebContentController: void <init>(com.wSHAMNATION.Model.WidgetEntity)>($r16);
+
+        $r18 = new com.wSHAMNATION.Utils.BrowserDownloadListener;
+
+        specialinvoke $r18.<com.wSHAMNATION.Utils.BrowserDownloadListener: void <init>(com.wSHAMNATION.Controllers.WebContentController)>($r17);
+
+        if $i0 == 28 goto label21;
+
+        virtualinvoke $r18.<com.wSHAMNATION.Utils.BrowserDownloadListener: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label21:
+        $r19 = new com.wSHAMNATION.Model.WidgetEntity;
+
+        specialinvoke $r19.<com.wSHAMNATION.Model.WidgetEntity: void <init>()>();
+
+        $r20 = new com.wSHAMNATION.Controllers.WebContentController;
+
+        specialinvoke $r20.<com.wSHAMNATION.Controllers.WebContentController: void <init>(com.wSHAMNATION.Model.WidgetEntity)>($r19);
+
+        $r21 = new com.wSHAMNATION.Controllers.WebContentController$1;
+
+        specialinvoke $r21.<com.wSHAMNATION.Controllers.WebContentController$1: void <init>(com.wSHAMNATION.Controllers.WebContentController)>($r20);
+
+        if $i0 == 29 goto label22;
+
+        $z3 = virtualinvoke $r21.<com.wSHAMNATION.Controllers.WebContentController$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label22:
+        $r22 = new com.wSHAMNATION.MainNavigationActivity$4;
+
+        specialinvoke $r22.<com.wSHAMNATION.MainNavigationActivity$4: void <init>(com.wSHAMNATION.MainNavigationActivity)>($r10);
+
+        if $i0 == 30 goto label23;
+
+        virtualinvoke $r22.<com.wSHAMNATION.MainNavigationActivity$4: void onClick(android.view.View)>(null);
+
+     label23:
+        $r23 = new com.wSHAMNATION.MainNavigationActivity$5;
+
+        specialinvoke $r23.<com.wSHAMNATION.MainNavigationActivity$5: void <init>(com.wSHAMNATION.MainNavigationActivity)>($r10);
+
+        if $i0 == 31 goto label24;
+
+        virtualinvoke $r23.<com.wSHAMNATION.MainNavigationActivity$5: void onClick(android.view.View)>(null);
+
+     label24:
+        $r24 = new com.wSHAMNATION.MainNavigationActivity$8;
+
+        specialinvoke $r24.<com.wSHAMNATION.MainNavigationActivity$8: void <init>(com.wSHAMNATION.MainNavigationActivity,android.view.View,android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.HttpAuthHandler)>($r10, null, null, "", "", null);
+
+        if $i0 == 32 goto label25;
+
+        virtualinvoke $r24.<com.wSHAMNATION.MainNavigationActivity$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        if $i0 == 33 goto label26;
+
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label26:
+        if $i0 == 34 goto label27;
+
+        $z4 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onKeyLongPress(int,android.view.KeyEvent)>(0, null);
+
+     label27:
+        if $i0 == 35 goto label28;
+
+        $z5 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label28:
+        if $i0 == 36 goto label29;
+
+        staticinvoke <com.wSHAMNATION.MainNavigationActivity: void <clinit>()>();
+
+     label29:
+        if $i0 == 37 goto label30;
+
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label30:
+        if $i0 == 38 goto label31;
+
+        $z6 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label31:
+        if $i0 == 39 goto label32;
+
+        $z7 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label32:
+        if $i0 == 40 goto label33;
+
+        $z8 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label33:
+        if $i0 == 41 goto label34;
+
+        $z9 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label34:
+        if $i0 == 42 goto label35;
+
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label35:
+        $r25 = new com.wSHAMNATION.MainNavigationActivity$1;
+
+        specialinvoke $r25.<com.wSHAMNATION.MainNavigationActivity$1: void <init>(com.wSHAMNATION.MainNavigationActivity)>($r10);
+
+        if $i0 == 43 goto label36;
+
+        virtualinvoke $r25.<com.wSHAMNATION.MainNavigationActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label36:
+        $r26 = new com.wSHAMNATION.MainNavigationActivity$6;
+
+        specialinvoke $r26.<com.wSHAMNATION.MainNavigationActivity$6: void <init>(com.wSHAMNATION.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r10, null);
+
+        if $i0 == 44 goto label37;
+
+        virtualinvoke $r26.<com.wSHAMNATION.MainNavigationActivity$6: void onCancel(android.content.DialogInterface)>(null);
+
+     label37:
+        if $i0 == 45 goto label17;
+
+     label38:
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 46 goto label16;
+
+        if $i0 == 47 goto label39;
+
+        if $i0 == 48 goto label16;
+
+     label39:
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onDestroy()>();
+
+     label40:
+        if $i0 == 50 goto label51;
+
+        $r27 = new com.wSHAMNATION.Server.C2DMClientReceiver;
+
+        specialinvoke $r27.<com.wSHAMNATION.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label41:
+        if $i0 == 51 goto label42;
+
+        if $i0 == 52 goto label41;
+
+     label42:
+        if $i0 == 53 goto label47;
+
+     label43:
+        if $i0 == 54 goto label44;
+
+        virtualinvoke $r27.<com.wSHAMNATION.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r27, "");
+
+        $r27 = null;
+
+     label44:
+        if $i0 == 55 goto label45;
+
+        virtualinvoke $r27.<com.wSHAMNATION.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r27, "");
+
+        $r27 = null;
+
+     label45:
+        if $i0 == 56 goto label46;
+
+        virtualinvoke $r27.<com.wSHAMNATION.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r27, null);
+
+        $r27 = null;
+
+     label46:
+        if $i0 == 57 goto label43;
+
+     label47:
+        if $i0 == 58 goto label48;
+
+        virtualinvoke $r27.<com.wSHAMNATION.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r27, "");
+
+        $r27 = null;
+
+     label48:
+        if $i0 == 59 goto label49;
+
+        virtualinvoke $r27.<com.wSHAMNATION.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r27, "");
+
+        $r27 = null;
+
+     label49:
+        if $i0 == 60 goto label50;
+
+        virtualinvoke $r27.<com.wSHAMNATION.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r27, null);
+
+        $r27 = null;
+
+     label50:
+        if $i0 == 61 goto label47;
+
+        if $i0 == 62 goto label51;
+
+        if $i0 == 63 goto label47;
+
+     label51:
+        if $i0 == 64 goto label53;
+
+        $r28 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r28.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 65 goto label53;
+
+     label52:
+        virtualinvoke $r28.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 67 goto label52;
+
+     label53:
+        if $i0 == 68 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Found 37 callback methods for 4 components
+Found {res/layout/about_dialog.xml=[2131427328 - android.widget.LinearLayout, 2131427331 - android.widget.TextView, 2131427329 - android.widget.ImageView, 2131427330 - android.widget.TextView], res/layout/no_content_message.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/startup_screen.xml=[-1 - android.widget.RelativeLayout, 2131427353 - android.widget.RelativeLayout, 2131427350 - com.wSHAMNATION.Views.BrowserWebView, 2131427351 - android.widget.TextView], res/layout/connection_error_dialog.xml=[2131427333 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131427332 - android.widget.LinearLayout, 2131427334 - android.widget.Button, 2131427335 - android.widget.Button], res/layout/main.xml=[2131427349 - android.widget.RelativeLayout, -1 - android.widget.FrameLayout, 2131427340 - android.widget.LinearLayout, 2131427344 - com.wSHAMNATION.Views.BrowserWebView, 2131427346 - android.widget.LinearLayout, 2131427350 - com.wSHAMNATION.Views.BrowserWebView, 2131427351 - android.widget.TextView, 2131427347 - android.widget.FrameLayout, 2131427345 - android.widget.FrameLayout, -1 - android.widget.RelativeLayout, 2131427341 - com.wSHAMNATION.Views.TransparentPanel, 2131427343 - android.widget.FrameLayout, 2131427348 - android.widget.FrameLayout], res/layout/http_authentication.xml=[-1 - android.widget.TableLayout, 2131427338 - android.widget.TextView, 2131427336 - android.widget.TextView, 2131427339 - android.widget.EditText, 2131427337 - android.widget.EditText], res/layout/tab_tag.xml=[2131427356 - android.widget.ImageView, 2131427357 - android.widget.TextView, 2131427355 - android.widget.LinearLayout, 2131427354 - com.wSHAMNATION.Views.TabTag], res/layout/video_loading_progress.xml=[16908301 - android.widget.ProgressBar, 2131427358 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/message_viewer.xml=[2131427352 - android.webkit.WebView, -1 - android.widget.LinearLayout], res/layout/web_content.xml=[2131427360 - com.wSHAMNATION.Views.BrowserWebView, 2131427361 - android.widget.RelativeLayout, 2131427331 - android.widget.TextView, 2131427362 - android.widget.ProgressBar, 2131427363 - android.widget.RelativeLayout, 2131427364 - android.widget.RelativeLayout, 2131427359 - com.wSHAMNATION.Views.WebContent]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 37 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/29da584943b7693570e0b9f185661aec5242745940223204f530a8d52bfcfaec.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.net.http.SslError is a phantom class!
+Warning: android.webkit.ConsoleMessage$MessageLevel is a phantom class!
+Warning: android.webkit.ConsoleMessage is a phantom class!
+Warning: android.webkit.WebResourceResponse is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.google.ads.l
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.google.ads.Ad, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ViewGroup
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.google.ads.internal.h
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.google.ads.AdSize, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.WebView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.webkit.HttpAuthHandler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.wSHAMNATION.MessageViewer $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9;
+        com.google.ads.AdActivity $r2;
+        com.google.ads.AdSize $r3, $r7;
+        com.google.ads.AdView $r4;
+        com.google.ads.InterstitialAd $r5;
+        com.google.ads.m $r6;
+        com.google.ads.internal.AdWebView $r8;
+        com.google.ads.internal.AdWebView$1 $r9;
+        com.wSHAMNATION.MainNavigationActivity $r10;
+        com.wSHAMNATION.MainNavigationActivity$8 $r11;
+        com.wSHAMNATION.Views.BrowserWebView $r12;
+        com.wSHAMNATION.Model.WidgetEntity $r13, $r16;
+        com.wSHAMNATION.Controllers.WebContentController $r14, $r17;
+        com.wSHAMNATION.Controllers.WebContentController$1 $r15;
+        com.wSHAMNATION.Utils.BrowserDownloadListener $r18;
+        com.wSHAMNATION.Views.TransparentPanel $r19;
+        com.wSHAMNATION.Views.AboutDialog $r20;
+        com.wSHAMNATION.Views.AboutDialog$1 $r21;
+        com.wSHAMNATION.MainNavigationActivity$6 $r22;
+        com.wSHAMNATION.MainNavigationActivity$5 $r23;
+        com.wSHAMNATION.ads.AdsLoader $r24;
+        com.wSHAMNATION.ads.AdsLoader$1 $r25;
+        com.wSHAMNATION.MainNavigationActivity$1 $r26;
+        com.wSHAMNATION.MainNavigationActivity$4 $r27;
+        com.wSHAMNATION.MainNavigationActivity$7 $r28;
+        com.wSHAMNATION.Server.C2DMClientReceiver $r29;
+        com.google.android.c2dm.C2DMBroadcastReceiver $r30;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new com.wSHAMNATION.MessageViewer;
+
+        specialinvoke $r1.<com.wSHAMNATION.MessageViewer: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onStart()>();
+
+        if $i0 == 2 goto label03;
+
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label03:
+        if $i0 == 3 goto label06;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label05:
+        if $i0 == 5 goto label04;
+
+     label06:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onPause()>();
+
+        if $i0 == 6 goto label03;
+
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label02;
+
+     label07:
+        virtualinvoke $r1.<com.wSHAMNATION.MessageViewer: void onDestroy()>();
+
+     label08:
+        if $i0 == 10 goto label15;
+
+        $r2 = new com.google.ads.AdActivity;
+
+        specialinvoke $r2.<com.google.ads.AdActivity: void <init>()>();
+
+        if $i0 == 11 goto label15;
+
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 13 goto label13;
+
+     label10:
+        $r3 = new com.google.ads.AdSize;
+
+        specialinvoke $r3.<com.google.ads.AdSize: void <init>(int,int)>(0, 0);
+
+        $r4 = new com.google.ads.AdView;
+
+        specialinvoke $r4.<com.google.ads.AdView: void <init>(android.app.Activity,com.google.ads.AdSize,java.lang.String)>($r2, $r3, "");
+
+        $r5 = new com.google.ads.InterstitialAd;
+
+        specialinvoke $r5.<com.google.ads.InterstitialAd: void <init>(android.app.Activity,java.lang.String)>($r2, "");
+
+        $r6 = new com.google.ads.m;
+
+        specialinvoke $r6.<com.google.ads.m: void <init>(com.google.ads.l,com.google.ads.Ad,com.google.ads.AdView,com.google.ads.InterstitialAd,java.lang.String,android.app.Activity,android.content.Context,android.view.ViewGroup,com.google.ads.internal.h)>(null, null, $r4, $r5, "", $r2, $r2, null, null);
+
+        $r7 = null;
+
+        $r8 = new com.google.ads.internal.AdWebView;
+
+        specialinvoke $r8.<com.google.ads.internal.AdWebView: void <init>(com.google.ads.m,com.google.ads.AdSize)>($r6, $r7);
+
+        $r9 = new com.google.ads.internal.AdWebView$1;
+
+        specialinvoke $r9.<com.google.ads.internal.AdWebView$1: void <init>(com.google.ads.internal.AdWebView)>($r8);
+
+        if $i0 == 14 goto label11;
+
+        virtualinvoke $r9.<com.google.ads.internal.AdWebView$1: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label11:
+        if $i0 == 15 goto label12;
+
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onClick(android.view.View)>(null);
+
+     label12:
+        if $i0 == 16 goto label10;
+
+     label13:
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onPause()>();
+
+        if $i0 == 17 goto label09;
+
+        if $i0 == 18 goto label14;
+
+        if $i0 == 19 goto label09;
+
+     label14:
+        virtualinvoke $r2.<com.google.ads.AdActivity: void onDestroy()>();
+
+     label15:
+        if $i0 == 21 goto label42;
+
+        $r10 = new com.wSHAMNATION.MainNavigationActivity;
+
+        specialinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void <init>()>();
+
+        if $i0 == 22 goto label42;
+
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onResume()>();
+
+        if $i0 == 24 goto label40;
+
+     label17:
+        $r11 = new com.wSHAMNATION.MainNavigationActivity$8;
+
+        specialinvoke $r11.<com.wSHAMNATION.MainNavigationActivity$8: void <init>(com.wSHAMNATION.MainNavigationActivity,android.view.View,android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.HttpAuthHandler)>($r10, null, null, "", "", null);
+
+        if $i0 == 25 goto label18;
+
+        virtualinvoke $r11.<com.wSHAMNATION.MainNavigationActivity$8: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label18:
+        $r12 = new com.wSHAMNATION.Views.BrowserWebView;
+
+        specialinvoke $r12.<com.wSHAMNATION.Views.BrowserWebView: void <init>(android.content.Context,android.util.AttributeSet)>($r10, null);
+
+        if $i0 == 26 goto label19;
+
+        virtualinvoke $r12.<com.wSHAMNATION.Views.BrowserWebView: void onWindowVisibilityChanged(int)>(0);
+
+     label19:
+        $r13 = new com.wSHAMNATION.Model.WidgetEntity;
+
+        specialinvoke $r13.<com.wSHAMNATION.Model.WidgetEntity: void <init>()>();
+
+        $r14 = new com.wSHAMNATION.Controllers.WebContentController;
+
+        specialinvoke $r14.<com.wSHAMNATION.Controllers.WebContentController: void <init>(com.wSHAMNATION.Model.WidgetEntity)>($r13);
+
+        $r15 = new com.wSHAMNATION.Controllers.WebContentController$1;
+
+        specialinvoke $r15.<com.wSHAMNATION.Controllers.WebContentController$1: void <init>(com.wSHAMNATION.Controllers.WebContentController)>($r14);
+
+        if $i0 == 27 goto label20;
+
+        $z1 = virtualinvoke $r15.<com.wSHAMNATION.Controllers.WebContentController$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label20:
+        $r16 = new com.wSHAMNATION.Model.WidgetEntity;
+
+        specialinvoke $r16.<com.wSHAMNATION.Model.WidgetEntity: void <init>()>();
+
+        $r17 = new com.wSHAMNATION.Controllers.WebContentController;
+
+        specialinvoke $r17.<com.wSHAMNATION.Controllers.WebContentController: void <init>(com.wSHAMNATION.Model.WidgetEntity)>($r16);
+
+        $r18 = new com.wSHAMNATION.Utils.BrowserDownloadListener;
+
+        specialinvoke $r18.<com.wSHAMNATION.Utils.BrowserDownloadListener: void <init>(com.wSHAMNATION.Controllers.WebContentController)>($r17);
+
+        if $i0 == 28 goto label21;
+
+        virtualinvoke $r18.<com.wSHAMNATION.Utils.BrowserDownloadListener: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label21:
+        $r19 = new com.wSHAMNATION.Views.TransparentPanel;
+
+        specialinvoke $r19.<com.wSHAMNATION.Views.TransparentPanel: void <init>(android.content.Context)>($r10);
+
+        if $i0 == 29 goto label22;
+
+        virtualinvoke $r19.<com.wSHAMNATION.Views.TransparentPanel: void dispatchDraw(android.graphics.Canvas)>(null);
+
+     label22:
+        if $i0 == 30 goto label23;
+
+        $z2 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label23:
+        if $i0 == 31 goto label24;
+
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label24:
+        if $i0 == 32 goto label25;
+
+        $z3 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label25:
+        if $i0 == 33 goto label26;
+
+        $z4 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label26:
+        if $i0 == 34 goto label27;
+
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label27:
+        if $i0 == 35 goto label28;
+
+        staticinvoke <com.wSHAMNATION.MainNavigationActivity: void <clinit>()>();
+
+     label28:
+        if $i0 == 36 goto label29;
+
+        $z5 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label29:
+        if $i0 == 37 goto label30;
+
+        $z6 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label30:
+        if $i0 == 38 goto label31;
+
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label31:
+        if $i0 == 39 goto label32;
+
+        $z7 = virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: boolean onKeyLongPress(int,android.view.KeyEvent)>(0, null);
+
+     label32:
+        $r20 = new com.wSHAMNATION.Views.AboutDialog;
+
+        specialinvoke $r20.<com.wSHAMNATION.Views.AboutDialog: void <init>(android.content.Context)>($r10);
+
+        $r21 = new com.wSHAMNATION.Views.AboutDialog$1;
+
+        specialinvoke $r21.<com.wSHAMNATION.Views.AboutDialog$1: void <init>(com.wSHAMNATION.Views.AboutDialog,java.lang.String,com.wSHAMNATION.MainNavigationActivity)>($r20, "", $r10);
+
+        if $i0 == 40 goto label33;
+
+        $z8 = virtualinvoke $r21.<com.wSHAMNATION.Views.AboutDialog$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label33:
+        $r22 = new com.wSHAMNATION.MainNavigationActivity$6;
+
+        specialinvoke $r22.<com.wSHAMNATION.MainNavigationActivity$6: void <init>(com.wSHAMNATION.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r10, null);
+
+        if $i0 == 41 goto label34;
+
+        virtualinvoke $r22.<com.wSHAMNATION.MainNavigationActivity$6: void onCancel(android.content.DialogInterface)>(null);
+
+     label34:
+        $r23 = new com.wSHAMNATION.MainNavigationActivity$5;
+
+        specialinvoke $r23.<com.wSHAMNATION.MainNavigationActivity$5: void <init>(com.wSHAMNATION.MainNavigationActivity)>($r10);
+
+        if $i0 == 42 goto label35;
+
+        virtualinvoke $r23.<com.wSHAMNATION.MainNavigationActivity$5: void onClick(android.view.View)>(null);
+
+     label35:
+        $r24 = new com.wSHAMNATION.ads.AdsLoader;
+
+        specialinvoke $r24.<com.wSHAMNATION.ads.AdsLoader: void <init>()>();
+
+        $r25 = new com.wSHAMNATION.ads.AdsLoader$1;
+
+        specialinvoke $r25.<com.wSHAMNATION.ads.AdsLoader$1: void <init>(com.wSHAMNATION.ads.AdsLoader)>($r24);
+
+        if $i0 == 43 goto label36;
+
+        $z9 = virtualinvoke $r25.<com.wSHAMNATION.ads.AdsLoader$1: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label36:
+        $r26 = new com.wSHAMNATION.MainNavigationActivity$1;
+
+        specialinvoke $r26.<com.wSHAMNATION.MainNavigationActivity$1: void <init>(com.wSHAMNATION.MainNavigationActivity)>($r10);
+
+        if $i0 == 44 goto label37;
+
+        virtualinvoke $r26.<com.wSHAMNATION.MainNavigationActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label37:
+        $r27 = new com.wSHAMNATION.MainNavigationActivity$4;
+
+        specialinvoke $r27.<com.wSHAMNATION.MainNavigationActivity$4: void <init>(com.wSHAMNATION.MainNavigationActivity)>($r10);
+
+        if $i0 == 45 goto label38;
+
+        virtualinvoke $r27.<com.wSHAMNATION.MainNavigationActivity$4: void onClick(android.view.View)>(null);
+
+     label38:
+        $r28 = new com.wSHAMNATION.MainNavigationActivity$7;
+
+        specialinvoke $r28.<com.wSHAMNATION.MainNavigationActivity$7: void <init>(com.wSHAMNATION.MainNavigationActivity,android.webkit.HttpAuthHandler)>($r10, null);
+
+        if $i0 == 46 goto label39;
+
+        virtualinvoke $r28.<com.wSHAMNATION.MainNavigationActivity$7: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label39:
+        if $i0 == 47 goto label17;
+
+     label40:
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onPause()>();
+
+        if $i0 == 48 goto label16;
+
+        if $i0 == 49 goto label41;
+
+        if $i0 == 50 goto label16;
+
+     label41:
+        virtualinvoke $r10.<com.wSHAMNATION.MainNavigationActivity: void onDestroy()>();
+
+     label42:
+        if $i0 == 52 goto label53;
+
+        $r29 = new com.wSHAMNATION.Server.C2DMClientReceiver;
+
+        specialinvoke $r29.<com.wSHAMNATION.Server.C2DMClientReceiver: void <init>(android.content.Context)>(null);
+
+     label43:
+        if $i0 == 53 goto label44;
+
+        if $i0 == 54 goto label43;
+
+     label44:
+        if $i0 == 55 goto label49;
+
+     label45:
+        if $i0 == 56 goto label46;
+
+        virtualinvoke $r29.<com.wSHAMNATION.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r29, null);
+
+        $r29 = null;
+
+     label46:
+        if $i0 == 57 goto label47;
+
+        virtualinvoke $r29.<com.wSHAMNATION.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r29, "");
+
+        $r29 = null;
+
+     label47:
+        if $i0 == 58 goto label48;
+
+        virtualinvoke $r29.<com.wSHAMNATION.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r29, "");
+
+        $r29 = null;
+
+     label48:
+        if $i0 == 59 goto label45;
+
+     label49:
+        if $i0 == 60 goto label50;
+
+        virtualinvoke $r29.<com.wSHAMNATION.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>($r29, null);
+
+        $r29 = null;
+
+     label50:
+        if $i0 == 61 goto label51;
+
+        virtualinvoke $r29.<com.wSHAMNATION.Server.C2DMClientReceiver: void onUnregistered(android.content.Context,java.lang.String)>($r29, "");
+
+        $r29 = null;
+
+     label51:
+        if $i0 == 62 goto label52;
+
+        virtualinvoke $r29.<com.wSHAMNATION.Server.C2DMClientReceiver: void onRegistered(android.content.Context,java.lang.String)>($r29, "");
+
+        $r29 = null;
+
+     label52:
+        if $i0 == 63 goto label49;
+
+        if $i0 == 64 goto label53;
+
+        if $i0 == 65 goto label49;
+
+     label53:
+        if $i0 == 66 goto label55;
+
+        $r30 = new com.google.android.c2dm.C2DMBroadcastReceiver;
+
+        specialinvoke $r30.<com.google.android.c2dm.C2DMBroadcastReceiver: void <init>()>();
+
+        if $i0 == 67 goto label55;
+
+     label54:
+        virtualinvoke $r30.<com.google.android.c2dm.C2DMBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 69 goto label54;
+
+     label55:
+        if $i0 == 70 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.679107806 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.065033565 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2075 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 60 sources and 17 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 11942
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 74811
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 156026 forward and 65932 backward edges solved, processing 4 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 4 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.01249855 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("title", $r1) in method <com.wSHAMNATION.Utils.AppNotificationManager: android.content.Intent getLaunchIntent(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("title") in method <com.wSHAMNATION.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.wSHAMNATION.Server.AppsGeyserServerClient: java.util.Map loadHeaders(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.wSHAMNATION.Utils.DeviceIdParser: java.lang.String getDeviceId(android.app.Activity)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("url", $r2) in method <com.wSHAMNATION.Utils.AppNotificationManager: android.content.Intent getLaunchIntent(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("url") in method <com.wSHAMNATION.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("title", $r1), from the following sources:
+	- $r6 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("title") (in <com.wSHAMNATION.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.wSHAMNATION.Utils.DeviceIdParser: java.lang.String getDeviceId(android.app.Activity)>)
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("url", $r2), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("url") (in <com.wSHAMNATION.Server.C2DMClientReceiver: void onMessage(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 420.78076 MB
+Analysis has run for 7.10071338 seconds

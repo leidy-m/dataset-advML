@@ -1,0 +1,619 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.01755764 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: fhvm.vnnej.CBReceiver is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        fhvm.vnnej.JKldv $r1;
+        fhvm.vnnej.DFGReceiver $r2;
+        bnjk.jjk3e.CReceiver $r3;
+        bnjk.jjk3e.CHActivity $r4;
+        bnjk.jjk3e.CWebA $r5;
+        bnjk.jjk3e.CService $r6;
+        android.os.IBinder $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new fhvm.vnnej.JKldv;
+
+        specialinvoke $r1.<fhvm.vnnej.JKldv: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void onStart()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label05;
+
+        $r2 = new fhvm.vnnej.DFGReceiver;
+
+        specialinvoke $r2.<fhvm.vnnej.DFGReceiver: void <init>()>();
+
+        if $i0 == 8 goto label05;
+
+     label04:
+        virtualinvoke $r2.<fhvm.vnnej.DFGReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 10 goto label04;
+
+     label05:
+        if $i0 == 11 goto label07;
+
+        $r3 = new bnjk.jjk3e.CReceiver;
+
+        specialinvoke $r3.<bnjk.jjk3e.CReceiver: void <init>()>();
+
+        if $i0 == 12 goto label07;
+
+     label06:
+        virtualinvoke $r3.<bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 14 goto label06;
+
+     label07:
+        if $i0 == 15 goto label09;
+
+        $r4 = new bnjk.jjk3e.CHActivity;
+
+        specialinvoke $r4.<bnjk.jjk3e.CHActivity: void <init>()>();
+
+        if $i0 == 16 goto label09;
+
+        virtualinvoke $r4.<bnjk.jjk3e.CHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 19 goto label09;
+
+        if $i0 == 20 goto label08;
+
+     label09:
+        if $i0 == 22 goto label11;
+
+        $r5 = new bnjk.jjk3e.CWebA;
+
+        specialinvoke $r5.<bnjk.jjk3e.CWebA: void <init>()>();
+
+        if $i0 == 23 goto label11;
+
+        virtualinvoke $r5.<bnjk.jjk3e.CWebA: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 26 goto label11;
+
+        if $i0 == 27 goto label10;
+
+     label11:
+        if $i0 == 29 goto label16;
+
+        $r6 = new bnjk.jjk3e.CService;
+
+        specialinvoke $r6.<bnjk.jjk3e.CService: void <init>()>();
+
+        virtualinvoke $r6.<bnjk.jjk3e.CService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 30 goto label13;
+
+        if $i0 == 31 goto label12;
+
+     label13:
+        $r7 = virtualinvoke $r6.<bnjk.jjk3e.CService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 33 goto label15;
+
+        if $i0 == 34 goto label14;
+
+     label15:
+        virtualinvoke $r6.<bnjk.jjk3e.CService: void onDestroy()>();
+
+     label16:
+        if $i0 == 37 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.7 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: fhvm.vnnej.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ScrollView is a phantom class!
+Warning: fhvm.vnnej.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: fhvm.vnnej.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Button is a phantom class!
+Warning: fhvm.vnnej.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/end.xml
+Found 2 layout controls in file res/layout/license.xml
+Warning: ImageView is a phantom class!
+Warning: fhvm.vnnej.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: ProgressBar is a phantom class!
+Warning: fhvm.vnnej.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 3 layout controls in file res/layout/load.xml
+Found 4 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: fhvm.vnnej.CBReceiver is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        fhvm.vnnej.JKldv $r1;
+        fhvm.vnnej.DFGReceiver $r2;
+        bnjk.jjk3e.CReceiver $r3;
+        bnjk.jjk3e.CHActivity $r4;
+        bnjk.jjk3e.CWebA $r5;
+        bnjk.jjk3e.CService $r6;
+        android.os.IBinder $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label08;
+
+        $r1 = new fhvm.vnnej.JKldv;
+
+        specialinvoke $r1.<fhvm.vnnej.JKldv: void <init>()>();
+
+        if $i0 == 1 goto label08;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void onStart()>();
+
+     label03:
+        if $i0 == 3 goto label07;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        staticinvoke <fhvm.vnnej.JKldv: void <clinit>()>();
+
+     label06:
+        if $i0 == 6 goto label04;
+
+     label07:
+        if $i0 == 7 goto label03;
+
+        if $i0 == 8 goto label08;
+
+        if $i0 == 9 goto label02;
+
+     label08:
+        if $i0 == 11 goto label10;
+
+        $r2 = new fhvm.vnnej.DFGReceiver;
+
+        specialinvoke $r2.<fhvm.vnnej.DFGReceiver: void <init>()>();
+
+        if $i0 == 12 goto label10;
+
+     label09:
+        virtualinvoke $r2.<fhvm.vnnej.DFGReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 14 goto label09;
+
+     label10:
+        if $i0 == 15 goto label12;
+
+        $r3 = new bnjk.jjk3e.CReceiver;
+
+        specialinvoke $r3.<bnjk.jjk3e.CReceiver: void <init>()>();
+
+        if $i0 == 16 goto label12;
+
+     label11:
+        virtualinvoke $r3.<bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 18 goto label11;
+
+     label12:
+        if $i0 == 19 goto label17;
+
+        $r4 = new bnjk.jjk3e.CHActivity;
+
+        specialinvoke $r4.<bnjk.jjk3e.CHActivity: void <init>()>();
+
+        if $i0 == 20 goto label17;
+
+        virtualinvoke $r4.<bnjk.jjk3e.CHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 22 goto label16;
+
+     label14:
+        if $i0 == 23 goto label15;
+
+        staticinvoke <bnjk.jjk3e.CHActivity: void <clinit>()>();
+
+     label15:
+        if $i0 == 24 goto label14;
+
+     label16:
+        if $i0 == 25 goto label13;
+
+        if $i0 == 26 goto label17;
+
+        if $i0 == 27 goto label13;
+
+     label17:
+        if $i0 == 29 goto label22;
+
+        $r5 = new bnjk.jjk3e.CWebA;
+
+        specialinvoke $r5.<bnjk.jjk3e.CWebA: void <init>()>();
+
+        if $i0 == 30 goto label22;
+
+        virtualinvoke $r5.<bnjk.jjk3e.CWebA: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        if $i0 == 32 goto label21;
+
+     label19:
+        if $i0 == 33 goto label20;
+
+        staticinvoke <bnjk.jjk3e.CWebA: void <clinit>()>();
+
+     label20:
+        if $i0 == 34 goto label19;
+
+     label21:
+        if $i0 == 35 goto label18;
+
+        if $i0 == 36 goto label22;
+
+        if $i0 == 37 goto label18;
+
+     label22:
+        if $i0 == 39 goto label27;
+
+        $r6 = new bnjk.jjk3e.CService;
+
+        specialinvoke $r6.<bnjk.jjk3e.CService: void <init>()>();
+
+        virtualinvoke $r6.<bnjk.jjk3e.CService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label23:
+        if $i0 == 40 goto label24;
+
+        if $i0 == 41 goto label23;
+
+     label24:
+        $r7 = virtualinvoke $r6.<bnjk.jjk3e.CService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label25:
+        if $i0 == 43 goto label26;
+
+        if $i0 == 44 goto label25;
+
+     label26:
+        virtualinvoke $r6.<bnjk.jjk3e.CService: void onDestroy()>();
+
+     label27:
+        if $i0 == 47 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.3 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Found 20 callback methods for 6 components
+Found {res/layout/end.xml=[2131099648 - android.widget.ScrollView, -1 - android.widget.LinearLayout, 2131099649 - android.widget.TextView, 2131099650 - android.widget.Button, 2131099651 - android.widget.Button], res/layout/load.xml=[2131099654 - android.widget.LinearLayout, 2131099653 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131099656 - android.widget.ProgressBar, 2131099655 - android.widget.TextView], res/layout/license.xml=[-1 - android.widget.LinearLayout, 2131099649 - android.widget.TextView, -1 - android.widget.ScrollView, 2131099650 - android.widget.Button, 2131099652 - android.widget.Button, 2131099651 - android.widget.Button], res/layout/main.xml=[2131099654 - android.widget.LinearLayout, 2131099657 - android.widget.LinearLayout, -1 - android.widget.LinearLayout, 2131099649 - android.widget.TextView, 2131099661 - android.widget.LinearLayout, 2131099650 - android.widget.Button, 2131099660 - android.widget.LinearLayout, 2131099658 - android.widget.LinearLayout, 2131099659 - android.widget.TextView, 2131099651 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 20 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/10ed24d82ffd65810547d9a351808ec0634d76849f39a380e91a79a33f91cf28.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: fhvm.vnnej.CBReceiver is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        fhvm.vnnej.JKldv $r1;
+        fhvm.vnnej.DFGReceiver $r2;
+        bnjk.jjk3e.CReceiver $r3;
+        bnjk.jjk3e.CHActivity $r4;
+        bnjk.jjk3e.CWebA $r5;
+        bnjk.jjk3e.CService $r6;
+        android.os.IBinder $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label15;
+
+        $r1 = new fhvm.vnnej.JKldv;
+
+        specialinvoke $r1.<fhvm.vnnej.JKldv: void <init>()>();
+
+        if $i0 == 1 goto label15;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void onStart()>();
+
+     label03:
+        if $i0 == 3 goto label14;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void endButtonClick2(android.view.View)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void licButtonClick1(android.view.View)>(null);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        staticinvoke <fhvm.vnnej.JKldv: void <clinit>()>();
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void mainButtonClick1(android.view.View)>(null);
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void mainButtonClick2(android.view.View)>(null);
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void licButtonClick2(android.view.View)>(null);
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void licButtonClick3(android.view.View)>(null);
+
+     label11:
+        if $i0 == 11 goto label12;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label12:
+        if $i0 == 12 goto label13;
+
+        virtualinvoke $r1.<fhvm.vnnej.JKldv: void endButtonClick1(android.view.View)>(null);
+
+     label13:
+        if $i0 == 13 goto label04;
+
+     label14:
+        if $i0 == 14 goto label03;
+
+        if $i0 == 15 goto label15;
+
+        if $i0 == 16 goto label02;
+
+     label15:
+        if $i0 == 18 goto label17;
+
+        $r2 = new fhvm.vnnej.DFGReceiver;
+
+        specialinvoke $r2.<fhvm.vnnej.DFGReceiver: void <init>()>();
+
+        if $i0 == 19 goto label17;
+
+     label16:
+        virtualinvoke $r2.<fhvm.vnnej.DFGReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 21 goto label16;
+
+     label17:
+        if $i0 == 22 goto label19;
+
+        $r3 = new bnjk.jjk3e.CReceiver;
+
+        specialinvoke $r3.<bnjk.jjk3e.CReceiver: void <init>()>();
+
+        if $i0 == 23 goto label19;
+
+     label18:
+        virtualinvoke $r3.<bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 25 goto label18;
+
+     label19:
+        if $i0 == 26 goto label24;
+
+        $r4 = new bnjk.jjk3e.CHActivity;
+
+        specialinvoke $r4.<bnjk.jjk3e.CHActivity: void <init>()>();
+
+        if $i0 == 27 goto label24;
+
+        virtualinvoke $r4.<bnjk.jjk3e.CHActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        if $i0 == 29 goto label23;
+
+     label21:
+        if $i0 == 30 goto label22;
+
+        staticinvoke <bnjk.jjk3e.CHActivity: void <clinit>()>();
+
+     label22:
+        if $i0 == 31 goto label21;
+
+     label23:
+        if $i0 == 32 goto label20;
+
+        if $i0 == 33 goto label24;
+
+        if $i0 == 34 goto label20;
+
+     label24:
+        if $i0 == 36 goto label29;
+
+        $r5 = new bnjk.jjk3e.CWebA;
+
+        specialinvoke $r5.<bnjk.jjk3e.CWebA: void <init>()>();
+
+        if $i0 == 37 goto label29;
+
+        virtualinvoke $r5.<bnjk.jjk3e.CWebA: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 39 goto label28;
+
+     label26:
+        if $i0 == 40 goto label27;
+
+        staticinvoke <bnjk.jjk3e.CWebA: void <clinit>()>();
+
+     label27:
+        if $i0 == 41 goto label26;
+
+     label28:
+        if $i0 == 42 goto label25;
+
+        if $i0 == 43 goto label29;
+
+        if $i0 == 44 goto label25;
+
+     label29:
+        if $i0 == 46 goto label34;
+
+        $r6 = new bnjk.jjk3e.CService;
+
+        specialinvoke $r6.<bnjk.jjk3e.CService: void <init>()>();
+
+        virtualinvoke $r6.<bnjk.jjk3e.CService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label30:
+        if $i0 == 47 goto label31;
+
+        if $i0 == 48 goto label30;
+
+     label31:
+        $r7 = virtualinvoke $r6.<bnjk.jjk3e.CService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label32:
+        if $i0 == 50 goto label33;
+
+        if $i0 == 51 goto label32;
+
+     label33:
+        virtualinvoke $r6.<bnjk.jjk3e.CService: void onDestroy()>();
+
+     label34:
+        if $i0 == 54 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.3 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.90611473 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.097725786 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3248 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 28 sources and 20 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 333
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1355
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 7020 forward and 873 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.004851767 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r11) in method <bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 := @parameter1: android.content.Intent (in <bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r2.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r11), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <bnjk.jjk3e.CReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 337.833616 MB
+Analysis has run for 6.256636503 seconds

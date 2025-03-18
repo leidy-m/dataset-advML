@@ -1,0 +1,2759 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.012666772 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.fixedposition.HandleMessage $r1;
+        android.os.IBinder $r2, $r4, $r10, $r14, $r16;
+        com.keji.fixedposition.SystemPlus $r3;
+        com.keji.fixedposition.DisplayMap $r5;
+        com.keji.fixedposition.BootBroadcastReceiver $r6;
+        com.keji.fixedposition.ForAlarm $r7;
+        com.keji.fixedposition.Confirmation $r8;
+        com.keji.fixedposition.MainRun $r9;
+        com.keji.fixedposition.BaseBroadcastReceiver $r11;
+        com.keji.fixedposition.Connections $r12;
+        com.keji.fixedposition.BridgeProvider $r13;
+        com.keji.fixedposition.MonitorSMSService $r15;
+        com.keji.fixedposition.Setting $r17;
+        com.keji.fixedposition.Start $r18;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label05;
+
+        $r1 = new com.keji.fixedposition.HandleMessage;
+
+        specialinvoke $r1.<com.keji.fixedposition.HandleMessage: void <init>()>();
+
+        virtualinvoke $r1.<com.keji.fixedposition.HandleMessage: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.keji.fixedposition.HandleMessage: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        if $i0 == 6 goto label09;
+
+        $r3 = new com.keji.fixedposition.SystemPlus;
+
+        specialinvoke $r3.<com.keji.fixedposition.SystemPlus: void <init>()>();
+
+        virtualinvoke $r3.<com.keji.fixedposition.SystemPlus: void onCreate()>();
+
+     label06:
+        if $i0 == 7 goto label07;
+
+        if $i0 == 8 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<com.keji.fixedposition.SystemPlus: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label08;
+
+     label09:
+        if $i0 == 12 goto label12;
+
+        $r5 = new com.keji.fixedposition.DisplayMap;
+
+        specialinvoke $r5.<com.keji.fixedposition.DisplayMap: void <init>()>();
+
+        if $i0 == 13 goto label12;
+
+        virtualinvoke $r5.<com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        virtualinvoke $r5.<com.autonavi.mapapi.MapActivity: void onResume()>();
+
+        virtualinvoke $r5.<com.autonavi.mapapi.MapActivity: void onPause()>();
+
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r5.<com.autonavi.mapapi.MapActivity: void onStop()>();
+
+        if $i0 == 16 goto label11;
+
+        virtualinvoke $r5.<com.autonavi.mapapi.MapActivity: void onRestart()>();
+
+        if $i0 == 17 goto label10;
+
+     label11:
+        virtualinvoke $r5.<com.autonavi.mapapi.MapActivity: void onDestroy()>();
+
+     label12:
+        if $i0 == 19 goto label14;
+
+        $r6 = new com.keji.fixedposition.BootBroadcastReceiver;
+
+        specialinvoke $r6.<com.keji.fixedposition.BootBroadcastReceiver: void <init>()>();
+
+        if $i0 == 20 goto label14;
+
+     label13:
+        virtualinvoke $r6.<com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 22 goto label13;
+
+     label14:
+        if $i0 == 23 goto label16;
+
+        $r7 = new com.keji.fixedposition.ForAlarm;
+
+        specialinvoke $r7.<com.keji.fixedposition.ForAlarm: void <init>()>();
+
+        if $i0 == 24 goto label16;
+
+     label15:
+        virtualinvoke $r7.<com.keji.fixedposition.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 26 goto label15;
+
+     label16:
+        if $i0 == 27 goto label19;
+
+        $r8 = new com.keji.fixedposition.Confirmation;
+
+        specialinvoke $r8.<com.keji.fixedposition.Confirmation: void <init>()>();
+
+        if $i0 == 28 goto label19;
+
+        virtualinvoke $r8.<com.keji.fixedposition.Confirmation: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 31 goto label18;
+
+        if $i0 == 32 goto label17;
+
+     label18:
+        virtualinvoke $r8.<com.keji.fixedposition.Confirmation: void onDestroy()>();
+
+     label19:
+        if $i0 == 34 goto label23;
+
+        $r9 = new com.keji.fixedposition.MainRun;
+
+        specialinvoke $r9.<com.keji.fixedposition.MainRun: void <init>()>();
+
+        virtualinvoke $r9.<com.keji.fixedposition.MainRun: void onCreate()>();
+
+        virtualinvoke $r9.<com.keji.fixedposition.MainRun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label20:
+        if $i0 == 35 goto label21;
+
+        if $i0 == 36 goto label20;
+
+     label21:
+        $r10 = virtualinvoke $r9.<com.keji.fixedposition.MainRun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label22:
+        if $i0 == 38 goto label23;
+
+        if $i0 == 39 goto label22;
+
+     label23:
+        if $i0 == 40 goto label25;
+
+        $r11 = new com.keji.fixedposition.BaseBroadcastReceiver;
+
+        specialinvoke $r11.<com.keji.fixedposition.BaseBroadcastReceiver: void <init>()>();
+
+        if $i0 == 41 goto label25;
+
+     label24:
+        virtualinvoke $r11.<com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label24;
+
+     label25:
+        if $i0 == 44 goto label27;
+
+        $r12 = new com.keji.fixedposition.Connections;
+
+        specialinvoke $r12.<com.keji.fixedposition.Connections: void <init>()>();
+
+        if $i0 == 45 goto label27;
+
+        virtualinvoke $r12.<com.keji.fixedposition.Connections: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 48 goto label27;
+
+        if $i0 == 49 goto label26;
+
+     label27:
+        if $i0 == 51 goto label32;
+
+        $r13 = new com.keji.fixedposition.BridgeProvider;
+
+        specialinvoke $r13.<com.keji.fixedposition.BridgeProvider: void <init>()>();
+
+        virtualinvoke $r13.<com.keji.fixedposition.BridgeProvider: void onCreate()>();
+
+        virtualinvoke $r13.<com.keji.fixedposition.BridgeProvider: void onStart(android.content.Intent,int)>(null, 0);
+
+     label28:
+        if $i0 == 52 goto label29;
+
+        if $i0 == 53 goto label28;
+
+     label29:
+        $r14 = virtualinvoke $r13.<com.keji.fixedposition.BridgeProvider: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label30:
+        if $i0 == 55 goto label31;
+
+        if $i0 == 56 goto label30;
+
+     label31:
+        virtualinvoke $r13.<com.keji.fixedposition.BridgeProvider: void onDestroy()>();
+
+     label32:
+        if $i0 == 57 goto label36;
+
+        $r15 = new com.keji.fixedposition.MonitorSMSService;
+
+        specialinvoke $r15.<com.keji.fixedposition.MonitorSMSService: void <init>()>();
+
+        virtualinvoke $r15.<com.keji.fixedposition.MonitorSMSService: void onCreate()>();
+
+     label33:
+        if $i0 == 58 goto label34;
+
+        if $i0 == 59 goto label33;
+
+     label34:
+        $r16 = virtualinvoke $r15.<com.keji.fixedposition.MonitorSMSService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label35:
+        if $i0 == 61 goto label36;
+
+        if $i0 == 62 goto label35;
+
+     label36:
+        if $i0 == 63 goto label38;
+
+        $r17 = new com.keji.fixedposition.Setting;
+
+        specialinvoke $r17.<com.keji.fixedposition.Setting: void <init>()>();
+
+        if $i0 == 64 goto label38;
+
+        virtualinvoke $r17.<com.keji.fixedposition.Setting: void onCreate(android.os.Bundle)>(null);
+
+     label37:
+        if $i0 == 67 goto label38;
+
+        if $i0 == 68 goto label37;
+
+     label38:
+        if $i0 == 70 goto label40;
+
+        $r18 = new com.keji.fixedposition.Start;
+
+        specialinvoke $r18.<com.keji.fixedposition.Start: void <init>()>();
+
+        if $i0 == 71 goto label40;
+
+        virtualinvoke $r18.<com.keji.fixedposition.Start: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        if $i0 == 74 goto label40;
+
+        if $i0 == 75 goto label39;
+
+     label40:
+        if $i0 == 77 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Callback analysis done.
+Warning: AbsoluteLayout is a phantom class!
+Warning: com.keji.fixedposition.AbsoluteLayout is a phantom class!
+Warning: android.view.AbsoluteLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.keji.fixedposition.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/confine.xml
+Warning: Button is a phantom class!
+Warning: com.keji.fixedposition.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/confirmation.xml
+Warning: ListView is a phantom class!
+Warning: com.keji.fixedposition.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 3 layout controls in file res/layout/contact.xml
+Warning: EditText is a phantom class!
+Warning: com.keji.fixedposition.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 4 layout controls in file res/layout/contactdialog.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.keji.fixedposition.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found unrecognized XML attribute:  apiKey
+Found 5 layout controls in file res/layout/display_map.xml
+Found 6 layout controls in file res/layout/listlayout.xml
+Found 7 layout controls in file res/layout/regist_ui.xml
+Found 8 layout controls in file res/layout/setting.xml
+Found 9 layout controls in file res/layout/user_ui.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.autonavi.mapapi.MapActivity, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.fixedposition.HandleMessage $r1;
+        com.autonavi.mapapi.MapView $r2, $r7, $r10, $r15;
+        com.autonavi.mapapi.Mediator $r3, $r11;
+        com.autonavi.mapapi.P $r4, $r12;
+        ad $r5, $r13;
+        com.autonavi.mapapi.c $r6, $r14;
+        com.autonavi.mapapi.MyLocationOverlay $r8, $r16;
+        android.os.IBinder $r9, $r18, $r26, $r33, $r35;
+        com.keji.fixedposition.SystemPlus $r17;
+        com.keji.fixedposition.DisplayMap $r19;
+        com.keji.fixedposition.BootBroadcastReceiver $r20;
+        com.keji.fixedposition.ForAlarm $r21;
+        com.keji.fixedposition.Confirmation $r22;
+        h $r23;
+        g $r24;
+        com.keji.fixedposition.MainRun $r25;
+        com.keji.fixedposition.BaseBroadcastReceiver $r27;
+        com.keji.fixedposition.Connections $r28;
+        an $r29;
+        al $r30;
+        aj $r31;
+        com.keji.fixedposition.BridgeProvider $r32;
+        com.keji.fixedposition.MonitorSMSService $r34;
+        com.keji.fixedposition.Setting $r36;
+        bf $r37;
+        bh $r38;
+        com.keji.fixedposition.Start $r39;
+        am $r40;
+        z $r41;
+        ak $r42;
+        aa $r43;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label31;
+
+        $r1 = new com.keji.fixedposition.HandleMessage;
+
+        specialinvoke $r1.<com.keji.fixedposition.HandleMessage: void <init>()>();
+
+        virtualinvoke $r1.<com.keji.fixedposition.HandleMessage: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label17;
+
+     label04:
+        $r2 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r2.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r3 = new com.autonavi.mapapi.Mediator;
+
+        specialinvoke $r3.<com.autonavi.mapapi.Mediator: void <init>(com.autonavi.mapapi.MapActivity,com.autonavi.mapapi.MapView,java.lang.String,java.lang.String)>(null, $r2, "", "");
+
+        $r4 = new com.autonavi.mapapi.P;
+
+        specialinvoke $r4.<com.autonavi.mapapi.P: void <init>(com.autonavi.mapapi.Mediator,android.content.Context,java.lang.String)>($r3, $r1, "");
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r4.<com.autonavi.mapapi.P: void onProviderDisabled(java.lang.String)>("");
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r4.<com.autonavi.mapapi.P: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r4.<com.autonavi.mapapi.P: void onProviderEnabled(java.lang.String)>("");
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r4.<com.autonavi.mapapi.P: void onLocationChanged(android.location.Location)>(null);
+
+     label08:
+        $r5 = new ad;
+
+        specialinvoke $r5.<ad: void <init>(com.keji.fixedposition.HandleMessage)>($r1);
+
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r5.<ad: void onLocationChanged(android.location.Location)>(null);
+
+     label09:
+        $r6 = new com.autonavi.mapapi.c;
+
+        specialinvoke $r6.<com.autonavi.mapapi.c: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r1, "", "");
+
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.c: void onProviderDisabled(java.lang.String)>("");
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.c: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label11:
+        if $i0 == 11 goto label12;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.c: void onLocationChanged(android.location.Location)>(null);
+
+     label12:
+        if $i0 == 12 goto label13;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.c: void onProviderEnabled(java.lang.String)>("");
+
+     label13:
+        $r7 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r7.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r8 = new com.autonavi.mapapi.MyLocationOverlay;
+
+        specialinvoke $r8.<com.autonavi.mapapi.MyLocationOverlay: void <init>(android.content.Context,com.autonavi.mapapi.MapView)>($r1, $r7);
+
+        if $i0 == 13 goto label14;
+
+        virtualinvoke $r8.<com.autonavi.mapapi.MyLocationOverlay: void onProviderDisabled(java.lang.String)>("");
+
+     label14:
+        if $i0 == 14 goto label15;
+
+        virtualinvoke $r8.<com.autonavi.mapapi.MyLocationOverlay: void onProviderEnabled(java.lang.String)>("");
+
+     label15:
+        if $i0 == 15 goto label16;
+
+        virtualinvoke $r8.<com.autonavi.mapapi.MyLocationOverlay: void onLocationChanged(android.location.Location)>(null);
+
+     label16:
+        if $i0 == 16 goto label04;
+
+     label17:
+        $r9 = virtualinvoke $r1.<com.keji.fixedposition.HandleMessage: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        $r10 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r10.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r11 = new com.autonavi.mapapi.Mediator;
+
+        specialinvoke $r11.<com.autonavi.mapapi.Mediator: void <init>(com.autonavi.mapapi.MapActivity,com.autonavi.mapapi.MapView,java.lang.String,java.lang.String)>(null, $r10, "", "");
+
+        $r12 = new com.autonavi.mapapi.P;
+
+        specialinvoke $r12.<com.autonavi.mapapi.P: void <init>(com.autonavi.mapapi.Mediator,android.content.Context,java.lang.String)>($r11, $r1, "");
+
+        if $i0 == 17 goto label19;
+
+        virtualinvoke $r12.<com.autonavi.mapapi.P: void onProviderDisabled(java.lang.String)>("");
+
+     label19:
+        if $i0 == 18 goto label20;
+
+        virtualinvoke $r12.<com.autonavi.mapapi.P: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label20:
+        if $i0 == 19 goto label21;
+
+        virtualinvoke $r12.<com.autonavi.mapapi.P: void onProviderEnabled(java.lang.String)>("");
+
+     label21:
+        if $i0 == 20 goto label22;
+
+        virtualinvoke $r12.<com.autonavi.mapapi.P: void onLocationChanged(android.location.Location)>(null);
+
+     label22:
+        $r13 = new ad;
+
+        specialinvoke $r13.<ad: void <init>(com.keji.fixedposition.HandleMessage)>($r1);
+
+        if $i0 == 21 goto label23;
+
+        virtualinvoke $r13.<ad: void onLocationChanged(android.location.Location)>(null);
+
+     label23:
+        $r14 = new com.autonavi.mapapi.c;
+
+        specialinvoke $r14.<com.autonavi.mapapi.c: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r1, "", "");
+
+        if $i0 == 22 goto label24;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.c: void onProviderDisabled(java.lang.String)>("");
+
+     label24:
+        if $i0 == 23 goto label25;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.c: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label25:
+        if $i0 == 24 goto label26;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.c: void onLocationChanged(android.location.Location)>(null);
+
+     label26:
+        if $i0 == 25 goto label27;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.c: void onProviderEnabled(java.lang.String)>("");
+
+     label27:
+        $r15 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r15.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r16 = new com.autonavi.mapapi.MyLocationOverlay;
+
+        specialinvoke $r16.<com.autonavi.mapapi.MyLocationOverlay: void <init>(android.content.Context,com.autonavi.mapapi.MapView)>($r1, $r15);
+
+        if $i0 == 26 goto label28;
+
+        virtualinvoke $r16.<com.autonavi.mapapi.MyLocationOverlay: void onProviderDisabled(java.lang.String)>("");
+
+     label28:
+        if $i0 == 27 goto label29;
+
+        virtualinvoke $r16.<com.autonavi.mapapi.MyLocationOverlay: void onProviderEnabled(java.lang.String)>("");
+
+     label29:
+        if $i0 == 28 goto label30;
+
+        virtualinvoke $r16.<com.autonavi.mapapi.MyLocationOverlay: void onLocationChanged(android.location.Location)>(null);
+
+     label30:
+        if $i0 == 29 goto label18;
+
+        if $i0 == 30 goto label31;
+
+        if $i0 == 31 goto label18;
+
+     label31:
+        if $i0 == 32 goto label35;
+
+        $r17 = new com.keji.fixedposition.SystemPlus;
+
+        specialinvoke $r17.<com.keji.fixedposition.SystemPlus: void <init>()>();
+
+        virtualinvoke $r17.<com.keji.fixedposition.SystemPlus: void onCreate()>();
+
+     label32:
+        if $i0 == 33 goto label33;
+
+        if $i0 == 34 goto label32;
+
+     label33:
+        $r18 = virtualinvoke $r17.<com.keji.fixedposition.SystemPlus: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label34:
+        if $i0 == 36 goto label35;
+
+        if $i0 == 37 goto label34;
+
+     label35:
+        if $i0 == 38 goto label38;
+
+        $r19 = new com.keji.fixedposition.DisplayMap;
+
+        specialinvoke $r19.<com.keji.fixedposition.DisplayMap: void <init>()>();
+
+        if $i0 == 39 goto label38;
+
+        virtualinvoke $r19.<com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>(null);
+
+     label36:
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onResume()>();
+
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onPause()>();
+
+        if $i0 == 42 goto label36;
+
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onStop()>();
+
+        if $i0 == 43 goto label37;
+
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onRestart()>();
+
+        if $i0 == 44 goto label36;
+
+     label37:
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onDestroy()>();
+
+     label38:
+        if $i0 == 46 goto label40;
+
+        $r20 = new com.keji.fixedposition.BootBroadcastReceiver;
+
+        specialinvoke $r20.<com.keji.fixedposition.BootBroadcastReceiver: void <init>()>();
+
+        if $i0 == 47 goto label40;
+
+     label39:
+        virtualinvoke $r20.<com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 49 goto label39;
+
+     label40:
+        if $i0 == 50 goto label42;
+
+        $r21 = new com.keji.fixedposition.ForAlarm;
+
+        specialinvoke $r21.<com.keji.fixedposition.ForAlarm: void <init>()>();
+
+        if $i0 == 51 goto label42;
+
+     label41:
+        virtualinvoke $r21.<com.keji.fixedposition.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 53 goto label41;
+
+     label42:
+        if $i0 == 54 goto label49;
+
+        $r22 = new com.keji.fixedposition.Confirmation;
+
+        specialinvoke $r22.<com.keji.fixedposition.Confirmation: void <init>()>();
+
+        if $i0 == 55 goto label49;
+
+        virtualinvoke $r22.<com.keji.fixedposition.Confirmation: void onCreate(android.os.Bundle)>(null);
+
+     label43:
+        if $i0 == 57 goto label47;
+
+     label44:
+        $r23 = new h;
+
+        specialinvoke $r23.<h: void <init>(com.keji.fixedposition.Confirmation)>($r22);
+
+        if $i0 == 58 goto label45;
+
+        virtualinvoke $r23.<h: void onClick(android.view.View)>(null);
+
+     label45:
+        $r24 = new g;
+
+        specialinvoke $r24.<g: void <init>(com.keji.fixedposition.Confirmation)>($r22);
+
+        if $i0 == 59 goto label46;
+
+        virtualinvoke $r24.<g: void onClick(android.view.View)>(null);
+
+     label46:
+        if $i0 == 60 goto label44;
+
+     label47:
+        if $i0 == 61 goto label43;
+
+        if $i0 == 62 goto label48;
+
+        if $i0 == 63 goto label43;
+
+     label48:
+        virtualinvoke $r22.<com.keji.fixedposition.Confirmation: void onDestroy()>();
+
+     label49:
+        if $i0 == 65 goto label53;
+
+        $r25 = new com.keji.fixedposition.MainRun;
+
+        specialinvoke $r25.<com.keji.fixedposition.MainRun: void <init>()>();
+
+        virtualinvoke $r25.<com.keji.fixedposition.MainRun: void onCreate()>();
+
+        virtualinvoke $r25.<com.keji.fixedposition.MainRun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label50:
+        if $i0 == 66 goto label51;
+
+        if $i0 == 67 goto label50;
+
+     label51:
+        $r26 = virtualinvoke $r25.<com.keji.fixedposition.MainRun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label52:
+        if $i0 == 69 goto label53;
+
+        if $i0 == 70 goto label52;
+
+     label53:
+        if $i0 == 71 goto label55;
+
+        $r27 = new com.keji.fixedposition.BaseBroadcastReceiver;
+
+        specialinvoke $r27.<com.keji.fixedposition.BaseBroadcastReceiver: void <init>()>();
+
+        if $i0 == 72 goto label55;
+
+     label54:
+        virtualinvoke $r27.<com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 74 goto label54;
+
+     label55:
+        if $i0 == 75 goto label62;
+
+        $r28 = new com.keji.fixedposition.Connections;
+
+        specialinvoke $r28.<com.keji.fixedposition.Connections: void <init>()>();
+
+        if $i0 == 76 goto label62;
+
+        virtualinvoke $r28.<com.keji.fixedposition.Connections: void onCreate(android.os.Bundle)>(null);
+
+     label56:
+        if $i0 == 78 goto label61;
+
+     label57:
+        $r29 = new an;
+
+        specialinvoke $r29.<an: void <init>(com.keji.fixedposition.Connections)>($r28);
+
+        if $i0 == 79 goto label58;
+
+        virtualinvoke $r29.<an: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label58:
+        $r30 = new al;
+
+        specialinvoke $r30.<al: void <init>(com.keji.fixedposition.Connections)>($r28);
+
+        if $i0 == 80 goto label59;
+
+        virtualinvoke $r30.<al: void onClick(android.view.View)>(null);
+
+     label59:
+        $r31 = new aj;
+
+        specialinvoke $r31.<aj: void <init>(com.keji.fixedposition.Connections)>($r28);
+
+        if $i0 == 81 goto label60;
+
+        virtualinvoke $r31.<aj: void onClick(android.view.View)>(null);
+
+     label60:
+        if $i0 == 82 goto label57;
+
+     label61:
+        if $i0 == 83 goto label56;
+
+        if $i0 == 84 goto label62;
+
+        if $i0 == 85 goto label56;
+
+     label62:
+        if $i0 == 87 goto label67;
+
+        $r32 = new com.keji.fixedposition.BridgeProvider;
+
+        specialinvoke $r32.<com.keji.fixedposition.BridgeProvider: void <init>()>();
+
+        virtualinvoke $r32.<com.keji.fixedposition.BridgeProvider: void onCreate()>();
+
+        virtualinvoke $r32.<com.keji.fixedposition.BridgeProvider: void onStart(android.content.Intent,int)>(null, 0);
+
+     label63:
+        if $i0 == 88 goto label64;
+
+        if $i0 == 89 goto label63;
+
+     label64:
+        $r33 = virtualinvoke $r32.<com.keji.fixedposition.BridgeProvider: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label65:
+        if $i0 == 91 goto label66;
+
+        if $i0 == 92 goto label65;
+
+     label66:
+        virtualinvoke $r32.<com.keji.fixedposition.BridgeProvider: void onDestroy()>();
+
+     label67:
+        if $i0 == 93 goto label71;
+
+        $r34 = new com.keji.fixedposition.MonitorSMSService;
+
+        specialinvoke $r34.<com.keji.fixedposition.MonitorSMSService: void <init>()>();
+
+        virtualinvoke $r34.<com.keji.fixedposition.MonitorSMSService: void onCreate()>();
+
+     label68:
+        if $i0 == 94 goto label69;
+
+        if $i0 == 95 goto label68;
+
+     label69:
+        $r35 = virtualinvoke $r34.<com.keji.fixedposition.MonitorSMSService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label70:
+        if $i0 == 97 goto label71;
+
+        if $i0 == 98 goto label70;
+
+     label71:
+        if $i0 == 99 goto label77;
+
+        $r36 = new com.keji.fixedposition.Setting;
+
+        specialinvoke $r36.<com.keji.fixedposition.Setting: void <init>()>();
+
+        if $i0 == 100 goto label77;
+
+        virtualinvoke $r36.<com.keji.fixedposition.Setting: void onCreate(android.os.Bundle)>(null);
+
+     label72:
+        if $i0 == 102 goto label76;
+
+     label73:
+        $r37 = new bf;
+
+        specialinvoke $r37.<bf: void <init>(com.keji.fixedposition.Setting)>($r36);
+
+        if $i0 == 103 goto label74;
+
+        virtualinvoke $r37.<bf: void onClick(android.view.View)>(null);
+
+     label74:
+        $r38 = new bh;
+
+        specialinvoke $r38.<bh: void <init>(com.keji.fixedposition.Setting)>($r36);
+
+        if $i0 == 104 goto label75;
+
+        virtualinvoke $r38.<bh: void onClick(android.view.View)>(null);
+
+     label75:
+        if $i0 == 105 goto label73;
+
+     label76:
+        if $i0 == 106 goto label72;
+
+        if $i0 == 107 goto label77;
+
+        if $i0 == 108 goto label72;
+
+     label77:
+        if $i0 == 110 goto label86;
+
+        $r39 = new com.keji.fixedposition.Start;
+
+        specialinvoke $r39.<com.keji.fixedposition.Start: void <init>()>();
+
+        if $i0 == 111 goto label86;
+
+        virtualinvoke $r39.<com.keji.fixedposition.Start: void onCreate(android.os.Bundle)>(null);
+
+     label78:
+        if $i0 == 113 goto label85;
+
+     label79:
+        $r40 = new am;
+
+        specialinvoke $r40.<am: void <init>(com.keji.fixedposition.Start)>($r39);
+
+        if $i0 == 114 goto label80;
+
+        virtualinvoke $r40.<am: void onClick(android.view.View)>(null);
+
+     label80:
+        $r41 = new z;
+
+        specialinvoke $r41.<z: void <init>(com.keji.fixedposition.Start)>($r39);
+
+        if $i0 == 115 goto label81;
+
+        virtualinvoke $r41.<z: void onClick(android.view.View)>(null);
+
+     label81:
+        $r42 = new ak;
+
+        specialinvoke $r42.<ak: void <init>(com.keji.fixedposition.Start)>($r39);
+
+        if $i0 == 116 goto label82;
+
+        virtualinvoke $r42.<ak: void onClick(android.view.View)>(null);
+
+     label82:
+        if $i0 == 117 goto label83;
+
+        virtualinvoke $r39.<com.keji.fixedposition.Start: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label83:
+        $r43 = new aa;
+
+        specialinvoke $r43.<aa: void <init>(com.keji.fixedposition.Start)>($r39);
+
+        if $i0 == 118 goto label84;
+
+        virtualinvoke $r43.<aa: void onClick(android.view.View)>(null);
+
+     label84:
+        if $i0 == 119 goto label79;
+
+     label85:
+        if $i0 == 120 goto label78;
+
+        if $i0 == 121 goto label86;
+
+        if $i0 == 122 goto label78;
+
+     label86:
+        if $i0 == 124 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.9 seconds.
+[Spark] Solution found in 0.9 seconds.
+Running incremental callback analysis for 13 components...
+Incremental callback analysis done.
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.autonavi.mapapi.MapActivity, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.fixedposition.HandleMessage $r1;
+        ad $r2, $r10;
+        com.autonavi.mapapi.c $r3, $r11;
+        com.autonavi.mapapi.MapView $r4, $r7, $r12, $r15;
+        com.autonavi.mapapi.Mediator $r5, $r13;
+        com.autonavi.mapapi.P $r6, $r14;
+        com.autonavi.mapapi.MyLocationOverlay $r8, $r16;
+        android.os.IBinder $r9, $r18, $r26, $r37, $r39;
+        com.keji.fixedposition.SystemPlus $r17;
+        com.keji.fixedposition.DisplayMap $r19;
+        com.keji.fixedposition.BootBroadcastReceiver $r20;
+        com.keji.fixedposition.ForAlarm $r21;
+        com.keji.fixedposition.Confirmation $r22;
+        h $r23;
+        g $r24;
+        com.keji.fixedposition.MainRun $r25;
+        com.keji.fixedposition.BaseBroadcastReceiver $r27;
+        com.keji.fixedposition.Connections $r28;
+        an $r29, $r30, $r34;
+        bi $r31;
+        al $r32;
+        aj $r33;
+        bk $r35;
+        com.keji.fixedposition.BridgeProvider $r36;
+        com.keji.fixedposition.MonitorSMSService $r38;
+        com.keji.fixedposition.Setting $r40;
+        bf $r41;
+        bh $r42;
+        com.keji.fixedposition.Start $r43;
+        am $r44;
+        aa $r45;
+        ak $r46;
+        z $r47, $r49;
+        bs $r48;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label31;
+
+        $r1 = new com.keji.fixedposition.HandleMessage;
+
+        specialinvoke $r1.<com.keji.fixedposition.HandleMessage: void <init>()>();
+
+        virtualinvoke $r1.<com.keji.fixedposition.HandleMessage: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label17;
+
+     label04:
+        $r2 = new ad;
+
+        specialinvoke $r2.<ad: void <init>(com.keji.fixedposition.HandleMessage)>($r1);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r2.<ad: void onLocationChanged(android.location.Location)>(null);
+
+     label05:
+        $r3 = new com.autonavi.mapapi.c;
+
+        specialinvoke $r3.<com.autonavi.mapapi.c: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r1, "", "");
+
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r3.<com.autonavi.mapapi.c: void onProviderEnabled(java.lang.String)>("");
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r3.<com.autonavi.mapapi.c: void onProviderDisabled(java.lang.String)>("");
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<com.autonavi.mapapi.c: void onLocationChanged(android.location.Location)>(null);
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r3.<com.autonavi.mapapi.c: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label09:
+        $r4 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r4.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r5 = new com.autonavi.mapapi.Mediator;
+
+        specialinvoke $r5.<com.autonavi.mapapi.Mediator: void <init>(com.autonavi.mapapi.MapActivity,com.autonavi.mapapi.MapView,java.lang.String,java.lang.String)>(null, $r4, "", "");
+
+        $r6 = new com.autonavi.mapapi.P;
+
+        specialinvoke $r6.<com.autonavi.mapapi.P: void <init>(com.autonavi.mapapi.Mediator,android.content.Context,java.lang.String)>($r5, $r1, "");
+
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.P: void onLocationChanged(android.location.Location)>(null);
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.P: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label11:
+        if $i0 == 11 goto label12;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.P: void onProviderEnabled(java.lang.String)>("");
+
+     label12:
+        if $i0 == 12 goto label13;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.P: void onProviderDisabled(java.lang.String)>("");
+
+     label13:
+        $r7 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r7.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r8 = new com.autonavi.mapapi.MyLocationOverlay;
+
+        specialinvoke $r8.<com.autonavi.mapapi.MyLocationOverlay: void <init>(android.content.Context,com.autonavi.mapapi.MapView)>($r1, $r7);
+
+        if $i0 == 13 goto label14;
+
+        virtualinvoke $r8.<com.autonavi.mapapi.MyLocationOverlay: void onLocationChanged(android.location.Location)>(null);
+
+     label14:
+        if $i0 == 14 goto label15;
+
+        virtualinvoke $r8.<com.autonavi.mapapi.MyLocationOverlay: void onProviderEnabled(java.lang.String)>("");
+
+     label15:
+        if $i0 == 15 goto label16;
+
+        virtualinvoke $r8.<com.autonavi.mapapi.MyLocationOverlay: void onProviderDisabled(java.lang.String)>("");
+
+     label16:
+        if $i0 == 16 goto label04;
+
+     label17:
+        $r9 = virtualinvoke $r1.<com.keji.fixedposition.HandleMessage: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        $r10 = new ad;
+
+        specialinvoke $r10.<ad: void <init>(com.keji.fixedposition.HandleMessage)>($r1);
+
+        if $i0 == 17 goto label19;
+
+        virtualinvoke $r10.<ad: void onLocationChanged(android.location.Location)>(null);
+
+     label19:
+        $r11 = new com.autonavi.mapapi.c;
+
+        specialinvoke $r11.<com.autonavi.mapapi.c: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r1, "", "");
+
+        if $i0 == 18 goto label20;
+
+        virtualinvoke $r11.<com.autonavi.mapapi.c: void onProviderEnabled(java.lang.String)>("");
+
+     label20:
+        if $i0 == 19 goto label21;
+
+        virtualinvoke $r11.<com.autonavi.mapapi.c: void onProviderDisabled(java.lang.String)>("");
+
+     label21:
+        if $i0 == 20 goto label22;
+
+        virtualinvoke $r11.<com.autonavi.mapapi.c: void onLocationChanged(android.location.Location)>(null);
+
+     label22:
+        if $i0 == 21 goto label23;
+
+        virtualinvoke $r11.<com.autonavi.mapapi.c: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label23:
+        $r12 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r12.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r13 = new com.autonavi.mapapi.Mediator;
+
+        specialinvoke $r13.<com.autonavi.mapapi.Mediator: void <init>(com.autonavi.mapapi.MapActivity,com.autonavi.mapapi.MapView,java.lang.String,java.lang.String)>(null, $r12, "", "");
+
+        $r14 = new com.autonavi.mapapi.P;
+
+        specialinvoke $r14.<com.autonavi.mapapi.P: void <init>(com.autonavi.mapapi.Mediator,android.content.Context,java.lang.String)>($r13, $r1, "");
+
+        if $i0 == 22 goto label24;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.P: void onLocationChanged(android.location.Location)>(null);
+
+     label24:
+        if $i0 == 23 goto label25;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.P: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label25:
+        if $i0 == 24 goto label26;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.P: void onProviderEnabled(java.lang.String)>("");
+
+     label26:
+        if $i0 == 25 goto label27;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.P: void onProviderDisabled(java.lang.String)>("");
+
+     label27:
+        $r15 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r15.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r16 = new com.autonavi.mapapi.MyLocationOverlay;
+
+        specialinvoke $r16.<com.autonavi.mapapi.MyLocationOverlay: void <init>(android.content.Context,com.autonavi.mapapi.MapView)>($r1, $r15);
+
+        if $i0 == 26 goto label28;
+
+        virtualinvoke $r16.<com.autonavi.mapapi.MyLocationOverlay: void onLocationChanged(android.location.Location)>(null);
+
+     label28:
+        if $i0 == 27 goto label29;
+
+        virtualinvoke $r16.<com.autonavi.mapapi.MyLocationOverlay: void onProviderEnabled(java.lang.String)>("");
+
+     label29:
+        if $i0 == 28 goto label30;
+
+        virtualinvoke $r16.<com.autonavi.mapapi.MyLocationOverlay: void onProviderDisabled(java.lang.String)>("");
+
+     label30:
+        if $i0 == 29 goto label18;
+
+        if $i0 == 30 goto label31;
+
+        if $i0 == 31 goto label18;
+
+     label31:
+        if $i0 == 32 goto label35;
+
+        $r17 = new com.keji.fixedposition.SystemPlus;
+
+        specialinvoke $r17.<com.keji.fixedposition.SystemPlus: void <init>()>();
+
+        virtualinvoke $r17.<com.keji.fixedposition.SystemPlus: void onCreate()>();
+
+     label32:
+        if $i0 == 33 goto label33;
+
+        if $i0 == 34 goto label32;
+
+     label33:
+        $r18 = virtualinvoke $r17.<com.keji.fixedposition.SystemPlus: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label34:
+        if $i0 == 36 goto label35;
+
+        if $i0 == 37 goto label34;
+
+     label35:
+        if $i0 == 38 goto label38;
+
+        $r19 = new com.keji.fixedposition.DisplayMap;
+
+        specialinvoke $r19.<com.keji.fixedposition.DisplayMap: void <init>()>();
+
+        if $i0 == 39 goto label38;
+
+        virtualinvoke $r19.<com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>(null);
+
+     label36:
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onResume()>();
+
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onPause()>();
+
+        if $i0 == 42 goto label36;
+
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onStop()>();
+
+        if $i0 == 43 goto label37;
+
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onRestart()>();
+
+        if $i0 == 44 goto label36;
+
+     label37:
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onDestroy()>();
+
+     label38:
+        if $i0 == 46 goto label40;
+
+        $r20 = new com.keji.fixedposition.BootBroadcastReceiver;
+
+        specialinvoke $r20.<com.keji.fixedposition.BootBroadcastReceiver: void <init>()>();
+
+        if $i0 == 47 goto label40;
+
+     label39:
+        virtualinvoke $r20.<com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 49 goto label39;
+
+     label40:
+        if $i0 == 50 goto label42;
+
+        $r21 = new com.keji.fixedposition.ForAlarm;
+
+        specialinvoke $r21.<com.keji.fixedposition.ForAlarm: void <init>()>();
+
+        if $i0 == 51 goto label42;
+
+     label41:
+        virtualinvoke $r21.<com.keji.fixedposition.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 53 goto label41;
+
+     label42:
+        if $i0 == 54 goto label49;
+
+        $r22 = new com.keji.fixedposition.Confirmation;
+
+        specialinvoke $r22.<com.keji.fixedposition.Confirmation: void <init>()>();
+
+        if $i0 == 55 goto label49;
+
+        virtualinvoke $r22.<com.keji.fixedposition.Confirmation: void onCreate(android.os.Bundle)>(null);
+
+     label43:
+        if $i0 == 57 goto label47;
+
+     label44:
+        $r23 = new h;
+
+        specialinvoke $r23.<h: void <init>(com.keji.fixedposition.Confirmation)>($r22);
+
+        if $i0 == 58 goto label45;
+
+        virtualinvoke $r23.<h: void onClick(android.view.View)>(null);
+
+     label45:
+        $r24 = new g;
+
+        specialinvoke $r24.<g: void <init>(com.keji.fixedposition.Confirmation)>($r22);
+
+        if $i0 == 59 goto label46;
+
+        virtualinvoke $r24.<g: void onClick(android.view.View)>(null);
+
+     label46:
+        if $i0 == 60 goto label44;
+
+     label47:
+        if $i0 == 61 goto label43;
+
+        if $i0 == 62 goto label48;
+
+        if $i0 == 63 goto label43;
+
+     label48:
+        virtualinvoke $r22.<com.keji.fixedposition.Confirmation: void onDestroy()>();
+
+     label49:
+        if $i0 == 65 goto label53;
+
+        $r25 = new com.keji.fixedposition.MainRun;
+
+        specialinvoke $r25.<com.keji.fixedposition.MainRun: void <init>()>();
+
+        virtualinvoke $r25.<com.keji.fixedposition.MainRun: void onCreate()>();
+
+        virtualinvoke $r25.<com.keji.fixedposition.MainRun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label50:
+        if $i0 == 66 goto label51;
+
+        if $i0 == 67 goto label50;
+
+     label51:
+        $r26 = virtualinvoke $r25.<com.keji.fixedposition.MainRun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label52:
+        if $i0 == 69 goto label53;
+
+        if $i0 == 70 goto label52;
+
+     label53:
+        if $i0 == 71 goto label55;
+
+        $r27 = new com.keji.fixedposition.BaseBroadcastReceiver;
+
+        specialinvoke $r27.<com.keji.fixedposition.BaseBroadcastReceiver: void <init>()>();
+
+        if $i0 == 72 goto label55;
+
+     label54:
+        virtualinvoke $r27.<com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 74 goto label54;
+
+     label55:
+        if $i0 == 75 goto label64;
+
+        $r28 = new com.keji.fixedposition.Connections;
+
+        specialinvoke $r28.<com.keji.fixedposition.Connections: void <init>()>();
+
+        if $i0 == 76 goto label64;
+
+        virtualinvoke $r28.<com.keji.fixedposition.Connections: void onCreate(android.os.Bundle)>(null);
+
+     label56:
+        if $i0 == 78 goto label63;
+
+     label57:
+        $r29 = new an;
+
+        specialinvoke $r29.<an: void <init>(com.keji.fixedposition.Connections)>($r28);
+
+        if $i0 == 79 goto label58;
+
+        virtualinvoke $r29.<an: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label58:
+        $r30 = new an;
+
+        specialinvoke $r30.<an: void <init>(com.keji.fixedposition.Connections)>($r28);
+
+        $r31 = new bi;
+
+        specialinvoke $r31.<bi: void <init>(an)>($r30);
+
+        if $i0 == 80 goto label59;
+
+        virtualinvoke $r31.<bi: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label59:
+        $r32 = new al;
+
+        specialinvoke $r32.<al: void <init>(com.keji.fixedposition.Connections)>($r28);
+
+        if $i0 == 81 goto label60;
+
+        virtualinvoke $r32.<al: void onClick(android.view.View)>(null);
+
+     label60:
+        $r33 = new aj;
+
+        specialinvoke $r33.<aj: void <init>(com.keji.fixedposition.Connections)>($r28);
+
+        if $i0 == 82 goto label61;
+
+        virtualinvoke $r33.<aj: void onClick(android.view.View)>(null);
+
+     label61:
+        $r34 = new an;
+
+        specialinvoke $r34.<an: void <init>(com.keji.fixedposition.Connections)>($r28);
+
+        $r35 = new bk;
+
+        specialinvoke $r35.<bk: void <init>(an)>($r34);
+
+        if $i0 == 83 goto label62;
+
+        virtualinvoke $r35.<bk: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label62:
+        if $i0 == 84 goto label57;
+
+     label63:
+        if $i0 == 85 goto label56;
+
+        if $i0 == 86 goto label64;
+
+        if $i0 == 87 goto label56;
+
+     label64:
+        if $i0 == 89 goto label69;
+
+        $r36 = new com.keji.fixedposition.BridgeProvider;
+
+        specialinvoke $r36.<com.keji.fixedposition.BridgeProvider: void <init>()>();
+
+        virtualinvoke $r36.<com.keji.fixedposition.BridgeProvider: void onCreate()>();
+
+        virtualinvoke $r36.<com.keji.fixedposition.BridgeProvider: void onStart(android.content.Intent,int)>(null, 0);
+
+     label65:
+        if $i0 == 90 goto label66;
+
+        if $i0 == 91 goto label65;
+
+     label66:
+        $r37 = virtualinvoke $r36.<com.keji.fixedposition.BridgeProvider: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label67:
+        if $i0 == 93 goto label68;
+
+        if $i0 == 94 goto label67;
+
+     label68:
+        virtualinvoke $r36.<com.keji.fixedposition.BridgeProvider: void onDestroy()>();
+
+     label69:
+        if $i0 == 95 goto label73;
+
+        $r38 = new com.keji.fixedposition.MonitorSMSService;
+
+        specialinvoke $r38.<com.keji.fixedposition.MonitorSMSService: void <init>()>();
+
+        virtualinvoke $r38.<com.keji.fixedposition.MonitorSMSService: void onCreate()>();
+
+     label70:
+        if $i0 == 96 goto label71;
+
+        if $i0 == 97 goto label70;
+
+     label71:
+        $r39 = virtualinvoke $r38.<com.keji.fixedposition.MonitorSMSService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label72:
+        if $i0 == 99 goto label73;
+
+        if $i0 == 100 goto label72;
+
+     label73:
+        if $i0 == 101 goto label79;
+
+        $r40 = new com.keji.fixedposition.Setting;
+
+        specialinvoke $r40.<com.keji.fixedposition.Setting: void <init>()>();
+
+        if $i0 == 102 goto label79;
+
+        virtualinvoke $r40.<com.keji.fixedposition.Setting: void onCreate(android.os.Bundle)>(null);
+
+     label74:
+        if $i0 == 104 goto label78;
+
+     label75:
+        $r41 = new bf;
+
+        specialinvoke $r41.<bf: void <init>(com.keji.fixedposition.Setting)>($r40);
+
+        if $i0 == 105 goto label76;
+
+        virtualinvoke $r41.<bf: void onClick(android.view.View)>(null);
+
+     label76:
+        $r42 = new bh;
+
+        specialinvoke $r42.<bh: void <init>(com.keji.fixedposition.Setting)>($r40);
+
+        if $i0 == 106 goto label77;
+
+        virtualinvoke $r42.<bh: void onClick(android.view.View)>(null);
+
+     label77:
+        if $i0 == 107 goto label75;
+
+     label78:
+        if $i0 == 108 goto label74;
+
+        if $i0 == 109 goto label79;
+
+        if $i0 == 110 goto label74;
+
+     label79:
+        if $i0 == 112 goto label89;
+
+        $r43 = new com.keji.fixedposition.Start;
+
+        specialinvoke $r43.<com.keji.fixedposition.Start: void <init>()>();
+
+        if $i0 == 113 goto label89;
+
+        virtualinvoke $r43.<com.keji.fixedposition.Start: void onCreate(android.os.Bundle)>(null);
+
+     label80:
+        if $i0 == 115 goto label88;
+
+     label81:
+        $r44 = new am;
+
+        specialinvoke $r44.<am: void <init>(com.keji.fixedposition.Start)>($r43);
+
+        if $i0 == 116 goto label82;
+
+        virtualinvoke $r44.<am: void onClick(android.view.View)>(null);
+
+     label82:
+        $r45 = new aa;
+
+        specialinvoke $r45.<aa: void <init>(com.keji.fixedposition.Start)>($r43);
+
+        if $i0 == 117 goto label83;
+
+        virtualinvoke $r45.<aa: void onClick(android.view.View)>(null);
+
+     label83:
+        if $i0 == 118 goto label84;
+
+        virtualinvoke $r43.<com.keji.fixedposition.Start: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label84:
+        $r46 = new ak;
+
+        specialinvoke $r46.<ak: void <init>(com.keji.fixedposition.Start)>($r43);
+
+        if $i0 == 119 goto label85;
+
+        virtualinvoke $r46.<ak: void onClick(android.view.View)>(null);
+
+     label85:
+        $r47 = new z;
+
+        specialinvoke $r47.<z: void <init>(com.keji.fixedposition.Start)>($r43);
+
+        $r48 = new bs;
+
+        specialinvoke $r48.<bs: void <init>(z)>($r47);
+
+        if $i0 == 120 goto label86;
+
+        virtualinvoke $r48.<bs: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label86:
+        $r49 = new z;
+
+        specialinvoke $r49.<z: void <init>(com.keji.fixedposition.Start)>($r43);
+
+        if $i0 == 121 goto label87;
+
+        virtualinvoke $r49.<z: void onClick(android.view.View)>(null);
+
+     label87:
+        if $i0 == 122 goto label81;
+
+     label88:
+        if $i0 == 123 goto label80;
+
+        if $i0 == 124 goto label89;
+
+        if $i0 == 125 goto label80;
+
+     label89:
+        if $i0 == 127 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 70 callback methods for 13 components
+Found {res/layout/confirmation.xml=[2131165187 - android.widget.TextView, 2131165186 - android.widget.AbsoluteLayout, 2131165188 - android.widget.Button, 2131165189 - android.widget.Button], res/layout/listlayout.xml=[-1 - android.widget.LinearLayout, 2131165204 - android.widget.TextView, 2131165203 - android.widget.TextView], res/layout/contactdialog.xml=[2131165196 - android.widget.EditText, 2131165200 - android.widget.Button, 2131165201 - android.widget.Button, 2131165197 - android.widget.TextView, 2131165198 - android.widget.EditText, 2131165199 - android.widget.TextView, 2131165195 - android.widget.AbsoluteLayout], res/layout/display_map.xml=[2131165202 - com.autonavi.mapapi.MapView, -1 - android.widget.LinearLayout], res/layout/confine.xml=[2131165184 - android.widget.AbsoluteLayout, 2131165185 - android.widget.TextView], res/layout/contact.xml=[2131165190 - android.widget.AbsoluteLayout, 2131165191 - android.widget.ListView, 2131165194 - android.widget.TextView, 2131165192 - android.widget.Button, 2131165193 - android.widget.Button], res/layout/regist_ui.xml=[2131165207 - android.widget.Button, 2131165186 - android.widget.AbsoluteLayout, 2131165197 - android.widget.TextView, 2131165206 - android.widget.TextView, 2131165205 - android.widget.EditText], res/layout/setting.xml=[2131165211 - android.widget.TextView, 2131165216 - android.widget.TextView, 2131165215 - android.widget.EditText, 2131165186 - android.widget.AbsoluteLayout, 2131165208 - android.widget.TextView, 2131165213 - android.widget.Button, 2131165214 - android.widget.Button, 2131165210 - android.widget.TextView, 2131165212 - android.widget.EditText, 2131165206 - android.widget.TextView, 2131165209 - android.widget.EditText], res/layout/user_ui.xml=[2131165217 - android.widget.EditText, 2131165219 - android.widget.Button, 2131165186 - android.widget.AbsoluteLayout, 2131165197 - android.widget.TextView, 2131165206 - android.widget.TextView, 2131165221 - android.widget.Button, 2131165220 - android.widget.Button, 2131165218 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 70 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6bed2fd9fe2a19ba917e9d67bc279130d3b00a9b8f0f7246d3ee0b8b729ad9aa.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.autonavi.mapapi.MapActivity, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ViewGroup$LayoutParams
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Parcelable
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Rect
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.keji.fixedposition.HandleMessage $r1;
+        com.autonavi.mapapi.MapView $r2, $r5, $r10, $r13, $r20;
+        com.autonavi.mapapi.Mediator $r3, $r11;
+        com.autonavi.mapapi.P $r4, $r12;
+        com.autonavi.mapapi.MyLocationOverlay $r6, $r14;
+        com.autonavi.mapapi.c $r7, $r15;
+        ad $r8, $r16;
+        android.os.IBinder $r9, $r18, $r31, $r42, $r44;
+        com.keji.fixedposition.SystemPlus $r17;
+        com.keji.fixedposition.DisplayMap $r19;
+        android.view.ViewGroup$LayoutParams $r21, $r22, $r24;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        android.os.Parcelable $r23;
+        com.keji.fixedposition.BootBroadcastReceiver $r25;
+        com.keji.fixedposition.ForAlarm $r26;
+        com.keji.fixedposition.Confirmation $r27;
+        g $r28;
+        h $r29;
+        com.keji.fixedposition.MainRun $r30;
+        com.keji.fixedposition.BaseBroadcastReceiver $r32;
+        com.keji.fixedposition.Connections $r33;
+        an $r34, $r36, $r39;
+        bi $r35;
+        bk $r37;
+        al $r38;
+        aj $r40;
+        com.keji.fixedposition.BridgeProvider $r41;
+        com.keji.fixedposition.MonitorSMSService $r43;
+        com.keji.fixedposition.Setting $r45;
+        bh $r46;
+        bf $r47;
+        com.keji.fixedposition.Start $r48;
+        ak $r49;
+        aa $r50;
+        z $r51, $r53;
+        bs $r52;
+        am $r54;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label031;
+
+        $r1 = new com.keji.fixedposition.HandleMessage;
+
+        specialinvoke $r1.<com.keji.fixedposition.HandleMessage: void <init>()>();
+
+        virtualinvoke $r1.<com.keji.fixedposition.HandleMessage: void onStart(android.content.Intent,int)>(null, 0);
+
+     label002:
+        if $i0 == 1 goto label003;
+
+        if $i0 == 2 goto label002;
+
+     label003:
+        if $i0 == 3 goto label017;
+
+     label004:
+        $r2 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r2.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r3 = new com.autonavi.mapapi.Mediator;
+
+        specialinvoke $r3.<com.autonavi.mapapi.Mediator: void <init>(com.autonavi.mapapi.MapActivity,com.autonavi.mapapi.MapView,java.lang.String,java.lang.String)>(null, $r2, "", "");
+
+        $r4 = new com.autonavi.mapapi.P;
+
+        specialinvoke $r4.<com.autonavi.mapapi.P: void <init>(com.autonavi.mapapi.Mediator,android.content.Context,java.lang.String)>($r3, $r1, "");
+
+        if $i0 == 4 goto label005;
+
+        virtualinvoke $r4.<com.autonavi.mapapi.P: void onLocationChanged(android.location.Location)>(null);
+
+     label005:
+        if $i0 == 5 goto label006;
+
+        virtualinvoke $r4.<com.autonavi.mapapi.P: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label006:
+        if $i0 == 6 goto label007;
+
+        virtualinvoke $r4.<com.autonavi.mapapi.P: void onProviderDisabled(java.lang.String)>("");
+
+     label007:
+        if $i0 == 7 goto label008;
+
+        virtualinvoke $r4.<com.autonavi.mapapi.P: void onProviderEnabled(java.lang.String)>("");
+
+     label008:
+        $r5 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r5.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r6 = new com.autonavi.mapapi.MyLocationOverlay;
+
+        specialinvoke $r6.<com.autonavi.mapapi.MyLocationOverlay: void <init>(android.content.Context,com.autonavi.mapapi.MapView)>($r1, $r5);
+
+        if $i0 == 8 goto label009;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.MyLocationOverlay: void onLocationChanged(android.location.Location)>(null);
+
+     label009:
+        if $i0 == 9 goto label010;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.MyLocationOverlay: void onProviderEnabled(java.lang.String)>("");
+
+     label010:
+        if $i0 == 10 goto label011;
+
+        virtualinvoke $r6.<com.autonavi.mapapi.MyLocationOverlay: void onProviderDisabled(java.lang.String)>("");
+
+     label011:
+        $r7 = new com.autonavi.mapapi.c;
+
+        specialinvoke $r7.<com.autonavi.mapapi.c: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r1, "", "");
+
+        if $i0 == 11 goto label012;
+
+        virtualinvoke $r7.<com.autonavi.mapapi.c: void onProviderDisabled(java.lang.String)>("");
+
+     label012:
+        if $i0 == 12 goto label013;
+
+        virtualinvoke $r7.<com.autonavi.mapapi.c: void onProviderEnabled(java.lang.String)>("");
+
+     label013:
+        if $i0 == 13 goto label014;
+
+        virtualinvoke $r7.<com.autonavi.mapapi.c: void onLocationChanged(android.location.Location)>(null);
+
+     label014:
+        if $i0 == 14 goto label015;
+
+        virtualinvoke $r7.<com.autonavi.mapapi.c: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label015:
+        $r8 = new ad;
+
+        specialinvoke $r8.<ad: void <init>(com.keji.fixedposition.HandleMessage)>($r1);
+
+        if $i0 == 15 goto label016;
+
+        virtualinvoke $r8.<ad: void onLocationChanged(android.location.Location)>(null);
+
+     label016:
+        if $i0 == 16 goto label004;
+
+     label017:
+        $r9 = virtualinvoke $r1.<com.keji.fixedposition.HandleMessage: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label018:
+        $r10 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r10.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r11 = new com.autonavi.mapapi.Mediator;
+
+        specialinvoke $r11.<com.autonavi.mapapi.Mediator: void <init>(com.autonavi.mapapi.MapActivity,com.autonavi.mapapi.MapView,java.lang.String,java.lang.String)>(null, $r10, "", "");
+
+        $r12 = new com.autonavi.mapapi.P;
+
+        specialinvoke $r12.<com.autonavi.mapapi.P: void <init>(com.autonavi.mapapi.Mediator,android.content.Context,java.lang.String)>($r11, $r1, "");
+
+        if $i0 == 17 goto label019;
+
+        virtualinvoke $r12.<com.autonavi.mapapi.P: void onLocationChanged(android.location.Location)>(null);
+
+     label019:
+        if $i0 == 18 goto label020;
+
+        virtualinvoke $r12.<com.autonavi.mapapi.P: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label020:
+        if $i0 == 19 goto label021;
+
+        virtualinvoke $r12.<com.autonavi.mapapi.P: void onProviderDisabled(java.lang.String)>("");
+
+     label021:
+        if $i0 == 20 goto label022;
+
+        virtualinvoke $r12.<com.autonavi.mapapi.P: void onProviderEnabled(java.lang.String)>("");
+
+     label022:
+        $r13 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r13.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        $r14 = new com.autonavi.mapapi.MyLocationOverlay;
+
+        specialinvoke $r14.<com.autonavi.mapapi.MyLocationOverlay: void <init>(android.content.Context,com.autonavi.mapapi.MapView)>($r1, $r13);
+
+        if $i0 == 21 goto label023;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.MyLocationOverlay: void onLocationChanged(android.location.Location)>(null);
+
+     label023:
+        if $i0 == 22 goto label024;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.MyLocationOverlay: void onProviderEnabled(java.lang.String)>("");
+
+     label024:
+        if $i0 == 23 goto label025;
+
+        virtualinvoke $r14.<com.autonavi.mapapi.MyLocationOverlay: void onProviderDisabled(java.lang.String)>("");
+
+     label025:
+        $r15 = new com.autonavi.mapapi.c;
+
+        specialinvoke $r15.<com.autonavi.mapapi.c: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r1, "", "");
+
+        if $i0 == 24 goto label026;
+
+        virtualinvoke $r15.<com.autonavi.mapapi.c: void onProviderDisabled(java.lang.String)>("");
+
+     label026:
+        if $i0 == 25 goto label027;
+
+        virtualinvoke $r15.<com.autonavi.mapapi.c: void onProviderEnabled(java.lang.String)>("");
+
+     label027:
+        if $i0 == 26 goto label028;
+
+        virtualinvoke $r15.<com.autonavi.mapapi.c: void onLocationChanged(android.location.Location)>(null);
+
+     label028:
+        if $i0 == 27 goto label029;
+
+        virtualinvoke $r15.<com.autonavi.mapapi.c: void onStatusChanged(java.lang.String,int,android.os.Bundle)>("", 0, null);
+
+     label029:
+        $r16 = new ad;
+
+        specialinvoke $r16.<ad: void <init>(com.keji.fixedposition.HandleMessage)>($r1);
+
+        if $i0 == 28 goto label030;
+
+        virtualinvoke $r16.<ad: void onLocationChanged(android.location.Location)>(null);
+
+     label030:
+        if $i0 == 29 goto label018;
+
+        if $i0 == 30 goto label031;
+
+        if $i0 == 31 goto label018;
+
+     label031:
+        if $i0 == 32 goto label035;
+
+        $r17 = new com.keji.fixedposition.SystemPlus;
+
+        specialinvoke $r17.<com.keji.fixedposition.SystemPlus: void <init>()>();
+
+        virtualinvoke $r17.<com.keji.fixedposition.SystemPlus: void onCreate()>();
+
+     label032:
+        if $i0 == 33 goto label033;
+
+        if $i0 == 34 goto label032;
+
+     label033:
+        $r18 = virtualinvoke $r17.<com.keji.fixedposition.SystemPlus: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label034:
+        if $i0 == 36 goto label035;
+
+        if $i0 == 37 goto label034;
+
+     label035:
+        if $i0 == 38 goto label061;
+
+        $r19 = new com.keji.fixedposition.DisplayMap;
+
+        specialinvoke $r19.<com.keji.fixedposition.DisplayMap: void <init>()>();
+
+        if $i0 == 39 goto label061;
+
+        virtualinvoke $r19.<com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>(null);
+
+     label036:
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onResume()>();
+
+        if $i0 == 41 goto label059;
+
+     label037:
+        $r20 = new com.autonavi.mapapi.MapView;
+
+        specialinvoke $r20.<com.autonavi.mapapi.MapView: void <init>(android.content.Context,android.util.AttributeSet)>($r19, null);
+
+        if $i0 == 42 goto label038;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void dispatchDraw(android.graphics.Canvas)>(null);
+
+     label038:
+        if $i0 == 43 goto label039;
+
+        $r21 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: android.view.ViewGroup$LayoutParams generateLayoutParams(android.util.AttributeSet)>(null);
+
+     label039:
+        if $i0 == 44 goto label040;
+
+        $z0 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label040:
+        if $i0 == 45 goto label041;
+
+        $r22 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: android.view.ViewGroup$LayoutParams generateLayoutParams(android.view.ViewGroup$LayoutParams)>(null);
+
+     label041:
+        if $i0 == 46 goto label042;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onDetachedFromWindow()>();
+
+     label042:
+        if $i0 == 47 goto label043;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onMeasure(int,int)>(0, 0);
+
+     label043:
+        if $i0 == 48 goto label044;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onWindowFocusChanged(boolean)>(false);
+
+     label044:
+        if $i0 == 49 goto label045;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onRestoreInstanceState(android.os.Parcelable)>(null);
+
+     label045:
+        if $i0 == 50 goto label046;
+
+        $z1 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: boolean onTrackballEvent(android.view.MotionEvent)>(null);
+
+     label046:
+        if $i0 == 51 goto label047;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onAttachedToWindow()>();
+
+     label047:
+        if $i0 == 52 goto label048;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onDraw(android.graphics.Canvas)>(null);
+
+     label048:
+        if $i0 == 53 goto label049;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onSizeChanged(int,int,int,int)>(0, 0, 0, 0);
+
+     label049:
+        if $i0 == 54 goto label050;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void setClickable(boolean)>(false);
+
+     label050:
+        if $i0 == 55 goto label051;
+
+        $r23 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: android.os.Parcelable onSaveInstanceState()>();
+
+     label051:
+        if $i0 == 56 goto label052;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void computeScroll()>();
+
+     label052:
+        if $i0 == 57 goto label053;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onFocusChanged(boolean,int,android.graphics.Rect)>(false, 0, null);
+
+     label053:
+        if $i0 == 58 goto label054;
+
+        virtualinvoke $r20.<com.autonavi.mapapi.MapView: void onLayout(boolean,int,int,int,int)>(false, 0, 0, 0, 0);
+
+     label054:
+        if $i0 == 59 goto label055;
+
+        $z2 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label055:
+        if $i0 == 60 goto label056;
+
+        $z3 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label056:
+        if $i0 == 61 goto label057;
+
+        $z4 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: boolean checkLayoutParams(android.view.ViewGroup$LayoutParams)>(null);
+
+     label057:
+        if $i0 == 62 goto label058;
+
+        $r24 = virtualinvoke $r20.<com.autonavi.mapapi.MapView: android.view.ViewGroup$LayoutParams generateDefaultLayoutParams()>();
+
+     label058:
+        if $i0 == 63 goto label037;
+
+     label059:
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onPause()>();
+
+        if $i0 == 64 goto label036;
+
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onStop()>();
+
+        if $i0 == 65 goto label060;
+
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onRestart()>();
+
+        if $i0 == 66 goto label036;
+
+     label060:
+        virtualinvoke $r19.<com.autonavi.mapapi.MapActivity: void onDestroy()>();
+
+     label061:
+        if $i0 == 68 goto label063;
+
+        $r25 = new com.keji.fixedposition.BootBroadcastReceiver;
+
+        specialinvoke $r25.<com.keji.fixedposition.BootBroadcastReceiver: void <init>()>();
+
+        if $i0 == 69 goto label063;
+
+     label062:
+        virtualinvoke $r25.<com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 71 goto label062;
+
+     label063:
+        if $i0 == 72 goto label065;
+
+        $r26 = new com.keji.fixedposition.ForAlarm;
+
+        specialinvoke $r26.<com.keji.fixedposition.ForAlarm: void <init>()>();
+
+        if $i0 == 73 goto label065;
+
+     label064:
+        virtualinvoke $r26.<com.keji.fixedposition.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 75 goto label064;
+
+     label065:
+        if $i0 == 76 goto label072;
+
+        $r27 = new com.keji.fixedposition.Confirmation;
+
+        specialinvoke $r27.<com.keji.fixedposition.Confirmation: void <init>()>();
+
+        if $i0 == 77 goto label072;
+
+        virtualinvoke $r27.<com.keji.fixedposition.Confirmation: void onCreate(android.os.Bundle)>(null);
+
+     label066:
+        if $i0 == 79 goto label070;
+
+     label067:
+        $r28 = new g;
+
+        specialinvoke $r28.<g: void <init>(com.keji.fixedposition.Confirmation)>($r27);
+
+        if $i0 == 80 goto label068;
+
+        virtualinvoke $r28.<g: void onClick(android.view.View)>(null);
+
+     label068:
+        $r29 = new h;
+
+        specialinvoke $r29.<h: void <init>(com.keji.fixedposition.Confirmation)>($r27);
+
+        if $i0 == 81 goto label069;
+
+        virtualinvoke $r29.<h: void onClick(android.view.View)>(null);
+
+     label069:
+        if $i0 == 82 goto label067;
+
+     label070:
+        if $i0 == 83 goto label066;
+
+        if $i0 == 84 goto label071;
+
+        if $i0 == 85 goto label066;
+
+     label071:
+        virtualinvoke $r27.<com.keji.fixedposition.Confirmation: void onDestroy()>();
+
+     label072:
+        if $i0 == 87 goto label076;
+
+        $r30 = new com.keji.fixedposition.MainRun;
+
+        specialinvoke $r30.<com.keji.fixedposition.MainRun: void <init>()>();
+
+        virtualinvoke $r30.<com.keji.fixedposition.MainRun: void onCreate()>();
+
+        virtualinvoke $r30.<com.keji.fixedposition.MainRun: void onStart(android.content.Intent,int)>(null, 0);
+
+     label073:
+        if $i0 == 88 goto label074;
+
+        if $i0 == 89 goto label073;
+
+     label074:
+        $r31 = virtualinvoke $r30.<com.keji.fixedposition.MainRun: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label075:
+        if $i0 == 91 goto label076;
+
+        if $i0 == 92 goto label075;
+
+     label076:
+        if $i0 == 93 goto label078;
+
+        $r32 = new com.keji.fixedposition.BaseBroadcastReceiver;
+
+        specialinvoke $r32.<com.keji.fixedposition.BaseBroadcastReceiver: void <init>()>();
+
+        if $i0 == 94 goto label078;
+
+     label077:
+        virtualinvoke $r32.<com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 96 goto label077;
+
+     label078:
+        if $i0 == 97 goto label087;
+
+        $r33 = new com.keji.fixedposition.Connections;
+
+        specialinvoke $r33.<com.keji.fixedposition.Connections: void <init>()>();
+
+        if $i0 == 98 goto label087;
+
+        virtualinvoke $r33.<com.keji.fixedposition.Connections: void onCreate(android.os.Bundle)>(null);
+
+     label079:
+        if $i0 == 100 goto label086;
+
+     label080:
+        $r34 = new an;
+
+        specialinvoke $r34.<an: void <init>(com.keji.fixedposition.Connections)>($r33);
+
+        $r35 = new bi;
+
+        specialinvoke $r35.<bi: void <init>(an)>($r34);
+
+        if $i0 == 101 goto label081;
+
+        virtualinvoke $r35.<bi: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label081:
+        $r36 = new an;
+
+        specialinvoke $r36.<an: void <init>(com.keji.fixedposition.Connections)>($r33);
+
+        $r37 = new bk;
+
+        specialinvoke $r37.<bk: void <init>(an)>($r36);
+
+        if $i0 == 102 goto label082;
+
+        virtualinvoke $r37.<bk: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label082:
+        $r38 = new al;
+
+        specialinvoke $r38.<al: void <init>(com.keji.fixedposition.Connections)>($r33);
+
+        if $i0 == 103 goto label083;
+
+        virtualinvoke $r38.<al: void onClick(android.view.View)>(null);
+
+     label083:
+        $r39 = new an;
+
+        specialinvoke $r39.<an: void <init>(com.keji.fixedposition.Connections)>($r33);
+
+        if $i0 == 104 goto label084;
+
+        virtualinvoke $r39.<an: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label084:
+        $r40 = new aj;
+
+        specialinvoke $r40.<aj: void <init>(com.keji.fixedposition.Connections)>($r33);
+
+        if $i0 == 105 goto label085;
+
+        virtualinvoke $r40.<aj: void onClick(android.view.View)>(null);
+
+     label085:
+        if $i0 == 106 goto label080;
+
+     label086:
+        if $i0 == 107 goto label079;
+
+        if $i0 == 108 goto label087;
+
+        if $i0 == 109 goto label079;
+
+     label087:
+        if $i0 == 111 goto label092;
+
+        $r41 = new com.keji.fixedposition.BridgeProvider;
+
+        specialinvoke $r41.<com.keji.fixedposition.BridgeProvider: void <init>()>();
+
+        virtualinvoke $r41.<com.keji.fixedposition.BridgeProvider: void onCreate()>();
+
+        virtualinvoke $r41.<com.keji.fixedposition.BridgeProvider: void onStart(android.content.Intent,int)>(null, 0);
+
+     label088:
+        if $i0 == 112 goto label089;
+
+        if $i0 == 113 goto label088;
+
+     label089:
+        $r42 = virtualinvoke $r41.<com.keji.fixedposition.BridgeProvider: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label090:
+        if $i0 == 115 goto label091;
+
+        if $i0 == 116 goto label090;
+
+     label091:
+        virtualinvoke $r41.<com.keji.fixedposition.BridgeProvider: void onDestroy()>();
+
+     label092:
+        if $i0 == 117 goto label096;
+
+        $r43 = new com.keji.fixedposition.MonitorSMSService;
+
+        specialinvoke $r43.<com.keji.fixedposition.MonitorSMSService: void <init>()>();
+
+        virtualinvoke $r43.<com.keji.fixedposition.MonitorSMSService: void onCreate()>();
+
+     label093:
+        if $i0 == 118 goto label094;
+
+        if $i0 == 119 goto label093;
+
+     label094:
+        $r44 = virtualinvoke $r43.<com.keji.fixedposition.MonitorSMSService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label095:
+        if $i0 == 121 goto label096;
+
+        if $i0 == 122 goto label095;
+
+     label096:
+        if $i0 == 123 goto label102;
+
+        $r45 = new com.keji.fixedposition.Setting;
+
+        specialinvoke $r45.<com.keji.fixedposition.Setting: void <init>()>();
+
+        if $i0 == 124 goto label102;
+
+        virtualinvoke $r45.<com.keji.fixedposition.Setting: void onCreate(android.os.Bundle)>(null);
+
+     label097:
+        if $i0 == 126 goto label101;
+
+     label098:
+        $r46 = new bh;
+
+        specialinvoke $r46.<bh: void <init>(com.keji.fixedposition.Setting)>($r45);
+
+        if $i0 == 127 goto label099;
+
+        virtualinvoke $r46.<bh: void onClick(android.view.View)>(null);
+
+     label099:
+        $r47 = new bf;
+
+        specialinvoke $r47.<bf: void <init>(com.keji.fixedposition.Setting)>($r45);
+
+        if $i0 == 128 goto label100;
+
+        virtualinvoke $r47.<bf: void onClick(android.view.View)>(null);
+
+     label100:
+        if $i0 == 129 goto label098;
+
+     label101:
+        if $i0 == 130 goto label097;
+
+        if $i0 == 131 goto label102;
+
+        if $i0 == 132 goto label097;
+
+     label102:
+        if $i0 == 134 goto label112;
+
+        $r48 = new com.keji.fixedposition.Start;
+
+        specialinvoke $r48.<com.keji.fixedposition.Start: void <init>()>();
+
+        if $i0 == 135 goto label112;
+
+        virtualinvoke $r48.<com.keji.fixedposition.Start: void onCreate(android.os.Bundle)>(null);
+
+     label103:
+        if $i0 == 137 goto label111;
+
+     label104:
+        $r49 = new ak;
+
+        specialinvoke $r49.<ak: void <init>(com.keji.fixedposition.Start)>($r48);
+
+        if $i0 == 138 goto label105;
+
+        virtualinvoke $r49.<ak: void onClick(android.view.View)>(null);
+
+     label105:
+        $r50 = new aa;
+
+        specialinvoke $r50.<aa: void <init>(com.keji.fixedposition.Start)>($r48);
+
+        if $i0 == 139 goto label106;
+
+        virtualinvoke $r50.<aa: void onClick(android.view.View)>(null);
+
+     label106:
+        $r51 = new z;
+
+        specialinvoke $r51.<z: void <init>(com.keji.fixedposition.Start)>($r48);
+
+        $r52 = new bs;
+
+        specialinvoke $r52.<bs: void <init>(z)>($r51);
+
+        if $i0 == 140 goto label107;
+
+        virtualinvoke $r52.<bs: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label107:
+        if $i0 == 141 goto label108;
+
+        virtualinvoke $r48.<com.keji.fixedposition.Start: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label108:
+        $r53 = new z;
+
+        specialinvoke $r53.<z: void <init>(com.keji.fixedposition.Start)>($r48);
+
+        if $i0 == 142 goto label109;
+
+        virtualinvoke $r53.<z: void onClick(android.view.View)>(null);
+
+     label109:
+        $r54 = new am;
+
+        specialinvoke $r54.<am: void <init>(com.keji.fixedposition.Start)>($r48);
+
+        if $i0 == 143 goto label110;
+
+        virtualinvoke $r54.<am: void onClick(android.view.View)>(null);
+
+     label110:
+        if $i0 == 144 goto label104;
+
+     label111:
+        if $i0 == 145 goto label103;
+
+        if $i0 == 146 goto label112;
+
+        if $i0 == 147 goto label103;
+
+     label112:
+        if $i0 == 149 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.225705808 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.146211733 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2937 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 131 sources and 63 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 278539
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 10178242
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 28939892 forward and 9788379 backward edges solved, processing 33 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 33 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 2.035351455 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("global_b_version_id", $i0) in method <i: i a(java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r10) in method <f: boolean a(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("location", $r3) in method <com.keji.fixedposition.HandleMessage: void c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r9) in method <com.autonavi.mapapi.r: java.lang.Object d()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.autonavi.mapapi.r: java.lang.Object d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("Zoom", $i0) in method <com.autonavi.mapapi.Mediator$c: void c(com.autonavi.mapapi.Mediator$c)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tel", $r6) in method <bk: void onClick(android.content.DialogInterface,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.keji.fixedposition.Connections: void a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.keji.fixedposition.Connections: void a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("sender_tel", $r3) in method <com.keji.fixedposition.HandleMessage: void c()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("jinwei", $r8) in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<com.autonavi.mapapi.c$b: boolean sendMessage(android.os.Message)>($r2) in method <com.autonavi.mapapi.c$b: void b()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r0.<com.autonavi.mapapi.c$b: android.os.Message obtainMessage(int,java.lang.Object)>($i0, $r1) in method <com.autonavi.mapapi.c$b: void b()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<android.os.Bundle: void putDouble(java.lang.String,double)>("latitude", $d1) in method <ag: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_body") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.os.Handler: boolean sendMessage(android.os.Message)>($r3) in method <az: void a(java.lang.Object)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<java.io.FileOutputStream: void write(byte[])>($r3) in method <w: void a(java.io.FileOutputStream,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("location", $r4) in method <ag: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("GeoY", $i0) in method <com.autonavi.mapapi.Mediator$c: void c(com.autonavi.mapapi.Mediator$c)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r17) in method <com.autonavi.mapapi.c: void a(java.lang.Object,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.location.Location in method <com.autonavi.mapapi.c: void onLocationChanged(android.location.Location)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, null, null) in method <f: void b(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r20 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <f: boolean a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<android.os.Handler: boolean sendMessage(android.os.Message)>($r6) in method <r: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Handler: android.os.Message obtainMessage(int)>(4) in method <r: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r10) in method <f: boolean a(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("status", $i0) in method <com.autonavi.mapapi.c: void a(java.lang.Object,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter1: int in method <com.autonavi.mapapi.c: void onStatusChanged(java.lang.String,int,android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("msg_address", $r2) in method <ag: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r7.<android.os.Bundle: void putDouble(java.lang.String,double)>("longitude", $d0) in method <ag: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_body") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("CellLocation", $r6) in method <com.keji.fixedposition.HandleMessage: java.lang.String b()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i1 = virtualinvoke $r4.<android.telephony.gsm.GsmCellLocation: int getLac()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String b()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r4.<android.telephony.gsm.GsmCellLocation: int getCid()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String b()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1) in method <i: i a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r20 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <f: boolean a(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<com.keji.fixedposition.Connections: void setResult(int,android.content.Intent)>(-1, $r2) in method <bk: void onClick(android.content.DialogInterface,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r5.<com.keji.fixedposition.Connections: android.content.Intent getIntent()>() in method <bk: void onClick(android.content.DialogInterface,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("GeoX", $i0) in method <com.autonavi.mapapi.Mediator$c: void c(com.autonavi.mapapi.Mediator$c)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() in method <com.keji.fixedposition.HandleMessage: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") in method <com.keji.fixedposition.HandleMessage: java.lang.String a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.keji.fixedposition.ForAlarm: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.keji.fixedposition.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<com.autonavi.mapapi.b$b: boolean sendMessage(android.os.Message)>($r4) in method <com.autonavi.mapapi.b$a: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<com.autonavi.mapapi.b$b: android.os.Message obtainMessage(int,int,int,java.lang.Object)>(0, 0, 0, $r2) in method <com.autonavi.mapapi.b$a: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("jinwei", $r8) in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") in method <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink interfaceinvoke $r1.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("global_b_version_id", $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r10), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("location", $r3), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r10.<java.io.OutputStream: void write(byte[])>($r9), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $r6 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.autonavi.mapapi.r: java.lang.Object d()>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("Zoom", $i0), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r3.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("tel", $r6), from the following sources:
+	- $r4 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.keji.fixedposition.Connections: void a()>)
+	- $r5 = interfaceinvoke $r3.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.keji.fixedposition.Connections: void a()>)
+Found a flow to sink virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("sender_tel", $r3), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("jinwei", $r8), from the following sources:
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r0.<com.autonavi.mapapi.c$b: boolean sendMessage(android.os.Message)>($r2), from the following sources:
+	- $r2 = virtualinvoke $r0.<com.autonavi.mapapi.c$b: android.os.Message obtainMessage(int,java.lang.Object)>($i0, $r1) (in <com.autonavi.mapapi.c$b: void b()>)
+Found a flow to sink virtualinvoke $r7.<android.os.Bundle: void putDouble(java.lang.String,double)>("latitude", $d1), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_body") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r2.<android.os.Handler: boolean sendMessage(android.os.Message)>($r3), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r0.<java.io.FileOutputStream: void write(byte[])>($r3), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("location", $r4), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("GeoY", $i0), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r10.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>("location", $r17), from the following sources:
+	- $r1 := @parameter0: android.location.Location (in <com.autonavi.mapapi.c: void onLocationChanged(android.location.Location)>)
+Found a flow to sink virtualinvoke $r3.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r1, null, $r2, null, null), from the following sources:
+	- $r20 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <f: boolean a(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r5.<android.os.Handler: boolean sendMessage(android.os.Message)>($r6), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r6 = virtualinvoke $r5.<android.os.Handler: android.os.Message obtainMessage(int)>(4) (in <r: void run()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r10), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.keji.fixedposition.BaseBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("status", $i0), from the following sources:
+	- $i0 := @parameter1: int (in <com.autonavi.mapapi.c: void onStatusChanged(java.lang.String,int,android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r7.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("msg_address", $r2), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r7.<android.os.Bundle: void putDouble(java.lang.String,double)>("longitude", $d0), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_body") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("CellLocation", $r6), from the following sources:
+	- $i1 = virtualinvoke $r4.<android.telephony.gsm.GsmCellLocation: int getLac()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String b()>)
+	- $i0 = virtualinvoke $r4.<android.telephony.gsm.GsmCellLocation: int getCid()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String b()>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r0, $r1), from the following sources:
+	- $r20 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <f: boolean a(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r5.<com.keji.fixedposition.Connections: void setResult(int,android.content.Intent)>(-1, $r2), from the following sources:
+	- $r2 = virtualinvoke $r5.<com.keji.fixedposition.Connections: android.content.Intent getIntent()>() (in <bk: void onClick(android.content.DialogInterface,int)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("GeoX", $i0), from the following sources:
+	- $r6 = virtualinvoke $r2.<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)>("gps") (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r6.<android.location.Location: double getLatitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r6.<android.location.Location: double getLongitude()>() (in <com.keji.fixedposition.HandleMessage: java.lang.String d()>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("msg_address") (in <com.keji.fixedposition.HandleMessage: java.lang.String a()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.keji.fixedposition.ForAlarm: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r3.<com.autonavi.mapapi.b$b: boolean sendMessage(android.os.Message)>($r4), from the following sources:
+	- $r4 = virtualinvoke $r3.<com.autonavi.mapapi.b$b: android.os.Message obtainMessage(int,int,int,java.lang.Object)>(0, 0, 0, $r2) (in <com.autonavi.mapapi.b$a: void run()>)
+Found a flow to sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>("jinwei", $r8), from the following sources:
+	- $d0 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("longitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+	- $d1 = virtualinvoke $r1.<android.os.Bundle: double getDouble(java.lang.String)>("latitude") (in <com.keji.fixedposition.DisplayMap: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.keji.fixedposition.BootBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 7238.224192 MB
+Analysis has run for 252.419523728 seconds

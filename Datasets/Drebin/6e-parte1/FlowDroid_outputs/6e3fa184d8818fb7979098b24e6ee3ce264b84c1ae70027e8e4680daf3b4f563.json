@@ -1,0 +1,2150 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.037969182 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.adwo.adsdk.AdwoAdBrowserActivity is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.waps.OffersWebView $r1;
+        com.wangwei.tblianliankan.MainActivity $r2;
+        com.wangwei.tblianliankan.BootService $r3;
+        com.wangwei.tblianliankan.GameActivity $r4;
+        com.wangwei.tblianliankan.AlmService $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.waps.OffersWebView;
+
+        specialinvoke $r1.<com.waps.OffersWebView: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onResume()>();
+
+        if $i0 == 3 goto label02;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label07;
+
+        $r2 = new com.wangwei.tblianliankan.MainActivity;
+
+        specialinvoke $r2.<com.wangwei.tblianliankan.MainActivity: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+        virtualinvoke $r2.<com.wangwei.tblianliankan.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        virtualinvoke $r2.<com.wangwei.tblianliankan.MainActivity: void onResume()>();
+
+        virtualinvoke $r2.<com.wangwei.tblianliankan.MainActivity: void onPause()>();
+
+        if $i0 == 10 goto label05;
+
+        if $i0 == 11 goto label06;
+
+        if $i0 == 12 goto label05;
+
+     label06:
+        virtualinvoke $r2.<com.wangwei.tblianliankan.MainActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 16 goto label09;
+
+        $r3 = new com.wangwei.tblianliankan.BootService;
+
+        specialinvoke $r3.<com.wangwei.tblianliankan.BootService: void <init>()>();
+
+        if $i0 == 17 goto label09;
+
+     label08:
+        virtualinvoke $r3.<com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 19 goto label08;
+
+     label09:
+        if $i0 == 20 goto label12;
+
+        $r4 = new com.wangwei.tblianliankan.GameActivity;
+
+        specialinvoke $r4.<com.wangwei.tblianliankan.GameActivity: void <init>()>();
+
+        if $i0 == 21 goto label12;
+
+        virtualinvoke $r4.<com.wangwei.tblianliankan.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        virtualinvoke $r4.<com.wangwei.tblianliankan.GameActivity: void onPause()>();
+
+        if $i0 == 23 goto label10;
+
+        if $i0 == 24 goto label11;
+
+        if $i0 == 25 goto label10;
+
+     label11:
+        virtualinvoke $r4.<com.wangwei.tblianliankan.GameActivity: void onDestroy()>();
+
+     label12:
+        if $i0 == 27 goto label14;
+
+        $r5 = new com.wangwei.tblianliankan.AlmService;
+
+        specialinvoke $r5.<com.wangwei.tblianliankan.AlmService: void <init>()>();
+
+        if $i0 == 28 goto label14;
+
+     label13:
+        virtualinvoke $r5.<com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 30 goto label13;
+
+     label14:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.0 seconds.
+[Spark] Solution found in 2.0 seconds.
+Callback analysis done.
+Warning: RelativeLayout is a phantom class!
+Warning: com.wangwei.tblianliankan.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: com.wangwei.tblianliankan.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.wangwei.tblianliankan.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.wangwei.tblianliankan.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: ImageButton is a phantom class!
+Warning: com.wangwei.tblianliankan.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.wangwei.tblianliankan.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/game.xml
+Found 2 layout controls in file res/layout/logo.xml
+Warning: WebView is a phantom class!
+Warning: com.wangwei.tblianliankan.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Warning: ProgressBar is a phantom class!
+Warning: com.wangwei.tblianliankan.ProgressBar is a phantom class!
+Warning: android.view.ProgressBar is a phantom class!
+Found 3 layout controls in file res/layout/offers_web_view.xml
+Found 4 layout controls in file res/layout/push_layout.xml
+Found 5 layout controls in file res/layout/umeng_download_notification.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.adwo.adsdk.AdwoAdBrowserActivity is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.io.File
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ImageButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.Button
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.waps.OffersWebView $r1;
+        com.waps.y $r2;
+        com.waps.u $r3;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+        com.waps.x $r4;
+        com.waps.v $r5;
+        com.waps.ac $r6;
+        com.waps.z $r7;
+        com.waps.aa $r8;
+        com.waps.w $r9;
+        com.waps.ad $r10;
+        com.waps.ab $r11;
+        com.wangwei.tblianliankan.MainActivity $r12;
+        com.wiyun.engine.events.EventDispatcher $r13;
+        com.wiyun.engine.opengl.GLSurfaceView $r14;
+        com.mobclick.android.g $r15;
+        com.mobclick.android.j $r16;
+        com.wiyun.engine.opengl.WYGLSurfaceView $r17;
+        com.mobclick.android.i $r18;
+        com.mobclick.android.h $r19;
+        com.wangwei.tblianliankan.BootService $r20;
+        com.wangwei.tblianliankan.GameActivity $r21;
+        com.wangwei.tblianliankan.GameActivity$4 $r22;
+        com.wangwei.tblianliankan.GameActivity$1 $r23;
+        com.wangwei.tblianliankan.GameActivity$2 $r24;
+        com.wangwei.tblianliankan.GameActivity$3 $r25;
+        com.wangwei.tblianliankan.AlmService $r26;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label17;
+
+        $r1 = new com.waps.OffersWebView;
+
+        specialinvoke $r1.<com.waps.OffersWebView: void <init>()>();
+
+        if $i0 == 1 goto label17;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onResume()>();
+
+        if $i0 == 3 goto label15;
+
+     label03:
+        $r2 = new com.waps.y;
+
+        specialinvoke $r2.<com.waps.y: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<com.waps.y: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label04:
+        $r3 = new com.waps.u;
+
+        specialinvoke $r3.<com.waps.u: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r3.<com.waps.u: void onClick(android.view.View)>(null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        $z0 = virtualinvoke $r1.<com.waps.OffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label06:
+        $r4 = new com.waps.x;
+
+        specialinvoke $r4.<com.waps.x: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r4.<com.waps.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label07:
+        $r5 = new com.waps.v;
+
+        specialinvoke $r5.<com.waps.v: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r5.<com.waps.v: void onClick(android.view.View)>(null);
+
+     label08:
+        $r6 = new com.waps.ac;
+
+        specialinvoke $r6.<com.waps.ac: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r6.<com.waps.ac: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label09:
+        $r7 = new com.waps.z;
+
+        specialinvoke $r7.<com.waps.z: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 10 goto label10;
+
+        virtualinvoke $r7.<com.waps.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label10:
+        $r8 = new com.waps.aa;
+
+        specialinvoke $r8.<com.waps.aa: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r8.<com.waps.aa: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label11:
+        $r9 = new com.waps.w;
+
+        specialinvoke $r9.<com.waps.w: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r9.<com.waps.w: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label12:
+        $r10 = new com.waps.ad;
+
+        specialinvoke $r10.<com.waps.ad: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 13 goto label13;
+
+        virtualinvoke $r10.<com.waps.ad: void onClick(android.view.View)>(null);
+
+     label13:
+        $r11 = new com.waps.ab;
+
+        specialinvoke $r11.<com.waps.ab: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 14 goto label14;
+
+        virtualinvoke $r11.<com.waps.ab: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label14:
+        if $i0 == 15 goto label03;
+
+     label15:
+        if $i0 == 16 goto label02;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onStop()>();
+
+        if $i0 == 17 goto label16;
+
+        if $i0 == 18 goto label02;
+
+     label16:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onDestroy()>();
+
+     label17:
+        if $i0 == 20 goto label44;
+
+        $r12 = new com.wangwei.tblianliankan.MainActivity;
+
+        specialinvoke $r12.<com.wangwei.tblianliankan.MainActivity: void <init>()>();
+
+        if $i0 == 21 goto label44;
+
+        virtualinvoke $r12.<com.wangwei.tblianliankan.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        virtualinvoke $r12.<com.wangwei.tblianliankan.MainActivity: void onResume()>();
+
+        if $i0 == 23 goto label42;
+
+     label19:
+        $r13 = new com.wiyun.engine.events.EventDispatcher;
+
+        specialinvoke $r13.<com.wiyun.engine.events.EventDispatcher: void <init>()>();
+
+        if $i0 == 24 goto label20;
+
+        virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: void onShowPress(android.view.MotionEvent)>(null);
+
+     label20:
+        if $i0 == 25 goto label21;
+
+        $z1 = virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: boolean onDown(android.view.MotionEvent)>(null);
+
+     label21:
+        if $i0 == 26 goto label22;
+
+        $z2 = virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: boolean onSingleTapConfirmed(android.view.MotionEvent)>(null);
+
+     label22:
+        if $i0 == 27 goto label23;
+
+        $z3 = virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: boolean onDoubleTap(android.view.MotionEvent)>(null);
+
+     label23:
+        if $i0 == 28 goto label24;
+
+        $z4 = virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label24:
+        if $i0 == 29 goto label25;
+
+        $z5 = virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: boolean onDoubleTapEvent(android.view.MotionEvent)>(null);
+
+     label25:
+        if $i0 == 30 goto label26;
+
+        $z6 = virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label26:
+        if $i0 == 31 goto label27;
+
+        $z7 = virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label27:
+        if $i0 == 32 goto label28;
+
+        virtualinvoke $r13.<com.wiyun.engine.events.EventDispatcher: void onLongPress(android.view.MotionEvent)>(null);
+
+     label28:
+        $r14 = new com.wiyun.engine.opengl.GLSurfaceView;
+
+        specialinvoke $r14.<com.wiyun.engine.opengl.GLSurfaceView: void <init>(android.content.Context)>($r12);
+
+        if $i0 == 33 goto label29;
+
+        virtualinvoke $r14.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label29:
+        if $i0 == 34 goto label30;
+
+        virtualinvoke $r14.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label30:
+        if $i0 == 35 goto label31;
+
+        virtualinvoke $r14.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label31:
+        $r15 = new com.mobclick.android.g;
+
+        specialinvoke $r15.<com.mobclick.android.g: void <init>(android.content.Context,java.io.File)>($r12, null);
+
+        if $i0 == 36 goto label32;
+
+        virtualinvoke $r15.<com.mobclick.android.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label32:
+        if $i0 == 37 goto label33;
+
+        virtualinvoke $r12.<com.wangwei.tblianliankan.MainActivity: void onBackPressed()>();
+
+     label33:
+        $r16 = new com.mobclick.android.j;
+
+        specialinvoke $r16.<com.mobclick.android.j: void <init>()>();
+
+        if $i0 == 38 goto label34;
+
+        virtualinvoke $r16.<com.mobclick.android.j: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label34:
+        $r17 = new com.wiyun.engine.opengl.WYGLSurfaceView;
+
+        specialinvoke $r17.<com.wiyun.engine.opengl.WYGLSurfaceView: void <init>(android.content.Context)>($r12);
+
+        if $i0 == 39 goto label35;
+
+        $z8 = virtualinvoke $r17.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label35:
+        if $i0 == 40 goto label36;
+
+        virtualinvoke $r17.<com.wiyun.engine.opengl.WYGLSurfaceView: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label36:
+        if $i0 == 41 goto label37;
+
+        virtualinvoke $r17.<com.wiyun.engine.opengl.WYGLSurfaceView: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label37:
+        if $i0 == 42 goto label38;
+
+        $z9 = virtualinvoke $r17.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyMultiple(int,int,android.view.KeyEvent)>(0, 0, null);
+
+     label38:
+        if $i0 == 43 goto label39;
+
+        $z10 = virtualinvoke $r17.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label39:
+        $r18 = new com.mobclick.android.i;
+
+        specialinvoke $r18.<com.mobclick.android.i: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r12, "", "");
+
+        if $i0 == 44 goto label40;
+
+        virtualinvoke $r18.<com.mobclick.android.i: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label40:
+        $r19 = new com.mobclick.android.h;
+
+        specialinvoke $r19.<com.mobclick.android.h: void <init>()>();
+
+        if $i0 == 45 goto label41;
+
+        virtualinvoke $r19.<com.mobclick.android.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label41:
+        if $i0 == 46 goto label19;
+
+     label42:
+        virtualinvoke $r12.<com.wangwei.tblianliankan.MainActivity: void onPause()>();
+
+        if $i0 == 47 goto label18;
+
+        if $i0 == 48 goto label43;
+
+        if $i0 == 49 goto label18;
+
+     label43:
+        virtualinvoke $r12.<com.wangwei.tblianliankan.MainActivity: void onDestroy()>();
+
+     label44:
+        if $i0 == 53 goto label46;
+
+        $r20 = new com.wangwei.tblianliankan.BootService;
+
+        specialinvoke $r20.<com.wangwei.tblianliankan.BootService: void <init>()>();
+
+        if $i0 == 54 goto label46;
+
+     label45:
+        virtualinvoke $r20.<com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 56 goto label45;
+
+     label46:
+        if $i0 == 57 goto label56;
+
+        $r21 = new com.wangwei.tblianliankan.GameActivity;
+
+        specialinvoke $r21.<com.wangwei.tblianliankan.GameActivity: void <init>()>();
+
+        if $i0 == 58 goto label56;
+
+        virtualinvoke $r21.<com.wangwei.tblianliankan.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label47:
+        if $i0 == 60 goto label54;
+
+     label48:
+        $r22 = new com.wangwei.tblianliankan.GameActivity$4;
+
+        specialinvoke $r22.<com.wangwei.tblianliankan.GameActivity$4: void <init>(com.wangwei.tblianliankan.GameActivity)>($r21);
+
+        if $i0 == 61 goto label49;
+
+        virtualinvoke $r22.<com.wangwei.tblianliankan.GameActivity$4: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label49:
+        $r23 = new com.wangwei.tblianliankan.GameActivity$1;
+
+        specialinvoke $r23.<com.wangwei.tblianliankan.GameActivity$1: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.ImageButton)>($r21, null);
+
+        if $i0 == 62 goto label50;
+
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity$1: void onClick(android.view.View)>(null);
+
+     label50:
+        $r24 = new com.wangwei.tblianliankan.GameActivity$2;
+
+        specialinvoke $r24.<com.wangwei.tblianliankan.GameActivity$2: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.Button)>($r21, null);
+
+        if $i0 == 63 goto label51;
+
+        virtualinvoke $r24.<com.wangwei.tblianliankan.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label51:
+        if $i0 == 64 goto label52;
+
+        virtualinvoke $r21.<com.wangwei.tblianliankan.GameActivity: void onBackPressed()>();
+
+     label52:
+        $r25 = new com.wangwei.tblianliankan.GameActivity$3;
+
+        specialinvoke $r25.<com.wangwei.tblianliankan.GameActivity$3: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.Button)>($r21, null);
+
+        if $i0 == 65 goto label53;
+
+        virtualinvoke $r25.<com.wangwei.tblianliankan.GameActivity$3: void onClick(android.view.View)>(null);
+
+     label53:
+        if $i0 == 66 goto label48;
+
+     label54:
+        virtualinvoke $r21.<com.wangwei.tblianliankan.GameActivity: void onPause()>();
+
+        if $i0 == 67 goto label47;
+
+        if $i0 == 68 goto label55;
+
+        if $i0 == 69 goto label47;
+
+     label55:
+        virtualinvoke $r21.<com.wangwei.tblianliankan.GameActivity: void onDestroy()>();
+
+     label56:
+        if $i0 == 71 goto label58;
+
+        $r26 = new com.wangwei.tblianliankan.AlmService;
+
+        specialinvoke $r26.<com.wangwei.tblianliankan.AlmService: void <init>()>();
+
+        if $i0 == 72 goto label58;
+
+     label57:
+        virtualinvoke $r26.<com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 74 goto label57;
+
+     label58:
+        if $i0 == 77 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.4 seconds.
+[Spark] Solution found in 1.4 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.adwo.adsdk.AdwoAdBrowserActivity is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.io.File
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.Button
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ImageButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.waps.OffersWebView $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10;
+        com.waps.w $r2;
+        com.waps.v $r3;
+        com.waps.u $r4;
+        com.waps.y $r5;
+        com.waps.z $r6;
+        com.waps.aa $r7;
+        com.waps.x $r8;
+        com.waps.ab $r9;
+        com.waps.ac $r10;
+        com.waps.ad $r11;
+        com.waps.p $r12;
+        com.waps.q $r13;
+        com.wangwei.tblianliankan.MainActivity $r14;
+        com.wiyun.engine.opengl.GLSurfaceView $r15;
+        com.mobclick.android.i $r16;
+        com.mobclick.android.j $r17;
+        com.wiyun.engine.opengl.WYGLSurfaceView $r18;
+        com.wiyun.engine.events.EventDispatcher $r19;
+        com.mobclick.android.h $r20;
+        com.mobclick.android.g $r21;
+        com.wangwei.tblianliankan.BootService $r22;
+        com.wangwei.tblianliankan.GameActivity $r23;
+        com.wangwei.tblianliankan.GameActivity$3 $r24;
+        com.wangwei.tblianliankan.GameActivity$1 $r25;
+        com.wangwei.tblianliankan.GameActivity$2 $r26;
+        com.wangwei.tblianliankan.GameActivity$4 $r27;
+        com.wangwei.tblianliankan.AlmService $r28;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label17;
+
+        $r1 = new com.waps.OffersWebView;
+
+        specialinvoke $r1.<com.waps.OffersWebView: void <init>()>();
+
+        if $i0 == 1 goto label17;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onResume()>();
+
+        if $i0 == 3 goto label15;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r1.<com.waps.OffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label04:
+        $r2 = new com.waps.w;
+
+        specialinvoke $r2.<com.waps.w: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r2.<com.waps.w: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label05:
+        $r3 = new com.waps.v;
+
+        specialinvoke $r3.<com.waps.v: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r3.<com.waps.v: void onClick(android.view.View)>(null);
+
+     label06:
+        $r4 = new com.waps.u;
+
+        specialinvoke $r4.<com.waps.u: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r4.<com.waps.u: void onClick(android.view.View)>(null);
+
+     label07:
+        $r5 = new com.waps.y;
+
+        specialinvoke $r5.<com.waps.y: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r5.<com.waps.y: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label08:
+        $r6 = new com.waps.z;
+
+        specialinvoke $r6.<com.waps.z: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r6.<com.waps.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label09:
+        $r7 = new com.waps.aa;
+
+        specialinvoke $r7.<com.waps.aa: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 10 goto label10;
+
+        virtualinvoke $r7.<com.waps.aa: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label10:
+        $r8 = new com.waps.x;
+
+        specialinvoke $r8.<com.waps.x: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r8.<com.waps.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label11:
+        $r9 = new com.waps.ab;
+
+        specialinvoke $r9.<com.waps.ab: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r9.<com.waps.ab: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label12:
+        $r10 = new com.waps.ac;
+
+        specialinvoke $r10.<com.waps.ac: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 13 goto label13;
+
+        virtualinvoke $r10.<com.waps.ac: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label13:
+        $r11 = new com.waps.ad;
+
+        specialinvoke $r11.<com.waps.ad: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 14 goto label14;
+
+        virtualinvoke $r11.<com.waps.ad: void onClick(android.view.View)>(null);
+
+     label14:
+        if $i0 == 15 goto label03;
+
+     label15:
+        if $i0 == 16 goto label02;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onStop()>();
+
+        if $i0 == 17 goto label16;
+
+        if $i0 == 18 goto label02;
+
+     label16:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onDestroy()>();
+
+     label17:
+        if $i0 == 20 goto label19;
+
+        $r12 = new com.waps.p;
+
+        specialinvoke $r12.<com.waps.p: void <init>(android.content.Context)>(null);
+
+        $r13 = new com.waps.q;
+
+        specialinvoke $r13.<com.waps.q: void <init>(com.waps.p,int,java.lang.String)>($r12, 0, "");
+
+        if $i0 == 21 goto label19;
+
+     label18:
+        virtualinvoke $r13.<com.waps.q: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label18;
+
+     label19:
+        if $i0 == 24 goto label46;
+
+        $r14 = new com.wangwei.tblianliankan.MainActivity;
+
+        specialinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void <init>()>();
+
+        if $i0 == 25 goto label46;
+
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onResume()>();
+
+        if $i0 == 27 goto label44;
+
+     label21:
+        $r15 = new com.wiyun.engine.opengl.GLSurfaceView;
+
+        specialinvoke $r15.<com.wiyun.engine.opengl.GLSurfaceView: void <init>(android.content.Context)>($r14);
+
+        if $i0 == 28 goto label22;
+
+        virtualinvoke $r15.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label22:
+        if $i0 == 29 goto label23;
+
+        virtualinvoke $r15.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label23:
+        if $i0 == 30 goto label24;
+
+        virtualinvoke $r15.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label24:
+        $r16 = new com.mobclick.android.i;
+
+        specialinvoke $r16.<com.mobclick.android.i: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r14, "", "");
+
+        if $i0 == 31 goto label25;
+
+        virtualinvoke $r16.<com.mobclick.android.i: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r17 = new com.mobclick.android.j;
+
+        specialinvoke $r17.<com.mobclick.android.j: void <init>()>();
+
+        if $i0 == 32 goto label26;
+
+        virtualinvoke $r17.<com.mobclick.android.j: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label26:
+        $r18 = new com.wiyun.engine.opengl.WYGLSurfaceView;
+
+        specialinvoke $r18.<com.wiyun.engine.opengl.WYGLSurfaceView: void <init>(android.content.Context)>($r14);
+
+        if $i0 == 33 goto label27;
+
+        $z1 = virtualinvoke $r18.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label27:
+        if $i0 == 34 goto label28;
+
+        $z2 = virtualinvoke $r18.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyMultiple(int,int,android.view.KeyEvent)>(0, 0, null);
+
+     label28:
+        if $i0 == 35 goto label29;
+
+        $z3 = virtualinvoke $r18.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label29:
+        if $i0 == 36 goto label30;
+
+        virtualinvoke $r18.<com.wiyun.engine.opengl.WYGLSurfaceView: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label30:
+        if $i0 == 37 goto label31;
+
+        virtualinvoke $r18.<com.wiyun.engine.opengl.WYGLSurfaceView: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label31:
+        if $i0 == 38 goto label32;
+
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onBackPressed()>();
+
+     label32:
+        $r19 = new com.wiyun.engine.events.EventDispatcher;
+
+        specialinvoke $r19.<com.wiyun.engine.events.EventDispatcher: void <init>()>();
+
+        if $i0 == 39 goto label33;
+
+        virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: void onLongPress(android.view.MotionEvent)>(null);
+
+     label33:
+        if $i0 == 40 goto label34;
+
+        virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: void onShowPress(android.view.MotionEvent)>(null);
+
+     label34:
+        if $i0 == 41 goto label35;
+
+        $z4 = virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: boolean onSingleTapConfirmed(android.view.MotionEvent)>(null);
+
+     label35:
+        if $i0 == 42 goto label36;
+
+        $z5 = virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: boolean onDoubleTapEvent(android.view.MotionEvent)>(null);
+
+     label36:
+        if $i0 == 43 goto label37;
+
+        $z6 = virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label37:
+        if $i0 == 44 goto label38;
+
+        $z7 = virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: boolean onDoubleTap(android.view.MotionEvent)>(null);
+
+     label38:
+        if $i0 == 45 goto label39;
+
+        $z8 = virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: boolean onDown(android.view.MotionEvent)>(null);
+
+     label39:
+        if $i0 == 46 goto label40;
+
+        $z9 = virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label40:
+        if $i0 == 47 goto label41;
+
+        $z10 = virtualinvoke $r19.<com.wiyun.engine.events.EventDispatcher: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label41:
+        $r20 = new com.mobclick.android.h;
+
+        specialinvoke $r20.<com.mobclick.android.h: void <init>()>();
+
+        if $i0 == 48 goto label42;
+
+        virtualinvoke $r20.<com.mobclick.android.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label42:
+        $r21 = new com.mobclick.android.g;
+
+        specialinvoke $r21.<com.mobclick.android.g: void <init>(android.content.Context,java.io.File)>($r14, null);
+
+        if $i0 == 49 goto label43;
+
+        virtualinvoke $r21.<com.mobclick.android.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label43:
+        if $i0 == 50 goto label21;
+
+     label44:
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onPause()>();
+
+        if $i0 == 51 goto label20;
+
+        if $i0 == 52 goto label45;
+
+        if $i0 == 53 goto label20;
+
+     label45:
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onDestroy()>();
+
+     label46:
+        if $i0 == 57 goto label48;
+
+        $r22 = new com.wangwei.tblianliankan.BootService;
+
+        specialinvoke $r22.<com.wangwei.tblianliankan.BootService: void <init>()>();
+
+        if $i0 == 58 goto label48;
+
+     label47:
+        virtualinvoke $r22.<com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 60 goto label47;
+
+     label48:
+        if $i0 == 61 goto label58;
+
+        $r23 = new com.wangwei.tblianliankan.GameActivity;
+
+        specialinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void <init>()>();
+
+        if $i0 == 62 goto label58;
+
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label49:
+        if $i0 == 64 goto label56;
+
+     label50:
+        $r24 = new com.wangwei.tblianliankan.GameActivity$3;
+
+        specialinvoke $r24.<com.wangwei.tblianliankan.GameActivity$3: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.Button)>($r23, null);
+
+        if $i0 == 65 goto label51;
+
+        virtualinvoke $r24.<com.wangwei.tblianliankan.GameActivity$3: void onClick(android.view.View)>(null);
+
+     label51:
+        $r25 = new com.wangwei.tblianliankan.GameActivity$1;
+
+        specialinvoke $r25.<com.wangwei.tblianliankan.GameActivity$1: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.ImageButton)>($r23, null);
+
+        if $i0 == 66 goto label52;
+
+        virtualinvoke $r25.<com.wangwei.tblianliankan.GameActivity$1: void onClick(android.view.View)>(null);
+
+     label52:
+        $r26 = new com.wangwei.tblianliankan.GameActivity$2;
+
+        specialinvoke $r26.<com.wangwei.tblianliankan.GameActivity$2: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.Button)>($r23, null);
+
+        if $i0 == 67 goto label53;
+
+        virtualinvoke $r26.<com.wangwei.tblianliankan.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label53:
+        $r27 = new com.wangwei.tblianliankan.GameActivity$4;
+
+        specialinvoke $r27.<com.wangwei.tblianliankan.GameActivity$4: void <init>(com.wangwei.tblianliankan.GameActivity)>($r23);
+
+        if $i0 == 68 goto label54;
+
+        virtualinvoke $r27.<com.wangwei.tblianliankan.GameActivity$4: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label54:
+        if $i0 == 69 goto label55;
+
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void onBackPressed()>();
+
+     label55:
+        if $i0 == 70 goto label50;
+
+     label56:
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void onPause()>();
+
+        if $i0 == 71 goto label49;
+
+        if $i0 == 72 goto label57;
+
+        if $i0 == 73 goto label49;
+
+     label57:
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void onDestroy()>();
+
+     label58:
+        if $i0 == 75 goto label60;
+
+        $r28 = new com.wangwei.tblianliankan.AlmService;
+
+        specialinvoke $r28.<com.wangwei.tblianliankan.AlmService: void <init>()>();
+
+        if $i0 == 76 goto label60;
+
+     label59:
+        virtualinvoke $r28.<com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 78 goto label59;
+
+     label60:
+        if $i0 == 81 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 53 callback methods for 5 components
+Found {res/layout/logo.xml=[-1 - android.widget.LinearLayout, 2131296266 - android.widget.ImageView], res/layout/offers_web_view.xml=[2131296269 - android.webkit.WebView, 2131296270 - android.widget.ProgressBar, 2131296268 - android.widget.RelativeLayout, 2131296267 - android.widget.LinearLayout, 2131296271 - android.widget.TextView], res/layout/umeng_download_notification.xml=[2131296280 - android.widget.LinearLayout, 2131296278 - android.widget.ImageView, 2131296277 - android.widget.LinearLayout, 2131296279 - android.widget.TextView, 2131296281 - android.widget.TextView, 2131296282 - android.widget.TextView, 2131296277 - android.widget.RelativeLayout, -1 - android.widget.LinearLayout, 2131296283 - android.widget.ProgressBar, -1 - android.widget.ImageView], res/layout/push_layout.xml=[2131296275 - android.widget.TextView, 2131296273 - android.widget.RelativeLayout, 2131296274 - android.widget.ImageView, 2131296272 - android.widget.RelativeLayout, 2131296276 - android.widget.TextView], res/layout/game.xml=[2131296263 - android.widget.RelativeLayout, 2131296265 - android.widget.Button, -1 - android.widget.RelativeLayout, 2131296260 - android.widget.RelativeLayout, 2131296262 - android.widget.TextView, 2131296256 - android.widget.LinearLayout, 2131296257 - android.widget.ImageView, 2131296258 - android.widget.TextView, 2131296259 - android.widget.ImageButton, 2131296261 - com.wangwei.zqlianliankan.View.GameMainView, -1 - android.widget.LinearLayout, 2131296264 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 53 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6e3fa184d8818fb7979098b24e6ee3ce264b84c1ae70027e8e4680daf3b4f563.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: com.adwo.adsdk.AdwoAdBrowserActivity is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.io.File
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.Button
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ImageButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.waps.OffersWebView $r1;
+        com.waps.ac $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11;
+        com.waps.ad $r3;
+        com.waps.v $r4;
+        com.waps.aa $r5;
+        com.waps.w $r6;
+        com.waps.z $r7;
+        com.waps.x $r8;
+        com.waps.ab $r9;
+        com.waps.u $r10;
+        com.waps.y $r11;
+        com.waps.p $r12;
+        com.waps.q $r13;
+        com.wangwei.tblianliankan.MainActivity $r14;
+        com.mobclick.android.h $r15;
+        com.mobclick.android.i $r16;
+        com.wiyun.engine.opengl.GLSurfaceView $r17;
+        com.mobclick.android.j $r18;
+        com.mobclick.android.g $r19;
+        com.wiyun.engine.events.EventDispatcher $r20;
+        com.wiyun.engine.opengl.WYGLSurfaceView $r21;
+        com.wangwei.tblianliankan.BootService $r22;
+        com.wangwei.tblianliankan.GameActivity $r23;
+        com.wangwei.zqlianliankan.View.GameMainView $r24;
+        com.wangwei.tblianliankan.GameActivity$2 $r25;
+        com.wangwei.tblianliankan.GameActivity$3 $r26;
+        com.wangwei.tblianliankan.GameActivity$1 $r27;
+        com.wangwei.tblianliankan.GameActivity$4 $r28;
+        com.wangwei.tblianliankan.AlmService $r29;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label17;
+
+        $r1 = new com.waps.OffersWebView;
+
+        specialinvoke $r1.<com.waps.OffersWebView: void <init>()>();
+
+        if $i0 == 1 goto label17;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onResume()>();
+
+        if $i0 == 3 goto label15;
+
+     label03:
+        $r2 = new com.waps.ac;
+
+        specialinvoke $r2.<com.waps.ac: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<com.waps.ac: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        $z0 = virtualinvoke $r1.<com.waps.OffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label05:
+        $r3 = new com.waps.ad;
+
+        specialinvoke $r3.<com.waps.ad: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r3.<com.waps.ad: void onClick(android.view.View)>(null);
+
+     label06:
+        $r4 = new com.waps.v;
+
+        specialinvoke $r4.<com.waps.v: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r4.<com.waps.v: void onClick(android.view.View)>(null);
+
+     label07:
+        $r5 = new com.waps.aa;
+
+        specialinvoke $r5.<com.waps.aa: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r5.<com.waps.aa: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label08:
+        $r6 = new com.waps.w;
+
+        specialinvoke $r6.<com.waps.w: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r6.<com.waps.w: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label09:
+        $r7 = new com.waps.z;
+
+        specialinvoke $r7.<com.waps.z: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 10 goto label10;
+
+        virtualinvoke $r7.<com.waps.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label10:
+        $r8 = new com.waps.x;
+
+        specialinvoke $r8.<com.waps.x: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r8.<com.waps.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label11:
+        $r9 = new com.waps.ab;
+
+        specialinvoke $r9.<com.waps.ab: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r9.<com.waps.ab: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label12:
+        $r10 = new com.waps.u;
+
+        specialinvoke $r10.<com.waps.u: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 13 goto label13;
+
+        virtualinvoke $r10.<com.waps.u: void onClick(android.view.View)>(null);
+
+     label13:
+        $r11 = new com.waps.y;
+
+        specialinvoke $r11.<com.waps.y: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 14 goto label14;
+
+        virtualinvoke $r11.<com.waps.y: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label14:
+        if $i0 == 15 goto label03;
+
+     label15:
+        if $i0 == 16 goto label02;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onStop()>();
+
+        if $i0 == 17 goto label16;
+
+        if $i0 == 18 goto label02;
+
+     label16:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onDestroy()>();
+
+     label17:
+        if $i0 == 20 goto label19;
+
+        $r12 = new com.waps.p;
+
+        specialinvoke $r12.<com.waps.p: void <init>(android.content.Context)>(null);
+
+        $r13 = new com.waps.q;
+
+        specialinvoke $r13.<com.waps.q: void <init>(com.waps.p,int,java.lang.String)>($r12, 0, "");
+
+        if $i0 == 21 goto label19;
+
+     label18:
+        virtualinvoke $r13.<com.waps.q: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label18;
+
+     label19:
+        if $i0 == 24 goto label46;
+
+        $r14 = new com.wangwei.tblianliankan.MainActivity;
+
+        specialinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void <init>()>();
+
+        if $i0 == 25 goto label46;
+
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onResume()>();
+
+        if $i0 == 27 goto label44;
+
+     label21:
+        $r15 = new com.mobclick.android.h;
+
+        specialinvoke $r15.<com.mobclick.android.h: void <init>()>();
+
+        if $i0 == 28 goto label22;
+
+        virtualinvoke $r15.<com.mobclick.android.h: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label22:
+        $r16 = new com.mobclick.android.i;
+
+        specialinvoke $r16.<com.mobclick.android.i: void <init>(android.content.Context,java.lang.String,java.lang.String)>($r14, "", "");
+
+        if $i0 == 29 goto label23;
+
+        virtualinvoke $r16.<com.mobclick.android.i: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        $r17 = new com.wiyun.engine.opengl.GLSurfaceView;
+
+        specialinvoke $r17.<com.wiyun.engine.opengl.GLSurfaceView: void <init>(android.content.Context)>($r14);
+
+        if $i0 == 30 goto label24;
+
+        virtualinvoke $r17.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label24:
+        if $i0 == 31 goto label25;
+
+        virtualinvoke $r17.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label25:
+        if $i0 == 32 goto label26;
+
+        virtualinvoke $r17.<com.wiyun.engine.opengl.GLSurfaceView: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label26:
+        $r18 = new com.mobclick.android.j;
+
+        specialinvoke $r18.<com.mobclick.android.j: void <init>()>();
+
+        if $i0 == 33 goto label27;
+
+        virtualinvoke $r18.<com.mobclick.android.j: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label27:
+        $r19 = new com.mobclick.android.g;
+
+        specialinvoke $r19.<com.mobclick.android.g: void <init>(android.content.Context,java.io.File)>($r14, null);
+
+        if $i0 == 34 goto label28;
+
+        virtualinvoke $r19.<com.mobclick.android.g: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label28:
+        $r20 = new com.wiyun.engine.events.EventDispatcher;
+
+        specialinvoke $r20.<com.wiyun.engine.events.EventDispatcher: void <init>()>();
+
+        if $i0 == 35 goto label29;
+
+        $z1 = virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: boolean onSingleTapConfirmed(android.view.MotionEvent)>(null);
+
+     label29:
+        if $i0 == 36 goto label30;
+
+        $z2 = virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: boolean onDoubleTap(android.view.MotionEvent)>(null);
+
+     label30:
+        if $i0 == 37 goto label31;
+
+        virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: void onLongPress(android.view.MotionEvent)>(null);
+
+     label31:
+        if $i0 == 38 goto label32;
+
+        $z3 = virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: boolean onDoubleTapEvent(android.view.MotionEvent)>(null);
+
+     label32:
+        if $i0 == 39 goto label33;
+
+        virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: void onShowPress(android.view.MotionEvent)>(null);
+
+     label33:
+        if $i0 == 40 goto label34;
+
+        $z4 = virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: boolean onSingleTapUp(android.view.MotionEvent)>(null);
+
+     label34:
+        if $i0 == 41 goto label35;
+
+        $z5 = virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: boolean onDown(android.view.MotionEvent)>(null);
+
+     label35:
+        if $i0 == 42 goto label36;
+
+        $z6 = virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label36:
+        if $i0 == 43 goto label37;
+
+        $z7 = virtualinvoke $r20.<com.wiyun.engine.events.EventDispatcher: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label37:
+        $r21 = new com.wiyun.engine.opengl.WYGLSurfaceView;
+
+        specialinvoke $r21.<com.wiyun.engine.opengl.WYGLSurfaceView: void <init>(android.content.Context)>($r14);
+
+        if $i0 == 44 goto label38;
+
+        $z8 = virtualinvoke $r21.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyMultiple(int,int,android.view.KeyEvent)>(0, 0, null);
+
+     label38:
+        if $i0 == 45 goto label39;
+
+        $z9 = virtualinvoke $r21.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label39:
+        if $i0 == 46 goto label40;
+
+        virtualinvoke $r21.<com.wiyun.engine.opengl.WYGLSurfaceView: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label40:
+        if $i0 == 47 goto label41;
+
+        $z10 = virtualinvoke $r21.<com.wiyun.engine.opengl.WYGLSurfaceView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label41:
+        if $i0 == 48 goto label42;
+
+        virtualinvoke $r21.<com.wiyun.engine.opengl.WYGLSurfaceView: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label42:
+        if $i0 == 49 goto label43;
+
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onBackPressed()>();
+
+     label43:
+        if $i0 == 50 goto label21;
+
+     label44:
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onPause()>();
+
+        if $i0 == 51 goto label20;
+
+        if $i0 == 52 goto label45;
+
+        if $i0 == 53 goto label20;
+
+     label45:
+        virtualinvoke $r14.<com.wangwei.tblianliankan.MainActivity: void onDestroy()>();
+
+     label46:
+        if $i0 == 57 goto label48;
+
+        $r22 = new com.wangwei.tblianliankan.BootService;
+
+        specialinvoke $r22.<com.wangwei.tblianliankan.BootService: void <init>()>();
+
+        if $i0 == 58 goto label48;
+
+     label47:
+        virtualinvoke $r22.<com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 60 goto label47;
+
+     label48:
+        if $i0 == 61 goto label60;
+
+        $r23 = new com.wangwei.tblianliankan.GameActivity;
+
+        specialinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void <init>()>();
+
+        if $i0 == 62 goto label60;
+
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label49:
+        if $i0 == 64 goto label58;
+
+     label50:
+        $r24 = new com.wangwei.zqlianliankan.View.GameMainView;
+
+        specialinvoke $r24.<com.wangwei.zqlianliankan.View.GameMainView: void <init>(android.content.Context,android.util.AttributeSet)>($r23, null);
+
+        if $i0 == 65 goto label51;
+
+        $z11 = virtualinvoke $r24.<com.wangwei.zqlianliankan.View.GameMainView: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label51:
+        if $i0 == 66 goto label52;
+
+        staticinvoke <com.wangwei.zqlianliankan.View.GameMainView: void <clinit>()>();
+
+     label52:
+        $r25 = new com.wangwei.tblianliankan.GameActivity$2;
+
+        specialinvoke $r25.<com.wangwei.tblianliankan.GameActivity$2: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.Button)>($r23, null);
+
+        if $i0 == 67 goto label53;
+
+        virtualinvoke $r25.<com.wangwei.tblianliankan.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label53:
+        $r26 = new com.wangwei.tblianliankan.GameActivity$3;
+
+        specialinvoke $r26.<com.wangwei.tblianliankan.GameActivity$3: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.Button)>($r23, null);
+
+        if $i0 == 68 goto label54;
+
+        virtualinvoke $r26.<com.wangwei.tblianliankan.GameActivity$3: void onClick(android.view.View)>(null);
+
+     label54:
+        $r27 = new com.wangwei.tblianliankan.GameActivity$1;
+
+        specialinvoke $r27.<com.wangwei.tblianliankan.GameActivity$1: void <init>(com.wangwei.tblianliankan.GameActivity,android.widget.ImageButton)>($r23, null);
+
+        if $i0 == 69 goto label55;
+
+        virtualinvoke $r27.<com.wangwei.tblianliankan.GameActivity$1: void onClick(android.view.View)>(null);
+
+     label55:
+        $r28 = new com.wangwei.tblianliankan.GameActivity$4;
+
+        specialinvoke $r28.<com.wangwei.tblianliankan.GameActivity$4: void <init>(com.wangwei.tblianliankan.GameActivity)>($r23);
+
+        if $i0 == 70 goto label56;
+
+        virtualinvoke $r28.<com.wangwei.tblianliankan.GameActivity$4: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label56:
+        if $i0 == 71 goto label57;
+
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void onBackPressed()>();
+
+     label57:
+        if $i0 == 72 goto label50;
+
+     label58:
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void onPause()>();
+
+        if $i0 == 73 goto label49;
+
+        if $i0 == 74 goto label59;
+
+        if $i0 == 75 goto label49;
+
+     label59:
+        virtualinvoke $r23.<com.wangwei.tblianliankan.GameActivity: void onDestroy()>();
+
+     label60:
+        if $i0 == 77 goto label62;
+
+        $r29 = new com.wangwei.tblianliankan.AlmService;
+
+        specialinvoke $r29.<com.wangwei.tblianliankan.AlmService: void <init>()>();
+
+        if $i0 == 78 goto label62;
+
+     label61:
+        virtualinvoke $r29.<com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 80 goto label61;
+
+     label62:
+        if $i0 == 83 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.5 seconds.
+[Spark] Solution found in 1.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.52483132 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.147826547 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3642 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 117 sources and 137 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1382893
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 2697664
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 10617959 forward and 6426804 backward edges solved, processing 30 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 30 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.29776115 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Notity_UrlPath", $r3) in method <com.waps.p: void a(int,boolean,android.graphics.Bitmap,java.lang.String,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3) in method <com.waps.AppConnect: void initMetaData()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r1, $r2) in method <com.waps.o: void a(com.waps.q)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r2) in method <com.waps.z: void onClick(android.content.DialogInterface,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r20.<android.content.Context: void startActivity(android.content.Intent)>($r18) in method <com.waps.o: java.lang.String a(java.lang.String[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Notity_Content", $r3) in method <com.waps.p: void a(int,boolean,android.graphics.Bitmap,java.lang.String,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.waps.o: long b(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MobclickAgent", $r6) in method <com.mobclick.android.f: android.location.Location a()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() in method <com.mobclick.android.f: android.location.Location a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() in method <com.mobclick.android.f: android.location.Location a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r12) in method <com.waps.q: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r3) in method <com.waps.OffersWebView: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r11) in method <com.waps.ac: void onItemClick(android.widget.AdapterView,android.view.View,int,long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r2) in method <com.waps.aa: void onClick(android.content.DialogInterface,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("appkey", $r2) in method <com.mobclick.android.MobclickAgent: java.lang.String a(android.content.Context,java.lang.String,android.content.SharedPreferences)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UMENG_APPKEY") in method <com.mobclick.android.MobclickAgent: java.lang.String a(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r11.<java.io.FileOutputStream: void write(byte[],int,int)>($r8, 0, $i3) in method <com.mobclick.android.a: void b(boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.mobclick.android.a: void b(boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Notity_Title", $r3) in method <com.waps.p: void a(int,boolean,android.graphics.Bitmap,java.lang.String,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3) in method <com.waps.AppConnect: void initMetaData()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3) in method <com.waps.AppConnect: void initMetaData()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Package_Names", $r4) in method <com.waps.OffersWebView: void getAlreadyInstalledPackages(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(0) in method <com.waps.OffersWebView: void getAlreadyInstalledPackages(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("session_id", $r5) in method <com.mobclick.android.MobclickAgent: java.lang.String a(android.content.Context,java.lang.String,android.content.SharedPreferences)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UMENG_APPKEY") in method <com.mobclick.android.MobclickAgent: java.lang.String a(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r7) in method <com.waps.q: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MobclickAgent", $r2) in method <com.mobclick.android.MobclickAgent: void a(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UMENG_APPKEY") in method <com.mobclick.android.MobclickAgent: java.lang.String a(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MobclickAgent", $r6) in method <com.mobclick.android.f: android.location.Location a()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() in method <com.mobclick.android.f: android.location.Location a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() in method <com.mobclick.android.f: android.location.Location a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r3) in method <com.waps.OffersWebView: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r14.<java.io.FileOutputStream: void write(byte[],int,int)>($r15, 0, $i1) in method <com.waps.o: java.lang.String a(java.lang.String[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.waps.o: java.lang.String a(java.lang.String[])>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+Found a flow to sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Notity_UrlPath", $r3), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3), from the following sources:
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") (in <com.waps.AppConnect: void initMetaData()>)
+Found a flow to sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r1, $r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r5.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r20.<android.content.Context: void startActivity(android.content.Intent)>($r18), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Notity_Content", $r3), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MobclickAgent", $r6), from the following sources:
+	- $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() (in <com.mobclick.android.f: android.location.Location a()>)
+	- $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() (in <com.mobclick.android.f: android.location.Location a()>)
+Found a flow to sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r3, $r12), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r0.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r3), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r4.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r11), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r3.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("appkey", $r2), from the following sources:
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UMENG_APPKEY") (in <com.mobclick.android.MobclickAgent: java.lang.String a(android.content.Context)>)
+Found a flow to sink virtualinvoke $r11.<java.io.FileOutputStream: void write(byte[],int,int)>($r8, 0, $i3), from the following sources:
+	- $r3 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.mobclick.android.a: void b(boolean)>)
+Found a flow to sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Notity_Title", $r3), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3), from the following sources:
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") (in <com.waps.AppConnect: void initMetaData()>)
+Found a flow to sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Package_Names", $r4), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(0) (in <com.waps.OffersWebView: void getAlreadyInstalledPackages(android.content.Context)>)
+Found a flow to sink interfaceinvoke $r6.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("session_id", $r5), from the following sources:
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UMENG_APPKEY") (in <com.mobclick.android.MobclickAgent: java.lang.String a(android.content.Context)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r7), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MobclickAgent", $r2), from the following sources:
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UMENG_APPKEY") (in <com.mobclick.android.MobclickAgent: java.lang.String a(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MobclickAgent", $r6), from the following sources:
+	- $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() (in <com.mobclick.android.f: android.location.Location a()>)
+	- $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() (in <com.mobclick.android.f: android.location.Location a()>)
+Found a flow to sink virtualinvoke $r0.<com.waps.OffersWebView: void startActivity(android.content.Intent)>($r3), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r14.<java.io.FileOutputStream: void write(byte[],int,int)>($r15, 0, $i1), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.AlmService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.wangwei.tblianliankan.BootService: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r9 = interfaceinvoke $r8.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.waps.o: java.lang.String a(java.lang.String[])>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Maximum memory consumption: 2443.691344 MB
+Analysis has run for 77.1882547 seconds

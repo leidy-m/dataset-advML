@@ -1,0 +1,450 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.011544436 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        hider.AppInstall.screencapture.SuRequestReceiver $r1;
+        hider.AppInstall.screencapture.AppInstall $r2;
+        hider.AppInstall.screencapture.PackageReceiver $r3;
+        hider.AppInstall.screencapture.InstallService $r4;
+        android.os.IBinder $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new hider.AppInstall.screencapture.SuRequestReceiver;
+
+        specialinvoke $r1.<hider.AppInstall.screencapture.SuRequestReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<hider.AppInstall.screencapture.SuRequestReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label06;
+
+        $r2 = new hider.AppInstall.screencapture.AppInstall;
+
+        specialinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void <init>()>();
+
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onStop()>();
+
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onDestroy()>();
+
+     label06:
+        if $i0 == 11 goto label08;
+
+        $r3 = new hider.AppInstall.screencapture.PackageReceiver;
+
+        specialinvoke $r3.<hider.AppInstall.screencapture.PackageReceiver: void <init>()>();
+
+        if $i0 == 12 goto label08;
+
+     label07:
+        virtualinvoke $r3.<hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 14 goto label07;
+
+     label08:
+        if $i0 == 15 goto label13;
+
+        $r4 = new hider.AppInstall.screencapture.InstallService;
+
+        specialinvoke $r4.<hider.AppInstall.screencapture.InstallService: void <init>()>();
+
+        virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label09:
+        if $i0 == 16 goto label10;
+
+        if $i0 == 17 goto label09;
+
+     label10:
+        $r5 = virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label11:
+        if $i0 == 19 goto label12;
+
+        if $i0 == 20 goto label11;
+
+     label12:
+        virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: void onDestroy()>();
+
+     label13:
+        if $i0 == 21 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: hider.AppInstall.screencapture.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        hider.AppInstall.screencapture.SuRequestReceiver $r1;
+        hider.AppInstall.screencapture.AppInstall $r2;
+        hider.AppInstall.screencapture.PackageReceiver $r3;
+        hider.AppInstall.screencapture.InstallService $r4;
+        android.os.IBinder $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new hider.AppInstall.screencapture.SuRequestReceiver;
+
+        specialinvoke $r1.<hider.AppInstall.screencapture.SuRequestReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<hider.AppInstall.screencapture.SuRequestReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label09;
+
+        $r2 = new hider.AppInstall.screencapture.AppInstall;
+
+        specialinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void <init>()>();
+
+        if $i0 == 5 goto label09;
+
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label07;
+
+     label05:
+        if $i0 == 8 goto label06;
+
+        staticinvoke <hider.AppInstall.screencapture.AppInstall: void <clinit>()>();
+
+     label06:
+        if $i0 == 9 goto label05;
+
+     label07:
+        if $i0 == 10 goto label04;
+
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onStop()>();
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label04;
+
+     label08:
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onDestroy()>();
+
+     label09:
+        if $i0 == 14 goto label11;
+
+        $r3 = new hider.AppInstall.screencapture.PackageReceiver;
+
+        specialinvoke $r3.<hider.AppInstall.screencapture.PackageReceiver: void <init>()>();
+
+        if $i0 == 15 goto label11;
+
+     label10:
+        virtualinvoke $r3.<hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label10;
+
+     label11:
+        if $i0 == 18 goto label16;
+
+        $r4 = new hider.AppInstall.screencapture.InstallService;
+
+        specialinvoke $r4.<hider.AppInstall.screencapture.InstallService: void <init>()>();
+
+        virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 19 goto label13;
+
+        if $i0 == 20 goto label12;
+
+     label13:
+        $r5 = virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 22 goto label15;
+
+        if $i0 == 23 goto label14;
+
+     label15:
+        virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: void onDestroy()>();
+
+     label16:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+Running incremental callback analysis for 4 components...
+Incremental callback analysis done.
+Found 9 callback methods for 4 components
+Found {res/layout/main.xml=[-1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 9 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6aa92c9e59f6c4512bf96e5a0e7396496b76a2ded19569ebe80e2a9329549d67.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        hider.AppInstall.screencapture.SuRequestReceiver $r1;
+        hider.AppInstall.screencapture.AppInstall $r2;
+        hider.AppInstall.screencapture.PackageReceiver $r3;
+        hider.AppInstall.screencapture.InstallService $r4;
+        android.os.IBinder $r5;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new hider.AppInstall.screencapture.SuRequestReceiver;
+
+        specialinvoke $r1.<hider.AppInstall.screencapture.SuRequestReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<hider.AppInstall.screencapture.SuRequestReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label09;
+
+        $r2 = new hider.AppInstall.screencapture.AppInstall;
+
+        specialinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void <init>()>();
+
+        if $i0 == 5 goto label09;
+
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        if $i0 == 7 goto label07;
+
+     label05:
+        if $i0 == 8 goto label06;
+
+        staticinvoke <hider.AppInstall.screencapture.AppInstall: void <clinit>()>();
+
+     label06:
+        if $i0 == 9 goto label05;
+
+     label07:
+        if $i0 == 10 goto label04;
+
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onStop()>();
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label04;
+
+     label08:
+        virtualinvoke $r2.<hider.AppInstall.screencapture.AppInstall: void onDestroy()>();
+
+     label09:
+        if $i0 == 14 goto label11;
+
+        $r3 = new hider.AppInstall.screencapture.PackageReceiver;
+
+        specialinvoke $r3.<hider.AppInstall.screencapture.PackageReceiver: void <init>()>();
+
+        if $i0 == 15 goto label11;
+
+     label10:
+        virtualinvoke $r3.<hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 17 goto label10;
+
+     label11:
+        if $i0 == 18 goto label16;
+
+        $r4 = new hider.AppInstall.screencapture.InstallService;
+
+        specialinvoke $r4.<hider.AppInstall.screencapture.InstallService: void <init>()>();
+
+        virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label12:
+        if $i0 == 19 goto label13;
+
+        if $i0 == 20 goto label12;
+
+     label13:
+        $r5 = virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 22 goto label15;
+
+        if $i0 == 23 goto label14;
+
+     label15:
+        virtualinvoke $r4.<hider.AppInstall.screencapture.InstallService: void onDestroy()>();
+
+     label16:
+        if $i0 == 24 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.324086522 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.050557571 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 733 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 18 sources and 114 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 86
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 41
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 1306 forward and 91 backward edges solved, processing 11 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 11 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.007064999 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PackageReceiver", $r5) in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r10) in method <hider.AppInstall.screencapture.MyInformation: java.lang.String getLac()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r17.<android.telephony.gsm.GsmCellLocation: int getLac()>() in method <hider.AppInstall.screencapture.MyInformation: java.lang.String getLac()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PackageReceiver", $r4) in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ResponseHelper", $r3) in method <hider.AppInstall.screencapture.SuRequestReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <hider.AppInstall.screencapture.SuRequestReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r2) in method <hider.AppInstall.screencapture.MyInformation: java.lang.String getIMSI()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <hider.AppInstall.screencapture.MyInformation: java.lang.String getIMSI()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r2) in method <hider.AppInstall.screencapture.MyInformation: java.lang.String getIMEI()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <hider.AppInstall.screencapture.MyInformation: java.lang.String getIMEI()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r10) in method <hider.AppInstall.screencapture.MyInformation: java.lang.String getCid()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r17.<android.telephony.gsm.GsmCellLocation: int getCid()>() in method <hider.AppInstall.screencapture.MyInformation: java.lang.String getCid()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4) in method <hider.AppInstall.screencapture.PackageReceiver: void StartMainservice(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ApnControl", $r6) in method <hider.AppInstall.screencapture.ApnControl: boolean getDefaultAPN()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <hider.AppInstall.screencapture.ApnControl: boolean getDefaultAPN()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PackageReceiver", $r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r10), from the following sources:
+	- $i0 = virtualinvoke $r17.<android.telephony.gsm.GsmCellLocation: int getLac()>() (in <hider.AppInstall.screencapture.MyInformation: java.lang.String getLac()>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("PackageReceiver", $r4), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ResponseHelper", $r3), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <hider.AppInstall.screencapture.SuRequestReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <hider.AppInstall.screencapture.MyInformation: java.lang.String getIMSI()>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <hider.AppInstall.screencapture.MyInformation: java.lang.String getIMEI()>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("MyInformation", $r10), from the following sources:
+	- $i0 = virtualinvoke $r17.<android.telephony.gsm.GsmCellLocation: int getCid()>() (in <hider.AppInstall.screencapture.MyInformation: java.lang.String getCid()>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: void startActivity(android.content.Intent)>($r4), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("ApnControl", $r6), from the following sources:
+	- $r9 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <hider.AppInstall.screencapture.ApnControl: boolean getDefaultAPN()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <hider.AppInstall.screencapture.PackageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 171.140728 MB
+Analysis has run for 3.913349724 seconds

@@ -1,0 +1,1361 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.011955537 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.fallentreegames.quell.library.libActivity $r1;
+        com.anzhi.ad.coverscreen.SR $r2;
+        com.anzhi.ad.coverscreen.teefrolwer.gp $r3;
+        com.anzhi.ad.coverscreen.teefrolwer.AS $r4;
+        android.os.IBinder $r5, $r13;
+        boolean $z0;
+        com.anzhi.ad.coverscreen.WA $r6;
+        com.anzhi.ad.coverscreen.teefrolwer.AR $r7;
+        com.anzhi.ad.coverscreen.teefrolwer.AA $r8;
+        com.fallentreegames.quell.Quell $r9;
+        com.anzhi.ad.coverscreen.teefrolwer.gq $r10;
+        com.anzhi.ad.coverscreen.SA $r11;
+        com.anzhi.ad.coverscreen.teefrolwer.gd $r12;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label05;
+
+        $r1 = new com.fallentreegames.quell.library.libActivity;
+
+        specialinvoke $r1.<com.fallentreegames.quell.library.libActivity: void <init>()>();
+
+        if $i0 == 1 goto label05;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onResume()>();
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onPause()>();
+
+        if $i0 == 3 goto label03;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onStop()>();
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onRestart()>();
+
+        if $i0 == 5 goto label02;
+
+     label04:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onDestroy()>();
+
+     label05:
+        if $i0 == 7 goto label07;
+
+        $r2 = new com.anzhi.ad.coverscreen.SR;
+
+        specialinvoke $r2.<com.anzhi.ad.coverscreen.SR: void <init>()>();
+
+        if $i0 == 8 goto label07;
+
+     label06:
+        virtualinvoke $r2.<com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 10 goto label06;
+
+     label07:
+        if $i0 == 11 goto label09;
+
+        $r3 = new com.anzhi.ad.coverscreen.teefrolwer.gp;
+
+        specialinvoke $r3.<com.anzhi.ad.coverscreen.teefrolwer.gp: void <init>()>();
+
+        if $i0 == 12 goto label09;
+
+     label08:
+        virtualinvoke $r3.<com.anzhi.ad.coverscreen.teefrolwer.gp: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 14 goto label08;
+
+     label09:
+        if $i0 == 15 goto label14;
+
+        $r4 = new com.anzhi.ad.coverscreen.teefrolwer.AS;
+
+        specialinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void <init>()>();
+
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onCreate()>();
+
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 16 goto label11;
+
+        if $i0 == 17 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        $z0 = virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 19 goto label13;
+
+        if $i0 == 20 goto label12;
+
+     label13:
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onDestroy()>();
+
+     label14:
+        if $i0 == 21 goto label16;
+
+        $r6 = new com.anzhi.ad.coverscreen.WA;
+
+        specialinvoke $r6.<com.anzhi.ad.coverscreen.WA: void <init>()>();
+
+        if $i0 == 22 goto label16;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onResume()>();
+
+        if $i0 == 24 goto label15;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onStop()>();
+
+        if $i0 == 25 goto label16;
+
+        if $i0 == 26 goto label15;
+
+     label16:
+        if $i0 == 28 goto label18;
+
+        $r7 = new com.anzhi.ad.coverscreen.teefrolwer.AR;
+
+        specialinvoke $r7.<com.anzhi.ad.coverscreen.teefrolwer.AR: void <init>()>();
+
+        if $i0 == 29 goto label18;
+
+     label17:
+        virtualinvoke $r7.<com.anzhi.ad.coverscreen.teefrolwer.AR: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 31 goto label17;
+
+     label18:
+        if $i0 == 32 goto label22;
+
+        $r8 = new com.anzhi.ad.coverscreen.teefrolwer.AA;
+
+        specialinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AA: void <init>()>();
+
+        if $i0 == 33 goto label22;
+
+        virtualinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        if $i0 == 34 goto label20;
+
+        virtualinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 35 goto label20;
+
+        if $i0 == 36 goto label21;
+
+        if $i0 == 37 goto label19;
+
+     label21:
+        virtualinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onDestroy()>();
+
+     label22:
+        if $i0 == 39 goto label25;
+
+        $r9 = new com.fallentreegames.quell.Quell;
+
+        specialinvoke $r9.<com.fallentreegames.quell.Quell: void <init>()>();
+
+        if $i0 == 40 goto label25;
+
+        virtualinvoke $r9.<com.fallentreegames.quell.Quell: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r9.<com.fallentreegames.quell.Quell: void onStart()>();
+
+        virtualinvoke $r9.<com.fallentreegames.quell.Quell: void onStop()>();
+
+        if $i0 == 43 goto label24;
+
+        virtualinvoke $r9.<com.fallentreegames.quell.Quell: void onRestart()>();
+
+        if $i0 == 44 goto label23;
+
+     label24:
+        virtualinvoke $r9.<com.fallentreegames.quell.Quell: void onDestroy()>();
+
+     label25:
+        if $i0 == 46 goto label27;
+
+        $r10 = new com.anzhi.ad.coverscreen.teefrolwer.gq;
+
+        specialinvoke $r10.<com.anzhi.ad.coverscreen.teefrolwer.gq: void <init>()>();
+
+        if $i0 == 47 goto label27;
+
+        virtualinvoke $r10.<com.anzhi.ad.coverscreen.teefrolwer.gq: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 50 goto label27;
+
+        if $i0 == 51 goto label26;
+
+     label27:
+        if $i0 == 53 goto label30;
+
+        $r11 = new com.anzhi.ad.coverscreen.SA;
+
+        specialinvoke $r11.<com.anzhi.ad.coverscreen.SA: void <init>()>();
+
+        if $i0 == 54 goto label30;
+
+        virtualinvoke $r11.<com.anzhi.ad.coverscreen.SA: void onCreate(android.os.Bundle)>(null);
+
+     label28:
+        virtualinvoke $r11.<com.anzhi.ad.coverscreen.SA: void onResume()>();
+
+        virtualinvoke $r11.<com.anzhi.ad.coverscreen.SA: void onPause()>();
+
+        virtualinvoke $r11.<com.anzhi.ad.coverscreen.SA: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 56 goto label28;
+
+        virtualinvoke $r11.<com.anzhi.ad.coverscreen.SA: void onStop()>();
+
+        if $i0 == 57 goto label29;
+
+        if $i0 == 58 goto label28;
+
+     label29:
+        virtualinvoke $r11.<com.anzhi.ad.coverscreen.SA: void onDestroy()>();
+
+     label30:
+        if $i0 == 60 goto label35;
+
+        $r12 = new com.anzhi.ad.coverscreen.teefrolwer.gd;
+
+        specialinvoke $r12.<com.anzhi.ad.coverscreen.teefrolwer.gd: void <init>()>();
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.teefrolwer.gd: void onCreate()>();
+
+     label31:
+        if $i0 == 61 goto label32;
+
+        $i1 = virtualinvoke $r12.<com.anzhi.ad.coverscreen.teefrolwer.gd: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 62 goto label31;
+
+     label32:
+        $r13 = virtualinvoke $r12.<com.anzhi.ad.coverscreen.teefrolwer.gd: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label33:
+        if $i0 == 64 goto label34;
+
+        if $i0 == 65 goto label33;
+
+     label34:
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.teefrolwer.gd: void onDestroy()>();
+
+     label35:
+        if $i0 == 66 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.fallentreegames.kkfsefw34fsdfdfw.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.fallentreegames.kkfsefw34fsdfdfw.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.fallentreegames.quell.library.libActivity $r1;
+        boolean $z0, $z1, $z2, $z3;
+        com.anzhi.ad.coverscreen.SR $r2;
+        com.anzhi.ad.coverscreen.teefrolwer.gp $r3;
+        com.anzhi.ad.coverscreen.teefrolwer.AS $r4;
+        android.os.IBinder $r5, $r26;
+        com.anzhi.ad.coverscreen.WA $r6;
+        com.anzhi.ad.coverscreen.D $r7;
+        com.anzhi.ad.coverscreen.teefrolwer.AR $r8;
+        com.anzhi.ad.coverscreen.teefrolwer.AA $r9;
+        com.fallentreegames.quell.Quell $r10;
+        com.anzhi.ad.coverscreen.teefrolwer.gq $r11;
+        com.anzhi.ad.coverscreen.SA $r12;
+        com.anzhi.ad.coverscreen.b.a $r13, $r16, $r19, $r22;
+        com.anzhi.ad.coverscreen.x $r14, $r20, $r23;
+        com.anzhi.ad.coverscreen.B $r15;
+        com.anzhi.ad.coverscreen.l $r17;
+        com.anzhi.ad.coverscreen.m $r18;
+        com.anzhi.ad.coverscreen.y $r21;
+        com.anzhi.ad.coverscreen.z $r24;
+        com.anzhi.ad.coverscreen.teefrolwer.gd $r25;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label13;
+
+        $r1 = new com.fallentreegames.quell.library.libActivity;
+
+        specialinvoke $r1.<com.fallentreegames.quell.library.libActivity: void <init>()>();
+
+        if $i0 == 1 goto label13;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onResume()>();
+
+        if $i0 == 3 goto label11;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onWindowFocusChanged(boolean)>(false);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onBackPressed()>();
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onNewIntent(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        staticinvoke <com.fallentreegames.quell.library.libActivity: void <clinit>()>();
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        $z0 = virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label10:
+        if $i0 == 10 goto label04;
+
+     label11:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onPause()>();
+
+        if $i0 == 11 goto label03;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onStop()>();
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onRestart()>();
+
+        if $i0 == 13 goto label02;
+
+     label12:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onDestroy()>();
+
+     label13:
+        if $i0 == 15 goto label15;
+
+        $r2 = new com.anzhi.ad.coverscreen.SR;
+
+        specialinvoke $r2.<com.anzhi.ad.coverscreen.SR: void <init>()>();
+
+        if $i0 == 16 goto label15;
+
+     label14:
+        virtualinvoke $r2.<com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 18 goto label14;
+
+     label15:
+        if $i0 == 19 goto label17;
+
+        $r3 = new com.anzhi.ad.coverscreen.teefrolwer.gp;
+
+        specialinvoke $r3.<com.anzhi.ad.coverscreen.teefrolwer.gp: void <init>()>();
+
+        if $i0 == 20 goto label17;
+
+     label16:
+        virtualinvoke $r3.<com.anzhi.ad.coverscreen.teefrolwer.gp: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 22 goto label16;
+
+     label17:
+        if $i0 == 23 goto label22;
+
+        $r4 = new com.anzhi.ad.coverscreen.teefrolwer.AS;
+
+        specialinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void <init>()>();
+
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onCreate()>();
+
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onStart(android.content.Intent,int)>(null, 0);
+
+     label18:
+        if $i0 == 24 goto label19;
+
+        if $i0 == 25 goto label18;
+
+     label19:
+        $r5 = virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label20:
+        $z1 = virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 27 goto label21;
+
+        if $i0 == 28 goto label20;
+
+     label21:
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onDestroy()>();
+
+     label22:
+        if $i0 == 29 goto label29;
+
+        $r6 = new com.anzhi.ad.coverscreen.WA;
+
+        specialinvoke $r6.<com.anzhi.ad.coverscreen.WA: void <init>()>();
+
+        if $i0 == 30 goto label29;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onResume()>();
+
+        if $i0 == 32 goto label28;
+
+     label24:
+        $r7 = new com.anzhi.ad.coverscreen.D;
+
+        specialinvoke $r7.<com.anzhi.ad.coverscreen.D: void <init>(com.anzhi.ad.coverscreen.WA)>($r6);
+
+        if $i0 == 33 goto label25;
+
+        virtualinvoke $r7.<com.anzhi.ad.coverscreen.D: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label25:
+        if $i0 == 34 goto label26;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onNewIntent(android.content.Intent)>(null);
+
+     label26:
+        if $i0 == 35 goto label27;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onBackPressed()>();
+
+     label27:
+        if $i0 == 36 goto label24;
+
+     label28:
+        if $i0 == 37 goto label23;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onStop()>();
+
+        if $i0 == 38 goto label29;
+
+        if $i0 == 39 goto label23;
+
+     label29:
+        if $i0 == 41 goto label31;
+
+        $r8 = new com.anzhi.ad.coverscreen.teefrolwer.AR;
+
+        specialinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AR: void <init>()>();
+
+        if $i0 == 42 goto label31;
+
+     label30:
+        virtualinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AR: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 44 goto label30;
+
+     label31:
+        if $i0 == 45 goto label38;
+
+        $r9 = new com.anzhi.ad.coverscreen.teefrolwer.AA;
+
+        specialinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void <init>()>();
+
+        if $i0 == 46 goto label38;
+
+        virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        if $i0 == 47 goto label33;
+
+        virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label33:
+        if $i0 == 48 goto label36;
+
+     label34:
+        if $i0 == 49 goto label35;
+
+        $z2 = virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label35:
+        if $i0 == 50 goto label34;
+
+     label36:
+        virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 51 goto label33;
+
+        if $i0 == 52 goto label37;
+
+        if $i0 == 53 goto label32;
+
+     label37:
+        virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onDestroy()>();
+
+     label38:
+        if $i0 == 55 goto label45;
+
+        $r10 = new com.fallentreegames.quell.Quell;
+
+        specialinvoke $r10.<com.fallentreegames.quell.Quell: void <init>()>();
+
+        if $i0 == 56 goto label45;
+
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onStart()>();
+
+     label40:
+        if $i0 == 58 goto label43;
+
+     label41:
+        if $i0 == 59 goto label42;
+
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onNewIntent(android.content.Intent)>(null);
+
+     label42:
+        if $i0 == 60 goto label41;
+
+     label43:
+        if $i0 == 61 goto label40;
+
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onStop()>();
+
+        if $i0 == 62 goto label44;
+
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onRestart()>();
+
+        if $i0 == 63 goto label39;
+
+     label44:
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onDestroy()>();
+
+     label45:
+        if $i0 == 65 goto label47;
+
+        $r11 = new com.anzhi.ad.coverscreen.teefrolwer.gq;
+
+        specialinvoke $r11.<com.anzhi.ad.coverscreen.teefrolwer.gq: void <init>()>();
+
+        if $i0 == 66 goto label47;
+
+        virtualinvoke $r11.<com.anzhi.ad.coverscreen.teefrolwer.gq: void onCreate(android.os.Bundle)>(null);
+
+     label46:
+        if $i0 == 69 goto label46;
+
+        if $i0 == 70 goto label47;
+
+        if $i0 == 71 goto label46;
+
+     label47:
+        if $i0 == 75 goto label59;
+
+        $r12 = new com.anzhi.ad.coverscreen.SA;
+
+        specialinvoke $r12.<com.anzhi.ad.coverscreen.SA: void <init>()>();
+
+        if $i0 == 76 goto label59;
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onResume()>();
+
+        if $i0 == 78 goto label57;
+
+     label49:
+        if $i0 == 79 goto label50;
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onNewIntent(android.content.Intent)>(null);
+
+     label50:
+        if $i0 == 80 goto label51;
+
+        $z3 = virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label51:
+        $r13 = new com.anzhi.ad.coverscreen.b.a;
+
+        specialinvoke $r13.<com.anzhi.ad.coverscreen.b.a: void <init>()>();
+
+        $r14 = new com.anzhi.ad.coverscreen.x;
+
+        specialinvoke $r14.<com.anzhi.ad.coverscreen.x: void <init>(com.anzhi.ad.coverscreen.SA,com.anzhi.ad.coverscreen.b.a,boolean)>($r12, $r13, false);
+
+        $r15 = new com.anzhi.ad.coverscreen.B;
+
+        specialinvoke $r15.<com.anzhi.ad.coverscreen.B: void <init>(com.anzhi.ad.coverscreen.x,android.view.View)>($r14, null);
+
+        if $i0 == 81 goto label52;
+
+        virtualinvoke $r15.<com.anzhi.ad.coverscreen.B: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label52:
+        $r16 = new com.anzhi.ad.coverscreen.b.a;
+
+        specialinvoke $r16.<com.anzhi.ad.coverscreen.b.a: void <init>()>();
+
+        $r17 = new com.anzhi.ad.coverscreen.l;
+
+        specialinvoke $r17.<com.anzhi.ad.coverscreen.l: void <init>(com.anzhi.ad.coverscreen.SA,com.anzhi.ad.coverscreen.b.a)>($r12, $r16);
+
+        if $i0 == 82 goto label53;
+
+        virtualinvoke $r17.<com.anzhi.ad.coverscreen.l: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label53:
+        $r18 = new com.anzhi.ad.coverscreen.m;
+
+        specialinvoke $r18.<com.anzhi.ad.coverscreen.m: void <init>(com.anzhi.ad.coverscreen.SA)>($r12);
+
+        if $i0 == 83 goto label54;
+
+        virtualinvoke $r18.<com.anzhi.ad.coverscreen.m: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label54:
+        $r19 = new com.anzhi.ad.coverscreen.b.a;
+
+        specialinvoke $r19.<com.anzhi.ad.coverscreen.b.a: void <init>()>();
+
+        $r20 = new com.anzhi.ad.coverscreen.x;
+
+        specialinvoke $r20.<com.anzhi.ad.coverscreen.x: void <init>(com.anzhi.ad.coverscreen.SA,com.anzhi.ad.coverscreen.b.a,boolean)>($r12, $r19, false);
+
+        $r21 = new com.anzhi.ad.coverscreen.y;
+
+        specialinvoke $r21.<com.anzhi.ad.coverscreen.y: void <init>(com.anzhi.ad.coverscreen.x)>($r20);
+
+        if $i0 == 84 goto label55;
+
+        virtualinvoke $r21.<com.anzhi.ad.coverscreen.y: void onClick(android.view.View)>(null);
+
+     label55:
+        $r22 = new com.anzhi.ad.coverscreen.b.a;
+
+        specialinvoke $r22.<com.anzhi.ad.coverscreen.b.a: void <init>()>();
+
+        $r23 = new com.anzhi.ad.coverscreen.x;
+
+        specialinvoke $r23.<com.anzhi.ad.coverscreen.x: void <init>(com.anzhi.ad.coverscreen.SA,com.anzhi.ad.coverscreen.b.a,boolean)>($r12, $r22, false);
+
+        $r24 = new com.anzhi.ad.coverscreen.z;
+
+        specialinvoke $r24.<com.anzhi.ad.coverscreen.z: void <init>(com.anzhi.ad.coverscreen.x)>($r23);
+
+        if $i0 == 85 goto label56;
+
+        virtualinvoke $r24.<com.anzhi.ad.coverscreen.z: void onClick(android.view.View)>(null);
+
+     label56:
+        if $i0 == 86 goto label49;
+
+     label57:
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onPause()>();
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 87 goto label48;
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onStop()>();
+
+        if $i0 == 88 goto label58;
+
+        if $i0 == 89 goto label48;
+
+     label58:
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onDestroy()>();
+
+     label59:
+        if $i0 == 91 goto label64;
+
+        $r25 = new com.anzhi.ad.coverscreen.teefrolwer.gd;
+
+        specialinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: void <init>()>();
+
+        virtualinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: void onCreate()>();
+
+     label60:
+        if $i0 == 92 goto label61;
+
+        $i1 = virtualinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 93 goto label60;
+
+     label61:
+        $r26 = virtualinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label62:
+        if $i0 == 95 goto label63;
+
+        if $i0 == 96 goto label62;
+
+     label63:
+        virtualinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: void onDestroy()>();
+
+     label64:
+        if $i0 == 97 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Running incremental callback analysis for 11 components...
+Incremental callback analysis done.
+Found 56 callback methods for 11 components
+Found {res/layout/main.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 56 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/4b3206b49960db5937ff9ab83eade925.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.fallentreegames.quell.library.libActivity $r1;
+        boolean $z0, $z1, $z2, $z3;
+        com.anzhi.ad.coverscreen.SR $r2;
+        com.anzhi.ad.coverscreen.teefrolwer.gp $r3;
+        com.anzhi.ad.coverscreen.teefrolwer.AS $r4;
+        android.os.IBinder $r5, $r26;
+        com.anzhi.ad.coverscreen.WA $r6;
+        com.anzhi.ad.coverscreen.D $r7;
+        com.anzhi.ad.coverscreen.teefrolwer.AR $r8;
+        com.anzhi.ad.coverscreen.teefrolwer.AA $r9;
+        com.fallentreegames.quell.Quell $r10;
+        com.anzhi.ad.coverscreen.teefrolwer.gq $r11;
+        com.anzhi.ad.coverscreen.SA $r12;
+        com.anzhi.ad.coverscreen.b.a $r13, $r16, $r19, $r23;
+        com.anzhi.ad.coverscreen.x $r14, $r17, $r20;
+        com.anzhi.ad.coverscreen.y $r15;
+        com.anzhi.ad.coverscreen.B $r18;
+        com.anzhi.ad.coverscreen.z $r21;
+        com.anzhi.ad.coverscreen.m $r22;
+        com.anzhi.ad.coverscreen.l $r24;
+        com.anzhi.ad.coverscreen.teefrolwer.gd $r25;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label13;
+
+        $r1 = new com.fallentreegames.quell.library.libActivity;
+
+        specialinvoke $r1.<com.fallentreegames.quell.library.libActivity: void <init>()>();
+
+        if $i0 == 1 goto label13;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onStart()>();
+
+     label03:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onResume()>();
+
+        if $i0 == 3 goto label11;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onNewIntent(android.content.Intent)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        staticinvoke <com.fallentreegames.quell.library.libActivity: void <clinit>()>();
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        $z0 = virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label07:
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onBackPressed()>();
+
+     label08:
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label09:
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onWindowFocusChanged(boolean)>(false);
+
+     label10:
+        if $i0 == 10 goto label04;
+
+     label11:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onPause()>();
+
+        if $i0 == 11 goto label03;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onStop()>();
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onRestart()>();
+
+        if $i0 == 13 goto label02;
+
+     label12:
+        virtualinvoke $r1.<com.fallentreegames.quell.library.libActivity: void onDestroy()>();
+
+     label13:
+        if $i0 == 15 goto label15;
+
+        $r2 = new com.anzhi.ad.coverscreen.SR;
+
+        specialinvoke $r2.<com.anzhi.ad.coverscreen.SR: void <init>()>();
+
+        if $i0 == 16 goto label15;
+
+     label14:
+        virtualinvoke $r2.<com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 18 goto label14;
+
+     label15:
+        if $i0 == 19 goto label17;
+
+        $r3 = new com.anzhi.ad.coverscreen.teefrolwer.gp;
+
+        specialinvoke $r3.<com.anzhi.ad.coverscreen.teefrolwer.gp: void <init>()>();
+
+        if $i0 == 20 goto label17;
+
+     label16:
+        virtualinvoke $r3.<com.anzhi.ad.coverscreen.teefrolwer.gp: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 22 goto label16;
+
+     label17:
+        if $i0 == 23 goto label22;
+
+        $r4 = new com.anzhi.ad.coverscreen.teefrolwer.AS;
+
+        specialinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void <init>()>();
+
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onCreate()>();
+
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onStart(android.content.Intent,int)>(null, 0);
+
+     label18:
+        if $i0 == 24 goto label19;
+
+        if $i0 == 25 goto label18;
+
+     label19:
+        $r5 = virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label20:
+        $z1 = virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 27 goto label21;
+
+        if $i0 == 28 goto label20;
+
+     label21:
+        virtualinvoke $r4.<com.anzhi.ad.coverscreen.teefrolwer.AS: void onDestroy()>();
+
+     label22:
+        if $i0 == 29 goto label29;
+
+        $r6 = new com.anzhi.ad.coverscreen.WA;
+
+        specialinvoke $r6.<com.anzhi.ad.coverscreen.WA: void <init>()>();
+
+        if $i0 == 30 goto label29;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onResume()>();
+
+        if $i0 == 32 goto label28;
+
+     label24:
+        if $i0 == 33 goto label25;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onBackPressed()>();
+
+     label25:
+        if $i0 == 34 goto label26;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onNewIntent(android.content.Intent)>(null);
+
+     label26:
+        $r7 = new com.anzhi.ad.coverscreen.D;
+
+        specialinvoke $r7.<com.anzhi.ad.coverscreen.D: void <init>(com.anzhi.ad.coverscreen.WA)>($r6);
+
+        if $i0 == 35 goto label27;
+
+        virtualinvoke $r7.<com.anzhi.ad.coverscreen.D: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label27:
+        if $i0 == 36 goto label24;
+
+     label28:
+        if $i0 == 37 goto label23;
+
+        virtualinvoke $r6.<com.anzhi.ad.coverscreen.WA: void onStop()>();
+
+        if $i0 == 38 goto label29;
+
+        if $i0 == 39 goto label23;
+
+     label29:
+        if $i0 == 41 goto label31;
+
+        $r8 = new com.anzhi.ad.coverscreen.teefrolwer.AR;
+
+        specialinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AR: void <init>()>();
+
+        if $i0 == 42 goto label31;
+
+     label30:
+        virtualinvoke $r8.<com.anzhi.ad.coverscreen.teefrolwer.AR: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 44 goto label30;
+
+     label31:
+        if $i0 == 45 goto label38;
+
+        $r9 = new com.anzhi.ad.coverscreen.teefrolwer.AA;
+
+        specialinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void <init>()>();
+
+        if $i0 == 46 goto label38;
+
+        virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        if $i0 == 47 goto label33;
+
+        virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onRestoreInstanceState(android.os.Bundle)>(null);
+
+     label33:
+        if $i0 == 48 goto label36;
+
+     label34:
+        if $i0 == 49 goto label35;
+
+        $z2 = virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label35:
+        if $i0 == 50 goto label34;
+
+     label36:
+        virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 51 goto label33;
+
+        if $i0 == 52 goto label37;
+
+        if $i0 == 53 goto label32;
+
+     label37:
+        virtualinvoke $r9.<com.anzhi.ad.coverscreen.teefrolwer.AA: void onDestroy()>();
+
+     label38:
+        if $i0 == 55 goto label45;
+
+        $r10 = new com.fallentreegames.quell.Quell;
+
+        specialinvoke $r10.<com.fallentreegames.quell.Quell: void <init>()>();
+
+        if $i0 == 56 goto label45;
+
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onStart()>();
+
+     label40:
+        if $i0 == 58 goto label43;
+
+     label41:
+        if $i0 == 59 goto label42;
+
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onNewIntent(android.content.Intent)>(null);
+
+     label42:
+        if $i0 == 60 goto label41;
+
+     label43:
+        if $i0 == 61 goto label40;
+
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onStop()>();
+
+        if $i0 == 62 goto label44;
+
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onRestart()>();
+
+        if $i0 == 63 goto label39;
+
+     label44:
+        virtualinvoke $r10.<com.fallentreegames.quell.Quell: void onDestroy()>();
+
+     label45:
+        if $i0 == 65 goto label47;
+
+        $r11 = new com.anzhi.ad.coverscreen.teefrolwer.gq;
+
+        specialinvoke $r11.<com.anzhi.ad.coverscreen.teefrolwer.gq: void <init>()>();
+
+        if $i0 == 66 goto label47;
+
+        virtualinvoke $r11.<com.anzhi.ad.coverscreen.teefrolwer.gq: void onCreate(android.os.Bundle)>(null);
+
+     label46:
+        if $i0 == 69 goto label46;
+
+        if $i0 == 70 goto label47;
+
+        if $i0 == 71 goto label46;
+
+     label47:
+        if $i0 == 75 goto label59;
+
+        $r12 = new com.anzhi.ad.coverscreen.SA;
+
+        specialinvoke $r12.<com.anzhi.ad.coverscreen.SA: void <init>()>();
+
+        if $i0 == 76 goto label59;
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onResume()>();
+
+        if $i0 == 78 goto label57;
+
+     label49:
+        $r13 = new com.anzhi.ad.coverscreen.b.a;
+
+        specialinvoke $r13.<com.anzhi.ad.coverscreen.b.a: void <init>()>();
+
+        $r14 = new com.anzhi.ad.coverscreen.x;
+
+        specialinvoke $r14.<com.anzhi.ad.coverscreen.x: void <init>(com.anzhi.ad.coverscreen.SA,com.anzhi.ad.coverscreen.b.a,boolean)>($r12, $r13, false);
+
+        $r15 = new com.anzhi.ad.coverscreen.y;
+
+        specialinvoke $r15.<com.anzhi.ad.coverscreen.y: void <init>(com.anzhi.ad.coverscreen.x)>($r14);
+
+        if $i0 == 79 goto label50;
+
+        virtualinvoke $r15.<com.anzhi.ad.coverscreen.y: void onClick(android.view.View)>(null);
+
+     label50:
+        $r16 = new com.anzhi.ad.coverscreen.b.a;
+
+        specialinvoke $r16.<com.anzhi.ad.coverscreen.b.a: void <init>()>();
+
+        $r17 = new com.anzhi.ad.coverscreen.x;
+
+        specialinvoke $r17.<com.anzhi.ad.coverscreen.x: void <init>(com.anzhi.ad.coverscreen.SA,com.anzhi.ad.coverscreen.b.a,boolean)>($r12, $r16, false);
+
+        $r18 = new com.anzhi.ad.coverscreen.B;
+
+        specialinvoke $r18.<com.anzhi.ad.coverscreen.B: void <init>(com.anzhi.ad.coverscreen.x,android.view.View)>($r17, null);
+
+        if $i0 == 80 goto label51;
+
+        virtualinvoke $r18.<com.anzhi.ad.coverscreen.B: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label51:
+        $r19 = new com.anzhi.ad.coverscreen.b.a;
+
+        specialinvoke $r19.<com.anzhi.ad.coverscreen.b.a: void <init>()>();
+
+        $r20 = new com.anzhi.ad.coverscreen.x;
+
+        specialinvoke $r20.<com.anzhi.ad.coverscreen.x: void <init>(com.anzhi.ad.coverscreen.SA,com.anzhi.ad.coverscreen.b.a,boolean)>($r12, $r19, false);
+
+        $r21 = new com.anzhi.ad.coverscreen.z;
+
+        specialinvoke $r21.<com.anzhi.ad.coverscreen.z: void <init>(com.anzhi.ad.coverscreen.x)>($r20);
+
+        if $i0 == 81 goto label52;
+
+        virtualinvoke $r21.<com.anzhi.ad.coverscreen.z: void onClick(android.view.View)>(null);
+
+     label52:
+        if $i0 == 82 goto label53;
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onNewIntent(android.content.Intent)>(null);
+
+     label53:
+        if $i0 == 83 goto label54;
+
+        $z3 = virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label54:
+        $r22 = new com.anzhi.ad.coverscreen.m;
+
+        specialinvoke $r22.<com.anzhi.ad.coverscreen.m: void <init>(com.anzhi.ad.coverscreen.SA)>($r12);
+
+        if $i0 == 84 goto label55;
+
+        virtualinvoke $r22.<com.anzhi.ad.coverscreen.m: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label55:
+        $r23 = new com.anzhi.ad.coverscreen.b.a;
+
+        specialinvoke $r23.<com.anzhi.ad.coverscreen.b.a: void <init>()>();
+
+        $r24 = new com.anzhi.ad.coverscreen.l;
+
+        specialinvoke $r24.<com.anzhi.ad.coverscreen.l: void <init>(com.anzhi.ad.coverscreen.SA,com.anzhi.ad.coverscreen.b.a)>($r12, $r23);
+
+        if $i0 == 85 goto label56;
+
+        virtualinvoke $r24.<com.anzhi.ad.coverscreen.l: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label56:
+        if $i0 == 86 goto label49;
+
+     label57:
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onPause()>();
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 87 goto label48;
+
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onStop()>();
+
+        if $i0 == 88 goto label58;
+
+        if $i0 == 89 goto label48;
+
+     label58:
+        virtualinvoke $r12.<com.anzhi.ad.coverscreen.SA: void onDestroy()>();
+
+     label59:
+        if $i0 == 91 goto label64;
+
+        $r25 = new com.anzhi.ad.coverscreen.teefrolwer.gd;
+
+        specialinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: void <init>()>();
+
+        virtualinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: void onCreate()>();
+
+     label60:
+        if $i0 == 92 goto label61;
+
+        $i1 = virtualinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 93 goto label60;
+
+     label61:
+        $r26 = virtualinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label62:
+        if $i0 == 95 goto label63;
+
+        if $i0 == 96 goto label62;
+
+     label63:
+        virtualinvoke $r25.<com.anzhi.ad.coverscreen.teefrolwer.gd: void onDestroy()>();
+
+     label64:
+        if $i0 == 97 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.781876686 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.093029806 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3088 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 69 sources and 48 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 3624
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 31353
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 57391 forward and 20244 backward edges solved, processing 14 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 14 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.007265984 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("quell_library", $r3) in method <com.fallentreegames.quell.library.libActivity: void onConfigurationChanged(android.content.res.Configuration)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.res.Configuration in method <com.fallentreegames.quell.library.libActivity: void onConfigurationChanged(android.content.res.Configuration)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("quell_library", $r4) in method <com.fallentreegames.quell.library.libActivity: void onCreate(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r0.<com.fallentreegames.quell.library.libActivity: android.content.Intent getIntent()>() in method <com.fallentreegames.quell.library.libActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[],int,int)>($r3, 0, $i0) in method <com.anzhi.ad.coverscreen.teefrolwer.gx: java.io.File downLoadFile(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.anzhi.ad.coverscreen.teefrolwer.gx: java.io.File downLoadFile(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <com.anzhi.ad.coverscreen.AdComponent: boolean a(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r2, $i0) in method <com.anzhi.ad.coverscreen.c.d.c: void b(android.content.Context,java.lang.String,java.lang.String,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("currentIndex", $i0) in method <com.anzhi.ad.coverscreen.SA: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.anzhi.ad.coverscreen.SA: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String,int)>("currentIndex", 0) in method <com.anzhi.ad.coverscreen.SA: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("quell_library", $r2) in method <com.fallentreegames.quell.library.libActivity: void onWindowFocusChanged(boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 := @parameter0: boolean in method <com.fallentreegames.quell.library.libActivity: void onWindowFocusChanged(boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("quell_library", $r3) in method <com.fallentreegames.quell.library.libActivity: void onNewIntent(android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Intent in method <com.fallentreegames.quell.library.libActivity: void onNewIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r18.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.anzhi.ad.coverscreen.teefrolwer.gx: java.io.File downLoadFile(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r0.<com.anzhi.ad.coverscreen.teefrolwer.gq: android.content.Intent getIntent()>() in method <com.anzhi.ad.coverscreen.teefrolwer.gq: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2) in method <com.anzhi.ad.coverscreen.teefrolwer.gp: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.anzhi.ad.coverscreen.teefrolwer.gp: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("appkey", $r3) in method <com.anzhi.ad.coverscreen.c.d.c: void b(android.content.Context,java.lang.String,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("quell_library", $r3), from the following sources:
+	- $r1 := @parameter0: android.content.res.Configuration (in <com.fallentreegames.quell.library.libActivity: void onConfigurationChanged(android.content.res.Configuration)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("quell_library", $r4), from the following sources:
+	- $r3 = virtualinvoke $r0.<com.fallentreegames.quell.library.libActivity: android.content.Intent getIntent()>() (in <com.fallentreegames.quell.library.libActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r5.<java.io.FileOutputStream: void write(byte[],int,int)>($r3, 0, $i0), from the following sources:
+	- $r9 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.anzhi.ad.coverscreen.teefrolwer.gx: java.io.File downLoadFile(java.lang.String,java.lang.String)>)
+Found a flow to sink virtualinvoke $r3.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r4 = interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r2, $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("currentIndex", $i0), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.anzhi.ad.coverscreen.SA: void onSaveInstanceState(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String,int)>("currentIndex", 0) (in <com.anzhi.ad.coverscreen.SA: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("quell_library", $r2), from the following sources:
+	- $z0 := @parameter0: boolean (in <com.fallentreegames.quell.library.libActivity: void onWindowFocusChanged(boolean)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("quell_library", $r3), from the following sources:
+	- $r1 := @parameter0: android.content.Intent (in <com.fallentreegames.quell.library.libActivity: void onNewIntent(android.content.Intent)>)
+Found a flow to sink specialinvoke r18.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r2 = virtualinvoke $r0.<com.anzhi.ad.coverscreen.teefrolwer.gq: android.content.Intent getIntent()>() (in <com.anzhi.ad.coverscreen.teefrolwer.gq: void onCreate(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.anzhi.ad.coverscreen.teefrolwer.gp: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("appkey", $r3), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.anzhi.ad.coverscreen.SR: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 202.1086 MB
+Analysis has run for 7.765516441 seconds

@@ -1,0 +1,902 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.009883537 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        eu.chainfire.'new'.MainActivity $r1;
+        com.airpuh.ad.UpdateCheck $r2;
+        android.os.IBinder $r3;
+        eu.chainfire.'new'.InstallReceiver $r4;
+        eu.chainfire.'new'.LauncherShortcuts $r5;
+        eu.chainfire.'new'.ToggleActivity $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new eu.chainfire.'new'.MainActivity;
+
+        specialinvoke $r1.<eu.chainfire.'new'.MainActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onResume()>();
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onPostResume()>();
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label08;
+
+        $r2 = new com.airpuh.ad.UpdateCheck;
+
+        specialinvoke $r2.<com.airpuh.ad.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r2.<com.airpuh.ad.UpdateCheck: void onCreate()>();
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.airpuh.ad.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 11 goto label07;
+
+        if $i0 == 12 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.airpuh.ad.UpdateCheck: void onDestroy()>();
+
+     label08:
+        if $i0 == 13 goto label10;
+
+        $r4 = new eu.chainfire.'new'.InstallReceiver;
+
+        specialinvoke $r4.<eu.chainfire.'new'.InstallReceiver: void <init>()>();
+
+        if $i0 == 14 goto label10;
+
+     label09:
+        virtualinvoke $r4.<eu.chainfire.'new'.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label09;
+
+     label10:
+        if $i0 == 17 goto label12;
+
+        $r5 = new eu.chainfire.'new'.LauncherShortcuts;
+
+        specialinvoke $r5.<eu.chainfire.'new'.LauncherShortcuts: void <init>()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r5.<eu.chainfire.'new'.LauncherShortcuts: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 21 goto label12;
+
+        if $i0 == 22 goto label11;
+
+     label12:
+        if $i0 == 24 goto label14;
+
+        $r6 = new eu.chainfire.'new'.ToggleActivity;
+
+        specialinvoke $r6.<eu.chainfire.'new'.ToggleActivity: void <init>()>();
+
+        if $i0 == 25 goto label14;
+
+        virtualinvoke $r6.<eu.chainfire.'new'.ToggleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r6.<eu.chainfire.'new'.ToggleActivity: void onStop()>();
+
+        if $i0 == 28 goto label14;
+
+        if $i0 == 29 goto label13;
+
+     label14:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.3 seconds.
+[Spark] Solution found in 1.3 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: eu.chainfire.new.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 1 layout controls in file res/layout/admob_preference.xml
+Warning: SeekBar is a phantom class!
+Warning: eu.chainfire.new.SeekBar is a phantom class!
+Warning: android.view.SeekBar is a phantom class!
+Warning: Button is a phantom class!
+Warning: eu.chainfire.new.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/colordialog.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        eu.chainfire.'new'.MainActivity $r1;
+        eu.chainfire.'new'.l $r2;
+        boolean $z0, $z1, $z2, $z3;
+        eu.chainfire.'new'.w $r3;
+        eu.chainfire.'new'.j $r4;
+        eu.chainfire.'new'.as $r5;
+        eu.chainfire.'new'.bm $r6;
+        com.airpuh.ad.UpdateCheck $r7;
+        android.os.IBinder $r8;
+        eu.chainfire.'new'.InstallReceiver $r9;
+        eu.chainfire.'new'.LauncherShortcuts $r10;
+        eu.chainfire.'new'.ToggleActivity $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label11;
+
+        $r1 = new eu.chainfire.'new'.MainActivity;
+
+        specialinvoke $r1.<eu.chainfire.'new'.MainActivity: void <init>()>();
+
+        if $i0 == 1 goto label11;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onResume()>();
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onPostResume()>();
+
+        if $i0 == 3 goto label10;
+
+     label03:
+        $r2 = new eu.chainfire.'new'.l;
+
+        specialinvoke $r2.<eu.chainfire.'new'.l: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r2.<eu.chainfire.'new'.l: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label04:
+        $r3 = new eu.chainfire.'new'.w;
+
+        specialinvoke $r3.<eu.chainfire.'new'.w: void <init>(eu.chainfire.'new'.MainActivity,boolean)>($r1, false);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r3.<eu.chainfire.'new'.w: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        $r4 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r4.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        $z1 = virtualinvoke $r4.<eu.chainfire.'new'.j: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label06:
+        $r5 = new eu.chainfire.'new'.as;
+
+        specialinvoke $r5.<eu.chainfire.'new'.as: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        $z2 = virtualinvoke $r5.<eu.chainfire.'new'.as: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label07:
+        $r6 = new eu.chainfire.'new'.bm;
+
+        specialinvoke $r6.<eu.chainfire.'new'.bm: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 8 goto label08;
+
+        $z3 = virtualinvoke $r6.<eu.chainfire.'new'.bm: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label08:
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label09:
+        if $i0 == 10 goto label03;
+
+     label10:
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onPause()>();
+
+        if $i0 == 11 goto label02;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onStop()>();
+
+        if $i0 == 12 goto label11;
+
+        if $i0 == 13 goto label02;
+
+     label11:
+        if $i0 == 15 goto label16;
+
+        $r7 = new com.airpuh.ad.UpdateCheck;
+
+        specialinvoke $r7.<com.airpuh.ad.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r7.<com.airpuh.ad.UpdateCheck: void onCreate()>();
+
+     label12:
+        if $i0 == 16 goto label13;
+
+        if $i0 == 17 goto label12;
+
+     label13:
+        $r8 = virtualinvoke $r7.<com.airpuh.ad.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label14:
+        if $i0 == 19 goto label15;
+
+        if $i0 == 20 goto label14;
+
+     label15:
+        virtualinvoke $r7.<com.airpuh.ad.UpdateCheck: void onDestroy()>();
+
+     label16:
+        if $i0 == 21 goto label18;
+
+        $r9 = new eu.chainfire.'new'.InstallReceiver;
+
+        specialinvoke $r9.<eu.chainfire.'new'.InstallReceiver: void <init>()>();
+
+        if $i0 == 22 goto label18;
+
+     label17:
+        virtualinvoke $r9.<eu.chainfire.'new'.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label17;
+
+     label18:
+        if $i0 == 25 goto label20;
+
+        $r10 = new eu.chainfire.'new'.LauncherShortcuts;
+
+        specialinvoke $r10.<eu.chainfire.'new'.LauncherShortcuts: void <init>()>();
+
+        if $i0 == 26 goto label20;
+
+        virtualinvoke $r10.<eu.chainfire.'new'.LauncherShortcuts: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        if $i0 == 29 goto label19;
+
+        if $i0 == 30 goto label20;
+
+        if $i0 == 31 goto label19;
+
+     label20:
+        if $i0 == 33 goto label22;
+
+        $r11 = new eu.chainfire.'new'.ToggleActivity;
+
+        specialinvoke $r11.<eu.chainfire.'new'.ToggleActivity: void <init>()>();
+
+        if $i0 == 34 goto label22;
+
+        virtualinvoke $r11.<eu.chainfire.'new'.ToggleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 37 goto label21;
+
+        virtualinvoke $r11.<eu.chainfire.'new'.ToggleActivity: void onStop()>();
+
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label21;
+
+     label22:
+        if $i0 == 41 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+Running incremental callback analysis for 5 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        eu.chainfire.'new'.MainActivity $r1;
+        eu.chainfire.'new'.j $r2, $r4, $r6, $r8;
+        eu.chainfire.'new'.aa $r3;
+        eu.chainfire.'new'.x $r5;
+        boolean $z0, $z1, $z2, $z3;
+        eu.chainfire.'new'.w $r7;
+        eu.chainfire.'new'.z $r9;
+        eu.chainfire.'new'.l $r10;
+        eu.chainfire.'new'.as $r11;
+        eu.chainfire.'new'.bm $r12;
+        com.airpuh.ad.UpdateCheck $r13;
+        android.os.IBinder $r14;
+        eu.chainfire.'new'.InstallReceiver $r15;
+        eu.chainfire.'new'.LauncherShortcuts $r16;
+        eu.chainfire.'new'.ToggleActivity $r17;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label14;
+
+        $r1 = new eu.chainfire.'new'.MainActivity;
+
+        specialinvoke $r1.<eu.chainfire.'new'.MainActivity: void <init>()>();
+
+        if $i0 == 1 goto label14;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onResume()>();
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onPostResume()>();
+
+        if $i0 == 3 goto label13;
+
+     label03:
+        $r2 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r2.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        $r3 = new eu.chainfire.'new'.aa;
+
+        specialinvoke $r3.<eu.chainfire.'new'.aa: void <init>(eu.chainfire.'new'.j,boolean,android.app.Dialog)>($r2, false, null);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<eu.chainfire.'new'.aa: void onClick(android.view.View)>(null);
+
+     label04:
+        $r4 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r4.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        $r5 = new eu.chainfire.'new'.x;
+
+        specialinvoke $r5.<eu.chainfire.'new'.x: void <init>(eu.chainfire.'new'.j)>($r4);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r5.<eu.chainfire.'new'.x: void onClick(android.view.View)>(null);
+
+     label05:
+        $r6 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r6.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        $z0 = virtualinvoke $r6.<eu.chainfire.'new'.j: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label06:
+        $r7 = new eu.chainfire.'new'.w;
+
+        specialinvoke $r7.<eu.chainfire.'new'.w: void <init>(eu.chainfire.'new'.MainActivity,boolean)>($r1, false);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r7.<eu.chainfire.'new'.w: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label07:
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label08:
+        $r8 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r8.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        $r9 = new eu.chainfire.'new'.z;
+
+        specialinvoke $r9.<eu.chainfire.'new'.z: void <init>(eu.chainfire.'new'.j,android.content.SharedPreferences,android.widget.SeekBar,android.widget.SeekBar,android.widget.SeekBar)>($r8, null, null, null, null);
+
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r9.<eu.chainfire.'new'.z: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label09:
+        $r10 = new eu.chainfire.'new'.l;
+
+        specialinvoke $r10.<eu.chainfire.'new'.l: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 10 goto label10;
+
+        $z1 = virtualinvoke $r10.<eu.chainfire.'new'.l: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label10:
+        $r11 = new eu.chainfire.'new'.as;
+
+        specialinvoke $r11.<eu.chainfire.'new'.as: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 11 goto label11;
+
+        $z2 = virtualinvoke $r11.<eu.chainfire.'new'.as: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label11:
+        $r12 = new eu.chainfire.'new'.bm;
+
+        specialinvoke $r12.<eu.chainfire.'new'.bm: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 12 goto label12;
+
+        $z3 = virtualinvoke $r12.<eu.chainfire.'new'.bm: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label12:
+        if $i0 == 13 goto label03;
+
+     label13:
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onPause()>();
+
+        if $i0 == 14 goto label02;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onStop()>();
+
+        if $i0 == 15 goto label14;
+
+        if $i0 == 16 goto label02;
+
+     label14:
+        if $i0 == 18 goto label19;
+
+        $r13 = new com.airpuh.ad.UpdateCheck;
+
+        specialinvoke $r13.<com.airpuh.ad.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r13.<com.airpuh.ad.UpdateCheck: void onCreate()>();
+
+     label15:
+        if $i0 == 19 goto label16;
+
+        if $i0 == 20 goto label15;
+
+     label16:
+        $r14 = virtualinvoke $r13.<com.airpuh.ad.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label17:
+        if $i0 == 22 goto label18;
+
+        if $i0 == 23 goto label17;
+
+     label18:
+        virtualinvoke $r13.<com.airpuh.ad.UpdateCheck: void onDestroy()>();
+
+     label19:
+        if $i0 == 24 goto label21;
+
+        $r15 = new eu.chainfire.'new'.InstallReceiver;
+
+        specialinvoke $r15.<eu.chainfire.'new'.InstallReceiver: void <init>()>();
+
+        if $i0 == 25 goto label21;
+
+     label20:
+        virtualinvoke $r15.<eu.chainfire.'new'.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 27 goto label20;
+
+     label21:
+        if $i0 == 28 goto label23;
+
+        $r16 = new eu.chainfire.'new'.LauncherShortcuts;
+
+        specialinvoke $r16.<eu.chainfire.'new'.LauncherShortcuts: void <init>()>();
+
+        if $i0 == 29 goto label23;
+
+        virtualinvoke $r16.<eu.chainfire.'new'.LauncherShortcuts: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 32 goto label22;
+
+        if $i0 == 33 goto label23;
+
+        if $i0 == 34 goto label22;
+
+     label23:
+        if $i0 == 36 goto label25;
+
+        $r17 = new eu.chainfire.'new'.ToggleActivity;
+
+        specialinvoke $r17.<eu.chainfire.'new'.ToggleActivity: void <init>()>();
+
+        if $i0 == 37 goto label25;
+
+        virtualinvoke $r17.<eu.chainfire.'new'.ToggleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 40 goto label24;
+
+        virtualinvoke $r17.<eu.chainfire.'new'.ToggleActivity: void onStop()>();
+
+        if $i0 == 41 goto label25;
+
+        if $i0 == 42 goto label24;
+
+     label25:
+        if $i0 == 44 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 21 callback methods for 5 components
+Found {res/layout/admob_preference.xml=[2131034112 - android.widget.LinearLayout], res/layout/colordialog.xml=[-1 - android.widget.LinearLayout, 2131034113 - android.widget.SeekBar, 2131034114 - android.widget.SeekBar, 2131034115 - android.widget.SeekBar, 2131034116 - android.widget.Button, 2131034117 - android.widget.Button]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 21 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/29f064a5528ce6633cfd63f93c70903c768637fc61412f5254556f6b4054fc64.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        eu.chainfire.'new'.MainActivity $r1;
+        eu.chainfire.'new'.j $r2, $r5, $r8, $r11;
+        eu.chainfire.'new'.x $r3;
+        eu.chainfire.'new'.w $r4;
+        boolean $z0, $z1, $z2, $z3;
+        eu.chainfire.'new'.l $r6;
+        eu.chainfire.'new'.as $r7;
+        eu.chainfire.'new'.aa $r9;
+        eu.chainfire.'new'.bm $r10;
+        eu.chainfire.'new'.z $r12;
+        com.airpuh.ad.UpdateCheck $r13;
+        android.os.IBinder $r14;
+        eu.chainfire.'new'.InstallReceiver $r15;
+        eu.chainfire.'new'.LauncherShortcuts $r16;
+        eu.chainfire.'new'.ToggleActivity $r17;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label14;
+
+        $r1 = new eu.chainfire.'new'.MainActivity;
+
+        specialinvoke $r1.<eu.chainfire.'new'.MainActivity: void <init>()>();
+
+        if $i0 == 1 goto label14;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onResume()>();
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onPostResume()>();
+
+        if $i0 == 3 goto label13;
+
+     label03:
+        $r2 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r2.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        $r3 = new eu.chainfire.'new'.x;
+
+        specialinvoke $r3.<eu.chainfire.'new'.x: void <init>(eu.chainfire.'new'.j)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<eu.chainfire.'new'.x: void onClick(android.view.View)>(null);
+
+     label04:
+        $r4 = new eu.chainfire.'new'.w;
+
+        specialinvoke $r4.<eu.chainfire.'new'.w: void <init>(eu.chainfire.'new'.MainActivity,boolean)>($r1, false);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r4.<eu.chainfire.'new'.w: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label05:
+        $r5 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r5.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        $z0 = virtualinvoke $r5.<eu.chainfire.'new'.j: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label06:
+        $r6 = new eu.chainfire.'new'.l;
+
+        specialinvoke $r6.<eu.chainfire.'new'.l: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        $z1 = virtualinvoke $r6.<eu.chainfire.'new'.l: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r1);
+
+        $r1 = null;
+
+     label07:
+        $r7 = new eu.chainfire.'new'.as;
+
+        specialinvoke $r7.<eu.chainfire.'new'.as: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 8 goto label08;
+
+        $z2 = virtualinvoke $r7.<eu.chainfire.'new'.as: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label08:
+        $r8 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r8.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        $r9 = new eu.chainfire.'new'.aa;
+
+        specialinvoke $r9.<eu.chainfire.'new'.aa: void <init>(eu.chainfire.'new'.j,boolean,android.app.Dialog)>($r8, false, null);
+
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r9.<eu.chainfire.'new'.aa: void onClick(android.view.View)>(null);
+
+     label09:
+        $r10 = new eu.chainfire.'new'.bm;
+
+        specialinvoke $r10.<eu.chainfire.'new'.bm: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        if $i0 == 10 goto label10;
+
+        $z3 = virtualinvoke $r10.<eu.chainfire.'new'.bm: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label10:
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label11:
+        $r11 = new eu.chainfire.'new'.j;
+
+        specialinvoke $r11.<eu.chainfire.'new'.j: void <init>(eu.chainfire.'new'.MainActivity)>($r1);
+
+        $r12 = new eu.chainfire.'new'.z;
+
+        specialinvoke $r12.<eu.chainfire.'new'.z: void <init>(eu.chainfire.'new'.j,android.content.SharedPreferences,android.widget.SeekBar,android.widget.SeekBar,android.widget.SeekBar)>($r11, null, null, null, null);
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r12.<eu.chainfire.'new'.z: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label12:
+        if $i0 == 13 goto label03;
+
+     label13:
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onPause()>();
+
+        if $i0 == 14 goto label02;
+
+        virtualinvoke $r1.<eu.chainfire.'new'.MainActivity: void onStop()>();
+
+        if $i0 == 15 goto label14;
+
+        if $i0 == 16 goto label02;
+
+     label14:
+        if $i0 == 18 goto label19;
+
+        $r13 = new com.airpuh.ad.UpdateCheck;
+
+        specialinvoke $r13.<com.airpuh.ad.UpdateCheck: void <init>()>();
+
+        virtualinvoke $r13.<com.airpuh.ad.UpdateCheck: void onCreate()>();
+
+     label15:
+        if $i0 == 19 goto label16;
+
+        if $i0 == 20 goto label15;
+
+     label16:
+        $r14 = virtualinvoke $r13.<com.airpuh.ad.UpdateCheck: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label17:
+        if $i0 == 22 goto label18;
+
+        if $i0 == 23 goto label17;
+
+     label18:
+        virtualinvoke $r13.<com.airpuh.ad.UpdateCheck: void onDestroy()>();
+
+     label19:
+        if $i0 == 24 goto label21;
+
+        $r15 = new eu.chainfire.'new'.InstallReceiver;
+
+        specialinvoke $r15.<eu.chainfire.'new'.InstallReceiver: void <init>()>();
+
+        if $i0 == 25 goto label21;
+
+     label20:
+        virtualinvoke $r15.<eu.chainfire.'new'.InstallReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 27 goto label20;
+
+     label21:
+        if $i0 == 28 goto label23;
+
+        $r16 = new eu.chainfire.'new'.LauncherShortcuts;
+
+        specialinvoke $r16.<eu.chainfire.'new'.LauncherShortcuts: void <init>()>();
+
+        if $i0 == 29 goto label23;
+
+        virtualinvoke $r16.<eu.chainfire.'new'.LauncherShortcuts: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 32 goto label22;
+
+        if $i0 == 33 goto label23;
+
+        if $i0 == 34 goto label22;
+
+     label23:
+        if $i0 == 36 goto label25;
+
+        $r17 = new eu.chainfire.'new'.ToggleActivity;
+
+        specialinvoke $r17.<eu.chainfire.'new'.ToggleActivity: void <init>()>();
+
+        if $i0 == 37 goto label25;
+
+        virtualinvoke $r17.<eu.chainfire.'new'.ToggleActivity: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 40 goto label24;
+
+        virtualinvoke $r17.<eu.chainfire.'new'.ToggleActivity: void onStop()>();
+
+        if $i0 == 41 goto label25;
+
+        if $i0 == 42 goto label24;
+
+     label25:
+        if $i0 == 44 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.561806347 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.112497966 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1334 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 11 sources and 21 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 13409
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 12688
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 52595 forward and 6822 backward edges solved, processing 2 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 2 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.002793433 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r1) in method <cRVwslB.diBybLcCsVm: void xGBj1cFnZ32aC3Q7(java.io.OutputStream,byte[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("force") in method <eu.chainfire.'new'.ToggleActivity: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r19 = interfaceinvoke $r19.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r6, 0) in method <eu.chainfire.'new'.bw: java.lang.Object doInBackground(java.lang.Object[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r17 = virtualinvoke $r13.<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)>(0) in method <eu.chainfire.'new'.bw: java.lang.Object doInBackground(java.lang.Object[])>
+Found a flow to sink virtualinvoke $r0.<java.io.OutputStream: void write(byte[])>($r1), from the following sources:
+	- $r4 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("force") (in <eu.chainfire.'new'.ToggleActivity: void onCreate(android.os.Bundle)>)
+Found a flow to sink $r19 = interfaceinvoke $r19.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>($r6, 0), from the following sources:
+	- $r17 = virtualinvoke $r13.<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)>(0) (in <eu.chainfire.'new'.bw: java.lang.Object doInBackground(java.lang.Object[])>)
+Maximum memory consumption: 192.507616 MB
+Analysis has run for 7.152511911 seconds

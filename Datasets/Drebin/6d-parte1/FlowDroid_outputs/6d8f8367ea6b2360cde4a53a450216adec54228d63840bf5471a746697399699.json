@@ -1,0 +1,647 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.014926265 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.corner23.android.universalandroot.receiver.WidgetProvider $r1;
+        com.corner23.android.universalandroot.service.SoftRootService $r2;
+        android.os.IBinder $r3;
+        com.corner23.android.universalandroot.UniversalAndroot $r4;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label1:
+        if $i0 == 0 goto label3;
+
+        $r1 = new com.corner23.android.universalandroot.receiver.WidgetProvider;
+
+        specialinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void <init>()>();
+
+        if $i0 == 1 goto label3;
+
+     label2:
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label2;
+
+     label3:
+        if $i0 == 4 goto label7;
+
+        $r2 = new com.corner23.android.universalandroot.service.SoftRootService;
+
+        specialinvoke $r2.<com.corner23.android.universalandroot.service.SoftRootService: void <init>()>();
+
+        virtualinvoke $r2.<com.corner23.android.universalandroot.service.SoftRootService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label4:
+        if $i0 == 5 goto label5;
+
+        $i1 = virtualinvoke $r2.<com.corner23.android.universalandroot.service.SoftRootService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 6 goto label4;
+
+     label5:
+        $r3 = virtualinvoke $r2.<com.corner23.android.universalandroot.service.SoftRootService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label6:
+        if $i0 == 8 goto label7;
+
+        if $i0 == 9 goto label6;
+
+     label7:
+        if $i0 == 10 goto label9;
+
+        $r4 = new com.corner23.android.universalandroot.UniversalAndroot;
+
+        specialinvoke $r4.<com.corner23.android.universalandroot.UniversalAndroot: void <init>()>();
+
+        if $i0 == 11 goto label9;
+
+        virtualinvoke $r4.<com.corner23.android.universalandroot.UniversalAndroot: void onCreate(android.os.Bundle)>(null);
+
+     label8:
+        if $i0 == 14 goto label9;
+
+        if $i0 == 15 goto label8;
+
+     label9:
+        if $i0 == 17 goto label1;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.corner23.android.universalandroot.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.corner23.android.universalandroot.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: Spinner is a phantom class!
+Warning: com.corner23.android.universalandroot.Spinner is a phantom class!
+Warning: android.view.Spinner is a phantom class!
+Warning: CheckBox is a phantom class!
+Warning: com.corner23.android.universalandroot.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.corner23.android.universalandroot.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: ImageView is a phantom class!
+Warning: com.corner23.android.universalandroot.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 2 layout controls in file res/layout/widget.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.corner23.android.universalandroot.receiver.WidgetProvider $r1;
+        int[] $r2, $r3;
+        com.corner23.android.universalandroot.service.SoftRootService $r4;
+        android.os.IBinder $r5;
+        com.corner23.android.universalandroot.UniversalAndroot $r6;
+        com.corner23.android.universalandroot.UniversalAndroot$2 $r7;
+        com.corner23.android.universalandroot.UniversalAndroot$1 $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label09;
+
+        $r1 = new com.corner23.android.universalandroot.receiver.WidgetProvider;
+
+        specialinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void <init>()>();
+
+        if $i0 == 1 goto label09;
+
+     label02:
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 2 goto label08;
+
+     label03:
+        if $i0 == 3 goto label04;
+
+        $r2 = newarray (int)[1];
+
+        $r2[0] = 0;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r2);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onDisabled(android.content.Context)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onEnabled(android.content.Context)>(null);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        $r3 = newarray (int)[1];
+
+        $r3[0] = 0;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onDeleted(android.content.Context,int[])>(null, $r3);
+
+     label07:
+        if $i0 == 7 goto label03;
+
+     label08:
+        if $i0 == 8 goto label02;
+
+     label09:
+        if $i0 == 9 goto label13;
+
+        $r4 = new com.corner23.android.universalandroot.service.SoftRootService;
+
+        specialinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: void <init>()>();
+
+        virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        $i1 = virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 11 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 13 goto label13;
+
+        if $i0 == 14 goto label12;
+
+     label13:
+        if $i0 == 15 goto label20;
+
+        $r6 = new com.corner23.android.universalandroot.UniversalAndroot;
+
+        specialinvoke $r6.<com.corner23.android.universalandroot.UniversalAndroot: void <init>()>();
+
+        if $i0 == 16 goto label20;
+
+        virtualinvoke $r6.<com.corner23.android.universalandroot.UniversalAndroot: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 18 goto label19;
+
+     label15:
+        $r7 = new com.corner23.android.universalandroot.UniversalAndroot$2;
+
+        specialinvoke $r7.<com.corner23.android.universalandroot.UniversalAndroot$2: void <init>(com.corner23.android.universalandroot.UniversalAndroot)>($r6);
+
+        if $i0 == 19 goto label16;
+
+        virtualinvoke $r7.<com.corner23.android.universalandroot.UniversalAndroot$2: void onClick(android.view.View)>(null);
+
+     label16:
+        if $i0 == 20 goto label17;
+
+        staticinvoke <com.corner23.android.universalandroot.UniversalAndroot: void <clinit>()>();
+
+     label17:
+        $r8 = new com.corner23.android.universalandroot.UniversalAndroot$1;
+
+        specialinvoke $r8.<com.corner23.android.universalandroot.UniversalAndroot$1: void <init>(com.corner23.android.universalandroot.UniversalAndroot)>($r6);
+
+        if $i0 == 21 goto label18;
+
+        virtualinvoke $r8.<com.corner23.android.universalandroot.UniversalAndroot$1: void onClick(android.view.View)>(null);
+
+     label18:
+        if $i0 == 22 goto label15;
+
+     label19:
+        if $i0 == 23 goto label14;
+
+        if $i0 == 24 goto label20;
+
+        if $i0 == 25 goto label14;
+
+     label20:
+        if $i0 == 27 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.corner23.android.universalandroot.receiver.WidgetProvider $r1;
+        int[] $r2, $r3;
+        com.corner23.android.universalandroot.service.SoftRootService $r4;
+        android.os.IBinder $r5;
+        com.corner23.android.universalandroot.UniversalAndroot $r6;
+        com.corner23.android.universalandroot.UniversalAndroot$2 $r7;
+        com.corner23.android.universalandroot.UniversalAndroot$1 $r8, $r9;
+        com.corner23.android.universalandroot.UniversalAndroot$1$1 $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label09;
+
+        $r1 = new com.corner23.android.universalandroot.receiver.WidgetProvider;
+
+        specialinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void <init>()>();
+
+        if $i0 == 1 goto label09;
+
+     label02:
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 2 goto label08;
+
+     label03:
+        if $i0 == 3 goto label04;
+
+        $r2 = newarray (int)[1];
+
+        $r2[0] = 0;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onDeleted(android.content.Context,int[])>(null, $r2);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $r3 = newarray (int)[1];
+
+        $r3[0] = 0;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r3);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onDisabled(android.content.Context)>(null);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onEnabled(android.content.Context)>(null);
+
+     label07:
+        if $i0 == 7 goto label03;
+
+     label08:
+        if $i0 == 8 goto label02;
+
+     label09:
+        if $i0 == 9 goto label13;
+
+        $r4 = new com.corner23.android.universalandroot.service.SoftRootService;
+
+        specialinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: void <init>()>();
+
+        virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        $i1 = virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 11 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 13 goto label13;
+
+        if $i0 == 14 goto label12;
+
+     label13:
+        if $i0 == 15 goto label21;
+
+        $r6 = new com.corner23.android.universalandroot.UniversalAndroot;
+
+        specialinvoke $r6.<com.corner23.android.universalandroot.UniversalAndroot: void <init>()>();
+
+        if $i0 == 16 goto label21;
+
+        virtualinvoke $r6.<com.corner23.android.universalandroot.UniversalAndroot: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 18 goto label20;
+
+     label15:
+        $r7 = new com.corner23.android.universalandroot.UniversalAndroot$2;
+
+        specialinvoke $r7.<com.corner23.android.universalandroot.UniversalAndroot$2: void <init>(com.corner23.android.universalandroot.UniversalAndroot)>($r6);
+
+        if $i0 == 19 goto label16;
+
+        virtualinvoke $r7.<com.corner23.android.universalandroot.UniversalAndroot$2: void onClick(android.view.View)>(null);
+
+     label16:
+        $r8 = new com.corner23.android.universalandroot.UniversalAndroot$1;
+
+        specialinvoke $r8.<com.corner23.android.universalandroot.UniversalAndroot$1: void <init>(com.corner23.android.universalandroot.UniversalAndroot)>($r6);
+
+        if $i0 == 20 goto label17;
+
+        virtualinvoke $r8.<com.corner23.android.universalandroot.UniversalAndroot$1: void onClick(android.view.View)>(null);
+
+     label17:
+        if $i0 == 21 goto label18;
+
+        staticinvoke <com.corner23.android.universalandroot.UniversalAndroot: void <clinit>()>();
+
+     label18:
+        $r9 = new com.corner23.android.universalandroot.UniversalAndroot$1;
+
+        specialinvoke $r9.<com.corner23.android.universalandroot.UniversalAndroot$1: void <init>(com.corner23.android.universalandroot.UniversalAndroot)>($r6);
+
+        $r10 = new com.corner23.android.universalandroot.UniversalAndroot$1$1;
+
+        specialinvoke $r10.<com.corner23.android.universalandroot.UniversalAndroot$1$1: void <init>(com.corner23.android.universalandroot.UniversalAndroot$1)>($r9);
+
+        if $i0 == 22 goto label19;
+
+        virtualinvoke $r10.<com.corner23.android.universalandroot.UniversalAndroot$1$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        if $i0 == 23 goto label15;
+
+     label20:
+        if $i0 == 24 goto label14;
+
+        if $i0 == 25 goto label21;
+
+        if $i0 == 26 goto label14;
+
+     label21:
+        if $i0 == 28 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 13 callback methods for 3 components
+Found {res/layout/main.xml=[2131230725 - android.widget.Button, 2131230724 - android.widget.Button, 2131230720 - android.widget.TextView, 2131230723 - android.widget.CheckBox, 2131230722 - android.widget.CheckBox, 2131230721 - android.widget.Spinner, -1 - android.widget.LinearLayout], res/layout/widget.xml=[2131230726 - android.widget.ImageView, 2131230727 - android.widget.TextView, -1 - android.widget.LinearLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 13 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6d8f8367ea6b2360cde4a53a450216adec54228d63840bf5471a746697399699.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.corner23.android.universalandroot.receiver.WidgetProvider $r1;
+        int[] $r2, $r3;
+        com.corner23.android.universalandroot.service.SoftRootService $r4;
+        android.os.IBinder $r5;
+        com.corner23.android.universalandroot.UniversalAndroot $r6;
+        com.corner23.android.universalandroot.UniversalAndroot$2 $r7;
+        com.corner23.android.universalandroot.UniversalAndroot$1 $r8, $r9;
+        com.corner23.android.universalandroot.UniversalAndroot$1$1 $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label09;
+
+        $r1 = new com.corner23.android.universalandroot.receiver.WidgetProvider;
+
+        specialinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void <init>()>();
+
+        if $i0 == 1 goto label09;
+
+     label02:
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 2 goto label08;
+
+     label03:
+        if $i0 == 3 goto label04;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onEnabled(android.content.Context)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        $r2 = newarray (int)[1];
+
+        $r2[0] = 0;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onDeleted(android.content.Context,int[])>(null, $r2);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        $r3 = newarray (int)[1];
+
+        $r3[0] = 0;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r3);
+
+     label06:
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r1.<com.corner23.android.universalandroot.receiver.WidgetProvider: void onDisabled(android.content.Context)>(null);
+
+     label07:
+        if $i0 == 7 goto label03;
+
+     label08:
+        if $i0 == 8 goto label02;
+
+     label09:
+        if $i0 == 9 goto label13;
+
+        $r4 = new com.corner23.android.universalandroot.service.SoftRootService;
+
+        specialinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: void <init>()>();
+
+        virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 10 goto label11;
+
+        $i1 = virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 11 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.corner23.android.universalandroot.service.SoftRootService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 13 goto label13;
+
+        if $i0 == 14 goto label12;
+
+     label13:
+        if $i0 == 15 goto label21;
+
+        $r6 = new com.corner23.android.universalandroot.UniversalAndroot;
+
+        specialinvoke $r6.<com.corner23.android.universalandroot.UniversalAndroot: void <init>()>();
+
+        if $i0 == 16 goto label21;
+
+        virtualinvoke $r6.<com.corner23.android.universalandroot.UniversalAndroot: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 18 goto label20;
+
+     label15:
+        $r7 = new com.corner23.android.universalandroot.UniversalAndroot$2;
+
+        specialinvoke $r7.<com.corner23.android.universalandroot.UniversalAndroot$2: void <init>(com.corner23.android.universalandroot.UniversalAndroot)>($r6);
+
+        if $i0 == 19 goto label16;
+
+        virtualinvoke $r7.<com.corner23.android.universalandroot.UniversalAndroot$2: void onClick(android.view.View)>(null);
+
+     label16:
+        $r8 = new com.corner23.android.universalandroot.UniversalAndroot$1;
+
+        specialinvoke $r8.<com.corner23.android.universalandroot.UniversalAndroot$1: void <init>(com.corner23.android.universalandroot.UniversalAndroot)>($r6);
+
+        if $i0 == 20 goto label17;
+
+        virtualinvoke $r8.<com.corner23.android.universalandroot.UniversalAndroot$1: void onClick(android.view.View)>(null);
+
+     label17:
+        if $i0 == 21 goto label18;
+
+        staticinvoke <com.corner23.android.universalandroot.UniversalAndroot: void <clinit>()>();
+
+     label18:
+        $r9 = new com.corner23.android.universalandroot.UniversalAndroot$1;
+
+        specialinvoke $r9.<com.corner23.android.universalandroot.UniversalAndroot$1: void <init>(com.corner23.android.universalandroot.UniversalAndroot)>($r6);
+
+        $r10 = new com.corner23.android.universalandroot.UniversalAndroot$1$1;
+
+        specialinvoke $r10.<com.corner23.android.universalandroot.UniversalAndroot$1$1: void <init>(com.corner23.android.universalandroot.UniversalAndroot$1)>($r9);
+
+        if $i0 == 22 goto label19;
+
+        virtualinvoke $r10.<com.corner23.android.universalandroot.UniversalAndroot$1$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        if $i0 == 23 goto label15;
+
+     label20:
+        if $i0 == 24 goto label14;
+
+        if $i0 == 25 goto label21;
+
+        if $i0 == 26 goto label14;
+
+     label21:
+        if $i0 == 28 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.158920584 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.029479163 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 546 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 25 sources and 14 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 8
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 108
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 682 forward and 105 backward edges solved, processing 0 results...
+[main] WARN soot.jimple.infoflow.Infoflow - No results found.
+Maximum memory consumption: 170.216688 MB
+Analysis has run for 4.438297667 seconds

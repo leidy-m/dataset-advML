@@ -1,0 +1,2574 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.018307525 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.andhuhu.fengyinchuanshuo.GameActivity $r1;
+        com.google.ssearch.SearchService $r2;
+        android.os.IBinder $r3, $r5;
+        com.andhuhu.fengyinchuanshuo.MediaPlayerService $r4;
+        com.andhuhu.fengyinchuanshuo.SelectGradeActivity $r6;
+        com.andhuhu.fengyinchuanshuo.HelpActivity $r7;
+        com.andhuhu.fengyinchuanshuo.InstalActivity $r8;
+        com.google.ssearch.Dialog $r9;
+        com.andhuhu.fengyinchuanshuo.MainActivity $r10;
+        com.google.ssearch.Receiver $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.andhuhu.fengyinchuanshuo.GameActivity;
+
+        specialinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onResume()>();
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label08;
+
+        $r2 = new com.google.ssearch.SearchService;
+
+        specialinvoke $r2.<com.google.ssearch.SearchService: void <init>()>();
+
+        virtualinvoke $r2.<com.google.ssearch.SearchService: void onCreate()>();
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.google.ssearch.SearchService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 11 goto label07;
+
+        if $i0 == 12 goto label06;
+
+     label07:
+        virtualinvoke $r2.<com.google.ssearch.SearchService: void onDestroy()>();
+
+     label08:
+        if $i0 == 13 goto label12;
+
+        $r4 = new com.andhuhu.fengyinchuanshuo.MediaPlayerService;
+
+        specialinvoke $r4.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void <init>()>();
+
+        virtualinvoke $r4.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void onCreate()>();
+
+        virtualinvoke $r4.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label09:
+        if $i0 == 14 goto label10;
+
+        if $i0 == 15 goto label09;
+
+     label10:
+        $r5 = virtualinvoke $r4.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label11:
+        if $i0 == 17 goto label12;
+
+        if $i0 == 18 goto label11;
+
+     label12:
+        if $i0 == 19 goto label14;
+
+        $r6 = new com.andhuhu.fengyinchuanshuo.SelectGradeActivity;
+
+        specialinvoke $r6.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: void <init>()>();
+
+        if $i0 == 20 goto label14;
+
+        virtualinvoke $r6.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 23 goto label14;
+
+        if $i0 == 24 goto label13;
+
+     label14:
+        if $i0 == 26 goto label16;
+
+        $r7 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r7.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        if $i0 == 27 goto label16;
+
+        virtualinvoke $r7.<com.andhuhu.fengyinchuanshuo.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 30 goto label16;
+
+        if $i0 == 31 goto label15;
+
+     label16:
+        if $i0 == 33 goto label18;
+
+        $r8 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r8.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        if $i0 == 34 goto label18;
+
+        virtualinvoke $r8.<com.andhuhu.fengyinchuanshuo.InstalActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 37 goto label18;
+
+        if $i0 == 38 goto label17;
+
+     label18:
+        if $i0 == 40 goto label20;
+
+        $r9 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r9.<com.google.ssearch.Dialog: void <init>()>();
+
+        if $i0 == 41 goto label20;
+
+        virtualinvoke $r9.<com.google.ssearch.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        if $i0 == 44 goto label20;
+
+        if $i0 == 45 goto label19;
+
+     label20:
+        if $i0 == 47 goto label22;
+
+        $r10 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r10.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        if $i0 == 48 goto label22;
+
+        virtualinvoke $r10.<com.andhuhu.fengyinchuanshuo.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 51 goto label22;
+
+        if $i0 == 52 goto label21;
+
+     label22:
+        if $i0 == 54 goto label24;
+
+        $r11 = new com.google.ssearch.Receiver;
+
+        specialinvoke $r11.<com.google.ssearch.Receiver: void <init>()>();
+
+        if $i0 == 55 goto label24;
+
+     label23:
+        virtualinvoke $r11.<com.google.ssearch.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 57 goto label23;
+
+     label24:
+        if $i0 == 58 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.9 seconds.
+[Spark] Solution found in 2.9 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: com.andhuhu.fengyinchuanshuo.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: com.andhuhu.fengyinchuanshuo.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.andhuhu.fengyinchuanshuo.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.andhuhu.fengyinchuanshuo.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 1 layout controls in file res/layout/game.xml
+Found 2 layout controls in file res/layout/help.xml
+Found 3 layout controls in file res/layout/instal.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.andhuhu.fengyinchuanshuo.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 4 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.wiyun.ad.AdView$AdListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.andhuhu.fengyinchuanshuo.GameActivity $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.andhuhu.fengyinchuanshuo.MainActivity $r2, $r34, $r47, $r65;
+        com.andhuhu.fengyinchuanshuo.MainActivity$2 $r3, $r66;
+        com.andhuhu.fengyinchuanshuo.InstalActivity $r4, $r32, $r37, $r41, $r57;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$4 $r5, $r58;
+        com.andhuhu.fengyinchuanshuo.GameActivity$3 $r6;
+        com.wiyun.ad.AdView $r7, $r14, $r24, $r28;
+        com.wiyun.ad.q $r8, $r15, $r25;
+        com.wiyun.ad.a $r9, $r16, $r26;
+        com.wiyun.ad.AdView$6 $r10;
+        com.andhuhu.fengyinchuanshuo.HelpActivity $r11, $r18, $r54;
+        com.andhuhu.fengyinchuanshuo.HelpActivity$2 $r12, $r56;
+        com.andhuhu.fengyinchuanshuo.GameActivity$9 $r13;
+        com.wiyun.ad.AdView$8 $r17;
+        com.andhuhu.fengyinchuanshuo.HelpActivity$1 $r19, $r55;
+        com.andhuhu.fengyinchuanshuo.MyAD $r20;
+        com.andhuhu.fengyinchuanshuo.MyAD$1 $r21;
+        com.google.ssearch.Dialog $r22, $r43, $r62;
+        com.google.ssearch.Dialog$2 $r23, $r63;
+        com.wiyun.ad.AdView$5 $r27;
+        com.andhuhu.fengyinchuanshuo.GameActivity$4 $r29;
+        com.andhuhu.fengyinchuanshuo.GameActivity$10 $r30;
+        com.andhuhu.fengyinchuanshuo.GameActivity$2 $r31;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$1 $r33, $r61;
+        com.andhuhu.fengyinchuanshuo.MainActivity$3 $r35, $r67;
+        com.andhuhu.fengyinchuanshuo.GameActivity$1 $r36;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$2 $r38, $r59;
+        com.andhuhu.fengyinchuanshuo.GameActivity$7 $r39;
+        com.andhuhu.fengyinchuanshuo.GameActivity$5 $r40;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$3 $r42, $r60;
+        com.google.ssearch.Dialog$1 $r44, $r64;
+        com.andhuhu.fengyinchuanshuo.GameActivity$8 $r45;
+        com.andhuhu.fengyinchuanshuo.GameActivity$6 $r46;
+        com.andhuhu.fengyinchuanshuo.MainActivity$1 $r48, $r68;
+        com.google.ssearch.SearchService $r49;
+        android.os.IBinder $r50, $r52;
+        com.andhuhu.fengyinchuanshuo.MediaPlayerService $r51;
+        com.andhuhu.fengyinchuanshuo.SelectGradeActivity $r53;
+        com.google.ssearch.Receiver $r69;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label33;
+
+        $r1 = new com.andhuhu.fengyinchuanshuo.GameActivity;
+
+        specialinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void <init>()>();
+
+        if $i0 == 1 goto label33;
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onResume()>();
+
+        if $i0 == 3 goto label32;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        $z0 = virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: boolean dispatchTouchEvent(android.view.MotionEvent)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        $z1 = virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label05:
+        $r2 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r2.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r3 = new com.andhuhu.fengyinchuanshuo.MainActivity$2;
+
+        specialinvoke $r3.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r2);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r3.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void onClick(android.view.View)>(null);
+
+     label06:
+        $r4 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r4.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r5 = new com.andhuhu.fengyinchuanshuo.InstalActivity$4;
+
+        specialinvoke $r5.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r4);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r5.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void onClick(android.view.View)>(null);
+
+     label07:
+        $r6 = new com.andhuhu.fengyinchuanshuo.GameActivity$3;
+
+        specialinvoke $r6.<com.andhuhu.fengyinchuanshuo.GameActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r6.<com.andhuhu.fengyinchuanshuo.GameActivity$3: void onClick(android.view.View)>(null);
+
+     label08:
+        $r7 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r7.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r8 = new com.wiyun.ad.q;
+
+        specialinvoke $r8.<com.wiyun.ad.q: void <init>()>();
+
+        $r9 = new com.wiyun.ad.a;
+
+        specialinvoke $r9.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r8, null);
+
+        $r10 = new com.wiyun.ad.AdView$6;
+
+        specialinvoke $r10.<com.wiyun.ad.AdView$6: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a)>($r7, $r9);
+
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r10.<com.wiyun.ad.AdView$6: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label09:
+        $r11 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r11.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        $r12 = new com.andhuhu.fengyinchuanshuo.HelpActivity$2;
+
+        specialinvoke $r12.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r11);
+
+        if $i0 == 10 goto label10;
+
+        virtualinvoke $r12.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void onClick(android.view.View)>(null);
+
+     label10:
+        $r13 = new com.andhuhu.fengyinchuanshuo.GameActivity$9;
+
+        specialinvoke $r13.<com.andhuhu.fengyinchuanshuo.GameActivity$9: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r13.<com.andhuhu.fengyinchuanshuo.GameActivity$9: void onClick(android.view.View)>(null);
+
+     label11:
+        $r14 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r14.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r15 = new com.wiyun.ad.q;
+
+        specialinvoke $r15.<com.wiyun.ad.q: void <init>()>();
+
+        $r16 = new com.wiyun.ad.a;
+
+        specialinvoke $r16.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r15, null);
+
+        $r17 = new com.wiyun.ad.AdView$8;
+
+        specialinvoke $r17.<com.wiyun.ad.AdView$8: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a,int)>($r14, $r16, 0);
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r17.<com.wiyun.ad.AdView$8: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label12:
+        $r18 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r18.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        $r19 = new com.andhuhu.fengyinchuanshuo.HelpActivity$1;
+
+        specialinvoke $r19.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r18);
+
+        if $i0 == 13 goto label13;
+
+        virtualinvoke $r19.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void onClick(android.view.View)>(null);
+
+     label13:
+        $r20 = new com.andhuhu.fengyinchuanshuo.MyAD;
+
+        specialinvoke $r20.<com.andhuhu.fengyinchuanshuo.MyAD: void <init>(android.app.Activity,int,boolean,android.widget.RelativeLayout)>($r1, 0, false, null);
+
+        $r21 = new com.andhuhu.fengyinchuanshuo.MyAD$1;
+
+        specialinvoke $r21.<com.andhuhu.fengyinchuanshuo.MyAD$1: void <init>(com.andhuhu.fengyinchuanshuo.MyAD)>($r20);
+
+        if $i0 == 14 goto label14;
+
+        virtualinvoke $r21.<com.andhuhu.fengyinchuanshuo.MyAD$1: void onClick(android.view.View)>(null);
+
+     label14:
+        $r22 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r22.<com.google.ssearch.Dialog: void <init>()>();
+
+        $r23 = new com.google.ssearch.Dialog$2;
+
+        specialinvoke $r23.<com.google.ssearch.Dialog$2: void <init>(com.google.ssearch.Dialog)>($r22);
+
+        if $i0 == 15 goto label15;
+
+        virtualinvoke $r23.<com.google.ssearch.Dialog$2: void onClick(android.view.View)>(null);
+
+     label15:
+        $r24 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r24.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r25 = new com.wiyun.ad.q;
+
+        specialinvoke $r25.<com.wiyun.ad.q: void <init>()>();
+
+        $r26 = new com.wiyun.ad.a;
+
+        specialinvoke $r26.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r25, null);
+
+        $r27 = new com.wiyun.ad.AdView$5;
+
+        specialinvoke $r27.<com.wiyun.ad.AdView$5: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a)>($r24, $r26);
+
+        if $i0 == 16 goto label16;
+
+        virtualinvoke $r27.<com.wiyun.ad.AdView$5: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label16:
+        $r28 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r28.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        if $i0 == 17 goto label17;
+
+        virtualinvoke $r28.<com.wiyun.ad.AdView: void onClick(android.view.View)>(null);
+
+     label17:
+        $r29 = new com.andhuhu.fengyinchuanshuo.GameActivity$4;
+
+        specialinvoke $r29.<com.andhuhu.fengyinchuanshuo.GameActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 18 goto label18;
+
+        virtualinvoke $r29.<com.andhuhu.fengyinchuanshuo.GameActivity$4: void onClick(android.view.View)>(null);
+
+     label18:
+        $r30 = new com.andhuhu.fengyinchuanshuo.GameActivity$10;
+
+        specialinvoke $r30.<com.andhuhu.fengyinchuanshuo.GameActivity$10: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 19 goto label19;
+
+        virtualinvoke $r30.<com.andhuhu.fengyinchuanshuo.GameActivity$10: void onClick(android.view.View)>(null);
+
+     label19:
+        $r31 = new com.andhuhu.fengyinchuanshuo.GameActivity$2;
+
+        specialinvoke $r31.<com.andhuhu.fengyinchuanshuo.GameActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 20 goto label20;
+
+        virtualinvoke $r31.<com.andhuhu.fengyinchuanshuo.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label20:
+        $r32 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r32.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r33 = new com.andhuhu.fengyinchuanshuo.InstalActivity$1;
+
+        specialinvoke $r33.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r32);
+
+        if $i0 == 21 goto label21;
+
+        virtualinvoke $r33.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void onClick(android.view.View)>(null);
+
+     label21:
+        $r34 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r34.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r35 = new com.andhuhu.fengyinchuanshuo.MainActivity$3;
+
+        specialinvoke $r35.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r34);
+
+        if $i0 == 22 goto label22;
+
+        virtualinvoke $r35.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void onClick(android.view.View)>(null);
+
+     label22:
+        $r36 = new com.andhuhu.fengyinchuanshuo.GameActivity$1;
+
+        specialinvoke $r36.<com.andhuhu.fengyinchuanshuo.GameActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 23 goto label23;
+
+        virtualinvoke $r36.<com.andhuhu.fengyinchuanshuo.GameActivity$1: void onClick(android.view.View)>(null);
+
+     label23:
+        $r37 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r37.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r38 = new com.andhuhu.fengyinchuanshuo.InstalActivity$2;
+
+        specialinvoke $r38.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r37);
+
+        if $i0 == 24 goto label24;
+
+        virtualinvoke $r38.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void onClick(android.view.View)>(null);
+
+     label24:
+        $r39 = new com.andhuhu.fengyinchuanshuo.GameActivity$7;
+
+        specialinvoke $r39.<com.andhuhu.fengyinchuanshuo.GameActivity$7: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 25 goto label25;
+
+        virtualinvoke $r39.<com.andhuhu.fengyinchuanshuo.GameActivity$7: void onClick(android.view.View)>(null);
+
+     label25:
+        $r40 = new com.andhuhu.fengyinchuanshuo.GameActivity$5;
+
+        specialinvoke $r40.<com.andhuhu.fengyinchuanshuo.GameActivity$5: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 26 goto label26;
+
+        virtualinvoke $r40.<com.andhuhu.fengyinchuanshuo.GameActivity$5: void onClick(android.view.View)>(null);
+
+     label26:
+        $r41 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r41.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r42 = new com.andhuhu.fengyinchuanshuo.InstalActivity$3;
+
+        specialinvoke $r42.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r41);
+
+        if $i0 == 27 goto label27;
+
+        virtualinvoke $r42.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void onClick(android.view.View)>(null);
+
+     label27:
+        $r43 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r43.<com.google.ssearch.Dialog: void <init>()>();
+
+        $r44 = new com.google.ssearch.Dialog$1;
+
+        specialinvoke $r44.<com.google.ssearch.Dialog$1: void <init>(com.google.ssearch.Dialog)>($r43);
+
+        if $i0 == 28 goto label28;
+
+        virtualinvoke $r44.<com.google.ssearch.Dialog$1: void onClick(android.view.View)>(null);
+
+     label28:
+        $r45 = new com.andhuhu.fengyinchuanshuo.GameActivity$8;
+
+        specialinvoke $r45.<com.andhuhu.fengyinchuanshuo.GameActivity$8: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 29 goto label29;
+
+        virtualinvoke $r45.<com.andhuhu.fengyinchuanshuo.GameActivity$8: void onClick(android.view.View)>(null);
+
+     label29:
+        $r46 = new com.andhuhu.fengyinchuanshuo.GameActivity$6;
+
+        specialinvoke $r46.<com.andhuhu.fengyinchuanshuo.GameActivity$6: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 30 goto label30;
+
+        virtualinvoke $r46.<com.andhuhu.fengyinchuanshuo.GameActivity$6: void onClick(android.view.View)>(null);
+
+     label30:
+        $r47 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r47.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r48 = new com.andhuhu.fengyinchuanshuo.MainActivity$1;
+
+        specialinvoke $r48.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r47);
+
+        if $i0 == 31 goto label31;
+
+        virtualinvoke $r48.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void onClick(android.view.View)>(null);
+
+     label31:
+        if $i0 == 32 goto label03;
+
+     label32:
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onPause()>();
+
+        if $i0 == 33 goto label02;
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onStop()>();
+
+        if $i0 == 34 goto label33;
+
+        if $i0 == 35 goto label02;
+
+     label33:
+        if $i0 == 37 goto label38;
+
+        $r49 = new com.google.ssearch.SearchService;
+
+        specialinvoke $r49.<com.google.ssearch.SearchService: void <init>()>();
+
+        virtualinvoke $r49.<com.google.ssearch.SearchService: void onCreate()>();
+
+     label34:
+        if $i0 == 38 goto label35;
+
+        if $i0 == 39 goto label34;
+
+     label35:
+        $r50 = virtualinvoke $r49.<com.google.ssearch.SearchService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label36:
+        if $i0 == 41 goto label37;
+
+        if $i0 == 42 goto label36;
+
+     label37:
+        virtualinvoke $r49.<com.google.ssearch.SearchService: void onDestroy()>();
+
+     label38:
+        if $i0 == 43 goto label42;
+
+        $r51 = new com.andhuhu.fengyinchuanshuo.MediaPlayerService;
+
+        specialinvoke $r51.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void <init>()>();
+
+        virtualinvoke $r51.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void onCreate()>();
+
+        virtualinvoke $r51.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label39:
+        if $i0 == 44 goto label40;
+
+        if $i0 == 45 goto label39;
+
+     label40:
+        $r52 = virtualinvoke $r51.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label41:
+        if $i0 == 47 goto label42;
+
+        if $i0 == 48 goto label41;
+
+     label42:
+        if $i0 == 49 goto label47;
+
+        $r53 = new com.andhuhu.fengyinchuanshuo.SelectGradeActivity;
+
+        specialinvoke $r53.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: void <init>()>();
+
+        if $i0 == 50 goto label47;
+
+        virtualinvoke $r53.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label43:
+        if $i0 == 52 goto label46;
+
+     label44:
+        if $i0 == 53 goto label45;
+
+        $z2 = virtualinvoke $r53.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label45:
+        if $i0 == 54 goto label44;
+
+     label46:
+        if $i0 == 55 goto label43;
+
+        if $i0 == 56 goto label47;
+
+        if $i0 == 57 goto label43;
+
+     label47:
+        if $i0 == 59 goto label54;
+
+        $r54 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r54.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        if $i0 == 60 goto label54;
+
+        virtualinvoke $r54.<com.andhuhu.fengyinchuanshuo.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        if $i0 == 62 goto label53;
+
+     label49:
+        $r55 = new com.andhuhu.fengyinchuanshuo.HelpActivity$1;
+
+        specialinvoke $r55.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r54);
+
+        if $i0 == 63 goto label50;
+
+        virtualinvoke $r55.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void onClick(android.view.View)>(null);
+
+     label50:
+        $r56 = new com.andhuhu.fengyinchuanshuo.HelpActivity$2;
+
+        specialinvoke $r56.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r54);
+
+        if $i0 == 64 goto label51;
+
+        virtualinvoke $r56.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void onClick(android.view.View)>(null);
+
+     label51:
+        if $i0 == 65 goto label52;
+
+        $z3 = virtualinvoke $r54.<com.andhuhu.fengyinchuanshuo.HelpActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label52:
+        if $i0 == 66 goto label49;
+
+     label53:
+        if $i0 == 67 goto label48;
+
+        if $i0 == 68 goto label54;
+
+        if $i0 == 69 goto label48;
+
+     label54:
+        if $i0 == 71 goto label63;
+
+        $r57 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r57.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        if $i0 == 72 goto label63;
+
+        virtualinvoke $r57.<com.andhuhu.fengyinchuanshuo.InstalActivity: void onCreate(android.os.Bundle)>(null);
+
+     label55:
+        if $i0 == 74 goto label62;
+
+     label56:
+        if $i0 == 75 goto label57;
+
+        $z4 = virtualinvoke $r57.<com.andhuhu.fengyinchuanshuo.InstalActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label57:
+        $r58 = new com.andhuhu.fengyinchuanshuo.InstalActivity$4;
+
+        specialinvoke $r58.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r57);
+
+        if $i0 == 76 goto label58;
+
+        virtualinvoke $r58.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void onClick(android.view.View)>(null);
+
+     label58:
+        $r59 = new com.andhuhu.fengyinchuanshuo.InstalActivity$2;
+
+        specialinvoke $r59.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r57);
+
+        if $i0 == 77 goto label59;
+
+        virtualinvoke $r59.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void onClick(android.view.View)>(null);
+
+     label59:
+        $r60 = new com.andhuhu.fengyinchuanshuo.InstalActivity$3;
+
+        specialinvoke $r60.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r57);
+
+        if $i0 == 78 goto label60;
+
+        virtualinvoke $r60.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void onClick(android.view.View)>(null);
+
+     label60:
+        $r61 = new com.andhuhu.fengyinchuanshuo.InstalActivity$1;
+
+        specialinvoke $r61.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r57);
+
+        if $i0 == 79 goto label61;
+
+        virtualinvoke $r61.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void onClick(android.view.View)>(null);
+
+     label61:
+        if $i0 == 80 goto label56;
+
+     label62:
+        if $i0 == 81 goto label55;
+
+        if $i0 == 82 goto label63;
+
+        if $i0 == 83 goto label55;
+
+     label63:
+        if $i0 == 85 goto label69;
+
+        $r62 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r62.<com.google.ssearch.Dialog: void <init>()>();
+
+        if $i0 == 86 goto label69;
+
+        virtualinvoke $r62.<com.google.ssearch.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label64:
+        if $i0 == 88 goto label68;
+
+     label65:
+        $r63 = new com.google.ssearch.Dialog$2;
+
+        specialinvoke $r63.<com.google.ssearch.Dialog$2: void <init>(com.google.ssearch.Dialog)>($r62);
+
+        if $i0 == 89 goto label66;
+
+        virtualinvoke $r63.<com.google.ssearch.Dialog$2: void onClick(android.view.View)>(null);
+
+     label66:
+        $r64 = new com.google.ssearch.Dialog$1;
+
+        specialinvoke $r64.<com.google.ssearch.Dialog$1: void <init>(com.google.ssearch.Dialog)>($r62);
+
+        if $i0 == 90 goto label67;
+
+        virtualinvoke $r64.<com.google.ssearch.Dialog$1: void onClick(android.view.View)>(null);
+
+     label67:
+        if $i0 == 91 goto label65;
+
+     label68:
+        if $i0 == 92 goto label64;
+
+        if $i0 == 93 goto label69;
+
+        if $i0 == 94 goto label64;
+
+     label69:
+        if $i0 == 96 goto label77;
+
+        $r65 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r65.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        if $i0 == 97 goto label77;
+
+        virtualinvoke $r65.<com.andhuhu.fengyinchuanshuo.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label70:
+        if $i0 == 99 goto label76;
+
+     label71:
+        $r66 = new com.andhuhu.fengyinchuanshuo.MainActivity$2;
+
+        specialinvoke $r66.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r65);
+
+        if $i0 == 100 goto label72;
+
+        virtualinvoke $r66.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void onClick(android.view.View)>(null);
+
+     label72:
+        $r67 = new com.andhuhu.fengyinchuanshuo.MainActivity$3;
+
+        specialinvoke $r67.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r65);
+
+        if $i0 == 101 goto label73;
+
+        virtualinvoke $r67.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void onClick(android.view.View)>(null);
+
+     label73:
+        if $i0 == 102 goto label74;
+
+        $z5 = virtualinvoke $r65.<com.andhuhu.fengyinchuanshuo.MainActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label74:
+        $r68 = new com.andhuhu.fengyinchuanshuo.MainActivity$1;
+
+        specialinvoke $r68.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r65);
+
+        if $i0 == 103 goto label75;
+
+        virtualinvoke $r68.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void onClick(android.view.View)>(null);
+
+     label75:
+        if $i0 == 104 goto label71;
+
+     label76:
+        if $i0 == 105 goto label70;
+
+        if $i0 == 106 goto label77;
+
+        if $i0 == 107 goto label70;
+
+     label77:
+        if $i0 == 109 goto label79;
+
+        $r69 = new com.google.ssearch.Receiver;
+
+        specialinvoke $r69.<com.google.ssearch.Receiver: void <init>()>();
+
+        if $i0 == 110 goto label79;
+
+     label78:
+        virtualinvoke $r69.<com.google.ssearch.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 112 goto label78;
+
+     label79:
+        if $i0 == 113 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.2 seconds.
+[Spark] Solution found in 2.2 seconds.
+Running incremental callback analysis for 7 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.wiyun.ad.AdView$AdListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.andhuhu.fengyinchuanshuo.GameActivity $r1;
+        com.andhuhu.fengyinchuanshuo.GameActivity$10 $r2;
+        com.wiyun.ad.AdView $r3, $r4, $r18, $r33, $r46;
+        com.wiyun.ad.q $r5, $r19, $r34, $r47;
+        com.wiyun.ad.a $r6, $r20, $r35, $r48;
+        com.wiyun.ad.AdView$8 $r7;
+        com.andhuhu.fengyinchuanshuo.MainActivity $r8, $r23, $r42, $r70;
+        com.andhuhu.fengyinchuanshuo.MainActivity$3 $r9, $r73;
+        com.google.ssearch.Dialog $r10, $r50, $r67;
+        com.google.ssearch.Dialog$2 $r11, $r69;
+        com.andhuhu.fengyinchuanshuo.HelpActivity $r12, $r16, $r59;
+        com.andhuhu.fengyinchuanshuo.HelpActivity$2 $r13, $r60;
+        com.andhuhu.fengyinchuanshuo.GameActivity$9 $r14;
+        com.andhuhu.fengyinchuanshuo.GameActivity$1 $r15;
+        com.andhuhu.fengyinchuanshuo.HelpActivity$1 $r17, $r61;
+        com.wiyun.ad.AdView$a $r21;
+        com.wiyun.ad.AdView$a$1 $r22;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.andhuhu.fengyinchuanshuo.MainActivity$1 $r24, $r71;
+        com.andhuhu.fengyinchuanshuo.GameActivity$2 $r25;
+        com.andhuhu.fengyinchuanshuo.InstalActivity $r26, $r29, $r37, $r52, $r62;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$4 $r27, $r64;
+        com.andhuhu.fengyinchuanshuo.GameActivity$6 $r28;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$3 $r30, $r65;
+        com.andhuhu.fengyinchuanshuo.MyAD $r31;
+        com.andhuhu.fengyinchuanshuo.MyAD$1 $r32;
+        com.wiyun.ad.AdView$6 $r36;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$1 $r38, $r63;
+        com.andhuhu.fengyinchuanshuo.GameActivity$3 $r39;
+        com.andhuhu.fengyinchuanshuo.GameActivity$4 $r40;
+        com.andhuhu.fengyinchuanshuo.GameActivity$5 $r41;
+        com.andhuhu.fengyinchuanshuo.MainActivity$2 $r43, $r72;
+        com.andhuhu.fengyinchuanshuo.GameActivity$7 $r44;
+        com.andhuhu.fengyinchuanshuo.GameActivity$8 $r45;
+        com.wiyun.ad.AdView$5 $r49;
+        com.google.ssearch.Dialog$1 $r51, $r68;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$2 $r53, $r66;
+        com.google.ssearch.SearchService $r54;
+        android.os.IBinder $r55, $r57;
+        com.andhuhu.fengyinchuanshuo.MediaPlayerService $r56;
+        com.andhuhu.fengyinchuanshuo.SelectGradeActivity $r58;
+        com.google.ssearch.Receiver $r74;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label34;
+
+        $r1 = new com.andhuhu.fengyinchuanshuo.GameActivity;
+
+        specialinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void <init>()>();
+
+        if $i0 == 1 goto label34;
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onResume()>();
+
+        if $i0 == 3 goto label33;
+
+     label03:
+        $r2 = new com.andhuhu.fengyinchuanshuo.GameActivity$10;
+
+        specialinvoke $r2.<com.andhuhu.fengyinchuanshuo.GameActivity$10: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<com.andhuhu.fengyinchuanshuo.GameActivity$10: void onClick(android.view.View)>(null);
+
+     label04:
+        $r3 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r3.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r3.<com.wiyun.ad.AdView: void onClick(android.view.View)>(null);
+
+     label05:
+        $r4 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r4.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r5 = new com.wiyun.ad.q;
+
+        specialinvoke $r5.<com.wiyun.ad.q: void <init>()>();
+
+        $r6 = new com.wiyun.ad.a;
+
+        specialinvoke $r6.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r5, null);
+
+        $r7 = new com.wiyun.ad.AdView$8;
+
+        specialinvoke $r7.<com.wiyun.ad.AdView$8: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a,int)>($r4, $r6, 0);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r7.<com.wiyun.ad.AdView$8: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label06:
+        $r8 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r8.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r9 = new com.andhuhu.fengyinchuanshuo.MainActivity$3;
+
+        specialinvoke $r9.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r8);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r9.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void onClick(android.view.View)>(null);
+
+     label07:
+        $r10 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r10.<com.google.ssearch.Dialog: void <init>()>();
+
+        $r11 = new com.google.ssearch.Dialog$2;
+
+        specialinvoke $r11.<com.google.ssearch.Dialog$2: void <init>(com.google.ssearch.Dialog)>($r10);
+
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r11.<com.google.ssearch.Dialog$2: void onClick(android.view.View)>(null);
+
+     label08:
+        $r12 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r12.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        $r13 = new com.andhuhu.fengyinchuanshuo.HelpActivity$2;
+
+        specialinvoke $r13.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r12);
+
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r13.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void onClick(android.view.View)>(null);
+
+     label09:
+        $r14 = new com.andhuhu.fengyinchuanshuo.GameActivity$9;
+
+        specialinvoke $r14.<com.andhuhu.fengyinchuanshuo.GameActivity$9: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 10 goto label10;
+
+        virtualinvoke $r14.<com.andhuhu.fengyinchuanshuo.GameActivity$9: void onClick(android.view.View)>(null);
+
+     label10:
+        $r15 = new com.andhuhu.fengyinchuanshuo.GameActivity$1;
+
+        specialinvoke $r15.<com.andhuhu.fengyinchuanshuo.GameActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 11 goto label11;
+
+        virtualinvoke $r15.<com.andhuhu.fengyinchuanshuo.GameActivity$1: void onClick(android.view.View)>(null);
+
+     label11:
+        $r16 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r16.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        $r17 = new com.andhuhu.fengyinchuanshuo.HelpActivity$1;
+
+        specialinvoke $r17.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r16);
+
+        if $i0 == 12 goto label12;
+
+        virtualinvoke $r17.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void onClick(android.view.View)>(null);
+
+     label12:
+        $r18 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r18.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r19 = new com.wiyun.ad.q;
+
+        specialinvoke $r19.<com.wiyun.ad.q: void <init>()>();
+
+        $r20 = new com.wiyun.ad.a;
+
+        specialinvoke $r20.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r19, null);
+
+        $r21 = new com.wiyun.ad.AdView$a;
+
+        specialinvoke $r21.<com.wiyun.ad.AdView$a: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a,int)>($r18, $r20, 0);
+
+        $r22 = new com.wiyun.ad.AdView$a$1;
+
+        specialinvoke $r22.<com.wiyun.ad.AdView$a$1: void <init>(com.wiyun.ad.AdView$a)>($r21);
+
+        if $i0 == 13 goto label13;
+
+        virtualinvoke $r22.<com.wiyun.ad.AdView$a$1: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label13:
+        if $i0 == 14 goto label14;
+
+        $z0 = virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label14:
+        if $i0 == 15 goto label15;
+
+        $z1 = virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: boolean dispatchTouchEvent(android.view.MotionEvent)>(null);
+
+     label15:
+        $r23 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r23.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r24 = new com.andhuhu.fengyinchuanshuo.MainActivity$1;
+
+        specialinvoke $r24.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r23);
+
+        if $i0 == 16 goto label16;
+
+        virtualinvoke $r24.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void onClick(android.view.View)>(null);
+
+     label16:
+        $r25 = new com.andhuhu.fengyinchuanshuo.GameActivity$2;
+
+        specialinvoke $r25.<com.andhuhu.fengyinchuanshuo.GameActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 17 goto label17;
+
+        virtualinvoke $r25.<com.andhuhu.fengyinchuanshuo.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label17:
+        $r26 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r26.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r27 = new com.andhuhu.fengyinchuanshuo.InstalActivity$4;
+
+        specialinvoke $r27.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r26);
+
+        if $i0 == 18 goto label18;
+
+        virtualinvoke $r27.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void onClick(android.view.View)>(null);
+
+     label18:
+        $r28 = new com.andhuhu.fengyinchuanshuo.GameActivity$6;
+
+        specialinvoke $r28.<com.andhuhu.fengyinchuanshuo.GameActivity$6: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 19 goto label19;
+
+        virtualinvoke $r28.<com.andhuhu.fengyinchuanshuo.GameActivity$6: void onClick(android.view.View)>(null);
+
+     label19:
+        $r29 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r29.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r30 = new com.andhuhu.fengyinchuanshuo.InstalActivity$3;
+
+        specialinvoke $r30.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r29);
+
+        if $i0 == 20 goto label20;
+
+        virtualinvoke $r30.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void onClick(android.view.View)>(null);
+
+     label20:
+        $r31 = new com.andhuhu.fengyinchuanshuo.MyAD;
+
+        specialinvoke $r31.<com.andhuhu.fengyinchuanshuo.MyAD: void <init>(android.app.Activity,int,boolean,android.widget.RelativeLayout)>($r1, 0, false, null);
+
+        $r32 = new com.andhuhu.fengyinchuanshuo.MyAD$1;
+
+        specialinvoke $r32.<com.andhuhu.fengyinchuanshuo.MyAD$1: void <init>(com.andhuhu.fengyinchuanshuo.MyAD)>($r31);
+
+        if $i0 == 21 goto label21;
+
+        virtualinvoke $r32.<com.andhuhu.fengyinchuanshuo.MyAD$1: void onClick(android.view.View)>(null);
+
+     label21:
+        $r33 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r33.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r34 = new com.wiyun.ad.q;
+
+        specialinvoke $r34.<com.wiyun.ad.q: void <init>()>();
+
+        $r35 = new com.wiyun.ad.a;
+
+        specialinvoke $r35.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r34, null);
+
+        $r36 = new com.wiyun.ad.AdView$6;
+
+        specialinvoke $r36.<com.wiyun.ad.AdView$6: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a)>($r33, $r35);
+
+        if $i0 == 22 goto label22;
+
+        virtualinvoke $r36.<com.wiyun.ad.AdView$6: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label22:
+        $r37 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r37.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r38 = new com.andhuhu.fengyinchuanshuo.InstalActivity$1;
+
+        specialinvoke $r38.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r37);
+
+        if $i0 == 23 goto label23;
+
+        virtualinvoke $r38.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void onClick(android.view.View)>(null);
+
+     label23:
+        $r39 = new com.andhuhu.fengyinchuanshuo.GameActivity$3;
+
+        specialinvoke $r39.<com.andhuhu.fengyinchuanshuo.GameActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 24 goto label24;
+
+        virtualinvoke $r39.<com.andhuhu.fengyinchuanshuo.GameActivity$3: void onClick(android.view.View)>(null);
+
+     label24:
+        $r40 = new com.andhuhu.fengyinchuanshuo.GameActivity$4;
+
+        specialinvoke $r40.<com.andhuhu.fengyinchuanshuo.GameActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 25 goto label25;
+
+        virtualinvoke $r40.<com.andhuhu.fengyinchuanshuo.GameActivity$4: void onClick(android.view.View)>(null);
+
+     label25:
+        $r41 = new com.andhuhu.fengyinchuanshuo.GameActivity$5;
+
+        specialinvoke $r41.<com.andhuhu.fengyinchuanshuo.GameActivity$5: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 26 goto label26;
+
+        virtualinvoke $r41.<com.andhuhu.fengyinchuanshuo.GameActivity$5: void onClick(android.view.View)>(null);
+
+     label26:
+        $r42 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r42.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r43 = new com.andhuhu.fengyinchuanshuo.MainActivity$2;
+
+        specialinvoke $r43.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r42);
+
+        if $i0 == 27 goto label27;
+
+        virtualinvoke $r43.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void onClick(android.view.View)>(null);
+
+     label27:
+        $r44 = new com.andhuhu.fengyinchuanshuo.GameActivity$7;
+
+        specialinvoke $r44.<com.andhuhu.fengyinchuanshuo.GameActivity$7: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 28 goto label28;
+
+        virtualinvoke $r44.<com.andhuhu.fengyinchuanshuo.GameActivity$7: void onClick(android.view.View)>(null);
+
+     label28:
+        $r45 = new com.andhuhu.fengyinchuanshuo.GameActivity$8;
+
+        specialinvoke $r45.<com.andhuhu.fengyinchuanshuo.GameActivity$8: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 29 goto label29;
+
+        virtualinvoke $r45.<com.andhuhu.fengyinchuanshuo.GameActivity$8: void onClick(android.view.View)>(null);
+
+     label29:
+        $r46 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r46.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r47 = new com.wiyun.ad.q;
+
+        specialinvoke $r47.<com.wiyun.ad.q: void <init>()>();
+
+        $r48 = new com.wiyun.ad.a;
+
+        specialinvoke $r48.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r47, null);
+
+        $r49 = new com.wiyun.ad.AdView$5;
+
+        specialinvoke $r49.<com.wiyun.ad.AdView$5: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a)>($r46, $r48);
+
+        if $i0 == 30 goto label30;
+
+        virtualinvoke $r49.<com.wiyun.ad.AdView$5: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label30:
+        $r50 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r50.<com.google.ssearch.Dialog: void <init>()>();
+
+        $r51 = new com.google.ssearch.Dialog$1;
+
+        specialinvoke $r51.<com.google.ssearch.Dialog$1: void <init>(com.google.ssearch.Dialog)>($r50);
+
+        if $i0 == 31 goto label31;
+
+        virtualinvoke $r51.<com.google.ssearch.Dialog$1: void onClick(android.view.View)>(null);
+
+     label31:
+        $r52 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r52.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r53 = new com.andhuhu.fengyinchuanshuo.InstalActivity$2;
+
+        specialinvoke $r53.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r52);
+
+        if $i0 == 32 goto label32;
+
+        virtualinvoke $r53.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void onClick(android.view.View)>(null);
+
+     label32:
+        if $i0 == 33 goto label03;
+
+     label33:
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onPause()>();
+
+        if $i0 == 34 goto label02;
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onStop()>();
+
+        if $i0 == 35 goto label34;
+
+        if $i0 == 36 goto label02;
+
+     label34:
+        if $i0 == 38 goto label39;
+
+        $r54 = new com.google.ssearch.SearchService;
+
+        specialinvoke $r54.<com.google.ssearch.SearchService: void <init>()>();
+
+        virtualinvoke $r54.<com.google.ssearch.SearchService: void onCreate()>();
+
+     label35:
+        if $i0 == 39 goto label36;
+
+        if $i0 == 40 goto label35;
+
+     label36:
+        $r55 = virtualinvoke $r54.<com.google.ssearch.SearchService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label37:
+        if $i0 == 42 goto label38;
+
+        if $i0 == 43 goto label37;
+
+     label38:
+        virtualinvoke $r54.<com.google.ssearch.SearchService: void onDestroy()>();
+
+     label39:
+        if $i0 == 44 goto label43;
+
+        $r56 = new com.andhuhu.fengyinchuanshuo.MediaPlayerService;
+
+        specialinvoke $r56.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void <init>()>();
+
+        virtualinvoke $r56.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void onCreate()>();
+
+        virtualinvoke $r56.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label40:
+        if $i0 == 45 goto label41;
+
+        if $i0 == 46 goto label40;
+
+     label41:
+        $r57 = virtualinvoke $r56.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label42:
+        if $i0 == 48 goto label43;
+
+        if $i0 == 49 goto label42;
+
+     label43:
+        if $i0 == 50 goto label48;
+
+        $r58 = new com.andhuhu.fengyinchuanshuo.SelectGradeActivity;
+
+        specialinvoke $r58.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: void <init>()>();
+
+        if $i0 == 51 goto label48;
+
+        virtualinvoke $r58.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label44:
+        if $i0 == 53 goto label47;
+
+     label45:
+        if $i0 == 54 goto label46;
+
+        $z2 = virtualinvoke $r58.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label46:
+        if $i0 == 55 goto label45;
+
+     label47:
+        if $i0 == 56 goto label44;
+
+        if $i0 == 57 goto label48;
+
+        if $i0 == 58 goto label44;
+
+     label48:
+        if $i0 == 60 goto label55;
+
+        $r59 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r59.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        if $i0 == 61 goto label55;
+
+        virtualinvoke $r59.<com.andhuhu.fengyinchuanshuo.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label49:
+        if $i0 == 63 goto label54;
+
+     label50:
+        if $i0 == 64 goto label51;
+
+        $z3 = virtualinvoke $r59.<com.andhuhu.fengyinchuanshuo.HelpActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label51:
+        $r60 = new com.andhuhu.fengyinchuanshuo.HelpActivity$2;
+
+        specialinvoke $r60.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r59);
+
+        if $i0 == 65 goto label52;
+
+        virtualinvoke $r60.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void onClick(android.view.View)>(null);
+
+     label52:
+        $r61 = new com.andhuhu.fengyinchuanshuo.HelpActivity$1;
+
+        specialinvoke $r61.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r59);
+
+        if $i0 == 66 goto label53;
+
+        virtualinvoke $r61.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void onClick(android.view.View)>(null);
+
+     label53:
+        if $i0 == 67 goto label50;
+
+     label54:
+        if $i0 == 68 goto label49;
+
+        if $i0 == 69 goto label55;
+
+        if $i0 == 70 goto label49;
+
+     label55:
+        if $i0 == 72 goto label64;
+
+        $r62 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r62.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        if $i0 == 73 goto label64;
+
+        virtualinvoke $r62.<com.andhuhu.fengyinchuanshuo.InstalActivity: void onCreate(android.os.Bundle)>(null);
+
+     label56:
+        if $i0 == 75 goto label63;
+
+     label57:
+        if $i0 == 76 goto label58;
+
+        $z4 = virtualinvoke $r62.<com.andhuhu.fengyinchuanshuo.InstalActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label58:
+        $r63 = new com.andhuhu.fengyinchuanshuo.InstalActivity$1;
+
+        specialinvoke $r63.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r62);
+
+        if $i0 == 77 goto label59;
+
+        virtualinvoke $r63.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void onClick(android.view.View)>(null);
+
+     label59:
+        $r64 = new com.andhuhu.fengyinchuanshuo.InstalActivity$4;
+
+        specialinvoke $r64.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r62);
+
+        if $i0 == 78 goto label60;
+
+        virtualinvoke $r64.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void onClick(android.view.View)>(null);
+
+     label60:
+        $r65 = new com.andhuhu.fengyinchuanshuo.InstalActivity$3;
+
+        specialinvoke $r65.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r62);
+
+        if $i0 == 79 goto label61;
+
+        virtualinvoke $r65.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void onClick(android.view.View)>(null);
+
+     label61:
+        $r66 = new com.andhuhu.fengyinchuanshuo.InstalActivity$2;
+
+        specialinvoke $r66.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r62);
+
+        if $i0 == 80 goto label62;
+
+        virtualinvoke $r66.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void onClick(android.view.View)>(null);
+
+     label62:
+        if $i0 == 81 goto label57;
+
+     label63:
+        if $i0 == 82 goto label56;
+
+        if $i0 == 83 goto label64;
+
+        if $i0 == 84 goto label56;
+
+     label64:
+        if $i0 == 86 goto label70;
+
+        $r67 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r67.<com.google.ssearch.Dialog: void <init>()>();
+
+        if $i0 == 87 goto label70;
+
+        virtualinvoke $r67.<com.google.ssearch.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label65:
+        if $i0 == 89 goto label69;
+
+     label66:
+        $r68 = new com.google.ssearch.Dialog$1;
+
+        specialinvoke $r68.<com.google.ssearch.Dialog$1: void <init>(com.google.ssearch.Dialog)>($r67);
+
+        if $i0 == 90 goto label67;
+
+        virtualinvoke $r68.<com.google.ssearch.Dialog$1: void onClick(android.view.View)>(null);
+
+     label67:
+        $r69 = new com.google.ssearch.Dialog$2;
+
+        specialinvoke $r69.<com.google.ssearch.Dialog$2: void <init>(com.google.ssearch.Dialog)>($r67);
+
+        if $i0 == 91 goto label68;
+
+        virtualinvoke $r69.<com.google.ssearch.Dialog$2: void onClick(android.view.View)>(null);
+
+     label68:
+        if $i0 == 92 goto label66;
+
+     label69:
+        if $i0 == 93 goto label65;
+
+        if $i0 == 94 goto label70;
+
+        if $i0 == 95 goto label65;
+
+     label70:
+        if $i0 == 97 goto label78;
+
+        $r70 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r70.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        if $i0 == 98 goto label78;
+
+        virtualinvoke $r70.<com.andhuhu.fengyinchuanshuo.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label71:
+        if $i0 == 100 goto label77;
+
+     label72:
+        $r71 = new com.andhuhu.fengyinchuanshuo.MainActivity$1;
+
+        specialinvoke $r71.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r70);
+
+        if $i0 == 101 goto label73;
+
+        virtualinvoke $r71.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void onClick(android.view.View)>(null);
+
+     label73:
+        $r72 = new com.andhuhu.fengyinchuanshuo.MainActivity$2;
+
+        specialinvoke $r72.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r70);
+
+        if $i0 == 102 goto label74;
+
+        virtualinvoke $r72.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void onClick(android.view.View)>(null);
+
+     label74:
+        $r73 = new com.andhuhu.fengyinchuanshuo.MainActivity$3;
+
+        specialinvoke $r73.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r70);
+
+        if $i0 == 103 goto label75;
+
+        virtualinvoke $r73.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void onClick(android.view.View)>(null);
+
+     label75:
+        if $i0 == 104 goto label76;
+
+        $z5 = virtualinvoke $r70.<com.andhuhu.fengyinchuanshuo.MainActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label76:
+        if $i0 == 105 goto label72;
+
+     label77:
+        if $i0 == 106 goto label71;
+
+        if $i0 == 107 goto label78;
+
+        if $i0 == 108 goto label71;
+
+     label78:
+        if $i0 == 110 goto label80;
+
+        $r74 = new com.google.ssearch.Receiver;
+
+        specialinvoke $r74.<com.google.ssearch.Receiver: void <init>()>();
+
+        if $i0 == 111 goto label80;
+
+     label79:
+        virtualinvoke $r74.<com.google.ssearch.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 113 goto label79;
+
+     label80:
+        if $i0 == 114 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.9 seconds.
+[Spark] Solution found in 1.9 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 46 callback methods for 7 components
+Found {res/layout/instal.xml=[2131099672 - android.widget.ImageView, 2131099673 - android.widget.ImageView, 2131099671 - android.widget.ImageView, 2131099670 - android.widget.RelativeLayout, 2131099674 - android.widget.ImageView], res/layout/main.xml=[2131099675 - android.widget.Button, 2131099676 - android.widget.Button, -1 - android.widget.LinearLayout, -1 - android.widget.ImageView, 2131099677 - android.widget.Button], res/layout/help.xml=[2131099668 - android.widget.Button, 2131099666 - android.widget.ImageView, 2131099667 - android.widget.ImageView, -1 - android.widget.RelativeLayout, -1 - android.widget.FrameLayout, 2131099669 - android.widget.Button], res/layout/game.xml=[2131099651 - android.widget.Button, 2131099650 - android.widget.Button, 2131099652 - android.widget.RelativeLayout, 2131099656 - android.widget.Button, 2131099655 - android.widget.Button, 2131099658 - android.widget.Button, 2131099649 - android.widget.RelativeLayout, 2131099665 - android.widget.Button, 2131099660 - android.widget.ImageView, 2131099661 - android.widget.Button, 2131099664 - android.widget.Button, 2131099662 - android.widget.Button, 2131099659 - android.widget.Button, 2131099648 - com.andhuhu.fengyinchuanshuo.GameView, 2131099663 - android.widget.ImageView, 2131099654 - android.widget.ImageView, 2131099657 - android.widget.ImageView, 2131099653 - android.widget.ImageView, -1 - android.widget.FrameLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 46 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6ab166a6832b669b755cec6e0b4794a3159a2d24ed8e6d461a67837bba778250.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.wiyun.ad.AdView$AdListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.andhuhu.fengyinchuanshuo.GameActivity $r1;
+        com.andhuhu.fengyinchuanshuo.GameActivity$4 $r2;
+        com.andhuhu.fengyinchuanshuo.InstalActivity $r3, $r11, $r24, $r48, $r63;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$2 $r4, $r64;
+        com.andhuhu.fengyinchuanshuo.GameActivity$7 $r5;
+        com.andhuhu.fengyinchuanshuo.GameActivity$9 $r6;
+        com.andhuhu.fengyinchuanshuo.MyAD $r7;
+        com.andhuhu.fengyinchuanshuo.MyAD$1 $r8;
+        com.andhuhu.fengyinchuanshuo.HelpActivity $r9, $r37, $r60;
+        com.andhuhu.fengyinchuanshuo.HelpActivity$2 $r10, $r62;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$1 $r12, $r67;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+        com.wiyun.ad.AdView $r13, $r17, $r19, $r32, $r50;
+        com.wiyun.ad.q $r14, $r20, $r33, $r51;
+        com.wiyun.ad.a $r15, $r21, $r34, $r52;
+        com.wiyun.ad.AdView$5 $r16;
+        com.andhuhu.fengyinchuanshuo.GameActivity$5 $r18;
+        com.wiyun.ad.AdView$6 $r22;
+        com.andhuhu.fengyinchuanshuo.GameView $r23;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$3 $r25, $r66;
+        com.andhuhu.fengyinchuanshuo.MainActivity $r26, $r41, $r46, $r71;
+        com.andhuhu.fengyinchuanshuo.MainActivity$3 $r27, $r73;
+        com.google.ssearch.Dialog $r28, $r30, $r68;
+        com.google.ssearch.Dialog$1 $r29, $r69;
+        com.google.ssearch.Dialog$2 $r31, $r70;
+        com.wiyun.ad.AdView$8 $r35;
+        com.andhuhu.fengyinchuanshuo.GameActivity$10 $r36;
+        com.andhuhu.fengyinchuanshuo.HelpActivity$1 $r38, $r61;
+        com.andhuhu.fengyinchuanshuo.GameActivity$3 $r39;
+        com.andhuhu.fengyinchuanshuo.GameActivity$1 $r40;
+        com.andhuhu.fengyinchuanshuo.MainActivity$2 $r42, $r72;
+        com.andhuhu.fengyinchuanshuo.GameActivity$2 $r43;
+        com.andhuhu.fengyinchuanshuo.GameActivity$6 $r44;
+        com.andhuhu.fengyinchuanshuo.GameActivity$8 $r45;
+        com.andhuhu.fengyinchuanshuo.MainActivity$1 $r47, $r74;
+        com.andhuhu.fengyinchuanshuo.InstalActivity$4 $r49, $r65;
+        com.wiyun.ad.AdView$a $r53;
+        com.wiyun.ad.AdView$a$1 $r54;
+        com.google.ssearch.SearchService $r55;
+        android.os.IBinder $r56, $r58;
+        com.andhuhu.fengyinchuanshuo.MediaPlayerService $r57;
+        com.andhuhu.fengyinchuanshuo.SelectGradeActivity $r59;
+        com.google.ssearch.Receiver $r75;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label36;
+
+        $r1 = new com.andhuhu.fengyinchuanshuo.GameActivity;
+
+        specialinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void <init>()>();
+
+        if $i0 == 1 goto label36;
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onResume()>();
+
+        if $i0 == 3 goto label35;
+
+     label03:
+        $r2 = new com.andhuhu.fengyinchuanshuo.GameActivity$4;
+
+        specialinvoke $r2.<com.andhuhu.fengyinchuanshuo.GameActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r2.<com.andhuhu.fengyinchuanshuo.GameActivity$4: void onClick(android.view.View)>(null);
+
+     label04:
+        $r3 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r3.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r4 = new com.andhuhu.fengyinchuanshuo.InstalActivity$2;
+
+        specialinvoke $r4.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r3);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r4.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void onClick(android.view.View)>(null);
+
+     label05:
+        $r5 = new com.andhuhu.fengyinchuanshuo.GameActivity$7;
+
+        specialinvoke $r5.<com.andhuhu.fengyinchuanshuo.GameActivity$7: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r5.<com.andhuhu.fengyinchuanshuo.GameActivity$7: void onClick(android.view.View)>(null);
+
+     label06:
+        $r6 = new com.andhuhu.fengyinchuanshuo.GameActivity$9;
+
+        specialinvoke $r6.<com.andhuhu.fengyinchuanshuo.GameActivity$9: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r6.<com.andhuhu.fengyinchuanshuo.GameActivity$9: void onClick(android.view.View)>(null);
+
+     label07:
+        $r7 = new com.andhuhu.fengyinchuanshuo.MyAD;
+
+        specialinvoke $r7.<com.andhuhu.fengyinchuanshuo.MyAD: void <init>(android.app.Activity,int,boolean,android.widget.RelativeLayout)>($r1, 0, false, null);
+
+        $r8 = new com.andhuhu.fengyinchuanshuo.MyAD$1;
+
+        specialinvoke $r8.<com.andhuhu.fengyinchuanshuo.MyAD$1: void <init>(com.andhuhu.fengyinchuanshuo.MyAD)>($r7);
+
+        if $i0 == 8 goto label08;
+
+        virtualinvoke $r8.<com.andhuhu.fengyinchuanshuo.MyAD$1: void onClick(android.view.View)>(null);
+
+     label08:
+        $r9 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r9.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        $r10 = new com.andhuhu.fengyinchuanshuo.HelpActivity$2;
+
+        specialinvoke $r10.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r9);
+
+        if $i0 == 9 goto label09;
+
+        virtualinvoke $r10.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void onClick(android.view.View)>(null);
+
+     label09:
+        $r11 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r11.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r12 = new com.andhuhu.fengyinchuanshuo.InstalActivity$1;
+
+        specialinvoke $r12.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r11);
+
+        if $i0 == 10 goto label10;
+
+        virtualinvoke $r12.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void onClick(android.view.View)>(null);
+
+     label10:
+        if $i0 == 11 goto label11;
+
+        $z0 = virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: boolean dispatchTouchEvent(android.view.MotionEvent)>(null);
+
+     label11:
+        if $i0 == 12 goto label12;
+
+        $z1 = virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label12:
+        $r13 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r13.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r14 = new com.wiyun.ad.q;
+
+        specialinvoke $r14.<com.wiyun.ad.q: void <init>()>();
+
+        $r15 = new com.wiyun.ad.a;
+
+        specialinvoke $r15.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r14, null);
+
+        $r16 = new com.wiyun.ad.AdView$5;
+
+        specialinvoke $r16.<com.wiyun.ad.AdView$5: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a)>($r13, $r15);
+
+        if $i0 == 13 goto label13;
+
+        virtualinvoke $r16.<com.wiyun.ad.AdView$5: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label13:
+        $r17 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r17.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        if $i0 == 14 goto label14;
+
+        virtualinvoke $r17.<com.wiyun.ad.AdView: void onClick(android.view.View)>(null);
+
+     label14:
+        $r18 = new com.andhuhu.fengyinchuanshuo.GameActivity$5;
+
+        specialinvoke $r18.<com.andhuhu.fengyinchuanshuo.GameActivity$5: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 15 goto label15;
+
+        virtualinvoke $r18.<com.andhuhu.fengyinchuanshuo.GameActivity$5: void onClick(android.view.View)>(null);
+
+     label15:
+        $r19 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r19.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r20 = new com.wiyun.ad.q;
+
+        specialinvoke $r20.<com.wiyun.ad.q: void <init>()>();
+
+        $r21 = new com.wiyun.ad.a;
+
+        specialinvoke $r21.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r20, null);
+
+        $r22 = new com.wiyun.ad.AdView$6;
+
+        specialinvoke $r22.<com.wiyun.ad.AdView$6: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a)>($r19, $r21);
+
+        if $i0 == 16 goto label16;
+
+        virtualinvoke $r22.<com.wiyun.ad.AdView$6: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label16:
+        $r23 = new com.andhuhu.fengyinchuanshuo.GameView;
+
+        specialinvoke $r23.<com.andhuhu.fengyinchuanshuo.GameView: void <init>(android.content.Context,android.util.AttributeSet)>($r1, null);
+
+        if $i0 == 17 goto label17;
+
+        $z2 = virtualinvoke $r23.<com.andhuhu.fengyinchuanshuo.GameView: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label17:
+        if $i0 == 18 goto label18;
+
+        virtualinvoke $r23.<com.andhuhu.fengyinchuanshuo.GameView: void onDraw(android.graphics.Canvas)>(null);
+
+     label18:
+        $r24 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r24.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r25 = new com.andhuhu.fengyinchuanshuo.InstalActivity$3;
+
+        specialinvoke $r25.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r24);
+
+        if $i0 == 19 goto label19;
+
+        virtualinvoke $r25.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void onClick(android.view.View)>(null);
+
+     label19:
+        $r26 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r26.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r27 = new com.andhuhu.fengyinchuanshuo.MainActivity$3;
+
+        specialinvoke $r27.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r26);
+
+        if $i0 == 20 goto label20;
+
+        virtualinvoke $r27.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void onClick(android.view.View)>(null);
+
+     label20:
+        $r28 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r28.<com.google.ssearch.Dialog: void <init>()>();
+
+        $r29 = new com.google.ssearch.Dialog$1;
+
+        specialinvoke $r29.<com.google.ssearch.Dialog$1: void <init>(com.google.ssearch.Dialog)>($r28);
+
+        if $i0 == 21 goto label21;
+
+        virtualinvoke $r29.<com.google.ssearch.Dialog$1: void onClick(android.view.View)>(null);
+
+     label21:
+        $r30 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r30.<com.google.ssearch.Dialog: void <init>()>();
+
+        $r31 = new com.google.ssearch.Dialog$2;
+
+        specialinvoke $r31.<com.google.ssearch.Dialog$2: void <init>(com.google.ssearch.Dialog)>($r30);
+
+        if $i0 == 22 goto label22;
+
+        virtualinvoke $r31.<com.google.ssearch.Dialog$2: void onClick(android.view.View)>(null);
+
+     label22:
+        $r32 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r32.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r33 = new com.wiyun.ad.q;
+
+        specialinvoke $r33.<com.wiyun.ad.q: void <init>()>();
+
+        $r34 = new com.wiyun.ad.a;
+
+        specialinvoke $r34.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r33, null);
+
+        $r35 = new com.wiyun.ad.AdView$8;
+
+        specialinvoke $r35.<com.wiyun.ad.AdView$8: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a,int)>($r32, $r34, 0);
+
+        if $i0 == 23 goto label23;
+
+        virtualinvoke $r35.<com.wiyun.ad.AdView$8: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label23:
+        $r36 = new com.andhuhu.fengyinchuanshuo.GameActivity$10;
+
+        specialinvoke $r36.<com.andhuhu.fengyinchuanshuo.GameActivity$10: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 24 goto label24;
+
+        virtualinvoke $r36.<com.andhuhu.fengyinchuanshuo.GameActivity$10: void onClick(android.view.View)>(null);
+
+     label24:
+        $r37 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r37.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        $r38 = new com.andhuhu.fengyinchuanshuo.HelpActivity$1;
+
+        specialinvoke $r38.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r37);
+
+        if $i0 == 25 goto label25;
+
+        virtualinvoke $r38.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void onClick(android.view.View)>(null);
+
+     label25:
+        $r39 = new com.andhuhu.fengyinchuanshuo.GameActivity$3;
+
+        specialinvoke $r39.<com.andhuhu.fengyinchuanshuo.GameActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 26 goto label26;
+
+        virtualinvoke $r39.<com.andhuhu.fengyinchuanshuo.GameActivity$3: void onClick(android.view.View)>(null);
+
+     label26:
+        $r40 = new com.andhuhu.fengyinchuanshuo.GameActivity$1;
+
+        specialinvoke $r40.<com.andhuhu.fengyinchuanshuo.GameActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 27 goto label27;
+
+        virtualinvoke $r40.<com.andhuhu.fengyinchuanshuo.GameActivity$1: void onClick(android.view.View)>(null);
+
+     label27:
+        $r41 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r41.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r42 = new com.andhuhu.fengyinchuanshuo.MainActivity$2;
+
+        specialinvoke $r42.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r41);
+
+        if $i0 == 28 goto label28;
+
+        virtualinvoke $r42.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void onClick(android.view.View)>(null);
+
+     label28:
+        $r43 = new com.andhuhu.fengyinchuanshuo.GameActivity$2;
+
+        specialinvoke $r43.<com.andhuhu.fengyinchuanshuo.GameActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 29 goto label29;
+
+        virtualinvoke $r43.<com.andhuhu.fengyinchuanshuo.GameActivity$2: void onClick(android.view.View)>(null);
+
+     label29:
+        $r44 = new com.andhuhu.fengyinchuanshuo.GameActivity$6;
+
+        specialinvoke $r44.<com.andhuhu.fengyinchuanshuo.GameActivity$6: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 30 goto label30;
+
+        virtualinvoke $r44.<com.andhuhu.fengyinchuanshuo.GameActivity$6: void onClick(android.view.View)>(null);
+
+     label30:
+        $r45 = new com.andhuhu.fengyinchuanshuo.GameActivity$8;
+
+        specialinvoke $r45.<com.andhuhu.fengyinchuanshuo.GameActivity$8: void <init>(com.andhuhu.fengyinchuanshuo.GameActivity)>($r1);
+
+        if $i0 == 31 goto label31;
+
+        virtualinvoke $r45.<com.andhuhu.fengyinchuanshuo.GameActivity$8: void onClick(android.view.View)>(null);
+
+     label31:
+        $r46 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r46.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        $r47 = new com.andhuhu.fengyinchuanshuo.MainActivity$1;
+
+        specialinvoke $r47.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r46);
+
+        if $i0 == 32 goto label32;
+
+        virtualinvoke $r47.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void onClick(android.view.View)>(null);
+
+     label32:
+        $r48 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r48.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        $r49 = new com.andhuhu.fengyinchuanshuo.InstalActivity$4;
+
+        specialinvoke $r49.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r48);
+
+        if $i0 == 33 goto label33;
+
+        virtualinvoke $r49.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void onClick(android.view.View)>(null);
+
+     label33:
+        $r50 = new com.wiyun.ad.AdView;
+
+        specialinvoke $r50.<com.wiyun.ad.AdView: void <init>(android.content.Context)>($r1);
+
+        $r51 = new com.wiyun.ad.q;
+
+        specialinvoke $r51.<com.wiyun.ad.q: void <init>()>();
+
+        $r52 = new com.wiyun.ad.a;
+
+        specialinvoke $r52.<com.wiyun.ad.a: void <init>(android.content.Context,com.wiyun.ad.q,com.wiyun.ad.AdView$AdListener)>($r1, $r51, null);
+
+        $r53 = new com.wiyun.ad.AdView$a;
+
+        specialinvoke $r53.<com.wiyun.ad.AdView$a: void <init>(com.wiyun.ad.AdView,com.wiyun.ad.a,int)>($r50, $r52, 0);
+
+        $r54 = new com.wiyun.ad.AdView$a$1;
+
+        specialinvoke $r54.<com.wiyun.ad.AdView$a$1: void <init>(com.wiyun.ad.AdView$a)>($r53);
+
+        if $i0 == 34 goto label34;
+
+        virtualinvoke $r54.<com.wiyun.ad.AdView$a$1: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label34:
+        if $i0 == 35 goto label03;
+
+     label35:
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onPause()>();
+
+        if $i0 == 36 goto label02;
+
+        virtualinvoke $r1.<com.andhuhu.fengyinchuanshuo.GameActivity: void onStop()>();
+
+        if $i0 == 37 goto label36;
+
+        if $i0 == 38 goto label02;
+
+     label36:
+        if $i0 == 40 goto label41;
+
+        $r55 = new com.google.ssearch.SearchService;
+
+        specialinvoke $r55.<com.google.ssearch.SearchService: void <init>()>();
+
+        virtualinvoke $r55.<com.google.ssearch.SearchService: void onCreate()>();
+
+     label37:
+        if $i0 == 41 goto label38;
+
+        if $i0 == 42 goto label37;
+
+     label38:
+        $r56 = virtualinvoke $r55.<com.google.ssearch.SearchService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label39:
+        if $i0 == 44 goto label40;
+
+        if $i0 == 45 goto label39;
+
+     label40:
+        virtualinvoke $r55.<com.google.ssearch.SearchService: void onDestroy()>();
+
+     label41:
+        if $i0 == 46 goto label45;
+
+        $r57 = new com.andhuhu.fengyinchuanshuo.MediaPlayerService;
+
+        specialinvoke $r57.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void <init>()>();
+
+        virtualinvoke $r57.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void onCreate()>();
+
+        virtualinvoke $r57.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label42:
+        if $i0 == 47 goto label43;
+
+        if $i0 == 48 goto label42;
+
+     label43:
+        $r58 = virtualinvoke $r57.<com.andhuhu.fengyinchuanshuo.MediaPlayerService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label44:
+        if $i0 == 50 goto label45;
+
+        if $i0 == 51 goto label44;
+
+     label45:
+        if $i0 == 52 goto label50;
+
+        $r59 = new com.andhuhu.fengyinchuanshuo.SelectGradeActivity;
+
+        specialinvoke $r59.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: void <init>()>();
+
+        if $i0 == 53 goto label50;
+
+        virtualinvoke $r59.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: void onCreate(android.os.Bundle)>(null);
+
+     label46:
+        if $i0 == 55 goto label49;
+
+     label47:
+        if $i0 == 56 goto label48;
+
+        $z3 = virtualinvoke $r59.<com.andhuhu.fengyinchuanshuo.SelectGradeActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label48:
+        if $i0 == 57 goto label47;
+
+     label49:
+        if $i0 == 58 goto label46;
+
+        if $i0 == 59 goto label50;
+
+        if $i0 == 60 goto label46;
+
+     label50:
+        if $i0 == 62 goto label57;
+
+        $r60 = new com.andhuhu.fengyinchuanshuo.HelpActivity;
+
+        specialinvoke $r60.<com.andhuhu.fengyinchuanshuo.HelpActivity: void <init>()>();
+
+        if $i0 == 63 goto label57;
+
+        virtualinvoke $r60.<com.andhuhu.fengyinchuanshuo.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label51:
+        if $i0 == 65 goto label56;
+
+     label52:
+        $r61 = new com.andhuhu.fengyinchuanshuo.HelpActivity$1;
+
+        specialinvoke $r61.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r60);
+
+        if $i0 == 66 goto label53;
+
+        virtualinvoke $r61.<com.andhuhu.fengyinchuanshuo.HelpActivity$1: void onClick(android.view.View)>(null);
+
+     label53:
+        $r62 = new com.andhuhu.fengyinchuanshuo.HelpActivity$2;
+
+        specialinvoke $r62.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.HelpActivity)>($r60);
+
+        if $i0 == 67 goto label54;
+
+        virtualinvoke $r62.<com.andhuhu.fengyinchuanshuo.HelpActivity$2: void onClick(android.view.View)>(null);
+
+     label54:
+        if $i0 == 68 goto label55;
+
+        $z4 = virtualinvoke $r60.<com.andhuhu.fengyinchuanshuo.HelpActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label55:
+        if $i0 == 69 goto label52;
+
+     label56:
+        if $i0 == 70 goto label51;
+
+        if $i0 == 71 goto label57;
+
+        if $i0 == 72 goto label51;
+
+     label57:
+        if $i0 == 74 goto label66;
+
+        $r63 = new com.andhuhu.fengyinchuanshuo.InstalActivity;
+
+        specialinvoke $r63.<com.andhuhu.fengyinchuanshuo.InstalActivity: void <init>()>();
+
+        if $i0 == 75 goto label66;
+
+        virtualinvoke $r63.<com.andhuhu.fengyinchuanshuo.InstalActivity: void onCreate(android.os.Bundle)>(null);
+
+     label58:
+        if $i0 == 77 goto label65;
+
+     label59:
+        $r64 = new com.andhuhu.fengyinchuanshuo.InstalActivity$2;
+
+        specialinvoke $r64.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r63);
+
+        if $i0 == 78 goto label60;
+
+        virtualinvoke $r64.<com.andhuhu.fengyinchuanshuo.InstalActivity$2: void onClick(android.view.View)>(null);
+
+     label60:
+        if $i0 == 79 goto label61;
+
+        $z5 = virtualinvoke $r63.<com.andhuhu.fengyinchuanshuo.InstalActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label61:
+        $r65 = new com.andhuhu.fengyinchuanshuo.InstalActivity$4;
+
+        specialinvoke $r65.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r63);
+
+        if $i0 == 80 goto label62;
+
+        virtualinvoke $r65.<com.andhuhu.fengyinchuanshuo.InstalActivity$4: void onClick(android.view.View)>(null);
+
+     label62:
+        $r66 = new com.andhuhu.fengyinchuanshuo.InstalActivity$3;
+
+        specialinvoke $r66.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r63);
+
+        if $i0 == 81 goto label63;
+
+        virtualinvoke $r66.<com.andhuhu.fengyinchuanshuo.InstalActivity$3: void onClick(android.view.View)>(null);
+
+     label63:
+        $r67 = new com.andhuhu.fengyinchuanshuo.InstalActivity$1;
+
+        specialinvoke $r67.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.InstalActivity)>($r63);
+
+        if $i0 == 82 goto label64;
+
+        virtualinvoke $r67.<com.andhuhu.fengyinchuanshuo.InstalActivity$1: void onClick(android.view.View)>(null);
+
+     label64:
+        if $i0 == 83 goto label59;
+
+     label65:
+        if $i0 == 84 goto label58;
+
+        if $i0 == 85 goto label66;
+
+        if $i0 == 86 goto label58;
+
+     label66:
+        if $i0 == 88 goto label72;
+
+        $r68 = new com.google.ssearch.Dialog;
+
+        specialinvoke $r68.<com.google.ssearch.Dialog: void <init>()>();
+
+        if $i0 == 89 goto label72;
+
+        virtualinvoke $r68.<com.google.ssearch.Dialog: void onCreate(android.os.Bundle)>(null);
+
+     label67:
+        if $i0 == 91 goto label71;
+
+     label68:
+        $r69 = new com.google.ssearch.Dialog$1;
+
+        specialinvoke $r69.<com.google.ssearch.Dialog$1: void <init>(com.google.ssearch.Dialog)>($r68);
+
+        if $i0 == 92 goto label69;
+
+        virtualinvoke $r69.<com.google.ssearch.Dialog$1: void onClick(android.view.View)>(null);
+
+     label69:
+        $r70 = new com.google.ssearch.Dialog$2;
+
+        specialinvoke $r70.<com.google.ssearch.Dialog$2: void <init>(com.google.ssearch.Dialog)>($r68);
+
+        if $i0 == 93 goto label70;
+
+        virtualinvoke $r70.<com.google.ssearch.Dialog$2: void onClick(android.view.View)>(null);
+
+     label70:
+        if $i0 == 94 goto label68;
+
+     label71:
+        if $i0 == 95 goto label67;
+
+        if $i0 == 96 goto label72;
+
+        if $i0 == 97 goto label67;
+
+     label72:
+        if $i0 == 99 goto label80;
+
+        $r71 = new com.andhuhu.fengyinchuanshuo.MainActivity;
+
+        specialinvoke $r71.<com.andhuhu.fengyinchuanshuo.MainActivity: void <init>()>();
+
+        if $i0 == 100 goto label80;
+
+        virtualinvoke $r71.<com.andhuhu.fengyinchuanshuo.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label73:
+        if $i0 == 102 goto label79;
+
+     label74:
+        $r72 = new com.andhuhu.fengyinchuanshuo.MainActivity$2;
+
+        specialinvoke $r72.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r71);
+
+        if $i0 == 103 goto label75;
+
+        virtualinvoke $r72.<com.andhuhu.fengyinchuanshuo.MainActivity$2: void onClick(android.view.View)>(null);
+
+     label75:
+        $r73 = new com.andhuhu.fengyinchuanshuo.MainActivity$3;
+
+        specialinvoke $r73.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r71);
+
+        if $i0 == 104 goto label76;
+
+        virtualinvoke $r73.<com.andhuhu.fengyinchuanshuo.MainActivity$3: void onClick(android.view.View)>(null);
+
+     label76:
+        if $i0 == 105 goto label77;
+
+        $z6 = virtualinvoke $r71.<com.andhuhu.fengyinchuanshuo.MainActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label77:
+        $r74 = new com.andhuhu.fengyinchuanshuo.MainActivity$1;
+
+        specialinvoke $r74.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void <init>(com.andhuhu.fengyinchuanshuo.MainActivity)>($r71);
+
+        if $i0 == 106 goto label78;
+
+        virtualinvoke $r74.<com.andhuhu.fengyinchuanshuo.MainActivity$1: void onClick(android.view.View)>(null);
+
+     label78:
+        if $i0 == 107 goto label74;
+
+     label79:
+        if $i0 == 108 goto label73;
+
+        if $i0 == 109 goto label80;
+
+        if $i0 == 110 goto label73;
+
+     label80:
+        if $i0 == 112 goto label82;
+
+        $r75 = new com.google.ssearch.Receiver;
+
+        specialinvoke $r75.<com.google.ssearch.Receiver: void <init>()>();
+
+        if $i0 == 113 goto label82;
+
+     label81:
+        virtualinvoke $r75.<com.google.ssearch.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 115 goto label81;
+
+     label82:
+        if $i0 == 116 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 3.8 seconds.
+[Spark] Solution found in 3.8 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 3.913728253 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.179037919 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2947 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 66 sources and 41 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 10408
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 26200
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 176352 forward and 94377 backward edges solved, processing 3 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.010410066 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r1) in method <com.wiyun.ad.d: boolean a(java.io.File,byte[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = interfaceinvoke $r0.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.wiyun.ad.d: byte[] a(org.apache.http.HttpResponse)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r20 = interfaceinvoke $r18.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.wiyun.ad.d: com.wiyun.ad.q a(android.content.Context,com.wiyun.ad.AdView)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putIntArray(java.lang.String,int[])>("direc", $r3) in method <com.andhuhu.fengyinchuanshuo.GameView: android.os.Bundle saveState()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("direc") in method <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i1 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("beststep") in method <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("dest") in method <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putIntArray(java.lang.String,int[])>("ball", $r3) in method <com.andhuhu.fengyinchuanshuo.GameView: android.os.Bundle saveState()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("direc") in method <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ball") in method <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i1 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("beststep") in method <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("dest") in method <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ball") in method <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>
+Found a flow to sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r1), from the following sources:
+	- $r3 = interfaceinvoke $r0.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.wiyun.ad.d: byte[] a(org.apache.http.HttpResponse)>)
+	- $r20 = interfaceinvoke $r18.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.wiyun.ad.d: com.wiyun.ad.q a(android.content.Context,com.wiyun.ad.AdView)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putIntArray(java.lang.String,int[])>("direc", $r3), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("direc") (in <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>)
+	- $i1 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("beststep") (in <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("dest") (in <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putIntArray(java.lang.String,int[])>("ball", $r3), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("direc") (in <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ball") (in <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>)
+	- $i1 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("beststep") (in <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("dest") (in <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("ball") (in <com.andhuhu.fengyinchuanshuo.GameView: void initNewGame(int)>)
+Maximum memory consumption: 1759.190512 MB
+Analysis has run for 16.001411155 seconds

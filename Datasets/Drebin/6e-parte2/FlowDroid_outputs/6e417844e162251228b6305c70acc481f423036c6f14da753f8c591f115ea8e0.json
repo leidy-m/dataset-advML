@@ -1,0 +1,1844 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.016396251 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: com.casee.adsdk.CaseeAdView is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.safetest.five.UpdateService $r2;
+        android.os.IBinder $r3, $r5;
+        com.safetest.five.SoundService $r4;
+        com.safetest.five.Receiver $r6;
+        com.safetest.five.MainActivity $r7;
+        com.safetest.five.ShowTips $r8;
+        com.safetest.five.Welcome $r9;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label09;
+
+        $r2 = new com.safetest.five.UpdateService;
+
+        specialinvoke $r2.<com.safetest.five.UpdateService: void <init>()>();
+
+        virtualinvoke $r2.<com.safetest.five.UpdateService: void onCreate()>();
+
+     label05:
+        if $i0 == 8 goto label06;
+
+        if $i0 == 9 goto label05;
+
+     label06:
+        $r3 = virtualinvoke $r2.<com.safetest.five.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label07:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        virtualinvoke $r2.<com.safetest.five.UpdateService: void onDestroy()>();
+
+     label09:
+        if $i0 == 13 goto label14;
+
+        $r4 = new com.safetest.five.SoundService;
+
+        specialinvoke $r4.<com.safetest.five.SoundService: void <init>()>();
+
+        virtualinvoke $r4.<com.safetest.five.SoundService: void onCreate()>();
+
+        virtualinvoke $r4.<com.safetest.five.SoundService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label10:
+        if $i0 == 14 goto label11;
+
+        if $i0 == 15 goto label10;
+
+     label11:
+        $r5 = virtualinvoke $r4.<com.safetest.five.SoundService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label12:
+        if $i0 == 17 goto label13;
+
+        if $i0 == 18 goto label12;
+
+     label13:
+        virtualinvoke $r4.<com.safetest.five.SoundService: void onDestroy()>();
+
+     label14:
+        if $i0 == 19 goto label16;
+
+        $r6 = new com.safetest.five.Receiver;
+
+        specialinvoke $r6.<com.safetest.five.Receiver: void <init>()>();
+
+        if $i0 == 20 goto label16;
+
+     label15:
+        virtualinvoke $r6.<com.safetest.five.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 22 goto label15;
+
+     label16:
+        if $i0 == 23 goto label18;
+
+        $r7 = new com.safetest.five.MainActivity;
+
+        specialinvoke $r7.<com.safetest.five.MainActivity: void <init>()>();
+
+        if $i0 == 24 goto label18;
+
+        virtualinvoke $r7.<com.safetest.five.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        virtualinvoke $r7.<com.safetest.five.MainActivity: void onResume()>();
+
+        virtualinvoke $r7.<com.safetest.five.MainActivity: void onPause()>();
+
+        if $i0 == 26 goto label17;
+
+        if $i0 == 27 goto label18;
+
+        if $i0 == 28 goto label17;
+
+     label18:
+        if $i0 == 30 goto label20;
+
+        $r8 = new com.safetest.five.ShowTips;
+
+        specialinvoke $r8.<com.safetest.five.ShowTips: void <init>()>();
+
+        if $i0 == 31 goto label20;
+
+        virtualinvoke $r8.<com.safetest.five.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        if $i0 == 34 goto label20;
+
+        if $i0 == 35 goto label19;
+
+     label20:
+        if $i0 == 37 goto label22;
+
+        $r9 = new com.safetest.five.Welcome;
+
+        specialinvoke $r9.<com.safetest.five.Welcome: void <init>()>();
+
+        if $i0 == 38 goto label22;
+
+        virtualinvoke $r9.<com.safetest.five.Welcome: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 41 goto label22;
+
+        if $i0 == 42 goto label21;
+
+     label22:
+        if $i0 == 44 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.2 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.3 seconds.
+[Spark] Solution found in 0.3 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.safetest.five.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.safetest.five.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/about.xml
+Found 2 layout controls in file res/layout/game.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: com.casee.adsdk.CaseeAdView is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RadioGroup
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.LinearLayout
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.j $r2, $r4, $r6, $r23, $r26, $r33;
+        com.adwo.adsdk.r $r3, $r24;
+        com.adwo.adsdk.q $r5, $r27;
+        com.adwo.adsdk.s $r7, $r34;
+        com.safetest.five.UpdateService $r8;
+        android.os.IBinder $r9, $r12;
+        com.safetest.five.SoundService $r10;
+        com.safetest.five.SoundService$1 $r11, $r13;
+        com.safetest.five.Receiver $r14;
+        com.safetest.five.MainActivity $r15;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.safetest.five.MainActivity$3 $r16;
+        com.safetest.five.MainActivity$1 $r17;
+        com.safetest.five.ShowTips $r18;
+        android.app.Dialog $r19;
+        com.safetest.five.ShowTips$1 $r20;
+        com.safetest.five.Welcome $r21;
+        com.safetest.five.Welcome$3 $r22;
+        com.safetest.five.Welcome$2 $r25;
+        com.adwo.adsdk.G $r28, $r35;
+        com.adwo.adsdk.H $r29;
+        com.safetest.five.Welcome$1 $r30;
+        com.safetest.five.JmAdV2 $r31;
+        com.safetest.five.JmAdV2$1 $r32;
+        com.adwo.adsdk.I $r36;
+        com.safetest.five.Welcome$4 $r37;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.adwo.adsdk.j;
+
+        specialinvoke $r2.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r3 = new com.adwo.adsdk.r;
+
+        specialinvoke $r3.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label04:
+        $r4 = new com.adwo.adsdk.j;
+
+        specialinvoke $r4.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r5 = new com.adwo.adsdk.q;
+
+        specialinvoke $r5.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r4);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r5.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label05:
+        $r6 = new com.adwo.adsdk.j;
+
+        specialinvoke $r6.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r7 = new com.adwo.adsdk.s;
+
+        specialinvoke $r7.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r6);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r7.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label06:
+        if $i0 == 7 goto label07;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label15;
+
+        $r8 = new com.safetest.five.UpdateService;
+
+        specialinvoke $r8.<com.safetest.five.UpdateService: void <init>()>();
+
+        virtualinvoke $r8.<com.safetest.five.UpdateService: void onCreate()>();
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        if $i0 == 15 goto label11;
+
+     label12:
+        $r9 = virtualinvoke $r8.<com.safetest.five.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 17 goto label14;
+
+        if $i0 == 18 goto label13;
+
+     label14:
+        virtualinvoke $r8.<com.safetest.five.UpdateService: void onDestroy()>();
+
+     label15:
+        if $i0 == 19 goto label24;
+
+        $r10 = new com.safetest.five.SoundService;
+
+        specialinvoke $r10.<com.safetest.five.SoundService: void <init>()>();
+
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onCreate()>();
+
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label16:
+        if $i0 == 20 goto label17;
+
+        if $i0 == 21 goto label16;
+
+     label17:
+        if $i0 == 22 goto label20;
+
+     label18:
+        $r11 = new com.safetest.five.SoundService$1;
+
+        specialinvoke $r11.<com.safetest.five.SoundService$1: void <init>(com.safetest.five.SoundService)>($r10);
+
+        if $i0 == 23 goto label19;
+
+        virtualinvoke $r11.<com.safetest.five.SoundService$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label19:
+        if $i0 == 24 goto label18;
+
+     label20:
+        $r12 = virtualinvoke $r10.<com.safetest.five.SoundService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        $r13 = new com.safetest.five.SoundService$1;
+
+        specialinvoke $r13.<com.safetest.five.SoundService$1: void <init>(com.safetest.five.SoundService)>($r10);
+
+        if $i0 == 25 goto label22;
+
+        virtualinvoke $r13.<com.safetest.five.SoundService$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label22:
+        if $i0 == 26 goto label21;
+
+        if $i0 == 27 goto label23;
+
+        if $i0 == 28 goto label21;
+
+     label23:
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onDestroy()>();
+
+     label24:
+        if $i0 == 29 goto label26;
+
+        $r14 = new com.safetest.five.Receiver;
+
+        specialinvoke $r14.<com.safetest.five.Receiver: void <init>()>();
+
+        if $i0 == 30 goto label26;
+
+     label25:
+        virtualinvoke $r14.<com.safetest.five.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 32 goto label25;
+
+     label26:
+        if $i0 == 33 goto label38;
+
+        $r15 = new com.safetest.five.MainActivity;
+
+        specialinvoke $r15.<com.safetest.five.MainActivity: void <init>()>();
+
+        if $i0 == 34 goto label38;
+
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label27:
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onResume()>();
+
+        if $i0 == 36 goto label37;
+
+     label28:
+        if $i0 == 37 goto label29;
+
+        $z0 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label29:
+        if $i0 == 38 goto label30;
+
+        $z1 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label30:
+        if $i0 == 39 goto label31;
+
+        $z2 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label31:
+        if $i0 == 40 goto label32;
+
+        $z3 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label32:
+        if $i0 == 41 goto label33;
+
+        $z4 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean dispatchTouchEvent(android.view.MotionEvent)>(null);
+
+     label33:
+        if $i0 == 42 goto label34;
+
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label34:
+        $r16 = new com.safetest.five.MainActivity$3;
+
+        specialinvoke $r16.<com.safetest.five.MainActivity$3: void <init>(com.safetest.five.MainActivity)>($r15);
+
+        if $i0 == 43 goto label35;
+
+        virtualinvoke $r16.<com.safetest.five.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label35:
+        $r17 = new com.safetest.five.MainActivity$1;
+
+        specialinvoke $r17.<com.safetest.five.MainActivity$1: void <init>(com.safetest.five.MainActivity)>($r15);
+
+        if $i0 == 44 goto label36;
+
+        virtualinvoke $r17.<com.safetest.five.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label36:
+        if $i0 == 45 goto label28;
+
+     label37:
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onPause()>();
+
+        if $i0 == 46 goto label27;
+
+        if $i0 == 47 goto label38;
+
+        if $i0 == 48 goto label27;
+
+     label38:
+        if $i0 == 50 goto label44;
+
+        $r18 = new com.safetest.five.ShowTips;
+
+        specialinvoke $r18.<com.safetest.five.ShowTips: void <init>()>();
+
+        if $i0 == 51 goto label44;
+
+        virtualinvoke $r18.<com.safetest.five.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        if $i0 == 53 goto label43;
+
+     label40:
+        if $i0 == 54 goto label41;
+
+        $r19 = virtualinvoke $r18.<com.safetest.five.ShowTips: android.app.Dialog onCreateDialog(int)>(0);
+
+     label41:
+        $r20 = new com.safetest.five.ShowTips$1;
+
+        specialinvoke $r20.<com.safetest.five.ShowTips$1: void <init>(com.safetest.five.ShowTips)>($r18);
+
+        if $i0 == 55 goto label42;
+
+        virtualinvoke $r20.<com.safetest.five.ShowTips$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label42:
+        if $i0 == 56 goto label40;
+
+     label43:
+        if $i0 == 57 goto label39;
+
+        if $i0 == 58 goto label44;
+
+        if $i0 == 59 goto label39;
+
+     label44:
+        if $i0 == 61 goto label60;
+
+        $r21 = new com.safetest.five.Welcome;
+
+        specialinvoke $r21.<com.safetest.five.Welcome: void <init>()>();
+
+        if $i0 == 62 goto label60;
+
+        virtualinvoke $r21.<com.safetest.five.Welcome: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        if $i0 == 64 goto label59;
+
+     label46:
+        $r22 = new com.safetest.five.Welcome$3;
+
+        specialinvoke $r22.<com.safetest.five.Welcome$3: void <init>(com.safetest.five.Welcome)>($r21);
+
+        if $i0 == 65 goto label47;
+
+        virtualinvoke $r22.<com.safetest.five.Welcome$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label47:
+        $r23 = new com.adwo.adsdk.j;
+
+        specialinvoke $r23.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r21, 0, 0L, "", false, false, false, false);
+
+        $r24 = new com.adwo.adsdk.r;
+
+        specialinvoke $r24.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r23);
+
+        if $i0 == 66 goto label48;
+
+        virtualinvoke $r24.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label48:
+        $r25 = new com.safetest.five.Welcome$2;
+
+        specialinvoke $r25.<com.safetest.five.Welcome$2: void <init>(com.safetest.five.Welcome)>($r21);
+
+        if $i0 == 67 goto label49;
+
+        virtualinvoke $r25.<com.safetest.five.Welcome$2: void onCheckedChanged(android.widget.RadioGroup,int)>(null, 0);
+
+     label49:
+        if $i0 == 68 goto label50;
+
+        virtualinvoke $r21.<com.safetest.five.Welcome: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label50:
+        if $i0 == 69 goto label51;
+
+        $z5 = virtualinvoke $r21.<com.safetest.five.Welcome: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label51:
+        $r26 = new com.adwo.adsdk.j;
+
+        specialinvoke $r26.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r21, 0, 0L, "", false, false, false, false);
+
+        $r27 = new com.adwo.adsdk.q;
+
+        specialinvoke $r27.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r26);
+
+        if $i0 == 70 goto label52;
+
+        virtualinvoke $r27.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label52:
+        $r28 = new com.adwo.adsdk.G;
+
+        specialinvoke $r28.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r21, "");
+
+        $r29 = new com.adwo.adsdk.H;
+
+        specialinvoke $r29.<com.adwo.adsdk.H: void <init>(com.adwo.adsdk.G)>($r28);
+
+        if $i0 == 71 goto label53;
+
+        virtualinvoke $r29.<com.adwo.adsdk.H: void onClick(android.view.View)>(null);
+
+     label53:
+        $r30 = new com.safetest.five.Welcome$1;
+
+        specialinvoke $r30.<com.safetest.five.Welcome$1: void <init>(com.safetest.five.Welcome)>($r21);
+
+        if $i0 == 72 goto label54;
+
+        virtualinvoke $r30.<com.safetest.five.Welcome$1: void onClick(android.view.View)>(null);
+
+     label54:
+        $r31 = new com.safetest.five.JmAdV2;
+
+        specialinvoke $r31.<com.safetest.five.JmAdV2: void <init>(android.app.Activity,int,boolean,android.widget.LinearLayout)>($r21, 0, false, null);
+
+        $r32 = new com.safetest.five.JmAdV2$1;
+
+        specialinvoke $r32.<com.safetest.five.JmAdV2$1: void <init>(com.safetest.five.JmAdV2)>($r31);
+
+        if $i0 == 73 goto label55;
+
+        virtualinvoke $r32.<com.safetest.five.JmAdV2$1: void onClick(android.view.View)>(null);
+
+     label55:
+        $r33 = new com.adwo.adsdk.j;
+
+        specialinvoke $r33.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r21, 0, 0L, "", false, false, false, false);
+
+        $r34 = new com.adwo.adsdk.s;
+
+        specialinvoke $r34.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r33);
+
+        if $i0 == 74 goto label56;
+
+        virtualinvoke $r34.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label56:
+        $r35 = new com.adwo.adsdk.G;
+
+        specialinvoke $r35.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r21, "");
+
+        $r36 = new com.adwo.adsdk.I;
+
+        specialinvoke $r36.<com.adwo.adsdk.I: void <init>(com.adwo.adsdk.G)>($r35);
+
+        if $i0 == 75 goto label57;
+
+        virtualinvoke $r36.<com.adwo.adsdk.I: void onClick(android.view.View)>(null);
+
+     label57:
+        $r37 = new com.safetest.five.Welcome$4;
+
+        specialinvoke $r37.<com.safetest.five.Welcome$4: void <init>(com.safetest.five.Welcome)>($r21);
+
+        if $i0 == 76 goto label58;
+
+        virtualinvoke $r37.<com.safetest.five.Welcome$4: void onCancel(android.content.DialogInterface)>(null);
+
+     label58:
+        if $i0 == 77 goto label46;
+
+     label59:
+        if $i0 == 78 goto label45;
+
+        if $i0 == 79 goto label60;
+
+        if $i0 == 80 goto label45;
+
+     label60:
+        if $i0 == 82 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Running incremental callback analysis for 7 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: com.casee.adsdk.CaseeAdView is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.LinearLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RadioGroup
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.j $r2, $r4, $r6, $r22, $r27, $r32;
+        com.adwo.adsdk.s $r3, $r33;
+        com.adwo.adsdk.r $r5, $r23;
+        com.adwo.adsdk.q $r7, $r28;
+        com.safetest.five.UpdateService $r8;
+        android.os.IBinder $r9, $r12;
+        com.safetest.five.SoundService $r10;
+        com.safetest.five.SoundService$1 $r11, $r13, $r26;
+        com.safetest.five.Receiver $r14;
+        com.safetest.five.MainActivity $r15;
+        com.safetest.five.MainActivity$1 $r16;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+        com.safetest.five.MainActivity$3 $r17;
+        com.safetest.five.ShowTips $r18;
+        android.app.Dialog $r19;
+        com.safetest.five.ShowTips$1 $r20;
+        com.safetest.five.Welcome $r21;
+        com.adwo.adsdk.G $r24, $r37;
+        com.adwo.adsdk.I $r25;
+        com.safetest.five.JmAdV2 $r29;
+        com.safetest.five.JmAdV2$1 $r30;
+        com.safetest.five.Utils$1 $r31;
+        com.safetest.five.Welcome$4 $r34;
+        com.safetest.five.Welcome$1 $r35;
+        com.safetest.five.Welcome$2 $r36;
+        com.adwo.adsdk.H $r38;
+        com.safetest.five.Utils$2 $r39;
+        com.safetest.five.Welcome$3 $r40;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.adwo.adsdk.j;
+
+        specialinvoke $r2.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r3 = new com.adwo.adsdk.s;
+
+        specialinvoke $r3.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label04:
+        $r4 = new com.adwo.adsdk.j;
+
+        specialinvoke $r4.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r5 = new com.adwo.adsdk.r;
+
+        specialinvoke $r5.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r4);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r5.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label05:
+        if $i0 == 6 goto label06;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label06:
+        $r6 = new com.adwo.adsdk.j;
+
+        specialinvoke $r6.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r7 = new com.adwo.adsdk.q;
+
+        specialinvoke $r7.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r6);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r7.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label15;
+
+        $r8 = new com.safetest.five.UpdateService;
+
+        specialinvoke $r8.<com.safetest.five.UpdateService: void <init>()>();
+
+        virtualinvoke $r8.<com.safetest.five.UpdateService: void onCreate()>();
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        if $i0 == 15 goto label11;
+
+     label12:
+        $r9 = virtualinvoke $r8.<com.safetest.five.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 17 goto label14;
+
+        if $i0 == 18 goto label13;
+
+     label14:
+        virtualinvoke $r8.<com.safetest.five.UpdateService: void onDestroy()>();
+
+     label15:
+        if $i0 == 19 goto label24;
+
+        $r10 = new com.safetest.five.SoundService;
+
+        specialinvoke $r10.<com.safetest.five.SoundService: void <init>()>();
+
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onCreate()>();
+
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label16:
+        if $i0 == 20 goto label17;
+
+        if $i0 == 21 goto label16;
+
+     label17:
+        if $i0 == 22 goto label20;
+
+     label18:
+        $r11 = new com.safetest.five.SoundService$1;
+
+        specialinvoke $r11.<com.safetest.five.SoundService$1: void <init>(com.safetest.five.SoundService)>($r10);
+
+        if $i0 == 23 goto label19;
+
+        virtualinvoke $r11.<com.safetest.five.SoundService$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label19:
+        if $i0 == 24 goto label18;
+
+     label20:
+        $r12 = virtualinvoke $r10.<com.safetest.five.SoundService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        $r13 = new com.safetest.five.SoundService$1;
+
+        specialinvoke $r13.<com.safetest.five.SoundService$1: void <init>(com.safetest.five.SoundService)>($r10);
+
+        if $i0 == 25 goto label22;
+
+        virtualinvoke $r13.<com.safetest.five.SoundService$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label22:
+        if $i0 == 26 goto label21;
+
+        if $i0 == 27 goto label23;
+
+        if $i0 == 28 goto label21;
+
+     label23:
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onDestroy()>();
+
+     label24:
+        if $i0 == 29 goto label26;
+
+        $r14 = new com.safetest.five.Receiver;
+
+        specialinvoke $r14.<com.safetest.five.Receiver: void <init>()>();
+
+        if $i0 == 30 goto label26;
+
+     label25:
+        virtualinvoke $r14.<com.safetest.five.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 32 goto label25;
+
+     label26:
+        if $i0 == 33 goto label38;
+
+        $r15 = new com.safetest.five.MainActivity;
+
+        specialinvoke $r15.<com.safetest.five.MainActivity: void <init>()>();
+
+        if $i0 == 34 goto label38;
+
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label27:
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onResume()>();
+
+        if $i0 == 36 goto label37;
+
+     label28:
+        $r16 = new com.safetest.five.MainActivity$1;
+
+        specialinvoke $r16.<com.safetest.five.MainActivity$1: void <init>(com.safetest.five.MainActivity)>($r15);
+
+        if $i0 == 37 goto label29;
+
+        virtualinvoke $r16.<com.safetest.five.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label29:
+        if $i0 == 38 goto label30;
+
+        $z0 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label30:
+        if $i0 == 39 goto label31;
+
+        $z1 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label31:
+        if $i0 == 40 goto label32;
+
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label32:
+        if $i0 == 41 goto label33;
+
+        $z2 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label33:
+        if $i0 == 42 goto label34;
+
+        $z3 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label34:
+        if $i0 == 43 goto label35;
+
+        $z4 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean dispatchTouchEvent(android.view.MotionEvent)>(null);
+
+     label35:
+        $r17 = new com.safetest.five.MainActivity$3;
+
+        specialinvoke $r17.<com.safetest.five.MainActivity$3: void <init>(com.safetest.five.MainActivity)>($r15);
+
+        if $i0 == 44 goto label36;
+
+        virtualinvoke $r17.<com.safetest.five.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label36:
+        if $i0 == 45 goto label28;
+
+     label37:
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onPause()>();
+
+        if $i0 == 46 goto label27;
+
+        if $i0 == 47 goto label38;
+
+        if $i0 == 48 goto label27;
+
+     label38:
+        if $i0 == 50 goto label44;
+
+        $r18 = new com.safetest.five.ShowTips;
+
+        specialinvoke $r18.<com.safetest.five.ShowTips: void <init>()>();
+
+        if $i0 == 51 goto label44;
+
+        virtualinvoke $r18.<com.safetest.five.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label39:
+        if $i0 == 53 goto label43;
+
+     label40:
+        if $i0 == 54 goto label41;
+
+        $r19 = virtualinvoke $r18.<com.safetest.five.ShowTips: android.app.Dialog onCreateDialog(int)>(0);
+
+     label41:
+        $r20 = new com.safetest.five.ShowTips$1;
+
+        specialinvoke $r20.<com.safetest.five.ShowTips$1: void <init>(com.safetest.five.ShowTips)>($r18);
+
+        if $i0 == 55 goto label42;
+
+        virtualinvoke $r20.<com.safetest.five.ShowTips$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label42:
+        if $i0 == 56 goto label40;
+
+     label43:
+        if $i0 == 57 goto label39;
+
+        if $i0 == 58 goto label44;
+
+        if $i0 == 59 goto label39;
+
+     label44:
+        if $i0 == 61 goto label63;
+
+        $r21 = new com.safetest.five.Welcome;
+
+        specialinvoke $r21.<com.safetest.five.Welcome: void <init>()>();
+
+        if $i0 == 62 goto label63;
+
+        virtualinvoke $r21.<com.safetest.five.Welcome: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        if $i0 == 64 goto label62;
+
+     label46:
+        $r22 = new com.adwo.adsdk.j;
+
+        specialinvoke $r22.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r21, 0, 0L, "", false, false, false, false);
+
+        $r23 = new com.adwo.adsdk.r;
+
+        specialinvoke $r23.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r22);
+
+        if $i0 == 65 goto label47;
+
+        virtualinvoke $r23.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label47:
+        $r24 = new com.adwo.adsdk.G;
+
+        specialinvoke $r24.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r21, "");
+
+        $r25 = new com.adwo.adsdk.I;
+
+        specialinvoke $r25.<com.adwo.adsdk.I: void <init>(com.adwo.adsdk.G)>($r24);
+
+        if $i0 == 66 goto label48;
+
+        virtualinvoke $r25.<com.adwo.adsdk.I: void onClick(android.view.View)>(null);
+
+     label48:
+        $r26 = new com.safetest.five.SoundService$1;
+
+        specialinvoke $r26.<com.safetest.five.SoundService$1: void <init>(com.safetest.five.SoundService)>($r10);
+
+        if $i0 == 67 goto label49;
+
+        virtualinvoke $r26.<com.safetest.five.SoundService$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label49:
+        $r27 = new com.adwo.adsdk.j;
+
+        specialinvoke $r27.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r21, 0, 0L, "", false, false, false, false);
+
+        $r28 = new com.adwo.adsdk.q;
+
+        specialinvoke $r28.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r27);
+
+        if $i0 == 68 goto label50;
+
+        virtualinvoke $r28.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label50:
+        if $i0 == 69 goto label51;
+
+        virtualinvoke $r21.<com.safetest.five.Welcome: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label51:
+        if $i0 == 70 goto label52;
+
+        $z5 = virtualinvoke $r21.<com.safetest.five.Welcome: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label52:
+        $r29 = new com.safetest.five.JmAdV2;
+
+        specialinvoke $r29.<com.safetest.five.JmAdV2: void <init>(android.app.Activity,int,boolean,android.widget.LinearLayout)>($r21, 0, false, null);
+
+        $r30 = new com.safetest.five.JmAdV2$1;
+
+        specialinvoke $r30.<com.safetest.five.JmAdV2$1: void <init>(com.safetest.five.JmAdV2)>($r29);
+
+        if $i0 == 71 goto label53;
+
+        virtualinvoke $r30.<com.safetest.five.JmAdV2$1: void onClick(android.view.View)>(null);
+
+     label53:
+        $r31 = new com.safetest.five.Utils$1;
+
+        specialinvoke $r31.<com.safetest.five.Utils$1: void <init>()>();
+
+        if $i0 == 72 goto label54;
+
+        virtualinvoke $r31.<com.safetest.five.Utils$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label54:
+        $r32 = new com.adwo.adsdk.j;
+
+        specialinvoke $r32.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r21, 0, 0L, "", false, false, false, false);
+
+        $r33 = new com.adwo.adsdk.s;
+
+        specialinvoke $r33.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r32);
+
+        if $i0 == 73 goto label55;
+
+        virtualinvoke $r33.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label55:
+        $r34 = new com.safetest.five.Welcome$4;
+
+        specialinvoke $r34.<com.safetest.five.Welcome$4: void <init>(com.safetest.five.Welcome)>($r21);
+
+        if $i0 == 74 goto label56;
+
+        virtualinvoke $r34.<com.safetest.five.Welcome$4: void onCancel(android.content.DialogInterface)>(null);
+
+     label56:
+        $r35 = new com.safetest.five.Welcome$1;
+
+        specialinvoke $r35.<com.safetest.five.Welcome$1: void <init>(com.safetest.five.Welcome)>($r21);
+
+        if $i0 == 75 goto label57;
+
+        virtualinvoke $r35.<com.safetest.five.Welcome$1: void onClick(android.view.View)>(null);
+
+     label57:
+        $r36 = new com.safetest.five.Welcome$2;
+
+        specialinvoke $r36.<com.safetest.five.Welcome$2: void <init>(com.safetest.five.Welcome)>($r21);
+
+        if $i0 == 76 goto label58;
+
+        virtualinvoke $r36.<com.safetest.five.Welcome$2: void onCheckedChanged(android.widget.RadioGroup,int)>(null, 0);
+
+     label58:
+        $r37 = new com.adwo.adsdk.G;
+
+        specialinvoke $r37.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r21, "");
+
+        $r38 = new com.adwo.adsdk.H;
+
+        specialinvoke $r38.<com.adwo.adsdk.H: void <init>(com.adwo.adsdk.G)>($r37);
+
+        if $i0 == 77 goto label59;
+
+        virtualinvoke $r38.<com.adwo.adsdk.H: void onClick(android.view.View)>(null);
+
+     label59:
+        $r39 = new com.safetest.five.Utils$2;
+
+        specialinvoke $r39.<com.safetest.five.Utils$2: void <init>()>();
+
+        if $i0 == 78 goto label60;
+
+        $z6 = virtualinvoke $r39.<com.safetest.five.Utils$2: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label60:
+        $r40 = new com.safetest.five.Welcome$3;
+
+        specialinvoke $r40.<com.safetest.five.Welcome$3: void <init>(com.safetest.five.Welcome)>($r21);
+
+        if $i0 == 79 goto label61;
+
+        virtualinvoke $r40.<com.safetest.five.Welcome$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label61:
+        if $i0 == 80 goto label46;
+
+     label62:
+        if $i0 == 81 goto label45;
+
+        if $i0 == 82 goto label63;
+
+        if $i0 == 83 goto label45;
+
+     label63:
+        if $i0 == 85 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.8 seconds.
+[Spark] Solution found in 0.8 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 48 callback methods for 7 components
+Found {res/layout/about.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView], res/layout/game.xml=[2131165184 - android.widget.LinearLayout, 2131165185 - com.safetest.five.Chessboard]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 48 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6e417844e162251228b6305c70acc481f423036c6f14da753f8c591f115ea8e0.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: com.casee.adsdk.CaseeAdView is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.media.MediaPlayer
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RadioGroup
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.LinearLayout
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.j $r2, $r4, $r6, $r30, $r34, $r40;
+        com.adwo.adsdk.q $r3, $r35;
+        com.adwo.adsdk.r $r5, $r31;
+        com.adwo.adsdk.s $r7, $r41;
+        com.safetest.five.UpdateService $r8;
+        android.os.IBinder $r9, $r12;
+        com.safetest.five.SoundService $r10;
+        com.safetest.five.SoundService$1 $r11, $r13, $r24;
+        com.safetest.five.Receiver $r14;
+        com.safetest.five.MainActivity $r15;
+        com.safetest.five.Chessboard $r16;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.safetest.five.MainActivity$1 $r17;
+        com.safetest.five.MainActivity$3 $r18;
+        com.safetest.five.ShowTips $r19;
+        com.safetest.five.ShowTips$1 $r20;
+        android.app.Dialog $r21;
+        com.safetest.five.Welcome $r22;
+        com.safetest.five.Welcome$2 $r23;
+        com.safetest.five.Utils$1 $r25;
+        com.adwo.adsdk.G $r26, $r32;
+        com.adwo.adsdk.I $r27;
+        com.safetest.five.Welcome$1 $r28;
+        com.safetest.five.Welcome$3 $r29;
+        com.adwo.adsdk.H $r33;
+        com.safetest.five.Utils$2 $r36;
+        com.safetest.five.Welcome$4 $r37;
+        com.safetest.five.JmAdV2 $r38;
+        com.safetest.five.JmAdV2$1 $r39;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label04:
+        $r2 = new com.adwo.adsdk.j;
+
+        specialinvoke $r2.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r3 = new com.adwo.adsdk.q;
+
+        specialinvoke $r3.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r2);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r3.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label05:
+        $r4 = new com.adwo.adsdk.j;
+
+        specialinvoke $r4.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r5 = new com.adwo.adsdk.r;
+
+        specialinvoke $r5.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r4);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r5.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label06:
+        $r6 = new com.adwo.adsdk.j;
+
+        specialinvoke $r6.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r7 = new com.adwo.adsdk.s;
+
+        specialinvoke $r7.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r6);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r7.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label15;
+
+        $r8 = new com.safetest.five.UpdateService;
+
+        specialinvoke $r8.<com.safetest.five.UpdateService: void <init>()>();
+
+        virtualinvoke $r8.<com.safetest.five.UpdateService: void onCreate()>();
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        if $i0 == 15 goto label11;
+
+     label12:
+        $r9 = virtualinvoke $r8.<com.safetest.five.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 17 goto label14;
+
+        if $i0 == 18 goto label13;
+
+     label14:
+        virtualinvoke $r8.<com.safetest.five.UpdateService: void onDestroy()>();
+
+     label15:
+        if $i0 == 19 goto label24;
+
+        $r10 = new com.safetest.five.SoundService;
+
+        specialinvoke $r10.<com.safetest.five.SoundService: void <init>()>();
+
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onCreate()>();
+
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label16:
+        if $i0 == 20 goto label17;
+
+        if $i0 == 21 goto label16;
+
+     label17:
+        if $i0 == 22 goto label20;
+
+     label18:
+        $r11 = new com.safetest.five.SoundService$1;
+
+        specialinvoke $r11.<com.safetest.five.SoundService$1: void <init>(com.safetest.five.SoundService)>($r10);
+
+        if $i0 == 23 goto label19;
+
+        virtualinvoke $r11.<com.safetest.five.SoundService$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label19:
+        if $i0 == 24 goto label18;
+
+     label20:
+        $r12 = virtualinvoke $r10.<com.safetest.five.SoundService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label21:
+        $r13 = new com.safetest.five.SoundService$1;
+
+        specialinvoke $r13.<com.safetest.five.SoundService$1: void <init>(com.safetest.five.SoundService)>($r10);
+
+        if $i0 == 25 goto label22;
+
+        virtualinvoke $r13.<com.safetest.five.SoundService$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label22:
+        if $i0 == 26 goto label21;
+
+        if $i0 == 27 goto label23;
+
+        if $i0 == 28 goto label21;
+
+     label23:
+        virtualinvoke $r10.<com.safetest.five.SoundService: void onDestroy()>();
+
+     label24:
+        if $i0 == 29 goto label26;
+
+        $r14 = new com.safetest.five.Receiver;
+
+        specialinvoke $r14.<com.safetest.five.Receiver: void <init>()>();
+
+        if $i0 == 30 goto label26;
+
+     label25:
+        virtualinvoke $r14.<com.safetest.five.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 32 goto label25;
+
+     label26:
+        if $i0 == 33 goto label42;
+
+        $r15 = new com.safetest.five.MainActivity;
+
+        specialinvoke $r15.<com.safetest.five.MainActivity: void <init>()>();
+
+        if $i0 == 34 goto label42;
+
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label27:
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onResume()>();
+
+        if $i0 == 36 goto label41;
+
+     label28:
+        $r16 = new com.safetest.five.Chessboard;
+
+        specialinvoke $r16.<com.safetest.five.Chessboard: void <init>(android.content.Context,android.util.AttributeSet)>($r15, null);
+
+        if $i0 == 37 goto label29;
+
+        virtualinvoke $r16.<com.safetest.five.Chessboard: void onSizeChanged(int,int,int,int)>(0, 0, 0, 0);
+
+     label29:
+        if $i0 == 38 goto label30;
+
+        virtualinvoke $r16.<com.safetest.five.Chessboard: void onDraw(android.graphics.Canvas)>(null);
+
+     label30:
+        if $i0 == 39 goto label31;
+
+        staticinvoke <com.safetest.five.Chessboard: void <clinit>()>();
+
+     label31:
+        if $i0 == 40 goto label32;
+
+        $z0 = virtualinvoke $r16.<com.safetest.five.Chessboard: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label32:
+        $r17 = new com.safetest.five.MainActivity$1;
+
+        specialinvoke $r17.<com.safetest.five.MainActivity$1: void <init>(com.safetest.five.MainActivity)>($r15);
+
+        if $i0 == 41 goto label33;
+
+        virtualinvoke $r17.<com.safetest.five.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label33:
+        if $i0 == 42 goto label34;
+
+        $z1 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label34:
+        if $i0 == 43 goto label35;
+
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label35:
+        if $i0 == 44 goto label36;
+
+        $z2 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean dispatchTouchEvent(android.view.MotionEvent)>(null);
+
+     label36:
+        if $i0 == 45 goto label37;
+
+        $z3 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label37:
+        if $i0 == 46 goto label38;
+
+        $z4 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label38:
+        if $i0 == 47 goto label39;
+
+        $z5 = virtualinvoke $r15.<com.safetest.five.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label39:
+        $r18 = new com.safetest.five.MainActivity$3;
+
+        specialinvoke $r18.<com.safetest.five.MainActivity$3: void <init>(com.safetest.five.MainActivity)>($r15);
+
+        if $i0 == 48 goto label40;
+
+        virtualinvoke $r18.<com.safetest.five.MainActivity$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label40:
+        if $i0 == 49 goto label28;
+
+     label41:
+        virtualinvoke $r15.<com.safetest.five.MainActivity: void onPause()>();
+
+        if $i0 == 50 goto label27;
+
+        if $i0 == 51 goto label42;
+
+        if $i0 == 52 goto label27;
+
+     label42:
+        if $i0 == 54 goto label48;
+
+        $r19 = new com.safetest.five.ShowTips;
+
+        specialinvoke $r19.<com.safetest.five.ShowTips: void <init>()>();
+
+        if $i0 == 55 goto label48;
+
+        virtualinvoke $r19.<com.safetest.five.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label43:
+        if $i0 == 57 goto label47;
+
+     label44:
+        $r20 = new com.safetest.five.ShowTips$1;
+
+        specialinvoke $r20.<com.safetest.five.ShowTips$1: void <init>(com.safetest.five.ShowTips)>($r19);
+
+        if $i0 == 58 goto label45;
+
+        virtualinvoke $r20.<com.safetest.five.ShowTips$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label45:
+        if $i0 == 59 goto label46;
+
+        $r21 = virtualinvoke $r19.<com.safetest.five.ShowTips: android.app.Dialog onCreateDialog(int)>(0);
+
+     label46:
+        if $i0 == 60 goto label44;
+
+     label47:
+        if $i0 == 61 goto label43;
+
+        if $i0 == 62 goto label48;
+
+        if $i0 == 63 goto label43;
+
+     label48:
+        if $i0 == 65 goto label67;
+
+        $r22 = new com.safetest.five.Welcome;
+
+        specialinvoke $r22.<com.safetest.five.Welcome: void <init>()>();
+
+        if $i0 == 66 goto label67;
+
+        virtualinvoke $r22.<com.safetest.five.Welcome: void onCreate(android.os.Bundle)>(null);
+
+     label49:
+        if $i0 == 68 goto label66;
+
+     label50:
+        if $i0 == 69 goto label51;
+
+        virtualinvoke $r22.<com.safetest.five.Welcome: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label51:
+        if $i0 == 70 goto label52;
+
+        $z6 = virtualinvoke $r22.<com.safetest.five.Welcome: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label52:
+        $r23 = new com.safetest.five.Welcome$2;
+
+        specialinvoke $r23.<com.safetest.five.Welcome$2: void <init>(com.safetest.five.Welcome)>($r22);
+
+        if $i0 == 71 goto label53;
+
+        virtualinvoke $r23.<com.safetest.five.Welcome$2: void onCheckedChanged(android.widget.RadioGroup,int)>(null, 0);
+
+     label53:
+        $r24 = new com.safetest.five.SoundService$1;
+
+        specialinvoke $r24.<com.safetest.five.SoundService$1: void <init>(com.safetest.five.SoundService)>($r10);
+
+        if $i0 == 72 goto label54;
+
+        virtualinvoke $r24.<com.safetest.five.SoundService$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label54:
+        $r25 = new com.safetest.five.Utils$1;
+
+        specialinvoke $r25.<com.safetest.five.Utils$1: void <init>()>();
+
+        if $i0 == 73 goto label55;
+
+        virtualinvoke $r25.<com.safetest.five.Utils$1: void onCompletion(android.media.MediaPlayer)>(null);
+
+     label55:
+        $r26 = new com.adwo.adsdk.G;
+
+        specialinvoke $r26.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r22, "");
+
+        $r27 = new com.adwo.adsdk.I;
+
+        specialinvoke $r27.<com.adwo.adsdk.I: void <init>(com.adwo.adsdk.G)>($r26);
+
+        if $i0 == 74 goto label56;
+
+        virtualinvoke $r27.<com.adwo.adsdk.I: void onClick(android.view.View)>(null);
+
+     label56:
+        $r28 = new com.safetest.five.Welcome$1;
+
+        specialinvoke $r28.<com.safetest.five.Welcome$1: void <init>(com.safetest.five.Welcome)>($r22);
+
+        if $i0 == 75 goto label57;
+
+        virtualinvoke $r28.<com.safetest.five.Welcome$1: void onClick(android.view.View)>(null);
+
+     label57:
+        $r29 = new com.safetest.five.Welcome$3;
+
+        specialinvoke $r29.<com.safetest.five.Welcome$3: void <init>(com.safetest.five.Welcome)>($r22);
+
+        if $i0 == 76 goto label58;
+
+        virtualinvoke $r29.<com.safetest.five.Welcome$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label58:
+        $r30 = new com.adwo.adsdk.j;
+
+        specialinvoke $r30.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r22, 0, 0L, "", false, false, false, false);
+
+        $r31 = new com.adwo.adsdk.r;
+
+        specialinvoke $r31.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r30);
+
+        if $i0 == 77 goto label59;
+
+        virtualinvoke $r31.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label59:
+        $r32 = new com.adwo.adsdk.G;
+
+        specialinvoke $r32.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r22, "");
+
+        $r33 = new com.adwo.adsdk.H;
+
+        specialinvoke $r33.<com.adwo.adsdk.H: void <init>(com.adwo.adsdk.G)>($r32);
+
+        if $i0 == 78 goto label60;
+
+        virtualinvoke $r33.<com.adwo.adsdk.H: void onClick(android.view.View)>(null);
+
+     label60:
+        $r34 = new com.adwo.adsdk.j;
+
+        specialinvoke $r34.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r22, 0, 0L, "", false, false, false, false);
+
+        $r35 = new com.adwo.adsdk.q;
+
+        specialinvoke $r35.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r34);
+
+        if $i0 == 79 goto label61;
+
+        virtualinvoke $r35.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label61:
+        $r36 = new com.safetest.five.Utils$2;
+
+        specialinvoke $r36.<com.safetest.five.Utils$2: void <init>()>();
+
+        if $i0 == 80 goto label62;
+
+        $z7 = virtualinvoke $r36.<com.safetest.five.Utils$2: boolean onError(android.media.MediaPlayer,int,int)>(null, 0, 0);
+
+     label62:
+        $r37 = new com.safetest.five.Welcome$4;
+
+        specialinvoke $r37.<com.safetest.five.Welcome$4: void <init>(com.safetest.five.Welcome)>($r22);
+
+        if $i0 == 81 goto label63;
+
+        virtualinvoke $r37.<com.safetest.five.Welcome$4: void onCancel(android.content.DialogInterface)>(null);
+
+     label63:
+        $r38 = new com.safetest.five.JmAdV2;
+
+        specialinvoke $r38.<com.safetest.five.JmAdV2: void <init>(android.app.Activity,int,boolean,android.widget.LinearLayout)>($r22, 0, false, null);
+
+        $r39 = new com.safetest.five.JmAdV2$1;
+
+        specialinvoke $r39.<com.safetest.five.JmAdV2$1: void <init>(com.safetest.five.JmAdV2)>($r38);
+
+        if $i0 == 82 goto label64;
+
+        virtualinvoke $r39.<com.safetest.five.JmAdV2$1: void onClick(android.view.View)>(null);
+
+     label64:
+        $r40 = new com.adwo.adsdk.j;
+
+        specialinvoke $r40.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r22, 0, 0L, "", false, false, false, false);
+
+        $r41 = new com.adwo.adsdk.s;
+
+        specialinvoke $r41.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r40);
+
+        if $i0 == 83 goto label65;
+
+        virtualinvoke $r41.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label65:
+        if $i0 == 84 goto label50;
+
+     label66:
+        if $i0 == 85 goto label49;
+
+        if $i0 == 86 goto label67;
+
+        if $i0 == 87 goto label49;
+
+     label67:
+        if $i0 == 89 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.9 seconds.
+[Spark] Solution found in 0.9 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.025480182 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.094538742 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2522 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 74 sources and 52 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 5214
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 8611
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 48804 forward and 8149 backward edges solved, processing 4 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 4 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.009619177 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<android.content.Context: void startActivity(android.content.Intent)>($r11) in method <com.adwo.adsdk.g: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.g: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r28.<java.io.OutputStream: void write(byte[])>($r0) in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[])>($r10) in method <com.safetest.five.UpdateService: void updateInfo(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("SAFE_PID") in method <com.safetest.five.UpdateService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.safetest.five.UpdateService: void updateInfo(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.safetest.five.Receiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.safetest.five.Receiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink virtualinvoke $r12.<android.content.Context: void startActivity(android.content.Intent)>($r11), from the following sources:
+	- $r9 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.g: void run()>)
+Found a flow to sink virtualinvoke $r28.<java.io.OutputStream: void write(byte[])>($r0), from the following sources:
+	- $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>)
+	- $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>)
+Found a flow to sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[])>($r10), from the following sources:
+	- $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("SAFE_PID") (in <com.safetest.five.UpdateService: void onCreate()>)
+	- $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.safetest.five.UpdateService: void updateInfo(java.lang.String)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.safetest.five.Receiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 238.306752 MB
+Analysis has run for 7.360809395 seconds

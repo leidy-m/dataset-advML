@@ -1,0 +1,668 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.016966661 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        es.themove.locateme_pro2.DefaultValues $r1;
+        es.themove.locateme_pro2.BootUpReceiver $r2;
+        es.themove.locateme_pro2.LocationService $r3;
+        android.os.IBinder $r4;
+        es.themove.locateme_pro2.FindMe $r5;
+        es.themove.locateme_pro2.Help $r6;
+        es.themove.locateme_pro2.Checker $r7;
+        es.themove.locateme_pro2.SmsIntentReceiver $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new es.themove.locateme_pro2.DefaultValues;
+
+        specialinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onResume()>();
+
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label05;
+
+        $r2 = new es.themove.locateme_pro2.BootUpReceiver;
+
+        specialinvoke $r2.<es.themove.locateme_pro2.BootUpReceiver: void <init>()>();
+
+        if $i0 == 8 goto label05;
+
+     label04:
+        virtualinvoke $r2.<es.themove.locateme_pro2.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 10 goto label04;
+
+     label05:
+        if $i0 == 11 goto label10;
+
+        $r3 = new es.themove.locateme_pro2.LocationService;
+
+        specialinvoke $r3.<es.themove.locateme_pro2.LocationService: void <init>()>();
+
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onCreate()>();
+
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        if $i0 == 13 goto label06;
+
+     label07:
+        $r4 = virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 15 goto label09;
+
+        if $i0 == 16 goto label08;
+
+     label09:
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onDestroy()>();
+
+     label10:
+        if $i0 == 17 goto label12;
+
+        $r5 = new es.themove.locateme_pro2.FindMe;
+
+        specialinvoke $r5.<es.themove.locateme_pro2.FindMe: void <init>()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 21 goto label12;
+
+        if $i0 == 22 goto label11;
+
+     label12:
+        if $i0 == 24 goto label14;
+
+        $r6 = new es.themove.locateme_pro2.Help;
+
+        specialinvoke $r6.<es.themove.locateme_pro2.Help: void <init>()>();
+
+        if $i0 == 25 goto label14;
+
+        virtualinvoke $r6.<es.themove.locateme_pro2.Help: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 28 goto label14;
+
+        if $i0 == 29 goto label13;
+
+     label14:
+        if $i0 == 31 goto label16;
+
+        $r7 = new es.themove.locateme_pro2.Checker;
+
+        specialinvoke $r7.<es.themove.locateme_pro2.Checker: void <init>()>();
+
+        if $i0 == 32 goto label16;
+
+     label15:
+        virtualinvoke $r7.<es.themove.locateme_pro2.Checker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 34 goto label15;
+
+     label16:
+        if $i0 == 35 goto label18;
+
+        $r8 = new es.themove.locateme_pro2.SmsIntentReceiver;
+
+        specialinvoke $r8.<es.themove.locateme_pro2.SmsIntentReceiver: void <init>()>();
+
+        if $i0 == 36 goto label18;
+
+     label17:
+        virtualinvoke $r8.<es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 38 goto label17;
+
+     label18:
+        if $i0 == 39 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Callback analysis done.
+Warning: ScrollView is a phantom class!
+Warning: es.themove.locateme_pro2.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: es.themove.locateme_pro2.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: es.themove.locateme_pro2.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/help.xml
+Warning: Button is a phantom class!
+Warning: es.themove.locateme_pro2.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        es.themove.locateme_pro2.DefaultValues $r1;
+        es.themove.locateme_pro2.BootUpReceiver $r2;
+        es.themove.locateme_pro2.LocationService $r3;
+        android.os.IBinder $r4;
+        es.themove.locateme_pro2.FindMe $r5;
+        es.themove.locateme_pro2.FindMe$1 $r6;
+        boolean $z0, $z1;
+        es.themove.locateme_pro2.Help $r7;
+        es.themove.locateme_pro2.Checker $r8;
+        es.themove.locateme_pro2.SmsIntentReceiver $r9;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new es.themove.locateme_pro2.DefaultValues;
+
+        specialinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onResume()>();
+
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onPause()>();
+
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label08;
+
+        $r2 = new es.themove.locateme_pro2.BootUpReceiver;
+
+        specialinvoke $r2.<es.themove.locateme_pro2.BootUpReceiver: void <init>()>();
+
+        if $i0 == 11 goto label08;
+
+     label07:
+        virtualinvoke $r2.<es.themove.locateme_pro2.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label07;
+
+     label08:
+        if $i0 == 14 goto label13;
+
+        $r3 = new es.themove.locateme_pro2.LocationService;
+
+        specialinvoke $r3.<es.themove.locateme_pro2.LocationService: void <init>()>();
+
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onCreate()>();
+
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        if $i0 == 16 goto label09;
+
+     label10:
+        $r4 = virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label11:
+        if $i0 == 18 goto label12;
+
+        if $i0 == 19 goto label11;
+
+     label12:
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onDestroy()>();
+
+     label13:
+        if $i0 == 20 goto label21;
+
+        $r5 = new es.themove.locateme_pro2.FindMe;
+
+        specialinvoke $r5.<es.themove.locateme_pro2.FindMe: void <init>()>();
+
+        if $i0 == 21 goto label21;
+
+        virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 23 goto label20;
+
+     label15:
+        $r6 = new es.themove.locateme_pro2.FindMe$1;
+
+        specialinvoke $r6.<es.themove.locateme_pro2.FindMe$1: void <init>(es.themove.locateme_pro2.FindMe)>($r5);
+
+        if $i0 == 24 goto label16;
+
+        virtualinvoke $r6.<es.themove.locateme_pro2.FindMe$1: void onClick(android.view.View)>(null);
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: void onWindowFocusChanged(boolean)>(false);
+
+     label17:
+        if $i0 == 26 goto label18;
+
+        $z0 = virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label18:
+        if $i0 == 27 goto label19;
+
+        $z1 = virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label19:
+        if $i0 == 28 goto label15;
+
+     label20:
+        if $i0 == 29 goto label14;
+
+        if $i0 == 30 goto label21;
+
+        if $i0 == 31 goto label14;
+
+     label21:
+        if $i0 == 33 goto label23;
+
+        $r7 = new es.themove.locateme_pro2.Help;
+
+        specialinvoke $r7.<es.themove.locateme_pro2.Help: void <init>()>();
+
+        if $i0 == 34 goto label23;
+
+        virtualinvoke $r7.<es.themove.locateme_pro2.Help: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 37 goto label22;
+
+        if $i0 == 38 goto label23;
+
+        if $i0 == 39 goto label22;
+
+     label23:
+        if $i0 == 41 goto label25;
+
+        $r8 = new es.themove.locateme_pro2.Checker;
+
+        specialinvoke $r8.<es.themove.locateme_pro2.Checker: void <init>()>();
+
+        if $i0 == 42 goto label25;
+
+     label24:
+        virtualinvoke $r8.<es.themove.locateme_pro2.Checker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 44 goto label24;
+
+     label25:
+        if $i0 == 45 goto label27;
+
+        $r9 = new es.themove.locateme_pro2.SmsIntentReceiver;
+
+        specialinvoke $r9.<es.themove.locateme_pro2.SmsIntentReceiver: void <init>()>();
+
+        if $i0 == 46 goto label27;
+
+     label26:
+        virtualinvoke $r9.<es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 48 goto label26;
+
+     label27:
+        if $i0 == 49 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.2 seconds.
+[Spark] Solution found in 0.2 seconds.
+Running incremental callback analysis for 7 components...
+Incremental callback analysis done.
+Found 17 callback methods for 7 components
+Found {res/layout/main.xml=[2131099659 - android.widget.Button, 2131099660 - android.widget.TextView, 2131099661 - android.widget.TextView, -1 - android.widget.ScrollView, -1 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131099657 - android.widget.LinearLayout, 2131099658 - android.widget.LinearLayout], res/layout/help.xml=[2131099656 - android.widget.TextView, 2131099654 - android.widget.TextView, 2131099655 - android.widget.TextView, 2131099650 - android.widget.TextView, -1 - android.widget.ScrollView, 2131099651 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131099653 - android.widget.TextView, 2131099652 - android.widget.TextView, 2131099649 - android.widget.TextView, 2131099648 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 17 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6c45abf63caeac264b030760baa72c0405d58ce25ae54109cdcc9f7173df4408.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        es.themove.locateme_pro2.DefaultValues $r1;
+        es.themove.locateme_pro2.BootUpReceiver $r2;
+        es.themove.locateme_pro2.LocationService $r3;
+        android.os.IBinder $r4;
+        es.themove.locateme_pro2.FindMe $r5;
+        es.themove.locateme_pro2.FindMe$1 $r6;
+        boolean $z0, $z1;
+        es.themove.locateme_pro2.Help $r7;
+        es.themove.locateme_pro2.Checker $r8;
+        es.themove.locateme_pro2.SmsIntentReceiver $r9;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new es.themove.locateme_pro2.DefaultValues;
+
+        specialinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void <init>()>();
+
+        if $i0 == 1 goto label06;
+
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onResume()>();
+
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        virtualinvoke $r1.<es.themove.locateme_pro2.DefaultValues: void onPause()>();
+
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        if $i0 == 10 goto label08;
+
+        $r2 = new es.themove.locateme_pro2.BootUpReceiver;
+
+        specialinvoke $r2.<es.themove.locateme_pro2.BootUpReceiver: void <init>()>();
+
+        if $i0 == 11 goto label08;
+
+     label07:
+        virtualinvoke $r2.<es.themove.locateme_pro2.BootUpReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 13 goto label07;
+
+     label08:
+        if $i0 == 14 goto label13;
+
+        $r3 = new es.themove.locateme_pro2.LocationService;
+
+        specialinvoke $r3.<es.themove.locateme_pro2.LocationService: void <init>()>();
+
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onCreate()>();
+
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label09:
+        if $i0 == 15 goto label10;
+
+        if $i0 == 16 goto label09;
+
+     label10:
+        $r4 = virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label11:
+        if $i0 == 18 goto label12;
+
+        if $i0 == 19 goto label11;
+
+     label12:
+        virtualinvoke $r3.<es.themove.locateme_pro2.LocationService: void onDestroy()>();
+
+     label13:
+        if $i0 == 20 goto label21;
+
+        $r5 = new es.themove.locateme_pro2.FindMe;
+
+        specialinvoke $r5.<es.themove.locateme_pro2.FindMe: void <init>()>();
+
+        if $i0 == 21 goto label21;
+
+        virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        if $i0 == 23 goto label20;
+
+     label15:
+        $r6 = new es.themove.locateme_pro2.FindMe$1;
+
+        specialinvoke $r6.<es.themove.locateme_pro2.FindMe$1: void <init>(es.themove.locateme_pro2.FindMe)>($r5);
+
+        if $i0 == 24 goto label16;
+
+        virtualinvoke $r6.<es.themove.locateme_pro2.FindMe$1: void onClick(android.view.View)>(null);
+
+     label16:
+        if $i0 == 25 goto label17;
+
+        $z0 = virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label17:
+        if $i0 == 26 goto label18;
+
+        $z1 = virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label18:
+        if $i0 == 27 goto label19;
+
+        virtualinvoke $r5.<es.themove.locateme_pro2.FindMe: void onWindowFocusChanged(boolean)>(false);
+
+     label19:
+        if $i0 == 28 goto label15;
+
+     label20:
+        if $i0 == 29 goto label14;
+
+        if $i0 == 30 goto label21;
+
+        if $i0 == 31 goto label14;
+
+     label21:
+        if $i0 == 33 goto label23;
+
+        $r7 = new es.themove.locateme_pro2.Help;
+
+        specialinvoke $r7.<es.themove.locateme_pro2.Help: void <init>()>();
+
+        if $i0 == 34 goto label23;
+
+        virtualinvoke $r7.<es.themove.locateme_pro2.Help: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 37 goto label22;
+
+        if $i0 == 38 goto label23;
+
+        if $i0 == 39 goto label22;
+
+     label23:
+        if $i0 == 41 goto label25;
+
+        $r8 = new es.themove.locateme_pro2.Checker;
+
+        specialinvoke $r8.<es.themove.locateme_pro2.Checker: void <init>()>();
+
+        if $i0 == 42 goto label25;
+
+     label24:
+        virtualinvoke $r8.<es.themove.locateme_pro2.Checker: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 44 goto label24;
+
+     label25:
+        if $i0 == 45 goto label27;
+
+        $r9 = new es.themove.locateme_pro2.SmsIntentReceiver;
+
+        specialinvoke $r9.<es.themove.locateme_pro2.SmsIntentReceiver: void <init>()>();
+
+        if $i0 == 46 goto label27;
+
+     label26:
+        virtualinvoke $r9.<es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 48 goto label26;
+
+     label27:
+        if $i0 == 49 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.1 seconds.
+[Spark] Solution found in 0.1 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.185553562 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.025126789 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 345 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 37 sources and 25 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 534
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 185
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 3433 forward and 405 backward edges solved, processing 7 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 7 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.003898475 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <es.themove.locateme_pro2.SmsIntentReceiver: android.telephony.gsm.SmsMessage[] getMessagesFromIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MI PRUEBA", $r3) in method <es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <es.themove.locateme_pro2.SmsIntentReceiver: android.telephony.gsm.SmsMessage[] getMessagesFromIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MI PRUEBA", $r3) in method <es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <es.themove.locateme_pro2.SmsIntentReceiver: android.telephony.gsm.SmsMessage[] getMessagesFromIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MessageListener:", $r3) in method <es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <es.themove.locateme_pro2.SmsIntentReceiver: android.telephony.gsm.SmsMessage[] getMessagesFromIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r2) in method <es.themove.locateme_pro2.DefaultValues: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r9.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <es.themove.locateme_pro2.DefaultValues: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("PRO", $r5) in method <es.themove.locateme_pro2.DefaultValues: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r9.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <es.themove.locateme_pro2.DefaultValues: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <es.themove.locateme_pro2.SmsIntentReceiver: android.telephony.gsm.SmsMessage[] getMessagesFromIntent(android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <es.themove.locateme_pro2.SmsIntentReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MI PRUEBA", $r3), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <es.themove.locateme_pro2.SmsIntentReceiver: android.telephony.gsm.SmsMessage[] getMessagesFromIntent(android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MI PRUEBA", $r3), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <es.themove.locateme_pro2.SmsIntentReceiver: android.telephony.gsm.SmsMessage[] getMessagesFromIntent(android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("MessageListener:", $r3), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <es.themove.locateme_pro2.SmsIntentReceiver: android.telephony.gsm.SmsMessage[] getMessagesFromIntent(android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r11.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r5, $r2), from the following sources:
+	- $r2 = virtualinvoke $r9.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <es.themove.locateme_pro2.DefaultValues: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("PRO", $r5), from the following sources:
+	- $r2 = virtualinvoke $r9.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <es.themove.locateme_pro2.DefaultValues: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>)
+Maximum memory consumption: 99.960616 MB
+Analysis has run for 3.49106571 seconds

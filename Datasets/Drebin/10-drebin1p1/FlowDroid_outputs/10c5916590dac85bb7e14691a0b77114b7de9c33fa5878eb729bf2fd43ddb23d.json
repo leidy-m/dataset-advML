@@ -1,0 +1,1170 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.033623866 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0;
+        ca.rivalstudios.runboyrun.Menu $r3;
+        com.GoldDream.zj.zjReceiver $r4;
+        ca.rivalstudios.runboyrun.MoreGames $r5;
+        ca.rivalstudios.runboyrun.Settings $r6;
+        ca.rivalstudios.runboyrun.HighScores $r7;
+        ca.rivalstudios.runboyrun.RunBoyRun $r8;
+        ca.rivalstudios.runboyrun.HowToPlay $r9;
+        ca.rivalstudios.runboyrun.Feedback $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new ca.rivalstudios.runboyrun.Menu;
+
+        specialinvoke $r3.<ca.rivalstudios.runboyrun.Menu: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<ca.rivalstudios.runboyrun.Menu: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label07;
+
+     label08:
+        if $i0 == 13 goto label10;
+
+        $r4 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r4.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 14 goto label10;
+
+     label09:
+        virtualinvoke $r4.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 16 goto label09;
+
+     label10:
+        if $i0 == 17 goto label12;
+
+        $r5 = new ca.rivalstudios.runboyrun.MoreGames;
+
+        specialinvoke $r5.<ca.rivalstudios.runboyrun.MoreGames: void <init>()>();
+
+        if $i0 == 18 goto label12;
+
+        virtualinvoke $r5.<ca.rivalstudios.runboyrun.MoreGames: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        if $i0 == 21 goto label12;
+
+        if $i0 == 22 goto label11;
+
+     label12:
+        if $i0 == 24 goto label14;
+
+        $r6 = new ca.rivalstudios.runboyrun.Settings;
+
+        specialinvoke $r6.<ca.rivalstudios.runboyrun.Settings: void <init>()>();
+
+        if $i0 == 25 goto label14;
+
+        virtualinvoke $r6.<ca.rivalstudios.runboyrun.Settings: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 28 goto label14;
+
+        if $i0 == 29 goto label13;
+
+     label14:
+        if $i0 == 31 goto label16;
+
+        $r7 = new ca.rivalstudios.runboyrun.HighScores;
+
+        specialinvoke $r7.<ca.rivalstudios.runboyrun.HighScores: void <init>()>();
+
+        if $i0 == 32 goto label16;
+
+        virtualinvoke $r7.<ca.rivalstudios.runboyrun.HighScores: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 35 goto label16;
+
+        if $i0 == 36 goto label15;
+
+     label16:
+        if $i0 == 38 goto label19;
+
+        $r8 = new ca.rivalstudios.runboyrun.RunBoyRun;
+
+        specialinvoke $r8.<ca.rivalstudios.runboyrun.RunBoyRun: void <init>()>();
+
+        if $i0 == 39 goto label19;
+
+        virtualinvoke $r8.<ca.rivalstudios.runboyrun.RunBoyRun: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        virtualinvoke $r8.<ca.rivalstudios.runboyrun.RunBoyRun: void onResume()>();
+
+        virtualinvoke $r8.<ca.rivalstudios.runboyrun.RunBoyRun: void onPause()>();
+
+        if $i0 == 41 goto label17;
+
+        if $i0 == 42 goto label18;
+
+        if $i0 == 43 goto label17;
+
+     label18:
+        virtualinvoke $r8.<ca.rivalstudios.runboyrun.RunBoyRun: void onDestroy()>();
+
+     label19:
+        if $i0 == 45 goto label21;
+
+        $r9 = new ca.rivalstudios.runboyrun.HowToPlay;
+
+        specialinvoke $r9.<ca.rivalstudios.runboyrun.HowToPlay: void <init>()>();
+
+        if $i0 == 46 goto label21;
+
+        virtualinvoke $r9.<ca.rivalstudios.runboyrun.HowToPlay: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        if $i0 == 49 goto label21;
+
+        if $i0 == 50 goto label20;
+
+     label21:
+        if $i0 == 52 goto label23;
+
+        $r10 = new ca.rivalstudios.runboyrun.Feedback;
+
+        specialinvoke $r10.<ca.rivalstudios.runboyrun.Feedback: void <init>()>();
+
+        if $i0 == 53 goto label23;
+
+        virtualinvoke $r10.<ca.rivalstudios.runboyrun.Feedback: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 56 goto label23;
+
+        if $i0 == 57 goto label22;
+
+     label23:
+        if $i0 == 59 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.6 seconds.
+[Spark] Solution found in 0.6 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: ca.rivalstudios.runboyrun.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: WebView is a phantom class!
+Warning: ca.rivalstudios.runboyrun.WebView is a phantom class!
+Warning: android.view.WebView is a phantom class!
+Warning: android.widget.WebView is a phantom class!
+Warning: RelativeLayout is a phantom class!
+Warning: ca.rivalstudios.runboyrun.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 1 layout controls in file res/layout/howtoplay.xml
+Found 2 layout controls in file res/layout/moregames.xml
+Warning: AbsoluteLayout is a phantom class!
+Warning: ca.rivalstudios.runboyrun.AbsoluteLayout is a phantom class!
+Warning: android.view.AbsoluteLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: ca.rivalstudios.runboyrun.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 3 layout controls in file res/layout/menu.xml
+Found 4 layout controls in file res/layout/feedback.xml
+Found 5 layout controls in file res/layout/highscores.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Handler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0;
+        ca.rivalstudios.runboyrun.Menu $r3;
+        ca.rivalstudios.runboyrun.Menu$2 $r4;
+        com.GoldDream.zj.zjReceiver $r5;
+        ca.rivalstudios.runboyrun.MoreGames $r6;
+        ca.rivalstudios.runboyrun.MoreGames$1 $r7;
+        ca.rivalstudios.runboyrun.Settings $r8;
+        ca.rivalstudios.runboyrun.HighScores $r9;
+        ca.rivalstudios.runboyrun.HighScores$1 $r10;
+        ca.rivalstudios.runboyrun.RunBoyRun $r11;
+        ca.rivalstudios.runboyrun.RunBoyRunView $r12;
+        ca.rivalstudios.runboyrun.HowToPlay $r13;
+        ca.rivalstudios.runboyrun.HowToPlay$1 $r14;
+        ca.rivalstudios.runboyrun.Feedback $r15;
+        ca.rivalstudios.runboyrun.Feedback$1 $r16;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label07;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label06:
+        if $i0 == 6 goto label04;
+
+     label07:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label10:
+        if $i0 == 9 goto label08;
+
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 11 goto label08;
+
+     label11:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label18;
+
+        $r3 = new ca.rivalstudios.runboyrun.Menu;
+
+        specialinvoke $r3.<ca.rivalstudios.runboyrun.Menu: void <init>()>();
+
+        if $i0 == 13 goto label18;
+
+        virtualinvoke $r3.<ca.rivalstudios.runboyrun.Menu: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 15 goto label17;
+
+     label14:
+        $r4 = new ca.rivalstudios.runboyrun.Menu$2;
+
+        specialinvoke $r4.<ca.rivalstudios.runboyrun.Menu$2: void <init>(ca.rivalstudios.runboyrun.Menu)>($r3);
+
+        if $i0 == 16 goto label15;
+
+        virtualinvoke $r4.<ca.rivalstudios.runboyrun.Menu$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label15:
+        if $i0 == 17 goto label16;
+
+        virtualinvoke $r3.<ca.rivalstudios.runboyrun.Menu: void onClick(android.view.View)>(null);
+
+     label16:
+        if $i0 == 18 goto label14;
+
+     label17:
+        if $i0 == 19 goto label13;
+
+        if $i0 == 20 goto label18;
+
+        if $i0 == 21 goto label13;
+
+     label18:
+        if $i0 == 23 goto label20;
+
+        $r5 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r5.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 24 goto label20;
+
+     label19:
+        virtualinvoke $r5.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 26 goto label19;
+
+     label20:
+        if $i0 == 27 goto label25;
+
+        $r6 = new ca.rivalstudios.runboyrun.MoreGames;
+
+        specialinvoke $r6.<ca.rivalstudios.runboyrun.MoreGames: void <init>()>();
+
+        if $i0 == 28 goto label25;
+
+        virtualinvoke $r6.<ca.rivalstudios.runboyrun.MoreGames: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 30 goto label24;
+
+     label22:
+        $r7 = new ca.rivalstudios.runboyrun.MoreGames$1;
+
+        specialinvoke $r7.<ca.rivalstudios.runboyrun.MoreGames$1: void <init>(ca.rivalstudios.runboyrun.MoreGames)>($r6);
+
+        if $i0 == 31 goto label23;
+
+        virtualinvoke $r7.<ca.rivalstudios.runboyrun.MoreGames$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        if $i0 == 32 goto label22;
+
+     label24:
+        if $i0 == 33 goto label21;
+
+        if $i0 == 34 goto label25;
+
+        if $i0 == 35 goto label21;
+
+     label25:
+        if $i0 == 37 goto label27;
+
+        $r8 = new ca.rivalstudios.runboyrun.Settings;
+
+        specialinvoke $r8.<ca.rivalstudios.runboyrun.Settings: void <init>()>();
+
+        if $i0 == 38 goto label27;
+
+        virtualinvoke $r8.<ca.rivalstudios.runboyrun.Settings: void onCreate(android.os.Bundle)>(null);
+
+     label26:
+        if $i0 == 41 goto label26;
+
+        if $i0 == 42 goto label27;
+
+        if $i0 == 43 goto label26;
+
+     label27:
+        if $i0 == 45 goto label32;
+
+        $r9 = new ca.rivalstudios.runboyrun.HighScores;
+
+        specialinvoke $r9.<ca.rivalstudios.runboyrun.HighScores: void <init>()>();
+
+        if $i0 == 46 goto label32;
+
+        virtualinvoke $r9.<ca.rivalstudios.runboyrun.HighScores: void onCreate(android.os.Bundle)>(null);
+
+     label28:
+        if $i0 == 48 goto label31;
+
+     label29:
+        $r10 = new ca.rivalstudios.runboyrun.HighScores$1;
+
+        specialinvoke $r10.<ca.rivalstudios.runboyrun.HighScores$1: void <init>(ca.rivalstudios.runboyrun.HighScores)>($r9);
+
+        if $i0 == 49 goto label30;
+
+        virtualinvoke $r10.<ca.rivalstudios.runboyrun.HighScores$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label30:
+        if $i0 == 50 goto label29;
+
+     label31:
+        if $i0 == 51 goto label28;
+
+        if $i0 == 52 goto label32;
+
+        if $i0 == 53 goto label28;
+
+     label32:
+        if $i0 == 55 goto label40;
+
+        $r11 = new ca.rivalstudios.runboyrun.RunBoyRun;
+
+        specialinvoke $r11.<ca.rivalstudios.runboyrun.RunBoyRun: void <init>()>();
+
+        if $i0 == 56 goto label40;
+
+        virtualinvoke $r11.<ca.rivalstudios.runboyrun.RunBoyRun: void onCreate(android.os.Bundle)>(null);
+
+     label33:
+        virtualinvoke $r11.<ca.rivalstudios.runboyrun.RunBoyRun: void onResume()>();
+
+        if $i0 == 58 goto label38;
+
+     label34:
+        $r12 = new ca.rivalstudios.runboyrun.RunBoyRunView;
+
+        specialinvoke $r12.<ca.rivalstudios.runboyrun.RunBoyRunView: void <init>(android.content.Context,android.os.Handler)>($r11, null);
+
+        if $i0 == 59 goto label35;
+
+        virtualinvoke $r12.<ca.rivalstudios.runboyrun.RunBoyRunView: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label35:
+        if $i0 == 60 goto label36;
+
+        virtualinvoke $r12.<ca.rivalstudios.runboyrun.RunBoyRunView: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label36:
+        if $i0 == 61 goto label37;
+
+        virtualinvoke $r12.<ca.rivalstudios.runboyrun.RunBoyRunView: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label37:
+        if $i0 == 62 goto label34;
+
+     label38:
+        virtualinvoke $r11.<ca.rivalstudios.runboyrun.RunBoyRun: void onPause()>();
+
+        if $i0 == 63 goto label33;
+
+        if $i0 == 64 goto label39;
+
+        if $i0 == 65 goto label33;
+
+     label39:
+        virtualinvoke $r11.<ca.rivalstudios.runboyrun.RunBoyRun: void onDestroy()>();
+
+     label40:
+        if $i0 == 67 goto label45;
+
+        $r13 = new ca.rivalstudios.runboyrun.HowToPlay;
+
+        specialinvoke $r13.<ca.rivalstudios.runboyrun.HowToPlay: void <init>()>();
+
+        if $i0 == 68 goto label45;
+
+        virtualinvoke $r13.<ca.rivalstudios.runboyrun.HowToPlay: void onCreate(android.os.Bundle)>(null);
+
+     label41:
+        if $i0 == 70 goto label44;
+
+     label42:
+        $r14 = new ca.rivalstudios.runboyrun.HowToPlay$1;
+
+        specialinvoke $r14.<ca.rivalstudios.runboyrun.HowToPlay$1: void <init>(ca.rivalstudios.runboyrun.HowToPlay)>($r13);
+
+        if $i0 == 71 goto label43;
+
+        virtualinvoke $r14.<ca.rivalstudios.runboyrun.HowToPlay$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label43:
+        if $i0 == 72 goto label42;
+
+     label44:
+        if $i0 == 73 goto label41;
+
+        if $i0 == 74 goto label45;
+
+        if $i0 == 75 goto label41;
+
+     label45:
+        if $i0 == 77 goto label50;
+
+        $r15 = new ca.rivalstudios.runboyrun.Feedback;
+
+        specialinvoke $r15.<ca.rivalstudios.runboyrun.Feedback: void <init>()>();
+
+        if $i0 == 78 goto label50;
+
+        virtualinvoke $r15.<ca.rivalstudios.runboyrun.Feedback: void onCreate(android.os.Bundle)>(null);
+
+     label46:
+        if $i0 == 80 goto label49;
+
+     label47:
+        $r16 = new ca.rivalstudios.runboyrun.Feedback$1;
+
+        specialinvoke $r16.<ca.rivalstudios.runboyrun.Feedback$1: void <init>(ca.rivalstudios.runboyrun.Feedback)>($r15);
+
+        if $i0 == 81 goto label48;
+
+        virtualinvoke $r16.<ca.rivalstudios.runboyrun.Feedback$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label48:
+        if $i0 == 82 goto label47;
+
+     label49:
+        if $i0 == 83 goto label46;
+
+        if $i0 == 84 goto label50;
+
+        if $i0 == 85 goto label46;
+
+     label50:
+        if $i0 == 87 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 9 components...
+Incremental callback analysis done.
+Found 32 callback methods for 9 components
+Found {res/layout/highscores.xml=[-1 - android.widget.FrameLayout, 2131230722 - android.webkit.WebView, 2131230721 - com.admob.android.ads.AdView, -1 - android.widget.RelativeLayout], res/layout/feedback.xml=[-1 - android.widget.FrameLayout, 2131230721 - com.admob.android.ads.AdView, -1 - android.widget.RelativeLayout, 2131230720 - android.webkit.WebView], res/layout/howtoplay.xml=[2131230723 - android.webkit.WebView, -1 - android.widget.FrameLayout, 2131230721 - com.admob.android.ads.AdView, -1 - android.widget.RelativeLayout], res/layout/menu.xml=[-1 - android.widget.AbsoluteLayout, 2131230724 - android.widget.Button, 2131230729 - android.widget.Button, 2131230730 - android.widget.Button, 2131230725 - android.widget.Button, 2131230728 - android.widget.Button, 2131230726 - android.widget.Button, 2131230727 - android.widget.Button], res/layout/moregames.xml=[-1 - android.widget.FrameLayout, 2131230731 - android.webkit.WebView, 2131230721 - com.admob.android.ads.AdView, -1 - android.widget.RelativeLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 32 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/10c5916590dac85bb7e14691a0b77114b7de9c33fa5878eb729bf2fd43ddb23d.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.telephony.SmsManager is a phantom class!
+Warning: android.telephony.SmsMessage is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Handler
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1, $i2, $i3, $i4;
+        com.GoldDream.zj.zjService $r1;
+        android.os.IBinder $r2;
+        boolean $z0;
+        ca.rivalstudios.runboyrun.Menu $r3;
+        ca.rivalstudios.runboyrun.Menu$2 $r4;
+        com.GoldDream.zj.zjReceiver $r5;
+        ca.rivalstudios.runboyrun.MoreGames $r6;
+        ca.rivalstudios.runboyrun.MoreGames$1 $r7;
+        com.admob.android.ads.AdView $r8, $r11, $r17, $r19;
+        ca.rivalstudios.runboyrun.Settings $r9;
+        ca.rivalstudios.runboyrun.HighScores $r10;
+        ca.rivalstudios.runboyrun.HighScores$1 $r12;
+        ca.rivalstudios.runboyrun.RunBoyRun $r13;
+        ca.rivalstudios.runboyrun.RunBoyRunView $r14;
+        ca.rivalstudios.runboyrun.HowToPlay $r15;
+        ca.rivalstudios.runboyrun.HowToPlay$1 $r16;
+        ca.rivalstudios.runboyrun.Feedback $r18;
+        ca.rivalstudios.runboyrun.Feedback$1 $r20;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label12;
+
+        $r1 = new com.GoldDream.zj.zjService;
+
+        specialinvoke $r1.<com.GoldDream.zj.zjService: void <init>()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onCreate()>();
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        if $i0 == 3 goto label07;
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label06:
+        if $i0 == 6 goto label04;
+
+     label07:
+        $r2 = virtualinvoke $r1.<com.GoldDream.zj.zjService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 7 goto label09;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label09:
+        if $i0 == 8 goto label10;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onLowMemory()>();
+
+     label10:
+        if $i0 == 9 goto label08;
+
+        $z0 = virtualinvoke $r1.<com.GoldDream.zj.zjService: boolean onUnbind(android.content.Intent)>(null);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onRebind(android.content.Intent)>(null);
+
+        if $i0 == 11 goto label08;
+
+     label11:
+        virtualinvoke $r1.<com.GoldDream.zj.zjService: void onDestroy()>();
+
+     label12:
+        if $i0 == 12 goto label18;
+
+        $r3 = new ca.rivalstudios.runboyrun.Menu;
+
+        specialinvoke $r3.<ca.rivalstudios.runboyrun.Menu: void <init>()>();
+
+        if $i0 == 13 goto label18;
+
+        virtualinvoke $r3.<ca.rivalstudios.runboyrun.Menu: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        if $i0 == 15 goto label17;
+
+     label14:
+        if $i0 == 16 goto label15;
+
+        virtualinvoke $r3.<ca.rivalstudios.runboyrun.Menu: void onClick(android.view.View)>(null);
+
+     label15:
+        $r4 = new ca.rivalstudios.runboyrun.Menu$2;
+
+        specialinvoke $r4.<ca.rivalstudios.runboyrun.Menu$2: void <init>(ca.rivalstudios.runboyrun.Menu)>($r3);
+
+        if $i0 == 17 goto label16;
+
+        virtualinvoke $r4.<ca.rivalstudios.runboyrun.Menu$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label16:
+        if $i0 == 18 goto label14;
+
+     label17:
+        if $i0 == 19 goto label13;
+
+        if $i0 == 20 goto label18;
+
+        if $i0 == 21 goto label13;
+
+     label18:
+        if $i0 == 23 goto label20;
+
+        $r5 = new com.GoldDream.zj.zjReceiver;
+
+        specialinvoke $r5.<com.GoldDream.zj.zjReceiver: void <init>()>();
+
+        if $i0 == 24 goto label20;
+
+     label19:
+        virtualinvoke $r5.<com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 26 goto label19;
+
+     label20:
+        if $i0 == 27 goto label29;
+
+        $r6 = new ca.rivalstudios.runboyrun.MoreGames;
+
+        specialinvoke $r6.<ca.rivalstudios.runboyrun.MoreGames: void <init>()>();
+
+        if $i0 == 28 goto label29;
+
+        virtualinvoke $r6.<ca.rivalstudios.runboyrun.MoreGames: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 30 goto label28;
+
+     label22:
+        $r7 = new ca.rivalstudios.runboyrun.MoreGames$1;
+
+        specialinvoke $r7.<ca.rivalstudios.runboyrun.MoreGames$1: void <init>(ca.rivalstudios.runboyrun.MoreGames)>($r6);
+
+        if $i0 == 31 goto label23;
+
+        virtualinvoke $r7.<ca.rivalstudios.runboyrun.MoreGames$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label23:
+        $r8 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r8.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r6);
+
+        if $i0 == 32 goto label24;
+
+        $i1 = virtualinvoke $r8.<com.admob.android.ads.AdView: int getVisibility()>();
+
+     label24:
+        if $i0 == 33 goto label25;
+
+        virtualinvoke $r8.<com.admob.android.ads.AdView: void onWindowFocusChanged(boolean)>(false);
+
+     label25:
+        if $i0 == 34 goto label26;
+
+        virtualinvoke $r8.<com.admob.android.ads.AdView: void setVisibility(int)>(0);
+
+     label26:
+        if $i0 == 35 goto label27;
+
+        virtualinvoke $r8.<com.admob.android.ads.AdView: void setBackgroundColor(int)>(0);
+
+     label27:
+        if $i0 == 36 goto label22;
+
+     label28:
+        if $i0 == 37 goto label21;
+
+        if $i0 == 38 goto label29;
+
+        if $i0 == 39 goto label21;
+
+     label29:
+        if $i0 == 41 goto label31;
+
+        $r9 = new ca.rivalstudios.runboyrun.Settings;
+
+        specialinvoke $r9.<ca.rivalstudios.runboyrun.Settings: void <init>()>();
+
+        if $i0 == 42 goto label31;
+
+        virtualinvoke $r9.<ca.rivalstudios.runboyrun.Settings: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        if $i0 == 45 goto label30;
+
+        if $i0 == 46 goto label31;
+
+        if $i0 == 47 goto label30;
+
+     label31:
+        if $i0 == 49 goto label40;
+
+        $r10 = new ca.rivalstudios.runboyrun.HighScores;
+
+        specialinvoke $r10.<ca.rivalstudios.runboyrun.HighScores: void <init>()>();
+
+        if $i0 == 50 goto label40;
+
+        virtualinvoke $r10.<ca.rivalstudios.runboyrun.HighScores: void onCreate(android.os.Bundle)>(null);
+
+     label32:
+        if $i0 == 52 goto label39;
+
+     label33:
+        $r11 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r11.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r10);
+
+        if $i0 == 53 goto label34;
+
+        $i2 = virtualinvoke $r11.<com.admob.android.ads.AdView: int getVisibility()>();
+
+     label34:
+        if $i0 == 54 goto label35;
+
+        virtualinvoke $r11.<com.admob.android.ads.AdView: void onWindowFocusChanged(boolean)>(false);
+
+     label35:
+        if $i0 == 55 goto label36;
+
+        virtualinvoke $r11.<com.admob.android.ads.AdView: void setVisibility(int)>(0);
+
+     label36:
+        if $i0 == 56 goto label37;
+
+        virtualinvoke $r11.<com.admob.android.ads.AdView: void setBackgroundColor(int)>(0);
+
+     label37:
+        $r12 = new ca.rivalstudios.runboyrun.HighScores$1;
+
+        specialinvoke $r12.<ca.rivalstudios.runboyrun.HighScores$1: void <init>(ca.rivalstudios.runboyrun.HighScores)>($r10);
+
+        if $i0 == 57 goto label38;
+
+        virtualinvoke $r12.<ca.rivalstudios.runboyrun.HighScores$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label38:
+        if $i0 == 58 goto label33;
+
+     label39:
+        if $i0 == 59 goto label32;
+
+        if $i0 == 60 goto label40;
+
+        if $i0 == 61 goto label32;
+
+     label40:
+        if $i0 == 63 goto label48;
+
+        $r13 = new ca.rivalstudios.runboyrun.RunBoyRun;
+
+        specialinvoke $r13.<ca.rivalstudios.runboyrun.RunBoyRun: void <init>()>();
+
+        if $i0 == 64 goto label48;
+
+        virtualinvoke $r13.<ca.rivalstudios.runboyrun.RunBoyRun: void onCreate(android.os.Bundle)>(null);
+
+     label41:
+        virtualinvoke $r13.<ca.rivalstudios.runboyrun.RunBoyRun: void onResume()>();
+
+        if $i0 == 66 goto label46;
+
+     label42:
+        $r14 = new ca.rivalstudios.runboyrun.RunBoyRunView;
+
+        specialinvoke $r14.<ca.rivalstudios.runboyrun.RunBoyRunView: void <init>(android.content.Context,android.os.Handler)>($r13, null);
+
+        if $i0 == 67 goto label43;
+
+        virtualinvoke $r14.<ca.rivalstudios.runboyrun.RunBoyRunView: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label43:
+        if $i0 == 68 goto label44;
+
+        virtualinvoke $r14.<ca.rivalstudios.runboyrun.RunBoyRunView: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label44:
+        if $i0 == 69 goto label45;
+
+        virtualinvoke $r14.<ca.rivalstudios.runboyrun.RunBoyRunView: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label45:
+        if $i0 == 70 goto label42;
+
+     label46:
+        virtualinvoke $r13.<ca.rivalstudios.runboyrun.RunBoyRun: void onPause()>();
+
+        if $i0 == 71 goto label41;
+
+        if $i0 == 72 goto label47;
+
+        if $i0 == 73 goto label41;
+
+     label47:
+        virtualinvoke $r13.<ca.rivalstudios.runboyrun.RunBoyRun: void onDestroy()>();
+
+     label48:
+        if $i0 == 75 goto label57;
+
+        $r15 = new ca.rivalstudios.runboyrun.HowToPlay;
+
+        specialinvoke $r15.<ca.rivalstudios.runboyrun.HowToPlay: void <init>()>();
+
+        if $i0 == 76 goto label57;
+
+        virtualinvoke $r15.<ca.rivalstudios.runboyrun.HowToPlay: void onCreate(android.os.Bundle)>(null);
+
+     label49:
+        if $i0 == 78 goto label56;
+
+     label50:
+        $r16 = new ca.rivalstudios.runboyrun.HowToPlay$1;
+
+        specialinvoke $r16.<ca.rivalstudios.runboyrun.HowToPlay$1: void <init>(ca.rivalstudios.runboyrun.HowToPlay)>($r15);
+
+        if $i0 == 79 goto label51;
+
+        virtualinvoke $r16.<ca.rivalstudios.runboyrun.HowToPlay$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label51:
+        $r17 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r17.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r15);
+
+        if $i0 == 80 goto label52;
+
+        $i3 = virtualinvoke $r17.<com.admob.android.ads.AdView: int getVisibility()>();
+
+     label52:
+        if $i0 == 81 goto label53;
+
+        virtualinvoke $r17.<com.admob.android.ads.AdView: void onWindowFocusChanged(boolean)>(false);
+
+     label53:
+        if $i0 == 82 goto label54;
+
+        virtualinvoke $r17.<com.admob.android.ads.AdView: void setVisibility(int)>(0);
+
+     label54:
+        if $i0 == 83 goto label55;
+
+        virtualinvoke $r17.<com.admob.android.ads.AdView: void setBackgroundColor(int)>(0);
+
+     label55:
+        if $i0 == 84 goto label50;
+
+     label56:
+        if $i0 == 85 goto label49;
+
+        if $i0 == 86 goto label57;
+
+        if $i0 == 87 goto label49;
+
+     label57:
+        if $i0 == 89 goto label66;
+
+        $r18 = new ca.rivalstudios.runboyrun.Feedback;
+
+        specialinvoke $r18.<ca.rivalstudios.runboyrun.Feedback: void <init>()>();
+
+        if $i0 == 90 goto label66;
+
+        virtualinvoke $r18.<ca.rivalstudios.runboyrun.Feedback: void onCreate(android.os.Bundle)>(null);
+
+     label58:
+        if $i0 == 92 goto label65;
+
+     label59:
+        $r19 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r19.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r18);
+
+        if $i0 == 93 goto label60;
+
+        $i4 = virtualinvoke $r19.<com.admob.android.ads.AdView: int getVisibility()>();
+
+     label60:
+        if $i0 == 94 goto label61;
+
+        virtualinvoke $r19.<com.admob.android.ads.AdView: void onWindowFocusChanged(boolean)>(false);
+
+     label61:
+        if $i0 == 95 goto label62;
+
+        virtualinvoke $r19.<com.admob.android.ads.AdView: void setVisibility(int)>(0);
+
+     label62:
+        if $i0 == 96 goto label63;
+
+        virtualinvoke $r19.<com.admob.android.ads.AdView: void setBackgroundColor(int)>(0);
+
+     label63:
+        $r20 = new ca.rivalstudios.runboyrun.Feedback$1;
+
+        specialinvoke $r20.<ca.rivalstudios.runboyrun.Feedback$1: void <init>(ca.rivalstudios.runboyrun.Feedback)>($r18);
+
+        if $i0 == 97 goto label64;
+
+        virtualinvoke $r20.<ca.rivalstudios.runboyrun.Feedback$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label64:
+        if $i0 == 98 goto label59;
+
+     label65:
+        if $i0 == 99 goto label58;
+
+        if $i0 == 100 goto label66;
+
+        if $i0 == 101 goto label58;
+
+     label66:
+        if $i0 == 103 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.7 seconds.
+[Spark] Solution found in 0.7 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.776131552 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.097873004 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1829 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 49 sources and 52 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 818
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 3804
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 13640 forward and 3833 backward edges solved, processing 15 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 15 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.007178815 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AdMob SDK", $r2) in method <com.admob.android.ads.Ad: android.graphics.Bitmap getIcon()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<android.os.Handler: boolean sendMessage(android.os.Message)>($r13) in method <ca.rivalstudios.runboyrun.RunBoyRunView$RunBoyRunThread: void updatePhysics(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r12.<android.os.Handler: android.os.Message obtainMessage()>() in method <ca.rivalstudios.runboyrun.RunBoyRunView$RunBoyRunThread: void updatePhysics(int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r2) in method <com.admob.android.ads.AdManager: void setPublisherId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r6) in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r4) in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6) in method <com.GoldDream.zj.zjReceiver: void WriteRec(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 := @parameter1: android.content.Intent in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1) in method <com.admob.android.ads.AdManager: java.lang.String getUserAgent()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() in method <com.admob.android.ads.AdManager: java.lang.String getUserAgent()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMob SDK", $r0) in method <com.admob.android.ads.AdManager: void clientError(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1) in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.admob.android.ads.Ad: android.graphics.Bitmap fetchImage(java.lang.String,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r13.<java.net.URL: void <init>(java.lang.String)>($r2) in method <com.GoldDream.zj.zjService: java.lang.String getUidfromServer()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.GoldDream.zj.zjService: void GetDeviceInfo()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5) in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AdMob SDK", $r2), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink virtualinvoke $r12.<android.os.Handler: boolean sendMessage(android.os.Message)>($r13), from the following sources:
+	- $r13 = virtualinvoke $r12.<android.os.Handler: android.os.Message obtainMessage()>() (in <ca.rivalstudios.runboyrun.RunBoyRunView$RunBoyRunThread: void updatePhysics(int)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r6), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r4), from the following sources:
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>)
+Found a flow to sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[])>($r6), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r8 = virtualinvoke $r7.<android.os.Bundle: java.lang.Object get(java.lang.String)>("pdus") (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 := @parameter1: android.content.Intent (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1), from the following sources:
+	- $r1 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() (in <com.admob.android.ads.AdManager: java.lang.String getUserAgent()>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMob SDK", $r0), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r11 = virtualinvoke $r10.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink specialinvoke r13.<java.net.URL: void <init>(java.lang.String)>($r2), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getLine1Number()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+	- $r3 = virtualinvoke $r2.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.GoldDream.zj.zjService: void GetDeviceInfo()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r5), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.GoldDream.zj.zjReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Maximum memory consumption: 185.447664 MB
+Analysis has run for 5.16720483 seconds

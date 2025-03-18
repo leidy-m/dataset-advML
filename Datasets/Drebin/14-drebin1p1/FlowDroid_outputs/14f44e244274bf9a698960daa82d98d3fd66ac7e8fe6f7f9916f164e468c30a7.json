@@ -1,0 +1,1645 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.01329969 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: I.I is a phantom class!
+Warning: adon.b is a phantom class!
+Warning: adon.c is a phantom class!
+Warning: adon.d is a phantom class!
+Warning: adon.f is a phantom class!
+Warning: adon.g is a phantom class!
+Warning: adon.j is a phantom class!
+Warning: adon.k is a phantom class!
+Warning: adon.l is a phantom class!
+Warning: adon.r is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: b is a phantom class!
+Warning: net.youmi.android.AdView is a phantom class!
+Warning: net.youmi.android.AdListener is a phantom class!
+Warning: net.youmi.android.AdManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.evilsunflower.picturepuzzle.UpdateService $r2;
+        android.os.IBinder $r3;
+        com.evilsunflower.picturepuzzle.ShowTips $r4;
+        com.evilsunflower.picturepuzzle.picpuzzle $r5;
+        com.vpon.adon.android.WebInApp $r6;
+        com.evilsunflower.picturepuzzle.Receiver $r7;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 3 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label09;
+
+        $r2 = new com.evilsunflower.picturepuzzle.UpdateService;
+
+        specialinvoke $r2.<com.evilsunflower.picturepuzzle.UpdateService: void <init>()>();
+
+        virtualinvoke $r2.<com.evilsunflower.picturepuzzle.UpdateService: void onCreate()>();
+
+     label05:
+        if $i0 == 8 goto label06;
+
+        if $i0 == 9 goto label05;
+
+     label06:
+        $r3 = virtualinvoke $r2.<com.evilsunflower.picturepuzzle.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label07:
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        virtualinvoke $r2.<com.evilsunflower.picturepuzzle.UpdateService: void onDestroy()>();
+
+     label09:
+        if $i0 == 13 goto label11;
+
+        $r4 = new com.evilsunflower.picturepuzzle.ShowTips;
+
+        specialinvoke $r4.<com.evilsunflower.picturepuzzle.ShowTips: void <init>()>();
+
+        if $i0 == 14 goto label11;
+
+        virtualinvoke $r4.<com.evilsunflower.picturepuzzle.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label10:
+        if $i0 == 17 goto label11;
+
+        if $i0 == 18 goto label10;
+
+     label11:
+        if $i0 == 20 goto label14;
+
+        $r5 = new com.evilsunflower.picturepuzzle.picpuzzle;
+
+        specialinvoke $r5.<com.evilsunflower.picturepuzzle.picpuzzle: void <init>()>();
+
+        if $i0 == 21 goto label14;
+
+        virtualinvoke $r5.<com.evilsunflower.picturepuzzle.picpuzzle: void onCreate(android.os.Bundle)>(null);
+
+     label12:
+        if $i0 == 24 goto label13;
+
+        if $i0 == 25 goto label12;
+
+     label13:
+        virtualinvoke $r5.<com.evilsunflower.picturepuzzle.picpuzzle: void onDestroy()>();
+
+     label14:
+        if $i0 == 27 goto label16;
+
+        $r6 = new com.vpon.adon.android.WebInApp;
+
+        specialinvoke $r6.<com.vpon.adon.android.WebInApp: void <init>()>();
+
+        if $i0 == 28 goto label16;
+
+        virtualinvoke $r6.<com.vpon.adon.android.WebInApp: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        if $i0 == 31 goto label16;
+
+        if $i0 == 32 goto label15;
+
+     label16:
+        if $i0 == 34 goto label18;
+
+        $r7 = new com.evilsunflower.picturepuzzle.Receiver;
+
+        specialinvoke $r7.<com.evilsunflower.picturepuzzle.Receiver: void <init>()>();
+
+        if $i0 == 35 goto label18;
+
+     label17:
+        virtualinvoke $r7.<com.evilsunflower.picturepuzzle.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 37 goto label17;
+
+     label18:
+        if $i0 == 38 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.2 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.4 seconds.
+[Spark] Solution found in 0.4 seconds.
+Callback analysis done.
+Warning: RelativeLayout is a phantom class!
+Warning: com.evilsunflower.picturepuzzle.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.evilsunflower.picturepuzzle.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/title.xml
+Warning: LinearLayout is a phantom class!
+Warning: com.evilsunflower.picturepuzzle.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Found 2 layout controls in file res/layout/main.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: I.I is a phantom class!
+Warning: adon.b is a phantom class!
+Warning: adon.c is a phantom class!
+Warning: adon.d is a phantom class!
+Warning: adon.f is a phantom class!
+Warning: adon.g is a phantom class!
+Warning: adon.j is a phantom class!
+Warning: adon.k is a phantom class!
+Warning: adon.l is a phantom class!
+Warning: adon.r is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: b is a phantom class!
+Warning: net.youmi.android.AdView is a phantom class!
+Warning: net.youmi.android.AdListener is a phantom class!
+Warning: net.youmi.android.AdManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.madhouse.android.ads.$$$, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.j $r2, $r4, $r6, $r21, $r30, $r32;
+        com.adwo.adsdk.s $r3, $r22;
+        com.adwo.adsdk.q $r5, $r31;
+        com.adwo.adsdk.r $r7, $r33;
+        com.evilsunflower.picturepuzzle.UpdateService $r8;
+        android.os.IBinder $r9;
+        com.evilsunflower.picturepuzzle.ShowTips $r10;
+        com.evilsunflower.picturepuzzle.ShowTips$1 $r11;
+        android.app.Dialog $r12;
+        com.evilsunflower.picturepuzzle.picpuzzle $r13;
+        boolean $z0, $z1, $z2, $z3;
+        com.vpon.adon.android.WebInApp $r14;
+        com.adwo.adsdk.G $r15, $r19;
+        com.adwo.adsdk.I $r16;
+        com.evilsunflower.picturepuzzle.JmAdV2 $r17;
+        com.evilsunflower.picturepuzzle.JmAdV2$1 $r18;
+        com.adwo.adsdk.H $r20;
+        com.madhouse.android.ads.AdView $r23;
+        com.madhouse.android.ads.aa $r24;
+        com.madhouse.android.ads.__ $r25;
+        com.madhouse.android.ads.$$$ $r26, $r28;
+        com.madhouse.android.ads.aaaa $r27;
+        com.madhouse.android.ads.aaaaa $r29;
+        com.evilsunflower.picturepuzzle.Receiver $r34;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.adwo.adsdk.j;
+
+        specialinvoke $r2.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r3 = new com.adwo.adsdk.s;
+
+        specialinvoke $r3.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label04:
+        $r4 = new com.adwo.adsdk.j;
+
+        specialinvoke $r4.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r5 = new com.adwo.adsdk.q;
+
+        specialinvoke $r5.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r4);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r5.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label05:
+        $r6 = new com.adwo.adsdk.j;
+
+        specialinvoke $r6.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r7 = new com.adwo.adsdk.r;
+
+        specialinvoke $r7.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r6);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r7.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label06:
+        if $i0 == 7 goto label07;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label15;
+
+        $r8 = new com.evilsunflower.picturepuzzle.UpdateService;
+
+        specialinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void <init>()>();
+
+        virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void onCreate()>();
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        if $i0 == 15 goto label11;
+
+     label12:
+        $r9 = virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 17 goto label14;
+
+        if $i0 == 18 goto label13;
+
+     label14:
+        virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void onDestroy()>();
+
+     label15:
+        if $i0 == 19 goto label21;
+
+        $r10 = new com.evilsunflower.picturepuzzle.ShowTips;
+
+        specialinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: void <init>()>();
+
+        if $i0 == 20 goto label21;
+
+        virtualinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 22 goto label20;
+
+     label17:
+        $r11 = new com.evilsunflower.picturepuzzle.ShowTips$1;
+
+        specialinvoke $r11.<com.evilsunflower.picturepuzzle.ShowTips$1: void <init>(com.evilsunflower.picturepuzzle.ShowTips)>($r10);
+
+        if $i0 == 23 goto label18;
+
+        virtualinvoke $r11.<com.evilsunflower.picturepuzzle.ShowTips$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label18:
+        if $i0 == 24 goto label19;
+
+        $r12 = virtualinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: android.app.Dialog onCreateDialog(int)>(0);
+
+     label19:
+        if $i0 == 25 goto label17;
+
+     label20:
+        if $i0 == 26 goto label16;
+
+        if $i0 == 27 goto label21;
+
+        if $i0 == 28 goto label16;
+
+     label21:
+        if $i0 == 30 goto label29;
+
+        $r13 = new com.evilsunflower.picturepuzzle.picpuzzle;
+
+        specialinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void <init>()>();
+
+        if $i0 == 31 goto label29;
+
+        virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 33 goto label27;
+
+     label23:
+        if $i0 == 34 goto label24;
+
+        $z0 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label24:
+        if $i0 == 35 goto label25;
+
+        $z1 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label25:
+        if $i0 == 36 goto label26;
+
+        $z2 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label26:
+        if $i0 == 37 goto label23;
+
+     label27:
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label28;
+
+        if $i0 == 40 goto label22;
+
+     label28:
+        virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void onDestroy()>();
+
+     label29:
+        if $i0 == 42 goto label41;
+
+        $r14 = new com.vpon.adon.android.WebInApp;
+
+        specialinvoke $r14.<com.vpon.adon.android.WebInApp: void <init>()>();
+
+        if $i0 == 43 goto label41;
+
+        virtualinvoke $r14.<com.vpon.adon.android.WebInApp: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        if $i0 == 45 goto label40;
+
+     label31:
+        $r15 = new com.adwo.adsdk.G;
+
+        specialinvoke $r15.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r14, "");
+
+        $r16 = new com.adwo.adsdk.I;
+
+        specialinvoke $r16.<com.adwo.adsdk.I: void <init>(com.adwo.adsdk.G)>($r15);
+
+        if $i0 == 46 goto label32;
+
+        virtualinvoke $r16.<com.adwo.adsdk.I: void onClick(android.view.View)>(null);
+
+     label32:
+        $r17 = new com.evilsunflower.picturepuzzle.JmAdV2;
+
+        specialinvoke $r17.<com.evilsunflower.picturepuzzle.JmAdV2: void <init>(android.app.Activity,int,boolean,android.widget.RelativeLayout)>($r14, 0, false, null);
+
+        $r18 = new com.evilsunflower.picturepuzzle.JmAdV2$1;
+
+        specialinvoke $r18.<com.evilsunflower.picturepuzzle.JmAdV2$1: void <init>(com.evilsunflower.picturepuzzle.JmAdV2)>($r17);
+
+        if $i0 == 47 goto label33;
+
+        virtualinvoke $r18.<com.evilsunflower.picturepuzzle.JmAdV2$1: void onClick(android.view.View)>(null);
+
+     label33:
+        $r19 = new com.adwo.adsdk.G;
+
+        specialinvoke $r19.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r14, "");
+
+        $r20 = new com.adwo.adsdk.H;
+
+        specialinvoke $r20.<com.adwo.adsdk.H: void <init>(com.adwo.adsdk.G)>($r19);
+
+        if $i0 == 48 goto label34;
+
+        virtualinvoke $r20.<com.adwo.adsdk.H: void onClick(android.view.View)>(null);
+
+     label34:
+        $r21 = new com.adwo.adsdk.j;
+
+        specialinvoke $r21.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r14, 0, 0L, "", false, false, false, false);
+
+        $r22 = new com.adwo.adsdk.s;
+
+        specialinvoke $r22.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r21);
+
+        if $i0 == 49 goto label35;
+
+        virtualinvoke $r22.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label35:
+        $r23 = new com.madhouse.android.ads.AdView;
+
+        specialinvoke $r23.<com.madhouse.android.ads.AdView: void <init>(android.content.Context)>($r14);
+
+        $r24 = new com.madhouse.android.ads.aa;
+
+        specialinvoke $r24.<com.madhouse.android.ads.aa: void <init>(com.madhouse.android.ads.AdView)>($r23);
+
+        $r25 = new com.madhouse.android.ads.__;
+
+        specialinvoke $r25.<com.madhouse.android.ads.__: void <init>()>();
+
+        $r26 = new com.madhouse.android.ads.$$$;
+
+        specialinvoke $r26.<com.madhouse.android.ads.$$$: void <init>(com.madhouse.android.ads.__,android.content.Context)>($r25, $r14);
+
+        $r27 = new com.madhouse.android.ads.aaaa;
+
+        specialinvoke $r27.<com.madhouse.android.ads.aaaa: void <init>(com.madhouse.android.ads.aa,com.madhouse.android.ads.$$$,int)>($r24, $r26, 0);
+
+        $r28 = null;
+
+        $r29 = new com.madhouse.android.ads.aaaaa;
+
+        specialinvoke $r29.<com.madhouse.android.ads.aaaaa: void <init>(com.madhouse.android.ads.aaaa,com.madhouse.android.ads.$$$)>($r27, $r28);
+
+        if $i0 == 50 goto label36;
+
+        virtualinvoke $r29.<com.madhouse.android.ads.aaaaa: void onClick(android.view.View)>(null);
+
+     label36:
+        $r30 = new com.adwo.adsdk.j;
+
+        specialinvoke $r30.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r14, 0, 0L, "", false, false, false, false);
+
+        $r31 = new com.adwo.adsdk.q;
+
+        specialinvoke $r31.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r30);
+
+        if $i0 == 51 goto label37;
+
+        virtualinvoke $r31.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label37:
+        $r32 = new com.adwo.adsdk.j;
+
+        specialinvoke $r32.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r14, 0, 0L, "", false, false, false, false);
+
+        $r33 = new com.adwo.adsdk.r;
+
+        specialinvoke $r33.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r32);
+
+        if $i0 == 52 goto label38;
+
+        virtualinvoke $r33.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label38:
+        if $i0 == 53 goto label39;
+
+        $z3 = virtualinvoke $r14.<com.vpon.adon.android.WebInApp: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label39:
+        if $i0 == 54 goto label31;
+
+     label40:
+        if $i0 == 55 goto label30;
+
+        if $i0 == 56 goto label41;
+
+        if $i0 == 57 goto label30;
+
+     label41:
+        if $i0 == 59 goto label43;
+
+        $r34 = new com.evilsunflower.picturepuzzle.Receiver;
+
+        specialinvoke $r34.<com.evilsunflower.picturepuzzle.Receiver: void <init>()>();
+
+        if $i0 == 60 goto label43;
+
+     label42:
+        virtualinvoke $r34.<com.evilsunflower.picturepuzzle.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 62 goto label42;
+
+     label43:
+        if $i0 == 63 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.6 seconds.
+[Spark] Solution found in 1.6 seconds.
+Running incremental callback analysis for 6 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: I.I is a phantom class!
+Warning: adon.b is a phantom class!
+Warning: adon.c is a phantom class!
+Warning: adon.d is a phantom class!
+Warning: adon.f is a phantom class!
+Warning: adon.g is a phantom class!
+Warning: adon.j is a phantom class!
+Warning: adon.k is a phantom class!
+Warning: adon.l is a phantom class!
+Warning: adon.r is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: b is a phantom class!
+Warning: net.youmi.android.AdView is a phantom class!
+Warning: net.youmi.android.AdListener is a phantom class!
+Warning: net.youmi.android.AdManager is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.madhouse.android.ads.$$$, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.j $r2, $r4, $r6, $r15, $r21, $r25;
+        com.adwo.adsdk.r $r3, $r16;
+        com.adwo.adsdk.q $r5, $r22;
+        com.adwo.adsdk.s $r7, $r26;
+        com.evilsunflower.picturepuzzle.UpdateService $r8;
+        android.os.IBinder $r9;
+        com.evilsunflower.picturepuzzle.ShowTips $r10;
+        android.app.Dialog $r11;
+        com.evilsunflower.picturepuzzle.ShowTips$1 $r12;
+        com.evilsunflower.picturepuzzle.picpuzzle $r13;
+        boolean $z0, $z1, $z2, $z3;
+        com.vpon.adon.android.WebInApp $r14;
+        com.madhouse.android.ads.AdView $r17, $r27;
+        com.madhouse.android.ads.bbb $r18;
+        com.adwo.adsdk.G $r19, $r34;
+        com.adwo.adsdk.H $r20;
+        com.evilsunflower.picturepuzzle.JmAdV2 $r23;
+        com.evilsunflower.picturepuzzle.JmAdV2$1 $r24;
+        com.madhouse.android.ads.aa $r28;
+        com.madhouse.android.ads.__ $r29;
+        com.madhouse.android.ads.$$$ $r30, $r32;
+        com.madhouse.android.ads.aaaa $r31;
+        com.madhouse.android.ads.aaaaa $r33;
+        com.adwo.adsdk.I $r35;
+        com.evilsunflower.picturepuzzle.Receiver $r36;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        $r2 = new com.adwo.adsdk.j;
+
+        specialinvoke $r2.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r3 = new com.adwo.adsdk.r;
+
+        specialinvoke $r3.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r2);
+
+        if $i0 == 4 goto label04;
+
+        virtualinvoke $r3.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label05:
+        $r4 = new com.adwo.adsdk.j;
+
+        specialinvoke $r4.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r5 = new com.adwo.adsdk.q;
+
+        specialinvoke $r5.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r4);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r5.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label06:
+        $r6 = new com.adwo.adsdk.j;
+
+        specialinvoke $r6.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r7 = new com.adwo.adsdk.s;
+
+        specialinvoke $r7.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r6);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r7.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label15;
+
+        $r8 = new com.evilsunflower.picturepuzzle.UpdateService;
+
+        specialinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void <init>()>();
+
+        virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void onCreate()>();
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        if $i0 == 15 goto label11;
+
+     label12:
+        $r9 = virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 17 goto label14;
+
+        if $i0 == 18 goto label13;
+
+     label14:
+        virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void onDestroy()>();
+
+     label15:
+        if $i0 == 19 goto label21;
+
+        $r10 = new com.evilsunflower.picturepuzzle.ShowTips;
+
+        specialinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: void <init>()>();
+
+        if $i0 == 20 goto label21;
+
+        virtualinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 22 goto label20;
+
+     label17:
+        if $i0 == 23 goto label18;
+
+        $r11 = virtualinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: android.app.Dialog onCreateDialog(int)>(0);
+
+     label18:
+        $r12 = new com.evilsunflower.picturepuzzle.ShowTips$1;
+
+        specialinvoke $r12.<com.evilsunflower.picturepuzzle.ShowTips$1: void <init>(com.evilsunflower.picturepuzzle.ShowTips)>($r10);
+
+        if $i0 == 24 goto label19;
+
+        virtualinvoke $r12.<com.evilsunflower.picturepuzzle.ShowTips$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label19:
+        if $i0 == 25 goto label17;
+
+     label20:
+        if $i0 == 26 goto label16;
+
+        if $i0 == 27 goto label21;
+
+        if $i0 == 28 goto label16;
+
+     label21:
+        if $i0 == 30 goto label29;
+
+        $r13 = new com.evilsunflower.picturepuzzle.picpuzzle;
+
+        specialinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void <init>()>();
+
+        if $i0 == 31 goto label29;
+
+        virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 33 goto label27;
+
+     label23:
+        if $i0 == 34 goto label24;
+
+        $z0 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label24:
+        if $i0 == 35 goto label25;
+
+        $z1 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label25:
+        if $i0 == 36 goto label26;
+
+        $z2 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label26:
+        if $i0 == 37 goto label23;
+
+     label27:
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label28;
+
+        if $i0 == 40 goto label22;
+
+     label28:
+        virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void onDestroy()>();
+
+     label29:
+        if $i0 == 42 goto label42;
+
+        $r14 = new com.vpon.adon.android.WebInApp;
+
+        specialinvoke $r14.<com.vpon.adon.android.WebInApp: void <init>()>();
+
+        if $i0 == 43 goto label42;
+
+        virtualinvoke $r14.<com.vpon.adon.android.WebInApp: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        if $i0 == 45 goto label41;
+
+     label31:
+        $r15 = new com.adwo.adsdk.j;
+
+        specialinvoke $r15.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r14, 0, 0L, "", false, false, false, false);
+
+        $r16 = new com.adwo.adsdk.r;
+
+        specialinvoke $r16.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r15);
+
+        if $i0 == 46 goto label32;
+
+        virtualinvoke $r16.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label32:
+        $r17 = new com.madhouse.android.ads.AdView;
+
+        specialinvoke $r17.<com.madhouse.android.ads.AdView: void <init>(android.content.Context)>($r14);
+
+        $r18 = new com.madhouse.android.ads.bbb;
+
+        specialinvoke $r18.<com.madhouse.android.ads.bbb: void <init>(com.madhouse.android.ads.AdView)>($r17);
+
+        if $i0 == 47 goto label33;
+
+        virtualinvoke $r18.<com.madhouse.android.ads.bbb: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label33:
+        $r19 = new com.adwo.adsdk.G;
+
+        specialinvoke $r19.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r14, "");
+
+        $r20 = new com.adwo.adsdk.H;
+
+        specialinvoke $r20.<com.adwo.adsdk.H: void <init>(com.adwo.adsdk.G)>($r19);
+
+        if $i0 == 48 goto label34;
+
+        virtualinvoke $r20.<com.adwo.adsdk.H: void onClick(android.view.View)>(null);
+
+     label34:
+        $r21 = new com.adwo.adsdk.j;
+
+        specialinvoke $r21.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r14, 0, 0L, "", false, false, false, false);
+
+        $r22 = new com.adwo.adsdk.q;
+
+        specialinvoke $r22.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r21);
+
+        if $i0 == 49 goto label35;
+
+        virtualinvoke $r22.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label35:
+        $r23 = new com.evilsunflower.picturepuzzle.JmAdV2;
+
+        specialinvoke $r23.<com.evilsunflower.picturepuzzle.JmAdV2: void <init>(android.app.Activity,int,boolean,android.widget.RelativeLayout)>($r14, 0, false, null);
+
+        $r24 = new com.evilsunflower.picturepuzzle.JmAdV2$1;
+
+        specialinvoke $r24.<com.evilsunflower.picturepuzzle.JmAdV2$1: void <init>(com.evilsunflower.picturepuzzle.JmAdV2)>($r23);
+
+        if $i0 == 50 goto label36;
+
+        virtualinvoke $r24.<com.evilsunflower.picturepuzzle.JmAdV2$1: void onClick(android.view.View)>(null);
+
+     label36:
+        $r25 = new com.adwo.adsdk.j;
+
+        specialinvoke $r25.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r14, 0, 0L, "", false, false, false, false);
+
+        $r26 = new com.adwo.adsdk.s;
+
+        specialinvoke $r26.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r25);
+
+        if $i0 == 51 goto label37;
+
+        virtualinvoke $r26.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label37:
+        $r27 = new com.madhouse.android.ads.AdView;
+
+        specialinvoke $r27.<com.madhouse.android.ads.AdView: void <init>(android.content.Context)>($r14);
+
+        $r28 = new com.madhouse.android.ads.aa;
+
+        specialinvoke $r28.<com.madhouse.android.ads.aa: void <init>(com.madhouse.android.ads.AdView)>($r27);
+
+        $r29 = new com.madhouse.android.ads.__;
+
+        specialinvoke $r29.<com.madhouse.android.ads.__: void <init>()>();
+
+        $r30 = new com.madhouse.android.ads.$$$;
+
+        specialinvoke $r30.<com.madhouse.android.ads.$$$: void <init>(com.madhouse.android.ads.__,android.content.Context)>($r29, $r14);
+
+        $r31 = new com.madhouse.android.ads.aaaa;
+
+        specialinvoke $r31.<com.madhouse.android.ads.aaaa: void <init>(com.madhouse.android.ads.aa,com.madhouse.android.ads.$$$,int)>($r28, $r30, 0);
+
+        $r32 = null;
+
+        $r33 = new com.madhouse.android.ads.aaaaa;
+
+        specialinvoke $r33.<com.madhouse.android.ads.aaaaa: void <init>(com.madhouse.android.ads.aaaa,com.madhouse.android.ads.$$$)>($r31, $r32);
+
+        if $i0 == 52 goto label38;
+
+        virtualinvoke $r33.<com.madhouse.android.ads.aaaaa: void onClick(android.view.View)>(null);
+
+     label38:
+        $r34 = new com.adwo.adsdk.G;
+
+        specialinvoke $r34.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r14, "");
+
+        $r35 = new com.adwo.adsdk.I;
+
+        specialinvoke $r35.<com.adwo.adsdk.I: void <init>(com.adwo.adsdk.G)>($r34);
+
+        if $i0 == 53 goto label39;
+
+        virtualinvoke $r35.<com.adwo.adsdk.I: void onClick(android.view.View)>(null);
+
+     label39:
+        if $i0 == 54 goto label40;
+
+        $z3 = virtualinvoke $r14.<com.vpon.adon.android.WebInApp: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label40:
+        if $i0 == 55 goto label31;
+
+     label41:
+        if $i0 == 56 goto label30;
+
+        if $i0 == 57 goto label42;
+
+        if $i0 == 58 goto label30;
+
+     label42:
+        if $i0 == 60 goto label44;
+
+        $r36 = new com.evilsunflower.picturepuzzle.Receiver;
+
+        specialinvoke $r36.<com.evilsunflower.picturepuzzle.Receiver: void <init>()>();
+
+        if $i0 == 61 goto label44;
+
+     label43:
+        virtualinvoke $r36.<com.evilsunflower.picturepuzzle.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 63 goto label43;
+
+     label44:
+        if $i0 == 64 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.2 seconds.
+[Spark] Solution found in 1.2 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 38 callback methods for 6 components
+Found {res/layout/main.xml=[2131034112 - com.admob.android.ads.AdView, -1 - android.widget.LinearLayout, 2131034113 - com.evilsunflower.picturepuzzle.PicView], res/layout/title.xml=[2131034115 - android.widget.TextView, 2131034116 - android.widget.TextView, 2131034114 - android.widget.RelativeLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 38 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/14f44e244274bf9a698960daa82d98d3fd66ac7e8fe6f7f9916f164e468c30a7.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: I.I is a phantom class!
+Warning: adon.b is a phantom class!
+Warning: adon.c is a phantom class!
+Warning: adon.d is a phantom class!
+Warning: adon.f is a phantom class!
+Warning: adon.g is a phantom class!
+Warning: adon.j is a phantom class!
+Warning: adon.k is a phantom class!
+Warning: adon.l is a phantom class!
+Warning: adon.r is a phantom class!
+Warning: android.webkit.GeolocationPermissions$Callback is a phantom class!
+Warning: b is a phantom class!
+Warning: net.youmi.android.AdView is a phantom class!
+Warning: net.youmi.android.AdListener is a phantom class!
+Warning: net.youmi.android.AdManager is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.animation.Animation
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.madhouse.android.ads.$$$, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.adwo.adsdk.AdwoAdBrowserActivity $r1;
+        com.adwo.adsdk.j $r2, $r4, $r6, $r17, $r27, $r36;
+        com.adwo.adsdk.s $r3, $r18;
+        com.adwo.adsdk.r $r5, $r28;
+        com.adwo.adsdk.q $r7, $r37;
+        com.evilsunflower.picturepuzzle.UpdateService $r8;
+        android.os.IBinder $r9;
+        com.evilsunflower.picturepuzzle.ShowTips $r10;
+        com.evilsunflower.picturepuzzle.ShowTips$1 $r11;
+        android.app.Dialog $r12;
+        com.evilsunflower.picturepuzzle.picpuzzle $r13;
+        com.evilsunflower.picturepuzzle.PicView $r14;
+        boolean $z0, $z1, $z2, $z3, $z4;
+        com.admob.android.ads.AdView $r15;
+        com.vpon.adon.android.WebInApp $r16;
+        com.evilsunflower.picturepuzzle.JmAdV2 $r19;
+        com.evilsunflower.picturepuzzle.JmAdV2$1 $r20;
+        com.adwo.adsdk.G $r21, $r23;
+        com.adwo.adsdk.H $r22;
+        com.adwo.adsdk.I $r24;
+        com.madhouse.android.ads.AdView $r25, $r29;
+        com.madhouse.android.ads.bbb $r26;
+        com.madhouse.android.ads.aa $r30;
+        com.madhouse.android.ads.__ $r31;
+        com.madhouse.android.ads.$$$ $r32, $r34;
+        com.madhouse.android.ads.aaaa $r33;
+        com.madhouse.android.ads.aaaaa $r35;
+        com.evilsunflower.picturepuzzle.Receiver $r38;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label10;
+
+        $r1 = new com.adwo.adsdk.AdwoAdBrowserActivity;
+
+        specialinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void <init>()>();
+
+        if $i0 == 1 goto label10;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onResume()>();
+
+        if $i0 == 3 goto label08;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <com.adwo.adsdk.AdwoAdBrowserActivity: void <clinit>()>();
+
+     label04:
+        $r2 = new com.adwo.adsdk.j;
+
+        specialinvoke $r2.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r3 = new com.adwo.adsdk.s;
+
+        specialinvoke $r3.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r2);
+
+        if $i0 == 5 goto label05;
+
+        virtualinvoke $r3.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label05:
+        $r4 = new com.adwo.adsdk.j;
+
+        specialinvoke $r4.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r5 = new com.adwo.adsdk.r;
+
+        specialinvoke $r5.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r4);
+
+        if $i0 == 6 goto label06;
+
+        virtualinvoke $r5.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label06:
+        $r6 = new com.adwo.adsdk.j;
+
+        specialinvoke $r6.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r1, 0, 0L, "", false, false, false, false);
+
+        $r7 = new com.adwo.adsdk.q;
+
+        specialinvoke $r7.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r6);
+
+        if $i0 == 7 goto label07;
+
+        virtualinvoke $r7.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label07:
+        if $i0 == 8 goto label03;
+
+     label08:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onPause()>();
+
+        if $i0 == 9 goto label02;
+
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onStop()>();
+
+        if $i0 == 10 goto label09;
+
+        if $i0 == 11 goto label02;
+
+     label09:
+        virtualinvoke $r1.<com.adwo.adsdk.AdwoAdBrowserActivity: void onDestroy()>();
+
+     label10:
+        if $i0 == 13 goto label15;
+
+        $r8 = new com.evilsunflower.picturepuzzle.UpdateService;
+
+        specialinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void <init>()>();
+
+        virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void onCreate()>();
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        if $i0 == 15 goto label11;
+
+     label12:
+        $r9 = virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 17 goto label14;
+
+        if $i0 == 18 goto label13;
+
+     label14:
+        virtualinvoke $r8.<com.evilsunflower.picturepuzzle.UpdateService: void onDestroy()>();
+
+     label15:
+        if $i0 == 19 goto label21;
+
+        $r10 = new com.evilsunflower.picturepuzzle.ShowTips;
+
+        specialinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: void <init>()>();
+
+        if $i0 == 20 goto label21;
+
+        virtualinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        if $i0 == 22 goto label20;
+
+     label17:
+        $r11 = new com.evilsunflower.picturepuzzle.ShowTips$1;
+
+        specialinvoke $r11.<com.evilsunflower.picturepuzzle.ShowTips$1: void <init>(com.evilsunflower.picturepuzzle.ShowTips)>($r10);
+
+        if $i0 == 23 goto label18;
+
+        virtualinvoke $r11.<com.evilsunflower.picturepuzzle.ShowTips$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label18:
+        if $i0 == 24 goto label19;
+
+        $r12 = virtualinvoke $r10.<com.evilsunflower.picturepuzzle.ShowTips: android.app.Dialog onCreateDialog(int)>(0);
+
+     label19:
+        if $i0 == 25 goto label17;
+
+     label20:
+        if $i0 == 26 goto label16;
+
+        if $i0 == 27 goto label21;
+
+        if $i0 == 28 goto label16;
+
+     label21:
+        if $i0 == 30 goto label39;
+
+        $r13 = new com.evilsunflower.picturepuzzle.picpuzzle;
+
+        specialinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void <init>()>();
+
+        if $i0 == 31 goto label39;
+
+        virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 33 goto label37;
+
+     label23:
+        $r14 = new com.evilsunflower.picturepuzzle.PicView;
+
+        specialinvoke $r14.<com.evilsunflower.picturepuzzle.PicView: void <init>(android.content.Context,android.util.AttributeSet)>($r13, null);
+
+        if $i0 == 34 goto label24;
+
+        $z0 = virtualinvoke $r14.<com.evilsunflower.picturepuzzle.PicView: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label24:
+        if $i0 == 35 goto label25;
+
+        staticinvoke <com.evilsunflower.picturepuzzle.PicView: void <clinit>()>();
+
+     label25:
+        if $i0 == 36 goto label26;
+
+        $z1 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label26:
+        if $i0 == 37 goto label27;
+
+        $z2 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label27:
+        if $i0 == 38 goto label28;
+
+        $z3 = virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label28:
+        $r15 = new com.admob.android.ads.AdView;
+
+        specialinvoke $r15.<com.admob.android.ads.AdView: void <init>(android.content.Context)>($r13);
+
+        if $i0 == 39 goto label29;
+
+        virtualinvoke $r15.<com.admob.android.ads.AdView: void setVisibility(int)>(0);
+
+     label29:
+        if $i0 == 40 goto label30;
+
+        virtualinvoke $r15.<com.admob.android.ads.AdView: void onDetachedFromWindow()>();
+
+     label30:
+        if $i0 == 41 goto label31;
+
+        staticinvoke <com.admob.android.ads.AdView: void <clinit>()>();
+
+     label31:
+        if $i0 == 42 goto label32;
+
+        virtualinvoke $r15.<com.admob.android.ads.AdView: void onMeasure(int,int)>(0, 0);
+
+     label32:
+        if $i0 == 43 goto label33;
+
+        $i1 = virtualinvoke $r15.<com.admob.android.ads.AdView: int getVisibility()>();
+
+     label33:
+        if $i0 == 44 goto label34;
+
+        virtualinvoke $r15.<com.admob.android.ads.AdView: void onWindowFocusChanged(boolean)>(false);
+
+     label34:
+        if $i0 == 45 goto label35;
+
+        virtualinvoke $r15.<com.admob.android.ads.AdView: void setBackgroundColor(int)>(0);
+
+     label35:
+        if $i0 == 46 goto label36;
+
+        virtualinvoke $r15.<com.admob.android.ads.AdView: void onAttachedToWindow()>();
+
+     label36:
+        if $i0 == 47 goto label23;
+
+     label37:
+        if $i0 == 48 goto label22;
+
+        if $i0 == 49 goto label38;
+
+        if $i0 == 50 goto label22;
+
+     label38:
+        virtualinvoke $r13.<com.evilsunflower.picturepuzzle.picpuzzle: void onDestroy()>();
+
+     label39:
+        if $i0 == 52 goto label52;
+
+        $r16 = new com.vpon.adon.android.WebInApp;
+
+        specialinvoke $r16.<com.vpon.adon.android.WebInApp: void <init>()>();
+
+        if $i0 == 53 goto label52;
+
+        virtualinvoke $r16.<com.vpon.adon.android.WebInApp: void onCreate(android.os.Bundle)>(null);
+
+     label40:
+        if $i0 == 55 goto label51;
+
+     label41:
+        $r17 = new com.adwo.adsdk.j;
+
+        specialinvoke $r17.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r16, 0, 0L, "", false, false, false, false);
+
+        $r18 = new com.adwo.adsdk.s;
+
+        specialinvoke $r18.<com.adwo.adsdk.s: void <init>(com.adwo.adsdk.j)>($r17);
+
+        if $i0 == 56 goto label42;
+
+        virtualinvoke $r18.<com.adwo.adsdk.s: void onClick(android.view.View)>(null);
+
+     label42:
+        $r19 = new com.evilsunflower.picturepuzzle.JmAdV2;
+
+        specialinvoke $r19.<com.evilsunflower.picturepuzzle.JmAdV2: void <init>(android.app.Activity,int,boolean,android.widget.RelativeLayout)>($r16, 0, false, null);
+
+        $r20 = new com.evilsunflower.picturepuzzle.JmAdV2$1;
+
+        specialinvoke $r20.<com.evilsunflower.picturepuzzle.JmAdV2$1: void <init>(com.evilsunflower.picturepuzzle.JmAdV2)>($r19);
+
+        if $i0 == 57 goto label43;
+
+        virtualinvoke $r20.<com.evilsunflower.picturepuzzle.JmAdV2$1: void onClick(android.view.View)>(null);
+
+     label43:
+        $r21 = new com.adwo.adsdk.G;
+
+        specialinvoke $r21.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r16, "");
+
+        $r22 = new com.adwo.adsdk.H;
+
+        specialinvoke $r22.<com.adwo.adsdk.H: void <init>(com.adwo.adsdk.G)>($r21);
+
+        if $i0 == 58 goto label44;
+
+        virtualinvoke $r22.<com.adwo.adsdk.H: void onClick(android.view.View)>(null);
+
+     label44:
+        if $i0 == 59 goto label45;
+
+        $z4 = virtualinvoke $r16.<com.vpon.adon.android.WebInApp: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label45:
+        $r23 = new com.adwo.adsdk.G;
+
+        specialinvoke $r23.<com.adwo.adsdk.G: void <init>(android.content.Context,java.lang.String)>($r16, "");
+
+        $r24 = new com.adwo.adsdk.I;
+
+        specialinvoke $r24.<com.adwo.adsdk.I: void <init>(com.adwo.adsdk.G)>($r23);
+
+        if $i0 == 60 goto label46;
+
+        virtualinvoke $r24.<com.adwo.adsdk.I: void onClick(android.view.View)>(null);
+
+     label46:
+        $r25 = new com.madhouse.android.ads.AdView;
+
+        specialinvoke $r25.<com.madhouse.android.ads.AdView: void <init>(android.content.Context)>($r16);
+
+        $r26 = new com.madhouse.android.ads.bbb;
+
+        specialinvoke $r26.<com.madhouse.android.ads.bbb: void <init>(com.madhouse.android.ads.AdView)>($r25);
+
+        if $i0 == 61 goto label47;
+
+        virtualinvoke $r26.<com.madhouse.android.ads.bbb: void onAnimationEnd(android.view.animation.Animation)>(null);
+
+     label47:
+        $r27 = new com.adwo.adsdk.j;
+
+        specialinvoke $r27.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r16, 0, 0L, "", false, false, false, false);
+
+        $r28 = new com.adwo.adsdk.r;
+
+        specialinvoke $r28.<com.adwo.adsdk.r: void <init>(com.adwo.adsdk.j)>($r27);
+
+        if $i0 == 62 goto label48;
+
+        virtualinvoke $r28.<com.adwo.adsdk.r: void onClick(android.view.View)>(null);
+
+     label48:
+        $r29 = new com.madhouse.android.ads.AdView;
+
+        specialinvoke $r29.<com.madhouse.android.ads.AdView: void <init>(android.content.Context)>($r16);
+
+        $r30 = new com.madhouse.android.ads.aa;
+
+        specialinvoke $r30.<com.madhouse.android.ads.aa: void <init>(com.madhouse.android.ads.AdView)>($r29);
+
+        $r31 = new com.madhouse.android.ads.__;
+
+        specialinvoke $r31.<com.madhouse.android.ads.__: void <init>()>();
+
+        $r32 = new com.madhouse.android.ads.$$$;
+
+        specialinvoke $r32.<com.madhouse.android.ads.$$$: void <init>(com.madhouse.android.ads.__,android.content.Context)>($r31, $r16);
+
+        $r33 = new com.madhouse.android.ads.aaaa;
+
+        specialinvoke $r33.<com.madhouse.android.ads.aaaa: void <init>(com.madhouse.android.ads.aa,com.madhouse.android.ads.$$$,int)>($r30, $r32, 0);
+
+        $r34 = null;
+
+        $r35 = new com.madhouse.android.ads.aaaaa;
+
+        specialinvoke $r35.<com.madhouse.android.ads.aaaaa: void <init>(com.madhouse.android.ads.aaaa,com.madhouse.android.ads.$$$)>($r33, $r34);
+
+        if $i0 == 63 goto label49;
+
+        virtualinvoke $r35.<com.madhouse.android.ads.aaaaa: void onClick(android.view.View)>(null);
+
+     label49:
+        $r36 = new com.adwo.adsdk.j;
+
+        specialinvoke $r36.<com.adwo.adsdk.j: void <init>(android.app.Activity,int,long,java.lang.String,boolean,boolean,boolean,boolean)>($r16, 0, 0L, "", false, false, false, false);
+
+        $r37 = new com.adwo.adsdk.q;
+
+        specialinvoke $r37.<com.adwo.adsdk.q: void <init>(com.adwo.adsdk.j)>($r36);
+
+        if $i0 == 64 goto label50;
+
+        virtualinvoke $r37.<com.adwo.adsdk.q: void onClick(android.view.View)>(null);
+
+     label50:
+        if $i0 == 65 goto label41;
+
+     label51:
+        if $i0 == 66 goto label40;
+
+        if $i0 == 67 goto label52;
+
+        if $i0 == 68 goto label40;
+
+     label52:
+        if $i0 == 70 goto label54;
+
+        $r38 = new com.evilsunflower.picturepuzzle.Receiver;
+
+        specialinvoke $r38.<com.evilsunflower.picturepuzzle.Receiver: void <init>()>();
+
+        if $i0 == 71 goto label54;
+
+     label53:
+        virtualinvoke $r38.<com.evilsunflower.picturepuzzle.Receiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 73 goto label53;
+
+     label54:
+        if $i0 == 74 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.4 seconds.
+[Spark] Solution found in 1.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.513423843 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.161291734 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3395 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 80 sources and 101 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 9661
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 38658
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 160971 forward and 36469 backward edges solved, processing 20 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 20 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.005243789 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r4) in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() in method <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r1) in method <com.admob.android.ads.AdManager: java.lang.String getUserAgent()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() in method <com.admob.android.ads.AdManager: java.lang.String getUserAgent()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMob SDK", $r0) in method <com.admob.android.ads.AdManager: void clientError(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AdMob SDK", $r2) in method <com.admob.android.ads.Ad: android.graphics.Bitmap getIcon()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r12.<android.content.Context: void startActivity(android.content.Intent)>($r11) in method <com.adwo.adsdk.g: void run()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.g: void run()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[])>($r10) in method <com.evilsunflower.picturepuzzle.UpdateService: void updateInfo(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("SAFE_PID") in method <com.evilsunflower.picturepuzzle.UpdateService: void onCreate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.evilsunflower.picturepuzzle.UpdateService: void updateInfo(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r6) in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("PicView:onTouchEvent:", $r4) in method <com.evilsunflower.picturepuzzle.PicView: boolean onTouchEvent(android.view.MotionEvent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.MotionEvent in method <com.evilsunflower.picturepuzzle.PicView: boolean onTouchEvent(android.view.MotionEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.admob.android.ads.Ad: android.graphics.Bitmap fetchImage(java.lang.String,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r2) in method <com.madhouse.android.ads.cc: boolean _(android.content.Context,java.lang.String,byte[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<java.net.URLConnection: java.io.InputStream getInputStream()>() in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1) in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("PicView:onTouchEvent:", $r4) in method <com.evilsunflower.picturepuzzle.PicView: boolean onTouchEvent(android.view.MotionEvent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.MotionEvent in method <com.evilsunflower.picturepuzzle.PicView: boolean onTouchEvent(android.view.MotionEvent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r2) in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) in method <com.madhouse.android.ads.$$$$$: java.lang.String _(android.content.Context,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.evilsunflower.picturepuzzle.Receiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.evilsunflower.picturepuzzle.Receiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r28.<java.io.OutputStream: void write(byte[])>($r0) in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r2) in method <com.admob.android.ads.AdManager: void setPublisherId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") in method <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0) in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r4), from the following sources:
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLatitude()>() (in <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>)
+	- $d0 = virtualinvoke $r2.<android.location.Location: double getLongitude()>() (in <com.admob.android.ads.AdManager: java.lang.String getCoordinatesAsString(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r1), from the following sources:
+	- $r1 = virtualinvoke $r2.<java.util.Locale: java.lang.String getCountry()>() (in <com.admob.android.ads.AdManager: java.lang.String getUserAgent()>)
+Found a flow to sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>("AdMob SDK", $r0), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AdMob SDK", $r2), from the following sources:
+	- $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink virtualinvoke $r12.<android.content.Context: void startActivity(android.content.Intent)>($r11), from the following sources:
+	- $r9 = virtualinvoke $r8.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.g: void run()>)
+Found a flow to sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[])>($r10), from the following sources:
+	- $r5 = virtualinvoke $r1.<android.os.Bundle: java.lang.Object get(java.lang.String)>("SAFE_PID") (in <com.evilsunflower.picturepuzzle.UpdateService: void onCreate()>)
+	- $r5 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.evilsunflower.picturepuzzle.UpdateService: void updateInfo(java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("AdMob SDK", $r6), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("PicView:onTouchEvent:", $r4), from the following sources:
+	- $r1 := @parameter0: android.view.MotionEvent (in <com.evilsunflower.picturepuzzle.PicView: boolean onTouchEvent(android.view.MotionEvent)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink virtualinvoke $r3.<java.io.FileOutputStream: void write(byte[])>($r2), from the following sources:
+	- $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>)
+	- $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>)
+	- $r3 = virtualinvoke $r2.<java.net.URLConnection: java.io.InputStream getInputStream()>() (in <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,boolean)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r1), from the following sources:
+	- $r5 = virtualinvoke $r4.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.admob.android.ads.AdRequester: com.admob.android.ads.Ad requestAd(android.content.Context,java.lang.String,java.lang.String)>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("PicView:onTouchEvent:", $r4), from the following sources:
+	- $r1 := @parameter0: android.view.MotionEvent (in <com.evilsunflower.picturepuzzle.PicView: boolean onTouchEvent(android.view.MotionEvent)>)
+Found a flow to sink specialinvoke $r3.<java.net.URL: void <init>(java.lang.String)>($r2), from the following sources:
+	- $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>)
+	- $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>)
+	- $r1 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>($r1) (in <com.madhouse.android.ads.$$$$$: java.lang.String _(android.content.Context,java.lang.String)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.evilsunflower.picturepuzzle.Receiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r28.<java.io.OutputStream: void write(byte[])>($r0), from the following sources:
+	- $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>)
+	- $r13 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.adwo.adsdk.i: com.adwo.adsdk.f a(android.content.Context,byte,byte)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AdMob SDK", $r2), from the following sources:
+	- $r1 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ADMOB_PUBLISHER_ID") (in <com.admob.android.ads.AdManager: java.lang.String getPublisherId(android.content.Context)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r0), from the following sources:
+	- $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>)
+	- $r7 = virtualinvoke $r3.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.madhouse.android.ads.$$$$: byte[] _(java.lang.String,java.lang.String,java.lang.String)>)
+Maximum memory consumption: 678.186704 MB
+Analysis has run for 9.979695253 seconds

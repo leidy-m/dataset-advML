@@ -1,0 +1,3393 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.02841642 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.vpon.adon.android.WebInApp is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.waps.OffersWebView $r1;
+        com.androidemu.harvefyzj.StateSlotsActivity $r2;
+        com.androidemu.harvefyzj.CheatsActivity $r3;
+        com.androidemu.harvefyzj.MainActivity $r4;
+        com.androidemu.harvefyzj.EmulatorService $r5;
+        android.os.IBinder $r6;
+        com.androidemu.harvefyzj.FileChooser $r7;
+        com.androidemu.harvefyzj.EmulatorSettings $r8;
+        com.androidemu.harvefyzj.EmulatorActivity $r9;
+        com.androidemu.harvefyzj.KeyProfilesActivity $r10;
+        com.androidemu.harvefyzj.HelpActivity $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r1 = new com.waps.OffersWebView;
+
+        specialinvoke $r1.<com.waps.OffersWebView: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onResume()>();
+
+        if $i0 == 3 goto label02;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onStop()>();
+
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onDestroy()>();
+
+     label04:
+        if $i0 == 7 goto label06;
+
+        $r2 = new com.androidemu.harvefyzj.StateSlotsActivity;
+
+        specialinvoke $r2.<com.androidemu.harvefyzj.StateSlotsActivity: void <init>()>();
+
+        if $i0 == 8 goto label06;
+
+        virtualinvoke $r2.<com.androidemu.harvefyzj.StateSlotsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        if $i0 == 11 goto label06;
+
+        if $i0 == 12 goto label05;
+
+     label06:
+        if $i0 == 14 goto label08;
+
+        $r3 = new com.androidemu.harvefyzj.CheatsActivity;
+
+        specialinvoke $r3.<com.androidemu.harvefyzj.CheatsActivity: void <init>()>();
+
+        if $i0 == 15 goto label08;
+
+        virtualinvoke $r3.<com.androidemu.harvefyzj.CheatsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.androidemu.harvefyzj.CheatsActivity: void onStop()>();
+
+        if $i0 == 18 goto label08;
+
+        if $i0 == 19 goto label07;
+
+     label08:
+        if $i0 == 21 goto label10;
+
+        $r4 = new com.androidemu.harvefyzj.MainActivity;
+
+        specialinvoke $r4.<com.androidemu.harvefyzj.MainActivity: void <init>()>();
+
+        if $i0 == 22 goto label10;
+
+        virtualinvoke $r4.<com.androidemu.harvefyzj.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        virtualinvoke $r4.<com.androidemu.harvefyzj.MainActivity: void onResume()>();
+
+        virtualinvoke $r4.<com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 24 goto label09;
+
+        if $i0 == 25 goto label10;
+
+        if $i0 == 26 goto label09;
+
+     label10:
+        if $i0 == 28 goto label15;
+
+        $r5 = new com.androidemu.harvefyzj.EmulatorService;
+
+        specialinvoke $r5.<com.androidemu.harvefyzj.EmulatorService: void <init>()>();
+
+        virtualinvoke $r5.<com.androidemu.harvefyzj.EmulatorService: void onCreate()>();
+
+        virtualinvoke $r5.<com.androidemu.harvefyzj.EmulatorService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label11:
+        if $i0 == 29 goto label12;
+
+        $i1 = virtualinvoke $r5.<com.androidemu.harvefyzj.EmulatorService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 30 goto label11;
+
+     label12:
+        $r6 = virtualinvoke $r5.<com.androidemu.harvefyzj.EmulatorService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 32 goto label14;
+
+        if $i0 == 33 goto label13;
+
+     label14:
+        virtualinvoke $r5.<com.androidemu.harvefyzj.EmulatorService: void onDestroy()>();
+
+     label15:
+        if $i0 == 34 goto label17;
+
+        $r7 = new com.androidemu.harvefyzj.FileChooser;
+
+        specialinvoke $r7.<com.androidemu.harvefyzj.FileChooser: void <init>()>();
+
+        if $i0 == 35 goto label17;
+
+        virtualinvoke $r7.<com.androidemu.harvefyzj.FileChooser: void onCreate(android.os.Bundle)>(null);
+
+     label16:
+        virtualinvoke $r7.<com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 37 goto label16;
+
+        if $i0 == 38 goto label17;
+
+        if $i0 == 39 goto label16;
+
+     label17:
+        if $i0 == 41 goto label19;
+
+        $r8 = new com.androidemu.harvefyzj.EmulatorSettings;
+
+        specialinvoke $r8.<com.androidemu.harvefyzj.EmulatorSettings: void <init>()>();
+
+        if $i0 == 42 goto label19;
+
+        virtualinvoke $r8.<com.androidemu.harvefyzj.EmulatorSettings: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        if $i0 == 45 goto label19;
+
+        if $i0 == 46 goto label18;
+
+     label19:
+        if $i0 == 48 goto label22;
+
+        $r9 = new com.androidemu.harvefyzj.EmulatorActivity;
+
+        specialinvoke $r9.<com.androidemu.harvefyzj.EmulatorActivity: void <init>()>();
+
+        if $i0 == 49 goto label22;
+
+        virtualinvoke $r9.<com.androidemu.harvefyzj.EmulatorActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        virtualinvoke $r9.<com.androidemu.harvefyzj.EmulatorActivity: void onResume()>();
+
+        virtualinvoke $r9.<com.androidemu.harvefyzj.EmulatorActivity: void onPause()>();
+
+        if $i0 == 51 goto label20;
+
+        if $i0 == 52 goto label21;
+
+        if $i0 == 53 goto label20;
+
+     label21:
+        virtualinvoke $r9.<com.androidemu.harvefyzj.EmulatorActivity: void onDestroy()>();
+
+     label22:
+        if $i0 == 55 goto label24;
+
+        $r10 = new com.androidemu.harvefyzj.KeyProfilesActivity;
+
+        specialinvoke $r10.<com.androidemu.harvefyzj.KeyProfilesActivity: void <init>()>();
+
+        if $i0 == 56 goto label24;
+
+        virtualinvoke $r10.<com.androidemu.harvefyzj.KeyProfilesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        if $i0 == 59 goto label24;
+
+        if $i0 == 60 goto label23;
+
+     label24:
+        if $i0 == 62 goto label26;
+
+        $r11 = new com.androidemu.harvefyzj.HelpActivity;
+
+        specialinvoke $r11.<com.androidemu.harvefyzj.HelpActivity: void <init>()>();
+
+        if $i0 == 63 goto label26;
+
+        virtualinvoke $r11.<com.androidemu.harvefyzj.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 66 goto label26;
+
+        if $i0 == 67 goto label25;
+
+     label26:
+        if $i0 == 71 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.3 seconds.
+[Spark] Solution found in 1.3 seconds.
+Callback analysis done.
+Warning: FrameLayout is a phantom class!
+Warning: com.androidemu.harvefyzj.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Warning: ListView is a phantom class!
+Warning: com.androidemu.harvefyzj.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.androidemu.harvefyzj.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/cheats.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.androidemu.harvefyzj.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: com.androidemu.harvefyzj.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.androidemu.harvefyzj.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 2 layout controls in file res/layout/emulator.xml
+Warning: ImageButton is a phantom class!
+Warning: com.androidemu.harvefyzj.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Warning: EditText is a phantom class!
+Warning: com.androidemu.harvefyzj.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.androidemu.harvefyzj.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 3 layout controls in file res/layout/file_chooser.xml
+Found 4 layout controls in file res/layout/game_gripper.xml
+Warning: ScrollView is a phantom class!
+Warning: com.androidemu.harvefyzj.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Found 5 layout controls in file res/layout/new_cheat.xml
+Found 6 layout controls in file res/layout/new_profile.xml
+Warning: SeekBar is a phantom class!
+Warning: com.androidemu.harvefyzj.SeekBar is a phantom class!
+Warning: android.view.SeekBar is a phantom class!
+Found 7 layout controls in file res/layout/seekbar_dialog.xml
+Found 8 layout controls in file res/layout/shortcut.xml
+Found 9 layout controls in file res/layout/state_slot_item.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.vpon.adon.android.WebInApp is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.PreferenceScreen
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.waps.OffersWebView $r1;
+        com.waps.u $r2;
+        com.waps.aa $r3;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24;
+        com.waps.y $r4;
+        com.waps.x $r5;
+        com.waps.ac $r6;
+        com.waps.v $r7;
+        com.waps.ab $r8;
+        com.waps.z $r9;
+        com.waps.w $r10;
+        com.waps.ad $r11;
+        com.androidemu.harvefyzj.StateSlotsActivity $r12;
+        com.androidemu.harvefyzj.CheatsActivity $r13;
+        android.app.Dialog $r14, $r17, $r29, $r40, $r42;
+        com.androidemu.harvefyzj.CheatsActivity$1 $r15;
+        com.androidemu.harvefyzj.MainActivity $r16, $r28;
+        com.waps.DisplayAd $r18, $r33;
+        com.waps.s $r19, $r34;
+        com.androidemu.harvefyzj.MainActivity$2 $r20;
+        com.androidemu.harvefyzj.EmulatorActivation$3 $r21;
+        com.androidemu.harvefyzj.MainActivity$1 $r22;
+        com.androidemu.harvefyzj.EmulatorActivation$4 $r23;
+        com.androidemu.harvefyzj.EmulatorActivation$2 $r24;
+        com.androidemu.harvefyzj.EmulatorService $r25;
+        android.os.IBinder $r26;
+        com.androidemu.harvefyzj.FileChooser $r27;
+        com.androidemu.harvefyzj.EmulatorSettings $r30;
+        com.androidemu.harvefyzj.EmulatorActivity $r31;
+        com.androidemu.harvefyzj.EmulatorViewInit$2 $r32;
+        com.androidemu.harvefyzj.EmulatorActivity$2 $r35;
+        com.androidemu.harvefyzj.EmulatorViewInit$3 $r36;
+        com.androidemu.harvefyzj.EmulatorActivity$1 $r37;
+        com.androidemu.harvefyzj.input.SensorKeypad $r38;
+        com.androidemu.harvefyzj.input.Keyboard $r39;
+        com.androidemu.harvefyzj.KeyProfilesActivity $r41;
+        com.androidemu.harvefyzj.KeyProfilesActivity$2 $r43;
+        com.androidemu.harvefyzj.HelpActivity $r44;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label017;
+
+        $r1 = new com.waps.OffersWebView;
+
+        specialinvoke $r1.<com.waps.OffersWebView: void <init>()>();
+
+        if $i0 == 1 goto label017;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onResume()>();
+
+        if $i0 == 3 goto label015;
+
+     label003:
+        $r2 = new com.waps.u;
+
+        specialinvoke $r2.<com.waps.u: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 4 goto label004;
+
+        virtualinvoke $r2.<com.waps.u: void onClick(android.view.View)>(null);
+
+     label004:
+        $r3 = new com.waps.aa;
+
+        specialinvoke $r3.<com.waps.aa: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 5 goto label005;
+
+        virtualinvoke $r3.<com.waps.aa: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label005:
+        if $i0 == 6 goto label006;
+
+        $z0 = virtualinvoke $r1.<com.waps.OffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label006:
+        $r4 = new com.waps.y;
+
+        specialinvoke $r4.<com.waps.y: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 7 goto label007;
+
+        virtualinvoke $r4.<com.waps.y: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label007:
+        $r5 = new com.waps.x;
+
+        specialinvoke $r5.<com.waps.x: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 8 goto label008;
+
+        virtualinvoke $r5.<com.waps.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label008:
+        $r6 = new com.waps.ac;
+
+        specialinvoke $r6.<com.waps.ac: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 9 goto label009;
+
+        virtualinvoke $r6.<com.waps.ac: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label009:
+        $r7 = new com.waps.v;
+
+        specialinvoke $r7.<com.waps.v: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 10 goto label010;
+
+        virtualinvoke $r7.<com.waps.v: void onClick(android.view.View)>(null);
+
+     label010:
+        $r8 = new com.waps.ab;
+
+        specialinvoke $r8.<com.waps.ab: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 11 goto label011;
+
+        virtualinvoke $r8.<com.waps.ab: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label011:
+        $r9 = new com.waps.z;
+
+        specialinvoke $r9.<com.waps.z: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 12 goto label012;
+
+        virtualinvoke $r9.<com.waps.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label012:
+        $r10 = new com.waps.w;
+
+        specialinvoke $r10.<com.waps.w: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 13 goto label013;
+
+        virtualinvoke $r10.<com.waps.w: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label013:
+        $r11 = new com.waps.ad;
+
+        specialinvoke $r11.<com.waps.ad: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 14 goto label014;
+
+        virtualinvoke $r11.<com.waps.ad: void onClick(android.view.View)>(null);
+
+     label014:
+        if $i0 == 15 goto label003;
+
+     label015:
+        if $i0 == 16 goto label002;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onStop()>();
+
+        if $i0 == 17 goto label016;
+
+        if $i0 == 18 goto label002;
+
+     label016:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onDestroy()>();
+
+     label017:
+        if $i0 == 20 goto label024;
+
+        $r12 = new com.androidemu.harvefyzj.StateSlotsActivity;
+
+        specialinvoke $r12.<com.androidemu.harvefyzj.StateSlotsActivity: void <init>()>();
+
+        if $i0 == 21 goto label024;
+
+        virtualinvoke $r12.<com.androidemu.harvefyzj.StateSlotsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label018:
+        if $i0 == 23 goto label023;
+
+     label019:
+        if $i0 == 24 goto label020;
+
+        virtualinvoke $r12.<com.androidemu.harvefyzj.StateSlotsActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label020:
+        if $i0 == 25 goto label021;
+
+        $z1 = virtualinvoke $r12.<com.androidemu.harvefyzj.StateSlotsActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label021:
+        if $i0 == 26 goto label022;
+
+        virtualinvoke $r12.<com.androidemu.harvefyzj.StateSlotsActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label022:
+        if $i0 == 27 goto label019;
+
+     label023:
+        if $i0 == 28 goto label018;
+
+        if $i0 == 29 goto label024;
+
+        if $i0 == 30 goto label018;
+
+     label024:
+        if $i0 == 32 goto label036;
+
+        $r13 = new com.androidemu.harvefyzj.CheatsActivity;
+
+        specialinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: void <init>()>();
+
+        if $i0 == 33 goto label036;
+
+        virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label025:
+        if $i0 == 35 goto label035;
+
+     label026:
+        if $i0 == 36 goto label027;
+
+        $z2 = virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label027:
+        if $i0 == 37 goto label028;
+
+        virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label028:
+        if $i0 == 38 goto label029;
+
+        virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label029:
+        if $i0 == 39 goto label030;
+
+        $z3 = virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label030:
+        if $i0 == 40 goto label031;
+
+        $r14 = virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label031:
+        if $i0 == 41 goto label032;
+
+        $z4 = virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label032:
+        if $i0 == 42 goto label033;
+
+        virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label033:
+        $r15 = new com.androidemu.harvefyzj.CheatsActivity$1;
+
+        specialinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity$1: void <init>(com.androidemu.harvefyzj.CheatsActivity)>($r13);
+
+        if $i0 == 43 goto label034;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label034:
+        if $i0 == 44 goto label026;
+
+     label035:
+        if $i0 == 45 goto label025;
+
+        virtualinvoke $r13.<com.androidemu.harvefyzj.CheatsActivity: void onStop()>();
+
+        if $i0 == 46 goto label036;
+
+        if $i0 == 47 goto label025;
+
+     label036:
+        if $i0 == 49 goto label055;
+
+        $r16 = new com.androidemu.harvefyzj.MainActivity;
+
+        specialinvoke $r16.<com.androidemu.harvefyzj.MainActivity: void <init>()>();
+
+        if $i0 == 50 goto label055;
+
+        virtualinvoke $r16.<com.androidemu.harvefyzj.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label037:
+        virtualinvoke $r16.<com.androidemu.harvefyzj.MainActivity: void onResume()>();
+
+        if $i0 == 52 goto label054;
+
+     label038:
+        if $i0 == 53 goto label039;
+
+        staticinvoke <com.androidemu.harvefyzj.MainActivity: void <clinit>()>();
+
+     label039:
+        if $i0 == 54 goto label040;
+
+        virtualinvoke $r16.<com.androidemu.harvefyzj.MainActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label040:
+        if $i0 == 55 goto label041;
+
+        $z5 = virtualinvoke $r16.<com.androidemu.harvefyzj.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label041:
+        if $i0 == 56 goto label042;
+
+        virtualinvoke $r16.<com.androidemu.harvefyzj.MainActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label042:
+        if $i0 == 57 goto label043;
+
+        $r17 = virtualinvoke $r16.<com.androidemu.harvefyzj.MainActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label043:
+        if $i0 == 58 goto label044;
+
+        $z6 = virtualinvoke $r16.<com.androidemu.harvefyzj.MainActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label044:
+        if $i0 == 59 goto label045;
+
+        $z7 = virtualinvoke $r16.<com.androidemu.harvefyzj.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label045:
+        $r18 = new com.waps.DisplayAd;
+
+        specialinvoke $r18.<com.waps.DisplayAd: void <init>(android.content.Context)>($r16);
+
+        $r19 = new com.waps.s;
+
+        specialinvoke $r19.<com.waps.s: void <init>(com.waps.DisplayAd)>($r18);
+
+        if $i0 == 60 goto label046;
+
+        virtualinvoke $r19.<com.waps.s: void onClick(android.view.View)>(null);
+
+     label046:
+        $r20 = new com.androidemu.harvefyzj.MainActivity$2;
+
+        specialinvoke $r20.<com.androidemu.harvefyzj.MainActivity$2: void <init>(com.androidemu.harvefyzj.MainActivity)>($r16);
+
+        if $i0 == 61 goto label047;
+
+        virtualinvoke $r20.<com.androidemu.harvefyzj.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label047:
+        $r21 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r21.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        if $i0 == 62 goto label048;
+
+        virtualinvoke $r21.<com.androidemu.harvefyzj.EmulatorActivation$3: void onClick(android.view.View)>(null);
+
+     label048:
+        $r22 = new com.androidemu.harvefyzj.MainActivity$1;
+
+        specialinvoke $r22.<com.androidemu.harvefyzj.MainActivity$1: void <init>(com.androidemu.harvefyzj.MainActivity)>($r16);
+
+        if $i0 == 63 goto label049;
+
+        virtualinvoke $r22.<com.androidemu.harvefyzj.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label049:
+        $r23 = new com.androidemu.harvefyzj.EmulatorActivation$4;
+
+        specialinvoke $r23.<com.androidemu.harvefyzj.EmulatorActivation$4: void <init>()>();
+
+        if $i0 == 64 goto label050;
+
+        virtualinvoke $r23.<com.androidemu.harvefyzj.EmulatorActivation$4: void onClick(android.view.View)>(null);
+
+     label050:
+        $r24 = new com.androidemu.harvefyzj.EmulatorActivation$2;
+
+        specialinvoke $r24.<com.androidemu.harvefyzj.EmulatorActivation$2: void <init>(int)>(0);
+
+        if $i0 == 65 goto label051;
+
+        virtualinvoke $r24.<com.androidemu.harvefyzj.EmulatorActivation$2: void onClick(android.view.View)>(null);
+
+     label051:
+        if $i0 == 66 goto label052;
+
+        virtualinvoke $r16.<com.androidemu.harvefyzj.FileChooser: void onClick(android.view.View)>(null);
+
+     label052:
+        if $i0 == 67 goto label053;
+
+        $z8 = virtualinvoke $r16.<com.androidemu.harvefyzj.FileChooser: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label053:
+        if $i0 == 68 goto label038;
+
+     label054:
+        virtualinvoke $r16.<com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 69 goto label037;
+
+        if $i0 == 70 goto label055;
+
+        if $i0 == 71 goto label037;
+
+     label055:
+        if $i0 == 73 goto label060;
+
+        $r25 = new com.androidemu.harvefyzj.EmulatorService;
+
+        specialinvoke $r25.<com.androidemu.harvefyzj.EmulatorService: void <init>()>();
+
+        virtualinvoke $r25.<com.androidemu.harvefyzj.EmulatorService: void onCreate()>();
+
+        virtualinvoke $r25.<com.androidemu.harvefyzj.EmulatorService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label056:
+        if $i0 == 74 goto label057;
+
+        $i1 = virtualinvoke $r25.<com.androidemu.harvefyzj.EmulatorService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 75 goto label056;
+
+     label057:
+        $r26 = virtualinvoke $r25.<com.androidemu.harvefyzj.EmulatorService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label058:
+        if $i0 == 77 goto label059;
+
+        if $i0 == 78 goto label058;
+
+     label059:
+        virtualinvoke $r25.<com.androidemu.harvefyzj.EmulatorService: void onDestroy()>();
+
+     label060:
+        if $i0 == 79 goto label077;
+
+        $r27 = new com.androidemu.harvefyzj.FileChooser;
+
+        specialinvoke $r27.<com.androidemu.harvefyzj.FileChooser: void <init>()>();
+
+        if $i0 == 80 goto label077;
+
+        virtualinvoke $r27.<com.androidemu.harvefyzj.FileChooser: void onCreate(android.os.Bundle)>(null);
+
+     label061:
+        if $i0 == 82 goto label076;
+
+     label062:
+        $r28 = new com.androidemu.harvefyzj.MainActivity;
+
+        specialinvoke $r28.<com.androidemu.harvefyzj.MainActivity: void <init>()>();
+
+        if $i0 == 83 goto label063;
+
+        staticinvoke <com.androidemu.harvefyzj.MainActivity: void <clinit>()>();
+
+     label063:
+        if $i0 == 84 goto label064;
+
+        virtualinvoke $r28.<com.androidemu.harvefyzj.MainActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label064:
+        if $i0 == 85 goto label065;
+
+        $z9 = virtualinvoke $r28.<com.androidemu.harvefyzj.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label065:
+        if $i0 == 86 goto label066;
+
+        virtualinvoke $r28.<com.androidemu.harvefyzj.MainActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label066:
+        if $i0 == 87 goto label067;
+
+        $r29 = virtualinvoke $r28.<com.androidemu.harvefyzj.MainActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label067:
+        if $i0 == 88 goto label068;
+
+        $z10 = virtualinvoke $r28.<com.androidemu.harvefyzj.MainActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label068:
+        if $i0 == 89 goto label069;
+
+        $z11 = virtualinvoke $r28.<com.androidemu.harvefyzj.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label069:
+        if $i0 == 90 goto label070;
+
+        virtualinvoke $r27.<com.androidemu.harvefyzj.FileChooser: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label070:
+        if $i0 == 91 goto label071;
+
+        $z12 = virtualinvoke $r27.<com.androidemu.harvefyzj.FileChooser: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label071:
+        if $i0 == 92 goto label072;
+
+        virtualinvoke $r27.<com.androidemu.harvefyzj.FileChooser: void onClick(android.view.View)>(null);
+
+     label072:
+        if $i0 == 93 goto label073;
+
+        staticinvoke <com.androidemu.harvefyzj.FileChooser: void <clinit>()>();
+
+     label073:
+        if $i0 == 94 goto label074;
+
+        $z13 = virtualinvoke $r27.<com.androidemu.harvefyzj.FileChooser: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label074:
+        if $i0 == 95 goto label075;
+
+        $z14 = virtualinvoke $r27.<com.androidemu.harvefyzj.FileChooser: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label075:
+        if $i0 == 96 goto label062;
+
+     label076:
+        virtualinvoke $r27.<com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 97 goto label061;
+
+        if $i0 == 98 goto label077;
+
+        if $i0 == 99 goto label061;
+
+     label077:
+        if $i0 == 101 goto label084;
+
+        $r30 = new com.androidemu.harvefyzj.EmulatorSettings;
+
+        specialinvoke $r30.<com.androidemu.harvefyzj.EmulatorSettings: void <init>()>();
+
+        if $i0 == 102 goto label084;
+
+        virtualinvoke $r30.<com.androidemu.harvefyzj.EmulatorSettings: void onCreate(android.os.Bundle)>(null);
+
+     label078:
+        if $i0 == 104 goto label083;
+
+     label079:
+        if $i0 == 105 goto label080;
+
+        virtualinvoke $r30.<com.androidemu.harvefyzj.EmulatorSettings: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label080:
+        if $i0 == 106 goto label081;
+
+        staticinvoke <com.androidemu.harvefyzj.EmulatorSettings: void <clinit>()>();
+
+     label081:
+        if $i0 == 107 goto label082;
+
+        $z15 = virtualinvoke $r30.<com.androidemu.harvefyzj.EmulatorSettings: boolean onPreferenceTreeClick(android.preference.PreferenceScreen,android.preference.Preference)>(null, null);
+
+     label082:
+        if $i0 == 108 goto label079;
+
+     label083:
+        if $i0 == 109 goto label078;
+
+        if $i0 == 110 goto label084;
+
+        if $i0 == 111 goto label078;
+
+     label084:
+        if $i0 == 113 goto label111;
+
+        $r31 = new com.androidemu.harvefyzj.EmulatorActivity;
+
+        specialinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void <init>()>();
+
+        if $i0 == 114 goto label111;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onCreate(android.os.Bundle)>(null);
+
+     label085:
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onResume()>();
+
+        if $i0 == 116 goto label109;
+
+     label086:
+        $r32 = new com.androidemu.harvefyzj.EmulatorViewInit$2;
+
+        specialinvoke $r32.<com.androidemu.harvefyzj.EmulatorViewInit$2: void <init>()>();
+
+        if $i0 == 117 goto label087;
+
+        virtualinvoke $r32.<com.androidemu.harvefyzj.EmulatorViewInit$2: void onClick(android.view.View)>(null);
+
+     label087:
+        $r33 = new com.waps.DisplayAd;
+
+        specialinvoke $r33.<com.waps.DisplayAd: void <init>(android.content.Context)>($r31);
+
+        $r34 = new com.waps.s;
+
+        specialinvoke $r34.<com.waps.s: void <init>(com.waps.DisplayAd)>($r33);
+
+        if $i0 == 118 goto label088;
+
+        virtualinvoke $r34.<com.waps.s: void onClick(android.view.View)>(null);
+
+     label088:
+        $r35 = new com.androidemu.harvefyzj.EmulatorActivity$2;
+
+        specialinvoke $r35.<com.androidemu.harvefyzj.EmulatorActivity$2: void <init>(com.androidemu.harvefyzj.EmulatorActivity)>($r31);
+
+        if $i0 == 119 goto label089;
+
+        virtualinvoke $r35.<com.androidemu.harvefyzj.EmulatorActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label089:
+        $r36 = new com.androidemu.harvefyzj.EmulatorViewInit$3;
+
+        specialinvoke $r36.<com.androidemu.harvefyzj.EmulatorViewInit$3: void <init>()>();
+
+        if $i0 == 120 goto label090;
+
+        virtualinvoke $r36.<com.androidemu.harvefyzj.EmulatorViewInit$3: void onClick(android.view.View)>(null);
+
+     label090:
+        $r37 = new com.androidemu.harvefyzj.EmulatorActivity$1;
+
+        specialinvoke $r37.<com.androidemu.harvefyzj.EmulatorActivity$1: void <init>(com.androidemu.harvefyzj.EmulatorActivity)>($r31);
+
+        if $i0 == 121 goto label091;
+
+        virtualinvoke $r37.<com.androidemu.harvefyzj.EmulatorActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label091:
+        $r38 = new com.androidemu.harvefyzj.input.SensorKeypad;
+
+        specialinvoke $r38.<com.androidemu.harvefyzj.input.SensorKeypad: void <init>(android.content.Context)>($r31);
+
+        if $i0 == 122 goto label092;
+
+        virtualinvoke $r38.<com.androidemu.harvefyzj.input.SensorKeypad: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label092:
+        $r39 = new com.androidemu.harvefyzj.input.Keyboard;
+
+        specialinvoke $r39.<com.androidemu.harvefyzj.input.Keyboard: void <init>(android.view.View,com.androidemu.harvefyzj.input.GameKeyListener)>(null, $r31);
+
+        if $i0 == 123 goto label093;
+
+        $z16 = virtualinvoke $r39.<com.androidemu.harvefyzj.input.Keyboard: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label093:
+        if $i0 == 124 goto label094;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label094:
+        if $i0 == 125 goto label095;
+
+        staticinvoke <com.androidemu.harvefyzj.EmulatorActivity: void <clinit>()>();
+
+     label095:
+        if $i0 == 126 goto label096;
+
+        $z17 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label096:
+        if $i0 == 127 goto label097;
+
+        $z18 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label097:
+        if $i0 == 128 goto label098;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label098:
+        if $i0 == 129 goto label099;
+
+        $z19 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label099:
+        if $i0 == 130 goto label100;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label100:
+        if $i0 == 131 goto label101;
+
+        $z20 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label101:
+        if $i0 == 132 goto label102;
+
+        $z21 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label102:
+        if $i0 == 133 goto label103;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onWindowFocusChanged(boolean)>(false);
+
+     label103:
+        if $i0 == 134 goto label104;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label104:
+        if $i0 == 135 goto label105;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onNewIntent(android.content.Intent)>(null);
+
+     label105:
+        if $i0 == 136 goto label106;
+
+        $r40 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label106:
+        if $i0 == 137 goto label107;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label107:
+        if $i0 == 138 goto label108;
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label108:
+        if $i0 == 139 goto label086;
+
+     label109:
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onPause()>();
+
+        if $i0 == 140 goto label085;
+
+        if $i0 == 141 goto label110;
+
+        if $i0 == 142 goto label085;
+
+     label110:
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorActivity: void onDestroy()>();
+
+     label111:
+        if $i0 == 144 goto label123;
+
+        $r41 = new com.androidemu.harvefyzj.KeyProfilesActivity;
+
+        specialinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: void <init>()>();
+
+        if $i0 == 145 goto label123;
+
+        virtualinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label112:
+        if $i0 == 147 goto label122;
+
+     label113:
+        if $i0 == 148 goto label114;
+
+        virtualinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label114:
+        if $i0 == 149 goto label115;
+
+        $r42 = virtualinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label115:
+        if $i0 == 150 goto label116;
+
+        $z22 = virtualinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label116:
+        if $i0 == 151 goto label117;
+
+        virtualinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label117:
+        if $i0 == 152 goto label118;
+
+        $z23 = virtualinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label118:
+        if $i0 == 153 goto label119;
+
+        $z24 = virtualinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label119:
+        if $i0 == 154 goto label120;
+
+        virtualinvoke $r41.<com.androidemu.harvefyzj.KeyProfilesActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label120:
+        $r43 = new com.androidemu.harvefyzj.KeyProfilesActivity$2;
+
+        specialinvoke $r43.<com.androidemu.harvefyzj.KeyProfilesActivity$2: void <init>(com.androidemu.harvefyzj.KeyProfilesActivity)>($r41);
+
+        if $i0 == 155 goto label121;
+
+        virtualinvoke $r43.<com.androidemu.harvefyzj.KeyProfilesActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label121:
+        if $i0 == 156 goto label113;
+
+     label122:
+        if $i0 == 157 goto label112;
+
+        if $i0 == 158 goto label123;
+
+        if $i0 == 159 goto label112;
+
+     label123:
+        if $i0 == 161 goto label125;
+
+        $r44 = new com.androidemu.harvefyzj.HelpActivity;
+
+        specialinvoke $r44.<com.androidemu.harvefyzj.HelpActivity: void <init>()>();
+
+        if $i0 == 162 goto label125;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label124:
+        if $i0 == 165 goto label124;
+
+        if $i0 == 166 goto label125;
+
+        if $i0 == 167 goto label124;
+
+     label125:
+        if $i0 == 171 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Running incremental callback analysis for 10 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: com.vpon.adon.android.WebInApp is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.PreferenceScreen
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.waps.OffersWebView $r1;
+        com.waps.aa $r2;
+        com.waps.ad $r3;
+        com.waps.u $r4;
+        com.waps.ac $r5;
+        com.waps.ab $r6;
+        com.waps.z $r7;
+        com.waps.v $r8;
+        com.waps.w $r9;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24;
+        com.waps.x $r10;
+        com.waps.y $r11;
+        com.waps.p $r12;
+        com.waps.q $r13;
+        com.androidemu.harvefyzj.StateSlotsActivity $r14;
+        com.androidemu.harvefyzj.CheatsActivity $r15;
+        com.androidemu.harvefyzj.CheatsActivity$1 $r16;
+        android.app.Dialog $r17, $r26, $r38, $r49, $r65;
+        com.androidemu.harvefyzj.MainActivity $r18, $r37;
+        com.androidemu.harvefyzj.EmulatorActivation$2 $r19, $r34;
+        com.androidemu.harvefyzj.EmulatorActivation$3 $r20, $r22, $r24, $r35;
+        com.androidemu.harvefyzj.EmulatorActivation$3$2 $r21;
+        com.androidemu.harvefyzj.EmulatorActivation$4 $r23, $r36;
+        com.androidemu.harvefyzj.EmulatorActivation$3$1 $r25;
+        com.androidemu.harvefyzj.MainActivity$2 $r27, $r39;
+        com.waps.DisplayAd $r28, $r40, $r50;
+        com.waps.s $r29, $r41, $r51;
+        com.androidemu.harvefyzj.MainActivity$1 $r30, $r42;
+        com.androidemu.harvefyzj.EmulatorService $r31;
+        android.os.IBinder $r32;
+        com.androidemu.harvefyzj.FileChooser $r33;
+        com.androidemu.harvefyzj.EmulatorSettings $r43;
+        com.androidemu.harvefyzj.EmulatorActivity $r44;
+        com.androidemu.harvefyzj.EmulatorViewInit$3 $r45, $r58, $r60;
+        com.androidemu.harvefyzj.EmulatorActivity$1 $r46;
+        com.androidemu.harvefyzj.input.Keyboard $r47;
+        com.androidemu.harvefyzj.EmulatorActivity$2 $r48;
+        com.androidemu.harvefyzj.MediaScanner $r52;
+        com.androidemu.harvefyzj.EmulatorViewInit$2 $r53, $r55, $r57;
+        com.androidemu.harvefyzj.EmulatorViewInit$2$1 $r54;
+        com.androidemu.harvefyzj.EmulatorViewInit$2$2 $r56;
+        com.androidemu.harvefyzj.EmulatorViewInit$3$1 $r59;
+        com.androidemu.harvefyzj.EmulatorViewInit$3$2 $r61;
+        com.androidemu.harvefyzj.input.SensorKeypad $r62;
+        com.androidemu.harvefyzj.KeyProfilesActivity $r63;
+        com.androidemu.harvefyzj.KeyProfilesActivity$2 $r64;
+        com.androidemu.harvefyzj.HelpActivity $r66;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label017;
+
+        $r1 = new com.waps.OffersWebView;
+
+        specialinvoke $r1.<com.waps.OffersWebView: void <init>()>();
+
+        if $i0 == 1 goto label017;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onResume()>();
+
+        if $i0 == 3 goto label015;
+
+     label003:
+        $r2 = new com.waps.aa;
+
+        specialinvoke $r2.<com.waps.aa: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 4 goto label004;
+
+        virtualinvoke $r2.<com.waps.aa: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label004:
+        $r3 = new com.waps.ad;
+
+        specialinvoke $r3.<com.waps.ad: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 5 goto label005;
+
+        virtualinvoke $r3.<com.waps.ad: void onClick(android.view.View)>(null);
+
+     label005:
+        $r4 = new com.waps.u;
+
+        specialinvoke $r4.<com.waps.u: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 6 goto label006;
+
+        virtualinvoke $r4.<com.waps.u: void onClick(android.view.View)>(null);
+
+     label006:
+        $r5 = new com.waps.ac;
+
+        specialinvoke $r5.<com.waps.ac: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 7 goto label007;
+
+        virtualinvoke $r5.<com.waps.ac: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label007:
+        $r6 = new com.waps.ab;
+
+        specialinvoke $r6.<com.waps.ab: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 8 goto label008;
+
+        virtualinvoke $r6.<com.waps.ab: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label008:
+        $r7 = new com.waps.z;
+
+        specialinvoke $r7.<com.waps.z: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 9 goto label009;
+
+        virtualinvoke $r7.<com.waps.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label009:
+        $r8 = new com.waps.v;
+
+        specialinvoke $r8.<com.waps.v: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 10 goto label010;
+
+        virtualinvoke $r8.<com.waps.v: void onClick(android.view.View)>(null);
+
+     label010:
+        $r9 = new com.waps.w;
+
+        specialinvoke $r9.<com.waps.w: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 11 goto label011;
+
+        virtualinvoke $r9.<com.waps.w: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label011:
+        if $i0 == 12 goto label012;
+
+        $z0 = virtualinvoke $r1.<com.waps.OffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label012:
+        $r10 = new com.waps.x;
+
+        specialinvoke $r10.<com.waps.x: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 13 goto label013;
+
+        virtualinvoke $r10.<com.waps.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label013:
+        $r11 = new com.waps.y;
+
+        specialinvoke $r11.<com.waps.y: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 14 goto label014;
+
+        virtualinvoke $r11.<com.waps.y: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label014:
+        if $i0 == 15 goto label003;
+
+     label015:
+        if $i0 == 16 goto label002;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onStop()>();
+
+        if $i0 == 17 goto label016;
+
+        if $i0 == 18 goto label002;
+
+     label016:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onDestroy()>();
+
+     label017:
+        if $i0 == 20 goto label019;
+
+        $r12 = new com.waps.p;
+
+        specialinvoke $r12.<com.waps.p: void <init>(android.content.Context)>(null);
+
+        $r13 = new com.waps.q;
+
+        specialinvoke $r13.<com.waps.q: void <init>(com.waps.p,int,java.lang.String)>($r12, 0, "");
+
+        if $i0 == 21 goto label019;
+
+     label018:
+        virtualinvoke $r13.<com.waps.q: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label018;
+
+     label019:
+        if $i0 == 24 goto label026;
+
+        $r14 = new com.androidemu.harvefyzj.StateSlotsActivity;
+
+        specialinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: void <init>()>();
+
+        if $i0 == 25 goto label026;
+
+        virtualinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label020:
+        if $i0 == 27 goto label025;
+
+     label021:
+        if $i0 == 28 goto label022;
+
+        $z1 = virtualinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label022:
+        if $i0 == 29 goto label023;
+
+        virtualinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label023:
+        if $i0 == 30 goto label024;
+
+        virtualinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label024:
+        if $i0 == 31 goto label021;
+
+     label025:
+        if $i0 == 32 goto label020;
+
+        if $i0 == 33 goto label026;
+
+        if $i0 == 34 goto label020;
+
+     label026:
+        if $i0 == 36 goto label038;
+
+        $r15 = new com.androidemu.harvefyzj.CheatsActivity;
+
+        specialinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void <init>()>();
+
+        if $i0 == 37 goto label038;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label027:
+        if $i0 == 39 goto label037;
+
+     label028:
+        $r16 = new com.androidemu.harvefyzj.CheatsActivity$1;
+
+        specialinvoke $r16.<com.androidemu.harvefyzj.CheatsActivity$1: void <init>(com.androidemu.harvefyzj.CheatsActivity)>($r15);
+
+        if $i0 == 40 goto label029;
+
+        virtualinvoke $r16.<com.androidemu.harvefyzj.CheatsActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label029:
+        if $i0 == 41 goto label030;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label030:
+        if $i0 == 42 goto label031;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label031:
+        if $i0 == 43 goto label032;
+
+        $r17 = virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label032:
+        if $i0 == 44 goto label033;
+
+        $z2 = virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label033:
+        if $i0 == 45 goto label034;
+
+        $z3 = virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label034:
+        if $i0 == 46 goto label035;
+
+        $z4 = virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label035:
+        if $i0 == 47 goto label036;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label036:
+        if $i0 == 48 goto label028;
+
+     label037:
+        if $i0 == 49 goto label027;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onStop()>();
+
+        if $i0 == 50 goto label038;
+
+        if $i0 == 51 goto label027;
+
+     label038:
+        if $i0 == 53 goto label059;
+
+        $r18 = new com.androidemu.harvefyzj.MainActivity;
+
+        specialinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void <init>()>();
+
+        if $i0 == 54 goto label059;
+
+        virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label039:
+        virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void onResume()>();
+
+        if $i0 == 56 goto label058;
+
+     label040:
+        $r19 = new com.androidemu.harvefyzj.EmulatorActivation$2;
+
+        specialinvoke $r19.<com.androidemu.harvefyzj.EmulatorActivation$2: void <init>(int)>(0);
+
+        if $i0 == 57 goto label041;
+
+        virtualinvoke $r19.<com.androidemu.harvefyzj.EmulatorActivation$2: void onClick(android.view.View)>(null);
+
+     label041:
+        $r20 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r20.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        $r21 = new com.androidemu.harvefyzj.EmulatorActivation$3$2;
+
+        specialinvoke $r21.<com.androidemu.harvefyzj.EmulatorActivation$3$2: void <init>(com.androidemu.harvefyzj.EmulatorActivation$3)>($r20);
+
+        if $i0 == 58 goto label042;
+
+        virtualinvoke $r21.<com.androidemu.harvefyzj.EmulatorActivation$3$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label042:
+        $r22 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r22.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        if $i0 == 59 goto label043;
+
+        virtualinvoke $r22.<com.androidemu.harvefyzj.EmulatorActivation$3: void onClick(android.view.View)>(null);
+
+     label043:
+        $r23 = new com.androidemu.harvefyzj.EmulatorActivation$4;
+
+        specialinvoke $r23.<com.androidemu.harvefyzj.EmulatorActivation$4: void <init>()>();
+
+        if $i0 == 60 goto label044;
+
+        virtualinvoke $r23.<com.androidemu.harvefyzj.EmulatorActivation$4: void onClick(android.view.View)>(null);
+
+     label044:
+        if $i0 == 61 goto label045;
+
+        virtualinvoke $r18.<com.androidemu.harvefyzj.FileChooser: void onClick(android.view.View)>(null);
+
+     label045:
+        if $i0 == 62 goto label046;
+
+        $z5 = virtualinvoke $r18.<com.androidemu.harvefyzj.FileChooser: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label046:
+        $r24 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r24.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        $r25 = new com.androidemu.harvefyzj.EmulatorActivation$3$1;
+
+        specialinvoke $r25.<com.androidemu.harvefyzj.EmulatorActivation$3$1: void <init>(com.androidemu.harvefyzj.EmulatorActivation$3)>($r24);
+
+        if $i0 == 63 goto label047;
+
+        virtualinvoke $r25.<com.androidemu.harvefyzj.EmulatorActivation$3$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label047:
+        if $i0 == 64 goto label048;
+
+        $z6 = virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label048:
+        if $i0 == 65 goto label049;
+
+        virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label049:
+        if $i0 == 66 goto label050;
+
+        $z7 = virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label050:
+        if $i0 == 67 goto label051;
+
+        staticinvoke <com.androidemu.harvefyzj.MainActivity: void <clinit>()>();
+
+     label051:
+        if $i0 == 68 goto label052;
+
+        virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label052:
+        if $i0 == 69 goto label053;
+
+        $z8 = virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label053:
+        if $i0 == 70 goto label054;
+
+        $r26 = virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label054:
+        $r27 = new com.androidemu.harvefyzj.MainActivity$2;
+
+        specialinvoke $r27.<com.androidemu.harvefyzj.MainActivity$2: void <init>(com.androidemu.harvefyzj.MainActivity)>($r18);
+
+        if $i0 == 71 goto label055;
+
+        virtualinvoke $r27.<com.androidemu.harvefyzj.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label055:
+        $r28 = new com.waps.DisplayAd;
+
+        specialinvoke $r28.<com.waps.DisplayAd: void <init>(android.content.Context)>($r18);
+
+        $r29 = new com.waps.s;
+
+        specialinvoke $r29.<com.waps.s: void <init>(com.waps.DisplayAd)>($r28);
+
+        if $i0 == 72 goto label056;
+
+        virtualinvoke $r29.<com.waps.s: void onClick(android.view.View)>(null);
+
+     label056:
+        $r30 = new com.androidemu.harvefyzj.MainActivity$1;
+
+        specialinvoke $r30.<com.androidemu.harvefyzj.MainActivity$1: void <init>(com.androidemu.harvefyzj.MainActivity)>($r18);
+
+        if $i0 == 73 goto label057;
+
+        virtualinvoke $r30.<com.androidemu.harvefyzj.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label057:
+        if $i0 == 74 goto label040;
+
+     label058:
+        virtualinvoke $r18.<com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 75 goto label039;
+
+        if $i0 == 76 goto label059;
+
+        if $i0 == 77 goto label039;
+
+     label059:
+        if $i0 == 79 goto label064;
+
+        $r31 = new com.androidemu.harvefyzj.EmulatorService;
+
+        specialinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: void <init>()>();
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: void onCreate()>();
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label060:
+        if $i0 == 80 goto label061;
+
+        $i1 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 81 goto label060;
+
+     label061:
+        $r32 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label062:
+        if $i0 == 83 goto label063;
+
+        if $i0 == 84 goto label062;
+
+     label063:
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: void onDestroy()>();
+
+     label064:
+        if $i0 == 85 goto label087;
+
+        $r33 = new com.androidemu.harvefyzj.FileChooser;
+
+        specialinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void <init>()>();
+
+        if $i0 == 86 goto label087;
+
+        virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void onCreate(android.os.Bundle)>(null);
+
+     label065:
+        if $i0 == 88 goto label086;
+
+     label066:
+        $r34 = new com.androidemu.harvefyzj.EmulatorActivation$2;
+
+        specialinvoke $r34.<com.androidemu.harvefyzj.EmulatorActivation$2: void <init>(int)>(0);
+
+        if $i0 == 89 goto label067;
+
+        virtualinvoke $r34.<com.androidemu.harvefyzj.EmulatorActivation$2: void onClick(android.view.View)>(null);
+
+     label067:
+        $r35 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r35.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        if $i0 == 90 goto label068;
+
+        virtualinvoke $r35.<com.androidemu.harvefyzj.EmulatorActivation$3: void onClick(android.view.View)>(null);
+
+     label068:
+        $r36 = new com.androidemu.harvefyzj.EmulatorActivation$4;
+
+        specialinvoke $r36.<com.androidemu.harvefyzj.EmulatorActivation$4: void <init>()>();
+
+        if $i0 == 91 goto label069;
+
+        virtualinvoke $r36.<com.androidemu.harvefyzj.EmulatorActivation$4: void onClick(android.view.View)>(null);
+
+     label069:
+        if $i0 == 92 goto label070;
+
+        staticinvoke <com.androidemu.harvefyzj.FileChooser: void <clinit>()>();
+
+     label070:
+        if $i0 == 93 goto label071;
+
+        $z9 = virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label071:
+        if $i0 == 94 goto label072;
+
+        $z10 = virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label072:
+        if $i0 == 95 goto label073;
+
+        virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void onClick(android.view.View)>(null);
+
+     label073:
+        if $i0 == 96 goto label074;
+
+        $z11 = virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label074:
+        if $i0 == 97 goto label075;
+
+        virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label075:
+        $r37 = new com.androidemu.harvefyzj.MainActivity;
+
+        specialinvoke $r37.<com.androidemu.harvefyzj.MainActivity: void <init>()>();
+
+        if $i0 == 98 goto label076;
+
+        $z12 = virtualinvoke $r37.<com.androidemu.harvefyzj.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label076:
+        if $i0 == 99 goto label077;
+
+        virtualinvoke $r37.<com.androidemu.harvefyzj.MainActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label077:
+        if $i0 == 100 goto label078;
+
+        $z13 = virtualinvoke $r37.<com.androidemu.harvefyzj.MainActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label078:
+        if $i0 == 101 goto label079;
+
+        staticinvoke <com.androidemu.harvefyzj.MainActivity: void <clinit>()>();
+
+     label079:
+        if $i0 == 102 goto label080;
+
+        virtualinvoke $r37.<com.androidemu.harvefyzj.MainActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label080:
+        if $i0 == 103 goto label081;
+
+        $z14 = virtualinvoke $r37.<com.androidemu.harvefyzj.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label081:
+        if $i0 == 104 goto label082;
+
+        $r38 = virtualinvoke $r37.<com.androidemu.harvefyzj.MainActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label082:
+        $r39 = new com.androidemu.harvefyzj.MainActivity$2;
+
+        specialinvoke $r39.<com.androidemu.harvefyzj.MainActivity$2: void <init>(com.androidemu.harvefyzj.MainActivity)>($r18);
+
+        if $i0 == 105 goto label083;
+
+        virtualinvoke $r39.<com.androidemu.harvefyzj.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label083:
+        $r40 = new com.waps.DisplayAd;
+
+        specialinvoke $r40.<com.waps.DisplayAd: void <init>(android.content.Context)>($r33);
+
+        $r41 = new com.waps.s;
+
+        specialinvoke $r41.<com.waps.s: void <init>(com.waps.DisplayAd)>($r40);
+
+        if $i0 == 106 goto label084;
+
+        virtualinvoke $r41.<com.waps.s: void onClick(android.view.View)>(null);
+
+     label084:
+        $r42 = new com.androidemu.harvefyzj.MainActivity$1;
+
+        specialinvoke $r42.<com.androidemu.harvefyzj.MainActivity$1: void <init>(com.androidemu.harvefyzj.MainActivity)>($r18);
+
+        if $i0 == 107 goto label085;
+
+        virtualinvoke $r42.<com.androidemu.harvefyzj.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label085:
+        if $i0 == 108 goto label066;
+
+     label086:
+        virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 109 goto label065;
+
+        if $i0 == 110 goto label087;
+
+        if $i0 == 111 goto label065;
+
+     label087:
+        if $i0 == 113 goto label094;
+
+        $r43 = new com.androidemu.harvefyzj.EmulatorSettings;
+
+        specialinvoke $r43.<com.androidemu.harvefyzj.EmulatorSettings: void <init>()>();
+
+        if $i0 == 114 goto label094;
+
+        virtualinvoke $r43.<com.androidemu.harvefyzj.EmulatorSettings: void onCreate(android.os.Bundle)>(null);
+
+     label088:
+        if $i0 == 116 goto label093;
+
+     label089:
+        if $i0 == 117 goto label090;
+
+        $z15 = virtualinvoke $r43.<com.androidemu.harvefyzj.EmulatorSettings: boolean onPreferenceTreeClick(android.preference.PreferenceScreen,android.preference.Preference)>(null, null);
+
+     label090:
+        if $i0 == 118 goto label091;
+
+        virtualinvoke $r43.<com.androidemu.harvefyzj.EmulatorSettings: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label091:
+        if $i0 == 119 goto label092;
+
+        staticinvoke <com.androidemu.harvefyzj.EmulatorSettings: void <clinit>()>();
+
+     label092:
+        if $i0 == 120 goto label089;
+
+     label093:
+        if $i0 == 121 goto label088;
+
+        if $i0 == 122 goto label094;
+
+        if $i0 == 123 goto label088;
+
+     label094:
+        if $i0 == 125 goto label126;
+
+        $r44 = new com.androidemu.harvefyzj.EmulatorActivity;
+
+        specialinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void <init>()>();
+
+        if $i0 == 126 goto label126;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onCreate(android.os.Bundle)>(null);
+
+     label095:
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onResume()>();
+
+        if $i0 == 128 goto label124;
+
+     label096:
+        $r45 = new com.androidemu.harvefyzj.EmulatorViewInit$3;
+
+        specialinvoke $r45.<com.androidemu.harvefyzj.EmulatorViewInit$3: void <init>()>();
+
+        if $i0 == 129 goto label097;
+
+        virtualinvoke $r45.<com.androidemu.harvefyzj.EmulatorViewInit$3: void onClick(android.view.View)>(null);
+
+     label097:
+        $r46 = new com.androidemu.harvefyzj.EmulatorActivity$1;
+
+        specialinvoke $r46.<com.androidemu.harvefyzj.EmulatorActivity$1: void <init>(com.androidemu.harvefyzj.EmulatorActivity)>($r44);
+
+        if $i0 == 130 goto label098;
+
+        virtualinvoke $r46.<com.androidemu.harvefyzj.EmulatorActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label098:
+        $r47 = new com.androidemu.harvefyzj.input.Keyboard;
+
+        specialinvoke $r47.<com.androidemu.harvefyzj.input.Keyboard: void <init>(android.view.View,com.androidemu.harvefyzj.input.GameKeyListener)>(null, $r44);
+
+        if $i0 == 131 goto label099;
+
+        $z16 = virtualinvoke $r47.<com.androidemu.harvefyzj.input.Keyboard: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label099:
+        $r48 = new com.androidemu.harvefyzj.EmulatorActivity$2;
+
+        specialinvoke $r48.<com.androidemu.harvefyzj.EmulatorActivity$2: void <init>(com.androidemu.harvefyzj.EmulatorActivity)>($r44);
+
+        if $i0 == 132 goto label100;
+
+        virtualinvoke $r48.<com.androidemu.harvefyzj.EmulatorActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label100:
+        if $i0 == 133 goto label101;
+
+        $z17 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label101:
+        if $i0 == 134 goto label102;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label102:
+        if $i0 == 135 goto label103;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onNewIntent(android.content.Intent)>(null);
+
+     label103:
+        if $i0 == 136 goto label104;
+
+        $r49 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label104:
+        if $i0 == 137 goto label105;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label105:
+        if $i0 == 138 goto label106;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label106:
+        if $i0 == 139 goto label107;
+
+        $z18 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label107:
+        if $i0 == 140 goto label108;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label108:
+        if $i0 == 141 goto label109;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onWindowFocusChanged(boolean)>(false);
+
+     label109:
+        if $i0 == 142 goto label110;
+
+        $z19 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label110:
+        if $i0 == 143 goto label111;
+
+        staticinvoke <com.androidemu.harvefyzj.EmulatorActivity: void <clinit>()>();
+
+     label111:
+        if $i0 == 144 goto label112;
+
+        $z20 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label112:
+        if $i0 == 145 goto label113;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label113:
+        if $i0 == 146 goto label114;
+
+        $z21 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label114:
+        if $i0 == 147 goto label115;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label115:
+        $r50 = new com.waps.DisplayAd;
+
+        specialinvoke $r50.<com.waps.DisplayAd: void <init>(android.content.Context)>($r44);
+
+        $r51 = new com.waps.s;
+
+        specialinvoke $r51.<com.waps.s: void <init>(com.waps.DisplayAd)>($r50);
+
+        if $i0 == 148 goto label116;
+
+        virtualinvoke $r51.<com.waps.s: void onClick(android.view.View)>(null);
+
+     label116:
+        $r52 = new com.androidemu.harvefyzj.MediaScanner;
+
+        specialinvoke $r52.<com.androidemu.harvefyzj.MediaScanner: void <init>(android.content.Context)>($r44);
+
+        if $i0 == 149 goto label117;
+
+        virtualinvoke $r52.<com.androidemu.harvefyzj.MediaScanner: void onMediaScannerConnected()>();
+
+     label117:
+        $r53 = new com.androidemu.harvefyzj.EmulatorViewInit$2;
+
+        specialinvoke $r53.<com.androidemu.harvefyzj.EmulatorViewInit$2: void <init>()>();
+
+        $r54 = new com.androidemu.harvefyzj.EmulatorViewInit$2$1;
+
+        specialinvoke $r54.<com.androidemu.harvefyzj.EmulatorViewInit$2$1: void <init>(com.androidemu.harvefyzj.EmulatorViewInit$2)>($r53);
+
+        if $i0 == 150 goto label118;
+
+        virtualinvoke $r54.<com.androidemu.harvefyzj.EmulatorViewInit$2$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label118:
+        $r55 = new com.androidemu.harvefyzj.EmulatorViewInit$2;
+
+        specialinvoke $r55.<com.androidemu.harvefyzj.EmulatorViewInit$2: void <init>()>();
+
+        $r56 = new com.androidemu.harvefyzj.EmulatorViewInit$2$2;
+
+        specialinvoke $r56.<com.androidemu.harvefyzj.EmulatorViewInit$2$2: void <init>(com.androidemu.harvefyzj.EmulatorViewInit$2)>($r55);
+
+        if $i0 == 151 goto label119;
+
+        virtualinvoke $r56.<com.androidemu.harvefyzj.EmulatorViewInit$2$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label119:
+        $r57 = new com.androidemu.harvefyzj.EmulatorViewInit$2;
+
+        specialinvoke $r57.<com.androidemu.harvefyzj.EmulatorViewInit$2: void <init>()>();
+
+        if $i0 == 152 goto label120;
+
+        virtualinvoke $r57.<com.androidemu.harvefyzj.EmulatorViewInit$2: void onClick(android.view.View)>(null);
+
+     label120:
+        $r58 = new com.androidemu.harvefyzj.EmulatorViewInit$3;
+
+        specialinvoke $r58.<com.androidemu.harvefyzj.EmulatorViewInit$3: void <init>()>();
+
+        $r59 = new com.androidemu.harvefyzj.EmulatorViewInit$3$1;
+
+        specialinvoke $r59.<com.androidemu.harvefyzj.EmulatorViewInit$3$1: void <init>(com.androidemu.harvefyzj.EmulatorViewInit$3)>($r58);
+
+        if $i0 == 153 goto label121;
+
+        virtualinvoke $r59.<com.androidemu.harvefyzj.EmulatorViewInit$3$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label121:
+        $r60 = new com.androidemu.harvefyzj.EmulatorViewInit$3;
+
+        specialinvoke $r60.<com.androidemu.harvefyzj.EmulatorViewInit$3: void <init>()>();
+
+        $r61 = new com.androidemu.harvefyzj.EmulatorViewInit$3$2;
+
+        specialinvoke $r61.<com.androidemu.harvefyzj.EmulatorViewInit$3$2: void <init>(com.androidemu.harvefyzj.EmulatorViewInit$3)>($r60);
+
+        if $i0 == 154 goto label122;
+
+        virtualinvoke $r61.<com.androidemu.harvefyzj.EmulatorViewInit$3$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label122:
+        $r62 = new com.androidemu.harvefyzj.input.SensorKeypad;
+
+        specialinvoke $r62.<com.androidemu.harvefyzj.input.SensorKeypad: void <init>(android.content.Context)>($r44);
+
+        if $i0 == 155 goto label123;
+
+        virtualinvoke $r62.<com.androidemu.harvefyzj.input.SensorKeypad: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label123:
+        if $i0 == 156 goto label096;
+
+     label124:
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onPause()>();
+
+        if $i0 == 157 goto label095;
+
+        if $i0 == 158 goto label125;
+
+        if $i0 == 159 goto label095;
+
+     label125:
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onDestroy()>();
+
+     label126:
+        if $i0 == 161 goto label138;
+
+        $r63 = new com.androidemu.harvefyzj.KeyProfilesActivity;
+
+        specialinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: void <init>()>();
+
+        if $i0 == 162 goto label138;
+
+        virtualinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label127:
+        if $i0 == 164 goto label137;
+
+     label128:
+        $r64 = new com.androidemu.harvefyzj.KeyProfilesActivity$2;
+
+        specialinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity$2: void <init>(com.androidemu.harvefyzj.KeyProfilesActivity)>($r63);
+
+        if $i0 == 165 goto label129;
+
+        virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label129:
+        if $i0 == 166 goto label130;
+
+        $z22 = virtualinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label130:
+        if $i0 == 167 goto label131;
+
+        virtualinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label131:
+        if $i0 == 168 goto label132;
+
+        $z23 = virtualinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label132:
+        if $i0 == 169 goto label133;
+
+        $z24 = virtualinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label133:
+        if $i0 == 170 goto label134;
+
+        virtualinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label134:
+        if $i0 == 171 goto label135;
+
+        $r65 = virtualinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label135:
+        if $i0 == 172 goto label136;
+
+        virtualinvoke $r63.<com.androidemu.harvefyzj.KeyProfilesActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label136:
+        if $i0 == 173 goto label128;
+
+     label137:
+        if $i0 == 174 goto label127;
+
+        if $i0 == 175 goto label138;
+
+        if $i0 == 176 goto label127;
+
+     label138:
+        if $i0 == 178 goto label140;
+
+        $r66 = new com.androidemu.harvefyzj.HelpActivity;
+
+        specialinvoke $r66.<com.androidemu.harvefyzj.HelpActivity: void <init>()>();
+
+        if $i0 == 179 goto label140;
+
+        virtualinvoke $r66.<com.androidemu.harvefyzj.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label139:
+        if $i0 == 182 goto label139;
+
+        if $i0 == 183 goto label140;
+
+        if $i0 == 184 goto label139;
+
+     label140:
+        if $i0 == 188 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 105 callback methods for 10 components
+Found {res/layout/shortcut.xml=[2131230731 - android.widget.EditText], res/layout/state_slot_item.xml=[-1 - android.widget.LinearLayout, 2131230733 - android.widget.TextView, 2131230732 - android.widget.ImageView, 2131230731 - android.widget.TextView], res/layout/new_cheat.xml=[-1 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131230726 - android.widget.EditText, -1 - android.widget.ScrollView, 2131230727 - android.widget.EditText], res/layout/cheats.xml=[-1 - android.widget.FrameLayout, 2131230720 - android.widget.TextView, 16908298 - android.widget.ListView], res/layout/file_chooser.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.RelativeLayout, 2131230724 - android.widget.ImageButton, 2131230760 - android.widget.TextView, 2131230725 - android.widget.EditText, 2131230720 - android.widget.TextView, 2131230759 - android.widget.Button, -1 - android.widget.TextView, 2131230755 - android.widget.ImageView, 2131230757 - android.widget.Button, 2131230758 - android.widget.Button, -1 - android.widget.FrameLayout, 16908298 - android.widget.ListView, 2131230723 - android.widget.ImageButton, 2131230722 - android.widget.ImageButton, 2131230756 - android.widget.TextView, 2131230751 - android.widget.LinearLayout], res/layout/seekbar_dialog.xml=[-1 - android.widget.LinearLayout, 2131230730 - android.widget.SeekBar, 2131230729 - android.widget.TextView], res/layout/game_gripper.xml=[-1 - android.widget.ImageView], res/layout/emulator.xml=[2131230754 - android.widget.Button, 2131230721 - com.androidemu.EmulatorView, -1 - android.widget.RelativeLayout, 2131230752 - android.widget.Button, 2131230751 - android.widget.LinearLayout, 2131230753 - android.widget.TextView], res/layout/new_profile.xml=[2131230728 - android.widget.EditText]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 105 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6ba772433e60d6908c1208a0b6f7be4d26872ba66833706da77279ac68d907af.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: com.vpon.adon.android.WebInApp is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.PreferenceScreen
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.SurfaceHolder
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.hardware.SensorEvent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0, $i1;
+        com.waps.OffersWebView $r1;
+        com.waps.y $r2;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21, $z22, $z23, $z24, $z25;
+        com.waps.ab $r3;
+        com.waps.w $r4;
+        com.waps.aa $r5;
+        com.waps.u $r6;
+        com.waps.ac $r7;
+        com.waps.x $r8;
+        com.waps.z $r9;
+        com.waps.ad $r10;
+        com.waps.v $r11;
+        com.waps.p $r12;
+        com.waps.q $r13;
+        com.androidemu.harvefyzj.StateSlotsActivity $r14;
+        com.androidemu.harvefyzj.CheatsActivity $r15;
+        com.androidemu.harvefyzj.CheatsActivity$1 $r16;
+        android.app.Dialog $r17, $r27, $r39, $r45, $r65;
+        com.androidemu.harvefyzj.MainActivity $r18, $r38;
+        com.waps.DisplayAd $r19, $r34, $r48;
+        com.waps.s $r20, $r35, $r49;
+        com.androidemu.harvefyzj.EmulatorActivation$3 $r21, $r23, $r25, $r36;
+        com.androidemu.harvefyzj.EmulatorActivation$4 $r22, $r37;
+        com.androidemu.harvefyzj.EmulatorActivation$3$2 $r24;
+        com.androidemu.harvefyzj.EmulatorActivation$3$1 $r26;
+        com.androidemu.harvefyzj.EmulatorActivation$2 $r28, $r40;
+        com.androidemu.harvefyzj.MainActivity$1 $r29, $r41;
+        com.androidemu.harvefyzj.MainActivity$2 $r30, $r42;
+        com.androidemu.harvefyzj.EmulatorService $r31;
+        android.os.IBinder $r32;
+        com.androidemu.harvefyzj.FileChooser $r33;
+        com.androidemu.harvefyzj.EmulatorSettings $r43;
+        com.androidemu.harvefyzj.EmulatorActivity $r44;
+        com.androidemu.harvefyzj.EmulatorViewInit$3 $r46, $r54, $r57;
+        com.androidemu.harvefyzj.EmulatorViewInit$3$2 $r47;
+        com.androidemu.harvefyzj.EmulatorActivity$2 $r50;
+        com.androidemu.harvefyzj.input.Keyboard $r51;
+        com.androidemu.harvefyzj.EmulatorActivity$1 $r52;
+        com.androidemu.harvefyzj.MediaScanner $r53;
+        com.androidemu.harvefyzj.EmulatorViewInit$3$1 $r55;
+        com.androidemu.EmulatorView $r56;
+        com.androidemu.harvefyzj.EmulatorViewInit$2 $r58, $r60, $r63;
+        com.androidemu.harvefyzj.EmulatorViewInit$2$1 $r59;
+        com.androidemu.harvefyzj.EmulatorViewInit$2$2 $r61;
+        com.androidemu.harvefyzj.input.SensorKeypad $r62;
+        com.androidemu.harvefyzj.KeyProfilesActivity $r64;
+        com.androidemu.harvefyzj.KeyProfilesActivity$2 $r66;
+        com.androidemu.harvefyzj.HelpActivity $r67;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        if $i0 == 0 goto label017;
+
+        $r1 = new com.waps.OffersWebView;
+
+        specialinvoke $r1.<com.waps.OffersWebView: void <init>()>();
+
+        if $i0 == 1 goto label017;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onCreate(android.os.Bundle)>(null);
+
+     label002:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onResume()>();
+
+        if $i0 == 3 goto label015;
+
+     label003:
+        $r2 = new com.waps.y;
+
+        specialinvoke $r2.<com.waps.y: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 4 goto label004;
+
+        virtualinvoke $r2.<com.waps.y: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label004:
+        if $i0 == 5 goto label005;
+
+        $z0 = virtualinvoke $r1.<com.waps.OffersWebView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label005:
+        $r3 = new com.waps.ab;
+
+        specialinvoke $r3.<com.waps.ab: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 6 goto label006;
+
+        virtualinvoke $r3.<com.waps.ab: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label006:
+        $r4 = new com.waps.w;
+
+        specialinvoke $r4.<com.waps.w: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 7 goto label007;
+
+        virtualinvoke $r4.<com.waps.w: void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long)>("", "", "", "", 0L);
+
+     label007:
+        $r5 = new com.waps.aa;
+
+        specialinvoke $r5.<com.waps.aa: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 8 goto label008;
+
+        virtualinvoke $r5.<com.waps.aa: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label008:
+        $r6 = new com.waps.u;
+
+        specialinvoke $r6.<com.waps.u: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 9 goto label009;
+
+        virtualinvoke $r6.<com.waps.u: void onClick(android.view.View)>(null);
+
+     label009:
+        $r7 = new com.waps.ac;
+
+        specialinvoke $r7.<com.waps.ac: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 10 goto label010;
+
+        virtualinvoke $r7.<com.waps.ac: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label010:
+        $r8 = new com.waps.x;
+
+        specialinvoke $r8.<com.waps.x: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 11 goto label011;
+
+        virtualinvoke $r8.<com.waps.x: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label011:
+        $r9 = new com.waps.z;
+
+        specialinvoke $r9.<com.waps.z: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 12 goto label012;
+
+        virtualinvoke $r9.<com.waps.z: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label012:
+        $r10 = new com.waps.ad;
+
+        specialinvoke $r10.<com.waps.ad: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 13 goto label013;
+
+        virtualinvoke $r10.<com.waps.ad: void onClick(android.view.View)>(null);
+
+     label013:
+        $r11 = new com.waps.v;
+
+        specialinvoke $r11.<com.waps.v: void <init>(com.waps.OffersWebView)>($r1);
+
+        if $i0 == 14 goto label014;
+
+        virtualinvoke $r11.<com.waps.v: void onClick(android.view.View)>(null);
+
+     label014:
+        if $i0 == 15 goto label003;
+
+     label015:
+        if $i0 == 16 goto label002;
+
+        virtualinvoke $r1.<com.waps.OffersWebView: void onStop()>();
+
+        if $i0 == 17 goto label016;
+
+        if $i0 == 18 goto label002;
+
+     label016:
+        virtualinvoke $r1.<com.waps.OffersWebView: void onDestroy()>();
+
+     label017:
+        if $i0 == 20 goto label019;
+
+        $r12 = new com.waps.p;
+
+        specialinvoke $r12.<com.waps.p: void <init>(android.content.Context)>(null);
+
+        $r13 = new com.waps.q;
+
+        specialinvoke $r13.<com.waps.q: void <init>(com.waps.p,int,java.lang.String)>($r12, 0, "");
+
+        if $i0 == 21 goto label019;
+
+     label018:
+        virtualinvoke $r13.<com.waps.q: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label018;
+
+     label019:
+        if $i0 == 24 goto label026;
+
+        $r14 = new com.androidemu.harvefyzj.StateSlotsActivity;
+
+        specialinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: void <init>()>();
+
+        if $i0 == 25 goto label026;
+
+        virtualinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label020:
+        if $i0 == 27 goto label025;
+
+     label021:
+        if $i0 == 28 goto label022;
+
+        virtualinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label022:
+        if $i0 == 29 goto label023;
+
+        $z1 = virtualinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label023:
+        if $i0 == 30 goto label024;
+
+        virtualinvoke $r14.<com.androidemu.harvefyzj.StateSlotsActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label024:
+        if $i0 == 31 goto label021;
+
+     label025:
+        if $i0 == 32 goto label020;
+
+        if $i0 == 33 goto label026;
+
+        if $i0 == 34 goto label020;
+
+     label026:
+        if $i0 == 36 goto label038;
+
+        $r15 = new com.androidemu.harvefyzj.CheatsActivity;
+
+        specialinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void <init>()>();
+
+        if $i0 == 37 goto label038;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onCreate(android.os.Bundle)>(null);
+
+     label027:
+        if $i0 == 39 goto label037;
+
+     label028:
+        $r16 = new com.androidemu.harvefyzj.CheatsActivity$1;
+
+        specialinvoke $r16.<com.androidemu.harvefyzj.CheatsActivity$1: void <init>(com.androidemu.harvefyzj.CheatsActivity)>($r15);
+
+        if $i0 == 40 goto label029;
+
+        virtualinvoke $r16.<com.androidemu.harvefyzj.CheatsActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label029:
+        if $i0 == 41 goto label030;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label030:
+        if $i0 == 42 goto label031;
+
+        $z2 = virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label031:
+        if $i0 == 43 goto label032;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label032:
+        if $i0 == 44 goto label033;
+
+        $z3 = virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label033:
+        if $i0 == 45 goto label034;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label034:
+        if $i0 == 46 goto label035;
+
+        $z4 = virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label035:
+        if $i0 == 47 goto label036;
+
+        $r17 = virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label036:
+        if $i0 == 48 goto label028;
+
+     label037:
+        if $i0 == 49 goto label027;
+
+        virtualinvoke $r15.<com.androidemu.harvefyzj.CheatsActivity: void onStop()>();
+
+        if $i0 == 50 goto label038;
+
+        if $i0 == 51 goto label027;
+
+     label038:
+        if $i0 == 53 goto label059;
+
+        $r18 = new com.androidemu.harvefyzj.MainActivity;
+
+        specialinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void <init>()>();
+
+        if $i0 == 54 goto label059;
+
+        virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label039:
+        virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void onResume()>();
+
+        if $i0 == 56 goto label058;
+
+     label040:
+        $r19 = new com.waps.DisplayAd;
+
+        specialinvoke $r19.<com.waps.DisplayAd: void <init>(android.content.Context)>($r18);
+
+        $r20 = new com.waps.s;
+
+        specialinvoke $r20.<com.waps.s: void <init>(com.waps.DisplayAd)>($r19);
+
+        if $i0 == 57 goto label041;
+
+        virtualinvoke $r20.<com.waps.s: void onClick(android.view.View)>(null);
+
+     label041:
+        if $i0 == 58 goto label042;
+
+        virtualinvoke $r18.<com.androidemu.harvefyzj.FileChooser: void onClick(android.view.View)>(null);
+
+     label042:
+        if $i0 == 59 goto label043;
+
+        $z5 = virtualinvoke $r18.<com.androidemu.harvefyzj.FileChooser: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label043:
+        $r21 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r21.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        if $i0 == 60 goto label044;
+
+        virtualinvoke $r21.<com.androidemu.harvefyzj.EmulatorActivation$3: void onClick(android.view.View)>(null);
+
+     label044:
+        $r22 = new com.androidemu.harvefyzj.EmulatorActivation$4;
+
+        specialinvoke $r22.<com.androidemu.harvefyzj.EmulatorActivation$4: void <init>()>();
+
+        if $i0 == 61 goto label045;
+
+        virtualinvoke $r22.<com.androidemu.harvefyzj.EmulatorActivation$4: void onClick(android.view.View)>(null);
+
+     label045:
+        $r23 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r23.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        $r24 = new com.androidemu.harvefyzj.EmulatorActivation$3$2;
+
+        specialinvoke $r24.<com.androidemu.harvefyzj.EmulatorActivation$3$2: void <init>(com.androidemu.harvefyzj.EmulatorActivation$3)>($r23);
+
+        if $i0 == 62 goto label046;
+
+        virtualinvoke $r24.<com.androidemu.harvefyzj.EmulatorActivation$3$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label046:
+        $r25 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r25.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        $r26 = new com.androidemu.harvefyzj.EmulatorActivation$3$1;
+
+        specialinvoke $r26.<com.androidemu.harvefyzj.EmulatorActivation$3$1: void <init>(com.androidemu.harvefyzj.EmulatorActivation$3)>($r25);
+
+        if $i0 == 63 goto label047;
+
+        virtualinvoke $r26.<com.androidemu.harvefyzj.EmulatorActivation$3$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label047:
+        if $i0 == 64 goto label048;
+
+        virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label048:
+        if $i0 == 65 goto label049;
+
+        virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label049:
+        if $i0 == 66 goto label050;
+
+        $z6 = virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label050:
+        if $i0 == 67 goto label051;
+
+        $z7 = virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label051:
+        if $i0 == 68 goto label052;
+
+        $r27 = virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label052:
+        if $i0 == 69 goto label053;
+
+        staticinvoke <com.androidemu.harvefyzj.MainActivity: void <clinit>()>();
+
+     label053:
+        if $i0 == 70 goto label054;
+
+        $z8 = virtualinvoke $r18.<com.androidemu.harvefyzj.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label054:
+        $r28 = new com.androidemu.harvefyzj.EmulatorActivation$2;
+
+        specialinvoke $r28.<com.androidemu.harvefyzj.EmulatorActivation$2: void <init>(int)>(0);
+
+        if $i0 == 71 goto label055;
+
+        virtualinvoke $r28.<com.androidemu.harvefyzj.EmulatorActivation$2: void onClick(android.view.View)>(null);
+
+     label055:
+        $r29 = new com.androidemu.harvefyzj.MainActivity$1;
+
+        specialinvoke $r29.<com.androidemu.harvefyzj.MainActivity$1: void <init>(com.androidemu.harvefyzj.MainActivity)>($r18);
+
+        if $i0 == 72 goto label056;
+
+        virtualinvoke $r29.<com.androidemu.harvefyzj.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label056:
+        $r30 = new com.androidemu.harvefyzj.MainActivity$2;
+
+        specialinvoke $r30.<com.androidemu.harvefyzj.MainActivity$2: void <init>(com.androidemu.harvefyzj.MainActivity)>($r18);
+
+        if $i0 == 73 goto label057;
+
+        virtualinvoke $r30.<com.androidemu.harvefyzj.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label057:
+        if $i0 == 74 goto label040;
+
+     label058:
+        virtualinvoke $r18.<com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 75 goto label039;
+
+        if $i0 == 76 goto label059;
+
+        if $i0 == 77 goto label039;
+
+     label059:
+        if $i0 == 79 goto label064;
+
+        $r31 = new com.androidemu.harvefyzj.EmulatorService;
+
+        specialinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: void <init>()>();
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: void onCreate()>();
+
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label060:
+        if $i0 == 80 goto label061;
+
+        $i1 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: int onStartCommand(android.content.Intent,int,int)>(null, 0, 0);
+
+        if $i0 == 81 goto label060;
+
+     label061:
+        $r32 = virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label062:
+        if $i0 == 83 goto label063;
+
+        if $i0 == 84 goto label062;
+
+     label063:
+        virtualinvoke $r31.<com.androidemu.harvefyzj.EmulatorService: void onDestroy()>();
+
+     label064:
+        if $i0 == 85 goto label087;
+
+        $r33 = new com.androidemu.harvefyzj.FileChooser;
+
+        specialinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void <init>()>();
+
+        if $i0 == 86 goto label087;
+
+        virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void onCreate(android.os.Bundle)>(null);
+
+     label065:
+        if $i0 == 88 goto label086;
+
+     label066:
+        $r34 = new com.waps.DisplayAd;
+
+        specialinvoke $r34.<com.waps.DisplayAd: void <init>(android.content.Context)>($r33);
+
+        $r35 = new com.waps.s;
+
+        specialinvoke $r35.<com.waps.s: void <init>(com.waps.DisplayAd)>($r34);
+
+        if $i0 == 89 goto label067;
+
+        virtualinvoke $r35.<com.waps.s: void onClick(android.view.View)>(null);
+
+     label067:
+        if $i0 == 90 goto label068;
+
+        virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void onClick(android.view.View)>(null);
+
+     label068:
+        if $i0 == 91 goto label069;
+
+        $z9 = virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label069:
+        if $i0 == 92 goto label070;
+
+        $z10 = virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label070:
+        if $i0 == 93 goto label071;
+
+        staticinvoke <com.androidemu.harvefyzj.FileChooser: void <clinit>()>();
+
+     label071:
+        if $i0 == 94 goto label072;
+
+        $z11 = virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label072:
+        if $i0 == 95 goto label073;
+
+        virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label073:
+        $r36 = new com.androidemu.harvefyzj.EmulatorActivation$3;
+
+        specialinvoke $r36.<com.androidemu.harvefyzj.EmulatorActivation$3: void <init>()>();
+
+        if $i0 == 96 goto label074;
+
+        virtualinvoke $r36.<com.androidemu.harvefyzj.EmulatorActivation$3: void onClick(android.view.View)>(null);
+
+     label074:
+        $r37 = new com.androidemu.harvefyzj.EmulatorActivation$4;
+
+        specialinvoke $r37.<com.androidemu.harvefyzj.EmulatorActivation$4: void <init>()>();
+
+        if $i0 == 97 goto label075;
+
+        virtualinvoke $r37.<com.androidemu.harvefyzj.EmulatorActivation$4: void onClick(android.view.View)>(null);
+
+     label075:
+        $r38 = new com.androidemu.harvefyzj.MainActivity;
+
+        specialinvoke $r38.<com.androidemu.harvefyzj.MainActivity: void <init>()>();
+
+        if $i0 == 98 goto label076;
+
+        virtualinvoke $r38.<com.androidemu.harvefyzj.MainActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label076:
+        if $i0 == 99 goto label077;
+
+        virtualinvoke $r38.<com.androidemu.harvefyzj.MainActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label077:
+        if $i0 == 100 goto label078;
+
+        $z12 = virtualinvoke $r38.<com.androidemu.harvefyzj.MainActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label078:
+        if $i0 == 101 goto label079;
+
+        $z13 = virtualinvoke $r38.<com.androidemu.harvefyzj.MainActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label079:
+        if $i0 == 102 goto label080;
+
+        $r39 = virtualinvoke $r38.<com.androidemu.harvefyzj.MainActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label080:
+        if $i0 == 103 goto label081;
+
+        staticinvoke <com.androidemu.harvefyzj.MainActivity: void <clinit>()>();
+
+     label081:
+        if $i0 == 104 goto label082;
+
+        $z14 = virtualinvoke $r38.<com.androidemu.harvefyzj.MainActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label082:
+        $r40 = new com.androidemu.harvefyzj.EmulatorActivation$2;
+
+        specialinvoke $r40.<com.androidemu.harvefyzj.EmulatorActivation$2: void <init>(int)>(0);
+
+        if $i0 == 105 goto label083;
+
+        virtualinvoke $r40.<com.androidemu.harvefyzj.EmulatorActivation$2: void onClick(android.view.View)>(null);
+
+     label083:
+        $r41 = new com.androidemu.harvefyzj.MainActivity$1;
+
+        specialinvoke $r41.<com.androidemu.harvefyzj.MainActivity$1: void <init>(com.androidemu.harvefyzj.MainActivity)>($r18);
+
+        if $i0 == 106 goto label084;
+
+        virtualinvoke $r41.<com.androidemu.harvefyzj.MainActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label084:
+        $r42 = new com.androidemu.harvefyzj.MainActivity$2;
+
+        specialinvoke $r42.<com.androidemu.harvefyzj.MainActivity$2: void <init>(com.androidemu.harvefyzj.MainActivity)>($r18);
+
+        if $i0 == 107 goto label085;
+
+        virtualinvoke $r42.<com.androidemu.harvefyzj.MainActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label085:
+        if $i0 == 108 goto label066;
+
+     label086:
+        virtualinvoke $r33.<com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 109 goto label065;
+
+        if $i0 == 110 goto label087;
+
+        if $i0 == 111 goto label065;
+
+     label087:
+        if $i0 == 113 goto label094;
+
+        $r43 = new com.androidemu.harvefyzj.EmulatorSettings;
+
+        specialinvoke $r43.<com.androidemu.harvefyzj.EmulatorSettings: void <init>()>();
+
+        if $i0 == 114 goto label094;
+
+        virtualinvoke $r43.<com.androidemu.harvefyzj.EmulatorSettings: void onCreate(android.os.Bundle)>(null);
+
+     label088:
+        if $i0 == 116 goto label093;
+
+     label089:
+        if $i0 == 117 goto label090;
+
+        virtualinvoke $r43.<com.androidemu.harvefyzj.EmulatorSettings: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label090:
+        if $i0 == 118 goto label091;
+
+        staticinvoke <com.androidemu.harvefyzj.EmulatorSettings: void <clinit>()>();
+
+     label091:
+        if $i0 == 119 goto label092;
+
+        $z15 = virtualinvoke $r43.<com.androidemu.harvefyzj.EmulatorSettings: boolean onPreferenceTreeClick(android.preference.PreferenceScreen,android.preference.Preference)>(null, null);
+
+     label092:
+        if $i0 == 120 goto label089;
+
+     label093:
+        if $i0 == 121 goto label088;
+
+        if $i0 == 122 goto label094;
+
+        if $i0 == 123 goto label088;
+
+     label094:
+        if $i0 == 125 goto label128;
+
+        $r44 = new com.androidemu.harvefyzj.EmulatorActivity;
+
+        specialinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void <init>()>();
+
+        if $i0 == 126 goto label128;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onCreate(android.os.Bundle)>(null);
+
+     label095:
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onResume()>();
+
+        if $i0 == 128 goto label126;
+
+     label096:
+        if $i0 == 129 goto label097;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceCreated(android.view.SurfaceHolder)>(null);
+
+     label097:
+        if $i0 == 130 goto label098;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label098:
+        if $i0 == 131 goto label099;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceChanged(android.view.SurfaceHolder,int,int,int)>(null, 0, 0, 0);
+
+     label099:
+        if $i0 == 132 goto label100;
+
+        staticinvoke <com.androidemu.harvefyzj.EmulatorActivity: void <clinit>()>();
+
+     label100:
+        if $i0 == 133 goto label101;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onWindowFocusChanged(boolean)>(false);
+
+     label101:
+        if $i0 == 134 goto label102;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label102:
+        if $i0 == 135 goto label103;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void surfaceDestroyed(android.view.SurfaceHolder)>(null);
+
+     label103:
+        if $i0 == 136 goto label104;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onNewIntent(android.content.Intent)>(null);
+
+     label104:
+        if $i0 == 137 goto label105;
+
+        $z16 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label105:
+        if $i0 == 138 goto label106;
+
+        $r45 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label106:
+        if $i0 == 139 goto label107;
+
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label107:
+        if $i0 == 140 goto label108;
+
+        $z17 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label108:
+        if $i0 == 141 goto label109;
+
+        $z18 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label109:
+        if $i0 == 142 goto label110;
+
+        $z19 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label110:
+        if $i0 == 143 goto label111;
+
+        $z20 = virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label111:
+        $r46 = new com.androidemu.harvefyzj.EmulatorViewInit$3;
+
+        specialinvoke $r46.<com.androidemu.harvefyzj.EmulatorViewInit$3: void <init>()>();
+
+        $r47 = new com.androidemu.harvefyzj.EmulatorViewInit$3$2;
+
+        specialinvoke $r47.<com.androidemu.harvefyzj.EmulatorViewInit$3$2: void <init>(com.androidemu.harvefyzj.EmulatorViewInit$3)>($r46);
+
+        if $i0 == 144 goto label112;
+
+        virtualinvoke $r47.<com.androidemu.harvefyzj.EmulatorViewInit$3$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label112:
+        $r48 = new com.waps.DisplayAd;
+
+        specialinvoke $r48.<com.waps.DisplayAd: void <init>(android.content.Context)>($r44);
+
+        $r49 = new com.waps.s;
+
+        specialinvoke $r49.<com.waps.s: void <init>(com.waps.DisplayAd)>($r48);
+
+        if $i0 == 145 goto label113;
+
+        virtualinvoke $r49.<com.waps.s: void onClick(android.view.View)>(null);
+
+     label113:
+        $r50 = new com.androidemu.harvefyzj.EmulatorActivity$2;
+
+        specialinvoke $r50.<com.androidemu.harvefyzj.EmulatorActivity$2: void <init>(com.androidemu.harvefyzj.EmulatorActivity)>($r44);
+
+        if $i0 == 146 goto label114;
+
+        virtualinvoke $r50.<com.androidemu.harvefyzj.EmulatorActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label114:
+        $r51 = new com.androidemu.harvefyzj.input.Keyboard;
+
+        specialinvoke $r51.<com.androidemu.harvefyzj.input.Keyboard: void <init>(android.view.View,com.androidemu.harvefyzj.input.GameKeyListener)>(null, $r44);
+
+        if $i0 == 147 goto label115;
+
+        $z21 = virtualinvoke $r51.<com.androidemu.harvefyzj.input.Keyboard: boolean onKey(android.view.View,int,android.view.KeyEvent)>(null, 0, null);
+
+     label115:
+        $r52 = new com.androidemu.harvefyzj.EmulatorActivity$1;
+
+        specialinvoke $r52.<com.androidemu.harvefyzj.EmulatorActivity$1: void <init>(com.androidemu.harvefyzj.EmulatorActivity)>($r44);
+
+        if $i0 == 148 goto label116;
+
+        virtualinvoke $r52.<com.androidemu.harvefyzj.EmulatorActivity$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label116:
+        $r53 = new com.androidemu.harvefyzj.MediaScanner;
+
+        specialinvoke $r53.<com.androidemu.harvefyzj.MediaScanner: void <init>(android.content.Context)>($r44);
+
+        if $i0 == 149 goto label117;
+
+        virtualinvoke $r53.<com.androidemu.harvefyzj.MediaScanner: void onMediaScannerConnected()>();
+
+     label117:
+        $r54 = new com.androidemu.harvefyzj.EmulatorViewInit$3;
+
+        specialinvoke $r54.<com.androidemu.harvefyzj.EmulatorViewInit$3: void <init>()>();
+
+        $r55 = new com.androidemu.harvefyzj.EmulatorViewInit$3$1;
+
+        specialinvoke $r55.<com.androidemu.harvefyzj.EmulatorViewInit$3$1: void <init>(com.androidemu.harvefyzj.EmulatorViewInit$3)>($r54);
+
+        if $i0 == 150 goto label118;
+
+        virtualinvoke $r55.<com.androidemu.harvefyzj.EmulatorViewInit$3$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label118:
+        $r56 = new com.androidemu.EmulatorView;
+
+        specialinvoke $r56.<com.androidemu.EmulatorView: void <init>(android.content.Context,android.util.AttributeSet)>($r44, null);
+
+        if $i0 == 151 goto label119;
+
+        virtualinvoke $r56.<com.androidemu.EmulatorView: void onSizeChanged(int,int,int,int)>(0, 0, 0, 0);
+
+     label119:
+        if $i0 == 152 goto label120;
+
+        $z22 = virtualinvoke $r56.<com.androidemu.EmulatorView: boolean onTrackballEvent(android.view.MotionEvent)>(null);
+
+     label120:
+        $r57 = new com.androidemu.harvefyzj.EmulatorViewInit$3;
+
+        specialinvoke $r57.<com.androidemu.harvefyzj.EmulatorViewInit$3: void <init>()>();
+
+        if $i0 == 153 goto label121;
+
+        virtualinvoke $r57.<com.androidemu.harvefyzj.EmulatorViewInit$3: void onClick(android.view.View)>(null);
+
+     label121:
+        $r58 = new com.androidemu.harvefyzj.EmulatorViewInit$2;
+
+        specialinvoke $r58.<com.androidemu.harvefyzj.EmulatorViewInit$2: void <init>()>();
+
+        $r59 = new com.androidemu.harvefyzj.EmulatorViewInit$2$1;
+
+        specialinvoke $r59.<com.androidemu.harvefyzj.EmulatorViewInit$2$1: void <init>(com.androidemu.harvefyzj.EmulatorViewInit$2)>($r58);
+
+        if $i0 == 154 goto label122;
+
+        virtualinvoke $r59.<com.androidemu.harvefyzj.EmulatorViewInit$2$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label122:
+        $r60 = new com.androidemu.harvefyzj.EmulatorViewInit$2;
+
+        specialinvoke $r60.<com.androidemu.harvefyzj.EmulatorViewInit$2: void <init>()>();
+
+        $r61 = new com.androidemu.harvefyzj.EmulatorViewInit$2$2;
+
+        specialinvoke $r61.<com.androidemu.harvefyzj.EmulatorViewInit$2$2: void <init>(com.androidemu.harvefyzj.EmulatorViewInit$2)>($r60);
+
+        if $i0 == 155 goto label123;
+
+        virtualinvoke $r61.<com.androidemu.harvefyzj.EmulatorViewInit$2$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label123:
+        $r62 = new com.androidemu.harvefyzj.input.SensorKeypad;
+
+        specialinvoke $r62.<com.androidemu.harvefyzj.input.SensorKeypad: void <init>(android.content.Context)>($r44);
+
+        if $i0 == 156 goto label124;
+
+        virtualinvoke $r62.<com.androidemu.harvefyzj.input.SensorKeypad: void onSensorChanged(android.hardware.SensorEvent)>(null);
+
+     label124:
+        $r63 = new com.androidemu.harvefyzj.EmulatorViewInit$2;
+
+        specialinvoke $r63.<com.androidemu.harvefyzj.EmulatorViewInit$2: void <init>()>();
+
+        if $i0 == 157 goto label125;
+
+        virtualinvoke $r63.<com.androidemu.harvefyzj.EmulatorViewInit$2: void onClick(android.view.View)>(null);
+
+     label125:
+        if $i0 == 158 goto label096;
+
+     label126:
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onPause()>();
+
+        if $i0 == 159 goto label095;
+
+        if $i0 == 160 goto label127;
+
+        if $i0 == 161 goto label095;
+
+     label127:
+        virtualinvoke $r44.<com.androidemu.harvefyzj.EmulatorActivity: void onDestroy()>();
+
+     label128:
+        if $i0 == 163 goto label140;
+
+        $r64 = new com.androidemu.harvefyzj.KeyProfilesActivity;
+
+        specialinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: void <init>()>();
+
+        if $i0 == 164 goto label140;
+
+        virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: void onCreate(android.os.Bundle)>(null);
+
+     label129:
+        if $i0 == 166 goto label139;
+
+     label130:
+        if $i0 == 167 goto label131;
+
+        $z23 = virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label131:
+        if $i0 == 168 goto label132;
+
+        $z24 = virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label132:
+        if $i0 == 169 goto label133;
+
+        virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label133:
+        if $i0 == 170 goto label134;
+
+        virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label134:
+        if $i0 == 171 goto label135;
+
+        virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label135:
+        if $i0 == 172 goto label136;
+
+        $r65 = virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: android.app.Dialog onCreateDialog(int)>(0);
+
+     label136:
+        if $i0 == 173 goto label137;
+
+        $z25 = virtualinvoke $r64.<com.androidemu.harvefyzj.KeyProfilesActivity: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label137:
+        $r66 = new com.androidemu.harvefyzj.KeyProfilesActivity$2;
+
+        specialinvoke $r66.<com.androidemu.harvefyzj.KeyProfilesActivity$2: void <init>(com.androidemu.harvefyzj.KeyProfilesActivity)>($r64);
+
+        if $i0 == 174 goto label138;
+
+        virtualinvoke $r66.<com.androidemu.harvefyzj.KeyProfilesActivity$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label138:
+        if $i0 == 175 goto label130;
+
+     label139:
+        if $i0 == 176 goto label129;
+
+        if $i0 == 177 goto label140;
+
+        if $i0 == 178 goto label129;
+
+     label140:
+        if $i0 == 180 goto label142;
+
+        $r67 = new com.androidemu.harvefyzj.HelpActivity;
+
+        specialinvoke $r67.<com.androidemu.harvefyzj.HelpActivity: void <init>()>();
+
+        if $i0 == 181 goto label142;
+
+        virtualinvoke $r67.<com.androidemu.harvefyzj.HelpActivity: void onCreate(android.os.Bundle)>(null);
+
+     label141:
+        if $i0 == 184 goto label141;
+
+        if $i0 == 185 goto label142;
+
+        if $i0 == 186 goto label141;
+
+     label142:
+        if $i0 == 190 goto label001;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.068007352 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.113028541 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3631 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 204 sources and 64 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1163952
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 3791521
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 10126240 forward and 5814899 backward edges solved, processing 10 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 10 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.055878015 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("biosFile", $r3) in method <com.androidemu.harvefyzj.EmulatorSettings: void onActivityResult(int,int,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.androidemu.harvefyzj.EmulatorSettings: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r11) in method <com.waps.s: void onClick(android.view.View)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.s: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3) in method <com.waps.AppConnect: void initMetaData()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r3) in method <com.waps.AppConnect: void showOffers(android.content.Context,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r12.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("WAPS_PID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r11.<java.util.Locale: java.lang.String getCountry()>() in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVICE_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r12.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("currentDir", $r2) in method <com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("currentDir") in method <com.androidemu.harvefyzj.FileChooser: void onCreate(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3) in method <com.waps.AppConnect: void initMetaData()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") in method <com.waps.AppConnect: void initMetaData()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Package_Names", $r4) in method <com.waps.OffersWebView: void getAlreadyInstalledPackages(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(0) in method <com.waps.OffersWebView: void getAlreadyInstalledPackages(android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r14.<java.io.FileOutputStream: void write(byte[],int,int)>($r15, 0, $i1) in method <com.waps.o: java.lang.String a(java.lang.String[])> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r9 = interfaceinvoke $r8.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() in method <com.waps.o: java.lang.String a(java.lang.String[])>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r1, $r2) in method <com.waps.o: void a(com.waps.q)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) in method <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") in method <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>
+Found a flow to sink $r5 = interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("biosFile", $r3), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.androidemu.harvefyzj.EmulatorSettings: void onActivityResult(int,int,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r4.<android.content.Context: void startActivity(android.content.Intent)>($r11), from the following sources:
+	- $r10 = virtualinvoke $r9.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.s: void onClick(android.view.View)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3), from the following sources:
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") (in <com.waps.AppConnect: void initMetaData()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: void startActivity(android.content.Intent)>($r3), from the following sources:
+	- $r3 = virtualinvoke $r12.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.waps.AppConnect: void initMetaData()>)
+	- $r9 = virtualinvoke $r5.<android.os.Bundle: java.lang.Object get(java.lang.String)>("WAPS_PID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r11.<java.util.Locale: java.lang.String getCountry()>() (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVICE_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r12.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") (in <com.waps.AppConnect: void initMetaData()>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("currentDir", $r2), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.androidemu.harvefyzj.FileChooser: void onSaveInstanceState(android.os.Bundle)>)
+	- $r6 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("currentDir") (in <com.androidemu.harvefyzj.FileChooser: void onCreate(android.os.Bundle)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("WAPS_SDK", $r3), from the following sources:
+	- $r6 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APP_ID") (in <com.waps.AppConnect: void initMetaData()>)
+	- $r3 = virtualinvoke $r5.<android.os.Bundle: java.lang.String getString(java.lang.String)>("WAPS_ID") (in <com.waps.AppConnect: void initMetaData()>)
+Found a flow to sink interfaceinvoke $r9.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("Package_Names", $r4), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)>(0) (in <com.waps.OffersWebView: void getAlreadyInstalledPackages(android.content.Context)>)
+Found a flow to sink virtualinvoke $r14.<java.io.FileOutputStream: void write(byte[],int,int)>($r15, 0, $i1), from the following sources:
+	- $r9 = interfaceinvoke $r8.<org.apache.http.HttpResponse: org.apache.http.HttpEntity getEntity()>() (in <com.waps.o: java.lang.String a(java.lang.String[])>)
+Found a flow to sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r1, $r2), from the following sources:
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r3 = virtualinvoke $r1.<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)>($r2, 0) (in <com.waps.OffersWebView: void bindNewApp(android.content.pm.PackageManager)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Url_Params") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("isFinshClose") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Offers_URL") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("SHWO_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("UrlPath") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_ID") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("offers_webview_tag") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("CLIENT_PACKAGE") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("URL_PARAMS") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("Notify_Id") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+	- $r2 = virtualinvoke $r1.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ACTIVITY_FLAG") (in <com.waps.OffersWebView: void initMetaData(android.os.Bundle)>)
+Maximum memory consumption: 1872.44868 MB
+Analysis has run for 64.091244598 seconds

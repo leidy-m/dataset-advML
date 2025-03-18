@@ -1,0 +1,2739 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.0290762 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.app.ISearchManager$Stub is a phantom class!
+Warning: android.app.ISearchManager is a phantom class!
+Warning: android.app.IWallpaperService$Stub is a phantom class!
+Warning: android.app.IWallpaperService is a phantom class!
+Warning: android.app.StatusBarManager is a phantom class!
+Warning: android.os.ServiceManager is a phantom class!
+Warning: android.server.search.SearchableInfo is a phantom class!
+Warning: com.android.internal.R$styleable is a phantom class!
+Warning: com.android.internal.util.XmlUtils is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.km.launcher.LauncherProvider $r1;
+        boolean $z0;
+        com.km.launcher.LauncherApplication $r2;
+        com.km.launcher.WallpaperChooser $r3;
+        com.km.ad.AdService $r4;
+        android.os.IBinder $r5, $r13;
+        com.km.charge.BootReceiver $r6;
+        com.km.launcher.Launcher $r7;
+        com.km.launcher.InstallShortcutReceiver $r8;
+        com.km.launcher.UninstallShortcutReceiver $r9;
+        com.km.charge.MainActivity $r10;
+        com.km.theme.ThemeListActivity $r11;
+        com.km.charge.CycleService $r12;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        $r1 = new com.km.launcher.LauncherProvider;
+
+        specialinvoke $r1.<com.km.launcher.LauncherProvider: void <init>()>();
+
+        if $i0 == 0 goto label02;
+
+        $z0 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: boolean onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label01;
+
+        $r2 = new com.km.launcher.LauncherApplication;
+
+        specialinvoke $r2.<com.km.launcher.LauncherApplication: void <init>()>();
+
+        virtualinvoke $r2.<com.km.launcher.LauncherApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r2;
+
+     label03:
+        if $i0 == 2 goto label05;
+
+        $r3 = new com.km.launcher.WallpaperChooser;
+
+        specialinvoke $r3.<com.km.launcher.WallpaperChooser: void <init>()>();
+
+        if $i0 == 3 goto label05;
+
+        virtualinvoke $r3.<com.km.launcher.WallpaperChooser: void onCreate(android.os.Bundle)>(null);
+
+     label04:
+        virtualinvoke $r3.<com.km.launcher.WallpaperChooser: void onResume()>();
+
+        if $i0 == 5 goto label04;
+
+        if $i0 == 6 goto label05;
+
+        if $i0 == 7 goto label04;
+
+     label05:
+        if $i0 == 9 goto label10;
+
+        $r4 = new com.km.ad.AdService;
+
+        specialinvoke $r4.<com.km.ad.AdService: void <init>()>();
+
+        virtualinvoke $r4.<com.km.ad.AdService: void onCreate()>();
+
+        virtualinvoke $r4.<com.km.ad.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label06:
+        if $i0 == 10 goto label07;
+
+        if $i0 == 11 goto label06;
+
+     label07:
+        $r5 = virtualinvoke $r4.<com.km.ad.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label08:
+        if $i0 == 13 goto label09;
+
+        if $i0 == 14 goto label08;
+
+     label09:
+        virtualinvoke $r4.<com.km.ad.AdService: void onDestroy()>();
+
+     label10:
+        if $i0 == 15 goto label12;
+
+        $r6 = new com.km.charge.BootReceiver;
+
+        specialinvoke $r6.<com.km.charge.BootReceiver: void <init>()>();
+
+        if $i0 == 16 goto label12;
+
+     label11:
+        virtualinvoke $r6.<com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 18 goto label11;
+
+     label12:
+        if $i0 == 19 goto label15;
+
+        $r7 = new com.km.launcher.Launcher;
+
+        specialinvoke $r7.<com.km.launcher.Launcher: void <init>()>();
+
+        if $i0 == 20 goto label15;
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onCreate(android.os.Bundle)>(null);
+
+     label13:
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onResume()>();
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 22 goto label13;
+
+        if $i0 == 23 goto label14;
+
+        if $i0 == 24 goto label13;
+
+     label14:
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onDestroy()>();
+
+     label15:
+        if $i0 == 29 goto label17;
+
+        $r8 = new com.km.launcher.InstallShortcutReceiver;
+
+        specialinvoke $r8.<com.km.launcher.InstallShortcutReceiver: void <init>()>();
+
+        if $i0 == 30 goto label17;
+
+     label16:
+        virtualinvoke $r8.<com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 32 goto label16;
+
+     label17:
+        if $i0 == 34 goto label19;
+
+        $r9 = new com.km.launcher.UninstallShortcutReceiver;
+
+        specialinvoke $r9.<com.km.launcher.UninstallShortcutReceiver: void <init>()>();
+
+        if $i0 == 35 goto label19;
+
+     label18:
+        virtualinvoke $r9.<com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 37 goto label18;
+
+     label19:
+        if $i0 == 38 goto label21;
+
+        $r10 = new com.km.charge.MainActivity;
+
+        specialinvoke $r10.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 39 goto label21;
+
+        virtualinvoke $r10.<com.km.charge.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label20:
+        if $i0 == 42 goto label21;
+
+        if $i0 == 43 goto label20;
+
+     label21:
+        if $i0 == 45 goto label23;
+
+        $r11 = new com.km.theme.ThemeListActivity;
+
+        specialinvoke $r11.<com.km.theme.ThemeListActivity: void <init>()>();
+
+        if $i0 == 46 goto label23;
+
+        virtualinvoke $r11.<com.km.theme.ThemeListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label22:
+        if $i0 == 49 goto label23;
+
+        if $i0 == 50 goto label22;
+
+     label23:
+        if $i0 == 52 goto label27;
+
+        $r12 = new com.km.charge.CycleService;
+
+        specialinvoke $r12.<com.km.charge.CycleService: void <init>()>();
+
+        virtualinvoke $r12.<com.km.charge.CycleService: void onCreate()>();
+
+     label24:
+        if $i0 == 53 goto label25;
+
+        if $i0 == 54 goto label24;
+
+     label25:
+        $r13 = virtualinvoke $r12.<com.km.charge.CycleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label26:
+        if $i0 == 56 goto label27;
+
+        if $i0 == 57 goto label26;
+
+     label27:
+        if $i0 == 59 goto label03;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.2 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.1 seconds.
+[Spark] Solution found in 1.1 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.km.launcher.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.km.launcher.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.km.launcher.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/application_list.xml
+Found 2 layout controls in file res/layout/create_shortcut_group_item.xml
+Warning: ExpandableListView is a phantom class!
+Warning: com.km.launcher.ExpandableListView is a phantom class!
+Warning: android.view.ExpandableListView is a phantom class!
+Found 3 layout controls in file res/layout/create_shortcut_list.xml
+Found 4 layout controls in file res/layout/create_shortcut_list_item.xml
+Warning: Button is a phantom class!
+Warning: com.km.launcher.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: ListView is a phantom class!
+Warning: com.km.launcher.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 5 layout controls in file res/layout/live_folder_list.xml
+Warning: EditText is a phantom class!
+Warning: com.km.launcher.EditText is a phantom class!
+Warning: android.view.EditText is a phantom class!
+Found 6 layout controls in file res/layout/rename_folder.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.km.launcher.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Found 7 layout controls in file res/layout/theme_item.xml
+Warning: Gallery is a phantom class!
+Warning: com.km.launcher.Gallery is a phantom class!
+Warning: android.view.Gallery is a phantom class!
+Found 8 layout controls in file res/layout/wallpaper_chooser.xml
+Found 9 layout controls in file res/layout/wallpaper_item.xml
+Found 10 layout controls in file res/layout/widget_clock.xml
+Found 11 layout controls in file res/layout/widget_photo_frame.xml
+Warning: AutoCompleteTextView is a phantom class!
+Warning: com.km.launcher.AutoCompleteTextView is a phantom class!
+Warning: android.view.AutoCompleteTextView is a phantom class!
+Warning: ImageButton is a phantom class!
+Warning: com.km.launcher.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Found 12 layout controls in file res/layout/widget_search.xml
+Found 13 layout controls in file res/layout-land/application.xml
+Found 14 layout controls in file res/layout-land/application_boxed.xml
+Found 15 layout controls in file res/layout-land/folder_icon.xml
+Warning: SlidingDrawer is a phantom class!
+Warning: com.km.launcher.SlidingDrawer is a phantom class!
+Warning: android.view.SlidingDrawer is a phantom class!
+Found 16 layout controls in file res/layout-land/launcher.xml
+Warning: GridView is a phantom class!
+Warning: com.km.launcher.GridView is a phantom class!
+Warning: android.view.GridView is a phantom class!
+Found 17 layout controls in file res/layout-land/live_folder_grid.xml
+Found 18 layout controls in file res/layout-land/live_folder_icon.xml
+Found 19 layout controls in file res/layout-land/user_folder.xml
+Found 20 layout controls in file res/layout-land/workspace_screen.xml
+Found 21 layout controls in file res/layout-port/application.xml
+Found 22 layout controls in file res/layout-port/application_boxed.xml
+Found 23 layout controls in file res/layout-port/folder_icon.xml
+Found 24 layout controls in file res/layout-port/launcher.xml
+Found 25 layout controls in file res/layout-port/live_folder_grid.xml
+Found 26 layout controls in file res/layout-port/live_folder_icon.xml
+Found 27 layout controls in file res/layout-port/user_folder.xml
+Found 28 layout controls in file res/layout-port/workspace_screen.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.app.ISearchManager$Stub is a phantom class!
+Warning: android.app.ISearchManager is a phantom class!
+Warning: android.app.IWallpaperService$Stub is a phantom class!
+Warning: android.app.IWallpaperService is a phantom class!
+Warning: android.app.StatusBarManager is a phantom class!
+Warning: android.os.ServiceManager is a phantom class!
+Warning: android.server.search.SearchableInfo is a phantom class!
+Warning: com.android.internal.R$styleable is a phantom class!
+Warning: com.android.internal.util.XmlUtils is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$DrawerManager, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.ContentValues
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r13, $r14, $r15, $r18;
+        int $i0, $i1, $i2, $i3;
+        com.km.launcher.LauncherProvider $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.km.launcher.LauncherApplication $r2;
+        com.km.launcher.WallpaperChooser $r3;
+        com.km.ad.AdService $r4;
+        android.os.IBinder $r5, $r24;
+        com.km.charge.BootReceiver $r6;
+        com.km.launcher.Launcher $r7;
+        android.app.Dialog $r8;
+        com.km.launcher.Launcher$DrawerManager $r9, $r10;
+        android.net.Uri $r11;
+        android.content.ContentValues[] $r12;
+        android.database.Cursor $r16;
+        java.lang.String $r17;
+        com.km.launcher.InstallShortcutReceiver $r19;
+        com.km.launcher.UninstallShortcutReceiver $r20;
+        com.km.charge.MainActivity $r21;
+        com.km.theme.ThemeListActivity $r22;
+        com.km.charge.CycleService $r23;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        $r1 = new com.km.launcher.LauncherProvider;
+
+        specialinvoke $r1.<com.km.launcher.LauncherProvider: void <init>()>();
+
+        if $i0 == 0 goto label02;
+
+        $z0 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: boolean onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label01;
+
+        $r2 = new com.km.launcher.LauncherApplication;
+
+        specialinvoke $r2.<com.km.launcher.LauncherApplication: void <init>()>();
+
+     label03:
+        if $i0 == 3 goto label03;
+
+        virtualinvoke $r2.<com.km.launcher.LauncherApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r2;
+
+     label04:
+        if $i0 == 4 goto label10;
+
+        $r3 = new com.km.launcher.WallpaperChooser;
+
+        specialinvoke $r3.<com.km.launcher.WallpaperChooser: void <init>()>();
+
+        if $i0 == 5 goto label10;
+
+        virtualinvoke $r3.<com.km.launcher.WallpaperChooser: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        virtualinvoke $r3.<com.km.launcher.WallpaperChooser: void onResume()>();
+
+        if $i0 == 7 goto label09;
+
+     label06:
+        if $i0 == 8 goto label07;
+
+        staticinvoke <com.km.launcher.WallpaperChooser: void <clinit>()>();
+
+     label07:
+        if $i0 == 9 goto label08;
+
+        virtualinvoke $r3.<com.km.launcher.WallpaperChooser: void onClick(android.view.View)>(null);
+
+     label08:
+        if $i0 == 10 goto label06;
+
+     label09:
+        if $i0 == 11 goto label05;
+
+        if $i0 == 12 goto label10;
+
+        if $i0 == 13 goto label05;
+
+     label10:
+        if $i0 == 15 goto label15;
+
+        $r4 = new com.km.ad.AdService;
+
+        specialinvoke $r4.<com.km.ad.AdService: void <init>()>();
+
+        virtualinvoke $r4.<com.km.ad.AdService: void onCreate()>();
+
+        virtualinvoke $r4.<com.km.ad.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label11:
+        if $i0 == 16 goto label12;
+
+        if $i0 == 17 goto label11;
+
+     label12:
+        $r5 = virtualinvoke $r4.<com.km.ad.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 19 goto label14;
+
+        if $i0 == 20 goto label13;
+
+     label14:
+        virtualinvoke $r4.<com.km.ad.AdService: void onDestroy()>();
+
+     label15:
+        if $i0 == 21 goto label17;
+
+        $r6 = new com.km.charge.BootReceiver;
+
+        specialinvoke $r6.<com.km.charge.BootReceiver: void <init>()>();
+
+        if $i0 == 22 goto label17;
+
+     label16:
+        virtualinvoke $r6.<com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label16;
+
+     label17:
+        if $i0 == 25 goto label40;
+
+        $r7 = new com.km.launcher.Launcher;
+
+        specialinvoke $r7.<com.km.launcher.Launcher: void <init>()>();
+
+        if $i0 == 26 goto label40;
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onResume()>();
+
+        if $i0 == 28 goto label38;
+
+     label19:
+        if $i0 == 29 goto label20;
+
+        $r8 = virtualinvoke $r7.<com.km.launcher.Launcher: android.app.Dialog onCreateDialog(int)>(0);
+
+     label20:
+        if $i0 == 30 goto label21;
+
+        $z1 = virtualinvoke $r7.<com.km.launcher.Launcher: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label21:
+        if $i0 == 31 goto label22;
+
+        $z2 = virtualinvoke $r7.<com.km.launcher.Launcher: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label22:
+        if $i0 == 32 goto label23;
+
+        staticinvoke <com.km.launcher.Launcher: void <clinit>()>();
+
+     label23:
+        if $i0 == 33 goto label24;
+
+        $z3 = virtualinvoke $r7.<com.km.launcher.Launcher: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label24:
+        if $i0 == 34 goto label25;
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void startActivityForResult(android.content.Intent,int)>(null, 0);
+
+     label25:
+        if $i0 == 35 goto label26;
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label26:
+        if $i0 == 36 goto label27;
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void startSearch(java.lang.String,boolean,android.os.Bundle,boolean)>("", false, null, false);
+
+     label27:
+        if $i0 == 37 goto label28;
+
+        $z4 = virtualinvoke $r7.<com.km.launcher.Launcher: boolean onLongClick(android.view.View)>(null);
+
+     label28:
+        if $i0 == 38 goto label29;
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onClick(android.view.View)>(null);
+
+     label29:
+        if $i0 == 39 goto label30;
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onNewIntent(android.content.Intent)>(null);
+
+     label30:
+        if $i0 == 40 goto label31;
+
+        $z5 = virtualinvoke $r7.<com.km.launcher.Launcher: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label31:
+        if $i0 == 41 goto label32;
+
+        $z6 = virtualinvoke $r7.<com.km.launcher.Launcher: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label32:
+        if $i0 == 42 goto label33;
+
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label33:
+        if $i0 == 43 goto label34;
+
+        $z7 = virtualinvoke $r7.<com.km.launcher.Launcher: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label34:
+        $r9 = null;
+
+        $r10 = new com.km.launcher.Launcher$DrawerManager;
+
+        specialinvoke $r10.<com.km.launcher.Launcher$DrawerManager: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$DrawerManager)>($r7, $r9);
+
+        if $i0 == 44 goto label35;
+
+        virtualinvoke $r10.<com.km.launcher.Launcher$DrawerManager: void onDrawerClosed()>();
+
+     label35:
+        if $i0 == 45 goto label36;
+
+        virtualinvoke $r10.<com.km.launcher.Launcher$DrawerManager: void onDrawerOpened()>();
+
+     label36:
+        if $i0 == 46 goto label37;
+
+        virtualinvoke $r10.<com.km.launcher.Launcher$DrawerManager: void onScrollStarted()>();
+
+     label37:
+        if $i0 == 47 goto label19;
+
+     label38:
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 48 goto label18;
+
+        if $i0 == 49 goto label39;
+
+        if $i0 == 50 goto label18;
+
+     label39:
+        virtualinvoke $r7.<com.km.launcher.Launcher: void onDestroy()>();
+
+     label40:
+        if $i0 == 52 goto label48;
+
+        if $i0 == 53 goto label48;
+
+        if $i0 == 54 goto label48;
+
+     label41:
+        if $i0 == 55 goto label42;
+
+        $r11 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(null, null);
+
+     label42:
+        if $i0 == 56 goto label43;
+
+        $r12 = newarray (android.content.ContentValues)[1];
+
+        $r12[0] = null;
+
+        $i1 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int bulkInsert(android.net.Uri,android.content.ContentValues[])>(null, $r12);
+
+     label43:
+        if $i0 == 57 goto label44;
+
+        $r13 = newarray (java.lang.String)[1];
+
+        $r13[0] = "";
+
+        $i2 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(null, "", $r13);
+
+     label44:
+        if $i0 == 58 goto label45;
+
+        $r14 = newarray (java.lang.String)[1];
+
+        $r14[0] = "";
+
+        $r15 = newarray (java.lang.String)[1];
+
+        $r15[0] = "";
+
+        $r16 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(null, $r14, "", $r15, "");
+
+     label45:
+        if $i0 == 59 goto label46;
+
+        $r17 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: java.lang.String getType(android.net.Uri)>(null);
+
+     label46:
+        if $i0 == 60 goto label47;
+
+        $r18 = newarray (java.lang.String)[1];
+
+        $r18[0] = "";
+
+        $i3 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(null, null, "", $r18);
+
+     label47:
+        if $i0 == 61 goto label41;
+
+     label48:
+        if $i0 == 62 goto label50;
+
+        $r19 = new com.km.launcher.InstallShortcutReceiver;
+
+        specialinvoke $r19.<com.km.launcher.InstallShortcutReceiver: void <init>()>();
+
+        if $i0 == 63 goto label50;
+
+     label49:
+        virtualinvoke $r19.<com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 65 goto label49;
+
+     label50:
+        if $i0 == 67 goto label52;
+
+        $r20 = new com.km.launcher.UninstallShortcutReceiver;
+
+        specialinvoke $r20.<com.km.launcher.UninstallShortcutReceiver: void <init>()>();
+
+        if $i0 == 68 goto label52;
+
+     label51:
+        virtualinvoke $r20.<com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 70 goto label51;
+
+     label52:
+        if $i0 == 71 goto label59;
+
+        $r21 = new com.km.charge.MainActivity;
+
+        specialinvoke $r21.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 72 goto label59;
+
+        virtualinvoke $r21.<com.km.charge.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label53:
+        if $i0 == 74 goto label58;
+
+     label54:
+        if $i0 == 75 goto label55;
+
+        virtualinvoke $r21.<com.km.charge.MainActivity: void finish()>();
+
+     label55:
+        if $i0 == 76 goto label56;
+
+        virtualinvoke $r21.<com.km.charge.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label56:
+        if $i0 == 77 goto label57;
+
+        virtualinvoke $r21.<com.km.charge.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label57:
+        if $i0 == 78 goto label54;
+
+     label58:
+        if $i0 == 79 goto label53;
+
+        if $i0 == 80 goto label59;
+
+        if $i0 == 81 goto label53;
+
+     label59:
+        if $i0 == 83 goto label65;
+
+        $r22 = new com.km.theme.ThemeListActivity;
+
+        specialinvoke $r22.<com.km.theme.ThemeListActivity: void <init>()>();
+
+        if $i0 == 84 goto label65;
+
+        virtualinvoke $r22.<com.km.theme.ThemeListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label60:
+        if $i0 == 86 goto label64;
+
+     label61:
+        if $i0 == 87 goto label62;
+
+        virtualinvoke $r22.<com.km.theme.ThemeListActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label62:
+        if $i0 == 88 goto label63;
+
+        staticinvoke <com.km.theme.ThemeListActivity: void <clinit>()>();
+
+     label63:
+        if $i0 == 89 goto label61;
+
+     label64:
+        if $i0 == 90 goto label60;
+
+        if $i0 == 91 goto label65;
+
+        if $i0 == 92 goto label60;
+
+     label65:
+        if $i0 == 94 goto label69;
+
+        $r23 = new com.km.charge.CycleService;
+
+        specialinvoke $r23.<com.km.charge.CycleService: void <init>()>();
+
+        virtualinvoke $r23.<com.km.charge.CycleService: void onCreate()>();
+
+     label66:
+        if $i0 == 95 goto label67;
+
+        if $i0 == 96 goto label66;
+
+     label67:
+        $r24 = virtualinvoke $r23.<com.km.charge.CycleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label68:
+        if $i0 == 98 goto label69;
+
+        if $i0 == 99 goto label68;
+
+     label69:
+        if $i0 == 103 goto label04;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Running incremental callback analysis for 11 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.app.ISearchManager$Stub is a phantom class!
+Warning: android.app.ISearchManager is a phantom class!
+Warning: android.app.IWallpaperService$Stub is a phantom class!
+Warning: android.app.IWallpaperService is a phantom class!
+Warning: android.app.StatusBarManager is a phantom class!
+Warning: android.os.ServiceManager is a phantom class!
+Warning: android.server.search.SearchableInfo is a phantom class!
+Warning: com.android.internal.R$styleable is a phantom class!
+Warning: com.android.internal.util.XmlUtils is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.ContentValues
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$CreateShortcut, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ExpandableListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$DrawerManager, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$DrawerManager, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.km.charge.SendMessageInterface, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r5, $r6, $r11, $r12;
+        int $i0, $i1, $i2, $i3;
+        com.km.launcher.LauncherProvider $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11;
+        com.km.launcher.LauncherApplication $r2;
+        com.km.ad.AdService $r3;
+        android.os.IBinder $r4, $r16;
+        android.database.Cursor $r7;
+        android.net.Uri $r8;
+        android.content.ContentValues[] $r9;
+        java.lang.String $r10;
+        com.km.launcher.InstallShortcutReceiver $r13;
+        com.km.launcher.UninstallShortcutReceiver $r14;
+        com.km.charge.CycleService $r15;
+        com.km.charge.HttpBox $r17;
+        com.km.charge.HttpBox$ConnectivityReceiver $r18;
+        com.km.launcher.WallpaperChooser $r19;
+        com.km.charge.BootReceiver $r20;
+        com.km.launcher.Launcher $r21, $r39;
+        com.km.launcher.Launcher$RenameFolder $r22, $r23, $r27, $r28, $r30, $r31, $r42, $r43, $r45, $r46;
+        com.km.launcher.Launcher$RenameFolder$1 $r24;
+        com.km.launcher.Launcher$CreateShortcut $r25, $r26;
+        com.km.launcher.Launcher$RenameFolder$2 $r29, $r44;
+        com.km.launcher.Launcher$RenameFolder$3 $r32, $r47;
+        com.km.launcher.Launcher$DrawerManager $r33, $r34, $r37, $r38;
+        android.app.Dialog $r35;
+        com.km.charge.MainActivity $r36, $r41;
+        com.km.theme.ThemeListActivity $r40;
+        com.km.charge.SendMessage $r48;
+        com.km.charge.SendMessage$SendMessageReceiver $r49;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        $r1 = new com.km.launcher.LauncherProvider;
+
+        specialinvoke $r1.<com.km.launcher.LauncherProvider: void <init>()>();
+
+        if $i0 == 0 goto label02;
+
+        $z0 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: boolean onCreate()>();
+
+     label02:
+        if $i0 == 1 goto label01;
+
+        $r2 = new com.km.launcher.LauncherApplication;
+
+        specialinvoke $r2.<com.km.launcher.LauncherApplication: void <init>()>();
+
+     label03:
+        if $i0 == 3 goto label03;
+
+        virtualinvoke $r2.<com.km.launcher.LauncherApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r2;
+
+     label04:
+        if $i0 == 4 goto label09;
+
+        $r3 = new com.km.ad.AdService;
+
+        specialinvoke $r3.<com.km.ad.AdService: void <init>()>();
+
+        virtualinvoke $r3.<com.km.ad.AdService: void onCreate()>();
+
+        virtualinvoke $r3.<com.km.ad.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label05:
+        if $i0 == 5 goto label06;
+
+        if $i0 == 6 goto label05;
+
+     label06:
+        $r4 = virtualinvoke $r3.<com.km.ad.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label07:
+        if $i0 == 8 goto label08;
+
+        if $i0 == 9 goto label07;
+
+     label08:
+        virtualinvoke $r3.<com.km.ad.AdService: void onDestroy()>();
+
+     label09:
+        if $i0 == 10 goto label17;
+
+        if $i0 == 11 goto label17;
+
+        if $i0 == 12 goto label17;
+
+     label10:
+        if $i0 == 13 goto label11;
+
+        $r5 = newarray (java.lang.String)[1];
+
+        $r5[0] = "";
+
+        $r6 = newarray (java.lang.String)[1];
+
+        $r6[0] = "";
+
+        $r7 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(null, $r5, "", $r6, "");
+
+     label11:
+        if $i0 == 14 goto label12;
+
+        $r8 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(null, null);
+
+     label12:
+        if $i0 == 15 goto label13;
+
+        $r9 = newarray (android.content.ContentValues)[1];
+
+        $r9[0] = null;
+
+        $i1 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int bulkInsert(android.net.Uri,android.content.ContentValues[])>(null, $r9);
+
+     label13:
+        if $i0 == 16 goto label14;
+
+        $r10 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: java.lang.String getType(android.net.Uri)>(null);
+
+     label14:
+        if $i0 == 17 goto label15;
+
+        $r11 = newarray (java.lang.String)[1];
+
+        $r11[0] = "";
+
+        $i2 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(null, "", $r11);
+
+     label15:
+        if $i0 == 18 goto label16;
+
+        $r12 = newarray (java.lang.String)[1];
+
+        $r12[0] = "";
+
+        $i3 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(null, null, "", $r12);
+
+     label16:
+        if $i0 == 19 goto label10;
+
+     label17:
+        if $i0 == 20 goto label19;
+
+        $r13 = new com.km.launcher.InstallShortcutReceiver;
+
+        specialinvoke $r13.<com.km.launcher.InstallShortcutReceiver: void <init>()>();
+
+        if $i0 == 21 goto label19;
+
+     label18:
+        virtualinvoke $r13.<com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label18;
+
+     label19:
+        if $i0 == 24 goto label21;
+
+        $r14 = new com.km.launcher.UninstallShortcutReceiver;
+
+        specialinvoke $r14.<com.km.launcher.UninstallShortcutReceiver: void <init>()>();
+
+        if $i0 == 25 goto label21;
+
+     label20:
+        virtualinvoke $r14.<com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 27 goto label20;
+
+     label21:
+        if $i0 == 28 goto label25;
+
+        $r15 = new com.km.charge.CycleService;
+
+        specialinvoke $r15.<com.km.charge.CycleService: void <init>()>();
+
+        virtualinvoke $r15.<com.km.charge.CycleService: void onCreate()>();
+
+     label22:
+        if $i0 == 29 goto label23;
+
+        if $i0 == 30 goto label22;
+
+     label23:
+        $r16 = virtualinvoke $r15.<com.km.charge.CycleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label24:
+        if $i0 == 32 goto label25;
+
+        if $i0 == 33 goto label24;
+
+     label25:
+        if $i0 == 36 goto label27;
+
+        $r17 = new com.km.charge.HttpBox;
+
+        specialinvoke $r17.<com.km.charge.HttpBox: void <init>(android.content.Context)>(null);
+
+        $r18 = new com.km.charge.HttpBox$ConnectivityReceiver;
+
+        specialinvoke $r18.<com.km.charge.HttpBox$ConnectivityReceiver: void <init>(com.km.charge.HttpBox)>($r17);
+
+        if $i0 == 37 goto label27;
+
+     label26:
+        virtualinvoke $r18.<com.km.charge.HttpBox$ConnectivityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label26;
+
+     label27:
+        if $i0 == 40 goto label33;
+
+        $r19 = new com.km.launcher.WallpaperChooser;
+
+        specialinvoke $r19.<com.km.launcher.WallpaperChooser: void <init>()>();
+
+        if $i0 == 41 goto label33;
+
+        virtualinvoke $r19.<com.km.launcher.WallpaperChooser: void onCreate(android.os.Bundle)>(null);
+
+     label28:
+        virtualinvoke $r19.<com.km.launcher.WallpaperChooser: void onResume()>();
+
+        if $i0 == 43 goto label32;
+
+     label29:
+        if $i0 == 44 goto label30;
+
+        staticinvoke <com.km.launcher.WallpaperChooser: void <clinit>()>();
+
+     label30:
+        if $i0 == 45 goto label31;
+
+        virtualinvoke $r19.<com.km.launcher.WallpaperChooser: void onClick(android.view.View)>(null);
+
+     label31:
+        if $i0 == 46 goto label29;
+
+     label32:
+        if $i0 == 47 goto label28;
+
+        if $i0 == 48 goto label33;
+
+        if $i0 == 49 goto label28;
+
+     label33:
+        if $i0 == 51 goto label35;
+
+        $r20 = new com.km.charge.BootReceiver;
+
+        specialinvoke $r20.<com.km.charge.BootReceiver: void <init>()>();
+
+        if $i0 == 52 goto label35;
+
+     label34:
+        virtualinvoke $r20.<com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 54 goto label34;
+
+     label35:
+        if $i0 == 55 goto label64;
+
+        $r21 = new com.km.launcher.Launcher;
+
+        specialinvoke $r21.<com.km.launcher.Launcher: void <init>()>();
+
+        if $i0 == 56 goto label64;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onCreate(android.os.Bundle)>(null);
+
+     label36:
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onResume()>();
+
+        if $i0 == 58 goto label62;
+
+     label37:
+        $r22 = null;
+
+        $r23 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r23.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r22);
+
+        $r24 = new com.km.launcher.Launcher$RenameFolder$1;
+
+        specialinvoke $r24.<com.km.launcher.Launcher$RenameFolder$1: void <init>(com.km.launcher.Launcher$RenameFolder)>($r23);
+
+        if $i0 == 59 goto label38;
+
+        virtualinvoke $r24.<com.km.launcher.Launcher$RenameFolder$1: void onCancel(android.content.DialogInterface)>(null);
+
+     label38:
+        $r25 = null;
+
+        $r26 = new com.km.launcher.Launcher$CreateShortcut;
+
+        specialinvoke $r26.<com.km.launcher.Launcher$CreateShortcut: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$CreateShortcut)>($r21, $r25);
+
+        if $i0 == 60 goto label39;
+
+        virtualinvoke $r26.<com.km.launcher.Launcher$CreateShortcut: void onCancel(android.content.DialogInterface)>(null);
+
+     label39:
+        if $i0 == 61 goto label40;
+
+        $z1 = virtualinvoke $r26.<com.km.launcher.Launcher$CreateShortcut: boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long)>(null, null, 0, 0, 0L);
+
+     label40:
+        if $i0 == 62 goto label41;
+
+        virtualinvoke $r26.<com.km.launcher.Launcher$CreateShortcut: void onGroupExpand(int)>(0);
+
+     label41:
+        $r27 = null;
+
+        $r28 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r28.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r27);
+
+        $r29 = new com.km.launcher.Launcher$RenameFolder$2;
+
+        specialinvoke $r29.<com.km.launcher.Launcher$RenameFolder$2: void <init>(com.km.launcher.Launcher$RenameFolder)>($r28);
+
+        if $i0 == 63 goto label42;
+
+        virtualinvoke $r29.<com.km.launcher.Launcher$RenameFolder$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label42:
+        $r30 = null;
+
+        $r31 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r31.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r30);
+
+        $r32 = new com.km.launcher.Launcher$RenameFolder$3;
+
+        specialinvoke $r32.<com.km.launcher.Launcher$RenameFolder$3: void <init>(com.km.launcher.Launcher$RenameFolder)>($r31);
+
+        if $i0 == 64 goto label43;
+
+        virtualinvoke $r32.<com.km.launcher.Launcher$RenameFolder$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label43:
+        $r33 = null;
+
+        $r34 = new com.km.launcher.Launcher$DrawerManager;
+
+        specialinvoke $r34.<com.km.launcher.Launcher$DrawerManager: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$DrawerManager)>($r21, $r33);
+
+        if $i0 == 65 goto label44;
+
+        virtualinvoke $r34.<com.km.launcher.Launcher$DrawerManager: void onScrollStarted()>();
+
+     label44:
+        if $i0 == 66 goto label45;
+
+        virtualinvoke $r34.<com.km.launcher.Launcher$DrawerManager: void onDrawerClosed()>();
+
+     label45:
+        if $i0 == 67 goto label46;
+
+        virtualinvoke $r34.<com.km.launcher.Launcher$DrawerManager: void onDrawerOpened()>();
+
+     label46:
+        if $i0 == 68 goto label47;
+
+        staticinvoke <com.km.launcher.Launcher: void <clinit>()>();
+
+     label47:
+        if $i0 == 69 goto label48;
+
+        $z2 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label48:
+        if $i0 == 70 goto label49;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void startSearch(java.lang.String,boolean,android.os.Bundle,boolean)>("", false, null, false);
+
+     label49:
+        if $i0 == 71 goto label50;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label50:
+        if $i0 == 72 goto label51;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onClick(android.view.View)>(null);
+
+     label51:
+        if $i0 == 73 goto label52;
+
+        $z3 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onLongClick(android.view.View)>(null);
+
+     label52:
+        if $i0 == 74 goto label53;
+
+        $z4 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label53:
+        if $i0 == 75 goto label54;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label54:
+        if $i0 == 76 goto label55;
+
+        $r35 = virtualinvoke $r21.<com.km.launcher.Launcher: android.app.Dialog onCreateDialog(int)>(0);
+
+     label55:
+        if $i0 == 77 goto label56;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void startActivityForResult(android.content.Intent,int)>(null, 0);
+
+     label56:
+        if $i0 == 78 goto label57;
+
+        $z5 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label57:
+        if $i0 == 79 goto label58;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onNewIntent(android.content.Intent)>(null);
+
+     label58:
+        if $i0 == 80 goto label59;
+
+        $z6 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label59:
+        if $i0 == 81 goto label60;
+
+        $z7 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label60:
+        if $i0 == 82 goto label61;
+
+        $z8 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label61:
+        if $i0 == 83 goto label37;
+
+     label62:
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 84 goto label36;
+
+        if $i0 == 85 goto label63;
+
+        if $i0 == 86 goto label36;
+
+     label63:
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onDestroy()>();
+
+     label64:
+        if $i0 == 89 goto label78;
+
+        $r36 = new com.km.charge.MainActivity;
+
+        specialinvoke $r36.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 90 goto label78;
+
+        virtualinvoke $r36.<com.km.charge.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label65:
+        if $i0 == 92 goto label77;
+
+     label66:
+        if $i0 == 93 goto label67;
+
+        virtualinvoke $r36.<com.km.charge.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label67:
+        if $i0 == 94 goto label68;
+
+        virtualinvoke $r36.<com.km.charge.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label68:
+        if $i0 == 95 goto label69;
+
+        virtualinvoke $r36.<com.km.charge.MainActivity: void finish()>();
+
+     label69:
+        $r37 = null;
+
+        $r38 = new com.km.launcher.Launcher$DrawerManager;
+
+        specialinvoke $r38.<com.km.launcher.Launcher$DrawerManager: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$DrawerManager)>($r21, $r37);
+
+        if $i0 == 96 goto label70;
+
+        virtualinvoke $r38.<com.km.launcher.Launcher$DrawerManager: void onScrollStarted()>();
+
+     label70:
+        if $i0 == 97 goto label71;
+
+        virtualinvoke $r38.<com.km.launcher.Launcher$DrawerManager: void onDrawerClosed()>();
+
+     label71:
+        if $i0 == 98 goto label72;
+
+        virtualinvoke $r38.<com.km.launcher.Launcher$DrawerManager: void onDrawerOpened()>();
+
+     label72:
+        $r39 = new com.km.launcher.Launcher;
+
+        specialinvoke $r39.<com.km.launcher.Launcher: void <init>()>();
+
+        if $i0 == 99 goto label73;
+
+        $z9 = virtualinvoke $r39.<com.km.launcher.Launcher: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label73:
+        if $i0 == 100 goto label74;
+
+        $z10 = virtualinvoke $r39.<com.km.launcher.Launcher: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label74:
+        if $i0 == 101 goto label75;
+
+        virtualinvoke $r39.<com.km.launcher.Launcher: void onClick(android.view.View)>(null);
+
+     label75:
+        if $i0 == 102 goto label76;
+
+        $z11 = virtualinvoke $r39.<com.km.launcher.Launcher: boolean onLongClick(android.view.View)>(null);
+
+     label76:
+        if $i0 == 103 goto label66;
+
+     label77:
+        if $i0 == 104 goto label65;
+
+        if $i0 == 105 goto label78;
+
+        if $i0 == 106 goto label65;
+
+     label78:
+        if $i0 == 108 goto label89;
+
+        $r40 = new com.km.theme.ThemeListActivity;
+
+        specialinvoke $r40.<com.km.theme.ThemeListActivity: void <init>()>();
+
+        if $i0 == 109 goto label89;
+
+        virtualinvoke $r40.<com.km.theme.ThemeListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label79:
+        if $i0 == 111 goto label88;
+
+     label80:
+        $r41 = new com.km.charge.MainActivity;
+
+        specialinvoke $r41.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 112 goto label81;
+
+        virtualinvoke $r41.<com.km.charge.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label81:
+        if $i0 == 113 goto label82;
+
+        virtualinvoke $r41.<com.km.charge.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label82:
+        $r42 = null;
+
+        $r43 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r43.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r42);
+
+        $r44 = new com.km.launcher.Launcher$RenameFolder$2;
+
+        specialinvoke $r44.<com.km.launcher.Launcher$RenameFolder$2: void <init>(com.km.launcher.Launcher$RenameFolder)>($r43);
+
+        if $i0 == 114 goto label83;
+
+        virtualinvoke $r44.<com.km.launcher.Launcher$RenameFolder$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label83:
+        if $i0 == 115 goto label84;
+
+        staticinvoke <com.km.theme.ThemeListActivity: void <clinit>()>();
+
+     label84:
+        if $i0 == 116 goto label85;
+
+        virtualinvoke $r40.<com.km.theme.ThemeListActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label85:
+        if $i0 == 117 goto label86;
+
+        virtualinvoke $r40.<com.km.theme.ThemeListActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label86:
+        $r45 = null;
+
+        $r46 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r46.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r45);
+
+        $r47 = new com.km.launcher.Launcher$RenameFolder$3;
+
+        specialinvoke $r47.<com.km.launcher.Launcher$RenameFolder$3: void <init>(com.km.launcher.Launcher$RenameFolder)>($r46);
+
+        if $i0 == 118 goto label87;
+
+        virtualinvoke $r47.<com.km.launcher.Launcher$RenameFolder$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label87:
+        if $i0 == 119 goto label80;
+
+     label88:
+        if $i0 == 120 goto label79;
+
+        if $i0 == 121 goto label89;
+
+        if $i0 == 122 goto label79;
+
+     label89:
+        if $i0 == 124 goto label91;
+
+        $r48 = new com.km.charge.SendMessage;
+
+        specialinvoke $r48.<com.km.charge.SendMessage: void <init>(android.content.Context,com.km.charge.SendMessageInterface)>(null, null);
+
+        $r49 = new com.km.charge.SendMessage$SendMessageReceiver;
+
+        specialinvoke $r49.<com.km.charge.SendMessage$SendMessageReceiver: void <init>(com.km.charge.SendMessage)>($r48);
+
+        if $i0 == 125 goto label91;
+
+     label90:
+        virtualinvoke $r49.<com.km.charge.SendMessage$SendMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 127 goto label90;
+
+     label91:
+        if $i0 == 129 goto label04;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 85 callback methods for 11 components
+Found {res/layout/theme_item.xml=[2130968594 - android.widget.TextView, 2130968593 - android.widget.ImageView, -1 - android.widget.RelativeLayout, 2130968595 - android.widget.ImageView, -1 - android.widget.LinearLayout], res/layout-port/live_folder_icon.xml=[-1 - com.km.launcher.LiveFolderIcon], res/layout/live_folder_list.xml=[-1 - com.km.launcher.LiveFolder, 2130968589 - android.widget.ListView, 2130968591 - android.widget.Button], res/layout-port/application.xml=[-1 - com.km.launcher.BubbleTextView], res/layout/create_shortcut_list.xml=[-1 - android.widget.ExpandableListView], res/layout/widget_search.xml=[2130968600 - android.widget.AutoCompleteTextView, 2130968599 - android.widget.ImageView, -1 - com.km.launcher.Search, 2130968601 - android.widget.ImageButton], res/layout/wallpaper_item.xml=[-1 - android.widget.ImageView], res/layout/widget_clock.xml=[-1 - com.km.launcher.MyAnalogClock], res/layout-port/workspace_screen.xml=[-1 - com.km.launcher.CellLayout], res/layout-port/launcher.xml=[2130968587 - android.widget.SlidingDrawer, 2130968583 - com.km.launcher.Workspace, 2130968588 - com.km.launcher.HandleView, 2130968590 - com.km.launcher.DeleteZone, 2130968582 - com.km.launcher.DragLayer, 2130968589 - com.km.launcher.AllAppsGridView], res/layout-land/live_folder_icon.xml=[-1 - com.km.launcher.LiveFolderIcon], res/layout-land/application.xml=[-1 - com.km.launcher.BubbleTextView], res/layout/wallpaper_chooser.xml=[2130968597 - android.widget.Gallery, 2130968596 - android.widget.ImageView, 2130968598 - android.widget.Button, -1 - android.widget.LinearLayout], res/layout/create_shortcut_list_item.xml=[2130968581 - android.widget.TextView], res/layout-port/user_folder.xml=[-1 - com.km.launcher.UserFolder, 2130968591 - android.widget.Button, 2130968589 - android.widget.GridView], res/layout-land/user_folder.xml=[-1 - com.km.launcher.UserFolder, 2130968591 - android.widget.Button, 2130968589 - android.widget.GridView], res/layout-port/live_folder_grid.xml=[-1 - com.km.launcher.LiveFolder, 2130968591 - android.widget.Button, 2130968589 - android.widget.GridView], res/layout/application_list.xml=[2130968579 - android.widget.ImageView, 2130968578 - android.widget.TextView, -1 - android.widget.LinearLayout, 2130968580 - android.widget.TextView], res/layout/widget_photo_frame.xml=[-1 - com.km.launcher.PhotoFrame], res/layout-land/live_folder_grid.xml=[-1 - com.km.launcher.LiveFolder, 2130968591 - android.widget.Button, 2130968589 - android.widget.GridView], res/layout/rename_folder.xml=[2130968592 - android.widget.EditText, -1 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/create_shortcut_group_item.xml=[2130968581 - android.widget.TextView], res/layout-land/folder_icon.xml=[-1 - com.km.launcher.FolderIcon], res/layout-land/workspace_screen.xml=[-1 - com.km.launcher.CellLayout], res/layout-port/folder_icon.xml=[-1 - com.km.launcher.FolderIcon], res/layout-land/application_boxed.xml=[2130968578 - android.widget.TextView], res/layout-port/application_boxed.xml=[2130968578 - android.widget.TextView], res/layout-land/launcher.xml=[2130968587 - android.widget.SlidingDrawer, 2130968583 - com.km.launcher.Workspace, 2130968588 - com.km.launcher.HandleView, 2130968590 - com.km.launcher.DeleteZone, 2130968582 - com.km.launcher.DragLayer, 2130968589 - com.km.launcher.AllAppsGridView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 85 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6a8255e23ff5cee1587ba914ca9d29c3646f16405ce2309eeba916363c4ea36b.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.app.ISearchManager$Stub is a phantom class!
+Warning: android.app.ISearchManager is a phantom class!
+Warning: android.app.IWallpaperService$Stub is a phantom class!
+Warning: android.app.IWallpaperService is a phantom class!
+Warning: android.app.StatusBarManager is a phantom class!
+Warning: android.os.ServiceManager is a phantom class!
+Warning: android.server.search.SearchableInfo is a phantom class!
+Warning: com.android.internal.R$styleable is a phantom class!
+Warning: com.android.internal.util.XmlUtils is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.ContentValues
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.util.AttributeSet
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ViewGroup$LayoutParams
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Parcelable
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Canvas
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.graphics.Rect
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.util.ArrayList
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$CreateShortcut, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ExpandableListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$DrawerManager, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Dialog
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$DrawerManager, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Ran into a constructor generation loop for class com.km.launcher.Launcher$RenameFolder, substituting with null...
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for com.km.charge.SendMessageInterface, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r6, $r7, $r9, $r10;
+        int $i0, $i1, $i2, $i3;
+        com.km.launcher.LauncherProvider $r1;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8, $z9, $z10, $z11, $z12, $z13, $z14, $z15, $z16, $z17, $z18, $z19, $z20, $z21;
+        com.km.launcher.LauncherApplication $r2;
+        com.km.ad.AdService $r3;
+        android.os.IBinder $r4, $r16;
+        android.net.Uri $r5;
+        android.content.ContentValues[] $r8;
+        android.database.Cursor $r11;
+        java.lang.String $r12;
+        com.km.launcher.InstallShortcutReceiver $r13;
+        com.km.launcher.UninstallShortcutReceiver $r14;
+        com.km.charge.CycleService $r15;
+        com.km.charge.HttpBox $r17;
+        com.km.charge.HttpBox$ConnectivityReceiver $r18;
+        com.km.launcher.WallpaperChooser $r19;
+        com.km.charge.BootReceiver $r20;
+        com.km.launcher.Launcher $r21, $r46;
+        com.km.launcher.Workspace $r22;
+        android.os.Parcelable $r23;
+        com.km.launcher.Launcher$CreateShortcut $r24, $r25;
+        com.km.launcher.Launcher$RenameFolder $r26, $r27, $r33, $r34, $r39, $r40, $r48, $r49, $r52, $r53;
+        com.km.launcher.Launcher$RenameFolder$3 $r28, $r50;
+        com.km.launcher.Launcher$DrawerManager $r29, $r30, $r44, $r45;
+        com.km.launcher.DragLayer $r31;
+        com.km.launcher.DeleteZone $r32;
+        com.km.launcher.Launcher$RenameFolder$1 $r35;
+        android.app.Dialog $r36;
+        com.km.launcher.HandleView $r37;
+        android.view.View $r38;
+        com.km.launcher.Launcher$RenameFolder$2 $r41, $r54;
+        com.km.launcher.AllAppsGridView $r42;
+        com.km.charge.MainActivity $r43, $r51;
+        com.km.theme.ThemeListActivity $r47;
+        com.km.charge.SendMessage $r55;
+        com.km.charge.SendMessage$SendMessageReceiver $r56;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label001:
+        $r1 = new com.km.launcher.LauncherProvider;
+
+        specialinvoke $r1.<com.km.launcher.LauncherProvider: void <init>()>();
+
+        if $i0 == 0 goto label002;
+
+        $z0 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: boolean onCreate()>();
+
+     label002:
+        if $i0 == 1 goto label001;
+
+        $r2 = new com.km.launcher.LauncherApplication;
+
+        specialinvoke $r2.<com.km.launcher.LauncherApplication: void <init>()>();
+
+     label003:
+        if $i0 == 3 goto label003;
+
+        virtualinvoke $r2.<com.km.launcher.LauncherApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r2;
+
+     label004:
+        if $i0 == 4 goto label009;
+
+        $r3 = new com.km.ad.AdService;
+
+        specialinvoke $r3.<com.km.ad.AdService: void <init>()>();
+
+        virtualinvoke $r3.<com.km.ad.AdService: void onCreate()>();
+
+        virtualinvoke $r3.<com.km.ad.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label005:
+        if $i0 == 5 goto label006;
+
+        if $i0 == 6 goto label005;
+
+     label006:
+        $r4 = virtualinvoke $r3.<com.km.ad.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label007:
+        if $i0 == 8 goto label008;
+
+        if $i0 == 9 goto label007;
+
+     label008:
+        virtualinvoke $r3.<com.km.ad.AdService: void onDestroy()>();
+
+     label009:
+        if $i0 == 10 goto label017;
+
+        if $i0 == 11 goto label017;
+
+        if $i0 == 12 goto label017;
+
+     label010:
+        if $i0 == 13 goto label011;
+
+        $r5 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>(null, null);
+
+     label011:
+        if $i0 == 14 goto label012;
+
+        $r6 = newarray (java.lang.String)[1];
+
+        $r6[0] = "";
+
+        $i1 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>(null, null, "", $r6);
+
+     label012:
+        if $i0 == 15 goto label013;
+
+        $r7 = newarray (java.lang.String)[1];
+
+        $r7[0] = "";
+
+        $i2 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int delete(android.net.Uri,java.lang.String,java.lang.String[])>(null, "", $r7);
+
+     label013:
+        if $i0 == 16 goto label014;
+
+        $r8 = newarray (android.content.ContentValues)[1];
+
+        $r8[0] = null;
+
+        $i3 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: int bulkInsert(android.net.Uri,android.content.ContentValues[])>(null, $r8);
+
+     label014:
+        if $i0 == 17 goto label015;
+
+        $r9 = newarray (java.lang.String)[1];
+
+        $r9[0] = "";
+
+        $r10 = newarray (java.lang.String)[1];
+
+        $r10[0] = "";
+
+        $r11 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>(null, $r9, "", $r10, "");
+
+     label015:
+        if $i0 == 18 goto label016;
+
+        $r12 = virtualinvoke $r1.<com.km.launcher.LauncherProvider: java.lang.String getType(android.net.Uri)>(null);
+
+     label016:
+        if $i0 == 19 goto label010;
+
+     label017:
+        if $i0 == 20 goto label019;
+
+        $r13 = new com.km.launcher.InstallShortcutReceiver;
+
+        specialinvoke $r13.<com.km.launcher.InstallShortcutReceiver: void <init>()>();
+
+        if $i0 == 21 goto label019;
+
+     label018:
+        virtualinvoke $r13.<com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 23 goto label018;
+
+     label019:
+        if $i0 == 24 goto label021;
+
+        $r14 = new com.km.launcher.UninstallShortcutReceiver;
+
+        specialinvoke $r14.<com.km.launcher.UninstallShortcutReceiver: void <init>()>();
+
+        if $i0 == 25 goto label021;
+
+     label020:
+        virtualinvoke $r14.<com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 27 goto label020;
+
+     label021:
+        if $i0 == 28 goto label025;
+
+        $r15 = new com.km.charge.CycleService;
+
+        specialinvoke $r15.<com.km.charge.CycleService: void <init>()>();
+
+        virtualinvoke $r15.<com.km.charge.CycleService: void onCreate()>();
+
+     label022:
+        if $i0 == 29 goto label023;
+
+        if $i0 == 30 goto label022;
+
+     label023:
+        $r16 = virtualinvoke $r15.<com.km.charge.CycleService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label024:
+        if $i0 == 32 goto label025;
+
+        if $i0 == 33 goto label024;
+
+     label025:
+        if $i0 == 36 goto label027;
+
+        $r17 = new com.km.charge.HttpBox;
+
+        specialinvoke $r17.<com.km.charge.HttpBox: void <init>(android.content.Context)>(null);
+
+        $r18 = new com.km.charge.HttpBox$ConnectivityReceiver;
+
+        specialinvoke $r18.<com.km.charge.HttpBox$ConnectivityReceiver: void <init>(com.km.charge.HttpBox)>($r17);
+
+        if $i0 == 37 goto label027;
+
+     label026:
+        virtualinvoke $r18.<com.km.charge.HttpBox$ConnectivityReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 39 goto label026;
+
+     label027:
+        if $i0 == 40 goto label033;
+
+        $r19 = new com.km.launcher.WallpaperChooser;
+
+        specialinvoke $r19.<com.km.launcher.WallpaperChooser: void <init>()>();
+
+        if $i0 == 41 goto label033;
+
+        virtualinvoke $r19.<com.km.launcher.WallpaperChooser: void onCreate(android.os.Bundle)>(null);
+
+     label028:
+        virtualinvoke $r19.<com.km.launcher.WallpaperChooser: void onResume()>();
+
+        if $i0 == 43 goto label032;
+
+     label029:
+        if $i0 == 44 goto label030;
+
+        staticinvoke <com.km.launcher.WallpaperChooser: void <clinit>()>();
+
+     label030:
+        if $i0 == 45 goto label031;
+
+        virtualinvoke $r19.<com.km.launcher.WallpaperChooser: void onClick(android.view.View)>(null);
+
+     label031:
+        if $i0 == 46 goto label029;
+
+     label032:
+        if $i0 == 47 goto label028;
+
+        if $i0 == 48 goto label033;
+
+        if $i0 == 49 goto label028;
+
+     label033:
+        if $i0 == 51 goto label035;
+
+        $r20 = new com.km.charge.BootReceiver;
+
+        specialinvoke $r20.<com.km.charge.BootReceiver: void <init>()>();
+
+        if $i0 == 52 goto label035;
+
+     label034:
+        virtualinvoke $r20.<com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 54 goto label034;
+
+     label035:
+        if $i0 == 55 goto label092;
+
+        $r21 = new com.km.launcher.Launcher;
+
+        specialinvoke $r21.<com.km.launcher.Launcher: void <init>()>();
+
+        if $i0 == 56 goto label092;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onCreate(android.os.Bundle)>(null);
+
+     label036:
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onResume()>();
+
+        if $i0 == 58 goto label090;
+
+     label037:
+        $r22 = new com.km.launcher.Workspace;
+
+        specialinvoke $r22.<com.km.launcher.Workspace: void <init>(android.content.Context,android.util.AttributeSet)>($r21, null);
+
+        if $i0 == 59 goto label038;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void addView(android.view.View,int,android.view.ViewGroup$LayoutParams)>(null, 0, null);
+
+     label038:
+        if $i0 == 60 goto label039;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void onRestoreInstanceState(android.os.Parcelable)>(null);
+
+     label039:
+        if $i0 == 61 goto label040;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void onLayout(boolean,int,int,int,int)>(false, 0, 0, 0, 0);
+
+     label040:
+        if $i0 == 62 goto label041;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void computeScroll()>();
+
+     label041:
+        if $i0 == 63 goto label042;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void dispatchDraw(android.graphics.Canvas)>(null);
+
+     label042:
+        if $i0 == 64 goto label043;
+
+        $z1 = virtualinvoke $r22.<com.km.launcher.Workspace: boolean onRequestFocusInDescendants(int,android.graphics.Rect)>(0, null);
+
+     label043:
+        if $i0 == 65 goto label044;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void addView(android.view.View,int,int)>(null, 0, 0);
+
+     label044:
+        if $i0 == 66 goto label045;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void addView(android.view.View)>(null);
+
+     label045:
+        if $i0 == 67 goto label046;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void addView(android.view.View,int)>(null, 0);
+
+     label046:
+        if $i0 == 68 goto label047;
+
+        $z2 = virtualinvoke $r22.<com.km.launcher.Workspace: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label047:
+        if $i0 == 69 goto label048;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void addView(android.view.View,android.view.ViewGroup$LayoutParams)>(null, null);
+
+     label048:
+        if $i0 == 70 goto label049;
+
+        $z3 = virtualinvoke $r22.<com.km.launcher.Workspace: boolean dispatchUnhandledMove(android.view.View,int)>(null, 0);
+
+     label049:
+        if $i0 == 71 goto label050;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void setOnLongClickListener(android.view.View$OnLongClickListener)>($r21);
+
+        $r21 = null;
+
+     label050:
+        if $i0 == 72 goto label051;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void addFocusables(java.util.ArrayList,int)>(null, 0);
+
+     label051:
+        if $i0 == 73 goto label052;
+
+        $z4 = virtualinvoke $r22.<com.km.launcher.Workspace: boolean onInterceptTouchEvent(android.view.MotionEvent)>(null);
+
+     label052:
+        if $i0 == 74 goto label053;
+
+        virtualinvoke $r22.<com.km.launcher.Workspace: void onMeasure(int,int)>(0, 0);
+
+     label053:
+        if $i0 == 75 goto label054;
+
+        $r23 = virtualinvoke $r22.<com.km.launcher.Workspace: android.os.Parcelable onSaveInstanceState()>();
+
+     label054:
+        if $i0 == 76 goto label055;
+
+        $z5 = virtualinvoke $r22.<com.km.launcher.Workspace: boolean requestChildRectangleOnScreen(android.view.View,android.graphics.Rect,boolean)>(null, null, false);
+
+     label055:
+        $r24 = null;
+
+        $r25 = new com.km.launcher.Launcher$CreateShortcut;
+
+        specialinvoke $r25.<com.km.launcher.Launcher$CreateShortcut: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$CreateShortcut)>($r21, $r24);
+
+        if $i0 == 77 goto label056;
+
+        virtualinvoke $r25.<com.km.launcher.Launcher$CreateShortcut: void onCancel(android.content.DialogInterface)>(null);
+
+     label056:
+        if $i0 == 78 goto label057;
+
+        $z6 = virtualinvoke $r25.<com.km.launcher.Launcher$CreateShortcut: boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long)>(null, null, 0, 0, 0L);
+
+     label057:
+        if $i0 == 79 goto label058;
+
+        virtualinvoke $r25.<com.km.launcher.Launcher$CreateShortcut: void onGroupExpand(int)>(0);
+
+     label058:
+        $r26 = null;
+
+        $r27 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r27.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r26);
+
+        $r28 = new com.km.launcher.Launcher$RenameFolder$3;
+
+        specialinvoke $r28.<com.km.launcher.Launcher$RenameFolder$3: void <init>(com.km.launcher.Launcher$RenameFolder)>($r27);
+
+        if $i0 == 80 goto label059;
+
+        virtualinvoke $r28.<com.km.launcher.Launcher$RenameFolder$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label059:
+        $r29 = null;
+
+        $r30 = new com.km.launcher.Launcher$DrawerManager;
+
+        specialinvoke $r30.<com.km.launcher.Launcher$DrawerManager: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$DrawerManager)>($r21, $r29);
+
+        if $i0 == 81 goto label060;
+
+        virtualinvoke $r30.<com.km.launcher.Launcher$DrawerManager: void onDrawerOpened()>();
+
+     label060:
+        if $i0 == 82 goto label061;
+
+        virtualinvoke $r30.<com.km.launcher.Launcher$DrawerManager: void onScrollStarted()>();
+
+     label061:
+        if $i0 == 83 goto label062;
+
+        virtualinvoke $r30.<com.km.launcher.Launcher$DrawerManager: void onDrawerClosed()>();
+
+     label062:
+        $r31 = new com.km.launcher.DragLayer;
+
+        specialinvoke $r31.<com.km.launcher.DragLayer: void <init>(android.content.Context,android.util.AttributeSet)>($r21, null);
+
+        if $i0 == 84 goto label063;
+
+        $z7 = virtualinvoke $r31.<com.km.launcher.DragLayer: boolean onTouchEvent(android.view.MotionEvent)>(null);
+
+     label063:
+        if $i0 == 85 goto label064;
+
+        $z8 = virtualinvoke $r31.<com.km.launcher.DragLayer: boolean onInterceptTouchEvent(android.view.MotionEvent)>(null);
+
+     label064:
+        if $i0 == 86 goto label065;
+
+        virtualinvoke $r31.<com.km.launcher.DragLayer: void dispatchDraw(android.graphics.Canvas)>(null);
+
+     label065:
+        if $i0 == 87 goto label066;
+
+        $z9 = virtualinvoke $r31.<com.km.launcher.DragLayer: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label066:
+        $r32 = new com.km.launcher.DeleteZone;
+
+        specialinvoke $r32.<com.km.launcher.DeleteZone: void <init>(android.content.Context)>($r21);
+
+        if $i0 == 88 goto label067;
+
+        virtualinvoke $r32.<com.km.launcher.DeleteZone: void onFinishInflate()>();
+
+     label067:
+        $r33 = null;
+
+        $r34 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r34.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r33);
+
+        $r35 = new com.km.launcher.Launcher$RenameFolder$1;
+
+        specialinvoke $r35.<com.km.launcher.Launcher$RenameFolder$1: void <init>(com.km.launcher.Launcher$RenameFolder)>($r34);
+
+        if $i0 == 89 goto label068;
+
+        virtualinvoke $r35.<com.km.launcher.Launcher$RenameFolder$1: void onCancel(android.content.DialogInterface)>(null);
+
+     label068:
+        if $i0 == 90 goto label069;
+
+        $z10 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean dispatchKeyEvent(android.view.KeyEvent)>(null);
+
+     label069:
+        if $i0 == 91 goto label070;
+
+        $z11 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label070:
+        if $i0 == 92 goto label071;
+
+        staticinvoke <com.km.launcher.Launcher: void <clinit>()>();
+
+     label071:
+        if $i0 == 93 goto label072;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void startActivityForResult(android.content.Intent,int)>(null, 0);
+
+     label072:
+        if $i0 == 94 goto label073;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label073:
+        if $i0 == 95 goto label074;
+
+        $z12 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label074:
+        if $i0 == 96 goto label075;
+
+        $z13 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onLongClick(android.view.View)>(null);
+
+     label075:
+        if $i0 == 97 goto label076;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void startSearch(java.lang.String,boolean,android.os.Bundle,boolean)>("", false, null, false);
+
+     label076:
+        if $i0 == 98 goto label077;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onNewIntent(android.content.Intent)>(null);
+
+     label077:
+        if $i0 == 99 goto label078;
+
+        $r36 = virtualinvoke $r21.<com.km.launcher.Launcher: android.app.Dialog onCreateDialog(int)>(0);
+
+     label078:
+        if $i0 == 100 goto label079;
+
+        $z14 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onPrepareOptionsMenu(android.view.Menu)>(null);
+
+     label079:
+        if $i0 == 101 goto label080;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onClick(android.view.View)>(null);
+
+     label080:
+        if $i0 == 102 goto label081;
+
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onPrepareDialog(int,android.app.Dialog)>(0, null);
+
+     label081:
+        if $i0 == 103 goto label082;
+
+        $z15 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label082:
+        if $i0 == 104 goto label083;
+
+        $z16 = virtualinvoke $r21.<com.km.launcher.Launcher: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label083:
+        $r37 = new com.km.launcher.HandleView;
+
+        specialinvoke $r37.<com.km.launcher.HandleView: void <init>(android.content.Context)>($r21);
+
+        if $i0 == 105 goto label084;
+
+        $z17 = virtualinvoke $r37.<com.km.launcher.HandleView: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label084:
+        if $i0 == 106 goto label085;
+
+        staticinvoke <com.km.launcher.HandleView: void <clinit>()>();
+
+     label085:
+        if $i0 == 107 goto label086;
+
+        $r38 = virtualinvoke $r37.<com.km.launcher.HandleView: android.view.View focusSearch(int)>(0);
+
+     label086:
+        if $i0 == 108 goto label087;
+
+        $z18 = virtualinvoke $r37.<com.km.launcher.HandleView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label087:
+        $r39 = null;
+
+        $r40 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r40.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r39);
+
+        $r41 = new com.km.launcher.Launcher$RenameFolder$2;
+
+        specialinvoke $r41.<com.km.launcher.Launcher$RenameFolder$2: void <init>(com.km.launcher.Launcher$RenameFolder)>($r40);
+
+        if $i0 == 109 goto label088;
+
+        virtualinvoke $r41.<com.km.launcher.Launcher$RenameFolder$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label088:
+        $r42 = new com.km.launcher.AllAppsGridView;
+
+        specialinvoke $r42.<com.km.launcher.AllAppsGridView: void <init>(android.content.Context)>($r21);
+
+        if $i0 == 110 goto label089;
+
+        virtualinvoke $r42.<com.km.launcher.AllAppsGridView: void onFinishInflate()>();
+
+     label089:
+        if $i0 == 111 goto label037;
+
+     label090:
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 112 goto label036;
+
+        if $i0 == 113 goto label091;
+
+        if $i0 == 114 goto label036;
+
+     label091:
+        virtualinvoke $r21.<com.km.launcher.Launcher: void onDestroy()>();
+
+     label092:
+        if $i0 == 117 goto label106;
+
+        $r43 = new com.km.charge.MainActivity;
+
+        specialinvoke $r43.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 118 goto label106;
+
+        virtualinvoke $r43.<com.km.charge.MainActivity: void onCreate(android.os.Bundle)>(null);
+
+     label093:
+        if $i0 == 120 goto label105;
+
+     label094:
+        $r44 = null;
+
+        $r45 = new com.km.launcher.Launcher$DrawerManager;
+
+        specialinvoke $r45.<com.km.launcher.Launcher$DrawerManager: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$DrawerManager)>($r21, $r44);
+
+        if $i0 == 121 goto label095;
+
+        virtualinvoke $r45.<com.km.launcher.Launcher$DrawerManager: void onDrawerOpened()>();
+
+     label095:
+        if $i0 == 122 goto label096;
+
+        virtualinvoke $r45.<com.km.launcher.Launcher$DrawerManager: void onScrollStarted()>();
+
+     label096:
+        if $i0 == 123 goto label097;
+
+        virtualinvoke $r45.<com.km.launcher.Launcher$DrawerManager: void onDrawerClosed()>();
+
+     label097:
+        if $i0 == 124 goto label098;
+
+        virtualinvoke $r43.<com.km.charge.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label098:
+        if $i0 == 125 goto label099;
+
+        virtualinvoke $r43.<com.km.charge.MainActivity: void finish()>();
+
+     label099:
+        if $i0 == 126 goto label100;
+
+        virtualinvoke $r43.<com.km.charge.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label100:
+        $r46 = new com.km.launcher.Launcher;
+
+        specialinvoke $r46.<com.km.launcher.Launcher: void <init>()>();
+
+        if $i0 == 127 goto label101;
+
+        $z19 = virtualinvoke $r46.<com.km.launcher.Launcher: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label101:
+        if $i0 == 128 goto label102;
+
+        virtualinvoke $r46.<com.km.launcher.Launcher: void onClick(android.view.View)>(null);
+
+     label102:
+        if $i0 == 129 goto label103;
+
+        $z20 = virtualinvoke $r46.<com.km.launcher.Launcher: boolean onLongClick(android.view.View)>(null);
+
+     label103:
+        if $i0 == 130 goto label104;
+
+        $z21 = virtualinvoke $r46.<com.km.launcher.Launcher: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label104:
+        if $i0 == 131 goto label094;
+
+     label105:
+        if $i0 == 132 goto label093;
+
+        if $i0 == 133 goto label106;
+
+        if $i0 == 134 goto label093;
+
+     label106:
+        if $i0 == 136 goto label117;
+
+        $r47 = new com.km.theme.ThemeListActivity;
+
+        specialinvoke $r47.<com.km.theme.ThemeListActivity: void <init>()>();
+
+        if $i0 == 137 goto label117;
+
+        virtualinvoke $r47.<com.km.theme.ThemeListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label107:
+        if $i0 == 139 goto label116;
+
+     label108:
+        $r48 = null;
+
+        $r49 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r49.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r48);
+
+        $r50 = new com.km.launcher.Launcher$RenameFolder$3;
+
+        specialinvoke $r50.<com.km.launcher.Launcher$RenameFolder$3: void <init>(com.km.launcher.Launcher$RenameFolder)>($r49);
+
+        if $i0 == 140 goto label109;
+
+        virtualinvoke $r50.<com.km.launcher.Launcher$RenameFolder$3: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label109:
+        $r51 = new com.km.charge.MainActivity;
+
+        specialinvoke $r51.<com.km.charge.MainActivity: void <init>()>();
+
+        if $i0 == 141 goto label110;
+
+        virtualinvoke $r51.<com.km.charge.MainActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label110:
+        if $i0 == 142 goto label111;
+
+        virtualinvoke $r51.<com.km.charge.MainActivity: void onCancel(android.content.DialogInterface)>(null);
+
+     label111:
+        if $i0 == 143 goto label112;
+
+        staticinvoke <com.km.theme.ThemeListActivity: void <clinit>()>();
+
+     label112:
+        if $i0 == 144 goto label113;
+
+        virtualinvoke $r47.<com.km.theme.ThemeListActivity: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label113:
+        if $i0 == 145 goto label114;
+
+        virtualinvoke $r47.<com.km.theme.ThemeListActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label114:
+        $r52 = null;
+
+        $r53 = new com.km.launcher.Launcher$RenameFolder;
+
+        specialinvoke $r53.<com.km.launcher.Launcher$RenameFolder: void <init>(com.km.launcher.Launcher,com.km.launcher.Launcher$RenameFolder)>($r21, $r52);
+
+        $r54 = new com.km.launcher.Launcher$RenameFolder$2;
+
+        specialinvoke $r54.<com.km.launcher.Launcher$RenameFolder$2: void <init>(com.km.launcher.Launcher$RenameFolder)>($r53);
+
+        if $i0 == 146 goto label115;
+
+        virtualinvoke $r54.<com.km.launcher.Launcher$RenameFolder$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label115:
+        if $i0 == 147 goto label108;
+
+     label116:
+        if $i0 == 148 goto label107;
+
+        if $i0 == 149 goto label117;
+
+        if $i0 == 150 goto label107;
+
+     label117:
+        if $i0 == 152 goto label119;
+
+        $r55 = new com.km.charge.SendMessage;
+
+        specialinvoke $r55.<com.km.charge.SendMessage: void <init>(android.content.Context,com.km.charge.SendMessageInterface)>(null, null);
+
+        $r56 = new com.km.charge.SendMessage$SendMessageReceiver;
+
+        specialinvoke $r56.<com.km.charge.SendMessage$SendMessageReceiver: void <init>(com.km.charge.SendMessage)>($r55);
+
+        if $i0 == 153 goto label119;
+
+     label118:
+        virtualinvoke $r56.<com.km.charge.SendMessage$SendMessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 155 goto label118;
+
+     label119:
+        if $i0 == 157 goto label004;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.3 seconds.
+[Spark] Solution found in 1.3 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 1.369967479 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.126427663 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 3522 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 160 sources and 81 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 637452
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 2375164
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 5222907 forward and 2184130 backward edges solved, processing 68 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 68 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 39 with task id 38
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 40 with task id 39
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 41 with task id 40
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 42 with task id 41
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 43 with task id 42
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 44 with task id 43
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 45 with task id 44
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 46 with task id 45
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 47 with task id 46
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 48 with task id 47
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 49 with task id 48
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 50 with task id 49
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 51 with task id 50
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 52 with task id 51
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 53 with task id 52
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 54 with task id 53
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 55 with task id 54
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 56 with task id 55
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 57 with task id 56
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 58 with task id 57
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 59 with task id 58
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 60 with task id 59
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 61 with task id 60
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 62 with task id 61
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 63 with task id 62
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 64 with task id 63
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 65 with task id 64
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 66 with task id 65
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 67 with task id 66
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 68 with task id 67
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.146051901 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_spanX", $i0) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_spanX") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r2, $r4, null) in method <com.km.tool.ApnManager: void delete(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_cellY", $i0) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) in method <com.km.tool.Log: void i(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.km.launcher.Launcher: void onPrepareDialog(int,android.app.Dialog)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.ad.AdService: void init()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter0: int in method <com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.ad.AdService: void init()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_spanY", $i0) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_spanY") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3) in method <com.km.tool.Http: void connectOperate()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.ad.AdService: void init()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.ad.AdService: void init()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_cellX", $i0) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3) in method <com.km.charge.HttpBox: void connect()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r3) in method <com.km.tool.Util: void startServiceWithSingleMode(android.content.Context,java.lang.Class)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r6 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, "_id=? and itemType=? or itemType=?", $r4, null) in method <com.km.launcher.LauncherModel: com.km.launcher.FolderInfo getFolderById(android.content.Context,long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $l2 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("launcher.rename_folder_id") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r8 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, $r7, null, null) in method <com.km.tool.ApnManager: boolean SetDefaultAPN(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateWapApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateGPRSApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBooleanArray(java.lang.String,boolean[])>("launcher.add_occupied_cells", $r9) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r2, null, null) in method <com.km.launcher.LauncherModel: void updateItemInDatabase(android.content.Context,com.km.launcher.ItemInfo)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $l2 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("launcher.rename_folder_id") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, "_id=? and itemType=? or itemType=?", $r4, null) in method <com.km.launcher.LauncherModel: com.km.launcher.FolderInfo getFolderById(android.content.Context,long)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>($i2) in method <com.km.launcher.LauncherModel: com.km.launcher.FolderInfo getFolderById(android.content.Context,long)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, "screen=? and cellX=? and cellY=? and itemType=?", $r0, null) in method <com.km.launcher.LauncherModel: com.km.launcher.Widget getPhotoFrameInfo(android.content.Context,int,int,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r1) in method <com.km.tool.ApnManager: int CreateWapApn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r0.<android.app.Activity: void startActivityForResult(android.content.Intent,int)>($r1, $i0) in method <com.km.launcher.Launcher: void startActivityForResult(android.content.Intent,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 := @parameter1: int in method <com.km.launcher.Launcher: void startActivityForResult(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Intent in method <com.km.launcher.Launcher: void startActivityForResult(android.content.Intent,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r7 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r3, "title=? and intent=?", $r6, null) in method <com.km.launcher.LauncherModel: boolean shortcutExists(android.content.Context,java.lang.String,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2) in method <com.km.tool.Http: void write()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_countY", $i0) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r6.<android.content.Intent: android.content.Intent setAction(java.lang.String)>("android.intent.action.VIEW") in method <com.km.launcher.InstallShortcutReceiver: boolean installShortcut(android.content.Context,android.content.Intent,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r4, $r1) in method <com.km.launcher.LauncherModel: void addItemToDatabase(android.content.Context,com.km.launcher.ItemInfo,long,int,int,int,boolean)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, "screen=? and cellX=? and cellY=? and itemType=?", $r0, null) in method <com.km.launcher.LauncherModel: com.km.launcher.Widget getPhotoFrameInfo(android.content.Context,int,int,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String,int)>("launcher.add_screen", -1) in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null) in method <com.km.tool.ApnManager: boolean SetDefaultAPN(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateWapApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateGPRSApn()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("getApnId", $r1) in method <com.km.tool.Log: void d(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) in method <com.km.tool.ApnManager: int getApnId(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.km.charge.HttpBox: void setUrl(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateWapApn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_countX", $i0) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_screen", $i0) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String,int)>("launcher.add_screen", -1) in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("launcher.rename_folder", 1) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1) in method <com.km.charge.HttpBox: void registerListen()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r6.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r7, null, null) in method <com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r11 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, "screen=?", $r9, null) in method <com.km.launcher.InstallShortcutReceiver: boolean findEmptyCell(android.content.Context,int[],int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Parcelable in method <com.km.launcher.Workspace: void onRestoreInstanceState(android.os.Parcelable)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2) in method <com.km.charge.HttpBox: void write()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[],int,int)>($r2, 0, $i0) in method <com.km.tool.FileTool: void writeFile(java.lang.String,java.io.InputStream)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1) in method <com.km.tool.Log: void w(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("networkInfo") in method <com.km.charge.HttpBox$ConnectivityReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r1) in method <com.km.tool.ApnManager: int CreateGPRSApn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<com.km.launcher.Launcher: void startActivity(android.content.Intent)>($r1) in method <com.km.launcher.Launcher: void startActivitySafely(android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: void onClick(android.view.View)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putLongArray(java.lang.String,long[])>("launcher.user_folder", $r3) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.current_screen", $i0) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r10 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, "title=?", $r9, null) in method <com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) in method <com.km.tool.ApnManager: int CreateGPRSApn()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.charge.HttpBox: void connect()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1) in method <com.km.tool.Http: void setUrl(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.ad.AdService: void init()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.km.ad.AdService: void init()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.km.tool.Http: void connectOperate()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("launcher.all_apps_folder", 1) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("launcher.rename_folder_id", $l2) in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter2: android.content.Intent in method <com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.os.Bundle in method <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $l2 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("launcher.rename_folder_id") in method <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.view.View in method <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_spanX", $i0), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_spanX") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r1.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r2, $r4, null), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+	- $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_cellY", $i0), from the following sources:
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1), from the following sources:
+	- $i0 := @parameter0: int (in <com.km.launcher.Launcher: void onPrepareDialog(int,android.app.Dialog)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+	- $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.ad.AdService: void init()>)
+	- $i0 := @parameter0: int (in <com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.ad.AdService: void init()>)
+	- $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_spanY", $i0), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_spanY") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3), from the following sources:
+	- $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.ad.AdService: void init()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.ad.AdService: void init()>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+	- $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_cellX", $i0), from the following sources:
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+Found a flow to sink specialinvoke $r1.<java.net.URL: void <init>(java.lang.String)>($r3), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r3), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.km.charge.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r6 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, "_id=? and itemType=? or itemType=?", $r4, null), from the following sources:
+	- $l2 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("launcher.rename_folder_id") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+Found a flow to sink $r8 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r5, $r7, null, null), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateWapApn()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateGPRSApn()>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putBooleanArray(java.lang.String,boolean[])>("launcher.add_occupied_cells", $r9), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r2, null, null), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $l2 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("launcher.rename_folder_id") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r6 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, "_id=? and itemType=? or itemType=?", $r4, null) (in <com.km.launcher.LauncherModel: com.km.launcher.FolderInfo getFolderById(android.content.Context,long)>)
+	- $r5 = interfaceinvoke $r6.<android.database.Cursor: java.lang.String getString(int)>($i2) (in <com.km.launcher.LauncherModel: com.km.launcher.FolderInfo getFolderById(android.content.Context,long)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+	- $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, "screen=? and cellX=? and cellY=? and itemType=?", $r0, null) (in <com.km.launcher.LauncherModel: com.km.launcher.Widget getPhotoFrameInfo(android.content.Context,int,int,int)>)
+Found a flow to sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r1), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r0.<android.app.Activity: void startActivityForResult(android.content.Intent,int)>($r1, $i0), from the following sources:
+	- $i0 := @parameter1: int (in <com.km.launcher.Launcher: void startActivityForResult(android.content.Intent,int)>)
+	- $r1 := @parameter0: android.content.Intent (in <com.km.launcher.Launcher: void startActivityForResult(android.content.Intent,int)>)
+Found a flow to sink $r7 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, $r3, "title=? and intent=?", $r6, null), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_countY", $i0), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r6.<android.content.Intent: android.content.Intent setAction(java.lang.String)>("android.intent.action.VIEW"), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r5 = virtualinvoke $r3.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, $r2, null, null, null), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink $r4 = virtualinvoke $r3.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r4, $r1), from the following sources:
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.content.Context (in <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+Found a flow to sink $r5 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, "screen=? and cellX=? and cellY=? and itemType=?", $r0, null), from the following sources:
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String,int)>("launcher.add_screen", -1) (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r3.<android.content.ContentResolver: int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[])>($r4, $r1, null, null), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateWapApn()>)
+	- $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null) (in <com.km.tool.ApnManager: int CreateGPRSApn()>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("getApnId", $r1), from the following sources:
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+	- $r7 = interfaceinvoke $r5.<android.database.Cursor: java.lang.String getString(int)>($i1) (in <com.km.tool.ApnManager: int getApnId(java.lang.String)>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_countX", $i0), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.add_screen", $i0), from the following sources:
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String,int)>("launcher.add_screen", -1) (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("launcher.rename_folder", 1), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r3.<android.content.Context: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r2, $r1), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r6.<android.content.ContentResolver: int delete(android.net.Uri,java.lang.String,java.lang.String[])>($r7, null, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r11 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, "screen=?", $r9, null), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.km.launcher.InstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.os.Parcelable (in <com.km.launcher.Workspace: void onRestoreInstanceState(android.os.Parcelable)>)
+Found a flow to sink virtualinvoke $r1.<java.io.OutputStream: void write(byte[])>($r2), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r4.<java.io.FileOutputStream: void write(byte[],int,int)>($r2, 0, $i0), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+Found a flow to sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1), from the following sources:
+	- $r4 = virtualinvoke $r3.<android.os.Bundle: java.lang.Object get(java.lang.String)>("networkInfo") (in <com.km.charge.HttpBox$ConnectivityReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r5 = virtualinvoke $r4.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r5, $r1), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink virtualinvoke $r0.<com.km.launcher.Launcher: void startActivity(android.content.Intent)>($r1), from the following sources:
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: void onClick(android.view.View)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putLongArray(java.lang.String,long[])>("launcher.user_folder", $r3), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putInt(java.lang.String,int)>("launcher.current_screen", $i0), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+Found a flow to sink $r10 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r7, $r8, "title=?", $r9, null), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.km.launcher.UninstallShortcutReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r6 = virtualinvoke $r4.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r5, null, null, null, null), from the following sources:
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.charge.HttpBox: void connect()>)
+Found a flow to sink specialinvoke $r2.<java.net.URL: void <init>(java.lang.String)>($r1), from the following sources:
+	- $r7 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.ad.AdService: void init()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.km.ad.AdService: void init()>)
+	- $r6 = virtualinvoke $r4.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.km.charge.ChargeUtil: java.lang.String getUrl(android.content.Context,int)>)
+	- $r4 = virtualinvoke $r1.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.km.tool.Http: void connectOperate()>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("launcher.all_apps_folder", 1), from the following sources:
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+Found a flow to sink virtualinvoke $r1.<android.os.Bundle: void putLong(java.lang.String,long)>("launcher.rename_folder_id", $l2), from the following sources:
+	- $r1 := @parameter2: android.content.Intent (in <com.km.launcher.Launcher: void onActivityResult(int,int,android.content.Intent)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellY") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.os.Bundle (in <com.km.launcher.Launcher: void onSaveInstanceState(android.os.Bundle)>)
+	- $i0 = virtualinvoke $r1.<android.os.Bundle: int getInt(java.lang.String)>("launcher.add_cellX") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $l2 = virtualinvoke $r1.<android.os.Bundle: long getLong(java.lang.String)>("launcher.rename_folder_id") (in <com.km.launcher.Launcher: void restoreState(android.os.Bundle)>)
+	- $r1 := @parameter0: android.view.View (in <com.km.launcher.Launcher: boolean onLongClick(android.view.View)>)
+Maximum memory consumption: 1443.355648 MB
+Analysis has run for 40.528592095 seconds

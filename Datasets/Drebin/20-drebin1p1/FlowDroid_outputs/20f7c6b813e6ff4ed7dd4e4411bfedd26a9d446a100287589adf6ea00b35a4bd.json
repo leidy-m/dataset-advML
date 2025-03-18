@@ -1,0 +1,1155 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.015456828 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.root.main $r1;
+        com.android.root.AlarmReceiver $r2;
+        android.os.IBinder $r3, $r6, $r10;
+        com.rechild.advancedtaskkiller.NewSettings $r4;
+        com.rechild.advancedtaskkiller.BackService $r5;
+        com.rechild.advancedtaskkiller.AutoStartReceiver $r7;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller $r8;
+        com.android.root.Setting $r9;
+        com.rechild.advancedtaskkiller.AlarmReceiver $r11;
+        com.rechild.advancedtaskkiller.OneClickAppWidgetProvider $r12;
+        com.rechild.advancedtaskkiller.IgnoreListActivity $r13;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.root.main;
+
+        specialinvoke $r1.<com.android.root.main: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.android.root.main: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        if $i0 == 7 goto label07;
+
+        $r2 = new com.android.root.AlarmReceiver;
+
+        specialinvoke $r2.<com.android.root.AlarmReceiver: void <init>()>();
+
+        virtualinvoke $r2.<com.android.root.AlarmReceiver: void onCreate()>();
+
+     label04:
+        if $i0 == 8 goto label05;
+
+        if $i0 == 9 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.android.root.AlarmReceiver: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 11 goto label07;
+
+        if $i0 == 12 goto label06;
+
+     label07:
+        if $i0 == 13 goto label10;
+
+        $r4 = new com.rechild.advancedtaskkiller.NewSettings;
+
+        specialinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void <init>()>();
+
+        if $i0 == 14 goto label10;
+
+        virtualinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 17 goto label09;
+
+        if $i0 == 18 goto label08;
+
+     label09:
+        virtualinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void onDestroy()>();
+
+     label10:
+        if $i0 == 20 goto label15;
+
+        $r5 = new com.rechild.advancedtaskkiller.BackService;
+
+        specialinvoke $r5.<com.rechild.advancedtaskkiller.BackService: void <init>()>();
+
+        virtualinvoke $r5.<com.rechild.advancedtaskkiller.BackService: void onCreate()>();
+
+        virtualinvoke $r5.<com.rechild.advancedtaskkiller.BackService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label11:
+        if $i0 == 21 goto label12;
+
+        if $i0 == 22 goto label11;
+
+     label12:
+        $r6 = virtualinvoke $r5.<com.rechild.advancedtaskkiller.BackService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label13:
+        if $i0 == 24 goto label14;
+
+        if $i0 == 25 goto label13;
+
+     label14:
+        virtualinvoke $r5.<com.rechild.advancedtaskkiller.BackService: void onDestroy()>();
+
+     label15:
+        if $i0 == 26 goto label17;
+
+        $r7 = new com.rechild.advancedtaskkiller.AutoStartReceiver;
+
+        specialinvoke $r7.<com.rechild.advancedtaskkiller.AutoStartReceiver: void <init>()>();
+
+        if $i0 == 27 goto label17;
+
+     label16:
+        virtualinvoke $r7.<com.rechild.advancedtaskkiller.AutoStartReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 29 goto label16;
+
+     label17:
+        if $i0 == 30 goto label20;
+
+        $r8 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller;
+
+        specialinvoke $r8.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void <init>()>();
+
+        if $i0 == 31 goto label20;
+
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onResume()>();
+
+        if $i0 == 33 goto label18;
+
+        if $i0 == 34 goto label19;
+
+        if $i0 == 35 goto label18;
+
+     label19:
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onDestroy()>();
+
+     label20:
+        if $i0 == 37 goto label24;
+
+        $r9 = new com.android.root.Setting;
+
+        specialinvoke $r9.<com.android.root.Setting: void <init>()>();
+
+        virtualinvoke $r9.<com.android.root.Setting: void onCreate()>();
+
+        virtualinvoke $r9.<com.android.root.Setting: void onStart(android.content.Intent,int)>(null, 0);
+
+     label21:
+        if $i0 == 38 goto label22;
+
+        if $i0 == 39 goto label21;
+
+     label22:
+        $r10 = virtualinvoke $r9.<com.android.root.Setting: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label23:
+        if $i0 == 41 goto label24;
+
+        if $i0 == 42 goto label23;
+
+     label24:
+        if $i0 == 43 goto label26;
+
+        $r11 = new com.rechild.advancedtaskkiller.AlarmReceiver;
+
+        specialinvoke $r11.<com.rechild.advancedtaskkiller.AlarmReceiver: void <init>()>();
+
+        if $i0 == 44 goto label26;
+
+     label25:
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 46 goto label25;
+
+     label26:
+        if $i0 == 47 goto label27;
+
+        $r12 = new com.rechild.advancedtaskkiller.OneClickAppWidgetProvider;
+
+        specialinvoke $r12.<com.rechild.advancedtaskkiller.OneClickAppWidgetProvider: void <init>()>();
+
+     label27:
+        if $i0 == 50 goto label29;
+
+        $r13 = new com.rechild.advancedtaskkiller.IgnoreListActivity;
+
+        specialinvoke $r13.<com.rechild.advancedtaskkiller.IgnoreListActivity: void <init>()>();
+
+        if $i0 == 51 goto label29;
+
+        virtualinvoke $r13.<com.rechild.advancedtaskkiller.IgnoreListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label28:
+        if $i0 == 54 goto label29;
+
+        if $i0 == 55 goto label28;
+
+     label29:
+        if $i0 == 57 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Callback analysis done.
+Warning: ImageView is a phantom class!
+Warning: com.droiddream.advancedtaskkiller1.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 1 layout controls in file res/layout/appwidget.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.droiddream.advancedtaskkiller1.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: LinearLayout is a phantom class!
+Warning: com.droiddream.advancedtaskkiller1.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: Button is a phantom class!
+Warning: com.droiddream.advancedtaskkiller1.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.droiddream.advancedtaskkiller1.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Warning: ListView is a phantom class!
+Warning: com.droiddream.advancedtaskkiller1.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 2 layout controls in file res/layout/ignorelist.xml
+Warning: FrameLayout is a phantom class!
+Warning: com.droiddream.advancedtaskkiller1.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Found 3 layout controls in file res/layout/list_main.xml
+Found 4 layout controls in file res/layout/main.xml
+Warning: ScrollView is a phantom class!
+Warning: com.droiddream.advancedtaskkiller1.ScrollView is a phantom class!
+Warning: android.view.ScrollView is a phantom class!
+Found 5 layout controls in file res/layout/status_bar_notifications.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.root.main $r1;
+        com.android.root.AlarmReceiver $r2;
+        android.os.IBinder $r3, $r9, $r17;
+        com.rechild.advancedtaskkiller.NewSettings $r4;
+        com.rechild.advancedtaskkiller.NewSettings$1 $r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.rechild.advancedtaskkiller.NewSettings$2 $r6;
+        com.rechild.advancedtaskkiller.NewSettings$3 $r7;
+        com.rechild.advancedtaskkiller.BackService $r8;
+        com.rechild.advancedtaskkiller.AutoStartReceiver $r10;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller $r11;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller$2 $r12;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller$1 $r13;
+        com.rechild.advancedtaskkiller.TaskListAdapters$ListViewItem $r14;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller$5 $r15;
+        com.android.root.Setting $r16;
+        com.rechild.advancedtaskkiller.AlarmReceiver $r18;
+        com.rechild.advancedtaskkiller.OneClickAppWidgetProvider $r19;
+        int[] $r20;
+        com.rechild.advancedtaskkiller.IgnoreListActivity $r21;
+        com.rechild.advancedtaskkiller.IgnoreListActivity$1 $r22;
+        com.rechild.advancedtaskkiller.ScreenOffReceiver $r23;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.root.main;
+
+        specialinvoke $r1.<com.android.root.main: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.android.root.main: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label07;
+
+        $r2 = new com.android.root.AlarmReceiver;
+
+        specialinvoke $r2.<com.android.root.AlarmReceiver: void <init>()>();
+
+        virtualinvoke $r2.<com.android.root.AlarmReceiver: void onCreate()>();
+
+     label04:
+        if $i0 == 9 goto label05;
+
+        if $i0 == 10 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.android.root.AlarmReceiver: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        if $i0 == 13 goto label06;
+
+     label07:
+        if $i0 == 14 goto label15;
+
+        $r4 = new com.rechild.advancedtaskkiller.NewSettings;
+
+        specialinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void <init>()>();
+
+        if $i0 == 15 goto label15;
+
+        virtualinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 17 goto label13;
+
+     label09:
+        $r5 = new com.rechild.advancedtaskkiller.NewSettings$1;
+
+        specialinvoke $r5.<com.rechild.advancedtaskkiller.NewSettings$1: void <init>(com.rechild.advancedtaskkiller.NewSettings)>($r4);
+
+        if $i0 == 18 goto label10;
+
+        $z0 = virtualinvoke $r5.<com.rechild.advancedtaskkiller.NewSettings$1: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label10:
+        $r6 = new com.rechild.advancedtaskkiller.NewSettings$2;
+
+        specialinvoke $r6.<com.rechild.advancedtaskkiller.NewSettings$2: void <init>(com.rechild.advancedtaskkiller.NewSettings)>($r4);
+
+        if $i0 == 19 goto label11;
+
+        $z1 = virtualinvoke $r6.<com.rechild.advancedtaskkiller.NewSettings$2: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r4);
+
+        $r4 = null;
+
+     label11:
+        $r7 = new com.rechild.advancedtaskkiller.NewSettings$3;
+
+        specialinvoke $r7.<com.rechild.advancedtaskkiller.NewSettings$3: void <init>(com.rechild.advancedtaskkiller.NewSettings)>($r4);
+
+        if $i0 == 20 goto label12;
+
+        $z2 = virtualinvoke $r7.<com.rechild.advancedtaskkiller.NewSettings$3: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r4);
+
+        $r4 = null;
+
+     label12:
+        if $i0 == 21 goto label09;
+
+     label13:
+        if $i0 == 22 goto label08;
+
+        if $i0 == 23 goto label14;
+
+        if $i0 == 24 goto label08;
+
+     label14:
+        virtualinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void onDestroy()>();
+
+     label15:
+        if $i0 == 26 goto label20;
+
+        $r8 = new com.rechild.advancedtaskkiller.BackService;
+
+        specialinvoke $r8.<com.rechild.advancedtaskkiller.BackService: void <init>()>();
+
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.BackService: void onCreate()>();
+
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.BackService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label16:
+        if $i0 == 27 goto label17;
+
+        if $i0 == 28 goto label16;
+
+     label17:
+        $r9 = virtualinvoke $r8.<com.rechild.advancedtaskkiller.BackService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        if $i0 == 30 goto label19;
+
+        if $i0 == 31 goto label18;
+
+     label19:
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.BackService: void onDestroy()>();
+
+     label20:
+        if $i0 == 32 goto label22;
+
+        $r10 = new com.rechild.advancedtaskkiller.AutoStartReceiver;
+
+        specialinvoke $r10.<com.rechild.advancedtaskkiller.AutoStartReceiver: void <init>()>();
+
+        if $i0 == 33 goto label22;
+
+     label21:
+        virtualinvoke $r10.<com.rechild.advancedtaskkiller.AutoStartReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 35 goto label21;
+
+     label22:
+        if $i0 == 36 goto label35;
+
+        $r11 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller;
+
+        specialinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void <init>()>();
+
+        if $i0 == 37 goto label35;
+
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onResume()>();
+
+        if $i0 == 39 goto label33;
+
+     label24:
+        $r12 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller$2;
+
+        specialinvoke $r12.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$2: void <init>(com.rechild.advancedtaskkiller.AdvancedTaskKiller)>($r11);
+
+        if $i0 == 40 goto label25;
+
+        virtualinvoke $r12.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r13 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller$1;
+
+        specialinvoke $r13.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$1: void <init>(com.rechild.advancedtaskkiller.AdvancedTaskKiller)>($r11);
+
+        if $i0 == 41 goto label26;
+
+        virtualinvoke $r13.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$1: void onClick(android.view.View)>(null);
+
+     label26:
+        if $i0 == 42 goto label27;
+
+        $z3 = virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label27:
+        if $i0 == 43 goto label28;
+
+        $z4 = virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label28:
+        if $i0 == 44 goto label29;
+
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label29:
+        if $i0 == 45 goto label30;
+
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label30:
+        if $i0 == 46 goto label31;
+
+        $z5 = virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label31:
+        $r14 = new com.rechild.advancedtaskkiller.TaskListAdapters$ListViewItem;
+
+        specialinvoke $r14.<com.rechild.advancedtaskkiller.TaskListAdapters$ListViewItem: void <init>()>();
+
+        $r15 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller$5;
+
+        specialinvoke $r15.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$5: void <init>(com.rechild.advancedtaskkiller.AdvancedTaskKiller,com.rechild.advancedtaskkiller.TaskListAdapters$ListViewItem)>($r11, $r14);
+
+        if $i0 == 47 goto label32;
+
+        virtualinvoke $r15.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label32:
+        if $i0 == 48 goto label24;
+
+     label33:
+        if $i0 == 49 goto label23;
+
+        if $i0 == 50 goto label34;
+
+        if $i0 == 51 goto label23;
+
+     label34:
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onDestroy()>();
+
+     label35:
+        if $i0 == 53 goto label39;
+
+        $r16 = new com.android.root.Setting;
+
+        specialinvoke $r16.<com.android.root.Setting: void <init>()>();
+
+        virtualinvoke $r16.<com.android.root.Setting: void onCreate()>();
+
+        virtualinvoke $r16.<com.android.root.Setting: void onStart(android.content.Intent,int)>(null, 0);
+
+     label36:
+        if $i0 == 54 goto label37;
+
+        if $i0 == 55 goto label36;
+
+     label37:
+        $r17 = virtualinvoke $r16.<com.android.root.Setting: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label38:
+        if $i0 == 57 goto label39;
+
+        if $i0 == 58 goto label38;
+
+     label39:
+        if $i0 == 59 goto label41;
+
+        $r18 = new com.rechild.advancedtaskkiller.AlarmReceiver;
+
+        specialinvoke $r18.<com.rechild.advancedtaskkiller.AlarmReceiver: void <init>()>();
+
+        if $i0 == 60 goto label41;
+
+     label40:
+        virtualinvoke $r18.<com.rechild.advancedtaskkiller.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 62 goto label40;
+
+     label41:
+        if $i0 == 63 goto label44;
+
+        $r19 = new com.rechild.advancedtaskkiller.OneClickAppWidgetProvider;
+
+        specialinvoke $r19.<com.rechild.advancedtaskkiller.OneClickAppWidgetProvider: void <init>()>();
+
+        if $i0 == 64 goto label44;
+
+        if $i0 == 65 goto label44;
+
+     label42:
+        if $i0 == 66 goto label43;
+
+        $r20 = newarray (int)[1];
+
+        $r20[0] = 0;
+
+        virtualinvoke $r19.<com.rechild.advancedtaskkiller.OneClickAppWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r20);
+
+     label43:
+        if $i0 == 67 goto label42;
+
+     label44:
+        if $i0 == 68 goto label50;
+
+        $r21 = new com.rechild.advancedtaskkiller.IgnoreListActivity;
+
+        specialinvoke $r21.<com.rechild.advancedtaskkiller.IgnoreListActivity: void <init>()>();
+
+        if $i0 == 69 goto label50;
+
+        virtualinvoke $r21.<com.rechild.advancedtaskkiller.IgnoreListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label45:
+        if $i0 == 71 goto label49;
+
+     label46:
+        $r22 = new com.rechild.advancedtaskkiller.IgnoreListActivity$1;
+
+        specialinvoke $r22.<com.rechild.advancedtaskkiller.IgnoreListActivity$1: void <init>(com.rechild.advancedtaskkiller.IgnoreListActivity)>($r21);
+
+        if $i0 == 72 goto label47;
+
+        virtualinvoke $r22.<com.rechild.advancedtaskkiller.IgnoreListActivity$1: void onClick(android.view.View)>(null);
+
+     label47:
+        if $i0 == 73 goto label48;
+
+        virtualinvoke $r21.<com.rechild.advancedtaskkiller.IgnoreListActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label48:
+        if $i0 == 74 goto label46;
+
+     label49:
+        if $i0 == 75 goto label45;
+
+        if $i0 == 76 goto label50;
+
+        if $i0 == 77 goto label45;
+
+     label50:
+        if $i0 == 79 goto label52;
+
+        $r23 = new com.rechild.advancedtaskkiller.ScreenOffReceiver;
+
+        specialinvoke $r23.<com.rechild.advancedtaskkiller.ScreenOffReceiver: void <init>()>();
+
+        if $i0 == 80 goto label52;
+
+     label51:
+        virtualinvoke $r23.<com.rechild.advancedtaskkiller.ScreenOffReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 82 goto label51;
+
+     label52:
+        if $i0 == 83 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+Running incremental callback analysis for 10 components...
+Incremental callback analysis done.
+Found 39 callback methods for 10 components
+Found {res/layout/main.xml=[2131165197 - android.widget.ListView, 2131165196 - com.google.ads.GoogleAdView, 2131165194 - android.widget.LinearLayout, -1 - android.widget.RelativeLayout, 2131165195 - android.widget.Button], res/layout/status_bar_notifications.xml=[-1 - android.widget.ScrollView], res/layout/list_main.xml=[2131165192 - android.widget.ImageView, 2131165191 - android.widget.ImageView, 2131165190 - android.widget.FrameLayout, 2131165193 - android.widget.TextView], res/layout/appwidget.xml=[2131165184 - android.widget.ImageView], res/layout/ignorelist.xml=[2131165187 - android.widget.LinearLayout, 2131165188 - android.widget.Button, 2131165185 - android.widget.RelativeLayout, 2131165186 - android.widget.TextView, 2131165189 - android.widget.ListView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 39 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/20f7c6b813e6ff4ed7dd4e4411bfedd26a9d446a100287589adf6ea00b35a4bd.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.preference.Preference
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Parcelable
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find Android entry point method: int onStartCommand(android.content.Intent,int,int)
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.appwidget.AppWidgetManager
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.android.root.main $r1;
+        com.android.root.AlarmReceiver $r2;
+        android.os.IBinder $r3, $r9, $r19;
+        com.rechild.advancedtaskkiller.NewSettings $r4;
+        com.rechild.advancedtaskkiller.NewSettings$3 $r5;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5;
+        com.rechild.advancedtaskkiller.NewSettings$2 $r6;
+        com.rechild.advancedtaskkiller.NewSettings$1 $r7;
+        com.rechild.advancedtaskkiller.BackService $r8;
+        com.rechild.advancedtaskkiller.AutoStartReceiver $r10;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller $r11;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller$2 $r12;
+        com.rechild.advancedtaskkiller.TaskListAdapters$ListViewItem $r13;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller$5 $r14;
+        com.google.ads.GoogleAdView $r15;
+        android.os.Parcelable $r16;
+        com.rechild.advancedtaskkiller.AdvancedTaskKiller$1 $r17;
+        com.android.root.Setting $r18;
+        com.rechild.advancedtaskkiller.AlarmReceiver $r20;
+        com.rechild.advancedtaskkiller.OneClickAppWidgetProvider $r21;
+        int[] $r22;
+        com.rechild.advancedtaskkiller.IgnoreListActivity $r23;
+        com.rechild.advancedtaskkiller.IgnoreListActivity$1 $r24;
+        com.rechild.advancedtaskkiller.ScreenOffReceiver $r25;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.android.root.main;
+
+        specialinvoke $r1.<com.android.root.main: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+        virtualinvoke $r1.<com.android.root.main: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label02;
+
+        if $i0 == 5 goto label03;
+
+        if $i0 == 6 goto label02;
+
+     label03:
+        if $i0 == 8 goto label07;
+
+        $r2 = new com.android.root.AlarmReceiver;
+
+        specialinvoke $r2.<com.android.root.AlarmReceiver: void <init>()>();
+
+        virtualinvoke $r2.<com.android.root.AlarmReceiver: void onCreate()>();
+
+     label04:
+        if $i0 == 9 goto label05;
+
+        if $i0 == 10 goto label04;
+
+     label05:
+        $r3 = virtualinvoke $r2.<com.android.root.AlarmReceiver: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label06:
+        if $i0 == 12 goto label07;
+
+        if $i0 == 13 goto label06;
+
+     label07:
+        if $i0 == 14 goto label15;
+
+        $r4 = new com.rechild.advancedtaskkiller.NewSettings;
+
+        specialinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void <init>()>();
+
+        if $i0 == 15 goto label15;
+
+        virtualinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        if $i0 == 17 goto label13;
+
+     label09:
+        $r5 = new com.rechild.advancedtaskkiller.NewSettings$3;
+
+        specialinvoke $r5.<com.rechild.advancedtaskkiller.NewSettings$3: void <init>(com.rechild.advancedtaskkiller.NewSettings)>($r4);
+
+        if $i0 == 18 goto label10;
+
+        $z0 = virtualinvoke $r5.<com.rechild.advancedtaskkiller.NewSettings$3: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r4);
+
+        $r4 = null;
+
+     label10:
+        $r6 = new com.rechild.advancedtaskkiller.NewSettings$2;
+
+        specialinvoke $r6.<com.rechild.advancedtaskkiller.NewSettings$2: void <init>(com.rechild.advancedtaskkiller.NewSettings)>($r4);
+
+        if $i0 == 19 goto label11;
+
+        $z1 = virtualinvoke $r6.<com.rechild.advancedtaskkiller.NewSettings$2: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>(null, $r4);
+
+        $r4 = null;
+
+     label11:
+        $r7 = new com.rechild.advancedtaskkiller.NewSettings$1;
+
+        specialinvoke $r7.<com.rechild.advancedtaskkiller.NewSettings$1: void <init>(com.rechild.advancedtaskkiller.NewSettings)>($r4);
+
+        if $i0 == 20 goto label12;
+
+        $z2 = virtualinvoke $r7.<com.rechild.advancedtaskkiller.NewSettings$1: boolean onPreferenceClick(android.preference.Preference)>(null);
+
+     label12:
+        if $i0 == 21 goto label09;
+
+     label13:
+        if $i0 == 22 goto label08;
+
+        if $i0 == 23 goto label14;
+
+        if $i0 == 24 goto label08;
+
+     label14:
+        virtualinvoke $r4.<com.rechild.advancedtaskkiller.NewSettings: void onDestroy()>();
+
+     label15:
+        if $i0 == 26 goto label20;
+
+        $r8 = new com.rechild.advancedtaskkiller.BackService;
+
+        specialinvoke $r8.<com.rechild.advancedtaskkiller.BackService: void <init>()>();
+
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.BackService: void onCreate()>();
+
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.BackService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label16:
+        if $i0 == 27 goto label17;
+
+        if $i0 == 28 goto label16;
+
+     label17:
+        $r9 = virtualinvoke $r8.<com.rechild.advancedtaskkiller.BackService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label18:
+        if $i0 == 30 goto label19;
+
+        if $i0 == 31 goto label18;
+
+     label19:
+        virtualinvoke $r8.<com.rechild.advancedtaskkiller.BackService: void onDestroy()>();
+
+     label20:
+        if $i0 == 32 goto label22;
+
+        $r10 = new com.rechild.advancedtaskkiller.AutoStartReceiver;
+
+        specialinvoke $r10.<com.rechild.advancedtaskkiller.AutoStartReceiver: void <init>()>();
+
+        if $i0 == 33 goto label22;
+
+     label21:
+        virtualinvoke $r10.<com.rechild.advancedtaskkiller.AutoStartReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 35 goto label21;
+
+     label22:
+        if $i0 == 36 goto label42;
+
+        $r11 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller;
+
+        specialinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void <init>()>();
+
+        if $i0 == 37 goto label42;
+
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onCreate(android.os.Bundle)>(null);
+
+     label23:
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onResume()>();
+
+        if $i0 == 39 goto label40;
+
+     label24:
+        $r12 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller$2;
+
+        specialinvoke $r12.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$2: void <init>(com.rechild.advancedtaskkiller.AdvancedTaskKiller)>($r11);
+
+        if $i0 == 40 goto label25;
+
+        virtualinvoke $r12.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$2: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label25:
+        $r13 = new com.rechild.advancedtaskkiller.TaskListAdapters$ListViewItem;
+
+        specialinvoke $r13.<com.rechild.advancedtaskkiller.TaskListAdapters$ListViewItem: void <init>()>();
+
+        $r14 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller$5;
+
+        specialinvoke $r14.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$5: void <init>(com.rechild.advancedtaskkiller.AdvancedTaskKiller,com.rechild.advancedtaskkiller.TaskListAdapters$ListViewItem)>($r11, $r13);
+
+        if $i0 == 41 goto label26;
+
+        virtualinvoke $r14.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label26:
+        $r15 = new com.google.ads.GoogleAdView;
+
+        specialinvoke $r15.<com.google.ads.GoogleAdView: void <init>(android.content.Context)>($r11);
+
+        if $i0 == 42 goto label27;
+
+        $r16 = virtualinvoke $r15.<com.google.ads.GoogleAdView: android.os.Parcelable onSaveInstanceState()>();
+
+     label27:
+        if $i0 == 43 goto label28;
+
+        staticinvoke <com.google.ads.GoogleAdView: void <clinit>()>();
+
+     label28:
+        if $i0 == 44 goto label29;
+
+        virtualinvoke $r15.<com.google.ads.GoogleAdView: void setDisplayedChild(int)>(0);
+
+     label29:
+        if $i0 == 45 goto label30;
+
+        virtualinvoke $r15.<com.google.ads.GoogleAdView: void onWindowFocusChanged(boolean)>(false);
+
+     label30:
+        if $i0 == 46 goto label31;
+
+        virtualinvoke $r15.<com.google.ads.GoogleAdView: void reset()>();
+
+     label31:
+        if $i0 == 47 goto label32;
+
+        virtualinvoke $r15.<com.google.ads.GoogleAdView: void onRestoreInstanceState(android.os.Parcelable)>(null);
+
+     label32:
+        if $i0 == 48 goto label33;
+
+        virtualinvoke $r15.<com.google.ads.GoogleAdView: void onDetachedFromWindow()>();
+
+     label33:
+        if $i0 == 49 goto label34;
+
+        $z3 = virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label34:
+        if $i0 == 50 goto label35;
+
+        $z4 = virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label35:
+        if $i0 == 51 goto label36;
+
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label36:
+        if $i0 == 52 goto label37;
+
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label37:
+        if $i0 == 53 goto label38;
+
+        $z5 = virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label38:
+        $r17 = new com.rechild.advancedtaskkiller.AdvancedTaskKiller$1;
+
+        specialinvoke $r17.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$1: void <init>(com.rechild.advancedtaskkiller.AdvancedTaskKiller)>($r11);
+
+        if $i0 == 54 goto label39;
+
+        virtualinvoke $r17.<com.rechild.advancedtaskkiller.AdvancedTaskKiller$1: void onClick(android.view.View)>(null);
+
+     label39:
+        if $i0 == 55 goto label24;
+
+     label40:
+        if $i0 == 56 goto label23;
+
+        if $i0 == 57 goto label41;
+
+        if $i0 == 58 goto label23;
+
+     label41:
+        virtualinvoke $r11.<com.rechild.advancedtaskkiller.AdvancedTaskKiller: void onDestroy()>();
+
+     label42:
+        if $i0 == 60 goto label46;
+
+        $r18 = new com.android.root.Setting;
+
+        specialinvoke $r18.<com.android.root.Setting: void <init>()>();
+
+        virtualinvoke $r18.<com.android.root.Setting: void onCreate()>();
+
+        virtualinvoke $r18.<com.android.root.Setting: void onStart(android.content.Intent,int)>(null, 0);
+
+     label43:
+        if $i0 == 61 goto label44;
+
+        if $i0 == 62 goto label43;
+
+     label44:
+        $r19 = virtualinvoke $r18.<com.android.root.Setting: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label45:
+        if $i0 == 64 goto label46;
+
+        if $i0 == 65 goto label45;
+
+     label46:
+        if $i0 == 66 goto label48;
+
+        $r20 = new com.rechild.advancedtaskkiller.AlarmReceiver;
+
+        specialinvoke $r20.<com.rechild.advancedtaskkiller.AlarmReceiver: void <init>()>();
+
+        if $i0 == 67 goto label48;
+
+     label47:
+        virtualinvoke $r20.<com.rechild.advancedtaskkiller.AlarmReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 69 goto label47;
+
+     label48:
+        if $i0 == 70 goto label51;
+
+        $r21 = new com.rechild.advancedtaskkiller.OneClickAppWidgetProvider;
+
+        specialinvoke $r21.<com.rechild.advancedtaskkiller.OneClickAppWidgetProvider: void <init>()>();
+
+        if $i0 == 71 goto label51;
+
+        if $i0 == 72 goto label51;
+
+     label49:
+        if $i0 == 73 goto label50;
+
+        $r22 = newarray (int)[1];
+
+        $r22[0] = 0;
+
+        virtualinvoke $r21.<com.rechild.advancedtaskkiller.OneClickAppWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])>(null, null, $r22);
+
+     label50:
+        if $i0 == 74 goto label49;
+
+     label51:
+        if $i0 == 75 goto label57;
+
+        $r23 = new com.rechild.advancedtaskkiller.IgnoreListActivity;
+
+        specialinvoke $r23.<com.rechild.advancedtaskkiller.IgnoreListActivity: void <init>()>();
+
+        if $i0 == 76 goto label57;
+
+        virtualinvoke $r23.<com.rechild.advancedtaskkiller.IgnoreListActivity: void onCreate(android.os.Bundle)>(null);
+
+     label52:
+        if $i0 == 78 goto label56;
+
+     label53:
+        if $i0 == 79 goto label54;
+
+        virtualinvoke $r23.<com.rechild.advancedtaskkiller.IgnoreListActivity: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label54:
+        $r24 = new com.rechild.advancedtaskkiller.IgnoreListActivity$1;
+
+        specialinvoke $r24.<com.rechild.advancedtaskkiller.IgnoreListActivity$1: void <init>(com.rechild.advancedtaskkiller.IgnoreListActivity)>($r23);
+
+        if $i0 == 80 goto label55;
+
+        virtualinvoke $r24.<com.rechild.advancedtaskkiller.IgnoreListActivity$1: void onClick(android.view.View)>(null);
+
+     label55:
+        if $i0 == 81 goto label53;
+
+     label56:
+        if $i0 == 82 goto label52;
+
+        if $i0 == 83 goto label57;
+
+        if $i0 == 84 goto label52;
+
+     label57:
+        if $i0 == 86 goto label59;
+
+        $r25 = new com.rechild.advancedtaskkiller.ScreenOffReceiver;
+
+        specialinvoke $r25.<com.rechild.advancedtaskkiller.ScreenOffReceiver: void <init>()>();
+
+        if $i0 == 87 goto label59;
+
+     label58:
+        virtualinvoke $r25.<com.rechild.advancedtaskkiller.ScreenOffReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 89 goto label58;
+
+     label59:
+        if $i0 == 90 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.5 seconds.
+[Spark] Solution found in 0.5 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.58523414 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.068445404 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 1493 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 55 sources and 32 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1030
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 5619
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 21770 forward and 5139 backward edges solved, processing 5 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.006670772 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AutoKillLevelValue", $r5) in method <com.rechild.advancedtaskkiller.NewSettings$2: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: java.lang.Object in method <com.rechild.advancedtaskkiller.NewSettings$2: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1) in method <com.rechild.advancedtaskkiller.CommonLibrary: void ScheduleAutoKill(android.content.Context,boolean,long)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.rechild.advancedtaskkiller.AutoStartReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.rechild.advancedtaskkiller.AutoStartReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.rechild.advancedtaskkiller.AutoStartReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r9.<java.io.OutputStream: void write(byte[],int,int)>($r5, 0, $i0) in method <com.android.root.Setting: void postUrl(java.lang.String,android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.android.root.Setting: void postUrl(java.lang.String,android.content.Context)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AutoKillFrequecyValue", $r5) in method <com.rechild.advancedtaskkiller.NewSettings$3: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: java.lang.Object in method <com.rechild.advancedtaskkiller.NewSettings$3: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AutoKillLevelValue", $r5), from the following sources:
+	- $r2 := @parameter1: java.lang.Object (in <com.rechild.advancedtaskkiller.NewSettings$2: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>)
+Found a flow to sink virtualinvoke $r0.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.rechild.advancedtaskkiller.AutoStartReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.rechild.advancedtaskkiller.AutoStartReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r9.<java.io.OutputStream: void write(byte[],int,int)>($r5, 0, $i0), from the following sources:
+	- $r7 = virtualinvoke $r6.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.android.root.Setting: void postUrl(java.lang.String,android.content.Context)>)
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("AutoKillFrequecyValue", $r5), from the following sources:
+	- $r2 := @parameter1: java.lang.Object (in <com.rechild.advancedtaskkiller.NewSettings$3: boolean onPreferenceChange(android.preference.Preference,java.lang.Object)>)
+Maximum memory consumption: 89.443144 MB
+Analysis has run for 5.445416264 seconds

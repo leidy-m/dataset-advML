@@ -1,0 +1,2718 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.032933612 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        biz.neoline.app_core.ui.android.library.NBAndroidApplication $r1;
+        biz.neoline.app_core.ui.android.dialogs.DialogActivity $r2;
+        biz.neoline.android.reader.BookmarksAndTocActivity $r3;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity $r4;
+        biz.neoline.test.DonationActivity $r5;
+        biz.neoline.android.reader.LibraryActivity $r6;
+        biz.neoline.android.reader.NeoBookReader $r7;
+        biz.neoline.android.reader.TextSearchActivity $r8;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new biz.neoline.app_core.ui.android.library.NBAndroidApplication;
+
+        specialinvoke $r1.<biz.neoline.app_core.ui.android.library.NBAndroidApplication: void <init>()>();
+
+        virtualinvoke $r1.<biz.neoline.app_core.ui.android.library.ZLAndroidApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label04;
+
+        $r2 = new biz.neoline.app_core.ui.android.dialogs.DialogActivity;
+
+        specialinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void <init>()>();
+
+        if $i0 == 1 goto label04;
+
+        virtualinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 4 goto label03;
+
+        if $i0 == 5 goto label02;
+
+     label03:
+        virtualinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void onDestroy()>();
+
+     label04:
+        if $i0 == 8 goto label06;
+
+        $r3 = new biz.neoline.android.reader.BookmarksAndTocActivity;
+
+        specialinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void <init>()>();
+
+        if $i0 == 9 goto label06;
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onCreate(android.os.Bundle)>(null);
+
+     label05:
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onResume()>();
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onPause()>();
+
+        if $i0 == 11 goto label05;
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onStop()>();
+
+        if $i0 == 12 goto label06;
+
+        if $i0 == 13 goto label05;
+
+     label06:
+        if $i0 == 15 goto label08;
+
+        $r4 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity;
+
+        specialinvoke $r4.<biz.neoline.app_core.ui.android.library.CrashReportingActivity: void <init>()>();
+
+        if $i0 == 16 goto label08;
+
+        virtualinvoke $r4.<biz.neoline.app_core.ui.android.library.CrashReportingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 19 goto label08;
+
+        if $i0 == 20 goto label07;
+
+     label08:
+        if $i0 == 22 goto label10;
+
+        $r5 = new biz.neoline.test.DonationActivity;
+
+        specialinvoke $r5.<biz.neoline.test.DonationActivity: void <init>()>();
+
+        if $i0 == 23 goto label10;
+
+        virtualinvoke $r5.<biz.neoline.lib.PurchaseActivityCore: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 26 goto label10;
+
+        if $i0 == 27 goto label09;
+
+     label10:
+        if $i0 == 29 goto label13;
+
+        $r6 = new biz.neoline.android.reader.LibraryActivity;
+
+        specialinvoke $r6.<biz.neoline.android.reader.LibraryActivity: void <init>()>();
+
+        if $i0 == 30 goto label13;
+
+        virtualinvoke $r6.<biz.neoline.android.reader.LibraryActivity: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r6.<biz.neoline.android.reader.LibraryActivity: void onResume()>();
+
+        if $i0 == 32 goto label11;
+
+        virtualinvoke $r6.<biz.neoline.android.reader.LibraryActivity: void onStop()>();
+
+        if $i0 == 33 goto label12;
+
+        if $i0 == 34 goto label11;
+
+     label12:
+        virtualinvoke $r6.<biz.neoline.android.reader.LibraryActivity: void onDestroy()>();
+
+     label13:
+        if $i0 == 36 goto label16;
+
+        $r7 = new biz.neoline.android.reader.NeoBookReader;
+
+        specialinvoke $r7.<biz.neoline.android.reader.NeoBookReader: void <init>()>();
+
+        if $i0 == 37 goto label16;
+
+        virtualinvoke $r7.<biz.neoline.android.reader.NeoBookReader: void onCreate(android.os.Bundle)>(null);
+
+     label14:
+        virtualinvoke $r7.<biz.neoline.android.reader.NeoBookReader: void onStart()>();
+
+     label15:
+        virtualinvoke $r7.<biz.neoline.android.reader.NeoBookReader: void onResume()>();
+
+        virtualinvoke $r7.<biz.neoline.android.reader.NeoBookReader: void onPause()>();
+
+        virtualinvoke $r7.<biz.neoline.app_core.ui.android.library.ZLAndroidActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 39 goto label15;
+
+        virtualinvoke $r7.<biz.neoline.android.reader.NeoBookReader: void onStop()>();
+
+        if $i0 == 40 goto label16;
+
+        if $i0 == 41 goto label14;
+
+     label16:
+        if $i0 == 43 goto label18;
+
+        $r8 = new biz.neoline.android.reader.TextSearchActivity;
+
+        specialinvoke $r8.<biz.neoline.android.reader.TextSearchActivity: void <init>()>();
+
+        if $i0 == 44 goto label18;
+
+        virtualinvoke $r8.<biz.neoline.android.reader.TextSearchActivity: void onCreate(android.os.Bundle)>(null);
+
+     label17:
+        if $i0 == 47 goto label18;
+
+        if $i0 == 48 goto label17;
+
+     label18:
+        if $i0 == 51 goto label01;
+
+        virtualinvoke $r1.<biz.neoline.app_core.ui.android.library.ZLAndroidApplication: void onTerminate()>();
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 3.7 seconds.
+[Spark] Solution found in 3.7 seconds.
+Callback analysis done.
+Warning: ImageView is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 1 layout controls in file res/layout/bookmark_icon.xml
+Warning: LinearLayout is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 2 layout controls in file res/layout/bookmarks_item.xml
+Warning: RelativeLayout is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ListView is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.ListView is a phantom class!
+Warning: android.view.ListView is a phantom class!
+Found 3 layout controls in file res/layout/bookmarks_toc.xml
+Warning: ImageButton is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.ImageButton is a phantom class!
+Warning: android.view.ImageButton is a phantom class!
+Warning: SeekBar is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.SeekBar is a phantom class!
+Warning: android.view.SeekBar is a phantom class!
+Found 4 layout controls in file res/layout/brightness_seekbar.xml
+Warning: Button is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 5 layout controls in file res/layout/bug_report_view.xml
+Found 6 layout controls in file res/layout/catalog_book_list.xml
+Found 7 layout controls in file res/layout/control_panel.xml
+Found 8 layout controls in file res/layout/library.xml
+Warning: FrameLayout is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.FrameLayout is a phantom class!
+Warning: android.view.FrameLayout is a phantom class!
+Found 9 layout controls in file res/layout/library_book.xml
+Warning: View is a phantom class!
+Warning: biz.neoline.app_core.ui.android.margarita.View is a phantom class!
+Found 10 layout controls in file res/layout/logo.xml
+Found 11 layout controls in file res/layout/main.xml
+Found 12 layout controls in file res/layout/menu_panel.xml
+Found 13 layout controls in file res/layout/navigate.xml
+Found 14 layout controls in file res/layout/page_number_panel.xml
+Found unrecognized XML attribute:  tag
+Found unrecognized XML attribute:  tag
+Found unrecognized XML attribute:  tag
+Found 15 layout controls in file res/layout/settings_panel.xml
+Found 16 layout controls in file res/layout/tabs_title.xml
+Found 17 layout controls in file res/layout/title_panel.xml
+Found 18 layout controls in file res/layout/toc_tree_item.xml
+Found 19 layout controls in file res/layout-xlarge/library.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.android.reader.TreeAdapterCore, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class biz.neoline.android.reader.TreeAdapterCore
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.util.List
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class biz.neoline.android.reader.TreeAdapterCore
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.app_core.core.resources.ZLResource, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for java.lang.Runnable, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.TextView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.lib.PurchaseActivityCore, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.LinearLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.flurry.android.FlurryAgent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class com.flurry.android.FlurryAgent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r24, $r35;
+        int $i0;
+        biz.neoline.app_core.ui.android.library.NBAndroidApplication $r1;
+        biz.neoline.app_core.ui.android.dialogs.DialogActivity $r2;
+        biz.neoline.android.reader.BookmarksAndTocActivity $r3;
+        biz.neoline.android.reader.BookmarksAndTocActivity$1 $r4, $r23;
+        ru.wapstart.plus1.sdk.Plus1BannerRequest $r5, $r12, $r15, $r43;
+        ru.wapstart.plus1.sdk.Plus1LocationListener $r6, $r13, $r16, $r44;
+        biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter $r7, $r18;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity $r8;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity$2 $r9, $r40;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity$1 $r10, $r39;
+        biz.neoline.test.DonationActivity $r11;
+        biz.neoline.android.reader.LibraryActivity $r14;
+        biz.neoline.android.reader.LibraryActivity$4 $r17, $r45;
+        biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog $r19;
+        biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView $r20;
+        biz.neoline.android.reader.LibraryActivity$2 $r21;
+        biz.neoline.android.reader.NeoBookReader $r22;
+        biz.neoline.reader.reader.ReaderApp $r25, $r36;
+        biz.neoline.android.reader.NavigationPanel $r26;
+        biz.neoline.android.reader.NavigationPanel$1 $r27;
+        biz.neoline.lib.PurchaseActivityCore$5 $r28;
+        biz.neoline.lib.PurchaseActivityCore$8 $r29, $r64;
+        ru.wapstart.plus1.sdk.Plus1BannerView $r30, $r33;
+        ru.wapstart.plus1.sdk.Plus1BannerView$2 $r31;
+        biz.neoline.test.BrightnessSeekBar $r32, $r58;
+        ru.wapstart.plus1.sdk.Plus1BannerView$1 $r34;
+        biz.neoline.android.reader.TextSearchButtonPanel $r37;
+        biz.neoline.android.reader.LibraryActivity$1 $r38;
+        biz.neoline.android.reader.SettingsPanel $r41, $r61;
+        biz.neoline.android.reader.SettingsPanel$2 $r42;
+        biz.neoline.test.BookWebListEntry[] $r46;
+        org.json.JSONObject $r47;
+        biz.neoline.test.BookWebListEntry $r48;
+        biz.neoline.test.MyListAdapter $r49;
+        biz.neoline.test.MyListAdapter$2 $r50;
+        biz.neoline.lib.PurchaseActivityCore$7 $r51;
+        biz.neoline.lib.PurchaseActivityCore$4 $r52;
+        biz.neoline.android.reader.NeoBookReader$2 $r53;
+        com.flurry.android.CatalogActivity $r54;
+        biz.neoline.android.reader.MenuPanel $r55;
+        biz.neoline.android.reader.MenuPanel$2 $r56;
+        biz.neoline.lib.PurchaseActivityCore$3 $r57;
+        biz.neoline.test.BrightnessSeekBar$1 $r59;
+        com.flurry.android.u $r60;
+        biz.neoline.android.reader.SettingsPanel$1 $r62;
+        biz.neoline.android.reader.TextSearchActivity $r63;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new biz.neoline.app_core.ui.android.library.NBAndroidApplication;
+
+        specialinvoke $r1.<biz.neoline.app_core.ui.android.library.NBAndroidApplication: void <init>()>();
+
+        virtualinvoke $r1.<biz.neoline.app_core.ui.android.library.ZLAndroidApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label07;
+
+        $r2 = new biz.neoline.app_core.ui.android.dialogs.DialogActivity;
+
+        specialinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void <init>()>();
+
+        if $i0 == 1 goto label07;
+
+        virtualinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <biz.neoline.app_core.ui.android.dialogs.DialogActivity: void <clinit>()>();
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        virtualinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 11 goto label17;
+
+        $r3 = new biz.neoline.android.reader.BookmarksAndTocActivity;
+
+        specialinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void <init>()>();
+
+        if $i0 == 12 goto label17;
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onResume()>();
+
+        if $i0 == 14 goto label16;
+
+     label09:
+        $r4 = new biz.neoline.android.reader.BookmarksAndTocActivity$1;
+
+        specialinvoke $r4.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity)>($r3);
+
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r4.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void onClick(android.view.View)>(null);
+
+     label10:
+        $r5 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r5.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r6 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r6.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r5);
+
+        if $i0 == 16 goto label11;
+
+        virtualinvoke $r6.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label11:
+        $r7 = new biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter;
+
+        specialinvoke $r7.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity,android.widget.ListView,java.util.List,boolean)>($r3, null, null, false);
+
+        if $i0 == 17 goto label12;
+
+        virtualinvoke $r7.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label12:
+        if $i0 == 18 goto label13;
+
+        virtualinvoke $r7.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label13:
+        if $i0 == 19 goto label14;
+
+        $z0 = virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label14:
+        if $i0 == 20 goto label15;
+
+        $z1 = virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: boolean onSearchRequested()>();
+
+     label15:
+        if $i0 == 21 goto label09;
+
+     label16:
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onPause()>();
+
+        if $i0 == 22 goto label08;
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onStop()>();
+
+        if $i0 == 23 goto label17;
+
+        if $i0 == 24 goto label08;
+
+     label17:
+        if $i0 == 26 goto label23;
+
+        $r8 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity;
+
+        specialinvoke $r8.<biz.neoline.app_core.ui.android.library.CrashReportingActivity: void <init>()>();
+
+        if $i0 == 27 goto label23;
+
+        virtualinvoke $r8.<biz.neoline.app_core.ui.android.library.CrashReportingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label18:
+        if $i0 == 29 goto label22;
+
+     label19:
+        $r9 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$2;
+
+        specialinvoke $r9.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity)>($r8);
+
+        if $i0 == 30 goto label20;
+
+        virtualinvoke $r9.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void onClick(android.view.View)>(null);
+
+     label20:
+        $r10 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$1;
+
+        specialinvoke $r10.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity,java.lang.String,java.lang.String)>($r8, "", "");
+
+        if $i0 == 31 goto label21;
+
+        virtualinvoke $r10.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void onClick(android.view.View)>(null);
+
+     label21:
+        if $i0 == 32 goto label19;
+
+     label22:
+        if $i0 == 33 goto label18;
+
+        if $i0 == 34 goto label23;
+
+        if $i0 == 35 goto label18;
+
+     label23:
+        if $i0 == 37 goto label29;
+
+        $r11 = new biz.neoline.test.DonationActivity;
+
+        specialinvoke $r11.<biz.neoline.test.DonationActivity: void <init>()>();
+
+        if $i0 == 38 goto label29;
+
+        virtualinvoke $r11.<biz.neoline.lib.PurchaseActivityCore: void onCreate(android.os.Bundle)>(null);
+
+     label24:
+        if $i0 == 40 goto label28;
+
+     label25:
+        if $i0 == 41 goto label26;
+
+        $z2 = virtualinvoke $r11.<biz.neoline.test.DonationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label26:
+        $r12 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r12.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r13 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r13.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r12);
+
+        if $i0 == 42 goto label27;
+
+        virtualinvoke $r13.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label27:
+        if $i0 == 43 goto label25;
+
+     label28:
+        if $i0 == 44 goto label24;
+
+        if $i0 == 45 goto label29;
+
+        if $i0 == 46 goto label24;
+
+     label29:
+        if $i0 == 48 goto label41;
+
+        $r14 = new biz.neoline.android.reader.LibraryActivity;
+
+        specialinvoke $r14.<biz.neoline.android.reader.LibraryActivity: void <init>()>();
+
+        if $i0 == 49 goto label41;
+
+        virtualinvoke $r14.<biz.neoline.android.reader.LibraryActivity: void onCreate(android.os.Bundle)>(null);
+
+     label30:
+        virtualinvoke $r14.<biz.neoline.android.reader.LibraryActivity: void onResume()>();
+
+        if $i0 == 51 goto label39;
+
+     label31:
+        $r15 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r15.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r16 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r16.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r15);
+
+        if $i0 == 52 goto label32;
+
+        virtualinvoke $r16.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label32:
+        $r17 = new biz.neoline.android.reader.LibraryActivity$4;
+
+        specialinvoke $r17.<biz.neoline.android.reader.LibraryActivity$4: void <init>(biz.neoline.android.reader.LibraryActivity)>($r14);
+
+        if $i0 == 53 goto label33;
+
+        virtualinvoke $r17.<biz.neoline.android.reader.LibraryActivity$4: void onClick(android.view.View)>(null);
+
+     label33:
+        $r18 = new biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter;
+
+        specialinvoke $r18.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity,android.widget.ListView,java.util.List,boolean)>($r3, null, null, false);
+
+        if $i0 == 54 goto label34;
+
+        virtualinvoke $r18.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label34:
+        if $i0 == 55 goto label35;
+
+        virtualinvoke $r18.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label35:
+        $r19 = new biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog;
+
+        specialinvoke $r19.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog: void <init>(android.app.Activity,biz.neoline.app_core.core.resources.ZLResource,java.lang.Runnable,java.lang.Runnable)>($r14, null, null, null);
+
+        $r20 = new biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView;
+
+        specialinvoke $r20.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: void <init>(biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog,android.content.Context)>($r19, $r14);
+
+        if $i0 == 56 goto label36;
+
+        virtualinvoke $r20.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label36:
+        if $i0 == 57 goto label37;
+
+        $z3 = virtualinvoke $r20.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label37:
+        $r21 = new biz.neoline.android.reader.LibraryActivity$2;
+
+        specialinvoke $r21.<biz.neoline.android.reader.LibraryActivity$2: void <init>(biz.neoline.android.reader.LibraryActivity)>($r14);
+
+        if $i0 == 58 goto label38;
+
+        virtualinvoke $r21.<biz.neoline.android.reader.LibraryActivity$2: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label38:
+        if $i0 == 59 goto label31;
+
+     label39:
+        if $i0 == 60 goto label30;
+
+        virtualinvoke $r14.<biz.neoline.android.reader.LibraryActivity: void onStop()>();
+
+        if $i0 == 61 goto label40;
+
+        if $i0 == 62 goto label30;
+
+     label40:
+        virtualinvoke $r14.<biz.neoline.android.reader.LibraryActivity: void onDestroy()>();
+
+     label41:
+        if $i0 == 64 goto label77;
+
+        $r22 = new biz.neoline.android.reader.NeoBookReader;
+
+        specialinvoke $r22.<biz.neoline.android.reader.NeoBookReader: void <init>()>();
+
+        if $i0 == 65 goto label77;
+
+        virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: void onCreate(android.os.Bundle)>(null);
+
+     label42:
+        virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: void onStart()>();
+
+     label43:
+        virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: void onResume()>();
+
+        if $i0 == 67 goto label76;
+
+     label44:
+        $r23 = new biz.neoline.android.reader.BookmarksAndTocActivity$1;
+
+        specialinvoke $r23.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity)>($r3);
+
+        if $i0 == 68 goto label45;
+
+        virtualinvoke $r23.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void onClick(android.view.View)>(null);
+
+     label45:
+        $r24 = newarray (java.lang.String)[1];
+
+        $r24[0] = "";
+
+        $r25 = new biz.neoline.reader.reader.ReaderApp;
+
+        specialinvoke $r25.<biz.neoline.reader.reader.ReaderApp: void <init>(java.lang.String[])>($r24);
+
+        $r26 = new biz.neoline.android.reader.NavigationPanel;
+
+        specialinvoke $r26.<biz.neoline.android.reader.NavigationPanel: void <init>(biz.neoline.reader.reader.ReaderApp)>($r25);
+
+        $r27 = new biz.neoline.android.reader.NavigationPanel$1;
+
+        specialinvoke $r27.<biz.neoline.android.reader.NavigationPanel$1: void <init>(biz.neoline.android.reader.NavigationPanel,android.widget.TextView,android.widget.TextView)>($r26, null, null);
+
+        if $i0 == 69 goto label46;
+
+        virtualinvoke $r27.<biz.neoline.android.reader.NavigationPanel$1: void onStartTrackingTouch(android.widget.SeekBar)>(null);
+
+     label46:
+        if $i0 == 70 goto label47;
+
+        virtualinvoke $r27.<biz.neoline.android.reader.NavigationPanel$1: void onStopTrackingTouch(android.widget.SeekBar)>(null);
+
+     label47:
+        if $i0 == 71 goto label48;
+
+        virtualinvoke $r27.<biz.neoline.android.reader.NavigationPanel$1: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label48:
+        $r28 = new biz.neoline.lib.PurchaseActivityCore$5;
+
+        specialinvoke $r28.<biz.neoline.lib.PurchaseActivityCore$5: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 72 goto label49;
+
+        virtualinvoke $r28.<biz.neoline.lib.PurchaseActivityCore$5: void onClick(android.view.View)>(null);
+
+     label49:
+        $r29 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r29.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 73 goto label50;
+
+        virtualinvoke $r29.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label50:
+        $r30 = new ru.wapstart.plus1.sdk.Plus1BannerView;
+
+        specialinvoke $r30.<ru.wapstart.plus1.sdk.Plus1BannerView: void <init>(android.content.Context)>($r22);
+
+        $r31 = new ru.wapstart.plus1.sdk.Plus1BannerView$2;
+
+        specialinvoke $r31.<ru.wapstart.plus1.sdk.Plus1BannerView$2: void <init>(ru.wapstart.plus1.sdk.Plus1BannerView)>($r30);
+
+        if $i0 == 74 goto label51;
+
+        virtualinvoke $r31.<ru.wapstart.plus1.sdk.Plus1BannerView$2: void onClick(android.view.View)>(null);
+
+     label51:
+        if $i0 == 75 goto label52;
+
+        virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label52:
+        if $i0 == 76 goto label53;
+
+        $z4 = virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: boolean onSearchRequested()>();
+
+     label53:
+        if $i0 == 77 goto label54;
+
+        $z5 = virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label54:
+        if $i0 == 78 goto label55;
+
+        $z6 = virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label55:
+        $r32 = new biz.neoline.test.BrightnessSeekBar;
+
+        specialinvoke $r32.<biz.neoline.test.BrightnessSeekBar: void <init>(android.content.Context,android.widget.LinearLayout)>($r22, null);
+
+        if $i0 == 79 goto label56;
+
+        virtualinvoke $r32.<biz.neoline.test.BrightnessSeekBar: void onStopTrackingTouch(android.widget.SeekBar)>(null);
+
+     label56:
+        if $i0 == 80 goto label57;
+
+        virtualinvoke $r32.<biz.neoline.test.BrightnessSeekBar: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label57:
+        $r33 = new ru.wapstart.plus1.sdk.Plus1BannerView;
+
+        specialinvoke $r33.<ru.wapstart.plus1.sdk.Plus1BannerView: void <init>(android.content.Context)>($r22);
+
+        $r34 = new ru.wapstart.plus1.sdk.Plus1BannerView$1;
+
+        specialinvoke $r34.<ru.wapstart.plus1.sdk.Plus1BannerView$1: void <init>(ru.wapstart.plus1.sdk.Plus1BannerView)>($r33);
+
+        if $i0 == 81 goto label58;
+
+        virtualinvoke $r34.<ru.wapstart.plus1.sdk.Plus1BannerView$1: void onClick(android.view.View)>(null);
+
+     label58:
+        $r35 = newarray (java.lang.String)[1];
+
+        $r35[0] = "";
+
+        $r36 = new biz.neoline.reader.reader.ReaderApp;
+
+        specialinvoke $r36.<biz.neoline.reader.reader.ReaderApp: void <init>(java.lang.String[])>($r35);
+
+        $r37 = new biz.neoline.android.reader.TextSearchButtonPanel;
+
+        specialinvoke $r37.<biz.neoline.android.reader.TextSearchButtonPanel: void <init>(biz.neoline.reader.reader.ReaderApp)>($r36);
+
+        if $i0 == 82 goto label59;
+
+        virtualinvoke $r37.<biz.neoline.android.reader.TextSearchButtonPanel: void onClick(android.view.View)>(null);
+
+     label59:
+        $r38 = new biz.neoline.android.reader.LibraryActivity$1;
+
+        specialinvoke $r38.<biz.neoline.android.reader.LibraryActivity$1: void <init>(biz.neoline.android.reader.LibraryActivity)>($r14);
+
+        if $i0 == 83 goto label60;
+
+        virtualinvoke $r38.<biz.neoline.android.reader.LibraryActivity$1: void onClick(android.view.View)>(null);
+
+     label60:
+        $r39 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$1;
+
+        specialinvoke $r39.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity,java.lang.String,java.lang.String)>($r8, "", "");
+
+        if $i0 == 84 goto label61;
+
+        virtualinvoke $r39.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void onClick(android.view.View)>(null);
+
+     label61:
+        $r40 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$2;
+
+        specialinvoke $r40.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity)>($r8);
+
+        if $i0 == 85 goto label62;
+
+        virtualinvoke $r40.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void onClick(android.view.View)>(null);
+
+     label62:
+        $r41 = new biz.neoline.android.reader.SettingsPanel;
+
+        specialinvoke $r41.<biz.neoline.android.reader.SettingsPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r22, null, false);
+
+        $r42 = new biz.neoline.android.reader.SettingsPanel$2;
+
+        specialinvoke $r42.<biz.neoline.android.reader.SettingsPanel$2: void <init>(biz.neoline.android.reader.SettingsPanel)>($r41);
+
+        if $i0 == 86 goto label63;
+
+        virtualinvoke $r42.<biz.neoline.android.reader.SettingsPanel$2: void onClick(android.view.View)>(null);
+
+     label63:
+        $r43 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r43.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r44 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r44.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r43);
+
+        if $i0 == 87 goto label64;
+
+        virtualinvoke $r44.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label64:
+        $r45 = new biz.neoline.android.reader.LibraryActivity$4;
+
+        specialinvoke $r45.<biz.neoline.android.reader.LibraryActivity$4: void <init>(biz.neoline.android.reader.LibraryActivity)>($r14);
+
+        if $i0 == 88 goto label65;
+
+        virtualinvoke $r45.<biz.neoline.android.reader.LibraryActivity$4: void onClick(android.view.View)>(null);
+
+     label65:
+        $r46 = newarray (biz.neoline.test.BookWebListEntry)[1];
+
+        $r47 = new org.json.JSONObject;
+
+        specialinvoke $r47.<org.json.JSONObject: void <init>()>();
+
+        $r48 = new biz.neoline.test.BookWebListEntry;
+
+        specialinvoke $r48.<biz.neoline.test.BookWebListEntry: void <init>(org.json.JSONObject)>($r47);
+
+        $r46[0] = $r48;
+
+        $r49 = new biz.neoline.test.MyListAdapter;
+
+        specialinvoke $r49.<biz.neoline.test.MyListAdapter: void <init>(biz.neoline.test.BookWebListEntry[])>($r46);
+
+        $r50 = new biz.neoline.test.MyListAdapter$2;
+
+        specialinvoke $r50.<biz.neoline.test.MyListAdapter$2: void <init>(biz.neoline.test.MyListAdapter,android.net.Uri,android.content.Context)>($r49, null, $r22);
+
+        if $i0 == 89 goto label66;
+
+        virtualinvoke $r50.<biz.neoline.test.MyListAdapter$2: void onClick(android.view.View)>(null);
+
+     label66:
+        $r51 = new biz.neoline.lib.PurchaseActivityCore$7;
+
+        specialinvoke $r51.<biz.neoline.lib.PurchaseActivityCore$7: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 90 goto label67;
+
+        virtualinvoke $r51.<biz.neoline.lib.PurchaseActivityCore$7: void onClick(android.view.View)>(null);
+
+     label67:
+        $r52 = new biz.neoline.lib.PurchaseActivityCore$4;
+
+        specialinvoke $r52.<biz.neoline.lib.PurchaseActivityCore$4: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 91 goto label68;
+
+        virtualinvoke $r52.<biz.neoline.lib.PurchaseActivityCore$4: void onClick(android.view.View)>(null);
+
+     label68:
+        $r53 = new biz.neoline.android.reader.NeoBookReader$2;
+
+        specialinvoke $r53.<biz.neoline.android.reader.NeoBookReader$2: void <init>(biz.neoline.android.reader.NeoBookReader)>($r22);
+
+        if $i0 == 92 goto label69;
+
+        virtualinvoke $r53.<biz.neoline.android.reader.NeoBookReader$2: void onClick(android.view.View)>(null);
+
+     label69:
+        $r54 = new com.flurry.android.CatalogActivity;
+
+        specialinvoke $r54.<com.flurry.android.CatalogActivity: void <init>()>();
+
+        if $i0 == 93 goto label70;
+
+        virtualinvoke $r54.<com.flurry.android.CatalogActivity: void onClick(android.view.View)>(null);
+
+     label70:
+        $r55 = new biz.neoline.android.reader.MenuPanel;
+
+        specialinvoke $r55.<biz.neoline.android.reader.MenuPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r22, null, false);
+
+        $r56 = new biz.neoline.android.reader.MenuPanel$2;
+
+        specialinvoke $r56.<biz.neoline.android.reader.MenuPanel$2: void <init>(biz.neoline.android.reader.MenuPanel,android.view.MenuItem)>($r55, null);
+
+        if $i0 == 94 goto label71;
+
+        virtualinvoke $r56.<biz.neoline.android.reader.MenuPanel$2: void onClick(android.view.View)>(null);
+
+     label71:
+        $r57 = new biz.neoline.lib.PurchaseActivityCore$3;
+
+        specialinvoke $r57.<biz.neoline.lib.PurchaseActivityCore$3: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 95 goto label72;
+
+        virtualinvoke $r57.<biz.neoline.lib.PurchaseActivityCore$3: void onClick(android.view.View)>(null);
+
+     label72:
+        $r58 = new biz.neoline.test.BrightnessSeekBar;
+
+        specialinvoke $r58.<biz.neoline.test.BrightnessSeekBar: void <init>(android.content.Context,android.widget.LinearLayout)>($r22, null);
+
+        $r59 = new biz.neoline.test.BrightnessSeekBar$1;
+
+        specialinvoke $r59.<biz.neoline.test.BrightnessSeekBar$1: void <init>(biz.neoline.test.BrightnessSeekBar,android.widget.SeekBar)>($r58, null);
+
+        if $i0 == 96 goto label73;
+
+        virtualinvoke $r59.<biz.neoline.test.BrightnessSeekBar$1: void onClick(android.view.View)>(null);
+
+     label73:
+        $r60 = new com.flurry.android.u;
+
+        specialinvoke $r60.<com.flurry.android.u: void <init>()>();
+
+        if $i0 == 97 goto label74;
+
+        virtualinvoke $r60.<com.flurry.android.u: void onClick(android.view.View)>(null);
+
+     label74:
+        $r61 = new biz.neoline.android.reader.SettingsPanel;
+
+        specialinvoke $r61.<biz.neoline.android.reader.SettingsPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r22, null, false);
+
+        $r62 = new biz.neoline.android.reader.SettingsPanel$1;
+
+        specialinvoke $r62.<biz.neoline.android.reader.SettingsPanel$1: void <init>(biz.neoline.android.reader.SettingsPanel)>($r61);
+
+        if $i0 == 98 goto label75;
+
+        virtualinvoke $r62.<biz.neoline.android.reader.SettingsPanel$1: void onClick(android.view.View)>(null);
+
+     label75:
+        if $i0 == 99 goto label44;
+
+     label76:
+        virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: void onPause()>();
+
+        virtualinvoke $r22.<biz.neoline.app_core.ui.android.library.ZLAndroidActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 100 goto label43;
+
+        virtualinvoke $r22.<biz.neoline.android.reader.NeoBookReader: void onStop()>();
+
+        if $i0 == 101 goto label77;
+
+        if $i0 == 102 goto label42;
+
+     label77:
+        if $i0 == 104 goto label82;
+
+        $r63 = new biz.neoline.android.reader.TextSearchActivity;
+
+        specialinvoke $r63.<biz.neoline.android.reader.TextSearchActivity: void <init>()>();
+
+        if $i0 == 105 goto label82;
+
+        virtualinvoke $r63.<biz.neoline.android.reader.TextSearchActivity: void onCreate(android.os.Bundle)>(null);
+
+     label78:
+        if $i0 == 107 goto label81;
+
+     label79:
+        $r64 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r64.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 108 goto label80;
+
+        virtualinvoke $r64.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label80:
+        if $i0 == 109 goto label79;
+
+     label81:
+        if $i0 == 110 goto label78;
+
+        if $i0 == 111 goto label82;
+
+        if $i0 == 112 goto label78;
+
+     label82:
+        if $i0 == 115 goto label01;
+
+        virtualinvoke $r1.<biz.neoline.app_core.ui.android.library.ZLAndroidApplication: void onTerminate()>();
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.6 seconds.
+[Spark] Solution found in 2.6 seconds.
+Running incremental callback analysis for 7 components...
+Incremental callback analysis done.
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.util.List
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.android.reader.TreeAdapterCore, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class biz.neoline.android.reader.TreeAdapterCore
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.lib.PurchaseActivityCore, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.app_core.core.resources.ZLResource, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for java.lang.Runnable, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class biz.neoline.android.reader.TreeAdapterCore
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.lib.Deligatable, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.TextView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.LinearLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.flurry.android.FlurryAgent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class com.flurry.android.FlurryAgent
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r26, $r37;
+        int $i0;
+        biz.neoline.app_core.ui.android.library.NBAndroidApplication $r1;
+        biz.neoline.app_core.ui.android.dialogs.DialogActivity $r2;
+        biz.neoline.android.reader.BookmarksAndTocActivity $r3;
+        biz.neoline.android.reader.BookmarksAndTocActivity$1 $r4, $r61;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6;
+        biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter $r5, $r17;
+        ru.wapstart.plus1.sdk.Plus1BannerRequest $r6, $r13, $r21, $r65;
+        ru.wapstart.plus1.sdk.Plus1LocationListener $r7, $r14, $r22, $r66;
+        biz.neoline.lib.PurchaseActivityCore$8 $r8, $r23, $r36, $r69;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity $r9;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity$2 $r10, $r50;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity$1 $r11, $r67;
+        biz.neoline.test.DonationActivity $r12;
+        biz.neoline.android.reader.LibraryActivity $r15;
+        biz.neoline.android.reader.LibraryActivity$4 $r16, $r62;
+        biz.neoline.android.reader.LibraryActivity$2 $r18;
+        biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog $r19;
+        biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView $r20;
+        biz.neoline.lib.SmsReceiver $r24;
+        biz.neoline.android.reader.NeoBookReader $r25;
+        biz.neoline.reader.reader.ReaderApp $r27, $r38;
+        biz.neoline.android.reader.TextSearchButtonPanel $r28;
+        biz.neoline.lib.PurchaseActivityCore$7 $r29;
+        biz.neoline.android.reader.SettingsPanel $r30, $r57;
+        biz.neoline.android.reader.SettingsPanel$1 $r31;
+        biz.neoline.lib.PurchaseActivityCore$5 $r32, $r47;
+        biz.neoline.lib.PurchaseActivityCore$5$1 $r33;
+        biz.neoline.android.reader.LibraryActivity$1 $r34;
+        biz.neoline.android.reader.NeoBookReader$2 $r35;
+        biz.neoline.android.reader.NavigationPanel $r39;
+        biz.neoline.android.reader.NavigationPanel$1 $r40;
+        ru.wapstart.plus1.sdk.Plus1BannerView $r41, $r63;
+        ru.wapstart.plus1.sdk.Plus1BannerView$1 $r42;
+        biz.neoline.test.BrightnessSeekBar $r43, $r59;
+        biz.neoline.lib.PurchaseActivityCore$4 $r44;
+        biz.neoline.android.reader.MenuPanel $r45;
+        biz.neoline.android.reader.MenuPanel$2 $r46;
+        com.flurry.android.CatalogActivity $r48;
+        com.flurry.android.u $r49;
+        biz.neoline.test.BookWebListEntry[] $r51;
+        org.json.JSONObject $r52;
+        biz.neoline.test.BookWebListEntry $r53;
+        biz.neoline.test.MyListAdapter $r54;
+        biz.neoline.test.MyListAdapter$2 $r55;
+        biz.neoline.lib.PurchaseActivityCore$3 $r56;
+        biz.neoline.android.reader.SettingsPanel$2 $r58;
+        biz.neoline.test.BrightnessSeekBar$1 $r60;
+        ru.wapstart.plus1.sdk.Plus1BannerView$2 $r64;
+        biz.neoline.android.reader.TextSearchActivity $r68;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new biz.neoline.app_core.ui.android.library.NBAndroidApplication;
+
+        specialinvoke $r1.<biz.neoline.app_core.ui.android.library.NBAndroidApplication: void <init>()>();
+
+        virtualinvoke $r1.<biz.neoline.app_core.ui.android.library.ZLAndroidApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label07;
+
+        $r2 = new biz.neoline.app_core.ui.android.dialogs.DialogActivity;
+
+        specialinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void <init>()>();
+
+        if $i0 == 1 goto label07;
+
+        virtualinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <biz.neoline.app_core.ui.android.dialogs.DialogActivity: void <clinit>()>();
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        virtualinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 11 goto label18;
+
+        $r3 = new biz.neoline.android.reader.BookmarksAndTocActivity;
+
+        specialinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void <init>()>();
+
+        if $i0 == 12 goto label18;
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onResume()>();
+
+        if $i0 == 14 goto label17;
+
+     label09:
+        $r4 = new biz.neoline.android.reader.BookmarksAndTocActivity$1;
+
+        specialinvoke $r4.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity)>($r3);
+
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r4.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void onClick(android.view.View)>(null);
+
+     label10:
+        if $i0 == 16 goto label11;
+
+        $z0 = virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label11:
+        if $i0 == 17 goto label12;
+
+        $z1 = virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: boolean onSearchRequested()>();
+
+     label12:
+        $r5 = new biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter;
+
+        specialinvoke $r5.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity,android.widget.ListView,java.util.List,boolean)>($r3, null, null, false);
+
+        if $i0 == 18 goto label13;
+
+        virtualinvoke $r5.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label13:
+        if $i0 == 19 goto label14;
+
+        virtualinvoke $r5.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label14:
+        $r6 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r6.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r7 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r7.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r6);
+
+        if $i0 == 20 goto label15;
+
+        virtualinvoke $r7.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label15:
+        $r8 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r8.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 21 goto label16;
+
+        virtualinvoke $r8.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label16:
+        if $i0 == 22 goto label09;
+
+     label17:
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onPause()>();
+
+        if $i0 == 23 goto label08;
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onStop()>();
+
+        if $i0 == 24 goto label18;
+
+        if $i0 == 25 goto label08;
+
+     label18:
+        if $i0 == 27 goto label24;
+
+        $r9 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity;
+
+        specialinvoke $r9.<biz.neoline.app_core.ui.android.library.CrashReportingActivity: void <init>()>();
+
+        if $i0 == 28 goto label24;
+
+        virtualinvoke $r9.<biz.neoline.app_core.ui.android.library.CrashReportingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        if $i0 == 30 goto label23;
+
+     label20:
+        $r10 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$2;
+
+        specialinvoke $r10.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity)>($r9);
+
+        if $i0 == 31 goto label21;
+
+        virtualinvoke $r10.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void onClick(android.view.View)>(null);
+
+     label21:
+        $r11 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$1;
+
+        specialinvoke $r11.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity,java.lang.String,java.lang.String)>($r9, "", "");
+
+        if $i0 == 32 goto label22;
+
+        virtualinvoke $r11.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void onClick(android.view.View)>(null);
+
+     label22:
+        if $i0 == 33 goto label20;
+
+     label23:
+        if $i0 == 34 goto label19;
+
+        if $i0 == 35 goto label24;
+
+        if $i0 == 36 goto label19;
+
+     label24:
+        if $i0 == 38 goto label30;
+
+        $r12 = new biz.neoline.test.DonationActivity;
+
+        specialinvoke $r12.<biz.neoline.test.DonationActivity: void <init>()>();
+
+        if $i0 == 39 goto label30;
+
+        virtualinvoke $r12.<biz.neoline.lib.PurchaseActivityCore: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 41 goto label29;
+
+     label26:
+        if $i0 == 42 goto label27;
+
+        $z2 = virtualinvoke $r12.<biz.neoline.test.DonationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label27:
+        $r13 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r13.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r14 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r14.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r13);
+
+        if $i0 == 43 goto label28;
+
+        virtualinvoke $r14.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label28:
+        if $i0 == 44 goto label26;
+
+     label29:
+        if $i0 == 45 goto label25;
+
+        if $i0 == 46 goto label30;
+
+        if $i0 == 47 goto label25;
+
+     label30:
+        if $i0 == 49 goto label43;
+
+        $r15 = new biz.neoline.android.reader.LibraryActivity;
+
+        specialinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void <init>()>();
+
+        if $i0 == 50 goto label43;
+
+        virtualinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void onCreate(android.os.Bundle)>(null);
+
+     label31:
+        virtualinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void onResume()>();
+
+        if $i0 == 52 goto label41;
+
+     label32:
+        $r16 = new biz.neoline.android.reader.LibraryActivity$4;
+
+        specialinvoke $r16.<biz.neoline.android.reader.LibraryActivity$4: void <init>(biz.neoline.android.reader.LibraryActivity)>($r15);
+
+        if $i0 == 53 goto label33;
+
+        virtualinvoke $r16.<biz.neoline.android.reader.LibraryActivity$4: void onClick(android.view.View)>(null);
+
+     label33:
+        $r17 = new biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter;
+
+        specialinvoke $r17.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity,android.widget.ListView,java.util.List,boolean)>($r3, null, null, false);
+
+        if $i0 == 54 goto label34;
+
+        virtualinvoke $r17.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label34:
+        if $i0 == 55 goto label35;
+
+        virtualinvoke $r17.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label35:
+        $r18 = new biz.neoline.android.reader.LibraryActivity$2;
+
+        specialinvoke $r18.<biz.neoline.android.reader.LibraryActivity$2: void <init>(biz.neoline.android.reader.LibraryActivity)>($r15);
+
+        if $i0 == 56 goto label36;
+
+        virtualinvoke $r18.<biz.neoline.android.reader.LibraryActivity$2: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label36:
+        $r19 = new biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog;
+
+        specialinvoke $r19.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog: void <init>(android.app.Activity,biz.neoline.app_core.core.resources.ZLResource,java.lang.Runnable,java.lang.Runnable)>($r15, null, null, null);
+
+        $r20 = new biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView;
+
+        specialinvoke $r20.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: void <init>(biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog,android.content.Context)>($r19, $r15);
+
+        if $i0 == 57 goto label37;
+
+        virtualinvoke $r20.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label37:
+        if $i0 == 58 goto label38;
+
+        $z3 = virtualinvoke $r20.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label38:
+        $r21 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r21.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r22 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r22.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r21);
+
+        if $i0 == 59 goto label39;
+
+        virtualinvoke $r22.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label39:
+        $r23 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r23.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 60 goto label40;
+
+        virtualinvoke $r23.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label40:
+        if $i0 == 61 goto label32;
+
+     label41:
+        if $i0 == 62 goto label31;
+
+        virtualinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void onStop()>();
+
+        if $i0 == 63 goto label42;
+
+        if $i0 == 64 goto label31;
+
+     label42:
+        virtualinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void onDestroy()>();
+
+     label43:
+        if $i0 == 66 goto label45;
+
+        $r24 = new biz.neoline.lib.SmsReceiver;
+
+        specialinvoke $r24.<biz.neoline.lib.SmsReceiver: void <init>(biz.neoline.lib.Deligatable,java.lang.String)>(null, "");
+
+        if $i0 == 67 goto label45;
+
+     label44:
+        virtualinvoke $r24.<biz.neoline.lib.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 69 goto label44;
+
+     label45:
+        if $i0 == 70 goto label82;
+
+        $r25 = new biz.neoline.android.reader.NeoBookReader;
+
+        specialinvoke $r25.<biz.neoline.android.reader.NeoBookReader: void <init>()>();
+
+        if $i0 == 71 goto label82;
+
+        virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: void onCreate(android.os.Bundle)>(null);
+
+     label46:
+        virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: void onStart()>();
+
+     label47:
+        virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: void onResume()>();
+
+        if $i0 == 73 goto label81;
+
+     label48:
+        $r26 = newarray (java.lang.String)[1];
+
+        $r26[0] = "";
+
+        $r27 = new biz.neoline.reader.reader.ReaderApp;
+
+        specialinvoke $r27.<biz.neoline.reader.reader.ReaderApp: void <init>(java.lang.String[])>($r26);
+
+        $r28 = new biz.neoline.android.reader.TextSearchButtonPanel;
+
+        specialinvoke $r28.<biz.neoline.android.reader.TextSearchButtonPanel: void <init>(biz.neoline.reader.reader.ReaderApp)>($r27);
+
+        if $i0 == 74 goto label49;
+
+        virtualinvoke $r28.<biz.neoline.android.reader.TextSearchButtonPanel: void onClick(android.view.View)>(null);
+
+     label49:
+        if $i0 == 75 goto label50;
+
+        virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label50:
+        if $i0 == 76 goto label51;
+
+        $z4 = virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: boolean onSearchRequested()>();
+
+     label51:
+        if $i0 == 77 goto label52;
+
+        $z5 = virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label52:
+        if $i0 == 78 goto label53;
+
+        $z6 = virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label53:
+        $r29 = new biz.neoline.lib.PurchaseActivityCore$7;
+
+        specialinvoke $r29.<biz.neoline.lib.PurchaseActivityCore$7: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 79 goto label54;
+
+        virtualinvoke $r29.<biz.neoline.lib.PurchaseActivityCore$7: void onClick(android.view.View)>(null);
+
+     label54:
+        $r30 = new biz.neoline.android.reader.SettingsPanel;
+
+        specialinvoke $r30.<biz.neoline.android.reader.SettingsPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r25, null, false);
+
+        $r31 = new biz.neoline.android.reader.SettingsPanel$1;
+
+        specialinvoke $r31.<biz.neoline.android.reader.SettingsPanel$1: void <init>(biz.neoline.android.reader.SettingsPanel)>($r30);
+
+        if $i0 == 80 goto label55;
+
+        virtualinvoke $r31.<biz.neoline.android.reader.SettingsPanel$1: void onClick(android.view.View)>(null);
+
+     label55:
+        $r32 = new biz.neoline.lib.PurchaseActivityCore$5;
+
+        specialinvoke $r32.<biz.neoline.lib.PurchaseActivityCore$5: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        $r33 = new biz.neoline.lib.PurchaseActivityCore$5$1;
+
+        specialinvoke $r33.<biz.neoline.lib.PurchaseActivityCore$5$1: void <init>(biz.neoline.lib.PurchaseActivityCore$5)>($r32);
+
+        if $i0 == 81 goto label56;
+
+        virtualinvoke $r33.<biz.neoline.lib.PurchaseActivityCore$5$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label56:
+        $r34 = new biz.neoline.android.reader.LibraryActivity$1;
+
+        specialinvoke $r34.<biz.neoline.android.reader.LibraryActivity$1: void <init>(biz.neoline.android.reader.LibraryActivity)>($r15);
+
+        if $i0 == 82 goto label57;
+
+        virtualinvoke $r34.<biz.neoline.android.reader.LibraryActivity$1: void onClick(android.view.View)>(null);
+
+     label57:
+        $r35 = new biz.neoline.android.reader.NeoBookReader$2;
+
+        specialinvoke $r35.<biz.neoline.android.reader.NeoBookReader$2: void <init>(biz.neoline.android.reader.NeoBookReader)>($r25);
+
+        if $i0 == 83 goto label58;
+
+        virtualinvoke $r35.<biz.neoline.android.reader.NeoBookReader$2: void onClick(android.view.View)>(null);
+
+     label58:
+        $r36 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r36.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 84 goto label59;
+
+        virtualinvoke $r36.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label59:
+        $r37 = newarray (java.lang.String)[1];
+
+        $r37[0] = "";
+
+        $r38 = new biz.neoline.reader.reader.ReaderApp;
+
+        specialinvoke $r38.<biz.neoline.reader.reader.ReaderApp: void <init>(java.lang.String[])>($r37);
+
+        $r39 = new biz.neoline.android.reader.NavigationPanel;
+
+        specialinvoke $r39.<biz.neoline.android.reader.NavigationPanel: void <init>(biz.neoline.reader.reader.ReaderApp)>($r38);
+
+        $r40 = new biz.neoline.android.reader.NavigationPanel$1;
+
+        specialinvoke $r40.<biz.neoline.android.reader.NavigationPanel$1: void <init>(biz.neoline.android.reader.NavigationPanel,android.widget.TextView,android.widget.TextView)>($r39, null, null);
+
+        if $i0 == 85 goto label60;
+
+        virtualinvoke $r40.<biz.neoline.android.reader.NavigationPanel$1: void onStartTrackingTouch(android.widget.SeekBar)>(null);
+
+     label60:
+        if $i0 == 86 goto label61;
+
+        virtualinvoke $r40.<biz.neoline.android.reader.NavigationPanel$1: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label61:
+        if $i0 == 87 goto label62;
+
+        virtualinvoke $r40.<biz.neoline.android.reader.NavigationPanel$1: void onStopTrackingTouch(android.widget.SeekBar)>(null);
+
+     label62:
+        $r41 = new ru.wapstart.plus1.sdk.Plus1BannerView;
+
+        specialinvoke $r41.<ru.wapstart.plus1.sdk.Plus1BannerView: void <init>(android.content.Context)>($r25);
+
+        $r42 = new ru.wapstart.plus1.sdk.Plus1BannerView$1;
+
+        specialinvoke $r42.<ru.wapstart.plus1.sdk.Plus1BannerView$1: void <init>(ru.wapstart.plus1.sdk.Plus1BannerView)>($r41);
+
+        if $i0 == 88 goto label63;
+
+        virtualinvoke $r42.<ru.wapstart.plus1.sdk.Plus1BannerView$1: void onClick(android.view.View)>(null);
+
+     label63:
+        $r43 = new biz.neoline.test.BrightnessSeekBar;
+
+        specialinvoke $r43.<biz.neoline.test.BrightnessSeekBar: void <init>(android.content.Context,android.widget.LinearLayout)>($r25, null);
+
+        if $i0 == 89 goto label64;
+
+        virtualinvoke $r43.<biz.neoline.test.BrightnessSeekBar: void onStopTrackingTouch(android.widget.SeekBar)>(null);
+
+     label64:
+        if $i0 == 90 goto label65;
+
+        virtualinvoke $r43.<biz.neoline.test.BrightnessSeekBar: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label65:
+        $r44 = new biz.neoline.lib.PurchaseActivityCore$4;
+
+        specialinvoke $r44.<biz.neoline.lib.PurchaseActivityCore$4: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 91 goto label66;
+
+        virtualinvoke $r44.<biz.neoline.lib.PurchaseActivityCore$4: void onClick(android.view.View)>(null);
+
+     label66:
+        $r45 = new biz.neoline.android.reader.MenuPanel;
+
+        specialinvoke $r45.<biz.neoline.android.reader.MenuPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r25, null, false);
+
+        $r46 = new biz.neoline.android.reader.MenuPanel$2;
+
+        specialinvoke $r46.<biz.neoline.android.reader.MenuPanel$2: void <init>(biz.neoline.android.reader.MenuPanel,android.view.MenuItem)>($r45, null);
+
+        if $i0 == 92 goto label67;
+
+        virtualinvoke $r46.<biz.neoline.android.reader.MenuPanel$2: void onClick(android.view.View)>(null);
+
+     label67:
+        $r47 = new biz.neoline.lib.PurchaseActivityCore$5;
+
+        specialinvoke $r47.<biz.neoline.lib.PurchaseActivityCore$5: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 93 goto label68;
+
+        virtualinvoke $r47.<biz.neoline.lib.PurchaseActivityCore$5: void onClick(android.view.View)>(null);
+
+     label68:
+        $r48 = new com.flurry.android.CatalogActivity;
+
+        specialinvoke $r48.<com.flurry.android.CatalogActivity: void <init>()>();
+
+        if $i0 == 94 goto label69;
+
+        virtualinvoke $r48.<com.flurry.android.CatalogActivity: void onClick(android.view.View)>(null);
+
+     label69:
+        $r49 = new com.flurry.android.u;
+
+        specialinvoke $r49.<com.flurry.android.u: void <init>()>();
+
+        if $i0 == 95 goto label70;
+
+        virtualinvoke $r49.<com.flurry.android.u: void onClick(android.view.View)>(null);
+
+     label70:
+        $r50 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$2;
+
+        specialinvoke $r50.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity)>($r9);
+
+        if $i0 == 96 goto label71;
+
+        virtualinvoke $r50.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void onClick(android.view.View)>(null);
+
+     label71:
+        $r51 = newarray (biz.neoline.test.BookWebListEntry)[1];
+
+        $r52 = new org.json.JSONObject;
+
+        specialinvoke $r52.<org.json.JSONObject: void <init>()>();
+
+        $r53 = new biz.neoline.test.BookWebListEntry;
+
+        specialinvoke $r53.<biz.neoline.test.BookWebListEntry: void <init>(org.json.JSONObject)>($r52);
+
+        $r51[0] = $r53;
+
+        $r54 = new biz.neoline.test.MyListAdapter;
+
+        specialinvoke $r54.<biz.neoline.test.MyListAdapter: void <init>(biz.neoline.test.BookWebListEntry[])>($r51);
+
+        $r55 = new biz.neoline.test.MyListAdapter$2;
+
+        specialinvoke $r55.<biz.neoline.test.MyListAdapter$2: void <init>(biz.neoline.test.MyListAdapter,android.net.Uri,android.content.Context)>($r54, null, $r25);
+
+        if $i0 == 97 goto label72;
+
+        virtualinvoke $r55.<biz.neoline.test.MyListAdapter$2: void onClick(android.view.View)>(null);
+
+     label72:
+        $r56 = new biz.neoline.lib.PurchaseActivityCore$3;
+
+        specialinvoke $r56.<biz.neoline.lib.PurchaseActivityCore$3: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 98 goto label73;
+
+        virtualinvoke $r56.<biz.neoline.lib.PurchaseActivityCore$3: void onClick(android.view.View)>(null);
+
+     label73:
+        $r57 = new biz.neoline.android.reader.SettingsPanel;
+
+        specialinvoke $r57.<biz.neoline.android.reader.SettingsPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r25, null, false);
+
+        $r58 = new biz.neoline.android.reader.SettingsPanel$2;
+
+        specialinvoke $r58.<biz.neoline.android.reader.SettingsPanel$2: void <init>(biz.neoline.android.reader.SettingsPanel)>($r57);
+
+        if $i0 == 99 goto label74;
+
+        virtualinvoke $r58.<biz.neoline.android.reader.SettingsPanel$2: void onClick(android.view.View)>(null);
+
+     label74:
+        $r59 = new biz.neoline.test.BrightnessSeekBar;
+
+        specialinvoke $r59.<biz.neoline.test.BrightnessSeekBar: void <init>(android.content.Context,android.widget.LinearLayout)>($r25, null);
+
+        $r60 = new biz.neoline.test.BrightnessSeekBar$1;
+
+        specialinvoke $r60.<biz.neoline.test.BrightnessSeekBar$1: void <init>(biz.neoline.test.BrightnessSeekBar,android.widget.SeekBar)>($r59, null);
+
+        if $i0 == 100 goto label75;
+
+        virtualinvoke $r60.<biz.neoline.test.BrightnessSeekBar$1: void onClick(android.view.View)>(null);
+
+     label75:
+        $r61 = new biz.neoline.android.reader.BookmarksAndTocActivity$1;
+
+        specialinvoke $r61.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity)>($r3);
+
+        if $i0 == 101 goto label76;
+
+        virtualinvoke $r61.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void onClick(android.view.View)>(null);
+
+     label76:
+        $r62 = new biz.neoline.android.reader.LibraryActivity$4;
+
+        specialinvoke $r62.<biz.neoline.android.reader.LibraryActivity$4: void <init>(biz.neoline.android.reader.LibraryActivity)>($r15);
+
+        if $i0 == 102 goto label77;
+
+        virtualinvoke $r62.<biz.neoline.android.reader.LibraryActivity$4: void onClick(android.view.View)>(null);
+
+     label77:
+        $r63 = new ru.wapstart.plus1.sdk.Plus1BannerView;
+
+        specialinvoke $r63.<ru.wapstart.plus1.sdk.Plus1BannerView: void <init>(android.content.Context)>($r25);
+
+        $r64 = new ru.wapstart.plus1.sdk.Plus1BannerView$2;
+
+        specialinvoke $r64.<ru.wapstart.plus1.sdk.Plus1BannerView$2: void <init>(ru.wapstart.plus1.sdk.Plus1BannerView)>($r63);
+
+        if $i0 == 103 goto label78;
+
+        virtualinvoke $r64.<ru.wapstart.plus1.sdk.Plus1BannerView$2: void onClick(android.view.View)>(null);
+
+     label78:
+        $r65 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r65.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r66 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r66.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r65);
+
+        if $i0 == 104 goto label79;
+
+        virtualinvoke $r66.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label79:
+        $r67 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$1;
+
+        specialinvoke $r67.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity,java.lang.String,java.lang.String)>($r9, "", "");
+
+        if $i0 == 105 goto label80;
+
+        virtualinvoke $r67.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void onClick(android.view.View)>(null);
+
+     label80:
+        if $i0 == 106 goto label48;
+
+     label81:
+        virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: void onPause()>();
+
+        virtualinvoke $r25.<biz.neoline.app_core.ui.android.library.ZLAndroidActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 107 goto label47;
+
+        virtualinvoke $r25.<biz.neoline.android.reader.NeoBookReader: void onStop()>();
+
+        if $i0 == 108 goto label82;
+
+        if $i0 == 109 goto label46;
+
+     label82:
+        if $i0 == 111 goto label87;
+
+        $r68 = new biz.neoline.android.reader.TextSearchActivity;
+
+        specialinvoke $r68.<biz.neoline.android.reader.TextSearchActivity: void <init>()>();
+
+        if $i0 == 112 goto label87;
+
+        virtualinvoke $r68.<biz.neoline.android.reader.TextSearchActivity: void onCreate(android.os.Bundle)>(null);
+
+     label83:
+        if $i0 == 114 goto label86;
+
+     label84:
+        $r69 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r69.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 115 goto label85;
+
+        virtualinvoke $r69.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label85:
+        if $i0 == 116 goto label84;
+
+     label86:
+        if $i0 == 117 goto label83;
+
+        if $i0 == 118 goto label87;
+
+        if $i0 == 119 goto label83;
+
+     label87:
+        if $i0 == 124 goto label01;
+
+        virtualinvoke $r1.<biz.neoline.app_core.ui.android.library.ZLAndroidApplication: void onTerminate()>();
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.3 seconds.
+[Spark] Solution found in 2.3 seconds.
+Running incremental callback analysis for 0 components...
+Incremental callback analysis done.
+Found 71 callback methods for 8 components
+Found {res/layout/toc_tree_item.xml=[-1 - android.widget.LinearLayout, 2131296304 - android.widget.ImageView, 2131296305 - android.widget.TextView], res/layout/bug_report_view.xml=[2131296268 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131296269 - android.widget.Button, 2131296270 - android.widget.Button], res/layout/title_panel.xml=[2131296303 - android.widget.TextView], res/layout/catalog_book_list.xml=[-1 - android.widget.LinearLayout, 2131296272 - android.widget.TextView, 2131296271 - android.widget.ImageView], res/layout/settings_panel.xml=[2131296300 - android.widget.ImageButton, -1 - android.view.View, 2131296301 - android.widget.ImageButton, 2131296299 - android.widget.ImageButton, 2131296297 - android.widget.ImageButton, 2131296296 - android.widget.ImageButton, 2131296298 - android.widget.LinearLayout, -1 - android.widget.LinearLayout, 2131296295 - android.widget.ImageButton, 2131296294 - android.widget.LinearLayout], res/layout/bookmark_icon.xml=[2131296256 - android.widget.ImageView], res/layout/main.xml=[2131296284 - ru.wapstart.plus1.sdk.Plus1BannerView, 2131296285 - biz.neoline.app_core.ui.android.view.CoreView, 2131296283 - android.widget.RelativeLayout], res/layout/menu_panel.xml=[2131296287 - android.widget.Button, 2131296288 - android.widget.Button, 2131296289 - android.widget.Button, 2131296286 - android.widget.Button, -1 - android.widget.LinearLayout], res/layout/bookmarks_toc.xml=[2131296260 - android.widget.ListView, 2131296262 - android.widget.ListView, 2131296261 - android.widget.ListView, 2131296263 - android.widget.ListView, -1 - android.widget.RelativeLayout, 2131296264 - ru.wapstart.plus1.sdk.Plus1BannerView], res/layout/library_book.xml=[2131296279 - android.widget.TextView, -1 - android.widget.FrameLayout, 2131296278 - android.widget.ImageView, -1 - android.widget.LinearLayout, 2131296280 - android.widget.TextView], res/layout/navigate.xml=[2131296290 - android.widget.TextView, 2131296291 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131296292 - android.widget.SeekBar], res/layout/logo.xml=[-1 - android.view.View, 2131296281 - android.widget.FrameLayout, 2131296282 - android.widget.ImageView, -1 - android.widget.LinearLayout, -1 - android.widget.ImageView], res/layout/control_panel.xml=[2131296273 - android.widget.LinearLayout], res/layout/tabs_title.xml=[2131296302 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/bookmarks_item.xml=[2131296258 - android.widget.TextView, 2131296259 - android.widget.TextView, 2131296257 - android.widget.ImageView, -1 - android.widget.LinearLayout], res/layout-xlarge/library.xml=[2131296276 - android.widget.LinearLayout, 2131296277 - ru.wapstart.plus1.sdk.Plus1BannerView, 2131296275 - biz.neoline.test.MyGallery, -1 - android.widget.LinearLayout, 2131296274 - android.widget.TextView], res/layout/page_number_panel.xml=[2131296293 - android.widget.TextView], res/layout/brightness_seekbar.xml=[2131296267 - android.widget.ImageButton, 2131296265 - android.widget.ImageButton, -1 - android.widget.LinearLayout, 2131296266 - android.widget.SeekBar], res/layout/library.xml=[2131296276 - android.widget.LinearLayout, 2131296277 - ru.wapstart.plus1.sdk.Plus1BannerView, 2131296275 - biz.neoline.test.MyGallery, -1 - android.widget.LinearLayout, 2131296274 - android.widget.TextView]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 71 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/6c26f33be80336dd713e63ffd060e5d1d86f25286763fe1a55f11e065057e901.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.lib.PurchaseActivityCore, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.android.reader.TreeAdapterCore, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class biz.neoline.android.reader.TreeAdapterCore
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.ListView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class java.util.List
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.ContextMenu$ContextMenuInfo
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.AdapterView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.location.Location
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.app_core.core.resources.ZLResource, because it is abstract and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for java.lang.Runnable, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class biz.neoline.android.reader.TreeAdapterCore
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot create valid constructor for biz.neoline.lib.Deligatable, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.RelativeLayout
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.net.Uri
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Could not find a suitable constructor for class com.flurry.android.FlurryAgent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Constructor cannot be generated for callback class com.flurry.android.FlurryAgent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.TextView
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.LinearLayout
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0, $r30, $r47;
+        int $i0;
+        biz.neoline.app_core.ui.android.library.NBAndroidApplication $r1;
+        biz.neoline.app_core.ui.android.dialogs.DialogActivity $r2;
+        biz.neoline.android.reader.BookmarksAndTocActivity $r3;
+        biz.neoline.lib.PurchaseActivityCore$8 $r4, $r19, $r54, $r70;
+        biz.neoline.android.reader.BookmarksAndTocActivity$1 $r5, $r27;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7, $z8;
+        biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter $r6, $r21;
+        ru.wapstart.plus1.sdk.Plus1BannerRequest $r7, $r13, $r23, $r66;
+        ru.wapstart.plus1.sdk.Plus1LocationListener $r8, $r14, $r24, $r67;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity $r9;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity$1 $r10, $r53;
+        biz.neoline.app_core.ui.android.library.CrashReportingActivity$2 $r11, $r65;
+        biz.neoline.test.DonationActivity $r12;
+        biz.neoline.android.reader.LibraryActivity $r15;
+        biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog $r16;
+        biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView $r17;
+        biz.neoline.android.reader.LibraryActivity$2 $r18;
+        biz.neoline.android.reader.LibraryActivity$4 $r20, $r45;
+        biz.neoline.test.MyGallery $r22;
+        biz.neoline.lib.SmsReceiver $r25;
+        biz.neoline.android.reader.NeoBookReader $r26;
+        biz.neoline.lib.PurchaseActivityCore$5 $r28, $r35;
+        biz.neoline.lib.PurchaseActivityCore$5$1 $r29;
+        biz.neoline.reader.reader.ReaderApp $r31, $r48;
+        biz.neoline.android.reader.TextSearchButtonPanel $r32;
+        biz.neoline.android.reader.LibraryActivity$1 $r33;
+        biz.neoline.android.reader.NeoBookReader$2 $r34;
+        biz.neoline.android.reader.SettingsPanel $r36, $r43;
+        biz.neoline.android.reader.SettingsPanel$2 $r37;
+        biz.neoline.test.BookWebListEntry[] $r38;
+        org.json.JSONObject $r39;
+        biz.neoline.test.BookWebListEntry $r40;
+        biz.neoline.test.MyListAdapter $r41;
+        biz.neoline.test.MyListAdapter$2 $r42;
+        biz.neoline.android.reader.SettingsPanel$1 $r44;
+        biz.neoline.lib.PurchaseActivityCore$3 $r46;
+        biz.neoline.android.reader.NavigationPanel $r49;
+        biz.neoline.android.reader.NavigationPanel$1 $r50;
+        ru.wapstart.plus1.sdk.Plus1BannerView $r51, $r63;
+        ru.wapstart.plus1.sdk.Plus1BannerView$2 $r52;
+        biz.neoline.test.BrightnessSeekBar $r55, $r60;
+        biz.neoline.android.reader.MenuPanel $r56;
+        biz.neoline.android.reader.MenuPanel$2 $r57;
+        biz.neoline.lib.PurchaseActivityCore$4 $r58;
+        com.flurry.android.u $r59;
+        biz.neoline.test.BrightnessSeekBar$1 $r61;
+        com.flurry.android.CatalogActivity $r62;
+        ru.wapstart.plus1.sdk.Plus1BannerView$1 $r64;
+        biz.neoline.lib.PurchaseActivityCore$7 $r68;
+        biz.neoline.android.reader.TextSearchActivity $r69;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+        $r1 = new biz.neoline.app_core.ui.android.library.NBAndroidApplication;
+
+        specialinvoke $r1.<biz.neoline.app_core.ui.android.library.NBAndroidApplication: void <init>()>();
+
+        virtualinvoke $r1.<biz.neoline.app_core.ui.android.library.ZLAndroidApplication: void onCreate()>();
+
+        <il.ac.tau.MyApplicationHolder: android.app.Application application> = $r1;
+
+     label01:
+        if $i0 == 0 goto label07;
+
+        $r2 = new biz.neoline.app_core.ui.android.dialogs.DialogActivity;
+
+        specialinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void <init>()>();
+
+        if $i0 == 1 goto label07;
+
+        virtualinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void onCreate(android.os.Bundle)>(null);
+
+     label02:
+        if $i0 == 3 goto label05;
+
+     label03:
+        if $i0 == 4 goto label04;
+
+        staticinvoke <biz.neoline.app_core.ui.android.dialogs.DialogActivity: void <clinit>()>();
+
+     label04:
+        if $i0 == 5 goto label03;
+
+     label05:
+        if $i0 == 6 goto label02;
+
+        if $i0 == 7 goto label06;
+
+        if $i0 == 8 goto label02;
+
+     label06:
+        virtualinvoke $r2.<biz.neoline.app_core.ui.android.dialogs.DialogActivity: void onDestroy()>();
+
+     label07:
+        if $i0 == 11 goto label18;
+
+        $r3 = new biz.neoline.android.reader.BookmarksAndTocActivity;
+
+        specialinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void <init>()>();
+
+        if $i0 == 12 goto label18;
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onCreate(android.os.Bundle)>(null);
+
+     label08:
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onResume()>();
+
+        if $i0 == 14 goto label17;
+
+     label09:
+        $r4 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r4.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r4.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label10:
+        $r5 = new biz.neoline.android.reader.BookmarksAndTocActivity$1;
+
+        specialinvoke $r5.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity)>($r3);
+
+        if $i0 == 16 goto label11;
+
+        virtualinvoke $r5.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void onClick(android.view.View)>(null);
+
+     label11:
+        if $i0 == 17 goto label12;
+
+        $z0 = virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: boolean onContextItemSelected(android.view.MenuItem)>(null);
+
+     label12:
+        if $i0 == 18 goto label13;
+
+        $z1 = virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: boolean onSearchRequested()>();
+
+     label13:
+        $r6 = new biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter;
+
+        specialinvoke $r6.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity,android.widget.ListView,java.util.List,boolean)>($r3, null, null, false);
+
+        if $i0 == 19 goto label14;
+
+        virtualinvoke $r6.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label14:
+        if $i0 == 20 goto label15;
+
+        virtualinvoke $r6.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label15:
+        $r7 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r7.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r8 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r8.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r7);
+
+        if $i0 == 21 goto label16;
+
+        virtualinvoke $r8.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label16:
+        if $i0 == 22 goto label09;
+
+     label17:
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onPause()>();
+
+        if $i0 == 23 goto label08;
+
+        virtualinvoke $r3.<biz.neoline.android.reader.BookmarksAndTocActivity: void onStop()>();
+
+        if $i0 == 24 goto label18;
+
+        if $i0 == 25 goto label08;
+
+     label18:
+        if $i0 == 27 goto label24;
+
+        $r9 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity;
+
+        specialinvoke $r9.<biz.neoline.app_core.ui.android.library.CrashReportingActivity: void <init>()>();
+
+        if $i0 == 28 goto label24;
+
+        virtualinvoke $r9.<biz.neoline.app_core.ui.android.library.CrashReportingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label19:
+        if $i0 == 30 goto label23;
+
+     label20:
+        $r10 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$1;
+
+        specialinvoke $r10.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity,java.lang.String,java.lang.String)>($r9, "", "");
+
+        if $i0 == 31 goto label21;
+
+        virtualinvoke $r10.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void onClick(android.view.View)>(null);
+
+     label21:
+        $r11 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$2;
+
+        specialinvoke $r11.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity)>($r9);
+
+        if $i0 == 32 goto label22;
+
+        virtualinvoke $r11.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void onClick(android.view.View)>(null);
+
+     label22:
+        if $i0 == 33 goto label20;
+
+     label23:
+        if $i0 == 34 goto label19;
+
+        if $i0 == 35 goto label24;
+
+        if $i0 == 36 goto label19;
+
+     label24:
+        if $i0 == 38 goto label30;
+
+        $r12 = new biz.neoline.test.DonationActivity;
+
+        specialinvoke $r12.<biz.neoline.test.DonationActivity: void <init>()>();
+
+        if $i0 == 39 goto label30;
+
+        virtualinvoke $r12.<biz.neoline.lib.PurchaseActivityCore: void onCreate(android.os.Bundle)>(null);
+
+     label25:
+        if $i0 == 41 goto label29;
+
+     label26:
+        if $i0 == 42 goto label27;
+
+        $z2 = virtualinvoke $r12.<biz.neoline.test.DonationActivity: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label27:
+        $r13 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r13.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r14 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r14.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r13);
+
+        if $i0 == 43 goto label28;
+
+        virtualinvoke $r14.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label28:
+        if $i0 == 44 goto label26;
+
+     label29:
+        if $i0 == 45 goto label25;
+
+        if $i0 == 46 goto label30;
+
+        if $i0 == 47 goto label25;
+
+     label30:
+        if $i0 == 49 goto label45;
+
+        $r15 = new biz.neoline.android.reader.LibraryActivity;
+
+        specialinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void <init>()>();
+
+        if $i0 == 50 goto label45;
+
+        virtualinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void onCreate(android.os.Bundle)>(null);
+
+     label31:
+        virtualinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void onResume()>();
+
+        if $i0 == 52 goto label43;
+
+     label32:
+        $r16 = new biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog;
+
+        specialinvoke $r16.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog: void <init>(android.app.Activity,biz.neoline.app_core.core.resources.ZLResource,java.lang.Runnable,java.lang.Runnable)>($r15, null, null, null);
+
+        $r17 = new biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView;
+
+        specialinvoke $r17.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: void <init>(biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog,android.content.Context)>($r16, $r15);
+
+        if $i0 == 53 goto label33;
+
+        virtualinvoke $r17.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label33:
+        if $i0 == 54 goto label34;
+
+        $z3 = virtualinvoke $r17.<biz.neoline.app_core.ui.android.dialogs.ZLAndroidOptionsDialog$TabListView: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label34:
+        $r18 = new biz.neoline.android.reader.LibraryActivity$2;
+
+        specialinvoke $r18.<biz.neoline.android.reader.LibraryActivity$2: void <init>(biz.neoline.android.reader.LibraryActivity)>($r15);
+
+        if $i0 == 55 goto label35;
+
+        virtualinvoke $r18.<biz.neoline.android.reader.LibraryActivity$2: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label35:
+        $r19 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r19.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 56 goto label36;
+
+        virtualinvoke $r19.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label36:
+        $r20 = new biz.neoline.android.reader.LibraryActivity$4;
+
+        specialinvoke $r20.<biz.neoline.android.reader.LibraryActivity$4: void <init>(biz.neoline.android.reader.LibraryActivity)>($r15);
+
+        if $i0 == 57 goto label37;
+
+        virtualinvoke $r20.<biz.neoline.android.reader.LibraryActivity$4: void onClick(android.view.View)>(null);
+
+     label37:
+        $r21 = new biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter;
+
+        specialinvoke $r21.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity,android.widget.ListView,java.util.List,boolean)>($r3, null, null, false);
+
+        if $i0 == 58 goto label38;
+
+        virtualinvoke $r21.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)>(null, null, null);
+
+     label38:
+        if $i0 == 59 goto label39;
+
+        virtualinvoke $r21.<biz.neoline.android.reader.BookmarksAndTocActivity$BookmarksAdapter: void onItemClick(android.widget.AdapterView,android.view.View,int,long)>(null, null, 0, 0L);
+
+     label39:
+        $r22 = new biz.neoline.test.MyGallery;
+
+        specialinvoke $r22.<biz.neoline.test.MyGallery: void <init>(android.content.Context)>($r15);
+
+        if $i0 == 60 goto label40;
+
+        $z4 = virtualinvoke $r22.<biz.neoline.test.MyGallery: boolean onFling(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label40:
+        if $i0 == 61 goto label41;
+
+        $z5 = virtualinvoke $r22.<biz.neoline.test.MyGallery: boolean onScroll(android.view.MotionEvent,android.view.MotionEvent,float,float)>(null, null, 0.0F, 0.0F);
+
+     label41:
+        $r23 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r23.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r24 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r24.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r23);
+
+        if $i0 == 62 goto label42;
+
+        virtualinvoke $r24.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label42:
+        if $i0 == 63 goto label32;
+
+     label43:
+        if $i0 == 64 goto label31;
+
+        virtualinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void onStop()>();
+
+        if $i0 == 65 goto label44;
+
+        if $i0 == 66 goto label31;
+
+     label44:
+        virtualinvoke $r15.<biz.neoline.android.reader.LibraryActivity: void onDestroy()>();
+
+     label45:
+        if $i0 == 68 goto label47;
+
+        $r25 = new biz.neoline.lib.SmsReceiver;
+
+        specialinvoke $r25.<biz.neoline.lib.SmsReceiver: void <init>(biz.neoline.lib.Deligatable,java.lang.String)>(null, "");
+
+        if $i0 == 69 goto label47;
+
+     label46:
+        virtualinvoke $r25.<biz.neoline.lib.SmsReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 71 goto label46;
+
+     label47:
+        if $i0 == 72 goto label84;
+
+        $r26 = new biz.neoline.android.reader.NeoBookReader;
+
+        specialinvoke $r26.<biz.neoline.android.reader.NeoBookReader: void <init>()>();
+
+        if $i0 == 73 goto label84;
+
+        virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: void onCreate(android.os.Bundle)>(null);
+
+     label48:
+        virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: void onStart()>();
+
+     label49:
+        virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: void onResume()>();
+
+        if $i0 == 75 goto label83;
+
+     label50:
+        $r27 = new biz.neoline.android.reader.BookmarksAndTocActivity$1;
+
+        specialinvoke $r27.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void <init>(biz.neoline.android.reader.BookmarksAndTocActivity)>($r3);
+
+        if $i0 == 76 goto label51;
+
+        virtualinvoke $r27.<biz.neoline.android.reader.BookmarksAndTocActivity$1: void onClick(android.view.View)>(null);
+
+     label51:
+        $r28 = new biz.neoline.lib.PurchaseActivityCore$5;
+
+        specialinvoke $r28.<biz.neoline.lib.PurchaseActivityCore$5: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        $r29 = new biz.neoline.lib.PurchaseActivityCore$5$1;
+
+        specialinvoke $r29.<biz.neoline.lib.PurchaseActivityCore$5$1: void <init>(biz.neoline.lib.PurchaseActivityCore$5)>($r28);
+
+        if $i0 == 77 goto label52;
+
+        virtualinvoke $r29.<biz.neoline.lib.PurchaseActivityCore$5$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label52:
+        $r30 = newarray (java.lang.String)[1];
+
+        $r30[0] = "";
+
+        $r31 = new biz.neoline.reader.reader.ReaderApp;
+
+        specialinvoke $r31.<biz.neoline.reader.reader.ReaderApp: void <init>(java.lang.String[])>($r30);
+
+        $r32 = new biz.neoline.android.reader.TextSearchButtonPanel;
+
+        specialinvoke $r32.<biz.neoline.android.reader.TextSearchButtonPanel: void <init>(biz.neoline.reader.reader.ReaderApp)>($r31);
+
+        if $i0 == 78 goto label53;
+
+        virtualinvoke $r32.<biz.neoline.android.reader.TextSearchButtonPanel: void onClick(android.view.View)>(null);
+
+     label53:
+        $r33 = new biz.neoline.android.reader.LibraryActivity$1;
+
+        specialinvoke $r33.<biz.neoline.android.reader.LibraryActivity$1: void <init>(biz.neoline.android.reader.LibraryActivity)>($r15);
+
+        if $i0 == 79 goto label54;
+
+        virtualinvoke $r33.<biz.neoline.android.reader.LibraryActivity$1: void onClick(android.view.View)>(null);
+
+     label54:
+        $r34 = new biz.neoline.android.reader.NeoBookReader$2;
+
+        specialinvoke $r34.<biz.neoline.android.reader.NeoBookReader$2: void <init>(biz.neoline.android.reader.NeoBookReader)>($r26);
+
+        if $i0 == 80 goto label55;
+
+        virtualinvoke $r34.<biz.neoline.android.reader.NeoBookReader$2: void onClick(android.view.View)>(null);
+
+     label55:
+        $r35 = new biz.neoline.lib.PurchaseActivityCore$5;
+
+        specialinvoke $r35.<biz.neoline.lib.PurchaseActivityCore$5: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 81 goto label56;
+
+        virtualinvoke $r35.<biz.neoline.lib.PurchaseActivityCore$5: void onClick(android.view.View)>(null);
+
+     label56:
+        $r36 = new biz.neoline.android.reader.SettingsPanel;
+
+        specialinvoke $r36.<biz.neoline.android.reader.SettingsPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r26, null, false);
+
+        $r37 = new biz.neoline.android.reader.SettingsPanel$2;
+
+        specialinvoke $r37.<biz.neoline.android.reader.SettingsPanel$2: void <init>(biz.neoline.android.reader.SettingsPanel)>($r36);
+
+        if $i0 == 82 goto label57;
+
+        virtualinvoke $r37.<biz.neoline.android.reader.SettingsPanel$2: void onClick(android.view.View)>(null);
+
+     label57:
+        $r38 = newarray (biz.neoline.test.BookWebListEntry)[1];
+
+        $r39 = new org.json.JSONObject;
+
+        specialinvoke $r39.<org.json.JSONObject: void <init>()>();
+
+        $r40 = new biz.neoline.test.BookWebListEntry;
+
+        specialinvoke $r40.<biz.neoline.test.BookWebListEntry: void <init>(org.json.JSONObject)>($r39);
+
+        $r38[0] = $r40;
+
+        $r41 = new biz.neoline.test.MyListAdapter;
+
+        specialinvoke $r41.<biz.neoline.test.MyListAdapter: void <init>(biz.neoline.test.BookWebListEntry[])>($r38);
+
+        $r42 = new biz.neoline.test.MyListAdapter$2;
+
+        specialinvoke $r42.<biz.neoline.test.MyListAdapter$2: void <init>(biz.neoline.test.MyListAdapter,android.net.Uri,android.content.Context)>($r41, null, $r26);
+
+        if $i0 == 83 goto label58;
+
+        virtualinvoke $r42.<biz.neoline.test.MyListAdapter$2: void onClick(android.view.View)>(null);
+
+     label58:
+        $r43 = new biz.neoline.android.reader.SettingsPanel;
+
+        specialinvoke $r43.<biz.neoline.android.reader.SettingsPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r26, null, false);
+
+        $r44 = new biz.neoline.android.reader.SettingsPanel$1;
+
+        specialinvoke $r44.<biz.neoline.android.reader.SettingsPanel$1: void <init>(biz.neoline.android.reader.SettingsPanel)>($r43);
+
+        if $i0 == 84 goto label59;
+
+        virtualinvoke $r44.<biz.neoline.android.reader.SettingsPanel$1: void onClick(android.view.View)>(null);
+
+     label59:
+        if $i0 == 85 goto label60;
+
+        $z6 = virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label60:
+        if $i0 == 86 goto label61;
+
+        $z7 = virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label61:
+        if $i0 == 87 goto label62;
+
+        virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label62:
+        if $i0 == 88 goto label63;
+
+        $z8 = virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: boolean onSearchRequested()>();
+
+     label63:
+        $r45 = new biz.neoline.android.reader.LibraryActivity$4;
+
+        specialinvoke $r45.<biz.neoline.android.reader.LibraryActivity$4: void <init>(biz.neoline.android.reader.LibraryActivity)>($r15);
+
+        if $i0 == 89 goto label64;
+
+        virtualinvoke $r45.<biz.neoline.android.reader.LibraryActivity$4: void onClick(android.view.View)>(null);
+
+     label64:
+        $r46 = new biz.neoline.lib.PurchaseActivityCore$3;
+
+        specialinvoke $r46.<biz.neoline.lib.PurchaseActivityCore$3: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 90 goto label65;
+
+        virtualinvoke $r46.<biz.neoline.lib.PurchaseActivityCore$3: void onClick(android.view.View)>(null);
+
+     label65:
+        $r47 = newarray (java.lang.String)[1];
+
+        $r47[0] = "";
+
+        $r48 = new biz.neoline.reader.reader.ReaderApp;
+
+        specialinvoke $r48.<biz.neoline.reader.reader.ReaderApp: void <init>(java.lang.String[])>($r47);
+
+        $r49 = new biz.neoline.android.reader.NavigationPanel;
+
+        specialinvoke $r49.<biz.neoline.android.reader.NavigationPanel: void <init>(biz.neoline.reader.reader.ReaderApp)>($r48);
+
+        $r50 = new biz.neoline.android.reader.NavigationPanel$1;
+
+        specialinvoke $r50.<biz.neoline.android.reader.NavigationPanel$1: void <init>(biz.neoline.android.reader.NavigationPanel,android.widget.TextView,android.widget.TextView)>($r49, null, null);
+
+        if $i0 == 91 goto label66;
+
+        virtualinvoke $r50.<biz.neoline.android.reader.NavigationPanel$1: void onStopTrackingTouch(android.widget.SeekBar)>(null);
+
+     label66:
+        if $i0 == 92 goto label67;
+
+        virtualinvoke $r50.<biz.neoline.android.reader.NavigationPanel$1: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label67:
+        if $i0 == 93 goto label68;
+
+        virtualinvoke $r50.<biz.neoline.android.reader.NavigationPanel$1: void onStartTrackingTouch(android.widget.SeekBar)>(null);
+
+     label68:
+        $r51 = new ru.wapstart.plus1.sdk.Plus1BannerView;
+
+        specialinvoke $r51.<ru.wapstart.plus1.sdk.Plus1BannerView: void <init>(android.content.Context)>($r26);
+
+        $r52 = new ru.wapstart.plus1.sdk.Plus1BannerView$2;
+
+        specialinvoke $r52.<ru.wapstart.plus1.sdk.Plus1BannerView$2: void <init>(ru.wapstart.plus1.sdk.Plus1BannerView)>($r51);
+
+        if $i0 == 94 goto label69;
+
+        virtualinvoke $r52.<ru.wapstart.plus1.sdk.Plus1BannerView$2: void onClick(android.view.View)>(null);
+
+     label69:
+        $r53 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$1;
+
+        specialinvoke $r53.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity,java.lang.String,java.lang.String)>($r9, "", "");
+
+        if $i0 == 95 goto label70;
+
+        virtualinvoke $r53.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$1: void onClick(android.view.View)>(null);
+
+     label70:
+        $r54 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r54.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 96 goto label71;
+
+        virtualinvoke $r54.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label71:
+        $r55 = new biz.neoline.test.BrightnessSeekBar;
+
+        specialinvoke $r55.<biz.neoline.test.BrightnessSeekBar: void <init>(android.content.Context,android.widget.LinearLayout)>($r26, null);
+
+        if $i0 == 97 goto label72;
+
+        virtualinvoke $r55.<biz.neoline.test.BrightnessSeekBar: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label72:
+        if $i0 == 98 goto label73;
+
+        virtualinvoke $r55.<biz.neoline.test.BrightnessSeekBar: void onStopTrackingTouch(android.widget.SeekBar)>(null);
+
+     label73:
+        $r56 = new biz.neoline.android.reader.MenuPanel;
+
+        specialinvoke $r56.<biz.neoline.android.reader.MenuPanel: void <init>(android.content.Context,android.widget.RelativeLayout,boolean)>($r26, null, false);
+
+        $r57 = new biz.neoline.android.reader.MenuPanel$2;
+
+        specialinvoke $r57.<biz.neoline.android.reader.MenuPanel$2: void <init>(biz.neoline.android.reader.MenuPanel,android.view.MenuItem)>($r56, null);
+
+        if $i0 == 99 goto label74;
+
+        virtualinvoke $r57.<biz.neoline.android.reader.MenuPanel$2: void onClick(android.view.View)>(null);
+
+     label74:
+        $r58 = new biz.neoline.lib.PurchaseActivityCore$4;
+
+        specialinvoke $r58.<biz.neoline.lib.PurchaseActivityCore$4: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 100 goto label75;
+
+        virtualinvoke $r58.<biz.neoline.lib.PurchaseActivityCore$4: void onClick(android.view.View)>(null);
+
+     label75:
+        $r59 = new com.flurry.android.u;
+
+        specialinvoke $r59.<com.flurry.android.u: void <init>()>();
+
+        if $i0 == 101 goto label76;
+
+        virtualinvoke $r59.<com.flurry.android.u: void onClick(android.view.View)>(null);
+
+     label76:
+        $r60 = new biz.neoline.test.BrightnessSeekBar;
+
+        specialinvoke $r60.<biz.neoline.test.BrightnessSeekBar: void <init>(android.content.Context,android.widget.LinearLayout)>($r26, null);
+
+        $r61 = new biz.neoline.test.BrightnessSeekBar$1;
+
+        specialinvoke $r61.<biz.neoline.test.BrightnessSeekBar$1: void <init>(biz.neoline.test.BrightnessSeekBar,android.widget.SeekBar)>($r60, null);
+
+        if $i0 == 102 goto label77;
+
+        virtualinvoke $r61.<biz.neoline.test.BrightnessSeekBar$1: void onClick(android.view.View)>(null);
+
+     label77:
+        $r62 = new com.flurry.android.CatalogActivity;
+
+        specialinvoke $r62.<com.flurry.android.CatalogActivity: void <init>()>();
+
+        if $i0 == 103 goto label78;
+
+        virtualinvoke $r62.<com.flurry.android.CatalogActivity: void onClick(android.view.View)>(null);
+
+     label78:
+        $r63 = new ru.wapstart.plus1.sdk.Plus1BannerView;
+
+        specialinvoke $r63.<ru.wapstart.plus1.sdk.Plus1BannerView: void <init>(android.content.Context)>($r26);
+
+        $r64 = new ru.wapstart.plus1.sdk.Plus1BannerView$1;
+
+        specialinvoke $r64.<ru.wapstart.plus1.sdk.Plus1BannerView$1: void <init>(ru.wapstart.plus1.sdk.Plus1BannerView)>($r63);
+
+        if $i0 == 104 goto label79;
+
+        virtualinvoke $r64.<ru.wapstart.plus1.sdk.Plus1BannerView$1: void onClick(android.view.View)>(null);
+
+     label79:
+        $r65 = new biz.neoline.app_core.ui.android.library.CrashReportingActivity$2;
+
+        specialinvoke $r65.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void <init>(biz.neoline.app_core.ui.android.library.CrashReportingActivity)>($r9);
+
+        if $i0 == 105 goto label80;
+
+        virtualinvoke $r65.<biz.neoline.app_core.ui.android.library.CrashReportingActivity$2: void onClick(android.view.View)>(null);
+
+     label80:
+        $r66 = new ru.wapstart.plus1.sdk.Plus1BannerRequest;
+
+        specialinvoke $r66.<ru.wapstart.plus1.sdk.Plus1BannerRequest: void <init>()>();
+
+        $r67 = new ru.wapstart.plus1.sdk.Plus1LocationListener;
+
+        specialinvoke $r67.<ru.wapstart.plus1.sdk.Plus1LocationListener: void <init>(ru.wapstart.plus1.sdk.Plus1BannerRequest)>($r66);
+
+        if $i0 == 106 goto label81;
+
+        virtualinvoke $r67.<ru.wapstart.plus1.sdk.Plus1LocationListener: void onLocationChanged(android.location.Location)>(null);
+
+     label81:
+        $r68 = new biz.neoline.lib.PurchaseActivityCore$7;
+
+        specialinvoke $r68.<biz.neoline.lib.PurchaseActivityCore$7: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 107 goto label82;
+
+        virtualinvoke $r68.<biz.neoline.lib.PurchaseActivityCore$7: void onClick(android.view.View)>(null);
+
+     label82:
+        if $i0 == 108 goto label50;
+
+     label83:
+        virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: void onPause()>();
+
+        virtualinvoke $r26.<biz.neoline.app_core.ui.android.library.ZLAndroidActivity: void onSaveInstanceState(android.os.Bundle)>(null);
+
+        if $i0 == 109 goto label49;
+
+        virtualinvoke $r26.<biz.neoline.android.reader.NeoBookReader: void onStop()>();
+
+        if $i0 == 110 goto label84;
+
+        if $i0 == 111 goto label48;
+
+     label84:
+        if $i0 == 113 goto label89;
+
+        $r69 = new biz.neoline.android.reader.TextSearchActivity;
+
+        specialinvoke $r69.<biz.neoline.android.reader.TextSearchActivity: void <init>()>();
+
+        if $i0 == 114 goto label89;
+
+        virtualinvoke $r69.<biz.neoline.android.reader.TextSearchActivity: void onCreate(android.os.Bundle)>(null);
+
+     label85:
+        if $i0 == 116 goto label88;
+
+     label86:
+        $r70 = new biz.neoline.lib.PurchaseActivityCore$8;
+
+        specialinvoke $r70.<biz.neoline.lib.PurchaseActivityCore$8: void <init>(biz.neoline.lib.PurchaseActivityCore)>(null);
+
+        if $i0 == 117 goto label87;
+
+        virtualinvoke $r70.<biz.neoline.lib.PurchaseActivityCore$8: void onCancel(android.content.DialogInterface)>(null);
+
+     label87:
+        if $i0 == 118 goto label86;
+
+     label88:
+        if $i0 == 119 goto label85;
+
+        if $i0 == 120 goto label89;
+
+        if $i0 == 121 goto label85;
+
+     label89:
+        if $i0 == 126 goto label01;
+
+        virtualinvoke $r1.<biz.neoline.app_core.ui.android.library.ZLAndroidApplication: void onTerminate()>();
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.4 seconds.
+[Spark] Solution found in 2.4 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 2.478121016 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.25021505 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 7558 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 119 sources and 85 sinks.
