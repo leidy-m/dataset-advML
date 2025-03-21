@@ -1,0 +1,682 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.011553555 seconds
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.geinimi.custom.GoogleKeyboard $r1;
+        android.os.IBinder $r2;
+        com.ttmobilegame.android.shotgun.Logo $r3;
+        com.geinimi.custom.Ad3090_30900001 $r4;
+        com.ttmobilegame.android.shotgun.SchottGunn $r5;
+        com.geinimi.AdServiceReceiver $r6;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.geinimi.custom.GoogleKeyboard;
+
+        specialinvoke $r1.<com.geinimi.custom.GoogleKeyboard: void <init>()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.geinimi.AdService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.ttmobilegame.android.shotgun.Logo;
+
+        specialinvoke $r3.<com.ttmobilegame.android.shotgun.Logo: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<com.ttmobilegame.android.shotgun.Logo: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 10 goto label08;
+
+        if $i0 == 11 goto label07;
+
+     label08:
+        if $i0 == 13 goto label10;
+
+        $r4 = new com.geinimi.custom.Ad3090_30900001;
+
+        specialinvoke $r4.<com.geinimi.custom.Ad3090_30900001: void <init>()>();
+
+        if $i0 == 14 goto label10;
+
+        virtualinvoke $r4.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 17 goto label10;
+
+        if $i0 == 18 goto label09;
+
+     label10:
+        if $i0 == 20 goto label13;
+
+        $r5 = new com.ttmobilegame.android.shotgun.SchottGunn;
+
+        specialinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void <init>()>();
+
+        if $i0 == 21 goto label13;
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onStart()>();
+
+     label12:
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onResume()>();
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onPause()>();
+
+        if $i0 == 23 goto label12;
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onStop()>();
+
+        if $i0 == 24 goto label13;
+
+        if $i0 == 25 goto label11;
+
+     label13:
+        if $i0 == 27 goto label15;
+
+        $r6 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r6.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 28 goto label15;
+
+     label14:
+        virtualinvoke $r6.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 30 goto label14;
+
+     label15:
+        if $i0 == 31 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.7 seconds.
+[Spark] Solution found in 1.7 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.ttmobilegame.android.shotgun.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.ttmobilegame.android.shotgun.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: ImageView is a phantom class!
+Warning: com.ttmobilegame.android.shotgun.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 2 layout controls in file res/layout/logo.xml
+Warning: CheckBox is a phantom class!
+Warning: com.ttmobilegame.android.shotgun.CheckBox is a phantom class!
+Warning: android.view.CheckBox is a phantom class!
+Warning: TableLayout is a phantom class!
+Warning: com.ttmobilegame.android.shotgun.TableLayout is a phantom class!
+Warning: android.view.TableLayout is a phantom class!
+Warning: View is a phantom class!
+Warning: com.ttmobilegame.android.shotgun.View is a phantom class!
+Warning: SeekBar is a phantom class!
+Warning: com.ttmobilegame.android.shotgun.SeekBar is a phantom class!
+Warning: android.view.SeekBar is a phantom class!
+Warning: TableRow is a phantom class!
+Warning: com.ttmobilegame.android.shotgun.TableRow is a phantom class!
+Warning: android.view.TableRow is a phantom class!
+Found 3 layout controls in file res/layout/sensedialog.xml
+Could not find sdk version in Android manifest! Using default: 15
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Vibrator
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.geinimi.custom.GoogleKeyboard $r1;
+        android.os.IBinder $r2;
+        com.ttmobilegame.android.shotgun.Logo $r3;
+        com.geinimi.custom.Ad3090_30900001 $r4;
+        com.ttmobilegame.android.shotgun.SchottGunn $r5;
+        com.ttmobilegame.android.shotgun.SchottGunn$5 $r6;
+        com.ttmobilegame.android.shotgun.SchottGunn$1 $r7;
+        boolean $z0;
+        com.ttmobilegame.android.shotgun.SchottGunn$2 $r8;
+        com.ttmobilegame.android.shotgun.SchottGunn$4 $r9;
+        com.ttmobilegame.android.shotgun.SchottGunn$3 $r10;
+        com.geinimi.AdServiceReceiver $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.geinimi.custom.GoogleKeyboard;
+
+        specialinvoke $r1.<com.geinimi.custom.GoogleKeyboard: void <init>()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.geinimi.AdService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.ttmobilegame.android.shotgun.Logo;
+
+        specialinvoke $r3.<com.ttmobilegame.android.shotgun.Logo: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<com.ttmobilegame.android.shotgun.Logo: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 10 goto label07;
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        if $i0 == 14 goto label10;
+
+        $r4 = new com.geinimi.custom.Ad3090_30900001;
+
+        specialinvoke $r4.<com.geinimi.custom.Ad3090_30900001: void <init>()>();
+
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r4.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 18 goto label10;
+
+        if $i0 == 19 goto label09;
+
+     label10:
+        if $i0 == 21 goto label22;
+
+        $r5 = new com.ttmobilegame.android.shotgun.SchottGunn;
+
+        specialinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void <init>()>();
+
+        if $i0 == 22 goto label22;
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onStart()>();
+
+     label12:
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onResume()>();
+
+        if $i0 == 24 goto label21;
+
+     label13:
+        $r6 = new com.ttmobilegame.android.shotgun.SchottGunn$5;
+
+        specialinvoke $r6.<com.ttmobilegame.android.shotgun.SchottGunn$5: void <init>(com.ttmobilegame.android.shotgun.SchottGunn)>($r5);
+
+        if $i0 == 25 goto label14;
+
+        virtualinvoke $r6.<com.ttmobilegame.android.shotgun.SchottGunn$5: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label14:
+        $r7 = new com.ttmobilegame.android.shotgun.SchottGunn$1;
+
+        specialinvoke $r7.<com.ttmobilegame.android.shotgun.SchottGunn$1: void <init>(com.ttmobilegame.android.shotgun.SchottGunn,android.view.View)>($r5, null);
+
+        if $i0 == 26 goto label15;
+
+        virtualinvoke $r7.<com.ttmobilegame.android.shotgun.SchottGunn$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label15:
+        if $i0 == 27 goto label16;
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label16:
+        if $i0 == 28 goto label17;
+
+        $z0 = virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label17:
+        $r8 = new com.ttmobilegame.android.shotgun.SchottGunn$2;
+
+        specialinvoke $r8.<com.ttmobilegame.android.shotgun.SchottGunn$2: void <init>(com.ttmobilegame.android.shotgun.SchottGunn)>($r5);
+
+        if $i0 == 29 goto label18;
+
+        virtualinvoke $r8.<com.ttmobilegame.android.shotgun.SchottGunn$2: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label18:
+        $r9 = new com.ttmobilegame.android.shotgun.SchottGunn$4;
+
+        specialinvoke $r9.<com.ttmobilegame.android.shotgun.SchottGunn$4: void <init>(com.ttmobilegame.android.shotgun.SchottGunn,android.os.Vibrator)>($r5, null);
+
+        if $i0 == 30 goto label19;
+
+        virtualinvoke $r9.<com.ttmobilegame.android.shotgun.SchottGunn$4: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label19:
+        $r10 = new com.ttmobilegame.android.shotgun.SchottGunn$3;
+
+        specialinvoke $r10.<com.ttmobilegame.android.shotgun.SchottGunn$3: void <init>(com.ttmobilegame.android.shotgun.SchottGunn)>($r5);
+
+        if $i0 == 31 goto label20;
+
+        virtualinvoke $r10.<com.ttmobilegame.android.shotgun.SchottGunn$3: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label20:
+        if $i0 == 32 goto label13;
+
+     label21:
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onPause()>();
+
+        if $i0 == 33 goto label12;
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onStop()>();
+
+        if $i0 == 34 goto label22;
+
+        if $i0 == 35 goto label11;
+
+     label22:
+        if $i0 == 37 goto label24;
+
+        $r11 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r11.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 38 goto label24;
+
+     label23:
+        virtualinvoke $r11.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 40 goto label23;
+
+     label24:
+        if $i0 == 41 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 1.0 seconds.
+[Spark] Solution found in 1.0 seconds.
+Running incremental callback analysis for 3 components...
+Incremental callback analysis done.
+Found 14 callback methods for 3 components
+Found {res/layout/logo.xml=[-1 - android.widget.LinearLayout, 2131099648 - android.widget.ImageView], res/layout/main.xml=[-1 - android.widget.TextView, -1 - android.widget.LinearLayout], res/layout/sensedialog.xml=[2131099651 - android.widget.CheckBox, -1 - android.widget.TableRow, 2131099654 - android.widget.TextView, 2131099653 - android.widget.TextView, -1 - android.widget.LinearLayout, 2131099652 - android.widget.SeekBar, 2131099655 - android.widget.TextView, -1 - android.widget.TableLayout, -1 - android.view.View, 2131099650 - android.widget.CheckBox, 2131099649 - android.widget.CheckBox]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 14 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/30d7c91d2f91ddca2965e68936d4c924ea6d1f1edc9873f6d503a4071930b339.apk with 89 sources and 133 sinks...
+Could not find sdk version in Android manifest! Using default: 15
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.CompoundButton
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.widget.SeekBar
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Vibrator
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.res.Configuration
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.geinimi.custom.GoogleKeyboard $r1;
+        android.os.IBinder $r2;
+        com.ttmobilegame.android.shotgun.Logo $r3;
+        com.geinimi.custom.Ad3090_30900001 $r4;
+        com.ttmobilegame.android.shotgun.SchottGunn $r5;
+        com.ttmobilegame.android.shotgun.SchottGunn$3 $r6;
+        com.ttmobilegame.android.shotgun.SchottGunn$2 $r7;
+        com.ttmobilegame.android.shotgun.SchottGunn$5 $r8;
+        com.ttmobilegame.android.shotgun.SchottGunn$4 $r9;
+        boolean $z0;
+        com.ttmobilegame.android.shotgun.SchottGunn$1 $r10;
+        com.geinimi.AdServiceReceiver $r11;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label06;
+
+        $r1 = new com.geinimi.custom.GoogleKeyboard;
+
+        specialinvoke $r1.<com.geinimi.custom.GoogleKeyboard: void <init>()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onCreate()>();
+
+        virtualinvoke $r1.<com.geinimi.AdService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label02:
+        if $i0 == 1 goto label03;
+
+        if $i0 == 2 goto label02;
+
+     label03:
+        $r2 = virtualinvoke $r1.<com.geinimi.AdService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label04:
+        if $i0 == 4 goto label05;
+
+        if $i0 == 5 goto label04;
+
+     label05:
+        virtualinvoke $r1.<com.geinimi.AdService: void onDestroy()>();
+
+     label06:
+        if $i0 == 6 goto label08;
+
+        $r3 = new com.ttmobilegame.android.shotgun.Logo;
+
+        specialinvoke $r3.<com.ttmobilegame.android.shotgun.Logo: void <init>()>();
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r3.<com.ttmobilegame.android.shotgun.Logo: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        if $i0 == 10 goto label07;
+
+        if $i0 == 11 goto label08;
+
+        if $i0 == 12 goto label07;
+
+     label08:
+        if $i0 == 14 goto label10;
+
+        $r4 = new com.geinimi.custom.Ad3090_30900001;
+
+        specialinvoke $r4.<com.geinimi.custom.Ad3090_30900001: void <init>()>();
+
+        if $i0 == 15 goto label10;
+
+        virtualinvoke $r4.<com.geinimi.AdActivity: void onCreate(android.os.Bundle)>(null);
+
+     label09:
+        if $i0 == 18 goto label10;
+
+        if $i0 == 19 goto label09;
+
+     label10:
+        if $i0 == 21 goto label22;
+
+        $r5 = new com.ttmobilegame.android.shotgun.SchottGunn;
+
+        specialinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void <init>()>();
+
+        if $i0 == 22 goto label22;
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onCreate(android.os.Bundle)>(null);
+
+     label11:
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onStart()>();
+
+     label12:
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onResume()>();
+
+        if $i0 == 24 goto label21;
+
+     label13:
+        $r6 = new com.ttmobilegame.android.shotgun.SchottGunn$3;
+
+        specialinvoke $r6.<com.ttmobilegame.android.shotgun.SchottGunn$3: void <init>(com.ttmobilegame.android.shotgun.SchottGunn)>($r5);
+
+        if $i0 == 25 goto label14;
+
+        virtualinvoke $r6.<com.ttmobilegame.android.shotgun.SchottGunn$3: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label14:
+        $r7 = new com.ttmobilegame.android.shotgun.SchottGunn$2;
+
+        specialinvoke $r7.<com.ttmobilegame.android.shotgun.SchottGunn$2: void <init>(com.ttmobilegame.android.shotgun.SchottGunn)>($r5);
+
+        if $i0 == 26 goto label15;
+
+        virtualinvoke $r7.<com.ttmobilegame.android.shotgun.SchottGunn$2: void onProgressChanged(android.widget.SeekBar,int,boolean)>(null, 0, false);
+
+     label15:
+        $r8 = new com.ttmobilegame.android.shotgun.SchottGunn$5;
+
+        specialinvoke $r8.<com.ttmobilegame.android.shotgun.SchottGunn$5: void <init>(com.ttmobilegame.android.shotgun.SchottGunn)>($r5);
+
+        if $i0 == 27 goto label16;
+
+        virtualinvoke $r8.<com.ttmobilegame.android.shotgun.SchottGunn$5: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label16:
+        $r9 = new com.ttmobilegame.android.shotgun.SchottGunn$4;
+
+        specialinvoke $r9.<com.ttmobilegame.android.shotgun.SchottGunn$4: void <init>(com.ttmobilegame.android.shotgun.SchottGunn,android.os.Vibrator)>($r5, null);
+
+        if $i0 == 28 goto label17;
+
+        virtualinvoke $r9.<com.ttmobilegame.android.shotgun.SchottGunn$4: void onCheckedChanged(android.widget.CompoundButton,boolean)>(null, false);
+
+     label17:
+        if $i0 == 29 goto label18;
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onConfigurationChanged(android.content.res.Configuration)>(null);
+
+     label18:
+        if $i0 == 30 goto label19;
+
+        $z0 = virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label19:
+        $r10 = new com.ttmobilegame.android.shotgun.SchottGunn$1;
+
+        specialinvoke $r10.<com.ttmobilegame.android.shotgun.SchottGunn$1: void <init>(com.ttmobilegame.android.shotgun.SchottGunn,android.view.View)>($r5, null);
+
+        if $i0 == 31 goto label20;
+
+        virtualinvoke $r10.<com.ttmobilegame.android.shotgun.SchottGunn$1: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label20:
+        if $i0 == 32 goto label13;
+
+     label21:
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onPause()>();
+
+        if $i0 == 33 goto label12;
+
+        virtualinvoke $r5.<com.ttmobilegame.android.shotgun.SchottGunn: void onStop()>();
+
+        if $i0 == 34 goto label22;
+
+        if $i0 == 35 goto label11;
+
+     label22:
+        if $i0 == 37 goto label24;
+
+        $r11 = new com.geinimi.AdServiceReceiver;
+
+        specialinvoke $r11.<com.geinimi.AdServiceReceiver: void <init>()>();
+
+        if $i0 == 38 goto label24;
+
+     label23:
+        virtualinvoke $r11.<com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 40 goto label23;
+
+     label24:
+        if $i0 == 41 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 0.9 seconds.
+[Spark] Solution found in 0.9 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 0.951650866 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.097300818 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 2668 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 44 sources and 26 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 1271
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 12451
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 38300 forward and 3380 backward edges solved, processing 10 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 10 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.009543387 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r15.<java.io.OutputStream: void write(byte[],int,int)>($r14, 0, $i0) in method <com.geinimi.c.l: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("salesid") in method <com.geinimi.AdService: java.lang.String d()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() in method <com.geinimi.c.d: boolean a(double[])>
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() in method <com.geinimi.c.d: boolean a(double[])>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() in method <com.geinimi.c.l: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("cpid") in method <com.geinimi.AdService: java.lang.String b()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("did") in method <com.geinimi.AdService: java.lang.String e()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ptid") in method <com.geinimi.AdService: java.lang.String c()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.geinimi.c.k: void <init>(com.geinimi.AdService)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() in method <com.geinimi.c.k: void <init>(com.geinimi.AdService)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r12 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, $r11, null, null) in method <com.geinimi.c.b: java.util.Vector a()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r11 = interfaceinvoke $r12.<android.database.Cursor: java.lang.String getString(int)>($i4) in method <com.geinimi.c.b: java.util.Vector a()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.geinimi.c.b: java.util.Vector a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2) in method <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("vibrate", $z0) in method <com.ttmobilegame.android.shotgun.SchottGunn: void onStop()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 := @parameter1: boolean in method <com.ttmobilegame.android.shotgun.SchottGunn$4: void onCheckedChanged(android.widget.CompoundButton,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r0, null, $r1, $r7, null) in method <com.geinimi.c.i: void a(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r7 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)>($r2, 0, $r3, 0) in method <com.geinimi.c.i: void a(java.lang.String,java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("showBG", $z0) in method <com.ttmobilegame.android.shotgun.SchottGunn: void onStop()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 := @parameter1: boolean in method <com.ttmobilegame.android.shotgun.SchottGunn$3: void onCheckedChanged(android.widget.CompoundButton,boolean)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r12 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, $r5, null, null) in method <com.geinimi.c.b: java.util.Vector a()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <com.geinimi.c.b: java.util.Vector a()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("lefty", $z0) in method <com.ttmobilegame.android.shotgun.SchottGunn: void onStop()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $z0 := @parameter1: boolean in method <com.ttmobilegame.android.shotgun.SchottGunn$5: void onCheckedChanged(android.widget.CompoundButton,boolean)>
+Found a flow to sink virtualinvoke $r15.<java.io.OutputStream: void write(byte[],int,int)>($r14, 0, $i0), from the following sources:
+	- $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("salesid") (in <com.geinimi.AdService: java.lang.String d()>)
+	- $d0 = virtualinvoke $r4.<android.location.Location: double getLongitude()>() (in <com.geinimi.c.d: boolean a(double[])>)
+	- $d0 = virtualinvoke $r4.<android.location.Location: double getLatitude()>() (in <com.geinimi.c.d: boolean a(double[])>)
+	- $r12 = virtualinvoke $r11.<java.net.URL: java.net.URLConnection openConnection()>() (in <com.geinimi.c.l: void a(java.lang.String,java.util.Map,org.apache.http.util.ByteArrayBuffer)>)
+	- $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("cpid") (in <com.geinimi.AdService: java.lang.String b()>)
+	- $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("did") (in <com.geinimi.AdService: java.lang.String e()>)
+	- $r0 = virtualinvoke $r3.<android.os.Bundle: java.lang.String getString(java.lang.String)>("ptid") (in <com.geinimi.AdService: java.lang.String c()>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.geinimi.c.k: void <init>(com.geinimi.AdService)>)
+	- $r4 = virtualinvoke $r3.<android.telephony.TelephonyManager: java.lang.String getSubscriberId()>() (in <com.geinimi.c.k: void <init>(com.geinimi.AdService)>)
+Found a flow to sink $r12 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, $r11, null, null), from the following sources:
+	- $r11 = interfaceinvoke $r12.<android.database.Cursor: java.lang.String getString(int)>($i4) (in <com.geinimi.c.b: java.util.Vector a()>)
+	- $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.geinimi.c.b: java.util.Vector a()>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.geinimi.AdServiceReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("vibrate", $z0), from the following sources:
+	- $z0 := @parameter1: boolean (in <com.ttmobilegame.android.shotgun.SchottGunn$4: void onCheckedChanged(android.widget.CompoundButton,boolean)>)
+Found a flow to sink virtualinvoke $r8.<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)>($r0, null, $r1, $r7, null), from the following sources:
+	- $r7 = staticinvoke <android.app.PendingIntent: android.app.PendingIntent getActivity(android.content.Context,int,android.content.Intent,int)>($r2, 0, $r3, 0) (in <com.geinimi.c.i: void a(java.lang.String,java.lang.String)>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("showBG", $z0), from the following sources:
+	- $z0 := @parameter1: boolean (in <com.ttmobilegame.android.shotgun.SchottGunn$3: void onCheckedChanged(android.widget.CompoundButton,boolean)>)
+Found a flow to sink $r12 = virtualinvoke $r2.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r3, null, $r5, null, null), from the following sources:
+	- $r5 = interfaceinvoke $r4.<android.database.Cursor: java.lang.String getString(int)>($i0) (in <com.geinimi.c.b: java.util.Vector a()>)
+Found a flow to sink interfaceinvoke $r2.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)>("lefty", $z0), from the following sources:
+	- $z0 := @parameter1: boolean (in <com.ttmobilegame.android.shotgun.SchottGunn$5: void onCheckedChanged(android.widget.CompoundButton,boolean)>)
+Maximum memory consumption: 144.308712 MB
+Analysis has run for 7.955804232 seconds

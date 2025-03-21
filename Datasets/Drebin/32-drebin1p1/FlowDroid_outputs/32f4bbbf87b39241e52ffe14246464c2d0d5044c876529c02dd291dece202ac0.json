@@ -1,0 +1,2104 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/soot-trunk.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/AndroPyTool/FlowDroid/slf4j-simple-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.SimpleLoggerFactory]
+[main] INFO soot.jimple.infoflow.taintWrappers.EasyTaintWrapper - Loaded wrapper entries for 70 classes and 11 exclusions.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.014993403 seconds
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.WebSettings$PluginState is a phantom class!
+Warning: javax.xml.datatype.DatatypeConfigurationException is a phantom class!
+Warning: javax.xml.datatype.DatatypeFactory is a phantom class!
+Warning: javax.xml.datatype.Duration is a phantom class!
+Warning: javax.xml.datatype.XMLGregorianCalendar is a phantom class!
+Warning: javax.xml.namespace.QName is a phantom class!
+Warning: org.w3c.dom.ls.DOMImplementationLS is a phantom class!
+Warning: org.joda.time.DateMidnight is a phantom class!
+Warning: org.joda.time.format.DateTimeFormatter is a phantom class!
+Warning: org.joda.time.DateTime is a phantom class!
+Warning: org.joda.time.ReadableInstant is a phantom class!
+Warning: org.joda.time.LocalDate is a phantom class!
+Warning: org.joda.time.LocalDateTime is a phantom class!
+Warning: org.joda.time.ReadablePartial is a phantom class!
+Warning: org.joda.time.DateMidnight$Property is a phantom class!
+Warning: org.joda.time.DateTimeZone is a phantom class!
+Warning: org.joda.time.LocalDate$Property is a phantom class!
+Warning: org.joda.time.LocalDateTime$Property is a phantom class!
+Warning: org.joda.time.ReadableDateTime is a phantom class!
+Warning: org.joda.time.format.ISODateTimeFormat is a phantom class!
+Warning: org.w3c.dom.bootstrap.DOMImplementationRegistry is a phantom class!
+Warning: org.w3c.dom.ls.LSSerializer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.car.racing.puzzlegame.BootReceiver $r1;
+        com.apperhand.device.android.AndroidSDKProvider $r2;
+        com.car.racing.puzzlegame.PreferSettingActivity $r3;
+        com.moolah.BootReceiver $r4;
+        com.moolah.MessageReceiver $r5;
+        com.Leadbolt.AdNotification $r6;
+        com.car.racing.puzzlegame.JigdrawPuzzleMain $r7;
+        com.moolah.NotificationService $r8;
+        android.os.IBinder $r9;
+        com.car.racing.puzzlegame.Ads $r10;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label03;
+
+        $r1 = new com.car.racing.puzzlegame.BootReceiver;
+
+        specialinvoke $r1.<com.car.racing.puzzlegame.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label03;
+
+     label02:
+        virtualinvoke $r1.<com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 3 goto label02;
+
+     label03:
+        if $i0 == 4 goto label06;
+
+        $r2 = new com.apperhand.device.android.AndroidSDKProvider;
+
+        specialinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void <init>()>();
+
+        virtualinvoke $r2.<com.apperhand.device.android.AndroidSDKProvider: void onCreate()>();
+
+     label04:
+        if $i0 == 5 goto label05;
+
+        if $i0 == 6 goto label04;
+
+     label05:
+        if $i0 == 8 goto label06;
+
+        if $i0 == 9 goto label05;
+
+     label06:
+        if $i0 == 10 goto label08;
+
+        $r3 = new com.car.racing.puzzlegame.PreferSettingActivity;
+
+        specialinvoke $r3.<com.car.racing.puzzlegame.PreferSettingActivity: void <init>()>();
+
+        if $i0 == 11 goto label08;
+
+        virtualinvoke $r3.<com.car.racing.puzzlegame.PreferSettingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label07:
+        virtualinvoke $r3.<com.car.racing.puzzlegame.PreferSettingActivity: void onResume()>();
+
+        if $i0 == 13 goto label07;
+
+        if $i0 == 14 goto label08;
+
+        if $i0 == 15 goto label07;
+
+     label08:
+        if $i0 == 17 goto label10;
+
+        $r4 = new com.moolah.BootReceiver;
+
+        specialinvoke $r4.<com.moolah.BootReceiver: void <init>()>();
+
+        if $i0 == 18 goto label10;
+
+     label09:
+        virtualinvoke $r4.<com.moolah.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 20 goto label09;
+
+     label10:
+        if $i0 == 21 goto label12;
+
+        $r5 = new com.moolah.MessageReceiver;
+
+        specialinvoke $r5.<com.moolah.MessageReceiver: void <init>()>();
+
+        if $i0 == 22 goto label12;
+
+     label11:
+        virtualinvoke $r5.<com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 24 goto label11;
+
+     label12:
+        if $i0 == 25 goto label14;
+
+        $r6 = new com.Leadbolt.AdNotification;
+
+        specialinvoke $r6.<com.Leadbolt.AdNotification: void <init>()>();
+
+        if $i0 == 26 goto label14;
+
+     label13:
+        virtualinvoke $r6.<com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 28 goto label13;
+
+     label14:
+        if $i0 == 29 goto label16;
+
+        $r7 = new com.car.racing.puzzlegame.JigdrawPuzzleMain;
+
+        specialinvoke $r7.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void <init>()>();
+
+        if $i0 == 30 goto label16;
+
+        virtualinvoke $r7.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onCreate(android.os.Bundle)>(null);
+
+     label15:
+        virtualinvoke $r7.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onResume()>();
+
+        virtualinvoke $r7.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onPause()>();
+
+        if $i0 == 32 goto label15;
+
+        if $i0 == 33 goto label16;
+
+        if $i0 == 34 goto label15;
+
+     label16:
+        if $i0 == 36 goto label20;
+
+        $r8 = new com.moolah.NotificationService;
+
+        specialinvoke $r8.<com.moolah.NotificationService: void <init>()>();
+
+        virtualinvoke $r8.<com.moolah.NotificationService: void onCreate()>();
+
+        virtualinvoke $r8.<com.moolah.NotificationService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label17:
+        if $i0 == 37 goto label18;
+
+        if $i0 == 38 goto label17;
+
+     label18:
+        $r9 = virtualinvoke $r8.<com.moolah.NotificationService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label19:
+        if $i0 == 40 goto label20;
+
+        if $i0 == 41 goto label19;
+
+     label20:
+        if $i0 == 42 goto label22;
+
+        $r10 = new com.car.racing.puzzlegame.Ads;
+
+        specialinvoke $r10.<com.car.racing.puzzlegame.Ads: void <init>()>();
+
+        if $i0 == 43 goto label22;
+
+        virtualinvoke $r10.<com.car.racing.puzzlegame.Ads: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        if $i0 == 46 goto label22;
+
+        if $i0 == 47 goto label21;
+
+     label22:
+        if $i0 == 49 goto label01;
+
+        return;
+    }
+
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.1 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 2.7 seconds.
+[Spark] Solution found in 2.7 seconds.
+Callback analysis done.
+Warning: LinearLayout is a phantom class!
+Warning: com.jigsaw.jigswacarrrr.LinearLayout is a phantom class!
+Warning: android.view.LinearLayout is a phantom class!
+Warning: TextView is a phantom class!
+Warning: com.jigsaw.jigswacarrrr.TextView is a phantom class!
+Warning: android.view.TextView is a phantom class!
+Found 1 layout controls in file res/layout/main.xml
+Warning: RelativeLayout is a phantom class!
+Warning: com.jigsaw.jigswacarrrr.RelativeLayout is a phantom class!
+Warning: android.view.RelativeLayout is a phantom class!
+Warning: ImageView is a phantom class!
+Warning: com.jigsaw.jigswacarrrr.ImageView is a phantom class!
+Warning: android.view.ImageView is a phantom class!
+Found 2 layout controls in file res/layout/origin_image_viewlayout.xml
+Warning: Button is a phantom class!
+Warning: com.jigsaw.jigswacarrrr.Button is a phantom class!
+Warning: android.view.Button is a phantom class!
+Found 3 layout controls in file res/layout/puzzleview.xml
+Warning: VideoView is a phantom class!
+Warning: com.jigsaw.jigswacarrrr.VideoView is a phantom class!
+Warning: android.view.VideoView is a phantom class!
+Found 4 layout controls in file res/layout/videoview_layout.xml
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+Warning: android.webkit.WebSettings$PluginState is a phantom class!
+Warning: javax.xml.datatype.DatatypeConfigurationException is a phantom class!
+Warning: javax.xml.datatype.DatatypeFactory is a phantom class!
+Warning: javax.xml.datatype.Duration is a phantom class!
+Warning: javax.xml.datatype.XMLGregorianCalendar is a phantom class!
+Warning: javax.xml.namespace.QName is a phantom class!
+Warning: org.w3c.dom.ls.DOMImplementationLS is a phantom class!
+Warning: org.joda.time.DateMidnight is a phantom class!
+Warning: org.joda.time.format.DateTimeFormatter is a phantom class!
+Warning: org.joda.time.DateTime is a phantom class!
+Warning: org.joda.time.ReadableInstant is a phantom class!
+Warning: org.joda.time.LocalDate is a phantom class!
+Warning: org.joda.time.LocalDateTime is a phantom class!
+Warning: org.joda.time.ReadablePartial is a phantom class!
+Warning: org.joda.time.DateMidnight$Property is a phantom class!
+Warning: org.joda.time.DateTimeZone is a phantom class!
+Warning: org.joda.time.LocalDate$Property is a phantom class!
+Warning: org.joda.time.LocalDateTime$Property is a phantom class!
+Warning: org.joda.time.ReadableDateTime is a phantom class!
+Warning: org.joda.time.format.ISODateTimeFormat is a phantom class!
+Warning: org.w3c.dom.bootstrap.DOMImplementationRegistry is a phantom class!
+Warning: org.w3c.dom.ls.LSSerializer is a phantom class!
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Activity
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.car.racing.puzzlegame.BootReceiver $r1;
+        com.Leadbolt.AdController $r2, $r4, $r6, $r8, $r10, $r12, $r14, $r16, $r23, $r25, $r27, $r29, $r31, $r33, $r35, $r37, $r40, $r44, $r46, $r48, $r51, $r53, $r55, $r57, $r62, $r64, $r66, $r68, $r70, $r72, $r74, $r76;
+        com.Leadbolt.AdController$9 $r3, $r24, $r41, $r63;
+        com.Leadbolt.AdController$7 $r5, $r26, $r45, $r65;
+        com.Leadbolt.AdController$6 $r7, $r28, $r47, $r67;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.Leadbolt.AdController$8 $r9, $r30, $r49, $r69;
+        com.Leadbolt.AdController$12 $r11, $r32, $r52, $r71;
+        com.Leadbolt.AdController$11 $r13, $r34, $r54, $r73;
+        com.Leadbolt.AdController$5 $r15, $r36, $r56, $r75;
+        com.Leadbolt.AdController$10 $r17, $r38, $r58, $r77;
+        com.apperhand.device.android.AndroidSDKProvider $r18;
+        com.car.racing.puzzlegame.PreferSettingActivity $r19;
+        com.moolah.BootReceiver $r20;
+        com.moolah.MessageReceiver $r21;
+        com.Leadbolt.AdNotification $r22;
+        com.car.racing.puzzlegame.JigdrawPuzzleMain $r39;
+        com.car.racing.puzzlegame.JigdrawPuzzleMain$5 $r42;
+        android.app.Dialog $r43;
+        com.car.racing.puzzlegame.JigdrawPuzzleMain$4 $r50;
+        com.moolah.NotificationService $r59;
+        android.os.IBinder $r60;
+        com.car.racing.puzzlegame.Ads $r61;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label13;
+
+        $r1 = new com.car.racing.puzzlegame.BootReceiver;
+
+        specialinvoke $r1.<com.car.racing.puzzlegame.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label13;
+
+     label02:
+        virtualinvoke $r1.<com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 2 goto label12;
+
+     label03:
+        $r2 = new com.Leadbolt.AdController;
+
+        specialinvoke $r2.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r3 = new com.Leadbolt.AdController$9;
+
+        specialinvoke $r3.<com.Leadbolt.AdController$9: void <init>(com.Leadbolt.AdController)>($r2);
+
+        if $i0 == 3 goto label04;
+
+        virtualinvoke $r3.<com.Leadbolt.AdController$9: void onClick(android.view.View)>(null);
+
+     label04:
+        $r4 = new com.Leadbolt.AdController;
+
+        specialinvoke $r4.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r5 = new com.Leadbolt.AdController$7;
+
+        specialinvoke $r5.<com.Leadbolt.AdController$7: void <init>(com.Leadbolt.AdController)>($r4);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r5.<com.Leadbolt.AdController$7: void onClick(android.view.View)>(null);
+
+     label05:
+        $r6 = new com.Leadbolt.AdController;
+
+        specialinvoke $r6.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r7 = new com.Leadbolt.AdController$6;
+
+        specialinvoke $r7.<com.Leadbolt.AdController$6: void <init>(com.Leadbolt.AdController)>($r6);
+
+        if $i0 == 5 goto label06;
+
+        $z0 = virtualinvoke $r7.<com.Leadbolt.AdController$6: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label06:
+        $r8 = new com.Leadbolt.AdController;
+
+        specialinvoke $r8.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r9 = new com.Leadbolt.AdController$8;
+
+        specialinvoke $r9.<com.Leadbolt.AdController$8: void <init>(com.Leadbolt.AdController)>($r8);
+
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r9.<com.Leadbolt.AdController$8: void onClick(android.view.View)>(null);
+
+     label07:
+        $r10 = new com.Leadbolt.AdController;
+
+        specialinvoke $r10.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r11 = new com.Leadbolt.AdController$12;
+
+        specialinvoke $r11.<com.Leadbolt.AdController$12: void <init>(com.Leadbolt.AdController)>($r10);
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r11.<com.Leadbolt.AdController$12: void onClick(android.view.View)>(null);
+
+     label08:
+        $r12 = new com.Leadbolt.AdController;
+
+        specialinvoke $r12.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r13 = new com.Leadbolt.AdController$11;
+
+        specialinvoke $r13.<com.Leadbolt.AdController$11: void <init>(com.Leadbolt.AdController)>($r12);
+
+        if $i0 == 8 goto label09;
+
+        virtualinvoke $r13.<com.Leadbolt.AdController$11: void onClick(android.view.View)>(null);
+
+     label09:
+        $r14 = new com.Leadbolt.AdController;
+
+        specialinvoke $r14.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r15 = new com.Leadbolt.AdController$5;
+
+        specialinvoke $r15.<com.Leadbolt.AdController$5: void <init>(com.Leadbolt.AdController)>($r14);
+
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r15.<com.Leadbolt.AdController$5: void onClick(android.view.View)>(null);
+
+     label10:
+        $r16 = new com.Leadbolt.AdController;
+
+        specialinvoke $r16.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r17 = new com.Leadbolt.AdController$10;
+
+        specialinvoke $r17.<com.Leadbolt.AdController$10: void <init>(com.Leadbolt.AdController)>($r16);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r17.<com.Leadbolt.AdController$10: void onClick(android.view.View)>(null);
+
+     label11:
+        if $i0 == 11 goto label03;
+
+     label12:
+        if $i0 == 12 goto label02;
+
+     label13:
+        if $i0 == 13 goto label20;
+
+        $r18 = new com.apperhand.device.android.AndroidSDKProvider;
+
+        specialinvoke $r18.<com.apperhand.device.android.AndroidSDKProvider: void <init>()>();
+
+        virtualinvoke $r18.<com.apperhand.device.android.AndroidSDKProvider: void onCreate()>();
+
+     label14:
+        if $i0 == 14 goto label15;
+
+        if $i0 == 15 goto label14;
+
+     label15:
+        if $i0 == 16 goto label18;
+
+     label16:
+        if $i0 == 17 goto label17;
+
+        virtualinvoke $r18.<com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>(null);
+
+     label17:
+        if $i0 == 18 goto label16;
+
+     label18:
+        if $i0 == 19 goto label19;
+
+        virtualinvoke $r18.<com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>(null);
+
+     label19:
+        if $i0 == 20 goto label18;
+
+        if $i0 == 21 goto label20;
+
+        if $i0 == 22 goto label18;
+
+     label20:
+        if $i0 == 23 goto label25;
+
+        $r19 = new com.car.racing.puzzlegame.PreferSettingActivity;
+
+        specialinvoke $r19.<com.car.racing.puzzlegame.PreferSettingActivity: void <init>()>();
+
+        if $i0 == 24 goto label25;
+
+        virtualinvoke $r19.<com.car.racing.puzzlegame.PreferSettingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        virtualinvoke $r19.<com.car.racing.puzzlegame.PreferSettingActivity: void onResume()>();
+
+        if $i0 == 26 goto label24;
+
+     label22:
+        if $i0 == 27 goto label23;
+
+        virtualinvoke $r19.<com.car.racing.puzzlegame.PreferSettingActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label23:
+        if $i0 == 28 goto label22;
+
+     label24:
+        if $i0 == 29 goto label21;
+
+        if $i0 == 30 goto label25;
+
+        if $i0 == 31 goto label21;
+
+     label25:
+        if $i0 == 33 goto label27;
+
+        $r20 = new com.moolah.BootReceiver;
+
+        specialinvoke $r20.<com.moolah.BootReceiver: void <init>()>();
+
+        if $i0 == 34 goto label27;
+
+     label26:
+        virtualinvoke $r20.<com.moolah.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 36 goto label26;
+
+     label27:
+        if $i0 == 37 goto label29;
+
+        $r21 = new com.moolah.MessageReceiver;
+
+        specialinvoke $r21.<com.moolah.MessageReceiver: void <init>()>();
+
+        if $i0 == 38 goto label29;
+
+     label28:
+        virtualinvoke $r21.<com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 40 goto label28;
+
+     label29:
+        if $i0 == 41 goto label41;
+
+        $r22 = new com.Leadbolt.AdNotification;
+
+        specialinvoke $r22.<com.Leadbolt.AdNotification: void <init>()>();
+
+        if $i0 == 42 goto label41;
+
+     label30:
+        virtualinvoke $r22.<com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label40;
+
+     label31:
+        $r23 = new com.Leadbolt.AdController;
+
+        specialinvoke $r23.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r24 = new com.Leadbolt.AdController$9;
+
+        specialinvoke $r24.<com.Leadbolt.AdController$9: void <init>(com.Leadbolt.AdController)>($r23);
+
+        if $i0 == 44 goto label32;
+
+        virtualinvoke $r24.<com.Leadbolt.AdController$9: void onClick(android.view.View)>(null);
+
+     label32:
+        $r25 = new com.Leadbolt.AdController;
+
+        specialinvoke $r25.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r26 = new com.Leadbolt.AdController$7;
+
+        specialinvoke $r26.<com.Leadbolt.AdController$7: void <init>(com.Leadbolt.AdController)>($r25);
+
+        if $i0 == 45 goto label33;
+
+        virtualinvoke $r26.<com.Leadbolt.AdController$7: void onClick(android.view.View)>(null);
+
+     label33:
+        $r27 = new com.Leadbolt.AdController;
+
+        specialinvoke $r27.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r28 = new com.Leadbolt.AdController$6;
+
+        specialinvoke $r28.<com.Leadbolt.AdController$6: void <init>(com.Leadbolt.AdController)>($r27);
+
+        if $i0 == 46 goto label34;
+
+        $z1 = virtualinvoke $r28.<com.Leadbolt.AdController$6: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label34:
+        $r29 = new com.Leadbolt.AdController;
+
+        specialinvoke $r29.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r30 = new com.Leadbolt.AdController$8;
+
+        specialinvoke $r30.<com.Leadbolt.AdController$8: void <init>(com.Leadbolt.AdController)>($r29);
+
+        if $i0 == 47 goto label35;
+
+        virtualinvoke $r30.<com.Leadbolt.AdController$8: void onClick(android.view.View)>(null);
+
+     label35:
+        $r31 = new com.Leadbolt.AdController;
+
+        specialinvoke $r31.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r32 = new com.Leadbolt.AdController$12;
+
+        specialinvoke $r32.<com.Leadbolt.AdController$12: void <init>(com.Leadbolt.AdController)>($r31);
+
+        if $i0 == 48 goto label36;
+
+        virtualinvoke $r32.<com.Leadbolt.AdController$12: void onClick(android.view.View)>(null);
+
+     label36:
+        $r33 = new com.Leadbolt.AdController;
+
+        specialinvoke $r33.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r34 = new com.Leadbolt.AdController$11;
+
+        specialinvoke $r34.<com.Leadbolt.AdController$11: void <init>(com.Leadbolt.AdController)>($r33);
+
+        if $i0 == 49 goto label37;
+
+        virtualinvoke $r34.<com.Leadbolt.AdController$11: void onClick(android.view.View)>(null);
+
+     label37:
+        $r35 = new com.Leadbolt.AdController;
+
+        specialinvoke $r35.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r36 = new com.Leadbolt.AdController$5;
+
+        specialinvoke $r36.<com.Leadbolt.AdController$5: void <init>(com.Leadbolt.AdController)>($r35);
+
+        if $i0 == 50 goto label38;
+
+        virtualinvoke $r36.<com.Leadbolt.AdController$5: void onClick(android.view.View)>(null);
+
+     label38:
+        $r37 = new com.Leadbolt.AdController;
+
+        specialinvoke $r37.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r38 = new com.Leadbolt.AdController$10;
+
+        specialinvoke $r38.<com.Leadbolt.AdController$10: void <init>(com.Leadbolt.AdController)>($r37);
+
+        if $i0 == 51 goto label39;
+
+        virtualinvoke $r38.<com.Leadbolt.AdController$10: void onClick(android.view.View)>(null);
+
+     label39:
+        if $i0 == 52 goto label31;
+
+     label40:
+        if $i0 == 53 goto label30;
+
+     label41:
+        if $i0 == 54 goto label64;
+
+        $r39 = new com.car.racing.puzzlegame.JigdrawPuzzleMain;
+
+        specialinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void <init>()>();
+
+        if $i0 == 55 goto label64;
+
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onCreate(android.os.Bundle)>(null);
+
+     label42:
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onResume()>();
+
+        if $i0 == 57 goto label63;
+
+     label43:
+        $r40 = new com.Leadbolt.AdController;
+
+        specialinvoke $r40.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r41 = new com.Leadbolt.AdController$9;
+
+        specialinvoke $r41.<com.Leadbolt.AdController$9: void <init>(com.Leadbolt.AdController)>($r40);
+
+        if $i0 == 58 goto label44;
+
+        virtualinvoke $r41.<com.Leadbolt.AdController$9: void onClick(android.view.View)>(null);
+
+     label44:
+        $r42 = new com.car.racing.puzzlegame.JigdrawPuzzleMain$5;
+
+        specialinvoke $r42.<com.car.racing.puzzlegame.JigdrawPuzzleMain$5: void <init>(com.car.racing.puzzlegame.JigdrawPuzzleMain)>($r39);
+
+        if $i0 == 59 goto label45;
+
+        virtualinvoke $r42.<com.car.racing.puzzlegame.JigdrawPuzzleMain$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label45:
+        if $i0 == 60 goto label46;
+
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label46:
+        if $i0 == 61 goto label47;
+
+        $r43 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: android.app.Dialog onCreateDialog(int)>(0);
+
+     label47:
+        if $i0 == 62 goto label48;
+
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onWindowFocusChanged(boolean)>(false);
+
+     label48:
+        if $i0 == 63 goto label49;
+
+        $z2 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label49:
+        if $i0 == 64 goto label50;
+
+        $z3 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label50:
+        if $i0 == 65 goto label51;
+
+        staticinvoke <com.car.racing.puzzlegame.JigdrawPuzzleMain: void <clinit>()>();
+
+     label51:
+        if $i0 == 66 goto label52;
+
+        $z4 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label52:
+        if $i0 == 67 goto label53;
+
+        $z5 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label53:
+        if $i0 == 68 goto label54;
+
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onNewIntent(android.content.Intent)>(null);
+
+     label54:
+        $r44 = new com.Leadbolt.AdController;
+
+        specialinvoke $r44.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r45 = new com.Leadbolt.AdController$7;
+
+        specialinvoke $r45.<com.Leadbolt.AdController$7: void <init>(com.Leadbolt.AdController)>($r44);
+
+        if $i0 == 69 goto label55;
+
+        virtualinvoke $r45.<com.Leadbolt.AdController$7: void onClick(android.view.View)>(null);
+
+     label55:
+        $r46 = new com.Leadbolt.AdController;
+
+        specialinvoke $r46.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r47 = new com.Leadbolt.AdController$6;
+
+        specialinvoke $r47.<com.Leadbolt.AdController$6: void <init>(com.Leadbolt.AdController)>($r46);
+
+        if $i0 == 70 goto label56;
+
+        $z6 = virtualinvoke $r47.<com.Leadbolt.AdController$6: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label56:
+        $r48 = new com.Leadbolt.AdController;
+
+        specialinvoke $r48.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r49 = new com.Leadbolt.AdController$8;
+
+        specialinvoke $r49.<com.Leadbolt.AdController$8: void <init>(com.Leadbolt.AdController)>($r48);
+
+        if $i0 == 71 goto label57;
+
+        virtualinvoke $r49.<com.Leadbolt.AdController$8: void onClick(android.view.View)>(null);
+
+     label57:
+        $r50 = new com.car.racing.puzzlegame.JigdrawPuzzleMain$4;
+
+        specialinvoke $r50.<com.car.racing.puzzlegame.JigdrawPuzzleMain$4: void <init>(com.car.racing.puzzlegame.JigdrawPuzzleMain)>($r39);
+
+        if $i0 == 72 goto label58;
+
+        virtualinvoke $r50.<com.car.racing.puzzlegame.JigdrawPuzzleMain$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label58:
+        $r51 = new com.Leadbolt.AdController;
+
+        specialinvoke $r51.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r52 = new com.Leadbolt.AdController$12;
+
+        specialinvoke $r52.<com.Leadbolt.AdController$12: void <init>(com.Leadbolt.AdController)>($r51);
+
+        if $i0 == 73 goto label59;
+
+        virtualinvoke $r52.<com.Leadbolt.AdController$12: void onClick(android.view.View)>(null);
+
+     label59:
+        $r53 = new com.Leadbolt.AdController;
+
+        specialinvoke $r53.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r54 = new com.Leadbolt.AdController$11;
+
+        specialinvoke $r54.<com.Leadbolt.AdController$11: void <init>(com.Leadbolt.AdController)>($r53);
+
+        if $i0 == 74 goto label60;
+
+        virtualinvoke $r54.<com.Leadbolt.AdController$11: void onClick(android.view.View)>(null);
+
+     label60:
+        $r55 = new com.Leadbolt.AdController;
+
+        specialinvoke $r55.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r56 = new com.Leadbolt.AdController$5;
+
+        specialinvoke $r56.<com.Leadbolt.AdController$5: void <init>(com.Leadbolt.AdController)>($r55);
+
+        if $i0 == 75 goto label61;
+
+        virtualinvoke $r56.<com.Leadbolt.AdController$5: void onClick(android.view.View)>(null);
+
+     label61:
+        $r57 = new com.Leadbolt.AdController;
+
+        specialinvoke $r57.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r58 = new com.Leadbolt.AdController$10;
+
+        specialinvoke $r58.<com.Leadbolt.AdController$10: void <init>(com.Leadbolt.AdController)>($r57);
+
+        if $i0 == 76 goto label62;
+
+        virtualinvoke $r58.<com.Leadbolt.AdController$10: void onClick(android.view.View)>(null);
+
+     label62:
+        if $i0 == 77 goto label43;
+
+     label63:
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onPause()>();
+
+        if $i0 == 78 goto label42;
+
+        if $i0 == 79 goto label64;
+
+        if $i0 == 80 goto label42;
+
+     label64:
+        if $i0 == 82 goto label68;
+
+        $r59 = new com.moolah.NotificationService;
+
+        specialinvoke $r59.<com.moolah.NotificationService: void <init>()>();
+
+        virtualinvoke $r59.<com.moolah.NotificationService: void onCreate()>();
+
+        virtualinvoke $r59.<com.moolah.NotificationService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label65:
+        if $i0 == 83 goto label66;
+
+        if $i0 == 84 goto label65;
+
+     label66:
+        $r60 = virtualinvoke $r59.<com.moolah.NotificationService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label67:
+        if $i0 == 86 goto label68;
+
+        if $i0 == 87 goto label67;
+
+     label68:
+        if $i0 == 88 goto label80;
+
+        $r61 = new com.car.racing.puzzlegame.Ads;
+
+        specialinvoke $r61.<com.car.racing.puzzlegame.Ads: void <init>()>();
+
+        if $i0 == 89 goto label80;
+
+        virtualinvoke $r61.<com.car.racing.puzzlegame.Ads: void onCreate(android.os.Bundle)>(null);
+
+     label69:
+        if $i0 == 91 goto label79;
+
+     label70:
+        $r62 = new com.Leadbolt.AdController;
+
+        specialinvoke $r62.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r63 = new com.Leadbolt.AdController$9;
+
+        specialinvoke $r63.<com.Leadbolt.AdController$9: void <init>(com.Leadbolt.AdController)>($r62);
+
+        if $i0 == 92 goto label71;
+
+        virtualinvoke $r63.<com.Leadbolt.AdController$9: void onClick(android.view.View)>(null);
+
+     label71:
+        $r64 = new com.Leadbolt.AdController;
+
+        specialinvoke $r64.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r65 = new com.Leadbolt.AdController$7;
+
+        specialinvoke $r65.<com.Leadbolt.AdController$7: void <init>(com.Leadbolt.AdController)>($r64);
+
+        if $i0 == 93 goto label72;
+
+        virtualinvoke $r65.<com.Leadbolt.AdController$7: void onClick(android.view.View)>(null);
+
+     label72:
+        $r66 = new com.Leadbolt.AdController;
+
+        specialinvoke $r66.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r67 = new com.Leadbolt.AdController$6;
+
+        specialinvoke $r67.<com.Leadbolt.AdController$6: void <init>(com.Leadbolt.AdController)>($r66);
+
+        if $i0 == 94 goto label73;
+
+        $z7 = virtualinvoke $r67.<com.Leadbolt.AdController$6: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label73:
+        $r68 = new com.Leadbolt.AdController;
+
+        specialinvoke $r68.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r69 = new com.Leadbolt.AdController$8;
+
+        specialinvoke $r69.<com.Leadbolt.AdController$8: void <init>(com.Leadbolt.AdController)>($r68);
+
+        if $i0 == 95 goto label74;
+
+        virtualinvoke $r69.<com.Leadbolt.AdController$8: void onClick(android.view.View)>(null);
+
+     label74:
+        $r70 = new com.Leadbolt.AdController;
+
+        specialinvoke $r70.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r71 = new com.Leadbolt.AdController$12;
+
+        specialinvoke $r71.<com.Leadbolt.AdController$12: void <init>(com.Leadbolt.AdController)>($r70);
+
+        if $i0 == 96 goto label75;
+
+        virtualinvoke $r71.<com.Leadbolt.AdController$12: void onClick(android.view.View)>(null);
+
+     label75:
+        $r72 = new com.Leadbolt.AdController;
+
+        specialinvoke $r72.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r73 = new com.Leadbolt.AdController$11;
+
+        specialinvoke $r73.<com.Leadbolt.AdController$11: void <init>(com.Leadbolt.AdController)>($r72);
+
+        if $i0 == 97 goto label76;
+
+        virtualinvoke $r73.<com.Leadbolt.AdController$11: void onClick(android.view.View)>(null);
+
+     label76:
+        $r74 = new com.Leadbolt.AdController;
+
+        specialinvoke $r74.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r75 = new com.Leadbolt.AdController$5;
+
+        specialinvoke $r75.<com.Leadbolt.AdController$5: void <init>(com.Leadbolt.AdController)>($r74);
+
+        if $i0 == 98 goto label77;
+
+        virtualinvoke $r75.<com.Leadbolt.AdController$5: void onClick(android.view.View)>(null);
+
+     label77:
+        $r76 = new com.Leadbolt.AdController;
+
+        specialinvoke $r76.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r77 = new com.Leadbolt.AdController$10;
+
+        specialinvoke $r77.<com.Leadbolt.AdController$10: void <init>(com.Leadbolt.AdController)>($r76);
+
+        if $i0 == 99 goto label78;
+
+        virtualinvoke $r77.<com.Leadbolt.AdController$10: void onClick(android.view.View)>(null);
+
+     label78:
+        if $i0 == 100 goto label70;
+
+     label79:
+        if $i0 == 101 goto label69;
+
+        if $i0 == 102 goto label80;
+
+        if $i0 == 103 goto label69;
+
+     label80:
+        if $i0 == 105 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 6.0 seconds.
+[Spark] Solution found in 6.0 seconds.
+Running incremental callback analysis for 9 components...
+Incremental callback analysis done.
+Found 35 callback methods for 9 components
+Found {res/layout/origin_image_viewlayout.xml=[-1 - android.widget.RelativeLayout, 2131361793 - android.widget.ImageView, 2131361794 - android.widget.TextView], res/layout/videoview_layout.xml=[-1 - android.widget.LinearLayout, 2131361800 - android.widget.VideoView], res/layout/main.xml=[-1 - android.widget.LinearLayout, -1 - android.widget.TextView, 2131361792 - android.widget.LinearLayout], res/layout/puzzleview.xml=[-1 - android.widget.LinearLayout, 2131361796 - android.widget.LinearLayout, 2131361797 - android.widget.Button, 2131361798 - android.widget.TextView, 2131361799 - android.widget.TextView, 2131361795 - android.widget.RelativeLayout]} layout controls
+Entry point calculation done.
+Created a SourceSinkManager with 89 sources, 133 sinks, and 35 callback methods.
+Running data flow analysis...
+Running data flow analysis on /apks/samples/32f4bbbf87b39241e52ffe14246464c2d0d5044c876529c02dd291dece202ac0.apk with 89 sources and 133 sinks...
+Starting infoflow computation...
+[main] INFO soot.jimple.infoflow.Infoflow - Resetting Soot...
+Warning: android.webkit.WebSettings$PluginState is a phantom class!
+Warning: javax.xml.datatype.DatatypeConfigurationException is a phantom class!
+Warning: javax.xml.datatype.DatatypeFactory is a phantom class!
+Warning: javax.xml.datatype.Duration is a phantom class!
+Warning: javax.xml.datatype.XMLGregorianCalendar is a phantom class!
+Warning: javax.xml.namespace.QName is a phantom class!
+Warning: org.w3c.dom.ls.DOMImplementationLS is a phantom class!
+Warning: org.joda.time.DateMidnight is a phantom class!
+Warning: org.joda.time.format.DateTimeFormatter is a phantom class!
+Warning: org.joda.time.DateTime is a phantom class!
+Warning: org.joda.time.ReadableInstant is a phantom class!
+Warning: org.joda.time.LocalDate is a phantom class!
+Warning: org.joda.time.LocalDateTime is a phantom class!
+Warning: org.joda.time.ReadablePartial is a phantom class!
+Warning: org.joda.time.DateMidnight$Property is a phantom class!
+Warning: org.joda.time.DateTimeZone is a phantom class!
+Warning: org.joda.time.LocalDate$Property is a phantom class!
+Warning: org.joda.time.LocalDateTime$Property is a phantom class!
+Warning: org.joda.time.ReadableDateTime is a phantom class!
+Warning: org.joda.time.format.ISODateTimeFormat is a phantom class!
+Warning: org.w3c.dom.bootstrap.DOMImplementationRegistry is a phantom class!
+Warning: org.w3c.dom.ls.LSSerializer is a phantom class!
+Warning: java.lang.invoke.LambdaMetafactory is a phantom class!
+Warning: java.lang.ref.Finalizer is a phantom class!
+[main] INFO soot.jimple.infoflow.Infoflow - Basic class loading done.
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Context
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.Intent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.app.Activity
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.View
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MotionEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.os.Bundle
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.SharedPreferences
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.content.DialogInterface
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.MenuItem
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.KeyEvent
+[main] WARN soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class android.view.Menu
+[main] INFO soot.jimple.infoflow.entryPointCreators.AndroidEntryPointCreator - Generated main method:
+    public static void dummyMainMethod(java.lang.String[])
+    {
+        java.lang.String[] $r0;
+        int $i0;
+        com.car.racing.puzzlegame.BootReceiver $r1;
+        com.Leadbolt.AdController $r2, $r4, $r6, $r8, $r10, $r12, $r14, $r16, $r23, $r25, $r27, $r29, $r31, $r33, $r35, $r37, $r40, $r42, $r44, $r46, $r49, $r51, $r53, $r56, $r62, $r64, $r66, $r68, $r70, $r72, $r74, $r76;
+        com.Leadbolt.AdController$7 $r3, $r24, $r41, $r63;
+        com.Leadbolt.AdController$8 $r5, $r26, $r43, $r65;
+        com.Leadbolt.AdController$10 $r7, $r28, $r45, $r67;
+        com.Leadbolt.AdController$11 $r9, $r30, $r47, $r69;
+        com.Leadbolt.AdController$5 $r11, $r32, $r50, $r71;
+        com.Leadbolt.AdController$6 $r13, $r34, $r52, $r73;
+        boolean $z0, $z1, $z2, $z3, $z4, $z5, $z6, $z7;
+        com.Leadbolt.AdController$12 $r15, $r36, $r54, $r75;
+        com.Leadbolt.AdController$9 $r17, $r38, $r57, $r77;
+        com.apperhand.device.android.AndroidSDKProvider $r18;
+        com.car.racing.puzzlegame.PreferSettingActivity $r19;
+        com.moolah.BootReceiver $r20;
+        com.moolah.MessageReceiver $r21;
+        com.Leadbolt.AdNotification $r22;
+        com.car.racing.puzzlegame.JigdrawPuzzleMain $r39;
+        com.car.racing.puzzlegame.JigdrawPuzzleMain$4 $r48;
+        android.app.Dialog $r55;
+        com.car.racing.puzzlegame.JigdrawPuzzleMain$5 $r58;
+        com.moolah.NotificationService $r59;
+        android.os.IBinder $r60;
+        com.car.racing.puzzlegame.Ads $r61;
+
+        $r0 := @parameter0: java.lang.String[];
+
+        $i0 = 0;
+
+     label01:
+        if $i0 == 0 goto label13;
+
+        $r1 = new com.car.racing.puzzlegame.BootReceiver;
+
+        specialinvoke $r1.<com.car.racing.puzzlegame.BootReceiver: void <init>()>();
+
+        if $i0 == 1 goto label13;
+
+     label02:
+        virtualinvoke $r1.<com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 2 goto label12;
+
+     label03:
+        $r2 = new com.Leadbolt.AdController;
+
+        specialinvoke $r2.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r3 = new com.Leadbolt.AdController$7;
+
+        specialinvoke $r3.<com.Leadbolt.AdController$7: void <init>(com.Leadbolt.AdController)>($r2);
+
+        if $i0 == 3 goto label04;
+
+        virtualinvoke $r3.<com.Leadbolt.AdController$7: void onClick(android.view.View)>(null);
+
+     label04:
+        $r4 = new com.Leadbolt.AdController;
+
+        specialinvoke $r4.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r5 = new com.Leadbolt.AdController$8;
+
+        specialinvoke $r5.<com.Leadbolt.AdController$8: void <init>(com.Leadbolt.AdController)>($r4);
+
+        if $i0 == 4 goto label05;
+
+        virtualinvoke $r5.<com.Leadbolt.AdController$8: void onClick(android.view.View)>(null);
+
+     label05:
+        $r6 = new com.Leadbolt.AdController;
+
+        specialinvoke $r6.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r7 = new com.Leadbolt.AdController$10;
+
+        specialinvoke $r7.<com.Leadbolt.AdController$10: void <init>(com.Leadbolt.AdController)>($r6);
+
+        if $i0 == 5 goto label06;
+
+        virtualinvoke $r7.<com.Leadbolt.AdController$10: void onClick(android.view.View)>(null);
+
+     label06:
+        $r8 = new com.Leadbolt.AdController;
+
+        specialinvoke $r8.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r9 = new com.Leadbolt.AdController$11;
+
+        specialinvoke $r9.<com.Leadbolt.AdController$11: void <init>(com.Leadbolt.AdController)>($r8);
+
+        if $i0 == 6 goto label07;
+
+        virtualinvoke $r9.<com.Leadbolt.AdController$11: void onClick(android.view.View)>(null);
+
+     label07:
+        $r10 = new com.Leadbolt.AdController;
+
+        specialinvoke $r10.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r11 = new com.Leadbolt.AdController$5;
+
+        specialinvoke $r11.<com.Leadbolt.AdController$5: void <init>(com.Leadbolt.AdController)>($r10);
+
+        if $i0 == 7 goto label08;
+
+        virtualinvoke $r11.<com.Leadbolt.AdController$5: void onClick(android.view.View)>(null);
+
+     label08:
+        $r12 = new com.Leadbolt.AdController;
+
+        specialinvoke $r12.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r13 = new com.Leadbolt.AdController$6;
+
+        specialinvoke $r13.<com.Leadbolt.AdController$6: void <init>(com.Leadbolt.AdController)>($r12);
+
+        if $i0 == 8 goto label09;
+
+        $z0 = virtualinvoke $r13.<com.Leadbolt.AdController$6: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label09:
+        $r14 = new com.Leadbolt.AdController;
+
+        specialinvoke $r14.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r15 = new com.Leadbolt.AdController$12;
+
+        specialinvoke $r15.<com.Leadbolt.AdController$12: void <init>(com.Leadbolt.AdController)>($r14);
+
+        if $i0 == 9 goto label10;
+
+        virtualinvoke $r15.<com.Leadbolt.AdController$12: void onClick(android.view.View)>(null);
+
+     label10:
+        $r16 = new com.Leadbolt.AdController;
+
+        specialinvoke $r16.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r17 = new com.Leadbolt.AdController$9;
+
+        specialinvoke $r17.<com.Leadbolt.AdController$9: void <init>(com.Leadbolt.AdController)>($r16);
+
+        if $i0 == 10 goto label11;
+
+        virtualinvoke $r17.<com.Leadbolt.AdController$9: void onClick(android.view.View)>(null);
+
+     label11:
+        if $i0 == 11 goto label03;
+
+     label12:
+        if $i0 == 12 goto label02;
+
+     label13:
+        if $i0 == 13 goto label20;
+
+        $r18 = new com.apperhand.device.android.AndroidSDKProvider;
+
+        specialinvoke $r18.<com.apperhand.device.android.AndroidSDKProvider: void <init>()>();
+
+        virtualinvoke $r18.<com.apperhand.device.android.AndroidSDKProvider: void onCreate()>();
+
+     label14:
+        if $i0 == 14 goto label15;
+
+        if $i0 == 15 goto label14;
+
+     label15:
+        if $i0 == 16 goto label18;
+
+     label16:
+        if $i0 == 17 goto label17;
+
+        virtualinvoke $r18.<com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>(null);
+
+     label17:
+        if $i0 == 18 goto label16;
+
+     label18:
+        if $i0 == 19 goto label19;
+
+        virtualinvoke $r18.<com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>(null);
+
+     label19:
+        if $i0 == 20 goto label18;
+
+        if $i0 == 21 goto label20;
+
+        if $i0 == 22 goto label18;
+
+     label20:
+        if $i0 == 23 goto label25;
+
+        $r19 = new com.car.racing.puzzlegame.PreferSettingActivity;
+
+        specialinvoke $r19.<com.car.racing.puzzlegame.PreferSettingActivity: void <init>()>();
+
+        if $i0 == 24 goto label25;
+
+        virtualinvoke $r19.<com.car.racing.puzzlegame.PreferSettingActivity: void onCreate(android.os.Bundle)>(null);
+
+     label21:
+        virtualinvoke $r19.<com.car.racing.puzzlegame.PreferSettingActivity: void onResume()>();
+
+        if $i0 == 26 goto label24;
+
+     label22:
+        if $i0 == 27 goto label23;
+
+        virtualinvoke $r19.<com.car.racing.puzzlegame.PreferSettingActivity: void onSharedPreferenceChanged(android.content.SharedPreferences,java.lang.String)>(null, "");
+
+     label23:
+        if $i0 == 28 goto label22;
+
+     label24:
+        if $i0 == 29 goto label21;
+
+        if $i0 == 30 goto label25;
+
+        if $i0 == 31 goto label21;
+
+     label25:
+        if $i0 == 33 goto label27;
+
+        $r20 = new com.moolah.BootReceiver;
+
+        specialinvoke $r20.<com.moolah.BootReceiver: void <init>()>();
+
+        if $i0 == 34 goto label27;
+
+     label26:
+        virtualinvoke $r20.<com.moolah.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 36 goto label26;
+
+     label27:
+        if $i0 == 37 goto label29;
+
+        $r21 = new com.moolah.MessageReceiver;
+
+        specialinvoke $r21.<com.moolah.MessageReceiver: void <init>()>();
+
+        if $i0 == 38 goto label29;
+
+     label28:
+        virtualinvoke $r21.<com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 40 goto label28;
+
+     label29:
+        if $i0 == 41 goto label41;
+
+        $r22 = new com.Leadbolt.AdNotification;
+
+        specialinvoke $r22.<com.Leadbolt.AdNotification: void <init>()>();
+
+        if $i0 == 42 goto label41;
+
+     label30:
+        virtualinvoke $r22.<com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>(null, null);
+
+        if $i0 == 43 goto label40;
+
+     label31:
+        $r23 = new com.Leadbolt.AdController;
+
+        specialinvoke $r23.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r24 = new com.Leadbolt.AdController$7;
+
+        specialinvoke $r24.<com.Leadbolt.AdController$7: void <init>(com.Leadbolt.AdController)>($r23);
+
+        if $i0 == 44 goto label32;
+
+        virtualinvoke $r24.<com.Leadbolt.AdController$7: void onClick(android.view.View)>(null);
+
+     label32:
+        $r25 = new com.Leadbolt.AdController;
+
+        specialinvoke $r25.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r26 = new com.Leadbolt.AdController$8;
+
+        specialinvoke $r26.<com.Leadbolt.AdController$8: void <init>(com.Leadbolt.AdController)>($r25);
+
+        if $i0 == 45 goto label33;
+
+        virtualinvoke $r26.<com.Leadbolt.AdController$8: void onClick(android.view.View)>(null);
+
+     label33:
+        $r27 = new com.Leadbolt.AdController;
+
+        specialinvoke $r27.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r28 = new com.Leadbolt.AdController$10;
+
+        specialinvoke $r28.<com.Leadbolt.AdController$10: void <init>(com.Leadbolt.AdController)>($r27);
+
+        if $i0 == 46 goto label34;
+
+        virtualinvoke $r28.<com.Leadbolt.AdController$10: void onClick(android.view.View)>(null);
+
+     label34:
+        $r29 = new com.Leadbolt.AdController;
+
+        specialinvoke $r29.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r30 = new com.Leadbolt.AdController$11;
+
+        specialinvoke $r30.<com.Leadbolt.AdController$11: void <init>(com.Leadbolt.AdController)>($r29);
+
+        if $i0 == 47 goto label35;
+
+        virtualinvoke $r30.<com.Leadbolt.AdController$11: void onClick(android.view.View)>(null);
+
+     label35:
+        $r31 = new com.Leadbolt.AdController;
+
+        specialinvoke $r31.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r32 = new com.Leadbolt.AdController$5;
+
+        specialinvoke $r32.<com.Leadbolt.AdController$5: void <init>(com.Leadbolt.AdController)>($r31);
+
+        if $i0 == 48 goto label36;
+
+        virtualinvoke $r32.<com.Leadbolt.AdController$5: void onClick(android.view.View)>(null);
+
+     label36:
+        $r33 = new com.Leadbolt.AdController;
+
+        specialinvoke $r33.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r34 = new com.Leadbolt.AdController$6;
+
+        specialinvoke $r34.<com.Leadbolt.AdController$6: void <init>(com.Leadbolt.AdController)>($r33);
+
+        if $i0 == 49 goto label37;
+
+        $z1 = virtualinvoke $r34.<com.Leadbolt.AdController$6: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label37:
+        $r35 = new com.Leadbolt.AdController;
+
+        specialinvoke $r35.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r36 = new com.Leadbolt.AdController$12;
+
+        specialinvoke $r36.<com.Leadbolt.AdController$12: void <init>(com.Leadbolt.AdController)>($r35);
+
+        if $i0 == 50 goto label38;
+
+        virtualinvoke $r36.<com.Leadbolt.AdController$12: void onClick(android.view.View)>(null);
+
+     label38:
+        $r37 = new com.Leadbolt.AdController;
+
+        specialinvoke $r37.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>(null, "");
+
+        $r38 = new com.Leadbolt.AdController$9;
+
+        specialinvoke $r38.<com.Leadbolt.AdController$9: void <init>(com.Leadbolt.AdController)>($r37);
+
+        if $i0 == 51 goto label39;
+
+        virtualinvoke $r38.<com.Leadbolt.AdController$9: void onClick(android.view.View)>(null);
+
+     label39:
+        if $i0 == 52 goto label31;
+
+     label40:
+        if $i0 == 53 goto label30;
+
+     label41:
+        if $i0 == 54 goto label64;
+
+        $r39 = new com.car.racing.puzzlegame.JigdrawPuzzleMain;
+
+        specialinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void <init>()>();
+
+        if $i0 == 55 goto label64;
+
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onCreate(android.os.Bundle)>(null);
+
+     label42:
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onResume()>();
+
+        if $i0 == 57 goto label63;
+
+     label43:
+        $r40 = new com.Leadbolt.AdController;
+
+        specialinvoke $r40.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r41 = new com.Leadbolt.AdController$7;
+
+        specialinvoke $r41.<com.Leadbolt.AdController$7: void <init>(com.Leadbolt.AdController)>($r40);
+
+        if $i0 == 58 goto label44;
+
+        virtualinvoke $r41.<com.Leadbolt.AdController$7: void onClick(android.view.View)>(null);
+
+     label44:
+        $r42 = new com.Leadbolt.AdController;
+
+        specialinvoke $r42.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r43 = new com.Leadbolt.AdController$8;
+
+        specialinvoke $r43.<com.Leadbolt.AdController$8: void <init>(com.Leadbolt.AdController)>($r42);
+
+        if $i0 == 59 goto label45;
+
+        virtualinvoke $r43.<com.Leadbolt.AdController$8: void onClick(android.view.View)>(null);
+
+     label45:
+        $r44 = new com.Leadbolt.AdController;
+
+        specialinvoke $r44.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r45 = new com.Leadbolt.AdController$10;
+
+        specialinvoke $r45.<com.Leadbolt.AdController$10: void <init>(com.Leadbolt.AdController)>($r44);
+
+        if $i0 == 60 goto label46;
+
+        virtualinvoke $r45.<com.Leadbolt.AdController$10: void onClick(android.view.View)>(null);
+
+     label46:
+        $r46 = new com.Leadbolt.AdController;
+
+        specialinvoke $r46.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r47 = new com.Leadbolt.AdController$11;
+
+        specialinvoke $r47.<com.Leadbolt.AdController$11: void <init>(com.Leadbolt.AdController)>($r46);
+
+        if $i0 == 61 goto label47;
+
+        virtualinvoke $r47.<com.Leadbolt.AdController$11: void onClick(android.view.View)>(null);
+
+     label47:
+        $r48 = new com.car.racing.puzzlegame.JigdrawPuzzleMain$4;
+
+        specialinvoke $r48.<com.car.racing.puzzlegame.JigdrawPuzzleMain$4: void <init>(com.car.racing.puzzlegame.JigdrawPuzzleMain)>($r39);
+
+        if $i0 == 62 goto label48;
+
+        virtualinvoke $r48.<com.car.racing.puzzlegame.JigdrawPuzzleMain$4: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label48:
+        $r49 = new com.Leadbolt.AdController;
+
+        specialinvoke $r49.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r50 = new com.Leadbolt.AdController$5;
+
+        specialinvoke $r50.<com.Leadbolt.AdController$5: void <init>(com.Leadbolt.AdController)>($r49);
+
+        if $i0 == 63 goto label49;
+
+        virtualinvoke $r50.<com.Leadbolt.AdController$5: void onClick(android.view.View)>(null);
+
+     label49:
+        $r51 = new com.Leadbolt.AdController;
+
+        specialinvoke $r51.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r52 = new com.Leadbolt.AdController$6;
+
+        specialinvoke $r52.<com.Leadbolt.AdController$6: void <init>(com.Leadbolt.AdController)>($r51);
+
+        if $i0 == 64 goto label50;
+
+        $z2 = virtualinvoke $r52.<com.Leadbolt.AdController$6: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label50:
+        $r53 = new com.Leadbolt.AdController;
+
+        specialinvoke $r53.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r54 = new com.Leadbolt.AdController$12;
+
+        specialinvoke $r54.<com.Leadbolt.AdController$12: void <init>(com.Leadbolt.AdController)>($r53);
+
+        if $i0 == 65 goto label51;
+
+        virtualinvoke $r54.<com.Leadbolt.AdController$12: void onClick(android.view.View)>(null);
+
+     label51:
+        if $i0 == 66 goto label52;
+
+        $r55 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: android.app.Dialog onCreateDialog(int)>(0);
+
+     label52:
+        if $i0 == 67 goto label53;
+
+        staticinvoke <com.car.racing.puzzlegame.JigdrawPuzzleMain: void <clinit>()>();
+
+     label53:
+        if $i0 == 68 goto label54;
+
+        $z3 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: boolean onOptionsItemSelected(android.view.MenuItem)>(null);
+
+     label54:
+        if $i0 == 69 goto label55;
+
+        $z4 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: boolean onKeyUp(int,android.view.KeyEvent)>(0, null);
+
+     label55:
+        if $i0 == 70 goto label56;
+
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onWindowFocusChanged(boolean)>(false);
+
+     label56:
+        if $i0 == 71 goto label57;
+
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onNewIntent(android.content.Intent)>(null);
+
+     label57:
+        if $i0 == 72 goto label58;
+
+        $z5 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: boolean onKeyDown(int,android.view.KeyEvent)>(0, null);
+
+     label58:
+        if $i0 == 73 goto label59;
+
+        $z6 = virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: boolean onCreateOptionsMenu(android.view.Menu)>(null);
+
+     label59:
+        if $i0 == 74 goto label60;
+
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onActivityResult(int,int,android.content.Intent)>(0, 0, null);
+
+     label60:
+        $r56 = new com.Leadbolt.AdController;
+
+        specialinvoke $r56.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r39, "");
+
+        $r57 = new com.Leadbolt.AdController$9;
+
+        specialinvoke $r57.<com.Leadbolt.AdController$9: void <init>(com.Leadbolt.AdController)>($r56);
+
+        if $i0 == 75 goto label61;
+
+        virtualinvoke $r57.<com.Leadbolt.AdController$9: void onClick(android.view.View)>(null);
+
+     label61:
+        $r58 = new com.car.racing.puzzlegame.JigdrawPuzzleMain$5;
+
+        specialinvoke $r58.<com.car.racing.puzzlegame.JigdrawPuzzleMain$5: void <init>(com.car.racing.puzzlegame.JigdrawPuzzleMain)>($r39);
+
+        if $i0 == 76 goto label62;
+
+        virtualinvoke $r58.<com.car.racing.puzzlegame.JigdrawPuzzleMain$5: void onClick(android.content.DialogInterface,int)>(null, 0);
+
+     label62:
+        if $i0 == 77 goto label43;
+
+     label63:
+        virtualinvoke $r39.<com.car.racing.puzzlegame.JigdrawPuzzleMain: void onPause()>();
+
+        if $i0 == 78 goto label42;
+
+        if $i0 == 79 goto label64;
+
+        if $i0 == 80 goto label42;
+
+     label64:
+        if $i0 == 82 goto label68;
+
+        $r59 = new com.moolah.NotificationService;
+
+        specialinvoke $r59.<com.moolah.NotificationService: void <init>()>();
+
+        virtualinvoke $r59.<com.moolah.NotificationService: void onCreate()>();
+
+        virtualinvoke $r59.<com.moolah.NotificationService: void onStart(android.content.Intent,int)>(null, 0);
+
+     label65:
+        if $i0 == 83 goto label66;
+
+        if $i0 == 84 goto label65;
+
+     label66:
+        $r60 = virtualinvoke $r59.<com.moolah.NotificationService: android.os.IBinder onBind(android.content.Intent)>(null);
+
+     label67:
+        if $i0 == 86 goto label68;
+
+        if $i0 == 87 goto label67;
+
+     label68:
+        if $i0 == 88 goto label80;
+
+        $r61 = new com.car.racing.puzzlegame.Ads;
+
+        specialinvoke $r61.<com.car.racing.puzzlegame.Ads: void <init>()>();
+
+        if $i0 == 89 goto label80;
+
+        virtualinvoke $r61.<com.car.racing.puzzlegame.Ads: void onCreate(android.os.Bundle)>(null);
+
+     label69:
+        if $i0 == 91 goto label79;
+
+     label70:
+        $r62 = new com.Leadbolt.AdController;
+
+        specialinvoke $r62.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r63 = new com.Leadbolt.AdController$7;
+
+        specialinvoke $r63.<com.Leadbolt.AdController$7: void <init>(com.Leadbolt.AdController)>($r62);
+
+        if $i0 == 92 goto label71;
+
+        virtualinvoke $r63.<com.Leadbolt.AdController$7: void onClick(android.view.View)>(null);
+
+     label71:
+        $r64 = new com.Leadbolt.AdController;
+
+        specialinvoke $r64.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r65 = new com.Leadbolt.AdController$8;
+
+        specialinvoke $r65.<com.Leadbolt.AdController$8: void <init>(com.Leadbolt.AdController)>($r64);
+
+        if $i0 == 93 goto label72;
+
+        virtualinvoke $r65.<com.Leadbolt.AdController$8: void onClick(android.view.View)>(null);
+
+     label72:
+        $r66 = new com.Leadbolt.AdController;
+
+        specialinvoke $r66.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r67 = new com.Leadbolt.AdController$10;
+
+        specialinvoke $r67.<com.Leadbolt.AdController$10: void <init>(com.Leadbolt.AdController)>($r66);
+
+        if $i0 == 94 goto label73;
+
+        virtualinvoke $r67.<com.Leadbolt.AdController$10: void onClick(android.view.View)>(null);
+
+     label73:
+        $r68 = new com.Leadbolt.AdController;
+
+        specialinvoke $r68.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r69 = new com.Leadbolt.AdController$11;
+
+        specialinvoke $r69.<com.Leadbolt.AdController$11: void <init>(com.Leadbolt.AdController)>($r68);
+
+        if $i0 == 95 goto label74;
+
+        virtualinvoke $r69.<com.Leadbolt.AdController$11: void onClick(android.view.View)>(null);
+
+     label74:
+        $r70 = new com.Leadbolt.AdController;
+
+        specialinvoke $r70.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r71 = new com.Leadbolt.AdController$5;
+
+        specialinvoke $r71.<com.Leadbolt.AdController$5: void <init>(com.Leadbolt.AdController)>($r70);
+
+        if $i0 == 96 goto label75;
+
+        virtualinvoke $r71.<com.Leadbolt.AdController$5: void onClick(android.view.View)>(null);
+
+     label75:
+        $r72 = new com.Leadbolt.AdController;
+
+        specialinvoke $r72.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r73 = new com.Leadbolt.AdController$6;
+
+        specialinvoke $r73.<com.Leadbolt.AdController$6: void <init>(com.Leadbolt.AdController)>($r72);
+
+        if $i0 == 97 goto label76;
+
+        $z7 = virtualinvoke $r73.<com.Leadbolt.AdController$6: boolean onTouch(android.view.View,android.view.MotionEvent)>(null, null);
+
+     label76:
+        $r74 = new com.Leadbolt.AdController;
+
+        specialinvoke $r74.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r75 = new com.Leadbolt.AdController$12;
+
+        specialinvoke $r75.<com.Leadbolt.AdController$12: void <init>(com.Leadbolt.AdController)>($r74);
+
+        if $i0 == 98 goto label77;
+
+        virtualinvoke $r75.<com.Leadbolt.AdController$12: void onClick(android.view.View)>(null);
+
+     label77:
+        $r76 = new com.Leadbolt.AdController;
+
+        specialinvoke $r76.<com.Leadbolt.AdController: void <init>(android.app.Activity,java.lang.String)>($r61, "");
+
+        $r77 = new com.Leadbolt.AdController$9;
+
+        specialinvoke $r77.<com.Leadbolt.AdController$9: void <init>(com.Leadbolt.AdController)>($r76);
+
+        if $i0 == 99 goto label78;
+
+        virtualinvoke $r77.<com.Leadbolt.AdController$9: void onClick(android.view.View)>(null);
+
+     label78:
+        if $i0 == 100 goto label70;
+
+     label79:
+        if $i0 == 101 goto label69;
+
+        if $i0 == 102 goto label80;
+
+        if $i0 == 103 goto label69;
+
+     label80:
+        if $i0 == 105 goto label01;
+
+        return;
+    }
+
+[Call Graph] For information on where the call graph may be incomplete, use the verbose option to the cg phase.
+[Spark] Pointer Assignment Graph in 0.0 seconds.
+[Spark] Type masks in 0.0 seconds.
+[Spark] Pointer Graph simplified in 0.0 seconds.
+[Spark] Propagation in 5.2 seconds.
+[Spark] Solution found in 5.2 seconds.
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph construction took 5.306005631 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.Infoflow - Dead code elimination took 0.37382956 seconds
+[main] INFO soot.jimple.infoflow.Infoflow - Callgraph has 13993 edges
+[main] INFO soot.jimple.infoflow.Infoflow - Starting Taint Analysis
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - Initializing FlowDroid memory manager...
+[main] INFO soot.jimple.infoflow.data.FlowDroidMemoryManager - FDMM: Path data erasure enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Implicit flow tracking is NOT enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Exceptional flow tracking is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Running with a maximum access path length of 5
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Using path-agnostic result collection
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Recursive access path shortening is enabled
+[main] INFO soot.jimple.infoflow.android.InfoflowAndroidConfiguration - Taint analysis enabled: true
+[main] INFO soot.jimple.infoflow.Infoflow - Looking for sources and sinks...
+[main] INFO soot.jimple.infoflow.Infoflow - Source lookup done, found 81 sources and 105 sinks.
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper hits: 216833
+[main] INFO soot.jimple.infoflow.Infoflow - Taint wrapper misses: 1783628
+[main] INFO soot.jimple.infoflow.Infoflow - IFDS problem with 2004789 forward and 1540677 backward edges solved, processing 56 results...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Obtainted 56 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 1 with task id 0
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 2 with task id 1
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 3 with task id 2
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 4 with task id 3
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 5 with task id 4
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 6 with task id 5
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 7 with task id 6
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 8 with task id 7
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 9 with task id 8
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 10 with task id 9
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 11 with task id 10
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 12 with task id 11
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 13 with task id 12
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 14 with task id 13
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 15 with task id 14
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 16 with task id 15
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 17 with task id 16
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 18 with task id 17
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 19 with task id 18
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 20 with task id 19
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 21 with task id 20
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 22 with task id 21
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 23 with task id 22
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 24 with task id 23
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 25 with task id 24
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 26 with task id 25
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 27 with task id 26
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 28 with task id 27
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 29 with task id 28
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 30 with task id 29
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 31 with task id 30
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 32 with task id 31
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 33 with task id 32
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 34 with task id 33
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 35 with task id 34
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 36 with task id 35
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 37 with task id 36
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 38 with task id 37
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 39 with task id 38
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 40 with task id 39
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 41 with task id 40
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 42 with task id 41
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 43 with task id 42
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 44 with task id 43
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 45 with task id 44
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 46 with task id 45
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 47 with task id 46
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 48 with task id 47
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 49 with task id 48
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 50 with task id 49
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 51 with task id 50
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 52 with task id 51
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 53 with task id 52
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 54 with task id 53
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 55 with task id 54
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Building path 56 with task id 55
+[main] INFO soot.jimple.infoflow.data.pathBuilders.ContextInsensitiveSourceFinder - Path processing took 0.952347146 seconds in total
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l2) in method <com.Leadbolt.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l2) in method <com.Leadbolt.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LBAdController", $r1) in method <com.Leadbolt.AdLog: void i(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.Leadbolt.AdController: void setNotification()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref10", $r25) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r32.<android.location.Location: double getLongitude()>() in method <com.Leadbolt.AdController: void makeLBRequest()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref9", $r26) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $d0 = virtualinvoke $r32.<android.location.Location: double getLatitude()>() in method <com.Leadbolt.AdController: void makeLBRequest()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<java.io.Writer: void write(char[],int,int)>($r1, $i2, $i4) in method <org.codehaus.jackson.impl.WriterBasedGenerator: void _writeSegment(int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APPLICATION_ID") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVELOPER_ID") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_AGENT") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LBAdController", $r1) in method <com.Leadbolt.AdLog: void d(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink $r12 = virtualinvoke $r4.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r6) in method <com.apperhand.device.android.c.c: java.lang.String a(java.lang.String,byte[],java.util.List)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("M_SERVER_URL") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r48.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r25, $l1) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l2) in method <com.Leadbolt.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3) in method <com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4) in method <com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 := @parameter1: android.content.Intent in method <com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r17.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r4, $i0) in method <com.Leadbolt.AdController: void loadNotificationDetails()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r48.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r25, $r26) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref17", $r25) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r25 = virtualinvoke $r22.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.Leadbolt.AdController: void makeLBRequest()>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("msg", $r1) in method <com.Leadbolt.AdLog: void sendToTextView(java.lang.String,java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r3 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() in method <com.Leadbolt.AdController: void setNotification()>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r8.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1) in method <com.Leadbolt.AdController: void displayIcon()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l2) in method <com.Leadbolt.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, "0") in method <com.Leadbolt.AdController: void setAlarmFromCookie()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<java.io.Writer: void write(char[],int,int)>($r2, $i4, $i2) in method <org.codehaus.jackson.impl.WriterBasedGenerator: void _writeString(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APPLICATION_ID") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVELOPER_ID") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_AGENT") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r22.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r13, $r2) in method <com.Leadbolt.AdController: void displayIcon()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r48.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r25, $l1) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, $r13) in method <com.Leadbolt.AdController: void setAlarmFromCookie()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r48.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r18, $l1) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l3) in method <com.Leadbolt.AdController: void setAlarm()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r20.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r12, $i0) in method <com.Leadbolt.AdController: void displayIcon()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref11", $r25) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r6, $r8) in method <com.Leadbolt.AdController: void incrementIterationCounter()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r1.<java.io.Writer: void write(char[],int,int)>($r2, $i1, $i0) in method <org.codehaus.jackson.impl.WriterBasedGenerator: void _flushBuffer()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APPLICATION_ID") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) in method <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVELOPER_ID") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_AGENT") in method <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref12", $r25) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l3) in method <com.Leadbolt.AdController: void setAlarmFromCookie()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r17.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l1) in method <com.Leadbolt.AdController: void loadNotificationDetails()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref13", $r25) in method <com.Leadbolt.AdController: void makeLBRequest()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, $r13) in method <com.Leadbolt.AdController: void setAlarmFromCookie()> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - - $r1 := @parameter0: android.content.Context in method <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r4.<android.os.Handler: boolean sendMessage(android.os.Message)>($r5) in method <com.car.racing.puzzlegame.JigdrawPuzzleMain$2: boolean updateTime(java.lang.String)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r5 = virtualinvoke $r4.<android.os.Handler: android.os.Message obtainMessage(int)>(1) in method <com.car.racing.puzzlegame.JigdrawPuzzleMain$2: boolean updateTime(java.lang.String)>
+[main] INFO soot.jimple.infoflow.Infoflow - The sink virtualinvoke $r3.<com.moolah.NotificationService$ServiceHandler: boolean sendMessage(android.os.Message)>($r2) in method <com.moolah.NotificationService: void onStart(android.content.Intent,int)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.Infoflow - - $r2 = virtualinvoke $r3.<com.moolah.NotificationService$ServiceHandler: android.os.Message obtainMessage()>() in method <com.moolah.NotificationService: void onStart(android.content.Intent,int)>
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l2), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("LBAdController", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.Leadbolt.AdController: void setNotification()>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref10", $r25), from the following sources:
+	- $d0 = virtualinvoke $r32.<android.location.Location: double getLongitude()>() (in <com.Leadbolt.AdController: void makeLBRequest()>)
+Found a flow to sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref9", $r26), from the following sources:
+	- $d0 = virtualinvoke $r32.<android.location.Location: double getLatitude()>() (in <com.Leadbolt.AdController: void makeLBRequest()>)
+Found a flow to sink virtualinvoke $r3.<java.io.Writer: void write(char[],int,int)>($r1, $i2, $i4), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APPLICATION_ID") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+	- $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) (in <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>)
+	- $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) (in <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVELOPER_ID") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_AGENT") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+Found a flow to sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>("LBAdController", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink $r12 = virtualinvoke $r4.<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)>($r6), from the following sources:
+	- $r3 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("M_SERVER_URL") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r48.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r25, $l1), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l2), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r4.<android.content.Intent: android.content.Intent setAction(java.lang.String)>($r3), from the following sources:
+	- $r2 := @parameter1: android.content.Intent (in <com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<android.content.Context: android.content.ComponentName startService(android.content.Intent)>($r4), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r2 := @parameter1: android.content.Intent (in <com.moolah.MessageReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r17.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r4, $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r48.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r25, $r26), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref17", $r25), from the following sources:
+	- $r25 = virtualinvoke $r22.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.Leadbolt.AdController: void makeLBRequest()>)
+Found a flow to sink virtualinvoke $r2.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("msg", $r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r3 = virtualinvoke $r5.<android.telephony.TelephonyManager: java.lang.String getDeviceId()>() (in <com.Leadbolt.AdController: void setNotification()>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r8.<android.content.Context: void sendBroadcast(android.content.Intent)>($r1), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l2), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, "0"), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r4.<java.io.Writer: void write(char[],int,int)>($r2, $i4, $i2), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APPLICATION_ID") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+	- $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) (in <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>)
+	- $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) (in <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVELOPER_ID") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_AGENT") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+Found a flow to sink virtualinvoke $r22.<android.content.ContentResolver: android.net.Uri insert(android.net.Uri,android.content.ContentValues)>($r13, $r2), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r48.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r25, $l1), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, $r13), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r48.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r18, $l1), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r8, $l3), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r20.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>($r12, $i0), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref11", $r25), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r4.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r6, $r8), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r1.<java.io.Writer: void write(char[],int,int)>($r2, $i1, $i0), from the following sources:
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("APPLICATION_ID") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+	- $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) (in <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>)
+	- $r2 = virtualinvoke $r6.<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)>($r4, null, null, null, null) (in <com.apperhand.device.android.a.d: android.database.Cursor a(com.apperhand.device.android.a.d$a)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("DEVELOPER_ID") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+	- $r4 = virtualinvoke $r2.<android.os.Bundle: java.lang.String getString(java.lang.String)>("USER_AGENT") (in <com.apperhand.device.android.AndroidSDKProvider: void onHandleIntent(android.content.Intent)>)
+Found a flow to sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref12", $r25), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r7, $l3), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r17.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)>($r4, $l1), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink specialinvoke r72.<org.apache.http.message.BasicNameValuePair: void <init>(java.lang.String,java.lang.String)>("ref13", $r25), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink interfaceinvoke $r5.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r7, $r13), from the following sources:
+	- $r1 := @parameter0: android.content.Context (in <com.car.racing.puzzlegame.BootReceiver: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r5 = virtualinvoke $r4.<android.os.Bundle: java.lang.String getString(java.lang.String)>("sectionid") (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+	- $r1 := @parameter0: android.content.Context (in <com.Leadbolt.AdNotification: void onReceive(android.content.Context,android.content.Intent)>)
+Found a flow to sink virtualinvoke $r4.<android.os.Handler: boolean sendMessage(android.os.Message)>($r5), from the following sources:
+	- $r5 = virtualinvoke $r4.<android.os.Handler: android.os.Message obtainMessage(int)>(1) (in <com.car.racing.puzzlegame.JigdrawPuzzleMain$2: boolean updateTime(java.lang.String)>)
+Found a flow to sink virtualinvoke $r3.<com.moolah.NotificationService$ServiceHandler: boolean sendMessage(android.os.Message)>($r2), from the following sources:
+	- $r2 = virtualinvoke $r3.<com.moolah.NotificationService$ServiceHandler: android.os.Message obtainMessage()>() (in <com.moolah.NotificationService: void onStart(android.content.Intent,int)>)
+Maximum memory consumption: 3363.363576 MB
+Analysis has run for 78.774370038 seconds
