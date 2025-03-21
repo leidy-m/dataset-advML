@@ -67,18 +67,33 @@ for i in range(0, len(json_files), num_files_per_batch):
 
                 # Si es una lista de objetos JSON
                 if isinstance(data, list):
-                    logging.warning("Es una lista")
                     df = pd.json_normalize(data)
                     logging.warning(df)
                 else:
-                    logging.warning("Else")
                     df = pd.json_normalize([data])
-                    logging.warning(df)
+
+                    
 
                 df['malware'] = is_mal  # Añadir columna malware
 
                 # Excluir las columnas 'VirusTotal' y 'Pre_static_analysis.VT_positives'
                 df = df.drop(columns=['VirusTotal', 'Pre_static_analysis.VT_positives'], errors='ignore')
+
+                # Expandir permisos en columnas binarias
+                permissions = df.pop('Static_analysis.Permissions')[0]  # Extrae la lista de permisos
+                if permissions:
+                    logging.warning("Permission")
+                    for perm in permissions:
+                        logging.warning(perm)
+                        df[perm] = 1  # Marca los permisos con 1
+
+                    # Llenar los permisos no encontrados con 0
+                    df.fillna(0, inplace=True)
+
+                    # Convertir a enteros
+                    df = df.astype(int, errors="ignore")
+
+                    logging.warning(df)
 
                 # Verificar si el DataFrame no está vacío
                 if not df.empty:
